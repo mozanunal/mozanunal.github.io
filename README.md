@@ -63,6 +63,7 @@ hexo deploy
 ```
 
 ### Connect github pages to your own server
+[godady -  gihub.pages - hexo tutorial](https://medium.com/@kswanie21/how-to-set-up-godaddy-domain-with-github-pages-a9300366c7b)
 [please refer here](https://help.github.com/articles/using-a-custom-domain-with-github-pages/)
 
 ## Guide to use this repository
