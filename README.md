@@ -19,19 +19,18 @@ hexo server
 ### Install beneficial plugins
 
 Admin plugin to easily manage and create content
-
 ```
-npm install --save hexo-admin
+npm install hexo-admin --save
 ```
 
 Manage rss feed of your blog
-
 ```
 npm install hexo-generator-feed --save
 ```
-for in blog search
+
+For in blog search
 ```
-npm i -S hexo-generator-json-content
+npm install hexo-generator-json-content --save
 ```
 
 Github pages deployer. There will be detailed information about deploying at next sections. 
@@ -68,8 +67,9 @@ hexo deploy
 ```
 
 ### Connect github pages to your own server
-[godady -  gihub.pages - hexo tutorial](https://medium.com/@kswanie21/how-to-set-up-godaddy-domain-with-github-pages-a9300366c7b)
-[please refer here](https://help.github.com/articles/using-a-custom-domain-with-github-pages/)
+[godady - gihub.pages - hexo configure tutorial](https://medium.com/@kswanie21/how-to-set-up-godaddy-domain-with-github-pages-a9300366c7b)
+
+[further info please refer here](https://help.github.com/articles/using-a-custom-domain-with-github-pages/)
 
 ## Guide to use this repository
 
