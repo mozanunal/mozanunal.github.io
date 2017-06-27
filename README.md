@@ -63,7 +63,7 @@ hexo deploy
 ```
 
 ### Connect github pages to your own server
-
+[please refer here](https://help.github.com/articles/using-a-custom-domain-with-github-pages/)
 
 ## Guide to use this repository
 
