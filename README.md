@@ -1,5 +1,5 @@
 # mozanunal.com
-My personal blog hosted at github pages and can be reached from [mozanunal.com](www.mozanunal.com)
+My personal blog hosted at github pages and can be reached from [mozanunal.com](http://www.mozanunal.com)
 
 It is created using Hexo.io which is blogging platform support markdown. It creates static website according to your design. Hexo is build on node.js but you need only static page host because it creates all pages and visitor only can visit this pages.
 There is no interactive options but comment can be implement easliy
@@ -29,6 +29,11 @@ Manage rss feed of your blog
 ```
 npm install hexo-generator-feed --save
 ```
+for in blog search
+```
+npm i -S hexo-generator-json-content
+```
+
 Github pages deployer. There will be detailed information about deploying at next sections. 
 ```
 npm install hexo-deployer-git --save
