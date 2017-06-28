@@ -72,6 +72,33 @@ hexo deploy
 [further info please refer here](https://help.github.com/articles/using-a-custom-domain-with-github-pages/)
 
 ## Guide to use this repository
+get files
+```
+git clone https://github.com/mozanunal/mozanunal.com/
+npm install
+```
+get theme files
+```
+cd themes
+git clone theme-git-url
+```
+run server
+'''
+hexo server
+'''
+
+if content new content is created, add them to this repo, commit and push
+To publish new content 
+```
+hexo generate --watch
+hexo deploy
+```
+
+
+
+
+
+
 
 
 
