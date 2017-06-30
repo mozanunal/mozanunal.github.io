@@ -83,12 +83,12 @@ cd themes
 git clone theme-git-url
 ```
 run server
-'''
-hexo server
-'''
 
-if content new content is created, add them to this repo, commit and push
-To publish new content 
+```
+hexo server
+```
+
+If new content is created, add them to this repo, commit and push publish new content 
 ```
 hexo generate --watch
 hexo deploy
