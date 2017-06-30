@@ -20,7 +20,7 @@ customize:
         facebook: https://www.facebook.com/mehmetozan.unal/
         google-plus: https://plus.google.com/116790030893288193193/
         github: https://github.com/mozanunal/
-        rss: /
+        rss: http://mozanunal.com/atom.xml
 
 # Widgets
 widgets:
