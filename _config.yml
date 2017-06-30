@@ -3,7 +3,7 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: mozanunal.com
+title: Mehmet Ozan Ünal Blog Sitesi
 subtitle: Elektronik üzerine uygulamalar
 description: Elektronik ve yazılım üzerine öğrendiklerimi uygularken ilgimi çeken konular hakkında yazılar paylaşığım blogum
 author: Mehmet Ozan Ünal
@@ -14,7 +14,7 @@ timezone:
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: http://mozanunal.com
 root: /
-permalink: :year/:month/:day/:title/
+permalink: :year/:month/:title/
 permalink_defaults:
 
 # Directory
@@ -69,7 +69,12 @@ theme: hexo-theme-hueman
 feed:
   type: atom
   path: atom.xml
-  limit: 10
+  limit: 40
+
+#Sitemap
+sitemap:
+    path: sitemap.xml
+
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
