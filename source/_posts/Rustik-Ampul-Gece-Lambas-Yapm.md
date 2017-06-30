@@ -14,7 +14,7 @@ Lambanın son hali aşağıdaki gibi devre temel olarak bi anahtar ve bir lambal
 
 <div class="separator" style="clear: both; text-align: center;">[![](https://2.bp.blogspot.com/-4DDX_lqYDlo/WDBnXDOjYMI/AAAAAAAAehc/_FWN6h2aW9Q8r5m6KY1mcrWcCKG6yobtACKgB/s320/IMG_20161116_105346.jpg)](https://2.bp.blogspot.com/-4DDX_lqYDlo/WDBnXDOjYMI/AAAAAAAAehc/_FWN6h2aW9Q8r5m6KY1mcrWcCKG6yobtACKgB/s1600/IMG_20161116_105346.jpg)</div>
 
-<a name="more"></a>  
+<!-- more -->  
 
 <div class="separator" style="clear: both; text-align: center;">Gerekli ilk malzememiz rustik ampul. Benim ampulümün duyu e 27 ve full parlaklıkta kendisi 40w harcıyor. Bu yünden çıkardığı ışık açısından verimliliğinin çok kötü olduğunu söyleyebilirim fakat genelde aydınlatmadan ziyade dekorasyon amacıyla kullanılıyorlar.</div>
 

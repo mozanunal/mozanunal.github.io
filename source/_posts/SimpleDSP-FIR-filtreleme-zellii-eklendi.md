@@ -19,7 +19,7 @@ Ayrıca wiki sayfasını kesinlikle ziyaret etmenizi tavsiye ederim orada Matlab
 
 [Projenin github linkine buradan ulaşabilirsiniz.](https://github.com/mozanunal/SimpleDSP)  
 
-<a name="more"></a>
+<!-- more -->
 
 **Arduino ile Performansı**
 <div class="separator" style="clear: both; text-align: center;">[![](https://2.bp.blogspot.com/-XfgXk47zxak/WOawaTUJ0OI/AAAAAAAAiuk/2kEmqpCDCp0m3gfc1IsSw-ubLWcxtwm1wCLcB/s400/Capture.PNG)](https://2.bp.blogspot.com/-XfgXk47zxak/WOawaTUJ0OI/AAAAAAAAiuk/2kEmqpCDCp0m3gfc1IsSw-ubLWcxtwm1wCLcB/s1600/Capture.PNG)

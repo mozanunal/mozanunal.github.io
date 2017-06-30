@@ -11,7 +11,7 @@ date: 2016-12-05 21:23:00
 **Merhaba Arkadaşlar,**
 
 Bu projemde nasıl elimizde kalan fazla hoparlörleri bluetooth speakera dönüştürebileceğinizden bahsedeceğim. Geçen yaz bir arkadaşımın 5 +1 ses sisteminin kuvvetlendirici kutusu yanmış böyle olunca da hoparlörler boşa çıkmış ben de bir projede kullanırım diyerek kenara ayırdım. Aklıma sonradan bunları bluetooth hoparlöre dönüştürmek geldi. Direk ses cihazı olarak görünen bluetooth ses alıcılarını araştırmaya başladım. Bir kaç model bulsam da yaklaşık 10 W olan bu hoparlörleri sürecek kadar güç çıkışı vermiyorlardı. Bu nedenle projeye bir de kuvvetlendirici ekledim. Kuvvetlendirici  olarak PAM8610 seçtim. Kendisi bir class D güç kuvvetlendiricisi yani en verimli olanlarından. Yüksek verini sayesinde çok az enerji ısıya dönüşüyor ve soğutucu metal parçaya vb ihtiyaç duymuyor. Yaptığım proje ile bu hoparlörleri, bluetooth üzerinden ya da doğrudan kablo ile ses çıkışlarına bağlanabilecek duruma getirmiş oluyorum.
-<a name="more"></a>  
+<!-- more -->  
 Toparlamak gerekirse proje için gerekli malzemeler:
 *   1 veya 2 adet hoparlör
 *   Pam8610 ses kuvvetlendirici

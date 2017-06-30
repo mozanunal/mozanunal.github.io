@@ -13,7 +13,7 @@ date: 2016-12-27 00:59:00
 
 [![](https://2.bp.blogspot.com/-EXt6RrgC7lg/WGAUWvxMZ9I/AAAAAAAAfKQ/FDJd61MfgYAZ4pKE_46vAyzQHT_AN6evgCKgB/s320/IMG_20161224_190300.jpg)](https://2.bp.blogspot.com/-EXt6RrgC7lg/WGAUWvxMZ9I/AAAAAAAAfKQ/FDJd61MfgYAZ4pKE_46vAyzQHT_AN6evgCKgB/s1600/IMG_20161224_190300.jpg)
 
-<a name="more"></a>
+<!-- more -->
 
 <div style="text-align: left;">          Benim elimdeki güç kaynağının çıkışlarını aşağıdan görebilirsiniz. Eski bilgisayarımdan kalan 250 W bir güç kaynağı kendisi. Hali hazırda 3.3 V 5V 12 V ve  -12 V çıkışları var. Farklı voltaj ihtiyaçlarına göre regülatörler veya akım koruma devreleri eklenerek güç kaynağı daha işlevsel hale getirilebilir. </div>
 

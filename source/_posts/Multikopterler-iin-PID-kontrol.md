@@ -22,7 +22,7 @@ Bir otopilotun en temel 2 bileşeni hava aracının yönelimini tespit eden IMU 
 
 
 Multikopterler için her 3 için ayrı ayrı PID kontrol algoritmaları uygulanır. İstenilen değer ile şu anki değerin farkı alınarak hata elde edilir. PID algoritması bu hata değerlerine uygulandıktan sonra motorların çıkış değerleri hesaplanır. Sonra bu verilen çıkış hata değişkenini bulmak üzere tekrar girişe yönlendirilir. Böylece döngü tamamlanmış olur. PID,  Proportional, Integral ve Derivative olmak üzere 3 farklı algoritmanın uygulanmasıyla elde edilir. Örnekle açıklamak gerekirse: Multikopterimizin pitch açısı için kullnılan PID kontrol algoritmasını ele alalım. **P algoritması**ndan gelen değer, multikopterimizin şu anki pitch açısı ile  
-<a name="more"></a>kontrol edenin istediği pitch açısı arasındaki farka yani anlık hataya bağlıdır. **I algoritması**ndan gelen değer, pitch açısının geçmiş hatalarının toplamına bağlıdır. D algoritmasından gelen değer ise gelecek açı hatalarının tahminine bağlıdır.  
+<!-- more -->kontrol edenin istediği pitch açısı arasındaki farka yani anlık hataya bağlıdır. **I algoritması**ndan gelen değer, pitch açısının geçmiş hatalarının toplamına bağlıdır. D algoritmasından gelen değer ise gelecek açı hatalarının tahminine bağlıdır.  
 
 <div class="separator" style="clear: both; text-align: center;">[![](http://www.pcbheaven.com/wikipages/images/pidtheory_1313344224.png)](http://www.pcbheaven.com/wikipages/images/pidtheory_1313344224.png)</div>
 

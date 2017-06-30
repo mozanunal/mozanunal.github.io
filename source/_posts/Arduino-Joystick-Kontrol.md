@@ -13,7 +13,7 @@ date: 2014-10-29 00:21:00
 ---
 **Herkese Merhabalar!**  
 Bugünkü yazımda Arduino ile Joystick Kontrol projemden bahsetmek istiyorum. Bu projede, 2 eksenli bir joystick ile 2 eksenli bir gimbalı kontrol ettim. Kontrolcü olarak Arduino Nano kullandım. Bütün Arduino çeşitleri kullanılabilir Nanoyu küçük olduğu ve usb üzerinden kolay programlanabildiği için tercih ettim. 
-<a name="more"></a>
+<!-- more -->
 Breadboard üzerine basit bir devre kurdum. Arduinonun standart servo kütüphanesini kullanarak kodu yazdım. Joystickten veri almak için Arduinonun analaog giriş pinlerini kullandım. Analog girişler 1 veya 0 dan farklı değerler okumak için kullanılır. Mesela 10 bitlik bir analog girişten 0-1024 arası değerler okunabilir. Aşağıda bağlantılar ve kaynak kodunu paylaşıyorum. Tekrar görüşmek üzere.  
 
 **Bağlantılar**

@@ -18,7 +18,7 @@ date: 2014-10-10 01:24:00
 Bu yazımda Kamera ile Fare Kontrolü projemden bahsetmek istiyorum. Bu proje aslında bir görüntü işleme projesidir. Eli filtrelerle tespit edip fare gibi kullanmak amaçlanmıştır. El açılınca tıklama sağlanır, tıklama olayı çok hassas değil maalesef arka arkaya çok tıklama yapabiliyor. Biraz daha uzaktan kontrol edilirse gezinme olayı da daha hassas olabilir.
 
 Program C# dilinde Emgucv kütüphanesiyle yazılmıştır. Algoritmasına gelecek olursak, Hsv ve Ycbcr renk uzaylarında "skin detection" algoritmaları uygulanmıştır. Bu sayede el "counter" olarak tespit edilmiştir. Merkezi kullanılarak farenin gitmesi  
-<a name="more"></a>gereken koordinantlar belirlenmiştir. "convexity defects" methodu kullanılarak da parmak sayısı belirlenmiştir. 5\. parmakta pek hassas olarak çalışamamasına rağmen diğer parmakları rahat bir şekilde sayılmasını sağlamaktadır.
+<!-- more -->gereken koordinantlar belirlenmiştir. "convexity defects" methodu kullanılarak da parmak sayısı belirlenmiştir. 5\. parmakta pek hassas olarak çalışamamasına rağmen diğer parmakları rahat bir şekilde sayılmasını sağlamaktadır.
 
 <center>
 Kamera ile fare kontrolü

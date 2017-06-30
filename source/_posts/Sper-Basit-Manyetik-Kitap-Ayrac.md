@@ -11,7 +11,7 @@ date: 2016-02-05 02:49:00
 **Herkese Merhabalar,**  
 Bugünkü yazımda nasıl çok basit bir şekilde manyetik kitap ayıracı yapabileceğimizden bahsedeceğim. Daha doğrusu yazımda değil yapımla alakalı kısa bir video hazırladım onu paylaşıyorum. Basitçe yapımı şöyle:  
 
-<a name="more"></a>
+<!-- more -->
 
 *   Buzdolabı manyetik stickerlarından birini alıyoruz ve ortadan ikiye makas ile ayırıyoruz.
 *   Kestiğimiz parçalara uygun bir deri parçası kesiyoruz.

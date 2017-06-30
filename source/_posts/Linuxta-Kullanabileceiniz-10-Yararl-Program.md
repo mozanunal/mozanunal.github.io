@@ -17,7 +17,7 @@ date: 2014-12-03 06:30:00
 
 <div class="separator" style="clear: both; text-align: left;">Bugünkü yazımda Linuxta kullanabileceğiniz bir kaç yararlı programdan bahsetmek istiyorum. Bu programlar windows kullanıcılarının aşina olduğu, güzel alternatif programlar. Ben de kullandığım bu programları sizinle paylaşmak istedim. Yani öyle Linux'taki en iyi 10 program bunlar, hepsi sıfır hatalı diye iddalı bir başlıkla çıkmıyorum kaşınıza :D. Neyse programlara geçelim.</div>
 
-<a name="more"></a>  
+<!-- more -->  
 
 İlk program Ubuntu Software Center. Bu program üzerinden Ubuntu'da çalışabilen bir çok programa ulaşabiliyorsunuz ve onları indirip kurabiliyorsunuz. Güzel şekilde kategorize edilmiş ve eklenti seçeneklerini seçme özelliği eklenmiş gerçekten hoş ve işleri kolaylaştıran bir program.  
 [![](http://4.bp.blogspot.com/-Bm-g47lRV64/VH5qesXPW5I/AAAAAAAAFhU/K_bf45ZAXaM/s1600/Screenshot%2Bfrom%2B2014-12-03%2B01%3A33%3A30.png)](http://4.bp.blogspot.com/-Bm-g47lRV64/VH5qesXPW5I/AAAAAAAAFhU/K_bf45ZAXaM/s1600/Screenshot%2Bfrom%2B2014-12-03%2B01%3A33%3A30.png)

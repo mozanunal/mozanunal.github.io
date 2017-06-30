@@ -12,7 +12,7 @@ date: 2015-12-27 04:03:00
 
 Bu yazımda 5 $ dolara aldığım Saleae marka logic analyzerın (aslında orjinal ürün değil aldığım, o ürünün klonu) incelemesini paylaşmak istiyorum. Bu ürünü seçmemin nedeni fiyat performans oranını çok beğenmem ve dijital elektronikle uğraşan herkesin vazgeçilmezlerinden biri olacağını düşünmem.  
 
-<a name="more"></a>Öncelikle logic analzer nedir ile başlayalım. Logic analyzer, belli süre aralıklarında bir sinyali örnekleyerek oradaki sinyal seviyesinin binary olarak kaydedilmesini ve incelenebilmesini sağlayan alettir. Aynı zamanda bazılarında gelen bu binary verileri işleyip farklı protokoller kullanarak çözebilme özelliği vardır.  
+<!-- more -->Öncelikle logic analzer nedir ile başlayalım. Logic analyzer, belli süre aralıklarında bir sinyali örnekleyerek oradaki sinyal seviyesinin binary olarak kaydedilmesini ve incelenebilmesini sağlayan alettir. Aynı zamanda bazılarında gelen bu binary verileri işleyip farklı protokoller kullanarak çözebilme özelliği vardır.  
 
 Saleae Logic Anayzer'ın özelliklerini sayacak olursam şöyle:  
 

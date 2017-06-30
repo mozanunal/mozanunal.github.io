@@ -13,7 +13,7 @@ date: 2014-09-29 15:54:00
 **Herkese Merhabalar!**
 
 Bu yazımda sizlere EmguCv kütüphanesi ile yazdığım görüntü işleme uygulaması hakkında bilgi vermek istiyorum. Uygulamada ortamdan farklı bir renkte olan nesneyi rengine göre filtre edip onu gerçek zamanlı olarak takip etme amaçlanmıştır. Geliştirme ortamı olarak Microsoft Visual Studio, dil olarak C# programlama
-<a name="more"></a>dili kullanılmıştır.  
+<!-- more -->dili kullanılmıştır.  
 Programın genel algoritmasına gelirsek, şöyle özetleyebiliriz;
 
 1.  Görüntü kameradan RGB formatında alınıp başka bir renkli resim görüntüleme yöntemi olan HSV formatına dönüştürülmüştür.

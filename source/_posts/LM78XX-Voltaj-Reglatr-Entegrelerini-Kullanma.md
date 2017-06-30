@@ -10,7 +10,7 @@ date: 2015-01-11 23:30:00
 ---
 <div class="separator" style="clear: both; text-align: left;">**<span style="font-family: Arial, Helvetica, sans-serif;">Tekrardan Merhabalar,</span>**</div>
 
-<div class="separator" style="clear: both; text-align: left;"><span style="font-family: Arial, Helvetica, sans-serif;">Voltaj regülatörleri elektronik devrelerde büyük önem taşır. Çoğu mikroişlemci, entegre belli bir voltajda çalışır. Aynı zamanda bir devrede farklı voltajlarda çalışan bölümler olabilir. Bu gibi durumlarda regülatör kullanırız.Yazıda konumuz LM78XX entegreleri. LM78XX entegreleri, voltaj regülatörü entegreleridir. Geniş voltaj aralığında voltajı regüle edebilirler. Entegrelerin ismindeki son 2 rakam hangi voltaja regüle ettiğini gösterirler. Örneğin; LM7805 5 volta, LM7812 12 volta regüle eder. Kullanı<a name="more"></a>mı oldukça kolay olduğu için sıklıkla kullanılırlar. Kullanımını 7805 üzerinden aşağıda anlattım.
+<div class="separator" style="clear: both; text-align: left;"><span style="font-family: Arial, Helvetica, sans-serif;">Voltaj regülatörleri elektronik devrelerde büyük önem taşır. Çoğu mikroişlemci, entegre belli bir voltajda çalışır. Aynı zamanda bir devrede farklı voltajlarda çalışan bölümler olabilir. Bu gibi durumlarda regülatör kullanırız.Yazıda konumuz LM78XX entegreleri. LM78XX entegreleri, voltaj regülatörü entegreleridir. Geniş voltaj aralığında voltajı regüle edebilirler. Entegrelerin ismindeki son 2 rakam hangi voltaja regüle ettiğini gösterirler. Örneğin; LM7805 5 volta, LM7812 12 volta regüle eder. Kullanı<!-- more -->mı oldukça kolay olduğu için sıklıkla kullanılırlar. Kullanımını 7805 üzerinden aşağıda anlattım.
 
 **LM7805 Entegresi Kullanımı**
 

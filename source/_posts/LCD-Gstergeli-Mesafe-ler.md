@@ -15,7 +15,7 @@ date: 2015-01-11 20:57:00
 Bugünkü yazımda LCD göstergeli bir mesafe ölçerin nasıl yapılabileceğini anlatacağım. Projede Arduino, LCD modülü ve HC-SR04 modülü kullandım. Mesafe hesaplama işini "NewPing" isimli kütüphaneye yaptırdım. Bu aldığım mesafe verilerini de LCD ekrana bastırıyorum kod bu kadar basit. HC-SR04 ultrasonik mesafe hesaplama modulü. Mesafe hesabı için ses dalgalarını kullanıyor. Ses hızına göre geri dönüş süresini hesaplıyor bu sayede uzaklık hakkında bilgi sahibi olmuş oluyoruz.
 
 [![](http://2.bp.blogspot.com/-imW1-EwFBzI/VLK22y3CYhI/AAAAAAAAGjE/IiK8R_IY9rM/s1600/IMG_20150111_183709.jpg)](http://2.bp.blogspot.com/-imW1-EwFBzI/VLK22y3CYhI/AAAAAAAAGjE/IiK8R_IY9rM/s1600/IMG_20150111_183709.jpg)	
-<a name="more"></a>  
+<!-- more -->  
 
 [![](http://3.bp.blogspot.com/-QmoDFE2QbYc/VLK23M3z7hI/AAAAAAAAGjI/q0U5KHUuEiU/s1600/IMG_20150111_183748.jpg)](http://3.bp.blogspot.com/-QmoDFE2QbYc/VLK23M3z7hI/AAAAAAAAGjI/q0U5KHUuEiU/s1600/IMG_20150111_183748.jpg)
 

@@ -13,7 +13,7 @@ date: 2015-06-06 04:36:00
 **Herkese Merhabalar,**  
 Bu yazımda her yerde temin edilebilecek ve maliyetsiz malzemelerle nasıl mini servo gimbal yapılacağını anlatacağım. Bu arada en baştan belirteyim kontrol kartı ve açı stabilizasyonu için daha sonra bir yazı hazırlayacağım.  
          Proje içi kullandığım malzemeler 2 adet servo, Arduino Nano, mini kamera, yoğurt kabı, ve ataç.  
-<a name="more"></a>Gimbalin yapım aşamaları resimlerde sırasıyla anlatılmıştır. Özetlemek gerekirse;  
+<!-- more -->Gimbalin yapım aşamaları resimlerde sırasıyla anlatılmıştır. Özetlemek gerekirse;  
 
 1.  Yoğurt kabından bir köşe 2 kenarıyla beraber çıkarılır.
 2.  Servolardan bir tanesi için oyuk açılır ve servo oraya vidalanır.

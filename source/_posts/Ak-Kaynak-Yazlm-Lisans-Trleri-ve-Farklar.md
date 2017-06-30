@@ -14,7 +14,7 @@ date: 2016-09-04 20:16:00
 **Herkese Merhabalar,**  
        Yazılım dünyasında son zamanlarda artan bir "Açık Kaynak" çılgınlığı var. Hobi amaçlı bu işi yapanlardan bu konuyla alakalı en büyük şirketlere ve kuruluşlara kadar bir çok kişi veya kuruluş yazılımlarını "açık kaynaklı" olarak yayıyor. Peki bu yazılımları kullanmak istediğimiz veya kendi yazılımımızı açık kaynaklı olarak dağıtmak istediğimizde sınırlarımız ve sorumluluklarımız neler? İşte bu noktada açık kaynaklı yazılımların lisansları devreye giriyor. Bazıları bir çok şeyi serbest bırakırken, bazıları ticari projelerde kullanılmasına izin vermiyor, bazıları ise yazılımın değiştirilmesine olanak tanımıyor. İşte bu farklar ve sorumlulukları bu yazımda özetlemeye çalıştım. Sırayla popüler açık kaynak yazılım lisanslarını tek tek inceleyeceğiz.  
 
-<a name="more"></a>**GNU AGPLv3**  
+<!-- more -->**GNU AGPLv3**  
 
 *   İzin Verilenler
 	*   Ticari Kullanım

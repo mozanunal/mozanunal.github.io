@@ -12,7 +12,7 @@ date: 2014-10-07 01:28:00
 ---
 **Herkese Merhabalar!**  
          Bu yazımda size, daha önceden yapıp (lise yıllarımda), bloğa koymak icin tekrar tamir ettiğim bir projemden bahsetmek istiyorum. Projenin ismi "Alkış ile lamba kontrolü" amacı ise alkış gibi yüksek bir sesle bir röle kontrol etmek. Bu projede, röleye toplam 12 led bağlayıp aydınlatma sağlanmıştır. Devrenin teknik detaylarına gelirsek  
-<a name="more"></a>temel mantığı şöyle;  
+<!-- more -->temel mantığı şöyle;  
 - mikrofondan ses sinyali alınır.  
 - alınan ses opamp devrelerle yükseltilir.  
 - yükseltilen sinyaller 4011 entegresinde işlenerek yüksek ses geldiğinde çıkış sağlanır.  

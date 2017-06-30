@@ -13,7 +13,7 @@ date: 2015-01-31 20:34:00
 **Herkese Merhabalar,**
 
 Bugünkü yazımda ICSP olarak kısaltıllan "In Circuit Serial Programing"ten bahsedeceğim. Türkçeye devre içerisinde programlama olarak çevrilebilir. Oldukça avantajlı bir programlama şeklidir. Özellikle Pic programlarken sıkça kullanılır. Devresi hazır hale getirilmiş lehimlenmiş Picleri bu yöntem ile devreden sökmeden programlayabiliriz.PIC KIT 2, ICSP
-<a name="more"></a>programlama için en  çok kullanılan modullerden biridir. Ben de onu kullandım, kullandığım Pic ise PIC16f877a'dır. Bağlantılar ise okla işaretletli yönden diğer tarafa doğru şu şekildedir;  
+<!-- more -->programlama için en  çok kullanılan modullerden biridir. Ben de onu kullandım, kullandığım Pic ise PIC16f877a'dır. Bağlantılar ise okla işaretletli yönden diğer tarafa doğru şu şekildedir;  
 
 1.  MCRL(VPP)
 2.  VDD

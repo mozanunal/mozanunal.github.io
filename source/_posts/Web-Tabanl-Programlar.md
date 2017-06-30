@@ -12,7 +12,7 @@ date: 2016-01-16 03:45:00
 **Herkese Merhabalar,**  
             Bugünkü yazımda web tabanlı programlardan bahsetmek istiyorum. Web teknolojilerinin gelişmesiyle beraber browser tabanlı oldukça yararlı ve kullanımı da bir o kadar kolay programlar ortaya çıkmaya başladı. Hatta bunun bir üst aşaması olarak ChromeOS browser tabanlı bir işletim sistemi bile var. Ayrıca bu tarz programların projelerine dosyalarına her bilgisayardan ulaşabilmek, kurulum yapmadan bir çok şeyi halletme gibi avantajları da var. Böyle olunca ben de bu şekilde çalışan yararlı programları bir yazı altında toplamak istedim. Bilmediğim daha bir sürü program olduğuna eminim eğer bana yollayabilirseniz onları da yazıya ekleyebilirim.  
 
-<a name="more"></a>**Scheme It:**  
+<!-- more -->**Scheme It:**  
 [http://www.digikey.com/schemeit/](http://www.digikey.com/schemeit/)  
 
 Devre şeması çizilebilen pcb tasarlanabilen programdır. Digikey tarafından geliştirilmektedir. Kayıt olmanıza bile gerek yok tıklayın ve devrenizi çizmeye başlayın.  

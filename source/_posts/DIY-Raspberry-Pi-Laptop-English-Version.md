@@ -14,7 +14,7 @@ In this article, DIY Raspberry Pi Laptop project will be told. I needed a low co
 
 <div class="separator" style="clear: both; text-align: center;">[![](http://1.bp.blogspot.com/-32Tefe5cxxQ/VfQJVHRLDKI/AAAAAAAANq0/a35hSfl8s2s/s320/IMG_20150912_123948.jpg)](http://1.bp.blogspot.com/-32Tefe5cxxQ/VfQJVHRLDKI/AAAAAAAANq0/a35hSfl8s2s/s1600/IMG_20150912_123948.jpg)</div>
 
-<a name="more"></a>  
+<!-- more -->  
 
 **1\. Raspberry Pi 2**  
 First, I want to start with Raspberry Pi 2\. Raspberry pi is a mini computer that contains all the Pc compenents. Raspberry Pi 2 is the lastest version of it and it's price is 35 $.  

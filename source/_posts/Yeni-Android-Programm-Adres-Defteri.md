@@ -19,7 +19,7 @@ date: 2015-01-08 02:46:00
 
 <div class="separator" style="clear: both; text-align: left;">Programın kullanımını aşağıdan öğrenebilirsiniz.</div>
 
-<a name="more"></a>  
+<!-- more -->  
 
 <div class="separator" style="clear: both; text-align: center;">Gps bağlanınca GPS: yazan yerde bulunduğunuz yerin koordinantları çıkar.</div>
 

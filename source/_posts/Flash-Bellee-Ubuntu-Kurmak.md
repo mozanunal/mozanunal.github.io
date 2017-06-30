@@ -11,7 +11,7 @@ date: 2014-12-03 03:28:00
 
 **Merhabalar,**  
 Bugün size flash belleğe ubuntu kurmaktan bahsedeceğim. Open source seven insanlar için Linux her zaman en çekici gelen işletim sistemi olmuştur. Fakat program desteği, driver sorunları derken linux tek işletim sistemi olarak kullanmak oldukça zor bir olay haline geliyor. İşte bunun için çok güzel çözümler var. Bunlardan bir tanesi aynı hard disk üzerine ikinci bir işletim sistemi kurmak. Bu çözüm bana daha zor ve karışık geliyor, benim tercih ettiğim ise bir flash belleğe Ubuntu kurup gerekli zamanlarda bilgisayarı onun üzerinden boot ederek Linuxun özgür dünyasına dalmak. Evet  
-<a name="more"></a>anlatıma geçersem aslında çok basit olduğunu göreceksiniz.  
+<!-- more -->anlatıma geçersem aslında çok basit olduğunu göreceksiniz.  
 ** Gerekenler**  
 
 *   Universal USB Installer Programı ([indirmek için tıklayınız.](http://www.pendrivelinux.com/downloads/Universal-USB-Installer/Universal-USB-Installer-1.9.5.8.exe))

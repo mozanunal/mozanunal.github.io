@@ -20,7 +20,7 @@ date: 2017-01-26 00:13:00
 *   IIR filtre
 *   Basit "moving avarage", "smoothing" filtreleri
 
-<a name="more"></a>  
+<!-- more -->  
 Ayrıca her fonksiyon için:  
 
 *   Teorik olarak yapılan iş

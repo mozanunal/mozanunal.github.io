@@ -15,7 +15,7 @@ Batarya kapasite testi için çeşitli yöntemler geliştirilmiştir. Bunlardan 
 
 Sabit akım deşarj devresi bataryadan sabit akım çekerek deşarj olmasını sağlar. Bu sayede doğrudan akımın çekildiği toplam zaman tutularak pilin kapasitesi kolayca hesaplanır. Devremize geçecek olursak gerekli malzemeler;  
 
-<a name="more"></a>  
+<!-- more -->  
 
 *   Irfz44N mosfet
 *   lt1001 ya da lm358 opamp

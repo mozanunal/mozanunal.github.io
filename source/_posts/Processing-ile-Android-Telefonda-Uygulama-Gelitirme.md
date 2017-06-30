@@ -17,7 +17,7 @@ date: 2014-11-09 06:27:00
 <div class="separator" style="clear: both; text-align: left;">Processing dili son yıllarda Arduino ile popülerleşmeye başlayan görsel programlama dilidir. Hızlı prototipleme için geliştirilmiştir Arduinoya görsel arayüz hazırlama için sıklıkla kullanılmaktadır. Processing Windows, Linux, Android, Mac her platformda çalışmaktadır. Kendi program geliştirme arayüzü bulunmaktadır. Bu programlama diliyle kolay bir şekilde 2D, 3D görsel uygulamalar yapılabilir.</div>
 
 Ben bugünkü yazımda nasıl Android telefonda Android için nasıl Processing diliyle görsel uygulama yapılacağını anlatacağım. Öncelikle
-<a name="more"></a>Google Playden uygulama geliştirmek için gerekli IDE'yi(geliştirme ortamını) indiriyoruz. Bir çok çeşit geliştirme ortamı var fakat ben APDE uygulamasını tercih ettim. Bu uygulama ile processing kodu yazıp onu derleyip telefon üzerinde deneyebiliyoruz.  
+<!-- more -->Google Playden uygulama geliştirmek için gerekli IDE'yi(geliştirme ortamını) indiriyoruz. Bir çok çeşit geliştirme ortamı var fakat ben APDE uygulamasını tercih ettim. Bu uygulama ile processing kodu yazıp onu derleyip telefon üzerinde deneyebiliyoruz.  
 
 [![](http://1.bp.blogspot.com/-hlQ1Eg92vGE/VF46zsFwxLI/AAAAAAAAFFs/_dL3tLj1LVE/s1600/Screenshot_2014-11-07-16-41-05.png)](http://1.bp.blogspot.com/-hlQ1Eg92vGE/VF46zsFwxLI/AAAAAAAAFFs/_dL3tLj1LVE/s1600/Screenshot_2014-11-07-16-41-05.png)
 

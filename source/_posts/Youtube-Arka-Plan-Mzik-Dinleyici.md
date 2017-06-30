@@ -17,7 +17,7 @@ For foreign visitors:
 One of the biggest problem about Youtube is that stopping videos when youtube at back ground or screen off. Therefore i decided to develop an app for solving this problem.
 [You can download the app from here. ](https://drive.google.com/file/d/0B5j__Lyt9ozbQXExRTRnX1pSTW8/view)  
 Note: I can try the app only 3 android phone may be it does not work another android phones.  
-<a name="more"></a>
+<!-- more -->
 
 <center>
 Screenshoots from the app

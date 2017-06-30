@@ -13,7 +13,7 @@ date: 2016-06-09 04:45:00
 **Herkese Merhabalar,**  
 Bu yazımda .NET platformunun bir teknolojisi olan WPF kullanarak ev otomasyonu kontrol paneli yapmayı anlatacağım. Yaptığım bu projenin başlıca işlevi şudur; 5 farklı sensörden bulunulan ortamın sıcaklığı, nemi, zehirli gaz durumu, ortamda canlı olup olmadığı, ortamda yağış olup olmadığı Arduino yardımıyla alınır ve bu sensor dataları C# arayüzünde gösterilir. Eğer onay kutusu işaretlenirse istenmeyen bir durumda (gaz sızıntısı, eve hırsız girmesi, yağmur için kurulabilir.) program uyarı olarak girilen adrese bir adet mail gönderir.  
 [](https://drive.google.com/file/d/0B5j__Lyt9ozbVTRIOVFVcVVWX3c/view?usp=sharing)  
-<a name="more"></a>[  
+<!-- more -->[  
 ](https://drive.google.com/file/d/0B5j__Lyt9ozbVTRIOVFVcVVWX3c/view?usp=sharing)[Projenin Arduino ve C# kaynak kodunu buradan indirebilirsiniz.](https://drive.google.com/file/d/0B5j__Lyt9ozbVTRIOVFVcVVWX3c/view?usp=sharing)  
 
 <div class="separator" style="clear: both; text-align: left;">![](https://lh4.googleusercontent.com/h6zopN9hrG0cvtWZ8ey-28mNdDhZrpygcpb3Zr1bLuQA9-fV8eQoTozPqC23fJpte95Cny8ZAzwx2Lj3-rNNJ3oQwUcqN57ZjgtYj9uxJPosYuixJUOekPfV54urzY_s_3r01_rDu-4)</div>

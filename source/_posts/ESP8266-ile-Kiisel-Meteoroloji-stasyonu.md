@@ -15,7 +15,7 @@ date: 2015-09-30 02:51:00
 **Herkese Merhabalar,**  
 Bugünkü yazımda ESP8266 Wifi modülünün kullanımına yönelik yaptığım uygulamayı anlatacağım. Bu modülü daha önceki [şu yazımda](http://mozanunal.blogspot.com.tr/2015/03/esp8266-modulu-html-server.html) anlatmıştım. Ucuz fiyatına rağmen çok yetenekli bir modül. O yazımda ESP8266 Access Point olarak kullanılmıştı.Bu yazımdaki uygulamamda, hali hazırda var olan wifi ağına da bağlanabilecek. Bu sayede wifi olan yerlerde direk wifi üzerinden verilere ulaşılabilinirken, wifi çekmediği yerlerde ESP8266'nın kendi oluşturduğu Access Point üzerinden ulaşabilecek. Bilgilere istersek web browser üzerinden direk IP adresini yazarak, istersek aşağıda linkini verdiğim kendi yazdığım android programını kullanarak ulaşabileceğiz.  
       Temel olarak proje şu şekilde çalışıyor: ESP8266 gerekli ayarlarda başlatılır. Belli aralıklarla Sıcaklık- Nem, Yağış ve CO2 sensöründen veri alınır. Daha sonra ESP üzerinde oluşturulan http server güncellenir.  
-<a name="more"></a>  
+<!-- more -->  
 
 <div style="text-align: center;">**Kodlar**</div>
 

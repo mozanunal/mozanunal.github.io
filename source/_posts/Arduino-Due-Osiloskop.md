@@ -16,7 +16,7 @@ Bugün size Arduino Due ile yaptığım osiloskop bahsedeceğim. Arduino Dueyi s
 
 Osiloskop projesine başlarken amacım Due ile mümkün olan en yüksek örnekleme hızlı osiloskobu yapmaktı. İlk olarak arduinonun standart AnalogRead() fonksiyonunu denedim. Bir örnek alma süresi 40 uS kadar sürdü. Daha sonra [bu bağlantıyı](http://frenki.net/2013/10/fast-analogread-with-arduino-due/) buldum ve oradaki ayarları Duenin ADCsine uyguladım. Osiloskobun son kodu aşağıdaki gibidir. Bu kod sayesinde ADClere direk registerlar.
 
-<a name="more"></a>üzerinden ulaşıyoruz. Arduinonun fonksiyonunda her analog değer alma işleminde ilkönce ADC'yi açıyor, okuduktan sonra ise kapatıyor. Bu kodda ise ADCyi FREE RUN modunda kullanmış oluyoruz. Bu sayede bir örnekleme ortalama 1 uS sürüyor yani 1 Mega Sample Per Second (MSa/s) bir osiloskop yapmış olduk.  
+<!-- more -->üzerinden ulaşıyoruz. Arduinonun fonksiyonunda her analog değer alma işleminde ilkönce ADC'yi açıyor, okuduktan sonra ise kapatıyor. Bu kodda ise ADCyi FREE RUN modunda kullanmış oluyoruz. Bu sayede bir örnekleme ortalama 1 uS sürüyor yani 1 Mega Sample Per Second (MSa/s) bir osiloskop yapmış olduk.  
 
 {% codeblock lang:c %}
 

@@ -10,7 +10,7 @@ author: Mehmet Ozan Ünal
 **Herkese Merhabalar,**  
        Yapacağım bir proje için fırçalı bir motorun Arduino ile hızını kontrol etmem gerekiyordu. Bunun için elimdeki fırçalı motor için elektronik hız kontrolü yani ESC (Electronic Speed Control) yapmaya karar verdim.  
         Öncellikle kendi motorumun ve devrelerimin besleme gerilimi yazayım. Çünkü devre bu özelliklere göre dizayn edilecektir. Siz de kendi malzemelerinize ve voltajlarınıza göre kendi devrenizi dizayn edebilirsiniz. Benim elimdeki motoru besleme voltajım 7.4 volt ve motorun çektiği maximum akım 2 amperdir. Hız kontrolü için göndereceğim PWM sinyalinin genliği de (Arduinonun çalışma voltajı) 5 volttur. Bu şartlar altında devremi bir power mosfet ile tasarlamaya karar verdim. Mosfette var olması gereken özellikler 5 volt anahtarlamaya uygun rds ve Vgs özelliklerine sahip olması, üzerinden 2 amper akım rahatça geçebilmesidir. Bu nedenlerden dolayı ben IRL540N mosfetini seçtim. Kendisi bir logic mosfet bu sayede 5 volt gibi düşük bir Vgs voltajı ile devreyi anahtarlayabiliyor. Ayıca üzerinden 28 amper sıkıntısız geçebiliyor. Bu özellikleriyle projemiz için oldukça uygun. [Datasheetine buradan ulaşabilirsiniz.](http://www.irf.com/product-info/datasheets/data/irl540n.pdf)  
-<a name="more"></a>  
+<!-- more -->  
         Uygun mosfeti seçmek için LTSpice programı üzerinden simülasyon yapmam gerekti aşağıdan simülasyon devresi ve elde ettiğim grafikleri inceleyebilirsiniz.  
 
 <div class="separator" style="clear: both; text-align: center;">[![](http://2.bp.blogspot.com/-iiY9CBKxfS0/VcNaGz-O9yI/AAAAAAAAM7g/LlRtskoLE7c/s400/esc2.JPG)](http://2.bp.blogspot.com/-iiY9CBKxfS0/VcNaGz-O9yI/AAAAAAAAM7g/LlRtskoLE7c/s1600/esc2.JPG)</div>

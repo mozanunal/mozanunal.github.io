@@ -16,7 +16,7 @@ date: 2015-05-18 06:23:00
 I usually write my blog in Turkish but at this project i decided to write it in English. Because I cannot find any successful tutorial about this issue. I took e-mails or contacts from different countries about my projects if they are unusual so i am going to write some of my article in English.  
 
 At this project, visualization of android device with IMU sensors will be explained.The orientation of an android device will be shown at PC. Android camera and PC communicate with each other with a WI- FI connection. I wrote 2 program for this project. First one is android app ([can download from here](https://drive.google.com/file/d/0B5j__Lyt9ozbNG9SdVBOOVowTjg/view?usp=sharing)). Second one is visualizer program for PC. At android app IMU angles of the  
-<a name="more"></a>Android phone are sent to PC by using UDP network protocol. After you install the app write your PC's IP to this program. Also you can change the using port.  
+<!-- more -->Android phone are sent to PC by using UDP network protocol. After you install the app write your PC's IP to this program. Also you can change the using port.  
 
 <div class="separator" style="clear: both; text-align: center;">[![](https://3.bp.blogspot.com/-G-J9t8jfIME/VVlD7XUMQYI/AAAAAAAALCI/jJMdZmSw2cU/s320/Screenshot_2015-05-18-04-42-20.png)](http://3.bp.blogspot.com/-G-J9t8jfIME/VVlD7XUMQYI/AAAAAAAALCI/jJMdZmSw2cU/s1600/Screenshot_2015-05-18-04-42-20.png)</div>
 

@@ -12,7 +12,7 @@ date: 2015-07-04 03:30:00
 
 <div class="separator" style="clear: both; text-align: center;"><iframe allowfullscreen="" class="YOUTUBE-iframe-video" data-thumbnail-src="https://i.ytimg.com/s_vi/MnfJcTREYPo/default.jpg?sqp=CPSu3KwF&amp;rs=AOn4CLDzz10bna-4pjdEvnk6cjxNblSg4w" frameborder="0" height="266" src="https://www.youtube.com/embed/MnfJcTREYPo?feature=player_embedded" width="320"></iframe></div>
 
-<a name="more"></a>      Bağlantılara gelecek olursak MPU6050 I2C pinlerinden arduinoya bağlanıyor. Gnd pini gndye, Vcc pini ise 3.3 volta bağlanıyor. Çalışma voltajı 3.3 volt olduğu için. Servoların sinyal pinlerini ayarlardan seçtiğimiz dijital pinlere bağlıyoruz. Servoların beslemesi eğer küçük servolar ise arduino üzerinden eğer yüksek akım çeken servolarsa harici olarak yapabilirsiniz. Fakat harici besleme yaparsanız arduino ve güç kaynağının topraklarını eşitlemeyi unutmayın.  
+<!-- more -->      Bağlantılara gelecek olursak MPU6050 I2C pinlerinden arduinoya bağlanıyor. Gnd pini gndye, Vcc pini ise 3.3 volta bağlanıyor. Çalışma voltajı 3.3 volt olduğu için. Servoların sinyal pinlerini ayarlardan seçtiğimiz dijital pinlere bağlıyoruz. Servoların beslemesi eğer küçük servolar ise arduino üzerinden eğer yüksek akım çeken servolarsa harici olarak yapabilirsiniz. Fakat harici besleme yaparsanız arduino ve güç kaynağının topraklarını eşitlemeyi unutmayın.  
 
 ////////////////////Ayarlar////////////////  
 //pitch  

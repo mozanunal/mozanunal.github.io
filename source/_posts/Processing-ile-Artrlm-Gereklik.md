@@ -16,7 +16,7 @@ Bugünkü yazımda NyARToolkit'ten bahsedeceğim. Bu toolkit sayesinde kameradan
 <div class="separator" style="clear: both; text-align: center;"><iframe allowfullscreen="" class="YOUTUBE-iframe-video" data-thumbnail-src="https://i.ytimg.com/vi/h2N0UAR17Og/0.jpg" frameborder="0" height="266" src="https://www.youtube.com/embed/h2N0UAR17Og?feature=player_embedded" width="320"></iframe></div>
 
 Toolkiti kullanmak için gerekenler:  
-<a name="more"></a>  
+<!-- more -->  
 **1.** Processing 2  
 **2.** NyARToolkit Kütüphanesi(Processing içerisinden add library diyerek kurulabilir.)  
 **3.** Kütüphanemizin tanıyabileceği patternlar(kendiniz de üretebilirsiniz)  

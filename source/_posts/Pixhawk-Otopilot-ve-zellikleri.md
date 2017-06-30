@@ -13,7 +13,7 @@ date: 2016-09-01 14:26:00
 **Herkese Merhabalar,**  
         Uzun bir aradan sonra tekrar bir yazı hazırladım. Aslında bu yazıya çok önceden başlamıştım fakat devamını getirmemiştim şimdi tamamlayabildim ancak :). Evet bu yazımda Pixhawk isimli otopilottan bahsetmek istiyorum. Pixhawk açık kaynak kodlu Stm32 tabanlı yazılım tabanı olarak da ArduPilota dayanan bir otopilot modülü. Burada bir yorumda bulunmam gerekirse, açık kaynaklı otopilotlar arasında en başarılısı bana göre. Bu teorimi kanıtlamak için de hemen özelliklerine geçmek istiyorum.  
 
-<a name="more"></a>  
+<!-- more -->  
 
 <div class="separator" style="clear: both; text-align: center;">[![](https://4.bp.blogspot.com/-p4zpkVZrQWU/V8faC6OGbjI/AAAAAAAAc_U/rx-zCY8cZksKXnRpi2GC8lY-b-aB_MA_ACLcB/s640/pic-prod-pixhawk1.jpg)](https://4.bp.blogspot.com/-p4zpkVZrQWU/V8faC6OGbjI/AAAAAAAAc_U/rx-zCY8cZksKXnRpi2GC8lY-b-aB_MA_ACLcB/s1600/pic-prod-pixhawk1.jpg)</div>
 

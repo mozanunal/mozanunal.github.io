@@ -19,7 +19,7 @@ date: 2015-11-15 14:30:00
 4.  1 adet 10k direnç
 5.  2 adet 2 eksen joystick modulü
 
-<a name="more"></a>  
+<!-- more -->  
 
 Bu malzemelerle beraber toplam maliyetimiz 7- 8 dolar civarı oluyor. Maximum kullanım mesafesi ise 30 40 metre civarında hobi uygulamarına göre oldukça yeterli bir mesafe elde ediyoruz.  
 
