@@ -1,0 +1,70 @@
+<html>
+ <head>
+  <title><$BlogPageTitle$></title>
+
+   <script>
+    <MainOrArchivePage>
+    window.location.href="http://mozanunal.com/"
+    </MainOrArchivePage>
+    <Blogger>
+     <ItemPage>
+      var parser = document.createElement('a');
+      parser.href = "<$BlogItemPermalinkURL$>";
+      var newUrl = "http://mozanunal.com";
+      var canonicalUrl = newUrl + parser.pathname.replace(".html","");
+      console.log (newUrl);       
+      console.log("<$BlogItemPermalinkURL$>");
+      console.log(canonicalUrl);
+      //setTimeout(function() {
+      //    window.location.href = canonicalUrl;
+      //}, 2000);
+     </ItemPage>
+    </Blogger>
+   </script>
+
+
+   <MainPage>
+   <link rel="canonical" href="http://mozanunal.com/" />
+   </MainPage>
+
+   <Blogger>
+    <ItemPage>
+    <link rel="canonical" href="http://mozanunal.com/?blogger=<$BlogItemPermalinkURL$>" />
+    </ItemPage>
+   </Blogger>
+
+   <style>
+     .weve-moved {
+       margin: 100px auto 100px auto;
+       width: 50%;
+       text-align: center;
+     } 
+
+     .original-blog {
+       opacity: 0.6;
+     }
+   </style>
+ </head>
+
+ <body>
+  <MainOrArchivePage>
+    <div class="weve-moved">
+     <h1>This blog post has moved to mozanunal.com</h1>
+     <p>You should be redirected shortly, alternatively please click the following link</p>
+     <a href="http://mozanunal.com/"><$BlogTitle$></a>
+    </div> 
+  </MainOrArchivePage>
+  <Blogger>
+   <ItemPage>
+    <div class="weve-moved">
+     <h1>This blog post has moved to mozanunal.com</h1>
+     <p>You should be redirected shortly, alternatively please click the following link</p>
+      <a href="http://mozanunal.com/?blogger=<$BlogItemPermalinkURL$>"><$BlogItemTitle$></a>
+    </div>
+    <div class="original-blog">
+      <$BlogItemBody$>
+    </div>
+   </ItemPage>
+  </Blogger>
+ </body>
+</html>
