@@ -12,24 +12,18 @@
       parser.href = "<$BlogItemPermalinkURL$>";
       var newUrl = "http://mozanunal.com";
       var canonicalUrl = newUrl + parser.pathname.replace(".html","");
-      console.log (newUrl);       
-      console.log("<$BlogItemPermalinkURL$>");
-      console.log(canonicalUrl);
-      //setTimeout(function() {
-      //    window.location.href = canonicalUrl;
-      //}, 2000);
      </ItemPage>
     </Blogger>
    </script>
 
 
    <MainPage>
-   <link rel="canonical" href="http://mozanunal.com/" />
+   <link rel="canonical" id="mainUrl1" />
    </MainPage>
 
    <Blogger>
     <ItemPage>
-    <link rel="canonical" href="http://mozanunal.com/?blogger=<$BlogItemPermalinkURL$>" />
+    <link rel="canonical" href="" id="pageUrl1" />
     </ItemPage>
    </Blogger>
 
@@ -51,7 +45,7 @@
     <div class="weve-moved">
      <h1>This blog post has moved to mozanunal.com</h1>
      <p>You should be redirected shortly, alternatively please click the following link</p>
-     <a href="http://mozanunal.com/"><$BlogTitle$></a>
+     <a id="mainUrl2"><$BlogTitle$></a>
     </div> 
   </MainOrArchivePage>
   <Blogger>
@@ -59,12 +53,22 @@
     <div class="weve-moved">
      <h1>This blog post has moved to mozanunal.com</h1>
      <p>You should be redirected shortly, alternatively please click the following link</p>
-      <a href="http://mozanunal.com/?blogger=<$BlogItemPermalinkURL$>"><$BlogItemTitle$></a>
+      <a href="" id="pageUrl2"><$BlogItemTitle$></a>
     </div>
     <div class="original-blog">
       <$BlogItemBody$>
     </div>
    </ItemPage>
   </Blogger>
+<script>
+    //write on links
+    console.log(canonicalUrl);
+    document.getElementById("pageUrl1").href = canonicalUrl;
+    document.getElementById("pageUrl2").href = canonicalUrl;
+    console.log("done");
+    setTimeout(function() {
+        window.location.href = canonicalUrl;
+    }, 2000);
+</script>
  </body>
 </html>
