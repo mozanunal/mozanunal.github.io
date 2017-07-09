@@ -13,7 +13,7 @@ date: 2014-10-07 02:49:00
 Bu yazımda size 555 entegresini tanıtmak istiyorum. Başlamadan önce şunu da belirtmek isterim 555 entegresi benim en çok sempati duyduğum entegrelerden biridir. Bunun nedeni ise 8 bacaklı, çok basit ve küçük bir entegre olmasına rağmen çok yararlı ve kullanım alanı çok geniş bir entegre olmasıdır. İnternette 555 entegresi ile yapılan bir çok proje  
 <!-- more -->bulabilirsiniz.(örneğin ==> [http://www.instructables.com/id/47-projects-to-do-with-a-555/](http://www.instructables.com/id/47-projects-to-do-with-a-555/) ). Bu video da benim 555 entegresi hakkında tanıtım videom.  
 
-<center>(% youtube OpG5PGl0PE4 %)</center>
+<center>{% youtube OpG5PGl0PE4 %}</center>
 
 Teknik detaylarına gelirsek, 555 entegresi aslında tek işlevi kare dalga üretmek olan bir timer devresidir. 555 entegre devresi pin bağlantıları şu şekildedir;
 
@@ -26,4 +26,4 @@ Teknik detaylarına gelirsek, 555 entegresi aslında tek işlevi kare dalga üre
 7. Discharge: npn transistörün kolektör ayağına bağlanmıştır. Transistör iletimde olunca (beyz gerilimi pozitif olunca) bu ayak toprak hattına bağlanır.
 8. Vcc: +4.5V ile +16V arasında bir gerilim verilir.
 
-555 entegresi Monostable ve Astable olmak üzere iki faklı çalışma ve bağlantı moduna sahiptir. 
+555 entegresi Monostable ve Astable olmak üzere iki faklı çalışma ve bağlantı moduna sahiptir.

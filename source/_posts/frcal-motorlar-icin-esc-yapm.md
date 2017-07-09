@@ -1,12 +1,17 @@
 title: |
-	Fırçalı motorlar için ESC Yapımı
-date: 2015-08-19 18:42:00
-tags: [Arduino Projeleri,Elektronik Devreler ve Teorik Yazılar,ESC,Fırçalı motor,Fırçalı motor Arduino Hız Kontrolü,Hava Araçları]
+  Fırçalı motorlar için ESC Yapımı
+tags:
+  - Arduino Projeleri
+  - Elektronik Devreler ve Teorik Yazılar
+  - ESC
+  - Fırçalı motor
+  - Fırçalı motor Arduino Hız Kontrolü
+  - Hava Araçları
 categories:
   - Arduino Projeleri
 author: Mehmet Ozan Ünal
+date: 2015-08-19 18:42:00
 ---
-
 **Herkese Merhabalar,**  
        Yapacağım bir proje için fırçalı bir motorun Arduino ile hızını kontrol etmem gerekiyordu. Bunun için elimdeki fırçalı motor için elektronik hız kontrolü yani ESC (Electronic Speed Control) yapmaya karar verdim.  
         Öncellikle kendi motorumun ve devrelerimin besleme gerilimi yazayım. Çünkü devre bu özelliklere göre dizayn edilecektir. Siz de kendi malzemelerinize ve voltajlarınıza göre kendi devrenizi dizayn edebilirsiniz. Benim elimdeki motoru besleme voltajım 7.4 volt ve motorun çektiği maximum akım 2 amperdir. Hız kontrolü için göndereceğim PWM sinyalinin genliği de (Arduinonun çalışma voltajı) 5 volttur. Bu şartlar altında devremi bir power mosfet ile tasarlamaya karar verdim. Mosfette var olması gereken özellikler 5 volt anahtarlamaya uygun rds ve Vgs özelliklerine sahip olması, üzerinden 2 amper akım rahatça geçebilmesidir. Bu nedenlerden dolayı ben IRL540N mosfetini seçtim. Kendisi bir logic mosfet bu sayede 5 volt gibi düşük bir Vgs voltajı ile devreyi anahtarlayabiliyor. Ayıca üzerinden 28 amper sıkıntısız geçebiliyor. Bu özellikleriyle projemiz için oldukça uygun. [Datasheetine buradan ulaşabilirsiniz.](http://www.irf.com/product-info/datasheets/data/irl540n.pdf)  
@@ -19,8 +24,9 @@ author: Mehmet Ozan Ünal
 
 <div class="separator" style="clear: both; text-align: center;">[![](http://4.bp.blogspot.com/-zu3qUeo6Glo/VcNaG76kQRI/AAAAAAAAM7c/bNEPahbpGN8/s400/esc1.JPG)](http://4.bp.blogspot.com/-zu3qUeo6Glo/VcNaG76kQRI/AAAAAAAAM7c/bNEPahbpGN8/s1600/esc1.JPG)</div>
 
-           Şekildeki gördüğümüz gibi PWM göndereceğimiz yerden 0 volt uygulandığında motorun üzerinden geçen akım sıfıra yakın iken, 5 volt gönderildiğinde motorumuz çalışıyor.  
-            Motorun arduino pini üzerinden kontrolü bu şekilde, fakat PWM kavramına yabancı iseniz hız kontrolünü nasıl yaptığımı anlamamış olabilirsiniz. PWM (Pulse Width Modulation) ,yani Sinyal Genişlik Modülasyonu, belli bir frekansta ve faklı genişliklerde bir dijital işarettir. Aşağıdaki şekilden inceleyebileceğiniz gibi farklı genişliklerde PWM sinyalleri uygulanarak motorun hız kontrolü sağlanır.  
+Şekildeki gördüğümüz gibi PWM göndereceğimiz yerden 0 volt uygulandığında motorun üzerinden geçen akım sıfıra yakın iken, 5 volt gönderildiğinde motorumuz çalışıyor.  
+
+Motorun arduino pini üzerinden kontrolü bu şekilde, fakat PWM kavramına yabancı iseniz hız kontrolünü nasıl yaptığımı anlamamış olabilirsiniz. PWM (Pulse Width Modulation) ,yani Sinyal Genişlik Modülasyonu, belli bir frekansta ve faklı genişliklerde bir dijital işarettir. Aşağıdaki şekilden inceleyebileceğiniz gibi farklı genişliklerde PWM sinyalleri uygulanarak motorun hız kontrolü sağlanır.  
 
 <div class="separator" style="clear: both; text-align: center;">[![](http://3.bp.blogspot.com/-7YpvFYKYGuM/VcNYHROaJtI/AAAAAAAAM7I/VIVkajDjxTM/s400/PWM_duty_cycle.jpg)](http://3.bp.blogspot.com/-7YpvFYKYGuM/VcNYHROaJtI/AAAAAAAAM7I/VIVkajDjxTM/s1600/PWM_duty_cycle.jpg)</div>
 
