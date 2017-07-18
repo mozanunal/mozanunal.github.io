@@ -27,8 +27,6 @@ Build a tool for beach-goers to monitor for hazards and to alert them of precaut
 
 Satisfy your curiosity about beaches to go! IoB wristband warns you about dangerous amounts of UV exposure with respect to your skin sensitivity, age and how much actual radiation you received.
 
-![POTALTI](https://api-2017.spaceappschallenge.org/team-photos/dZNdrIDahjaSPQqM-t8nxh9KzHs=/4792/width-800/)
-
 We designed a web application, an IOB wristband a gateway and a server. With our web application, many information about the beach can be learned. Required informations are taken from openweather api and are showed to users with open board dashboard. The time of the UV exposure of the person is measured with IOT wristband. The required informations and energy are provided from solar panel. RGB leds warn you with processing data from the cloud. We also designed a gateway which is shaped as a buoy and placed it to the beaches to connect IOB wristband to cloud. More reliable data are obtained with processing all these data in cloud.
 
 [To view the presentation:](https://prezi.com/view/ASvj6nXuaFzoGrtXmQRu/)
