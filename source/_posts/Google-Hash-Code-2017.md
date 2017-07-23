@@ -5,7 +5,7 @@ tags:
 categories:
   - Linux ve Programlama
 author: Mehmet Ozan Ünal
-date: 2017-09-13 02:51:00
+date: 2017-07-13 02:51:00
 ---
 **Herkese Merhabalar**,
 
