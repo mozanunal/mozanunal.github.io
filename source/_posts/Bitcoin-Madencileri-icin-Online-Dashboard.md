@@ -18,7 +18,7 @@ Neyse konuyu biraz fazla dağıttım bu yazının konusu aslında bunlar değil.
 
 ![Dashboard for BTC miners](\images\btc1.png)
 
-Bu proje ESP8266 modülleri kullanarak gerçekleştirildi. Bildiğiniz üzere minik bir wifi modulü. Bitcoin idnizi girerek yazdığım kodu derlerseniz direk olarak bilgilerinize ulaşabilirsiniz. ESP8266 minik bir oled ekranı kontrol ederek aldığı anlık kur datasını, kullanıcının toplam bitcoinini ve dolar karşılığını gösterecek şekilde bir program geliştirildi.
+Bu proje ESP8266 modülleri kullanarak gerçekleştirildi. Bildiğiniz üzere minik bir wifi modulü. Bitcoin idnizi girerek yazdığım kodu derlerseniz direk olarak bilgilerinize ulaşabilirsiniz. ESP8266 minik bir oled ekranı kontrol ederek aldığı anlık kur datasını, kullanıcının toplam bitcoinini ve dolar karşılığını gösterecek şekilde bir program geliştirildi. ESP8266 olarak wemos d1 mini modullerinden kullandım. I2C pinlerini Oled ekrana den gelecek şekilde bir pertinanks oluşturdum uygun pinleri de lehimleyerek shield haline getirmiş oldum.  Yukarıdaki fotoğrafta ESP8266 tamamen shieldın altına gizlenmiş halde bu sayede sistem baya toplanmış oldu tek parça bir görüntü kazandı.
 
 <!-- more -->
 
