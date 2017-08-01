@@ -15,8 +15,9 @@ Bitcoin son dönemlerin popüler konularından birisi. Aslında genel olarak cry
 
 Neyse konuyu biraz fazla dağıttım bu yazının konusu aslında bunlar değil. Konuma dönecek olursam; bitcoin mining işini kolaylaştıran sistem var, adı Nice Hash. Programını kuruyorsunuz ve bilgisayarınızın hesaplama gücünü satarak para kazanıyorsunuz. Arka planda o crypto currency'lerden en karlı olanı "mine" ediyor. Size de ona göre bir para ödüyor tabi bitcoin olarak. Bir arkadaşım da bu mining işine girdi. Projemin asıl amacı ona anlık olarak kazandığı parayı gösterebilecek bir sistem yapmaktı. Proje böyle başladı yani :). Bu projede kapsamında yaptığım; gerçek zamanlı olarak bu programın web apisini kullanarak bir miner'ın kazandığı parayı ve o andaki bitcoin kurunu çekip 1 inchlik oled ekranda gösteren bir sistem. 
 
+![btc1](/images/btc1.jpg)
 
-![Dashboard for BTC miners](\images\btc1.png)
+
 
 Bu proje ESP8266 modülleri kullanarak gerçekleştirildi. Bildiğiniz üzere minik bir wifi modulü. Bitcoin idnizi girerek yazdığım kodu derlerseniz direk olarak bilgilerinize ulaşabilirsiniz. ESP8266 minik bir oled ekranı kontrol ederek aldığı anlık kur datasını, kullanıcının toplam bitcoinini ve dolar karşılığını gösterecek şekilde bir program geliştirildi. ESP8266 olarak wemos d1 mini modullerinden kullandım. I2C pinlerini Oled ekrana den gelecek şekilde bir pertinanks oluşturdum uygun pinleri de lehimleyerek shield haline getirmiş oldum.  Yukarıdaki fotoğrafta ESP8266 tamamen shieldın altına gizlenmiş halde bu sayede sistem baya toplanmış oldu tek parça bir görüntü kazandı.
 
@@ -135,7 +136,7 @@ double getTotalBTC(const char *BitCoinWallet)
 ```
 
 
-![Bitcoin Dashboard](\images\btc2.jpg)
+![Bitcoin Dashboard](/images/btc2.jpg)
 
 #### Verilerin ekranda gösterilmesi
 
