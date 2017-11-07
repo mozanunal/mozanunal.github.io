@@ -91,3 +91,11 @@ deploy:
     ignore_hidden: false
     ignore_pattern:
         public: .
+
+# Admin
+admin:
+    name: hexo
+    password: hey
+    secret: hey hexo
+    expire: 60*1
+    # cors: http://localhost:3000
