@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -52,7 +53,10 @@
     <%- css('libs/source-code-pro/styles') %>
 
     <%- css('css/style') %>
-
     <%- js('libs/jquery/2.0.3/jquery.min') %>
     <%- partial('plugin/scripts', { isHead: true }) %>
+    <% if(true) { %>
+	<script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>
+        <script type="text/javascript">require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us17.list-manage.com","uuid":"7ecf5c9db13693c2c7062ad3f","lid":"85948bb7b9"}) })</script>
+    <% } %>
 </head>

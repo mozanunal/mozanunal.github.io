@@ -1,10 +1,12 @@
-title: |
-	DIY Raspberry Pi Laptop
-date: 2015-09-17 01:20:00
-tags: [Arduino Projeleri,Raspberry Pi 2 Projeleri,Raspberry Pi Laptop]
+---
+title: 'DIY Raspberry Pi Laptop '
+tags:
+  - Arduino Projeleri
+  - Raspberry Pi 2 Projeleri
+  - Raspberry Pi Laptop
 categories:
   - Arduino Projeleri
-author: Mehmet Ozan Ünal
+date: 2015-09-17 01:20:00
 ---
 
 **Herkese Merhabalar,**  
