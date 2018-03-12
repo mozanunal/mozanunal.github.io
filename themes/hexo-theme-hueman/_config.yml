@@ -21,6 +21,7 @@ customize:
         google-plus: https://plus.google.com/116790030893288193193/
         github: https://github.com/mozanunal/
         rss: http://mozanunal.com/atom.xml
+        envelope: http://eepurl.com/dm5eOH
 
 # Widgets
 widgets:
@@ -62,3 +63,4 @@ miscellaneous:
         google_plus:
     links:
         Hexo: http://hexo.io
+        Email Abonesi Olmak İçin Tıklayın: http://eepurl.com/dm5eOH
