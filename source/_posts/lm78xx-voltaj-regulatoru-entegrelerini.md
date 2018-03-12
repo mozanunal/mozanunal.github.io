@@ -5,7 +5,8 @@ tags:
   - LM7805
   - Voltaj Regülatörü
 categories:
-  - Elektronik Projeleri
+  - Elektronik
+  - Analog
 date: 2015-01-11 23:30:00
 ---
 <div class="separator" style="clear: both; text-align: left;">**<span style="font-family: Arial, Helvetica, sans-serif;">Tekrardan Merhabalar,</span>**</div>

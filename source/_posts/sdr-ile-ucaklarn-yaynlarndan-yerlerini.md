@@ -7,6 +7,7 @@ tags:
   - Software Defined Radio
 categories:
   - İşaret İşleme
+  - DSP
 author: Mehmet Ozan Ünal
 date: 2015-01-09 23:35:00
 ---

@@ -6,6 +6,7 @@ tags:
   - sinyal-isleme
 categories:
   - İşaret İşleme
+  - DSP
 ---
 
 **Herkese Merhabalar,**

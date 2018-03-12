@@ -5,7 +5,8 @@ tags:
   - ayarlanabilor güç kaynağı
   - mt3608
 categories:
-  - Elektronik Projeleri
+  - Elektronik
+  - Analog
 author: Mehmet Ozan Ünal
 date: 2016-03-13 01:24:00
 ---

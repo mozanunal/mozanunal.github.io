@@ -3,9 +3,10 @@ title: |
 tags:
   - 2 Eksenli Servo Gimbal
   - Arduino Gimbal
-  - Arduino Projeleri
+  - Elektronik
+  - Arduino
 categories:
-  - Otonom Hava Araçları
+  - Drone
 author: Mehmet Ozan Ünal
 date: 2015-06-06 04:36:00
 ---

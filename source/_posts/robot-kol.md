@@ -1,14 +1,16 @@
 title: |
   Robot Kol
 tags:
-  - Arduino Projeleri
+  - Elektronik
+  - Arduino
   - Arduino
   - arduino servo kontrol
   - Arduino Robotik Kol
   - Arduino Robotik Kontrol
   - DIY Robotic Hand
 categories:
-  - Arduino Projeleri
+  - Elektronik
+  - Arduino
 author: Mehmet Ozan Ünal
 date: 2015-01-16 15:07:00
 ---

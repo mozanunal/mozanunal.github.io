@@ -1,11 +1,11 @@
 title: |
   İTÜNOM Takımı
 tags:
-  - Otonom Hava Araçları
+  - Drone
   - ITUNOM
   - İTÜNOM
 categories:
-  - Otonom Hava Araçları
+  - Drone
 author: Mehmet Ozan Ünal
 date: 2016-01-27 01:01:00
 ---

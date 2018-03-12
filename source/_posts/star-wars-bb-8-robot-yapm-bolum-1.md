@@ -1,13 +1,15 @@
 title: |
   Star Wars BB-8 Robot Yapımı Bölüm 1
 tags:
-  - Arduino Projeleri
+  - Elektronik
+  - Arduino
   - arduino servo kontrol
   - bluetooth kontrol
   - DIY BB-8 Droid
   - Star Wars BB-8
 categories:
-  - Arduino Projeleri
+  - Elektronik
+  - Arduino
 author: Mehmet Ozan Ünal
 date: 2016-01-21 03:26:00
 ---

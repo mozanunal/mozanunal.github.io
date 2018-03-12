@@ -8,6 +8,7 @@ tags:
   - pmod mic
   - Microphone verilog
 categories:
+  - Elektronik
   - FPGA
 date: 2017-07-20 23:14:00
 ---

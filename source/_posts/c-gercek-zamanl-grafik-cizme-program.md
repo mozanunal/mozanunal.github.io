@@ -12,7 +12,7 @@ tags:
   - Serial Port
   - zedgraph
 categories:
-  - Linux ve Programlama
+  - Yazılım
 author: Mehmet Ozan Ünal
 date: 2014-05-27 05:17:00
 ---

@@ -1,11 +1,13 @@
 title: |
   8051 Entegresi İle Assembly Programlamaya Giriş 
 tags:
+  - Elektronik
   - Mikroişlemciler
   - '8051'
   - Arm cortex m3
   - Assembly
 categories:
+  - Elektronik
   - Mikroişlemciler
 author: Mehmet Ozan Ünal
 date: 2015-11-05 05:25:00

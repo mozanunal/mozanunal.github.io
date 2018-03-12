@@ -6,7 +6,8 @@ tags:
   - alkış ile lamba kontolü
   - aydınlatma projeleri
 categories:
-  - Elektronik Projeleri
+  - Elektronik
+  - Analog
 author: Mehmet Ozan Ünal
 date: 2014-10-07 01:28:00
 ---

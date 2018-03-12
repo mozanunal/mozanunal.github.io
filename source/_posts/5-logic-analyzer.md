@@ -1,9 +1,11 @@
 title: |
   5 $ Logic Analyzer
 tags:
+  - Elektronik
   - Mikroişlemciler
   - Saleae Logic Analzyer
 categories:
+  - Elektronik
   - Mikroişlemciler
 author: Mehmet Ozan Ünal
 date: 2015-12-27 04:03:00

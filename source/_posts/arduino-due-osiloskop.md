@@ -2,11 +2,13 @@ title: |
   Arduino Due Osiloskop
 tags:
   - Arduino Due Osiloskop
-  - Arduino Projeleri
+  - Elektronik
+  - Arduino
   - 'C#'
   - 'C# Osiloskop'
 categories:
-  - Arduino Projeleri
+  - Elektronik
+  - Arduino
 author: Mehmet Ozan Ünal
 date: 2015-05-02 01:38:00
 ---

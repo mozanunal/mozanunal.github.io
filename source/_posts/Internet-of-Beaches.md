@@ -3,10 +3,12 @@ author: Mehmet Ozan Unal
 tags:
   - IOT
   - Nasa Space Apps Challenge 2017
-  - IOT Projeleri
+  - Elektronik
+  - IOT
   - IOB
 categories:
-  - IOT Projeleri
+  - Elektronik
+  - IOT
 date: 2017-06-27 20:18:00
 ---
 **Herkese Merhabalar,**

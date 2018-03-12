@@ -6,7 +6,7 @@ tags:
   - python
   - bilimsel python uygulamaları
 categories:
-  - Linux ve Programlama
+  - Yazılım
 author: Mehmet Ozan Ünal
 date: 2016-09-12 02:41:00
 ---

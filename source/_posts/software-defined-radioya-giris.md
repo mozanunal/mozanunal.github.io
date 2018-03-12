@@ -7,6 +7,7 @@ tags:
   - SDR Nedir
 categories:
   - İşaret İşleme
+  - DSP
 author: Mehmet Ozan Ünal
 date: 2015-01-02 22:55:00
 ---

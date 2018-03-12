@@ -6,7 +6,7 @@ tags:
   - modül oluşturma
   - setup.py
 categories:
-  - Linux ve Programlama
+  - Yazılım
 ---
 
 Python paketi oluşturma

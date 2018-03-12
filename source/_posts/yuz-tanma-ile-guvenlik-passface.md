@@ -8,7 +8,8 @@ tags:
   - yüz tanıma
   - Yüz tanıma ile güvenlik
 categories:
-  - Görüntü İşleme ve Makine Öğrenmesi
+  - İşaret İşleme
+  - Görüntü İşleme
 author: Mehmet Ozan Ünal
 date: 2014-10-14 17:39:00
 ---

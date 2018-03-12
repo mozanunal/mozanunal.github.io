@@ -9,6 +9,7 @@ tags:
   - İşaret işleme
 categories:
   - İşaret İşleme
+  - DSP
 author: ''
 date: 2017-04-07 00:13:00
 ---

@@ -1,13 +1,15 @@
 title: |
   LCD Göstergeli Mesafe Ölçer
 tags:
-  - Arduino Projeleri
+  - Elektronik
+  - Arduino
   - Arduino
   - HC-SR04
   - LCD Arduino
   - Mesafe ölçer
 categories:
-  - Arduino Projeleri
+  - Elektronik
+  - Arduino
 date: 2015-01-11 20:57:00
 ---
 **Merhabalar!**

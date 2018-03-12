@@ -4,7 +4,8 @@ tags:
   - Görüntü İşleme
   - SimpleCV
 categories:
-  - Görüntü İşleme ve Makine Öğrenmesi
+  - İşaret İşleme
+  - Görüntü İşleme
 author: Mehmet Ozan Ünal
 date: 2016-05-01 20:23:00
 ---

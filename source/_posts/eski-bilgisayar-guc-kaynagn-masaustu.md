@@ -4,7 +4,8 @@ tags:
   - ATX güç kaynağı
   - DIY güç kaynağı
 categories:
-  - Elektronik Projeleri
+  - Elektronik
+  - Analog
 author: Mehmet Ozan Ünal
 date: 2016-12-27 00:59:00
 ---

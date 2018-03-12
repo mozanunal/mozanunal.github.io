@@ -2,8 +2,10 @@
 title: Veriloga Giriş
 tags:
   - verilog
-  - fpga
+  - Elektronik
+  - FPGA
 categories:
+  - Elektronik
   - FPGA
 ---
 

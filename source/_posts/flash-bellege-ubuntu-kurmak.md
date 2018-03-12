@@ -4,7 +4,7 @@ tags:
   - flash belleğe ubuntu yükleme
   - Linux
 categories:
-  - Linux ve Programlama
+  - Yazılım
 author: Mehmet Ozan Ünal
 date: 2014-12-03 03:28:00
 ---

@@ -1,14 +1,16 @@
 title: |
   ESP8266 ile Kişisel Meteoroloji İstasyonu
 tags:
-  - Arduino Projeleri
+  - Elektronik
+  - Arduino
   - Dht11
   - ESP8266
   - Html
   - MQ135
   - Yağış sensörü
 categories:
-  - IOT Projeleri
+  - Elektronik
+  - IOT
 author: Mehmet Ozan Ünal
 date: 2015-09-30 02:51:00
 ---

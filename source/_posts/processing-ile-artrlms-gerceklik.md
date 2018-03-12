@@ -7,7 +7,8 @@ tags:
   - marker tabanlı vr
   - market tabanlı ar
 categories:
-  - Görüntü İşleme ve Makine Öğrenmesi
+  - İşaret İşleme
+  - Görüntü İşleme
 date: 2015-04-25 03:03:00
 ---
 **Merhaba Arkadaşlar,**  

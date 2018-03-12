@@ -7,6 +7,7 @@ tags:
   - TVSharp
 categories:
   - İşaret İşleme
+  - DSP
 author: Mehmet Ozan Ünal
 date: 2015-01-09 03:14:00
 ---

@@ -1,7 +1,8 @@
 title: |
 	All Terrain Rover Version 2.0
 categories:
-  - Arduino Projeleri
+  - Elektronik
+  - Arduino
 author: Mehmet Ozan Ünal
 date: 2015-08-26 16:48:00
 tags: [360 Servo,All Terrain Rover,Arduino Projeleri]

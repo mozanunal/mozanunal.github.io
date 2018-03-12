@@ -3,7 +3,7 @@ title: |
 tags:
   - Hash Code
 categories:
-  - Linux ve Programlama
+  - Yazılım
 author: Mehmet Ozan Ünal
 date: 2017-07-13 02:51:00
 ---

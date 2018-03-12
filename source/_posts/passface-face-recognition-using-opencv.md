@@ -8,7 +8,8 @@ tags:
   - Face recognition
   - Fisgerfaces
 categories:
-  - Görüntü İşleme ve Makine Öğrenmesi
+  - İşaret İşleme
+  - Görüntü İşleme
 author: Mehmet Ozan Ünal
 date: 2016-06-04 19:50:00
 ---

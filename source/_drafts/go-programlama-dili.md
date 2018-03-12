@@ -5,5 +5,5 @@ tags:
   - Golang
   - Server side programming
 categories:
-  - Linux ve Programlama
+  - Yazılım
 ---

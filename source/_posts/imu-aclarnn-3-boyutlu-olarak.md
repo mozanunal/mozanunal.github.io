@@ -1,7 +1,8 @@
 title: |
   IMU Açılarının 3 Boyutlu Olarak Görsellenmesi
 tags:
-  - Arduino Projeleri
+  - Elektronik
+  - Arduino
   - Hava Araçları
   - Arduino
   - IMU Açılarının 3 Boyutlu Olarak Görsellenmesi
@@ -9,7 +10,7 @@ tags:
   - Inertial measurement unit
   - mpu6050
 categories:
-  - Otonom Hava Araçları
+  - Drone
 author: Mehmet Ozan Ünal
 date: 2014-11-07 14:15:00
 ---

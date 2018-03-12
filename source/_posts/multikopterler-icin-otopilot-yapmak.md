@@ -4,11 +4,11 @@ tags:
   - Hava Araçları
   - Multikopter uçuş prensibi
   - Multikopterler için PID
-  - Otonom Hava Araçları
+  - Drone
   - Otopilot
   - SimplePilot
 categories:
-  - Otonom Hava Araçları
+  - Drone
 author: Mehmet Ozan Ünal
 date: 2017-02-07 23:55:00
 ---

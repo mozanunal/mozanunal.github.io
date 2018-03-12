@@ -6,7 +6,8 @@ tags:
   - Elektronik Devreler
   - Elektronik Devreler ve Teorik Yazılar
 categories:
-  - Elektronik Projeleri
+  - Elektronik
+  - Analog
 date: 2014-10-07 02:49:00
 ---
 **Herkese Merhabalar!**  

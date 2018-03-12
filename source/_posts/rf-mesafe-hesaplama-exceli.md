@@ -4,6 +4,7 @@ date: 2016-01-02 04:34:00
 tags: [RF mesafe hesaplama,Software Defined Radio]
 categories:
   - İşaret İşleme
+  - DSP
 author: Mehmet Ozan Ünal
 ---
 

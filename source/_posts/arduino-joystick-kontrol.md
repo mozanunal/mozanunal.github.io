@@ -1,13 +1,15 @@
 title: |
   Arduino Joystick Kontrol
 tags:
-  - Arduino Projeleri
+  - Elektronik
+  - Arduino
   - Arduino
   - Arduino Joystick Kontrol
   - Full Source code avaible
   - Joystick
 categories:
-  - Arduino Projeleri
+  - Elektronik
+  - Arduino
 author: Mehmet Ozan Ünal
 date: 2014-10-29 00:21:00
 ---

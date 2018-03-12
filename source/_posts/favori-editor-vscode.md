@@ -7,7 +7,7 @@ tags:
   - kod editör
   - text editör
 categories:
-  - Linux ve Programlama
+  - Yazılım
 date: 2017-12-11 05:56:37
 ---
 

@@ -5,6 +5,7 @@ tags:
   - fm alıcı
 categories:
   - İşaret İşleme
+  - DSP
 ---
 
 **Herkese Merhabalar,**

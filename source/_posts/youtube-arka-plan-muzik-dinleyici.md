@@ -5,7 +5,7 @@ tags:
   - youtube arkaplan müzik dinleyici.
   - Youtube background listener
 categories:
-  - Linux ve Programlama
+  - Yazılım
 date: 2015-06-29 03:09:00
 ---
 **Merhaba Arkadaşlar,**  

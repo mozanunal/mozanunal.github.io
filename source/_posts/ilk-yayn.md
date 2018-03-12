@@ -2,6 +2,7 @@ title: |
   İlk Yayın
 tags:
   - Ana Sayfa
+  - Elektronik
   - Mikroişlemciler
   - Android Programlama ve Oyun
   - 'C#'
@@ -10,7 +11,8 @@ tags:
   - Linux
   - Software Defined Radio
 categories:
-  - Arduino Projeleri
+  - Elektronik
+  - Arduino
 author: Mehmet Ozan Ünal
 date: 2014-05-25 03:44:00
 ---

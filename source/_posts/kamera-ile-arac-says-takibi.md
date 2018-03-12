@@ -8,7 +8,8 @@ tags:
   - Kamera ile Araç Sayısı Takibi
   - opencv
 categories:
-  - Görüntü İşleme ve Makine Öğrenmesi
+  - İşaret İşleme
+  - Görüntü İşleme
 author: Mehmet Ozan Ünal
 date: 2014-11-21 03:41:00
 ---

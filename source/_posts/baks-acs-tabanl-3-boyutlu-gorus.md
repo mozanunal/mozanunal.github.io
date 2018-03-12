@@ -7,7 +7,8 @@ tags:
   - Opencv 3 boyutlu görme
   - Processing
 categories:
-  - Görüntü İşleme ve Makine Öğrenmesi
+  - İşaret İşleme
+  - Görüntü İşleme
 author: Mehmet Ozan Ünal
 date: 2014-12-09 18:13:00
 ---

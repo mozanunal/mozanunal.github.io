@@ -5,7 +5,8 @@ tags:
   - Düşük Voltaj Koruma Devresi
   - Sabit Akım Kaynağı
 categories:
-  - Elektronik Projeleri
+  - Elektronik
+  - Analog
 author: Mehmet Ozan Ünal
 date: 2015-08-05 15:08:00
 ---

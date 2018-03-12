@@ -7,7 +7,8 @@ tags:
   - Obje Takibi
   - Object Tracking
 categories:
-  - Görüntü İşleme ve Makine Öğrenmesi
+  - İşaret İşleme
+  - Görüntü İşleme
 date: 2014-09-29 15:54:00
 ---
 **Herkese Merhabalar!**

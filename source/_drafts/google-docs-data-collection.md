@@ -2,7 +2,8 @@
 title: 'En Basit IOT Bulut Sistemi: Google Forms'
 tags: []
 categories:
-  - IOT Projeleri
+  - Elektronik
+  - IOT
 ---
 
 ![image](/images/1517782817903.png)
