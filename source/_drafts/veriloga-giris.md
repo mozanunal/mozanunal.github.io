@@ -1,17 +1,26 @@
 ---
 title: Veriloga Giriş
 tags:
-  - verilog
   - Elektronik
+  - verilog
   - FPGA
 categories:
   - Elektronik
   - FPGA
 ---
 
+****
+
+### Temel Kullanımlar
+İlk olarak basit mantık fonksiyonlarının verilog modüllerinin oluşturulmasıyla başlamak istiyorum. Bu fonksiyonları oluşturmak için bir kaç farklı seçeneğimiz var. Ben kısaca hepsinin üzerinden geçmek istiyorum. Bu yöntemlerin hepsine aşina olmak şu açıdan önemlidir: Her projede farklı zorluklar karşımıza çıkabilir. Bu zorluklardan en çok ortaya çıkanlardan biri kaynak yetersizliğidir. Kaynak yetersizliği farklı açılardan ortaya çıkabilir.
+- Zamanlamanın yetersiz olması
+- Fpgadeki mantık kapılarının yeterli olmaması
+- Performansın yeterli olmaması
+Bu 3 farklı dar boğaza göre farklı imlemantasyon yöntemini tercih etmeniz gerekebilir.
 
 
-basic or
+#### Aritmetik Operatör Kullanarak
+
 ```
 module OR(
     input I1,
@@ -24,7 +33,24 @@ module OR(
 endmodule
 ```
 
+#### LUT Kullanarak
+```
+module EXNOR(
+    input I1,
+    input I2,
+    output O
+    );
+LUT2 #(
+	.INIT(4'b1001)
+	) LUT2_inst(
+	.O(O), .I0(I1), .I1(I2)
+	);
 
+endmodule
+
+```
+
+#### Always Kullanarak
 
 ```
 module NAND(
@@ -70,32 +96,45 @@ endmodule
 
 ```
 
-
+#### Case Kullanarak
+Decoder
 ```
-
-
-```
-
-```
-module EXNOR(
-    input I1,
-    input I2,
-    output O
+module DECODER(
+	 input[3:0] IN,
+	 output reg [15:0] OUT
     );
-LUT2 #(
-	.INIT(4'b1001)
-	) LUT2_inst(
-	.O(O), .I0(I1), .I1(I2)
-	);
+	
+always @(*)
+begin	 
+	case(IN) 
+	4'b0000: OUT<=16'b0000000000000000;
+	4'b0001: OUT<=16'b0000000000000010;
+	4'b0010: OUT<=16'b0000000000000100;
+	4'b0011: OUT<=16'b0000000000001000;
+	4'b0100: OUT<=16'b0000000000010000;
+	4'b0101: OUT<=16'b0000000000100000;
+	4'b0110: OUT<=16'b0000000001000000;
+	4'b0111: OUT<=16'b0000000010000000;
+	4'b1000: OUT<=16'b0000000100000000;
+	4'b1001: OUT<=16'b0000001000000000;
+	4'b1010: OUT<=16'b0000010000000000;
+	4'b1011: OUT<=16'b0000100000000000;
+	4'b1100: OUT<=16'b0001000000000000;
+	4'b1101: OUT<=16'b0010000000000000;
+	4'b1110: OUT<=16'b0100000000000000;
+	4'b1111: OUT<=16'b1000000000000000;
+	endcase
+end
 
 endmodule
 
+
 ```
+### Modul Hiyerarşisi
 
 
 Diger modulleri alt modul olarak çağırabilirsiniz.
 ```
-
 module topmodule(
 	input [7:0]sw,
 	input [3:0]btn,
@@ -105,10 +144,7 @@ module topmodule(
 	output [3:0]an
     );
 
-//ENCODER encoder1 ( .IN (sw[3:0]), .OUT({dp,seg[6:0], led[7:0]}) );
-//ENCODER encoder1 ( .IN (sw[3:0]), .OUT(led[1:0]),.E(led[7]) );
-//MUX mux1 (.D(sw[3:0]),.S(btn[1:0]),.O(led[0]));
-DEMUX demux1 (.D(sw[0]),.S(btn[1:0]),.O(led[3:0]));
+DEMUX demux1 ( .D(sw[0]), .S(btn[1:0]), .O(led[3:0]) );
 
 assign an = 4'b1110;
 
@@ -150,40 +186,8 @@ endmodule
 ```
 
 
+### t
 
-Decoder
-```
-module DECODER(
-	 input[3:0] IN,
-	 output reg [15:0] OUT
-    );
-	
-always @(*)
-begin	 
-	case(IN) 
-	4'b0000: OUT<=16'b0000000000000000;
-	4'b0001: OUT<=16'b0000000000000010;
-	4'b0010: OUT<=16'b0000000000000100;
-	4'b0011: OUT<=16'b0000000000001000;
-	4'b0100: OUT<=16'b0000000000010000;
-	4'b0101: OUT<=16'b0000000000100000;
-	4'b0110: OUT<=16'b0000000001000000;
-	4'b0111: OUT<=16'b0000000010000000;
-	4'b1000: OUT<=16'b0000000100000000;
-	4'b1001: OUT<=16'b0000001000000000;
-	4'b1010: OUT<=16'b0000010000000000;
-	4'b1011: OUT<=16'b0000100000000000;
-	4'b1100: OUT<=16'b0001000000000000;
-	4'b1101: OUT<=16'b0010000000000000;
-	4'b1110: OUT<=16'b0100000000000000;
-	4'b1111: OUT<=16'b1000000000000000;
-	endcase
-end
-
-endmodule
-
-
-```
 
 Clock kullanılan register
 ```
@@ -256,15 +260,4 @@ endmodule
 
 ```
 
-asd
-```
-
-
-```
-
-asd
-```
-
-
-```
 

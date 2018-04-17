@@ -1,13 +1,13 @@
-title: |
-  Python için komple bir çözüm: Anaconda
+---
+title: 'Python için komple bir çözüm: Anaconda '
 tags:
+  - python
   - Anaconda
   - Pyhton Kütüphaneleri
-  - python
   - bilimsel python uygulamaları
+  - jupyter notebook
 categories:
   - Yazılım
-author: Mehmet Ozan Ünal
 date: 2016-09-12 02:41:00
 ---
 
@@ -20,3 +20,16 @@ Makine öğrenmesi, verilerin görsellenmesi, matematik kütüphaneleri, web fra
 [700 paket için sıralı tam listeye buradan ulaşabilirsiniz](https://docs.continuum.io/anaconda/pkg-docs).  
 
 <div class="separator" style="clear: both; text-align: center;">[![](https://1.bp.blogspot.com/-_xB04JWUxhY/V9XppX6FS0I/AAAAAAAAdOw/6PyYHUPb7-M8u8jlxiLDb30Ihy2psMzRACLcB/s400/Anaconda.png)](https://1.bp.blogspot.com/-_xB04JWUxhY/V9XppX6FS0I/AAAAAAAAdOw/6PyYHUPb7-M8u8jlxiLDb30Ihy2psMzRACLcB/s1600/Anaconda.png)</div>
+
+Aşağıdaki 6 paket çok işinize yarayacaktır. Scipy sitesinden alıntı yaptım. Hepsi çok kullanılan kütüphaneler. Lineer cebir, veri inceleme, sinya işleme, basit regresyonlar falan çok geniş hepsinin içerikleri. Sympy çok kullanmadım ama sembolik matematik işleri için size belki gerekli olur diye onu da ekledim.
+- NumPy, SciPy, Matplotlib, IPython, Sympy, Pandas
+
+Geliştirme ortamı olarak Jupyter notebook(IPython jupyterin eski adı)öneririm sanki not alır gibi kod yazıyorsunuz. Kaldığınız yerden devam ettırme programı adım adım çalıştırma çıktılarını dırek pdf yapabilme gibi baya güzel olayları var. Nasıl bir şey diye görmek isterseniz.
+http://nbviewer.jupyter.org/github/iminuit/iminuit/blob/master/tutorial/tutorial.ipynb
+Burada da daha fazla örnek var
+https://github.com/jupyter/jupyter/wiki/a-gallery-of-interesting-jupyter-notebooks#signal-and-sound-processing
+Şu iki video da jupyter ve anacondanın kullanımı için inceleyebilirsiniz.
+https://www.youtube.com/watch?v=YJC6ldI3hWk
+https://www.youtube.com/watch?v=HW29067qVWk
+Yazılı bir şey tercih ederseniz:
+https://medium.com/codingthesmartway-com-blog/getting-started-with-jupyter-notebook-for-python-4e7082bd5d46
