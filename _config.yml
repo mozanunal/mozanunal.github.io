@@ -82,10 +82,10 @@ sitemap:
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   - type: git
-    repo: https://github.com/mozanunal/mozanunal.github.io
+    repo: https://mozanuna@github.com/mozanunal/mozanunal.github.io
     branch: master
   - type: git
-    repo: https://github.com/mozanunal/mozanunal.github.io
+    repo: https:/mozanunal@/github.com/mozanunal/mozanunal.github.io
     branch: src
     extend_dirs: /
     ignore_hidden: false
