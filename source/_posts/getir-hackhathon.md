@@ -16,7 +16,7 @@ date: 2018-04-16 18:10:04
 
 # Team Paketci!
 
-![image](/images/1523149456799.png)
+![image](/images/1523149456799.jpg)
 
 [Check our app from here](https://hackhathon-getir-2018.herokuapp.com/) which is deployed using heroku.
 

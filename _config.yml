@@ -65,6 +65,7 @@ pagination_dir: page
 plugins:
   hexo-renderer-mathjax
 ## Themes: https://hexo.io/themes/
+#theme: clean-blog
 theme: hexo-theme-hueman
 
 # RSS feed
