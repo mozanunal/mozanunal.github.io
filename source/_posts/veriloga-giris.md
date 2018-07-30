@@ -10,7 +10,7 @@ categories:
 date: 2018-06-02 11:07:45
 ---
 
-**Herkes Merhabalar**
+**Herkes Merhabalar,**
 Bugün bir "hardware  description language" olan verilog diline giriş yapmak istiyorum. Verilog sayısal dizaynda( ASIC ve FPGA ) kullanılan bir tanımlama dilidir. Verilog dilini Fpga programlamak için bir çok projede kullandım fakat ASIC dizayn konusunda bir tecrübem yok. Fpga programlarken öğrendiğim şeyleri farklı yazılarda paylaşmıştım. Bu yazı da o yazılardan biri diyebiliriz. Verilog ile alakalı daha ileri düzey şeylerden bahsedeceğim yazılar da gelecektir diye düşünüyorum. 
 
 ![ZYBO Fpga Geliştirme Kartı](/images/1527937147117.png)
