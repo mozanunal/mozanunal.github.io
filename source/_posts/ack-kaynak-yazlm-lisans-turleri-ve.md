@@ -35,7 +35,7 @@ date: 2016-09-04 20:16:00
 
 	*   Yazılımın kullanılmasından dolayı ortaya çıkabilecek sorunlardan yazar sorumlu tutulamaz.
 
-<div>[Lisans metninin tamamına ve daha ayrıntılı bilgiye ulaşmak için tıklayınız.](http://choosealicense.com/licenses/agpl-3.0/)</div>
+<div>[Lisans metninin tamamına ve daha ayrıntılı bilgiye ulaşmak için tıklayınız.](https://choosealicense.com/licenses/agpl-3.0/)</div>
 
 **GNU GPLv3**  
 * İzin Verilenler
@@ -57,7 +57,7 @@ date: 2016-09-04 20:16:00
 
 	*   Yazılımın kullanılmasından dolayı ortaya çıkabilecek sorunlardan yazar sorumlu tutulamaz.
 
-<div>[Lisans metninin tamamına ve daha ayrıntılı bilgiye ulaşmak için tıklayınız.](http://choosealicense.com/licenses/gpl-3.0/)</div>
+<div>[Lisans metninin tamamına ve daha ayrıntılı bilgiye ulaşmak için tıklayınız.](https://choosealicense.com/licenses/gpl-3.0/)</div>
 
 **GNU LGPLv3**  
 
@@ -80,7 +80,7 @@ date: 2016-09-04 20:16:00
 
 	*   Yazılımın kullanılmasından dolayı ortaya çıkabilecek sorunlardan yazar sorumlu tutulamaz.
 
-<div>[Lisans metninin tamamına ve daha ayrıntılı bilgiye ulaşmak için tıklayınız.](http://choosealicense.com/licenses/lgpl-3.0/)  
+<div>[Lisans metninin tamamına ve daha ayrıntılı bilgiye ulaşmak için tıklayınız.](https://choosealicense.com/licenses/lgpl-3.0/)  
 
 </div>
 
@@ -102,7 +102,7 @@ date: 2016-09-04 20:16:00
 
 	*   Yazılımın kullanılmasından dolayı ortaya çıkabilecek sorunlardan yazar sorumlu tutulamaz.
 
-<div>[Lisans metninin tamamına ve daha ayrıntılı bilgiye ulaşmak için tıklayınız.](http://choosealicense.com/licenses/mit/)</div>
+<div>[Lisans metninin tamamına ve daha ayrıntılı bilgiye ulaşmak için tıklayınız.](https://choosealicense.com/licenses/mit/)</div>
 
 **Apache License 2.0**  
 
@@ -125,7 +125,7 @@ date: 2016-09-04 20:16:00
 
 	*   Marka Hakları (<span style="white-space: pre-wrap;"><span style="font-family: inherit;">_This license explicitly states that it does NOT grant you trademark rights, even though licenses without such a statement probably do not grant you any implicit trademark rights._</span><span style="font-family: monospace;">)</span></span>
 
-<div>[Lisans metninin tamamına ve daha ayrıntılı bilgiye ulaşmak için tıklayınız.](http://choosealicense.com/licenses/apache-2.0/)</div>
+<div>[Lisans metninin tamamına ve daha ayrıntılı bilgiye ulaşmak için tıklayınız.](https://choosealicense.com/licenses/apache-2.0/)</div>
 
 **Mozilla Public License 2.0**  
 
@@ -149,11 +149,11 @@ date: 2016-09-04 20:16:00
 
 	*   Marka Hakları (<span style="white-space: pre-wrap;"><span style="font-family: inherit;">_This license explicitly states that it does NOT grant you trademark rights, even though licenses without such a statement probably do not grant you any implicit trademark rights._</span><span style="font-family: monospace;">)</span></span>
 
-<div>[Lisans metninin tamamına ve daha ayrıntılı bilgiye ulaşmak için tıklayınız.](http://choosealicense.com/licenses/mpl-2.0/)</div>
+<div>[Lisans metninin tamamına ve daha ayrıntılı bilgiye ulaşmak için tıklayınız.](https://choosealicense.com/licenses/mpl-2.0/)</div>
 
 <div>  
 
 <div class="separator" style="clear: both; text-align: center;">[![](https://3.bp.blogspot.com/-c3WWMvQEMaM/V8xLOsb4rKI/AAAAAAAAdGE/c-0iLYZbtC0YSMYsf5ORFfSysM3-L7uRACLcB/s640/Floss-license-slide-image.png)](https://3.bp.blogspot.com/-c3WWMvQEMaM/V8xLOsb4rKI/AAAAAAAAdGE/c-0iLYZbtC0YSMYsf5ORFfSysM3-L7uRACLcB/s1600/Floss-license-slide-image.png)</div>
 
 Kaynak
-<div>[http://choosealicense.com/licenses/](http://choosealicense.com/licenses/)</div>
+<div>[https://choosealicense.com/licenses/](https://choosealicense.com/licenses/)</div>

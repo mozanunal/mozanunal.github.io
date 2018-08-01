@@ -13,7 +13,7 @@ date: 2018-03-19 19:04:39
 **Herkese Merhabalar,**
 Gnu Radio son zamanlarda keşfetmekten en çok keyif aldığım program olabilir. İlk defa duyanlar için özetlemem gerekirse içerisinde sinyal işleme ve sayısal haberleşme araçları toplanmış görsel programlama editörü. Sinyal dosyadan veya daha önce bahsettiğim SDR isimli cihazlardan alınabiliyor. Alınan sinyaller sayısız çeşitlilikte araçlar ile işlenebiliyor. Coding, modulasyon, demodulasyon gibi haberleşme işlemlerini sürükle bıraklarla kolayca uygulamak mümkün.
 
-![gnu-radio-logo](http://aaronscher.com/GNU_Radio_Companion_Collection/GNU_Radio_Companion_Collection_docs/audio_modem_schematic.png)
+![gnu-radio-logo](https://aaronscher.com/GNU_Radio_Companion_Collection/GNU_Radio_Companion_Collection_docs/audio_modem_schematic.png)
 
 Programı kurduktan sonra bizi ilk olarak aşağıdaki gibi bir ekran karşılıyor. Sağ tarafta program içerisindeki araçları görebilirsiniz. Hepsi aslında belli işlevi olan bir kutu. Sürükleyerek yapmak istediğimiz operasyonu gerçekliyoruz.
 

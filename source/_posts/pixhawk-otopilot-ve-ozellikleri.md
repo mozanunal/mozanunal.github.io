@@ -66,80 +66,80 @@ Yazımın devamında Pixhawk'ın özgür dünyasını kullanarak yapılan uygula
 
 **Pixhawk için yararlı linkler**  
 [  
-](https://www.blogger.com/goog_469727306)[http://dev.px4.io/](http://dev.px4.io/)  
-[http://ardupilot.org/copter/](http://ardupilot.org/copter/)  
-[http://ardupilot.org/copter/docs/common-table-of-contents.html](http://ardupilot.org/copter/docs/common-table-of-contents.html)  
+](https://www.blogger.com/goog_469727306)[https://dev.px4.io/](https://dev.px4.io/)  
+[https://ardupilot.org/copter/](https://ardupilot.org/copter/)  
+[https://ardupilot.org/copter/docs/common-table-of-contents.html](https://ardupilot.org/copter/docs/common-table-of-contents.html)  
 Çoğu linkin alındığı anasayfa  
 
 Donanımsal Kurulum linkleri  
-[http://ardupilot.org/copter/docs/configuring-hardware.html](http://ardupilot.org/copter/docs/configuring-hardware.html)  
+[https://ardupilot.org/copter/docs/configuring-hardware.html](https://ardupilot.org/copter/docs/configuring-hardware.html)  
 motor kurulumu, yerleşim dönme yönleri vb  
 [  
-](https://www.blogger.com/goog_469727340)[http://ardupilot.org/copter/docs/common-minim-osd-quick-installation-guide.html](http://ardupilot.org/copter/docs/common-minim-osd-quick-installation-guide.html)  
+](https://www.blogger.com/goog_469727340)[https://ardupilot.org/copter/docs/common-minim-osd-quick-installation-guide.html](https://ardupilot.org/copter/docs/common-minim-osd-quick-installation-guide.html)  
 [https://code.google.com/p/arducam-osd/wiki/minimosd](https://code.google.com/p/arducam-osd/wiki/minimosd)  
 Osd kurulum linkleri  
 
-[http://copter.ardupilot.com/wiki/common-telemetry-landingpage/](http://copter.ardupilot.com/wiki/common-telemetry-landingpage/)  
+[https://copter.ardupilot.com/wiki/common-telemetry-landingpage/](https://copter.ardupilot.com/wiki/common-telemetry-landingpage/)  
 Telemetri modül kurulum  
 
-[http://copter.ardupilot.com/wiki/common-px4flow-overview/](http://copter.ardupilot.com/wiki/common-px4flow-overview/)  
+[https://copter.ardupilot.com/wiki/common-px4flow-overview/](https://copter.ardupilot.com/wiki/common-px4flow-overview/)  
 Optical flow sensör kurulum  
 
-[http://copter.ardupilot.com/wiki/parachute/](http://copter.ardupilot.com/wiki/parachute/)  
+[https://copter.ardupilot.com/wiki/parachute/](https://copter.ardupilot.com/wiki/parachute/)  
 Oto paraşüt özelliği  
 
-[http://copter.ardupilot.com/wiki/common-servo/](http://copter.ardupilot.com/wiki/common-servo/)  
+[https://copter.ardupilot.com/wiki/common-servo/](https://copter.ardupilot.com/wiki/common-servo/)  
 Uzaktan servo kontrolü  
 
-[http://copter.ardupilot.com/wiki/common-electro-permanent-magnet-gripper/](http://copter.ardupilot.com/wiki/common-electro-permanent-magnet-gripper/)  
+[https://copter.ardupilot.com/wiki/common-electro-permanent-magnet-gripper/](https://copter.ardupilot.com/wiki/common-electro-permanent-magnet-gripper/)  
 Manyetik bırakma mekanizması  
 
-[http://copter.ardupilot.com/wiki/common-cameras-and-gimbals/](http://copter.ardupilot.com/wiki/common-cameras-and-gimbals/)  
+[https://copter.ardupilot.com/wiki/common-cameras-and-gimbals/](https://copter.ardupilot.com/wiki/common-cameras-and-gimbals/)  
 Otopilot ile gimbal kontrolü  
 
-[http://copter.ardupilot.com/wiki/common-3d-mapping/](http://copter.ardupilot.com/wiki/common-3d-mapping/)  
+[https://copter.ardupilot.com/wiki/common-3d-mapping/](https://copter.ardupilot.com/wiki/common-3d-mapping/)  
 3d maping  
 
-<span style="color: #0000ee;"><u>[http://ardupilot.org/copter/docs/common-antenna-tracking.html](http://ardupilot.org/copter/docs/common-antenna-tracking.html)</u></span>  
+<span style="color: #0000ee;"><u>[https://ardupilot.org/copter/docs/common-antenna-tracking.html](https://ardupilot.org/copter/docs/common-antenna-tracking.html)</u></span>  
 Antenna Tracking özelliğini kullanma  
 
-[http://ardupilot.org/copter/docs/common-powermodule-landingpage.html](http://ardupilot.org/copter/docs/common-powermodule-landingpage.html)  
+[https://ardupilot.org/copter/docs/common-powermodule-landingpage.html](https://ardupilot.org/copter/docs/common-powermodule-landingpage.html)  
 akım sensörü  
 
 Otopilotun Kodunu değiştirme  
-<span style="color: #0000ee;"><u>[http://dev.px4.io/starting-building.html](http://dev.px4.io/starting-building.html)</u></span>  
+<span style="color: #0000ee;"><u>[https://dev.px4.io/starting-building.html](https://dev.px4.io/starting-building.html)</u></span>  
 [  
-](https://www.blogger.com/goog_543916667)[http://planner.ardupilot.com/wiki/common-geotagging-images-with-mission-planner/](http://planner.ardupilot.com/wiki/common-geotagging-images-with-mission-planner/)  
+](https://www.blogger.com/goog_543916667)[https://planner.ardupilot.com/wiki/common-geotagging-images-with-mission-planner/](https://planner.ardupilot.com/wiki/common-geotagging-images-with-mission-planner/)  
 "Geotagged" resimler mission plannerla.  
 
 **Kurulum ve Ayarlar linkleri**  
 [  
-](https://www.blogger.com/goog_543916669)[http://copter.ardupilot.com/wiki/flying-arducopter/](http://copter.ardupilot.com/wiki/flying-arducopter/)  
+](https://www.blogger.com/goog_543916669)[https://copter.ardupilot.com/wiki/flying-arducopter/](https://copter.ardupilot.com/wiki/flying-arducopter/)  
 ilk uçuş hakkında kapsamlı bilgi her başlığı incelemek gerekli  
 az çok gerekli bütün ayarların nasıl yapılacağı anlatılmış  
 
 [  
-](https://www.blogger.com/goog_543916675)[http://copter.ardupilot.com/wiki/arducopter-parameters/](http://copter.ardupilot.com/wiki/arducopter-parameters/)  
+](https://www.blogger.com/goog_543916675)[https://copter.ardupilot.com/wiki/arducopter-parameters/](https://copter.ardupilot.com/wiki/arducopter-parameters/)  
 ayarlanabilecek tüm parametreler ve ne işe yaradıkları  
 [  
-](https://www.blogger.com/goog_543916679)[http://copter.ardupilot.com/wiki/failsafe-battery/](http://copter.ardupilot.com/wiki/failsafe-battery/)  
+](https://www.blogger.com/goog_543916679)[https://copter.ardupilot.com/wiki/failsafe-battery/](https://copter.ardupilot.com/wiki/failsafe-battery/)  
 battery failsafe  
 
-[http://copter.ardupilot.com/wiki/initial-setup/](http://copter.ardupilot.com/wiki/initial-setup/)  
+[https://copter.ardupilot.com/wiki/initial-setup/](https://copter.ardupilot.com/wiki/initial-setup/)  
 İlk uçuş kalibrasyonu  
 [  
-](https://www.blogger.com/goog_543916683)[http://planner.ardupilot.com/wiki/common-loading-firmware-onto-pixhawk/](http://planner.ardupilot.com/wiki/common-loading-firmware-onto-pixhawk/)  
+](https://www.blogger.com/goog_543916683)[https://planner.ardupilot.com/wiki/common-loading-firmware-onto-pixhawk/](https://planner.ardupilot.com/wiki/common-loading-firmware-onto-pixhawk/)  
 Pixhawk üzerine kodu yükleme  
 
-[http://ardupilot.org/copter/docs/common-compass-setup-advanced.html](http://ardupilot.org/copter/docs/common-compass-setup-advanced.html)  
+[https://ardupilot.org/copter/docs/common-compass-setup-advanced.html](https://ardupilot.org/copter/docs/common-compass-setup-advanced.html)  
 Magnometer calibration( Çok önemli!!!)  
 
-[http://planner.ardupilot.com/wiki/common-mission-planner-telemetry-logs/](http://planner.ardupilot.com/wiki/common-mission-planner-telemetry-logs/)  
+[https://planner.ardupilot.com/wiki/common-mission-planner-telemetry-logs/](https://planner.ardupilot.com/wiki/common-mission-planner-telemetry-logs/)  
 Waypoint yükleme  
 
 [  
-](https://www.blogger.com/goog_543916695)[http://www.qgroundcontrol.org/mavlink/start](http://www.qgroundcontrol.org/mavlink/start)  
+](https://www.blogger.com/goog_543916695)[https://www.qgroundcontrol.org/mavlink/start](https://www.qgroundcontrol.org/mavlink/start)  
 Mavlink communication protocol  
 
-[http://dev.ardupilot.com/wiki/code-overview-adding-a-new-mavlink-message/](http://dev.ardupilot.com/wiki/code-overview-adding-a-new-mavlink-message/)  
+[https://dev.ardupilot.com/wiki/code-overview-adding-a-new-mavlink-message/](https://dev.ardupilot.com/wiki/code-overview-adding-a-new-mavlink-message/)  
 Mavlink yeni mesaj oluşturma  

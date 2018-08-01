@@ -24,13 +24,13 @@ Bu yazımda her yerde temin edilebilecek ve maliyetsiz malzemelerle nasıl mini 
 6.  Kamera için yapılan kap vida yardımıyla 2\. servonun koluna sabitlenir.
 7.  Ve son neredeyse hiç maliyetli 2 eksen gimbal yapmış olduk. Biraz titreşim problemi olacaktır diye tahmin ediyorum. Daha az esnek malzemeler kullanılarak bu sorun aşılabilir. 
 
-<div class="separator" style="clear: both; text-align: center;">[![](http://3.bp.blogspot.com/-7reOfYet5uw/VXIBX-SRikI/AAAAAAAALK4/q6v1h2KQXWw/s320/IMG_20150605_163841.jpg)](http://3.bp.blogspot.com/-7reOfYet5uw/VXIBX-SRikI/AAAAAAAALK4/q6v1h2KQXWw/s1600/IMG_20150605_163841.jpg)</div>
+<div class="separator" style="clear: both; text-align: center;">[![](https://3.bp.blogspot.com/-7reOfYet5uw/VXIBX-SRikI/AAAAAAAALK4/q6v1h2KQXWw/s320/IMG_20150605_163841.jpg)](https://3.bp.blogspot.com/-7reOfYet5uw/VXIBX-SRikI/AAAAAAAALK4/q6v1h2KQXWw/s1600/IMG_20150605_163841.jpg)</div>
 
-<div class="separator" style="clear: both; text-align: center;">[![](http://1.bp.blogspot.com/-LrD4-jgunyk/VXIBX6uM7GI/AAAAAAAALK4/CvCm2Tbsu5E/s320/IMG_20150605_184307.jpg)](http://1.bp.blogspot.com/-LrD4-jgunyk/VXIBX6uM7GI/AAAAAAAALK4/CvCm2Tbsu5E/s1600/IMG_20150605_184307.jpg)</div>
+<div class="separator" style="clear: both; text-align: center;">[![](https://1.bp.blogspot.com/-LrD4-jgunyk/VXIBX6uM7GI/AAAAAAAALK4/CvCm2Tbsu5E/s320/IMG_20150605_184307.jpg)](https://1.bp.blogspot.com/-LrD4-jgunyk/VXIBX6uM7GI/AAAAAAAALK4/CvCm2Tbsu5E/s1600/IMG_20150605_184307.jpg)</div>
 
-<div class="separator" style="clear: both; text-align: center;">[![](http://2.bp.blogspot.com/-INWUSdu4ZgU/VXIBXyZIR5I/AAAAAAAALK4/1RNDcbYhUKg/s320/IMG_20150605_192448.jpg)](http://2.bp.blogspot.com/-INWUSdu4ZgU/VXIBXyZIR5I/AAAAAAAALK4/1RNDcbYhUKg/s1600/IMG_20150605_192448.jpg)</div>
+<div class="separator" style="clear: both; text-align: center;">[![](https://2.bp.blogspot.com/-INWUSdu4ZgU/VXIBXyZIR5I/AAAAAAAALK4/1RNDcbYhUKg/s320/IMG_20150605_192448.jpg)](https://2.bp.blogspot.com/-INWUSdu4ZgU/VXIBXyZIR5I/AAAAAAAALK4/1RNDcbYhUKg/s1600/IMG_20150605_192448.jpg)</div>
 
-<div class="separator" style="clear: both; text-align: center;">[![](http://2.bp.blogspot.com/--8i34PRyVUU/VXIBX8ONISI/AAAAAAAALK4/RcaaFgQ40zg/s320/IMG_20150605_192500.jpg)](http://2.bp.blogspot.com/--8i34PRyVUU/VXIBX8ONISI/AAAAAAAALK4/RcaaFgQ40zg/s1600/IMG_20150605_192500.jpg)</div>
+<div class="separator" style="clear: both; text-align: center;">[![](https://2.bp.blogspot.com/--8i34PRyVUU/VXIBX8ONISI/AAAAAAAALK4/RcaaFgQ40zg/s320/IMG_20150605_192500.jpg)](https://2.bp.blogspot.com/--8i34PRyVUU/VXIBX8ONISI/AAAAAAAALK4/RcaaFgQ40zg/s1600/IMG_20150605_192500.jpg)</div>
 
 <div class="separator" style="clear: both; text-align: center;">Gimbalin servo deneme videosu. Kontrol kartı ve açı stabilizasyonuyla alakalı bir yazı en kısa zamanda yayınlayacağım. Tekrar görüşmek üzere. </div>
 

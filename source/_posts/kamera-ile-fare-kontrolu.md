@@ -29,6 +29,6 @@ Parmak Sayıcı
 {% youtube skS8qayIxWw %}
 
 Convexity Defects Method
-![](http://4.bp.blogspot.com/-a6ZMx0rHttY/VDb5CwYV-0I/AAAAAAAAEb4/6-qXnFxRwAo/s1600/Ekran%2BAl%C4%B1nt%C4%B1s%C4%B1.PNG)
+![](https://4.bp.blogspot.com/-a6ZMx0rHttY/VDb5CwYV-0I/AAAAAAAAEb4/6-qXnFxRwAo/s1600/Ekran%2BAl%C4%B1nt%C4%B1s%C4%B1.PNG)
 
 </center>

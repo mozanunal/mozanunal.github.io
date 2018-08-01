@@ -17,10 +17,10 @@ Bugünkü yazımda, uzun süreli bir geliştirme düşündüğüm All Terrain Ro
 
 <!-- more -->  
 
-<div class="separator" style="clear: both; text-align: center;"><iframe allowfullscreen="" class="YOUTUBE-iframe-video" data-thumbnail-src="https://i.ytimg.com/vi/t99pXT9v2ds/0.jpg" frameborder="0" height="266" src="http://www.youtube.com/embed/t99pXT9v2ds?feature=player_embedded" width="320"></iframe></div>
+<div class="separator" style="clear: both; text-align: center;"><iframe allowfullscreen="" class="YOUTUBE-iframe-video" data-thumbnail-src="https://i.ytimg.com/vi/t99pXT9v2ds/0.jpg" frameborder="0" height="266" src="https://www.youtube.com/embed/t99pXT9v2ds?feature=player_embedded" width="320"></iframe></div>
 
-[![](http://3.bp.blogspot.com/-7V0ASewXv8k/VQ8wWK4_oBI/AAAAAAAAILU/ZVliXBGXiPk/s1600/IMG_20150322_165322.jpg)](http://3.bp.blogspot.com/-7V0ASewXv8k/VQ8wWK4_oBI/AAAAAAAAILU/ZVliXBGXiPk/s1600/IMG_20150322_165322.jpg)
+[![](https://3.bp.blogspot.com/-7V0ASewXv8k/VQ8wWK4_oBI/AAAAAAAAILU/ZVliXBGXiPk/s1600/IMG_20150322_165322.jpg)](https://3.bp.blogspot.com/-7V0ASewXv8k/VQ8wWK4_oBI/AAAAAAAAILU/ZVliXBGXiPk/s1600/IMG_20150322_165322.jpg)
 
-[![](http://4.bp.blogspot.com/-Tln2HhPN68A/VQ8wWH_29mI/AAAAAAAAILU/erx6974YlPI/s1600/IMG_20150322_165256.jpg)](http://4.bp.blogspot.com/-Tln2HhPN68A/VQ8wWH_29mI/AAAAAAAAILU/erx6974YlPI/s1600/IMG_20150322_165256.jpg)
+[![](https://4.bp.blogspot.com/-Tln2HhPN68A/VQ8wWH_29mI/AAAAAAAAILU/erx6974YlPI/s1600/IMG_20150322_165256.jpg)](https://4.bp.blogspot.com/-Tln2HhPN68A/VQ8wWH_29mI/AAAAAAAAILU/erx6974YlPI/s1600/IMG_20150322_165256.jpg)
 
-[![](http://3.bp.blogspot.com/-W3CsnXr4Pjs/VQ8wWIAfrJI/AAAAAAAAILU/sFIhxtg2B8Y/s1600/IMG_20150322_165304.jpg)](http://3.bp.blogspot.com/-W3CsnXr4Pjs/VQ8wWIAfrJI/AAAAAAAAILU/sFIhxtg2B8Y/s1600/IMG_20150322_165304.jpg)
+[![](https://3.bp.blogspot.com/-W3CsnXr4Pjs/VQ8wWIAfrJI/AAAAAAAAILU/sFIhxtg2B8Y/s1600/IMG_20150322_165304.jpg)](https://3.bp.blogspot.com/-W3CsnXr4Pjs/VQ8wWIAfrJI/AAAAAAAAILU/sFIhxtg2B8Y/s1600/IMG_20150322_165304.jpg)

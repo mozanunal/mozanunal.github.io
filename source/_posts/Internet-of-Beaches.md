@@ -39,7 +39,7 @@ We designed a web application, an IOB wristband a gateway and a server. With our
 
 #### Who Are We?
 
-We are participating the competition from [Istanbul, TURKEY](https://www.google.com.tr/search?q=google+map+istanbul). All of us studying at <span></span>[Istanbul Technical Univercity.](http://www.itu.edu.tr/)
+We are participating the competition from [Istanbul, TURKEY](https://www.google.com.tr/search?q=google+map+istanbul). All of us studying at <span></span>[Istanbul Technical Univercity.](https://www.itu.edu.tr/)
 
 *   Murat Gokcen
     * Aerospace Engineering
@@ -72,23 +72,23 @@ Our soution covers most of challange as below.
 
 APP + IoT Band + Cloud!
 
-![](http://i.hizliresim.com/YDZXVz.jpg)
+![](https://i.hizliresim.com/YDZXVz.jpg)
 
 IoT Band
 
-![](http://i.hizliresim.com/O04Qd5.jpg)
+![](https://i.hizliresim.com/O04Qd5.jpg)
 
 Gateway between IoT Band and Cloud Server
-![](http://i.hizliresim.com/4Py6RQ.jpg)
+![](https://i.hizliresim.com/4Py6RQ.jpg)
 
 Cloud Server
-![](http://i.hizliresim.com/JabPEB.jpg)
+![](https://i.hizliresim.com/JabPEB.jpg)
 
 * * *
 
 ### How its Working?
 
-![](http://i.hizliresim.com/37GyPA.jpg)
+![](https://i.hizliresim.com/37GyPA.jpg)
 
 For better describition, you can watch project video.
 
@@ -98,10 +98,10 @@ For better describition, you can watch project video.
 
 We are to happy to participate this contents. We hope we will join next year again. By the way, you can see technologies which we used while hackathon process.
 
-![](http://i.hizliresim.com/oj4B0X.jpg)
+![](https://i.hizliresim.com/oj4B0X.jpg)
 
 I want to finish with a quote from Richard Bronson.
 
 > Above all, we want to create something we're proud of.
 
-[1] “Sun Protection.” Ultraviolet radiation and the INTERSUN Programme. World Health Organization. Website Accessed March 2017\. [http://www.who.int/uv/sun_protection/en/](http://www.who.int/uv/sun_protection/en/)
+[1] “Sun Protection.” Ultraviolet radiation and the INTERSUN Programme. World Health Organization. Website Accessed March 2017\. [https://www.who.int/uv/sun_protection/en/](https://www.who.int/uv/sun_protection/en/)

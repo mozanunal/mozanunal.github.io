@@ -61,7 +61,7 @@ Eğer hexadecimal sayısı harfle baslıyorsa başına 0 koyulur.</div>
 
 </div>
 
-<div>[![](https://1.bp.blogspot.com/-UyzZoP7m_8Y/VjineW2uopI/AAAAAAAAOm4/ySzZ6WrkOT8/s640/Ekran%2BAl%25C4%25B1nt%25C4%25B1s%25C4%25B1.PNG)](http://1.bp.blogspot.com/-UyzZoP7m_8Y/VjineW2uopI/AAAAAAAAOm4/ySzZ6WrkOT8/s1600/Ekran%2BAl%25C4%25B1nt%25C4%25B1s%25C4%25B1.PNG)Görüldüğü gibi R1 R2 ve Accummulatora veriler yüklenmiştir.  
+<div>[![](https://1.bp.blogspot.com/-UyzZoP7m_8Y/VjineW2uopI/AAAAAAAAOm4/ySzZ6WrkOT8/s640/Ekran%2BAl%25C4%25B1nt%25C4%25B1s%25C4%25B1.PNG)](https://1.bp.blogspot.com/-UyzZoP7m_8Y/VjineW2uopI/AAAAAAAAOm4/ySzZ6WrkOT8/s1600/Ekran%2BAl%25C4%25B1nt%25C4%25B1s%25C4%25B1.PNG)Görüldüğü gibi R1 R2 ve Accummulatora veriler yüklenmiştir.  
 
 **ORG ve END Komutları**  
 Org CPU'ya kaçıncı code memory satırıncan başlamısı gerektiğini söyleyen komuttur. Aşağıdaki gibi kullanılır.  
@@ -114,7 +114,7 @@ A=A/B
 
 **Loop ve Jump komutu**  
 
-<div class="separator" style="clear: both; text-align: center;">[![](https://2.bp.blogspot.com/-s3eVl_wFjZ0/VjkszPwX-jI/AAAAAAAAOn8/ZYp-ZWfsxkk/s640/Ekran%2BAl%25C4%25B1nt%25C4%25B1s%25C4%25B1.PNG)](http://2.bp.blogspot.com/-s3eVl_wFjZ0/VjkszPwX-jI/AAAAAAAAOn8/ZYp-ZWfsxkk/s1600/Ekran%2BAl%25C4%25B1nt%25C4%25B1s%25C4%25B1.PNG)</div>
+<div class="separator" style="clear: both; text-align: center;">[![](https://2.bp.blogspot.com/-s3eVl_wFjZ0/VjkszPwX-jI/AAAAAAAAOn8/ZYp-ZWfsxkk/s640/Ekran%2BAl%25C4%25B1nt%25C4%25B1s%25C4%25B1.PNG)](https://2.bp.blogspot.com/-s3eVl_wFjZ0/VjkszPwX-jI/AAAAAAAAOn8/ZYp-ZWfsxkk/s1600/Ekran%2BAl%25C4%25B1nt%25C4%25B1s%25C4%25B1.PNG)</div>
 
 Loop oluşturmak için kullanılan komutlar yukarıdaki gibidir. Hepsi farklı bir koşulu kullanmak içindir. Aşağıdaki örnek kod ise kullanımlarına örnektir.  
 
@@ -200,15 +200,15 @@ XCH A, R2 şeklinde kullanılır. A ve R2nin içeriklerini değiştirir böyle k
 **RD pini:** Okuma işlemini "enable" yapmak için kullanılır.  
 **WR pini:** Yazma işlemini "enable " yapmak için kullanılır.</div>
 
-<div class="separator" style="clear: both; text-align: center;">[![](https://1.bp.blogspot.com/-DmQjmwjLeFM/VjqdGYxkMfI/AAAAAAAAOps/kOfQ02wBFBI/s400/8051-pin-diagram1.jpg)](http://1.bp.blogspot.com/-DmQjmwjLeFM/VjqdGYxkMfI/AAAAAAAAOps/kOfQ02wBFBI/s1600/8051-pin-diagram1.jpg)</div>
+<div class="separator" style="clear: both; text-align: center;">[![](https://1.bp.blogspot.com/-DmQjmwjLeFM/VjqdGYxkMfI/AAAAAAAAOps/kOfQ02wBFBI/s400/8051-pin-diagram1.jpg)](https://1.bp.blogspot.com/-DmQjmwjLeFM/VjqdGYxkMfI/AAAAAAAAOps/kOfQ02wBFBI/s1600/8051-pin-diagram1.jpg)</div>
 
 **Harici Program Belleği Kullanımı**  
 
-<div class="separator" style="clear: both; text-align: center;">[![](https://4.bp.blogspot.com/-4sFt53OMVzs/VjqnQAe1gsI/AAAAAAAAOp8/GyB_BTnFiPE/s640/fig3.JPG)](http://4.bp.blogspot.com/-4sFt53OMVzs/VjqnQAe1gsI/AAAAAAAAOp8/GyB_BTnFiPE/s1600/fig3.JPG)</div>
+<div class="separator" style="clear: both; text-align: center;">[![](https://4.bp.blogspot.com/-4sFt53OMVzs/VjqnQAe1gsI/AAAAAAAAOp8/GyB_BTnFiPE/s640/fig3.JPG)](https://4.bp.blogspot.com/-4sFt53OMVzs/VjqnQAe1gsI/AAAAAAAAOp8/GyB_BTnFiPE/s1600/fig3.JPG)</div>
 
 **Harici Veri Belleği Kullanımı**  
 
-<div class="separator" style="clear: both; text-align: center;">[![](https://1.bp.blogspot.com/-O8yzo3TmaQc/Vjqn3O4ApAI/AAAAAAAAOqE/1VCrQw-3BGo/s640/Untitled.png)](http://1.bp.blogspot.com/-O8yzo3TmaQc/Vjqn3O4ApAI/AAAAAAAAOqE/1VCrQw-3BGo/s1600/Untitled.png)</div>
+<div class="separator" style="clear: both; text-align: center;">[![](https://1.bp.blogspot.com/-O8yzo3TmaQc/Vjqn3O4ApAI/AAAAAAAAOqE/1VCrQw-3BGo/s640/Untitled.png)](https://1.bp.blogspot.com/-O8yzo3TmaQc/Vjqn3O4ApAI/AAAAAAAAOqE/1VCrQw-3BGo/s1600/Untitled.png)</div>
 
 **Adres Ayrıştırma**  
 Bazı durumlarda adres değerleri için yeterli bit sayısına sahip olunamayabilir. Bu soruları çözmek için adres çözücü devreler kullanılır.  
@@ -227,9 +227,9 @@ Bazı durumlarda adres değerleri için yeterli bit sayısına sahip olunamayabi
 
 Aşağıdaki 2 görsel işlemci mimarisini çok iyi açıklayan 2 şema peki bize ne anlatıyorlar.  
 
-<div class="separator" style="clear: both; text-align: center;">[![](https://4.bp.blogspot.com/-Cz2wvnB7EBc/Vjip-41saWI/AAAAAAAAOnE/c9ihppaVK0c/s640/architecture_s.jpg)](http://4.bp.blogspot.com/-Cz2wvnB7EBc/Vjip-41saWI/AAAAAAAAOnE/c9ihppaVK0c/s1600/architecture_s.jpg)</div>
+<div class="separator" style="clear: both; text-align: center;">[![](https://4.bp.blogspot.com/-Cz2wvnB7EBc/Vjip-41saWI/AAAAAAAAOnE/c9ihppaVK0c/s640/architecture_s.jpg)](https://4.bp.blogspot.com/-Cz2wvnB7EBc/Vjip-41saWI/AAAAAAAAOnE/c9ihppaVK0c/s1600/architecture_s.jpg)</div>
 
-<div class="separator" style="clear: both; text-align: center;">[![](https://1.bp.blogspot.com/-pp8NbAyNGXM/Vjip-wv2UMI/AAAAAAAAOnI/NnDlcfyacUw/s640/01.gif)](http://1.bp.blogspot.com/-pp8NbAyNGXM/Vjip-wv2UMI/AAAAAAAAOnI/NnDlcfyacUw/s1600/01.gif)</div>
+<div class="separator" style="clear: both; text-align: center;">[![](https://1.bp.blogspot.com/-pp8NbAyNGXM/Vjip-wv2UMI/AAAAAAAAOnI/NnDlcfyacUw/s640/01.gif)](https://1.bp.blogspot.com/-pp8NbAyNGXM/Vjip-wv2UMI/AAAAAAAAOnI/NnDlcfyacUw/s1600/01.gif)</div>
 
 </div>
 
@@ -243,8 +243,8 @@ Aşağıdaki 2 görsel işlemci mimarisini çok iyi açıklayan 2 şema peki biz
 
 <div class="separator" style="clear: both; text-align: center;">Aşağıdaki 2 resimde ise sık kullanılan komutları açıklamalarıyla bulabilirsiniz.</div>
 
-<div class="separator" style="clear: both; text-align: center;">[![](https://2.bp.blogspot.com/-2bs2b_ITBsk/VjjAX1OUMfI/AAAAAAAAOnc/UUajD1pycVE/s640/1.PNG)](http://2.bp.blogspot.com/-2bs2b_ITBsk/VjjAX1OUMfI/AAAAAAAAOnc/UUajD1pycVE/s1600/1.PNG)</div>
+<div class="separator" style="clear: both; text-align: center;">[![](https://2.bp.blogspot.com/-2bs2b_ITBsk/VjjAX1OUMfI/AAAAAAAAOnc/UUajD1pycVE/s640/1.PNG)](https://2.bp.blogspot.com/-2bs2b_ITBsk/VjjAX1OUMfI/AAAAAAAAOnc/UUajD1pycVE/s1600/1.PNG)</div>
 
-[![](https://4.bp.blogspot.com/-Tc4MjvFq0us/VjjAX1hOFYI/AAAAAAAAOng/y7t_hF5X26E/s640/2.PNG)](http://4.bp.blogspot.com/-Tc4MjvFq0us/VjjAX1hOFYI/AAAAAAAAOng/y7t_hF5X26E/s1600/2.PNG)  
+[![](https://4.bp.blogspot.com/-Tc4MjvFq0us/VjjAX1hOFYI/AAAAAAAAOng/y7t_hF5X26E/s640/2.PNG)](https://4.bp.blogspot.com/-Tc4MjvFq0us/VjjAX1hOFYI/AAAAAAAAOng/y7t_hF5X26E/s1600/2.PNG)  
 
 </div>

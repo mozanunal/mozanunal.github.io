@@ -10,7 +10,7 @@ author: Mehmet Ozan Ünal
 
 <div>**Merhaba Arkadaşlar,**  
        Bugünkü yazımda bir radyo modülünün teorik olarak ne kadar uzaklıkta çalışabildiğini hesaplayan projemi paylaşacağım. Amacım haberleşme modülleri seçilirken kolayca karşılaştırmalar yapılabilecek basit bir hesaplama ortamı oluşturmaktı. Bu tarz işler için en uygun program olduğunu düşündüğüm Excel programını kullandım.  
-        [Öncelikle bu hesabı anlamama şuradaki link çok yardımcı oldu](http://www.mikrodalgamuhendisi.com/index.php/rf-soru-cevap-anasayfa/90-yeni-baslayanlar-icin-iletisim-mesafesi-hesab). Öncelikle onu incelemenizi tavsiye ederim. Oradaki bilgileri kısaca özetleyecek olursam:  
+        [Öncelikle bu hesabı anlamama şuradaki link çok yardımcı oldu](https://www.mikrodalgamuhendisi.com/index.php/rf-soru-cevap-anasayfa/90-yeni-baslayanlar-icin-iletisim-mesafesi-hesab). Öncelikle onu incelemenizi tavsiye ederim. Oradaki bilgileri kısaca özetleyecek olursam:  
 
 <!-- more -->        İlk olarak mesafeyi temel olarak etkilen 2 kavram var. Birincisi vericinin çıkış gücü, ikincisi ise alıcının alış hassasiyeti. Özellikle 2\. etken sık sık önemi unutulan konulardan biri. Genelde aktarılan veri akış hızının artmasıyla alış hassasiyeti düşmektedir. Yeterli olacak minimum veri akış hızını seçmek de önemli noktalardan bir tanesidir. Çıkış gücüne anten ve kuvvetlendirici kazançları da eklenir. Bulunan bu değere toplam güç denir. Hesabımızı belirleyen bağıntı ise şöyledir:</div>
 
@@ -47,6 +47,6 @@ Yol zayıflamasını kullanarak mesafe ise aşağıdaki gibi hesaplanır.
 
 <div>
 
-<div class="separator" style="clear: both; text-align: center;">[![](http://2.bp.blogspot.com/-KnIZAPHVg0I/VocgbHgY7kI/AAAAAAAAXhU/eHC-s7cwViY/s640/Capture.PNG)](http://2.bp.blogspot.com/-KnIZAPHVg0I/VocgbHgY7kI/AAAAAAAAXhU/eHC-s7cwViY/s1600/Capture.PNG)</div>
+<div class="separator" style="clear: both; text-align: center;">[![](https://2.bp.blogspot.com/-KnIZAPHVg0I/VocgbHgY7kI/AAAAAAAAXhU/eHC-s7cwViY/s640/Capture.PNG)](https://2.bp.blogspot.com/-KnIZAPHVg0I/VocgbHgY7kI/AAAAAAAAXhU/eHC-s7cwViY/s1600/Capture.PNG)</div>
 
 </div>

@@ -28,6 +28,6 @@ Programınızı pic için geliştirilmiş bir dilde yazmanız gerekiyor. Seçene
 
 **Önemli not:** Hazır oluşturulmuş bir devredeki Pic programlayacaksanız devrenin çektiği akıma dikkat etmeniz gerekli. Çünkü PIC KIT 2(ve ya benzeri programlayıcılar) verebileceği maximum akım çok yüksek değildir. Ortak Gnd'li harici beslemeler sorunumuzu çözecektir.  
 
-[![](https://4.bp.blogspot.com/-FmqLU_RH8kY/VM0OHwE9FcI/AAAAAAAAHFA/OqDQcrAnHN4/s1600/IMG_20150131_143722.jpg)](http://4.bp.blogspot.com/-FmqLU_RH8kY/VM0OHwE9FcI/AAAAAAAAHFA/OqDQcrAnHN4/s1600/IMG_20150131_143722.jpg)
+[![](https://4.bp.blogspot.com/-FmqLU_RH8kY/VM0OHwE9FcI/AAAAAAAAHFA/OqDQcrAnHN4/s1600/IMG_20150131_143722.jpg)](https://4.bp.blogspot.com/-FmqLU_RH8kY/VM0OHwE9FcI/AAAAAAAAHFA/OqDQcrAnHN4/s1600/IMG_20150131_143722.jpg)
 
-[![](https://4.bp.blogspot.com/-Lr_LSh2gtJE/VM0OH-cx7RI/AAAAAAAAHFA/oSeESXYR2oQ/s1600/IMG_20150131_143751.jpg)](http://4.bp.blogspot.com/-Lr_LSh2gtJE/VM0OH-cx7RI/AAAAAAAAHFA/oSeESXYR2oQ/s1600/IMG_20150131_143751.jpg)
+[![](https://4.bp.blogspot.com/-Lr_LSh2gtJE/VM0OH-cx7RI/AAAAAAAAHFA/oSeESXYR2oQ/s1600/IMG_20150131_143751.jpg)](https://4.bp.blogspot.com/-Lr_LSh2gtJE/VM0OH-cx7RI/AAAAAAAAHFA/oSeESXYR2oQ/s1600/IMG_20150131_143751.jpg)

@@ -29,4 +29,4 @@ Gönderici modül ise 1 fotodiot 1 direnç ve logic analyzerdan oluşuyor. Foto 
 
 <div class="separator" style="clear: both; text-align: center;">Testimin sonuçları ise söyle: serial haberleşme ile maximum 19200 baud rate kadar güvenilir bir iletişim oldu. Manchester decoding kullanarak ise 38400 baudrate kadar haberleşebildim.</div>
 
-<div class="separator" style="clear: both; text-align: center;">[![](https://3.bp.blogspot.com/-ljqRhccYSI4/VreridZE2DI/AAAAAAAAYRI/UxN5DVqhhqY/s640/1.PNG)](http://3.bp.blogspot.com/-ljqRhccYSI4/VreridZE2DI/AAAAAAAAYRI/UxN5DVqhhqY/s1600/1.PNG)</div>
+<div class="separator" style="clear: both; text-align: center;">[![](https://3.bp.blogspot.com/-ljqRhccYSI4/VreridZE2DI/AAAAAAAAYRI/UxN5DVqhhqY/s640/1.PNG)](https://3.bp.blogspot.com/-ljqRhccYSI4/VreridZE2DI/AAAAAAAAYRI/UxN5DVqhhqY/s1600/1.PNG)</div>

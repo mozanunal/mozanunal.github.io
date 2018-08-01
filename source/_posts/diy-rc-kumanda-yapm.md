@@ -25,13 +25,13 @@ date: 2015-11-15 14:30:00
 
 Bu malzemelerle beraber toplam maliyetimiz 7- 8 dolar civarı oluyor. Maximum kullanım mesafesi ise 30 40 metre civarında hobi uygulamarına göre oldukça yeterli bir mesafe elde ediyoruz.  
 
-<div class="separator" style="clear: both; text-align: center;">[![](http://2.bp.blogspot.com/-xDp3AViitVk/Vke9Wz-_7GI/AAAAAAAAOuI/s6nGyovNDrY/s320/IMG_20151110_225602.jpg)](http://2.bp.blogspot.com/-xDp3AViitVk/Vke9Wz-_7GI/AAAAAAAAOuI/s6nGyovNDrY/s1600/IMG_20151110_225602.jpg)</div>
+<div class="separator" style="clear: both; text-align: center;">[![](https://2.bp.blogspot.com/-xDp3AViitVk/Vke9Wz-_7GI/AAAAAAAAOuI/s6nGyovNDrY/s320/IMG_20151110_225602.jpg)](https://2.bp.blogspot.com/-xDp3AViitVk/Vke9Wz-_7GI/AAAAAAAAOuI/s6nGyovNDrY/s1600/IMG_20151110_225602.jpg)</div>
 
-<div class="separator" style="clear: both; text-align: center;">[![](http://1.bp.blogspot.com/-pCi8LTweGqI/Vke9WyHH_BI/AAAAAAAAOuI/F4XsoNq_j8w/s320/IMG_20151110_225557.jpg)](http://1.bp.blogspot.com/-pCi8LTweGqI/Vke9WyHH_BI/AAAAAAAAOuI/F4XsoNq_j8w/s1600/IMG_20151110_225557.jpg)</div>
+<div class="separator" style="clear: both; text-align: center;">[![](https://1.bp.blogspot.com/-pCi8LTweGqI/Vke9WyHH_BI/AAAAAAAAOuI/F4XsoNq_j8w/s320/IMG_20151110_225557.jpg)](https://1.bp.blogspot.com/-pCi8LTweGqI/Vke9WyHH_BI/AAAAAAAAOuI/F4XsoNq_j8w/s1600/IMG_20151110_225557.jpg)</div>
 
 <div class="separator" style="clear: both; text-align: center;">Bağlantılara gelecek olursak nrf24 modülü SPI ile çalışıyor. Arduino'nun uygun SPI pinlerine bağlıyoruz. Şemasını kolayca bulabilirsiniz. Joystick modulleri için de bir tanesi için 2 analog giriş olmak üzere Arduino Nanonun toplam 4 tane analog giriş pinin kullanıyoruz. Potansiyometrenin kullanımı için de 1 adet analog giriş pini kullanıyoruz.</div>
 
-<div class="separator" style="clear: both; text-align: center;">[![](http://2.bp.blogspot.com/--vbgxgEg-Rk/Vke9W-L-3ZI/AAAAAAAAOuI/XKbVFCQj6V0/s320/IMG_20151110_225607.jpg)](http://2.bp.blogspot.com/--vbgxgEg-Rk/Vke9W-L-3ZI/AAAAAAAAOuI/XKbVFCQj6V0/s1600/IMG_20151110_225607.jpg)[![](http://2.bp.blogspot.com/-Lsd05A9Lnpo/Vke9W7Wzv6I/AAAAAAAAOuI/4vMP73gnhPA/s320/IMG_20151110_225613.jpg)](http://2.bp.blogspot.com/-Lsd05A9Lnpo/Vke9W7Wzv6I/AAAAAAAAOuI/4vMP73gnhPA/s1600/IMG_20151110_225613.jpg)</div>
+<div class="separator" style="clear: both; text-align: center;">[![](https://2.bp.blogspot.com/--vbgxgEg-Rk/Vke9W-L-3ZI/AAAAAAAAOuI/XKbVFCQj6V0/s320/IMG_20151110_225607.jpg)](https://2.bp.blogspot.com/--vbgxgEg-Rk/Vke9W-L-3ZI/AAAAAAAAOuI/XKbVFCQj6V0/s1600/IMG_20151110_225607.jpg)[![](https://2.bp.blogspot.com/-Lsd05A9Lnpo/Vke9W7Wzv6I/AAAAAAAAOuI/4vMP73gnhPA/s320/IMG_20151110_225613.jpg)](https://2.bp.blogspot.com/-Lsd05A9Lnpo/Vke9W7Wzv6I/AAAAAAAAOuI/4vMP73gnhPA/s1600/IMG_20151110_225613.jpg)</div>
 
 Kumandanın koduyla alakalı olarak değinmek istediğim bir kaç nokta var. Baştaki ayarlarda nrf ile ilgili ayarlar yapılıyor. Bu modülle alakalı bir kaç önemli nokta şöyle:  
 

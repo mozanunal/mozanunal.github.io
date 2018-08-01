@@ -14,18 +14,18 @@ Görüntü işleme hızla popülerleşen ve gittikçe daha fazla üzerine projel
 
 <!-- more -->  
 
-[SimpleCV'nin opencv ve matlab ile karşılaştırıldığı makaleye buradan ulaşabilirsiniz.](http://mozanunal.blogspot.com.tr/2016/05/simplecv-vs-opencv-vs-matlab-for-image.html#more)  
+[SimpleCV'nin opencv ve matlab ile karşılaştırıldığı makaleye buradan ulaşabilirsiniz.](https://mozanunal.blogspot.com.tr/2016/05/simplecv-vs-opencv-vs-matlab-for-image.html#more)  
 
-[http://simplecv.org/download/](http://simplecv.org/download/)  
+[https://simplecv.org/download/](https://simplecv.org/download/)  
 
-[![](https://2.bp.blogspot.com/-A3EQ_sYxKKk/VxNvyqTmt-I/AAAAAAAAZq4/piY02JIgXGUKU1iHwuqo3Kgev-zUjXvFACK4B/s640/Capture.PNG)](http://2.bp.blogspot.com/-A3EQ_sYxKKk/VxNvyqTmt-I/AAAAAAAAZq4/piY02JIgXGUKU1iHwuqo3Kgev-zUjXvFACK4B/s1600/Capture.PNG)  
+[![](https://2.bp.blogspot.com/-A3EQ_sYxKKk/VxNvyqTmt-I/AAAAAAAAZq4/piY02JIgXGUKU1iHwuqo3Kgev-zUjXvFACK4B/s640/Capture.PNG)](https://2.bp.blogspot.com/-A3EQ_sYxKKk/VxNvyqTmt-I/AAAAAAAAZq4/piY02JIgXGUKU1iHwuqo3Kgev-zUjXvFACK4B/s1600/Capture.PNG)  
 
 SimpleCV görüntü işlemeyle alakalı paketlerin bir arada toplandığı bir python paketler bütünüdür. yukarıdaki linkten kurulum dosyasını indirip sadece bir kaç tık ile kurabilirsiniz.  
-SimpleCV ile yüklediğimiz paketler ise şöyle:[![](https://4.bp.blogspot.com/-RzFG56nj0Bw/VyX8xjlS35I/AAAAAAAAZwY/o1BjczDB6IQlTLjJkDZf6By0s515sV64gCK4B/s640/Capture.PNG)](http://4.bp.blogspot.com/-RzFG56nj0Bw/VyX8xjlS35I/AAAAAAAAZwY/o1BjczDB6IQlTLjJkDZf6By0s515sV64gCK4B/s1600/Capture.PNG)  
+SimpleCV ile yüklediğimiz paketler ise şöyle:[![](https://4.bp.blogspot.com/-RzFG56nj0Bw/VyX8xjlS35I/AAAAAAAAZwY/o1BjczDB6IQlTLjJkDZf6By0s515sV64gCK4B/s640/Capture.PNG)](https://4.bp.blogspot.com/-RzFG56nj0Bw/VyX8xjlS35I/AAAAAAAAZwY/o1BjczDB6IQlTLjJkDZf6By0s515sV64gCK4B/s1600/Capture.PNG)  
 
 Görüldüğü gibi Python'un bile yüklü olmasına gerek yok ihtiyacımız olan tüm paketler bir kaç tık ile yükleniyor. Aşağıda basit bir SimpleCV kodu bulunmakta aynı zamanda aşağıdaki linklerden dökümantasyona ve örneklere bakabilirsiniz.  
-[http://simplecv.readthedocs.io/en/latest/](http://simplecv.readthedocs.io/en/latest/)  
-[http://examples.simplecv.org/en/latest/](http://examples.simplecv.org/en/latest/)  
+[https://simplecv.readthedocs.io/en/latest/](https://simplecv.readthedocs.io/en/latest/)  
+[https://examples.simplecv.org/en/latest/](https://examples.simplecv.org/en/latest/)  
 
 SimpleCV fonksiyonları ve kullanımları:
 

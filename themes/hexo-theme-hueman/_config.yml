@@ -16,12 +16,12 @@ customize:
     sidebar: left # sidebar position, options: left, right
     thumbnail: true # enable posts thumbnail, options: true, false
     favicon: images/favicon.ico # path to favicon
-    social_links: # for more icons, please see http://fontawesome.io/icons/#brand
+    social_links: # for more icons, please see https://fontawesome.io/icons/#brand
         facebook: https://www.facebook.com/mehmetozan.unal/
         google-plus: https://plus.google.com/116790030893288193193/
         github: https://github.com/mozanunal/
-        rss: http://mozanunal.com/atom.xml
-        envelope: http://eepurl.com/dm5eOH
+        rss: https://mozanunal.com/atom.xml
+        envelope: https://eepurl.com/dm5eOH
 
 # Widgets
 widgets:
@@ -56,11 +56,11 @@ plugins:
 
 # Miscellaneous
 miscellaneous:
-    open_graph: # see http://ogp.me
+    open_graph: # see https://ogp.me
         fb_app_id:
         fb_admins:
         twitter_id:
         google_plus:
     links:
-        Hexo: http://hexo.io
-        Email Abonesi Olmak İçin Tıklayın: http://eepurl.com/dm5eOH
+        Hexo: https://hexo.io
+        Email Abonesi Olmak İçin Tıklayın: https://eepurl.com/dm5eOH

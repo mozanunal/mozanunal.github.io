@@ -25,12 +25,12 @@ Saleae Logic Anayzer'ın özelliklerini sayacak olursam şöyle:
 *   Boyutları oldukça küçük 
 *   Arayüzü ve kullanımı çok basit
 
-[![](https://2.bp.blogspot.com/-RhHxd7MZ3oM/Vn7H3kyh5EI/AAAAAAAAXSE/UXlBnXPFJuk/s320/IMG_20151226_182649.jpg)](http://2.bp.blogspot.com/-RhHxd7MZ3oM/Vn7H3kyh5EI/AAAAAAAAXSE/UXlBnXPFJuk/s1600/IMG_20151226_182649.jpg)
+[![](https://2.bp.blogspot.com/-RhHxd7MZ3oM/Vn7H3kyh5EI/AAAAAAAAXSE/UXlBnXPFJuk/s320/IMG_20151226_182649.jpg)](https://2.bp.blogspot.com/-RhHxd7MZ3oM/Vn7H3kyh5EI/AAAAAAAAXSE/UXlBnXPFJuk/s1600/IMG_20151226_182649.jpg)
 
-[![](https://1.bp.blogspot.com/-bdfoLWthbGA/Vn7H3nbshVI/AAAAAAAAXSE/44ZxMB7uH_8/s320/IMG_20151226_182724.jpg)](http://1.bp.blogspot.com/-bdfoLWthbGA/Vn7H3nbshVI/AAAAAAAAXSE/44ZxMB7uH_8/s1600/IMG_20151226_182724.jpg)
+[![](https://1.bp.blogspot.com/-bdfoLWthbGA/Vn7H3nbshVI/AAAAAAAAXSE/44ZxMB7uH_8/s320/IMG_20151226_182724.jpg)](https://1.bp.blogspot.com/-bdfoLWthbGA/Vn7H3nbshVI/AAAAAAAAXSE/44ZxMB7uH_8/s1600/IMG_20151226_182724.jpg)
 
 Kullanımına gelecek olursak [Buradan bilgisayarda kullanabileceğiniz arayüz programını indirebilirsiniz.](https://www.saleae.com/downloads)  
 
 Kurulum ve kullanımı da oldukça basit. Standart bir kurulum işlemi var. Kullandım için de almak istediğiniz örnekleme sayısı ve örnekleme frekansını arayüze giriyorsunuz. Analyzers ekmesinden istediğiniz protokolü de ekleyebilirsiniz. Sonrasın "Start Simulation" tuşuna basarak devam edebilirsiniz. Şimdilik anlatacaklarım bu kadar, tekrar görüşmek üzere...  
 
-<div class="separator" style="clear: both; text-align: center;">[![](https://4.bp.blogspot.com/-iX_AqQzvCK4/Vn7FfbsXBdI/AAAAAAAAXOM/o79jXa9N29o/s640/Capture.PNG)](http://4.bp.blogspot.com/-iX_AqQzvCK4/Vn7FfbsXBdI/AAAAAAAAXOM/o79jXa9N29o/s1600/Capture.PNG)</div>
+<div class="separator" style="clear: both; text-align: center;">[![](https://4.bp.blogspot.com/-iX_AqQzvCK4/Vn7FfbsXBdI/AAAAAAAAXOM/o79jXa9N29o/s640/Capture.PNG)](https://4.bp.blogspot.com/-iX_AqQzvCK4/Vn7FfbsXBdI/AAAAAAAAXOM/o79jXa9N29o/s1600/Capture.PNG)</div>

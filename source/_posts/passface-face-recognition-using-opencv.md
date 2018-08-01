@@ -41,12 +41,12 @@ Main difficulties can be sorted like below:
 
 ##### Data Sets
 
-[AT&T Facedatabase](http://www.cl.cam.ac.uk/research/dtg/attarchive/facedatabase.html)
+[AT&T Facedatabase](https://www.cl.cam.ac.uk/research/dtg/attarchive/facedatabase.html)
 
 The AT&T Face Database, sometimes also referred to as ORL Database of Faces, contains ten different images of each of 40 distinct subjects. For some subjects, the images were taken at different times, varying the lighting, facial expressions (open / closed eyes, smiling / not smiling) and facial details (glasses / no glasses). All the images were taken against a dark homogeneous background with the subjects in an upright, frontal position (with tolerance for some side movement).
   
 
-[Yale Facedatabase A](http://vision.ucsd.edu/content/yale-face-database)
+[Yale Facedatabase A](https://vision.ucsd.edu/content/yale-face-database)
 
 also known as Yalefaces. The AT&T Face Database is good for initial tests, but it’s a fairly easy database. The Eigenfaces method already has a 97% recognition rate on it, so you won’t see any great improvements with other algorithms. The Yale Face Database A (also known as Yalefaces) is a more appropriate dataset for initial experiments, because the recognition problem is harder. The database consists of 15 people (14 male, 1 female) each with 11 grayscale images sized 320x243 [](https://lh3.googleusercontent.com/uNq7mPqspjvR267h-aZA2FS666Fl8Q8dXGhlg-Lzi7MJiNn5DkSyioK59Wj6pdA9h96bojY8L02LR-NIXIeuf0IjN-a6MYN7ufWHMOPqVbxd0hvoGcKsy0oR9jo5t85MGbfqOB9H)pixel. There are changes in the light conditions (center light, left light, right light), facial expressions (happy, normal, sad, sleepy, surprised, wink) and glasses (glasses, no-glasses).
 

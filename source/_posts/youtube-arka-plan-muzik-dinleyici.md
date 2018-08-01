@@ -21,10 +21,10 @@ Note: I can try the app only 3 android phone may be it does not work another and
 
 <center>
 Screenshoots from the app
-![](http://1.bp.blogspot.com/--dW-lZK4Vzo/VZBsjsZkzAI/AAAAAAAAMm0/nObNBRJzkCo/s320/Screenshot_2015-06-28-23-59-54.png)
+![](https://1.bp.blogspot.com/--dW-lZK4Vzo/VZBsjsZkzAI/AAAAAAAAMm0/nObNBRJzkCo/s320/Screenshot_2015-06-28-23-59-54.png)
 </center>
 <center>
 App will continue to work at back ground and can be accessible from notifications menu.
-![](http://3.bp.blogspot.com/-BkwrL_689xM/VZBsoMRvn5I/AAAAAAAAMm8/ap9zSDn_5rw/s320/Screenshot_2015-06-29-00-00-14.png)
+![](https://3.bp.blogspot.com/-BkwrL_689xM/VZBsoMRvn5I/AAAAAAAAMm8/ap9zSDn_5rw/s320/Screenshot_2015-06-29-00-00-14.png)
 </center>
 ---

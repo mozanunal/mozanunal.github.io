@@ -16,7 +16,7 @@ date: 2015-05-02 01:38:00
 
 Bugün size Arduino Due ile yaptığım osiloskop bahsedeceğim. Arduino Dueyi seçmemin bir kaç nedeni var tabi. Arduino Duede standart Arduinoların 8 bitlik Atmega işlemcilerinden farklı olarak 32 bitlik Arm Cortex M3 var. Bu işlemcinin 84 Mhzlik saat hızı bu proje için elverişli kılıyor.  
 
-Osiloskop projesine başlarken amacım Due ile mümkün olan en yüksek örnekleme hızlı osiloskobu yapmaktı. İlk olarak arduinonun standart AnalogRead() fonksiyonunu denedim. Bir örnek alma süresi 40 uS kadar sürdü. Daha sonra [bu bağlantıyı](http://frenki.net/2013/10/fast-analogread-with-arduino-due/) buldum ve oradaki ayarları Duenin ADCsine uyguladım. Osiloskobun son kodu aşağıdaki gibidir. Bu kod sayesinde ADClere direk registerlar.
+Osiloskop projesine başlarken amacım Due ile mümkün olan en yüksek örnekleme hızlı osiloskobu yapmaktı. İlk olarak arduinonun standart AnalogRead() fonksiyonunu denedim. Bir örnek alma süresi 40 uS kadar sürdü. Daha sonra [bu bağlantıyı](https://frenki.net/2013/10/fast-analogread-with-arduino-due/) buldum ve oradaki ayarları Duenin ADCsine uyguladım. Osiloskobun son kodu aşağıdaki gibidir. Bu kod sayesinde ADClere direk registerlar.
 
 <!-- more -->üzerinden ulaşıyoruz. Arduinonun fonksiyonunda her analog değer alma işleminde ilkönce ADC'yi açıyor, okuduktan sonra ise kapatıyor. Bu kodda ise ADCyi FREE RUN modunda kullanmış oluyoruz. Bu sayede bir örnekleme ortalama 1 uS sürüyor yani 1 Mega Sample Per Second (MSa/s) bir osiloskop yapmış olduk.  
 
@@ -57,12 +57,12 @@ void loop() {
 }
 {% endcodeblock %}
 
-Osiloskop arayüzünü ise C# dilini kullanarak yazdım. Osiloskop için kullunanılan [bu kütüphaneyi](http://www.oscilloscope-lib.com/) kullandım. Arayüzden görüntüler de aşağıdadır.  
+Osiloskop arayüzünü ise C# dilini kullanarak yazdım. Osiloskop için kullunanılan [bu kütüphaneyi](https://www.oscilloscope-lib.com/) kullandım. Arayüzden görüntüler de aşağıdadır.  
 
 **Osilopkop denemeleri**  
 
-[![](http://1.bp.blogspot.com/-2hqhgXgLpO4/VUPq3PCaeNI/AAAAAAAAKXU/MFt7t_qRvxw/s1600/Ekran%2BAl%C4%B1nt%C4%B1s%C4%B1.PNG)](http://1.bp.blogspot.com/-2hqhgXgLpO4/VUPq3PCaeNI/AAAAAAAAKXU/MFt7t_qRvxw/s1600/Ekran%2BAl%C4%B1nt%C4%B1s%C4%B1.PNG)
+[![](https://1.bp.blogspot.com/-2hqhgXgLpO4/VUPq3PCaeNI/AAAAAAAAKXU/MFt7t_qRvxw/s1600/Ekran%2BAl%C4%B1nt%C4%B1s%C4%B1.PNG)](https://1.bp.blogspot.com/-2hqhgXgLpO4/VUPq3PCaeNI/AAAAAAAAKXU/MFt7t_qRvxw/s1600/Ekran%2BAl%C4%B1nt%C4%B1s%C4%B1.PNG)
 
 <div class="separator" style="clear: both; text-align: center;">**Com port seçiminin yapıldığı pencere**</div>
 
-[![](http://3.bp.blogspot.com/-qjoGyPZkfbo/VUPq3Oa3GDI/AAAAAAAAKXQ/U3Z8rgQdx3E/s1600/Ekran%2BAl%C4%B1nt%C4%B1s%C4%B12.PNG)](http://3.bp.blogspot.com/-qjoGyPZkfbo/VUPq3Oa3GDI/AAAAAAAAKXQ/U3Z8rgQdx3E/s1600/Ekran%2BAl%C4%B1nt%C4%B1s%C4%B12.PNG)
+[![](https://3.bp.blogspot.com/-qjoGyPZkfbo/VUPq3Oa3GDI/AAAAAAAAKXQ/U3Z8rgQdx3E/s1600/Ekran%2BAl%C4%B1nt%C4%B1s%C4%B12.PNG)](https://3.bp.blogspot.com/-qjoGyPZkfbo/VUPq3Oa3GDI/AAAAAAAAKXQ/U3Z8rgQdx3E/s1600/Ekran%2BAl%C4%B1nt%C4%B1s%C4%B12.PNG)

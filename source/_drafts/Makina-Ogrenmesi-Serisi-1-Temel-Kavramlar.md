@@ -21,7 +21,7 @@ Karar Ağaçları (Decision Trees)
 Karar ağacı, ağaç benzeri bir grafik veya karar modeli ve olası sonuçlarını kullanan bir karar destek aracıdır. Basitçe, karar ağacı bir algoritmayı görsel olarak göstermenin bir yoludur.
 Deep Learning
 Son zamanların çok popüler alanlarından biri olan "Deep learning" genellikle yapay sinir ağları kullanarak model oluşturur. 
-http://www.derinogrenme.com/2015/07/21/derin-ogrenme-deep-learning-nedir/
+https://www.derinogrenme.com/2015/07/21/derin-ogrenme-deep-learning-nedir/
 Yapay Sinir Ağları (Artificial Neural Networks)
 Biyolojik sinir ağlarından esinlenen yapay sinir ağları, bir model oluşturan birbirine bağlı düğümlerin bir ağıdır. Bunlar, çok sayıda girdiye dayanan fonksiyonları tahmin etmek veya yaklaşık fonksiyonlar için kullanılan istatistiksel öğrenme modelleri olarak tanımlanabilirler. Sinir ağları, genellikle standart makine öğrenme yaklaşımları için girdi hacmi çok yüksek olduğunda kullanılır.
 Generative Model
@@ -55,4 +55,4 @@ Modules: preprocessing, feature extraction.
 Examples
 
 https://www.youtube.com/watch?v=xx310zM3tLs
-http://neuralnetworksanddeeplearning.com/
+https://neuralnetworksanddeeplearning.com/

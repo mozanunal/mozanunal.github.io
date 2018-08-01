@@ -33,7 +33,7 @@ from setuptools import setup
 setup(name='funniest',
 	version='0.1',
 	description='My test module',
-	url='http://github.com/xxxx/xxxx',
+	url='https://github.com/xxxx/xxxx',
 	author='Moz',
 	author_email=mehmetozanunal@gmail.com',
 	license='MIT',

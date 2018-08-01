@@ -25,7 +25,7 @@ Aşağıdaki 6 paket çok işinize yarayacaktır. Scipy sitesinden alıntı yapt
 - NumPy, SciPy, Matplotlib, IPython, Sympy, Pandas
 
 Geliştirme ortamı olarak Jupyter notebook(IPython jupyterin eski adı)öneririm sanki not alır gibi kod yazıyorsunuz. Kaldığınız yerden devam ettırme programı adım adım çalıştırma çıktılarını dırek pdf yapabilme gibi baya güzel olayları var. Nasıl bir şey diye görmek isterseniz.
-http://nbviewer.jupyter.org/github/iminuit/iminuit/blob/master/tutorial/tutorial.ipynb
+https://nbviewer.jupyter.org/github/iminuit/iminuit/blob/master/tutorial/tutorial.ipynb
 Burada da daha fazla örnek var
 https://github.com/jupyter/jupyter/wiki/a-gallery-of-interesting-jupyter-notebooks#signal-and-sound-processing
 Şu iki video da jupyter ve anacondanın kullanımı için inceleyebilirsiniz.

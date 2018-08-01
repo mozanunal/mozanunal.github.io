@@ -28,38 +28,38 @@ author: Mehmet Ozan Ünal
 
 <div style="text-align: center;">Örnekler</div>
 
-<div class="separator" style="clear: both; text-align: center;">[![](http://2.bp.blogspot.com/-EOzaab7ReI8/VdGEWcydNsI/AAAAAAAANFA/aOOVTXFPXMA/s320/Screenshot_2015-08-17-09-10-10.png)](http://2.bp.blogspot.com/-EOzaab7ReI8/VdGEWcydNsI/AAAAAAAANFA/aOOVTXFPXMA/s1600/Screenshot_2015-08-17-09-10-10.png)</div>
+<div class="separator" style="clear: both; text-align: center;">[![](https://2.bp.blogspot.com/-EOzaab7ReI8/VdGEWcydNsI/AAAAAAAANFA/aOOVTXFPXMA/s320/Screenshot_2015-08-17-09-10-10.png)](https://2.bp.blogspot.com/-EOzaab7ReI8/VdGEWcydNsI/AAAAAAAANFA/aOOVTXFPXMA/s1600/Screenshot_2015-08-17-09-10-10.png)</div>
 
 <div class="separator" style="clear: both; text-align: center;">Dokümentasyonu</div>
 
-<div class="separator" style="clear: both; text-align: center;">[![](http://2.bp.blogspot.com/-IJY68wYgbXc/VdGEWVSt_vI/AAAAAAAANFA/yPswf4ZGR2I/s320/Screenshot_2015-08-17-09-10-01.png)](http://2.bp.blogspot.com/-IJY68wYgbXc/VdGEWVSt_vI/AAAAAAAANFA/yPswf4ZGR2I/s1600/Screenshot_2015-08-17-09-10-01.png)</div>
+<div class="separator" style="clear: both; text-align: center;">[![](https://2.bp.blogspot.com/-IJY68wYgbXc/VdGEWVSt_vI/AAAAAAAANFA/yPswf4ZGR2I/s320/Screenshot_2015-08-17-09-10-01.png)](https://2.bp.blogspot.com/-IJY68wYgbXc/VdGEWVSt_vI/AAAAAAAANFA/yPswf4ZGR2I/s1600/Screenshot_2015-08-17-09-10-01.png)</div>
 
 <div class="separator" style="clear: both; text-align: center;">Kamera örnek uygulama</div>
 
-<div class="separator" style="clear: both; text-align: center;">[![](http://3.bp.blogspot.com/-BMNhCUde3Ro/VdGEWaaLwyI/AAAAAAAANFA/3IpD-1IKBuo/s320/Screenshot_2015-08-17-09-12-18.png)](http://3.bp.blogspot.com/-BMNhCUde3Ro/VdGEWaaLwyI/AAAAAAAANFA/3IpD-1IKBuo/s1600/Screenshot_2015-08-17-09-12-18.png)</div>
+<div class="separator" style="clear: both; text-align: center;">[![](https://3.bp.blogspot.com/-BMNhCUde3Ro/VdGEWaaLwyI/AAAAAAAANFA/3IpD-1IKBuo/s320/Screenshot_2015-08-17-09-12-18.png)](https://3.bp.blogspot.com/-BMNhCUde3Ro/VdGEWaaLwyI/AAAAAAAANFA/3IpD-1IKBuo/s1600/Screenshot_2015-08-17-09-12-18.png)</div>
 
 <div class="separator" style="clear: both; text-align: center;">Android içindeki geliştirme ortamı</div>
 
-<div class="separator" style="clear: both; text-align: center;">[![](http://1.bp.blogspot.com/-ymvyMJtedNc/VdGEWUBH3NI/AAAAAAAANFA/SNnzuLD7cd0/s320/Screenshot_2015-08-17-09-12-10.png)](http://1.bp.blogspot.com/-ymvyMJtedNc/VdGEWUBH3NI/AAAAAAAANFA/SNnzuLD7cd0/s1600/Screenshot_2015-08-17-09-12-10.png)</div>
+<div class="separator" style="clear: both; text-align: center;">[![](https://1.bp.blogspot.com/-ymvyMJtedNc/VdGEWUBH3NI/AAAAAAAANFA/SNnzuLD7cd0/s320/Screenshot_2015-08-17-09-12-10.png)](https://1.bp.blogspot.com/-ymvyMJtedNc/VdGEWUBH3NI/AAAAAAAANFA/SNnzuLD7cd0/s1600/Screenshot_2015-08-17-09-12-10.png)</div>
 
 <div class="separator" style="clear: both; text-align: center;">WebGL ile yapılmış Flappy Bird tarzı oyun</div>
 
-<div class="separator" style="clear: both; text-align: center;">[![](http://2.bp.blogspot.com/-Fl9NRVNWUQc/VdGEWTTrLMI/AAAAAAAANFA/FK7CA4uF0Gs/s320/Screenshot_2015-08-17-09-11-46.png)](http://2.bp.blogspot.com/-Fl9NRVNWUQc/VdGEWTTrLMI/AAAAAAAANFA/FK7CA4uF0Gs/s1600/Screenshot_2015-08-17-09-11-46.png)</div>
+<div class="separator" style="clear: both; text-align: center;">[![](https://2.bp.blogspot.com/-Fl9NRVNWUQc/VdGEWTTrLMI/AAAAAAAANFA/FK7CA4uF0Gs/s320/Screenshot_2015-08-17-09-11-46.png)](https://2.bp.blogspot.com/-Fl9NRVNWUQc/VdGEWTTrLMI/AAAAAAAANFA/FK7CA4uF0Gs/s1600/Screenshot_2015-08-17-09-11-46.png)</div>
 
 <div class="separator" style="clear: both; text-align: center;">Network uygulama örnekleri</div>
 
-<div class="separator" style="clear: both; text-align: center;">[![](http://4.bp.blogspot.com/-Jzq9va4rxT8/VdGEWX4AYRI/AAAAAAAANFA/5Vv57AVjjN8/s320/Screenshot_2015-08-17-09-11-04.png)](http://4.bp.blogspot.com/-Jzq9va4rxT8/VdGEWX4AYRI/AAAAAAAANFA/5Vv57AVjjN8/s1600/Screenshot_2015-08-17-09-11-04.png)</div>
+<div class="separator" style="clear: both; text-align: center;">[![](https://4.bp.blogspot.com/-Jzq9va4rxT8/VdGEWX4AYRI/AAAAAAAANFA/5Vv57AVjjN8/s320/Screenshot_2015-08-17-09-11-04.png)](https://4.bp.blogspot.com/-Jzq9va4rxT8/VdGEWX4AYRI/AAAAAAAANFA/5Vv57AVjjN8/s1600/Screenshot_2015-08-17-09-11-04.png)</div>
 
 <div class="separator" style="clear: both; text-align: center;">CanvGauge Kütüphanesi Kullanımı</div>
 
-<div class="separator" style="clear: both; text-align: center;">[![](http://1.bp.blogspot.com/-XlWanA_4-1U/VdGEWbMB8PI/AAAAAAAANFA/lrhGgp2N7Io/s320/Screenshot_2015-08-17-09-10-55.png)](http://1.bp.blogspot.com/-XlWanA_4-1U/VdGEWbMB8PI/AAAAAAAANFA/lrhGgp2N7Io/s1600/Screenshot_2015-08-17-09-10-55.png)</div>
+<div class="separator" style="clear: both; text-align: center;">[![](https://1.bp.blogspot.com/-XlWanA_4-1U/VdGEWbMB8PI/AAAAAAAANFA/lrhGgp2N7Io/s320/Screenshot_2015-08-17-09-10-55.png)](https://1.bp.blogspot.com/-XlWanA_4-1U/VdGEWbMB8PI/AAAAAAAANFA/lrhGgp2N7Io/s1600/Screenshot_2015-08-17-09-10-55.png)</div>
 
 <div class="separator" style="clear: both; text-align: center;">Dokümantasyonun içinden</div>
 
-<div class="separator" style="clear: both; text-align: center;">[![](http://2.bp.blogspot.com/-D--Q_q4XERI/VdGEWXS9QeI/AAAAAAAANFA/LWLblYyGfpc/s320/Screenshot_2015-08-17-09-10-28.png)](http://2.bp.blogspot.com/-D--Q_q4XERI/VdGEWXS9QeI/AAAAAAAANFA/LWLblYyGfpc/s1600/Screenshot_2015-08-17-09-10-28.png)</div>
+<div class="separator" style="clear: both; text-align: center;">[![](https://2.bp.blogspot.com/-D--Q_q4XERI/VdGEWXS9QeI/AAAAAAAANFA/LWLblYyGfpc/s320/Screenshot_2015-08-17-09-10-28.png)](https://2.bp.blogspot.com/-D--Q_q4XERI/VdGEWXS9QeI/AAAAAAAANFA/LWLblYyGfpc/s1600/Screenshot_2015-08-17-09-10-28.png)</div>
 
 </div>
 
 <div style="text-align: center;">Browser tabanlı geliştirme ortamı</div>
 
-<div class="separator" style="clear: both; text-align: center;">[![](http://4.bp.blogspot.com/-1vpqta2xoqw/VdGDNe_SOMI/AAAAAAAANBI/vFI7vFk_k5o/s400/Capture.JPG)](http://4.bp.blogspot.com/-1vpqta2xoqw/VdGDNe_SOMI/AAAAAAAANBI/vFI7vFk_k5o/s1600/Capture.JPG)</div>
+<div class="separator" style="clear: both; text-align: center;">[![](https://4.bp.blogspot.com/-1vpqta2xoqw/VdGDNe_SOMI/AAAAAAAANBI/vFI7vFk_k5o/s400/Capture.JPG)](https://4.bp.blogspot.com/-1vpqta2xoqw/VdGDNe_SOMI/AAAAAAAANBI/vFI7vFk_k5o/s1600/Capture.JPG)</div>
