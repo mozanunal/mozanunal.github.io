@@ -66,6 +66,8 @@ make
 ![](/images/1534768674064.png)
 
 Bu komut ile web arayüzünü aktifleştirmiş oluyoruz ve interaktif bir terminal çıktımız oluyor. "aggressive" ile de daha düşük isabet ile tespit etse de arayüzlerde çıktı vermesini istemiş oluyoruz.
-Orange pi ipsini bulmak için ifconfig komutu kullanılabilir. Web arayüzüne de üzerinden `opizeroip:8080` üzerinden ulaşabiliriz. Rtlsdr ile gelen anteni $lambda/4$ uzunlukta keserek daha verimli sonuçlar elde edebilirsiniz. 1090 Mhz için anten boyu 69mm olmalıdır. Ben açık alanda yaklaşık 250 km uzaklıktan veri almayı başardım. Böyle küçük bir kurulum ile bu kadar büyük bir uzaklıktan veri alabilmek gerçekten oldukça keyifliydi. Tekrar görüşmek üzere...  
+Orange pi ipsini bulmak için ifconfig komutu kullanılabilir. Web arayüzüne de üzerinden `opizeroip:8080` üzerinden ulaşabiliriz. Rtlsdr ile gelen anteni $lambda/4$ uzunlukta keserek daha verimli sonuçlar elde edebilirsiniz. 1090 Mhz için anten boyu 69mm olmalıdır. Ben açık alanda yaklaşık 250 km uzaklıktan veri almayı başardım. Böyle küçük bir kurulum ile bu kadar büyük bir uzaklıktan veri alabilmek gerçekten oldukça keyifliydi. Tekrar görüşmek üzere...
+
+![](/images/dump1090_1.jpg)
 
 
