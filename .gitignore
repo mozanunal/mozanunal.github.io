@@ -6,3 +6,5 @@ debug.log
 node_modules/
 public/
 .deploy/
+themes/clean-blog
+themes/hexo-theme-casper
