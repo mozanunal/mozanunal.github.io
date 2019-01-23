@@ -19,7 +19,7 @@ In this post, the Pmod microphone driver which is written in Verilog for Zynq bo
 
 ![pmod mic](/images/pasted-0.png)
 
-``` verilog
+```verilog
 `timescale 1ns / 1ps
 
 //ADCS747x 1-MSPS, 12-Bit, 10-Bit, and 8-Bit A/D Converters

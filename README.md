@@ -8,7 +8,7 @@ There is no interactive options but comment can be implement easliy
 
 ### Create a blog using hexo
 
-```
+```sh
 npm install hexo-cli -g
 hexo init blog
 cd blog
@@ -19,22 +19,22 @@ hexo server
 ### Install beneficial plugins
 
 Admin plugin to easily manage and create content
-```
+```sh
 npm install hexo-admin --save
 ```
 
 Manage rss feed of your blog
-```
+```sh
 npm install hexo-generator-feed --save
 ```
 
 For in blog search
-```
+```sh
 npm install hexo-generator-json-content --save
 ```
 
 Github pages deployer. There will be detailed information about deploying at next sections. 
-```
+```sh
 npm install hexo-deployer-git --save
 ```
 ### Configure your blog settings
@@ -55,13 +55,13 @@ I use disqus service for comments. Easy way is finding a theme support disqus. Y
 
 ### Deploy your content
 Go your git account and create repo named as `<username>.github.io`. Go to _config.yml and arrange deploy options as
-```
+```sh
 deploy:
   type: git
   repo: https://github.com/username/username.github.io
 ```
 First generate and then deploy. It will create static pages for all your pages, categories and tags etc. Then it will push it to your github pages. You can reach your site from `username.github.io`
-```
+```sh
 hexo generate
 hexo deploy
 ```
@@ -73,23 +73,23 @@ hexo deploy
 
 ## Guide to use this repository
 get files
-```
+```sh
 git clone https://github.com/mozanunal/mozanunal.com/
 npm install
 ```
 get theme files
-```
+```sh
 cd themes
 git clone theme-git-url
 ```
 run server
 
-```
+```sh
 hexo server
 ```
 
 If new content is created, add them to this repo, commit and push publish new content 
-```
+```sh
 hexo generate --watch
 hexo deploy
 ```

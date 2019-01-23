@@ -46,7 +46,7 @@ Mesela sürekli bulut sistemine göndermek istediğimiz bir veri var. Onu bu şe
 ![image](/images/1517781160680.png)
 
 Gördüğünüz gibi curl komutu oldukça karmaşık. Kodun karıştırmaması için ben bir kısmını sildim yerine 3 nokta koydum. Aşağıdaki gibi formatlayarak o stringi bulut sistemine aktaracak fonksiyonu oluşturabiliriz. Bu fonksiyonu bir döngünün içine alarak 2 dakikada bir CPU sıcaklığını bulut sistemimize aktaran bir kod yazabiliriz.
-```
+```python
 import os, time
 
 def sendData():

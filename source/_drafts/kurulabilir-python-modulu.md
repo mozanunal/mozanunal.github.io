@@ -27,7 +27,7 @@ mymodule/
 
 Modulümüzü istediğimiz yapıda oluşturduktan sonra "setup.py" dosyamızı oluşturuyoruz. Burada gerekli dosyalar da xxx
 
-```
+```python
 from setuptools import setup
 
 setup(name='funniest',
@@ -48,7 +48,7 @@ setup(name='funniest',
 
 
 Oluşturulan paketi bu komutlar ile kurabiliriz. 
-```
+```sh
 pip install .
 pip install -e .
 ```

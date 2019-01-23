@@ -16,14 +16,14 @@ Benim gibi sıklıkla linuxla uğraşan bir insansanız işinize çok fazla yar�
 
 Özelliklerine gelecek olursak kendi paket yöneticilerini geliştirmişler. İsmi pkg bir sürü popüler paketi kurabilmeniz mümkün. Programa girdiğinizde direk bir bash terminal karşılıyor bizi. Burada standart bash komutlarının çoğu çalışıyor. Örneğin ls, pwd, cat, echo...
 
-```bash
+```sh
 pkg list-all
 ```
 komutu ile kurulabilecek bütün paketleri görüyoruz.
 ![pkg list all](/images/termux_listall.jpg)
 
 Ben de aklıma gelen bir kaç paketi yükleyip testler yaptım. Şu and en çok ssh için kullanıyorum fakat yüklediğim diğer araçlar ise şöyle:
-```bash
+```sh
 pkg list-installed
 ```
 ![pkg list installed](/images/termux_listinstalled.jpg)

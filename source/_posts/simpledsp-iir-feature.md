@@ -170,13 +170,13 @@ output of fir functions can be used as filter coeficients
 
 Examples:
 
-```
+```octave
  freqz (fir1 (40, 0.3));
  freqz (fir1 (15, [0.2, 0.5], "stop"));  # note the zero-crossing at 0.1
  freqz (fir1 (15, [0.2, 0.5], "stop", "noscale"));
 ```
 
-```
+```octave
 figure
 b= fir1 (20, 0.3, "low");
 y = filter(b,1,x);

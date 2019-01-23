@@ -12,7 +12,7 @@ customize:
         height: 50
         url: images/logo.png
     theme_color: '#006bde'
-    highlight: androidstudio
+    highlight: github
     sidebar: left # sidebar position, options: left, right
     thumbnail: true # enable posts thumbnail, options: true, false
     favicon: images/favicon.ico # path to favicon

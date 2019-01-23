@@ -21,32 +21,32 @@ hexo.io Kullanım Klavuzu
 
 #### Blog oluşturma
 
-```
+```sh
 npm install hexo-cli -g
 hexo init blog
 cd blog
 npm install
 hexo server
-Yaralı eklentiler
 ```
+Yaralı eklentiler
 
 Admin eklentisi kolayca içerik oluşturmak ve oluşturulmuş içeriği yönetmek için.
-```
+```sh
 npm install hexo-admin --save
 ```
 
 Rss eklentisi
-```
+```sh
 npm install hexo-generator-feed --save
 ```
 
 Blog içi arama
-```
+```sh
 npm install hexo-generator-json-content --save
 ```
 
 Github pages deployer
-```
+```sh
 npm install hexo-deployer-git --save
 ```
 
@@ -72,14 +72,14 @@ Ben yorum için disqus kullanıyorum. Disqus kullanmanın kolay yolu onu destekl
 
 Github hesabınıza gidin ve <username>.github.io şeklinde bir kod deposu oluşturun. _config.yml dosyasını aşağıdaki gibi değiştirin.
 
-```
+```sh
 deploy:
   type: git
   repo: https://github.com/username/username.github.io
 ```
 Aşağıdaki kod ile ilkönce içeriği oluşturup sonra github pages üzerinden dağıtabilirsiniz. Bütün kategorileriniz sayfalarınız, yazılarınız statik html dosyaları olarak oluşturulup dağıtılacaktır.
 
-```
+```sh
 hexo generate
 hexo deploy
 ```

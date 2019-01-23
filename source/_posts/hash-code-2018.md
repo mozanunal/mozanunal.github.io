@@ -20,7 +20,7 @@ Bu seneki yarışmada çok başarılı olamadık derece anlamında. Ama yarışm
 Yarışmada şunu yapmamız istendi: Belli bir zamanda bir yerden bir yere gitmesi gereken yolcular var. Elimizde yolcuları taşımak üzere arabalar var. Hangi araba ne zaman nerede olacak hangi yolcuları alacak bunu optimize etmemiz isteniyor.
 
 Aşağıdaki dosyada point ve map classı tanımlanmış. Bir de mesefa hesaplayan bir fonksiyon eklenmiş durumda.
-```
+```python
 
 def calcStep(a,b):
     return abs(a.x - b.x ) + abs(a.y - b.y)
@@ -38,7 +38,7 @@ class Map(object):
 ```
 
 Burada "Ride" objesi tanımlanmış durumda. "Ride" için gerekli argumanlar başlangıç-bitiş noktaları ve zamanları. Bu girdilere göre bir kaç tane de daha özellik __init__ fonksiyonunda oluşturuluyor. 
-```
+```python
 
 from mapH import *
 
@@ -64,7 +64,7 @@ class Ride(object):
 ```
 
 Aşağıdaki dosya temel işlemlerimizin yapıldığı araba objesi. Buradaki en kritik fonksiyon "findRide" fonksiyonu. Biz çözümümüzü şu şekilde tasarladık: Simulasyon benzeri bir şey çalıştırıyoruz t = 0 anından başlanarak tüm arabalara ilk konumlarına ve "Ride" durumuna göre iş atanıyor. Sonra simulasyon t = 1 anına geçiyor. Eğer boşa çıkmış araba varsa tekrar ona iş atayım sonraki t anına geçiş yapıyor. Bu şekilde zamanı simüle etmiş oluyoruz ve boşa çıkan arabaya hemen iş atanıyor. 
-```
+```python
 import numpy as np
 from mapH import *
 
@@ -109,7 +109,7 @@ class Car(object):
 
 
 Son olarak ana giriş dosyamız. Bu kod ile gerekli veri verilen dataset dosyalarından okunuyor ve kurguladığımız sisteme uygun hale getirilip objeler oluşturuluyor. Daha sonrasında önceden bahsettiğim simülasyon kısmı çalıştırılıyor ve çıktıları çıkış dosyasına yazılıyor yarışma tarafından verilen formatta. Evet bu yazı için benden bu kadar. Eğer anlamadığınız merak ettiğiniz yerler var ise kodla alakalı sorabilirsiniz. Son sözlerim olarak bu yarışmayı herkese tavsiye ediyorum. Gerçekten zorlayıcı ve geliştirici bir yarışma. Süreniz 4 saat oluyor ve stres altında doğru düşünme yeteneğinizi geliştirmeniz için sizi itekliyor. Bir diğer önemli unsur da beraber çalışma. Takımınızla doğru görev paylaşımını yapmanız gerek. Bireysel çalışarak iyi sonuçlar alınabilecek bir yarışma olduğunu düşünmüyorum. Tekrar görüşmek üzere...
-```
+```python
 from ride import *
 from car import *
 from mapH import *

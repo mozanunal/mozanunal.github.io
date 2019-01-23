@@ -27,7 +27,7 @@ Bu 3 farklı dar boğaza göre farklı imlemantasyon yöntemini tercih etmeniz g
 
 Aşağıdaki modül OR alan bir modül olarak tasarlanmıştır. Direk OR aritmetik oparatörü kullanarak aşağıdaki gibi oluşturulabilir. Burda dikkat çekmek istediğim ikinci şey bir modülün nasıl tanımlandığıdır. İlk olarak giriş ve çıkışlar tanımlanır. Bu modülde hepsi 1 bit olmak üzere 2 giriş 1 çıkış gereklidir. "assign" ile gerekli bağlantı yapılır. Hiç "clock" kullanılmadığı için kombinasyonel **(combinational)** bir modüldür.
 
-```
+```verilog
 module OR(
     input I1,
     input I2,
@@ -43,7 +43,7 @@ endmodule
 
 LUT, "look up table" teriminin kısaltmasıdır. FPGA bildiğiniz gibi verilog diliyle tasarladığımız ve zaman-kaynak sınırlamalarını aşmayan her türlü devrenin gerçeklenebildiği çip türüdür. Bu esnekliği uygulanabilir kılan FPGA yapısının en küçük birimlerindeki LUT'lardır. Yani nasıl yazarsak yazalım kodu en son LUT dönüştürülüp devre üzerine öyle aktarılır. Verilog diliyle direk olarak LUT tanımlayarak da istediğimiz mantık fonksiyonunu gerçekleyebiliriz. Aşağıda EXNOR fonksiyonu LUT kullanılarak gerçeklenmiştir.
 
-```
+```verilog
 module EXNOR(
     input I1,
     input I2,
@@ -62,7 +62,7 @@ endmodule
 
 Always yapısı sadece belli durumlarda çalışan mantık devreleri yazmak için kullanıyoruz. Örneğin "if" için burada bir "always" yapısına ihtiyacımız oluyor.
 
-```
+```verilog
 module NAND(
     input I1,
     input I2,
@@ -110,7 +110,7 @@ endmodule
 
 Case yapısı kullanarak aşağıdaki decoder kolayca gerçeklenebilir.  Case kullanımı için de always yapısı gereklidir.
 
-```
+```verilog
 module DECODER(
 	 input[3:0] IN,
 	 output reg [15:0] OUT
@@ -146,7 +146,7 @@ endmodule
 
 Önemli kullanımlardan biri de hiyerarşik modul yapısıdır. Modüller diğer modelleri alt modül olarak çağırabilir bu sayede işlevler birbirinden ayrıştırılır. Örneğin decoder oluşturulduğunda projenin kalanından ayrı olarak test edilir. Çalıştığından emin olunan bir alt parça sağlanmış olur.
 Diger modulleri aşadaki gibi bir yazım kurallarıyla alt modul olarak çağırabilirsiniz. Modülün giriş ve çıkışlarını üst modüldeki kablolara bağlanmanız gerekir.
-```
+```verilog
 module topmodule(
 	input [7:0]sw,
 	input [3:0]btn,
@@ -166,7 +166,7 @@ endmodule
 
 Aynı alt modülden farklı isimler vererek birden fazla oluşturabilirsiniz. Bu örnekte demux bir veya daha fazla kez oluşturulmuş başka alt modüller kullnarak yapılmıştır. Sonrasında da bu modül  başka bir üst modülün parçası olabilir. Bu şekilde hiyerarşik bir yapı vardır.
 
-```
+```verilog
 
 `timescale 1ns / 1ps
 
@@ -202,7 +202,7 @@ endmodule
 ### Sıralı (Sequential) Mantık Devreleri
 
 Sayısal devrelerin olmazsa olmazlarından biri **"clock"** sinyalidir. Peki neden böyle bir şeye ihtiyaç duyulur ? Devrelerde gerçeklenmek istenen işlevler genellikle belli durumların olduğu ve zamana bağlı olarak ard arda belli durumların birbini takip etmesiyle çalışan sistemlerdir. Çoğu durum tek bir kombinasyonel devre olarak gerçeklenemez. Bir çok gerçeklenebilecek durumda da yine de sıralı devreler tercih edilir. Çünkü çok daha az kaynak kullanarak daha stabil şekilde gerçeklemeye uygun devreler bu yöntem ile elde edilebilir.
-```
+```verilog
 module register(
 input [7:0] SW,
 input BTN,
@@ -227,7 +227,7 @@ endmodule
 ```
 
 Art-arda 4 tane 1 veya 4 tane 0 gelmesi durumunu tespit eden devrenin verilog kodu aşağıdaki gibidir. Bu devre tipi sıralı mantık devrelerine giriş niteliğinde bir örnektir. Bu devrenin kodu yazılırken ilkönce kağıt üzerinde yapılması gereken işlemler vardır. İlk olarak devrenin durumları çıkarılır. Mealy-Moore diagramı çizilerek durumlar arasındaki geçişler belirlenir ve eğer yapılabiliyorsa gerekli indirgemeler yapılır. Bu işlemlerin sonucuna göre aşağıdaki kod yazılabilir. `always @(posedge clk or posedge reset) ` bu satır sayesinde her "clock" yükselen kenarında girişlerin değerlerine göre sistem sonraki duruma  geçirilir. 
-```
+```verilog
 `timescale 1ns / 1ps
 
 module FSM1(
