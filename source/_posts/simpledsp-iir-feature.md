@@ -14,8 +14,8 @@ author: ''
 date: 2019-01-23 23:45:00
 ---
 
-# SimpleDSP
-SimpleDSP is a basic DSP library which is for arduino and most of the microcontrollers which can be programmed in C/C++
+# [SimpleDSP](github.com/mozanunal/SimpleDSP)
+[SimpleDSP](github.com/mozanunal/SimpleDSP) is a basic DSP library which is for arduino and most of the microcontrollers which can be programmed in C/C++
 
 ## Performance:
  Here is some examples for its performance. Actually it is not optimized for performance. Its main focuses are portability and education.
