@@ -17,7 +17,7 @@ Bugünkü yazımda Arduino ile melodi çalma uygulamasından bahsedeceğim. Kull
 
 <div class="separator" style="clear: both; text-align: center;">[<iframe allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" width="320" height="266" src="https://www.youtube.com/embed/VcaaF9eO4vA?feature=player_embedded" frameborder="0"></a></div><br /><br />
 
-{% codeblock lang:cpp %}
+```cpp
 /* This example uses a piezo speaker to play melodies.  It sends  
  * a square wave of the appropriate frequency to the piezo, generating  
  * the corresponding tone.  
@@ -94,7 +94,6 @@ void loop() {
     delay(tempo / 2);   
   }  
 }  
-{% endcodeblock %}
-
+```
 
 <div class="separator" style="clear: both; text-align: center;"><a href="https://2.bp.blogspot.com/-GQ1BWdKhvrw/VMUSIrXL8NI/AAAAAAAAG3M/8sZwNPs8zTc/s1600/IMG_20150121_025441.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="https://2.bp.blogspot.com/-GQ1BWdKhvrw/VMUSIrXL8NI/AAAAAAAAG3M/8sZwNPs8zTc/s1600/IMG_20150121_025441.jpg" height="320" width="240" /></a><a href="https://1.bp.blogspot.com/-YMJSEIRze7Y/VMUR8x8asBI/AAAAAAAAG24/voBcVoHvyVk/s1600/IMG_20150121_025526.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="https://1.bp.blogspot.com/-YMJSEIRze7Y/VMUR8x8asBI/AAAAAAAAG24/voBcVoHvyVk/s1600/IMG_20150121_025526.jpg" height="320" width="179" /></a><a href="https://3.bp.blogspot.com/-AsasLL79nZo/VMUSJBqw25I/AAAAAAAAG3Q/W9QQajOI91M/s1600/IMG_20150121_025453.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="https://3.bp.blogspot.com/-AsasLL79nZo/VMUSJBqw25I/AAAAAAAAG3Q/W9QQajOI91M/s1600/IMG_20150121_025453.jpg" height="200" width="150" /></a></div><br /><br /><br /></iframe>](https://www.youtube.com/watch?v=VcaaF9eO4vA&feature=youtu.be)</div>

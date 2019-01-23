@@ -29,7 +29,7 @@ Görüldüğü gibi Python'un bile yüklü olmasına gerek yok ihtiyacımız ola
 
 SimpleCV fonksiyonları ve kullanımları:
 
-{% codeblock lang:python %}
+```python
 #Reading an image
 Image(’lenna.png’)
 
@@ -369,4 +369,4 @@ img.applyButterworthFilter(dia, order,highpass,grayscale)
 #Creates a gaussian filter of 64x64 pixels, resizes it to fit image
 img.applyGaussianFilter(dia, highpass, grayscale)
 
-{% endcodeblock %}
+```

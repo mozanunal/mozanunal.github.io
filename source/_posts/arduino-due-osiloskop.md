@@ -20,8 +20,8 @@ Osiloskop projesine başlarken amacım Due ile mümkün olan en yüksek örnekle
 
 <!-- more -->üzerinden ulaşıyoruz. Arduinonun fonksiyonunda her analog değer alma işleminde ilkönce ADC'yi açıyor, okuduktan sonra ise kapatıyor. Bu kodda ise ADCyi FREE RUN modunda kullanmış oluyoruz. Bu sayede bir örnekleme ortalama 1 uS sürüyor yani 1 Mega Sample Per Second (MSa/s) bir osiloskop yapmış olduk.  
 
-{% codeblock lang:c %}
 
+```cpp
 unsigned long start_time;
 unsigned long stop_time;
 unsigned long values[1000];
@@ -55,7 +55,7 @@ void loop() {
   Serial.println();
   delay(2000);
 }
-{% endcodeblock %}
+```
 
 Osiloskop arayüzünü ise C# dilini kullanarak yazdım. Osiloskop için kullunanılan [bu kütüphaneyi](https://www.oscilloscope-lib.com/) kullandım. Arayüzden görüntüler de aşağıdadır.  
 

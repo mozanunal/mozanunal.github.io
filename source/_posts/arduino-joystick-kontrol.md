@@ -32,7 +32,7 @@ Arduino nano güç için usb üzerinden bilgisayara bağlıservolar;
 
 **Programın arduino kodu:**  
 
-{% codeblock lang:cpp %}
+```cpp
 #define X_AXIS    A4    
 #define Y_AXIS    A5  
 #include <Servo.h>   
@@ -100,5 +100,5 @@ else if(Yvalue<200)
 }  
 }  
 
-{% endcodeblock %}
+```
 

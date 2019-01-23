@@ -66,7 +66,7 @@ Esp8266'nın özellikleri böyle fakat biz ne için kullanacağız. 1999 yılın
 
 Arduino kodu aşağıdadır eğer başka bir Arduino ile kullanacaksanız "Serial1" yerine "SoftwareSerial" kullanmanızı öneririm.  
 
-{% codeblock lang:cpp %}
+```cpp
 
 #include <Wire.h>  
 #define DEBUG true 
@@ -145,7 +145,7 @@ String sendData(String command, const int timeout, boolean debug)
     
     return response;
 }
-{% endcodeblock %}
+```
 
 Esp8266yı Acces Point olarak kullanıyoruz. Yani bizim için wifi ağı kurar kodu yükledikten sonra ağa bağlanın.
 <div class="separator" style="clear: both; text-align: center;">[![](https://1.bp.blogspot.com/-EdZgWilDZtk/VQCjNmKFV8I/AAAAAAAAH2w/1ZTj8e8Wf34/s1600/Ads%C4%B1z.png)](https://1.bp.blogspot.com/-EdZgWilDZtk/VQCjNmKFV8I/AAAAAAAAH2w/1ZTj8e8Wf34/s1600/Ads%C4%B1z.png)

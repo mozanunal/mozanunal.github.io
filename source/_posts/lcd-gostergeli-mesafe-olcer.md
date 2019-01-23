@@ -24,7 +24,7 @@ Bugünkü yazımda LCD göstergeli bir mesafe ölçerin nasıl yapılabileceğin
 
 Uygulamanın Arduino Kodunu paylaşıyorum. Bağlantılar da kod içerisinde verilmiştir.
 
-{% codeblock lang:cpp %}
+```cpp
 /* The circuit:
  * LCD RS pin to digital pin 12
  * LCD Enable pin to digital pin 11
@@ -65,4 +65,4 @@ void loop() {
   lcd.setCursor(0, 1);
   lcd.print(uS / US_ROUNDTRIP_CM);
 }
-{% endcodeblock %}
+```

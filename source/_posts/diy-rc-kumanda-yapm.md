@@ -42,7 +42,7 @@ Kumandanın koduyla alakalı olarak değinmek istediğim bir kaç nokta var. Ba�
 <div>Başta belirlediğim ID sayesinde farklı birden fazla ID belirleyerek, birden fazla sayıda aracı kontrol edebilirsiniz. Max angle 12 veya  datatosend[2]=-1*(analogRead(3)-500)*Max_angle/500; gibi satırlar tamamen kullanıma örnek olması amacıyla konmuştur. Yapmanız gereken sadece joysticklerden veya potansiyometreden aldığınız veriyi nasıl göndermek isterseniz o şekile çevirip "datatosend" array elemanlarına eşitlemektir. İstediğiniz türde aracı veya çok fazla farklı kanalı bu şekilde rahatça kontrol edebilirsiniz.</div>
 
 **Kumanda Kodu**  
-{% codeblock lang:cpp %}
+```cpp
 #include <SPI.h>  
 #include <RF24.h>  
 #include "nRF24L01.h"  
@@ -74,11 +74,11 @@ void loop()
   radio.startListening();  
   delay(50);  
 }  
-{% endcodeblock %}
+```
 
 Aşağıdaki kod is**e RC verilerini almak için gerekli fonksiyondur** değiken boyutlarını ayarlayarak channel sayısını artırabilirsiniz. Tabi ki bu kodu kontrol edeceğiniz aracın koduna eklemeniz gerekmektedir.  
 
-{% codeblock lang:cpp %}
+```cpp
 void Rc_Update()  
 {  
   int incomingdata[6]={0,0,0,0,0,0};  
@@ -103,4 +103,4 @@ void Rc_Update()
   Serial.print(ch_5);  
   Serial.println();  
 }
-{% endcodeblock %}
+```

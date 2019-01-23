@@ -23,7 +23,7 @@ Bilgisayardan Gimbal Kontrolü
 
 
 Arayüz programını C# kodlarının bu proje için örnek kısımlar aşağıdaki gibidir.
-{% codeblock lang:csharp %}
+```csharp
 private void timer1_Tick(object sender, EventArgs e)
 {
   serialPort1.Write(label1.Text);
@@ -87,6 +87,6 @@ private void button2_MouseDown(object sender, MouseEventArgs e)
 {
   label1.Text = “D”;
 }
-{% endcodeblock %}
+```
 
 

@@ -21,7 +21,7 @@ date: 2014-10-18 18:22:00
 
 Arkadaşlar projemin Arduino kodunu da paylaşıyorum.
 
-{% codeblock lang:cpp %}
+```cpp
 #include <I2Cdev.h>
 #include <MPU60X0.h>
 #include <EEPROM.h>
@@ -102,4 +102,4 @@ void loop(){
   }
   delay(15);
 }
-{% endcodeblock %}
+```

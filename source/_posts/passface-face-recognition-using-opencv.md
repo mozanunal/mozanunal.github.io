@@ -72,7 +72,7 @@ Ambient light and the movement at faces are the challenging problems in face rec
 
 ![](https://lh5.googleusercontent.com/eRt6xx3RU22fZ22_-TGdan22lp2x7JiNA9De7PuYa2xLVcZIcg4hVJzvrXyzdNbocv4NuBW8QOHYYTr0NNowPys7QOScefuBrgEeoiILasaQm2v0S0P8NPxVYSiPBRoPotTP3h0p)
 
-{% codeblock lang:csharp %}
+```csharp
 if (comboBoxAlgorithm.Text == “SURF Feature Extractor”)
 {
 string dataDirectory=Directory.GetCurrentDirectory()+”\TrainedFaces”;
@@ -97,11 +97,11 @@ foreach (var file in files)
        }
    }
 }
-{% endcodeblock %}
+```
 
 ##### Eigenfaces
 
-{% codeblock lang:csharp %}
+```csharp
 else if (comboBoxAlgorithm.Text == "EigenFaces")
 {
    //image._EqualizeHist();
@@ -116,11 +116,11 @@ else if (comboBoxAlgorithm.Text == "EigenFaces")
        label6.Text = result.Distance.ToString();
    }
 }
-{% endcodeblock %}
+```
 
 ##### Fisherfaces
 
-{% codeblock lang:csharp %}
+```csharp
 
 else if (comboBoxAlgorithm.Text == "FisherFaces")
 {
@@ -137,11 +137,11 @@ else if (comboBoxAlgorithm.Text == "FisherFaces")
 
 
 }
-{% endcodeblock %}
+```
 
 ##### Local Binary Patterns Histograms
 
-{% codeblock lang:csharp %}
+```csharp
 else if (comboBoxAlgorithm.Text == "LBPHFaces")
 {
    if (eqHisChecked.Checked == true)
@@ -155,7 +155,7 @@ else if (comboBoxAlgorithm.Text == "LBPHFaces")
        label6.Text = result.Distance.ToString();
    }
 }
-{% endcodeblock %}
+```
 
 #### 3. PassFace Interface
 
@@ -163,7 +163,7 @@ else if (comboBoxAlgorithm.Text == "LBPHFaces")
 
 A database creator is developed to make easier to implement and try different algorithm.
 
-{% codeblock lang:csharp %}
+```csharp
 Add DataBase Function
 
 
@@ -280,7 +280,7 @@ private void comboBoxAlgorithm_SelectedIndexChanged(object sender, EventArgs e)
    }
 }
 
-{% endcodeblock %}
+```
 
 ![](https://lh4.googleusercontent.com/560MflmHrYy5nUi4gIAQexc-Cdqfyr3GUej_g1wwa0HawxO4A7OFmOkgd0g4oBvy9An1PjiYxSM_8G0G2FS_zC2y3gWisgkr0NTikxv4oyDFL9qM6IpkupdhA7OjnUAb4cuy51Pa)
 

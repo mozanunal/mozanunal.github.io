@@ -27,7 +27,7 @@ Ayrıca wiki sayfasını kesinlikle ziyaret etmenizi tavsiye ederim orada Matlab
 
 **Örnek kod**
 
-{% codeblock lang:cpp %}
+```cpp
 
 /*This is a signal sum of 800 hz and 3.2 khz sine waves
 which sampled in 10khz and 32 of this samples are  
@@ -375,4 +375,4 @@ void loop()
 {  
 
 } 
-{% endcodeblock %}
+```

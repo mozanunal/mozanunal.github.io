@@ -23,7 +23,7 @@ Toolkiti kullanmak için gerekenler:
 **3.** Kütüphanemizin tanıyabileceği patternlar(kendiniz de üretebilirsiniz)  
 **4.** Bu kaynak kod  
 
-{% codeblock lang:processing %}
+```csharp
 import processing.video.*;
 import jp.nyatla.nyar4psg.*;
 Capture cam;
@@ -91,4 +91,4 @@ void draw()
     nya_l.endTransform();
   }
 }
-{% endcodeblock %}
+```
