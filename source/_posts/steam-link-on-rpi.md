@@ -5,7 +5,7 @@ tags:
   - Raspberry Pi
 categories:
   - Yazılım
-date: 2019-01-28 00:45:01
+date: 2019-02-01 00:45:01
 ---
 
 **Hello,**
@@ -46,7 +46,7 @@ Processing triggers for man-db (2.7.6.1-2) ...
 ```
 ### Game Play Demo
 
-Some configurations are also should be done to start playing through your Raspberry Pi. However, these steps are quite easy to follow and no prior shell knowledge is required.
+Some configurations are also should be done to start playing through your Raspberry Pi. However, these steps are quite easy to follow and no prior shell knowledge is required. By the way, ping is around 6 ms with ethernet connection to your router. The ping is heavily depends on your router performance and connection quality. I could not get sufficient results with WiFi connection to Raspberry Pi. Therefore I connect it to external router in order to keep the connection latency as minimum as possible.
 
 {% youtube Oouu3DmDyM4 %}
 
