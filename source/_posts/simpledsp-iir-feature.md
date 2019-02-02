@@ -14,8 +14,8 @@ author: ''
 date: 2019-01-23 23:45:00
 ---
 
-# [SimpleDSP](github.com/mozanunal/SimpleDSP)
-[SimpleDSP](github.com/mozanunal/SimpleDSP) is a basic DSP library which is for arduino and most of the microcontrollers which can be programmed in C/C++
+# [SimpleDSP](https://github.com/mozanunal/SimpleDSP)
+[SimpleDSP](https://github.com/mozanunal/SimpleDSP) is a basic DSP library which is for Arduino and most of the microcontrollers which can be programmed in C/C++
 
 ## Performance:
  Here is some examples for its performance. Actually it is not optimized for performance. Its main focuses are portability and education.
@@ -24,11 +24,11 @@ date: 2019-01-23 23:45:00
 * FFT 16 points: 2 ms
 * FFT 32 points: 6 ms
 * FFT 64 points: 16 ms
-* fir filter 10 coeficients: 190 us
-* fir filter 23 coeficients: 453 us
-* fir filter 46 coeficients: 900 us
+* fir filter 10 coefficients: 190 us
+* fir filter 23 coefficients: 453 us
+* fir filter 46 coefficients: 900 us
 
-10 coeficients FIR filter can be run at 5khz max frequency on an Arduino Nano.
+10 coefficients FIR filter can be run at 5khz max frequency on an Arduino Nano.
 
 ## Arduino Due
 * FFT 64 points: 2 ms
@@ -44,7 +44,7 @@ date: 2019-01-23 23:45:00
 
 FFT and IFFT functions require 2 arguments.
 data 
-data lenght
+data length
 Do not forget to add `#include "simpleDSP_FFT.h"`
 
 [Full example for FFT and IFFT please refer here](/examples/fft_ifft/fft_ifft.ino)
@@ -67,7 +67,7 @@ Do not forget to add `#include "simpleDSP_FFT.h"`
 
 ### Arduino Example
 
-FIR is filter structure which keep delays and coeficients of filter. There are 2 public functions. `firInit` initiliazes the structure according to parameters and makes required memory allocations. Coeficients and its lenght are given as parameter to this function
+FIR is filter structure which keep delays and coefficients of filter. There are 2 public functions. `firInit` initializes the structure according to parameters and makes required memory allocations. Coefficients and its length are given as parameter to this function
 Do not forget to add `#include "simpleDSP_fir.h"`
 ```cpp
 void firInit(FIR *fir, int coefBLen, float *coefsB);
@@ -97,7 +97,7 @@ float firFilt(FIR *fir, int input);
 
 ### Arduino Example
 
-IIR is filter structure which keep delays and coeficient of filter. There are 2 functions to implement IIR filter using SimpleDSP library. initIIR function is the constructor function for the filter. Filter coeficients for a and b should be given as arguments to this function. After init, filtIIR must be used as filtering function. This function requires 2 arguments. Object instance and data. It returns the filtered output. 
+IIR is filter structure which keep delays and coefficient of filter. There are 2 functions to implement IIR filter using SimpleDSP library. initIIR function is the constructor function for the filter. Filter coefficients for a and b should be given as arguments to this function. After init, filtIIR must be used as filtering function. This function requires 2 arguments. Object instance and data. It returns the filtered output. 
 
 ```cpp
 void iirInit(IIR *iir, int coefBLen, float *coefsB, int coefALen, float *coefsA);
@@ -164,7 +164,7 @@ Graph of FFT Signal
 
 ### Filter Design Using Octave
 
-output of fir functions can be used as filter coeficients
+output of fir functions can be used as filter coefficients
 
 [Resource for FIR](https://octave.sourceforge.io/signal/function/fir1.html)
 
