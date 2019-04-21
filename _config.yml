@@ -102,10 +102,10 @@ admin:
     # cors: https://localhost:3000
 
 
-imagemin:
-  enable     : true
-  interlaced : false
-  multipass  : false
-  optimizationLevel: 2
-  pngquant   : false
-  progressive: false
+#imagemin:
+#  enable     : true
+#  interlaced : false
+#  multipass  : false
+#  optimizationLevel: 2
+#  pngquant   : false
+#  progressive: false

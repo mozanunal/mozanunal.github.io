@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "hexo": {
-    "version": "3.7.1"
+    "version": "3.8.0"
   },
   "dependencies": {
     "hexo": "^3.2.0",
@@ -16,7 +16,6 @@
     "hexo-generator-seo-friendly-sitemap": "0.0.21",
     "hexo-generator-tag": "^0.2.0",
     "hexo-hey": "^0.4.1",
-    "hexo-imagemin": "^0.1.0",
     "hexo-related-popular-posts": "^3.0.1",
     "hexo-renderer-ejs": "^0.2.0",
     "hexo-renderer-marked": "^0.2.10",

@@ -18,7 +18,6 @@ customize:
     favicon: images/favicon.ico # path to favicon
     social_links: # for more icons, please see https://fontawesome.io/icons/#brand
         facebook: https://www.facebook.com/mehmetozan.unal/
-        google-plus: https://plus.google.com/116790030893288193193/
         github: https://github.com/mozanunal/
         rss: https://mozanunal.com/atom.xml
         envelope: https://eepurl.com/dm5eOH
