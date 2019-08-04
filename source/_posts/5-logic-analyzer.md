@@ -33,4 +33,4 @@ Kullanımına gelecek olursak [Buradan bilgisayarda kullanabileceğiniz arayüz 
 
 Kurulum ve kullanımı da oldukça basit. Standart bir kurulum işlemi var. Kullandım için de almak istediğiniz örnekleme sayısı ve örnekleme frekansını arayüze giriyorsunuz. Analyzers ekmesinden istediğiniz protokolü de ekleyebilirsiniz. Sonrasın "Start Simulation" tuşuna basarak devam edebilirsiniz. Şimdilik anlatacaklarım bu kadar, tekrar görüşmek üzere...  
 
-<div class="separator" style="clear: both; text-align: center;">[![](https://4.bp.blogspot.com/-iX_AqQzvCK4/Vn7FfbsXBdI/AAAAAAAAXOM/o79jXa9N29o/s640/Capture.PNG)](https://4.bp.blogspot.com/-iX_AqQzvCK4/Vn7FfbsXBdI/AAAAAAAAXOM/o79jXa9N29o/s1600/Capture.PNG)</div>
+![](https://4.bp.blogspot.com/-iX_AqQzvCK4/Vn7FfbsXBdI/AAAAAAAAXOM/o79jXa9N29o/s640/Capture.PNG)](https://4.bp.blogspot.com/-iX_AqQzvCK4/Vn7FfbsXBdI/AAAAAAAAXOM/o79jXa9N29o/s1600/Capture.PNG)

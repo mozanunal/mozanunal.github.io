@@ -19,7 +19,7 @@ Bugünkü yazımda en sevdiğim programlama dillerinden biri olan pyhtondan bahs
 Makine öğrenmesi, verilerin görsellenmesi, matematik kütüphaneleri, web frameworkleri, cloud servislerinin apilerini kullanmak için gerekli kütüphaneler, geliştirme ortamları, animasyon, 3d opengl...  
 [700 paket için sıralı tam listeye buradan ulaşabilirsiniz](https://docs.continuum.io/anaconda/pkg-docs).  
 
-<div class="separator" style="clear: both; text-align: center;">[![](https://1.bp.blogspot.com/-_xB04JWUxhY/V9XppX6FS0I/AAAAAAAAdOw/6PyYHUPb7-M8u8jlxiLDb30Ihy2psMzRACLcB/s400/Anaconda.png)](https://1.bp.blogspot.com/-_xB04JWUxhY/V9XppX6FS0I/AAAAAAAAdOw/6PyYHUPb7-M8u8jlxiLDb30Ihy2psMzRACLcB/s1600/Anaconda.png)</div>
+![](https://1.bp.blogspot.com/-_xB04JWUxhY/V9XppX6FS0I/AAAAAAAAdOw/6PyYHUPb7-M8u8jlxiLDb30Ihy2psMzRACLcB/s400/Anaconda.png)
 
 Aşağıdaki 6 paket çok işinize yarayacaktır. Scipy sitesinden alıntı yaptım. Hepsi çok kullanılan kütüphaneler. Lineer cebir, veri inceleme, sinya işleme, basit regresyonlar falan çok geniş hepsinin içerikleri. Sympy çok kullanmadım ama sembolik matematik işleri için size belki gerekli olur diye onu da ekledim.
 - NumPy, SciPy, Matplotlib, IPython, Sympy, Pandas

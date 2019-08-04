@@ -28,16 +28,11 @@ date: 2015-11-05 05:25:00
 *   PSW (Program Status Word) : Aşağıda tekrar değineceğim
 *   Stack Pointer Register: Yine 8 bitlik stackin en üzerindeki adresi gösteren registerdır. 
 
-<div>
+## **1.8051 Entegresi Bazı Assembly Komutları ve Örnekleri**
 
-### **1.8051 Entegresi Bazı Assembly Komutları ve Örnekleri**
-
-</div>
-
-<div>**MOV Komutu:** Bir registera veri yüklemek için kullanılır.</div>
-
-<div>Kullanımı şöyledir:</div>
-
+### MOV Komutu:
+Bir registera veri yüklemek için kullanılır.
+Kullanımı şöyledir:
 <div>MOV data yüklenecek register, yüklenecek data</div>
 
 <div>MOV A,#51H</div>
@@ -114,10 +109,11 @@ A=A/B
 
 **Loop ve Jump komutu**  
 
-<div class="separator" style="clear: both; text-align: center;">[![](https://2.bp.blogspot.com/-s3eVl_wFjZ0/VjkszPwX-jI/AAAAAAAAOn8/ZYp-ZWfsxkk/s640/Ekran%2BAl%25C4%25B1nt%25C4%25B1s%25C4%25B1.PNG)](https://2.bp.blogspot.com/-s3eVl_wFjZ0/VjkszPwX-jI/AAAAAAAAOn8/ZYp-ZWfsxkk/s1600/Ekran%2BAl%25C4%25B1nt%25C4%25B1s%25C4%25B1.PNG)</div>
+![](https://2.bp.blogspot.com/-s3eVl_wFjZ0/VjkszPwX-jI/AAAAAAAAOn8/ZYp-ZWfsxkk/s1600/Ekran%2BAl%25C4%25B1nt%25C4%25B1s%25C4%25B1.PNG)
 
 Loop oluşturmak için kullanılan komutlar yukarıdaki gibidir. Hepsi farklı bir koşulu kullanmak içindir. Aşağıdaki örnek kod ise kullanımlarına örnektir.  
 
+```asm
              ORG 0H  
 
              MOV A, #0              ; clear A  
@@ -131,8 +127,8 @@ AGAIN: ADD A, # 05             ; add five to register A
              MOV R3, A              ; save A in R3  
 
              END</div>
-
-<div>  
+```
+s
 SJMP: Program counterdan en fazla yarım byte uzaklıklarda bulunan bir yere atlamak için kullanılır.  
 
 LJMP: Program counterdan yarım bytedan fazla uzaklıklarda bulunan bir yere atlamak için kullanılır.  
@@ -154,7 +150,7 @@ AGAIN: DJNZ R5, AGAIN       ; stay here until R5 becomes zero
              RET                           ; return to caller  
              END</div>
 
-<div>**MOVX komutu**  
+## MOVX komutu
 MOVX komutu harici RAM'den veri alış verişi yapmak için kullanılır.  
 
 MOV      R0, #50H  
@@ -168,19 +164,17 @@ DTPR registerı 16 bitliktir. Eğer 8 bitten büyük adresteki bir veriye ulaş�
 
 **POP ve PUSH komutu**  
 Stack işlemleri için kullanılır. Stack ilk giren datanın en son çıktığı veri yapısı çeşididir.  
-MOV R6,#25H; </div>
 
-<div>MOV R1,#12H; </div>
+```
+MOV R6,#25H;
+MOV R1,#12H; 
+MOV R4,#OF3H; 
+PUSH 06H;
+PUSH 01H; 
+POP 04H;
+```
 
-<div>MOV R4,#OF3H; </div>
-
-<div>PUSH 06H;</div>
-
-<div>PUSH 01H; </div>
-
-<div>POP 04H;</div>
-
-<div>Bu kod şöyle çalışacaktır. 25H sayısı (R6) stack'e eklenir.  12H sayısı stack'e eklenir. 12H sayısı stackten çıkarılır.</div>
+Bu kod şöyle çalışacaktır. 25H sayısı (R6) stack'e eklenir.  12H sayısı stack'e eklenir. 12H sayısı stackten çıkarılır.
 
 <div>  
 **XCH komutu**  

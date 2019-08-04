@@ -15,10 +15,7 @@ date: 2016-09-01 14:26:00
 
 <!-- more -->  
 
-<div class="separator" style="clear: both; text-align: center;">[![](https://4.bp.blogspot.com/-p4zpkVZrQWU/V8faC6OGbjI/AAAAAAAAc_U/rx-zCY8cZksKXnRpi2GC8lY-b-aB_MA_ACLcB/s640/pic-prod-pixhawk1.jpg)](https://4.bp.blogspot.com/-p4zpkVZrQWU/V8faC6OGbjI/AAAAAAAAc_U/rx-zCY8cZksKXnRpi2GC8lY-b-aB_MA_ACLcB/s1600/pic-prod-pixhawk1.jpg)</div>
-
-<div class="separator" style="clear: both; text-align: center;"><span id="goog_1200680686"></span><span id="goog_1200680687"></span>  
-</div>
+![](https://4.bp.blogspot.com/-p4zpkVZrQWU/V8faC6OGbjI/AAAAAAAAc_U/rx-zCY8cZksKXnRpi2GC8lY-b-aB_MA_ACLcB/s640/pic-prod-pixhawk1.jpg)
 
 *   Ana işlemcisi 32 bit Arm Cortex M4 tabanlı ST Microelectronic'in bir ürünü( STM32F427 Cortex M4 core with FPU).  Bu işlemci "NuttX Real Time Operating System" ile kullanılıyor. 
 

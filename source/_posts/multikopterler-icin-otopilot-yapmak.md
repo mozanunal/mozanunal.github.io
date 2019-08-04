@@ -42,7 +42,7 @@ Ben bu yazıda daha çok 3\. madde üzerinde duracağım. Öncellikle bir eksend
 
 Bu şekilde bir eksenin kontrolü için 2 katlı pid işlemi uygulamak gereklidir. Peki 3 eksenin için nasıl bir çözüm kullanmak gerekir. Bunu anlatmak yerine şu 4 satır kodu buraya eklemek istiyorum. (output_ ile başlayanların ilgili eksen ile alakalı pıd çıkışı olduğunu varsayın. )  
 
-<div class="separator" style="clear: both; text-align: center;">[![](https://1.bp.blogspot.com/-VsBdui1yrOo/WJow8iDE6zI/AAAAAAAAgvM/QgeKfrIZoJs97vljg_WauQaSPwFCXKRGQCLcB/s640/2satir.png)](https://1.bp.blogspot.com/-VsBdui1yrOo/WJow8iDE6zI/AAAAAAAAgvM/QgeKfrIZoJs97vljg_WauQaSPwFCXKRGQCLcB/s1600/2satir.png)</div>
+![](https://1.bp.blogspot.com/-VsBdui1yrOo/WJow8iDE6zI/AAAAAAAAgvM/QgeKfrIZoJs97vljg_WauQaSPwFCXKRGQCLcB/s640/2satir.png)
 
 Bu iki satır sayesinde toplam 6 pid kontrolcüsünden oluşturulan hesaplamalar birleştirilir. Birleştirme esnasındaki işaretlerin mantığını siz de farketmişsinizdir. O eksen için pid etkisi negatif mi pozitif mi? Yani o motorun hızının artması o eksende ne yönde bir hareket sağlar.  
 
@@ -50,7 +50,8 @@ Evet son olarak bizim projemizden bahsedeyim. Ortalıkta uzun yıllardır açık
 Yaptığımız çalışmaların tamamının linki: [github.com/mozanunal/SimplePilot](https://github.com/mozanunal/SimplePilot)  
 
 Genellikle arduino kütüphanelerini kullandığımız için bizim kodumuz performans açısından pek uygun olmadığını düşünüyorum. Ama [şuradaki yazıda](https://blog.owenson.me/build-your-own-quadcopter-flight-controller/) ardupilot kütüphanelerini kullanarak olayın temelini de anlatarak güzel bir yazı ortaya koymuş bir arkadaşımız var. Benzer şeyler yapmak isterseniz onu kod olarak da referans alabileceğinizi düşünüyorum. İncelemenizi tavsiye ederim. Tekrar görüşmek üzere...  
-[![](https://3.bp.blogspot.com/-YiGDOZUeOHE/WJovcTla4XI/AAAAAAAAgvA/Yv_M7OkE1k0RdFAY2gr5vSeUoYVn0PAfwCLcB/s400/10325759_697947633595740_3634479068948109564_n.jpg)](https://3.bp.blogspot.com/-YiGDOZUeOHE/WJovcTla4XI/AAAAAAAAgvA/Yv_M7OkE1k0RdFAY2gr5vSeUoYVn0PAfwCLcB/s1600/10325759_697947633595740_3634479068948109564_n.jpg)
+
+![](https://3.bp.blogspot.com/-YiGDOZUeOHE/WJovcTla4XI/AAAAAAAAgvA/Yv_M7OkE1k0RdFAY2gr5vSeUoYVn0PAfwCLcB/s400/10325759_697947633595740_3634479068948109564_n.jpg)
 
 [www.facebook.com/itunom](https://www.facebook.com/itunom/)  
 [www.itunom.com](https://www.itunom.com/)

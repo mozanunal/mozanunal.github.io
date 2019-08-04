@@ -14,7 +14,7 @@ customize:
     theme_color: '#006bde'
     highlight: github
     sidebar: left # sidebar position, options: left, right
-    thumbnail: true # enable posts thumbnail, options: true, false
+    thumbnail: false # enable posts thumbnail, options: true, false
     favicon: images/favicon.ico # path to favicon
     social_links: # for more icons, please see https://fontawesome.io/icons/#brand
         facebook: https://www.facebook.com/mehmetozan.unal/
