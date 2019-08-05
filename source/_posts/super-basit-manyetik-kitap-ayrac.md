@@ -21,6 +21,5 @@ Bugünkü yazımda nasıl çok basit bir şekilde manyetik kitap ayıracı yapab
 *   Favori deseninizi çizip derinin de üzerine yapıştırabiliriz.
 *   Kitap ayıracımız kullanıma hazır.
 
-<div class="separator" style="clear: both; text-align: center;">{% youtube O2FVKrwO-j4? %}
-</div>
+{% youtube O2FVKrwO-j4? %}
 

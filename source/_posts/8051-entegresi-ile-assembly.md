@@ -33,34 +33,35 @@ date: 2015-11-05 05:25:00
 ### MOV Komutu:
 Bir registera veri yüklemek için kullanılır.
 Kullanımı şöyledir:
-<div>MOV data yüklenecek register, yüklenecek data</div>
 
-<div>MOV A,#51H</div>
+MOV data yüklenecek register, yüklenecek data
 
-<div>A registerına 51 hexadecimal sayısı yükleniştir.</div>
-
-<div># bir sayı olduğunu görtermek için kullanılmıştır.  
+```
+MOV A,#51H
+```
+A registerına 51 hexadecimal sayısı yükleniştir.
+`#` Bir sayı olduğunu görtermek için kullanılmıştır.  
 51 yüklenecek hexadecimal sayımız. Değeri 5x16+1=81  
 H sayının hexadecimal olduğunu göstermek için kullanılır. Binary için B, Decimal için D kullanılır.  
-Eğer hexadecimal sayısı harfle baslıyorsa başına 0 koyulur.</div>
+Eğer hexadecimal sayısı harfle baslıyorsa başına 0 koyulur.
 
-<div>Aşağıdaki kod grubunu çalıştırdığımızda simülasyon programımızın son görüntüsü aşağıdaki gibi olacaktır.</div>
+Aşağıdaki kod grubunu çalıştırdığımızda simülasyon programımızın son görüntüsü aşağıdaki gibi olacaktır.
 
-<div>MOV A,#51H     </div>
+```asm
+MOV A,#51H     
 
-<div>
+MOV R1,#0FFH  
 
-<div>MOV R1,#0FFH  </div>
+MOV R2,#3BH  
+```
 
-<div>MOV R2,#3BH  </div>
 
-</div>
-
-<div>![](https://1.bp.blogspot.com/-UyzZoP7m_8Y/VjineW2uopI/AAAAAAAAOm4/ySzZ6WrkOT8/s640/Ekran%2BAl%25C4%25B1nt%25C4%25B1s%25C4%25B1.PNG)
+![](https://1.bp.blogspot.com/-UyzZoP7m_8Y/VjineW2uopI/AAAAAAAAOm4/ySzZ6WrkOT8/s640/Ekran%2BAl%25C4%25B1nt%25C4%25B1s%25C4%25B1.PNG)
 Görüldüğü gibi R1 R2 ve Accummulatora veriler yüklenmiştir.  
 
 **ORG ve END Komutları**  
 Org CPU'ya kaçıncı code memory satırıncan başlamısı gerektiğini söyleyen komuttur. Aşağıdaki gibi kullanılır.  
+```asm
              ORG  0H  
              MOV  R1,#31H  
              MOV  R2, 20H  
@@ -68,21 +69,23 @@ Org CPU'ya kaçıncı code memory satırıncan başlamısı gerektiğini söyley
              MOV  R4,R3  
 HERE:  SJMP HERE  
              END  
+```
 
-**ADD Komutu**</div>
+**ADD Komutu**
 
-<div>Toplama komutudur kullanımı şöyledir.  
+Toplama komutudur kullanımı şöyledir.  
 ADD Toplamın saklanacağı yer, eklenecek bilgi  
 ADD A,R1  
 A=A+R1 olur.  
 ADD R1, A olamaz. Toplamın saklanacağı yer hep Accumlator registeri olmalıdır.  
 
+```asm
 ADD A, @R2   : R2 registerinin sakladığı adresteki ramde tutulan değer A'ya eklenir  
 
-<div>ADD A, 05       : 05 adresindeki ramde tutulan değer A'ya eklenir.</div>
+ADD A, 05       : 05 adresindeki ramde tutulan değer A'ya eklenir.
 
-<div>ADD A, #05     : 05 sayısı A'ya eklenir.</div>
-
+ADD A, #05     : 05 sayısı A'ya eklenir.
+```
 Bazı toplamalarda sonuç 255den büyük çıkabilir. Bu durumda bir eldemiz olmuş olur. Peki 8051 bu durumla nasıl başa çıkıyor. PSW registerını kullanarak tabi ki:  
 
 **PSW Registerı**  
@@ -127,15 +130,16 @@ AGAIN: ADD A, # 05             ; add five to register A
 
              MOV R3, A              ; save A in R3  
 
-             END</div>
+             END
 ```
-s
+
 SJMP: Program counterdan en fazla yarım byte uzaklıklarda bulunan bir yere atlamak için kullanılır.  
 
 LJMP: Program counterdan yarım bytedan fazla uzaklıklarda bulunan bir yere atlamak için kullanılır.  
 
 LCALL: Fonksiyon tanımlayıp çağırmak benzeri bir kullanımı vardır. Aşağıdaki örneği inceleyebilirsiniz.  
 
+```asm
              ORG 0H  
 BACK : MOV A, #55H            ; load A= 55 hex value  
              MOV P1, A                ; issue value of register A to port1  
@@ -149,18 +153,23 @@ BACK : MOV A, #55H            ; load A= 55 hex value
              MOV R5, #0FFH         ; R5= 255 hex, the counter  
 AGAIN: DJNZ R5, AGAIN       ; stay here until R5 becomes zero  
              RET                           ; return to caller  
-             END</div>
+             END
+```
 
 ## MOVX komutu
 MOVX komutu harici RAM'den veri alış verişi yapmak için kullanılır.  
 
+```asm
 MOV      R0, #50H  
 MOVX   A, @R0  
+```
+
 Bu iki satır kod ile harici RAM'deki 50H adresli yerdeki veri Accumulator registerına yüklenir.  
 
+```
 MOV      DTPR, #5000H  
 MOVX   A, @DTPR  
-
+```
 DTPR registerı 16 bitliktir. Eğer 8 bitten büyük adresteki bir veriye ulaşılmak istenirse DTPR registerı kullanılabilir.  
 
 **POP ve PUSH komutu**  
@@ -177,7 +186,7 @@ POP 04H;
 
 Bu kod şöyle çalışacaktır. 25H sayısı (R6) stack'e eklenir.  12H sayısı stack'e eklenir. 12H sayısı stackten çıkarılır.
 
-<div>  
+  
 **XCH komutu**  
 XCH A, R2 şeklinde kullanılır. A ve R2nin içeriklerini değiştirir böyle kullanıldığında.  
 
@@ -185,25 +194,25 @@ XCH A, R2 şeklinde kullanılır. A ve R2nin içeriklerini değiştirir böyle k
 
 ### **Harici RAM ve ROM kullanımı**
 
-<div>8051 ile harici ram veya romlar çalıştırılabilir. Bunun için öncelikle 8051 üzerindeki bazı pinlerin ne işe yaradığıyla başlayalım.</div>
+8051 ile harici ram veya romlar çalıştırılabilir. Bunun için öncelikle 8051 üzerindeki bazı pinlerin ne işe yaradığıyla başlayalım.
 
-<div>**ALE/PROG pini:** Adress Latch Enable. Harici ram erişimi sırasında kullanılır. Mandallama işlevi vardır.</div>
+**ALE/PROG pini:** Adress Latch Enable. Harici ram erişimi sırasında kullanılır. Mandallama işlevi vardır.
 
-<div>**PSEN pini:**  Program Store Enable. Harici program hafızasından veri okunacağı zaman kullanılır. Ayrıca harici rom veya epromlara  OE giriş pini olarak da kullanılır.</div>
+**PSEN pini:**  Program Store Enable. Harici program hafızasından veri okunacağı zaman kullanılır. Ayrıca harici rom veya epromlara  OE giriş pini olarak da kullanılır.
 
-<div>**EA pini:** External Adress. 0 olduğu zaman mikrokontrolcü program kodunu dışarıdan alabilir.  
+**EA pini:** External Adress. 0 olduğu zaman mikrokontrolcü program kodunu dışarıdan alabilir.  
 **RD pini:** Okuma işlemini "enable" yapmak için kullanılır.  
-**WR pini:** Yazma işlemini "enable " yapmak için kullanılır.</div>
+**WR pini:** Yazma işlemini "enable " yapmak için kullanılır.
 
-<div class="separator" style="clear: both; text-align: center;">[![](https://1.bp.blogspot.com/-DmQjmwjLeFM/VjqdGYxkMfI/AAAAAAAAOps/kOfQ02wBFBI/s400/8051-pin-diagram1.jpg)](https://1.bp.blogspot.com/-DmQjmwjLeFM/VjqdGYxkMfI/AAAAAAAAOps/kOfQ02wBFBI/s1600/8051-pin-diagram1.jpg)</div>
+![](https://1.bp.blogspot.com/-DmQjmwjLeFM/VjqdGYxkMfI/AAAAAAAAOps/kOfQ02wBFBI/s400/8051-pin-diagram1.jpg)
 
 **Harici Program Belleği Kullanımı**  
 
-<div class="separator" style="clear: both; text-align: center;">[![](https://4.bp.blogspot.com/-4sFt53OMVzs/VjqnQAe1gsI/AAAAAAAAOp8/GyB_BTnFiPE/s640/fig3.JPG)](https://4.bp.blogspot.com/-4sFt53OMVzs/VjqnQAe1gsI/AAAAAAAAOp8/GyB_BTnFiPE/s1600/fig3.JPG)</div>
+![](https://4.bp.blogspot.com/-4sFt53OMVzs/VjqnQAe1gsI/AAAAAAAAOp8/GyB_BTnFiPE/s640/fig3.JPG)
 
 **Harici Veri Belleği Kullanımı**  
 
-<div class="separator" style="clear: both; text-align: center;">[![](https://1.bp.blogspot.com/-O8yzo3TmaQc/Vjqn3O4ApAI/AAAAAAAAOqE/1VCrQw-3BGo/s640/Untitled.png)](https://1.bp.blogspot.com/-O8yzo3TmaQc/Vjqn3O4ApAI/AAAAAAAAOqE/1VCrQw-3BGo/s1600/Untitled.png)</div>
+![](https://1.bp.blogspot.com/-O8yzo3TmaQc/Vjqn3O4ApAI/AAAAAAAAOqE/1VCrQw-3BGo/s640/Untitled.png)
 
 **Adres Ayrıştırma**  
 Bazı durumlarda adres değerleri için yeterli bit sayısına sahip olunamayabilir. Bu soruları çözmek için adres çözücü devreler kullanılır.  
@@ -214,32 +223,29 @@ Bazı durumlarda adres değerleri için yeterli bit sayısına sahip olunamayabi
 
 ### Timer Uygulamaları
 
-</div>
 
-<div>
+
+
 
 ### **Uzun Lafın Kısası**
 
 Aşağıdaki 2 görsel işlemci mimarisini çok iyi açıklayan 2 şema peki bize ne anlatıyorlar.  
 
-<div class="separator" style="clear: both; text-align: center;">[![](https://4.bp.blogspot.com/-Cz2wvnB7EBc/Vjip-41saWI/AAAAAAAAOnE/c9ihppaVK0c/s640/architecture_s.jpg)](https://4.bp.blogspot.com/-Cz2wvnB7EBc/Vjip-41saWI/AAAAAAAAOnE/c9ihppaVK0c/s1600/architecture_s.jpg)</div>
+![](https://4.bp.blogspot.com/-Cz2wvnB7EBc/Vjip-41saWI/AAAAAAAAOnE/c9ihppaVK0c/s640/architecture_s.jpg)
 
-<div class="separator" style="clear: both; text-align: center;">[![](https://1.bp.blogspot.com/-pp8NbAyNGXM/Vjip-wv2UMI/AAAAAAAAOnI/NnDlcfyacUw/s640/01.gif)](https://1.bp.blogspot.com/-pp8NbAyNGXM/Vjip-wv2UMI/AAAAAAAAOnI/NnDlcfyacUw/s1600/01.gif)</div>
+![](https://1.bp.blogspot.com/-pp8NbAyNGXM/Vjip-wv2UMI/AAAAAAAAOnI/NnDlcfyacUw/s640/01.gif)
 
-</div>
 
-<div>
 
 ### 8051 Entegresi Instruction Set
 
-<div class="separator" style="clear: both; text-align: center;">Aşağdaki linkte hepsini kullanım anlatımlarıyla beraber bulabilirsiniz. Aynı zaman da OP-Code'ları da verilmiştir.</div>
+Aşağdaki linkte hepsini kullanım anlatımlarıyla beraber bulabilirsiniz. Aynı zaman da OP-Code'ları da verilmiştir.
 
-<div class="separator" style="clear: both; text-align: center;">[https://www.win.tue.nl/~aeb/comp/8051/set8051.html](https://www.win.tue.nl/~aeb/comp/8051/set8051.html)</div>
+https://www.win.tue.nl/~aeb/comp/8051/set8051.html](https://www.win.tue.nl/~aeb/comp/8051/set8051.html)
 
-<div class="separator" style="clear: both; text-align: center;">Aşağıdaki 2 resimde ise sık kullanılan komutları açıklamalarıyla bulabilirsiniz.</div>
+Aşağıdaki 2 resimde ise sık kullanılan komutları açıklamalarıyla bulabilirsiniz.
 
-<div class="separator" style="clear: both; text-align: center;">[![](https://2.bp.blogspot.com/-2bs2b_ITBsk/VjjAX1OUMfI/AAAAAAAAOnc/UUajD1pycVE/s640/1.PNG)](https://2.bp.blogspot.com/-2bs2b_ITBsk/VjjAX1OUMfI/AAAAAAAAOnc/UUajD1pycVE/s1600/1.PNG)</div>
+![](https://2.bp.blogspot.com/-2bs2b_ITBsk/VjjAX1OUMfI/AAAAAAAAOnc/UUajD1pycVE/s640/1.PNG)
 
-[![](https://4.bp.blogspot.com/-Tc4MjvFq0us/VjjAX1hOFYI/AAAAAAAAOng/y7t_hF5X26E/s640/2.PNG)](https://4.bp.blogspot.com/-Tc4MjvFq0us/VjjAX1hOFYI/AAAAAAAAOng/y7t_hF5X26E/s1600/2.PNG)  
+![](https://4.bp.blogspot.com/-Tc4MjvFq0us/VjjAX1hOFYI/AAAAAAAAOng/y7t_hF5X26E/s640/2.PNG)
 
-</div>

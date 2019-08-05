@@ -14,8 +14,7 @@ date: 2015-01-25 20:03:00
 **Merhaba Arkadaşlar**  
 Bugünkü yazımda Arduino ile melodi çalma uygulamasından bahsedeceğim. Kullandığım malzemeler Arduino ve bir buzzer. Pin bağlantıları da oldukça basit buzzerın eksi ucu GND'ye,  + ucu da 12\. pine bağlanıyor. 12\. Pin dijital pin, farklı frekanslarda 1-0 yapılarak notaların çalınması sağlanır. Notaların çalınma süreleri de nota frekansının verilme süresi değiştirilerek arduino tarafından ayarlanıyor. Böylece istediğimiz melodiyi elde etmiş oluyoruz. Ayrıntılı bilgiye [buradan](https://www.arduino.cc/en/Tutorial/Melody) ulaşabilirsiniz. Arduino koduna aşağıdan ulaşabilirsiniz(Kod alıntıdır. Tek tek notalarla uğraşmamak için notaları çıkarılmış bir koddan aldım.). Tekrar görüşmek üzere.  
 <!-- more -->  
-
-<div class="separator" style="clear: both; text-align: center;">[<iframe allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" width="320" height="266" src="https://www.youtube.com/embed/VcaaF9eO4vA?feature=player_embedded" frameborder="0"></a></div><br /><br />
+{% youtube VcaaF9eO4vA %}
 
 ```cpp
 /* This example uses a piezo speaker to play melodies.  It sends  
@@ -95,5 +94,3 @@ void loop() {
   }  
 }  
 ```
-
-<div class="separator" style="clear: both; text-align: center;"><a href="https://2.bp.blogspot.com/-GQ1BWdKhvrw/VMUSIrXL8NI/AAAAAAAAG3M/8sZwNPs8zTc/s1600/IMG_20150121_025441.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="https://2.bp.blogspot.com/-GQ1BWdKhvrw/VMUSIrXL8NI/AAAAAAAAG3M/8sZwNPs8zTc/s1600/IMG_20150121_025441.jpg" height="320" width="240" /></a><a href="https://1.bp.blogspot.com/-YMJSEIRze7Y/VMUR8x8asBI/AAAAAAAAG24/voBcVoHvyVk/s1600/IMG_20150121_025526.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="https://1.bp.blogspot.com/-YMJSEIRze7Y/VMUR8x8asBI/AAAAAAAAG24/voBcVoHvyVk/s1600/IMG_20150121_025526.jpg" height="320" width="179" /></a><a href="https://3.bp.blogspot.com/-AsasLL79nZo/VMUSJBqw25I/AAAAAAAAG3Q/W9QQajOI91M/s1600/IMG_20150121_025453.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="https://3.bp.blogspot.com/-AsasLL79nZo/VMUSJBqw25I/AAAAAAAAG3Q/W9QQajOI91M/s1600/IMG_20150121_025453.jpg" height="200" width="150" /></a></div><br /><br /><br /></iframe>](https://www.youtube.com/watch?v=VcaaF9eO4vA&feature=youtu.be)</div>

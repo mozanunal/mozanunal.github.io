@@ -13,7 +13,8 @@ author: Mehmet Ozan Ünal
 date: 2015-11-15 14:30:00
 ---
 **Herkese Merhabalar,**  
-        Bu yazımda arduino kullanarak nasıl basit, ucuz ve işlevli bir RC kumanda yapabileceğimizi anlatacağım. Yapacağımız RC kumanda ile istediğiniz türde aracı, istediğiniz kadar kanalla kontrol etmeniz mümkün. Benim uygulamamda 2 adet 2 eksen joystick ve 1 potansiyometre bulunuyor. Yani 5 kanallı örnek bir uygulama yaptım. Öncelikle malzemelerden başlayalım.  
+
+Bu yazımda arduino kullanarak nasıl basit, ucuz ve işlevli bir RC kumanda yapabileceğimizi anlatacağım. Yapacağımız RC kumanda ile istediğiniz türde aracı, istediğiniz kadar kanalla kontrol etmeniz mümkün. Benim uygulamamda 2 adet 2 eksen joystick ve 1 potansiyometre bulunuyor. Yani 5 kanallı örnek bir uygulama yaptım. Öncelikle malzemelerden başlayalım.  
 
 1.  Arduino Nano
 2.  Nrf24l01
@@ -21,17 +22,17 @@ date: 2015-11-15 14:30:00
 4.  1 adet 10k direnç
 5.  2 adet 2 eksen joystick modulü
 
-<!-- more -->  
-
 Bu malzemelerle beraber toplam maliyetimiz 7- 8 dolar civarı oluyor. Maximum kullanım mesafesi ise 30 40 metre civarında hobi uygulamarına göre oldukça yeterli bir mesafe elde ediyoruz.  
 
-<div class="separator" style="clear: both; text-align: center;">[![](https://2.bp.blogspot.com/-xDp3AViitVk/Vke9Wz-_7GI/AAAAAAAAOuI/s6nGyovNDrY/s320/IMG_20151110_225602.jpg)](https://2.bp.blogspot.com/-xDp3AViitVk/Vke9Wz-_7GI/AAAAAAAAOuI/s6nGyovNDrY/s1600/IMG_20151110_225602.jpg)</div>
+![](https://2.bp.blogspot.com/-xDp3AViitVk/Vke9Wz-_7GI/AAAAAAAAOuI/s6nGyovNDrY/s720/IMG_20151110_225602.jpg)
 
-<div class="separator" style="clear: both; text-align: center;">[![](https://1.bp.blogspot.com/-pCi8LTweGqI/Vke9WyHH_BI/AAAAAAAAOuI/F4XsoNq_j8w/s320/IMG_20151110_225557.jpg)](https://1.bp.blogspot.com/-pCi8LTweGqI/Vke9WyHH_BI/AAAAAAAAOuI/F4XsoNq_j8w/s1600/IMG_20151110_225557.jpg)</div>
+![](https://1.bp.blogspot.com/-pCi8LTweGqI/Vke9WyHH_BI/AAAAAAAAOuI/F4XsoNq_j8w/s720/IMG_20151110_225557.jpg)
 
-<div class="separator" style="clear: both; text-align: center;">Bağlantılara gelecek olursak nrf24 modülü SPI ile çalışıyor. Arduino'nun uygun SPI pinlerine bağlıyoruz. Şemasını kolayca bulabilirsiniz. Joystick modulleri için de bir tanesi için 2 analog giriş olmak üzere Arduino Nanonun toplam 4 tane analog giriş pinin kullanıyoruz. Potansiyometrenin kullanımı için de 1 adet analog giriş pini kullanıyoruz.</div>
+Bağlantılara gelecek olursak nrf24 modülü SPI ile çalışıyor. Arduino'nun uygun SPI pinlerine bağlıyoruz. Şemasını kolayca bulabilirsiniz. Joystick modulleri için de bir tanesi için 2 analog giriş olmak üzere Arduino Nanonun toplam 4 tane analog giriş pinin kullanıyoruz. Potansiyometrenin kullanımı için de 1 adet analog giriş pini kullanıyoruz.
 
-<div class="separator" style="clear: both; text-align: center;">[![](https://2.bp.blogspot.com/--vbgxgEg-Rk/Vke9W-L-3ZI/AAAAAAAAOuI/XKbVFCQj6V0/s320/IMG_20151110_225607.jpg)](https://2.bp.blogspot.com/--vbgxgEg-Rk/Vke9W-L-3ZI/AAAAAAAAOuI/XKbVFCQj6V0/s1600/IMG_20151110_225607.jpg)[![](https://2.bp.blogspot.com/-Lsd05A9Lnpo/Vke9W7Wzv6I/AAAAAAAAOuI/4vMP73gnhPA/s320/IMG_20151110_225613.jpg)](https://2.bp.blogspot.com/-Lsd05A9Lnpo/Vke9W7Wzv6I/AAAAAAAAOuI/4vMP73gnhPA/s1600/IMG_20151110_225613.jpg)</div>
+![](https://2.bp.blogspot.com/--vbgxgEg-Rk/Vke9W-L-3ZI/AAAAAAAAOuI/XKbVFCQj6V0/s720/IMG_20151110_225607.jpg)
+
+![](https://2.bp.blogspot.com/-Lsd05A9Lnpo/Vke9W7Wzv6I/AAAAAAAAOuI/4vMP73gnhPA/s720/IMG_20151110_225613.jpg)
 
 Kumandanın koduyla alakalı olarak değinmek istediğim bir kaç nokta var. Baştaki ayarlarda nrf ile ilgili ayarlar yapılıyor. Bu modülle alakalı bir kaç önemli nokta şöyle:  
 
@@ -39,7 +40,7 @@ Kumandanın koduyla alakalı olarak değinmek istediğim bir kaç nokta var. Ba�
 2.  Nrf24 modülü 3.3 volt ile çalışıyor. Fakat çektiği yüksek akım sebebiyle Arduino Nanonun 3.3 V pininden beslemesi biraz riskli. Onun yerine 5V pininin voltajını 2 diyot yardımıyle düşürüp öyle besledim. Harici bir regülatör bağlamak çok daha akla yatkın bir çözüm olacaktır tabi :)
 3.  Payload size 10 olarak belirledim. Nedeni 5 adet integer verisi yollamam 2*5=10 byte göndermem gerekiyor. Normalde bir paket 32 byte fakat 10 byte ile sınırlandırarak rf modulünüzün performansını artırabilirsiniz.
 
-<div>Başta belirlediğim ID sayesinde farklı birden fazla ID belirleyerek, birden fazla sayıda aracı kontrol edebilirsiniz. Max angle 12 veya  datatosend[2]=-1*(analogRead(3)-500)*Max_angle/500; gibi satırlar tamamen kullanıma örnek olması amacıyla konmuştur. Yapmanız gereken sadece joysticklerden veya potansiyometreden aldığınız veriyi nasıl göndermek isterseniz o şekile çevirip "datatosend" array elemanlarına eşitlemektir. İstediğiniz türde aracı veya çok fazla farklı kanalı bu şekilde rahatça kontrol edebilirsiniz.</div>
+Başta belirlediğim ID sayesinde farklı birden fazla ID belirleyerek, birden fazla sayıda aracı kontrol edebilirsiniz. Max angle 12 veya  datatosend[2]=-1*(analogRead(3)-500)*Max_angle/500; gibi satırlar tamamen kullanıma örnek olması amacıyla konmuştur. Yapmanız gereken sadece joysticklerden veya potansiyometreden aldığınız veriyi nasıl göndermek isterseniz o şekile çevirip "datatosend" array elemanlarına eşitlemektir. İstediğiniz türde aracı veya çok fazla farklı kanalı bu şekilde rahatça kontrol edebilirsiniz.
 
 **Kumanda Kodu**  
 ```cpp
@@ -76,7 +77,7 @@ void loop()
 }  
 ```
 
-Aşağıdaki kod is**e RC verilerini almak için gerekli fonksiyondur** değiken boyutlarını ayarlayarak channel sayısını artırabilirsiniz. Tabi ki bu kodu kontrol edeceğiniz aracın koduna eklemeniz gerekmektedir.  
+Aşağıdaki kod ise **RC verilerini almak için gerekli fonksiyondur** değiken boyutlarını ayarlayarak channel sayısını artırabilirsiniz. Tabi ki bu kodu kontrol edeceğiniz aracın koduna eklemeniz gerekmektedir.  
 
 ```cpp
 void Rc_Update()  

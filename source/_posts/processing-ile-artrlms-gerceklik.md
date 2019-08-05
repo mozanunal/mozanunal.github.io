@@ -14,7 +14,7 @@ date: 2015-04-25 03:03:00
 **Merhaba Arkadaşlar,**  
 Bugünkü yazımda NyARToolkit'ten bahsedeceğim. Bu toolkit sayesinde kameradan aldığımız görüntüler üzerine 3 Boyutlu nesneler yerleştirebiliyoruz. İstediğimiz 3 boyutlu grafik hatta animasyon yerleştirilebilir. Google Glass tarzı giyilebilir teknolojilerle daha yaratıcı uygulamalar yapılabilir. Simülasyon ve oyun dünyası için çeşitli uygulamalar geliştirilebilir. Hatta hologramlar yapmanın şimdilik en gerçekleştirilebilir yolu olarak gözüküyor. Toolkit bir çok programlama diliyle kullanılabiliyor. Ben Processing ile kullandım basit olduğu için. Toolkiti kullandığım şöyle bir tanıtım videosu hazırladım:  
 
-<div class="separator" style="clear: both; text-align: center;"><iframe allowfullscreen="" class="YOUTUBE-iframe-video" data-thumbnail-src="https://i.ytimg.com/vi/h2N0UAR17Og/0.jpg" frameborder="0" height="266" src="https://www.youtube.com/embed/h2N0UAR17Og?feature=player_embedded" width="320"></iframe></div>
+{% youtube h2N0UAR17Og %}
 
 Toolkiti kullanmak için gerekenler:  
 <!-- more -->  
