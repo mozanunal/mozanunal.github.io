@@ -9,12 +9,14 @@ date: 2015-07-04 03:30:00
 ---
 
 **Herkese Merhabalar,**  
-     Daha önce kolay bulunabilecek malzemelerden nasıl gimbal yapılabileceğinden bahsetmiştim ([O yazıya buradan ulaşabiliriniz](https://mozanunal.blogspot.com.tr/2015/06/2-eksenli-servo-gimbal-yapm.html)). Kontrol kartını sonra anlatacağım demiştim. Veee bu yazımda arduino ve MPU6050 sensörü kullanarak nasıl bir gimbal kontrol kartı yapabileceğimizden bahsedeceğim. Bu kart sayesinde gimbalin yere göre açısını kontrol edebileceğiz. Yere göre açısının sabit kalmasını da kontrol kartı üzerindeki IMU sensörü ile sağlayacağız([Ayrıntılı bilgi için tıklayınız](https://mozanunal.blogspot.com.tr/2014/11/imu-aclarnn-3-boyutlu-olarak.html)). Kontrol kartı saniyede 100 değer okuyup servo PWM değerlerini ona göre güncelliyor. Bu sayede oldukça yüksek çözünürlüklü her türlü seviyede kullanılabilecek bir kontrol kartı yapmış oluyoruz. Ayrıca başa koyduğum ayar parametreleri sayesinde her boyutta ve çeşitte servo gimbale kolayca uyumlu hale getirilebilir. Kontrol kartının tanıtım videosu aşağıdadır.  
 
-<div class="separator" style="clear: both; text-align: center;"><iframe allowfullscreen="" class="YOUTUBE-iframe-video" data-thumbnail-src="https://i.ytimg.com/s_vi/MnfJcTREYPo/default.jpg?sqp=CPSu3KwF&amp;rs=AOn4CLDzz10bna-4pjdEvnk6cjxNblSg4w" frameborder="0" height="266" src="https://www.youtube.com/embed/MnfJcTREYPo?feature=player_embedded" width="320"></iframe></div>
+Daha önce kolay bulunabilecek malzemelerden nasıl gimbal yapılabileceğinden bahsetmiştim ([O yazıya buradan ulaşabiliriniz](https://mozanunal.com/2015/06/2-eksenli-servo-gimbal-yapm/)). Kontrol kartını sonra anlatacağım demiştim. Veee bu yazımda arduino ve MPU6050 sensörü kullanarak nasıl bir gimbal kontrol kartı yapabileceğimizden bahsedeceğim. Bu kart sayesinde gimbalin yere göre açısını kontrol edebileceğiz. Yere göre açısının sabit kalmasını da kontrol kartı üzerindeki IMU sensörü ile sağlayacağız([Ayrıntılı bilgi için tıklayınız](https://mozanunal.com/2014/11/imu-aclarnn-3-boyutlu-olarak/)). Kontrol kartı saniyede 100 değer okuyup servo PWM değerlerini ona göre güncelliyor. Bu sayede oldukça yüksek çözünürlüklü her türlü seviyede kullanılabilecek bir kontrol kartı yapmış oluyoruz. Ayrıca başa koyduğum ayar parametreleri sayesinde her boyutta ve çeşitte servo gimbale kolayca uyumlu hale getirilebilir. Kontrol kartının tanıtım videosu aşağıdadır.  
 
-<!-- more -->      Bağlantılara gelecek olursak MPU6050 I2C pinlerinden arduinoya bağlanıyor. Gnd pini gndye, Vcc pini ise 3.3 volta bağlanıyor. Çalışma voltajı 3.3 volt olduğu için. Servoların sinyal pinlerini ayarlardan seçtiğimiz dijital pinlere bağlıyoruz. Servoların beslemesi eğer küçük servolar ise arduino üzerinden eğer yüksek akım çeken servolarsa harici olarak yapabilirsiniz. Fakat harici besleme yaparsanız arduino ve güç kaynağının topraklarını eşitlemeyi unutmayın.  
+{% youtube MnfJcTREYPo %}
 
+Bağlantılara gelecek olursak MPU6050 I2C pinlerinden arduinoya bağlanıyor. Gnd pini gndye, Vcc pini ise 3.3 volta bağlanıyor. Çalışma voltajı 3.3 volt olduğu için. Servoların sinyal pinlerini ayarlardan seçtiğimiz dijital pinlere bağlıyoruz. Servoların beslemesi eğer küçük servolar ise arduino üzerinden eğer yüksek akım çeken servolarsa harici olarak yapabilirsiniz. Fakat harici besleme yaparsanız arduino ve güç kaynağının topraklarını eşitlemeyi unutmayın.  
+
+```cpp
 ////////////////////Ayarlar////////////////  
 //pitch  
 int p_pin=8;  
@@ -31,17 +33,21 @@ int r_min=30;
 int r_max=150;  
 int r_reverse=0;  
 
-///////////////////////////////////////////////  
+///////////////////////////////////////////////
+```
+
 Bunlar, koddaki ayar parametreleri, çeşitli gimballere kolay adapte edilebilmesi içindir. İlk pozisyonunu, en düşük, en yüksek servo açılarını, kazancını bu parametrelerle kontrol edeceğiz. Kazanç ise kontrol kartındaki açı değişimlerinin servoya kaçla çarpılarak yansıtılacağının parametresidir."Reverse" değişkeni "1" veya "0" yapılarak yönün ters çevirilmesi sağlanabilir. Benim gimbalim için "Pitch" eksenini ters yapmam gerekmişti.  
 
-<div style="text-align: center;">**Sistemin Fotoğrafları**</div>
 
-<div class="separator" style="clear: both; text-align: center;">[![](https://2.bp.blogspot.com/-tPAYzOfRh8Y/VZbhzOoEt3I/AAAAAAAAMsw/lg5YNJs2Gl4/s320/IMG_20150703_170713.jpg)](https://2.bp.blogspot.com/-tPAYzOfRh8Y/VZbhzOoEt3I/AAAAAAAAMsw/lg5YNJs2Gl4/s1600/IMG_20150703_170713.jpg)</div>
+**Sistemin Fotoğrafları**
 
-<div class="separator" style="clear: both; text-align: center;">[![](https://4.bp.blogspot.com/-SGgaLhyZB5o/VZbhyrpIPvI/AAAAAAAAMss/fUO7DeUM9gA/s320/IMG_20150703_170813.jpg)](https://4.bp.blogspot.com/-SGgaLhyZB5o/VZbhyrpIPvI/AAAAAAAAMss/fUO7DeUM9gA/s1600/IMG_20150703_170813.jpg)</div>
+![](https://2.bp.blogspot.com/-tPAYzOfRh8Y/VZbhzOoEt3I/AAAAAAAAMsw/lg5YNJs2Gl4/s720/IMG_20150703_170713.jpg)
 
-<div class="separator" style="clear: both; text-align: center;">**Projenin full kaynak kodu:**</div>
+![](https://4.bp.blogspot.com/-SGgaLhyZB5o/VZbhyrpIPvI/AAAAAAAAMss/fUO7DeUM9gA/s720/IMG_20150703_170813.jpg)
 
+**Projenin full kaynak kodu:**
+
+```cpp
 #include <I2Cdev.h>  
 #include <MPU60X0.h>  
 #include <EEPROM.h>  
@@ -125,3 +131,5 @@ void loop() {
 
   delay(10);  
 }
+
+```

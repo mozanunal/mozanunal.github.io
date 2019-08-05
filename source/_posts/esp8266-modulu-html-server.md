@@ -98,7 +98,7 @@ void loop()
      
      String webpage = "<head><meta http-equiv=""refresh"" content=""10""></head>";
      webpage+="<h1>Esp8266 Html Testi</h1><h2>";
-     webpage+= "mozanunal.blogspot.com";
+     webpage+= "mozanunal.com";
      webpage+="</h2>";
      
      String cipSend = "AT+CIPSEND=";

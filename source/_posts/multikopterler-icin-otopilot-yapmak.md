@@ -14,12 +14,14 @@ date: 2017-02-07 23:55:00
 ---
 **Merhaba arkadaşlar,**  
       Bugünkü yazımda geçen senelerde üzerinde uzun zaman harcadığım fakat tamamlayamadığım bir konu olan otopilot yapmak üzerine edindiğim tecrübeleri anlatmak istiyorum. Yazıya başlamadan önce bu çalışmaların tamamını beraber yaptığım **Bahadır Gökçeaslan** teşekkür etmeyi bir borç bilirim.  
-[![SimplePilotlogoPNG.png](https://github.com/mozanunal/SimplePilot/blob/master/LOGO/SimplePilotlogoPNG.png?raw=true)](https://github.com/mozanunal/SimplePilot/blob/master/LOGO/SimplePilotlogoPNG.png?raw=true =50x)
-<!-- more -->  
+
+![SimplePilotlogoPNG.png](https://github.com/mozanunal/SimplePilot/blob/master/LOGO/SimplePilotlogoPNG.png?raw=true)
+
 Evet otopilot aslında benim anlatacağım bölüme kıyasla biraz fazla geniş bir kavram oldu. Zira malesef proje uçuş kontrolcüsü aşamalarında kaldı. Bir soru ile başlayalım. Bir uçuş kontrolcüsü nedir? Bir uçuş kontrolcüsü temel olarak havada uçan bir aracın yere göre açılarının istenilen şekilde olmasını sağlayan sensör ve hareketli mekanizmalar bütünüdür. Aslında yere göre açılarla sınırlamak çok mantıklı değil. Bir hava aracının yükseliğinin sabit olması veya istenilen hızda istenilen konumda kalmasını sağlamak da bunun işidir. Fakat bu projede, bir Quadcopter uçuş kontrolcüsü olarak tasarlanmış olan bu yapıda amaç quadcopterin yere göre açılarını kumandadan gelen girdilere göre kontrol etmekti.  
 
-Peki bu IMU açılar nasıl kontrol edilir? Hepinizin bildiği gibi bi quadcopter yere itki veren 4 adet motordan oluşan bir mekanizma. Ama bir quadcopteri havada tutmak göründüğü kadar kolay değildir. Basit olarak yapılan işlem quadcopter motorlanının hızını istenilen açıda kalacak şekilde kontrol etmektir. Bunun için de 2 temel yapı kullanılır. **IMU** denen bu açıları ölçen sensörler ve **PID** denilen kontrol algoritması. Bu noktada eğer bu kavramlar tanıdık gelmediyse [imu hakkındakı şu yazımı](https://mozanunal.blogspot.com.tr/2014/11/imu-aclarnn-3-boyutlu-olarak.html) ve [pid hakkındaki bu yazımı okumanızı tavsiye ederim](https://mozanunal.blogspot.com.tr/2015/07/multikopterler-icin-pid-kontrol.html). Kodu inceleyecek olursanız projemizi belli parçalara ayırmış durumdayız. Bu parçalar şunlardır:  
-[![](https://1.bp.blogspot.com/-0r0O5XU4Pi4/WJBy6Kg235I/AAAAAAAAgos/j8facocHfcQM--HEugDgHNEba0fSg702gCK4B/s640/13c23d1c-887a-11e5-93fd-7ed0b2ac84db.png)](https://1.bp.blogspot.com/-0r0O5XU4Pi4/WJBy6Kg235I/AAAAAAAAgos/j8facocHfcQM--HEugDgHNEba0fSg702gCK4B/s1600/13c23d1c-887a-11e5-93fd-7ed0b2ac84db.png)
+Peki bu IMU açılar nasıl kontrol edilir? Hepinizin bildiği gibi bi quadcopter yere itki veren 4 adet motordan oluşan bir mekanizma. Ama bir quadcopteri havada tutmak göründüğü kadar kolay değildir. Basit olarak yapılan işlem quadcopter motorlanının hızını istenilen açıda kalacak şekilde kontrol etmektir. Bunun için de 2 temel yapı kullanılır. **IMU** denen bu açıları ölçen sensörler ve **PID** denilen kontrol algoritması. Bu noktada eğer bu kavramlar tanıdık gelmediyse [imu hakkındakı şu yazımı](https://mozanunal.com/2014/11/imu-aclarnn-3-boyutlu-olarak/) ve [pid hakkındaki bu yazımı okumanızı tavsiye ederim](https://mozanunal.com/2015/07/multikopterler-icin-pid-kontrol/). Kodu inceleyecek olursanız projemizi belli parçalara ayırmış durumdayız. Bu parçalar şunlardır:  
+
+![](https://1.bp.blogspot.com/-0r0O5XU4Pi4/WJBy6Kg235I/AAAAAAAAgos/j8facocHfcQM--HEugDgHNEba0fSg702gCK4B/s640/13c23d1c-887a-11e5-93fd-7ed0b2ac84db.png)
 
 * Kumandadan girdilerin alınması
 * IMU açılarının güncellenmesi
@@ -28,13 +30,13 @@ Peki bu IMU açılar nasıl kontrol edilir? Hepinizin bildiği gibi bi quadcopte
 
 Ben bu yazıda daha çok 3\. madde üzerinde duracağım. Öncellikle bir eksende kontrolü ele alalım. Bir eksende kontrol için yapılması gereken işlem şöyledir:  
 
-[![](https://4.bp.blogspot.com/-l-7lo97I1WU/WJoxPV_I7MI/AAAAAAAAgvQ/CqNsoEAsjI4_4VZWl0zY6sCxhbJ04AI9wCLcB/s640/2%2Bkatli.png)](https://4.bp.blogspot.com/-l-7lo97I1WU/WJoxPV_I7MI/AAAAAAAAgvQ/CqNsoEAsjI4_4VZWl0zY6sCxhbJ04AI9wCLcB/s1600/2%2Bkatli.png)
+![](https://4.bp.blogspot.com/-l-7lo97I1WU/WJoxPV_I7MI/AAAAAAAAgvQ/CqNsoEAsjI4_4VZWl0zY6sCxhbJ04AI9wCLcB/s640/2%2Bkatli.png)
 
-*   Imu üzerinden şuanki açı ve ve kumandadan o eksen için istenen açı alınır. ( Otopilotlu bir yapıda istenen açıyı, verilen koordinata gitmek için kendisi hesaplar. ) 
-*   Şu anki açı hatası
-*   Geçmişteki açı hatası toplamı
-*   Gelecekte oluşabilecek açı hatası tahmini
-*   Üsteki 3'ü kullanılarak **hedef açı için gerekli açısal hız** bulunur.
+* Imu üzerinden şuanki açı ve ve kumandadan o eksen için istenen açı alınır. ( Otopilotlu bir yapıda istenen açıyı, verilen koordinata gitmek için kendisi hesaplar. ) 
+* Şu anki açı hatası
+* Geçmişteki açı hatası toplamı
+* Gelecekte oluşabilecek açı hatası tahmini
+* Üsteki 3'ü kullanılarak **hedef açı için gerekli açısal hız** bulunur.
 * Şuanki açısal hız hatası
 * Geçmişsteki açısal hız hatası toplamı
 * Gelecekte oluşabilecek açısal hata

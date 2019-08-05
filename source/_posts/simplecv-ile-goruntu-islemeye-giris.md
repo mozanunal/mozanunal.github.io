@@ -12,8 +12,6 @@ date: 2016-05-01 20:23:00
 **Herkese Merhabalar,**  
 Görüntü işleme hızla popülerleşen ve gittikçe daha fazla üzerine projeler geliştirilen ve hatta hayatımızda kullandığımız araç gereçlerde kullanılan bir alan olmaya başladı. Bu durumda bir sürü insan bu konu üzerine bir şeyler yapmak istiyor fakat daha kurulum aşamasında veya kaynak yetersizliğinden dolayı bu ilgilerinden vazgeçiyorlar. Bu sorun için önerebileceğim bir çözüm var. SimpleCV!  
 
-[SimpleCV'nin opencv ve matlab ile karşılaştırıldığı makaleye buradan ulaşabilirsiniz.](https://mozanunal.blogspot.com.tr/2016/05/simplecv-vs-opencv-vs-matlab-for-image.html#more)  
-
 [https://simplecv.org/download/](https://simplecv.org/download/)  
 
 ![](https://2.bp.blogspot.com/-A3EQ_sYxKKk/VxNvyqTmt-I/AAAAAAAAZq4/piY02JIgXGUKU1iHwuqo3Kgev-zUjXvFACK4B/s640/Capture.PNG)
