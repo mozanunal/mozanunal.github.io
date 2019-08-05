@@ -25,9 +25,9 @@ Saleae Logic Anayzer'ın özelliklerini sayacak olursam şöyle:
 *   Boyutları oldukça küçük 
 *   Arayüzü ve kullanımı çok basit
 
-[![](https://2.bp.blogspot.com/-RhHxd7MZ3oM/Vn7H3kyh5EI/AAAAAAAAXSE/UXlBnXPFJuk/s320/IMG_20151226_182649.jpg)](https://2.bp.blogspot.com/-RhHxd7MZ3oM/Vn7H3kyh5EI/AAAAAAAAXSE/UXlBnXPFJuk/s1600/IMG_20151226_182649.jpg)
+![](https://2.bp.blogspot.com/-RhHxd7MZ3oM/Vn7H3kyh5EI/AAAAAAAAXSE/UXlBnXPFJuk/s720/IMG_20151226_182649.jpg)
 
-[![](https://1.bp.blogspot.com/-bdfoLWthbGA/Vn7H3nbshVI/AAAAAAAAXSE/44ZxMB7uH_8/s320/IMG_20151226_182724.jpg)](https://1.bp.blogspot.com/-bdfoLWthbGA/Vn7H3nbshVI/AAAAAAAAXSE/44ZxMB7uH_8/s1600/IMG_20151226_182724.jpg)
+![](https://1.bp.blogspot.com/-bdfoLWthbGA/Vn7H3nbshVI/AAAAAAAAXSE/44ZxMB7uH_8/7320/IMG_20151226_182724.jpg)
 
 Kullanımına gelecek olursak [Buradan bilgisayarda kullanabileceğiniz arayüz programını indirebilirsiniz.](https://www.saleae.com/downloads)  
 

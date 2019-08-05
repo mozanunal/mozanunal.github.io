@@ -56,7 +56,8 @@ Eğer hexadecimal sayısı harfle baslıyorsa başına 0 koyulur.</div>
 
 </div>
 
-<div>[![](https://1.bp.blogspot.com/-UyzZoP7m_8Y/VjineW2uopI/AAAAAAAAOm4/ySzZ6WrkOT8/s640/Ekran%2BAl%25C4%25B1nt%25C4%25B1s%25C4%25B1.PNG)](https://1.bp.blogspot.com/-UyzZoP7m_8Y/VjineW2uopI/AAAAAAAAOm4/ySzZ6WrkOT8/s1600/Ekran%2BAl%25C4%25B1nt%25C4%25B1s%25C4%25B1.PNG)Görüldüğü gibi R1 R2 ve Accummulatora veriler yüklenmiştir.  
+<div>![](https://1.bp.blogspot.com/-UyzZoP7m_8Y/VjineW2uopI/AAAAAAAAOm4/ySzZ6WrkOT8/s640/Ekran%2BAl%25C4%25B1nt%25C4%25B1s%25C4%25B1.PNG)
+Görüldüğü gibi R1 R2 ve Accummulatora veriler yüklenmiştir.  
 
 **ORG ve END Komutları**  
 Org CPU'ya kaçıncı code memory satırıncan başlamısı gerektiğini söyleyen komuttur. Aşağıdaki gibi kullanılır.  

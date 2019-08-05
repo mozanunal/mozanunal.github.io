@@ -61,8 +61,8 @@ Osiloskop arayüzünü ise C# dilini kullanarak yazdım. Osiloskop için kulluna
 
 **Osilopkop denemeleri**  
 
-[![](https://1.bp.blogspot.com/-2hqhgXgLpO4/VUPq3PCaeNI/AAAAAAAAKXU/MFt7t_qRvxw/s1600/Ekran%2BAl%C4%B1nt%C4%B1s%C4%B1.PNG)](https://1.bp.blogspot.com/-2hqhgXgLpO4/VUPq3PCaeNI/AAAAAAAAKXU/MFt7t_qRvxw/s1600/Ekran%2BAl%C4%B1nt%C4%B1s%C4%B1.PNG)
+![](https://1.bp.blogspot.com/-2hqhgXgLpO4/VUPq3PCaeNI/AAAAAAAAKXU/MFt7t_qRvxw/s1600/Ekran%2BAl%C4%B1nt%C4%B1s%C4%B1.PNG)
 
-<div class="separator" style="clear: both; text-align: center;">**Com port seçiminin yapıldığı pencere**</div>
+**Com port seçiminin yapıldığı pencere**
 
-[![](https://3.bp.blogspot.com/-qjoGyPZkfbo/VUPq3Oa3GDI/AAAAAAAAKXQ/U3Z8rgQdx3E/s1600/Ekran%2BAl%C4%B1nt%C4%B1s%C4%B12.PNG)](https://3.bp.blogspot.com/-qjoGyPZkfbo/VUPq3Oa3GDI/AAAAAAAAKXQ/U3Z8rgQdx3E/s1600/Ekran%2BAl%C4%B1nt%C4%B1s%C4%B12.PNG)
+![](https://3.bp.blogspot.com/-qjoGyPZkfbo/VUPq3Oa3GDI/AAAAAAAAKXQ/U3Z8rgQdx3E/s1600/Ekran%2BAl%C4%B1nt%C4%B1s%C4%B12.PNG)
