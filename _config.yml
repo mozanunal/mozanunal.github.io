@@ -3,11 +3,11 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Mehmet Ozan Ünal Blog Sitesi
-subtitle: Elektronik üzerine uygulamalar
-description: Elektronik ve yazılım üzerine öğrendiklerimi uygularken ilgimi çeken konular hakkında yazılar paylaşığım blogum
+title: A blog from Mehmet Ozan Ünal
+subtitle: Electronics and Coding
+description: This is my blog where I share blog posts on topics that interest me while learning on electronics and coding.
 author: Mehmet Ozan Ünal
-language: tr
+language: en
 timezone:
 
 # URL
@@ -64,6 +64,7 @@ pagination_dir: page
 ## Plugins: https://hexo.io/plugins/
 plugins:
   hexo-renderer-mathjax
+  hexo-local-image
 ## Themes: https://hexo.io/themes/
 theme: cactus
 #theme: hexo-theme-hueman
@@ -85,13 +86,6 @@ deploy:
   - type: git
     repo: https://github.com/mozanunal/mozanunal.github.io
     branch: master
-  # - type: git
-  #   repo: https://mozanunal@github.com/mozanunal/mozanunal.github.io
-  #   branch: src
-  #   extend_dirs: /
-  #   ignore_hidden: false
-  #   ignore_pattern:
-  #       public: .
 
 # Admin
 admin:
@@ -100,7 +94,6 @@ admin:
     secret: hey hexo
     expire: 60*1
     # cors: https://localhost:3000
-
 
 #imagemin:
 #  enable     : true

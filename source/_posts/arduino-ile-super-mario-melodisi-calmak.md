@@ -2,11 +2,11 @@ title: |
   Arduino İle Super Mario Melodisi Çalmak
 tags:
   - Arduino Müzik
-  - Elektronik
+  - Electronics
   - Arduino
   - Super Mario Melodisi
 categories:
-  - Elektronik
+  - Electronics
   - Arduino
 author: Mehmet Ozan Ünal
 date: 2015-01-25 20:03:00

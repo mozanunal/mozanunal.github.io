@@ -1,7 +1,7 @@
 title: |
   Ses Kontrollü Robotik El
 tags:
-  - Elektronik
+  - Electronics
   - Arduino
   - Android Programlama ve Oyun
   - Arduino
@@ -10,7 +10,7 @@ tags:
   - bluetooth kontrol
   - Ses Kontrollü Robotik El
 categories:
-  - Elektronik
+  - Electronics
   - Arduino
 author: Mehmet Ozan Ünal
 date: 2014-09-21 03:57:00

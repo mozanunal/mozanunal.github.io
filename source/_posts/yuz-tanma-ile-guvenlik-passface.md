@@ -2,14 +2,14 @@ title: |
   Yüz Tanıma ile Güvenlik (Passface)
 tags:
   - 'C#'
-  - Görüntü İşleme
+  - Image Processing
   - face recognize
   - Passface
   - yüz tanıma
   - Yüz tanıma ile güvenlik
 categories:
-  - İşaret İşleme
-  - Görüntü İşleme
+  - Signal Processing
+  - Image Processing
 author: Mehmet Ozan Ünal
 date: 2014-10-14 17:39:00
 ---

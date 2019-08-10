@@ -5,7 +5,7 @@ tags:
   - augmented reality
   - unity
 categories:
-  - Yazılım
+  -  Programming
 date: 2017-04-16 18:04:36
 ---
 

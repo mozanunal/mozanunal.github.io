@@ -1,11 +1,11 @@
 title: |
   SimpleCV ile Görüntü İşlemeye Giriş
 tags:
-  - Görüntü İşleme
+  - Image Processing
   - SimpleCV
 categories:
-  - İşaret İşleme
-  - Görüntü İşleme
+  - Signal Processing
+  - Image Processing
 author: Mehmet Ozan Ünal
 date: 2016-05-01 20:23:00
 ---

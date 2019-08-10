@@ -1,12 +1,12 @@
 title: |
   5 $ Logic Analyzer
 tags:
-  - Elektronik
-  - Mikroişlemciler
+  - Electronics
+  - Microcontrollers
   - Saleae Logic Analzyer
 categories:
-  - Elektronik
-  - Mikroişlemciler
+  - Electronics
+  - Microcontrollers
 author: Mehmet Ozan Ünal
 date: 2015-12-27 04:03:00
 ---

@@ -2,13 +2,13 @@ title: |
   SimpleDSP: Gömülü Sistemler için DSP Kütühanesi
 tags:
   - Arduino FFT
-  - Elektronik
+  - Electronics
   - Arduino
   - DSP
   - Inverse FFT
   - SimpleDSP
 categories:
-  - İşaret İşleme
+  - Signal Processing
   - DSP
 date: 2017-01-26 00:13:00
 ---

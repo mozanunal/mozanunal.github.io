@@ -6,7 +6,7 @@ tags:
   - file system
   - dosya sistemi
 categories:
-  - Yazılım
+  -  Programming
 ---
 
 **Herkese Merhabalar,**

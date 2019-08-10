@@ -4,7 +4,7 @@ tags:
   - Pwm
   - Rustik Ampul
 categories:
-  - Elektronik
+  - Electronics
   - Analog
 author: Mehmet Ozan Ünal
 date: 2016-11-19 23:05:00

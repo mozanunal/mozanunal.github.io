@@ -3,7 +3,7 @@ title: |
 tags:
   - 2 Eksenli Servo Gimbal
   - Arduino Gimbal
-  - Elektronik
+  - Electronics
   - Arduino
 categories:
   - Drone

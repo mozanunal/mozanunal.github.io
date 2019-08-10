@@ -7,7 +7,7 @@ tags:
   - Processing IMU
   - Processing UDP
 categories:
-  - Yazılım
+  -  Programming
 author: Mehmet Ozan Ünal
 date: 2015-05-18 06:23:00
 ---

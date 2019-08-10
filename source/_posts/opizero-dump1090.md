@@ -6,7 +6,7 @@ tags:
   - dump1090
   - orangepizero
 categories:
-  - İşaret İşleme
+  - Signal Processing
   - DSP
 date: 2018-08-20 15:14:07
 ---

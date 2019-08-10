@@ -1,11 +1,11 @@
 ---
 title: Veriloga Giriş
 tags:
-  - Elektronik
+  - Electronics
   - verilog
   - FPGA
 categories:
-  - Elektronik
+  - Electronics
   - FPGA
 date: 2018-06-02 11:07:45
 ---

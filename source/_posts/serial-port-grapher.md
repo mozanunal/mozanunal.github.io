@@ -7,7 +7,7 @@ tags:
   - 'C# grafik'
   - Serial Port
 categories:
-  - Yazılım
+  -  Programming
 date: 2014-12-23 02:59:00
 ---
 

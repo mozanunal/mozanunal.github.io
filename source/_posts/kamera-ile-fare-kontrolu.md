@@ -2,7 +2,7 @@ title: |
   Kamera ile Fare Kontrolü
 tags:
   - 'C#'
-  - Görüntü İşleme
+  - Image Processing
   - EmguCV
   - opencv
   - finger counter
@@ -10,8 +10,8 @@ tags:
   - kamera mause
   - parmak sayma
 categories:
-  - İşaret İşleme
-  - Görüntü İşleme
+  - Signal Processing
+  - Image Processing
 author: Mehmet Ozan Ünal
 date: 2014-10-10 01:24:00
 ---

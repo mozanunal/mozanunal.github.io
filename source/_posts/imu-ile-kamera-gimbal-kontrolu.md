@@ -1,7 +1,7 @@
 title: |
   IMU ile Kamera Gimbalı Kontrolü
 tags:
-  - Elektronik
+  - Electronics
   - Arduino
   - Hava Araçları
   - mpu6050

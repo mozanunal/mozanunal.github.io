@@ -6,7 +6,7 @@ tags:
   - Sdr ile uçak takibi
   - Software Defined Radio
 categories:
-  - İşaret İşleme
+  - Signal Processing
   - DSP
 author: Mehmet Ozan Ünal
 date: 2015-01-09 23:35:00

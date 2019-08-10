@@ -1,12 +1,12 @@
 ---
 title: 'DIY Raspberry Pi Laptop '
 tags:
-  - Elektronik
+  - Electronics
   - Arduino
   - Raspberry Pi 2 Projeleri
   - Raspberry Pi Laptop
 categories:
-  - Elektronik
+  - Electronics
   - Arduino
 date: 2015-09-17 01:20:00
 ---

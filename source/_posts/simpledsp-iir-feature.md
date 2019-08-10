@@ -8,7 +8,7 @@ tags:
   - IIR filter design
   - Signal Processing
 categories:
-  - İşaret İşleme
+  - Signal Processing
   - DSP
 author: ''
 date: 2019-01-23 23:45:00

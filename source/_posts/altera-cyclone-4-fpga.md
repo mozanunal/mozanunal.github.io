@@ -6,7 +6,7 @@ tags:
   - cyclone
   - quartus
 categories:
-  - Elektronik
+  - Electronics
   - FPGA
 date: 2018-03-05 21:48:22
 ---

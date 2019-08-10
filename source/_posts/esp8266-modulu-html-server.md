@@ -1,13 +1,13 @@
 title: |
   ESP8266 Modulü Web Server
 tags:
-  - Elektronik
+  - Electronics
   - Arduino
   - ESP8266
   - Arduino Wifi Modulü
   - internet of Things
 categories:
-  - Elektronik
+  - Electronics
   - IOT
 author: Mehmet Ozan Ünal
 date: 2015-03-12 00:49:00

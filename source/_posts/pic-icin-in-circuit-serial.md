@@ -1,14 +1,14 @@
 title: |
   PIC İçin In Circuit Serial Programming(ICSP)
 tags:
-  - Elektronik
-  - Mikroişlemciler
+  - Electronics
+  - Microcontrollers
   - ICSP
   - In Circuit Serial Programing
   - Pic programlama
 categories:
-  - Elektronik
-  - Mikroişlemciler
+  - Electronics
+  - Microcontrollers
 author: Mehmet Ozan Ünal
 date: 2015-01-31 20:34:00
 ---

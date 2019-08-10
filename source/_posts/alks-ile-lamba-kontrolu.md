@@ -1,11 +1,11 @@
 title: Alkış ile Lamba Kontrolü
 tags:
-  - Elektronik Devreler
-  - Elektronik Devreler ve Teorik Yazılar
+  - Electronics Devreler
+  - Electronics Devreler ve Teorik Yazılar
   - alkış ile lamba kontolü
   - aydınlatma projeleri
 categories:
-  - Elektronik
+  - Electronics
   - Analog
 author: Mehmet Ozan Ünal
 date: 2014-10-07 01:28:00

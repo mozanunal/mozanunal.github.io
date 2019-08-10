@@ -2,13 +2,13 @@ title: |
   Gerçek Zamanlı Obje Takibi(EmguCv ile)
 tags:
   - 'C#'
-  - Görüntü İşleme
+  - Image Processing
   - EmguCV
   - Obje Takibi
   - Object Tracking
 categories:
-  - İşaret İşleme
-  - Görüntü İşleme
+  - Signal Processing
+  - Image Processing
 date: 2014-09-29 15:54:00
 ---
 **Herkese Merhabalar!**

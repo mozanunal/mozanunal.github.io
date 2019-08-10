@@ -1,7 +1,7 @@
 title: |
   IMU Açılarının 3 Boyutlu Olarak Görsellenmesi
 tags:
-  - Elektronik
+  - Electronics
   - Arduino
   - Hava Araçları
   - Arduino

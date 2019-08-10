@@ -7,7 +7,7 @@ tags:
   - gpl lisansı
   - Mit lisansı
 categories:
-  - Yazılım
+  -  Programming
 author: Mehmet Ozan Ünal
 date: 2016-09-04 20:16:00
 ---

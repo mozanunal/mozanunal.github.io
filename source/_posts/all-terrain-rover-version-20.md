@@ -1,7 +1,7 @@
 title: |
 	All Terrain Rover Version 2.0
 categories:
-  - Elektronik
+  - Electronics
   - Arduino
 author: Mehmet Ozan Ünal
 date: 2015-08-26 16:48:00

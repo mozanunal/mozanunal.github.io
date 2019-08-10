@@ -8,7 +8,7 @@ tags:
   - FIR filtre dizayn
   - İşaret işleme
 categories:
-  - İşaret İşleme
+  - Signal Processing
   - DSP
 author: ''
 date: 2017-04-07 00:13:00

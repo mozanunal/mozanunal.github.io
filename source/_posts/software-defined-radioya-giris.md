@@ -6,7 +6,7 @@ tags:
   - SDR FM
   - SDR Nedir
 categories:
-  - İşaret İşleme
+  - Signal Processing
   - DSP
 author: Mehmet Ozan Ünal
 date: 2015-01-02 22:55:00

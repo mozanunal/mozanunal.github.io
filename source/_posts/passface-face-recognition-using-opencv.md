@@ -1,15 +1,15 @@
 title: |
   PassFace: Face Recognition Using Opencv
 tags:
-  - Görüntü İşleme
+  - Image Processing
   - EmguCV
   - opencv
   - Eigenfaces
   - Face recognition
   - Fisgerfaces
 categories:
-  - İşaret İşleme
-  - Görüntü İşleme
+  - Signal Processing
+  - Image Processing
 author: Mehmet Ozan Ünal
 date: 2016-06-04 19:50:00
 ---

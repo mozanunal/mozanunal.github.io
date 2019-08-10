@@ -8,7 +8,7 @@ tags:
   - route
   - google map api
 categories:
-  - Yazılım
+  -  Programming
 date: 2018-04-16 18:10:04
 ---
 

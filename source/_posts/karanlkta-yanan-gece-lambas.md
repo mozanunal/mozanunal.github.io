@@ -4,7 +4,7 @@ tags:
   - Karanlıkta Yanan Gece Lambası
   - Ldrli Gece Lambası
 categories:
-  - Elektronik
+  - Electronics
   - Analog
 author: Mehmet Ozan Ünal
 date: 2014-10-07 19:52:00

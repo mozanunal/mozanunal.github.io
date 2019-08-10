@@ -1,12 +1,12 @@
 title: |
   All Terrain Rover Version 1.00
 tags:
-  - Elektronik
+  - Electronics
   - Arduino
   - All Terrain Rover
   - Robot
 categories:
-  - Elektronik
+  - Electronics
   - Arduino
 author: Mehmet Ozan Ünal
 date: 2015-03-23 02:09:00

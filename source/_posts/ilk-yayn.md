@@ -2,16 +2,16 @@ title: |
   İlk Yayın
 tags:
   - Ana Sayfa
-  - Elektronik
-  - Mikroişlemciler
+  - Electronics
+  - Microcontrollers
   - Android Programlama ve Oyun
   - 'C#'
   - Hava Araçları
-  - Görüntü İşleme
+  - Image Processing
   - Linux
   - Software Defined Radio
 categories:
-  - Elektronik
+  - Electronics
   - Arduino
 author: Mehmet Ozan Ünal
 date: 2014-05-25 03:44:00

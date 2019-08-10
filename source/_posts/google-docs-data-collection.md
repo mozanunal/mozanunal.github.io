@@ -5,7 +5,7 @@ tags:
   - google docs
   - cloud
 categories:
-  - Elektronik
+  - Electronics
   - IOT
 date: 2018-04-17 21:24:57
 ---

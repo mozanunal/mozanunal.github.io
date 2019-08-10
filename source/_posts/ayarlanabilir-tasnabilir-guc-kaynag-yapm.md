@@ -1,11 +1,11 @@
 title: |
   Ayarlanabilir Taşınabilir Güç Kaynağı Yapımı
 tags:
-  - Elektronik Devreler ve Teorik Yazılar
+  - Electronics Devreler ve Teorik Yazılar
   - ayarlanabilor güç kaynağı
   - mt3608
 categories:
-  - Elektronik
+  - Electronics
   - Analog
 author: Mehmet Ozan Ünal
 date: 2016-03-13 01:24:00

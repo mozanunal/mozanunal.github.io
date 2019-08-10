@@ -5,7 +5,7 @@ tags:
   - Gamemaker
   - gamemaker ile oyun yapımı
 categories:
-  - Yazılım
+  -  Programming
 author: Mehmet Ozan Ünal
 date: 2014-05-27 06:42:00
 ---

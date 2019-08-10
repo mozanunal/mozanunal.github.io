@@ -1,11 +1,11 @@
 title: |
   Lazer Haberleşmesi
 tags:
-  - Elektronik
+  - Electronics
   - Arduino
   - Laser Haberleşme
 categories:
-  - Elektronik
+  - Electronics
   - Arduino
 author: Mehmet Ozan Ünal
 date: 2016-02-07 23:18:00

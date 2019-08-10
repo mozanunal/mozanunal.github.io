@@ -3,12 +3,12 @@ title: |
 tags:
   - 3D görüş
   - 3D view
-  - Görüntü İşleme
+  - Image Processing
   - Opencv 3 boyutlu görme
   - Processing
 categories:
-  - İşaret İşleme
-  - Görüntü İşleme
+  - Signal Processing
+  - Image Processing
 author: Mehmet Ozan Ünal
 date: 2015-03-31 06:55:00
 ---

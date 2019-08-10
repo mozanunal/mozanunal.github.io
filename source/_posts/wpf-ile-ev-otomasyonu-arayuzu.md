@@ -6,7 +6,7 @@ tags:
   - ESP8266
   - Meteoroloji İstasyonu
 categories:
-  - Elektronik
+  - Electronics
   - IOT
 author: Mehmet Ozan Ünal
 date: 2016-06-09 04:45:00

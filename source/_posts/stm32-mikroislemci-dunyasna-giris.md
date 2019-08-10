@@ -6,8 +6,8 @@ tags:
   - stm32cubemx
   - stm32f103c8t6
 categories:
-  - Elektronik
-  - Mikroişlemciler
+  - Electronics
+  - Microcontrollers
 author: Mehmet Ozan Ünal
 date: 2016-11-08 15:53:00
 ---

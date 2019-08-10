@@ -4,7 +4,7 @@ tags:
   - hackhathon
   - hashcode2018
 categories:
-  - Yazılım
+  -  Programming
 date: 2018-04-08 00:45:01
 ---
 

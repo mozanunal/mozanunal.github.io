@@ -1,7 +1,7 @@
 title: |
   Robot Kol
 tags:
-  - Elektronik
+  - Electronics
   - Arduino
   - Arduino
   - arduino servo kontrol
@@ -9,7 +9,7 @@ tags:
   - Arduino Robotik Kontrol
   - DIY Robotic Hand
 categories:
-  - Elektronik
+  - Electronics
   - Arduino
 author: Mehmet Ozan Ünal
 date: 2015-01-16 15:07:00

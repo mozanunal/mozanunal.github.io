@@ -5,7 +5,7 @@ tags:
   - gnu-radio-giris
   - sinyal-isleme
 categories:
-  - İşaret İşleme
+  - Signal Processing
   - DSP
 date: 2018-03-19 19:04:39
 ---

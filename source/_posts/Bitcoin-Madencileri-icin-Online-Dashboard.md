@@ -6,7 +6,7 @@ tags:
   - esp8266
   - bitcoin mining
 categories:
-  - Elektronik
+  - Electronics
   - IOT
 date: 2017-07-30 15:50:00
 ---

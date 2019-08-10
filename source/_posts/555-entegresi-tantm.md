@@ -3,10 +3,10 @@ title: |
 tags:
   - '555'
   - 555 Entegresi Tanıtım
-  - Elektronik Devreler
-  - Elektronik Devreler ve Teorik Yazılar
+  - Electronics Devreler
+  - Electronics Devreler ve Teorik Yazılar
 categories:
-  - Elektronik
+  - Electronics
   - Analog
 date: 2014-10-07 02:49:00
 ---

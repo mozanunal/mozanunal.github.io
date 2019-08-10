@@ -1,15 +1,15 @@
 title: |
   Fırçalı motorlar için ESC Yapımı
 tags:
-  - Elektronik
+  - Electronics
   - Arduino
-  - Elektronik Devreler ve Teorik Yazılar
+  - Electronics Devreler ve Teorik Yazılar
   - ESC
   - Fırçalı motor
   - Fırçalı motor Arduino Hız Kontrolü
   - Hava Araçları
 categories:
-  - Elektronik
+  - Electronics
   - Arduino
 author: Mehmet Ozan Ünal
 date: 2015-08-19 18:42:00

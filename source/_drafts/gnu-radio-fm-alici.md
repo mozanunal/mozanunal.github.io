@@ -4,7 +4,7 @@ tags:
   - gnu radio
   - fm alıcı
 categories:
-  - İşaret İşleme
+  - Signal Processing
   - DSP
 ---
 

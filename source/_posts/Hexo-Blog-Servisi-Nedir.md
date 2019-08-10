@@ -6,7 +6,7 @@ tags:
   - static site generator
   - hexo
 categories:
-  - Yazılım
+  -  Programming
 date: 2017-07-27 10:48:00
 ---
 Herkese merhabalar,

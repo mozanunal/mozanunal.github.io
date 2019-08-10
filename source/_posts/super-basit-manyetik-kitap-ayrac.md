@@ -4,7 +4,7 @@ tags:
   - kitap ayıracı
   - mıknatıslı
 categories:
-  - Elektronik
+  - Electronics
   - Arduino
 author: Mehmet Ozan Ünal
 date: 2016-02-05 02:49:00

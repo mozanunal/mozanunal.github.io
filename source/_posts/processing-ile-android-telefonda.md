@@ -6,7 +6,7 @@ tags:
   - Android Processing IDE
   - Processing Android
 categories:
-  - Yazılım
+  -  Programming
 author: Mehmet Ozan Ünal
 date: 2014-11-09 06:27:00
 ---

@@ -5,7 +5,7 @@ tags:
   - diy bluetooth speaker
   - pam8610
 categories:
-  - Elektronik
+  - Electronics
   - Analog
 date: 2016-12-05 21:23:00
 ---

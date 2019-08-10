@@ -7,5 +7,5 @@ tags:
   - google
   - google colab
 categories:
-  - Yazılım
+  -  Programming
 ---
