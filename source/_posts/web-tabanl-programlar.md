@@ -4,7 +4,7 @@ tags:
   - html5
   - Web Tabanlı programlar
 categories:
-  -  Programming
+  -  Coding
 author: Mehmet Ozan Ünal
 date: 2016-01-16 03:45:00
 ---

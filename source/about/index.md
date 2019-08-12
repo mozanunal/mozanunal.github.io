@@ -1,17 +1,29 @@
 title: About
-date: 2017-09-20 11:29:30
----
-
+date: 2019-08-12 11:29:30
 ---
 
 **Hello Everyone!**
 
-I decided to open a blog so that I could archive my projects and make them available to everyone. In my blog, I plan to share the projects in C # interface, computer microprocessor communication, arduino applications, pic applications and simple sensor electronics with photos and explaining the theory. I also plan to share with you some of the games I made as a hobby from Android programming (part required for robotic applications). I wish to inform my friends who are interested in electronics as best as I can (I am at the very beginning of the road) :). Previously, I worked on long distance tracking systems at my university. My mission was to transmit the data we received from the gps, IMU, and many other sensors to the ground station and visualize them with the interface program. Now I'm working on unmanned aerial vehicles and image processing. At the same time as a hobby pic and arduino circuits, to produce various circuits, I continue to do. See you again…
+I decided to open a blog (2013) so that I could archive my projects and make them available to everyone. In my blog, you can reach various kind of contents which are usually about Drones, Electronics, FPGA, IOT, Microcontrollers, Programming and Signal Processing. Hope to see you again…
 
----
+## Education 
+- 2012 - 2017 University. Istanbul Technical University. Electronics and Communication Engineering
+- 2008 - 2012 High School. Bornova Anatolian High School
 
-**Herkese Merhabalar!**
+## [Github Repos](https://github.com/mozanunal)
 
-Yaptığım projeleri arşivleyebilmek ve bunlardan herkesin yararlanabilmesi için blog açmaya karar verdim. Blogumda size C# üzerinden arayüz yapımı, bilgisayar mikroişlemci iletişimi, arduino uygulamaları, pic uygulamaları ve basit sensörlü elektronik alanında projeleri fotoğraflarıyla ve işin teorisini de anlatarak paylaşmayı planlıyorum. Aynı zamanda az da olsa Android programlamadan(robotik uygulamalar için gerekli olan kısımdan) ve hobi olarak yaptığım oyunları da buradan sizinle paylaşmayı planlıyorum. Elektroniğe merak salmış arkadaşlarımın elimden geldiğince(ben de yolun çok başındayım) en iyi şekilde bilgilendirmek dileğim :). Daha önce üniversitemde uzun mesafe takip sistemleri üzerine çalışmalar yaptım. Gps, IMU, ve daha bir sürü sensörden aldığımız verileri, yer istasyonuna iletmek ve arayüz programıyla bunların görsellenmesiydi görevim. Şimdi ise insansız hava araçları ve görüntü işleme üzerine çalışmaktayım. Aynı zamanda hobi olarak pic ve arduino devreleri, çeşitli devreler üretmeye, yapmaya devam ediyorum. Tekrar görüşmek üzere…
+- [For details](https://github.com/mozanunal)
 
----
+## Projects and Achievements
+
+- **2017 Digilent Design Contest (Cluj, Romania)**,  It is a competition about Xilinx fpga based systems. The project for this competition was the detection of sound direction using the microphone arrays. 
+- **2017 NASA Space Apps Challenge (Istanbul, Turkey)**,  It is a international hackathon organized by NASA. 1st place is taken by a project to assist people about their own UV exposure using Internet of Things systems. 
+- **2014 - 2016 ITUNOM Unmanned Air Vehicle Team**. It is a team about unmanned air vehicle in Istanbul Technical University. This team participated **AUVSI Student Unmanned Air Systems Competition 2015 and 2016 (Maryland,USA)**.  In 2016, ITUNOM was 13th in total and 1st between multicopter participants. My task in this project electronic team leader. I work about image processing (Opencv) , networking, flight control systems. 
+- **2016 Siemens Hackathon Industry 4.0 (Istanbul, Turkey)**, 3rd place
+- **2016 Google HashCode**, 347th in total 1st in Istanbul.
+- **2015 Nasa Space Apps Challenge (Istanbul, Turkey)**, People’s Choice Award.
+- **2013 Intercollegiate Rocket Engineering Competition (Utah, USA)**, ITU Iskandil Team, is a team that is involved in rocket-engineering. In June - 2013, this competition was attended. I was on the avionics team of this group. Arduino and PIC microprocessors to be programmed in accordance with their competition duties. Providing communication with the ground station tracking interface and long distance radio modules required for real time tracking of the rocket.
+- **2013 - Present My Blog**. I have published some of my project from 2013. I have published 70 projects until this day. My project usually about image processing, air vehicles, Android programming, embedded programming (Arduino, Stm32, Raspberry Pi ) and Augmented Reality. https://mozanunal.com/
+
+## Publications
+

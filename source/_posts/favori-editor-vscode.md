@@ -7,7 +7,7 @@ tags:
   - kod editör
   - text editör
 categories:
-  -  Programming
+  -  Coding
 date: 2017-12-11 05:56:37
 ---
 

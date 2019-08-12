@@ -4,7 +4,7 @@ tags:
   - Steam Link
   - Raspberry Pi
 categories:
-  -  Programming
+  -  Coding
 date: 2019-02-01 00:45:01
 ---
 

@@ -4,7 +4,7 @@ tags:
   - Android
   - Termux
 categories:
-  -  Programming
+  -  Coding
 date: 2018-07-30 20:04:35
 ---
 

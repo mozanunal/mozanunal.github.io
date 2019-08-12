@@ -6,7 +6,7 @@ tags:
   - bash script
   - ubuntu
 categories:
-  -  Programming
+  -  Coding
 date: 2019-08-10 23:17:07
 ---
 

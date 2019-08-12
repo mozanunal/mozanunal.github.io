@@ -8,7 +8,7 @@ tags:
   - bash script
   - ubuntu
 categories:
-  -  Programming
+  -  Coding
 date: 2019-04-20 16:14:07
 ---
 

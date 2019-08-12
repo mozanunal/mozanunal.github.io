@@ -9,7 +9,7 @@ tags:
   - Linuxta Kullanabileceğiniz 10 Yararlı Program
   - VLC player
 categories:
-  -  Programming
+  -  Coding
 author: Mehmet Ozan Ünal
 date: 2014-12-03 06:30:00
 ---

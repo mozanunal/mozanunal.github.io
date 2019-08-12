@@ -7,7 +7,7 @@ tags:
   - bilimsel python uygulamaları
   - jupyter notebook
 categories:
-  -  Programming
+  -  Coding
 date: 2016-09-12 02:41:00
 ---
 

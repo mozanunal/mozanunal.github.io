@@ -6,7 +6,7 @@ tags:
   - Android program
   - Navigasyon
 categories:
-  -  Programming
+  -  Coding
 author: Mehmet Ozan Ünal
 date: 2015-01-08 02:46:00
 ---
