@@ -14,11 +14,11 @@ date: 2019-08-13 00:09:50
 # Run YOLO V3 on Colab for images/videos
 
 Hello there,
-Today, we will be discussing how can we use the Darknet project on Google Colab platform. For those who are not familiar with these terms:
+Today, we will be discussing how we can use the Darknet project on Google Colab platform. For those who are not familiar with these terms:
 
 ![YOLO in action!](/images/yoloroad.gif)
 
-- The Darknet project is an open-source written in C, which is a framework to develop deep neural networks.
+- The Darknet project is an open-source project written in C, which is a framework to develop deep neural networks.
 - Yolo V3 is an object detection algorithm. It is one of the state of the art solution when **accuracy/processing power needed** metric is considered.
 - Google Cola is a cloud-based data science workspace similar to the jupyter notebook. Each Collabrotary session is equipped with a virtual machine running 13 GB of ram and either a CPU, GPU, or TPU processor. In most case, all the required packages are already installed on these machines and you can quite easily start development using Google Collaboratory. It saves us from installing process and it provides us **easy to accessible GPU's** which is also **free** under some constraints.
 
@@ -40,7 +40,6 @@ Since I love both YOLO project and Google Colab, I decided to create a tutorial 
 
 ## Install
 Go to the directory, clear and install everthing
-
 
 *   Clone the project
 *   Change make file configurations and make OPENCV and GPU enable
