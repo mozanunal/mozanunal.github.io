@@ -7,7 +7,7 @@ tags:
   - ubuntu
 categories:
   -  Coding
-date: 2019-08-10 23:17:07
+date: 2019-09-22 23:17:07
 ---
 
 
@@ -76,9 +76,11 @@ While the tool was developed, the followings are the challenges I have encounter
 
 ### Images
 
-In digital word, images are made of pixels. Pixel is the smallest part of the image which can contain only one color. Variety of the pixel is changed with the 
+In digital word, images are made of pixels. Pixel is the smallest part of the image which can contain only one color. Color changes with the pixel intensity values. To keep it simple, I added a grayscale image to illustrate the pixel concept. It is a quite low resolution, grayscale image. Pixel values are showed the following image. Pixel intensity values are changing with how far the pixel value close to black or white. 
 
 ![](/images/pixel.png)
+
+Colored images are basically works with same concept. The difference is colored images are usually indicated with 3 different pixel values which are red, blue and green. By this method the porpotion of these color intensity  
 
 ### Colors in terminal 
 How coloring mechanism works in the terminal should be figured out.
@@ -111,7 +113,7 @@ parser.add_argument(
 args = parser.parse_args()
 ```
 
-After the initialization, arguments can be used with commands like `args.width`. The arguments can be configured as mandotory or optional and the type of the argument also be specified. This package is pretty usefull and standart package which is widely used most of the python projects.s
+After the initialization, arguments can be used with commands like `args.width`. The arguments can be configured as mandotory or optional and the type of the argument also be specified. This package is pretty usefull and standart package which is widely used most of the python projects.
 
 
 ### Image formats
