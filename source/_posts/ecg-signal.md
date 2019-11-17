@@ -22,10 +22,9 @@ Electrocardiography (ECG) is the measurement of the bioelectrical activity durin
 ![](/images/ekg15.jpg)
 
 ### ECG Circuit
+During this process, a 9V battery was used as a source to prevent leakage current through the person to whom the electrodes were connected and the sockets to which the oscilloscopes were connected were checked. Also, in case of any leakage, the person was allowed to separate his feet from the floor with the help of the plastic chair he was sitting during the experiment and not to be in physical contact with any person. The electrode attached to the right leg is connected to the low-potential end (ground) of the battery as shown in the figure above. The remaining two electrode terminals were connected to the negative and positive input terminals on pins 2 and 3 of the INA118. A quite simple circuit is created. It is shown in the next image. It basically consists of 3 components: 2 x 9V battery, instrumentation amplifier INA118 with proper connection and a gain resistor, and electrode connections. The circuit is not the main focus of this post. For further information please send me an email. In this post, I will focus on digital filters that can be used to filter out the noise from the ECG signal.
 
-Three probe electrodes were connected as shown. During this process, a 9V battery was used as a source to prevent leakage current through the person to whom the electrodes were connected and the sockets to which the oscilloscopes were connected were checked. Also, in case of any leakage, the person was allowed to separate his feet from the floor with the help of the plastic chair he was sitting during the experiment and not to be in physical contact with any person. The electrode attached to the right leg is connected to the low-potential end (ground) of the battery as shown in the figure above. The remaining two electrode terminals were connected to the negative and positive input terminals on pins 2 and 3 of the INA118. A quite simple circuit is created. It is shown in the next image. It basically consists of 3 components: 2 x 9V battery, instrumentation amplifier INA118, and electrode connections. The circuit is not the main focus of this post. For further information please send me an email. In this post, I will focus on digital filters that can be used to filter out the noise from the ECG signal.
-
-**ECG Circuit**
+**ECG Circuit Schematic**
 ![](/images/ekgcircuit.png)
 
 ### Cleaning Noise
@@ -58,7 +57,7 @@ After the filtering, the frequency domain components are examined again. The noi
 **Frequency Domain Result**
 ![](/images/ekg16.png)
 
-The time-domain result of the filter can be examined in the next figure. As you can see from this figure, the components of the ECG is cleaner.
+The time-domain result of the filter can be examined in the next figure. As you can see from this figure, the time domain components of the ECG is cleaner.
 
 **Time Domain Result**
 ![](/images/ekg11.png)
