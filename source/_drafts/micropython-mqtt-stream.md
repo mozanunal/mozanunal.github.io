@@ -12,6 +12,7 @@ author: Mehmet Ozan Ünal
 date: 2020-02-26 22:36:00
 ---
 
+
 Hello everyone,
 
 I have developed a micropython code to stream accelerometer data over mqtt. Also I have created a tool to visualize the data which is transferred from remote mqtt device which is executing micropython code.
@@ -98,6 +99,28 @@ class accel():
         while 1:
             print(self.get_values())
             sleep(0.05)
+```
+
+main file
+
+```python
+from machine import I2C, Pin
+import mpu6050
+from umqtt.simple import MQTTClient
+import time, json
+
+i2c = I2C(scl=Pin(5), sda=Pin(4))
+accelerometer = mpu6050.accel(i2c)
+c = MQTTClient("umqtt_client", "iot.eclipse.org")
+c.connect()
+
+def run():
+	while True:
+	    c.publish( b"micropython/test/mpu6050", json.dumps(accelerometer.get_values()) )
+	    time.sleep_ms(45)
+
+
+run()
 ```
 
 I want to also share the workflow when I am developing the micropython project. I have used uPyLoader to upload and execute the code during development.
