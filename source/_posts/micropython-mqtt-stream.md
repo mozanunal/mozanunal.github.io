@@ -15,7 +15,7 @@ date: 2020-02-26 22:36:00
 # Micropython Mqtt Streamer
 
 Hello everyone,
-I have developed a micropython code to stream accelerometer data over mqtt. Also I have created a tool to visualize the data which is transferred from remote mqtt device which is executing micropython code.
+I have developed a micropython code to stream accelerometer data over mqtt. Also I have created a tool to visualize the data which is transferred from remote MQTT device which is executing micropython code.
 
 ## Demo
 
@@ -23,7 +23,7 @@ I have developed a micropython code to stream accelerometer data over mqtt. Also
 
 ## Development
 
-The first thing which i tried with micropython is connecting ESP8266 to wifi. I have tried the following script which I found from the official documentation of the Micropython.
+The first thing which I tried with micropython is connecting ESP8266 to a WiFi. I have tried the following script which I found from the official documentation of the micropython.
 
 ```python
 import network
@@ -32,7 +32,7 @@ wlan.active(True)
 wlan.connect('ssid', 'password')
 ```
 
-The wifi ip of the modile can be examined with `wlan.ifconfig()` commmand. I should say that scripting with a microcontoller is quite fun. ESP8266 was coonected over usb over rs422 line to my computer and I can scriting using micropython shell. For example: I have used upip module to install umqtt.simple upython module to my ESP8266. After installing the umqtt module, I have tested its basic examples and they worked without any problem.
+The wifi ip of the module can be examined with `wlan.ifconfig()` command. I should say that scripting with a microcontoller is quite fun. ESP8266 was connected over usb over Uart line to my computer and I can scripting using micropython shell. For example: I have used upip module to install `umqtt.simple` upython module to my ESP8266. After installing the umqtt module, I have tested its basic examples and they worked without any problem.
 
 ```python
 >>> import upip
@@ -42,10 +42,13 @@ The wifi ip of the modile can be examined with `wlan.ifconfig()` commmand. I sho
 
 ```
 
-Next phase is reading data from accerlerometer. I have used MPU6050 as the IMU sensor. It consists a gyro and an accerlerometer sensor. I have used i2c scanner example code from 
+Next phase is reading data from accelerometer. I have used MPU6050 as the IMU sensor. It consists a gyro and an accelerometer sensor. I have used i2c scanner example code to detect the i2c address of the device. The address of my MPU6050 is `0x68`.
 
 
 ```python
+>>> i2c.scan() 
+# scan for slaves on the bus, 
+# returning a list of valid addresses
 >>> for device in devices:
 ...     print("Decimal address: ",device," | Hexa address: ",hex(device))
 ...
@@ -105,7 +108,7 @@ class accel():
             sleep(0.05)
 ```
 
-Main loop is also quite straith forward. It read samples from acc and send these over mqtt protocol directly to the server.
+Main loop is also quite strait-forward. It read samples from acc and send these over mqtt protocol directly to the server.
 
 ```python
 from machine import I2C, Pin
@@ -129,3 +132,11 @@ run()
 
 
 [The code can be reached from this github repo.](https://github.com/mozanunal/micropython-mpu6050-mqtt-streamer)
+
+## References
+
+- https://randomnerdtutorials.com/micropython-mqtt-esp32-esp8266/
+- https://github.com/adamjezek98/MPU6050-ESP8266-MicroPython mpu6050.py
+- https://docs.micropython.org/en/latest/library/network.WLAN.html
+- https://learn.adafruit.com/micropython-basics-esp8266-webrepl/access-webrepl 
+
