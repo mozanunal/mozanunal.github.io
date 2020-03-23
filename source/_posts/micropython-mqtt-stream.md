@@ -12,15 +12,18 @@ author: Mehmet Ozan Ünal
 date: 2020-02-26 22:36:00
 ---
 
+# Micropython Mqtt Streamer
 
 Hello everyone,
-
 I have developed a micropython code to stream accelerometer data over mqtt. Also I have created a tool to visualize the data which is transferred from remote mqtt device which is executing micropython code.
 
+## Demo
 
 {% youtube 5v9RwN818p8 %}
 
-connect wifi
+## Development
+
+The first thing which i tried with micropython is connecting ESP8266 to wifi. I have tried the following script which I found from the official documentation of the Micropython.
 
 ```python
 import network
@@ -29,7 +32,7 @@ wlan.active(True)
 wlan.connect('ssid', 'password')
 ```
 
-wlan.ifconfig()
+The wifi ip of the modile can be examined with `wlan.ifconfig()` commmand. I should say that scripting with a microcontoller is quite fun. ESP8266 was coonected over usb over rs422 line to my computer and I can scriting using micropython shell. For example: I have used upip module to install umqtt.simple upython module to my ESP8266. After installing the umqtt module, I have tested its basic examples and they worked without any problem.
 
 ```python
 >>> import upip
@@ -39,7 +42,8 @@ wlan.ifconfig()
 
 ```
 
-I2c scanner
+Next phase is reading data from accerlerometer. I have used MPU6050 as the IMU sensor. It consists a gyro and an accerlerometer sensor. I have used i2c scanner example code from 
+
 
 ```python
 >>> for device in devices:
@@ -50,7 +54,7 @@ I2c scanner
 Decimal address:  104  | Hexa address:  0x68
 ```
 
-Accelerometer Class
+The following class is developed to read sensor values directly from MPU6050.
 ```python
 import machine
 
@@ -101,7 +105,7 @@ class accel():
             sleep(0.05)
 ```
 
-main file
+Main loop is also quite straith forward. It read samples from acc and send these over mqtt protocol directly to the server.
 
 ```python
 from machine import I2C, Pin
@@ -122,8 +126,6 @@ def run():
 
 run()
 ```
-
-I want to also share the workflow when I am developing the micropython project. I have used uPyLoader to upload and execute the code during development.
 
 
 [The code can be reached from this github repo.](https://github.com/mozanunal/micropython-mpu6050-mqtt-streamer)
