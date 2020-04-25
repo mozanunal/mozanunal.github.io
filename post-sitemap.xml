@@ -7,6 +7,22 @@
     </url>
 
     <url>
+        <loc>https://mozanunal.com/2020/03/hash-code-2020/</loc>
+        <lastmod>2020-04-25T22:48:34.328Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://mozanunal.com/2017/07/Google-Hash-Code-2017/</loc>
+        <lastmod>2020-04-01T08:34:35.616Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://mozanunal.com/2020/03/coolest-c-trick/</loc>
         <lastmod>2020-03-30T20:59:13.116Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -167,14 +183,6 @@
     </url>
 
     <url>
-        <loc>https://mozanunal.com/2016/01/web-tabanl-programlar/</loc>
-        <lastmod>2019-08-12T20:43:49.970Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://mozanunal.com/2019/04/wpctl-1/</loc>
         <lastmod>2019-08-12T20:43:49.970Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -191,7 +199,7 @@
     </url>
 
     <url>
-        <loc>https://mozanunal.com/2017/07/Google-Hash-Code-2017/</loc>
+        <loc>https://mozanunal.com/2016/01/web-tabanl-programlar/</loc>
         <lastmod>2019-08-12T20:43:49.970Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -255,7 +263,7 @@
     </url>
 
     <url>
-        <loc>https://mozanunal.com/2019/01/simpledsp-iir-feature/</loc>
+        <loc>https://mozanunal.com/2015/01/software-defined-radioya-giris/</loc>
         <lastmod>2019-08-10T23:25:35.877Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -263,7 +271,7 @@
     </url>
 
     <url>
-        <loc>https://mozanunal.com/2015/01/software-defined-radioya-giris/</loc>
+        <loc>https://mozanunal.com/2019/01/simpledsp-iir-feature/</loc>
         <lastmod>2019-08-10T23:25:35.877Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -351,7 +359,7 @@
     </url>
 
     <url>
-        <loc>https://mozanunal.com/2015/07/multikopterler-icin-pid-kontrol/</loc>
+        <loc>https://mozanunal.com/2017/02/multikopterler-icin-otopilot-yapmak/</loc>
         <lastmod>2019-08-10T23:25:35.869Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -359,7 +367,7 @@
     </url>
 
     <url>
-        <loc>https://mozanunal.com/2017/02/multikopterler-icin-otopilot-yapmak/</loc>
+        <loc>https://mozanunal.com/2015/07/multikopterler-icin-pid-kontrol/</loc>
         <lastmod>2019-08-10T23:25:35.869Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -391,23 +399,7 @@
     </url>
 
     <url>
-        <loc>https://mozanunal.com/2014/10/kamera-ile-fare-kontrolu/</loc>
-        <lastmod>2019-08-10T23:25:35.865Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://mozanunal.com/2016/01/itunom-takm/</loc>
-        <lastmod>2019-08-10T23:25:35.865Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://mozanunal.com/2014/10/karanlkta-yanan-gece-lambas/</loc>
         <lastmod>2019-08-10T23:25:35.865Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -423,7 +415,23 @@
     </url>
 
     <url>
+        <loc>https://mozanunal.com/2014/10/kamera-ile-fare-kontrolu/</loc>
+        <lastmod>2019-08-10T23:25:35.865Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://mozanunal.com/2016/02/lazer-haberlesmesi/</loc>
+        <lastmod>2019-08-10T23:25:35.865Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://mozanunal.com/2014/10/karanlkta-yanan-gece-lambas/</loc>
         <lastmod>2019-08-10T23:25:35.865Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -639,7 +647,7 @@
     </url>
 
     <url>
-        <loc>https://mozanunal.com/2014/12/baks-acs-tabanl-3-boyutlu-gorus/</loc>
+        <loc>https://mozanunal.com/2014/10/arduino-joystick-kontrol/</loc>
         <lastmod>2019-08-10T23:22:52.385Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -647,7 +655,7 @@
     </url>
 
     <url>
-        <loc>https://mozanunal.com/2014/10/arduino-joystick-kontrol/</loc>
+        <loc>https://mozanunal.com/2014/12/baks-acs-tabanl-3-boyutlu-gorus/</loc>
         <lastmod>2019-08-10T23:22:52.385Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
