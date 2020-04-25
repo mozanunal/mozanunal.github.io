@@ -122,11 +122,9 @@ c = MQTTClient("umqtt_client", "iot.eclipse.org")
 c.connect()
 
 def run():
-	while True:
-	    c.publish( b"micropython/test/mpu6050", json.dumps(accelerometer.get_values()) )
-	    time.sleep_ms(45)
-
-
+    while True:
+        c.publish( b"micropython/test/mpu6050", json.dumps(accelerometer.get_values()) )
+        time.sleep_ms(45)
 run()
 ```
 
