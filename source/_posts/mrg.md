@@ -3,7 +3,7 @@ title: |
 tags:
   - Manyetik Rezondans Görüntüleme, MRG, MRI
 categories:
-  - Electronics
+  - Biomedical
 author: Mehmet Ozan Ünal
 date: 2020-04-26 03:44:00
 ---
@@ -25,13 +25,12 @@ Normalde vücudumuz RF enerjisine duyarsızdır. Önce veri kaynağımız olan
 Manyetik Rezonans görüntüleme klasik görüntüleme yöntemleri arasında en son icat edilendir. Eş zamanlı olarak 2 fizikçi tarafından 1947 yılında keşfedilmiştir( Felix Bloch - Edward Mills Purcell). İlk resim 1973 yılında Paul Lauterbur tarafından yapılmıştır. İlk klinik görüntülemeler 1977 yılında yapılmıştır. 2010 yılı itibariyle dünyada toplam 4000 MR Tarayıcı kullanılmaktadır [1].
 
 ![](/images/mri/image1.png)
-**Şekil 1: İlk MR makinesi prototipleri**
-
+<center>Şekil 1: İlk MR makinesi prototipleri</center>
 
 
 ![](/images/mri/image2.png)
 
-**Şekil 2: İlk Tüm vücut MR prototibi dizaynı**
+<center>Şekil 2: İlk Tüm vücut MR prototibi dizaynı</center>
 
 ## 2. Atomik Partiküller ve Magnetizma
 
@@ -55,15 +54,15 @@ MRG Hidrojen atomunun manyetik özelliklerini kullanarak çalışır. Hidrojen a
 
 ![](/images/mri/image3.png)
 
-**Şekil 3: Devinim hareketinin gösterimi**
+<center>Şekil 3: Devinim hareketinin gösterimi</center>
 
 ![](/images/mri/image4.png)
 
-**Şekil 4: Farklı elementler için gyromagnetic oranlar**
+<center>Şekil 4: Farklı elementler için gyromagnetic oranlar</center>
 
 ![](/images/mri/image5.jpg)
 
-**Şekil 5: Negatif gyrometrik sabiti olan parçacıkların spin yönü ile manyetik moment yönü birbirine zıttır. [2]**
+<center>Şekil 5: Negatif gyrometrik sabiti olan parçacıkların spin yönü ile manyetik moment yönü birbirine zıttır. [2]</center>
 
 Protonların presesyonlarının frekansı, manyetik alanın gücü ile doğru orantılıdır.
  Presesyon, manyetik rezonans olayının temelidir. Protonları etkileyebilmek için önce
@@ -73,11 +72,11 @@ Protonların presesyonlarının frekansı, manyetik alanın gücü ile doğru or
 
 ![](/images/mri/image6.png)
 
-**Şekil 6: Farklı elemenletlerin MR görüntülemede oluşturdukları duyarlılık oranları [4]**
+<center>Şekil 6: Farklı elemenletlerin MR görüntülemede oluşturdukları duyarlılık oranları [4]</center>
 
 ![](/images/mri/image7.png)
 
-**Şekil 7: Larmor frekenası formulü**
+<center>Şekil 7: Larmor frekenası formulü</center>
 
 Rezonans durumdaki Hidrojenler uyarıldıktan sonra geri eski durumlarına dönerlerken bir manyetik alanlarındaki değişimden dolayı bir sinyal yayarlar. Bu duruma relaksasyon denir. Bu uyarılma ve devamındaki zayıflarma esnasında sırasıyla aşağıdaki olaylar olur [2].
 
@@ -90,7 +89,7 @@ MR görüntüleme de bu iki relaksasyonun süreleri arasında yorumlar yaparak d
 
 ![](/images/mri/image8.png)
 
-**Şekil 8: Relaksasyon sırasında toplam manyatik alanın zamana göre değişimi, Free Inductıon Decay**
+<center>Şekil 8: Relaksasyon sırasında toplam manyatik alanın zamana göre değişimi, Free Inductıon Decay</center>
 
 ## 3. Faraday Indüksiyon Akımı Sinyal Kaydı
 
@@ -109,7 +108,7 @@ Telin Doğrusal Hareketi
  ![](/images/mri/image7.3.png)
  Telin Dairesel Hareketi
  B manyetik alanına dik yönde w açısal hızıyla hareket eden, l uzunluğundaki telin uçları arasında indüklenen emk
- ![](/images/mri/image7.4.png)
+ ![](/images/mri/image7.5.png)
 
 Manyetik rezonans görüntülemede faraday yasasından yola çıkararak çeşitli dizaynlar yapılmaktadır. Gradyan magnetlerden manyetik alan elektrik ile değişken olarak indüklenmesi ve vücuttan yapılan radyo dalgaları ışımalarınının rf sargılar ile alınması da bu prensibe dayanarak tasarlanır.
 
@@ -117,7 +116,7 @@ Manyetik rezonans görüntülemede faraday yasasından yola çıkararak çeşitl
 
 ![](/images/mri/image9.png)
 
-**Şekil 9:MR Enstrümantasyonu genel bakış [6]**
+<center>Şekil 9:MR Enstrümantasyonu genel bakış [6]</center>
 
 Sistem temel olarak aşağıdaki kompenentlerden oluşur.
 
@@ -125,13 +124,13 @@ Sistem temel olarak aşağıdaki kompenentlerden oluşur.
 
 ![](/images/mri/image10.png)
 
-**Şekil 10: Birincil magnetin oluşturduğu manyetik alanın formulü**
+<center>Şekil 10: Birincil magnetin oluşturduğu manyetik alanın formulü</center>
 
 Yukarıdaki eşitlikte görüldüğü gibi elde edilen magnetik güç akımın karesi ve direncin çarpımı ile orantılıdır. Isı kaybını önlemek için tellerin dirençleri mümkün olduğunca düşük tutulur. Bu süperiletken kullanmayı zorunlu hale getiren etkendir. Bilinen bazı materyaller çok düşük sıcaklıklarda neredeyse 0 dirence kadar düşerler. MRG'de bu teller bir kaç yüz amperi taşıyabilir durumda olmalıdırlar. Niobium ve aluminyom alaşımı bir madde ile bu sağlanabilir. Manyetik alanın homojenliği bu magnet için çok önemlidir. MR makinlerine yıllık yapılan bakımda süperiletkenliği sağlamak için kullanılan soğuk gaz yıllık olarak yenilenir. Magnetlerin dışına yerleştirilen magnetik alan önleyiciler ile bu manyetik alanın dışarıya etkisi sıfırlanmaya çalışılır. Bu kalkan olarak çelik karbon tabanlı pasif zayıflatıcılar ya da tes yönde manyetik alan üreten aktif zayıflatıcılar kullanılır.
 
 ![](/images/mri/image11.png)
 
-**Şekil 11: MR makinesinin 2D kesitinde birincil magnetlerin yeri [1]**
+<center>Şekil 11: MR makinesinin 2D kesitinde birincil magnetlerin yeri [1]</center>
 
 **Gradyan Magnetler:**
 
@@ -139,19 +138,19 @@ Yukarıdaki eşitlikte görüldüğü gibi elde edilen magnetik güç akımın k
 
 ![](/images/mri/image12.png)
 
-**Şekil 12: X,Y ve Z ekseninde gradyan magnetler**
+<center>Şekil 12: X,Y ve Z ekseninde gradyan magnetler</center>
 
 Manyetik alan gradienti manyetik alan değişiminin uzaklık değişimine oranı olarak tanımlanır.
 
 ![](/images/mri/image13.png)
 
-**Şekil 13: Gradyanın Formulü [7]**
+<center>Şekil 13: Gradyanın Formulü [7]</center>
 
 Gradyan Sargılar güçlü PWM kuvvetlendiriciler ile sürülürler. Anlık olarak 2500 V ve 1000 A gibi değeler görebilirler. Böyle durumlarda iç sıcaklıkları 55 - 60 dereceye kadar ulaşabilir. Bu nedenle gradyan sargıları soğutabilmek için MR cihazlarında gerekli üniteler bulunur.
 
 ![](/images/mri/image14.png)
 
-**Şekil 14: Gradyan sargılar soğutma sistemleri [7]**
+<center>Şekil 14: Gradyan sargılar soğutma sistemleri [7]</center>
 
 **Radyo Frekans Bobinleri:**
 
@@ -159,7 +158,7 @@ Gradyan Sargılar güçlü PWM kuvvetlendiriciler ile sürülürler. Anlık olar
 
 ![](/images/mri/image15.png)
 
-**Şekil 15: RF sargı giriş devresi örneği**
+<center>Şekil 15: RF sargı giriş devresi örneği</center>
 
 Çevre gürültülerden etkilenmemesi için ve o frekans kanalına kilitlemek için rf sargısının çıkışında aynı frekansta referans clock üretilmelidir. Bunu yapabilmek için kapasitans ve endüktans tabanlı devreler kullanılabilir. Fres frekansında sinyal üretmek için gerekli kapasite ve endüktans değeleri aşağıdaki formüle göre hesaplanabilir.
 
@@ -169,7 +168,7 @@ Aşağıda ise örnek bir devre şeması eklenmiştir. Verimli bir RF sargı dev
 
 ![](/images/mri/image16.png)
 
-**Şekil 16: RF sargıların elektromanteik koruyucularla kaplanması(shielding)**
+<center>Şekil 16: RF sargıların elektromanteik koruyucularla kaplanması(shielding)</center>
 
 RF sargılara gürültü oluşturabilecek bir diğer etken de sistem içerisindeki komponentlerdir. MRG makineleri içerisinde yüksek akımların geçtiği bir çok komponent içerir bu manyetik alan ve rf tarafında kirliğe sebep olur bu gürültülerin azaltıması için sistemdeki farklı komponentler sistemden elektriksel olarak yalıtılmış durumdadır. Simetrik bir dizayn izlenerek bu gürültülerin mümkün olduğunca birbirini yok etkesi de yardımcı olabiliecek yöntemlerdendir [1].
 
@@ -177,7 +176,7 @@ Rf sargıların hem alıcı hem verici olarak kullanılabilmesi için aşağıda
 
 ![](/images/mri/image17.png)
 
-**Şekil 17: Örnek pals sekansı. Bilgisayar sistemi hepsini senkron olarak çalışmasından sorumludur. [8]**
+<center>Şekil 17: Örnek pals sekansı. Bilgisayar sistemi hepsini senkron olarak çalışmasından sorumludur. [8]</center>
 
 **Bilgisayar Sistemi:**
 

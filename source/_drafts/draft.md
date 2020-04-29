@@ -5,6 +5,8 @@ tags:
 categories:
   - Coding
   - Drone
+  - Deep Learning
+  - Biomedical
   - Electronics
     - Analog
     - Arduino
