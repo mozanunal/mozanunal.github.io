@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://mozanunal.com/"/>
-  <updated>2020-04-25T22:48:34.328Z</updated>
+  <updated>2020-04-29T23:32:16.160Z</updated>
   <id>https://mozanunal.com/</id>
   
   <author>
@@ -15,6 +15,58 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Medical Imaging Planes
+</title>
+    <link href="https://mozanunal.com/2020/04/imaging-axis/"/>
+    <id>https://mozanunal.com/2020/04/imaging-axis/</id>
+    <published>2020-04-29T23:12:00.000Z</published>
+    <updated>2020-04-29T23:32:16.160Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Medical-Imaging-Planes"><a href="#Medical-Imaging-Planes" class="headerlink" title="Medical Imaging Planes"></a>Medical Imaging Planes</h1><p><img src="/images/imaging/planes.png" alt="Source: https://mevislabdownloads.mevis.de/docs/current/MeVisLab/Resources/Documentation/Publish/SDK/GettingStarted/ch12s05.html"></p><h2 id="Axial-Transverse-Plane"><a href="#Axial-Transverse-Plane" class="headerlink" title="Axial (Transverse) Plane"></a>Axial (Transverse) Plane</h2><p><img src="/images/imaging/axial.gif" alt></p><h2 id="Coronal-Plane"><a href="#Coronal-Plane" class="headerlink" title="Coronal Plane"></a>Coronal Plane</h2><p><img src="/images/imaging/coronal.gif" alt></p><h2 id="Sagittal-Plane"><a href="#Sagittal-Plane" class="headerlink" title="Sagittal Plane"></a>Sagittal Plane</h2><p><img src="/images/imaging/sagittal.gif" alt></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;Medical-Imaging-Planes&quot;&gt;&lt;a href=&quot;#Medical-Imaging-Planes&quot; class=&quot;headerlink&quot; title=&quot;Medical Imaging Planes&quot;&gt;&lt;/a&gt;Medical Imaging Plan
+      
+    
+    </summary>
+    
+      <category term="Biomedical" scheme="https://mozanunal.com/categories/Biomedical/"/>
+    
+    
+      <category term="sagital, coronal, axial, biomedical imaging planes" scheme="https://mozanunal.com/tags/sagital-coronal-axial-biomedical-imaging-planes/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Manyetik Rezonans Görüntüleme
+</title>
+    <link href="https://mozanunal.com/2020/04/mrg/"/>
+    <id>https://mozanunal.com/2020/04/mrg/</id>
+    <published>2020-04-26T00:44:00.000Z</published>
+    <updated>2020-04-29T23:11:46.776Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Manyetik-Rezonans-Goruntuleme"><a href="#Manyetik-Rezonans-Goruntuleme" class="headerlink" title="Manyetik Rezonans Görüntüleme"></a>Manyetik Rezonans Görüntüleme</h1><h2 id="1-Giris"><a href="#1-Giris" class="headerlink" title="1.Giriş"></a>1.Giriş</h2><p>Normalde vücudumuz RF enerjisine duyarsızdır. Önce veri kaynağımız olan<br> protonların RF enerjisi ile uyarılır hale getirilmesi gerekir. Bunun için hasta çok<br> güçlü bir manyetik alan içerisine yerleştirilir. Bu manyetik etkiyle protonlar<br> manyetik alana uygun şekilde dizilir ve uyarılmaya hazır hale gelirler.<br> Kesit alınacak bölgeye RF enerjisi gönderilir. Protonlar bu enerjiyi alır ve<br> enerjinin miktarına göre konumlarından saparlar. RF enerjisi kesilir. Protonlar eski konumlarına dönerler. Bu dönüş sürecinde aldıkları enerjiyi bir sinyal şeklinde yayarlar. Bu sinyal kayıt edilerek seçilen alanın Hidrojen yoğunluğuyla alakalı bilgi edinilmiş olur.</p><h3 id="Tarihi"><a href="#Tarihi" class="headerlink" title="Tarihi"></a>Tarihi</h3><p>Manyetik Rezonans görüntüleme klasik görüntüleme yöntemleri arasında en son icat edilendir. Eş zamanlı olarak 2 fizikçi tarafından 1947 yılında keşfedilmiştir( Felix Bloch - Edward Mills Purcell). İlk resim 1973 yılında Paul Lauterbur tarafından yapılmıştır. İlk klinik görüntülemeler 1977 yılında yapılmıştır. 2010 yılı itibariyle dünyada toplam 4000 MR Tarayıcı kullanılmaktadır [1].</p><p><img src="/images/mri/image1.png" alt></p><center>Şekil 1: İlk MR makinesi prototipleri</center><p><img src="/images/mri/image2.png" alt></p><center>Şekil 2: İlk Tüm vücut MR prototibi dizaynı</center><h2 id="2-Atomik-Partikuller-ve-Magnetizma"><a href="#2-Atomik-Partikuller-ve-Magnetizma" class="headerlink" title="2. Atomik Partiküller ve Magnetizma"></a>2. Atomik Partiküller ve Magnetizma</h2><p><strong>Radyo Frekans:</strong></p><p>Osilasyon frekansı 3kHz- 300GHz olan elektromanyetik dalgalara radyo frekans adı verilir.</p><p><strong>Manyetik Alan:</strong></p><p>Hidrojen atomu, çekirdeğinin tek protondan ibaret olması nedeniyle güçlü manyetik<br> alana sahiptir. İnsan vücudunda bol miktarda bulunan bu çekirdek sinyal kaynağı olarak<br> Idealdir.</p><p><strong>Spin</strong> :</p><p>Atomik ve subatomik partiküllerin açısal momentumu.</p><p>MRG Hidrojen atomunun manyetik özelliklerini kullanarak çalışır. Hidrojen atomunda bulunan proton normal şartlarda rastgele spinde döner. Fakat yüksek manyetik alan altında bütün Hidrojen atomlarının spinleri aynı yöne getirilir.</p><p><strong>Devinim</strong> (Presesyon), manyetik alan altında sabit manyetik alan altında açısal momentuma sahip anatomik parçacıkların yaptığı harekete denir. Bu yapılan hareketin frekansı manyetik alana ve taneciğin gyromagnetic oranına bağlıdır.</p><p><img src="/images/mri/image3.png" alt></p><center>Şekil 3: Devinim hareketinin gösterimi</center><p><img src="/images/mri/image4.png" alt></p><center>Şekil 4: Farklı elementler için gyromagnetic oranlar</center><p><img src="/images/mri/image5.jpg" alt></p><center>Şekil 5: Negatif gyrometrik sabiti olan parçacıkların spin yönü ile manyetik moment yönü birbirine zıttır. [2]</center><p>Protonların presesyonlarının frekansı, manyetik alanın gücü ile doğru orantılıdır.<br> Presesyon, manyetik rezonans olayının temelidir. Protonları etkileyebilmek için önce<br> onları manyetik alan içerisine koyarak presesyon yaptırmak gerekir. Ancak bu durumdaki<br> protonlar dışarıdan gönderilecek presesyon frekansındaki bir radyo dalgasıyla (RF) rezonansa<br> girebilirler [3]. Bu rezonans frekansına Larmor frekansı denir ve gyrometric oran ile manyatik alanın çarpımıyla hesaplanır.</p><p><img src="/images/mri/image6.png" alt></p><center>Şekil 6: Farklı elemenletlerin MR görüntülemede oluşturdukları duyarlılık oranları [4]</center><p><img src="/images/mri/image7.png" alt></p><center>Şekil 7: Larmor frekenası formulü</center><p>Rezonans durumdaki Hidrojenler uyarıldıktan sonra geri eski durumlarına dönerlerken bir manyetik alanlarındaki değişimden dolayı bir sinyal yayarlar. Bu duruma relaksasyon denir. Bu uyarılma ve devamındaki zayıflarma esnasında sırasıyla aşağıdaki olaylar olur [2].</p><ul><li>Devinim durumundaki hidrojen atomları toplam manyeyik alan B0 manyetik alanı yönünde olacak şekilde hizalanmışlardır. Toplam net manyetik alan longitutunal (Z) düzlemde yukarı doğrudur. Transverse (X-Y) düzlemde ise toplam net manyetik alan sıfırdır.</li><li>Sistem B0 manyetik alanın dik olacak bir B1 manyetik alanına sahip olan RF palslar ile uyarılır.</li><li>Uyarılan sistemde net manyetik alan longitutunal düzlem sıfır olmuştur. Bu arada hidrojen atomları infaz durumuna geçer ve Z ekseni etrafında aynı fazda dönmeye başlarlar. Bu da transverse ekseninde sürekli dönen bir net manyetizasyon oluşturur.</li><li>Uyarmayı yapan B1 manyetik alanı kaldırılır. Sistem eski haline dönmeye başlar. Bu olaya Free Induction Decay adı verilir. Sistemin relaksasyonu sırasında longitutional manyetik alanın eski halin gönmesine T1 relaksasyonu, transverse düzlemdeki dönmekte olan net manyetizasyonun tekrar sıfır olmasına ise T2 relaksasyonu denir.</li></ul><p>MR görüntüleme de bu iki relaksasyonun süreleri arasında yorumlar yaparak dokular hakkında bilgi edinilmeye çalışılır.</p><p><img src="/images/mri/image8.png" alt></p><center>Şekil 8: Relaksasyon sırasında toplam manyatik alanın zamana göre değişimi, Free Inductıon Decay</center><h2 id="3-Faraday-Induksiyon-Akimi-Sinyal-Kaydi"><a href="#3-Faraday-Induksiyon-Akimi-Sinyal-Kaydi" class="headerlink" title="3. Faraday Indüksiyon Akımı Sinyal Kaydı"></a>3. Faraday Indüksiyon Akımı Sinyal Kaydı</h2><p>Faraday kanununa göre bir devrede indüklenen emk, devreden geçen manyetik akının zamana göre türevi ile doğru orantılıdır. Bu ifade şöyle yazılabilir [5]:<br> <img src="/images/mri/image7.1.png" alt></p><p> ε: İndüklenen emk (Volt)<br> Φ: Manyetik akı (Weber)<br> t: Zaman (saniye)<br> N sarımlı bir bobinde oluşan emk</p><p><img src="/images/mri/image7.2.png" alt></p><p>Telin Doğrusal Hareketi<br> B manyetik alanına dik yönde v hızıyla hareket eden, l uzunluğundaki telin uçları arasında indüklenen emk<br> <img src="/images/mri/image7.3.png" alt><br> Telin Dairesel Hareketi<br> B manyetik alanına dik yönde w açısal hızıyla hareket eden, l uzunluğundaki telin uçları arasında indüklenen emk<br> <img src="/images/mri/image7.5.png" alt></p><p>Manyetik rezonans görüntülemede faraday yasasından yola çıkararak çeşitli dizaynlar yapılmaktadır. Gradyan magnetlerden manyetik alan elektrik ile değişken olarak indüklenmesi ve vücuttan yapılan radyo dalgaları ışımalarınının rf sargılar ile alınması da bu prensibe dayanarak tasarlanır.</p><h2 id="4-MRG-Enstrumanyasyon"><a href="#4-MRG-Enstrumanyasyon" class="headerlink" title="4. MRG Enstrümanyasyon"></a>4. MRG Enstrümanyasyon</h2><p><img src="/images/mri/image9.png" alt></p><center>Şekil 9:MR Enstrümantasyonu genel bakış [6]</center><p>Sistem temel olarak aşağıdaki kompenentlerden oluşur.</p><p><strong>Birincil Magnetler:</strong> Birincil magnetler güçlü manyetik alanı üretmekten sorumludur. Statik güçte bir manyetik alan üretirler. Seviyeleri 1 Tesladan 3 Teslaya kadar değişebilmektedir. Bu kadar güçlü manyetik alana ulaşabilmek için genelde süper iletken kullanılır. Sürekli açık durumda bırakılırlar sadece bakım olacağı zaman bu magnetler manyetik alan üretmeyi bıraktırılır. 2000lerin başından bu yana 1.5 Teslalık magnetlerin yerini 3 Teslalık magnetler aldı [6].</p><p><img src="/images/mri/image10.png" alt></p><center>Şekil 10: Birincil magnetin oluşturduğu manyetik alanın formulü</center><p>Yukarıdaki eşitlikte görüldüğü gibi elde edilen magnetik güç akımın karesi ve direncin çarpımı ile orantılıdır. Isı kaybını önlemek için tellerin dirençleri mümkün olduğunca düşük tutulur. Bu süperiletken kullanmayı zorunlu hale getiren etkendir. Bilinen bazı materyaller çok düşük sıcaklıklarda neredeyse 0 dirence kadar düşerler. MRG’de bu teller bir kaç yüz amperi taşıyabilir durumda olmalıdırlar. Niobium ve aluminyom alaşımı bir madde ile bu sağlanabilir. Manyetik alanın homojenliği bu magnet için çok önemlidir. MR makinlerine yıllık yapılan bakımda süperiletkenliği sağlamak için kullanılan soğuk gaz yıllık olarak yenilenir. Magnetlerin dışına yerleştirilen magnetik alan önleyiciler ile bu manyetik alanın dışarıya etkisi sıfırlanmaya çalışılır. Bu kalkan olarak çelik karbon tabanlı pasif zayıflatıcılar ya da tes yönde manyetik alan üreten aktif zayıflatıcılar kullanılır.</p><p><img src="/images/mri/image11.png" alt></p><center>Şekil 11: MR makinesinin 2D kesitinde birincil magnetlerin yeri [1]</center><p><strong>Gradyan Magnetler:</strong></p><p>Üç düzlemde yerleştirilmiş bu bobinler sayesinde hastanın pozisyonu değiştirilmeden her üç düzlemde de kesit alınabilir. MR sırasında çıkan yüksek sesten bu bobinler sorumludur. Z ekseninde kullanılan sarglarda 2 ayrı sargı manyetik alanı z eksenin lineer olarak değiştirilebilecek şekilde yerleştirilmiştir. X ve Y ekseninde ise (saddle coin) belirtilen eksenlere dik yönde sarım yapılacak şekide sarımlar sisteme eklenmiştir.</p><p><img src="/images/mri/image12.png" alt></p><center>Şekil 12: X,Y ve Z ekseninde gradyan magnetler</center><p>Manyetik alan gradienti manyetik alan değişiminin uzaklık değişimine oranı olarak tanımlanır.</p><p><img src="/images/mri/image13.png" alt></p><center>Şekil 13: Gradyanın Formulü [7]</center><p>Gradyan Sargılar güçlü PWM kuvvetlendiriciler ile sürülürler. Anlık olarak 2500 V ve 1000 A gibi değeler görebilirler. Böyle durumlarda iç sıcaklıkları 55 - 60 dereceye kadar ulaşabilir. Bu nedenle gradyan sargıları soğutabilmek için MR cihazlarında gerekli üniteler bulunur.</p><p><img src="/images/mri/image14.png" alt></p><center>Şekil 14: Gradyan sargılar soğutma sistemleri [7]</center><p><strong>Radyo Frekans Bobinleri:</strong></p><p>İki temel görevi vardır. Birincisi manyetik alan altındaki Hidrojen atomlarını uyararak spinlerini değiştirmlerini sağlamak ikinci olarak RF salınımı yaptığında salınan RF enerjisini toplamak için anten görevi görerek görüntünün oluşturulmasını sağlamak. Pulse sekansı oluşturarak belli bir bölgenin aktifleştirilip ölçülmesini sağlar. Genelde bir dizi radya frekans bobinleri bir arada kullanılır. Bu sayede pozisyonun alıcıya etkisindeki farklılıklar kompanze edilmeye çalışılır.</p><p><img src="/images/mri/image15.png" alt></p><center>Şekil 15: RF sargı giriş devresi örneği</center><p>Çevre gürültülerden etkilenmemesi için ve o frekans kanalına kilitlemek için rf sargısının çıkışında aynı frekansta referans clock üretilmelidir. Bunu yapabilmek için kapasitans ve endüktans tabanlı devreler kullanılabilir. Fres frekansında sinyal üretmek için gerekli kapasite ve endüktans değeleri aşağıdaki formüle göre hesaplanabilir.</p><p><img src="/images/mri/image15.1.png" alt></p><p>Aşağıda ise örnek bir devre şeması eklenmiştir. Verimli bir RF sargı devresi için bahsedilen frekanstaki hassasiyet yüksek ve devrenen giriş çıkış verimleri yüksek olmalıdır. Bunu sağlamak için empadans uydurma devreleri gereklidir. Bu devreler sayesinde alınan ya da yollanan sinyal koaksiyel kablonun girişinde 50 Ohm direncine getirilmelidir. Devredeki sanal komponentlerin birbirini yok etmesi de sağlanarak bu aşamada yaşanan hassasiyet kaybı en aza indirilir.</p><p><img src="/images/mri/image16.png" alt></p><center>Şekil 16: RF sargıların elektromanteik koruyucularla kaplanması(shielding)</center><p>RF sargılara gürültü oluşturabilecek bir diğer etken de sistem içerisindeki komponentlerdir. MRG makineleri içerisinde yüksek akımların geçtiği bir çok komponent içerir bu manyetik alan ve rf tarafında kirliğe sebep olur bu gürültülerin azaltıması için sistemdeki farklı komponentler sistemden elektriksel olarak yalıtılmış durumdadır. Simetrik bir dizayn izlenerek bu gürültülerin mümkün olduğunca birbirini yok etkesi de yardımcı olabiliecek yöntemlerdendir [1].</p><p>Rf sargıların hem alıcı hem verici olarak kullanılabilmesi için aşağıdaki gibi bir devreye dönüştürümelidir. DC sinya uygulanarak diyotlar aracılığıyla sargıların çalışma yönü seçilir. Diyot olarak genelde PIN diyotlar kullanılır [7].</p><p><img src="/images/mri/image17.png" alt></p><center>Şekil 17: Örnek pals sekansı. Bilgisayar sistemi hepsini senkron olarak çalışmasından sorumludur. [8]</center><p><strong>Bilgisayar Sistemi:</strong></p><p>Alınan sinyal yukarıdaki gibi demodule edllir. Demodolasyon sırasında alınan sinyal 90 derece fazı kaydırılmış hali ile çarpılır çıkan sinyalde iki tane belirgin komponent olacaktır. Birincisi sinyalin base banda indilimiş hali ikinci olarak da f0 sinyalinin tam iki katındaki komponent. Sadece basebandaki sinyal istendiği için diğer sinyal alçak geçiren filtre ile gücü azaltılır. Devrenin devamında analog dijital çeviricilerle ile sinyal dijital ortama aktarılır. Genelde örnekleme frekansı 80 MHz örnekleme çözünürlüğü ise 14 bittir [8].</p><p>Alınan sinyallerin toplanıp çeşitli veri işleme ve 3 boyutlu tahmin yöntemleriyle insanın anlayabileceği görüntüler haline çevirildiği yerdir.</p><h1 id="Kaynakca"><a href="#Kaynakca" class="headerlink" title="Kaynakça"></a>Kaynakça</h1><p>[1] N. &amp; W. A. Smith, Introduction to Medical Imaging: Physics, Engineering and Clinical Applications, Cambridge: Cambridge University Press, 2010.<br>[2] P. E. P. R. Bloembergen N, «Relaxation effects in nuclear magnetic resonance absorption,» <em>Phys Rev 1948,</em> pp. 73:679-712, 1948.<br>[3] O. Konez, Manyetik Rezonans Görüntüleme, İstanbul: Nobel Tıp Kitabevleri, 1995.<br>[4] D. Moratal, «Medical Imaging: Principles, Detectors, and Electronics [Book Reviews],» %1 içinde <em>Pulse, IEEE</em>, 2011, p. 227.<br>[5] M. E. Davison, «A Simple Proof that the Lorentz Force, Law Implied Faradays Law of Induction, when B is Time Independent, cilt 41, no. 713, p. American Journal of Physics, 1973.<br>[6] P. Joseph P. Hornak, The Basics of MRI, Cornell, 1996-2018.<br>[7] M. F. Allen D. Elster, «the Questions and Answers in MRI,» [Çevrimiçi]. Available: <a href="http://mriquestions.com/index.html" target="_blank" rel="noopener">http://mriquestions.com/index.html</a>. [Erişildi: 5 1 2019]. |<br>[8] Y. Wang, «MRI Instrumentation and Pulse Sequences,» %1 içinde <em>Medical Imaging I</em>, New York.<br>[9] K. Inievski, Medical İmaging Priniples,Detetors and Electronics, Canada: John Wiley Sons, Inc., Hoboken, New Jersey, 2009. </p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;Manyetik-Rezonans-Goruntuleme&quot;&gt;&lt;a href=&quot;#Manyetik-Rezonans-Goruntuleme&quot; class=&quot;headerlink&quot; title=&quot;Manyetik Rezonans Görüntüleme&quot;&gt;&lt;/a
+      
+    
+    </summary>
+    
+      <category term="Biomedical" scheme="https://mozanunal.com/categories/Biomedical/"/>
+    
+    
+      <category term="Manyetik Rezondans Görüntüleme, MRG, MRI" scheme="https://mozanunal.com/tags/Manyetik-Rezondans-Goruntuleme-MRG-MRI/"/>
+    
+  </entry>
   
   <entry>
     <title>Hash Code 2020</title>
@@ -1248,68 +1300,6 @@
       <category term="Image Processing" scheme="https://mozanunal.com/tags/Image-Processing/"/>
     
       <category term="SimpleCV" scheme="https://mozanunal.com/tags/SimpleCV/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Ayarlanabilir Taşınabilir Güç Kaynağı Yapımı
-</title>
-    <link href="https://mozanunal.com/2016/03/ayarlanabilir-tasnabilir-guc-kaynag-yapm/"/>
-    <id>https://mozanunal.com/2016/03/ayarlanabilir-tasnabilir-guc-kaynag-yapm/</id>
-    <published>2016-03-12T23:24:00.000Z</published>
-    <updated>2019-08-10T23:25:35.849Z</updated>
-    
-    <content type="html"><![CDATA[<p><strong>Herkese Merhabalar,</strong></p><p>Bugünkü yazımda nasıl basit bir şekilde bir powerbank’i ayarlanabilir güç kaynağına dönüştürebileceğimizden bahsedeceğim. Gerekli olan malzemeler sadece bir adet power bank ve bir adet MT3608 boost converter. Projeye başlamadan önce boost converter nedir ondan bahsetmek istiyorum. Boost converterlar voltaj yükseltmek için kullanılır. Kondansatör ve bobin ve diyot kullanarak bir switch yapısı kurarlar ve bu yapı ile hem voltajı yükseltirler hem de verimleri çok yüksek olur. Benim kulladığım modül MT3608 powerbankin pilinin çalışma voltaji olan 3.6 volt ile beslenebiliyor. 0 28 Volt arası 2 amper çıkış alınabiliyor. Verimi de yüzde 93 civarı. Projemize çok uygun yapıyor bu özellikler de onu. Hem de kısa devre koruması da var. Bu da güvenlik açısından da uygun hale getiriyor.  </p><a id="more"></a>  <p>Yapımına geçersek;  </p><p>Bir power bankin icin açıyoruz ve pilin uçlarına mt3608in input pinlerini lehimliyoruz. Kabloları çıkarmak için bir delik açabiliriz. Mt3608 modulü kutunun dışında kalıyor onun çıkışına da 2 adet jumper lehimliyoruz. Bu sayede kolayca breadboard üzerinde falan kullanabiliriz. Modülün üzerindeki potansiyometreden çıkış voltajını ayarlıyoruz. Ve sonuç olarak kolayca cebimizde taşıyabileceğimiz bir güç kaynağımız olmuş oldu. Hem de telefonumuzu şarj etmeye de devam edebiliriz.  </p><p><img src="https://1.bp.blogspot.com/-IfOVfZUST1w/VuSJY7XlqwI/AAAAAAAAYmE/uKlXyLi2uboi4wpDDjKAu4PIYIWaM42Cw/s720/IMG_20160309_125524.jpg" alt></p><p><img src="https://3.bp.blogspot.com/-z8smZaxN74s/VuSJnGzUBDI/AAAAAAAAYmQ/rNQSwlpWCHEeUo61c946507oqgnXEuUSg/s720/IMG_20160309_125551.jpg" alt></p><p><img src="https://2.bp.blogspot.com/-6Dk6efGjWgs/VuSJnI2f_uI/AAAAAAAAYmQ/vDuQo5LbWZgi21Jf4nf_o1fFAbZ6Ck9zA/s720/IMG_20160309_125741.jpg" alt></p><p><img src="https://4.bp.blogspot.com/-WelCDRrWte0/VuSJ7fhyAyI/AAAAAAAAYmY/vyTi0Zzat7wY-1h9GwspnUZgGOi-ivTNQ/s720/IMG_20160309_131250.jpg" alt></p><p><img src="https://3.bp.blogspot.com/-ju6-h2dWRW8/VuSKIHiSHnI/AAAAAAAAYmY/soUUDk5tObQ342CGAmcz59xsDtsLPzNHA/s720/IMG_20160309_131936.jpg" alt></p><p><img src="https://2.bp.blogspot.com/-bFzl7PzT1XM/VuSKJa50WDI/AAAAAAAAYmY/ll6T_6G4wcMY9EQl32ZJ2KjFGgQzQ2HvA/s720/IMG_20160309_132051.jpg" alt></p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Bugünkü yazımda nasıl basit bir şekilde bir powerbank’i ayarlanabilir güç kaynağına dönüştürebileceğimizden bahsedeceğim. Gerekli olan malzemeler sadece bir adet power bank ve bir adet MT3608 boost converter. Projeye başlamadan önce boost converter nedir ondan bahsetmek istiyorum. Boost converterlar voltaj yükseltmek için kullanılır. Kondansatör ve bobin ve diyot kullanarak bir switch yapısı kurarlar ve bu yapı ile hem voltajı yükseltirler hem de verimleri çok yüksek olur. Benim kulladığım modül MT3608 powerbankin pilinin çalışma voltaji olan 3.6 volt ile beslenebiliyor. 0 28 Volt arası 2 amper çıkış alınabiliyor. Verimi de yüzde 93 civarı. Projemize çok uygun yapıyor bu özellikler de onu. Hem de kısa devre koruması da var. Bu da güvenlik açısından da uygun hale getiriyor.  &lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Electronics" scheme="https://mozanunal.com/categories/Electronics/"/>
-    
-      <category term="Analog" scheme="https://mozanunal.com/categories/Electronics/Analog/"/>
-    
-    
-      <category term="Electronics Devreler ve Teorik Yazılar" scheme="https://mozanunal.com/tags/Electronics-Devreler-ve-Teorik-Yazilar/"/>
-    
-      <category term="ayarlanabilor güç kaynağı" scheme="https://mozanunal.com/tags/ayarlanabilor-guc-kaynagi/"/>
-    
-      <category term="mt3608" scheme="https://mozanunal.com/tags/mt3608/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Lazer Haberleşmesi
-</title>
-    <link href="https://mozanunal.com/2016/02/lazer-haberlesmesi/"/>
-    <id>https://mozanunal.com/2016/02/lazer-haberlesmesi/</id>
-    <published>2016-02-07T21:18:00.000Z</published>
-    <updated>2019-08-10T23:25:35.865Z</updated>
-    
-    <content type="html"><![CDATA[<p><strong>Herkese Merhabalar,</strong><br>         Son zamanlarda ışık ile veri aktarımına ilgi duymaktayım. Bu konuda bir şeyler geliştirmek istiyorum. Bunun ilk aşaması olarak lazer ile haberleşme projemi gerçekleştirdim. Bu projedeki amacım daha çok lazerin ve fotodiyotun cevap süresi ölçmek yani maximum aktarım hızını hesaplamaktı. Aynı zamanda farklı iletişim protokollerini denedim. İlerleyen projeler için lazerin de fotodiyotun da yetersiz olduğunu görmüş oldum. Daha hızlı fotodiyotlarla ve ledlerle denemelerim sürecek. Projenin bu aşamadaki haline gelirsek:  </p><p>Gönderici modül basitçe bir arduino ve bir lazerden oluşuyor. Bir transistör ile lazeri sürmeyi planlıyordum. Fakat lazer çok düşük akım çektiğini görünce doğrudan arduinoun pinine bağladım.  </p><p><img src="https://4.bp.blogspot.com/-qQdlLk1HTjA/VrTKOEJvIvI/AAAAAAAAYPk/0kfODfpYmCE/s720/20160205_171100.jpg" alt></p><p><img src="https://4.bp.blogspot.com/-EpqGpVRIUnE/VrTLWM0_oBI/AAAAAAAAYPk/nAfynUH36ms/s720/20160205_171105.jpg" alt></p><p>Gönderici modül ise 1 fotodiot 1 direnç ve logic analyzerdan oluşuyor. Foto diyot üzerine düşen lazer ışığına göre 1 veya 0 çıktı veriyor. Bu çıktıları logic analyzer ile okuyup, istediğimiz iletişim protokolüne göre decode edebiliyoruz.  </p><p><img src="https://3.bp.blogspot.com/-ab_G4FGMd94/VrTLwHEqjrI/AAAAAAAAYPs/iCl_KgAGAf0/s720/20160205_171310.jpg" alt></p><p>Yukarıdaki çevre ışığının etkisini azaltmak için plastik bir kap ile kapatılmış hali. Aşağıdaki ise kapatılmadan önceki hali.</p><p><img src="https://4.bp.blogspot.com/-S6TEoiHANvA/VrTLYZz2JXI/AAAAAAAAYPk/n2NfOTZc4yE/s720/20160205_171300.jpg" alt></p><p>Testimin sonuçları ise söyle: serial haberleşme ile maximum 19200 baud rate kadar güvenilir bir iletişim oldu. Manchester decoding kullanarak ise 38400 baudrate kadar haberleşebildim.</p><p><img src="https://3.bp.blogspot.com/-ljqRhccYSI4/VreridZE2DI/AAAAAAAAYRI/UxN5DVqhhqY/s640/1.PNG" alt></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;br&gt;         Son zamanlarda ışık ile veri aktarımına ilgi duymaktayım. Bu konuda bir şeyler geliştirm
-      
-    
-    </summary>
-    
-      <category term="Electronics" scheme="https://mozanunal.com/categories/Electronics/"/>
-    
-      <category term="Arduino" scheme="https://mozanunal.com/categories/Electronics/Arduino/"/>
-    
-    
-      <category term="Electronics" scheme="https://mozanunal.com/tags/Electronics/"/>
-    
-      <category term="Arduino" scheme="https://mozanunal.com/tags/Arduino/"/>
-    
-      <category term="Laser Haberleşme" scheme="https://mozanunal.com/tags/Laser-Haberlesme/"/>
     
   </entry>
   

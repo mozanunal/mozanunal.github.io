@@ -7,6 +7,22 @@
     </url>
 
     <url>
+        <loc>https://mozanunal.com/2020/04/imaging-axis/</loc>
+        <lastmod>2020-04-29T23:32:16.160Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://mozanunal.com/2020/04/mrg/</loc>
+        <lastmod>2020-04-29T23:11:46.776Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://mozanunal.com/2020/02/micropython-mqtt-stream/</loc>
         <lastmod>2020-04-25T23:00:00.736Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -183,7 +199,7 @@
     </url>
 
     <url>
-        <loc>https://mozanunal.com/2019/04/wpctl-1/</loc>
+        <loc>https://mozanunal.com/2016/01/web-tabanl-programlar/</loc>
         <lastmod>2019-08-12T20:43:49.970Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -191,7 +207,7 @@
     </url>
 
     <url>
-        <loc>https://mozanunal.com/2016/01/web-tabanl-programlar/</loc>
+        <loc>https://mozanunal.com/2019/04/wpctl-1/</loc>
         <lastmod>2019-08-12T20:43:49.970Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -279,7 +295,7 @@
     </url>
 
     <url>
-        <loc>https://mozanunal.com/2016/11/stm32-mikroislemci-dunyasna-giris/</loc>
+        <loc>https://mozanunal.com/2016/01/star-wars-bb-8-robot-yapm-bolum-1/</loc>
         <lastmod>2019-08-10T23:25:35.877Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -287,7 +303,7 @@
     </url>
 
     <url>
-        <loc>https://mozanunal.com/2016/01/star-wars-bb-8-robot-yapm-bolum-1/</loc>
+        <loc>https://mozanunal.com/2016/11/stm32-mikroislemci-dunyasna-giris/</loc>
         <lastmod>2019-08-10T23:25:35.877Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -319,7 +335,7 @@
     </url>
 
     <url>
-        <loc>https://mozanunal.com/2015/01/robot-kol/</loc>
+        <loc>https://mozanunal.com/2016/01/rf-mesafe-hesaplama-exceli/</loc>
         <lastmod>2019-08-10T23:25:35.873Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -327,7 +343,7 @@
     </url>
 
     <url>
-        <loc>https://mozanunal.com/2016/01/rf-mesafe-hesaplama-exceli/</loc>
+        <loc>https://mozanunal.com/2015/01/robot-kol/</loc>
         <lastmod>2019-08-10T23:25:35.873Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -431,7 +447,7 @@
     </url>
 
     <url>
-        <loc>https://mozanunal.com/2016/02/lazer-haberlesmesi/</loc>
+        <loc>https://mozanunal.com/2015/01/lcd-gostergeli-mesafe-olcer/</loc>
         <lastmod>2019-08-10T23:25:35.865Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -439,7 +455,7 @@
     </url>
 
     <url>
-        <loc>https://mozanunal.com/2015/01/lcd-gostergeli-mesafe-olcer/</loc>
+        <loc>https://mozanunal.com/2016/02/lazer-haberlesmesi/</loc>
         <lastmod>2019-08-10T23:25:35.865Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -559,7 +575,7 @@
     </url>
 
     <url>
-        <loc>https://mozanunal.com/2015/12/5-logic-analyzer/</loc>
+        <loc>https://mozanunal.com/2015/06/2-eksenli-servo-gimbal-yapm/</loc>
         <lastmod>2019-08-10T23:25:35.845Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -567,7 +583,7 @@
     </url>
 
     <url>
-        <loc>https://mozanunal.com/2015/06/2-eksenli-servo-gimbal-yapm/</loc>
+        <loc>https://mozanunal.com/2015/12/5-logic-analyzer/</loc>
         <lastmod>2019-08-10T23:25:35.845Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -647,7 +663,7 @@
     </url>
 
     <url>
-        <loc>https://mozanunal.com/2014/12/baks-acs-tabanl-3-boyutlu-gorus/</loc>
+        <loc>https://mozanunal.com/2015/01/arduino-ile-super-mario-melodisi-calmak/</loc>
         <lastmod>2019-08-10T23:22:52.385Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -655,7 +671,7 @@
     </url>
 
     <url>
-        <loc>https://mozanunal.com/2015/01/arduino-ile-super-mario-melodisi-calmak/</loc>
+        <loc>https://mozanunal.com/2014/12/baks-acs-tabanl-3-boyutlu-gorus/</loc>
         <lastmod>2019-08-10T23:22:52.385Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -703,7 +719,7 @@
     </url>
 
     <url>
-        <loc>https://mozanunal.com/2014/10/imu-ile-kamera-gimbal-kontrolu/</loc>
+        <loc>https://mozanunal.com/2014/11/kamera-ile-arac-says-takibi/</loc>
         <lastmod>2019-08-10T23:22:52.385Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -711,7 +727,7 @@
     </url>
 
     <url>
-        <loc>https://mozanunal.com/2014/11/kamera-ile-arac-says-takibi/</loc>
+        <loc>https://mozanunal.com/2014/10/imu-ile-kamera-gimbal-kontrolu/</loc>
         <lastmod>2019-08-10T23:22:52.385Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
