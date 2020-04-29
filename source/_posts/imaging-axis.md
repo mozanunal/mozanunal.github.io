@@ -1,5 +1,5 @@
 title: |
-  Understanding Biomedical Imaging Coordinate Systems
+  Medical Imaging Planes
 tags:
   - sagital, coronal, axial, biomedical imaging planes
 categories:
@@ -9,7 +9,7 @@ author: Mehmet Ozan Ünal
 date: 2020-04-30 02:12:00
 ---
 
-# Biomedical Imaging Planes
+# Medical Imaging Planes
 
 ![Source: https://mevislabdownloads.mevis.de/docs/current/MeVisLab/Resources/Documentation/Publish/SDK/GettingStarted/ch12s05.html](/images/imaging/planes.png)
 
