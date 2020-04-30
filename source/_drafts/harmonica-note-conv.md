@@ -14,6 +14,9 @@ date: 2020-04-26 03:44:00
 
 Hello everyone,
 
+
+https://github.com/mozanunal/harmonica-note-converter
+
 Some of them is know that I am an ameteur harmonica player and I love harmonicas. I usually play diatonic harmonicas but last time I have bought a chromatic harmonica, which has quite different tone and it is hard to find music notes for it.
 
 I am not the best at playing instruments however I am good at cosing and music theory. Thats why I decide to develop a tool to convert music notes for any instrument to notes for my harmonicas. I also create an modular structure to define new instruments.
