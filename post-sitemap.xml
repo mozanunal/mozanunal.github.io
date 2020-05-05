@@ -7,6 +7,22 @@
     </url>
 
     <url>
+        <loc>https://mozanunal.com/2020/05/harmonica-note-conv/</loc>
+        <lastmod>2020-05-05T21:17:48.970Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://mozanunal.com/2018/04/getir-hackhathon/</loc>
+        <lastmod>2020-04-30T00:04:19.752Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://mozanunal.com/2020/04/imaging-axis/</loc>
         <lastmod>2020-04-29T23:32:16.160Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -199,14 +215,6 @@
     </url>
 
     <url>
-        <loc>https://mozanunal.com/2016/01/web-tabanl-programlar/</loc>
-        <lastmod>2019-08-12T20:43:49.970Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://mozanunal.com/2019/04/wpctl-1/</loc>
         <lastmod>2019-08-12T20:43:49.970Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -223,15 +231,15 @@
     </url>
 
     <url>
-        <loc>https://mozanunal.com/2017/04/art-sharing-platform-1521976119976/</loc>
-        <lastmod>2019-08-12T20:43:49.966Z</lastmod>
+        <loc>https://mozanunal.com/2016/01/web-tabanl-programlar/</loc>
+        <lastmod>2019-08-12T20:43:49.970Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
     </url>
 
     <url>
-        <loc>https://mozanunal.com/2018/04/getir-hackhathon/</loc>
+        <loc>https://mozanunal.com/2017/04/art-sharing-platform-1521976119976/</loc>
         <lastmod>2019-08-12T20:43:49.966Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -271,14 +279,6 @@
     </url>
 
     <url>
-        <loc>https://mozanunal.com/2017/04/simpledsp-fir-filtreleme-ozelligi/</loc>
-        <lastmod>2019-08-10T23:25:35.877Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://mozanunal.com/2015/01/software-defined-radioya-giris/</loc>
         <lastmod>2019-08-10T23:25:35.877Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -288,6 +288,14 @@
 
     <url>
         <loc>https://mozanunal.com/2019/01/simpledsp-iir-feature/</loc>
+        <lastmod>2019-08-10T23:25:35.877Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://mozanunal.com/2017/04/simpledsp-fir-filtreleme-ozelligi/</loc>
         <lastmod>2019-08-10T23:25:35.877Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -327,7 +335,7 @@
     </url>
 
     <url>
-        <loc>https://mozanunal.com/2016/09/pixhawk-otopilot-ve-ozellikleri/</loc>
+        <loc>https://mozanunal.com/2015/01/robot-kol/</loc>
         <lastmod>2019-08-10T23:25:35.873Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -343,7 +351,7 @@
     </url>
 
     <url>
-        <loc>https://mozanunal.com/2015/01/robot-kol/</loc>
+        <loc>https://mozanunal.com/2016/09/pixhawk-otopilot-ve-ozellikleri/</loc>
         <lastmod>2019-08-10T23:25:35.873Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -375,7 +383,7 @@
     </url>
 
     <url>
-        <loc>https://mozanunal.com/2017/02/multikopterler-icin-otopilot-yapmak/</loc>
+        <loc>https://mozanunal.com/2015/07/multikopterler-icin-pid-kontrol/</loc>
         <lastmod>2019-08-10T23:25:35.869Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -383,7 +391,7 @@
     </url>
 
     <url>
-        <loc>https://mozanunal.com/2015/07/multikopterler-icin-pid-kontrol/</loc>
+        <loc>https://mozanunal.com/2017/02/multikopterler-icin-otopilot-yapmak/</loc>
         <lastmod>2019-08-10T23:25:35.869Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -415,7 +423,7 @@
     </url>
 
     <url>
-        <loc>https://mozanunal.com/2014/11/imu-aclarnn-3-boyutlu-olarak/</loc>
+        <loc>https://mozanunal.com/2016/01/itunom-takm/</loc>
         <lastmod>2019-08-10T23:25:35.865Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -423,7 +431,7 @@
     </url>
 
     <url>
-        <loc>https://mozanunal.com/2016/01/itunom-takm/</loc>
+        <loc>https://mozanunal.com/2014/11/imu-aclarnn-3-boyutlu-olarak/</loc>
         <lastmod>2019-08-10T23:25:35.865Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -519,7 +527,7 @@
     </url>
 
     <url>
-        <loc>https://mozanunal.com/2015/10/diy-raspberry-pi-laptop-16/</loc>
+        <loc>https://mozanunal.com/2015/09/diy-raspberry-pi-laptop/</loc>
         <lastmod>2019-08-10T23:25:35.853Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -527,7 +535,7 @@
     </url>
 
     <url>
-        <loc>https://mozanunal.com/2015/09/diy-raspberry-pi-laptop/</loc>
+        <loc>https://mozanunal.com/2015/10/diy-raspberry-pi-laptop-16/</loc>
         <lastmod>2019-08-10T23:25:35.853Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -655,7 +663,7 @@
     </url>
 
     <url>
-        <loc>https://mozanunal.com/2014/10/arduino-joystick-kontrol/</loc>
+        <loc>https://mozanunal.com/2015/01/arduino-ile-super-mario-melodisi-calmak/</loc>
         <lastmod>2019-08-10T23:22:52.385Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -663,7 +671,7 @@
     </url>
 
     <url>
-        <loc>https://mozanunal.com/2015/01/arduino-ile-super-mario-melodisi-calmak/</loc>
+        <loc>https://mozanunal.com/2014/10/arduino-joystick-kontrol/</loc>
         <lastmod>2019-08-10T23:22:52.385Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -703,7 +711,7 @@
     </url>
 
     <url>
-        <loc>https://mozanunal.com/2018/04/google-docs-data-collection/</loc>
+        <loc>https://mozanunal.com/2014/05/ilk-yayn/</loc>
         <lastmod>2019-08-10T23:22:52.385Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -711,7 +719,7 @@
     </url>
 
     <url>
-        <loc>https://mozanunal.com/2014/05/ilk-yayn/</loc>
+        <loc>https://mozanunal.com/2018/04/google-docs-data-collection/</loc>
         <lastmod>2019-08-10T23:22:52.385Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>

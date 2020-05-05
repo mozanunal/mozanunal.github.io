@@ -63,13 +63,6 @@
     </url>
 
     <url>
-        <loc>https://mozanunal.com/categories/Coding/</loc>
-        <lastmod>2020-04-25T22:48:34.328Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://mozanunal.com/categories/Electronics/</loc>
         <lastmod>2020-04-25T23:00:00.736Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -86,6 +79,13 @@
     <url>
         <loc>https://mozanunal.com/categories/Biomedical/</loc>
         <lastmod>2020-04-29T23:32:16.160Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://mozanunal.com/categories/Coding/</loc>
+        <lastmod>2020-05-05T21:17:48.970Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
