@@ -10,6 +10,9 @@ date: 2020-05-07 23:44:00
 ---
 # Harmonica Note Converter
 
+
+https://github.com/mozanunal/harmonica-note-converter
+
 **Harmonica Note Converter** aims to create a python library to convert notes or tabs for different kind of harmonicas. 
 It is based on [musthe](https://github.com/gciruelos/musthe).
 
@@ -41,6 +44,8 @@ python3 test.py
 ```
 
 It is a video to demonstrate the tone shift feature of my code. It is quite easy to use. I suggest you to have a look in this link and test the script with following code. See you!
+
+{% youtube loASU4cOY7c %}
 
 ## Use It For Your Instruments and Notes 
 
