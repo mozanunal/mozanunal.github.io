@@ -5,8 +5,7 @@ tags:
   - Digital filtering for ECG
   - 50 Hz filtering from ECG
 categories:
-  - Signal Processing
-  - DSP
+  - Biomedical
 author: Mehmet Ozan Ünal
 date: 2019-11-17 02:36:00
 ---
