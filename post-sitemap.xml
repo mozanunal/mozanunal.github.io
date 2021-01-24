@@ -167,7 +167,7 @@
     </url>
 
     <url>
-        <loc>https://mozanunal.com/2016/09/ack-kaynak-yazlm-lisans-turleri-ve/</loc>
+        <loc>https://mozanunal.com/2017/07/Hexo-Blog-Servisi-Nedir/</loc>
         <lastmod>2019-08-12T20:43:49.970Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -175,7 +175,7 @@
     </url>
 
     <url>
-        <loc>https://mozanunal.com/2017/07/Hexo-Blog-Servisi-Nedir/</loc>
+        <loc>https://mozanunal.com/2016/09/ack-kaynak-yazlm-lisans-turleri-ve/</loc>
         <lastmod>2019-08-12T20:43:49.970Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -223,7 +223,7 @@
     </url>
 
     <url>
-        <loc>https://mozanunal.com/2016/01/web-tabanl-programlar/</loc>
+        <loc>https://mozanunal.com/2015/01/yeni-android-programm-adres-defteri/</loc>
         <lastmod>2019-08-12T20:43:49.970Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -231,7 +231,7 @@
     </url>
 
     <url>
-        <loc>https://mozanunal.com/2015/01/yeni-android-programm-adres-defteri/</loc>
+        <loc>https://mozanunal.com/2016/01/web-tabanl-programlar/</loc>
         <lastmod>2019-08-12T20:43:49.970Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -383,14 +383,6 @@
     </url>
 
     <url>
-        <loc>https://mozanunal.com/2017/02/multikopterler-icin-otopilot-yapmak/</loc>
-        <lastmod>2019-08-10T23:25:35.869Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://mozanunal.com/2015/07/multikopterler-icin-pid-kontrol/</loc>
         <lastmod>2019-08-10T23:25:35.869Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -400,6 +392,14 @@
 
     <url>
         <loc>https://mozanunal.com/2015/01/pic-icin-in-circuit-serial/</loc>
+        <lastmod>2019-08-10T23:25:35.869Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://mozanunal.com/2017/02/multikopterler-icin-otopilot-yapmak/</loc>
         <lastmod>2019-08-10T23:25:35.869Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -423,14 +423,6 @@
     </url>
 
     <url>
-        <loc>https://mozanunal.com/2014/11/imu-aclarnn-3-boyutlu-olarak/</loc>
-        <lastmod>2019-08-10T23:25:35.865Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://mozanunal.com/2016/01/itunom-takm/</loc>
         <lastmod>2019-08-10T23:25:35.865Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -439,7 +431,7 @@
     </url>
 
     <url>
-        <loc>https://mozanunal.com/2014/10/karanlkta-yanan-gece-lambas/</loc>
+        <loc>https://mozanunal.com/2014/11/imu-aclarnn-3-boyutlu-olarak/</loc>
         <lastmod>2019-08-10T23:25:35.865Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -448,6 +440,14 @@
 
     <url>
         <loc>https://mozanunal.com/2014/10/kamera-ile-fare-kontrolu/</loc>
+        <lastmod>2019-08-10T23:25:35.865Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://mozanunal.com/2014/10/karanlkta-yanan-gece-lambas/</loc>
         <lastmod>2019-08-10T23:25:35.865Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -503,6 +503,14 @@
     </url>
 
     <url>
+        <loc>https://mozanunal.com/2015/11/diy-rc-kumanda-yapm/</loc>
+        <lastmod>2019-08-10T23:25:35.853Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://mozanunal.com/2016/12/eski-bilgisayar-guc-kaynagn-masaustu/</loc>
         <lastmod>2019-08-10T23:25:35.853Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -519,7 +527,7 @@
     </url>
 
     <url>
-        <loc>https://mozanunal.com/2015/11/diy-rc-kumanda-yapm/</loc>
+        <loc>https://mozanunal.com/2015/09/diy-raspberry-pi-laptop/</loc>
         <lastmod>2019-08-10T23:25:35.853Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -528,14 +536,6 @@
 
     <url>
         <loc>https://mozanunal.com/2015/10/diy-raspberry-pi-laptop-16/</loc>
-        <lastmod>2019-08-10T23:25:35.853Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://mozanunal.com/2015/09/diy-raspberry-pi-laptop/</loc>
         <lastmod>2019-08-10T23:25:35.853Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>

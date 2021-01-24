@@ -492,6 +492,20 @@
     </url>
 
     <url>
+        <loc>https://mozanunal.com/tags/Arduino-RC-kumanda/</loc>
+        <lastmod>2019-08-10T23:25:35.853Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://mozanunal.com/tags/NRF24L01/</loc>
+        <lastmod>2019-08-10T23:25:35.853Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://mozanunal.com/tags/ATX-guc-kaynagi/</loc>
         <lastmod>2019-08-10T23:25:35.853Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -534,14 +548,7 @@
     </url>
 
     <url>
-        <loc>https://mozanunal.com/tags/Arduino-RC-kumanda/</loc>
-        <lastmod>2019-08-10T23:25:35.853Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://mozanunal.com/tags/NRF24L01/</loc>
+        <loc>https://mozanunal.com/tags/Raspberry-Pi-2-Projeleri/</loc>
         <lastmod>2019-08-10T23:25:35.853Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
@@ -549,13 +556,6 @@
 
     <url>
         <loc>https://mozanunal.com/tags/Raspberry-Pi-Laptop/</loc>
-        <lastmod>2019-08-10T23:25:35.853Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://mozanunal.com/tags/Raspberry-Pi-2-Projeleri/</loc>
         <lastmod>2019-08-10T23:25:35.853Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
@@ -625,27 +625,6 @@
     </url>
 
     <url>
-        <loc>https://mozanunal.com/tags/IMU-Acilarinin-3-Boyutlu-Olarak-Gorsellenmesi/</loc>
-        <lastmod>2019-08-10T23:25:35.865Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://mozanunal.com/tags/IMU-nedir/</loc>
-        <lastmod>2019-08-10T23:25:35.865Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://mozanunal.com/tags/Inertial-measurement-unit/</loc>
-        <lastmod>2019-08-10T23:25:35.865Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://mozanunal.com/tags/mpu6050/</loc>
         <lastmod>2019-08-10T23:25:35.865Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -667,14 +646,21 @@
     </url>
 
     <url>
-        <loc>https://mozanunal.com/tags/Karanlikta-Yanan-Gece-Lambasi/</loc>
+        <loc>https://mozanunal.com/tags/IMU-Acilarinin-3-Boyutlu-Olarak-Gorsellenmesi/</loc>
         <lastmod>2019-08-10T23:25:35.865Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>https://mozanunal.com/tags/Ldrli-Gece-Lambasi/</loc>
+        <loc>https://mozanunal.com/tags/IMU-nedir/</loc>
+        <lastmod>2019-08-10T23:25:35.865Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://mozanunal.com/tags/Inertial-measurement-unit/</loc>
         <lastmod>2019-08-10T23:25:35.865Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
@@ -703,6 +689,20 @@
 
     <url>
         <loc>https://mozanunal.com/tags/parmak-sayma/</loc>
+        <lastmod>2019-08-10T23:25:35.865Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://mozanunal.com/tags/Karanlikta-Yanan-Gece-Lambasi/</loc>
+        <lastmod>2019-08-10T23:25:35.865Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://mozanunal.com/tags/Ldrli-Gece-Lambasi/</loc>
         <lastmod>2019-08-10T23:25:35.865Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
@@ -807,13 +807,6 @@
     </url>
 
     <url>
-        <loc>https://mozanunal.com/tags/SimplePilot/</loc>
-        <lastmod>2019-08-10T23:25:35.869Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://mozanunal.com/tags/PID-kontrol/</loc>
         <lastmod>2019-08-10T23:25:35.869Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -843,6 +836,13 @@
 
     <url>
         <loc>https://mozanunal.com/tags/Pic-programlama/</loc>
+        <lastmod>2019-08-10T23:25:35.869Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://mozanunal.com/tags/SimplePilot/</loc>
         <lastmod>2019-08-10T23:25:35.869Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
@@ -1213,34 +1213,6 @@
     </url>
 
     <url>
-        <loc>https://mozanunal.com/tags/apache-lisansi/</loc>
-        <lastmod>2019-08-12T20:43:49.970Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://mozanunal.com/tags/Acik-kaynak-yazilim-lisanslari/</loc>
-        <lastmod>2019-08-12T20:43:49.970Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://mozanunal.com/tags/gpl-lisansi/</loc>
-        <lastmod>2019-08-12T20:43:49.970Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://mozanunal.com/tags/Mit-lisansi/</loc>
-        <lastmod>2019-08-12T20:43:49.970Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://mozanunal.com/tags/blog/</loc>
         <lastmod>2019-08-12T20:43:49.970Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -1263,6 +1235,34 @@
 
     <url>
         <loc>https://mozanunal.com/tags/hexo/</loc>
+        <lastmod>2019-08-12T20:43:49.970Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://mozanunal.com/tags/apache-lisansi/</loc>
+        <lastmod>2019-08-12T20:43:49.970Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://mozanunal.com/tags/Acik-kaynak-yazilim-lisanslari/</loc>
+        <lastmod>2019-08-12T20:43:49.970Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://mozanunal.com/tags/gpl-lisansi/</loc>
+        <lastmod>2019-08-12T20:43:49.970Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://mozanunal.com/tags/Mit-lisansi/</loc>
         <lastmod>2019-08-12T20:43:49.970Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
@@ -1367,20 +1367,6 @@
     </url>
 
     <url>
-        <loc>https://mozanunal.com/tags/html5/</loc>
-        <lastmod>2019-08-12T20:43:49.970Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://mozanunal.com/tags/Web-Tabanli-programlar/</loc>
-        <lastmod>2019-08-12T20:43:49.970Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://mozanunal.com/tags/Adres-Defteri/</loc>
         <lastmod>2019-08-12T20:43:49.970Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -1396,6 +1382,20 @@
 
     <url>
         <loc>https://mozanunal.com/tags/Navigasyon/</loc>
+        <lastmod>2019-08-12T20:43:49.970Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://mozanunal.com/tags/html5/</loc>
+        <lastmod>2019-08-12T20:43:49.970Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://mozanunal.com/tags/Web-Tabanli-programlar/</loc>
         <lastmod>2019-08-12T20:43:49.970Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>

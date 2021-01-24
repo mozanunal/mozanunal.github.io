@@ -1721,9 +1721,9 @@
             
             <tag> Arduino </tag>
             
-            <tag> Raspberry Pi Laptop </tag>
-            
             <tag> Raspberry Pi 2 Projeleri </tag>
+            
+            <tag> Raspberry Pi Laptop </tag>
             
         </tags>
       
@@ -1751,9 +1751,9 @@
       
         <tags>
             
-            <tag> 360 Servo </tag>
-            
             <tag> All Terrain Rover </tag>
+            
+            <tag> 360 Servo </tag>
             
             <tag> Arduino Projeleri </tag>
             
@@ -2785,13 +2785,13 @@
             
             <tag> Hava Araçları </tag>
             
+            <tag> mpu6050 </tag>
+            
             <tag> IMU Açılarının 3 Boyutlu Olarak Görsellenmesi </tag>
             
             <tag> IMU nedir </tag>
             
             <tag> Inertial measurement unit </tag>
-            
-            <tag> mpu6050 </tag>
             
         </tags>
       
