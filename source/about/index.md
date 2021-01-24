@@ -6,8 +6,10 @@ date: 2019-08-12 11:29:30
 
 I decided to open a blog (2013) so that I could archive my projects and make them available to everyone. In my blog, you can reach various kind of contents which are usually about Drones, Electronics, FPGA, IOT, Microcontrollers, Programming and Signal Processing. Hope to see you again…
 
+
 ## Education 
-- 2012 - 2017 University. Istanbul Technical University. Electronics and Communication Engineering
+- 2018 - 2021 M.Sc. Istanbul Technical University. Biomedical Engineering
+- 2012 - 2017 B.Sc. Istanbul Technical University. Electronics and Communication Engineering
 - 2008 - 2012 High School. Bornova Anatolian High School
 
 ## [Github Repos](https://github.com/mozanunal)
@@ -26,4 +28,7 @@ I decided to open a blog (2013) so that I could archive my projects and make the
 - **2013 - Present My Blog**. I have published some of my project from 2013. I have published 70 projects until this day. My project usually about image processing, air vehicles, Android programming, embedded programming (Arduino, Stm32, Raspberry Pi ) and Augmented Reality. https://mozanunal.com/
 
 ## Publications
+
+- **MO Unal, M Ertas, I Yildirim**. An Unsupervised Reconstruction Method For Low-Dose CT Using Deep Generative Regularization Prior. *arxiv.org*, 2020. 
+- **MO Unal, M Ertas, I Yildirim**. Self-Supervised Training For Low Dose CT Reconstruction. *International Symposium on Biomedical Imaging*, 2020.
 

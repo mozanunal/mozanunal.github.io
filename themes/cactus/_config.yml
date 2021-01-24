@@ -15,10 +15,11 @@ direction: ltr
 # languages/*.yml
 nav:
   home: /
-  about: /about/
-  articles: /archives/
   category: /categories/
-  #projects: /projects/
+  articles: /archives/
+  about: /about/
+  projects: https://github.com/mozanunal
+  publications: https://scholar.google.com/citations?user=u_HbXUUAAAAJ&hl=en
   search: /search/
 
 
@@ -28,9 +29,11 @@ nav:
 # only 'mail' is an exception.
 social_links:
   github: https://github.com/mozanunal
+  linkedin: https://www.linkedin.com/in/mozanunal/
+  google: https://scholar.google.com/citations?user=u_HbXUUAAAAJ&hl=en
+  mail: mailto:mehmetozanunal@gmail.com
   facebook: https://www.facebook.com/mehmetozan.unal
   instagram: https://www.instagram.com/mozanunal/
-  mail: mailto:mehmetozanunal@gmail.com
   twitter: https://twitter.com/MOzanUnal
 
 # Customize the overview with displaying a tagcloud on the index page.
@@ -113,7 +116,7 @@ highlight: monokai
 colorscheme: 'dark'
 
 # Maximal width of the page in rem units.
-page_width: 48
+page_width: 60
 
 
 ##############################################################################
