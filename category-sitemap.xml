@@ -21,6 +21,13 @@
     </url>
 
     <url>
+        <loc>https://mozanunal.com/categories/Electronics/Arduino/</loc>
+        <lastmod>2019-08-10T23:25:35.877Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://mozanunal.com/categories/Electronics/Microcontrollers/</loc>
         <lastmod>2019-08-10T23:25:35.877Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -28,7 +35,7 @@
     </url>
 
     <url>
-        <loc>https://mozanunal.com/categories/Electronics/Arduino/</loc>
+        <loc>https://mozanunal.com/categories/Signal-Processing/</loc>
         <lastmod>2019-08-10T23:25:35.877Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
@@ -42,22 +49,15 @@
     </url>
 
     <url>
+        <loc>https://mozanunal.com/categories/Signal-Processing/DSP/</loc>
+        <lastmod>2019-08-10T23:25:35.877Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://mozanunal.com/categories/Drone/</loc>
         <lastmod>2019-08-12T20:45:47.771Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://mozanunal.com/categories/Signal-Processing/</loc>
-        <lastmod>2019-11-17T20:16:28.274Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://mozanunal.com/categories/Signal-Processing/DSP/</loc>
-        <lastmod>2019-11-17T20:16:28.274Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
@@ -77,15 +77,15 @@
     </url>
 
     <url>
-        <loc>https://mozanunal.com/categories/Biomedical/</loc>
-        <lastmod>2020-04-29T23:32:16.160Z</lastmod>
+        <loc>https://mozanunal.com/categories/Coding/</loc>
+        <lastmod>2020-05-05T21:17:48.970Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>https://mozanunal.com/categories/Coding/</loc>
-        <lastmod>2020-05-05T21:17:48.970Z</lastmod>
+        <loc>https://mozanunal.com/categories/Biomedical/</loc>
+        <lastmod>2020-05-23T15:03:08.645Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>

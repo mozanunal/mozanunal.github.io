@@ -7,6 +7,14 @@
     </url>
 
     <url>
+        <loc>https://mozanunal.com/2019/11/ecg-signal/</loc>
+        <lastmod>2020-05-23T15:03:08.645Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://mozanunal.com/2020/05/harmonica-note-conv/</loc>
         <lastmod>2020-05-05T21:17:48.970Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -65,14 +73,6 @@
     <url>
         <loc>https://mozanunal.com/2020/03/coolest-c-trick/</loc>
         <lastmod>2020-03-30T20:59:13.116Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://mozanunal.com/2019/11/ecg-signal/</loc>
-        <lastmod>2019-11-17T20:16:28.274Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -167,7 +167,7 @@
     </url>
 
     <url>
-        <loc>https://mozanunal.com/2017/07/Hexo-Blog-Servisi-Nedir/</loc>
+        <loc>https://mozanunal.com/2016/09/ack-kaynak-yazlm-lisans-turleri-ve/</loc>
         <lastmod>2019-08-12T20:43:49.970Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -175,7 +175,7 @@
     </url>
 
     <url>
-        <loc>https://mozanunal.com/2016/09/ack-kaynak-yazlm-lisans-turleri-ve/</loc>
+        <loc>https://mozanunal.com/2017/07/Hexo-Blog-Servisi-Nedir/</loc>
         <lastmod>2019-08-12T20:43:49.970Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -223,7 +223,7 @@
     </url>
 
     <url>
-        <loc>https://mozanunal.com/2015/01/yeni-android-programm-adres-defteri/</loc>
+        <loc>https://mozanunal.com/2016/01/web-tabanl-programlar/</loc>
         <lastmod>2019-08-12T20:43:49.970Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -231,7 +231,7 @@
     </url>
 
     <url>
-        <loc>https://mozanunal.com/2016/01/web-tabanl-programlar/</loc>
+        <loc>https://mozanunal.com/2015/01/yeni-android-programm-adres-defteri/</loc>
         <lastmod>2019-08-12T20:43:49.970Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -287,7 +287,7 @@
     </url>
 
     <url>
-        <loc>https://mozanunal.com/2019/01/simpledsp-iir-feature/</loc>
+        <loc>https://mozanunal.com/2017/04/simpledsp-fir-filtreleme-ozelligi/</loc>
         <lastmod>2019-08-10T23:25:35.877Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -295,7 +295,7 @@
     </url>
 
     <url>
-        <loc>https://mozanunal.com/2017/04/simpledsp-fir-filtreleme-ozelligi/</loc>
+        <loc>https://mozanunal.com/2019/01/simpledsp-iir-feature/</loc>
         <lastmod>2019-08-10T23:25:35.877Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -335,7 +335,7 @@
     </url>
 
     <url>
-        <loc>https://mozanunal.com/2015/01/robot-kol/</loc>
+        <loc>https://mozanunal.com/2016/09/pixhawk-otopilot-ve-ozellikleri/</loc>
         <lastmod>2019-08-10T23:25:35.873Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -351,7 +351,7 @@
     </url>
 
     <url>
-        <loc>https://mozanunal.com/2016/09/pixhawk-otopilot-ve-ozellikleri/</loc>
+        <loc>https://mozanunal.com/2015/01/robot-kol/</loc>
         <lastmod>2019-08-10T23:25:35.873Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -383,7 +383,7 @@
     </url>
 
     <url>
-        <loc>https://mozanunal.com/2015/07/multikopterler-icin-pid-kontrol/</loc>
+        <loc>https://mozanunal.com/2017/02/multikopterler-icin-otopilot-yapmak/</loc>
         <lastmod>2019-08-10T23:25:35.869Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -391,7 +391,7 @@
     </url>
 
     <url>
-        <loc>https://mozanunal.com/2017/02/multikopterler-icin-otopilot-yapmak/</loc>
+        <loc>https://mozanunal.com/2015/07/multikopterler-icin-pid-kontrol/</loc>
         <lastmod>2019-08-10T23:25:35.869Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -423,14 +423,6 @@
     </url>
 
     <url>
-        <loc>https://mozanunal.com/2016/01/itunom-takm/</loc>
-        <lastmod>2019-08-10T23:25:35.865Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://mozanunal.com/2014/11/imu-aclarnn-3-boyutlu-olarak/</loc>
         <lastmod>2019-08-10T23:25:35.865Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -439,7 +431,7 @@
     </url>
 
     <url>
-        <loc>https://mozanunal.com/2014/10/kamera-ile-fare-kontrolu/</loc>
+        <loc>https://mozanunal.com/2016/01/itunom-takm/</loc>
         <lastmod>2019-08-10T23:25:35.865Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -455,7 +447,7 @@
     </url>
 
     <url>
-        <loc>https://mozanunal.com/2015/01/lcd-gostergeli-mesafe-olcer/</loc>
+        <loc>https://mozanunal.com/2014/10/kamera-ile-fare-kontrolu/</loc>
         <lastmod>2019-08-10T23:25:35.865Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -464,6 +456,14 @@
 
     <url>
         <loc>https://mozanunal.com/2016/02/lazer-haberlesmesi/</loc>
+        <lastmod>2019-08-10T23:25:35.865Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://mozanunal.com/2015/01/lcd-gostergeli-mesafe-olcer/</loc>
         <lastmod>2019-08-10T23:25:35.865Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -503,14 +503,6 @@
     </url>
 
     <url>
-        <loc>https://mozanunal.com/2015/11/diy-rc-kumanda-yapm/</loc>
-        <lastmod>2019-08-10T23:25:35.853Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://mozanunal.com/2016/12/eski-bilgisayar-guc-kaynagn-masaustu/</loc>
         <lastmod>2019-08-10T23:25:35.853Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -527,7 +519,7 @@
     </url>
 
     <url>
-        <loc>https://mozanunal.com/2015/09/diy-raspberry-pi-laptop/</loc>
+        <loc>https://mozanunal.com/2015/11/diy-rc-kumanda-yapm/</loc>
         <lastmod>2019-08-10T23:25:35.853Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -536,6 +528,14 @@
 
     <url>
         <loc>https://mozanunal.com/2015/10/diy-raspberry-pi-laptop-16/</loc>
+        <lastmod>2019-08-10T23:25:35.853Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://mozanunal.com/2015/09/diy-raspberry-pi-laptop/</loc>
         <lastmod>2019-08-10T23:25:35.853Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -711,14 +711,6 @@
     </url>
 
     <url>
-        <loc>https://mozanunal.com/2014/05/ilk-yayn/</loc>
-        <lastmod>2019-08-10T23:22:52.385Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://mozanunal.com/2018/04/google-docs-data-collection/</loc>
         <lastmod>2019-08-10T23:22:52.385Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -727,7 +719,7 @@
     </url>
 
     <url>
-        <loc>https://mozanunal.com/2014/11/kamera-ile-arac-says-takibi/</loc>
+        <loc>https://mozanunal.com/2014/05/ilk-yayn/</loc>
         <lastmod>2019-08-10T23:22:52.385Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -736,6 +728,14 @@
 
     <url>
         <loc>https://mozanunal.com/2014/10/imu-ile-kamera-gimbal-kontrolu/</loc>
+        <lastmod>2019-08-10T23:22:52.385Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://mozanunal.com/2014/11/kamera-ile-arac-says-takibi/</loc>
         <lastmod>2019-08-10T23:22:52.385Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>

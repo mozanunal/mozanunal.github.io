@@ -30,6 +30,13 @@
     </url>
 
     <url>
+        <loc>https://mozanunal.com/tags/esp8266/</loc>
+        <lastmod>2019-08-10T23:22:52.385Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://mozanunal.com/tags/Pmod/</loc>
         <lastmod>2019-08-10T23:22:52.385Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -66,13 +73,6 @@
 
     <url>
         <loc>https://mozanunal.com/tags/Microphone-verilog/</loc>
-        <lastmod>2019-08-10T23:22:52.385Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://mozanunal.com/tags/esp8266/</loc>
         <lastmod>2019-08-10T23:22:52.385Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
@@ -184,13 +184,6 @@
     </url>
 
     <url>
-        <loc>https://mozanunal.com/tags/Ana-Sayfa/</loc>
-        <lastmod>2019-08-10T23:22:52.385Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://mozanunal.com/tags/google-docs/</loc>
         <lastmod>2019-08-10T23:22:52.385Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -205,14 +198,7 @@
     </url>
 
     <url>
-        <loc>https://mozanunal.com/tags/Arac-sayisi-saydirma/</loc>
-        <lastmod>2019-08-10T23:22:52.385Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://mozanunal.com/tags/Kamera-ile-Arac-Sayisi-Takibi/</loc>
+        <loc>https://mozanunal.com/tags/Ana-Sayfa/</loc>
         <lastmod>2019-08-10T23:22:52.385Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
@@ -227,6 +213,20 @@
 
     <url>
         <loc>https://mozanunal.com/tags/IMU/</loc>
+        <lastmod>2019-08-10T23:22:52.385Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://mozanunal.com/tags/Arac-sayisi-saydirma/</loc>
+        <lastmod>2019-08-10T23:22:52.385Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://mozanunal.com/tags/Kamera-ile-Arac-Sayisi-Takibi/</loc>
         <lastmod>2019-08-10T23:22:52.385Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
@@ -492,20 +492,6 @@
     </url>
 
     <url>
-        <loc>https://mozanunal.com/tags/Arduino-RC-kumanda/</loc>
-        <lastmod>2019-08-10T23:25:35.853Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://mozanunal.com/tags/NRF24L01/</loc>
-        <lastmod>2019-08-10T23:25:35.853Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://mozanunal.com/tags/ATX-guc-kaynagi/</loc>
         <lastmod>2019-08-10T23:25:35.853Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -548,7 +534,14 @@
     </url>
 
     <url>
-        <loc>https://mozanunal.com/tags/Raspberry-Pi-2-Projeleri/</loc>
+        <loc>https://mozanunal.com/tags/Arduino-RC-kumanda/</loc>
+        <lastmod>2019-08-10T23:25:35.853Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://mozanunal.com/tags/NRF24L01/</loc>
         <lastmod>2019-08-10T23:25:35.853Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
@@ -556,6 +549,13 @@
 
     <url>
         <loc>https://mozanunal.com/tags/Raspberry-Pi-Laptop/</loc>
+        <lastmod>2019-08-10T23:25:35.853Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://mozanunal.com/tags/Raspberry-Pi-2-Projeleri/</loc>
         <lastmod>2019-08-10T23:25:35.853Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
@@ -625,20 +625,6 @@
     </url>
 
     <url>
-        <loc>https://mozanunal.com/tags/ITUNOM/</loc>
-        <lastmod>2019-08-10T23:25:35.865Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://mozanunal.com/tags/ITUNOM/</loc>
-        <lastmod>2019-08-10T23:25:35.865Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://mozanunal.com/tags/IMU-Acilarinin-3-Boyutlu-Olarak-Gorsellenmesi/</loc>
         <lastmod>2019-08-10T23:25:35.865Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -661,6 +647,34 @@
 
     <url>
         <loc>https://mozanunal.com/tags/mpu6050/</loc>
+        <lastmod>2019-08-10T23:25:35.865Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://mozanunal.com/tags/ITUNOM/</loc>
+        <lastmod>2019-08-10T23:25:35.865Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://mozanunal.com/tags/ITUNOM/</loc>
+        <lastmod>2019-08-10T23:25:35.865Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://mozanunal.com/tags/Karanlikta-Yanan-Gece-Lambasi/</loc>
+        <lastmod>2019-08-10T23:25:35.865Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://mozanunal.com/tags/Ldrli-Gece-Lambasi/</loc>
         <lastmod>2019-08-10T23:25:35.865Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
@@ -695,14 +709,7 @@
     </url>
 
     <url>
-        <loc>https://mozanunal.com/tags/Karanlikta-Yanan-Gece-Lambasi/</loc>
-        <lastmod>2019-08-10T23:25:35.865Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://mozanunal.com/tags/Ldrli-Gece-Lambasi/</loc>
+        <loc>https://mozanunal.com/tags/Laser-Haberlesme/</loc>
         <lastmod>2019-08-10T23:25:35.865Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
@@ -724,13 +731,6 @@
 
     <url>
         <loc>https://mozanunal.com/tags/Mesafe-olcer/</loc>
-        <lastmod>2019-08-10T23:25:35.865Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://mozanunal.com/tags/Laser-Haberlesme/</loc>
         <lastmod>2019-08-10T23:25:35.865Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
@@ -807,6 +807,13 @@
     </url>
 
     <url>
+        <loc>https://mozanunal.com/tags/SimplePilot/</loc>
+        <lastmod>2019-08-10T23:25:35.869Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://mozanunal.com/tags/PID-kontrol/</loc>
         <lastmod>2019-08-10T23:25:35.869Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -815,13 +822,6 @@
 
     <url>
         <loc>https://mozanunal.com/tags/Quadcopter-ucus-prensibi/</loc>
-        <lastmod>2019-08-10T23:25:35.869Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://mozanunal.com/tags/SimplePilot/</loc>
         <lastmod>2019-08-10T23:25:35.869Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
@@ -877,6 +877,27 @@
     </url>
 
     <url>
+        <loc>https://mozanunal.com/tags/Ardupilot/</loc>
+        <lastmod>2019-08-10T23:25:35.873Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://mozanunal.com/tags/Pixhawk/</loc>
+        <lastmod>2019-08-10T23:25:35.873Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://mozanunal.com/tags/RF-mesafe-hesaplama/</loc>
+        <lastmod>2019-08-10T23:25:35.873Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://mozanunal.com/tags/Arduino-Robotik-Kol/</loc>
         <lastmod>2019-08-10T23:25:35.873Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -892,27 +913,6 @@
 
     <url>
         <loc>https://mozanunal.com/tags/DIY-Robotic-Hand/</loc>
-        <lastmod>2019-08-10T23:25:35.873Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://mozanunal.com/tags/RF-mesafe-hesaplama/</loc>
-        <lastmod>2019-08-10T23:25:35.873Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://mozanunal.com/tags/Ardupilot/</loc>
-        <lastmod>2019-08-10T23:25:35.873Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://mozanunal.com/tags/Pixhawk/</loc>
         <lastmod>2019-08-10T23:25:35.873Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
@@ -1059,34 +1059,6 @@
     </url>
 
     <url>
-        <loc>https://mozanunal.com/tags/Arduino-IIR/</loc>
-        <lastmod>2019-08-10T23:25:35.877Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://mozanunal.com/tags/IIR-filter/</loc>
-        <lastmod>2019-08-10T23:25:35.877Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://mozanunal.com/tags/IIR-filter-design/</loc>
-        <lastmod>2019-08-10T23:25:35.877Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://mozanunal.com/tags/Signal-Processing/</loc>
-        <lastmod>2019-08-10T23:25:35.877Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://mozanunal.com/tags/Arduino-FIR/</loc>
         <lastmod>2019-08-10T23:25:35.877Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -1109,6 +1081,34 @@
 
     <url>
         <loc>https://mozanunal.com/tags/Isaret-isleme/</loc>
+        <lastmod>2019-08-10T23:25:35.877Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://mozanunal.com/tags/Arduino-IIR/</loc>
+        <lastmod>2019-08-10T23:25:35.877Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://mozanunal.com/tags/IIR-filter/</loc>
+        <lastmod>2019-08-10T23:25:35.877Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://mozanunal.com/tags/IIR-filter-design/</loc>
+        <lastmod>2019-08-10T23:25:35.877Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://mozanunal.com/tags/Signal-Processing/</loc>
         <lastmod>2019-08-10T23:25:35.877Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
@@ -1213,34 +1213,6 @@
     </url>
 
     <url>
-        <loc>https://mozanunal.com/tags/blog/</loc>
-        <lastmod>2019-08-12T20:43:49.970Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://mozanunal.com/tags/hexo-io/</loc>
-        <lastmod>2019-08-12T20:43:49.970Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://mozanunal.com/tags/static-site-generator/</loc>
-        <lastmod>2019-08-12T20:43:49.970Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://mozanunal.com/tags/hexo/</loc>
-        <lastmod>2019-08-12T20:43:49.970Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://mozanunal.com/tags/apache-lisansi/</loc>
         <lastmod>2019-08-12T20:43:49.970Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -1263,6 +1235,34 @@
 
     <url>
         <loc>https://mozanunal.com/tags/Mit-lisansi/</loc>
+        <lastmod>2019-08-12T20:43:49.970Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://mozanunal.com/tags/blog/</loc>
+        <lastmod>2019-08-12T20:43:49.970Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://mozanunal.com/tags/hexo-io/</loc>
+        <lastmod>2019-08-12T20:43:49.970Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://mozanunal.com/tags/static-site-generator/</loc>
+        <lastmod>2019-08-12T20:43:49.970Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://mozanunal.com/tags/hexo/</loc>
         <lastmod>2019-08-12T20:43:49.970Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
@@ -1367,6 +1367,20 @@
     </url>
 
     <url>
+        <loc>https://mozanunal.com/tags/html5/</loc>
+        <lastmod>2019-08-12T20:43:49.970Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://mozanunal.com/tags/Web-Tabanli-programlar/</loc>
+        <lastmod>2019-08-12T20:43:49.970Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://mozanunal.com/tags/Adres-Defteri/</loc>
         <lastmod>2019-08-12T20:43:49.970Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -1382,20 +1396,6 @@
 
     <url>
         <loc>https://mozanunal.com/tags/Navigasyon/</loc>
-        <lastmod>2019-08-12T20:43:49.970Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://mozanunal.com/tags/html5/</loc>
-        <lastmod>2019-08-12T20:43:49.970Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://mozanunal.com/tags/Web-Tabanli-programlar/</loc>
         <lastmod>2019-08-12T20:43:49.970Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
@@ -1717,27 +1717,6 @@
     </url>
 
     <url>
-        <loc>https://mozanunal.com/tags/ECG/</loc>
-        <lastmod>2019-11-17T20:16:28.274Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://mozanunal.com/tags/Digital-filtering-for-ECG/</loc>
-        <lastmod>2019-11-17T20:16:28.274Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://mozanunal.com/tags/50-Hz-filtering-from-ECG/</loc>
-        <lastmod>2019-11-17T20:16:28.274Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://mozanunal.com/tags/Programming/</loc>
         <lastmod>2020-03-30T20:59:13.116Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -1866,6 +1845,27 @@
     <url>
         <loc>https://mozanunal.com/tags/harmonica-note-conventer-music-theory/</loc>
         <lastmod>2020-05-05T21:17:48.970Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://mozanunal.com/tags/ECG/</loc>
+        <lastmod>2020-05-23T15:03:08.645Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://mozanunal.com/tags/Digital-filtering-for-ECG/</loc>
+        <lastmod>2020-05-23T15:03:08.645Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://mozanunal.com/tags/50-Hz-filtering-from-ECG/</loc>
+        <lastmod>2020-05-23T15:03:08.645Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
