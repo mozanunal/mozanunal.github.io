@@ -113,7 +113,7 @@ highlight: github
 # Set the color scheme.
 # Available color schemes are 'dark', 'light', 'classic' and 'white'.
 # Alternatively, add your own custom color scheme to source/css/_colors.
-colorscheme: 'light'
+colorscheme: 'custom-light'
 
 # Maximal width of the page in rem units.
 page_width: 60
