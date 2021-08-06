@@ -1,0 +1,4 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "Mert Can Ünal"
+theme = "beautifulhugo"
