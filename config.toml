@@ -1,4 +1,21 @@
-baseURL = "http://example.org/"
+
+
+baseURL = "https://mertcanunal.github.io/"
 languageCode = "en-us"
 title = "Mert Can Ünal"
 theme = "beautifulhugo"
+
+[menu]
+[[menu.main]]
+identifier = 'about'
+name = 'about me'
+pre = "<i class='fa fa-heart'></i>"
+url = '/about/'
+weight = -110
+
+[[menu.main]]
+name = 'projects'
+post = "<span class='alert'>New!</span>"
+pre = "<i class='fa fa-road'></i>"
+url = '/projects/'
+weight = -100

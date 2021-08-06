@@ -7,5 +7,3 @@ draft: false
 
 This is column 1.
 This is column 2.
-
-![deneme](/images/profile.jpeg)
