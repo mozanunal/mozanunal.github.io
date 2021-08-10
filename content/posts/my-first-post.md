@@ -5,5 +5,4 @@ draft: false
 ---
 
 
-This is column 1.
-This is column 2.
+Hello World!
