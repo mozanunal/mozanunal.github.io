@@ -84,7 +84,7 @@ sitemap:
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   - type: git
-    repo: https://github.com/mozanunal/mozanunal.github.io
+    repo: git@github.com:mozanunal/mozanunal.github.io.git
     branch: public
 
 #imagemin:
