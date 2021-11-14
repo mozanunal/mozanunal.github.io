@@ -73,7 +73,7 @@ theme: cactus
 feed:
   type: atom
   path: atom.xml
-  limit: 40
+  limit: 500
 
 #Sitemap
 sitemap:
@@ -85,7 +85,7 @@ sitemap:
 deploy:
   - type: git
     repo: https://github.com/mozanunal/mozanunal.github.io
-    branch: master
+    branch: public
 
 #imagemin:
 #  enable     : true

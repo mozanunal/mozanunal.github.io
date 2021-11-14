@@ -8,3 +8,4 @@ public/
 .deploy/
 themes/clean-blog
 themes/hexo-theme-casper
+.ipynb_checkpoints
