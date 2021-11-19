@@ -67,13 +67,12 @@ pagination_dir: page
   #- hexo-local-image
 ## Themes: https://hexo.io/themes/
 theme: cactus
-#theme: hexo-theme-hueman
 
 # RSS feed
 feed:
   type: atom
   path: atom.xml
-  limit: 500
+  limit: 1000
 
 #Sitemap
 sitemap:

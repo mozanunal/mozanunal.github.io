@@ -8,14 +8,13 @@ categories:
 author: Mehmet Ozan Ünal
 date: 2020-05-07 23:44:00
 ---
-# Harmonica Note Converter
 
 
-https://github.com/mozanunal/harmonica-note-converter
 
 **Harmonica Note Converter** aims to create a python library to convert notes or tabs for different kind of harmonicas. 
 It is based on [musthe](https://github.com/gciruelos/musthe).
 
+https://github.com/mozanunal/harmonica-note-converter
 
 ## Story
 

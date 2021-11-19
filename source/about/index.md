@@ -29,6 +29,6 @@ I decided to open a blog (2013) so that I could archive my projects and make the
 
 ## Publications
 
-- **MO Unal, M Ertas, I Yildirim**. An Unsupervised Reconstruction Method For Low-Dose CT Using Deep Generative Regularization Prior. *arxiv.org*, 2020. 
-- **MO Unal, M Ertas, I Yildirim**. Self-Supervised Training For Low Dose CT Reconstruction. *International Symposium on Biomedical Imaging*, 2020.
+- **M.O. Unal, M. Ertas, I. Yildirim**. An Unsupervised Reconstruction Method For Low-Dose CT Using Deep Generative Regularization Prior. *arxiv.org*, 2020. 
+- **M.O. Unal, M. Ertas, I. Yildirim**. Self-Supervised Training For Low Dose CT Reconstruction. *International Symposium on Biomedical Imaging*, 2020.
 
