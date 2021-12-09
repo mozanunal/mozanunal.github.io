@@ -1,4 +1,4 @@
-title: Alkış ile Lamba Kontrolü
+title: '[TR] Alkış ile Lamba Kontrolü'
 tags:
   - Electronics Devreler
   - Electronics Devreler ve Teorik Yazılar

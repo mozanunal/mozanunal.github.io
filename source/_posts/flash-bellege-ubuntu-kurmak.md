@@ -1,5 +1,4 @@
-title: |
-  Flash Belleğe Ubuntu Kurmak
+title: '[TR] Flash Belleğe Ubuntu Kurmak'
 tags:
   - flash belleğe ubuntu yükleme
   - Linux

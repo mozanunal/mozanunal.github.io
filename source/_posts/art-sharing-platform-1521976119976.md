@@ -1,4 +1,3 @@
----
 title: Artwork Sharing Platform with Augmented Reality
 tags:
   - hackhathon

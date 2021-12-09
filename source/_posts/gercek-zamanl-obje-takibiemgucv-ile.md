@@ -1,5 +1,4 @@
-title: |
-  Gerçek Zamanlı Obje Takibi(EmguCv ile)
+title: '[TR] Gerçek Zamanlı Obje Takibi(EmguCv ile)'
 tags:
   - 'C#'
   - Image Processing

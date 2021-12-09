@@ -1,5 +1,4 @@
-title: |
-  Star Wars BB-8 Robot Yapımı Bölüm 1
+title: '[TR] Star Wars BB-8 Robot Yapımı'
 tags:
   - Electronics
   - Arduino

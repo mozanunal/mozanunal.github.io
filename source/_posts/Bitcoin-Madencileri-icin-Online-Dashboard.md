@@ -1,4 +1,4 @@
-title: Bitcoin Madencileri için Online Dashboard
+title: '[TR] Bitcoin Madencileri için Online Dashboard'
 author: Mehmet Ozan Ünal
 tags:
   - IOT

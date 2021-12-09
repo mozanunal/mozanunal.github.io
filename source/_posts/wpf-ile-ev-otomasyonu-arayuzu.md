@@ -1,5 +1,4 @@
-title: |
-  WPF ile Ev Otomasyonu Arayüzü
+title: '[TR] WPF ile Ev Otomasyonu Arayüzü'
 tags:
   - 'C#'
   - Arduino

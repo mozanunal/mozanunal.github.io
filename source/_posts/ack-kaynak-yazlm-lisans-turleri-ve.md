@@ -1,5 +1,4 @@
-title: |
-  Açık Kaynak Yazılım Lisans Türleri ve Farkları
+title: '[TR] Açık Kaynak Yazılım Lisans Türleri ve Farkları'
 tags:
   - Linux
   - apache lisansı

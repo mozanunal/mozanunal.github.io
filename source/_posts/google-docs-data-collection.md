@@ -1,5 +1,4 @@
----
-title: 'En Basit IOT Bulut Sistemi: Google Forms'
+title: '[TR] En Basit IOT Bulut Sistemi: Google Forms'
 tags:
   - IOT
   - google docs

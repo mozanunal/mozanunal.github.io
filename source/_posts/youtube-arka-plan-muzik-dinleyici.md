@@ -1,5 +1,4 @@
-title: |
-  Youtube Arka Plan Müzik Dinleyici
+title: '[TR] Youtube Arka Plan Müzik Dinleyici'
 tags:
   - Android Programlama ve Oyun
   - youtube arkaplan müzik dinleyici.

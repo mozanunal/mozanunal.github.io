@@ -1,4 +1,3 @@
----
 title: 'Wallpaper Automation Tool: WPCTL'
 tags:
   - linux

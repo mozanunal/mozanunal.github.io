@@ -1,5 +1,4 @@
-title: |
-  8051 Entegresi İle Assembly Programlamaya Giriş 
+title: '[TR] 8051 Entegresi İle Assembly Programlamaya Giriş'
 tags:
   - Electronics
   - Microcontrollers

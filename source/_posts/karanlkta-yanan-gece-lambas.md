@@ -1,5 +1,4 @@
-title: |
-  Karanlıkta Yanan Gece Lambası
+title: '[TR] Karanlıkta Yanan Gece Lambası'
 tags:
   - Karanlıkta Yanan Gece Lambası
   - Ldrli Gece Lambası

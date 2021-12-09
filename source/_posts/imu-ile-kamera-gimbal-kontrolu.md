@@ -1,5 +1,4 @@
-title: |
-  IMU ile Kamera Gimbalı Kontrolü
+title: '[TR] IMU ile Kamera Gimbalı Kontrolü'
 tags:
   - Electronics
   - Arduino

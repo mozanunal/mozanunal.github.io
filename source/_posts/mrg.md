@@ -1,5 +1,4 @@
-title: |
-  Manyetik Rezonans Görüntüleme
+title: '[TR] Manyetik Rezonans Görüntüleme'
 tags:
   - Manyetik Rezondans Görüntüleme, MRG, MRI
 categories:

@@ -1,4 +1,3 @@
----
 title: Playing DOTA on Raspberry Pi using Steam Link
 tags:
   - Steam Link

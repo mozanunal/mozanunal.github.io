@@ -1,4 +1,3 @@
----
 title: 'Show Images Directly on Terminal: img2sh'
 tags:
   - linux

@@ -1,5 +1,4 @@
-title: |
-  İTÜNOM Takımı
+title: '[TR] İTÜNOM Takımı'
 tags:
   - Drone
   - ITUNOM

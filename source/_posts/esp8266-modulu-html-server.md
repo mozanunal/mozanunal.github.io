@@ -1,5 +1,4 @@
-title: |
-  ESP8266 Modulü Web Server
+title: '[TR] ESP8266 Modulü Web Server'
 tags:
   - Electronics
   - Arduino

@@ -1,5 +1,4 @@
-title: |
-  DIY RC Kumanda Yapımı
+title: '[TR] DIY RC Kumanda Yapımı'
 tags:
   - Electronics
   - Arduino

@@ -1,4 +1,4 @@
-title: Hexo Blog Servisi Nedir
+title: '[TR] Hexo Blog Servisi Nedir'
 author: Mehmet Ozan Ünal
 tags:
   - blog

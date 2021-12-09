@@ -1,5 +1,4 @@
-title: |
-  Linuxta Kullanabileceğiniz 10 Yararlı Program
+title: '[TR] Linuxta Kullanabileceğiniz 10 Yararlı Program'
 tags:
   - Linux
   - Blender

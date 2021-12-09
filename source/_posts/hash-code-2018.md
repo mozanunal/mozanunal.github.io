@@ -1,5 +1,4 @@
----
-title: Hash Code 2018
+title: '[TR] Hash Code 2018'
 tags:
   - hackhathon
   - hashcode2018

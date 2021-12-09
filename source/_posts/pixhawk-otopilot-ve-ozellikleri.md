@@ -1,5 +1,4 @@
-title: |
-  Pixhawk Otopilot ve Özellikleri
+title: '[TR] Pixhawk Otopilot ve Özellikleri'
 tags:
   - Hava Araçları
   - Otopilot

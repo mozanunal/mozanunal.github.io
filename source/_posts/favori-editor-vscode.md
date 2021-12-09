@@ -1,5 +1,4 @@
----
-title: Neden Favori Kod Editörüm Visual Studio Code
+title: '[TR] Neden Favori Kod Editörüm Visual Studio Code'
 tags:
   - visual studio code
   - atom

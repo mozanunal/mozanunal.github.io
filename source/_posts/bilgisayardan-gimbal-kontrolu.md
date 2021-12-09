@@ -1,5 +1,4 @@
-title: |
-  Bilgisayardan Gimbal Kontrolü
+title: '[TR] Bilgisayardan Gimbal Kontrolü'
 tags:
   - Electronics
   - Arduino

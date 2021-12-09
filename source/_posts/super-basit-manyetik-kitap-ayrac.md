@@ -1,5 +1,4 @@
-title: |
-  Süper Basit Manyetik Kitap Ayıracı
+title: '[TR] Süper Basit Manyetik Kitap Ayıracı'
 tags:
   - kitap ayıracı
   - mıknatıslı

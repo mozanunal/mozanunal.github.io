@@ -1,5 +1,4 @@
----
-title: 'DIY Raspberry Pi Laptop '
+title: '[TR] DIY Raspberry Pi Laptop'
 tags:
   - Electronics
   - Arduino

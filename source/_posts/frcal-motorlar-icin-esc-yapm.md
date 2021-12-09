@@ -1,5 +1,4 @@
-title: |
-  Fırçalı motorlar için ESC Yapımı
+title: '[TR] Fırçalı motorlar için ESC Yapımı'
 tags:
   - Electronics
   - Arduino

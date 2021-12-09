@@ -1,5 +1,4 @@
-title: |
-  Micropython Mqtt Streamer
+title: Micropython Mqtt Streamer
 tags:
   - MPU6050
   - Mqtt

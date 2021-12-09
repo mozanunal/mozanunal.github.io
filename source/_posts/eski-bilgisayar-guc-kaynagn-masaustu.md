@@ -1,5 +1,4 @@
-title: |
-  Eski Bilgisayar Güç Kaynağını Masaüstü Güç Kaynağına Çevirme
+title: '[TR] Eski Bilgisayar Güç Kaynağını Masaüstü Güç Kaynağına Çevirme'
 tags:
   - ATX güç kaynağı
   - DIY güç kaynağı

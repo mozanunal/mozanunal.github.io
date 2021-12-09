@@ -1,5 +1,4 @@
-title: |
-  SimpleCV ile Görüntü İşlemeye Giriş
+title: '[TR] SimpleCV ile Görüntü İşlemeye Giriş'
 tags:
   - Image Processing
   - SimpleCV

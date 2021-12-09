@@ -1,5 +1,4 @@
-title: |
-  Robot Kol
+title: '[TR] Robot Kol'
 tags:
   - Electronics
   - Arduino

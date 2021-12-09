@@ -1,5 +1,4 @@
-title: |
-  Android Phone IMU Visualizer
+title: '[TR] Android Phone IMU Visualizer'
 tags:
   - Android Phone IMU Visualizer
   - Android Programlama ve Oyun

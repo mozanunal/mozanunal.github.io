@@ -1,5 +1,4 @@
-title: |
-  HC-SR501 PIR Sensörü
+title: '[TR] HC-SR501 PIR Sensörü'
 tags:
   - Electronics
   - Arduino

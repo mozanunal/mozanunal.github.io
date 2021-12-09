@@ -1,5 +1,4 @@
-title: |
-  Arduino İle Super Mario Melodisi Çalmak
+title: '[TR] Arduino İle Super Mario Melodisi Çalmak'
 tags:
   - Arduino Müzik
   - Electronics

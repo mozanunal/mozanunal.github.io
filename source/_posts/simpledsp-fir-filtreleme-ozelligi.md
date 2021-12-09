@@ -1,5 +1,4 @@
-title: |
-  SimpleDSP: FIR filtreleme özelliği eklendi
+title: '[TR] SimpleDSP: FIR filtreleme özelliği eklendi'
 tags:
   - Arduino DSP
   - Arduino FIR

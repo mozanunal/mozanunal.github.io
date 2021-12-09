@@ -1,5 +1,4 @@
-title: |
-  Bakış Açısı Tabanlı 3 Boyutlu Görüş
+title: '[TR] Bakış Açısı Tabanlı 3 Boyutlu Görüş'
 tags:
   - 3D görüş
   - 3D view

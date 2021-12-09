@@ -1,5 +1,4 @@
-title: |
-  5 $ Logic Analyzer
+title: '[TR] 5$ Logic Analyzer'
 tags:
   - Electronics
   - Microcontrollers

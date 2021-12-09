@@ -1,5 +1,4 @@
----
-title: Hackhathon Getir 2018
+title: '[TR] Hackhathon Getir 2018'
 tags:
   - hackhathon
   - getir

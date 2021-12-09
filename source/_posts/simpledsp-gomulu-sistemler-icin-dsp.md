@@ -1,5 +1,4 @@
-title: |
-  SimpleDSP: Gömülü Sistemler için DSP Kütühanesi
+title: '[TR] SimpleDSP: Gömülü Sistemler için DSP Kütühanesi'
 tags:
   - Arduino FFT
   - Electronics
@@ -13,7 +12,8 @@ categories:
 date: 2017-01-26 00:13:00
 ---
 **Herkese Merhabalar,**  
-       Bu yazımda gömülü sistemler için yazdığım sayısal isaret isleme kütüphanesini tanıtacağım. Kütüphanenin tamamını "C" kullanarak ve harici bir kütüphaneye bağlı kalmadan yazmayı planlıyorum. Böylece diğer mikrokontolcülerde de rahatça kullanılabilecek. Hatta bilgisayar programlarında bile kolayca eklenip derlenebilecek şekilde projeyi tamamlamak istiyorum. Bu kütüphane kapsamında çözüm sağlamak istediğim konular şunlardır.  
+
+Bu yazımda gömülü sistemler için yazdığım sayısal isaret isleme kütüphanesini tanıtacağım. Kütüphanenin tamamını "C" kullanarak ve harici bir kütüphaneye bağlı kalmadan yazmayı planlıyorum. Böylece diğer mikrokontolcülerde de rahatça kullanılabilecek. Hatta bilgisayar programlarında bile kolayca eklenip derlenebilecek şekilde projeyi tamamlamak istiyorum. Bu kütüphane kapsamında çözüm sağlamak istediğim konular şunlardır.  
 
 *   FFT
 *   ters FFT

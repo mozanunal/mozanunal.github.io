@@ -1,5 +1,4 @@
-title: |
-  C# Gerçek Zamanlı Grafik Çizme Programı
+title: '[TR] C# Gerçek Zamanlı Grafik Çizme Programı'
 tags:
   - 'C#'
   - 'Arduino C#'

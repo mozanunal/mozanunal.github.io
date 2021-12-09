@@ -1,5 +1,4 @@
-title: |
-  İlk Yayın
+title: '[TR] İlk Yayın'
 tags:
   - Ana Sayfa
   - Electronics

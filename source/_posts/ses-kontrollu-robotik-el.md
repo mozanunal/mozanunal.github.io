@@ -1,5 +1,4 @@
-title: |
-  Ses Kontrollü Robotik El
+title: '[TR] Ses Kontrollü Robotik El'
 tags:
   - Electronics
   - Arduino

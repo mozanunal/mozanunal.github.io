@@ -1,5 +1,4 @@
-title: |
-  Rustik Ampul Gece Lambası Yapımı
+title: '[TR] Rustik Ampul Gece Lambası Yapımı'
 tags:
   - Pwm
   - Rustik Ampul

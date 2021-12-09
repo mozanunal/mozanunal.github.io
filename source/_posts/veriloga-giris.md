@@ -1,5 +1,4 @@
----
-title: Veriloga Giriş
+title: '[TR] Veriloga Giriş'
 tags:
   - Electronics
   - verilog

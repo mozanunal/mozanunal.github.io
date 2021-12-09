@@ -1,4 +1,3 @@
----
 title: Orange Pi Zero Üzerinde Dump1090 Çalıştırmak
 tags:
   - Software Defined Radio

@@ -1,5 +1,4 @@
-title: |
-  Ayarlanabilir Taşınabilir Güç Kaynağı Yapımı
+title: '[TR] Ayarlanabilir Taşınabilir Güç Kaynağı Yapımı'
 tags:
   - Electronics Devreler ve Teorik Yazılar
   - ayarlanabilor güç kaynağı

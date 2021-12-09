@@ -1,5 +1,4 @@
-title: |
-  Arduino Due Osiloskop
+title: '[TR] Arduino Due Osiloskop'
 tags:
   - Arduino Due Osiloskop
   - Electronics

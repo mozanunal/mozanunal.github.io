@@ -1,5 +1,4 @@
-title: |
-  Google Hash Code 2017
+title: '[TR] Google Hash Code 2017'
 tags:
   - Hash Code
 categories:

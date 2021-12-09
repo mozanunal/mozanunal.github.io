@@ -1,5 +1,4 @@
-title: |
-  555 Entegresi Tanıtım
+title: '[TR] 555 Entegresi Tanıtım'
 tags:
   - '555'
   - 555 Entegresi Tanıtım

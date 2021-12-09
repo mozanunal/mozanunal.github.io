@@ -1,5 +1,4 @@
----
-title: Altera(Intel) Cyclone IV ile FPGA Dünyasına Giriş
+title: '[TR] Altera Cyclone IV ile FPGA Dünyasına Giriş'
 tags:
   - verilog
   - altera

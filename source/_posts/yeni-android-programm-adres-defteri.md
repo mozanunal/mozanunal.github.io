@@ -1,5 +1,4 @@
-title: |
-  Yeni Android Programım: Adres Defteri
+title: '[TR] Yeni Android Programım: Adres Defteri'
 tags:
   - Android Programlama ve Oyun
   - Adres Defteri

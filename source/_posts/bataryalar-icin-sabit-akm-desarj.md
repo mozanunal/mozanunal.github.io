@@ -1,5 +1,4 @@
-title: |
-  Bataryalar için Sabit Akım Deşarj Devresi Yapımı
+title: '[TR] Bataryalar için Sabit Akım Deşarj Devresi Yapımı'
 tags:
   - Electronics Devreler ve Teorik Yazılar
   - Düşük Voltaj Koruma Devresi

@@ -1,5 +1,4 @@
-title: |
-  DIY Bluetooth Speaker
+title: '[TR] DIY Bluetooth Speaker'
 tags:
   - bluetooth speaker
   - diy bluetooth speaker

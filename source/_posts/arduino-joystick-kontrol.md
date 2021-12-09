@@ -1,5 +1,4 @@
-title: |
-  Arduino Joystick Kontrol
+title: '[TR] Arduino Joystick Kontrol'
 tags:
   - Electronics
   - Arduino

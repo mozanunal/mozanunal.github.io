@@ -1,5 +1,4 @@
----
-title: GNU Radio Giriş
+title: '[TR] GNU Radio Giriş'
 tags:
   - gnu-radio
   - gnu-radio-giris

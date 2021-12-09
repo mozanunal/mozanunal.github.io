@@ -1,5 +1,4 @@
-title: |
-	All Terrain Rover Version 2.0
+title: '[TR] All Terrain Rover Version 2.0'
 categories:
   - Electronics
   - Arduino

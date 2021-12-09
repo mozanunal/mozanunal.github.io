@@ -1,5 +1,4 @@
-title: |
-  Oyun(First Flight)
+title: '[TR] Oyun (First Flight)'
 tags:
   - Android Programlama ve Oyun
   - Gamemaker

@@ -1,5 +1,4 @@
-title: |
-  Web Tabanlı Programlar
+title: '[TR] Web Tabanlı Programlar'
 tags:
   - html5
   - Web Tabanlı programlar

@@ -1,5 +1,4 @@
-title: |
-  STM32 Mikroişlemci Dünyasına Giriş
+title: '[TR] STM32 Mikroişlemci Dünyasına Giriş'
 tags:
   - Arm cortex m3
   - stm32

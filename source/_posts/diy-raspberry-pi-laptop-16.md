@@ -1,5 +1,4 @@
----
-title: 'DIY Raspberry Pi Laptop (English Version) '
+title: 'DIY Raspberry Pi Laptop'
 tags:
   - Electronics
   - Arduino

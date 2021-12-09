@@ -1,5 +1,4 @@
-title: |
-  Multikopterler için otopilot yapmak
+title: '[TR] Multikopterler için otopilot yapmak'
 tags:
   - Hava Araçları
   - Multikopter uçuş prensibi

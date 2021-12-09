@@ -1,5 +1,4 @@
-title: |
-  LCD Göstergeli Mesafe Ölçer
+title: '[TR] LCD Göstergeli Mesafe Ölçer'
 tags:
   - Electronics
   - Arduino

@@ -1,4 +1,3 @@
----
 title: 'Yolo on Google Colab'
 tags:
   - google colab

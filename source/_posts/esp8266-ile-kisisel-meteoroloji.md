@@ -1,5 +1,4 @@
-title: |
-  ESP8266 ile Kişisel Meteoroloji İstasyonu
+title: '[TR] ESP8266 ile Kişisel Meteoroloji İstasyonu'
 tags:
   - Electronics
   - Arduino

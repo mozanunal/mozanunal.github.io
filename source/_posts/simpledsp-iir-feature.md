@@ -1,5 +1,4 @@
-title: |
-  SimpleDSP: IIR Filter Feature Added
+title: 'SimpleDSP: IIR Filter Feature Added'
 tags:
   - Arduino DSP
   - Arduino IIR

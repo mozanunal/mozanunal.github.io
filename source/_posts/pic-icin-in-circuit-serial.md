@@ -1,5 +1,4 @@
-title: |
-  PIC İçin In Circuit Serial Programming(ICSP)
+title: '[TR] PIC İçin In Circuit Serial Programming (ICSP)'
 tags:
   - Electronics
   - Microcontrollers

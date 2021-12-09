@@ -1,5 +1,4 @@
-title: |
-  Processing ile Artırılmış Gerçeklik
+title: '[TR] Processing ile Artırılmış Gerçeklik'
 tags:
   - Image Processing
   - Processing

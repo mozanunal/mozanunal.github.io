@@ -1,5 +1,4 @@
-title: |
-  Processing ile Android Telefonda Uygulama Geliştirme
+title: '[TR] Processing ile Android Telefonda Uygulama Geliştirme'
 tags:
   - Android Programlama ve Oyun
   - Processing

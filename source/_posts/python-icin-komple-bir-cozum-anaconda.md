@@ -1,4 +1,3 @@
----
 title: 'Python için komple bir çözüm: Anaconda '
 tags:
   - python

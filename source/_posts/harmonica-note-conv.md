@@ -1,5 +1,4 @@
-title: |
-  Harmonica Note Converter
+title: Harmonica Note Converter
 tags:
   - harmonica, note conventer, music theory
 categories:

@@ -1,5 +1,4 @@
-title: |
-  Serial Port Grapher
+title: '[TR] Serial Port Grapher'
 tags:
   - 'C#'
   - Arduino grafik

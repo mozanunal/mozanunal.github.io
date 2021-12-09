@@ -1,5 +1,4 @@
-title: |
-  SDR ile Uçakların Yayınlarından Yerlerini Tespit Etmek
+title: '[TR] SDR ile Uçakların Yayınlarından Yerlerini Tespit Etmek'
 tags:
   - Adsb
   - Hava Araçları

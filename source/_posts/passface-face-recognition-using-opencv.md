@@ -1,5 +1,4 @@
-title: |
-  PassFace: Face Recognition Using Opencv
+title: 'PassFace: Face Recognition Using OpenCV'
 tags:
   - Image Processing
   - EmguCV

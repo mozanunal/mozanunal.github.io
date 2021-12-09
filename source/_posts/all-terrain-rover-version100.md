@@ -1,5 +1,4 @@
-title: |
-  All Terrain Rover Version 1.00
+title: '[TR] All Terrain Rover Version 1.00'
 tags:
   - Electronics
   - Arduino

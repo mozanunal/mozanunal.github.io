@@ -1,5 +1,4 @@
-title: |
-  Yüz Tanıma ile Güvenlik (Passface)
+title: '[TR] Yüz Tanıma ile Güvenlik (Passface)'
 tags:
   - 'C#'
   - Image Processing

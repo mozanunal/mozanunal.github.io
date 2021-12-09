@@ -1,5 +1,4 @@
----
-title: 'Android Terminal Emülatörü: Termux'
+title: '[TR] Android Terminal Emülatörü: Termux'
 tags:
   - Android
   - Termux

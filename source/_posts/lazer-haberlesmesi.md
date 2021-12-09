@@ -1,5 +1,4 @@
-title: |
-  Lazer Haberleşmesi
+title: '[TR] Lazer Haberleşmesi'
 tags:
   - Electronics
   - Arduino
@@ -11,8 +10,9 @@ author: Mehmet Ozan Ünal
 date: 2016-02-07 23:18:00
 ---
 
-**Herkese Merhabalar,**  
-         Son zamanlarda ışık ile veri aktarımına ilgi duymaktayım. Bu konuda bir şeyler geliştirmek istiyorum. Bunun ilk aşaması olarak lazer ile haberleşme projemi gerçekleştirdim. Bu projedeki amacım daha çok lazerin ve fotodiyotun cevap süresi ölçmek yani maximum aktarım hızını hesaplamaktı. Aynı zamanda farklı iletişim protokollerini denedim. İlerleyen projeler için lazerin de fotodiyotun da yetersiz olduğunu görmüş oldum. Daha hızlı fotodiyotlarla ve ledlerle denemelerim sürecek. Projenin bu aşamadaki haline gelirsek:  
+**Herkese Merhabalar,**
+
+Son zamanlarda ışık ile veri aktarımına ilgi duymaktayım. Bu konuda bir şeyler geliştirmek istiyorum. Bunun ilk aşaması olarak lazer ile haberleşme projemi gerçekleştirdim. Bu projedeki amacım daha çok lazerin ve fotodiyotun cevap süresi ölçmek yani maximum aktarım hızını hesaplamaktı. Aynı zamanda farklı iletişim protokollerini denedim. İlerleyen projeler için lazerin de fotodiyotun da yetersiz olduğunu görmüş oldum. Daha hızlı fotodiyotlarla ve ledlerle denemelerim sürecek. Projenin bu aşamadaki haline gelirsek:  
 
 Gönderici modül basitçe bir arduino ve bir lazerden oluşuyor. Bir transistör ile lazeri sürmeyi planlıyordum. Fakat lazer çok düşük akım çektiğini görünce doğrudan arduinoun pinine bağladım.  
 

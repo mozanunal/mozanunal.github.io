@@ -1,5 +1,4 @@
-title: |
-  SDR ile Bilgisayardan TV izlemek
+title: '[TR] SDR ile Bilgisayardan TV izlemek'
 tags:
   - Software Defined Radio
   - 'SDR#'
