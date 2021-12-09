@@ -1,4 +1,4 @@
-title: 'Python için komple bir çözüm: Anaconda '
+title: '[TR] Python için komple bir çözüm: Anaconda '
 tags:
   - python
   - Anaconda
