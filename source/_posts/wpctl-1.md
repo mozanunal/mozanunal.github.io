@@ -8,7 +8,7 @@ tags:
   - ubuntu
 categories:
   -  Coding
-date: 2019-04-20 16:14:07
+date: 2021-10-12 08:14:07
 ---
 
 Hey,
@@ -46,7 +46,7 @@ sudo apt-get install wget notify-send
 ### Installing
 
 ```bash
-sudo wget --quiet https://github.com/mozanunal/wpctl/releases/download/0.0.2/wpctl \
+sudo wget --quiet https://github.com/mozanunal/wpctl/releases/download/0.1.0/wpctl \
           -O /usr/local/bin/wpctl && \
           sudo chmod +x /usr/local/bin/wpctl
 
@@ -76,22 +76,22 @@ crontab -e
 
 Every hours pick a random wallpaper
 ```
-0 * * * * wpctl random
+0 * * * * /usr/local/bin/wpctl random
 ```
 
 Every day get daily photo as wallpaper
 ```
-0 10 * * * wpctl daily
+0 10 * * * /usr/local/bin/wpctl daily
 ```
 
 Every 15 mins pick a cat image as your wallpaper
 ```
-*/15 * * * * wpctl cat
+*/15 * * * * /usr/local/bin/wpctl cat
 ```
 
 Every 3 hours pick a blue image as your wallpaper
 ```
-0 */3 * * * wpctl blue
+0 */3 * * * /usr/local/bin/wpctl blue
 ```
 
 
