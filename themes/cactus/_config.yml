@@ -29,12 +29,12 @@ nav:
 # only 'mail' is an exception.
 social_links:
   github: https://github.com/mozanunal
-  linkedin: https://www.linkedin.com/in/mozanunal/
+  #linkedin: https://www.linkedin.com/in/mozanunal/
   google: https://scholar.google.com/citations?user=u_HbXUUAAAAJ&hl=en
   mail: mailto:mehmetozanunal@gmail.com
-  facebook: https://www.facebook.com/mehmetozan.unal
-  instagram: https://www.instagram.com/mozanunal/
-  twitter: https://twitter.com/MOzanUnal
+  #facebook: https://www.facebook.com/mehmetozan.unal
+  #instagram: https://www.instagram.com/mozanunal/
+  #twitter: https://twitter.com/MOzanUnal
 
 # Customize the overview with displaying a tagcloud on the index page.
 # Options: https://hexo.io/docs/helpers.html#tagcloud
