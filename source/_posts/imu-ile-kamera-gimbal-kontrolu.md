@@ -8,6 +8,7 @@ tags:
   - gimbal kontrol
   - IMU
 categories:
+  - Electronics
   - Drone
 author: Mehmet Ozan Ünal
 date: 2014-10-18 18:22:00

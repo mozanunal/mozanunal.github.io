@@ -7,6 +7,7 @@ tags:
   - PID kontrol
   - Quadcopter uçuş prensibi
 categories:
+  - Electronics
   - Drone
 author: Mehmet Ozan Ünal
 date: 2015-07-29 15:44:00

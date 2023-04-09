@@ -9,6 +9,7 @@ tags:
   - Inertial measurement unit
   - mpu6050
 categories:
+  - Electronics
   - Drone
 author: Mehmet Ozan Ünal
 date: 2014-11-07 14:15:00

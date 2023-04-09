@@ -5,6 +5,7 @@ tags:
   - Ardupilot
   - Pixhawk
 categories:
+  - Electronics
   - Drone
 author: Mehmet Ozan Ünal
 date: 2016-09-01 14:26:00

@@ -7,6 +7,7 @@ tags:
   - Otopilot
   - SimplePilot
 categories:
+  - Electronics
   - Drone
 author: Mehmet Ozan Ünal
 date: 2017-02-07 23:55:00

@@ -4,6 +4,7 @@ tags:
   - ITUNOM
   - İTÜNOM
 categories:
+  - Electronics
   - Drone
 author: Mehmet Ozan Ünal
 date: 2016-01-27 01:01:00

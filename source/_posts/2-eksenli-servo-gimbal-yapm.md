@@ -6,12 +6,6 @@ tags:
   - Arduino
 categories:
   - Electronics
-  - Electronics
-  - Electronics
-  - Electronics
-  - Electronics
-  - Electronics
-  - Electronics
   - Drone
 author: Mehmet Ozan Ünal
 date: 2015-06-06 04:36:00

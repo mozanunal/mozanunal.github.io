@@ -1,6 +1,7 @@
 title: '[TR] Arduino Gimbal Kontrol Kartı'
 tags: [Arduino Gimbal,arduino mpu6050,Arduino Projeleri,Hava Araçları,Imu gimbal stabilizasyonu]
 categories:
+  - Electronics
   - Drone
 author: Mehmet Ozan Ünal
 date: 2015-07-04 03:30:00
