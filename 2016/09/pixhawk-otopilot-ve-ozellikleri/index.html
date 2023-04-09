@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang=en>
+<head><meta name="generator" content="Hexo 3.8.0">
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="Herkese Merhabalar,        Uzun bir aradan sonra tekrar bir yazı hazırladım. Aslında bu yazıya çok önceden başlamıştım fakat devamını getirmemiştim şimdi tamamlayabildim ancak :). Evet bu yazımda Pixh">
+<meta name="keywords" content="Hava Araçları,Otopilot,Ardupilot,Pixhawk">
+<meta property="og:type" content="article">
+<meta property="og:title" content="[TR] Pixhawk Otopilot ve Özellikleri">
+<meta property="og:url" content="https://mozanunal.com/2016/09/pixhawk-otopilot-ve-ozellikleri/index.html">
+<meta property="og:site_name" content="Mehmet Ozan Ünal">
+<meta property="og:description" content="Herkese Merhabalar,        Uzun bir aradan sonra tekrar bir yazı hazırladım. Aslında bu yazıya çok önceden başlamıştım fakat devamını getirmemiştim şimdi tamamlayabildim ancak :). Evet bu yazımda Pixh">
+<meta property="og:locale" content="en">
+<meta property="og:image" content="https://4.bp.blogspot.com/-p4zpkVZrQWU/V8faC6OGbjI/AAAAAAAAc_U/rx-zCY8cZksKXnRpi2GC8lY-b-aB_MA_ACLcB/s640/pic-prod-pixhawk1.jpg">
+<meta property="og:updated_time" content="2023-04-09T21:13:04.053Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="[TR] Pixhawk Otopilot ve Özellikleri">
+<meta name="twitter:description" content="Herkese Merhabalar,        Uzun bir aradan sonra tekrar bir yazı hazırladım. Aslında bu yazıya çok önceden başlamıştım fakat devamını getirmemiştim şimdi tamamlayabildim ancak :). Evet bu yazımda Pixh">
+<meta name="twitter:image" content="https://4.bp.blogspot.com/-p4zpkVZrQWU/V8faC6OGbjI/AAAAAAAAc_U/rx-zCY8cZksKXnRpi2GC8lY-b-aB_MA_ACLcB/s640/pic-prod-pixhawk1.jpg">
+    
+    
+        
+          
+              <link rel="shortcut icon" href="/images/favicon.ico">
+          
+        
+        
+          
+            <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
+          
+        
+        
+          
+            <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+          
+        
+    
+    <!-- title -->
+    <title>[TR] Pixhawk Otopilot ve Özellikleri</title>
+    <!-- styles -->
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- persian styles -->
+    
+      <link rel="stylesheet" href="/css/rtl.css">
+    
+    <!-- rss -->
+    
+    
+      <link rel="alternate" href="/atom" title="Mehmet Ozan Ünal" type="application/atom+xml">
+    
+    <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/7ecf5c9db13693c2c7062ad3f/0e72f59463de1883a2a166735.js");</script>
+</head>
+
+<body class="max-width mx-auto px3 ltr">    
+      <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/categories/">Category</a></li>
+         
+          <li><a href="/archives/">Blog</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="https://github.com/mozanunal">Projects</a></li>
+         
+          <li><a href="https://scholar.google.com/citations?user=u_HbXUUAAAAJ&hl=en">Publications</a></li>
+         
+          <li><a href="/search/">Search</a></li>
+        
+      </ul>
+    </span>
+    <br>
+    <span id="actions">
+      <ul>
+        
+        <li><a class="icon" href="/2016/09/ack-kaynak-yazlm-lisans-turleri-ve/"><i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i></a></li>
+        
+        
+        <li><a class="icon" href="/2016/06/wpf-ile-ev-otomasyonu-arayuzu/"><i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
+        
+        <li><a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
+        <li><a class="icon" href="#"><i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br>
+    <div id="share" style="display: none">
+      <ul>
+  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=https://mozanunal.com/2016/09/pixhawk-otopilot-ve-ozellikleri/"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=https://mozanunal.com/2016/09/pixhawk-otopilot-ve-ozellikleri/&text=[TR] Pixhawk Otopilot ve Özellikleri"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=https://mozanunal.com/2016/09/pixhawk-otopilot-ve-ozellikleri/&title=[TR] Pixhawk Otopilot ve Özellikleri"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https://mozanunal.com/2016/09/pixhawk-otopilot-ve-ozellikleri/&is_video=false&description=[TR] Pixhawk Otopilot ve Özellikleri"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=[TR] Pixhawk Otopilot ve Özellikleri&body=Check out this article: https://mozanunal.com/2016/09/pixhawk-otopilot-ve-ozellikleri/"><i class="fas fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=https://mozanunal.com/2016/09/pixhawk-otopilot-ve-ozellikleri/&title=[TR] Pixhawk Otopilot ve Özellikleri"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=https://mozanunal.com/2016/09/pixhawk-otopilot-ve-ozellikleri/&title=[TR] Pixhawk Otopilot ve Özellikleri"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=https://mozanunal.com/2016/09/pixhawk-otopilot-ve-ozellikleri/&title=[TR] Pixhawk Otopilot ve Özellikleri"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=https://mozanunal.com/2016/09/pixhawk-otopilot-ve-ozellikleri/&title=[TR] Pixhawk Otopilot ve Özellikleri"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=https://mozanunal.com/2016/09/pixhawk-otopilot-ve-ozellikleri/&name=[TR] Pixhawk Otopilot ve Özellikleri&description=&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;br&gt;        Uzun bir aradan sonra tekrar bir yazı hazırladım. Aslında bu yazıya çok önceden başlamıştım fakat devamını getirmemiştim şimdi tamamlayabildim ancak :). Evet bu yazımda Pixhawk isimli otopilottan bahsetmek istiyorum. Pixhawk açık kaynak kodlu Stm32 tabanlı yazılım tabanı olarak da ArduPilota dayanan bir otopilot modülü. Burada bir yorumda bulunmam gerekirse, açık kaynaklı otopilotlar arasında en başarılısı bana göre. Bu teorimi kanıtlamak için de hemen özelliklerine geçmek istiyorum.  &lt;/p&gt;"><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+    <div id="toc">
+      
+    </div>
+  </span>
+</div>
+
+    
+    <div class="content index py4">
+        
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    
+    <h1 class="posttitle" itemprop="name headline">
+        [TR] Pixhawk Otopilot ve Özellikleri
+    </h1>
+
+
+
+    <div class="meta">
+      <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span itemprop="name">Mehmet Ozan Ünal</span>
+      </span>
+      
+    <div class="postdate">
+      
+        <time datetime="2016-09-01T11:26:00.000Z" itemprop="datePublished">2016-09-01</time>
+        
+      
+    </div>
+
+
+      
+    <div class="article-category">
+        <i class="fas fa-archive"></i>
+        <a class="category-link" href="/categories/Electronics/">Electronics</a> › <a class="category-link" href="/categories/Electronics/Drone/">Drone</a>
+    </div>
+
+
+    </div>
+  </header>
+  
+
+  <div class="content" itemprop="articleBody">
+    <p><strong>Herkese Merhabalar,</strong><br>        Uzun bir aradan sonra tekrar bir yazı hazırladım. Aslında bu yazıya çok önceden başlamıştım fakat devamını getirmemiştim şimdi tamamlayabildim ancak :). Evet bu yazımda Pixhawk isimli otopilottan bahsetmek istiyorum. Pixhawk açık kaynak kodlu Stm32 tabanlı yazılım tabanı olarak da ArduPilota dayanan bir otopilot modülü. Burada bir yorumda bulunmam gerekirse, açık kaynaklı otopilotlar arasında en başarılısı bana göre. Bu teorimi kanıtlamak için de hemen özelliklerine geçmek istiyorum.  </p>
+<a id="more"></a>  
+<p><img src="https://4.bp.blogspot.com/-p4zpkVZrQWU/V8faC6OGbjI/AAAAAAAAc_U/rx-zCY8cZksKXnRpi2GC8lY-b-aB_MA_ACLcB/s640/pic-prod-pixhawk1.jpg" alt></p>
+<ul>
+<li><p>Ana işlemcisi 32 bit Arm Cortex M4 tabanlı ST Microelectronic’in bir ürünü( STM32F427 Cortex M4 core with FPU).  Bu işlemci “NuttX Real Time Operating System” ile kullanılıyor. </p>
+</li>
+<li><p>14 Adet PWM çıkışı bulunuyor.(Motor ve servomotor için)</p>
+</li>
+<li><p>Bordunun üzerinde Uart I2C CAN gibi çevresel birimler bulunuyor. Bunlarla çalışan herhangi bir sönsör, kontrol elemanı kolayca eklenebilir. </p>
+</li>
+<li><p>Durum belirtlme için çok renkli LED indicator üzerinde hazır geliyor.</p>
+</li>
+<li><p>Sd kart desteği sayesinde uzun süre ve yüksek frekansta sensör verisini daha sonra incelemek için kaydedebiliyorsunuz.</p>
+</li>
+<li><p>Kritik noktalardan biri olan uçuş için gerekli sensör gurbu şöyle:</p>
+</li>
+<li><p>ST Micro L3GD20 3-axis 16-bit gyroscope</p>
+</li>
+<li><p>ST Micro LSM303D 3-axis 14-bit accelerometer / magnetometer</p>
+</li>
+<li><p>Invensense MPU 6000 3-axis accelerometer/gyroscope</p>
+</li>
+<li><p>MEAS MS5611 barometer</p>
+</li>
+<li><p>Spektrum DSM / DSM2 / DSM-X® Satellite, S.BUS uyumlu.(Kumanda haberleşmesi için)</p>
+</li>
+<li><p>Güç sistemi özellikleri:</p>
+</li>
+<li><p>Diyot kontrolcüsü “automatic failover” özelliğiyle birlikte</p>
+</li>
+<li><p>7 V yüksek akımlı servo çıkışları</p>
+</li>
+<li><p>Tüm çıkışlar yüksek akım korumalı tüm girişlerinin de  “Electro Static Discharge(ESD)” testleri yapılmış.</p>
+</li>
+<li><p>STM32F103 failsafe co-processor olarak bulunuyor. Yani ana işlemcide bir sorun olursa operasyonlar bu yedek üzerinden devam ettirilebiliyor.</p>
+</li>
+</ul>
+<p>Yazımın devamında Pixhawk’ın özgür dünyasını kullanarak yapılan uygulamalardan ve yapılabileceklerden bahsetmek istiyorum.  </p>
+<ul>
+<li>Her türlü araç tipini (multikopter, helikopter, uçak, kara araçları….) destekliyor.</li>
+<li>Her türlü multikopter tipini (tricopter,quadcopter, hekzacopter, koaksiyelleri…) destekliyor.</li>
+<li>Optical flow, akım sensöü gibi başka otopilotlarda pek olmayan sensörleri destekliyor</li>
+<li>OSD çıkışı mevcut</li>
+<li>Oto paraşüt özelliği</li>
+<li>Gimbal kontrolü</li>
+<li>Antenna tracker desteği</li>
+<li>Phyton ile ile kodun ana kısmına hiç bakmadan harici bi görev uygulaması yazıp derleyip ekleyebilme</li>
+<li>Loglarını kullanarak resimlere “Geotag” yapabilme</li>
+</ul>
+<p><strong>Pixhawk için yararlı linkler</strong><br><a href="https://www.blogger.com/goog_469727306" target="_blank" rel="noopener">  
+</a><a href="https://dev.px4.io/" target="_blank" rel="noopener">https://dev.px4.io/</a><br><a href="https://ardupilot.org/copter/" target="_blank" rel="noopener">https://ardupilot.org/copter/</a><br><a href="https://ardupilot.org/copter/docs/common-table-of-contents.html" target="_blank" rel="noopener">https://ardupilot.org/copter/docs/common-table-of-contents.html</a><br>Çoğu linkin alındığı anasayfa  </p>
+<p>Donanımsal Kurulum linkleri<br><a href="https://ardupilot.org/copter/docs/configuring-hardware.html" target="_blank" rel="noopener">https://ardupilot.org/copter/docs/configuring-hardware.html</a><br>motor kurulumu, yerleşim dönme yönleri vb<br><a href="https://www.blogger.com/goog_469727340" target="_blank" rel="noopener">  
+</a><a href="https://ardupilot.org/copter/docs/common-minim-osd-quick-installation-guide.html" target="_blank" rel="noopener">https://ardupilot.org/copter/docs/common-minim-osd-quick-installation-guide.html</a><br><a href="https://code.google.com/p/arducam-osd/wiki/minimosd" target="_blank" rel="noopener">https://code.google.com/p/arducam-osd/wiki/minimosd</a><br>Osd kurulum linkleri  </p>
+<p><a href="https://copter.ardupilot.com/wiki/common-telemetry-landingpage/" target="_blank" rel="noopener">https://copter.ardupilot.com/wiki/common-telemetry-landingpage/</a><br>Telemetri modül kurulum  </p>
+<p><a href="https://copter.ardupilot.com/wiki/common-px4flow-overview/" target="_blank" rel="noopener">https://copter.ardupilot.com/wiki/common-px4flow-overview/</a><br>Optical flow sensör kurulum  </p>
+<p><a href="https://copter.ardupilot.com/wiki/parachute/" target="_blank" rel="noopener">https://copter.ardupilot.com/wiki/parachute/</a><br>Oto paraşüt özelliği  </p>
+<p><a href="https://copter.ardupilot.com/wiki/common-servo/" target="_blank" rel="noopener">https://copter.ardupilot.com/wiki/common-servo/</a><br>Uzaktan servo kontrolü  </p>
+<p><a href="https://copter.ardupilot.com/wiki/common-electro-permanent-magnet-gripper/" target="_blank" rel="noopener">https://copter.ardupilot.com/wiki/common-electro-permanent-magnet-gripper/</a><br>Manyetik bırakma mekanizması  </p>
+<p><a href="https://copter.ardupilot.com/wiki/common-cameras-and-gimbals/" target="_blank" rel="noopener">https://copter.ardupilot.com/wiki/common-cameras-and-gimbals/</a><br>Otopilot ile gimbal kontrolü  </p>
+<p><a href="https://copter.ardupilot.com/wiki/common-3d-mapping/" target="_blank" rel="noopener">https://copter.ardupilot.com/wiki/common-3d-mapping/</a><br>3d maping  </p>
+<p><span style="color: #0000ee;"><u><a href="https://ardupilot.org/copter/docs/common-antenna-tracking.html" target="_blank" rel="noopener">https://ardupilot.org/copter/docs/common-antenna-tracking.html</a></u></span><br>Antenna Tracking özelliğini kullanma  </p>
+<p><a href="https://ardupilot.org/copter/docs/common-powermodule-landingpage.html" target="_blank" rel="noopener">https://ardupilot.org/copter/docs/common-powermodule-landingpage.html</a><br>akım sensörü  </p>
+<p>Otopilotun Kodunu değiştirme<br><span style="color: #0000ee;"><u><a href="https://dev.px4.io/starting-building.html" target="_blank" rel="noopener">https://dev.px4.io/starting-building.html</a></u></span><br><a href="https://www.blogger.com/goog_543916667" target="_blank" rel="noopener">  
+</a><a href="https://planner.ardupilot.com/wiki/common-geotagging-images-with-mission-planner/" target="_blank" rel="noopener">https://planner.ardupilot.com/wiki/common-geotagging-images-with-mission-planner/</a><br>“Geotagged” resimler mission plannerla.  </p>
+<p><strong>Kurulum ve Ayarlar linkleri</strong><br><a href="https://www.blogger.com/goog_543916669" target="_blank" rel="noopener">  
+</a><a href="https://copter.ardupilot.com/wiki/flying-arducopter/" target="_blank" rel="noopener">https://copter.ardupilot.com/wiki/flying-arducopter/</a><br>ilk uçuş hakkında kapsamlı bilgi her başlığı incelemek gerekli<br>az çok gerekli bütün ayarların nasıl yapılacağı anlatılmış  </p>
+<p><a href="https://www.blogger.com/goog_543916675" target="_blank" rel="noopener">  
+</a><a href="https://copter.ardupilot.com/wiki/arducopter-parameters/" target="_blank" rel="noopener">https://copter.ardupilot.com/wiki/arducopter-parameters/</a><br>ayarlanabilecek tüm parametreler ve ne işe yaradıkları<br><a href="https://www.blogger.com/goog_543916679" target="_blank" rel="noopener">  
+</a><a href="https://copter.ardupilot.com/wiki/failsafe-battery/" target="_blank" rel="noopener">https://copter.ardupilot.com/wiki/failsafe-battery/</a><br>battery failsafe  </p>
+<p><a href="https://copter.ardupilot.com/wiki/initial-setup/" target="_blank" rel="noopener">https://copter.ardupilot.com/wiki/initial-setup/</a><br>İlk uçuş kalibrasyonu<br><a href="https://www.blogger.com/goog_543916683" target="_blank" rel="noopener">  
+</a><a href="https://planner.ardupilot.com/wiki/common-loading-firmware-onto-pixhawk/" target="_blank" rel="noopener">https://planner.ardupilot.com/wiki/common-loading-firmware-onto-pixhawk/</a><br>Pixhawk üzerine kodu yükleme  </p>
+<p><a href="https://ardupilot.org/copter/docs/common-compass-setup-advanced.html" target="_blank" rel="noopener">https://ardupilot.org/copter/docs/common-compass-setup-advanced.html</a><br>Magnometer calibration( Çok önemli!!!)  </p>
+<p><a href="https://planner.ardupilot.com/wiki/common-mission-planner-telemetry-logs/" target="_blank" rel="noopener">https://planner.ardupilot.com/wiki/common-mission-planner-telemetry-logs/</a><br>Waypoint yükleme  </p>
+<p><a href="https://www.blogger.com/goog_543916695" target="_blank" rel="noopener">  
+</a><a href="https://www.qgroundcontrol.org/mavlink/start" target="_blank" rel="noopener">https://www.qgroundcontrol.org/mavlink/start</a><br>Mavlink communication protocol  </p>
+<p><a href="https://dev.ardupilot.com/wiki/code-overview-adding-a-new-mavlink-message/" target="_blank" rel="noopener">https://dev.ardupilot.com/wiki/code-overview-adding-a-new-mavlink-message/</a><br>Mavlink yeni mesaj oluşturma  </p>
+
+  </div>
+</article>
+
+    <div class="blog-post-comments">
+        <div id="disqus_thread">
+            <noscript>Please enable JavaScript to view the comments.</noscript>
+        </div>
+    </div>
+
+
+
+        
+          <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/categories/">Category</a></li>
+         
+          <li><a href="/archives/">Blog</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="https://github.com/mozanunal">Projects</a></li>
+         
+          <li><a href="https://scholar.google.com/citations?user=u_HbXUUAAAAJ&hl=en">Publications</a></li>
+         
+          <li><a href="/search/">Search</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      
+    </div>
+
+    <div id="share-footer" style="display: none">
+      <ul>
+  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=https://mozanunal.com/2016/09/pixhawk-otopilot-ve-ozellikleri/"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=https://mozanunal.com/2016/09/pixhawk-otopilot-ve-ozellikleri/&text=[TR] Pixhawk Otopilot ve Özellikleri"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=https://mozanunal.com/2016/09/pixhawk-otopilot-ve-ozellikleri/&title=[TR] Pixhawk Otopilot ve Özellikleri"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https://mozanunal.com/2016/09/pixhawk-otopilot-ve-ozellikleri/&is_video=false&description=[TR] Pixhawk Otopilot ve Özellikleri"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=[TR] Pixhawk Otopilot ve Özellikleri&body=Check out this article: https://mozanunal.com/2016/09/pixhawk-otopilot-ve-ozellikleri/"><i class="fas fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=https://mozanunal.com/2016/09/pixhawk-otopilot-ve-ozellikleri/&title=[TR] Pixhawk Otopilot ve Özellikleri"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=https://mozanunal.com/2016/09/pixhawk-otopilot-ve-ozellikleri/&title=[TR] Pixhawk Otopilot ve Özellikleri"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=https://mozanunal.com/2016/09/pixhawk-otopilot-ve-ozellikleri/&title=[TR] Pixhawk Otopilot ve Özellikleri"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=https://mozanunal.com/2016/09/pixhawk-otopilot-ve-ozellikleri/&title=[TR] Pixhawk Otopilot ve Özellikleri"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=https://mozanunal.com/2016/09/pixhawk-otopilot-ve-ozellikleri/&name=[TR] Pixhawk Otopilot ve Özellikleri&description=&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;br&gt;        Uzun bir aradan sonra tekrar bir yazı hazırladım. Aslında bu yazıya çok önceden başlamıştım fakat devamını getirmemiştim şimdi tamamlayabildim ancak :). Evet bu yazımda Pixhawk isimli otopilottan bahsetmek istiyorum. Pixhawk açık kaynak kodlu Stm32 tabanlı yazılım tabanı olarak da ArduPilota dayanan bir otopilot modülü. Burada bir yorumda bulunmam gerekirse, açık kaynaklı otopilotlar arasında en başarılısı bana göre. Bu teorimi kanıtlamak için de hemen özelliklerine geçmek istiyorum.  &lt;/p&gt;"><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> Share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+        
+        <footer id="footer">
+  <div class="footer-left">
+    Copyright &copy; 2023 Mehmet Ozan Ünal
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/categories/">Category</a></li>
+         
+          <li><a href="/archives/">Blog</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="https://github.com/mozanunal">Projects</a></li>
+         
+          <li><a href="https://scholar.google.com/citations?user=u_HbXUUAAAAJ&hl=en">Publications</a></li>
+         
+          <li><a href="/search/">Search</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+    </div>
+    <!-- styles -->
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+<link rel="stylesheet" href="/lib/justified-gallery/css/justifiedGallery.min.css">
+
+    <!-- jquery -->
+<script src="/lib/jquery/jquery.min.js"></script>
+<script src="/lib/justified-gallery/js/jquery.justifiedGallery.min.js"></script>
+<script src="/js/main.js"></script>
+<!-- search -->
+
+<!-- Google Analytics -->
+
+    <script type="text/javascript">
+        (function(i,s,o,g,r,a,m) {i['GoogleAnalyticsObject']=r;i[r]=i[r]||function() {
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-60655125-2', 'auto');
+        ga('send', 'pageview');
+    </script>
+
+<!-- Baidu Analytics -->
+
+<!-- Disqus Comments -->
+
+    <script type="text/javascript">
+        var disqus_shortname = 'mozanunal-com';
+
+        (function(){
+            var dsq = document.createElement('script');
+            dsq.type = 'text/javascript';
+            dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        }());
+    </script>
+
+
+</body>
+</html>

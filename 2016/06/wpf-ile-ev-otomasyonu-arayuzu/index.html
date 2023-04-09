@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang=en>
+<head><meta name="generator" content="Hexo 3.8.0">
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="Herkese Merhabalar,Bu yazımda .NET platformunun bir teknolojisi olan WPF kullanarak ev otomasyonu kontrol paneli yapmayı anlatacağım. Yaptığım bu projenin başlıca işlevi şudur; 5 farklı sensörden bulu">
+<meta name="keywords" content="Arduino,C#,ESP8266,Meteoroloji İstasyonu">
+<meta property="og:type" content="article">
+<meta property="og:title" content="[TR] WPF ile Ev Otomasyonu Arayüzü">
+<meta property="og:url" content="https://mozanunal.com/2016/06/wpf-ile-ev-otomasyonu-arayuzu/index.html">
+<meta property="og:site_name" content="Mehmet Ozan Ünal">
+<meta property="og:description" content="Herkese Merhabalar,Bu yazımda .NET platformunun bir teknolojisi olan WPF kullanarak ev otomasyonu kontrol paneli yapmayı anlatacağım. Yaptığım bu projenin başlıca işlevi şudur; 5 farklı sensörden bulu">
+<meta property="og:locale" content="en">
+<meta property="og:image" content="https://lh4.googleusercontent.com/h6zopN9hrG0cvtWZ8ey-28mNdDhZrpygcpb3Zr1bLuQA9-fV8eQoTozPqC23fJpte95Cny8ZAzwx2Lj3-rNNJ3oQwUcqN57ZjgtYj9uxJPosYuixJUOekPfV54urzY_s_3r01_rDu-4">
+<meta property="og:image" content="https://lh3.googleusercontent.com/PpiOeVShgIbRUDmpnN0Qrsyrr-4W3A3x1EzGwCO3gvibmuxxu6V9gBzDyPvW2H6VD8qBzmbdKHjnxmZTbzx-URJfFWXkY6WYUCXlfNcqkYGopwOqBA8qmwrdUPYQah6viX7FIkIrwAo">
+<meta property="og:image" content="https://lh4.googleusercontent.com/pbsrsoYFGuK86B23anEGLtWCxV27I1yGcnZzKxpvH52rDN1f9rHsIxOFAQR0P_2-09sgQHscSDsn-jMFysfDcZGpNteTRWIIfk8mni8etO1UvhhlHdhFN1hxJZIq__5Ja-V5PK_kMkg">
+<meta property="og:image" content="https://lh4.googleusercontent.com/xSrNzUUQvtxuvZtZ-Jh102etI-Fdqe1EXa4FKyAOEQ4TXPrzchkO0_r4ki0Vg2EKRBC1sGGHMK36amIMXa8u3JwZ8itz7Bjn2Wvt6RB7dd7sCrTh1z1nCDAjEF-KY6EakzLxvC2fJlo">
+<meta property="og:image" content="https://lh6.googleusercontent.com/JhbIL0qIxwERIsRAtc9VSf5-HcJYsmAq795A-l3cYFJxVHfOuDMIObbhIFMw_NznFL_4ZAKJP_8klmhLgX_5mI7YtI7SU8tn1K1u0ovbsz4Grj7WhEAG8gy4CXyj9jqyH0UlBp-hwoc">
+<meta property="og:image" content="https://lh5.googleusercontent.com/CNuGy1C6bTUTGmk8c3ew-F2SPe9lZT0CyP1KbHlUxAIMGUZA2Qne0K0GQteZrdRtGljd4DCWXOGARLIChgI0GiHRxjNVGVpp6S0SxI9aEWxdiFHmPa-KOGPpRulzJqOoV6CG-08A-QQ">
+<meta property="og:image" content="https://lh5.googleusercontent.com/Jy6Wk3TC8pXVGTd_f1zrrFYg6p6KkbKJf9fUSr-htN6sWGDfrCgVrcHq3kJrJlgMqw0Lw0ItDa312-cF-USOSWx-wwhVx9txeSuk9kfcEo0CFxd5K2Q43FSQIA2i1l8X2n9jebVKPPE">
+<meta property="og:image" content="https://lh5.googleusercontent.com/7Ie_uNQlZ2tD2GgkWOHqZJC_ag3ZJspPP1g82FVnHd7RXXVK2TRQb9dunTgLdOt3cJyQGb6Tc3DZhJe626krlIuAEsMi4OABCSCdHaaLx-QJ3SU4Q14u7rsv6I0qWBVUwRlTyt77K2M">
+<meta property="og:image" content="https://lh4.googleusercontent.com/ya3aFG0C1zF7V1kxDw_Di_FJJT0f1_UF-mxYduzzfKgBgxEW5rFdqJTqSAoF8paI3_XlGeJhShgJUjQH27DPJ2kRKp1HRiNcIis5T3dHq7B5_TMpdJ8DllH3ogsyWyNUrnAqOK9n-rk">
+<meta property="og:image" content="https://lh4.googleusercontent.com/-cyZehDdFgkA5GAlMYuMCpBSoJt3asIJK9fa3PBRoW6022qtOtVqGj4U9YGP5A8IlEXPXTmbbj_2eopPWKRY_TvSLyutdoK5TNepbB5T00HzWxUnNfyHnfo3MkVPCn27tcauKNi2qrA">
+<meta property="og:updated_time" content="2023-04-09T21:02:57.223Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="[TR] WPF ile Ev Otomasyonu Arayüzü">
+<meta name="twitter:description" content="Herkese Merhabalar,Bu yazımda .NET platformunun bir teknolojisi olan WPF kullanarak ev otomasyonu kontrol paneli yapmayı anlatacağım. Yaptığım bu projenin başlıca işlevi şudur; 5 farklı sensörden bulu">
+<meta name="twitter:image" content="https://lh4.googleusercontent.com/h6zopN9hrG0cvtWZ8ey-28mNdDhZrpygcpb3Zr1bLuQA9-fV8eQoTozPqC23fJpte95Cny8ZAzwx2Lj3-rNNJ3oQwUcqN57ZjgtYj9uxJPosYuixJUOekPfV54urzY_s_3r01_rDu-4">
+    
+    
+        
+          
+              <link rel="shortcut icon" href="/images/favicon.ico">
+          
+        
+        
+          
+            <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
+          
+        
+        
+          
+            <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+          
+        
+    
+    <!-- title -->
+    <title>[TR] WPF ile Ev Otomasyonu Arayüzü</title>
+    <!-- styles -->
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- persian styles -->
+    
+      <link rel="stylesheet" href="/css/rtl.css">
+    
+    <!-- rss -->
+    
+    
+      <link rel="alternate" href="/atom" title="Mehmet Ozan Ünal" type="application/atom+xml">
+    
+    <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/7ecf5c9db13693c2c7062ad3f/0e72f59463de1883a2a166735.js");</script>
+</head>
+
+<body class="max-width mx-auto px3 ltr">    
+      <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/categories/">Category</a></li>
+         
+          <li><a href="/archives/">Blog</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="https://github.com/mozanunal">Projects</a></li>
+         
+          <li><a href="https://scholar.google.com/citations?user=u_HbXUUAAAAJ&hl=en">Publications</a></li>
+         
+          <li><a href="/search/">Search</a></li>
+        
+      </ul>
+    </span>
+    <br>
+    <span id="actions">
+      <ul>
+        
+        <li><a class="icon" href="/2016/09/pixhawk-otopilot-ve-ozellikleri/"><i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i></a></li>
+        
+        
+        <li><a class="icon" href="/2016/06/passface-face-recognition-using-opencv/"><i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
+        
+        <li><a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
+        <li><a class="icon" href="#"><i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br>
+    <div id="share" style="display: none">
+      <ul>
+  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=https://mozanunal.com/2016/06/wpf-ile-ev-otomasyonu-arayuzu/"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=https://mozanunal.com/2016/06/wpf-ile-ev-otomasyonu-arayuzu/&text=[TR] WPF ile Ev Otomasyonu Arayüzü"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=https://mozanunal.com/2016/06/wpf-ile-ev-otomasyonu-arayuzu/&title=[TR] WPF ile Ev Otomasyonu Arayüzü"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https://mozanunal.com/2016/06/wpf-ile-ev-otomasyonu-arayuzu/&is_video=false&description=[TR] WPF ile Ev Otomasyonu Arayüzü"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=[TR] WPF ile Ev Otomasyonu Arayüzü&body=Check out this article: https://mozanunal.com/2016/06/wpf-ile-ev-otomasyonu-arayuzu/"><i class="fas fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=https://mozanunal.com/2016/06/wpf-ile-ev-otomasyonu-arayuzu/&title=[TR] WPF ile Ev Otomasyonu Arayüzü"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=https://mozanunal.com/2016/06/wpf-ile-ev-otomasyonu-arayuzu/&title=[TR] WPF ile Ev Otomasyonu Arayüzü"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=https://mozanunal.com/2016/06/wpf-ile-ev-otomasyonu-arayuzu/&title=[TR] WPF ile Ev Otomasyonu Arayüzü"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=https://mozanunal.com/2016/06/wpf-ile-ev-otomasyonu-arayuzu/&title=[TR] WPF ile Ev Otomasyonu Arayüzü"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=https://mozanunal.com/2016/06/wpf-ile-ev-otomasyonu-arayuzu/&name=[TR] WPF ile Ev Otomasyonu Arayüzü&description="><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+    <div id="toc">
+      
+    </div>
+  </span>
+</div>
+
+    
+    <div class="content index py4">
+        
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    
+    <h1 class="posttitle" itemprop="name headline">
+        [TR] WPF ile Ev Otomasyonu Arayüzü
+    </h1>
+
+
+
+    <div class="meta">
+      <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span itemprop="name">Mehmet Ozan Ünal</span>
+      </span>
+      
+    <div class="postdate">
+      
+        <time datetime="2016-06-09T01:45:00.000Z" itemprop="datePublished">2016-06-09</time>
+        
+      
+    </div>
+
+
+      
+    <div class="article-category">
+        <i class="fas fa-archive"></i>
+        <a class="category-link" href="/categories/Electronics/">Electronics</a> › <a class="category-link" href="/categories/Electronics/IoT/">IoT</a>
+    </div>
+
+
+    </div>
+  </header>
+  
+
+  <div class="content" itemprop="articleBody">
+    <p><strong>Herkese Merhabalar,</strong><br>Bu yazımda .NET platformunun bir teknolojisi olan WPF kullanarak ev otomasyonu kontrol paneli yapmayı anlatacağım. Yaptığım bu projenin başlıca işlevi şudur; 5 farklı sensörden bulunulan ortamın sıcaklığı, nemi, zehirli gaz durumu, ortamda canlı olup olmadığı, ortamda yağış olup olmadığı Arduino yardımıyla alınır ve bu sensor dataları C# arayüzünde gösterilir. Eğer onay kutusu işaretlenirse istenmeyen bir durumda (gaz sızıntısı, eve hırsız girmesi, yağmur için kurulabilir.) program uyarı olarak girilen adrese bir adet mail gönderir.<a href="https://drive.google.com/file/d/0B5j__Lyt9ozbVTRIOVFVcVVWX3c/view?usp=sharing" target="_blank" rel="noopener">Projenin Arduino ve C# kaynak kodunu buradan indirebilirsiniz.</a>  </p>
+<p><img src="https://lh4.googleusercontent.com/h6zopN9hrG0cvtWZ8ey-28mNdDhZrpygcpb3Zr1bLuQA9-fV8eQoTozPqC23fJpte95Cny8ZAzwx2Lj3-rNNJ3oQwUcqN57ZjgtYj9uxJPosYuixJUOekPfV54urzY_s_3r01_rDu-4" alt></p>
+<p><strong>Malzemeler</strong></p>
+<ul>
+<li>Arduino</li>
+<li>DHT11 Nem ve Sıcaklık Sensörü</li>
+<li>MQ135 Gaz Sensörü</li>
+<li>Yağış Sensörü</li>
+<li>Röle Modulü</li>
+<li>PIR Sensörü</li>
+<li>ESP8266 Wifi Modulü</li>
+</ul>
+<p><strong>Kutu</strong><br><img src="https://lh3.googleusercontent.com/PpiOeVShgIbRUDmpnN0Qrsyrr-4W3A3x1EzGwCO3gvibmuxxu6V9gBzDyPvW2H6VD8qBzmbdKHjnxmZTbzx-URJfFWXkY6WYUCXlfNcqkYGopwOqBA8qmwrdUPYQah6viX7FIkIrwAo" alt></p>
+<p><img src="https://lh4.googleusercontent.com/pbsrsoYFGuK86B23anEGLtWCxV27I1yGcnZzKxpvH52rDN1f9rHsIxOFAQR0P_2-09sgQHscSDsn-jMFysfDcZGpNteTRWIIfk8mni8etO1UvhhlHdhFN1hxJZIq__5Ja-V5PK_kMkg" alt></p>
+<p><strong>Arduino Kodu</strong></p>
+<p><img src="https://lh4.googleusercontent.com/xSrNzUUQvtxuvZtZ-Jh102etI-Fdqe1EXa4FKyAOEQ4TXPrzchkO0_r4ki0Vg2EKRBC1sGGHMK36amIMXa8u3JwZ8itz7Bjn2Wvt6RB7dd7sCrTh1z1nCDAjEF-KY6EakzLxvC2fJlo" alt></p>
+<p><strong>Alternatif Arduino Kodu ESP8266 Kullanarak</strong></p>
+<p><img src="https://lh6.googleusercontent.com/JhbIL0qIxwERIsRAtc9VSf5-HcJYsmAq795A-l3cYFJxVHfOuDMIObbhIFMw_NznFL_4ZAKJP_8klmhLgX_5mI7YtI7SU8tn1K1u0ovbsz4Grj7WhEAG8gy4CXyj9jqyH0UlBp-hwoc" alt></p>
+<p><strong>WPF Application</strong></p>
+<p><img src="https://lh5.googleusercontent.com/CNuGy1C6bTUTGmk8c3ew-F2SPe9lZT0CyP1KbHlUxAIMGUZA2Qne0K0GQteZrdRtGljd4DCWXOGARLIChgI0GiHRxjNVGVpp6S0SxI9aEWxdiFHmPa-KOGPpRulzJqOoV6CG-08A-QQ" alt></p>
+<p><strong>Serialden Data Almayla Alakalı Fonksiyonlar</strong></p>
+<p><img src="https://lh5.googleusercontent.com/Jy6Wk3TC8pXVGTd_f1zrrFYg6p6KkbKJf9fUSr-htN6sWGDfrCgVrcHq3kJrJlgMqw0Lw0ItDa312-cF-USOSWx-wwhVx9txeSuk9kfcEo0CFxd5K2Q43FSQIA2i1l8X2n9jebVKPPE" alt></p>
+<p><strong>Gelen Datayı Parçalara Ayırıp Görüntüleme Fonksiyonları</strong></p>
+<p><img src="https://lh5.googleusercontent.com/7Ie_uNQlZ2tD2GgkWOHqZJC_ag3ZJspPP1g82FVnHd7RXXVK2TRQb9dunTgLdOt3cJyQGb6Tc3DZhJe626krlIuAEsMi4OABCSCdHaaLx-QJ3SU4Q14u7rsv6I0qWBVUwRlTyt77K2M" alt></p>
+<p><strong>Mail Gönderme Fonksiyonları</strong></p>
+<p><img src="https://lh4.googleusercontent.com/ya3aFG0C1zF7V1kxDw_Di_FJJT0f1_UF-mxYduzzfKgBgxEW5rFdqJTqSAoF8paI3_XlGeJhShgJUjQH27DPJ2kRKp1HRiNcIis5T3dHq7B5_TMpdJ8DllH3ogsyWyNUrnAqOK9n-rk" alt></p>
+<p><strong>Mail Gönderince Arayüzün Durumu</strong></p>
+<p><img src="https://lh4.googleusercontent.com/-cyZehDdFgkA5GAlMYuMCpBSoJt3asIJK9fa3PBRoW6022qtOtVqGj4U9YGP5A8IlEXPXTmbbj_2eopPWKRY_TvSLyutdoK5TNepbB5T00HzWxUnNfyHnfo3MkVPCn27tcauKNi2qrA" alt></p>
+
+  </div>
+</article>
+
+    <div class="blog-post-comments">
+        <div id="disqus_thread">
+            <noscript>Please enable JavaScript to view the comments.</noscript>
+        </div>
+    </div>
+
+
+
+        
+          <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/categories/">Category</a></li>
+         
+          <li><a href="/archives/">Blog</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="https://github.com/mozanunal">Projects</a></li>
+         
+          <li><a href="https://scholar.google.com/citations?user=u_HbXUUAAAAJ&hl=en">Publications</a></li>
+         
+          <li><a href="/search/">Search</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      
+    </div>
+
+    <div id="share-footer" style="display: none">
+      <ul>
+  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=https://mozanunal.com/2016/06/wpf-ile-ev-otomasyonu-arayuzu/"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=https://mozanunal.com/2016/06/wpf-ile-ev-otomasyonu-arayuzu/&text=[TR] WPF ile Ev Otomasyonu Arayüzü"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=https://mozanunal.com/2016/06/wpf-ile-ev-otomasyonu-arayuzu/&title=[TR] WPF ile Ev Otomasyonu Arayüzü"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https://mozanunal.com/2016/06/wpf-ile-ev-otomasyonu-arayuzu/&is_video=false&description=[TR] WPF ile Ev Otomasyonu Arayüzü"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=[TR] WPF ile Ev Otomasyonu Arayüzü&body=Check out this article: https://mozanunal.com/2016/06/wpf-ile-ev-otomasyonu-arayuzu/"><i class="fas fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=https://mozanunal.com/2016/06/wpf-ile-ev-otomasyonu-arayuzu/&title=[TR] WPF ile Ev Otomasyonu Arayüzü"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=https://mozanunal.com/2016/06/wpf-ile-ev-otomasyonu-arayuzu/&title=[TR] WPF ile Ev Otomasyonu Arayüzü"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=https://mozanunal.com/2016/06/wpf-ile-ev-otomasyonu-arayuzu/&title=[TR] WPF ile Ev Otomasyonu Arayüzü"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=https://mozanunal.com/2016/06/wpf-ile-ev-otomasyonu-arayuzu/&title=[TR] WPF ile Ev Otomasyonu Arayüzü"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=https://mozanunal.com/2016/06/wpf-ile-ev-otomasyonu-arayuzu/&name=[TR] WPF ile Ev Otomasyonu Arayüzü&description="><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> Share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+        
+        <footer id="footer">
+  <div class="footer-left">
+    Copyright &copy; 2023 Mehmet Ozan Ünal
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/categories/">Category</a></li>
+         
+          <li><a href="/archives/">Blog</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="https://github.com/mozanunal">Projects</a></li>
+         
+          <li><a href="https://scholar.google.com/citations?user=u_HbXUUAAAAJ&hl=en">Publications</a></li>
+         
+          <li><a href="/search/">Search</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+    </div>
+    <!-- styles -->
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+<link rel="stylesheet" href="/lib/justified-gallery/css/justifiedGallery.min.css">
+
+    <!-- jquery -->
+<script src="/lib/jquery/jquery.min.js"></script>
+<script src="/lib/justified-gallery/js/jquery.justifiedGallery.min.js"></script>
+<script src="/js/main.js"></script>
+<!-- search -->
+
+<!-- Google Analytics -->
+
+    <script type="text/javascript">
+        (function(i,s,o,g,r,a,m) {i['GoogleAnalyticsObject']=r;i[r]=i[r]||function() {
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-60655125-2', 'auto');
+        ga('send', 'pageview');
+    </script>
+
+<!-- Baidu Analytics -->
+
+<!-- Disqus Comments -->
+
+    <script type="text/javascript">
+        var disqus_shortname = 'mozanunal-com';
+
+        (function(){
+            var dsq = document.createElement('script');
+            dsq.type = 'text/javascript';
+            dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        }());
+    </script>
+
+
+</body>
+</html>

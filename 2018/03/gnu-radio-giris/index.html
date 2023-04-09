@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang=en>
+<head><meta name="generator" content="Hexo 3.8.0">
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="Herkese Merhabalar,Gnu Radio son zamanlarda keşfetmekten en çok keyif aldığım program olabilir. İlk defa duyanlar için özetlemem gerekirse içerisinde sinyal işleme ve sayısal haberleşme araçları topla">
+<meta name="keywords" content="gnu-radio,gnu-radio-giris,sinyal-isleme">
+<meta property="og:type" content="article">
+<meta property="og:title" content="[TR] GNU Radio Giriş">
+<meta property="og:url" content="https://mozanunal.com/2018/03/gnu-radio-giris/index.html">
+<meta property="og:site_name" content="Mehmet Ozan Ünal">
+<meta property="og:description" content="Herkese Merhabalar,Gnu Radio son zamanlarda keşfetmekten en çok keyif aldığım program olabilir. İlk defa duyanlar için özetlemem gerekirse içerisinde sinyal işleme ve sayısal haberleşme araçları topla">
+<meta property="og:locale" content="en">
+<meta property="og:image" content="https://aaronscher.com/GNU_Radio_Companion_Collection/GNU_Radio_Companion_Collection_docs/audio_modem_schematic.png">
+<meta property="og:image" content="https://mozanunal.com/images/1517772567740.png">
+<meta property="og:image" content="https://mozanunal.com/images/1517773308579.png">
+<meta property="og:image" content="https://mozanunal.com/images/1517772973730.png">
+<meta property="og:image" content="https://mozanunal.com/images/1517772927542.png">
+<meta property="og:image" content="https://mozanunal.com/images/1517773749576.png">
+<meta property="og:image" content="https://mozanunal.com/images/1517773705131.png">
+<meta property="og:image" content="https://mozanunal.com/images/1517773984048.png">
+<meta property="og:updated_time" content="2023-01-18T11:16:34.255Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="[TR] GNU Radio Giriş">
+<meta name="twitter:description" content="Herkese Merhabalar,Gnu Radio son zamanlarda keşfetmekten en çok keyif aldığım program olabilir. İlk defa duyanlar için özetlemem gerekirse içerisinde sinyal işleme ve sayısal haberleşme araçları topla">
+<meta name="twitter:image" content="https://aaronscher.com/GNU_Radio_Companion_Collection/GNU_Radio_Companion_Collection_docs/audio_modem_schematic.png">
+    
+    
+        
+          
+              <link rel="shortcut icon" href="/images/favicon.ico">
+          
+        
+        
+          
+            <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
+          
+        
+        
+          
+            <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+          
+        
+    
+    <!-- title -->
+    <title>[TR] GNU Radio Giriş</title>
+    <!-- styles -->
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- persian styles -->
+    
+      <link rel="stylesheet" href="/css/rtl.css">
+    
+    <!-- rss -->
+    
+    
+      <link rel="alternate" href="/atom" title="Mehmet Ozan Ünal" type="application/atom+xml">
+    
+    <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/7ecf5c9db13693c2c7062ad3f/0e72f59463de1883a2a166735.js");</script>
+</head>
+
+<body class="max-width mx-auto px3 ltr">    
+      <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/categories/">Category</a></li>
+         
+          <li><a href="/archives/">Blog</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="https://github.com/mozanunal">Projects</a></li>
+         
+          <li><a href="https://scholar.google.com/citations?user=u_HbXUUAAAAJ&hl=en">Publications</a></li>
+         
+          <li><a href="/search/">Search</a></li>
+        
+      </ul>
+    </span>
+    <br>
+    <span id="actions">
+      <ul>
+        
+        <li><a class="icon" href="/2018/04/hash-code-2018/"><i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i></a></li>
+        
+        
+        <li><a class="icon" href="/2018/03/micropython-1516117222475/"><i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
+        
+        <li><a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
+        <li><a class="icon" href="#"><i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br>
+    <div id="share" style="display: none">
+      <ul>
+  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=https://mozanunal.com/2018/03/gnu-radio-giris/"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=https://mozanunal.com/2018/03/gnu-radio-giris/&text=[TR] GNU Radio Giriş"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=https://mozanunal.com/2018/03/gnu-radio-giris/&title=[TR] GNU Radio Giriş"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https://mozanunal.com/2018/03/gnu-radio-giris/&is_video=false&description=[TR] GNU Radio Giriş"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=[TR] GNU Radio Giriş&body=Check out this article: https://mozanunal.com/2018/03/gnu-radio-giris/"><i class="fas fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=https://mozanunal.com/2018/03/gnu-radio-giris/&title=[TR] GNU Radio Giriş"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=https://mozanunal.com/2018/03/gnu-radio-giris/&title=[TR] GNU Radio Giriş"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=https://mozanunal.com/2018/03/gnu-radio-giris/&title=[TR] GNU Radio Giriş"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=https://mozanunal.com/2018/03/gnu-radio-giris/&title=[TR] GNU Radio Giriş"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=https://mozanunal.com/2018/03/gnu-radio-giris/&name=[TR] GNU Radio Giriş&description="><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+    <div id="toc">
+      <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#Basit-Sinyal-Inceleme"><span class="toc-number">1.</span> <span class="toc-text">Basit Sinyal İnceleme</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Iki-Sinyali-Toplama"><span class="toc-number">2.</span> <span class="toc-text">İki Sinyali Toplama</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Gurultu-ekleme"><span class="toc-number">3.</span> <span class="toc-text">Gürültü ekleme</span></a></li></ol>
+    </div>
+  </span>
+</div>
+
+    
+    <div class="content index py4">
+        
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    
+    <h1 class="posttitle" itemprop="name headline">
+        [TR] GNU Radio Giriş
+    </h1>
+
+
+
+    <div class="meta">
+      <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span itemprop="name">Mehmet Ozan Ünal</span>
+      </span>
+      
+    <div class="postdate">
+      
+        <time datetime="2018-03-19T16:04:39.000Z" itemprop="datePublished">2018-03-19</time>
+        
+      
+    </div>
+
+
+      
+    <div class="article-category">
+        <i class="fas fa-archive"></i>
+        <a class="category-link" href="/categories/Signal-Processing/">Signal Processing</a> › <a class="category-link" href="/categories/Signal-Processing/DSP/">DSP</a>
+    </div>
+
+
+    </div>
+  </header>
+  
+
+  <div class="content" itemprop="articleBody">
+    <p><strong>Herkese Merhabalar,</strong><br>Gnu Radio son zamanlarda keşfetmekten en çok keyif aldığım program olabilir. İlk defa duyanlar için özetlemem gerekirse içerisinde sinyal işleme ve sayısal haberleşme araçları toplanmış görsel programlama editörü. Sinyal dosyadan veya daha önce bahsettiğim SDR isimli cihazlardan alınabiliyor. Alınan sinyaller sayısız çeşitlilikte araçlar ile işlenebiliyor. Coding, modulasyon, demodulasyon gibi haberleşme işlemlerini sürükle bıraklarla kolayca uygulamak mümkün.</p>
+<p><img src="https://aaronscher.com/GNU_Radio_Companion_Collection/GNU_Radio_Companion_Collection_docs/audio_modem_schematic.png" alt="gnu-radio-logo"></p>
+<p>Programı kurduktan sonra bizi ilk olarak aşağıdaki gibi bir ekran karşılıyor. Sağ tarafta program içerisindeki araçları görebilirsiniz. Hepsi aslında belli işlevi olan bir kutu. Sürükleyerek yapmak istediğimiz operasyonu gerçekliyoruz.</p>
+<p><img src="/images/1517772567740.png" alt="GNU Radio"></p>
+<p>Paketlere bir göz atmak isterseniz; üst başlıkları aşağıdaki resimdeki gibi sıralanmış. Gördüğünüz gibi çeşitlilik inanılmaz geniş. Qt veya wx ile görselleme pencereleri de tasarlamak mümkün. Filter dizayn araçlarını da program içinde bulunduruyor. Yazının devamında çok basit bir şeyler yaparak nasıl çalıştığını göstermek istiyorum.</p>
+<p><img src="/images/1517773308579.png" alt="Packages"></p>
+<h3 id="Basit-Sinyal-Inceleme"><a href="#Basit-Sinyal-Inceleme" class="headerlink" title="Basit Sinyal İnceleme"></a>Basit Sinyal İnceleme</h3><p>Aşağıdaki örnekte sinyal kaynağından 1 khz cosünüs dalga ürettim çıkışını da direk olarak zaman domaini analiz için kullanılan qt görselleştirme aracına bağladım.</p>
+<p><img src="/images/1517772973730.png" alt="Cosine"></p>
+<p>Bu programı çalıştırdığımızda aşağıdaki gibi bir çıktı alıyoruz.</p>
+<p><img src="/images/1517772927542.png" alt="Qt Time domain output"></p>
+<h3 id="Iki-Sinyali-Toplama"><a href="#Iki-Sinyali-Toplama" class="headerlink" title="İki Sinyali Toplama"></a>İki Sinyali Toplama</h3><p>Bu sefer çok basit olarak 2 farklı sinyal toplandı ve çıkış çoklanarak zaman ve frekans domaininde analiz edildi. Örnekleme frekansını değiştirdiğim için sinyaldeki kırılmaları zaman domaini grafiğinde görebilirsiniz.</p>
+<p><img src="/images/1517773749576.png" alt="2 signal"></p>
+<p>Beklediğimiz üzere 1khz ve 1.8 khz frekanslarında tepeleri görebilirsiniz. Elimizdeki sinyali kolayca inceleyebiliyoruz.</p>
+<p><img src="/images/1517773705131.png" alt="Qt Time and Frequency"></p>
+<h3 id="Gurultu-ekleme"><a href="#Gurultu-ekleme" class="headerlink" title="Gürültü ekleme"></a>Gürültü ekleme</h3><p>Son olarak sinyalimize biraz da gürültü ekledim. Giriş frekanslarımızdaki tepeler biraz daha gürüştünün içinde kayboldu ama yine de filtrelenebilecek durumda. Filtreleri de bu yazıda anlatmak isterdim ama onlara da girersem GNU Radio giriş yazısı biraz konu dışına çıkmış olacağımı düşünüyorum. Bu program üzerinde bir şeyler geliştirip bu yazı serisini devam ettirmek istiyorum. Görüşmek üzere…</p>
+<p><img src="/images/1517773984048.png" alt="Gürültü"></p>
+
+  </div>
+</article>
+
+    <div class="blog-post-comments">
+        <div id="disqus_thread">
+            <noscript>Please enable JavaScript to view the comments.</noscript>
+        </div>
+    </div>
+
+
+
+        
+          <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/categories/">Category</a></li>
+         
+          <li><a href="/archives/">Blog</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="https://github.com/mozanunal">Projects</a></li>
+         
+          <li><a href="https://scholar.google.com/citations?user=u_HbXUUAAAAJ&hl=en">Publications</a></li>
+         
+          <li><a href="/search/">Search</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#Basit-Sinyal-Inceleme"><span class="toc-number">1.</span> <span class="toc-text">Basit Sinyal İnceleme</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Iki-Sinyali-Toplama"><span class="toc-number">2.</span> <span class="toc-text">İki Sinyali Toplama</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Gurultu-ekleme"><span class="toc-number">3.</span> <span class="toc-text">Gürültü ekleme</span></a></li></ol>
+    </div>
+
+    <div id="share-footer" style="display: none">
+      <ul>
+  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=https://mozanunal.com/2018/03/gnu-radio-giris/"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=https://mozanunal.com/2018/03/gnu-radio-giris/&text=[TR] GNU Radio Giriş"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=https://mozanunal.com/2018/03/gnu-radio-giris/&title=[TR] GNU Radio Giriş"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https://mozanunal.com/2018/03/gnu-radio-giris/&is_video=false&description=[TR] GNU Radio Giriş"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=[TR] GNU Radio Giriş&body=Check out this article: https://mozanunal.com/2018/03/gnu-radio-giris/"><i class="fas fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=https://mozanunal.com/2018/03/gnu-radio-giris/&title=[TR] GNU Radio Giriş"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=https://mozanunal.com/2018/03/gnu-radio-giris/&title=[TR] GNU Radio Giriş"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=https://mozanunal.com/2018/03/gnu-radio-giris/&title=[TR] GNU Radio Giriş"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=https://mozanunal.com/2018/03/gnu-radio-giris/&title=[TR] GNU Radio Giriş"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=https://mozanunal.com/2018/03/gnu-radio-giris/&name=[TR] GNU Radio Giriş&description="><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> Share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+        
+        <footer id="footer">
+  <div class="footer-left">
+    Copyright &copy; 2023 Mehmet Ozan Ünal
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/categories/">Category</a></li>
+         
+          <li><a href="/archives/">Blog</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="https://github.com/mozanunal">Projects</a></li>
+         
+          <li><a href="https://scholar.google.com/citations?user=u_HbXUUAAAAJ&hl=en">Publications</a></li>
+         
+          <li><a href="/search/">Search</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+    </div>
+    <!-- styles -->
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+<link rel="stylesheet" href="/lib/justified-gallery/css/justifiedGallery.min.css">
+
+    <!-- jquery -->
+<script src="/lib/jquery/jquery.min.js"></script>
+<script src="/lib/justified-gallery/js/jquery.justifiedGallery.min.js"></script>
+<script src="/js/main.js"></script>
+<!-- search -->
+
+<!-- Google Analytics -->
+
+    <script type="text/javascript">
+        (function(i,s,o,g,r,a,m) {i['GoogleAnalyticsObject']=r;i[r]=i[r]||function() {
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-60655125-2', 'auto');
+        ga('send', 'pageview');
+    </script>
+
+<!-- Baidu Analytics -->
+
+<!-- Disqus Comments -->
+
+    <script type="text/javascript">
+        var disqus_shortname = 'mozanunal-com';
+
+        (function(){
+            var dsq = document.createElement('script');
+            dsq.type = 'text/javascript';
+            dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        }());
+    </script>
+
+
+</body>
+</html>

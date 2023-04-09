@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang=en>
+<head><meta name="generator" content="Hexo 3.8.0">
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="Hello Everyone, I want to share our solution for Google Hash Code 2020. It is the code repo of team titanium-white for Google Hash Code 2020 Online Qualification Round. We have writen our code in Pyth">
+<meta name="keywords" content="Hash Code,Hash Code 2020,Google Hash Code">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hash Code 2020">
+<meta property="og:url" content="https://mozanunal.com/2020/03/hash-code-2020/index.html">
+<meta property="og:site_name" content="Mehmet Ozan Ünal">
+<meta property="og:description" content="Hello Everyone, I want to share our solution for Google Hash Code 2020. It is the code repo of team titanium-white for Google Hash Code 2020 Online Qualification Round. We have writen our code in Pyth">
+<meta property="og:locale" content="en">
+<meta property="og:image" content="https://raw.githubusercontent.com/mozanunal/hashcode2020/master/docs/result.jpeg">
+<meta property="og:image" content="https://raw.githubusercontent.com/mozanunal/hashcode2020/master/docs/score.jpeg">
+<meta property="og:updated_time" content="2023-01-18T11:16:34.255Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Hash Code 2020">
+<meta name="twitter:description" content="Hello Everyone, I want to share our solution for Google Hash Code 2020. It is the code repo of team titanium-white for Google Hash Code 2020 Online Qualification Round. We have writen our code in Pyth">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/mozanunal/hashcode2020/master/docs/result.jpeg">
+    
+    
+        
+          
+              <link rel="shortcut icon" href="/images/favicon.ico">
+          
+        
+        
+          
+            <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
+          
+        
+        
+          
+            <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+          
+        
+    
+    <!-- title -->
+    <title>Hash Code 2020</title>
+    <!-- styles -->
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- persian styles -->
+    
+      <link rel="stylesheet" href="/css/rtl.css">
+    
+    <!-- rss -->
+    
+    
+      <link rel="alternate" href="/atom" title="Mehmet Ozan Ünal" type="application/atom+xml">
+    
+    <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/7ecf5c9db13693c2c7062ad3f/0e72f59463de1883a2a166735.js");</script>
+</head>
+
+<body class="max-width mx-auto px3 ltr">    
+      <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/categories/">Category</a></li>
+         
+          <li><a href="/archives/">Blog</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="https://github.com/mozanunal">Projects</a></li>
+         
+          <li><a href="https://scholar.google.com/citations?user=u_HbXUUAAAAJ&hl=en">Publications</a></li>
+         
+          <li><a href="/search/">Search</a></li>
+        
+      </ul>
+    </span>
+    <br>
+    <span id="actions">
+      <ul>
+        
+        <li><a class="icon" href="/2020/04/mrg/"><i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i></a></li>
+        
+        
+        <li><a class="icon" href="/2020/03/coolest-c-trick/"><i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
+        
+        <li><a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
+        <li><a class="icon" href="#"><i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br>
+    <div id="share" style="display: none">
+      <ul>
+  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=https://mozanunal.com/2020/03/hash-code-2020/"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=https://mozanunal.com/2020/03/hash-code-2020/&text=Hash Code 2020"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=https://mozanunal.com/2020/03/hash-code-2020/&title=Hash Code 2020"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https://mozanunal.com/2020/03/hash-code-2020/&is_video=false&description=Hash Code 2020"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Hash Code 2020&body=Check out this article: https://mozanunal.com/2020/03/hash-code-2020/"><i class="fas fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=https://mozanunal.com/2020/03/hash-code-2020/&title=Hash Code 2020"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=https://mozanunal.com/2020/03/hash-code-2020/&title=Hash Code 2020"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=https://mozanunal.com/2020/03/hash-code-2020/&title=Hash Code 2020"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=https://mozanunal.com/2020/03/hash-code-2020/&title=Hash Code 2020"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=https://mozanunal.com/2020/03/hash-code-2020/&name=Hash Code 2020&description="><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+    <div id="toc">
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Code"><span class="toc-number">1.</span> <span class="toc-text">Code</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Results"><span class="toc-number">2.</span> <span class="toc-text">Results</span></a></li></ol>
+    </div>
+  </span>
+</div>
+
+    
+    <div class="content index py4">
+        
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    
+    <h1 class="posttitle" itemprop="name headline">
+        Hash Code 2020
+    </h1>
+
+
+
+    <div class="meta">
+      <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span itemprop="name">Mehmet Ozan Ünal</span>
+      </span>
+      
+    <div class="postdate">
+      
+        <time datetime="2020-03-31T20:00:12.000Z" itemprop="datePublished">2020-03-31</time>
+        
+      
+    </div>
+
+
+      
+    <div class="article-category">
+        <i class="fas fa-archive"></i>
+        <a class="category-link" href="/categories/Coding/">Coding</a>
+    </div>
+
+
+    </div>
+  </header>
+  
+
+  <div class="content" itemprop="articleBody">
+    <p><strong>Hello Everyone,</strong></p>
+<p>I want to share our solution for Google Hash Code 2020. It is the code repo of team titanium-white for Google Hash Code 2020 Online Qualification Round. We have writen our code in Python.</p>
+<p><a href="https://github.com/mozanunal/hashcode2020" target="_blank" rel="noopener">Code can be reached from here</a></p>
+<h2 id="Code"><a href="#Code" class="headerlink" title="Code"></a>Code</h2><p>Basically, the problem class is the backbone of the system. </p>
+<ul>
+<li>It handles the inputs and outputs with functions <code>__init__</code> and <code>dump</code>.</li>
+<li>It read the input files and creates objects according to that. I think the one of the thing we did well is this <code>__init__</code> function.<br>It create all the objects like books, libraries even if book2score dictionary. </li>
+<li>It also handles the solving opeartion. It iterate trough the days and get max predicted score from every library available. When the libraries calculating the max pred scores, they get the current state as input. Therefore their predictionsa are more accurate. After the library is selected the state is updated such as day, already scanned books and state of the selected library.</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># main.py</span></span><br><span class="line"><span class="keyword">from</span> library <span class="keyword">import</span> Library, Book</span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Problem</span><span class="params">(object)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self, filename)</span>:</span></span><br><span class="line">        print(<span class="string">'file--'</span>, filename)</span><br><span class="line">        f = open(filename)</span><br><span class="line">        l = f.readline().split(<span class="string">' '</span>)</span><br><span class="line">        self.filename = filename</span><br><span class="line">        self.nBooks, self.nLibs, self.nDays = int(l[<span class="number">0</span>]), int(l[<span class="number">1</span>]), int(l[<span class="number">2</span>])</span><br><span class="line">        self.books = [ Book(i,int(score)) <span class="keyword">for</span> i, score <span class="keyword">in</span> enumerate(f.readline().split(<span class="string">' '</span>))]</span><br><span class="line">        sumb = <span class="number">0</span></span><br><span class="line">        <span class="keyword">for</span> b <span class="keyword">in</span> self.books:</span><br><span class="line">            sumb += b.score</span><br><span class="line">        print( sumb/<span class="number">1000000</span> )</span><br><span class="line">        self.book2Score = &#123;book.id: int(book.score) <span class="keyword">for</span> book <span class="keyword">in</span> self.books&#125;</span><br><span class="line">        self.libs = []</span><br><span class="line">        <span class="keyword">for</span> libId <span class="keyword">in</span> range(self.nLibs):</span><br><span class="line">            l = [int(i) <span class="keyword">for</span> i <span class="keyword">in</span> f.readline().split(<span class="string">' '</span>)]</span><br><span class="line">            nBooks, nSign, nScan = l[<span class="number">0</span>], l[<span class="number">1</span>], l[<span class="number">2</span>]</span><br><span class="line">            books = [ Book(int(i), int(self.book2Score[int(i)])) <span class="keyword">for</span> i <span class="keyword">in</span> f.readline().split(<span class="string">' '</span>) ] </span><br><span class="line">            lib = Library(libId, nBooks, nSign, nScan, books)</span><br><span class="line">            self.libs.append(lib) </span><br><span class="line">        self.pri()</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">solve</span><span class="params">(self)</span>:</span></span><br><span class="line">        t = <span class="number">0</span></span><br><span class="line">        solution = []</span><br><span class="line">        readBookSet  = set()</span><br><span class="line">        <span class="keyword">while</span> t &lt; self.nDays:</span><br><span class="line">            print(<span class="string">'-----'</span>, t)</span><br><span class="line">            scoreList = []</span><br><span class="line">            readBookList = []</span><br><span class="line">            <span class="keyword">for</span> lib <span class="keyword">in</span> self.libs:</span><br><span class="line">                <span class="keyword">if</span> lib.registered == <span class="literal">False</span>:</span><br><span class="line">                    score, curBookList = lib.predMaxScore(self.nDays - t, readBookSet)</span><br><span class="line">                    scoreList.append( score )</span><br><span class="line">                    readBookList.append( curBookList )</span><br><span class="line">                <span class="keyword">else</span>:</span><br><span class="line">                    scoreList.append(<span class="number">0</span>)</span><br><span class="line">                    readBookList.append( [ ] )</span><br><span class="line">            <span class="keyword">if</span> len(scoreList) == <span class="number">0</span>:</span><br><span class="line">                <span class="keyword">break</span></span><br><span class="line">            <span class="keyword">if</span> max(scoreList) == <span class="number">0</span>:</span><br><span class="line">                <span class="keyword">break</span></span><br><span class="line">            libIndex = scoreList.index(max(scoreList))</span><br><span class="line">            self.libs[libIndex].registeredDay = t</span><br><span class="line">            self.libs[libIndex].registered = <span class="literal">True</span></span><br><span class="line">            self.libs[libIndex].solBooks = readBookList[libIndex]</span><br><span class="line">            readBookSet = readBookSet.union(readBookList[libIndex])</span><br><span class="line">            solution.append(self.libs[libIndex])</span><br><span class="line">            t += self.libs[libIndex].nSign</span><br><span class="line">        print([(lib.id, lib.nSign, lib.registeredDay) <span class="keyword">for</span> lib <span class="keyword">in</span> solution])</span><br><span class="line">        <span class="keyword">return</span> solution</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">dump</span><span class="params">(self, solution)</span>:</span></span><br><span class="line">        f = open(self.filename.replace(<span class="string">'data/'</span>, <span class="string">'out/'</span>), <span class="string">'w+'</span>)</span><br><span class="line">        f.write(<span class="string">'&#123;&#125;\n'</span>.format(len(solution)))</span><br><span class="line">        <span class="keyword">for</span> lib <span class="keyword">in</span> solution:</span><br><span class="line">            books = lib.solBooks</span><br><span class="line">            f.write(<span class="string">'&#123;&#125; &#123;&#125;\n'</span>.format(</span><br><span class="line">                lib.id, len(books)</span><br><span class="line">            ))</span><br><span class="line">            s = <span class="string">""</span></span><br><span class="line">            <span class="keyword">for</span> book <span class="keyword">in</span> books:</span><br><span class="line">                s+= str(book) + <span class="string">' '</span></span><br><span class="line">            s+=<span class="string">'\n'</span></span><br><span class="line">            f.write(s)</span><br><span class="line">        f.close()</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">pri</span><span class="params">(self)</span>:</span></span><br><span class="line">        print(<span class="string">'------'</span>)</span><br><span class="line">        print(self.nBooks, self.nLibs, self.nDays)</span><br><span class="line">        <span class="comment">#print(self.libs)</span></span><br><span class="line">        print(<span class="string">'------'</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">"__main__"</span>:</span><br><span class="line">    p = Problem(<span class="string">'data/a.txt'</span>)</span><br><span class="line">    solution = p.solve()</span><br><span class="line">    p.dump(solution)</span><br></pre></td></tr></table></figure>
+<p>The Second critical class is <code>Library</code> class. The vital function in our implementation is predMaxScore. We are doing calculating this with<br><code>total book score / (sign day*sign day)</code>. Because, during our experiments, we saw that the sign days length is quite important especially for some datasets. Total book score is simply if in that day the library is chosen, how much of the books can be scanned until the end of total days. Of course these books are selecting according to their scores and they should be not scanned before.</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># library.py</span></span><br><span class="line"><span class="keyword">import</span> operator</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Library</span><span class="params">(object)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self, idx, nBook, nSign, nScan, books)</span>:</span></span><br><span class="line">        self.id = idx</span><br><span class="line">        self.nBook = nBook</span><br><span class="line">        self.nSign = nSign</span><br><span class="line">        self.nScan = nScan</span><br><span class="line">        self.books = list(reversed(sorted(books, key=operator.attrgetter(<span class="string">'score'</span>)) ))</span><br><span class="line">        self.tempBooks = self.books[:]</span><br><span class="line">        self.registered = <span class="literal">False</span></span><br><span class="line">        self.registeredDay = <span class="literal">None</span></span><br><span class="line">        self.solBooks = []</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">predMaxScore</span><span class="params">(self, nDays, readBookSet)</span>:</span></span><br><span class="line">        restDays  = nDays - self.nSign</span><br><span class="line">        <span class="keyword">if</span> restDays &lt; <span class="number">0</span>:</span><br><span class="line">            <span class="keyword">return</span> <span class="number">0</span>, []</span><br><span class="line">        unReadBooks = set([book.id <span class="keyword">for</span> book <span class="keyword">in</span> self.tempBooks]) - readBookSet</span><br><span class="line">        newBooks = []</span><br><span class="line">        <span class="keyword">for</span> book <span class="keyword">in</span> self.tempBooks:</span><br><span class="line">            <span class="keyword">if</span> book.id <span class="keyword">in</span> unReadBooks:</span><br><span class="line">                newBooks.append(book)</span><br><span class="line">        self.tempBooks = newBooks</span><br><span class="line">        sumScore = <span class="number">0</span> </span><br><span class="line">        bookCap = restDays*self.nScan</span><br><span class="line">        readBooks= self.tempBooks[:bookCap]</span><br><span class="line">        readBooksId=[book.id <span class="keyword">for</span> book <span class="keyword">in</span> self.tempBooks[:bookCap]]</span><br><span class="line">        <span class="keyword">for</span> book <span class="keyword">in</span> readBooks:</span><br><span class="line">            sumScore += book.score</span><br><span class="line">        <span class="keyword">return</span> float(sumScore)/(float(self.nSign)**<span class="number">2</span>), readBooksId</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__repr__</span><span class="params">(self)</span>:</span></span><br><span class="line">        <span class="keyword">return</span> <span class="string">"Lib[&#123;&#125;:&#123;&#125;:&#123;&#125;--&#123;&#125;]"</span>.format(self.nBook, self.nSign, self.nScan, self.books)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Book</span><span class="params">(object)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self, id, score, scanned=False)</span>:</span></span><br><span class="line">        self.id = id</span><br><span class="line">        self.score = score</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__repr__</span><span class="params">(self)</span>:</span></span><br><span class="line">        <span class="keyword">return</span> <span class="string">"Book[&#123;&#125;:&#123;&#125;]"</span>.format(self.id, self.score)</span><br></pre></td></tr></table></figure>
+<h2 id="Results"><a href="#Results" class="headerlink" title="Results"></a>Results</h2><p>With these scores, we were 231th in the World and 7th in Turkey.</p>
+<p><img src="https://raw.githubusercontent.com/mozanunal/hashcode2020/master/docs/result.jpeg" alt></p>
+<p><img src="https://raw.githubusercontent.com/mozanunal/hashcode2020/master/docs/score.jpeg" alt></p>
+<p>You can check out my posts about Hash Code 2017 and Hash Code 2018:</p>
+<p><a href="https://mozanunal.com/2017/07/Google-Hash-Code-2017/">https://mozanunal.com/2017/07/Google-Hash-Code-2017/</a><br><a href="https://mozanunal.com/2018/04/hash-code-2018/">https://mozanunal.com/2018/04/hash-code-2018/</a></p>
+<p>Hopefully, see you again. Thank you!</p>
+
+  </div>
+</article>
+
+    <div class="blog-post-comments">
+        <div id="disqus_thread">
+            <noscript>Please enable JavaScript to view the comments.</noscript>
+        </div>
+    </div>
+
+
+
+        
+          <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/categories/">Category</a></li>
+         
+          <li><a href="/archives/">Blog</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="https://github.com/mozanunal">Projects</a></li>
+         
+          <li><a href="https://scholar.google.com/citations?user=u_HbXUUAAAAJ&hl=en">Publications</a></li>
+         
+          <li><a href="/search/">Search</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Code"><span class="toc-number">1.</span> <span class="toc-text">Code</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Results"><span class="toc-number">2.</span> <span class="toc-text">Results</span></a></li></ol>
+    </div>
+
+    <div id="share-footer" style="display: none">
+      <ul>
+  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=https://mozanunal.com/2020/03/hash-code-2020/"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=https://mozanunal.com/2020/03/hash-code-2020/&text=Hash Code 2020"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=https://mozanunal.com/2020/03/hash-code-2020/&title=Hash Code 2020"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https://mozanunal.com/2020/03/hash-code-2020/&is_video=false&description=Hash Code 2020"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Hash Code 2020&body=Check out this article: https://mozanunal.com/2020/03/hash-code-2020/"><i class="fas fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=https://mozanunal.com/2020/03/hash-code-2020/&title=Hash Code 2020"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=https://mozanunal.com/2020/03/hash-code-2020/&title=Hash Code 2020"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=https://mozanunal.com/2020/03/hash-code-2020/&title=Hash Code 2020"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=https://mozanunal.com/2020/03/hash-code-2020/&title=Hash Code 2020"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=https://mozanunal.com/2020/03/hash-code-2020/&name=Hash Code 2020&description="><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> Share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+        
+        <footer id="footer">
+  <div class="footer-left">
+    Copyright &copy; 2023 Mehmet Ozan Ünal
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/categories/">Category</a></li>
+         
+          <li><a href="/archives/">Blog</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="https://github.com/mozanunal">Projects</a></li>
+         
+          <li><a href="https://scholar.google.com/citations?user=u_HbXUUAAAAJ&hl=en">Publications</a></li>
+         
+          <li><a href="/search/">Search</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+    </div>
+    <!-- styles -->
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+<link rel="stylesheet" href="/lib/justified-gallery/css/justifiedGallery.min.css">
+
+    <!-- jquery -->
+<script src="/lib/jquery/jquery.min.js"></script>
+<script src="/lib/justified-gallery/js/jquery.justifiedGallery.min.js"></script>
+<script src="/js/main.js"></script>
+<!-- search -->
+
+<!-- Google Analytics -->
+
+    <script type="text/javascript">
+        (function(i,s,o,g,r,a,m) {i['GoogleAnalyticsObject']=r;i[r]=i[r]||function() {
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-60655125-2', 'auto');
+        ga('send', 'pageview');
+    </script>
+
+<!-- Baidu Analytics -->
+
+<!-- Disqus Comments -->
+
+    <script type="text/javascript">
+        var disqus_shortname = 'mozanunal-com';
+
+        (function(){
+            var dsq = document.createElement('script');
+            dsq.type = 'text/javascript';
+            dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        }());
+    </script>
+
+
+</body>
+</html>

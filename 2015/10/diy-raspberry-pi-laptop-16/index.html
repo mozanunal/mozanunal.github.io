@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang=en>
+<head><meta name="generator" content="Hexo 3.8.0">
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="Hi,In this article, DIY Raspberry Pi Laptop project will be told. I needed a low cost mini computer with high mobility but then i decided to make my own and i start to this project. Most of the parts(">
+<meta name="keywords" content="Electronics,Arduino,Raspberry Pi Laptop">
+<meta property="og:type" content="article">
+<meta property="og:title" content="DIY Raspberry Pi Laptop">
+<meta property="og:url" content="https://mozanunal.com/2015/10/diy-raspberry-pi-laptop-16/index.html">
+<meta property="og:site_name" content="Mehmet Ozan Ünal">
+<meta property="og:description" content="Hi,In this article, DIY Raspberry Pi Laptop project will be told. I needed a low cost mini computer with high mobility but then i decided to make my own and i start to this project. Most of the parts(">
+<meta property="og:locale" content="en">
+<meta property="og:image" content="https://1.bp.blogspot.com/-32Tefe5cxxQ/VfQJVHRLDKI/AAAAAAAANq0/a35hSfl8s2s/s320/IMG_20150912_123948.jpg">
+<meta property="og:image" content="https://3.bp.blogspot.com/-R-gtqqx3Djg/VfQJihkQa7I/AAAAAAAANq8/mHuuXTTYp6E/s320/IMG_20150903_182823.jpg">
+<meta property="og:image" content="https://4.bp.blogspot.com/-eOD2oDFN4k0/VfQJio0SdVI/AAAAAAAANq8/dVaLjcnmCL8/s320/IMG_20150903_182908.jpg">
+<meta property="og:image" content="https://4.bp.blogspot.com/-Dj_kyMUipJA/VfQJisZseoI/AAAAAAAANq8/ezXxDCD8tiQ/s320/IMG_20150903_182848.jpg">
+<meta property="og:image" content="https://2.bp.blogspot.com/-R_Bkw6xovPI/VfQJii4lFYI/AAAAAAAANq8/3FCPmQY9NWY/s320/IMG_20150903_182839.jpg">
+<meta property="og:image" content="https://2.bp.blogspot.com/-p6EjFBHxp4Y/VfQJiuVULbI/AAAAAAAANq8/aqs710Kl1tk/s320/IMG_20150903_183244.jpg">
+<meta property="og:image" content="https://4.bp.blogspot.com/-tZLXEaO1KC4/VfQJij-sRoI/AAAAAAAANq8/JG4ZKDFvsEw/s320/IMG_20150903_182920.jpg">
+<meta property="og:image" content="https://1.bp.blogspot.com/-9wDllKFQutM/VfQJ3vOIxCI/AAAAAAAANrI/yaYmJnTDzFw/s320/IMG_20150905_154157.jpg">
+<meta property="og:image" content="https://3.bp.blogspot.com/-g_HaMldZKjk/VfQJ3mr9_CI/AAAAAAAANrI/Jjh-nEyWZeU/s320/IMG_20150905_154221.jpg">
+<meta property="og:image" content="https://3.bp.blogspot.com/-msg88QCwyF4/VfQJ3s3i8gI/AAAAAAAANrI/aNO1QZDK1AI/s320/IMG_20150905_154226.jpg">
+<meta property="og:image" content="https://2.bp.blogspot.com/-RGHWRLZG8gA/VfQJ3gpcIfI/AAAAAAAANrI/E9lSwrjrou0/s320/IMG_20150905_154130.jpg">
+<meta property="og:image" content="https://4.bp.blogspot.com/-oalw0-hcRMc/VfQJijQ-iuI/AAAAAAAANq8/H3XnqNDjGA8/s320/IMG_20150903_182925.jpg">
+<meta property="og:image" content="https://2.bp.blogspot.com/-c_n2wcFEuxQ/VfQJitzS-UI/AAAAAAAANq8/_LjKDyw19kk/s320/IMG_20150903_191838.jpg">
+<meta property="og:image" content="https://2.bp.blogspot.com/-Th1IbnE5h2I/VfQJinRCGBI/AAAAAAAANq8/oy-ghJWil64/s320/IMG_20150903_191822.jpg">
+<meta property="og:image" content="https://3.bp.blogspot.com/-FRkCT2jAJkc/VfQJiqAwp-I/AAAAAAAANq8/K7c820dHfAI/s320/IMG_20150903_210341.jpg">
+<meta property="og:image" content="https://1.bp.blogspot.com/-1tK3scEPnvU/VfSgRI7g3iI/AAAAAAAANsc/53lyOWL06Mw/s640/Ads%25C4%25B1z.png">
+<meta property="og:image" content="https://3.bp.blogspot.com/-cslv2cYUhl8/VfSZGWLqkaI/AAAAAAAANrk/IzQ6NK09qUI/s320/IMG_20150905_160718.jpg">
+<meta property="og:image" content="https://3.bp.blogspot.com/-1VydvjB2m7Q/VfSZGV7uigI/AAAAAAAANrk/ZlKe8DV5nOY/s320/IMG_20150905_160723.jpg">
+<meta property="og:image" content="https://4.bp.blogspot.com/-pdmyBWnOYR0/VfSZnZNHjCI/AAAAAAAANrs/ldIdg21VJ1U/s320/IMG_20150905_170026.jpg">
+<meta property="og:image" content="https://3.bp.blogspot.com/-htG5Yg5TazM/VfSZndG2o6I/AAAAAAAANrs/UmdcCb3MCaQ/s320/IMG_20150905_170752.jpg">
+<meta property="og:image" content="https://3.bp.blogspot.com/--NS9jrgOfwE/VfSZ_Xh732I/AAAAAAAANr0/c2yLn1K2Nuk/s320/IMG_20150905_173301.jpg">
+<meta property="og:image" content="https://3.bp.blogspot.com/-L0VPF3u_3HU/VfSZ_fEesbI/AAAAAAAANr0/UFa3UWLMi6s/s320/IMG_20150905_173306.jpg">
+<meta property="og:image" content="https://3.bp.blogspot.com/-RLGVDbsgUjQ/VfSZ_UxPzHI/AAAAAAAANr0/mgYQy0GLSWg/s320/IMG_20150905_173907.jpg">
+<meta property="og:image" content="https://4.bp.blogspot.com/-6gc8iD7vDho/VfSZ_SHQ4wI/AAAAAAAANr0/XtQHC_bfmbA/s320/IMG_20150905_174217.jpg">
+<meta property="og:image" content="https://1.bp.blogspot.com/-KrLyRibAROY/VfSabevI9UI/AAAAAAAANr8/1uDccccHYEA/s320/IMG_20150905_203031.jpg">
+<meta property="og:image" content="https://2.bp.blogspot.com/-4g8wKTH8ShU/VfSalyEDxEI/AAAAAAAANsE/MVC0UzPXDTg/s320/IMG_20150905_203440.jpg">
+<meta property="og:image" content="https://4.bp.blogspot.com/-YU7jGETjX2A/VfSal67aPHI/AAAAAAAANsE/vMBswIO0ZFQ/s320/IMG_20150905_203448.jpg">
+<meta property="og:image" content="https://2.bp.blogspot.com/-d6Hyw1DwAEE/VfQJ3g-qoQI/AAAAAAAANrI/aTlXitkxoUs/s320/IMG_20150905_202620.jpg">
+<meta property="og:image" content="https://1.bp.blogspot.com/-0YOtUekB4Vw/VfQJ3m6AWQI/AAAAAAAANrI/UpFTA7Cs3rU/s320/IMG_20150905_202613.jpg">
+<meta property="og:image" content="https://2.bp.blogspot.com/-TYUwwOrm73Y/VfSal_FUv-I/AAAAAAAANsE/_xgsyb5eDBw/s320/IMG_20150905_212955.jpg">
+<meta property="og:image" content="https://4.bp.blogspot.com/-zQHkyyvM6O8/VfSal273H9I/AAAAAAAANsE/cjv8g5jeP3w/s320/IMG_20150905_215736.jpg">
+<meta property="og:image" content="https://3.bp.blogspot.com/-YPH9cF1jXc8/VfSalx1sAqI/AAAAAAAANsE/bUFxP_kAS8k/s320/IMG_20150905_215748.jpg">
+<meta property="og:image" content="https://1.bp.blogspot.com/-qiYLoIREcuc/VfSalww8SII/AAAAAAAANsE/TagV3Kd_4Nk/s320/IMG_20150905_220610.jpg">
+<meta property="og:image" content="https://2.bp.blogspot.com/-1nmIjtyloP4/VfSal0E7VzI/AAAAAAAANsE/sDd_0fD3qjA/s320/IMG_20150905_223543.jpg">
+<meta property="og:image" content="https://3.bp.blogspot.com/-DAwICwi5_9U/VfSbqGJD1zI/AAAAAAAANsQ/XzcW3kOLchs/s320/IMG_20150905_230332.jpg">
+<meta property="og:image" content="https://2.bp.blogspot.com/-hZ219ork5PQ/VfSbqHodVCI/AAAAAAAANsQ/VcLX9sj2M8g/s320/IMG_20150905_230427.jpg">
+<meta property="og:image" content="https://1.bp.blogspot.com/-eHS1O3Gv9J4/VfStPek73TI/AAAAAAAANss/l3KWJll-FqU/s200/IMG_20150905_163749.jpg">
+<meta property="og:image" content="https://3.bp.blogspot.com/-L7zec48A_lc/VfStPbIqcuI/AAAAAAAANss/Sp8wze46UJU/s200/IMG_20150905_163747.jpg">
+<meta property="og:image" content="https://2.bp.blogspot.com/-Tk2vzJQi_A0/VfSbqP49GlI/AAAAAAAANsQ/W7W9NZ8H9Ok/s400/IMG_20150912_124002.jpg">
+<meta property="og:updated_time" content="2023-01-18T11:16:34.253Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="DIY Raspberry Pi Laptop">
+<meta name="twitter:description" content="Hi,In this article, DIY Raspberry Pi Laptop project will be told. I needed a low cost mini computer with high mobility but then i decided to make my own and i start to this project. Most of the parts(">
+<meta name="twitter:image" content="https://1.bp.blogspot.com/-32Tefe5cxxQ/VfQJVHRLDKI/AAAAAAAANq0/a35hSfl8s2s/s320/IMG_20150912_123948.jpg">
+    
+    
+        
+          
+              <link rel="shortcut icon" href="/images/favicon.ico">
+          
+        
+        
+          
+            <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
+          
+        
+        
+          
+            <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+          
+        
+    
+    <!-- title -->
+    <title>DIY Raspberry Pi Laptop</title>
+    <!-- styles -->
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- persian styles -->
+    
+      <link rel="stylesheet" href="/css/rtl.css">
+    
+    <!-- rss -->
+    
+    
+      <link rel="alternate" href="/atom" title="Mehmet Ozan Ünal" type="application/atom+xml">
+    
+    <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/7ecf5c9db13693c2c7062ad3f/0e72f59463de1883a2a166735.js");</script>
+</head>
+
+<body class="max-width mx-auto px3 ltr">    
+      <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/categories/">Category</a></li>
+         
+          <li><a href="/archives/">Blog</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="https://github.com/mozanunal">Projects</a></li>
+         
+          <li><a href="https://scholar.google.com/citations?user=u_HbXUUAAAAJ&hl=en">Publications</a></li>
+         
+          <li><a href="/search/">Search</a></li>
+        
+      </ul>
+    </span>
+    <br>
+    <span id="actions">
+      <ul>
+        
+        <li><a class="icon" href="/2015/11/8051-entegresi-ile-assembly/"><i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i></a></li>
+        
+        
+        <li><a class="icon" href="/2015/09/esp8266-ile-kisisel-meteoroloji/"><i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
+        
+        <li><a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
+        <li><a class="icon" href="#"><i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br>
+    <div id="share" style="display: none">
+      <ul>
+  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=https://mozanunal.com/2015/10/diy-raspberry-pi-laptop-16/"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=https://mozanunal.com/2015/10/diy-raspberry-pi-laptop-16/&text=DIY Raspberry Pi Laptop"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=https://mozanunal.com/2015/10/diy-raspberry-pi-laptop-16/&title=DIY Raspberry Pi Laptop"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https://mozanunal.com/2015/10/diy-raspberry-pi-laptop-16/&is_video=false&description=DIY Raspberry Pi Laptop"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=DIY Raspberry Pi Laptop&body=Check out this article: https://mozanunal.com/2015/10/diy-raspberry-pi-laptop-16/"><i class="fas fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=https://mozanunal.com/2015/10/diy-raspberry-pi-laptop-16/&title=DIY Raspberry Pi Laptop"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=https://mozanunal.com/2015/10/diy-raspberry-pi-laptop-16/&title=DIY Raspberry Pi Laptop"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=https://mozanunal.com/2015/10/diy-raspberry-pi-laptop-16/&title=DIY Raspberry Pi Laptop"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=https://mozanunal.com/2015/10/diy-raspberry-pi-laptop-16/&title=DIY Raspberry Pi Laptop"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=https://mozanunal.com/2015/10/diy-raspberry-pi-laptop-16/&name=DIY Raspberry Pi Laptop&description=&lt;p&gt;&lt;strong&gt;Hi,&lt;/strong&gt;&lt;br&gt;In this article, DIY Raspberry Pi Laptop project will be told. I needed a low cost mini computer with high mobility but then i decided to make my own and i start to this project. Most of the parts(expect Raspberry pi 2 and its some of materials) were bought from china and the total cost of this project is 110$. There is video of this project under this paragraph. You can watch this then you learn how i did this project step by step.  &lt;/p&gt;
+&lt;div style=&quot;text-align: center;&quot;&gt;&lt;iframe allowfullscreen class=&quot;YOUTUBE-iframe-video&quot; data-thumbnail-src=&quot;https://i.ytimg.com/vi/Ys97-3S9MQo/0.jpg&quot; frameborder=&quot;0&quot; height=&quot;266&quot; src=&quot;https://www.youtube.com/embed/Ys97-3S9MQo?feature=player_embedded&quot; width=&quot;320&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;
+
+&lt;div class=&quot;separator&quot; style=&quot;clear: both; text-align: center;&quot;&gt;&lt;a href=&quot;https://1.bp.blogspot.com/-32Tefe5cxxQ/VfQJVHRLDKI/AAAAAAAANq0/a35hSfl8s2s/s1600/IMG_20150912_123948.jpg&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;img src=&quot;https://1.bp.blogspot.com/-32Tefe5cxxQ/VfQJVHRLDKI/AAAAAAAANq0/a35hSfl8s2s/s320/IMG_20150912_123948.jpg&quot; alt&gt;&lt;/a&gt;&lt;/div&gt;"><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+    <div id="toc">
+      
+    </div>
+  </span>
+</div>
+
+    
+    <div class="content index py4">
+        
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    
+    <h1 class="posttitle" itemprop="name headline">
+        DIY Raspberry Pi Laptop
+    </h1>
+
+
+
+    <div class="meta">
+      <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span itemprop="name">Mehmet Ozan Ünal</span>
+      </span>
+      
+    <div class="postdate">
+      
+        <time datetime="2015-10-04T22:06:00.000Z" itemprop="datePublished">2015-10-05</time>
+        
+      
+    </div>
+
+
+      
+    <div class="article-category">
+        <i class="fas fa-archive"></i>
+        <a class="category-link" href="/categories/Electronics/">Electronics</a> › <a class="category-link" href="/categories/Electronics/Arduino/">Arduino</a>
+    </div>
+
+
+    </div>
+  </header>
+  
+
+  <div class="content" itemprop="articleBody">
+    <p><strong>Hi,</strong><br>In this article, DIY Raspberry Pi Laptop project will be told. I needed a low cost mini computer with high mobility but then i decided to make my own and i start to this project. Most of the parts(expect Raspberry pi 2 and its some of materials) were bought from china and the total cost of this project is 110$. There is video of this project under this paragraph. You can watch this then you learn how i did this project step by step.  </p>
+<div style="text-align: center;"><iframe allowfullscreen class="YOUTUBE-iframe-video" data-thumbnail-src="https://i.ytimg.com/vi/Ys97-3S9MQo/0.jpg" frameborder="0" height="266" src="https://www.youtube.com/embed/Ys97-3S9MQo?feature=player_embedded" width="320"></iframe></div>
+
+<div class="separator" style="clear: both; text-align: center;"><a href="https://1.bp.blogspot.com/-32Tefe5cxxQ/VfQJVHRLDKI/AAAAAAAANq0/a35hSfl8s2s/s1600/IMG_20150912_123948.jpg" target="_blank" rel="noopener"><img src="https://1.bp.blogspot.com/-32Tefe5cxxQ/VfQJVHRLDKI/AAAAAAAANq0/a35hSfl8s2s/s320/IMG_20150912_123948.jpg" alt></a></div>
+
+<a id="more"></a>  
+<p><strong>1. Raspberry Pi 2</strong><br>First, I want to start with Raspberry Pi 2. Raspberry pi is a mini computer that contains all the Pc compenents. Raspberry Pi 2 is the lastest version of it and it’s price is 35 $.<br><strong>2. Why Raspberry Pi Laptop?</strong><br>      Raspberry pi 2 is a great platform for developing software but it is hard to find screen and keyboard everywhere. It decreases the portability of Raspberry Pi. In addition, it has a lot of input-output ports like 4 USB ports, 1 HDMI port. Third reason is low power consumption of Raspberry. The total power consumption of my system is 7.8 watt. It drains 650 mA from 3s lipo battery.  </p>
+<p><strong>3. Materials and Cost</strong><br>Raspberry Pi 2                        35$<br>4 Gb SD Cart                           4$<br>N070ICG-LD1 LCD Screen     45$<br>HDMI Cable                             3$<br>Tablet Case with Keyboard         4$<br>USB WIFI Adapter                    5$<br>LM2596 Regulater                     2$<br>1500 Mah 3S Lipo Battery        10$<br>Mouse                                       2$<br>1 Meter Cable Cover.                 2$<br><strong>Total:                                    110$</strong>  </p>
+<div class="separator" style="clear: both; text-align: center;"><a href="https://3.bp.blogspot.com/-R-gtqqx3Djg/VfQJihkQa7I/AAAAAAAANq8/mHuuXTTYp6E/s1600/IMG_20150903_182823.jpg" target="_blank" rel="noopener"><img src="https://3.bp.blogspot.com/-R-gtqqx3Djg/VfQJihkQa7I/AAAAAAAANq8/mHuuXTTYp6E/s320/IMG_20150903_182823.jpg" alt></a></div>
+
+<div class="separator" style="clear: both; text-align: center;">Most of materials at the photo. I changed the battery after this photo. There are some of the materials below this photo.</div>
+
+<div class="separator" style="clear: both; text-align: center;"><a href="https://4.bp.blogspot.com/-eOD2oDFN4k0/VfQJio0SdVI/AAAAAAAANq8/dVaLjcnmCL8/s1600/IMG_20150903_182908.jpg" target="_blank" rel="noopener"><img src="https://4.bp.blogspot.com/-eOD2oDFN4k0/VfQJio0SdVI/AAAAAAAANq8/dVaLjcnmCL8/s320/IMG_20150903_182908.jpg" alt></a></div>
+
+<div class="separator" style="clear: both; text-align: center;"><span style="text-align: start;"><strong>N070ICG-LD1 LCD Screen</strong></span></div>
+
+<div class="separator" style="clear: both; text-align: center;">The price of the screen is 45$ and you can find screen at same size for 20$. I choice this screen because of its quality. </div>
+
+<div class="separator" style="clear: both; text-align: center;"><a href="https://4.bp.blogspot.com/-Dj_kyMUipJA/VfQJisZseoI/AAAAAAAANq8/ezXxDCD8tiQ/s1600/IMG_20150903_182848.jpg" target="_blank" rel="noopener"><img src="https://4.bp.blogspot.com/-Dj_kyMUipJA/VfQJisZseoI/AAAAAAAANq8/ezXxDCD8tiQ/s320/IMG_20150903_182848.jpg" alt></a></div>
+
+<div style="text-align: center;"><span style="text-align: start;"><strong>Raspberry Pi 2</strong> </span></div>
+
+<div class="separator" style="clear: both; text-align: center;"><a href="https://2.bp.blogspot.com/-R_Bkw6xovPI/VfQJii4lFYI/AAAAAAAANq8/3FCPmQY9NWY/s1600/IMG_20150903_182839.jpg" target="_blank" rel="noopener"><img src="https://2.bp.blogspot.com/-R_Bkw6xovPI/VfQJii4lFYI/AAAAAAAANq8/3FCPmQY9NWY/s320/IMG_20150903_182839.jpg" alt></a>    <a href="https://2.bp.blogspot.com/-p6EjFBHxp4Y/VfQJiuVULbI/AAAAAAAANq8/aqs710Kl1tk/s1600/IMG_20150903_183244.jpg" target="_blank" rel="noopener"><img src="https://2.bp.blogspot.com/-p6EjFBHxp4Y/VfQJiuVULbI/AAAAAAAANq8/aqs710Kl1tk/s320/IMG_20150903_183244.jpg" alt></a></div>
+
+<div class="separator" style="clear: both; text-align: center;"><span style="text-align: start;"><strong>Tablet Cover with Keyboard </strong>                      </span><strong>1 Meter Cable Cover</strong></div>
+
+<div class="separator" style="clear: both; text-align: center;">The main mechanic parts of the laptop. The box  build with this two.</div>
+
+<div class="separator" style="clear: both; text-align: center;"><a href="https://4.bp.blogspot.com/-tZLXEaO1KC4/VfQJij-sRoI/AAAAAAAANq8/JG4ZKDFvsEw/s1600/IMG_20150903_182920.jpg" target="_blank" rel="noopener"><img src="https://4.bp.blogspot.com/-tZLXEaO1KC4/VfQJij-sRoI/AAAAAAAANq8/JG4ZKDFvsEw/s320/IMG_20150903_182920.jpg" alt></a></div>
+
+<div class="separator" style="clear: both; text-align: center;"><span style="text-align: start;"><strong>USB WIFI Adapter </strong></span></div>
+
+<div class="separator" style="clear: both; text-align: center;">Its is for connecting to the internet</div>
+
+<div class="separator" style="clear: both; text-align: center;"><a href="https://2.bp.blogspot.com/-R_Bkw6xovPI/VfQJii4lFYI/AAAAAAAANq8/3FCPmQY9NWY/s1600/IMG_20150903_182839.jpg" target="_blank" rel="noopener">  
+</a></div>
+
+<div class="separator" style="clear: both; text-align: center;"><a href="https://1.bp.blogspot.com/-9wDllKFQutM/VfQJ3vOIxCI/AAAAAAAANrI/yaYmJnTDzFw/s1600/IMG_20150905_154157.jpg" target="_blank" rel="noopener"><img src="https://1.bp.blogspot.com/-9wDllKFQutM/VfQJ3vOIxCI/AAAAAAAANrI/yaYmJnTDzFw/s320/IMG_20150905_154157.jpg" alt></a><a href="https://3.bp.blogspot.com/-g_HaMldZKjk/VfQJ3mr9_CI/AAAAAAAANrI/Jjh-nEyWZeU/s1600/IMG_20150905_154221.jpg" target="_blank" rel="noopener"><img src="https://3.bp.blogspot.com/-g_HaMldZKjk/VfQJ3mr9_CI/AAAAAAAANrI/Jjh-nEyWZeU/s320/IMG_20150905_154221.jpg" alt></a></div>
+
+<div class="separator" style="clear: both; text-align: center;"><strong>Mini Usb Cable  </strong>                       <strong> LM2596 Regulator Module</strong></div>
+
+<div class="separator" style="clear: both; text-align: center;"><a href="https://3.bp.blogspot.com/-msg88QCwyF4/VfQJ3s3i8gI/AAAAAAAANrI/aNO1QZDK1AI/s1600/IMG_20150905_154226.jpg" target="_blank" rel="noopener"><img src="https://3.bp.blogspot.com/-msg88QCwyF4/VfQJ3s3i8gI/AAAAAAAANrI/aNO1QZDK1AI/s320/IMG_20150905_154226.jpg" alt></a><a href="https://2.bp.blogspot.com/-RGHWRLZG8gA/VfQJ3gpcIfI/AAAAAAAANrI/E9lSwrjrou0/s1600/IMG_20150905_154130.jpg" target="_blank" rel="noopener"><img src="https://2.bp.blogspot.com/-RGHWRLZG8gA/VfQJ3gpcIfI/AAAAAAAANrI/E9lSwrjrou0/s320/IMG_20150905_154130.jpg" alt></a></div>
+
+<div class="separator" style="clear: both; text-align: center;"><strong>LM2596 Regulator                </strong><span style="text-align: start;"><strong>1500 Mah 3S Lipo Battery</strong></span></div>
+
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><br><br><tbody><br><br><tr><br><br><td><a href="https://4.bp.blogspot.com/-oalw0-hcRMc/VfQJijQ-iuI/AAAAAAAANq8/H3XnqNDjGA8/s1600/IMG_20150903_182925.jpg" target="_blank" rel="noopener"><img src="https://4.bp.blogspot.com/-oalw0-hcRMc/VfQJijQ-iuI/AAAAAAAANq8/H3XnqNDjGA8/s320/IMG_20150903_182925.jpg" alt></a></td><br><br></tr><br><br><tr><br><br><td class="tr-caption" style="font-size: 12.8px;"><strong>Keyboard and earphones</strong></td><br><br></tr><br><br></tbody><br><br></table>
+
+<p><strong>4. Assembly Instructions</strong>  </p>
+<div class="separator" style="clear: both; text-align: center;"><strong>1. </strong>Before starting to the assembly. I build the circuit and test it.</div>
+
+<div class="separator" style="clear: both; text-align: center;"><a href="https://2.bp.blogspot.com/-c_n2wcFEuxQ/VfQJitzS-UI/AAAAAAAANq8/_LjKDyw19kk/s1600/IMG_20150903_191838.jpg" target="_blank" rel="noopener"><img src="https://2.bp.blogspot.com/-c_n2wcFEuxQ/VfQJitzS-UI/AAAAAAAANq8/_LjKDyw19kk/s320/IMG_20150903_191838.jpg" alt></a></div>
+
+<div class="separator" style="clear: both; text-align: center;"><a href="https://2.bp.blogspot.com/-Th1IbnE5h2I/VfQJinRCGBI/AAAAAAAANq8/oy-ghJWil64/s1600/IMG_20150903_191822.jpg" target="_blank" rel="noopener"><img src="https://2.bp.blogspot.com/-Th1IbnE5h2I/VfQJinRCGBI/AAAAAAAANq8/oy-ghJWil64/s320/IMG_20150903_191822.jpg" alt></a></div>
+
+<div class="separator" style="clear: both; text-align: center;"><a href="https://3.bp.blogspot.com/-FRkCT2jAJkc/VfQJiqAwp-I/AAAAAAAANq8/K7c820dHfAI/s1600/IMG_20150903_210341.jpg" target="_blank" rel="noopener"><img src="https://3.bp.blogspot.com/-FRkCT2jAJkc/VfQJiqAwp-I/AAAAAAAANq8/K7c820dHfAI/s320/IMG_20150903_210341.jpg" alt></a></div>
+
+<div class="separator" style="clear: both; text-align: center;">After different versions have been tried, finally the working prototype was reached. This is the schematic of the circuit. Basically, LCD screen works with 12 volt and the Raspberry Pi 2 works with 5 volt. Therefore the circuit needs a regulator. There is a switch to cut the power from the battery. When battery is charging, the battery must be switch off and the circuit can be used with DC in jack on the LCD Driver Board. It is a good solution for off battery times.</div>
+
+<div class="separator" style="clear: both; text-align: center;"><a href="https://1.bp.blogspot.com/-1tK3scEPnvU/VfSgRI7g3iI/AAAAAAAANsc/53lyOWL06Mw/s1600/Ads%25C4%25B1z.png" target="_blank" rel="noopener"><img src="https://1.bp.blogspot.com/-1tK3scEPnvU/VfSgRI7g3iI/AAAAAAAANsc/53lyOWL06Mw/s640/Ads%25C4%25B1z.png" alt></a></div>
+
+<div style="text-align: center;"><strong>2. </strong>At second level Raspberry Pi 2, LCD Driver Board and lipo battery is mounted. A piece of cable cover is placed buttom side of the box. In this way, cable of the keyboard is left in the cable cover.</div>
+
+<div class="separator" style="clear: both; text-align: center;"><a href="https://3.bp.blogspot.com/-cslv2cYUhl8/VfSZGWLqkaI/AAAAAAAANrk/IzQ6NK09qUI/s1600/IMG_20150905_160718.jpg" target="_blank" rel="noopener"><img src="https://3.bp.blogspot.com/-cslv2cYUhl8/VfSZGWLqkaI/AAAAAAAANrk/IzQ6NK09qUI/s320/IMG_20150905_160718.jpg" alt></a><a href="https://3.bp.blogspot.com/-1VydvjB2m7Q/VfSZGV7uigI/AAAAAAAANrk/ZlKe8DV5nOY/s1600/IMG_20150905_160723.jpg" target="_blank" rel="noopener"><img src="https://3.bp.blogspot.com/-1VydvjB2m7Q/VfSZGV7uigI/AAAAAAAANrk/ZlKe8DV5nOY/s320/IMG_20150905_160723.jpg" alt></a></div>
+
+<div class="separator" style="clear: both; text-align: center;"><a href="https://4.bp.blogspot.com/-pdmyBWnOYR0/VfSZnZNHjCI/AAAAAAAANrs/ldIdg21VJ1U/s1600/IMG_20150905_170026.jpg" target="_blank" rel="noopener"><img src="https://4.bp.blogspot.com/-pdmyBWnOYR0/VfSZnZNHjCI/AAAAAAAANrs/ldIdg21VJ1U/s320/IMG_20150905_170026.jpg" alt></a><a href="https://3.bp.blogspot.com/-htG5Yg5TazM/VfSZndG2o6I/AAAAAAAANrs/UmdcCb3MCaQ/s1600/IMG_20150905_170752.jpg" target="_blank" rel="noopener"><img src="https://3.bp.blogspot.com/-htG5Yg5TazM/VfSZndG2o6I/AAAAAAAANrs/UmdcCb3MCaQ/s320/IMG_20150905_170752.jpg" alt></a></div>
+
+<div class="separator" style="clear: both; text-align: center;"><a href="https://3.bp.blogspot.com/--NS9jrgOfwE/VfSZ_Xh732I/AAAAAAAANr0/c2yLn1K2Nuk/s1600/IMG_20150905_173301.jpg" target="_blank" rel="noopener"><img src="https://3.bp.blogspot.com/--NS9jrgOfwE/VfSZ_Xh732I/AAAAAAAANr0/c2yLn1K2Nuk/s320/IMG_20150905_173301.jpg" alt></a><a href="https://3.bp.blogspot.com/-L0VPF3u_3HU/VfSZ_fEesbI/AAAAAAAANr0/UFa3UWLMi6s/s1600/IMG_20150905_173306.jpg" target="_blank" rel="noopener"><img src="https://3.bp.blogspot.com/-L0VPF3u_3HU/VfSZ_fEesbI/AAAAAAAANr0/UFa3UWLMi6s/s320/IMG_20150905_173306.jpg" alt></a></div>
+
+<div class="separator" style="clear: both; text-align: center;"><strong>3.</strong> After the montage is completed, Some duck tape is added and the circuit was tried again.</div>
+
+<div class="separator" style="clear: both; text-align: center;"><a href="https://3.bp.blogspot.com/-RLGVDbsgUjQ/VfSZ_UxPzHI/AAAAAAAANr0/mgYQy0GLSWg/s1600/IMG_20150905_173907.jpg" target="_blank" rel="noopener"><img src="https://3.bp.blogspot.com/-RLGVDbsgUjQ/VfSZ_UxPzHI/AAAAAAAANr0/mgYQy0GLSWg/s320/IMG_20150905_173907.jpg" alt></a></div>
+
+<div class="separator" style="clear: both; text-align: center;"><a href="https://4.bp.blogspot.com/-6gc8iD7vDho/VfSZ_SHQ4wI/AAAAAAAANr0/XtQHC_bfmbA/s1600/IMG_20150905_174217.jpg" target="_blank" rel="noopener"><img src="https://4.bp.blogspot.com/-6gc8iD7vDho/VfSZ_SHQ4wI/AAAAAAAANr0/XtQHC_bfmbA/s320/IMG_20150905_174217.jpg" alt></a></div>
+
+<div class="separator" style="clear: both; text-align: center;"><strong>4. </strong>After I am assured the circuit works cleanly, it is continued with box. Cable cover is cut according to HDMI cable and the sockets.</div>
+
+<div class="separator" style="clear: both; text-align: center;"><a href="https://1.bp.blogspot.com/-KrLyRibAROY/VfSabevI9UI/AAAAAAAANr8/1uDccccHYEA/s1600/IMG_20150905_203031.jpg" target="_blank" rel="noopener"><img src="https://1.bp.blogspot.com/-KrLyRibAROY/VfSabevI9UI/AAAAAAAANr8/1uDccccHYEA/s320/IMG_20150905_203031.jpg" alt></a></div>
+
+<div class="separator" style="clear: both; text-align: center;"><strong>5. </strong>Heat sinks are placed on the SOC of the Raspberry Pi 2 and LCD driver board. I want to be sure about that will not have a overheat problem.</div>
+
+<div class="separator" style="clear: both; text-align: center;"><a href="https://2.bp.blogspot.com/-4g8wKTH8ShU/VfSalyEDxEI/AAAAAAAANsE/MVC0UzPXDTg/s1600/IMG_20150905_203440.jpg" target="_blank" rel="noopener"><img src="https://2.bp.blogspot.com/-4g8wKTH8ShU/VfSalyEDxEI/AAAAAAAANsE/MVC0UzPXDTg/s320/IMG_20150905_203440.jpg" alt></a><a href="https://4.bp.blogspot.com/-YU7jGETjX2A/VfSal67aPHI/AAAAAAAANsE/vMBswIO0ZFQ/s1600/IMG_20150905_203448.jpg" target="_blank" rel="noopener"><img src="https://4.bp.blogspot.com/-YU7jGETjX2A/VfSal67aPHI/AAAAAAAANsE/vMBswIO0ZFQ/s320/IMG_20150905_203448.jpg" alt></a></div>
+
+<div class="separator" style="clear: both; text-align: center;"><strong>5.</strong> These two pieces are used for extending the audio output. In this way, audio outputs can be reach from outside of the box easily.</div>
+
+<div class="separator" style="clear: both; text-align: center;"><a href="https://2.bp.blogspot.com/-d6Hyw1DwAEE/VfQJ3g-qoQI/AAAAAAAANrI/aTlXitkxoUs/s1600/IMG_20150905_202620.jpg" target="_blank" rel="noopener"><img src="https://2.bp.blogspot.com/-d6Hyw1DwAEE/VfQJ3g-qoQI/AAAAAAAANrI/aTlXitkxoUs/s320/IMG_20150905_202620.jpg" alt></a><a href="https://1.bp.blogspot.com/-0YOtUekB4Vw/VfQJ3m6AWQI/AAAAAAAANrI/UpFTA7Cs3rU/s1600/IMG_20150905_202613.jpg" target="_blank" rel="noopener"><img src="https://1.bp.blogspot.com/-0YOtUekB4Vw/VfQJ3m6AWQI/AAAAAAAANrI/UpFTA7Cs3rU/s320/IMG_20150905_202613.jpg" alt></a></div>
+
+<div class="separator" style="clear: both; text-align: center;"><strong>6.</strong> The cap of a box is cut according to screen cables and sockets. So we completed the most parts of the box of our laptop. </div>
+
+<div class="separator" style="clear: both; text-align: center;"><a href="https://2.bp.blogspot.com/-TYUwwOrm73Y/VfSal_FUv-I/AAAAAAAANsE/_xgsyb5eDBw/s1600/IMG_20150905_212955.jpg" target="_blank" rel="noopener"><img src="https://2.bp.blogspot.com/-TYUwwOrm73Y/VfSal_FUv-I/AAAAAAAANsE/_xgsyb5eDBw/s320/IMG_20150905_212955.jpg" alt></a><a href="https://4.bp.blogspot.com/-zQHkyyvM6O8/VfSal273H9I/AAAAAAAANsE/cjv8g5jeP3w/s1600/IMG_20150905_215736.jpg" target="_blank" rel="noopener"><img src="https://4.bp.blogspot.com/-zQHkyyvM6O8/VfSal273H9I/AAAAAAAANsE/cjv8g5jeP3w/s320/IMG_20150905_215736.jpg" alt></a></div>
+
+<div class="separator" style="clear: both; text-align: center;"><a href="https://3.bp.blogspot.com/-YPH9cF1jXc8/VfSalx1sAqI/AAAAAAAANsE/bUFxP_kAS8k/s1600/IMG_20150905_215748.jpg" target="_blank" rel="noopener"><img src="https://3.bp.blogspot.com/-YPH9cF1jXc8/VfSalx1sAqI/AAAAAAAANsE/bUFxP_kAS8k/s320/IMG_20150905_215748.jpg" alt></a><a href="https://1.bp.blogspot.com/-qiYLoIREcuc/VfSalww8SII/AAAAAAAANsE/TagV3Kd_4Nk/s1600/IMG_20150905_220610.jpg" target="_blank" rel="noopener"><img src="https://1.bp.blogspot.com/-qiYLoIREcuc/VfSalww8SII/AAAAAAAANsE/TagV3Kd_4Nk/s320/IMG_20150905_220610.jpg" alt></a></div>
+
+<div style="text-align: center;"><strong>7. </strong>For good looking some duck tape is used. Low cost DIY Raspberry Pi Laptop is ready for usage. HDMI cable is reachable from outside of the box. Thus Raspberry Pi can be used with external screens or the screen can be used with other devices. </div>
+
+<div class="separator" style="clear: both; text-align: center;"><a href="https://2.bp.blogspot.com/-1nmIjtyloP4/VfSal0E7VzI/AAAAAAAANsE/sDd_0fD3qjA/s1600/IMG_20150905_223543.jpg" target="_blank" rel="noopener"><img src="https://2.bp.blogspot.com/-1nmIjtyloP4/VfSal0E7VzI/AAAAAAAANsE/sDd_0fD3qjA/s320/IMG_20150905_223543.jpg" alt></a></div>
+
+<div class="separator" style="clear: both; text-align: center;"><a href="https://3.bp.blogspot.com/-DAwICwi5_9U/VfSbqGJD1zI/AAAAAAAANsQ/XzcW3kOLchs/s1600/IMG_20150905_230332.jpg" target="_blank" rel="noopener"><img src="https://3.bp.blogspot.com/-DAwICwi5_9U/VfSbqGJD1zI/AAAAAAAANsQ/XzcW3kOLchs/s320/IMG_20150905_230332.jpg" alt></a></div>
+
+<div class="separator" style="clear: both; text-align: center;"><a href="https://2.bp.blogspot.com/-hZ219ork5PQ/VfSbqHodVCI/AAAAAAAANsQ/VcLX9sj2M8g/s1600/IMG_20150905_230427.jpg" target="_blank" rel="noopener"><img src="https://2.bp.blogspot.com/-hZ219ork5PQ/VfSbqHodVCI/AAAAAAAANsQ/VcLX9sj2M8g/s320/IMG_20150905_230427.jpg" alt></a></div>
+
+<div class="separator" style="clear: both; text-align: center;">The average current drain by the laptop is 700 mA and Lipo battery has 1500 mAh capacity. The laptop can be use for 2 hour with this battery.</div>
+
+<div class="separator" style="clear: both; text-align: center;"><a href="https://1.bp.blogspot.com/-eHS1O3Gv9J4/VfStPek73TI/AAAAAAAANss/l3KWJll-FqU/s1600/IMG_20150905_163749.jpg" target="_blank" rel="noopener"><img src="https://1.bp.blogspot.com/-eHS1O3Gv9J4/VfStPek73TI/AAAAAAAANss/l3KWJll-FqU/s200/IMG_20150905_163749.jpg" alt></a><a href="https://3.bp.blogspot.com/-L7zec48A_lc/VfStPbIqcuI/AAAAAAAANss/Sp8wze46UJU/s1600/IMG_20150905_163747.jpg" target="_blank" rel="noopener"><img src="https://3.bp.blogspot.com/-L7zec48A_lc/VfStPbIqcuI/AAAAAAAANss/Sp8wze46UJU/s200/IMG_20150905_163747.jpg" alt></a></div>
+
+<div class="separator" style="clear: both;"><strong>5. Consequence</strong></div>
+
+<div class="separator" style="clear: both;">Finally, we build a functional and simple laptop and it’s cost 110 dollars.The laptop is great for develop software for Raspberry Pi. By using Raspberry Pi, you jump into the open source world of the Linux and the big community of Raspberry Pi 2. See you later…</div>
+
+<div class="separator" style="clear: both; text-align: center;"><a href="https://2.bp.blogspot.com/-Tk2vzJQi_A0/VfSbqP49GlI/AAAAAAAANsQ/W7W9NZ8H9Ok/s1600/IMG_20150912_124002.jpg" target="_blank" rel="noopener"><img src="https://2.bp.blogspot.com/-Tk2vzJQi_A0/VfSbqP49GlI/AAAAAAAANsQ/W7W9NZ8H9Ok/s400/IMG_20150912_124002.jpg" alt></a></div>
+  </div>
+</article>
+
+    <div class="blog-post-comments">
+        <div id="disqus_thread">
+            <noscript>Please enable JavaScript to view the comments.</noscript>
+        </div>
+    </div>
+
+
+
+        
+          <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/categories/">Category</a></li>
+         
+          <li><a href="/archives/">Blog</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="https://github.com/mozanunal">Projects</a></li>
+         
+          <li><a href="https://scholar.google.com/citations?user=u_HbXUUAAAAJ&hl=en">Publications</a></li>
+         
+          <li><a href="/search/">Search</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      
+    </div>
+
+    <div id="share-footer" style="display: none">
+      <ul>
+  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=https://mozanunal.com/2015/10/diy-raspberry-pi-laptop-16/"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=https://mozanunal.com/2015/10/diy-raspberry-pi-laptop-16/&text=DIY Raspberry Pi Laptop"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=https://mozanunal.com/2015/10/diy-raspberry-pi-laptop-16/&title=DIY Raspberry Pi Laptop"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https://mozanunal.com/2015/10/diy-raspberry-pi-laptop-16/&is_video=false&description=DIY Raspberry Pi Laptop"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=DIY Raspberry Pi Laptop&body=Check out this article: https://mozanunal.com/2015/10/diy-raspberry-pi-laptop-16/"><i class="fas fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=https://mozanunal.com/2015/10/diy-raspberry-pi-laptop-16/&title=DIY Raspberry Pi Laptop"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=https://mozanunal.com/2015/10/diy-raspberry-pi-laptop-16/&title=DIY Raspberry Pi Laptop"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=https://mozanunal.com/2015/10/diy-raspberry-pi-laptop-16/&title=DIY Raspberry Pi Laptop"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=https://mozanunal.com/2015/10/diy-raspberry-pi-laptop-16/&title=DIY Raspberry Pi Laptop"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=https://mozanunal.com/2015/10/diy-raspberry-pi-laptop-16/&name=DIY Raspberry Pi Laptop&description=&lt;p&gt;&lt;strong&gt;Hi,&lt;/strong&gt;&lt;br&gt;In this article, DIY Raspberry Pi Laptop project will be told. I needed a low cost mini computer with high mobility but then i decided to make my own and i start to this project. Most of the parts(expect Raspberry pi 2 and its some of materials) were bought from china and the total cost of this project is 110$. There is video of this project under this paragraph. You can watch this then you learn how i did this project step by step.  &lt;/p&gt;
+&lt;div style=&quot;text-align: center;&quot;&gt;&lt;iframe allowfullscreen class=&quot;YOUTUBE-iframe-video&quot; data-thumbnail-src=&quot;https://i.ytimg.com/vi/Ys97-3S9MQo/0.jpg&quot; frameborder=&quot;0&quot; height=&quot;266&quot; src=&quot;https://www.youtube.com/embed/Ys97-3S9MQo?feature=player_embedded&quot; width=&quot;320&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;
+
+&lt;div class=&quot;separator&quot; style=&quot;clear: both; text-align: center;&quot;&gt;&lt;a href=&quot;https://1.bp.blogspot.com/-32Tefe5cxxQ/VfQJVHRLDKI/AAAAAAAANq0/a35hSfl8s2s/s1600/IMG_20150912_123948.jpg&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;img src=&quot;https://1.bp.blogspot.com/-32Tefe5cxxQ/VfQJVHRLDKI/AAAAAAAANq0/a35hSfl8s2s/s320/IMG_20150912_123948.jpg&quot; alt&gt;&lt;/a&gt;&lt;/div&gt;"><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> Share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+        
+        <footer id="footer">
+  <div class="footer-left">
+    Copyright &copy; 2023 Mehmet Ozan Ünal
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/categories/">Category</a></li>
+         
+          <li><a href="/archives/">Blog</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="https://github.com/mozanunal">Projects</a></li>
+         
+          <li><a href="https://scholar.google.com/citations?user=u_HbXUUAAAAJ&hl=en">Publications</a></li>
+         
+          <li><a href="/search/">Search</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+    </div>
+    <!-- styles -->
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+<link rel="stylesheet" href="/lib/justified-gallery/css/justifiedGallery.min.css">
+
+    <!-- jquery -->
+<script src="/lib/jquery/jquery.min.js"></script>
+<script src="/lib/justified-gallery/js/jquery.justifiedGallery.min.js"></script>
+<script src="/js/main.js"></script>
+<!-- search -->
+
+<!-- Google Analytics -->
+
+    <script type="text/javascript">
+        (function(i,s,o,g,r,a,m) {i['GoogleAnalyticsObject']=r;i[r]=i[r]||function() {
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-60655125-2', 'auto');
+        ga('send', 'pageview');
+    </script>
+
+<!-- Baidu Analytics -->
+
+<!-- Disqus Comments -->
+
+    <script type="text/javascript">
+        var disqus_shortname = 'mozanunal-com';
+
+        (function(){
+            var dsq = document.createElement('script');
+            dsq.type = 'text/javascript';
+            dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        }());
+    </script>
+
+
+</body>
+</html>

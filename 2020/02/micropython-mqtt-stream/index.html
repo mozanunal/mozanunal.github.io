@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang=en>
+<head><meta name="generator" content="Hexo 3.8.0">
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="Micropython Mqtt StreamerHello everyone,I have developed a micropython code to stream accelerometer data over mqtt. Also I have created a tool to visualize the data which is transferred from remote MQ">
+<meta name="keywords" content="Arduino,MPU6050,Mqtt,IoT">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Micropython Mqtt Streamer">
+<meta property="og:url" content="https://mozanunal.com/2020/02/micropython-mqtt-stream/index.html">
+<meta property="og:site_name" content="Mehmet Ozan Ünal">
+<meta property="og:description" content="Micropython Mqtt StreamerHello everyone,I have developed a micropython code to stream accelerometer data over mqtt. Also I have created a tool to visualize the data which is transferred from remote MQ">
+<meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2023-04-09T21:02:57.233Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Micropython Mqtt Streamer">
+<meta name="twitter:description" content="Micropython Mqtt StreamerHello everyone,I have developed a micropython code to stream accelerometer data over mqtt. Also I have created a tool to visualize the data which is transferred from remote MQ">
+    
+    
+        
+          
+              <link rel="shortcut icon" href="/images/favicon.ico">
+          
+        
+        
+          
+            <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
+          
+        
+        
+          
+            <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+          
+        
+    
+    <!-- title -->
+    <title>Micropython Mqtt Streamer</title>
+    <!-- styles -->
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- persian styles -->
+    
+      <link rel="stylesheet" href="/css/rtl.css">
+    
+    <!-- rss -->
+    
+    
+      <link rel="alternate" href="/atom" title="Mehmet Ozan Ünal" type="application/atom+xml">
+    
+    <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/7ecf5c9db13693c2c7062ad3f/0e72f59463de1883a2a166735.js");</script>
+</head>
+
+<body class="max-width mx-auto px3 ltr">    
+      <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/categories/">Category</a></li>
+         
+          <li><a href="/archives/">Blog</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="https://github.com/mozanunal">Projects</a></li>
+         
+          <li><a href="https://scholar.google.com/citations?user=u_HbXUUAAAAJ&hl=en">Publications</a></li>
+         
+          <li><a href="/search/">Search</a></li>
+        
+      </ul>
+    </span>
+    <br>
+    <span id="actions">
+      <ul>
+        
+        <li><a class="icon" href="/2020/03/coolest-c-trick/"><i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i></a></li>
+        
+        
+        <li><a class="icon" href="/2019/11/ecg-signal/"><i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
+        
+        <li><a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
+        <li><a class="icon" href="#"><i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br>
+    <div id="share" style="display: none">
+      <ul>
+  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=https://mozanunal.com/2020/02/micropython-mqtt-stream/"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=https://mozanunal.com/2020/02/micropython-mqtt-stream/&text=Micropython Mqtt Streamer"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=https://mozanunal.com/2020/02/micropython-mqtt-stream/&title=Micropython Mqtt Streamer"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https://mozanunal.com/2020/02/micropython-mqtt-stream/&is_video=false&description=Micropython Mqtt Streamer"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Micropython Mqtt Streamer&body=Check out this article: https://mozanunal.com/2020/02/micropython-mqtt-stream/"><i class="fas fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=https://mozanunal.com/2020/02/micropython-mqtt-stream/&title=Micropython Mqtt Streamer"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=https://mozanunal.com/2020/02/micropython-mqtt-stream/&title=Micropython Mqtt Streamer"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=https://mozanunal.com/2020/02/micropython-mqtt-stream/&title=Micropython Mqtt Streamer"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=https://mozanunal.com/2020/02/micropython-mqtt-stream/&title=Micropython Mqtt Streamer"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=https://mozanunal.com/2020/02/micropython-mqtt-stream/&name=Micropython Mqtt Streamer&description="><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+    <div id="toc">
+      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Micropython-Mqtt-Streamer"><span class="toc-number">1.</span> <span class="toc-text">Micropython Mqtt Streamer</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Demo"><span class="toc-number">1.1.</span> <span class="toc-text">Demo</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Development"><span class="toc-number">1.2.</span> <span class="toc-text">Development</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#References"><span class="toc-number">1.3.</span> <span class="toc-text">References</span></a></li></ol></li></ol>
+    </div>
+  </span>
+</div>
+
+    
+    <div class="content index py4">
+        
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    
+    <h1 class="posttitle" itemprop="name headline">
+        Micropython Mqtt Streamer
+    </h1>
+
+
+
+    <div class="meta">
+      <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span itemprop="name">Mehmet Ozan Ünal</span>
+      </span>
+      
+    <div class="postdate">
+      
+        <time datetime="2020-02-26T19:36:00.000Z" itemprop="datePublished">2020-02-26</time>
+        
+      
+    </div>
+
+
+      
+    <div class="article-category">
+        <i class="fas fa-archive"></i>
+        <a class="category-link" href="/categories/Electronics/">Electronics</a> › <a class="category-link" href="/categories/Electronics/IoT/">IoT</a>
+    </div>
+
+
+    </div>
+  </header>
+  
+
+  <div class="content" itemprop="articleBody">
+    <h1 id="Micropython-Mqtt-Streamer"><a href="#Micropython-Mqtt-Streamer" class="headerlink" title="Micropython Mqtt Streamer"></a>Micropython Mqtt Streamer</h1><p>Hello everyone,<br>I have developed a micropython code to stream accelerometer data over mqtt. Also I have created a tool to visualize the data which is transferred from remote MQTT device which is executing micropython code.</p>
+<h2 id="Demo"><a href="#Demo" class="headerlink" title="Demo"></a>Demo</h2><div class="video-container"><iframe src="//www.youtube.com/embed/5v9RwN818p8" frameborder="0" allowfullscreen></iframe></div>
+<h2 id="Development"><a href="#Development" class="headerlink" title="Development"></a>Development</h2><p>The first thing which I tried with micropython is connecting ESP8266 to a WiFi. I have tried the following script which I found from the official documentation of the micropython.</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> network</span><br><span class="line">wlan = network.WLAN(network.STA_IF)</span><br><span class="line">wlan.active(<span class="literal">True</span>)</span><br><span class="line">wlan.connect(<span class="string">'ssid'</span>, <span class="string">'password'</span>)</span><br></pre></td></tr></table></figure>
+<p>The wifi ip of the module can be examined with <code>wlan.ifconfig()</code> command. I should say that scripting with a microcontoller is quite fun. ESP8266 was connected over usb over Uart line to my computer and I can scripting using micropython shell. For example: I have used upip module to install <code>umqtt.simple</code> upython module to my ESP8266. After installing the umqtt module, I have tested its basic examples and they worked without any problem.</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">import</span> upip</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>dir(upip)</span><br><span class="line">[<span class="string">'__class__'</span>, <span class="string">'__name__'</span>, <span class="string">'errno'</span>, <span class="string">'gc'</span>, <span class="string">'help'</span>, <span class="string">'json'</span>, <span class="string">'os'</span>, <span class="string">'sys'</span>, <span class="string">'usocket'</span>, <span class="string">'ussl'</span>, <span class="string">'uzlib'</span>, <span class="string">'main'</span>, <span class="string">'debug'</span>, <span class="string">'tarfile'</span>, <span class="string">'install_path'</span>, <span class="string">'cleanup_files'</span>, <span class="string">'gzdict_sz'</span>, <span class="string">'file_buf'</span>, <span class="string">'NotFoundError'</span>, <span class="string">'op_split'</span>, <span class="string">'op_basename'</span>, <span class="string">'_makedirs'</span>, <span class="string">'save_file'</span>, <span class="string">'install_tar'</span>, <span class="string">'expandhome'</span>, <span class="string">'warn_ussl'</span>, <span class="string">'url_open'</span>, <span class="string">'get_pkg_metadata'</span>, <span class="string">'fatal'</span>, <span class="string">'install_pkg'</span>, <span class="string">'install'</span>, <span class="string">'get_install_path'</span>, <span class="string">'cleanup'</span>]</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>upip.install(<span class="string">"umqtt.simple"</span>)</span><br></pre></td></tr></table></figure>
+<p>Next phase is reading data from accelerometer. I have used MPU6050 as the IMU sensor. It consists a gyro and an accelerometer sensor. I have used i2c scanner example code to detect the i2c address of the device. The address of my MPU6050 is <code>0x68</code>.</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>i2c.scan() </span><br><span class="line"><span class="comment"># scan for slaves on the bus, </span></span><br><span class="line"><span class="comment"># returning a list of valid addresses</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">for</span> device <span class="keyword">in</span> devices:</span><br><span class="line"><span class="meta">... </span>    print(<span class="string">"Decimal address: "</span>,device,<span class="string">" | Hexa address: "</span>,hex(device))</span><br><span class="line">...</span><br><span class="line">...</span><br><span class="line">...</span><br><span class="line">Decimal address:  <span class="number">104</span>  | Hexa address:  <span class="number">0x68</span></span><br></pre></td></tr></table></figure>
+<p>The following class is developed to read sensor values directly from MPU6050.<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> machine</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">accel</span><span class="params">()</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self, i2c, addr=<span class="number">0x68</span>)</span>:</span></span><br><span class="line">        self.iic = i2c</span><br><span class="line">        self.addr = addr</span><br><span class="line">        self.iic.start()</span><br><span class="line">        self.iic.writeto(self.addr, bytearray([<span class="number">107</span>, <span class="number">0</span>]))</span><br><span class="line">        self.iic.stop()</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">get_raw_values</span><span class="params">(self)</span>:</span></span><br><span class="line">        self.iic.start()</span><br><span class="line">        a = self.iic.readfrom_mem(self.addr, <span class="number">0x3B</span>, <span class="number">14</span>)</span><br><span class="line">        self.iic.stop()</span><br><span class="line">        <span class="keyword">return</span> a</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">get_ints</span><span class="params">(self)</span>:</span></span><br><span class="line">        b = self.get_raw_values()</span><br><span class="line">        c = []</span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> b:</span><br><span class="line">            c.append(i)</span><br><span class="line">        <span class="keyword">return</span> c</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">bytes_toint</span><span class="params">(self, firstbyte, secondbyte)</span>:</span></span><br><span class="line">        <span class="keyword">if</span> <span class="keyword">not</span> firstbyte &amp; <span class="number">0x80</span>:</span><br><span class="line">            <span class="keyword">return</span> firstbyte &lt;&lt; <span class="number">8</span> | secondbyte</span><br><span class="line">        <span class="keyword">return</span> - (((firstbyte ^ <span class="number">255</span>) &lt;&lt; <span class="number">8</span>) | (secondbyte ^ <span class="number">255</span>) + <span class="number">1</span>)</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">get_values</span><span class="params">(self)</span>:</span></span><br><span class="line">        raw_ints = self.get_raw_values()</span><br><span class="line">        vals = &#123;&#125;</span><br><span class="line">        vals[<span class="string">"AcX"</span>] = self.bytes_toint(raw_ints[<span class="number">0</span>], raw_ints[<span class="number">1</span>])</span><br><span class="line">        vals[<span class="string">"AcY"</span>] = self.bytes_toint(raw_ints[<span class="number">2</span>], raw_ints[<span class="number">3</span>])</span><br><span class="line">        vals[<span class="string">"AcZ"</span>] = self.bytes_toint(raw_ints[<span class="number">4</span>], raw_ints[<span class="number">5</span>])</span><br><span class="line">        vals[<span class="string">"Tmp"</span>] = self.bytes_toint(raw_ints[<span class="number">6</span>], raw_ints[<span class="number">7</span>]) / <span class="number">340.00</span> + <span class="number">36.53</span></span><br><span class="line">        vals[<span class="string">"GyX"</span>] = self.bytes_toint(raw_ints[<span class="number">8</span>], raw_ints[<span class="number">9</span>])</span><br><span class="line">        vals[<span class="string">"GyY"</span>] = self.bytes_toint(raw_ints[<span class="number">10</span>], raw_ints[<span class="number">11</span>])</span><br><span class="line">        vals[<span class="string">"GyZ"</span>] = self.bytes_toint(raw_ints[<span class="number">12</span>], raw_ints[<span class="number">13</span>])</span><br><span class="line">        <span class="keyword">return</span> vals  <span class="comment"># returned in range of Int16</span></span><br><span class="line">        <span class="comment"># -32768 to 32767</span></span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">val_test</span><span class="params">(self)</span>:</span>  <span class="comment"># ONLY FOR TESTING! Also, fast reading sometimes crashes IIC</span></span><br><span class="line">        <span class="keyword">from</span> time <span class="keyword">import</span> sleep</span><br><span class="line">        <span class="keyword">while</span> <span class="number">1</span>:</span><br><span class="line">            print(self.get_values())</span><br><span class="line">            sleep(<span class="number">0.05</span>)</span><br></pre></td></tr></table></figure></p>
+<p>Main loop is also quite strait-forward. It read samples from acc and send these over mqtt protocol directly to the server.</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> machine <span class="keyword">import</span> I2C, Pin</span><br><span class="line"><span class="keyword">import</span> mpu6050</span><br><span class="line"><span class="keyword">from</span> umqtt.simple <span class="keyword">import</span> MQTTClient</span><br><span class="line"><span class="keyword">import</span> time, json</span><br><span class="line"></span><br><span class="line">i2c = I2C(scl=Pin(<span class="number">5</span>), sda=Pin(<span class="number">4</span>))</span><br><span class="line">accelerometer = mpu6050.accel(i2c)</span><br><span class="line">c = MQTTClient(<span class="string">"umqtt_client"</span>, <span class="string">"iot.eclipse.org"</span>)</span><br><span class="line">c.connect()</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">run</span><span class="params">()</span>:</span></span><br><span class="line">    <span class="keyword">while</span> <span class="literal">True</span>:</span><br><span class="line">        c.publish( <span class="string">b"micropython/test/mpu6050"</span>, json.dumps(accelerometer.get_values()) )</span><br><span class="line">        time.sleep_ms(<span class="number">45</span>)</span><br><span class="line">run()</span><br></pre></td></tr></table></figure>
+<p><a href="https://github.com/mozanunal/micropython-mpu6050-mqtt-streamer" target="_blank" rel="noopener">The code can be reached from this github repo.</a></p>
+<h2 id="References"><a href="#References" class="headerlink" title="References"></a>References</h2><ul>
+<li><a href="https://randomnerdtutorials.com/micropython-mqtt-esp32-esp8266/" target="_blank" rel="noopener">https://randomnerdtutorials.com/micropython-mqtt-esp32-esp8266/</a></li>
+<li><a href="https://github.com/adamjezek98/MPU6050-ESP8266-MicroPython" target="_blank" rel="noopener">https://github.com/adamjezek98/MPU6050-ESP8266-MicroPython</a> mpu6050.py</li>
+<li><a href="https://docs.micropython.org/en/latest/library/network.WLAN.html" target="_blank" rel="noopener">https://docs.micropython.org/en/latest/library/network.WLAN.html</a></li>
+<li><a href="https://learn.adafruit.com/micropython-basics-esp8266-webrepl/access-webrepl" target="_blank" rel="noopener">https://learn.adafruit.com/micropython-basics-esp8266-webrepl/access-webrepl</a> </li>
+</ul>
+
+  </div>
+</article>
+
+    <div class="blog-post-comments">
+        <div id="disqus_thread">
+            <noscript>Please enable JavaScript to view the comments.</noscript>
+        </div>
+    </div>
+
+
+
+        
+          <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/categories/">Category</a></li>
+         
+          <li><a href="/archives/">Blog</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="https://github.com/mozanunal">Projects</a></li>
+         
+          <li><a href="https://scholar.google.com/citations?user=u_HbXUUAAAAJ&hl=en">Publications</a></li>
+         
+          <li><a href="/search/">Search</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Micropython-Mqtt-Streamer"><span class="toc-number">1.</span> <span class="toc-text">Micropython Mqtt Streamer</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Demo"><span class="toc-number">1.1.</span> <span class="toc-text">Demo</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Development"><span class="toc-number">1.2.</span> <span class="toc-text">Development</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#References"><span class="toc-number">1.3.</span> <span class="toc-text">References</span></a></li></ol></li></ol>
+    </div>
+
+    <div id="share-footer" style="display: none">
+      <ul>
+  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=https://mozanunal.com/2020/02/micropython-mqtt-stream/"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=https://mozanunal.com/2020/02/micropython-mqtt-stream/&text=Micropython Mqtt Streamer"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=https://mozanunal.com/2020/02/micropython-mqtt-stream/&title=Micropython Mqtt Streamer"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https://mozanunal.com/2020/02/micropython-mqtt-stream/&is_video=false&description=Micropython Mqtt Streamer"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Micropython Mqtt Streamer&body=Check out this article: https://mozanunal.com/2020/02/micropython-mqtt-stream/"><i class="fas fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=https://mozanunal.com/2020/02/micropython-mqtt-stream/&title=Micropython Mqtt Streamer"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=https://mozanunal.com/2020/02/micropython-mqtt-stream/&title=Micropython Mqtt Streamer"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=https://mozanunal.com/2020/02/micropython-mqtt-stream/&title=Micropython Mqtt Streamer"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=https://mozanunal.com/2020/02/micropython-mqtt-stream/&title=Micropython Mqtt Streamer"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=https://mozanunal.com/2020/02/micropython-mqtt-stream/&name=Micropython Mqtt Streamer&description="><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> Share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+        
+        <footer id="footer">
+  <div class="footer-left">
+    Copyright &copy; 2023 Mehmet Ozan Ünal
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/categories/">Category</a></li>
+         
+          <li><a href="/archives/">Blog</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="https://github.com/mozanunal">Projects</a></li>
+         
+          <li><a href="https://scholar.google.com/citations?user=u_HbXUUAAAAJ&hl=en">Publications</a></li>
+         
+          <li><a href="/search/">Search</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+    </div>
+    <!-- styles -->
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+<link rel="stylesheet" href="/lib/justified-gallery/css/justifiedGallery.min.css">
+
+    <!-- jquery -->
+<script src="/lib/jquery/jquery.min.js"></script>
+<script src="/lib/justified-gallery/js/jquery.justifiedGallery.min.js"></script>
+<script src="/js/main.js"></script>
+<!-- search -->
+
+<!-- Google Analytics -->
+
+    <script type="text/javascript">
+        (function(i,s,o,g,r,a,m) {i['GoogleAnalyticsObject']=r;i[r]=i[r]||function() {
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-60655125-2', 'auto');
+        ga('send', 'pageview');
+    </script>
+
+<!-- Baidu Analytics -->
+
+<!-- Disqus Comments -->
+
+    <script type="text/javascript">
+        var disqus_shortname = 'mozanunal-com';
+
+        (function(){
+            var dsq = document.createElement('script');
+            dsq.type = 'text/javascript';
+            dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        }());
+    </script>
+
+
+</body>
+</html>

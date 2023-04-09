@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang=en>
+<head><meta name="generator" content="Hexo 3.8.0">
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="Herkese Merhabalar! Bu yazımda size hava araçlarının en temel elektronik ekipmanı olan IMU modullerinden bahsetmek istiyorum. IMU modullerinin hayati önem taşımasının sebebi, modüllerin yönelim açılar">
+<meta name="keywords" content="Electronics,Arduino,Hava Araçları,IMU Açılarının 3 Boyutlu Olarak Görsellenmesi,IMU nedir,Inertial measurement unit,mpu6050">
+<meta property="og:type" content="article">
+<meta property="og:title" content="[TR] IMU Açılarının 3 Boyutlu Olarak Görsellenmesi">
+<meta property="og:url" content="https://mozanunal.com/2014/11/imu-aclarnn-3-boyutlu-olarak/index.html">
+<meta property="og:site_name" content="Mehmet Ozan Ünal">
+<meta property="og:description" content="Herkese Merhabalar! Bu yazımda size hava araçlarının en temel elektronik ekipmanı olan IMU modullerinden bahsetmek istiyorum. IMU modullerinin hayati önem taşımasının sebebi, modüllerin yönelim açılar">
+<meta property="og:locale" content="en">
+<meta property="og:image" content="https://2.bp.blogspot.com/-n9G38M4slSU/VFxIzRYinOI/AAAAAAAAE-4/ZKWB6syUwrs/s1600/rotations1.gif">
+<meta property="og:updated_time" content="2023-04-09T21:12:19.966Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="[TR] IMU Açılarının 3 Boyutlu Olarak Görsellenmesi">
+<meta name="twitter:description" content="Herkese Merhabalar! Bu yazımda size hava araçlarının en temel elektronik ekipmanı olan IMU modullerinden bahsetmek istiyorum. IMU modullerinin hayati önem taşımasının sebebi, modüllerin yönelim açılar">
+<meta name="twitter:image" content="https://2.bp.blogspot.com/-n9G38M4slSU/VFxIzRYinOI/AAAAAAAAE-4/ZKWB6syUwrs/s1600/rotations1.gif">
+    
+    
+        
+          
+              <link rel="shortcut icon" href="/images/favicon.ico">
+          
+        
+        
+          
+            <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
+          
+        
+        
+          
+            <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+          
+        
+    
+    <!-- title -->
+    <title>[TR] IMU Açılarının 3 Boyutlu Olarak Görsellenmesi</title>
+    <!-- styles -->
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- persian styles -->
+    
+      <link rel="stylesheet" href="/css/rtl.css">
+    
+    <!-- rss -->
+    
+    
+      <link rel="alternate" href="/atom" title="Mehmet Ozan Ünal" type="application/atom+xml">
+    
+    <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/7ecf5c9db13693c2c7062ad3f/0e72f59463de1883a2a166735.js");</script>
+</head>
+
+<body class="max-width mx-auto px3 ltr">    
+      <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/categories/">Category</a></li>
+         
+          <li><a href="/archives/">Blog</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="https://github.com/mozanunal">Projects</a></li>
+         
+          <li><a href="https://scholar.google.com/citations?user=u_HbXUUAAAAJ&hl=en">Publications</a></li>
+         
+          <li><a href="/search/">Search</a></li>
+        
+      </ul>
+    </span>
+    <br>
+    <span id="actions">
+      <ul>
+        
+        <li><a class="icon" href="/2014/11/processing-ile-android-telefonda/"><i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i></a></li>
+        
+        
+        <li><a class="icon" href="/2014/10/arduino-joystick-kontrol/"><i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
+        
+        <li><a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
+        <li><a class="icon" href="#"><i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br>
+    <div id="share" style="display: none">
+      <ul>
+  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=https://mozanunal.com/2014/11/imu-aclarnn-3-boyutlu-olarak/"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=https://mozanunal.com/2014/11/imu-aclarnn-3-boyutlu-olarak/&text=[TR] IMU Açılarının 3 Boyutlu Olarak Görsellenmesi"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=https://mozanunal.com/2014/11/imu-aclarnn-3-boyutlu-olarak/&title=[TR] IMU Açılarının 3 Boyutlu Olarak Görsellenmesi"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https://mozanunal.com/2014/11/imu-aclarnn-3-boyutlu-olarak/&is_video=false&description=[TR] IMU Açılarının 3 Boyutlu Olarak Görsellenmesi"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=[TR] IMU Açılarının 3 Boyutlu Olarak Görsellenmesi&body=Check out this article: https://mozanunal.com/2014/11/imu-aclarnn-3-boyutlu-olarak/"><i class="fas fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=https://mozanunal.com/2014/11/imu-aclarnn-3-boyutlu-olarak/&title=[TR] IMU Açılarının 3 Boyutlu Olarak Görsellenmesi"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=https://mozanunal.com/2014/11/imu-aclarnn-3-boyutlu-olarak/&title=[TR] IMU Açılarının 3 Boyutlu Olarak Görsellenmesi"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=https://mozanunal.com/2014/11/imu-aclarnn-3-boyutlu-olarak/&title=[TR] IMU Açılarının 3 Boyutlu Olarak Görsellenmesi"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=https://mozanunal.com/2014/11/imu-aclarnn-3-boyutlu-olarak/&title=[TR] IMU Açılarının 3 Boyutlu Olarak Görsellenmesi"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=https://mozanunal.com/2014/11/imu-aclarnn-3-boyutlu-olarak/&name=[TR] IMU Açılarının 3 Boyutlu Olarak Görsellenmesi&description=&lt;p&gt;&lt;strong&gt;Herkese Merhabalar!&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Bu yazımda size hava araçlarının en temel elektronik ekipmanı olan IMU modullerinden bahsetmek istiyorum. IMU modullerinin hayati önem taşımasının sebebi, modüllerin yönelim açılarını hesaplamak için kullanılmasıdır. En büyük yolcu uçağından, roketten en küçük bir quadrokoptere kadar tüm hava araçları stabil ve sağlıklı bir uçuş için bu modullerden birine sahip olmalıdırlar.&lt;br&gt;"><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+    <div id="toc">
+      
+    </div>
+  </span>
+</div>
+
+    
+    <div class="content index py4">
+        
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    
+    <h1 class="posttitle" itemprop="name headline">
+        [TR] IMU Açılarının 3 Boyutlu Olarak Görsellenmesi
+    </h1>
+
+
+
+    <div class="meta">
+      <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span itemprop="name">Mehmet Ozan Ünal</span>
+      </span>
+      
+    <div class="postdate">
+      
+        <time datetime="2014-11-07T12:15:00.000Z" itemprop="datePublished">2014-11-07</time>
+        
+      
+    </div>
+
+
+      
+    <div class="article-category">
+        <i class="fas fa-archive"></i>
+        <a class="category-link" href="/categories/Electronics/">Electronics</a> › <a class="category-link" href="/categories/Electronics/Drone/">Drone</a>
+    </div>
+
+
+    </div>
+  </header>
+  
+
+  <div class="content" itemprop="articleBody">
+    <p><strong>Herkese Merhabalar!</strong></p>
+<p>Bu yazımda size hava araçlarının en temel elektronik ekipmanı olan IMU modullerinden bahsetmek istiyorum. IMU modullerinin hayati önem taşımasının sebebi, modüllerin yönelim açılarını hesaplamak için kullanılmasıdır. En büyük yolcu uçağından, roketten en küçük bir quadrokoptere kadar tüm hava araçları stabil ve sağlıklı bir uçuş için bu modullerden birine sahip olmalıdırlar.<br><a id="more"></a><br>IMU ingilizcedeki “Inertial Mesurament Unit” kelime grubunun kısaltılmış halidir. IMU ile bir cismin uzaydaki 3 boyutlu yönelimi bulunabilir. 3 boyutlu yönelimi anlatmanın  en kolay yolu Euler Açılarını kullanmaktır. Havacılık sektöründe sıklıkla Euler açılarının özelleşmiş bir versiyonu olan “Yaw, Pitch, Roll” açıları kullanılmaktadır.  </p>
+<p><img src="https://2.bp.blogspot.com/-n9G38M4slSU/VFxIzRYinOI/AAAAAAAAE-4/ZKWB6syUwrs/s1600/rotations1.gif" alt></p>
+<p>Bir nesnenin uzaydaki yönelimini bulmak için 3 temel sensör kullanılır. Bunlar ivmeölçer, gyro ve magnometredir. Bu üç sensörün bir arada kullanılmasının nedeni şudur: İvme ölçer ile Pitch ve Roll açısı tespit edilebilir fakat hareket anında gürültü oluşur ve doğru bilgi elde edilemez, Gyro ise 3 eksendeki açısal hızları verir. Eğer ilk açı bilinmiyorsa sadece gyro ile şu anki açılar hesaplanamaz, sadece açısal hız üzerinden açısal açı değişimi hesaplanabilir. Gyronun ikinci kötü özelliği ise “Drift” özelliğidir. Gyro sabit durun bir cisimde bile küçük de olsa açısal hızlar hesaplar. Bu nedenle sadece Gyroya bağlı sistemlerde hesaplanan açılar yavaş yavaş kayar. Bunu engellemek için bazı filtreler kullanılır. Bu filtrelerin amacı Gyro üzerinden verileri alıp ivme ölçer üzerinden bu verileri düzeltmektir. Böylece drift engellenmiş olur ve sadece ivmeölçere bağlı olunmadığı için hareket halindeki gürültü sonuçlardan kurtulunmuş olur. Fakat ivmeölçer sadece pitch ve roll açılarını hesaplayabildiği için yaw eksenine referans olamaz. Yaw eksenine referans olması için kullanılan modül magnometredir. Bu sayede değişik algoritmalar ve filtreler kullanılarak gyro üzerinden hesaplanan açısal değişimler, pitch ve roll eksenlerinde ivmeölçer, yaw ekseninde ise magnometre tarafından düzeltilerek yönelim açılarının hesaplanması sağlanır.  </p>
+<p>Yaw, Pitch, Roll açıları yani Euler açıları bazı durumlarda 3 boyutlu yönelimi açıklamada yetersiz kalır. Özetlemek gerekirse rotasyonlar sonucu eğer eksenler üst üste gelirse özgürlük derecesi kaybı yaşanır. Rotasyon da 2 boyutlu uzaya sıkışmak zorunda kalır. Bu duruma Gimbal Lock denir. Gimbal Lock kavramının açıklandığı şu videoyu izleyebilirsiniz.  </p>
+<center><div class="video-container"><iframe src="//www.youtube.com/embed/zc8b2Jo7mno" frameborder="0" allowfullscreen></iframe></div></center>
+
+<p>İşte bu gimbal lock sorunu ortadan kaldırmak için 3 boyutlu yönelimi göstermek için yeni yöntemler bulunmuştur. Bunlardan başlıcaları “Quaternion “ ve “ Direction Cosine Matrix” yöntemleridir. Artık yönelimi göstermek için 3 açı yerine “Quaternion”da 4 değişkenli bir vektör ve “Direction Cosine Matrix”te 3x3’lük bir matris ve çok daha karışık algoritmalar kullanılır. IMU sensörlerin beraber çalışması için kullanılan bazı algoritmaları aşağıda kısa bilgilerle birlikte yazacağım.</p>
+<p>Complementary Filter: Sabit bir ağırlıklı ortalama oranıyla gyro verileri ile referans verilerin ortalaması alınması yöntemidir. En basit algoritmadır. Genelde hobi amaçlı ve işin mantığını kavrama amaçlı uygulamalarda kullanılır.</p>
+<p>Kalman Filter: Karmaşık bir algoritması vardır değişken ağırlıklı ortalama oranıyla hesaplama yapar, bu oranı hesaplamak için çok farklı yöntemler kullanabilir.</p>
+<p>Mahony Madwick Filter: 3 sensörden alınan verilerle quaternion hesaplamak için kullanılan filtredir.</p>
+<p>Direction Cosine Matrix: Basitçe yönelim vektörü ile 3 koordinat ekseni arasındaki açıların kosinüslerinden oluşan matristir.</p>
+<p>Ben de bu anlattıklarımı somutlaştırmak adına İmu açılarının 3 boyutlu görsellenmesi üzerine bir proje yaptım. Bu projede ne yazık ki Imu değerlerini kendim hesaplamadım FreeIMU kütüphanesini kullandım. Görselleme Gimbal Lock sorunundan açınmak için Quaternion kullanılarak yapıldı. Sensör olarak MPU6050 sensörünü kullandım. İçinde 3 eksen gyro ve 3 eksen ivme ölçer bulundurmakta. 3 boyutlu görselleme için processing programa dilinde yazılan bir uygulamayı kullandım.</p>
+<p><a href="https://drive.google.com/file/d/0B5j__Lyt9ozbeUVqNHNkOFQyNjQ/view?usp=sharing" target="_blank" rel="noopener">Projenin kaynak kodunu buradan indirebilirsiniz.</a></p>
+<center><div class="video-container"><iframe src="//www.youtube.com/embed/91m5zdq_KBs" frameborder="0" allowfullscreen></iframe></div></center>
+
+  </div>
+</article>
+
+    <div class="blog-post-comments">
+        <div id="disqus_thread">
+            <noscript>Please enable JavaScript to view the comments.</noscript>
+        </div>
+    </div>
+
+
+
+        
+          <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/categories/">Category</a></li>
+         
+          <li><a href="/archives/">Blog</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="https://github.com/mozanunal">Projects</a></li>
+         
+          <li><a href="https://scholar.google.com/citations?user=u_HbXUUAAAAJ&hl=en">Publications</a></li>
+         
+          <li><a href="/search/">Search</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      
+    </div>
+
+    <div id="share-footer" style="display: none">
+      <ul>
+  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=https://mozanunal.com/2014/11/imu-aclarnn-3-boyutlu-olarak/"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=https://mozanunal.com/2014/11/imu-aclarnn-3-boyutlu-olarak/&text=[TR] IMU Açılarının 3 Boyutlu Olarak Görsellenmesi"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=https://mozanunal.com/2014/11/imu-aclarnn-3-boyutlu-olarak/&title=[TR] IMU Açılarının 3 Boyutlu Olarak Görsellenmesi"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https://mozanunal.com/2014/11/imu-aclarnn-3-boyutlu-olarak/&is_video=false&description=[TR] IMU Açılarının 3 Boyutlu Olarak Görsellenmesi"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=[TR] IMU Açılarının 3 Boyutlu Olarak Görsellenmesi&body=Check out this article: https://mozanunal.com/2014/11/imu-aclarnn-3-boyutlu-olarak/"><i class="fas fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=https://mozanunal.com/2014/11/imu-aclarnn-3-boyutlu-olarak/&title=[TR] IMU Açılarının 3 Boyutlu Olarak Görsellenmesi"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=https://mozanunal.com/2014/11/imu-aclarnn-3-boyutlu-olarak/&title=[TR] IMU Açılarının 3 Boyutlu Olarak Görsellenmesi"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=https://mozanunal.com/2014/11/imu-aclarnn-3-boyutlu-olarak/&title=[TR] IMU Açılarının 3 Boyutlu Olarak Görsellenmesi"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=https://mozanunal.com/2014/11/imu-aclarnn-3-boyutlu-olarak/&title=[TR] IMU Açılarının 3 Boyutlu Olarak Görsellenmesi"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=https://mozanunal.com/2014/11/imu-aclarnn-3-boyutlu-olarak/&name=[TR] IMU Açılarının 3 Boyutlu Olarak Görsellenmesi&description=&lt;p&gt;&lt;strong&gt;Herkese Merhabalar!&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Bu yazımda size hava araçlarının en temel elektronik ekipmanı olan IMU modullerinden bahsetmek istiyorum. IMU modullerinin hayati önem taşımasının sebebi, modüllerin yönelim açılarını hesaplamak için kullanılmasıdır. En büyük yolcu uçağından, roketten en küçük bir quadrokoptere kadar tüm hava araçları stabil ve sağlıklı bir uçuş için bu modullerden birine sahip olmalıdırlar.&lt;br&gt;"><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> Share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+        
+        <footer id="footer">
+  <div class="footer-left">
+    Copyright &copy; 2023 Mehmet Ozan Ünal
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/categories/">Category</a></li>
+         
+          <li><a href="/archives/">Blog</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="https://github.com/mozanunal">Projects</a></li>
+         
+          <li><a href="https://scholar.google.com/citations?user=u_HbXUUAAAAJ&hl=en">Publications</a></li>
+         
+          <li><a href="/search/">Search</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+    </div>
+    <!-- styles -->
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+<link rel="stylesheet" href="/lib/justified-gallery/css/justifiedGallery.min.css">
+
+    <!-- jquery -->
+<script src="/lib/jquery/jquery.min.js"></script>
+<script src="/lib/justified-gallery/js/jquery.justifiedGallery.min.js"></script>
+<script src="/js/main.js"></script>
+<!-- search -->
+
+<!-- Google Analytics -->
+
+    <script type="text/javascript">
+        (function(i,s,o,g,r,a,m) {i['GoogleAnalyticsObject']=r;i[r]=i[r]||function() {
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-60655125-2', 'auto');
+        ga('send', 'pageview');
+    </script>
+
+<!-- Baidu Analytics -->
+
+<!-- Disqus Comments -->
+
+    <script type="text/javascript">
+        var disqus_shortname = 'mozanunal-com';
+
+        (function(){
+            var dsq = document.createElement('script');
+            dsq.type = 'text/javascript';
+            dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        }());
+    </script>
+
+
+</body>
+</html>

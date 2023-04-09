@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang=en>
+<head><meta name="generator" content="Hexo 3.8.0">
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="Hi,PassFace is a face recognizing program develop using EmguCV (OpenCV wrapper). It is possible to use 4 different algorithm and 3 different source(Camera, Video, Image) in this program. Most of the t">
+<meta name="keywords" content="Image Processing,EmguCV,opencv,Eigenfaces,Face recognition,Fisgerfaces">
+<meta property="og:type" content="article">
+<meta property="og:title" content="PassFace: Face Recognition Using OpenCV">
+<meta property="og:url" content="https://mozanunal.com/2016/06/passface-face-recognition-using-opencv/index.html">
+<meta property="og:site_name" content="Mehmet Ozan Ünal">
+<meta property="og:description" content="Hi,PassFace is a face recognizing program develop using EmguCV (OpenCV wrapper). It is possible to use 4 different algorithm and 3 different source(Camera, Video, Image) in this program. Most of the t">
+<meta property="og:locale" content="en">
+<meta property="og:image" content="https://lh6.googleusercontent.com/3PMQmXghZyoi4dGekFhBS-QWqZDYEJpQ2o_yLXJgMEo3goTr6OqtrOSPYjtwgApKjKoAzXhFLE57R3TRDw8SWrXsod9PUCiHJXNndjoZ-Ui3P1xb0atKy0EvobLyy9cfVifzA0yT">
+<meta property="og:image" content="https://lh5.googleusercontent.com/eRt6xx3RU22fZ22_-TGdan22lp2x7JiNA9De7PuYa2xLVcZIcg4hVJzvrXyzdNbocv4NuBW8QOHYYTr0NNowPys7QOScefuBrgEeoiILasaQm2v0S0P8NPxVYSiPBRoPotTP3h0p">
+<meta property="og:image" content="https://lh4.googleusercontent.com/560MflmHrYy5nUi4gIAQexc-Cdqfyr3GUej_g1wwa0HawxO4A7OFmOkgd0g4oBvy9An1PjiYxSM_8G0G2FS_zC2y3gWisgkr0NTikxv4oyDFL9qM6IpkupdhA7OjnUAb4cuy51Pa">
+<meta property="og:image" content="https://lh5.googleusercontent.com/6y8Sx-7a4PDYcZWv9W_COKJf9EaGKQl-_3vc6q9oo-HzQeC4CJMJoGTceeaUAC4F31mjpGs84Zrkse1viHgwCCKnRvhciz7aEjmmySR16PAD2aOGmOrLWHr6R3hO7GvV0TamI9nS">
+<meta property="og:updated_time" content="2023-01-18T11:16:34.257Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="PassFace: Face Recognition Using OpenCV">
+<meta name="twitter:description" content="Hi,PassFace is a face recognizing program develop using EmguCV (OpenCV wrapper). It is possible to use 4 different algorithm and 3 different source(Camera, Video, Image) in this program. Most of the t">
+<meta name="twitter:image" content="https://lh6.googleusercontent.com/3PMQmXghZyoi4dGekFhBS-QWqZDYEJpQ2o_yLXJgMEo3goTr6OqtrOSPYjtwgApKjKoAzXhFLE57R3TRDw8SWrXsod9PUCiHJXNndjoZ-Ui3P1xb0atKy0EvobLyy9cfVifzA0yT">
+    
+    
+        
+          
+              <link rel="shortcut icon" href="/images/favicon.ico">
+          
+        
+        
+          
+            <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
+          
+        
+        
+          
+            <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+          
+        
+    
+    <!-- title -->
+    <title>PassFace: Face Recognition Using OpenCV</title>
+    <!-- styles -->
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- persian styles -->
+    
+      <link rel="stylesheet" href="/css/rtl.css">
+    
+    <!-- rss -->
+    
+    
+      <link rel="alternate" href="/atom" title="Mehmet Ozan Ünal" type="application/atom+xml">
+    
+    <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/7ecf5c9db13693c2c7062ad3f/0e72f59463de1883a2a166735.js");</script>
+</head>
+
+<body class="max-width mx-auto px3 ltr">    
+      <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/categories/">Category</a></li>
+         
+          <li><a href="/archives/">Blog</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="https://github.com/mozanunal">Projects</a></li>
+         
+          <li><a href="https://scholar.google.com/citations?user=u_HbXUUAAAAJ&hl=en">Publications</a></li>
+         
+          <li><a href="/search/">Search</a></li>
+        
+      </ul>
+    </span>
+    <br>
+    <span id="actions">
+      <ul>
+        
+        <li><a class="icon" href="/2016/06/wpf-ile-ev-otomasyonu-arayuzu/"><i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i></a></li>
+        
+        
+        <li><a class="icon" href="/2016/05/simplecv-ile-goruntu-islemeye-giris/"><i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
+        
+        <li><a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
+        <li><a class="icon" href="#"><i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br>
+    <div id="share" style="display: none">
+      <ul>
+  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=https://mozanunal.com/2016/06/passface-face-recognition-using-opencv/"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=https://mozanunal.com/2016/06/passface-face-recognition-using-opencv/&text=PassFace: Face Recognition Using OpenCV"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=https://mozanunal.com/2016/06/passface-face-recognition-using-opencv/&title=PassFace: Face Recognition Using OpenCV"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https://mozanunal.com/2016/06/passface-face-recognition-using-opencv/&is_video=false&description=PassFace: Face Recognition Using OpenCV"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=PassFace: Face Recognition Using OpenCV&body=Check out this article: https://mozanunal.com/2016/06/passface-face-recognition-using-opencv/"><i class="fas fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=https://mozanunal.com/2016/06/passface-face-recognition-using-opencv/&title=PassFace: Face Recognition Using OpenCV"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=https://mozanunal.com/2016/06/passface-face-recognition-using-opencv/&title=PassFace: Face Recognition Using OpenCV"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=https://mozanunal.com/2016/06/passface-face-recognition-using-opencv/&title=PassFace: Face Recognition Using OpenCV"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=https://mozanunal.com/2016/06/passface-face-recognition-using-opencv/&title=PassFace: Face Recognition Using OpenCV"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=https://mozanunal.com/2016/06/passface-face-recognition-using-opencv/&name=PassFace: Face Recognition Using OpenCV&description="><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+    <div id="toc">
+      <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-Introduction"><span class="toc-number">1.</span> <span class="toc-text">1. Introduction</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#Definition-of-the-Problem"><span class="toc-number">1.1.</span> <span class="toc-text">Definition of the Problem</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Motivation"><span class="toc-number">1.2.</span> <span class="toc-text">Motivation</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Difficulties-of-Problem"><span class="toc-number">1.3.</span> <span class="toc-text">Difficulties of Problem</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Data-Sets"><span class="toc-number">1.4.</span> <span class="toc-text">Data Sets</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Programming-Environment-and-Libraries"><span class="toc-number">1.5.</span> <span class="toc-text">Programming Environment and Libraries</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-Face-Recognition-Algorithm"><span class="toc-number">2.</span> <span class="toc-text">2. Face Recognition Algorithm</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#Face-Detection"><span class="toc-number">2.1.</span> <span class="toc-text">Face Detection</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Morphologic-Operations"><span class="toc-number">2.2.</span> <span class="toc-text">Morphologic Operations</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#SURF-Feature-Extractor"><span class="toc-number">2.3.</span> <span class="toc-text">SURF Feature Extractor</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Eigenfaces"><span class="toc-number">2.4.</span> <span class="toc-text">Eigenfaces</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Fisherfaces"><span class="toc-number">2.5.</span> <span class="toc-text">Fisherfaces</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Local-Binary-Patterns-Histograms"><span class="toc-number">2.6.</span> <span class="toc-text">Local Binary Patterns Histograms</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-PassFace-Interface"><span class="toc-number">3.</span> <span class="toc-text">3. PassFace Interface</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#Database-Creator"><span class="toc-number">3.1.</span> <span class="toc-text">Database Creator</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#User-Interface"><span class="toc-number">3.2.</span> <span class="toc-text">User Interface</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-Future-of-PassFace-Project"><span class="toc-number">4.</span> <span class="toc-text">4. Future of PassFace Project</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#Algorithm-Accuracy-Analysis"><span class="toc-number">4.1.</span> <span class="toc-text">Algorithm Accuracy Analysis</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Performance-Optimizations"><span class="toc-number">4.2.</span> <span class="toc-text">Performance Optimizations</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Algorithm-Optimizations"><span class="toc-number">4.3.</span> <span class="toc-text">Algorithm Optimizations</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5-Conclusion"><span class="toc-number">5.</span> <span class="toc-text">5. Conclusion</span></a></li></ol>
+    </div>
+  </span>
+</div>
+
+    
+    <div class="content index py4">
+        
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    
+    <h1 class="posttitle" itemprop="name headline">
+        PassFace: Face Recognition Using OpenCV
+    </h1>
+
+
+
+    <div class="meta">
+      <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span itemprop="name">Mehmet Ozan Ünal</span>
+      </span>
+      
+    <div class="postdate">
+      
+        <time datetime="2016-06-04T16:50:00.000Z" itemprop="datePublished">2016-06-04</time>
+        
+      
+    </div>
+
+
+      
+    <div class="article-category">
+        <i class="fas fa-archive"></i>
+        <a class="category-link" href="/categories/Signal-Processing/">Signal Processing</a> › <a class="category-link" href="/categories/Signal-Processing/Image-Processing/">Image Processing</a>
+    </div>
+
+
+    </div>
+  </header>
+  
+
+  <div class="content" itemprop="articleBody">
+    <p><strong>Hi,</strong><br>PassFace is a face recognizing program develop using EmguCV (OpenCV wrapper). It is possible to use 4 different algorithm and 3 different source(Camera, Video, Image) in this program. Most of the tryings have been made using LFW data set which have 13000 pictures of 1500 different people.Details of project can be reached below:</p>
+<p>Source Code: <a href="https://github.com/mozanunal/PassFace" target="_blank" rel="noopener">https://github.com/mozanunal/PassFace</a></p>
+<div class="video-container"><iframe src="//www.youtube.com/embed/d6LI42NEZZY?" frameborder="0" allowfullscreen></iframe></div>
+<h4 id="1-Introduction"><a href="#1-Introduction" class="headerlink" title="1. Introduction"></a>1. Introduction</h4><h5 id="Definition-of-the-Problem"><a href="#Definition-of-the-Problem" class="headerlink" title="Definition of the Problem"></a>Definition of the Problem</h5><p>In this project, a program is going to develop to recognize the faces and compare them the faces it learned and give the identity of the person. All this identifying system is going to work in real time. Main subjects in this project are image processing and machine learning. Project aim to develop some algorithm to detect faces specifically recognize the faces using pattern recognition algorithms. The number of faces and the equipment needed is going to be determined according to test of different algorithms.</p>
+<h5 id="Motivation"><a href="#Motivation" class="headerlink" title="Motivation"></a>Motivation</h5><p>To detect identity of person from images is very beneficial subject. It can provide easy access to users. It can be used for detect criminals and prevent potential crimes. Also I see this subject in a lot of industrial projects and academic researches. I want to work with real world problem and problem which is not completely solved. Therefore I decided to work with this project.  </p>
+<h5 id="Difficulties-of-Problem"><a href="#Difficulties-of-Problem" class="headerlink" title="Difficulties of Problem"></a>Difficulties of Problem</h5><p>Main difficulties can be sorted like below:</p>
+<ul>
+<li>Faces are not completely rigid objects so it is hard to recognize them.</li>
+<li>The more person in database needs more and more processing power.</li>
+<li>Blurry images because of real time system</li>
+<li>The effects of ambient light</li>
+<li>Changes in person’s face over time</li>
+</ul>
+<h5 id="Data-Sets"><a href="#Data-Sets" class="headerlink" title="Data Sets"></a>Data Sets</h5><p><a href="https://www.cl.cam.ac.uk/research/dtg/attarchive/facedatabase.html" target="_blank" rel="noopener">AT&amp;T Facedatabase</a></p>
+<p>The AT&amp;T Face Database, sometimes also referred to as ORL Database of Faces, contains ten different images of each of 40 distinct subjects. For some subjects, the images were taken at different times, varying the lighting, facial expressions (open / closed eyes, smiling / not smiling) and facial details (glasses / no glasses). All the images were taken against a dark homogeneous background with the subjects in an upright, frontal position (with tolerance for some side movement).</p>
+<p><a href="https://vision.ucsd.edu/content/yale-face-database" target="_blank" rel="noopener">Yale Facedatabase A</a></p>
+<p>also known as Yalefaces. The AT&amp;T Face Database is good for initial tests, but it’s a fairly easy database. The Eigenfaces method already has a 97% recognition rate on it, so you won’t see any great improvements with other algorithms. The Yale Face Database A (also known as Yalefaces) is a more appropriate dataset for initial experiments, because the recognition problem is harder. The database consists of 15 people (14 male, 1 female) each with 11 grayscale images sized 320x243 <a href="https://lh3.googleusercontent.com/uNq7mPqspjvR267h-aZA2FS666Fl8Q8dXGhlg-Lzi7MJiNn5DkSyioK59Wj6pdA9h96bojY8L02LR-NIXIeuf0IjN-a6MYN7ufWHMOPqVbxd0hvoGcKsy0oR9jo5t85MGbfqOB9H" target="_blank" rel="noopener"></a>pixel. There are changes in the light conditions (center light, left light, right light), facial expressions (happy, normal, sad, sleepy, surprised, wink) and glasses (glasses, no-glasses).</p>
+<p><a href>Labeled Faces in the Wild</a></p>
+<p>A database of face photographs designed for studying the problem of unconstrained face recognition. The data set contains more than 13,000 images of faces collected from the web. Each face has been labeled with the name of the person pictured. 1680 of the people pictured have two or more distinct photos in the data set. The only constraint on these faces is that they were detected by the Viola-Jones face detector..  </p>
+<h5 id="Programming-Environment-and-Libraries"><a href="#Programming-Environment-and-Libraries" class="headerlink" title="Programming Environment and Libraries"></a>Programming Environment and Libraries</h5><p>Visual Studio IDE is used for project. The program is written in C# using OpenCV libraries.</p>
+<h4 id="2-Face-Recognition-Algorithm"><a href="#2-Face-Recognition-Algorithm" class="headerlink" title="2. Face Recognition Algorithm"></a>2. Face Recognition Algorithm</h4><h5 id="Face-Detection"><a href="#Face-Detection" class="headerlink" title="Face Detection"></a>Face Detection</h5><p>Face Detection is not the main subject of this project but to create database and to increase the face recognition performance. Opencv’s Haar Cascade Classifier function is used. In this function a haar cascade file ,which is pre learned for face detection, is used.</p>
+<h5 id="Morphologic-Operations"><a href="#Morphologic-Operations" class="headerlink" title="Morphologic Operations"></a>Morphologic Operations</h5><p>Ambient light and the movement at faces are the challenging problems in face recognition. Therefore some morphologic operators is applied to the faces to decrease the effect of these problems. In this project equalize histogram function of opencv is used to decrease the effect of the ambient light.<img src="https://lh6.googleusercontent.com/3PMQmXghZyoi4dGekFhBS-QWqZDYEJpQ2o_yLXJgMEo3goTr6OqtrOSPYjtwgApKjKoAzXhFLE57R3TRDw8SWrXsod9PUCiHJXNndjoZ-Ui3P1xb0atKy0EvobLyy9cfVifzA0yT" alt></p>
+<h5 id="SURF-Feature-Extractor"><a href="#SURF-Feature-Extractor" class="headerlink" title="SURF Feature Extractor"></a>SURF Feature Extractor</h5><p><img src="https://lh5.googleusercontent.com/eRt6xx3RU22fZ22_-TGdan22lp2x7JiNA9De7PuYa2xLVcZIcg4hVJzvrXyzdNbocv4NuBW8QOHYYTr0NNowPys7QOScefuBrgEeoiILasaQm2v0S0P8NPxVYSiPBRoPotTP3h0p" alt></p>
+<figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> (comboBoxAlgorithm.Text == “SURF Feature Extractor”)</span><br><span class="line">&#123;</span><br><span class="line"><span class="keyword">string</span> dataDirectory=Directory.GetCurrentDirectory()+”\TrainedFaces”;</span><br><span class="line"><span class="keyword">string</span>[] files = Directory.GetFiles(dataDirectory, “*.jpeg”, SearchOption.AllDirectories);</span><br><span class="line"></span><br><span class="line"><span class="keyword">foreach</span> (<span class="keyword">var</span> file <span class="keyword">in</span> files)</span><br><span class="line">&#123;</span><br><span class="line">   richTextBox1.Text += file.ToString();</span><br><span class="line">   <span class="keyword">long</span> recpoints;</span><br><span class="line">   ImagesampleImage = <span class="keyword">new</span> Image(file);</span><br><span class="line">   secondImageBox.Image = sampleImage;</span><br><span class="line">   <span class="keyword">using</span> (Image modelImage = sampleImage.Convert())</span><br><span class="line">   <span class="keyword">using</span> (Image observedImage = image.Convert())</span><br><span class="line">   &#123;</span><br><span class="line">       Image result = SurfRecognizer.Draw(modelImage, observedImage, <span class="keyword">out</span> recpoints);</span><br><span class="line">       <span class="comment">//captureImageBox.Image = observedImage;</span></span><br><span class="line">       <span class="keyword">if</span> (recpoints &gt; <span class="number">10</span>)</span><br><span class="line">       &#123;</span><br><span class="line">           MCvFont f = <span class="keyword">new</span> MCvFont(Emgu.CV.CvEnum.FONT.CV_FONT_HERSHEY_COMPLEX, <span class="number">1.0</span>, <span class="number">1.0</span>);</span><br><span class="line">           result.Draw(“Person Recognited, Welcome”, <span class="keyword">ref</span> f, <span class="keyword">new</span> Point(<span class="number">40</span>, <span class="number">40</span>), <span class="keyword">new</span> Bgr(<span class="number">0</span>, <span class="number">255</span>, <span class="number">0</span>));</span><br><span class="line">           ImageViewer.Show(result, String.Format(“ &#123;<span class="number">0</span>&#125; Points Recognited”, recpoints));</span><br><span class="line">       &#125;</span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h5 id="Eigenfaces"><a href="#Eigenfaces" class="headerlink" title="Eigenfaces"></a>Eigenfaces</h5><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">else</span> <span class="keyword">if</span> (comboBoxAlgorithm.Text == <span class="string">"EigenFaces"</span>)</span><br><span class="line">&#123;</span><br><span class="line">   <span class="comment">//image._EqualizeHist();</span></span><br><span class="line">   <span class="keyword">if</span> (eqHisChecked.Checked == <span class="literal">true</span>)</span><br><span class="line">   &#123;</span><br><span class="line">       image._EqualizeHist();</span><br><span class="line">   &#125;</span><br><span class="line">   <span class="keyword">var</span> result = eigenFaceRecognizer.Predict(image.Convert().Resize(<span class="number">100</span>, <span class="number">100</span>, Emgu.CV.CvEnum.INTER.CV_INTER_CUBIC));</span><br><span class="line">   <span class="keyword">if</span> (result.Label != <span class="number">-1</span>)</span><br><span class="line">   &#123;</span><br><span class="line">       image.Draw(eigenlabels[result.Label].ToString(), <span class="keyword">ref</span> font, <span class="keyword">new</span> Point(face.X - <span class="number">2</span>, face.Y - <span class="number">2</span>), <span class="keyword">new</span> Bgr(Color.LightGreen));</span><br><span class="line">       label6.Text = result.Distance.ToString();</span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h5 id="Fisherfaces"><a href="#Fisherfaces" class="headerlink" title="Fisherfaces"></a>Fisherfaces</h5><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">else</span> <span class="keyword">if</span> (comboBoxAlgorithm.Text == <span class="string">"FisherFaces"</span>)</span><br><span class="line">&#123;</span><br><span class="line">   <span class="keyword">if</span> (eqHisChecked.Checked == <span class="literal">true</span>)</span><br><span class="line">   &#123;</span><br><span class="line">       image._EqualizeHist();</span><br><span class="line">   &#125;</span><br><span class="line">   <span class="keyword">var</span> result = fisherFaceRecognizer.Predict(image.Convert().Resize(<span class="number">100</span>, <span class="number">100</span>, Emgu.CV.CvEnum.INTER.CV_INTER_CUBIC));</span><br><span class="line">   <span class="keyword">if</span> (result.Label != <span class="number">-1</span>)</span><br><span class="line">   &#123;</span><br><span class="line">       image.Draw(fisherlabels[result.Label].ToString(), <span class="keyword">ref</span> font, <span class="keyword">new</span> Point(face.X - <span class="number">2</span>, face.Y - <span class="number">2</span>), <span class="keyword">new</span> Bgr(Color.LightGreen));</span><br><span class="line">       label6.Text = result.Distance.ToString();</span><br><span class="line">   &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h5 id="Local-Binary-Patterns-Histograms"><a href="#Local-Binary-Patterns-Histograms" class="headerlink" title="Local Binary Patterns Histograms"></a>Local Binary Patterns Histograms</h5><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">else</span> <span class="keyword">if</span> (comboBoxAlgorithm.Text == <span class="string">"LBPHFaces"</span>)</span><br><span class="line">&#123;</span><br><span class="line">   <span class="keyword">if</span> (eqHisChecked.Checked == <span class="literal">true</span>)</span><br><span class="line">   &#123;</span><br><span class="line">       image._EqualizeHist();</span><br><span class="line">   &#125;</span><br><span class="line">   <span class="keyword">var</span> result = lbphFaceRecognizer.Predict(image.Convert().Resize(<span class="number">100</span>, <span class="number">100</span>, Emgu.CV.CvEnum.INTER.CV_INTER_CUBIC));</span><br><span class="line">   <span class="keyword">if</span> (result.Label != <span class="number">-1</span>)</span><br><span class="line">   &#123;</span><br><span class="line">       image.Draw(lbphlabels[result.Label].ToString(), <span class="keyword">ref</span> font, <span class="keyword">new</span> Point(face.X - <span class="number">2</span>, face.Y - <span class="number">2</span>), <span class="keyword">new</span> Bgr(Color.LightGreen));</span><br><span class="line">       label6.Text = result.Distance.ToString();</span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="3-PassFace-Interface"><a href="#3-PassFace-Interface" class="headerlink" title="3. PassFace Interface"></a>3. PassFace Interface</h4><h5 id="Database-Creator"><a href="#Database-Creator" class="headerlink" title="Database Creator"></a>Database Creator</h5><p>A database creator is developed to make easier to implement and try different algorithm.</p>
+<figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br></pre></td><td class="code"><pre><span class="line">Add DataBase Function</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">addDatabaseButton_Click</span>(<span class="params"><span class="keyword">object</span> sender, EventArgs e</span>)</span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">   <span class="comment">//Take time for save filename</span></span><br><span class="line">   <span class="keyword">string</span> fileName = textBox1.Text+<span class="string">"_"</span>+DateTime.Now.Day.ToString() + <span class="string">"-"</span> + DateTime.Now.Month.ToString() + <span class="string">"-"</span> + DateTime.Now.Year.ToString()</span><br><span class="line">   + <span class="string">"-"</span> + DateTime.Now.Hour.ToString() + <span class="string">"-"</span> + DateTime.Now.Minute.ToString()+<span class="string">"-"</span> + DateTime.Now.Second.ToString()+<span class="string">".jpeg"</span>;</span><br><span class="line"></span><br><span class="line">   <span class="comment">//First The faces in the Image is detected</span></span><br><span class="line">   Image image = _capture.RetrieveBgrFrame().Resize(<span class="number">400</span>, <span class="number">300</span>, Emgu.CV.CvEnum.INTER.CV_INTER_CUBIC);</span><br><span class="line">   List faces = <span class="keyword">new</span> List();</span><br><span class="line">   List eyes = <span class="keyword">new</span> List();</span><br><span class="line">   <span class="keyword">long</span> detectionTime;</span><br><span class="line">   DetectFace.Detect(image, <span class="string">"haarcascade_frontalface_default.xml"</span>, <span class="string">"haarcascade_eye.xml"</span>, faces, eyes, <span class="keyword">out</span> detectionTime);</span><br><span class="line">   <span class="keyword">foreach</span> (Rectangle face <span class="keyword">in</span> faces)</span><br><span class="line">   &#123;</span><br><span class="line">       image.ROI = face;</span><br><span class="line">   &#125;</span><br><span class="line">   Directory.CreateDirectory(<span class="string">"TrainedFaces"</span>);</span><br><span class="line">   image.Resize(<span class="number">100</span>, <span class="number">100</span>, Emgu.CV.CvEnum.INTER.CV_INTER_CUBIC).ToBitmap().Save(<span class="string">"TrainedFaces\\"</span> + fileName);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">comboBoxAlgorithm_SelectedIndexChanged</span>(<span class="params"><span class="keyword">object</span> sender, EventArgs e</span>)</span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">   <span class="keyword">if</span> (comboBoxAlgorithm.Text == <span class="string">"EigenFaces"</span>)</span><br><span class="line">   &#123;</span><br><span class="line">       <span class="keyword">try</span></span><br><span class="line">       &#123;</span><br><span class="line">         <span class="keyword">string</span> dataDirectory = Directory.GetCurrentDirectory() + <span class="string">"\\TrainedFaces"</span>;</span><br><span class="line">         <span class="keyword">string</span>[] files = Directory.GetFiles(dataDirectory, <span class="string">"*.jpeg"</span>, SearchOption.AllDirectories);</span><br><span class="line">         eigenTrainedImageCounter = <span class="number">0</span>;</span><br><span class="line">         <span class="keyword">foreach</span> (<span class="keyword">var</span> file <span class="keyword">in</span> files)</span><br><span class="line">         &#123;</span><br><span class="line">               Image TrainedImage=<span class="keyword">new</span> Image(file);</span><br><span class="line">               <span class="keyword">if</span> (eqHisChecked.Checked == <span class="literal">true</span>)</span><br><span class="line">               &#123;</span><br><span class="line">                   TrainedImage._EqualizeHist();</span><br><span class="line">               &#125;</span><br><span class="line">               eigenTrainingImages.Add(TrainedImage.Convert());</span><br><span class="line">               eigenlabels.Add(fileName(file));</span><br><span class="line">               eigenIntlabels.Add(eigenTrainedImageCounter);</span><br><span class="line">               eigenTrainedImageCounter++;</span><br><span class="line">               richTextBox1.Text += fileName(file)+<span class="string">"\n"</span>;</span><br><span class="line">         &#125;</span><br><span class="line">          eigenFaceRecognizer= <span class="keyword">new</span> EigenFaceRecognizer(eigenTrainedImageCounter, <span class="number">3000</span>);</span><br><span class="line">          eigenFaceRecognizer.Train(eigenTrainingImages.ToArray(), eigenIntlabels.ToArray());</span><br><span class="line">            </span><br><span class="line">       &#125;</span><br><span class="line">       <span class="keyword">catch</span> (Exception ex)</span><br><span class="line">       &#123;</span><br><span class="line">           MessageBox.Show(ex.ToString());</span><br><span class="line">           MessageBox.Show(<span class="string">"Nothing in binary database, please add at least a face(Simply train the prototype with the Add Face Button)."</span>, <span class="string">"Triained faces load"</span>, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);</span><br><span class="line">       &#125;</span><br><span class="line">   &#125;</span><br><span class="line">   <span class="keyword">else</span> <span class="keyword">if</span> (comboBoxAlgorithm.Text == <span class="string">"FisherFaces"</span>)</span><br><span class="line">   &#123;</span><br><span class="line">       <span class="keyword">try</span></span><br><span class="line">       &#123;</span><br><span class="line">           <span class="keyword">string</span> dataDirectory = Directory.GetCurrentDirectory() + <span class="string">"\\TrainedFaces"</span>;</span><br><span class="line">           <span class="keyword">string</span>[] files = Directory.GetFiles(dataDirectory, <span class="string">"*.jpeg"</span>, SearchOption.AllDirectories);</span><br><span class="line">           fisherTrainedImageCounter = <span class="number">0</span>;</span><br><span class="line">           <span class="keyword">foreach</span> (<span class="keyword">var</span> file <span class="keyword">in</span> files)</span><br><span class="line">           &#123;</span><br><span class="line">               Image TrainedImage = <span class="keyword">new</span> Image(file);</span><br><span class="line">               fisherTrainingImages.Add(TrainedImage.Convert());</span><br><span class="line">               <span class="keyword">if</span> (eqHisChecked.Checked == <span class="literal">true</span>)</span><br><span class="line">               &#123;</span><br><span class="line">                   TrainedImage._EqualizeHist();</span><br><span class="line">               &#125;</span><br><span class="line">               fisherlabels.Add(fileName(file));</span><br><span class="line">               fisherIntlabels.Add(fisherTrainedImageCounter);</span><br><span class="line">               fisherTrainedImageCounter++;</span><br><span class="line">               richTextBox1.Text += fileName(file) + <span class="string">"\n"</span>;</span><br><span class="line">           &#125;</span><br><span class="line">           fisherFaceRecognizer = <span class="keyword">new</span> FisherFaceRecognizer(fisherTrainedImageCounter, <span class="number">3000</span>);</span><br><span class="line">           fisherFaceRecognizer.Train(fisherTrainingImages.ToArray(), fisherIntlabels.ToArray());</span><br><span class="line">       &#125;</span><br><span class="line">       <span class="keyword">catch</span> (Exception ex)</span><br><span class="line">       &#123;</span><br><span class="line">           MessageBox.Show(ex.ToString());</span><br><span class="line">           MessageBox.Show(<span class="string">"Nothing in binary database, please add at least a face(Simply train the prototype with the Add Face Button)."</span>, <span class="string">"Triained faces load"</span>, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);</span><br><span class="line">       &#125;</span><br><span class="line">   &#125;</span><br><span class="line">   <span class="keyword">else</span> <span class="keyword">if</span> (comboBoxAlgorithm.Text == <span class="string">"LBPHFaces"</span>)</span><br><span class="line">   &#123;</span><br><span class="line">       <span class="keyword">try</span></span><br><span class="line">       &#123;</span><br><span class="line">           <span class="keyword">string</span> dataDirectory = Directory.GetCurrentDirectory() + <span class="string">"\\TrainedFaces"</span>;</span><br><span class="line">           <span class="keyword">string</span>[] files = Directory.GetFiles(dataDirectory, <span class="string">"*.jpeg"</span>, SearchOption.AllDirectories);</span><br><span class="line">           lbphTrainedImageCounter = <span class="number">0</span>;</span><br><span class="line">           <span class="keyword">foreach</span> (<span class="keyword">var</span> file <span class="keyword">in</span> files)</span><br><span class="line">           &#123;</span><br><span class="line">               Image TrainedImage = <span class="keyword">new</span> Image(file);</span><br><span class="line">               <span class="keyword">if</span> (eqHisChecked.Checked == <span class="literal">true</span>)</span><br><span class="line">               &#123;</span><br><span class="line">                   TrainedImage._EqualizeHist();</span><br><span class="line">               &#125;</span><br><span class="line">               lbphTrainingImages.Add(TrainedImage.Convert());</span><br><span class="line">               lbphlabels.Add(fileName(file));</span><br><span class="line">               lbphIntlabels.Add(lbphTrainedImageCounter);</span><br><span class="line">               lbphTrainedImageCounter++;</span><br><span class="line">               richTextBox1.Text += fileName(file) + <span class="string">"\n"</span>;</span><br><span class="line">           &#125;</span><br><span class="line">           lbphFaceRecognizer = <span class="keyword">new</span> LBPHFaceRecognizer(<span class="number">1</span>, <span class="number">8</span>, <span class="number">8</span>, <span class="number">8</span>, <span class="number">123.0</span>);</span><br><span class="line">           lbphFaceRecognizer.Train(lbphTrainingImages.ToArray(), lbphIntlabels.ToArray());</span><br><span class="line">       &#125;</span><br><span class="line">       <span class="keyword">catch</span> (Exception ex)</span><br><span class="line">       &#123;</span><br><span class="line">           MessageBox.Show(ex.ToString());</span><br><span class="line">           MessageBox.Show(<span class="string">"Nothing in binary database, please add at least a face(Simply train the prototype with the Add Face Button)."</span>, <span class="string">"Triained faces load"</span>, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);</span><br><span class="line">       &#125;</span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><img src="https://lh4.googleusercontent.com/560MflmHrYy5nUi4gIAQexc-Cdqfyr3GUej_g1wwa0HawxO4A7OFmOkgd0g4oBvy9An1PjiYxSM_8G0G2FS_zC2y3gWisgkr0NTikxv4oyDFL9qM6IpkupdhA7OjnUAb4cuy51Pa" alt></p>
+<h5 id="User-Interface"><a href="#User-Interface" class="headerlink" title="User Interface"></a>User Interface</h5><p>As a source camera, video, single image and multi image can be selected. Different source selection is developed using opencv and .net libraries.</p>
+<p><img src="https://lh5.googleusercontent.com/6y8Sx-7a4PDYcZWv9W_COKJf9EaGKQl-_3vc6q9oo-HzQeC4CJMJoGTceeaUAC4F31mjpGs84Zrkse1viHgwCCKnRvhciz7aEjmmySR16PAD2aOGmOrLWHr6R3hO7GvV0TamI9nS" alt></p>
+<h4 id="4-Future-of-PassFace-Project"><a href="#4-Future-of-PassFace-Project" class="headerlink" title="4. Future of PassFace Project"></a>4. Future of PassFace Project</h4><h5 id="Algorithm-Accuracy-Analysis"><a href="#Algorithm-Accuracy-Analysis" class="headerlink" title="Algorithm Accuracy Analysis"></a>Algorithm Accuracy Analysis</h5><p>Program designed for using different algorithms. But the comparison of these algorithms is not finished. The next step is implementing this algorithm the compare the algorithms accuracy and performance truly.</p>
+<h5 id="Performance-Optimizations"><a href="#Performance-Optimizations" class="headerlink" title="Performance Optimizations"></a>Performance Optimizations</h5><p>For fix the performance problems, develop the program for multiple core CPUs. For better performance, develop the program to run over GPU using CUDA libraries.</p>
+<h5 id="Algorithm-Optimizations"><a href="#Algorithm-Optimizations" class="headerlink" title="Algorithm Optimizations"></a>Algorithm Optimizations</h5><p>In these days, the most improved face recognition algorithms are using 3D face recognition technologies. It is based on; the 3D model of the faces are created using different 2D images. Therefore, the angle of looking and the direction of light are no longer be problem for these algorithms. The recognize operations are implementing using Neural Networks and Deep Learning Algorithms. It is planning to implement latest algorithms to increase accuracy in different conditions.</p>
+<h4 id="5-Conclusion"><a href="#5-Conclusion" class="headerlink" title="5. Conclusion"></a>5. Conclusion</h4><p>In this project, the main principles of the face recognition algorithms are learned. The performances and accuracies of the algorithms are compared. A gui application is developed to create database and process images using selected algorithm.</p>
+
+  </div>
+</article>
+
+    <div class="blog-post-comments">
+        <div id="disqus_thread">
+            <noscript>Please enable JavaScript to view the comments.</noscript>
+        </div>
+    </div>
+
+
+
+        
+          <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/categories/">Category</a></li>
+         
+          <li><a href="/archives/">Blog</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="https://github.com/mozanunal">Projects</a></li>
+         
+          <li><a href="https://scholar.google.com/citations?user=u_HbXUUAAAAJ&hl=en">Publications</a></li>
+         
+          <li><a href="/search/">Search</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-Introduction"><span class="toc-number">1.</span> <span class="toc-text">1. Introduction</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#Definition-of-the-Problem"><span class="toc-number">1.1.</span> <span class="toc-text">Definition of the Problem</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Motivation"><span class="toc-number">1.2.</span> <span class="toc-text">Motivation</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Difficulties-of-Problem"><span class="toc-number">1.3.</span> <span class="toc-text">Difficulties of Problem</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Data-Sets"><span class="toc-number">1.4.</span> <span class="toc-text">Data Sets</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Programming-Environment-and-Libraries"><span class="toc-number">1.5.</span> <span class="toc-text">Programming Environment and Libraries</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-Face-Recognition-Algorithm"><span class="toc-number">2.</span> <span class="toc-text">2. Face Recognition Algorithm</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#Face-Detection"><span class="toc-number">2.1.</span> <span class="toc-text">Face Detection</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Morphologic-Operations"><span class="toc-number">2.2.</span> <span class="toc-text">Morphologic Operations</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#SURF-Feature-Extractor"><span class="toc-number">2.3.</span> <span class="toc-text">SURF Feature Extractor</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Eigenfaces"><span class="toc-number">2.4.</span> <span class="toc-text">Eigenfaces</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Fisherfaces"><span class="toc-number">2.5.</span> <span class="toc-text">Fisherfaces</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Local-Binary-Patterns-Histograms"><span class="toc-number">2.6.</span> <span class="toc-text">Local Binary Patterns Histograms</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-PassFace-Interface"><span class="toc-number">3.</span> <span class="toc-text">3. PassFace Interface</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#Database-Creator"><span class="toc-number">3.1.</span> <span class="toc-text">Database Creator</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#User-Interface"><span class="toc-number">3.2.</span> <span class="toc-text">User Interface</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-Future-of-PassFace-Project"><span class="toc-number">4.</span> <span class="toc-text">4. Future of PassFace Project</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#Algorithm-Accuracy-Analysis"><span class="toc-number">4.1.</span> <span class="toc-text">Algorithm Accuracy Analysis</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Performance-Optimizations"><span class="toc-number">4.2.</span> <span class="toc-text">Performance Optimizations</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Algorithm-Optimizations"><span class="toc-number">4.3.</span> <span class="toc-text">Algorithm Optimizations</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5-Conclusion"><span class="toc-number">5.</span> <span class="toc-text">5. Conclusion</span></a></li></ol>
+    </div>
+
+    <div id="share-footer" style="display: none">
+      <ul>
+  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=https://mozanunal.com/2016/06/passface-face-recognition-using-opencv/"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=https://mozanunal.com/2016/06/passface-face-recognition-using-opencv/&text=PassFace: Face Recognition Using OpenCV"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=https://mozanunal.com/2016/06/passface-face-recognition-using-opencv/&title=PassFace: Face Recognition Using OpenCV"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https://mozanunal.com/2016/06/passface-face-recognition-using-opencv/&is_video=false&description=PassFace: Face Recognition Using OpenCV"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=PassFace: Face Recognition Using OpenCV&body=Check out this article: https://mozanunal.com/2016/06/passface-face-recognition-using-opencv/"><i class="fas fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=https://mozanunal.com/2016/06/passface-face-recognition-using-opencv/&title=PassFace: Face Recognition Using OpenCV"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=https://mozanunal.com/2016/06/passface-face-recognition-using-opencv/&title=PassFace: Face Recognition Using OpenCV"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=https://mozanunal.com/2016/06/passface-face-recognition-using-opencv/&title=PassFace: Face Recognition Using OpenCV"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=https://mozanunal.com/2016/06/passface-face-recognition-using-opencv/&title=PassFace: Face Recognition Using OpenCV"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=https://mozanunal.com/2016/06/passface-face-recognition-using-opencv/&name=PassFace: Face Recognition Using OpenCV&description="><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> Share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+        
+        <footer id="footer">
+  <div class="footer-left">
+    Copyright &copy; 2023 Mehmet Ozan Ünal
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/categories/">Category</a></li>
+         
+          <li><a href="/archives/">Blog</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="https://github.com/mozanunal">Projects</a></li>
+         
+          <li><a href="https://scholar.google.com/citations?user=u_HbXUUAAAAJ&hl=en">Publications</a></li>
+         
+          <li><a href="/search/">Search</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+    </div>
+    <!-- styles -->
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+<link rel="stylesheet" href="/lib/justified-gallery/css/justifiedGallery.min.css">
+
+    <!-- jquery -->
+<script src="/lib/jquery/jquery.min.js"></script>
+<script src="/lib/justified-gallery/js/jquery.justifiedGallery.min.js"></script>
+<script src="/js/main.js"></script>
+<!-- search -->
+
+<!-- Google Analytics -->
+
+    <script type="text/javascript">
+        (function(i,s,o,g,r,a,m) {i['GoogleAnalyticsObject']=r;i[r]=i[r]||function() {
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-60655125-2', 'auto');
+        ga('send', 'pageview');
+    </script>
+
+<!-- Baidu Analytics -->
+
+<!-- Disqus Comments -->
+
+    <script type="text/javascript">
+        var disqus_shortname = 'mozanunal-com';
+
+        (function(){
+            var dsq = document.createElement('script');
+            dsq.type = 'text/javascript';
+            dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        }());
+    </script>
+
+
+</body>
+</html>

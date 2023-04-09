@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang=en>
+<head><meta name="generator" content="Hexo 3.8.0">
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="It is a project developed for BiTaksi Getir Hackathon 2018. Detailed information can be found from below.  Team Paketci! Check our app from here which is deployed using heroku. Check github repo of a">
+<meta name="keywords" content="hackhathon,getir,angularjs,nodejs,route,google map api">
+<meta property="og:type" content="article">
+<meta property="og:title" content="[TR] Hackhathon Getir 2018">
+<meta property="og:url" content="https://mozanunal.com/2018/04/getir-hackhathon/index.html">
+<meta property="og:site_name" content="Mehmet Ozan Ünal">
+<meta property="og:description" content="It is a project developed for BiTaksi Getir Hackathon 2018. Detailed information can be found from below.  Team Paketci! Check our app from here which is deployed using heroku. Check github repo of a">
+<meta property="og:locale" content="en">
+<meta property="og:image" content="https://mozanunal.com/images/1523149456799.jpg">
+<meta property="og:image" content="https://github.com/mozanunal/paketci-backend/blob/master/doc/images/timeLine.PNG?raw=true">
+<meta property="og:image" content="https://github.com/mozanunal/paketci-backend/blob/master/doc/images/backEndContainer.png?raw=true">
+<meta property="og:image" content="https://github.com/mozanunal/paketci-backend/blob/master/doc/images/routeOptimizeAlgrotihmVisualize.gif?raw=true">
+<meta property="og:updated_time" content="2023-01-18T11:16:34.255Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="[TR] Hackhathon Getir 2018">
+<meta name="twitter:description" content="It is a project developed for BiTaksi Getir Hackathon 2018. Detailed information can be found from below.  Team Paketci! Check our app from here which is deployed using heroku. Check github repo of a">
+<meta name="twitter:image" content="https://mozanunal.com/images/1523149456799.jpg">
+    
+    
+        
+          
+              <link rel="shortcut icon" href="/images/favicon.ico">
+          
+        
+        
+          
+            <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
+          
+        
+        
+          
+            <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+          
+        
+    
+    <!-- title -->
+    <title>[TR] Hackhathon Getir 2018</title>
+    <!-- styles -->
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- persian styles -->
+    
+      <link rel="stylesheet" href="/css/rtl.css">
+    
+    <!-- rss -->
+    
+    
+      <link rel="alternate" href="/atom" title="Mehmet Ozan Ünal" type="application/atom+xml">
+    
+    <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/7ecf5c9db13693c2c7062ad3f/0e72f59463de1883a2a166735.js");</script>
+</head>
+
+<body class="max-width mx-auto px3 ltr">    
+      <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/categories/">Category</a></li>
+         
+          <li><a href="/archives/">Blog</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="https://github.com/mozanunal">Projects</a></li>
+         
+          <li><a href="https://scholar.google.com/citations?user=u_HbXUUAAAAJ&hl=en">Publications</a></li>
+         
+          <li><a href="/search/">Search</a></li>
+        
+      </ul>
+    </span>
+    <br>
+    <span id="actions">
+      <ul>
+        
+        <li><a class="icon" href="/2018/04/google-docs-data-collection/"><i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i></a></li>
+        
+        
+        <li><a class="icon" href="/2018/04/hash-code-2018/"><i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
+        
+        <li><a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
+        <li><a class="icon" href="#"><i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br>
+    <div id="share" style="display: none">
+      <ul>
+  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=https://mozanunal.com/2018/04/getir-hackhathon/"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=https://mozanunal.com/2018/04/getir-hackhathon/&text=[TR] Hackhathon Getir 2018"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=https://mozanunal.com/2018/04/getir-hackhathon/&title=[TR] Hackhathon Getir 2018"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https://mozanunal.com/2018/04/getir-hackhathon/&is_video=false&description=[TR] Hackhathon Getir 2018"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=[TR] Hackhathon Getir 2018&body=Check out this article: https://mozanunal.com/2018/04/getir-hackhathon/"><i class="fas fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=https://mozanunal.com/2018/04/getir-hackhathon/&title=[TR] Hackhathon Getir 2018"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=https://mozanunal.com/2018/04/getir-hackhathon/&title=[TR] Hackhathon Getir 2018"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=https://mozanunal.com/2018/04/getir-hackhathon/&title=[TR] Hackhathon Getir 2018"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=https://mozanunal.com/2018/04/getir-hackhathon/&title=[TR] Hackhathon Getir 2018"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=https://mozanunal.com/2018/04/getir-hackhathon/&name=[TR] Hackhathon Getir 2018&description="><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+    <div id="toc">
+      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Team-Paketci"><span class="toc-number">1.</span> <span class="toc-text">Team Paketci!</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Paketci-App"><span class="toc-number">2.</span> <span class="toc-text">Paketci App</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Features"><span class="toc-number">2.0.1.</span> <span class="toc-text">Features:</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Used-Libraries-and-API-in-frontend"><span class="toc-number">2.0.2.</span> <span class="toc-text">Used Libraries and API in frontend</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Compleated-Part-of-Frontend"><span class="toc-number">2.0.3.</span> <span class="toc-text">Compleated Part of Frontend</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Backend"><span class="toc-number">2.1.</span> <span class="toc-text">Backend</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Route-Optimization"><span class="toc-number">2.2.</span> <span class="toc-text">Route Optimization</span></a></li></ol>
+    </div>
+  </span>
+</div>
+
+    
+    <div class="content index py4">
+        
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    
+    <h1 class="posttitle" itemprop="name headline">
+        [TR] Hackhathon Getir 2018
+    </h1>
+
+
+
+    <div class="meta">
+      <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span itemprop="name">Mehmet Ozan Ünal</span>
+      </span>
+      
+    <div class="postdate">
+      
+        <time datetime="2018-04-16T15:10:04.000Z" itemprop="datePublished">2018-04-16</time>
+        
+      
+    </div>
+
+
+      
+    <div class="article-category">
+        <i class="fas fa-archive"></i>
+        <a class="category-link" href="/categories/Coding/">Coding</a>
+    </div>
+
+
+    </div>
+  </header>
+  
+
+  <div class="content" itemprop="articleBody">
+    <blockquote>
+<p>It is a project developed for BiTaksi Getir Hackathon 2018. Detailed information can be found from below.</p>
+</blockquote>
+<h1 id="Team-Paketci"><a href="#Team-Paketci" class="headerlink" title="Team Paketci!"></a>Team Paketci!</h1><p><img src="/images/1523149456799.jpg" alt="image"></p>
+<p><a href="https://hackhathon-getir-2018.herokuapp.com/" target="_blank" rel="noopener">Check our app from here</a> which is deployed using heroku.</p>
+<p><a href="https://github.com/mozanunal/paketci-backend" target="_blank" rel="noopener">Check github repo of app from here</a></p>
+<p><img src="https://github.com/mozanunal/paketci-backend/blob/master/doc/images/timeLine.PNG?raw=true" alt="Timeline of our little project!"></p>
+<p>Getir Hackhathon 2018<br>Team Members:<br>Sertan Sezgin Kutlu<br>Ertuğrul Çınar<br>Mehmet Ozan Ünal</p>
+<h1 id="Paketci-App"><a href="#Paketci-App" class="headerlink" title="Paketci App"></a>Paketci App</h1><p>Its a work on pack collection and delivery for courier and observer.</p>
+<h3 id="Features"><a href="#Features" class="headerlink" title="Features:"></a>Features:</h3><p>By Backend:<br>1.Assign routes for couries by relate most efficent path.<br>2.Update states of packets.<br>3.Update states of couriers.</p>
+<p>By Frontend<br>1.Courier see waypoints and pack to collect.<br>2.Observers see all couriers and pack states.<br>3.Adding new packs</p>
+<h3 id="Used-Libraries-and-API-in-frontend"><a href="#Used-Libraries-and-API-in-frontend" class="headerlink" title="Used Libraries and API in frontend"></a>Used Libraries and API in frontend</h3><p>1.Android Libraries<br>2.Java<br>3.Volley<br>4.Google Maps Directions API<br>5.Google Maps Javascript API<br>6.AngularJS</p>
+<h3 id="Compleated-Part-of-Frontend"><a href="#Compleated-Part-of-Frontend" class="headerlink" title="Compleated Part of Frontend"></a>Compleated Part of Frontend</h3><p>Application is designed for used by cariers. It gave users to see which way courier should go and where to take packs.</p>
+<p>In order to make it more stable, decions of disturbution made at backend in order to keep system stable for all users, this app communacte with backend by using asyncrounous http requests.</p>
+<p>For async HTTPS requess, it been used Volley library in JSON Object and String responsed GET and POST requests.</p>
+<p>App takes missions from backend and by communicating with Google Direcitons API, get caluclations of every shorth path waypoints which collect and carry pointed packs in missions and drawing them on a Map View.</p>
+<p>In angular web app we see all packs and couriers with their missions and routes. Its allows users to add new packs to environment.</p>
+<h2 id="Backend"><a href="#Backend" class="headerlink" title="Backend"></a>Backend</h2><p><img src="https://github.com/mozanunal/paketci-backend/blob/master/doc/images/backEndContainer.png?raw=true" alt="enter image description here"><br>Data structure and Crud Outputs<br>Sample JSON files, it can be enchance according to packet number and courier number</p>
+<p>/api/courier<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br></pre></td><td class="code"><pre><span class="line">[   &#123;</span><br><span class="line">    <span class="string">"_id"</span>: <span class="number">0</span>,</span><br><span class="line">    <span class="string">"initLocation"</span>: &#123;</span><br><span class="line">      <span class="string">"lat"</span>: <span class="number">40.73726833204571</span>,</span><br><span class="line">      <span class="string">"long"</span>: <span class="number">-111.86816435821093</span></span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="string">"curLocation"</span>: &#123;</span><br><span class="line">      <span class="string">"lat"</span>: <span class="number">40.73726833204571</span>,</span><br><span class="line">      <span class="string">"long"</span>: <span class="number">-111.86816435821093</span></span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="string">"weightCapacity"</span>: <span class="number">20</span>,</span><br><span class="line">    <span class="string">"remainingWeightCapacity"</span>: <span class="number">18.2923904630732</span>,</span><br><span class="line">    <span class="string">"pieceCapacity"</span>: <span class="number">8</span>,</span><br><span class="line">    <span class="string">"remainingPieceCapacity"</span>: <span class="number">7</span>,</span><br><span class="line">    <span class="string">"routes"</span>: [</span><br><span class="line">      &#123;</span><br><span class="line">        <span class="string">"_id"</span>: <span class="number">1</span>,</span><br><span class="line">        <span class="string">"routeFromGoogle"</span>: <span class="string">""</span>,</span><br><span class="line">        <span class="string">"distance"</span>: <span class="number">0.02248501759660298</span>,</span><br><span class="line">        <span class="string">"startLoc"</span>: &#123;</span><br><span class="line">          <span class="string">"lat"</span>: <span class="number">40.73726833204571</span>,</span><br><span class="line">          <span class="string">"long"</span>: <span class="number">-111.86816435821093</span></span><br><span class="line">        &#125;,</span><br><span class="line">        <span class="string">"endLoc"</span>: &#123;</span><br><span class="line">          <span class="string">"lat"</span>: <span class="number">40.73287234594392</span>,</span><br><span class="line">          <span class="string">"long"</span>: <span class="number">-111.84611325115227</span></span><br><span class="line">        &#125;,</span><br><span class="line">        <span class="string">"nearPacketsDistance"</span>: [</span><br><span class="line">          <span class="number">-1</span></span><br><span class="line">        ],</span><br><span class="line">        <span class="string">"state"</span>: <span class="number">1</span></span><br><span class="line">      &#125;,</span><br><span class="line">      &#123;</span><br><span class="line">        <span class="string">"_id"</span>: <span class="number">3</span>,</span><br><span class="line">        <span class="string">"routeFromGoogle"</span>: <span class="string">""</span>,</span><br><span class="line">        <span class="string">"distance"</span>: <span class="number">0.01372524844602735</span>,</span><br><span class="line">        <span class="string">"startLoc"</span>: &#123;</span><br><span class="line">          <span class="string">"lat"</span>: <span class="number">40.73287234594392</span>,</span><br><span class="line">          <span class="string">"long"</span>: <span class="number">-111.84611325115227</span></span><br><span class="line">        &#125;,</span><br><span class="line">        <span class="string">"endLoc"</span>: &#123;</span><br><span class="line">          <span class="string">"lat"</span>: <span class="number">40.745843583374935</span>,</span><br><span class="line">          <span class="string">"long"</span>: <span class="number">-111.84162666621344</span></span><br><span class="line">        &#125;,</span><br><span class="line">        <span class="string">"nearPacketsDistance"</span>: [</span><br><span class="line">          <span class="number">-1</span></span><br><span class="line">        ],</span><br><span class="line">        <span class="string">"state"</span>: <span class="number">1</span></span><br><span class="line">      &#125;</span><br><span class="line">    ],</span><br><span class="line">    <span class="string">"packets"</span>: [</span><br><span class="line">      &#123;</span><br><span class="line">        <span class="string">"_id"</span>: <span class="number">0</span>,</span><br><span class="line">        <span class="string">"initLocation"</span>: &#123;</span><br><span class="line">          <span class="string">"lat"</span>: <span class="number">40.73287234594392</span>,</span><br><span class="line">          <span class="string">"long"</span>: <span class="number">-111.84611325115227</span></span><br><span class="line">        &#125;,</span><br><span class="line">        <span class="string">"destLocation"</span>: &#123;</span><br><span class="line">          <span class="string">"lat"</span>: <span class="number">40.745843583374935</span>,</span><br><span class="line">          <span class="string">"long"</span>: <span class="number">-111.84162666621344</span></span><br><span class="line">        &#125;,</span><br><span class="line">        <span class="string">"weight"</span>: <span class="number">1.707609536926801</span>,</span><br><span class="line">        <span class="string">"state"</span>: <span class="number">1</span>,</span><br><span class="line">        <span class="string">"courier"</span>: &#123;&#125;</span><br><span class="line">      &#125;</span><br><span class="line">    ]   &#125; ]</span><br></pre></td></tr></table></figure></p>
+<p>/api/packet<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">[</span><br><span class="line">  &#123;</span><br><span class="line">    <span class="string">"_id"</span>: <span class="number">0</span>,</span><br><span class="line">    <span class="string">"initLocation"</span>: &#123;</span><br><span class="line">      <span class="string">"lat"</span>: <span class="number">40.73287234594392</span>,</span><br><span class="line">      <span class="string">"long"</span>: <span class="number">-111.84611325115227</span></span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="string">"destLocation"</span>: &#123;</span><br><span class="line">      <span class="string">"lat"</span>: <span class="number">40.745843583374935</span>,</span><br><span class="line">      <span class="string">"long"</span>: <span class="number">-111.84162666621344</span></span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="string">"weight"</span>: <span class="number">1.707609536926801</span>,</span><br><span class="line">    <span class="string">"state"</span>: <span class="number">1</span>,</span><br><span class="line">    <span class="string">"courier"</span>: &#123;&#125;</span><br><span class="line">  &#125;</span><br><span class="line">]</span><br></pre></td></tr></table></figure></p>
+<p>/api/route<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br></pre></td><td class="code"><pre><span class="line">[   &#123;</span><br><span class="line">    <span class="string">"_id"</span>: <span class="number">0</span>,</span><br><span class="line">    <span class="string">"routeFromGoogle"</span>: <span class="string">""</span>,</span><br><span class="line">    <span class="string">"distance"</span>: <span class="number">0.027888779677731172</span>,</span><br><span class="line">    <span class="string">"startLoc"</span>: &#123;</span><br><span class="line">      <span class="string">"lat"</span>: <span class="number">40.73726833204571</span>,</span><br><span class="line">      <span class="string">"long"</span>: <span class="number">-111.86816435821093</span></span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="string">"endLoc"</span>: &#123;</span><br><span class="line">      <span class="string">"lat"</span>: <span class="number">40.745843583374935</span>,</span><br><span class="line">      <span class="string">"long"</span>: <span class="number">-111.84162666621344</span></span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="string">"nearPacketsDistance"</span>: [</span><br><span class="line">      <span class="number">-1</span></span><br><span class="line">    ],</span><br><span class="line">    <span class="string">"state"</span>: <span class="number">0</span>   &#125;,   &#123;</span><br><span class="line">    <span class="string">"_id"</span>: <span class="number">1</span>,</span><br><span class="line">    <span class="string">"routeFromGoogle"</span>: <span class="string">""</span>,</span><br><span class="line">    <span class="string">"distance"</span>: <span class="number">0.02248501759660298</span>,</span><br><span class="line">    <span class="string">"startLoc"</span>: &#123;</span><br><span class="line">      <span class="string">"lat"</span>: <span class="number">40.73726833204571</span>,</span><br><span class="line">      <span class="string">"long"</span>: <span class="number">-111.86816435821093</span></span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="string">"endLoc"</span>: &#123;</span><br><span class="line">      <span class="string">"lat"</span>: <span class="number">40.73287234594392</span>,</span><br><span class="line">      <span class="string">"long"</span>: <span class="number">-111.84611325115227</span></span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="string">"nearPacketsDistance"</span>: [</span><br><span class="line">      <span class="number">-1</span></span><br><span class="line">    ],</span><br><span class="line">    <span class="string">"state"</span>: <span class="number">1</span>   &#125;,   &#123;</span><br><span class="line">    <span class="string">"_id"</span>: <span class="number">2</span>,</span><br><span class="line">    <span class="string">"routeFromGoogle"</span>: <span class="string">""</span>,</span><br><span class="line">    <span class="string">"distance"</span>: <span class="number">0</span>,</span><br><span class="line">    <span class="string">"startLoc"</span>: &#123;</span><br><span class="line">      <span class="string">"lat"</span>: <span class="number">40.73287234594392</span>,</span><br><span class="line">      <span class="string">"long"</span>: <span class="number">-111.84611325115227</span></span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="string">"endLoc"</span>: &#123;</span><br><span class="line">      <span class="string">"lat"</span>: <span class="number">40.73287234594392</span>,</span><br><span class="line">      <span class="string">"long"</span>: <span class="number">-111.84611325115227</span></span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="string">"nearPacketsDistance"</span>: [</span><br><span class="line">      <span class="number">-1</span></span><br><span class="line">    ],</span><br><span class="line">    <span class="string">"state"</span>: <span class="number">0</span>   &#125;,   &#123;</span><br><span class="line">    <span class="string">"_id"</span>: <span class="number">3</span>,</span><br><span class="line">    <span class="string">"routeFromGoogle"</span>: <span class="string">""</span>,</span><br><span class="line">    <span class="string">"distance"</span>: <span class="number">0.01372524844602735</span>,</span><br><span class="line">    <span class="string">"startLoc"</span>: &#123;</span><br><span class="line">      <span class="string">"lat"</span>: <span class="number">40.73287234594392</span>,</span><br><span class="line">      <span class="string">"long"</span>: <span class="number">-111.84611325115227</span></span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="string">"endLoc"</span>: &#123;</span><br><span class="line">      <span class="string">"lat"</span>: <span class="number">40.745843583374935</span>,</span><br><span class="line">      <span class="string">"long"</span>: <span class="number">-111.84162666621344</span></span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="string">"nearPacketsDistance"</span>: [</span><br><span class="line">      <span class="number">-1</span></span><br><span class="line">    ],</span><br><span class="line">    <span class="string">"state"</span>: <span class="number">1</span>   &#125; ]</span><br></pre></td></tr></table></figure></p>
+<h2 id="Route-Optimization"><a href="#Route-Optimization" class="headerlink" title="Route Optimization"></a>Route Optimization</h2><p><img src="https://github.com/mozanunal/paketci-backend/blob/master/doc/images/routeOptimizeAlgrotihmVisualize.gif?raw=true" alt="enter image description here"><br>Firstly, every courier has a route to common destination point. Then most efficient package route change apply. It’s calculated with change of route distance according to package location. It will iterate until no package will left. But according to courier capacities, some of package can be over couriers’ capacities; so you need to go second round.</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">"dependencies"</span>: &#123;</span><br><span class="line">    <span class="string">"body-parser"</span>: <span class="string">"~1.18.2"</span>,</span><br><span class="line">    <span class="string">"cookie-parser"</span>: <span class="string">"~1.4.3"</span>,</span><br><span class="line">    <span class="string">"debug"</span>: <span class="string">"~2.6.9"</span>,</span><br><span class="line">    <span class="string">"express"</span>: <span class="string">"~4.15.5"</span>,</span><br><span class="line">    <span class="string">"mathjs"</span>: <span class="string">"^3.20.2"</span>,</span><br><span class="line">    <span class="string">"point-line-distance"</span>: <span class="string">"^1.0.0"</span>,</span><br><span class="line">    <span class="string">"google_directions"</span>: <span class="string">"^0.6.0"</span>,</span><br><span class="line">    <span class="string">"polyline"</span>: <span class="string">"^0.2.0"</span>,</span><br><span class="line">    <span class="string">"request"</span>: <span class="string">"^2.83.0"</span></span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+
+  </div>
+</article>
+
+    <div class="blog-post-comments">
+        <div id="disqus_thread">
+            <noscript>Please enable JavaScript to view the comments.</noscript>
+        </div>
+    </div>
+
+
+
+        
+          <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/categories/">Category</a></li>
+         
+          <li><a href="/archives/">Blog</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="https://github.com/mozanunal">Projects</a></li>
+         
+          <li><a href="https://scholar.google.com/citations?user=u_HbXUUAAAAJ&hl=en">Publications</a></li>
+         
+          <li><a href="/search/">Search</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Team-Paketci"><span class="toc-number">1.</span> <span class="toc-text">Team Paketci!</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Paketci-App"><span class="toc-number">2.</span> <span class="toc-text">Paketci App</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Features"><span class="toc-number">2.0.1.</span> <span class="toc-text">Features:</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Used-Libraries-and-API-in-frontend"><span class="toc-number">2.0.2.</span> <span class="toc-text">Used Libraries and API in frontend</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Compleated-Part-of-Frontend"><span class="toc-number">2.0.3.</span> <span class="toc-text">Compleated Part of Frontend</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Backend"><span class="toc-number">2.1.</span> <span class="toc-text">Backend</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Route-Optimization"><span class="toc-number">2.2.</span> <span class="toc-text">Route Optimization</span></a></li></ol>
+    </div>
+
+    <div id="share-footer" style="display: none">
+      <ul>
+  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=https://mozanunal.com/2018/04/getir-hackhathon/"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=https://mozanunal.com/2018/04/getir-hackhathon/&text=[TR] Hackhathon Getir 2018"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=https://mozanunal.com/2018/04/getir-hackhathon/&title=[TR] Hackhathon Getir 2018"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https://mozanunal.com/2018/04/getir-hackhathon/&is_video=false&description=[TR] Hackhathon Getir 2018"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=[TR] Hackhathon Getir 2018&body=Check out this article: https://mozanunal.com/2018/04/getir-hackhathon/"><i class="fas fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=https://mozanunal.com/2018/04/getir-hackhathon/&title=[TR] Hackhathon Getir 2018"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=https://mozanunal.com/2018/04/getir-hackhathon/&title=[TR] Hackhathon Getir 2018"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=https://mozanunal.com/2018/04/getir-hackhathon/&title=[TR] Hackhathon Getir 2018"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=https://mozanunal.com/2018/04/getir-hackhathon/&title=[TR] Hackhathon Getir 2018"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=https://mozanunal.com/2018/04/getir-hackhathon/&name=[TR] Hackhathon Getir 2018&description="><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> Share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+        
+        <footer id="footer">
+  <div class="footer-left">
+    Copyright &copy; 2023 Mehmet Ozan Ünal
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/categories/">Category</a></li>
+         
+          <li><a href="/archives/">Blog</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="https://github.com/mozanunal">Projects</a></li>
+         
+          <li><a href="https://scholar.google.com/citations?user=u_HbXUUAAAAJ&hl=en">Publications</a></li>
+         
+          <li><a href="/search/">Search</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+    </div>
+    <!-- styles -->
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+<link rel="stylesheet" href="/lib/justified-gallery/css/justifiedGallery.min.css">
+
+    <!-- jquery -->
+<script src="/lib/jquery/jquery.min.js"></script>
+<script src="/lib/justified-gallery/js/jquery.justifiedGallery.min.js"></script>
+<script src="/js/main.js"></script>
+<!-- search -->
+
+<!-- Google Analytics -->
+
+    <script type="text/javascript">
+        (function(i,s,o,g,r,a,m) {i['GoogleAnalyticsObject']=r;i[r]=i[r]||function() {
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-60655125-2', 'auto');
+        ga('send', 'pageview');
+    </script>
+
+<!-- Baidu Analytics -->
+
+<!-- Disqus Comments -->
+
+    <script type="text/javascript">
+        var disqus_shortname = 'mozanunal-com';
+
+        (function(){
+            var dsq = document.createElement('script');
+            dsq.type = 'text/javascript';
+            dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        }());
+    </script>
+
+
+</body>
+</html>

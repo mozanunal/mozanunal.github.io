@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang=en>
+<head><meta name="generator" content="Hexo 3.8.0">
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="Merhaba arkadaşlar, Bugünkü yazımda ESP8266 modüllerinden bahsetmek istiyorum. Bu modül seri port üzerinden haberleşen wifi modülü. Fiyatı yaklaşık 5 $ özelliklerini gördüğünüz fiyatından çok daha faz">
+<meta name="keywords" content="Electronics,Arduino,ESP8266,Arduino Wifi Modulü,internet of Things">
+<meta property="og:type" content="article">
+<meta property="og:title" content="[TR] ESP8266 Modulü Web Server">
+<meta property="og:url" content="https://mozanunal.com/2015/03/esp8266-modulu-html-server/index.html">
+<meta property="og:site_name" content="Mehmet Ozan Ünal">
+<meta property="og:description" content="Merhaba arkadaşlar, Bugünkü yazımda ESP8266 modüllerinden bahsetmek istiyorum. Bu modül seri port üzerinden haberleşen wifi modülü. Fiyatı yaklaşık 5 $ özelliklerini gördüğünüz fiyatından çok daha faz">
+<meta property="og:locale" content="en">
+<meta property="og:image" content="https://2.bp.blogspot.com/-0Zj0pppdHE8/VQCjOubYydI/AAAAAAAAH3A/4q0DLzISFEw/s1600/pr_01_2666_max.jpg">
+<meta property="og:image" content="https://2.bp.blogspot.com/-8cWa4VYZzDg/VQCj86vmvSI/AAAAAAAAH3g/l68Z0gksycU/s1600/IMG_20150311_214258.jpg">
+<meta property="og:image" content="https://3.bp.blogspot.com/-JsP0i89OKhA/VQChGI9uh3I/AAAAAAAAH1I/4BA5rtCIZNs/s1600/ESP8266-Pinout-300x124.png">
+<meta property="og:image" content="https://1.bp.blogspot.com/-r1JDCcLaMMM/VQCjDjUq--I/AAAAAAAAH2o/v6Ff_kvRWhA/s1600/IMG_20150311_214231.jpg">
+<meta property="og:image" content="https://1.bp.blogspot.com/-EdZgWilDZtk/VQCjNmKFV8I/AAAAAAAAH2w/1ZTj8e8Wf34/s1600/Ads%C4%B1z.png">
+<meta property="og:image" content="https://4.bp.blogspot.com/-tDyK2lSjhek/VQCjNuaYx9I/AAAAAAAAH3Y/COVr9yYsBA8/s1600/Ekran%2BAl%C4%B1nt%C4%B1s%C4%B1.PNG">
+<meta property="og:image" content="https://1.bp.blogspot.com/-Dvq-XS96TbQ/VQCjOGtZoKI/AAAAAAAAH24/CIrEF322myo/s1600/dsaxsxa.PNG">
+<meta property="og:image" content="https://1.bp.blogspot.com/-fm6ua2D2Vhw/VQCjNuHYpEI/AAAAAAAAH20/w_Ug81UodNA/s1600/Ekran%2BAl%C4%B1nt%C4%B1s%C4%B1sdsd.PNG">
+<meta property="og:image" content="https://3.bp.blogspot.com/-oIKUVAjNGOU/VQCjObKuQfI/AAAAAAAAH28/SILnkiEBwRs/s1600/fhrfg.PNG">
+<meta property="og:updated_time" content="2023-04-09T21:02:57.281Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="[TR] ESP8266 Modulü Web Server">
+<meta name="twitter:description" content="Merhaba arkadaşlar, Bugünkü yazımda ESP8266 modüllerinden bahsetmek istiyorum. Bu modül seri port üzerinden haberleşen wifi modülü. Fiyatı yaklaşık 5 $ özelliklerini gördüğünüz fiyatından çok daha faz">
+<meta name="twitter:image" content="https://2.bp.blogspot.com/-0Zj0pppdHE8/VQCjOubYydI/AAAAAAAAH3A/4q0DLzISFEw/s1600/pr_01_2666_max.jpg">
+    
+    
+        
+          
+              <link rel="shortcut icon" href="/images/favicon.ico">
+          
+        
+        
+          
+            <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
+          
+        
+        
+          
+            <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+          
+        
+    
+    <!-- title -->
+    <title>[TR] ESP8266 Modulü Web Server</title>
+    <!-- styles -->
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- persian styles -->
+    
+      <link rel="stylesheet" href="/css/rtl.css">
+    
+    <!-- rss -->
+    
+    
+      <link rel="alternate" href="/atom" title="Mehmet Ozan Ünal" type="application/atom+xml">
+    
+    <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/7ecf5c9db13693c2c7062ad3f/0e72f59463de1883a2a166735.js");</script>
+</head>
+
+<body class="max-width mx-auto px3 ltr">    
+      <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/categories/">Category</a></li>
+         
+          <li><a href="/archives/">Blog</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="https://github.com/mozanunal">Projects</a></li>
+         
+          <li><a href="https://scholar.google.com/citations?user=u_HbXUUAAAAJ&hl=en">Publications</a></li>
+         
+          <li><a href="/search/">Search</a></li>
+        
+      </ul>
+    </span>
+    <br>
+    <span id="actions">
+      <ul>
+        
+        <li><a class="icon" href="/2015/03/hc-sr501-pir-sensoru/"><i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i></a></li>
+        
+        
+        <li><a class="icon" href="/2015/01/pic-icin-in-circuit-serial/"><i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
+        
+        <li><a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
+        <li><a class="icon" href="#"><i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br>
+    <div id="share" style="display: none">
+      <ul>
+  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=https://mozanunal.com/2015/03/esp8266-modulu-html-server/"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=https://mozanunal.com/2015/03/esp8266-modulu-html-server/&text=[TR] ESP8266 Modulü Web Server"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=https://mozanunal.com/2015/03/esp8266-modulu-html-server/&title=[TR] ESP8266 Modulü Web Server"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https://mozanunal.com/2015/03/esp8266-modulu-html-server/&is_video=false&description=[TR] ESP8266 Modulü Web Server"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=[TR] ESP8266 Modulü Web Server&body=Check out this article: https://mozanunal.com/2015/03/esp8266-modulu-html-server/"><i class="fas fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=https://mozanunal.com/2015/03/esp8266-modulu-html-server/&title=[TR] ESP8266 Modulü Web Server"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=https://mozanunal.com/2015/03/esp8266-modulu-html-server/&title=[TR] ESP8266 Modulü Web Server"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=https://mozanunal.com/2015/03/esp8266-modulu-html-server/&title=[TR] ESP8266 Modulü Web Server"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=https://mozanunal.com/2015/03/esp8266-modulu-html-server/&title=[TR] ESP8266 Modulü Web Server"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=https://mozanunal.com/2015/03/esp8266-modulu-html-server/&name=[TR] ESP8266 Modulü Web Server&description=&lt;p&gt;&lt;strong&gt;Merhaba arkadaşlar,&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Bugünkü yazımda ESP8266 modüllerinden bahsetmek istiyorum. Bu modül seri port üzerinden haberleşen wifi modülü. Fiyatı yaklaşık 5 $ özelliklerini gördüğünüz fiyatından çok daha fazlasını hakkettiğini göreceksiniz. Özelliklerine geçecek olursak;&lt;br&gt;"><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+    <div id="toc">
+      
+    </div>
+  </span>
+</div>
+
+    
+    <div class="content index py4">
+        
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    
+    <h1 class="posttitle" itemprop="name headline">
+        [TR] ESP8266 Modulü Web Server
+    </h1>
+
+
+
+    <div class="meta">
+      <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span itemprop="name">Mehmet Ozan Ünal</span>
+      </span>
+      
+    <div class="postdate">
+      
+        <time datetime="2015-03-11T22:49:00.000Z" itemprop="datePublished">2015-03-12</time>
+        
+      
+    </div>
+
+
+      
+    <div class="article-category">
+        <i class="fas fa-archive"></i>
+        <a class="category-link" href="/categories/Electronics/">Electronics</a> › <a class="category-link" href="/categories/Electronics/IoT/">IoT</a>
+    </div>
+
+
+    </div>
+  </header>
+  
+
+  <div class="content" itemprop="articleBody">
+    <p><strong>Merhaba arkadaşlar,</strong></p>
+<p>Bugünkü yazımda ESP8266 modüllerinden bahsetmek istiyorum. Bu modül seri port üzerinden haberleşen wifi modülü. Fiyatı yaklaşık 5 $ özelliklerini gördüğünüz fiyatından çok daha fazlasını hakkettiğini göreceksiniz. Özelliklerine geçecek olursak;<br><a id="more"></a>  </p>
+<ul>
+<li><p>802.11 b/g/n desteği</p>
+</li>
+<li><p>Wi-Fi Direct (P2P) Desteği</p>
+</li>
+<li><p>Dahili TCP/IP protokol yığını</p>
+</li>
+<li><p>+19,5dBm çıkış gücü (802.11b modunda)</p>
+</li>
+<li><p>Kaçak akım &lt; 10uA</p>
+</li>
+<li><p>Dahili düşük güç tüketimine sahip 32-bit’lik işlemci</p>
+</li>
+<li><p>SDIO 1.1/2.0, SPI ve UART desteği</p>
+</li>
+<li><p>STBC, 1x1 MIMO, 2x1 MIMO</p>
+</li>
+<li><p>Uyanma ve veri paketi alma süresi &lt; 2ms</p>
+</li>
+<li><p>Stand-by durumunda güç tüketimi &lt; 1mW</p>
+</li>
+</ul>
+<p><img src="https://2.bp.blogspot.com/-0Zj0pppdHE8/VQCjOubYydI/AAAAAAAAH3A/4q0DLzISFEw/s1600/pr_01_2666_max.jpg" alt></p>
+<p>Modülümüz yaygın tüm wifi protokollerini destekliyor, yerel ağdan ve internet üzerinden yapabileceğimiz binlerce çeşit uygulama için oldukça elverişli. Üzerinde 32 bitlik işlemci mevcut. 19.5 dBm çıkış gücüne sahip, full güç ile çalıştırılırsa antensiz 400 metreden fazla antenli ise 4km’den fazla uzaklıktan sinyal alınabildiği test edilmiş bu fiyat ve bu boyutta bir modül için rakamlar çok iyi.<a href="https://www.youtube.com/watch?v=7BYdZ_24yg0" target="_blank" rel="noopener">Buradan </a> mesafe testi videosunu izleyebilirsiniz. Boyut konusuna gelecek olursak boyutları 2.1 cmX 1.3 cm, üzerinde dahili PCB anten bulunuyor.  </p>
+<p><img src="https://2.bp.blogspot.com/-8cWa4VYZzDg/VQCj86vmvSI/AAAAAAAAH3g/l68Z0gksycU/s1600/IMG_20150311_214258.jpg" alt></p>
+<p><strong>Internet of Things</strong></p>
+<p>Esp8266’nın özellikleri böyle fakat biz ne için kullanacağız. 1999 yılında ortaya atılan son yıllarda ise popülerleşen bir kavram var, “Internet of Things” yani Türkçesi” Nesnelerin İnterneti” kavramı, insanlar dışında diğer eşyaların da (buz dolabı, ocak, klima, evin kapısı…) bir iletişim ağına sahip olup, birbiriyle haberleşmesi. İşte bu küçük wifi modülleri bu noktada devreye giriyor. Kullanımları basit, düşük maliyetli, enerji tüketimleri düzenlenebilir olan bu modüller, kolayca herhangi bir eşyamızı “Online” hale getirebilir, bilgisayar telefon gibi herhangi bir ağa bağlanabilen aletlerle kontrol edebilen şeylere dönüştürebilir. “Online” eşyalarımızı haberleştirerek daha akıllı, daha efektif hale getirebilir.Aynı zamanda hali hazırda var olan wifi ağlarını kullanmaları modullerin entegre edilebilirliğini artırıyor.</p>
+<p>Bu yazıda Esp8266 modülünün kullanımına sadece bir giriş yapacağız, modülümüzle HTML sayfası oluşturup, bilgisayarımızdan bağlanacağız. Modülümüzün kullanımına gelecek olursak pin dizilimi aşağıdaki gibidir.</p>
+<p><img src="https://3.bp.blogspot.com/-JsP0i89OKhA/VQChGI9uh3I/AAAAAAAAH1I/4BA5rtCIZNs/s1600/ESP8266-Pinout-300x124.png" alt></p>
+<p>Bizim yapacağımız bağlantılar ise şu şekilde olmalıdır.</p>
+<p>VCC—&gt; Arduino 3.3 V</p>
+<p>GND—&gt; Arduino GND</p>
+<p>RX—–&gt;Serial 1 TX</p>
+<p>TX—–&gt;Serial 1 RX</p>
+<p>CH_PD&gt; Arduino 3.3 V</p>
+<p><img src="https://1.bp.blogspot.com/-r1JDCcLaMMM/VQCjDjUq--I/AAAAAAAAH2o/v6Ff_kvRWhA/s1600/IMG_20150311_214231.jpg" alt></p>
+<p><span style="color: red;">Önemli Uyarı: Bu modül 3.3 volt ile çalışmaktadır ve rx tx pini de 5 volta dayanıklı değildir. Ben bu projede Arduino DUE kullandığım için problem yaşamadım fakat diğer Arduino modellerinin 5 voltlukları kullanılacağı zaman level shifter entegrelerine ihtiyaç duyulur.</span></p>
+<p>Arduino kodu aşağıdadır eğer başka bir Arduino ile kullanacaksanız “Serial1” yerine “SoftwareSerial” kullanmanızı öneririm.  </p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;Wire.h&gt;  </span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> DEBUG true </span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">setup</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">  Serial.begin(<span class="number">9600</span>);<span class="comment">// Arduino-Pc haberleşmesi Debug için kullanacağım </span></span><br><span class="line">  Serial1.begin(<span class="number">9600</span>); <span class="comment">// Arduinoyu Esp8266 bağladığımız serial port</span></span><br><span class="line"> </span><br><span class="line">  sendData(<span class="string">"AT+RST\r\n"</span>,<span class="number">2000</span>,DEBUG); <span class="comment">// reset</span></span><br><span class="line">  sendData(<span class="string">"AT+CWMODE=3\r\n"</span>,<span class="number">1000</span>,DEBUG); <span class="comment">//  MOde olarak access point seçilir</span></span><br><span class="line">  sendData(<span class="string">"AT+CIFSR\r\n"</span>,<span class="number">1000</span>,DEBUG); <span class="comment">// Modulün ip adresi alınır</span></span><br><span class="line">  sendData(<span class="string">"AT+CIPMUX=1\r\n"</span>,<span class="number">1000</span>,DEBUG); <span class="comment">// birden fazla bağlantıya izin ver</span></span><br><span class="line">  sendData(<span class="string">"AT+CIPSERVER=1,80\r\n"</span>,<span class="number">1000</span>,DEBUG); <span class="comment">// Port= 80 yapılır</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">int</span> sayi=<span class="number">0</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">loop</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">  <span class="keyword">if</span>(Serial1.available()) </span><br><span class="line">  &#123;</span><br><span class="line">    <span class="keyword">if</span>(Serial1.find(<span class="string">"+IPD,"</span>))</span><br><span class="line">    &#123;</span><br><span class="line">      delay(<span class="number">300</span>);</span><br><span class="line">      <span class="keyword">int</span> connectionId = Serial1.read()<span class="number">-48</span>; <span class="comment">// 48 çıkarılır çünkü char to int fönüşümü yapmamız gerek</span></span><br><span class="line">                                           <span class="comment">// ASCCI table da 0 sayısı 48 ile ifade edilir yani:</span></span><br><span class="line">                                           <span class="comment">// '0' - 48 = 0</span></span><br><span class="line">                                           <span class="comment">// '1' - 48 = 1</span></span><br><span class="line">     </span><br><span class="line">     String webpage = <span class="string">"&lt;head&gt;&lt;meta http-equiv="</span><span class="string">"refresh"</span><span class="string">" content="</span><span class="string">"10"</span><span class="string">"&gt;&lt;/head&gt;"</span>;</span><br><span class="line">     webpage+=<span class="string">"&lt;h1&gt;Esp8266 Html Testi&lt;/h1&gt;&lt;h2&gt;"</span>;</span><br><span class="line">     webpage+= <span class="string">"mozanunal.com"</span>;</span><br><span class="line">     webpage+=<span class="string">"&lt;/h2&gt;"</span>;</span><br><span class="line">     </span><br><span class="line">     String cipSend = <span class="string">"AT+CIPSEND="</span>;</span><br><span class="line">     cipSend += connectionId;</span><br><span class="line">     cipSend += <span class="string">","</span>;</span><br><span class="line">     cipSend +=webpage.length();</span><br><span class="line">     cipSend +=<span class="string">"\r\n"</span>;</span><br><span class="line"></span><br><span class="line">     sendData(cipSend,<span class="number">1000</span>,DEBUG);</span><br><span class="line">     sendData(webpage,<span class="number">1000</span>,DEBUG);</span><br><span class="line">     </span><br><span class="line">     String closeCommand = <span class="string">"AT+CIPCLOSE="</span>; </span><br><span class="line">     closeCommand+=connectionId; </span><br><span class="line">     closeCommand+=<span class="string">"\r\n"</span>;</span><br><span class="line">     </span><br><span class="line">     sendData(closeCommand,<span class="number">3000</span>,DEBUG);</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line"><span class="function">String <span class="title">sendData</span><span class="params">(String command, <span class="keyword">const</span> <span class="keyword">int</span> timeout, boolean debug)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    String response = <span class="string">""</span>;</span><br><span class="line">    </span><br><span class="line">    Serial1.print(command); <span class="comment">// send the read character to the esp8266</span></span><br><span class="line">    </span><br><span class="line">    <span class="keyword">long</span> <span class="keyword">int</span> time = millis();</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">while</span>( (time+timeout) &gt; millis())</span><br><span class="line">    &#123;</span><br><span class="line">      <span class="keyword">while</span>(Serial1.available())</span><br><span class="line">      &#123;</span><br><span class="line">        </span><br><span class="line">        <span class="comment">// The esp has data so display its output to the serial window </span></span><br><span class="line">        <span class="keyword">char</span> c = Serial1.read(); <span class="comment">// read the next character.</span></span><br><span class="line">        response+=c;</span><br><span class="line">      &#125;  </span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">if</span>(debug)</span><br><span class="line">    &#123;</span><br><span class="line">      Serial.print(response);</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">return</span> response;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>Esp8266yı Acces Point olarak kullanıyoruz. Yani bizim için wifi ağı kurar kodu yükledikten sonra ağa bağlanın.</p>
+<p><img src="https://1.bp.blogspot.com/-EdZgWilDZtk/VQCjNmKFV8I/AAAAAAAAH2w/1ZTj8e8Wf34/s1600/Ads%C4%B1z.png" alt></p>
+<p>Serial porttan gelen veriler bu şekilde olmalıdır. Problem yaşadığımızda buradan kontrol edip DEBUG yapabiliriz.</p>
+<p><img src="https://4.bp.blogspot.com/-tDyK2lSjhek/VQCjNuaYx9I/AAAAAAAAH3Y/COVr9yYsBA8/s1600/Ekran%2BAl%C4%B1nt%C4%B1s%C4%B1.PNG" alt></p>
+<p><img src="https://1.bp.blogspot.com/-Dvq-XS96TbQ/VQCjOGtZoKI/AAAAAAAAH24/CIrEF322myo/s1600/dsaxsxa.PNG" alt></p>
+<p>Programımızın çıktısı bu şekilde olacaktır.</p>
+<p><img src="https://1.bp.blogspot.com/-fm6ua2D2Vhw/VQCjNuHYpEI/AAAAAAAAH20/w_Ug81UodNA/s1600/Ekran%2BAl%C4%B1nt%C4%B1s%C4%B1sdsd.PNG" alt></p>
+<p>String halinde Arduino’ya yüklediğimiz HTML dosyasını modül wifi ağında paylaşır.</p>
+<p><img src="https://3.bp.blogspot.com/-oIKUVAjNGOU/VQCjObKuQfI/AAAAAAAAH28/SILnkiEBwRs/s1600/fhrfg.PNG" alt></p>
+
+  </div>
+</article>
+
+    <div class="blog-post-comments">
+        <div id="disqus_thread">
+            <noscript>Please enable JavaScript to view the comments.</noscript>
+        </div>
+    </div>
+
+
+
+        
+          <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/categories/">Category</a></li>
+         
+          <li><a href="/archives/">Blog</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="https://github.com/mozanunal">Projects</a></li>
+         
+          <li><a href="https://scholar.google.com/citations?user=u_HbXUUAAAAJ&hl=en">Publications</a></li>
+         
+          <li><a href="/search/">Search</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      
+    </div>
+
+    <div id="share-footer" style="display: none">
+      <ul>
+  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=https://mozanunal.com/2015/03/esp8266-modulu-html-server/"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=https://mozanunal.com/2015/03/esp8266-modulu-html-server/&text=[TR] ESP8266 Modulü Web Server"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=https://mozanunal.com/2015/03/esp8266-modulu-html-server/&title=[TR] ESP8266 Modulü Web Server"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https://mozanunal.com/2015/03/esp8266-modulu-html-server/&is_video=false&description=[TR] ESP8266 Modulü Web Server"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=[TR] ESP8266 Modulü Web Server&body=Check out this article: https://mozanunal.com/2015/03/esp8266-modulu-html-server/"><i class="fas fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=https://mozanunal.com/2015/03/esp8266-modulu-html-server/&title=[TR] ESP8266 Modulü Web Server"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=https://mozanunal.com/2015/03/esp8266-modulu-html-server/&title=[TR] ESP8266 Modulü Web Server"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=https://mozanunal.com/2015/03/esp8266-modulu-html-server/&title=[TR] ESP8266 Modulü Web Server"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=https://mozanunal.com/2015/03/esp8266-modulu-html-server/&title=[TR] ESP8266 Modulü Web Server"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=https://mozanunal.com/2015/03/esp8266-modulu-html-server/&name=[TR] ESP8266 Modulü Web Server&description=&lt;p&gt;&lt;strong&gt;Merhaba arkadaşlar,&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Bugünkü yazımda ESP8266 modüllerinden bahsetmek istiyorum. Bu modül seri port üzerinden haberleşen wifi modülü. Fiyatı yaklaşık 5 $ özelliklerini gördüğünüz fiyatından çok daha fazlasını hakkettiğini göreceksiniz. Özelliklerine geçecek olursak;&lt;br&gt;"><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> Share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+        
+        <footer id="footer">
+  <div class="footer-left">
+    Copyright &copy; 2023 Mehmet Ozan Ünal
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/categories/">Category</a></li>
+         
+          <li><a href="/archives/">Blog</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="https://github.com/mozanunal">Projects</a></li>
+         
+          <li><a href="https://scholar.google.com/citations?user=u_HbXUUAAAAJ&hl=en">Publications</a></li>
+         
+          <li><a href="/search/">Search</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+    </div>
+    <!-- styles -->
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+<link rel="stylesheet" href="/lib/justified-gallery/css/justifiedGallery.min.css">
+
+    <!-- jquery -->
+<script src="/lib/jquery/jquery.min.js"></script>
+<script src="/lib/justified-gallery/js/jquery.justifiedGallery.min.js"></script>
+<script src="/js/main.js"></script>
+<!-- search -->
+
+<!-- Google Analytics -->
+
+    <script type="text/javascript">
+        (function(i,s,o,g,r,a,m) {i['GoogleAnalyticsObject']=r;i[r]=i[r]||function() {
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-60655125-2', 'auto');
+        ga('send', 'pageview');
+    </script>
+
+<!-- Baidu Analytics -->
+
+<!-- Disqus Comments -->
+
+    <script type="text/javascript">
+        var disqus_shortname = 'mozanunal-com';
+
+        (function(){
+            var dsq = document.createElement('script');
+            dsq.type = 'text/javascript';
+            dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        }());
+    </script>
+
+
+</body>
+</html>

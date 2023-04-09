@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang=en>
+<head><meta name="generator" content="Hexo 3.8.0">
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="Herkese Merhabalar,   Bu yazımda PID kontrol algoritmalarından bahsetmek istiyorum. Bu yazıyı yazmamın 2 sebebi var. PID algoritmaları hakkında bir çok yazı okudum fakat coğu akademik ve karmaşık yazı">
+<meta name="keywords" content="Electronics Devreler ve Teorik Yazılar,Hava Araçları,Multikopter uçuş prensibi,Multikopterler için PID,PID kontrol,Quadcopter uçuş prensibi">
+<meta property="og:type" content="article">
+<meta property="og:title" content="[TR] Multikopterler için PID kontrol">
+<meta property="og:url" content="https://mozanunal.com/2015/07/multikopterler-icin-pid-kontrol/index.html">
+<meta property="og:site_name" content="Mehmet Ozan Ünal">
+<meta property="og:description" content="Herkese Merhabalar,   Bu yazımda PID kontrol algoritmalarından bahsetmek istiyorum. Bu yazıyı yazmamın 2 sebebi var. PID algoritmaları hakkında bir çok yazı okudum fakat coğu akademik ve karmaşık yazı">
+<meta property="og:locale" content="en">
+<meta property="og:image" content="https://2.bp.blogspot.com/-LzboAq8GOtw/VgsVNq8Ad7I/AAAAAAAAN7g/6TktCiuDiJ0/s400/PID-feedback-loop-v1.png">
+<meta property="og:image" content="https://www.pcbheaven.com/wikipages/images/pidtheory_1313344224.png">
+<meta property="og:image" content="https://www.pcbheaven.com/wikipages/images/pidtheory_1313333018.jpg">
+<meta property="og:image" content="https://www.pcbheaven.com/wikipages/images/pidtheory_1313341391.jpg">
+<meta property="og:updated_time" content="2023-04-09T21:12:57.033Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="[TR] Multikopterler için PID kontrol">
+<meta name="twitter:description" content="Herkese Merhabalar,   Bu yazımda PID kontrol algoritmalarından bahsetmek istiyorum. Bu yazıyı yazmamın 2 sebebi var. PID algoritmaları hakkında bir çok yazı okudum fakat coğu akademik ve karmaşık yazı">
+<meta name="twitter:image" content="https://2.bp.blogspot.com/-LzboAq8GOtw/VgsVNq8Ad7I/AAAAAAAAN7g/6TktCiuDiJ0/s400/PID-feedback-loop-v1.png">
+    
+    
+        
+          
+              <link rel="shortcut icon" href="/images/favicon.ico">
+          
+        
+        
+          
+            <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
+          
+        
+        
+          
+            <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+          
+        
+    
+    <!-- title -->
+    <title>[TR] Multikopterler için PID kontrol</title>
+    <!-- styles -->
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- persian styles -->
+    
+      <link rel="stylesheet" href="/css/rtl.css">
+    
+    <!-- rss -->
+    
+    
+      <link rel="alternate" href="/atom" title="Mehmet Ozan Ünal" type="application/atom+xml">
+    
+    <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/7ecf5c9db13693c2c7062ad3f/0e72f59463de1883a2a166735.js");</script>
+</head>
+
+<body class="max-width mx-auto px3 ltr">    
+      <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/categories/">Category</a></li>
+         
+          <li><a href="/archives/">Blog</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="https://github.com/mozanunal">Projects</a></li>
+         
+          <li><a href="https://scholar.google.com/citations?user=u_HbXUUAAAAJ&hl=en">Publications</a></li>
+         
+          <li><a href="/search/">Search</a></li>
+        
+      </ul>
+    </span>
+    <br>
+    <span id="actions">
+      <ul>
+        
+        <li><a class="icon" href="/2015/08/bataryalar-icin-sabit-akm-desarj/"><i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i></a></li>
+        
+        
+        <li><a class="icon" href="/2015/07/arduino-gimbal-kontrol-kart/"><i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
+        
+        <li><a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
+        <li><a class="icon" href="#"><i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br>
+    <div id="share" style="display: none">
+      <ul>
+  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=https://mozanunal.com/2015/07/multikopterler-icin-pid-kontrol/"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=https://mozanunal.com/2015/07/multikopterler-icin-pid-kontrol/&text=[TR] Multikopterler için PID kontrol"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=https://mozanunal.com/2015/07/multikopterler-icin-pid-kontrol/&title=[TR] Multikopterler için PID kontrol"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https://mozanunal.com/2015/07/multikopterler-icin-pid-kontrol/&is_video=false&description=[TR] Multikopterler için PID kontrol"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=[TR] Multikopterler için PID kontrol&body=Check out this article: https://mozanunal.com/2015/07/multikopterler-icin-pid-kontrol/"><i class="fas fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=https://mozanunal.com/2015/07/multikopterler-icin-pid-kontrol/&title=[TR] Multikopterler için PID kontrol"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=https://mozanunal.com/2015/07/multikopterler-icin-pid-kontrol/&title=[TR] Multikopterler için PID kontrol"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=https://mozanunal.com/2015/07/multikopterler-icin-pid-kontrol/&title=[TR] Multikopterler için PID kontrol"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=https://mozanunal.com/2015/07/multikopterler-icin-pid-kontrol/&title=[TR] Multikopterler için PID kontrol"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=https://mozanunal.com/2015/07/multikopterler-icin-pid-kontrol/&name=[TR] Multikopterler için PID kontrol&description="><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+    <div id="toc">
+      
+    </div>
+  </span>
+</div>
+
+    
+    <div class="content index py4">
+        
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    
+    <h1 class="posttitle" itemprop="name headline">
+        [TR] Multikopterler için PID kontrol
+    </h1>
+
+
+
+    <div class="meta">
+      <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span itemprop="name">Mehmet Ozan Ünal</span>
+      </span>
+      
+    <div class="postdate">
+      
+        <time datetime="2015-07-29T12:44:00.000Z" itemprop="datePublished">2015-07-29</time>
+        
+      
+    </div>
+
+
+      
+    <div class="article-category">
+        <i class="fas fa-archive"></i>
+        <a class="category-link" href="/categories/Electronics/">Electronics</a> › <a class="category-link" href="/categories/Electronics/Drone/">Drone</a>
+    </div>
+
+
+    </div>
+  </header>
+  
+
+  <div class="content" itemprop="articleBody">
+    <p><strong>Herkese Merhabalar,</strong>  </p>
+<p>Bu yazımda PID kontrol algoritmalarından bahsetmek istiyorum. Bu yazıyı yazmamın 2 sebebi var. PID algoritmaları hakkında bir çok yazı okudum fakat coğu akademik ve karmaşık yazılar. Benim amacım anlaşılırlığı ve ayrıntıyı dengeli bir şekilde maximum değerlerinde kullanmak. İkincisi ise bu algoritmanın özel olarak multikopterlerde kullanımını basit bir şekilde açıklayan bir yazıya rastlamadım. Bu yüzden bu yazıyı yazmaya karar verdim.  </p>
+<p>Bir otopilotun en temel 2 bileşeni hava aracının yönelimini tespit eden IMU sensörü ve PID algoritmasıdır. IMU sensörü içinde bir kaç sensör barındırır ve amacı hava aracının 3 boyutlu uzaydaki yönelimini bulmaktır. IMU konusundan <a href="https://mozanunal.com/2014/11/imu-aclarnn-3-boyutlu-olarak/">bu yazımda bahsetmiştim</a>. PID algoritmasının görevi ise temel olarak şöyledir: Yönelimi (3 eksendeki yere göre açılar) sensörler üzerinden alır, istenen açıları da kullanıcıdan alır. Bu ikisi arasındaki farkı en düşük seviyeye düşürmeyi amaçlar. İşte PID algoritmasının görevi bu farkı minimuma indirmek için gerekli motor hız değerlerini hesaplamaktır.  </p>
+<p><img src="https://2.bp.blogspot.com/-LzboAq8GOtw/VgsVNq8Ad7I/AAAAAAAAN7g/6TktCiuDiJ0/s400/PID-feedback-loop-v1.png" alt></p>
+<p>Multikopterler için her 3 için ayrı ayrı PID kontrol algoritmaları uygulanır. İstenilen değer ile şu anki değerin farkı alınarak hata elde edilir. PID algoritması bu hata değerlerine uygulandıktan sonra motorların çıkış değerleri hesaplanır. Sonra bu verilen çıkış hata değişkenini bulmak üzere tekrar girişe yönlendirilir. Böylece döngü tamamlanmış olur. PID,  Proportional, Integral ve Derivative olmak üzere 3 farklı algoritmanın uygulanmasıyla elde edilir. Örnekle açıklamak gerekirse: Multikopterimizin pitch açısı için kullnılan PID kontrol algoritmasını ele alalım. <strong>P algoritması</strong>ndan gelen değer, multikopterimizin şu anki pitch açısı ile kontrol edenin istediği pitch açısı arasındaki farka yani anlık hataya bağlıdır. <strong>I algoritması</strong>ndan gelen değer, pitch açısının geçmiş hatalarının toplamına bağlıdır. D algoritmasından gelen değer ise gelecek açı hatalarının tahminine bağlıdır.  </p>
+<p><img src="https://www.pcbheaven.com/wikipages/images/pidtheory_1313344224.png" alt></p>
+<p><strong>Bu algoritmalardan elde edilen değerler belli katsayılarla(Kp, Ki, Kd) çarpılarak son çıkış değişkeni elde edilir. Bu katsayılara PID katsayıları denir. PID tuning olayı bu katsayıların uygun stabiliteyi sağlayacak şekilde ayarlanmasıdır.  </strong>Simdi bu 3 PID algoritmasının nasıl çalıştığını daha ayrıntılı inceleyelim.  </p>
+<p><strong>Proportional</strong><br>Proportional, ana kontrol algoritmamızdır. Diğer katsayılar 0 olsa bile sadece bu algoritmayla (stabilite düşük de olsa) hover yapabilir. Proportional, hava aracımızın şu anki açı hatasını baz alarak ilerler. Basitçe anlatmak gerekirse Kp katsayısı ne kadar yüksek olursa multikopter o kadar fazla kendini düzeltmeye çalışır. Eğer olması gerekenden yüksek Kp katsayısı seçilirse kendini fazla düzeltecek ve “overshoot” denen kavram ortaya çıkacaktır. Multikopter oldukça fazla duyarlı olacak ve yüksek frekansta titremeye başlayacaktır.  </p>
+<p><img src="https://www.pcbheaven.com/wikipages/images/pidtheory_1313333018.jpg" alt></p>
+<p><strong>Integral</strong><br>Integral, geçmiş hataların toplamını baz alarak ilerleyen algoritmadır. P genellikle hatayı yok etmek için tek başına yeterli değildir. Basitçe, istenen I değeri hataların zamanla çarpılıp toplanmasıyla elde edilir. Yani hatanın sayısal integrali hesaplanmış olur. I algoritması sayesinde multikopterimizin tam istediğimiz değere gelme özelliği artar fakat aynı zamanda istenilen değere gelme zamanı artar. Özellikle düzensiz rüzgarda ve ağırlık merkezi bozukluğu, tribulans gibi olumsuz etkenleri yok etmek için oldukça yararlıdır. Ki katsayısı artırıldığında daha yumuşak ve daha az agresif bir uçuş karakteristiği elde edilir. Yüksek Ki yine titreşimlere neden olur ama daha düşük frekanstadır böylece Kp’den kaynaklanan sorundan ayrılabilir.  </p>
+<p><img src="https://www.pcbheaven.com/wikipages/images/pidtheory_1313341391.jpg" alt></p>
+<p><strong>Derivative</strong><br>D parametresi gelecek hata tahminini baz alan bir parametredir. Etkisini ise istenilen açı değeri ile şuanki açı değeri arasındaki bir yay olarak düşünebiliriz. Görevi şokları absorbe ederek sonradan oluşabilecek hataları, “overshootları” baştan engellemektir. Bazı uçuş kontrolcüler bu parametreyi kullanmaz(Örnek: KK 2.0).  </p>
+<p><strong>PID Tuning İpuçları</strong>  </p>
+<p>Ayarlamaya P parametresinden başlanır. P parametresini ayarlamak için düşük bir değerden başlanır ve titreşim ve osilasyonlar görmeye başlayana kadar artırılır. Düşük frekanstaki osilasyonları Ki parametresine, Yüksek frekanstakiler is genellikle Kp veya Kd bağlıdır. Eğer aracınızda titreşimler görüyorsanız Kp parametresini azaltmak için acele etmeyin. İlk olarak Kd parametresini artırmayı deneyebilirsiniz.  </p>
+<p>Akrobasi modu için;  </p>
+<ul>
+<li>Birazcık yüksek P</li>
+<li>Birazcık düşük I</li>
+<li>D artırılır.</li>
+</ul>
+<p>Yumuşak akıcı uçuş için;  </p>
+<ul>
+<li>Birazcık düşük P</li>
+<li>Birazcık yüksek I</li>
+<li>D azaltılır.</li>
+</ul>
+<p>Son olarak farklı PID ayarlarının stabiliteye etkisi hakkında açıklayıcı bir video göz atmanızı tavsiye ederim. Tekrar görüşmek üzere.  </p>
+<div class="video-container"><iframe src="//www.youtube.com/embed/YNzqTGEl2xQ" frameborder="0" allowfullscreen></iframe></div>
+  </div>
+</article>
+
+    <div class="blog-post-comments">
+        <div id="disqus_thread">
+            <noscript>Please enable JavaScript to view the comments.</noscript>
+        </div>
+    </div>
+
+
+
+        
+          <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/categories/">Category</a></li>
+         
+          <li><a href="/archives/">Blog</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="https://github.com/mozanunal">Projects</a></li>
+         
+          <li><a href="https://scholar.google.com/citations?user=u_HbXUUAAAAJ&hl=en">Publications</a></li>
+         
+          <li><a href="/search/">Search</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      
+    </div>
+
+    <div id="share-footer" style="display: none">
+      <ul>
+  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=https://mozanunal.com/2015/07/multikopterler-icin-pid-kontrol/"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=https://mozanunal.com/2015/07/multikopterler-icin-pid-kontrol/&text=[TR] Multikopterler için PID kontrol"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=https://mozanunal.com/2015/07/multikopterler-icin-pid-kontrol/&title=[TR] Multikopterler için PID kontrol"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https://mozanunal.com/2015/07/multikopterler-icin-pid-kontrol/&is_video=false&description=[TR] Multikopterler için PID kontrol"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=[TR] Multikopterler için PID kontrol&body=Check out this article: https://mozanunal.com/2015/07/multikopterler-icin-pid-kontrol/"><i class="fas fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=https://mozanunal.com/2015/07/multikopterler-icin-pid-kontrol/&title=[TR] Multikopterler için PID kontrol"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=https://mozanunal.com/2015/07/multikopterler-icin-pid-kontrol/&title=[TR] Multikopterler için PID kontrol"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=https://mozanunal.com/2015/07/multikopterler-icin-pid-kontrol/&title=[TR] Multikopterler için PID kontrol"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=https://mozanunal.com/2015/07/multikopterler-icin-pid-kontrol/&title=[TR] Multikopterler için PID kontrol"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=https://mozanunal.com/2015/07/multikopterler-icin-pid-kontrol/&name=[TR] Multikopterler için PID kontrol&description="><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> Share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+        
+        <footer id="footer">
+  <div class="footer-left">
+    Copyright &copy; 2023 Mehmet Ozan Ünal
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/categories/">Category</a></li>
+         
+          <li><a href="/archives/">Blog</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="https://github.com/mozanunal">Projects</a></li>
+         
+          <li><a href="https://scholar.google.com/citations?user=u_HbXUUAAAAJ&hl=en">Publications</a></li>
+         
+          <li><a href="/search/">Search</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+    </div>
+    <!-- styles -->
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+<link rel="stylesheet" href="/lib/justified-gallery/css/justifiedGallery.min.css">
+
+    <!-- jquery -->
+<script src="/lib/jquery/jquery.min.js"></script>
+<script src="/lib/justified-gallery/js/jquery.justifiedGallery.min.js"></script>
+<script src="/js/main.js"></script>
+<!-- search -->
+
+<!-- Google Analytics -->
+
+    <script type="text/javascript">
+        (function(i,s,o,g,r,a,m) {i['GoogleAnalyticsObject']=r;i[r]=i[r]||function() {
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-60655125-2', 'auto');
+        ga('send', 'pageview');
+    </script>
+
+<!-- Baidu Analytics -->
+
+<!-- Disqus Comments -->
+
+    <script type="text/javascript">
+        var disqus_shortname = 'mozanunal-com';
+
+        (function(){
+            var dsq = document.createElement('script');
+            dsq.type = 'text/javascript';
+            dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        }());
+    </script>
+
+
+</body>
+</html>

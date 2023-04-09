@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang=en>
+<head><meta name="generator" content="Hexo 3.8.0">
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="Herkese Merhabalar,Bu seferki projem Star Warsa son film ile katılan BB-8 isimli droidin bir benzerini yapmak. Bu fikir aklıma nereden geldi derseniz. Son filmdeki en sempatik ve ilgi çekici karakteri">
+<meta name="keywords" content="Electronics,Arduino,arduino servo kontrol,bluetooth kontrol,DIY BB-8 Droid,Star Wars BB-8">
+<meta property="og:type" content="article">
+<meta property="og:title" content="[TR] Star Wars BB-8 Robot Yapımı">
+<meta property="og:url" content="https://mozanunal.com/2016/01/star-wars-bb-8-robot-yapm-bolum-1/index.html">
+<meta property="og:site_name" content="Mehmet Ozan Ünal">
+<meta property="og:description" content="Herkese Merhabalar,Bu seferki projem Star Warsa son film ile katılan BB-8 isimli droidin bir benzerini yapmak. Bu fikir aklıma nereden geldi derseniz. Son filmdeki en sempatik ve ilgi çekici karakteri">
+<meta property="og:locale" content="en">
+<meta property="og:image" content="https://3.bp.blogspot.com/-q5ImmWp3rkU/Vp1jyATyPvI/AAAAAAAAX6Q/9W5wpFykyQw/s400/bb8-droid-star-wars-3d-fx-960x818.jpg">
+<meta property="og:image" content="https://4.bp.blogspot.com/-b5P8trn9JeE/Vp_6RzoE0GI/AAAAAAAAX9s/fQAinUFhFQQ/s720/IMG_20160120_151534.jpg">
+<meta property="og:image" content="https://3.bp.blogspot.com/-r1tKW2J6HGk/Vp1kCPzNPxI/AAAAAAAAX6Y/NwDdTX8-yiM/s720/IMG_20160117_221948.jpg">
+<meta property="og:image" content="https://1.bp.blogspot.com/-XZH8pqKOHQI/Vp1kCN7JaWI/AAAAAAAAX6Y/rbj_kJBJ-Bw/s720/IMG_20160117_221951.jpg">
+<meta property="og:image" content="https://3.bp.blogspot.com/-lXZyDJQNE_w/Vp1kCEIMaiI/AAAAAAAAX6Y/Heot9nDBbW4/s720/IMG_20160118_001624.jpg">
+<meta property="og:image" content="https://3.bp.blogspot.com/-mkn92VB1V7k/Vp1kCH1EGWI/AAAAAAAAX6Y/FTB42BCysa0/s720/IMG_20160118_001633.jpg">
+<meta property="og:image" content="https://2.bp.blogspot.com/-YW3IzJys4Ak/Vp1kCOmGuxI/AAAAAAAAX6Y/wKt5nVtEBzE/s720/IMG_20160118_001646.jpg">
+<meta property="og:image" content="https://3.bp.blogspot.com/-PKPHFaZ6uA4/Vp1kCHPDvhI/AAAAAAAAX6Y/DSyG4hhOnuA/s720/IMG_20160118_003855.jpg">
+<meta property="og:image" content="https://3.bp.blogspot.com/-1m_RAK_CuJU/Vp1kCPhZptI/AAAAAAAAX6Y/Pq1Q-mz6KF8/s720/IMG_20160118_003845.jpg">
+<meta property="og:image" content="https://4.bp.blogspot.com/-oqaSx2aNMb0/Vp1kCL-AliI/AAAAAAAAX6Y/ENmBpqumG8U/s720/IMG_20160118_003913.jpg">
+<meta property="og:image" content="https://1.bp.blogspot.com/-yvFu_G0CxLc/Vp1kCANSENI/AAAAAAAAX6Y/9QL8XK-2iYo/s720/IMG_20160118_023758.jpg">
+<meta property="og:image" content="https://1.bp.blogspot.com/-ncK_2oC2PB4/Vp1kCMm7BbI/AAAAAAAAX6Y/8CSHHVy_568/s720/IMG_20160118_023838.jpg">
+<meta property="og:image" content="https://2.bp.blogspot.com/-ZA5UByM2NXA/Vp1kCD4KvrI/AAAAAAAAX6Y/M-e1wb9cjiI/s720/IMG_20160118_135546.jpg">
+<meta property="og:image" content="https://2.bp.blogspot.com/-KIgAXjQ5ILI/Vp1kCNJNC0I/AAAAAAAAX6Y/5Socb0yLw6M/s720/IMG_20160118_164133.jpg">
+<meta property="og:image" content="https://3.bp.blogspot.com/-_llVrNzBwF4/Vp1kCEgscTI/AAAAAAAAX6Y/YBCzVpnL9M8/s720/IMG_20160118_164141.jpg">
+<meta property="og:updated_time" content="2023-01-18T11:16:34.259Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="[TR] Star Wars BB-8 Robot Yapımı">
+<meta name="twitter:description" content="Herkese Merhabalar,Bu seferki projem Star Warsa son film ile katılan BB-8 isimli droidin bir benzerini yapmak. Bu fikir aklıma nereden geldi derseniz. Son filmdeki en sempatik ve ilgi çekici karakteri">
+<meta name="twitter:image" content="https://3.bp.blogspot.com/-q5ImmWp3rkU/Vp1jyATyPvI/AAAAAAAAX6Q/9W5wpFykyQw/s400/bb8-droid-star-wars-3d-fx-960x818.jpg">
+    
+    
+        
+          
+              <link rel="shortcut icon" href="/images/favicon.ico">
+          
+        
+        
+          
+            <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
+          
+        
+        
+          
+            <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+          
+        
+    
+    <!-- title -->
+    <title>[TR] Star Wars BB-8 Robot Yapımı</title>
+    <!-- styles -->
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- persian styles -->
+    
+      <link rel="stylesheet" href="/css/rtl.css">
+    
+    <!-- rss -->
+    
+    
+      <link rel="alternate" href="/atom" title="Mehmet Ozan Ünal" type="application/atom+xml">
+    
+    <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/7ecf5c9db13693c2c7062ad3f/0e72f59463de1883a2a166735.js");</script>
+</head>
+
+<body class="max-width mx-auto px3 ltr">    
+      <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/categories/">Category</a></li>
+         
+          <li><a href="/archives/">Blog</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="https://github.com/mozanunal">Projects</a></li>
+         
+          <li><a href="https://scholar.google.com/citations?user=u_HbXUUAAAAJ&hl=en">Publications</a></li>
+         
+          <li><a href="/search/">Search</a></li>
+        
+      </ul>
+    </span>
+    <br>
+    <span id="actions">
+      <ul>
+        
+        <li><a class="icon" href="/2016/01/itunom-takm/"><i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i></a></li>
+        
+        
+        <li><a class="icon" href="/2016/01/web-tabanl-programlar/"><i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
+        
+        <li><a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
+        <li><a class="icon" href="#"><i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br>
+    <div id="share" style="display: none">
+      <ul>
+  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=https://mozanunal.com/2016/01/star-wars-bb-8-robot-yapm-bolum-1/"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=https://mozanunal.com/2016/01/star-wars-bb-8-robot-yapm-bolum-1/&text=[TR] Star Wars BB-8 Robot Yapımı"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=https://mozanunal.com/2016/01/star-wars-bb-8-robot-yapm-bolum-1/&title=[TR] Star Wars BB-8 Robot Yapımı"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https://mozanunal.com/2016/01/star-wars-bb-8-robot-yapm-bolum-1/&is_video=false&description=[TR] Star Wars BB-8 Robot Yapımı"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=[TR] Star Wars BB-8 Robot Yapımı&body=Check out this article: https://mozanunal.com/2016/01/star-wars-bb-8-robot-yapm-bolum-1/"><i class="fas fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=https://mozanunal.com/2016/01/star-wars-bb-8-robot-yapm-bolum-1/&title=[TR] Star Wars BB-8 Robot Yapımı"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=https://mozanunal.com/2016/01/star-wars-bb-8-robot-yapm-bolum-1/&title=[TR] Star Wars BB-8 Robot Yapımı"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=https://mozanunal.com/2016/01/star-wars-bb-8-robot-yapm-bolum-1/&title=[TR] Star Wars BB-8 Robot Yapımı"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=https://mozanunal.com/2016/01/star-wars-bb-8-robot-yapm-bolum-1/&title=[TR] Star Wars BB-8 Robot Yapımı"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=https://mozanunal.com/2016/01/star-wars-bb-8-robot-yapm-bolum-1/&name=[TR] Star Wars BB-8 Robot Yapımı&description=&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;br&gt;Bu seferki projem Star Warsa son film ile katılan BB-8 isimli droidin bir benzerini yapmak. Bu fikir aklıma nereden geldi derseniz. Son filmdeki en sempatik ve ilgi çekici karakterin BB-8 olduğunu düşünüyorum. Tabi ilk aklıma gelen nasıl çalıştığı… Farklı fikirler yürütürken kendimi bu droidi nasıl yaparım diye tasarımlar yaptığım bir projenin içinde buluverdim. Elle tutulur tasarımlar ortaya çıkmaya başlayınca malzemelerimi topladım ve projeye başladım. Proje oldukça uzun ve daha çok mekanik bir proje bu yüzden 2 parçaya ayırdım kalanını ne zaman bitiririm bilmiyorum. Şu an devam edemiyorum çünkü lipo pillerim bitti ve şarj aletini malesef istanbulda unutmuşum. Neyse projemize geçelim.  &lt;/p&gt;"><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+    <div id="toc">
+      
+    </div>
+  </span>
+</div>
+
+    
+    <div class="content index py4">
+        
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    
+    <h1 class="posttitle" itemprop="name headline">
+        [TR] Star Wars BB-8 Robot Yapımı
+    </h1>
+
+
+
+    <div class="meta">
+      <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span itemprop="name">Mehmet Ozan Ünal</span>
+      </span>
+      
+    <div class="postdate">
+      
+        <time datetime="2016-01-21T01:26:00.000Z" itemprop="datePublished">2016-01-21</time>
+        
+      
+    </div>
+
+
+      
+    <div class="article-category">
+        <i class="fas fa-archive"></i>
+        <a class="category-link" href="/categories/Electronics/">Electronics</a> › <a class="category-link" href="/categories/Electronics/Arduino/">Arduino</a>
+    </div>
+
+
+    </div>
+  </header>
+  
+
+  <div class="content" itemprop="articleBody">
+    <p><strong>Herkese Merhabalar,</strong><br>Bu seferki projem Star Warsa son film ile katılan BB-8 isimli droidin bir benzerini yapmak. Bu fikir aklıma nereden geldi derseniz. Son filmdeki en sempatik ve ilgi çekici karakterin BB-8 olduğunu düşünüyorum. Tabi ilk aklıma gelen nasıl çalıştığı… Farklı fikirler yürütürken kendimi bu droidi nasıl yaparım diye tasarımlar yaptığım bir projenin içinde buluverdim. Elle tutulur tasarımlar ortaya çıkmaya başlayınca malzemelerimi topladım ve projeye başladım. Proje oldukça uzun ve daha çok mekanik bir proje bu yüzden 2 parçaya ayırdım kalanını ne zaman bitiririm bilmiyorum. Şu an devam edemiyorum çünkü lipo pillerim bitti ve şarj aletini malesef istanbulda unutmuşum. Neyse projemize geçelim.  </p>
+<a id="more"></a>  
+<p>Gerekli malzemeler 2 tane yüksek torklu, 1 tane daha düşük torklu 360 derece dönebilen servo, bir Arduino Nano, Bluetooth Modulü, Motor sürücü modüller bir Android Cep Telefonu kontrol için, mekanik kısım için kalın ataçlar ve bir adet dünya küre modeli (ana gövdemiz olarak).  </p>
+<p><img src="https://3.bp.blogspot.com/-q5ImmWp3rkU/Vp1jyATyPvI/AAAAAAAAX6Q/9W5wpFykyQw/s400/bb8-droid-star-wars-3d-fx-960x818.jpg" alt></p>
+<p>Kabaca planladığım mekanik dizayn aşağıdaki gibi. açıklamak gerekirse “artı” şeklindeki mekanizmamız droidin kontrol edildiği ve tüm motoların bulunduğu yer. Ana küreye sadece kenarlardan motorlar aracılığıyla bağlı alt kısmına ise bir ağırlık bağlı metal bir parça olabilir ama kesinlikle bir disk olmasını öneririm. Benim bağladığım parça stabiliteye hiç iyi etki etmedi. Bu ağırlık sayesinde yan motorlar döndüğünde ağırlığın dönmesi daha zor olduğundan dışarıdaki küre dönmeye başlıyor bu sayede robotumuz ilerliyor. Üçüncü bir motorumuz ise o ağırlığı kendi ekseni etrafında döndürüyor. Momentumun korunumundan ağırlık kendi ekseni etrafında dönmeye başladığı anda küremiz de ters yönde kendi etrafında dönüyor. Kafa için ise mıknatıs kullanmayı düşünüyorum ama onları bölüm 2’de anlatacağım.</p>
+<p><img src="https://4.bp.blogspot.com/-b5P8trn9JeE/Vp_6RzoE0GI/AAAAAAAAX9s/fQAinUFhFQQ/s720/IMG_20160120_151534.jpg" alt></p>
+<p>Projemin şu anki halinin kısa bir tanıtım videosu :</p>
+<div class="video-container"><iframe src="//www.youtube.com/embed/WhfsFlYk2us" frameborder="0" allowfullscreen></iframe></div>
+<p>Yapılışına geçecek olursak ilk önce model küremizi yerinden çıkarıp dışındaki harita kısmını soyuyoruz. Sonra ortadan ikiye ayırıyoruz. Maket bıçağı yardımıyla kolayca yapılabilecek bir işlem.</p>
+<p><img src="https://3.bp.blogspot.com/-r1tKW2J6HGk/Vp1kCPzNPxI/AAAAAAAAX6Y/NwDdTX8-yiM/s720/IMG_20160117_221948.jpg" alt></p>
+<p><img src="https://1.bp.blogspot.com/-XZH8pqKOHQI/Vp1kCN7JaWI/AAAAAAAAX6Y/rbj_kJBJ-Bw/s720/IMG_20160117_221951.jpg" alt></p>
+<p>2 adet 360 derece dönebilen servomuzu delikli pertinanks üzerine sabitliyoruz. Sağlamlığından emin olmak için plastik kelepçe kullanabiliriz. Servonun uçlarına kalın bir atacı şekillendirip takıyoruz. Penseyle küre kenarına göre şekillendirip bant ve sıcak silikon kullanarak kürenin kenarlarına sabitliyoruz. </p>
+<p><img src="https://3.bp.blogspot.com/-lXZyDJQNE_w/Vp1kCEIMaiI/AAAAAAAAX6Y/Heot9nDBbW4/s720/IMG_20160118_001624.jpg" alt></p>
+<p><img src="https://3.bp.blogspot.com/-mkn92VB1V7k/Vp1kCH1EGWI/AAAAAAAAX6Y/FTB42BCysa0/s720/IMG_20160118_001633.jpg" alt></p>
+<p>Ben devremi küçük bir pertinanks üzerine lehimledim. Devrede 1 adet Arduino Nano, 1 adet Bluetooth Modulü (HC-06), 1 adet motor sürücü devresi (Servolardan birini kontrol etmek için gerekli oldu 360 derece dönmesi için modifiye edince) ve yanlardaki 2 adet servoya da doğrudan bağlantı var. Devremi sabitlemeden önce pertinanksın altına ağırlığı taşıyacak bu sefer daha küçük bir servo sabitledim. Sabitlemek için plastik kelepçe bant kullandım. Sonra da devremi yukarı sabitledim.</p>
+<p><img src="https://2.bp.blogspot.com/-YW3IzJys4Ak/Vp1kCOmGuxI/AAAAAAAAX6Y/wKt5nVtEBzE/s720/IMG_20160118_001646.jpg" alt></p>
+<p><img src="https://3.bp.blogspot.com/-PKPHFaZ6uA4/Vp1kCHPDvhI/AAAAAAAAX6Y/DSyG4hhOnuA/s720/IMG_20160118_003855.jpg" alt></p>
+<p><img src="https://3.bp.blogspot.com/-1m_RAK_CuJU/Vp1kCPhZptI/AAAAAAAAX6Y/Pq1Q-mz6KF8/s720/IMG_20160118_003845.jpg" alt></p>
+<p><img src="https://4.bp.blogspot.com/-oqaSx2aNMb0/Vp1kCL-AliI/AAAAAAAAX6Y/ENmBpqumG8U/s720/IMG_20160118_003913.jpg" alt></p>
+<p><img src="https://1.bp.blogspot.com/-yvFu_G0CxLc/Vp1kCANSENI/AAAAAAAAX6Y/9QL8XK-2iYo/s720/IMG_20160118_023758.jpg" alt></p>
+<p><img src="https://1.bp.blogspot.com/-ncK_2oC2PB4/Vp1kCMm7BbI/AAAAAAAAX6Y/8CSHHVy_568/s720/IMG_20160118_023838.jpg" alt></p>
+<p>Ağırlık olarak aşağıdaki kilit mekanizmasını kullandım ataç kullanarak onu alt taraftaki servoya monte ettim. Ama ağırlığımızın disk şeklinde olması gerekiyor sonraki versiyonda değiştireceğim.</p>
+<p><img src="https://2.bp.blogspot.com/-ZA5UByM2NXA/Vp1kCD4KvrI/AAAAAAAAX6Y/M-e1wb9cjiI/s720/IMG_20160118_135546.jpg" alt></p>
+<p>En son olarak pili de ekleyince kürenin içinin son görüntüsü aşağıdaki gibi oldu. Bundan sonra tek yapmam gereken kendi yazdığım android programını çalıştırıp küreyi kapatıp BB-8 Droidimizi denemek. Kodları ve Android programı 2. bölümde paylaşacağım. Tekrar görüşmek üzere.</p>
+<p><img src="https://2.bp.blogspot.com/-KIgAXjQ5ILI/Vp1kCNJNC0I/AAAAAAAAX6Y/5Socb0yLw6M/s720/IMG_20160118_164133.jpg" alt></p>
+<p><img src="https://3.bp.blogspot.com/-_llVrNzBwF4/Vp1kCEgscTI/AAAAAAAAX6Y/YBCzVpnL9M8/s720/IMG_20160118_164141.jpg" alt></p>
+
+  </div>
+</article>
+
+    <div class="blog-post-comments">
+        <div id="disqus_thread">
+            <noscript>Please enable JavaScript to view the comments.</noscript>
+        </div>
+    </div>
+
+
+
+        
+          <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/categories/">Category</a></li>
+         
+          <li><a href="/archives/">Blog</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="https://github.com/mozanunal">Projects</a></li>
+         
+          <li><a href="https://scholar.google.com/citations?user=u_HbXUUAAAAJ&hl=en">Publications</a></li>
+         
+          <li><a href="/search/">Search</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      
+    </div>
+
+    <div id="share-footer" style="display: none">
+      <ul>
+  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=https://mozanunal.com/2016/01/star-wars-bb-8-robot-yapm-bolum-1/"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=https://mozanunal.com/2016/01/star-wars-bb-8-robot-yapm-bolum-1/&text=[TR] Star Wars BB-8 Robot Yapımı"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=https://mozanunal.com/2016/01/star-wars-bb-8-robot-yapm-bolum-1/&title=[TR] Star Wars BB-8 Robot Yapımı"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https://mozanunal.com/2016/01/star-wars-bb-8-robot-yapm-bolum-1/&is_video=false&description=[TR] Star Wars BB-8 Robot Yapımı"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=[TR] Star Wars BB-8 Robot Yapımı&body=Check out this article: https://mozanunal.com/2016/01/star-wars-bb-8-robot-yapm-bolum-1/"><i class="fas fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=https://mozanunal.com/2016/01/star-wars-bb-8-robot-yapm-bolum-1/&title=[TR] Star Wars BB-8 Robot Yapımı"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=https://mozanunal.com/2016/01/star-wars-bb-8-robot-yapm-bolum-1/&title=[TR] Star Wars BB-8 Robot Yapımı"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=https://mozanunal.com/2016/01/star-wars-bb-8-robot-yapm-bolum-1/&title=[TR] Star Wars BB-8 Robot Yapımı"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=https://mozanunal.com/2016/01/star-wars-bb-8-robot-yapm-bolum-1/&title=[TR] Star Wars BB-8 Robot Yapımı"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=https://mozanunal.com/2016/01/star-wars-bb-8-robot-yapm-bolum-1/&name=[TR] Star Wars BB-8 Robot Yapımı&description=&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;br&gt;Bu seferki projem Star Warsa son film ile katılan BB-8 isimli droidin bir benzerini yapmak. Bu fikir aklıma nereden geldi derseniz. Son filmdeki en sempatik ve ilgi çekici karakterin BB-8 olduğunu düşünüyorum. Tabi ilk aklıma gelen nasıl çalıştığı… Farklı fikirler yürütürken kendimi bu droidi nasıl yaparım diye tasarımlar yaptığım bir projenin içinde buluverdim. Elle tutulur tasarımlar ortaya çıkmaya başlayınca malzemelerimi topladım ve projeye başladım. Proje oldukça uzun ve daha çok mekanik bir proje bu yüzden 2 parçaya ayırdım kalanını ne zaman bitiririm bilmiyorum. Şu an devam edemiyorum çünkü lipo pillerim bitti ve şarj aletini malesef istanbulda unutmuşum. Neyse projemize geçelim.  &lt;/p&gt;"><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> Share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+        
+        <footer id="footer">
+  <div class="footer-left">
+    Copyright &copy; 2023 Mehmet Ozan Ünal
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/categories/">Category</a></li>
+         
+          <li><a href="/archives/">Blog</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="https://github.com/mozanunal">Projects</a></li>
+         
+          <li><a href="https://scholar.google.com/citations?user=u_HbXUUAAAAJ&hl=en">Publications</a></li>
+         
+          <li><a href="/search/">Search</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+    </div>
+    <!-- styles -->
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+<link rel="stylesheet" href="/lib/justified-gallery/css/justifiedGallery.min.css">
+
+    <!-- jquery -->
+<script src="/lib/jquery/jquery.min.js"></script>
+<script src="/lib/justified-gallery/js/jquery.justifiedGallery.min.js"></script>
+<script src="/js/main.js"></script>
+<!-- search -->
+
+<!-- Google Analytics -->
+
+    <script type="text/javascript">
+        (function(i,s,o,g,r,a,m) {i['GoogleAnalyticsObject']=r;i[r]=i[r]||function() {
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-60655125-2', 'auto');
+        ga('send', 'pageview');
+    </script>
+
+<!-- Baidu Analytics -->
+
+<!-- Disqus Comments -->
+
+    <script type="text/javascript">
+        var disqus_shortname = 'mozanunal-com';
+
+        (function(){
+            var dsq = document.createElement('script');
+            dsq.type = 'text/javascript';
+            dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        }());
+    </script>
+
+
+</body>
+</html>

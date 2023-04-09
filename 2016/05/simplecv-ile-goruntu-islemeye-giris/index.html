@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang=en>
+<head><meta name="generator" content="Hexo 3.8.0">
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="Herkese Merhabalar,Görüntü işleme hızla popülerleşen ve gittikçe daha fazla üzerine projeler geliştirilen ve hatta hayatımızda kullandığımız araç gereçlerde kullanılan bir alan olmaya başladı. Bu duru">
+<meta name="keywords" content="Image Processing,SimpleCV">
+<meta property="og:type" content="article">
+<meta property="og:title" content="[TR] SimpleCV ile Görüntü İşlemeye Giriş">
+<meta property="og:url" content="https://mozanunal.com/2016/05/simplecv-ile-goruntu-islemeye-giris/index.html">
+<meta property="og:site_name" content="Mehmet Ozan Ünal">
+<meta property="og:description" content="Herkese Merhabalar,Görüntü işleme hızla popülerleşen ve gittikçe daha fazla üzerine projeler geliştirilen ve hatta hayatımızda kullandığımız araç gereçlerde kullanılan bir alan olmaya başladı. Bu duru">
+<meta property="og:locale" content="en">
+<meta property="og:image" content="https://2.bp.blogspot.com/-A3EQ_sYxKKk/VxNvyqTmt-I/AAAAAAAAZq4/piY02JIgXGUKU1iHwuqo3Kgev-zUjXvFACK4B/s640/Capture.PNG">
+<meta property="og:image" content="https://4.bp.blogspot.com/-RzFG56nj0Bw/VyX8xjlS35I/AAAAAAAAZwY/o1BjczDB6IQlTLjJkDZf6By0s515sV64gCK4B/s640/Capture.PNG">
+<meta property="og:updated_time" content="2023-01-18T11:16:34.259Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="[TR] SimpleCV ile Görüntü İşlemeye Giriş">
+<meta name="twitter:description" content="Herkese Merhabalar,Görüntü işleme hızla popülerleşen ve gittikçe daha fazla üzerine projeler geliştirilen ve hatta hayatımızda kullandığımız araç gereçlerde kullanılan bir alan olmaya başladı. Bu duru">
+<meta name="twitter:image" content="https://2.bp.blogspot.com/-A3EQ_sYxKKk/VxNvyqTmt-I/AAAAAAAAZq4/piY02JIgXGUKU1iHwuqo3Kgev-zUjXvFACK4B/s640/Capture.PNG">
+    
+    
+        
+          
+              <link rel="shortcut icon" href="/images/favicon.ico">
+          
+        
+        
+          
+            <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
+          
+        
+        
+          
+            <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+          
+        
+    
+    <!-- title -->
+    <title>[TR] SimpleCV ile Görüntü İşlemeye Giriş</title>
+    <!-- styles -->
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- persian styles -->
+    
+      <link rel="stylesheet" href="/css/rtl.css">
+    
+    <!-- rss -->
+    
+    
+      <link rel="alternate" href="/atom" title="Mehmet Ozan Ünal" type="application/atom+xml">
+    
+    <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/7ecf5c9db13693c2c7062ad3f/0e72f59463de1883a2a166735.js");</script>
+</head>
+
+<body class="max-width mx-auto px3 ltr">    
+      <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/categories/">Category</a></li>
+         
+          <li><a href="/archives/">Blog</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="https://github.com/mozanunal">Projects</a></li>
+         
+          <li><a href="https://scholar.google.com/citations?user=u_HbXUUAAAAJ&hl=en">Publications</a></li>
+         
+          <li><a href="/search/">Search</a></li>
+        
+      </ul>
+    </span>
+    <br>
+    <span id="actions">
+      <ul>
+        
+        <li><a class="icon" href="/2016/06/passface-face-recognition-using-opencv/"><i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i></a></li>
+        
+        
+        <li><a class="icon" href="/2016/03/ayarlanabilir-tasnabilir-guc-kaynag-yapm/"><i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
+        
+        <li><a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
+        <li><a class="icon" href="#"><i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br>
+    <div id="share" style="display: none">
+      <ul>
+  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=https://mozanunal.com/2016/05/simplecv-ile-goruntu-islemeye-giris/"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=https://mozanunal.com/2016/05/simplecv-ile-goruntu-islemeye-giris/&text=[TR] SimpleCV ile Görüntü İşlemeye Giriş"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=https://mozanunal.com/2016/05/simplecv-ile-goruntu-islemeye-giris/&title=[TR] SimpleCV ile Görüntü İşlemeye Giriş"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https://mozanunal.com/2016/05/simplecv-ile-goruntu-islemeye-giris/&is_video=false&description=[TR] SimpleCV ile Görüntü İşlemeye Giriş"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=[TR] SimpleCV ile Görüntü İşlemeye Giriş&body=Check out this article: https://mozanunal.com/2016/05/simplecv-ile-goruntu-islemeye-giris/"><i class="fas fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=https://mozanunal.com/2016/05/simplecv-ile-goruntu-islemeye-giris/&title=[TR] SimpleCV ile Görüntü İşlemeye Giriş"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=https://mozanunal.com/2016/05/simplecv-ile-goruntu-islemeye-giris/&title=[TR] SimpleCV ile Görüntü İşlemeye Giriş"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=https://mozanunal.com/2016/05/simplecv-ile-goruntu-islemeye-giris/&title=[TR] SimpleCV ile Görüntü İşlemeye Giriş"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=https://mozanunal.com/2016/05/simplecv-ile-goruntu-islemeye-giris/&title=[TR] SimpleCV ile Görüntü İşlemeye Giriş"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=https://mozanunal.com/2016/05/simplecv-ile-goruntu-islemeye-giris/&name=[TR] SimpleCV ile Görüntü İşlemeye Giriş&description="><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+    <div id="toc">
+      
+    </div>
+  </span>
+</div>
+
+    
+    <div class="content index py4">
+        
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    
+    <h1 class="posttitle" itemprop="name headline">
+        [TR] SimpleCV ile Görüntü İşlemeye Giriş
+    </h1>
+
+
+
+    <div class="meta">
+      <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span itemprop="name">Mehmet Ozan Ünal</span>
+      </span>
+      
+    <div class="postdate">
+      
+        <time datetime="2016-05-01T17:23:00.000Z" itemprop="datePublished">2016-05-01</time>
+        
+      
+    </div>
+
+
+      
+    <div class="article-category">
+        <i class="fas fa-archive"></i>
+        <a class="category-link" href="/categories/Signal-Processing/">Signal Processing</a> › <a class="category-link" href="/categories/Signal-Processing/Image-Processing/">Image Processing</a>
+    </div>
+
+
+    </div>
+  </header>
+  
+
+  <div class="content" itemprop="articleBody">
+    <p><strong>Herkese Merhabalar,</strong><br>Görüntü işleme hızla popülerleşen ve gittikçe daha fazla üzerine projeler geliştirilen ve hatta hayatımızda kullandığımız araç gereçlerde kullanılan bir alan olmaya başladı. Bu durumda bir sürü insan bu konu üzerine bir şeyler yapmak istiyor fakat daha kurulum aşamasında veya kaynak yetersizliğinden dolayı bu ilgilerinden vazgeçiyorlar. Bu sorun için önerebileceğim bir çözüm var. SimpleCV!  </p>
+<p><a href="https://simplecv.org/download/" target="_blank" rel="noopener">https://simplecv.org/download/</a>  </p>
+<p><img src="https://2.bp.blogspot.com/-A3EQ_sYxKKk/VxNvyqTmt-I/AAAAAAAAZq4/piY02JIgXGUKU1iHwuqo3Kgev-zUjXvFACK4B/s640/Capture.PNG" alt></p>
+<p>SimpleCV görüntü işlemeyle alakalı paketlerin bir arada toplandığı bir python paketler bütünüdür. yukarıdaki linkten kurulum dosyasını indirip sadece bir kaç tık ile kurabilirsiniz.<br>SimpleCV ile yüklediğimiz paketler ise şöyle:</p>
+<p><img src="https://4.bp.blogspot.com/-RzFG56nj0Bw/VyX8xjlS35I/AAAAAAAAZwY/o1BjczDB6IQlTLjJkDZf6By0s515sV64gCK4B/s640/Capture.PNG" alt></p>
+<p>Görüldüğü gibi Python’un bile yüklü olmasına gerek yok ihtiyacımız olan tüm paketler bir kaç tık ile yükleniyor. Aşağıda basit bir SimpleCV kodu bulunmakta aynı zamanda aşağıdaki linklerden dökümantasyona ve örneklere bakabilirsiniz.<br><a href="https://simplecv.readthedocs.io/en/latest/" target="_blank" rel="noopener">https://simplecv.readthedocs.io/en/latest/</a><br><a href="https://examples.simplecv.org/en/latest/" target="_blank" rel="noopener">https://examples.simplecv.org/en/latest/</a>  </p>
+<p>SimpleCV fonksiyonları ve kullanımları:</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br><span class="line">177</span><br><span class="line">178</span><br><span class="line">179</span><br><span class="line">180</span><br><span class="line">181</span><br><span class="line">182</span><br><span class="line">183</span><br><span class="line">184</span><br><span class="line">185</span><br><span class="line">186</span><br><span class="line">187</span><br><span class="line">188</span><br><span class="line">189</span><br><span class="line">190</span><br><span class="line">191</span><br><span class="line">192</span><br><span class="line">193</span><br><span class="line">194</span><br><span class="line">195</span><br><span class="line">196</span><br><span class="line">197</span><br><span class="line">198</span><br><span class="line">199</span><br><span class="line">200</span><br><span class="line">201</span><br><span class="line">202</span><br><span class="line">203</span><br><span class="line">204</span><br><span class="line">205</span><br><span class="line">206</span><br><span class="line">207</span><br><span class="line">208</span><br><span class="line">209</span><br><span class="line">210</span><br><span class="line">211</span><br><span class="line">212</span><br><span class="line">213</span><br><span class="line">214</span><br><span class="line">215</span><br><span class="line">216</span><br><span class="line">217</span><br><span class="line">218</span><br><span class="line">219</span><br><span class="line">220</span><br><span class="line">221</span><br><span class="line">222</span><br><span class="line">223</span><br><span class="line">224</span><br><span class="line">225</span><br><span class="line">226</span><br><span class="line">227</span><br><span class="line">228</span><br><span class="line">229</span><br><span class="line">230</span><br><span class="line">231</span><br><span class="line">232</span><br><span class="line">233</span><br><span class="line">234</span><br><span class="line">235</span><br><span class="line">236</span><br><span class="line">237</span><br><span class="line">238</span><br><span class="line">239</span><br><span class="line">240</span><br><span class="line">241</span><br><span class="line">242</span><br><span class="line">243</span><br><span class="line">244</span><br><span class="line">245</span><br><span class="line">246</span><br><span class="line">247</span><br><span class="line">248</span><br><span class="line">249</span><br><span class="line">250</span><br><span class="line">251</span><br><span class="line">252</span><br><span class="line">253</span><br><span class="line">254</span><br><span class="line">255</span><br><span class="line">256</span><br><span class="line">257</span><br><span class="line">258</span><br><span class="line">259</span><br><span class="line">260</span><br><span class="line">261</span><br><span class="line">262</span><br><span class="line">263</span><br><span class="line">264</span><br><span class="line">265</span><br><span class="line">266</span><br><span class="line">267</span><br><span class="line">268</span><br><span class="line">269</span><br><span class="line">270</span><br><span class="line">271</span><br><span class="line">272</span><br><span class="line">273</span><br><span class="line">274</span><br><span class="line">275</span><br><span class="line">276</span><br><span class="line">277</span><br><span class="line">278</span><br><span class="line">279</span><br><span class="line">280</span><br><span class="line">281</span><br><span class="line">282</span><br><span class="line">283</span><br><span class="line">284</span><br><span class="line">285</span><br><span class="line">286</span><br><span class="line">287</span><br><span class="line">288</span><br><span class="line">289</span><br><span class="line">290</span><br><span class="line">291</span><br><span class="line">292</span><br><span class="line">293</span><br><span class="line">294</span><br><span class="line">295</span><br><span class="line">296</span><br><span class="line">297</span><br><span class="line">298</span><br><span class="line">299</span><br><span class="line">300</span><br><span class="line">301</span><br><span class="line">302</span><br><span class="line">303</span><br><span class="line">304</span><br><span class="line">305</span><br><span class="line">306</span><br><span class="line">307</span><br><span class="line">308</span><br><span class="line">309</span><br><span class="line">310</span><br><span class="line">311</span><br><span class="line">312</span><br><span class="line">313</span><br><span class="line">314</span><br><span class="line">315</span><br><span class="line">316</span><br><span class="line">317</span><br><span class="line">318</span><br><span class="line">319</span><br><span class="line">320</span><br><span class="line">321</span><br><span class="line">322</span><br><span class="line">323</span><br><span class="line">324</span><br><span class="line">325</span><br><span class="line">326</span><br><span class="line">327</span><br><span class="line">328</span><br><span class="line">329</span><br><span class="line">330</span><br><span class="line">331</span><br><span class="line">332</span><br><span class="line">333</span><br><span class="line">334</span><br><span class="line">335</span><br><span class="line">336</span><br><span class="line">337</span><br><span class="line">338</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#Reading an image</span></span><br><span class="line">Image(’lenna.png’)</span><br><span class="line"></span><br><span class="line"><span class="comment">#Converting the image to RGB colorspace</span></span><br><span class="line">img.toRGB()</span><br><span class="line"></span><br><span class="line"><span class="comment">#Converting the image to BGR colorspace</span></span><br><span class="line">img.toBGR()</span><br><span class="line"></span><br><span class="line"><span class="comment">#Converting the image to HLS colorspace</span></span><br><span class="line">img.toHLS()</span><br><span class="line"></span><br><span class="line"><span class="comment">#Converting the image to HSV colorspace</span></span><br><span class="line">img.toHSV()</span><br><span class="line"></span><br><span class="line"><span class="comment">#Converting the image to XYZ colorspace</span></span><br><span class="line">img.toXYZ()</span><br><span class="line"></span><br><span class="line"><span class="comment">#Converting the image to GRAY colorspace</span></span><br><span class="line">img.toGray()</span><br><span class="line"></span><br><span class="line"><span class="comment">#Create a new, empty OpenCV bitmap</span></span><br><span class="line">img.getEmpty(channels)</span><br><span class="line"></span><br><span class="line"><span class="comment">#Full copy of the  image</span></span><br><span class="line">img.copy()</span><br><span class="line"></span><br><span class="line"><span class="comment">#Resize the image</span></span><br><span class="line">img.resize(x,y)</span><br><span class="line"></span><br><span class="line"><span class="comment">#Invert image</span></span><br><span class="line">img.invert()</span><br><span class="line"></span><br><span class="line"><span class="comment">#Horizontally mirror an image</span></span><br><span class="line">img.flipHorizontal()</span><br><span class="line"></span><br><span class="line"><span class="comment">#Vertically mirror an image</span></span><br><span class="line">img.flipVertical()</span><br><span class="line"></span><br><span class="line"><span class="comment">#Stretch  filter  on a greyscale image</span></span><br><span class="line">img.stretch(thresh low, thresh high)</span><br><span class="line"></span><br><span class="line"><span class="comment">#Binary threshold</span></span><br><span class="line">img.binarize(thresh, maxv, blocksize, p)</span><br><span class="line"></span><br><span class="line"><span class="comment">#Mean color of the  image</span></span><br><span class="line">img.meanColor()</span><br><span class="line"></span><br><span class="line"><span class="comment">#Finds the FeatureSet strongest corners first</span></span><br><span class="line">img.findCorners(maxnum, minquality, mindistance)</span><br><span class="line"></span><br><span class="line"><span class="comment">#Blobs are continuous light regions</span></span><br><span class="line">img.findBlobs(threshval, minsize, maxsize, threshblocksize, threshconstant)</span><br><span class="line"></span><br><span class="line"><span class="comment">#Finding the location of a known object</span></span><br><span class="line">findHaarFeatures(self,  cascade, scale factor, min neighbors, use canny)</span><br><span class="line"></span><br><span class="line"><span class="comment">#Uploading the Image to Imgur or Flickr</span></span><br><span class="line">img.upload(dest,api key, api secret,verbose)</span><br><span class="line"></span><br><span class="line"><span class="comment">#Smooth the image</span></span><br><span class="line">img.smooth(algorithm name, aperature, sigma, spatial sigma, grayscale)</span><br><span class="line"></span><br><span class="line"><span class="comment">#Draw a circle on the Image</span></span><br><span class="line">img.drawCircle(ctr, rad, color, thickness)</span><br><span class="line"></span><br><span class="line"><span class="comment">#Draw a line</span></span><br><span class="line">img.drawLine(pt1, pt2, color, thickness)</span><br><span class="line"></span><br><span class="line"><span class="comment">#Size of image</span></span><br><span class="line">img.size()</span><br><span class="line"></span><br><span class="line"><span class="comment">#Split the image into a series of image chunks</span></span><br><span class="line">img.split(cols, rows)</span><br><span class="line"></span><br><span class="line"><span class="comment">#Images of R,G,B channels are recombined into a single image</span></span><br><span class="line">img.mergeChannels(r,b,g)</span><br><span class="line"></span><br><span class="line"><span class="comment">#Apply a color correction curve in HSL space</span></span><br><span class="line">img.applyHLSCurve(hCurve, lCurve, sCurve)</span><br><span class="line"></span><br><span class="line"><span class="comment">#Apply a color correction curve in RGB space</span></span><br><span class="line">img.applyRGBCurve(rCurve, gCurve, bCurve)</span><br><span class="line"></span><br><span class="line"><span class="comment">#Applies Intensity to all three color channels</span></span><br><span class="line">img.applyIntensityCurve(curve)</span><br><span class="line"></span><br><span class="line"><span class="comment">#Returns Image of the string</span></span><br><span class="line">img.toString()</span><br><span class="line"></span><br><span class="line"><span class="comment">#Split the channels of an image into RGB</span></span><br><span class="line">img.splitChannels(grayscale)</span><br><span class="line"></span><br><span class="line"><span class="comment">#Returns image representing the distance of each pixel from a given color tuple</span></span><br><span class="line">img.colorDistance(color)</span><br><span class="line"></span><br><span class="line"><span class="comment">#Apply morphological erosion to a image</span></span><br><span class="line">img.erode(iterations)</span><br><span class="line"></span><br><span class="line"><span class="comment">#Apply morphological dilation to a image</span></span><br><span class="line">img.dilate(iterations)</span><br><span class="line"></span><br><span class="line"><span class="comment">#Histogram equalization on the image</span></span><br><span class="line">img.equalize()</span><br><span class="line"></span><br><span class="line"><span class="comment">#Applies erosion operation followed by a morphological dilation</span></span><br><span class="line">img.morphOpen()</span><br><span class="line"></span><br><span class="line"><span class="comment">#The difference between the morphological dilation and</span></span><br><span class="line">img.morphGradient()</span><br><span class="line"></span><br><span class="line"><span class="comment">#the morphological gradient 1D </span></span><br><span class="line"><span class="comment">#histogram(numpy array) of intensity for pixels in the image</span></span><br><span class="line">img.histogram(numbins)</span><br><span class="line"></span><br><span class="line"><span class="comment">#The histogram of the hue channel for the image</span></span><br><span class="line">img.hueHistogram(bins)</span><br><span class="line"></span><br><span class="line"><span class="comment">#Returns the peak hue values histogram of hues</span></span><br><span class="line">img.huePeaks(bins)</span><br><span class="line"></span><br><span class="line"><span class="comment">#Add two images</span></span><br><span class="line">img.add(other)</span><br><span class="line"></span><br><span class="line"><span class="comment">#Subtract two images Or two images</span></span><br><span class="line">img.sub(other) img.  <span class="keyword">or</span>  (other)</span><br><span class="line"></span><br><span class="line"><span class="comment">#Image division operation taking two images as input</span></span><br><span class="line">img.div(other)</span><br><span class="line"></span><br><span class="line"><span class="comment">#Raises every array element in image array to a power</span></span><br><span class="line">img.pow(other)</span><br><span class="line"></span><br><span class="line"><span class="comment">#Finds 2d and 1d barcodes in the image</span></span><br><span class="line">img.findBarcode(zxing path)</span><br><span class="line"></span><br><span class="line"><span class="comment">#Finds line segments in the image</span></span><br><span class="line">img.findLines(threshold,  minlinelength,maxlinegap, cannyth1, cannyth2)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">#Finds a chessboard within that image</span></span><br><span class="line">img.findChessboard(dimensions,  subpixel)</span><br><span class="line"></span><br><span class="line"><span class="comment">#Canny edge detection method</span></span><br><span class="line">img.edges(t1, t2)</span><br><span class="line"></span><br><span class="line"><span class="comment">#function rotates an image around a specific point</span></span><br><span class="line">img.rotate(angle, fixed, point, scale)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">#return a shear-ed image from the cornerpoints</span></span><br><span class="line">img.shear(cornerpoints)</span><br><span class="line"></span><br><span class="line"><span class="comment">#Function for warp performs an affine rotation</span></span><br><span class="line">img.transformPerspective(rotMatrix)</span><br><span class="line"></span><br><span class="line"><span class="comment">#Returns the RGB value for a particular image pixel</span></span><br><span class="line">img.getPixel(x, y)</span><br><span class="line"></span><br><span class="line"><span class="comment">#Returns a single row of RGB values from the  image</span></span><br><span class="line">img.getHorzScanline(row)</span><br><span class="line"></span><br><span class="line"><span class="comment">#Returns a single column of gray values from the  image</span></span><br><span class="line">getVertScanlineGray(column)</span><br><span class="line"></span><br><span class="line"><span class="comment">#Returns a single row of gray values from the  image</span></span><br><span class="line">getHorzScanlineGray(row)</span><br><span class="line"></span><br><span class="line"><span class="comment">#Crops the image based on parameters</span></span><br><span class="line">img.crop(x , y, w, h, centered)</span><br><span class="line"></span><br><span class="line"><span class="comment">#Returns the selected region.</span></span><br><span class="line">img.regionSelect(x1, y1, x2, y2  )</span><br><span class="line"></span><br><span class="line"><span class="comment">#Clears out the entire image</span></span><br><span class="line">img.clear()</span><br><span class="line"></span><br><span class="line"><span class="comment">#Draws the string on the image at the specified coordinates.</span></span><br><span class="line">img.drawText(text , x , y , color, fontsize)</span><br><span class="line"></span><br><span class="line"><span class="comment">#Draw a rectangle on the image</span></span><br><span class="line">img.drawRectangle(x,y,w,h,color,width,alpha)</span><br><span class="line"></span><br><span class="line"><span class="comment">#Shows the current image</span></span><br><span class="line">img.show(type)</span><br><span class="line"></span><br><span class="line"><span class="comment">#Push a new drawing layer onto the back of the layer stack</span></span><br><span class="line">img.addDrawingLayer(layer)</span><br><span class="line"></span><br><span class="line"><span class="comment">#Insert a new layer into the layer stack at the specified index</span></span><br><span class="line"></span><br><span class="line">img.insertDrawingLayer(layer,  index)</span><br><span class="line">Remove a layer <span class="keyword">from</span> the layer stack based on the layer’s index</span><br><span class="line">img.removeDrawingLayer(index)</span><br><span class="line"></span><br><span class="line"><span class="comment">#Return a drawing layer based on the index</span></span><br><span class="line">img.getDrawingLayer(index)</span><br><span class="line"></span><br><span class="line"><span class="comment">#Returns the gray value for a particular image pixel</span></span><br><span class="line">img.getGrayPixel( x, y)</span><br><span class="line"></span><br><span class="line"><span class="comment">#Returns a single column of RGB values from the  image</span></span><br><span class="line">img.getVertScanline(column)</span><br><span class="line"></span><br><span class="line"><span class="comment">#Remove all of the drawing layers</span></span><br><span class="line">img.clearLayers()</span><br><span class="line"></span><br><span class="line"><span class="comment">#Return the array of DrawingLayer objects</span></span><br><span class="line">img.layers()</span><br><span class="line"></span><br><span class="line"><span class="comment">#Return all DrawingLayer objects as a single DrawingLayer.</span></span><br><span class="line">img.mergedLayers()</span><br><span class="line"></span><br><span class="line"><span class="comment">#Render all of the layers onto the current image</span></span><br><span class="line">img.applyLayers(indicies)</span><br><span class="line"></span><br><span class="line"><span class="comment">#automatically adjust image size to match the display size</span></span><br><span class="line">img.adaptiveScale(resolution,fit=<span class="literal">True</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment">#Combine two images as a side by side images</span></span><br><span class="line">img1.sideBySide(img2, side, scale)</span><br><span class="line"></span><br><span class="line"><span class="comment">#Generate a binary mask of the image based on a range of rgb values</span></span><br><span class="line">createBinaryMask(self,color1,color2)</span><br><span class="line"></span><br><span class="line"><span class="comment">#Make the canvas larger but keep the image the same size</span></span><br><span class="line">img.embiggen(size, color, pos)</span><br><span class="line"></span><br><span class="line"><span class="comment">#The white areas of the mask will be kept and the black areas removed</span></span><br><span class="line">img.applyBinaryMask(mask,bg  color)</span><br><span class="line"></span><br><span class="line"><span class="comment">#Generate a grayscale or binary mask image based either on a hue or an RGB triplet</span></span><br><span class="line">img.createAlphaMask(hue, hue lb,hue ub)</span><br><span class="line"></span><br><span class="line"><span class="comment">#Apply a function to every pixel and return the  result</span></span><br><span class="line">img.applyPixelFunction(theFunc)</span><br><span class="line"></span><br><span class="line"><span class="comment">#Calculate the integral image and return it as a numpy  array</span></span><br><span class="line">img.integralImage(tilted)</span><br><span class="line"></span><br><span class="line"><span class="comment">#Convolution performs a shape change on an image.</span></span><br><span class="line">img.convolve(,kernel,center)</span><br><span class="line"></span><br><span class="line"><span class="comment">#Function searches an image for a template image</span></span><br><span class="line">img.findTemplate(template image, threshold, method)</span><br><span class="line"></span><br><span class="line"><span class="comment">#Return any text it can find using OCR on the image</span></span><br><span class="line">img.readText()</span><br><span class="line"></span><br><span class="line"><span class="comment">#extract perfect circles from the image</span></span><br><span class="line">img.findCircle(canny,thresh,distance)</span><br><span class="line"></span><br><span class="line"><span class="comment">#Attempts to perform automatic white balancing</span></span><br><span class="line">img.whiteBalance(method)</span><br><span class="line"></span><br><span class="line"><span class="comment">#Apply a LUT (look up table) to the pixels in a image</span></span><br><span class="line">img.applyLUT(rLUT,bLUT,gLUT)</span><br><span class="line"></span><br><span class="line"><span class="comment">#Finds keypoints in an image and returns them as the raw keypoints</span></span><br><span class="line">img. getRawKeypoints(thresh,flavor, highQuality, forceReset)</span><br><span class="line"></span><br><span class="line"><span class="comment">#Method does a fast local approximate nearest neighbors (FLANN) calculation between two sets of feature vectors</span></span><br><span class="line">img. getFLANNMatches(sd,td</span><br><span class="line"></span><br><span class="line"><span class="comment">#Calculates keypoints for both images, determines the keypoint correspondences</span></span><br><span class="line">img.drawKeypointMatches(template, thresh, minDist,width)</span><br><span class="line"></span><br><span class="line"><span class="comment">#Match a template image with another image using SURF keypoints.</span></span><br><span class="line">img.findKeypointMatch(template, quality,minDist,minMatch)</span><br><span class="line"></span><br><span class="line"><span class="comment">#This method finds keypoints in an image and returns them as a feature  set</span></span><br><span class="line">img.findKeypoints(min quality, flavor,highQuality)</span><br><span class="line"></span><br><span class="line"><span class="comment">#Returns the colors in the palette of the image</span></span><br><span class="line">img.getPalette(bins,hue)</span><br><span class="line"></span><br><span class="line"><span class="comment">#Takes in the palette from another image and attempts to apply it to this image</span></span><br><span class="line">img.rePalette(palette,hue)</span><br><span class="line"></span><br><span class="line"><span class="comment">#returns the visual representation (swatches) of the palette in an image</span></span><br><span class="line">img.drawPaletteColors(size,horizontal,bins,hue)</span><br><span class="line"></span><br><span class="line"><span class="comment">#The method then goes through and replaces each pixel with the centroid of the clutsters found by k-means</span></span><br><span class="line">img.palettize(bins,hue)</span><br><span class="line"></span><br><span class="line"><span class="comment">#Palettization and behaves similar to the fndBlobs</span></span><br><span class="line">img.findBlobsFromPalette(palette selection, minsize, maxsize)</span><br><span class="line"></span><br><span class="line"><span class="comment">#Method uses the color palette to generate a binary image</span></span><br><span class="line">img.binarizeFromPalette(palette selection)</span><br><span class="line"></span><br><span class="line"><span class="comment">#Returns the RAW DFT transform of an image</span></span><br><span class="line">img.rawDFTImage(grayscale)</span><br><span class="line"></span><br><span class="line"><span class="comment">#Method applies a simple band pass DFT filter</span></span><br><span class="line">img.bandPassFilter(xCutoffLow, xCutoffHigh, yCutoffLow, yCutoffHigh,grayscale)</span><br><span class="line"></span><br><span class="line"><span class="comment">#Skeletonization of the image smartThreshold uses a method</span></span><br><span class="line">img.skeletonize(radius)</span><br><span class="line"></span><br><span class="line"><span class="comment">#graph cut, to automagically generate a grayscale mask image</span></span><br><span class="line">img.smartThreshold(mask, rect)</span><br><span class="line"></span><br><span class="line"><span class="comment">#It takes a image converts it to grayscale, and applies a threshold</span></span><br><span class="line">img.smartFindBlobs(mask,rect,thresh level)</span><br><span class="line"></span><br><span class="line"><span class="comment">#This method is same as Paint bucket tool in image manipulation program</span></span><br><span class="line">img.floodFill(points,tolerance,color,lower,upper,fixed range)</span><br><span class="line"></span><br><span class="line"><span class="comment">#Returns Image where the values similar to the seed pixel have been replaced by the input color</span></span><br><span class="line">img.floodFillToMask(points,tolerance,color,lower,upper,fixed  range,mask)</span><br><span class="line"></span><br><span class="line"><span class="comment">#A featureset of blobs form the Mask Image</span></span><br><span class="line">img.findBlobsFromMask(mask,threshold, minsize, maxsize )</span><br><span class="line"></span><br><span class="line"><span class="comment">#Returns the log value of the magnitude image of the DFT transform</span></span><br><span class="line">img.getDFTLogMagnitude(grayscale)</span><br><span class="line"></span><br><span class="line"><span class="comment">#Apply an arbitrary filter to the DFT of an image</span></span><br><span class="line">img.applyDFTFilter(flt,grayscale)</span><br><span class="line"></span><br><span class="line"><span class="comment">#Applies a high pass DFT filter</span></span><br><span class="line">img.highPassFilter(xCutoff,yCutoff,grayscale)</span><br><span class="line"></span><br><span class="line"><span class="comment">#Applies a low pass DFT  filter</span></span><br><span class="line">img.lowPassFilter(xCutoff,yCutoff,grayscale)</span><br><span class="line"></span><br><span class="line"><span class="comment">#InverseDFT(raw dft image) DFT is applied on image using gaussian lowpass filter</span></span><br><span class="line">img.applyUnsharpMask(boost,dia,grayscale)</span><br><span class="line"></span><br><span class="line"><span class="comment">#Performs an optical flow calculation and attempts to find motion between two subsequent frames</span></span><br><span class="line">img.findMotion(previous frame, window, method, aggregate)</span><br><span class="line"></span><br><span class="line"><span class="comment">#Creates a butterworth filter of 64x64 pixels, resizes it to fit the image</span></span><br><span class="line">img.applyButterworthFilter(dia, order,highpass,grayscale)</span><br><span class="line"></span><br><span class="line"><span class="comment">#Creates a gaussian filter of 64x64 pixels, resizes it to fit image</span></span><br><span class="line">img.applyGaussianFilter(dia, highpass, grayscale)</span><br></pre></td></tr></table></figure>
+  </div>
+</article>
+
+    <div class="blog-post-comments">
+        <div id="disqus_thread">
+            <noscript>Please enable JavaScript to view the comments.</noscript>
+        </div>
+    </div>
+
+
+
+        
+          <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/categories/">Category</a></li>
+         
+          <li><a href="/archives/">Blog</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="https://github.com/mozanunal">Projects</a></li>
+         
+          <li><a href="https://scholar.google.com/citations?user=u_HbXUUAAAAJ&hl=en">Publications</a></li>
+         
+          <li><a href="/search/">Search</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      
+    </div>
+
+    <div id="share-footer" style="display: none">
+      <ul>
+  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=https://mozanunal.com/2016/05/simplecv-ile-goruntu-islemeye-giris/"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=https://mozanunal.com/2016/05/simplecv-ile-goruntu-islemeye-giris/&text=[TR] SimpleCV ile Görüntü İşlemeye Giriş"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=https://mozanunal.com/2016/05/simplecv-ile-goruntu-islemeye-giris/&title=[TR] SimpleCV ile Görüntü İşlemeye Giriş"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https://mozanunal.com/2016/05/simplecv-ile-goruntu-islemeye-giris/&is_video=false&description=[TR] SimpleCV ile Görüntü İşlemeye Giriş"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=[TR] SimpleCV ile Görüntü İşlemeye Giriş&body=Check out this article: https://mozanunal.com/2016/05/simplecv-ile-goruntu-islemeye-giris/"><i class="fas fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=https://mozanunal.com/2016/05/simplecv-ile-goruntu-islemeye-giris/&title=[TR] SimpleCV ile Görüntü İşlemeye Giriş"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=https://mozanunal.com/2016/05/simplecv-ile-goruntu-islemeye-giris/&title=[TR] SimpleCV ile Görüntü İşlemeye Giriş"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=https://mozanunal.com/2016/05/simplecv-ile-goruntu-islemeye-giris/&title=[TR] SimpleCV ile Görüntü İşlemeye Giriş"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=https://mozanunal.com/2016/05/simplecv-ile-goruntu-islemeye-giris/&title=[TR] SimpleCV ile Görüntü İşlemeye Giriş"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=https://mozanunal.com/2016/05/simplecv-ile-goruntu-islemeye-giris/&name=[TR] SimpleCV ile Görüntü İşlemeye Giriş&description="><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> Share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+        
+        <footer id="footer">
+  <div class="footer-left">
+    Copyright &copy; 2023 Mehmet Ozan Ünal
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/categories/">Category</a></li>
+         
+          <li><a href="/archives/">Blog</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="https://github.com/mozanunal">Projects</a></li>
+         
+          <li><a href="https://scholar.google.com/citations?user=u_HbXUUAAAAJ&hl=en">Publications</a></li>
+         
+          <li><a href="/search/">Search</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+    </div>
+    <!-- styles -->
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+<link rel="stylesheet" href="/lib/justified-gallery/css/justifiedGallery.min.css">
+
+    <!-- jquery -->
+<script src="/lib/jquery/jquery.min.js"></script>
+<script src="/lib/justified-gallery/js/jquery.justifiedGallery.min.js"></script>
+<script src="/js/main.js"></script>
+<!-- search -->
+
+<!-- Google Analytics -->
+
+    <script type="text/javascript">
+        (function(i,s,o,g,r,a,m) {i['GoogleAnalyticsObject']=r;i[r]=i[r]||function() {
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-60655125-2', 'auto');
+        ga('send', 'pageview');
+    </script>
+
+<!-- Baidu Analytics -->
+
+<!-- Disqus Comments -->
+
+    <script type="text/javascript">
+        var disqus_shortname = 'mozanunal-com';
+
+        (function(){
+            var dsq = document.createElement('script');
+            dsq.type = 'text/javascript';
+            dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        }());
+    </script>
+
+
+</body>
+</html>
