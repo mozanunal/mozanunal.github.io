@@ -2,7 +2,7 @@ title: '[TR] Manyetik Rezonans Görüntüleme'
 tags:
   - Manyetik Rezondans Görüntüleme, MRG, MRI
 categories:
-  - Biomedical
+   - Electronics
 author: Mehmet Ozan Ünal
 date: 2020-04-26 03:44:00
 ---

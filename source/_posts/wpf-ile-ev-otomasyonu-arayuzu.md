@@ -6,7 +6,7 @@ tags:
   - Meteoroloji İstasyonu
 categories:
   - Electronics
-  - IOT
+  - IoT
 author: Mehmet Ozan Ünal
 date: 2016-06-09 04:45:00
 ---

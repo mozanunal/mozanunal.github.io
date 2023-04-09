@@ -7,7 +7,7 @@ tags:
   - internet of Things
 categories:
   - Electronics
-  - IOT
+  - IoT
 author: Mehmet Ozan Ünal
 date: 2015-03-12 00:49:00
 ---

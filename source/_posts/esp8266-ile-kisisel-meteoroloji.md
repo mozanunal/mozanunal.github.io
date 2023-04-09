@@ -9,7 +9,7 @@ tags:
   - Yağış sensörü
 categories:
   - Electronics
-  - IOT
+  - IoT
 author: Mehmet Ozan Ünal
 date: 2015-09-30 02:51:00
 ---

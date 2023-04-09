@@ -4,15 +4,14 @@ tags:
   - tag1, tag2
 categories:
   - Coding
-  - Drone
   - Deep Learning
-  - Biomedical
   - Electronics
     - Analog
     - Arduino
+    - Drone
     - FPGA
-    - IOT
-    - Microcontrollers
+    - IoT
+    - Mcu
   - Signal Processing
     - DSP
     - Image Processing

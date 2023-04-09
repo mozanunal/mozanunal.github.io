@@ -2,11 +2,11 @@ title: Micropython Mqtt Streamer
 tags:
   - MPU6050
   - Mqtt
-  - IOT
+  - IoT
   - Arduino
 categories:
   - Electronics
-  - IOT
+  - IoT
 author: Mehmet Ozan Ünal
 date: 2020-02-26 22:36:00
 ---

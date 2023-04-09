@@ -4,7 +4,7 @@ tags:
   - M5 Stick C, smartwatch, diy smartwatch, esp32, 
 categories:
   - Electronics
-    - IOT
+    - IoT
 
 author: Mehmet Ozan Ünal
 date: 2020-04-26 03:44:00

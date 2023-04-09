@@ -1,14 +1,14 @@
 title: Internet of Beach
 author: Mehmet Ozan Unal
 tags:
-  - IOT
+  - IoT
   - Nasa Space Apps Challenge 2017
   - Electronics
-  - IOT
+  - IoT
   - IOB
 categories:
   - Electronics
-  - IOT
+  - IoT
 date: 2017-06-27 20:18:00
 ---
 **Herkese Merhabalar,**
