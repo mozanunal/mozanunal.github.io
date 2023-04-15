@@ -18,7 +18,7 @@ Projemin tanıtım videosunu izleyebilirsiniz. Yazının devamında ise Raspberr
 
 <div class="separator" style="clear: both; text-align: center;">[![](https://1.bp.blogspot.com/-32Tefe5cxxQ/VfQJVHRLDKI/AAAAAAAANq0/a35hSfl8s2s/s320/IMG_20150912_123948.jpg)](https://1.bp.blogspot.com/-32Tefe5cxxQ/VfQJVHRLDKI/AAAAAAAANq0/a35hSfl8s2s/s1600/IMG_20150912_123948.jpg)</div>
 
-<!-- more -->  
+  
 
 **1\. Raspberry Pi Nedir?**  
       Öncelikle Raspberry Pi'dan bahsetmek istiyorum. Raspberry Pi tüm bilgisayar bileşenlerinin bir kartta toplandığı, düşük maliyetli mini bilgisayardır. Şu an itibariyle, en son Raspberry Pi 2 çıkmıştır ve satış fiyatı 35 dolardır.  

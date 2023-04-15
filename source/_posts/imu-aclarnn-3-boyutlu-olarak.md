@@ -17,7 +17,7 @@ date: 2014-11-07 14:15:00
 **Herkese Merhabalar!**
 
 Bu yazımda size hava araçlarının en temel elektronik ekipmanı olan IMU modullerinden bahsetmek istiyorum. IMU modullerinin hayati önem taşımasının sebebi, modüllerin yönelim açılarını hesaplamak için kullanılmasıdır. En büyük yolcu uçağından, roketten en küçük bir quadrokoptere kadar tüm hava araçları stabil ve sağlıklı bir uçuş için bu modullerden birine sahip olmalıdırlar.  
-<!-- more -->  
+  
 IMU ingilizcedeki "Inertial Mesurament Unit" kelime grubunun kısaltılmış halidir. IMU ile bir cismin uzaydaki 3 boyutlu yönelimi bulunabilir. 3 boyutlu yönelimi anlatmanın  en kolay yolu Euler Açılarını kullanmaktır. Havacılık sektöründe sıklıkla Euler açılarının özelleşmiş bir versiyonu olan "Yaw, Pitch, Roll" açıları kullanılmaktadır.  
 
 ![](https://2.bp.blogspot.com/-n9G38M4slSU/VFxIzRYinOI/AAAAAAAAE-4/ZKWB6syUwrs/s1600/rotations1.gif)

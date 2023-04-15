@@ -14,7 +14,7 @@ date: 2015-11-05 05:25:00
 
 **Herkese Merhabalar,**  
        Bu yazdımda ilk mikroişlemcilerden biri olan 8051 mikrokontrolcüsü üzerinden assembly dili ve mikroişlemci nedir nasıl çalışır bu konulara giriş yapmak istiyorum. Başlamadan önce benim de kullanacağım 8051 entegresi simülasyon programını önermek istiyorum. Programın ismi EdSim51\. İlkönce mikroişlemcilerle alakalı temel bir kaç kavramla başlayalım.  
-<!-- more -->  
+  
 **ROM(Read Only Memory):** Temel olarak, belli bir miktarda bilginin kalıcı olarak yazıldığı bellektir**.** Bilgi saklamak için  
 **EEPROM:** ROM'un yeniden yazılabilir halidir.  
 **RAM(Random Access Memory):** Bilgi saklamak için elektriğe ihtiyaç duyar. CPU veri işlemek için kullandığı bellek tipi RAM'dir.  

@@ -16,7 +16,7 @@ Bugünkü yazımda NyARToolkit'ten bahsedeceğim. Bu toolkit sayesinde kameradan
 {% youtube h2N0UAR17Og %}
 
 Toolkiti kullanmak için gerekenler:  
-<!-- more -->  
+  
 **1.** Processing 2  
 **2.** NyARToolkit Kütüphanesi(Processing içerisinden add library diyerek kurulabilir.)  
 **3.** Kütüphanemizin tanıyabileceği patternlar(kendiniz de üretebilirsiniz)  

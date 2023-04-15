@@ -12,7 +12,7 @@ date: 2015-01-25 20:03:00
 ---
 **Merhaba Arkadaşlar**  
 Bugünkü yazımda Arduino ile melodi çalma uygulamasından bahsedeceğim. Kullandığım malzemeler Arduino ve bir buzzer. Pin bağlantıları da oldukça basit buzzerın eksi ucu GND'ye,  + ucu da 12\. pine bağlanıyor. 12\. Pin dijital pin, farklı frekanslarda 1-0 yapılarak notaların çalınması sağlanır. Notaların çalınma süreleri de nota frekansının verilme süresi değiştirilerek arduino tarafından ayarlanıyor. Böylece istediğimiz melodiyi elde etmiş oluyoruz. Ayrıntılı bilgiye [buradan](https://www.arduino.cc/en/Tutorial/Melody) ulaşabilirsiniz. Arduino koduna aşağıdan ulaşabilirsiniz(Kod alıntıdır. Tek tek notalarla uğraşmamak için notaları çıkarılmış bir koddan aldım.). Tekrar görüşmek üzere.  
-<!-- more -->  
+  
 {% youtube VcaaF9eO4vA %}
 
 ```cpp

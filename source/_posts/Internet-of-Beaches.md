@@ -14,7 +14,7 @@ date: 2017-06-27 20:18:00
 **Herkese Merhabalar,**
 
 Bugünkü yazımda arkadaşlarımla katıldığım Nasa Space Apps Challenge 2017 hakkında bir paylaşımda bulunacağım. Bu hackhathon Nasa tarafından dünya genelinde düzenleniyor. 24 saat içerinde önceden yayınlanan sorunlardan birine çözüm bulmamız isteniyor. Tüm dünya genelinde aynı gün bu problemlere çözüm aranıyor. Biz de Koç Üniversitesi IEEE topluluğunca organize edilen yarışmanın İstanbul şubesinden katıldık. Öncellikle şunu söylemem gerek organizasyon oldukça güzeldi, hiç bir aksaklık yaşanmadan çok keyifli ve eğlenceli bir 24 saat yaşadık. Burdan IEEE Koç ailesine teşekkürlerimi iletiyorum. 
-<!-- more -->
+
 Yarışma hakkında konuşmaya devam edecek olursam. Yarışmanın ilk saatlerini konuya karar verme ve 24 saat boyunca neler yapacağımızı planlayarak geçti. Yarışmayı bir kaç senedir takip ediyoruz. Bu seneki "challenge"ları görünce biraz şaşırdık. Çünkü genellikle yer bilimleri üzerine ve veri işleme, anlamlandırmaya yönelik konulardı. Bizim takımımıza pek hitap etmediği için IOT tabanlı bir şeyler yapabileceğimiz aynı zamanda mekanik, elektronik dizayn yapabileceğimiz konular seçmeye çalıştık. Bu düşüncelerle * Let's go to the Beach*  konusunu seçtik. Bu kampsamda bulut tabanlı her bir kişinin ayrı ayrı, kişisel UV ışın alımını takip edip ona öneriler verebilen bir sistem mimarisi üzerine çalıştık. Sistemin ayrıntılarına yazının devamından ulaşabilirsiniz. Bu arada projemiz birincilik ödülüne layık görüldü. Bu da beni ayrıca çok mutlu etti. Proje ile alakalı sorunlarınız için ulaşabilirsiniz. Tekrar görüşmek üzere
 
 > It is a project developed for Nasa Space Apps Challenge 2017. Detailed information can be foud from below

@@ -15,7 +15,7 @@ date: 2016-01-21 03:26:00
 **Herkese Merhabalar,**  
 Bu seferki projem Star Warsa son film ile katılan BB-8 isimli droidin bir benzerini yapmak. Bu fikir aklıma nereden geldi derseniz. Son filmdeki en sempatik ve ilgi çekici karakterin BB-8 olduğunu düşünüyorum. Tabi ilk aklıma gelen nasıl çalıştığı... Farklı fikirler yürütürken kendimi bu droidi nasıl yaparım diye tasarımlar yaptığım bir projenin içinde buluverdim. Elle tutulur tasarımlar ortaya çıkmaya başlayınca malzemelerimi topladım ve projeye başladım. Proje oldukça uzun ve daha çok mekanik bir proje bu yüzden 2 parçaya ayırdım kalanını ne zaman bitiririm bilmiyorum. Şu an devam edemiyorum çünkü lipo pillerim bitti ve şarj aletini malesef istanbulda unutmuşum. Neyse projemize geçelim.  
 
-<!-- more -->  
+  
 Gerekli malzemeler 2 tane yüksek torklu, 1 tane daha düşük torklu 360 derece dönebilen servo, bir Arduino Nano, Bluetooth Modulü, Motor sürücü modüller bir Android Cep Telefonu kontrol için, mekanik kısım için kalın ataçlar ve bir adet dünya küre modeli (ana gövdemiz olarak).  
 
 

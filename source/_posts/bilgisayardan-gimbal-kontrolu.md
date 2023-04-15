@@ -14,7 +14,7 @@ date: 2014-10-21 02:47:00
 ---
 **Herkese Merhabalar!**  
 Bugün size bilgisayardan gimbal kontrolü projemden bahsedeceğim. Bu projedeki amacım C# ile yazdığım bir arayüzde gimbali kontrol etmek. Gimbal ve bilgisayar arasında haberleşmeyi sağlaması ve servoları kontrol etmesi için bir arduino yerleştirdim. C# arayüzünün görevi, tıkladığım butonlara göre arduinoya "serial port" üzerinden gönderilecek karakteri değiştirmesidir.  
-<!-- more -->Arduino da serial porttan aldığı karaktere göre servoları yönetir.  
+Arduino da serial porttan aldığı karaktere göre servoları yönetir.  
 
 Bilgisayardan Gimbal Kontrolü
 

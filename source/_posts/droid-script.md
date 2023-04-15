@@ -9,7 +9,7 @@ author: Mehmet Ozan Ünal
 **Herkese Merhabalar,**  
       Bugün size bir android uygulaması olan Droid Script uygulamasından bahsetmek istiyorum. [Programa burayı tıklayarak ulaşabilirsiniz](https://play.google.com/store/apps/details?id=com.smartphoneremote.androidscriptfree). Bu uygulama bana göre en iyi android uygulamasıdır. Droid Script java script tabanlı Android uygulama geliştirme uygulamasıdır. Bu program sayesinde android üzerinde android için kolayca uygulama geliştirebilirsiniz. Bunu yapabileceğiniz farklı uygulamalar bulabilmeniz mümkün. Droid Script ayıran özellikler ise şöyle sıralayabiliriz:  
 
-<!-- more -->  
+  
 
 *   Çok gelişmiş program içi dokümantasyon (Programdan hiç çıkmadan dokümantasyon bölümünden bakarak uygulamalarınızı geliştirebilirsiniz )
 *   Telefon donanımına kolay ulaşım (Gps, kamera, sensörler, bluetooth)

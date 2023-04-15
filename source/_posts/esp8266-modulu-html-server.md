@@ -14,7 +14,7 @@ date: 2015-03-12 00:49:00
 **Merhaba arkadaşlar,**
 
 Bugünkü yazımda ESP8266 modüllerinden bahsetmek istiyorum. Bu modül seri port üzerinden haberleşen wifi modülü. Fiyatı yaklaşık 5 $ özelliklerini gördüğünüz fiyatından çok daha fazlasını hakkettiğini göreceksiniz. Özelliklerine geçecek olursak;  
-<!-- more -->  
+  
 * 802.11 b/g/n desteği
 
 * Wi-Fi Direct (P2P) Desteği

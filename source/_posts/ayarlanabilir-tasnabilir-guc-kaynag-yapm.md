@@ -13,7 +13,7 @@ date: 2016-03-13 01:24:00
 
 Bugünkü yazımda nasıl basit bir şekilde bir powerbank'i ayarlanabilir güç kaynağına dönüştürebileceğimizden bahsedeceğim. Gerekli olan malzemeler sadece bir adet power bank ve bir adet MT3608 boost converter. Projeye başlamadan önce boost converter nedir ondan bahsetmek istiyorum. Boost converterlar voltaj yükseltmek için kullanılır. Kondansatör ve bobin ve diyot kullanarak bir switch yapısı kurarlar ve bu yapı ile hem voltajı yükseltirler hem de verimleri çok yüksek olur. Benim kulladığım modül MT3608 powerbankin pilinin çalışma voltaji olan 3.6 volt ile beslenebiliyor. 0 28 Volt arası 2 amper çıkış alınabiliyor. Verimi de yüzde 93 civarı. Projemize çok uygun yapıyor bu özellikler de onu. Hem de kısa devre koruması da var. Bu da güvenlik açısından da uygun hale getiriyor.  
 
-<!-- more -->  
+  
 
 Yapımına geçersek;  
 

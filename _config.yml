@@ -85,11 +85,3 @@ deploy:
   - type: git
     repo: git@github.com:mozanunal/mozanunal.github.io.git
     branch: public
-
-#imagemin:
-#  enable     : true
-#  interlaced : false
-#  multipass  : false
-#  optimizationLevel: 2
-#  pngquant   : false
-#  progressive: false

@@ -12,7 +12,7 @@ date: 2016-01-27 01:01:00
 **Herkese Merhabalar,**  
 
 2014 yılının Nisan ayında arkadaşlarımla beraber İstanbul Teknik Üniversitesi bünyesinde İTÜNOM Otonom Hava Araçları Takımını kurduk. 2 Senedir aktif olarak çalışmalarımıza devam ediyoruz. Amerikanın Maryland Eyaletinde düzenlenmekte olan Student Unmanned Air System yarışmasına 2015 yılında katıldık 2016 yılında da katılmak için hazırlanıyoruz.  
-<!-- more -->
+
 Takımımızda şu an 10 kişiyiz. 3 adet uçak, 2 adet uzay, 2 adet elektronik, 2 adet bilgisayar, 1 adet kontrol mühendisliğinden üyemiz var. Özellikle multidisipliner bir takım olmayı tercih ettik. Bu sayede her üyemizin farklı bir uzmanlığı var ve kolayca farklı sistemleri tasarlayıp bir araya getirebiliyoruz.  
 Takımımızın Sitesi: [https://www.itunom.com/](https://www.itunom.com/)  
 Facebook Sayfası: [https://www.facebook.com/itunom](https://www.facebook.com/itunom)  

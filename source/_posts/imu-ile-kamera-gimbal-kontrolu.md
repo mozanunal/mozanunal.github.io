@@ -14,7 +14,7 @@ author: Mehmet Ozan Ünal
 date: 2014-10-18 18:22:00
 ---
 **Herkese Merhabalar!**  
- Bu projemin amacı MPU6050 ile hesaplanan pitch ve roll açıları ile 2 eksenli bir gimbalı kontrol etmek. MPU6050 açılarını hesaplamak için FreeIMU kütüphanesini kullandım. [Buradan indirebilirsiniz](https://www.varesano.net/projects/hardware/FreeIMU). Aldığım açılar belli bir değerden büyükse servoların açılarını kademeli olarak azalttım veya artırdım.<!-- more -->Bu sayede gimbal, MPU6050yi eğdiğim yönde dönmüş oldu. Projemin tanıtım videosunu aşağıdan izleyebilirsiniz.
+ Bu projemin amacı MPU6050 ile hesaplanan pitch ve roll açıları ile 2 eksenli bir gimbalı kontrol etmek. MPU6050 açılarını hesaplamak için FreeIMU kütüphanesini kullandım. [Buradan indirebilirsiniz](https://www.varesano.net/projects/hardware/FreeIMU). Aldığım açılar belli bir değerden büyükse servoların açılarını kademeli olarak azalttım veya artırdım.Bu sayede gimbal, MPU6050yi eğdiğim yönde dönmüş oldu. Projemin tanıtım videosunu aşağıdan izleyebilirsiniz.
 
 
 <center>{% youtube MQi57R7bO8M %}</center>

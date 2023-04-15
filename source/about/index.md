@@ -3,8 +3,7 @@ date: 2019-08-12 11:29:30
 ---
 
 **Hello Everyone!**
-
-I decided to open a blog (2013) so that I could archive my projects and make them available to everyone. In my blog, you can reach various kind of contents which are usually about Drones, Electronics, FPGA, IOT, Microcontrollers, Programming and Signal Processing. Hope to see you again…
+I am Moz. I am an Data / Machine Learning Engineer. I have been working on building models, developing data mining and reporting solutions that scale across a massive volume of structured and unstructured data, and expertise working in various industries.
 
 
 ## Education 
