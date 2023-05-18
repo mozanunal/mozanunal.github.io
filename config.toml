@@ -1,8 +1,8 @@
 baseURL = "https://hugo-paper.vercel.app/"
 # title = "Hugo Themes"
-author = "Steve Francia"
-copyright = "Copyright © 2008–2019, Steve Francia and the lee.so; all rights reserved."
-paginate = 3
+author = "Mehmet Ozan Ünal"
+copyright = "Copyright © 2014–2023"
+paginate = 20
 languageCode = "en"
 DefaultContentLanguage = "en"
 enableInlineShortcodes = true
@@ -12,25 +12,37 @@ ignoreErrors = ["error-remote-getjson"]
 
 # ------------------------------
 theme = "paper"
-title = "Paper"
+title = "Mehmet Ozan Ünal"
 
 [params]
-  color = 'linen'
+  color = 'gray'
 
-  twitter = 'nanxiaobei'
-  github = 'nanxiaobei'
-  instagram = 'nan.xiaobei'
+  twitter = 'MOzanUnal'
+  github = 'mozanunal'
+  # instagram = 'nan.xiaobei'
 
-  avatar = 'nanxiaobei@gmail.com'
-  name = 'Lee'
-  bio = 'Discover fresh context'
+  avatar = 'mehmetozanunal@gmail.com'
+  name = 'Moz'
+  bio = 'Data / ML Engineer. Interested in big data and deep learning. Lover of Linux, Python, Scala'
+  disableHLJS = true
+  monoDarkIcon = true
 # ------------------------------
-
 # needed to  render raw HTML (e.g. <sub>, <sup>, <kbd>, <mark>)
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
+  [markup.highlight]
+    style = "dracula"
+    codeFences = true
+    guessSyntax = true
+    hl_Lines = ""
+    lineNoStart = 1
+    lineNos = true
+    lineNumbersInTable = true
+    tabWidth = 4
+    noClasses = true
+
 
 [menu]
 
@@ -76,3 +88,4 @@ series = "series"
 
   [services.twitter]
     disableInlineCSS = true
+

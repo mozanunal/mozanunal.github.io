@@ -40,13 +40,13 @@ It is working with Unsplash Api
 
 ### Prerequisities
 
-```bash
+```sh
 sudo apt-get install wget notify-send
 ```
 
 ### Installing
 
-```bash
+```sh
 sudo wget --quiet https://github.com/mozanunal/wpctl/releases/download/0.1.0/wpctl \
           -O /usr/local/bin/wpctl && \
           sudo chmod +x /usr/local/bin/wpctl
@@ -54,7 +54,7 @@ sudo wget --quiet https://github.com/mozanunal/wpctl/releases/download/0.1.0/wpc
 ```
 
 Try the application
-```bash
+```sh
 user@user:$ wpctl
 Please provide a valid wallpaper source
 Usage:
@@ -70,28 +70,30 @@ https://source.unsplash.com/random/1920x1080
 ```
 
 Wallpapers can automatically updated using crontab. Write following command and add line according to your favorite configuration
-```bash
+
+
+```sh
 crontab -e
 ```
 
 
 Every hours pick a random wallpaper
-```bash
+```sh
 0 * * * * /usr/local/bin/wpctl random
 ```
 
 Every day get daily photo as wallpaper
-```bash
+```sh
 0 10 * * * /usr/local/bin/wpctl daily
 ```
 
 Every 15 mins pick a cat image as your wallpaper
-```bash
+```sh
 */15 * * * * /usr/local/bin/wpctl cat
 ```
 
 Every 3 hours pick a blue image as your wallpaper
-```bash
+```sh
 0 */3 * * * /usr/local/bin/wpctl blue
 ```
 
@@ -99,12 +101,12 @@ Every 3 hours pick a blue image as your wallpaper
 ### Uninstalling
 
 Remove binaries
-```bash
+```sh
 sudo rm /usr/local/bin/wpctl
 ```
 
 Remove picture
-```bash
+```sh
 rm -rf $HOME/wpctl
 ```
 
