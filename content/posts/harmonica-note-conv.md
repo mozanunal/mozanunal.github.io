@@ -1,7 +1,8 @@
 ---
 title: Harmonica Note Converter
 tags:
-  - harmonica, note conventer, music theory
+  - python
+  - harmonica
 categories:
   - Coding
 

@@ -93,7 +93,7 @@ http://jafrog.com/2013/11/23/colors-in-terminal.html
 
 How should the command line arguments be parsed? Actually it is quite easy with python. Let's examine the next code block:
 
-```
+```python
 import argparse
 
 parser = argparse.ArgumentParser(
@@ -175,7 +175,7 @@ There are useful tricks in the code block also. For example, you do not have to 
 
 MANIFEST.in
 
-```sh
+```bash
 include README.md
 include requirements.txt
 include LICENCE

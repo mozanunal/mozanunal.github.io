@@ -187,12 +187,12 @@ Alınan sinyallerin toplanıp çeşitli veri işleme ve 3 boyutlu tahmin yöntem
 
 # Kaynakça
 
-[1] N. & W. A. Smith, Introduction to Medical Imaging: Physics, Engineering and Clinical Applications, Cambridge: Cambridge University Press, 2010. 
-[2] P. E. P. R. Bloembergen N, «Relaxation effects in nuclear magnetic resonance absorption,» _Phys Rev 1948,_ pp. 73:679-712, 1948. 
-[3] O. Konez, Manyetik Rezonans Görüntüleme, İstanbul: Nobel Tıp Kitabevleri, 1995. 
-[4] D. Moratal, «Medical Imaging: Principles, Detectors, and Electronics [Book Reviews],» %1 içinde _Pulse, IEEE_, 2011, p. 227. 
-[5] M. E. Davison, «A Simple Proof that the Lorentz Force, Law Implied Faradays Law of Induction, when B is Time Independent, cilt 41, no. 713, p. American Journal of Physics, 1973. 
-[6] P. Joseph P. Hornak, The Basics of MRI, Cornell, 1996-2018. 
-[7] M. F. Allen D. Elster, «the Questions and Answers in MRI,» [Çevrimiçi]. Available: http://mriquestions.com/index.html. [Erişildi: 5 1 2019]. |
-[8] Y. Wang, «MRI Instrumentation and Pulse Sequences,» %1 içinde _Medical Imaging I_, New York. 
-[9] K. Inievski, Medical İmaging Priniples,Detetors and Electronics, Canada: John Wiley Sons, Inc., Hoboken, New Jersey, 2009. 
+ - [1] N. & W. A. Smith, Introduction to Medical Imaging: Physics, Engineering and Clinical Applications, Cambridge: Cambridge University Press, 2010. 
+ - [2] P. E. P. R. Bloembergen N, «Relaxation effects in nuclear magnetic resonance absorption,» _Phys Rev 1948,_ pp. 73:679-712, 1948. 
+ - [3] O. Konez, Manyetik Rezonans Görüntüleme, İstanbul: Nobel Tıp Kitabevleri, 1995. 
+ - [4] D. Moratal, «Medical Imaging: Principles, Detectors, and Electronics [Book Reviews],» %1 içinde _Pulse, IEEE_, 2011, p. 227. 
+ - [5] M. E. Davison, «A Simple Proof that the Lorentz Force, Law Implied Faradays Law of Induction, when B is Time Independent, cilt 41, no. 713, p. American Journal of Physics, 1973. 
+ - [6] P. Joseph P. Hornak, The Basics of MRI, Cornell, 1996-2018. 
+ - [7] M. F. Allen D. Elster, «the Questions and Answers in MRI,» [Çevrimiçi]. Available: http://mriquestions.com/index.html. [Erişildi: 5 1 2019]. |
+ - [8] Y. Wang, «MRI Instrumentation and Pulse Sequences,» %1 içinde _Medical Imaging I_, New York. 
+ - [9] K. Inievski, Medical İmaging Priniples,Detetors and Electronics, Canada: John Wiley Sons, Inc., Hoboken, New Jersey, 2009. 

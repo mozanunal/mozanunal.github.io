@@ -1,4 +1,4 @@
-baseURL = "https://hugo-paper.vercel.app/"
+baseURL = "https://mozanunal.com/"
 # title = "Hugo Themes"
 author = "Mehmet Ozan Ünal"
 copyright = "Copyright © 2014–2023"
@@ -38,7 +38,7 @@ title = "Mehmet Ozan Ünal"
     guessSyntax = true
     hl_Lines = ""
     lineNoStart = 1
-    lineNos = true
+    lineNos = false
     lineNumbersInTable = true
     tabWidth = 4
     noClasses = true
