@@ -1,117 +1,23 @@
-<!doctype html><html class="not-ready text-sm lg:text-base" style=--bg:#fbfbfb lang=en>
-<head>
-<meta charset=utf-8>
-<meta http-equiv=x-ua-compatible content="IE=edge">
-<meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
-<title>Playing DOTA on Raspberry Pi using Steam Link - Mehmet Ozan Ünal</title>
-<meta name=theme-color>
-<meta name=description content="Hello, Steam Link is software which provides support to Steam to stream screen view of the games to devices which is on same local area network. In this setup, there are 2 devices. First one is the device to run the Steam and the games which act as a server. The second one is the one which runs Steam Link and acts as a client to this server. By using this technology you can play games directly on a device which is connected to the same router.">
-<meta name=author content="Moz">
-<link rel="preload stylesheet" as=style href=https://mozanunal.com/main.min.css>
-<link rel=preload as=image href=https://mozanunal.com/theme.png>
-<link rel=preload as=image href="https://www.gravatar.com/avatar/998cbd3ab655239d8be787580cce0415?s=160&d=identicon">
-<link rel=preload as=image href=https://mozanunal.com/twitter.svg>
-<link rel=preload as=image href=https://mozanunal.com/github.svg>
-<link rel=icon href=https://mozanunal.com/favicon.ico>
-<link rel=apple-touch-icon href=https://mozanunal.com/apple-touch-icon.png>
-<meta name=generator content="Hugo 0.92.2">
-<script type=application/javascript>var doNotTrack=!1;doNotTrack||(window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga('create','G-N3F3XLS474','auto'),ga('send','pageview'))</script>
-<script async src=https://www.google-analytics.com/analytics.js></script>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-N3F3XLS474"></script>
-<script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-N3F3XLS474',{anonymize_ip:!1})}</script>
-<meta property="og:title" content="Playing DOTA on Raspberry Pi using Steam Link">
-<meta property="og:description" content="Hello, Steam Link is software which provides support to Steam to stream screen view of the games to devices which is on same local area network. In this setup, there are 2 devices. First one is the device to run the Steam and the games which act as a server. The second one is the one which runs Steam Link and acts as a client to this server. By using this technology you can play games directly on a device which is connected to the same router.">
-<meta property="og:type" content="article">
-<meta property="og:url" content="https://mozanunal.com/2019/02/steam-link-on-rpi/"><meta property="article:section" content="posts">
-<meta property="article:published_time" content="2019-02-01T00:45:01+00:00">
-<meta property="article:modified_time" content="2019-02-01T00:45:01+00:00">
-<meta itemprop=name content="Playing DOTA on Raspberry Pi using Steam Link">
-<meta itemprop=description content="Hello, Steam Link is software which provides support to Steam to stream screen view of the games to devices which is on same local area network. In this setup, there are 2 devices. First one is the device to run the Steam and the games which act as a server. The second one is the one which runs Steam Link and acts as a client to this server. By using this technology you can play games directly on a device which is connected to the same router."><meta itemprop=datePublished content="2019-02-01T00:45:01+00:00">
-<meta itemprop=dateModified content="2019-02-01T00:45:01+00:00">
-<meta itemprop=wordCount content="489">
-<meta itemprop=keywords content="Steam Link,Raspberry Pi,">
-<meta name=twitter:card content="summary">
-<meta name=twitter:title content="Playing DOTA on Raspberry Pi using Steam Link">
-<meta name=twitter:description content="Hello, Steam Link is software which provides support to Steam to stream screen view of the games to devices which is on same local area network. In this setup, there are 2 devices. First one is the device to run the Steam and the games which act as a server. The second one is the one which runs Steam Link and acts as a client to this server. By using this technology you can play games directly on a device which is connected to the same router.">
-</head>
-<body class="text-black duration-200 ease-out dark:text-white">
-<header class="mx-auto flex h-[5rem] max-w-3xl px-8 lg:justify-center">
-<div class="relative z-50 mr-auto flex items-center">
-<a class="-translate-x-[1px] -translate-y-0.5 text-3xl font-bold" href=https://mozanunal.com/>Mehmet Ozan Ünal</a>
-<div class="btn-dark text-[0] ml-6 h-6 w-6 shrink-0 cursor-pointer [background:url(./theme.svg)_left_center/cover_no-repeat] dark:invert dark:[background-position:right]" role=button aria-label=Dark></div>
-</div>
-<div class="btn-menu relative z-50 -mr-8 flex h-[5rem] w-[5rem] shrink-0 cursor-pointer flex-col items-center justify-center gap-2.5 lg:hidden" role=button aria-label=Menu></div>
-<script>const htmlClass=document.documentElement.classList;setTimeout(()=>{htmlClass.remove('not-ready')},10);const btnMenu=document.querySelector('.btn-menu');btnMenu.addEventListener('click',()=>{htmlClass.toggle('open')});const metaTheme=document.querySelector('meta[name="theme-color"]'),lightBg=`"#fbfbfb"`.replace(/"/g,''),setDark=a=>{metaTheme.setAttribute('content',a?'#000':lightBg),htmlClass[a?'add':'remove']('dark'),localStorage.setItem('dark',a)},darkScheme=window.matchMedia('(prefers-color-scheme: dark)');if(htmlClass.contains('dark'))setDark(!0);else{const a=localStorage.getItem('dark');setDark(a?a==='true':darkScheme.matches)}darkScheme.addEventListener('change',a=>{setDark(a.matches)});const btnDark=document.querySelector('.btn-dark');btnDark.addEventListener('click',()=>{setDark(localStorage.getItem('dark')!=='true')})</script>
-<div class="nav-wrapper fixed inset-x-0 top-full z-40 flex h-full select-none flex-col justify-center pb-16 duration-200 dark:bg-black lg:static lg:h-auto lg:flex-row lg:!bg-transparent lg:pb-0 lg:transition-none">
-<nav class="lg:ml-12 lg:flex lg:flex-row lg:items-center lg:space-x-6">
-<a class="block text-center text-2xl leading-[5rem] lg:text-base lg:font-normal" href=/about/>About</a>
-<a class="block text-center text-2xl leading-[5rem] lg:text-base lg:font-normal" href=/contact/>Contact</a>
-</nav>
-<nav class="mt-12 flex justify-center space-x-10 dark:invert lg:mt-0 lg:ml-12 lg:items-center lg:space-x-6">
-<a class="h-8 w-8 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6" style=--url:url(./twitter.svg) href=https://twitter.com/MOzanUnal target=_blank rel=me>
-twitter
-</a>
-<a class="h-8 w-8 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6" style=--url:url(./github.svg) href=https://github.com/mozanunal target=_blank rel=me>
-github
-</a>
-</nav>
-</div>
-</header>
-<main class="prose prose-neutral relative mx-auto min-h-[calc(100%-10rem)] max-w-3xl px-8 pt-16 pb-24 dark:prose-invert">
-<article>
-<header class=mb-20>
-<h1 class="!my-0 pb-2.5">Playing DOTA on Raspberry Pi using Steam Link</h1>
-<div class="text-sm opacity-60">
-<time>Feb 1, 2019</time>
-</div>
-</header>
-<section><p><strong>Hello,</strong>
-Steam Link is software which provides support to Steam to stream screen view of the games to devices which is on same local area network. In this setup, there are 2 devices. First one is the device to run the Steam and the games which act as a server. The second one is the one which runs Steam Link and acts as a client to this server. By using this technology you can play games directly on a device which is connected to the same router. The connection is also 2 way. Thus, control devices such as keyboard, mouse and game controllers can be connected directly to the client device.</p>
-<p>On 3rd of December, Steam announced that the Steam Link can work on Raspberry Pi now. After I saw that, I decided to give it a try. I have tried it with my favorite game, Dota 2. Dota 2 can be played on a Raspberry Pi using Steam Link. It basically uses your computer as a game server. Actually, the PC is run the Dota 2 however it casts its screen view to another computer, which in this case is a Raspberry Pi. You can install it to your Raspberry Pi with only 2 shell commands.</p>
-<p>In this post, installing and running the Steam Link will be discussed. Steam Link is a software which is developed to play high processing power intensive games on low processing power devices. Actually, you should already have enough system requirements for the game and this computer also should be the same local area network.</p>
-<p><img src=/images/steamlink1.jpg alt></p>
-<h3 id=installation>Installation</h3>
-<p>The following link is from Steam Community website. They announced that Steam Link is officially available for Raspberry Pi. The installation process is quite easy but the basic Linux shell knowledge still is a requirement.<br>
-<a href=https://steamcommunity.com/app/353380/discussions/0/1743353164093954254/>https://steamcommunity.com/app/353380/discussions/0/1743353164093954254/</a></p>
-<p>The first step, using curl download the required Debian installation package.</p>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell>pi@rpi-:~ $ curl -#Of http://media.steampowered.com/steamlink/rpi/steamlink_1.0.7_armhf.deb
-<span style=color:#6272a4>######################################################################## 100.0%</span>
-</code></pre></div><p>After downloading the package, process continues with following one line script. It is installing Steam Link Package to your Raspberry Pi.</p>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>pi@rpi-:~ $ sudo dpkg -i steamlink_1.0.7_armhf.deb
-Selecting previously unselected package steamlink.
-<span style=color:#ff79c6>(</span>Reading database ... <span style=color:#bd93f9>129787</span> files and directories currently installed.<span style=color:#ff79c6>)</span>
-Preparing to unpack steamlink_1.0.7_armhf.deb ...
-Unpacking steamlink <span style=color:#ff79c6>(</span>1.0.7<span style=color:#ff79c6>)</span> ...
-Setting up steamlink <span style=color:#ff79c6>(</span>1.0.7<span style=color:#ff79c6>)</span> ...
-Processing triggers <span style=color:#ff79c6>for</span> gnome-menus <span style=color:#ff79c6>(</span>3.13.3-9<span style=color:#ff79c6>)</span> ...
-Processing triggers <span style=color:#ff79c6>for</span> desktop-file-utils <span style=color:#ff79c6>(</span>0.23-1<span style=color:#ff79c6>)</span> ...
-Processing triggers <span style=color:#ff79c6>for</span> mime-support <span style=color:#ff79c6>(</span>3.60<span style=color:#ff79c6>)</span> ...
-Processing triggers <span style=color:#ff79c6>for</span> hicolor-icon-theme <span style=color:#ff79c6>(</span>0.15-1<span style=color:#ff79c6>)</span> ...
-Processing triggers <span style=color:#ff79c6>for</span> man-db <span style=color:#ff79c6>(</span>2.7.6.1-2<span style=color:#ff79c6>)</span> ...
-
-</code></pre></div><h3 id=game-play-demo>Game Play Demo</h3>
-<p>Some configurations are also should be done to start playing through your Raspberry Pi. However, these steps are quite easy to follow and no prior shell knowledge is required. By the way, ping is around 6 ms with ethernet connection to your router. The ping is heavily depends on your router performance and connection quality. I could not get sufficient results with WiFi connection to Raspberry Pi. Therefore I connect it to external router in order to keep the connection latency as minimum as possible.</p>
-<div style=position:relative;padding-bottom:56.25%;height:0;overflow:hidden>
-<iframe src=https://www.youtube-nocookie.com/embed/Oouu3DmDyM4 style=position:absolute;top:0;left:0;width:100%;height:100%;border:0 allowfullscreen title="YouTube Video"></iframe>
-</div>
-</section>
-<footer class="mt-12 flex flex-wrap">
-<a class="mr-1.5 mb-1.5 rounded-lg bg-black/[3%] px-5 py-2 no-underline dark:bg-white/[8%]" href=https://mozanunal.com/tags/steam-link>Steam Link</a>
-<a class="mr-1.5 mb-1.5 rounded-lg bg-black/[3%] px-5 py-2 no-underline dark:bg-white/[8%]" href=https://mozanunal.com/tags/raspberry-pi>Raspberry Pi</a>
-</footer>
-<nav class="mt-24 flex rounded-lg bg-black/[3%] text-lg dark:bg-white/[8%]">
-<a class="flex w-1/2 items-center rounded-l-md p-6 pr-3 no-underline hover:bg-black/[2%] dark:hover:bg-white/[3%]" href=https://mozanunal.com/2019/08/yolocolabdemo/><span class=mr-1.5>←</span><span>Yolo on Google Colab</span></a>
-<a class="ml-auto flex w-1/2 items-center justify-end rounded-r-md p-6 pl-3 no-underline hover:bg-black/[2%] dark:hover:bg-white/[3%]" href=https://mozanunal.com/2019/01/simpledsp-iir-feature/><span>SimpleDSP: IIR Filter Feature Added</span><span class=ml-1.5>→</span></a>
-</nav>
-</article>
-</main>
-<footer class="opaco mx-auto flex h-[5rem] max-w-3xl items-center px-8 text-[0.9em] opacity-60">
-<div class=mr-auto>
-&copy; 2023
-<a class=link href=https://mozanunal.com/>Mehmet Ozan Ünal</a>
-</div>
-<a class="link mx-6" href=https://gohugo.io/ rel=noopener target=_blank>Powered by Hugo️️</a>️
-<a class=link href=https://github.com/nanxiaobei/hugo-paper rel=noopener target=_blank>Theme Paper</a>
-</footer>
-</body>
-</html>
+<!doctype html><html class="not-ready text-sm lg:text-base" style=--bg:#fbfbfb lang=en><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><title>Playing DOTA on Raspberry Pi using Steam Link - Mehmet Ozan Ünal</title><meta name=theme-color><meta name=description content="Hello, Steam Link is software which provides support to Steam to stream screen view of the games to devices which is on same local area network. In this setup, there are 2 devices. First one is the device to run the Steam and the games which act as a server. The second one is the one which runs Steam Link and acts as a client to this server. By using this technology you can play games directly on a device which is connected to the same router."><meta name=author content="Moz"><link rel="preload stylesheet" as=style href=https://mozanunal.com/main.min.css><link rel=preload as=image href=https://mozanunal.com/theme.png><link rel=preload as=image href="https://www.gravatar.com/avatar/998cbd3ab655239d8be787580cce0415?s=160&amp;d=identicon"><link rel=preload as=image href=https://mozanunal.com/twitter.svg><link rel=preload as=image href=https://mozanunal.com/github.svg><link rel=icon href=https://mozanunal.com/favicon.ico><link rel=apple-touch-icon href=https://mozanunal.com/apple-touch-icon.png><meta name=generator content="Hugo 0.111.3"><script type=application/javascript>var doNotTrack=!1;doNotTrack||(window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","G-007KSW65JL","auto"),ga("send","pageview"))</script><script async src=https://www.google-analytics.com/analytics.js></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-007KSW65JL"></script>
+<script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-007KSW65JL",{anonymize_ip:!1})}</script><meta property="og:title" content="Playing DOTA on Raspberry Pi using Steam Link"><meta property="og:description" content="Hello, Steam Link is software which provides support to Steam to stream screen view of the games to devices which is on same local area network. In this setup, there are 2 devices. First one is the device to run the Steam and the games which act as a server. The second one is the one which runs Steam Link and acts as a client to this server. By using this technology you can play games directly on a device which is connected to the same router."><meta property="og:type" content="article"><meta property="og:url" content="https://mozanunal.com/2019/02/steam-link-on-rpi/"><meta property="article:section" content="posts"><meta property="article:published_time" content="2019-02-01T00:45:01+00:00"><meta property="article:modified_time" content="2019-02-01T00:45:01+00:00"><meta itemprop=name content="Playing DOTA on Raspberry Pi using Steam Link"><meta itemprop=description content="Hello, Steam Link is software which provides support to Steam to stream screen view of the games to devices which is on same local area network. In this setup, there are 2 devices. First one is the device to run the Steam and the games which act as a server. The second one is the one which runs Steam Link and acts as a client to this server. By using this technology you can play games directly on a device which is connected to the same router."><meta itemprop=datePublished content="2019-02-01T00:45:01+00:00"><meta itemprop=dateModified content="2019-02-01T00:45:01+00:00"><meta itemprop=wordCount content="489"><meta itemprop=keywords content="Steam Link,Raspberry Pi,"><meta name=twitter:card content="summary"><meta name=twitter:title content="Playing DOTA on Raspberry Pi using Steam Link"><meta name=twitter:description content="Hello, Steam Link is software which provides support to Steam to stream screen view of the games to devices which is on same local area network. In this setup, there are 2 devices. First one is the device to run the Steam and the games which act as a server. The second one is the one which runs Steam Link and acts as a client to this server. By using this technology you can play games directly on a device which is connected to the same router."></head><body class="text-black duration-200 ease-out dark:text-white"><header class="mx-auto flex h-[5rem] max-w-3xl px-8 lg:justify-center"><div class="relative z-50 mr-auto flex items-center"><a class="-translate-x-[1px] -translate-y-0.5 text-3xl font-bold" href=https://mozanunal.com/>Mehmet Ozan Ünal</a><div class="btn-dark text-[0] ml-6 h-6 w-6 shrink-0 cursor-pointer [background:url(./theme.svg)_left_center/cover_no-repeat] dark:invert dark:[background-position:right]" role=button aria-label=Dark></div></div><div class="btn-menu relative z-50 -mr-8 flex h-[5rem] w-[5rem] shrink-0 cursor-pointer flex-col items-center justify-center gap-2.5 lg:hidden" role=button aria-label=Menu></div><script>const htmlClass=document.documentElement.classList;setTimeout(()=>{htmlClass.remove("not-ready")},10);const btnMenu=document.querySelector(".btn-menu");btnMenu.addEventListener("click",()=>{htmlClass.toggle("open")});const metaTheme=document.querySelector('meta[name="theme-color"]'),lightBg=`"#fbfbfb"`.replace(/"/g,""),setDark=e=>{metaTheme.setAttribute("content",e?"#000":lightBg),htmlClass[e?"add":"remove"]("dark"),localStorage.setItem("dark",e)},darkScheme=window.matchMedia("(prefers-color-scheme: dark)");if(htmlClass.contains("dark"))setDark(!0);else{const e=localStorage.getItem("dark");setDark(e?e==="true":darkScheme.matches)}darkScheme.addEventListener("change",e=>{setDark(e.matches)});const btnDark=document.querySelector(".btn-dark");btnDark.addEventListener("click",()=>{setDark(localStorage.getItem("dark")!=="true")})</script><div class="nav-wrapper fixed inset-x-0 top-full z-40 flex h-full select-none flex-col justify-center pb-16 duration-200 dark:bg-black lg:static lg:h-auto lg:flex-row lg:!bg-transparent lg:pb-0 lg:transition-none"><nav class="lg:ml-12 lg:flex lg:flex-row lg:items-center lg:space-x-6"><a class="block text-center text-2xl leading-[5rem] lg:text-base lg:font-normal" href=/about/>About</a>
+<a class="block text-center text-2xl leading-[5rem] lg:text-base lg:font-normal" href=/contact/>Contact</a></nav><nav class="mt-12 flex justify-center space-x-10 dark:invert lg:mt-0 lg:ml-12 lg:items-center lg:space-x-6"><a class="h-8 w-8 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6" style=--url:url(./twitter.svg) href=https://twitter.com/MOzanUnal target=_blank rel=me>twitter</a>
+<a class="h-8 w-8 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6" style=--url:url(./github.svg) href=https://github.com/mozanunal target=_blank rel=me>github</a></nav></div></header><main class="prose prose-neutral relative mx-auto min-h-[calc(100%-10rem)] max-w-3xl px-8 pt-16 pb-24 dark:prose-invert"><article><header class=mb-20><h1 class="!my-0 pb-2.5">Playing DOTA on Raspberry Pi using Steam Link</h1><div class="text-sm opacity-60"><time>Feb 1, 2019</time></div></header><section><p><strong>Hello,</strong>
+Steam Link is software which provides support to Steam to stream screen view of the games to devices which is on same local area network. In this setup, there are 2 devices. First one is the device to run the Steam and the games which act as a server. The second one is the one which runs Steam Link and acts as a client to this server. By using this technology you can play games directly on a device which is connected to the same router. The connection is also 2 way. Thus, control devices such as keyboard, mouse and game controllers can be connected directly to the client device.</p><p>On 3rd of December, Steam announced that the Steam Link can work on Raspberry Pi now. After I saw that, I decided to give it a try. I have tried it with my favorite game, Dota 2. Dota 2 can be played on a Raspberry Pi using Steam Link. It basically uses your computer as a game server. Actually, the PC is run the Dota 2 however it casts its screen view to another computer, which in this case is a Raspberry Pi. You can install it to your Raspberry Pi with only 2 shell commands.</p><p>In this post, installing and running the Steam Link will be discussed. Steam Link is a software which is developed to play high processing power intensive games on low processing power devices. Actually, you should already have enough system requirements for the game and this computer also should be the same local area network.</p><p><img src=/images/steamlink1.jpg alt></p><h3 id=installation>Installation</h3><p>The following link is from Steam Community website. They announced that Steam Link is officially available for Raspberry Pi. The installation process is quite easy but the basic Linux shell knowledge still is a requirement.<br><a href=https://steamcommunity.com/app/353380/discussions/0/1743353164093954254/>https://steamcommunity.com/app/353380/discussions/0/1743353164093954254/</a></p><p>The first step, using curl download the required Debian installation package.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell><span style=display:flex><span>pi@rpi-:~ $ curl -#Of http://media.steampowered.com/steamlink/rpi/steamlink_1.0.7_armhf.deb
+</span></span><span style=display:flex><span><span style=color:#6272a4>######################################################################## 100.0%</span>
+</span></span></code></pre></div><p>After downloading the package, process continues with following one line script. It is installing Steam Link Package to your Raspberry Pi.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>pi@rpi-:~ $ sudo dpkg -i steamlink_1.0.7_armhf.deb
+</span></span><span style=display:flex><span>Selecting previously unselected package steamlink.
+</span></span><span style=display:flex><span><span style=color:#ff79c6>(</span>Reading database ... <span style=color:#bd93f9>129787</span> files and directories currently installed.<span style=color:#ff79c6>)</span>
+</span></span><span style=display:flex><span>Preparing to unpack steamlink_1.0.7_armhf.deb ...
+</span></span><span style=display:flex><span>Unpacking steamlink <span style=color:#ff79c6>(</span>1.0.7<span style=color:#ff79c6>)</span> ...
+</span></span><span style=display:flex><span>Setting up steamlink <span style=color:#ff79c6>(</span>1.0.7<span style=color:#ff79c6>)</span> ...
+</span></span><span style=display:flex><span>Processing triggers <span style=color:#ff79c6>for</span> gnome-menus <span style=color:#ff79c6>(</span>3.13.3-9<span style=color:#ff79c6>)</span> ...
+</span></span><span style=display:flex><span>Processing triggers <span style=color:#ff79c6>for</span> desktop-file-utils <span style=color:#ff79c6>(</span>0.23-1<span style=color:#ff79c6>)</span> ...
+</span></span><span style=display:flex><span>Processing triggers <span style=color:#ff79c6>for</span> mime-support <span style=color:#ff79c6>(</span>3.60<span style=color:#ff79c6>)</span> ...
+</span></span><span style=display:flex><span>Processing triggers <span style=color:#ff79c6>for</span> hicolor-icon-theme <span style=color:#ff79c6>(</span>0.15-1<span style=color:#ff79c6>)</span> ...
+</span></span><span style=display:flex><span>Processing triggers <span style=color:#ff79c6>for</span> man-db <span style=color:#ff79c6>(</span>2.7.6.1-2<span style=color:#ff79c6>)</span> ...
+</span></span></code></pre></div><h3 id=game-play-demo>Game Play Demo</h3><p>Some configurations are also should be done to start playing through your Raspberry Pi. However, these steps are quite easy to follow and no prior shell knowledge is required. By the way, ping is around 6 ms with ethernet connection to your router. The ping is heavily depends on your router performance and connection quality. I could not get sufficient results with WiFi connection to Raspberry Pi. Therefore I connect it to external router in order to keep the connection latency as minimum as possible.</p><div style=position:relative;padding-bottom:56.25%;height:0;overflow:hidden><iframe src=https://www.youtube-nocookie.com/embed/Oouu3DmDyM4 style=position:absolute;top:0;left:0;width:100%;height:100%;border:0 allowfullscreen title="YouTube Video"></iframe></div></section><footer class="mt-12 flex flex-wrap"><a class="mr-1.5 mb-1.5 rounded-lg bg-black/[3%] px-5 py-2 no-underline dark:bg-white/[8%]" href=https://mozanunal.com/tags/steam-link>Steam Link</a>
+<a class="mr-1.5 mb-1.5 rounded-lg bg-black/[3%] px-5 py-2 no-underline dark:bg-white/[8%]" href=https://mozanunal.com/tags/raspberry-pi>Raspberry Pi</a></footer><nav class="mt-24 flex rounded-lg bg-black/[3%] text-lg dark:bg-white/[8%]"><a class="flex w-1/2 items-center rounded-l-md p-6 pr-3 no-underline hover:bg-black/[2%] dark:hover:bg-white/[3%]" href=https://mozanunal.com/2019/08/yolocolabdemo/><span class=mr-1.5>←</span><span>Yolo on Google Colab</span></a>
+<a class="ml-auto flex w-1/2 items-center justify-end rounded-r-md p-6 pl-3 no-underline hover:bg-black/[2%] dark:hover:bg-white/[3%]" href=https://mozanunal.com/2019/01/simpledsp-iir-feature/><span>SimpleDSP: IIR Filter Feature Added</span><span class=ml-1.5>→</span></a></nav></article></main><footer class="opaco mx-auto flex h-[5rem] max-w-3xl items-center px-8 text-[0.9em] opacity-60"><div class=mr-auto>&copy; 2023
+<a class=link href=https://mozanunal.com/>Mehmet Ozan Ünal</a></div><a class="link mx-6" href=https://gohugo.io/ rel=noopener target=_blank>Powered by Hugo️️</a>️
+<a class=link href=https://github.com/nanxiaobei/hugo-paper rel=noopener target=_blank>Theme Paper</a></footer></body></html>

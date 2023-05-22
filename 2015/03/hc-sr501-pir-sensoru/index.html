@@ -1,110 +1,20 @@
-<!doctype html><html class="not-ready text-sm lg:text-base" style=--bg:#fbfbfb lang=en>
-<head>
-<meta charset=utf-8>
-<meta http-equiv=x-ua-compatible content="IE=edge">
-<meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
-<title>[TR] HC-SR501 PIR Sensörü - Mehmet Ozan Ünal</title>
-<meta name=theme-color>
-<meta name=description content="Merhaba arkadaşlar,
+<!doctype html><html class="not-ready text-sm lg:text-base" style=--bg:#fbfbfb lang=en><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><title>[TR] HC-SR501 PIR Sensörü - Mehmet Ozan Ünal</title><meta name=theme-color><meta name=description content="Merhaba arkadaşlar,
 Bugünkü yazımda bir PIR sensörü olan HC-SR501 inceleyeceğiz. PIR sensörünün açılımı Passive Infrared Sensor. Son 4- 5 yılda çok hızlı bir yayılım gösterdi bu sensörler ve insan algılayınca çalışan lambalar, otomatik el kurutma vb makinalar olarak hayatımıza girdi. Modulumüzden bahsetmeden önce PIR sensör nedir onu açıklamak istiyorum. PIR sensör ortamdaki kızılötesi ışınları ölçer.
-Alıcılarda çok farklı yere doğru odaklanan frensel lensi bulunur bu sayede belli bir alandaki tüm enerji ölçülmüş olur.">
-<meta name=author content="Mehmet Ozan Ünal">
-<link rel="preload stylesheet" as=style href=https://mozanunal.com/main.min.css>
-<link rel=preload as=image href=https://mozanunal.com/theme.png>
-<link rel=preload as=image href="https://www.gravatar.com/avatar/998cbd3ab655239d8be787580cce0415?s=160&d=identicon">
-<link rel=preload as=image href=https://mozanunal.com/twitter.svg>
-<link rel=preload as=image href=https://mozanunal.com/github.svg>
-<link rel=icon href=https://mozanunal.com/favicon.ico>
-<link rel=apple-touch-icon href=https://mozanunal.com/apple-touch-icon.png>
-<meta name=generator content="Hugo 0.92.2">
-<script type=application/javascript>var doNotTrack=!1;doNotTrack||(window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga('create','G-N3F3XLS474','auto'),ga('send','pageview'))</script>
-<script async src=https://www.google-analytics.com/analytics.js></script>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-N3F3XLS474"></script>
-<script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-N3F3XLS474',{anonymize_ip:!1})}</script>
-<meta property="og:title" content="[TR] HC-SR501 PIR Sensörü">
-<meta property="og:description" content="Merhaba arkadaşlar,
+Alıcılarda çok farklı yere doğru odaklanan frensel lensi bulunur bu sayede belli bir alandaki tüm enerji ölçülmüş olur."><meta name=author content="Mehmet Ozan Ünal"><link rel="preload stylesheet" as=style href=https://mozanunal.com/main.min.css><link rel=preload as=image href=https://mozanunal.com/theme.png><link rel=preload as=image href="https://www.gravatar.com/avatar/998cbd3ab655239d8be787580cce0415?s=160&amp;d=identicon"><link rel=preload as=image href=https://mozanunal.com/twitter.svg><link rel=preload as=image href=https://mozanunal.com/github.svg><link rel=icon href=https://mozanunal.com/favicon.ico><link rel=apple-touch-icon href=https://mozanunal.com/apple-touch-icon.png><meta name=generator content="Hugo 0.111.3"><script type=application/javascript>var doNotTrack=!1;doNotTrack||(window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","G-007KSW65JL","auto"),ga("send","pageview"))</script><script async src=https://www.google-analytics.com/analytics.js></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-007KSW65JL"></script>
+<script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-007KSW65JL",{anonymize_ip:!1})}</script><meta property="og:title" content="[TR] HC-SR501 PIR Sensörü"><meta property="og:description" content="Merhaba arkadaşlar,
 Bugünkü yazımda bir PIR sensörü olan HC-SR501 inceleyeceğiz. PIR sensörünün açılımı Passive Infrared Sensor. Son 4- 5 yılda çok hızlı bir yayılım gösterdi bu sensörler ve insan algılayınca çalışan lambalar, otomatik el kurutma vb makinalar olarak hayatımıza girdi. Modulumüzden bahsetmeden önce PIR sensör nedir onu açıklamak istiyorum. PIR sensör ortamdaki kızılötesi ışınları ölçer.
-Alıcılarda çok farklı yere doğru odaklanan frensel lensi bulunur bu sayede belli bir alandaki tüm enerji ölçülmüş olur.">
-<meta property="og:type" content="article">
-<meta property="og:url" content="https://mozanunal.com/2015/03/hc-sr501-pir-sensoru/"><meta property="article:section" content="posts">
-<meta property="article:published_time" content="2015-03-15T01:36:00+00:00">
-<meta property="article:modified_time" content="2015-03-15T01:36:00+00:00">
-<meta itemprop=name content="[TR] HC-SR501 PIR Sensörü">
-<meta itemprop=description content="Merhaba arkadaşlar,
+Alıcılarda çok farklı yere doğru odaklanan frensel lensi bulunur bu sayede belli bir alandaki tüm enerji ölçülmüş olur."><meta property="og:type" content="article"><meta property="og:url" content="https://mozanunal.com/2015/03/hc-sr501-pir-sensoru/"><meta property="article:section" content="posts"><meta property="article:published_time" content="2015-03-15T01:36:00+00:00"><meta property="article:modified_time" content="2015-03-15T01:36:00+00:00"><meta itemprop=name content="[TR] HC-SR501 PIR Sensörü"><meta itemprop=description content="Merhaba arkadaşlar,
 Bugünkü yazımda bir PIR sensörü olan HC-SR501 inceleyeceğiz. PIR sensörünün açılımı Passive Infrared Sensor. Son 4- 5 yılda çok hızlı bir yayılım gösterdi bu sensörler ve insan algılayınca çalışan lambalar, otomatik el kurutma vb makinalar olarak hayatımıza girdi. Modulumüzden bahsetmeden önce PIR sensör nedir onu açıklamak istiyorum. PIR sensör ortamdaki kızılötesi ışınları ölçer.
-Alıcılarda çok farklı yere doğru odaklanan frensel lensi bulunur bu sayede belli bir alandaki tüm enerji ölçülmüş olur."><meta itemprop=datePublished content="2015-03-15T01:36:00+00:00">
-<meta itemprop=dateModified content="2015-03-15T01:36:00+00:00">
-<meta itemprop=wordCount content="172">
-<meta itemprop=keywords content="Electronics,Arduino,HC-SR501,">
-<meta name=twitter:card content="summary">
-<meta name=twitter:title content="[TR] HC-SR501 PIR Sensörü">
-<meta name=twitter:description content="Merhaba arkadaşlar,
+Alıcılarda çok farklı yere doğru odaklanan frensel lensi bulunur bu sayede belli bir alandaki tüm enerji ölçülmüş olur."><meta itemprop=datePublished content="2015-03-15T01:36:00+00:00"><meta itemprop=dateModified content="2015-03-15T01:36:00+00:00"><meta itemprop=wordCount content="172"><meta itemprop=keywords content="Electronics,Arduino,HC-SR501,"><meta name=twitter:card content="summary"><meta name=twitter:title content="[TR] HC-SR501 PIR Sensörü"><meta name=twitter:description content="Merhaba arkadaşlar,
 Bugünkü yazımda bir PIR sensörü olan HC-SR501 inceleyeceğiz. PIR sensörünün açılımı Passive Infrared Sensor. Son 4- 5 yılda çok hızlı bir yayılım gösterdi bu sensörler ve insan algılayınca çalışan lambalar, otomatik el kurutma vb makinalar olarak hayatımıza girdi. Modulumüzden bahsetmeden önce PIR sensör nedir onu açıklamak istiyorum. PIR sensör ortamdaki kızılötesi ışınları ölçer.
-Alıcılarda çok farklı yere doğru odaklanan frensel lensi bulunur bu sayede belli bir alandaki tüm enerji ölçülmüş olur.">
-</head>
-<body class="text-black duration-200 ease-out dark:text-white">
-<header class="mx-auto flex h-[5rem] max-w-3xl px-8 lg:justify-center">
-<div class="relative z-50 mr-auto flex items-center">
-<a class="-translate-x-[1px] -translate-y-0.5 text-3xl font-bold" href=https://mozanunal.com/>Mehmet Ozan Ünal</a>
-<div class="btn-dark text-[0] ml-6 h-6 w-6 shrink-0 cursor-pointer [background:url(./theme.svg)_left_center/cover_no-repeat] dark:invert dark:[background-position:right]" role=button aria-label=Dark></div>
-</div>
-<div class="btn-menu relative z-50 -mr-8 flex h-[5rem] w-[5rem] shrink-0 cursor-pointer flex-col items-center justify-center gap-2.5 lg:hidden" role=button aria-label=Menu></div>
-<script>const htmlClass=document.documentElement.classList;setTimeout(()=>{htmlClass.remove('not-ready')},10);const btnMenu=document.querySelector('.btn-menu');btnMenu.addEventListener('click',()=>{htmlClass.toggle('open')});const metaTheme=document.querySelector('meta[name="theme-color"]'),lightBg=`"#fbfbfb"`.replace(/"/g,''),setDark=a=>{metaTheme.setAttribute('content',a?'#000':lightBg),htmlClass[a?'add':'remove']('dark'),localStorage.setItem('dark',a)},darkScheme=window.matchMedia('(prefers-color-scheme: dark)');if(htmlClass.contains('dark'))setDark(!0);else{const a=localStorage.getItem('dark');setDark(a?a==='true':darkScheme.matches)}darkScheme.addEventListener('change',a=>{setDark(a.matches)});const btnDark=document.querySelector('.btn-dark');btnDark.addEventListener('click',()=>{setDark(localStorage.getItem('dark')!=='true')})</script>
-<div class="nav-wrapper fixed inset-x-0 top-full z-40 flex h-full select-none flex-col justify-center pb-16 duration-200 dark:bg-black lg:static lg:h-auto lg:flex-row lg:!bg-transparent lg:pb-0 lg:transition-none">
-<nav class="lg:ml-12 lg:flex lg:flex-row lg:items-center lg:space-x-6">
-<a class="block text-center text-2xl leading-[5rem] lg:text-base lg:font-normal" href=/about/>About</a>
-<a class="block text-center text-2xl leading-[5rem] lg:text-base lg:font-normal" href=/contact/>Contact</a>
-</nav>
-<nav class="mt-12 flex justify-center space-x-10 dark:invert lg:mt-0 lg:ml-12 lg:items-center lg:space-x-6">
-<a class="h-8 w-8 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6" style=--url:url(./twitter.svg) href=https://twitter.com/MOzanUnal target=_blank rel=me>
-twitter
-</a>
-<a class="h-8 w-8 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6" style=--url:url(./github.svg) href=https://github.com/mozanunal target=_blank rel=me>
-github
-</a>
-</nav>
-</div>
-</header>
-<main class="prose prose-neutral relative mx-auto min-h-[calc(100%-10rem)] max-w-3xl px-8 pt-16 pb-24 dark:prose-invert">
-<article>
-<header class=mb-20>
-<h1 class="!my-0 pb-2.5">[TR] HC-SR501 PIR Sensörü</h1>
-<div class="text-sm opacity-60">
-<time>Mar 15, 2015</time>
+Alıcılarda çok farklı yere doğru odaklanan frensel lensi bulunur bu sayede belli bir alandaki tüm enerji ölçülmüş olur."></head><body class="text-black duration-200 ease-out dark:text-white"><header class="mx-auto flex h-[5rem] max-w-3xl px-8 lg:justify-center"><div class="relative z-50 mr-auto flex items-center"><a class="-translate-x-[1px] -translate-y-0.5 text-3xl font-bold" href=https://mozanunal.com/>Mehmet Ozan Ünal</a><div class="btn-dark text-[0] ml-6 h-6 w-6 shrink-0 cursor-pointer [background:url(./theme.svg)_left_center/cover_no-repeat] dark:invert dark:[background-position:right]" role=button aria-label=Dark></div></div><div class="btn-menu relative z-50 -mr-8 flex h-[5rem] w-[5rem] shrink-0 cursor-pointer flex-col items-center justify-center gap-2.5 lg:hidden" role=button aria-label=Menu></div><script>const htmlClass=document.documentElement.classList;setTimeout(()=>{htmlClass.remove("not-ready")},10);const btnMenu=document.querySelector(".btn-menu");btnMenu.addEventListener("click",()=>{htmlClass.toggle("open")});const metaTheme=document.querySelector('meta[name="theme-color"]'),lightBg=`"#fbfbfb"`.replace(/"/g,""),setDark=e=>{metaTheme.setAttribute("content",e?"#000":lightBg),htmlClass[e?"add":"remove"]("dark"),localStorage.setItem("dark",e)},darkScheme=window.matchMedia("(prefers-color-scheme: dark)");if(htmlClass.contains("dark"))setDark(!0);else{const e=localStorage.getItem("dark");setDark(e?e==="true":darkScheme.matches)}darkScheme.addEventListener("change",e=>{setDark(e.matches)});const btnDark=document.querySelector(".btn-dark");btnDark.addEventListener("click",()=>{setDark(localStorage.getItem("dark")!=="true")})</script><div class="nav-wrapper fixed inset-x-0 top-full z-40 flex h-full select-none flex-col justify-center pb-16 duration-200 dark:bg-black lg:static lg:h-auto lg:flex-row lg:!bg-transparent lg:pb-0 lg:transition-none"><nav class="lg:ml-12 lg:flex lg:flex-row lg:items-center lg:space-x-6"><a class="block text-center text-2xl leading-[5rem] lg:text-base lg:font-normal" href=/about/>About</a>
+<a class="block text-center text-2xl leading-[5rem] lg:text-base lg:font-normal" href=/contact/>Contact</a></nav><nav class="mt-12 flex justify-center space-x-10 dark:invert lg:mt-0 lg:ml-12 lg:items-center lg:space-x-6"><a class="h-8 w-8 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6" style=--url:url(./twitter.svg) href=https://twitter.com/MOzanUnal target=_blank rel=me>twitter</a>
+<a class="h-8 w-8 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6" style=--url:url(./github.svg) href=https://github.com/mozanunal target=_blank rel=me>github</a></nav></div></header><main class="prose prose-neutral relative mx-auto min-h-[calc(100%-10rem)] max-w-3xl px-8 pt-16 pb-24 dark:prose-invert"><article><header class=mb-20><h1 class="!my-0 pb-2.5">[TR] HC-SR501 PIR Sensörü</h1><div class="text-sm opacity-60"><time>Mar 15, 2015</time>
 <span class=mx-1>&#183;</span>
-<span>Mehmet Ozan Ünal</span>
-</div>
-</header>
-<section><p><strong>Merhaba arkadaşlar,</strong><br>
-Bugünkü yazımda bir PIR sensörü olan HC-SR501 inceleyeceğiz. PIR sensörünün açılımı Passive Infrared Sensor. Son 4- 5 yılda çok hızlı bir yayılım gösterdi bu sensörler ve insan algılayınca çalışan lambalar, otomatik el kurutma vb makinalar olarak hayatımıza girdi. Modulumüzden bahsetmeden önce PIR sensör nedir onu açıklamak istiyorum. PIR sensör ortamdaki kızılötesi ışınları ölçer.</p>
-<p>Alıcılarda çok farklı yere doğru odaklanan frensel lensi bulunur bu sayede belli bir alandaki tüm enerji ölçülmüş olur. Canlıların sıcaklığı ortalama 36 derece civarlarında olduğundan merceğin üzerine düşen kızılötesi ışınların toplam enerjisi y ir. Böylece canlı varlığı tespit edilmiş olur.</p>
-<p>Gelelim modülümüze. Çalışma voltajı 3.6- 20 volt arasında. Resimde gösterilen &ldquo;Sensivity Adjust&rdquo; tripotundan hassasiyet ayarlanıyor. Diğer trimpottan ise 0.5 -300 saniye ayarını yapabiliriz. Modül bir cisim algılayınca &ldquo;Output&rdquo; pininden çıkış veriyor. Test etmek için bir Arduino kodu yazdım.Koddaki yaptığım tek şey dijital veriyi okuyup ekrana seri port üzerinden bilgisayara yollatmak. Zaten sadece lamba çalıştırmak için Arduino kullanmak gereksiz olur. Bir transistör ile çıkış güçlendirilip röle sürmek daha mantıklı olacaktır.</p>
-<p><img src=https://1.bp.blogspot.com/-4wSb9Iepk-I/VQSmL6O1IEI/AAAAAAAAH8s/eTZcX2He-uo/s1600/sd.PNG alt></p>
-<p>Benim bilgileri aldığım modulün datasheet&rsquo;i de burada.</p>
-<p><a href=https://www.mpja.com/download/31227sc.pdf>https://www.mpja.com/download/31227sc.pdf</a></p>
-<p><img src=https://1.bp.blogspot.com/-ypp2WiddhQ4/VQSmP8893KI/AAAAAAAAH84/V-8_ftlvy58/s1600/IMG_20150314_214609.jpg alt></p>
-<p><img src=https://3.bp.blogspot.com/-HRO1B-zMtkQ/VQSmP98vWFI/AAAAAAAAH84/gdn4NZtLZqA/s1600/IMG_20150314_214546.jpg alt></p>
-<p><img src=https://1.bp.blogspot.com/-RK1a2c0Culs/VQSmP0t3DtI/AAAAAAAAH84/gqlkaWfBTOA/s1600/IMG-20150314-WA0004.jpg alt></p>
-<p><img src=https://3.bp.blogspot.com/-8gT-vgqA5fg/VQSmP-AsoeI/AAAAAAAAH84/ZMaN6ZmbewE/s1600/IMG_20150314_214319.jpg alt></p>
-</section>
-<footer class="mt-12 flex flex-wrap">
-<a class="mr-1.5 mb-1.5 rounded-lg bg-black/[3%] px-5 py-2 no-underline dark:bg-white/[8%]" href=https://mozanunal.com/tags/electronics>Electronics</a>
+<span>Mehmet Ozan Ünal</span></div></header><section><p><strong>Merhaba arkadaşlar,</strong><br>Bugünkü yazımda bir PIR sensörü olan HC-SR501 inceleyeceğiz. PIR sensörünün açılımı Passive Infrared Sensor. Son 4- 5 yılda çok hızlı bir yayılım gösterdi bu sensörler ve insan algılayınca çalışan lambalar, otomatik el kurutma vb makinalar olarak hayatımıza girdi. Modulumüzden bahsetmeden önce PIR sensör nedir onu açıklamak istiyorum. PIR sensör ortamdaki kızılötesi ışınları ölçer.</p><p>Alıcılarda çok farklı yere doğru odaklanan frensel lensi bulunur bu sayede belli bir alandaki tüm enerji ölçülmüş olur. Canlıların sıcaklığı ortalama 36 derece civarlarında olduğundan merceğin üzerine düşen kızılötesi ışınların toplam enerjisi y ir. Böylece canlı varlığı tespit edilmiş olur.</p><p>Gelelim modülümüze. Çalışma voltajı 3.6- 20 volt arasında. Resimde gösterilen &ldquo;Sensivity Adjust&rdquo; tripotundan hassasiyet ayarlanıyor. Diğer trimpottan ise 0.5 -300 saniye ayarını yapabiliriz. Modül bir cisim algılayınca &ldquo;Output&rdquo; pininden çıkış veriyor. Test etmek için bir Arduino kodu yazdım.Koddaki yaptığım tek şey dijital veriyi okuyup ekrana seri port üzerinden bilgisayara yollatmak. Zaten sadece lamba çalıştırmak için Arduino kullanmak gereksiz olur. Bir transistör ile çıkış güçlendirilip röle sürmek daha mantıklı olacaktır.</p><p><img src=https://1.bp.blogspot.com/-4wSb9Iepk-I/VQSmL6O1IEI/AAAAAAAAH8s/eTZcX2He-uo/s1600/sd.PNG alt></p><p>Benim bilgileri aldığım modulün datasheet&rsquo;i de burada.</p><p><a href=https://www.mpja.com/download/31227sc.pdf>https://www.mpja.com/download/31227sc.pdf</a></p><p><img src=https://1.bp.blogspot.com/-ypp2WiddhQ4/VQSmP8893KI/AAAAAAAAH84/V-8_ftlvy58/s1600/IMG_20150314_214609.jpg alt></p><p><img src=https://3.bp.blogspot.com/-HRO1B-zMtkQ/VQSmP98vWFI/AAAAAAAAH84/gdn4NZtLZqA/s1600/IMG_20150314_214546.jpg alt></p><p><img src=https://1.bp.blogspot.com/-RK1a2c0Culs/VQSmP0t3DtI/AAAAAAAAH84/gqlkaWfBTOA/s1600/IMG-20150314-WA0004.jpg alt></p><p><img src=https://3.bp.blogspot.com/-8gT-vgqA5fg/VQSmP-AsoeI/AAAAAAAAH84/ZMaN6ZmbewE/s1600/IMG_20150314_214319.jpg alt></p></section><footer class="mt-12 flex flex-wrap"><a class="mr-1.5 mb-1.5 rounded-lg bg-black/[3%] px-5 py-2 no-underline dark:bg-white/[8%]" href=https://mozanunal.com/tags/electronics>Electronics</a>
 <a class="mr-1.5 mb-1.5 rounded-lg bg-black/[3%] px-5 py-2 no-underline dark:bg-white/[8%]" href=https://mozanunal.com/tags/arduino>Arduino</a>
-<a class="mr-1.5 mb-1.5 rounded-lg bg-black/[3%] px-5 py-2 no-underline dark:bg-white/[8%]" href=https://mozanunal.com/tags/hc-sr501>HC-SR501</a>
-</footer>
-<nav class="mt-24 flex rounded-lg bg-black/[3%] text-lg dark:bg-white/[8%]">
-<a class="flex w-1/2 items-center rounded-l-md p-6 pr-3 no-underline hover:bg-black/[2%] dark:hover:bg-white/[3%]" href=https://mozanunal.com/2015/03/all-terrain-rover-version100/><span class=mr-1.5>←</span><span>[TR] All Terrain Rover Version 1.00</span></a>
-<a class="ml-auto flex w-1/2 items-center justify-end rounded-r-md p-6 pl-3 no-underline hover:bg-black/[2%] dark:hover:bg-white/[3%]" href=https://mozanunal.com/2015/03/esp8266-modulu-html-server/><span>[TR] ESP8266 Modulü Web Server</span><span class=ml-1.5>→</span></a>
-</nav>
-</article>
-</main>
-<footer class="opaco mx-auto flex h-[5rem] max-w-3xl items-center px-8 text-[0.9em] opacity-60">
-<div class=mr-auto>
-&copy; 2023
-<a class=link href=https://mozanunal.com/>Mehmet Ozan Ünal</a>
-</div>
-<a class="link mx-6" href=https://gohugo.io/ rel=noopener target=_blank>Powered by Hugo️️</a>️
-<a class=link href=https://github.com/nanxiaobei/hugo-paper rel=noopener target=_blank>Theme Paper</a>
-</footer>
-</body>
-</html>
+<a class="mr-1.5 mb-1.5 rounded-lg bg-black/[3%] px-5 py-2 no-underline dark:bg-white/[8%]" href=https://mozanunal.com/tags/hc-sr501>HC-SR501</a></footer><nav class="mt-24 flex rounded-lg bg-black/[3%] text-lg dark:bg-white/[8%]"><a class="flex w-1/2 items-center rounded-l-md p-6 pr-3 no-underline hover:bg-black/[2%] dark:hover:bg-white/[3%]" href=https://mozanunal.com/2015/03/all-terrain-rover-version100/><span class=mr-1.5>←</span><span>[TR] All Terrain Rover Version 1.00</span></a>
+<a class="ml-auto flex w-1/2 items-center justify-end rounded-r-md p-6 pl-3 no-underline hover:bg-black/[2%] dark:hover:bg-white/[3%]" href=https://mozanunal.com/2015/03/esp8266-modulu-html-server/><span>[TR] ESP8266 Modulü Web Server</span><span class=ml-1.5>→</span></a></nav></article></main><footer class="opaco mx-auto flex h-[5rem] max-w-3xl items-center px-8 text-[0.9em] opacity-60"><div class=mr-auto>&copy; 2023
+<a class=link href=https://mozanunal.com/>Mehmet Ozan Ünal</a></div><a class="link mx-6" href=https://gohugo.io/ rel=noopener target=_blank>Powered by Hugo️️</a>️
+<a class=link href=https://github.com/nanxiaobei/hugo-paper rel=noopener target=_blank>Theme Paper</a></footer></body></html>
