@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "about.md",
+                "file": "contact.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "about.md",
+                "file": "contact.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "about.md",
+                "file": "contact.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "about.md"
+                "file": "contact.md"
               }
             }
           }
@@ -148,6 +148,7 @@
   },
   "active": "e5b2309042e4b239",
   "lastOpenFiles": [
+    "about.md",
     "about.md~",
     "4913",
     "posts/arduino-due-osiloskop.md",
@@ -155,7 +156,6 @@
     "posts/5-logic-analyzer.md",
     "posts/2-eksenli-servo-gimbal-yapm.md",
     "contact.md",
-    "about.md",
     "posts/img2sh.md",
     "posts/itunom-takm.md",
     "posts/Internet-of-Beaches.md",

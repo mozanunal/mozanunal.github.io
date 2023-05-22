@@ -1,7 +1,7 @@
 ---
 title: Medical Imaging Planes
 tags:
-  - sagital, coronal, axial, biomedical imaging planes
+  - biomedical imaging
 categories:
   - Electronics
   
