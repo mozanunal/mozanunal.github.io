@@ -4,7 +4,8 @@ author = "Mehmet Ozan Ünal"
 copyright = "Copyright © 2014–2023"
 paginate = 20
 languageCode = "en"
-googleAnalytics = 'G-N3F3XLS474'
+
+googleAnalytics = 'G-007KSW65JL'
 DefaultContentLanguage = "en"
 enableInlineShortcodes = true
 # prevent build failures when using Hugo's Instagram shortcode due to deprecated Instagram API.
