@@ -1,214 +1,112 @@
-<!DOCTYPE html>
-<html lang=en>
-<head><meta name="generator" content="Hexo 3.8.0">
-    <!-- so meta -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="HandheldFriendly" content="True">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="description" content="Manyetik Rezonans Görüntüleme1.GirişNormalde vücudumuz RF enerjisine duyarsızdır. Önce veri kaynağımız olan protonların RF enerjisi ile uyarılır hale getirilmesi gerekir. Bunun için hasta çok güçlü bi">
-<meta name="keywords" content="Manyetik Rezondans Görüntüleme, MRG, MRI">
-<meta property="og:type" content="article">
+<!doctype html><html class="not-ready text-sm lg:text-base" style=--bg:#fbfbfb lang=en>
+<head>
+<meta charset=utf-8>
+<meta http-equiv=x-ua-compatible content="IE=edge">
+<meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
+<title>[TR] Manyetik Rezonans Görüntüleme - Mehmet Ozan Ünal</title>
+<meta name=theme-color>
+<meta name=description content="Manyetik Rezonans Görüntüleme 1.Giriş Normalde vücudumuz RF enerjisine duyarsızdır. Önce veri kaynağımız olan protonların RF enerjisi ile uyarılır hale getirilmesi gerekir. Bunun için hasta çok güçlü bir manyetik alan içerisine yerleştirilir. Bu manyetik etkiyle protonlar manyetik alana uygun şekilde dizilir ve uyarılmaya hazır hale gelirler. Kesit alınacak bölgeye RF enerjisi gönderilir. Protonlar bu enerjiyi alır ve enerjinin miktarına göre konumlarından saparlar. RF enerjisi kesilir. Protonlar eski konumlarına dönerler. Bu dönüş sürecinde aldıkları enerjiyi bir sinyal şeklinde yayarlar.">
+<meta name=author content="Mehmet Ozan Ünal">
+<link rel="preload stylesheet" as=style href=https://mozanunal.com/main.min.css>
+<link rel=preload as=image href=https://mozanunal.com/theme.png>
+<link rel=preload as=image href="https://www.gravatar.com/avatar/998cbd3ab655239d8be787580cce0415?s=160&d=identicon">
+<link rel=preload as=image href=https://mozanunal.com/twitter.svg>
+<link rel=preload as=image href=https://mozanunal.com/github.svg>
+<link rel=icon href=https://mozanunal.com/favicon.ico>
+<link rel=apple-touch-icon href=https://mozanunal.com/apple-touch-icon.png>
+<meta name=generator content="Hugo 0.92.2">
+<script type=application/javascript>var doNotTrack=!1;doNotTrack||(window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga('create','G-N3F3XLS474','auto'),ga('send','pageview'))</script>
+<script async src=https://www.google-analytics.com/analytics.js></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-N3F3XLS474"></script>
+<script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-N3F3XLS474',{anonymize_ip:!1})}</script>
 <meta property="og:title" content="[TR] Manyetik Rezonans Görüntüleme">
-<meta property="og:url" content="https://mozanunal.com/2020/04/mrg/index.html">
-<meta property="og:site_name" content="Mehmet Ozan Ünal">
-<meta property="og:description" content="Manyetik Rezonans Görüntüleme1.GirişNormalde vücudumuz RF enerjisine duyarsızdır. Önce veri kaynağımız olan protonların RF enerjisi ile uyarılır hale getirilmesi gerekir. Bunun için hasta çok güçlü bi">
-<meta property="og:locale" content="en">
-<meta property="og:image" content="https://mozanunal.com/images/mri/image1.png">
-<meta property="og:image" content="https://mozanunal.com/images/mri/image2.png">
-<meta property="og:image" content="https://mozanunal.com/images/mri/image3.png">
-<meta property="og:image" content="https://mozanunal.com/images/mri/image4.png">
-<meta property="og:image" content="https://mozanunal.com/images/mri/image5.jpg">
-<meta property="og:image" content="https://mozanunal.com/images/mri/image6.png">
-<meta property="og:image" content="https://mozanunal.com/images/mri/image7.png">
-<meta property="og:image" content="https://mozanunal.com/images/mri/image8.png">
-<meta property="og:image" content="https://mozanunal.com/images/mri/image7.1.png">
-<meta property="og:image" content="https://mozanunal.com/images/mri/image7.2.png">
-<meta property="og:image" content="https://mozanunal.com/images/mri/image7.3.png">
-<meta property="og:image" content="https://mozanunal.com/images/mri/image7.5.png">
-<meta property="og:image" content="https://mozanunal.com/images/mri/image9.png">
-<meta property="og:image" content="https://mozanunal.com/images/mri/image10.png">
-<meta property="og:image" content="https://mozanunal.com/images/mri/image11.png">
-<meta property="og:image" content="https://mozanunal.com/images/mri/image12.png">
-<meta property="og:image" content="https://mozanunal.com/images/mri/image13.png">
-<meta property="og:image" content="https://mozanunal.com/images/mri/image14.png">
-<meta property="og:image" content="https://mozanunal.com/images/mri/image15.png">
-<meta property="og:image" content="https://mozanunal.com/images/mri/image15.1.png">
-<meta property="og:image" content="https://mozanunal.com/images/mri/image16.png">
-<meta property="og:image" content="https://mozanunal.com/images/mri/image17.png">
-<meta property="og:updated_time" content="2023-04-09T20:56:36.973Z">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="[TR] Manyetik Rezonans Görüntüleme">
-<meta name="twitter:description" content="Manyetik Rezonans Görüntüleme1.GirişNormalde vücudumuz RF enerjisine duyarsızdır. Önce veri kaynağımız olan protonların RF enerjisi ile uyarılır hale getirilmesi gerekir. Bunun için hasta çok güçlü bi">
-<meta name="twitter:image" content="https://mozanunal.com/images/mri/image1.png">
-    
-    
-        
-          
-              <link rel="shortcut icon" href="/images/favicon.ico">
-          
-        
-        
-          
-            <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
-          
-        
-        
-          
-            <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
-          
-        
-    
-    <!-- title -->
-    <title>[TR] Manyetik Rezonans Görüntüleme</title>
-    <!-- styles -->
-    <link rel="stylesheet" href="/css/style.css">
-    <!-- persian styles -->
-    
-      <link rel="stylesheet" href="/css/rtl.css">
-    
-    <!-- rss -->
-    
-    
-      <link rel="alternate" href="/atom" title="Mehmet Ozan Ünal" type="application/atom+xml">
-    
-    <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/7ecf5c9db13693c2c7062ad3f/0e72f59463de1883a2a166735.js");</script>
+<meta property="og:description" content="Manyetik Rezonans Görüntüleme 1.Giriş Normalde vücudumuz RF enerjisine duyarsızdır. Önce veri kaynağımız olan protonların RF enerjisi ile uyarılır hale getirilmesi gerekir. Bunun için hasta çok güçlü bir manyetik alan içerisine yerleştirilir. Bu manyetik etkiyle protonlar manyetik alana uygun şekilde dizilir ve uyarılmaya hazır hale gelirler. Kesit alınacak bölgeye RF enerjisi gönderilir. Protonlar bu enerjiyi alır ve enerjinin miktarına göre konumlarından saparlar. RF enerjisi kesilir. Protonlar eski konumlarına dönerler. Bu dönüş sürecinde aldıkları enerjiyi bir sinyal şeklinde yayarlar.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://mozanunal.com/2020/04/mrg/"><meta property="article:section" content="posts">
+<meta property="article:published_time" content="2020-04-26T03:44:00+00:00">
+<meta property="article:modified_time" content="2020-04-26T03:44:00+00:00">
+<meta itemprop=name content="[TR] Manyetik Rezonans Görüntüleme">
+<meta itemprop=description content="Manyetik Rezonans Görüntüleme 1.Giriş Normalde vücudumuz RF enerjisine duyarsızdır. Önce veri kaynağımız olan protonların RF enerjisi ile uyarılır hale getirilmesi gerekir. Bunun için hasta çok güçlü bir manyetik alan içerisine yerleştirilir. Bu manyetik etkiyle protonlar manyetik alana uygun şekilde dizilir ve uyarılmaya hazır hale gelirler. Kesit alınacak bölgeye RF enerjisi gönderilir. Protonlar bu enerjiyi alır ve enerjinin miktarına göre konumlarından saparlar. RF enerjisi kesilir. Protonlar eski konumlarına dönerler. Bu dönüş sürecinde aldıkları enerjiyi bir sinyal şeklinde yayarlar."><meta itemprop=datePublished content="2020-04-26T03:44:00+00:00">
+<meta itemprop=dateModified content="2020-04-26T03:44:00+00:00">
+<meta itemprop=wordCount content="1532">
+<meta itemprop=keywords content="Manyetik Rezondans Görüntüleme, MRG, MRI,">
+<meta name=twitter:card content="summary">
+<meta name=twitter:title content="[TR] Manyetik Rezonans Görüntüleme">
+<meta name=twitter:description content="Manyetik Rezonans Görüntüleme 1.Giriş Normalde vücudumuz RF enerjisine duyarsızdır. Önce veri kaynağımız olan protonların RF enerjisi ile uyarılır hale getirilmesi gerekir. Bunun için hasta çok güçlü bir manyetik alan içerisine yerleştirilir. Bu manyetik etkiyle protonlar manyetik alana uygun şekilde dizilir ve uyarılmaya hazır hale gelirler. Kesit alınacak bölgeye RF enerjisi gönderilir. Protonlar bu enerjiyi alır ve enerjinin miktarına göre konumlarından saparlar. RF enerjisi kesilir. Protonlar eski konumlarına dönerler. Bu dönüş sürecinde aldıkları enerjiyi bir sinyal şeklinde yayarlar.">
 </head>
-
-<body class="max-width mx-auto px3 ltr">    
-      <div id="header-post">
-  <a id="menu-icon" href="#"><i class="fas fa-bars fa-lg"></i></a>
-  <a id="menu-icon-tablet" href="#"><i class="fas fa-bars fa-lg"></i></a>
-  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
-  <span id="menu">
-    <span id="nav">
-      <ul>
-         
-          <li><a href="/">Home</a></li>
-         
-          <li><a href="/categories/">Category</a></li>
-         
-          <li><a href="/archives/">Blog</a></li>
-         
-          <li><a href="/about/">About</a></li>
-         
-          <li><a href="https://github.com/mozanunal">Projects</a></li>
-         
-          <li><a href="https://scholar.google.com/citations?user=u_HbXUUAAAAJ&hl=en">Publications</a></li>
-         
-          <li><a href="/search/">Search</a></li>
-        
-      </ul>
-    </span>
-    <br>
-    <span id="actions">
-      <ul>
-        
-        <li><a class="icon" href="/2020/04/imaging-axis/"><i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i></a></li>
-        
-        
-        <li><a class="icon" href="/2020/03/hash-code-2020/"><i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
-        
-        <li><a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
-        <li><a class="icon" href="#"><i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
-      </ul>
-      <span id="i-prev" class="info" style="display:none;">Previous post</span>
-      <span id="i-next" class="info" style="display:none;">Next post</span>
-      <span id="i-top" class="info" style="display:none;">Back to top</span>
-      <span id="i-share" class="info" style="display:none;">Share post</span>
-    </span>
-    <br>
-    <div id="share" style="display: none">
-      <ul>
-  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=https://mozanunal.com/2020/04/mrg/"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="https://twitter.com/share?url=https://mozanunal.com/2020/04/mrg/&text=[TR] Manyetik Rezonans Görüntüleme"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=https://mozanunal.com/2020/04/mrg/&title=[TR] Manyetik Rezonans Görüntüleme"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https://mozanunal.com/2020/04/mrg/&is_video=false&description=[TR] Manyetik Rezonans Görüntüleme"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="mailto:?subject=[TR] Manyetik Rezonans Görüntüleme&body=Check out this article: https://mozanunal.com/2020/04/mrg/"><i class="fas fa-envelope " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="https://getpocket.com/save?url=https://mozanunal.com/2020/04/mrg/&title=[TR] Manyetik Rezonans Görüntüleme"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://reddit.com/submit?url=https://mozanunal.com/2020/04/mrg/&title=[TR] Manyetik Rezonans Görüntüleme"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=https://mozanunal.com/2020/04/mrg/&title=[TR] Manyetik Rezonans Görüntüleme"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://digg.com/submit?url=https://mozanunal.com/2020/04/mrg/&title=[TR] Manyetik Rezonans Görüntüleme"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://www.tumblr.com/share/link?url=https://mozanunal.com/2020/04/mrg/&name=[TR] Manyetik Rezonans Görüntüleme&description="><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
-</ul>
-
-    </div>
-    <div id="toc">
-      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Manyetik-Rezonans-Goruntuleme"><span class="toc-number">1.</span> <span class="toc-text">Manyetik Rezonans Görüntüleme</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-Giris"><span class="toc-number">1.1.</span> <span class="toc-text">1.Giriş</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Tarihi"><span class="toc-number">1.1.1.</span> <span class="toc-text">Tarihi</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-Atomik-Partikuller-ve-Magnetizma"><span class="toc-number">1.2.</span> <span class="toc-text">2. Atomik Partiküller ve Magnetizma</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-Faraday-Induksiyon-Akimi-Sinyal-Kaydi"><span class="toc-number">1.3.</span> <span class="toc-text">3. Faraday Indüksiyon Akımı Sinyal Kaydı</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-MRG-Enstrumanyasyon"><span class="toc-number">1.4.</span> <span class="toc-text">4. MRG Enstrümanyasyon</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Kaynakca"><span class="toc-number">2.</span> <span class="toc-text">Kaynakça</span></a></li></ol>
-    </div>
-  </span>
+<body class="text-black duration-200 ease-out dark:text-white">
+<header class="mx-auto flex h-[5rem] max-w-3xl px-8 lg:justify-center">
+<div class="relative z-50 mr-auto flex items-center">
+<a class="-translate-x-[1px] -translate-y-0.5 text-3xl font-bold" href=https://mozanunal.com/>Mehmet Ozan Ünal</a>
+<div class="btn-dark text-[0] ml-6 h-6 w-6 shrink-0 cursor-pointer [background:url(./theme.svg)_left_center/cover_no-repeat] dark:invert dark:[background-position:right]" role=button aria-label=Dark></div>
 </div>
-
-    
-    <div class="content index py4">
-        
-        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-  <header>
-    
-    <h1 class="posttitle" itemprop="name headline">
-        [TR] Manyetik Rezonans Görüntüleme
-    </h1>
-
-
-
-    <div class="meta">
-      <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
-        <span itemprop="name">Mehmet Ozan Ünal</span>
-      </span>
-      
-    <div class="postdate">
-      
-        <time datetime="2020-04-26T00:44:00.000Z" itemprop="datePublished">2020-04-26</time>
-        
-      
-    </div>
-
-
-      
-    <div class="article-category">
-        <i class="fas fa-archive"></i>
-        <a class="category-link" href="/categories/Electronics/">Electronics</a>
-    </div>
-
-
-    </div>
-  </header>
-  
-
-  <div class="content" itemprop="articleBody">
-    <h1 id="Manyetik-Rezonans-Goruntuleme"><a href="#Manyetik-Rezonans-Goruntuleme" class="headerlink" title="Manyetik Rezonans Görüntüleme"></a>Manyetik Rezonans Görüntüleme</h1><h2 id="1-Giris"><a href="#1-Giris" class="headerlink" title="1.Giriş"></a>1.Giriş</h2><p>Normalde vücudumuz RF enerjisine duyarsızdır. Önce veri kaynağımız olan<br> protonların RF enerjisi ile uyarılır hale getirilmesi gerekir. Bunun için hasta çok<br> güçlü bir manyetik alan içerisine yerleştirilir. Bu manyetik etkiyle protonlar<br> manyetik alana uygun şekilde dizilir ve uyarılmaya hazır hale gelirler.<br> Kesit alınacak bölgeye RF enerjisi gönderilir. Protonlar bu enerjiyi alır ve<br> enerjinin miktarına göre konumlarından saparlar. RF enerjisi kesilir. Protonlar eski konumlarına dönerler. Bu dönüş sürecinde aldıkları enerjiyi bir sinyal şeklinde yayarlar. Bu sinyal kayıt edilerek seçilen alanın Hidrojen yoğunluğuyla alakalı bilgi edinilmiş olur.</p>
-<h3 id="Tarihi"><a href="#Tarihi" class="headerlink" title="Tarihi"></a>Tarihi</h3><p>Manyetik Rezonans görüntüleme klasik görüntüleme yöntemleri arasında en son icat edilendir. Eş zamanlı olarak 2 fizikçi tarafından 1947 yılında keşfedilmiştir( Felix Bloch - Edward Mills Purcell). İlk resim 1973 yılında Paul Lauterbur tarafından yapılmıştır. İlk klinik görüntülemeler 1977 yılında yapılmıştır. 2010 yılı itibariyle dünyada toplam 4000 MR Tarayıcı kullanılmaktadır [1].</p>
-<p><img src="/images/mri/image1.png" alt></p>
-<center>Şekil 1: İlk MR makinesi prototipleri</center>
-
-
-<p><img src="/images/mri/image2.png" alt></p>
-<center>Şekil 2: İlk Tüm vücut MR prototibi dizaynı</center>
-
-<h2 id="2-Atomik-Partikuller-ve-Magnetizma"><a href="#2-Atomik-Partikuller-ve-Magnetizma" class="headerlink" title="2. Atomik Partiküller ve Magnetizma"></a>2. Atomik Partiküller ve Magnetizma</h2><p><strong>Radyo Frekans:</strong></p>
+<div class="btn-menu relative z-50 -mr-8 flex h-[5rem] w-[5rem] shrink-0 cursor-pointer flex-col items-center justify-center gap-2.5 lg:hidden" role=button aria-label=Menu></div>
+<script>const htmlClass=document.documentElement.classList;setTimeout(()=>{htmlClass.remove('not-ready')},10);const btnMenu=document.querySelector('.btn-menu');btnMenu.addEventListener('click',()=>{htmlClass.toggle('open')});const metaTheme=document.querySelector('meta[name="theme-color"]'),lightBg=`"#fbfbfb"`.replace(/"/g,''),setDark=a=>{metaTheme.setAttribute('content',a?'#000':lightBg),htmlClass[a?'add':'remove']('dark'),localStorage.setItem('dark',a)},darkScheme=window.matchMedia('(prefers-color-scheme: dark)');if(htmlClass.contains('dark'))setDark(!0);else{const a=localStorage.getItem('dark');setDark(a?a==='true':darkScheme.matches)}darkScheme.addEventListener('change',a=>{setDark(a.matches)});const btnDark=document.querySelector('.btn-dark');btnDark.addEventListener('click',()=>{setDark(localStorage.getItem('dark')!=='true')})</script>
+<div class="nav-wrapper fixed inset-x-0 top-full z-40 flex h-full select-none flex-col justify-center pb-16 duration-200 dark:bg-black lg:static lg:h-auto lg:flex-row lg:!bg-transparent lg:pb-0 lg:transition-none">
+<nav class="lg:ml-12 lg:flex lg:flex-row lg:items-center lg:space-x-6">
+<a class="block text-center text-2xl leading-[5rem] lg:text-base lg:font-normal" href=/about/>About</a>
+<a class="block text-center text-2xl leading-[5rem] lg:text-base lg:font-normal" href=/contact/>Contact</a>
+</nav>
+<nav class="mt-12 flex justify-center space-x-10 dark:invert lg:mt-0 lg:ml-12 lg:items-center lg:space-x-6">
+<a class="h-8 w-8 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6" style=--url:url(./twitter.svg) href=https://twitter.com/MOzanUnal target=_blank rel=me>
+twitter
+</a>
+<a class="h-8 w-8 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6" style=--url:url(./github.svg) href=https://github.com/mozanunal target=_blank rel=me>
+github
+</a>
+</nav>
+</div>
+</header>
+<main class="prose prose-neutral relative mx-auto min-h-[calc(100%-10rem)] max-w-3xl px-8 pt-16 pb-24 dark:prose-invert">
+<article>
+<header class=mb-20>
+<h1 class="!my-0 pb-2.5">[TR] Manyetik Rezonans Görüntüleme</h1>
+<div class="text-sm opacity-60">
+<time>Apr 26, 2020</time>
+<span class=mx-1>&#183;</span>
+<span>Mehmet Ozan Ünal</span>
+</div>
+</header>
+<section><h1 id=manyetik-rezonans-görüntüleme>Manyetik Rezonans Görüntüleme</h1>
+<h2 id=1giriş>1.Giriş</h2>
+<p>Normalde vücudumuz RF enerjisine duyarsızdır. Önce veri kaynağımız olan
+protonların RF enerjisi ile uyarılır hale getirilmesi gerekir. Bunun için hasta çok
+güçlü bir manyetik alan içerisine yerleştirilir. Bu manyetik etkiyle protonlar
+manyetik alana uygun şekilde dizilir ve uyarılmaya hazır hale gelirler.
+Kesit alınacak bölgeye RF enerjisi gönderilir. Protonlar bu enerjiyi alır ve
+enerjinin miktarına göre konumlarından saparlar. RF enerjisi kesilir. Protonlar eski konumlarına dönerler. Bu dönüş sürecinde aldıkları enerjiyi bir sinyal şeklinde yayarlar. Bu sinyal kayıt edilerek seçilen alanın Hidrojen yoğunluğuyla alakalı bilgi edinilmiş olur.</p>
+<h3 id=tarihi>Tarihi</h3>
+<p>Manyetik Rezonans görüntüleme klasik görüntüleme yöntemleri arasında en son icat edilendir. Eş zamanlı olarak 2 fizikçi tarafından 1947 yılında keşfedilmiştir( Felix Bloch - Edward Mills Purcell). İlk resim 1973 yılında Paul Lauterbur tarafından yapılmıştır. İlk klinik görüntülemeler 1977 yılında yapılmıştır. 2010 yılı itibariyle dünyada toplam 4000 MR Tarayıcı kullanılmaktadır [1].</p>
+<p><img src=/images/mri/image1.png alt>
+Şekil 1: İlk MR makinesi prototipleri</p>
+<p><img src=/images/mri/image2.png alt></p>
+<p>Şekil 2: İlk Tüm vücut MR prototibi dizaynı</p>
+<h2 id=2-atomik-partiküller-ve-magnetizma>2. Atomik Partiküller ve Magnetizma</h2>
+<p><strong>Radyo Frekans:</strong></p>
 <p>Osilasyon frekansı 3kHz- 300GHz olan elektromanyetik dalgalara radyo frekans adı verilir.</p>
 <p><strong>Manyetik Alan:</strong></p>
-<p>Hidrojen atomu, çekirdeğinin tek protondan ibaret olması nedeniyle güçlü manyetik<br> alana sahiptir. İnsan vücudunda bol miktarda bulunan bu çekirdek sinyal kaynağı olarak<br> Idealdir.</p>
+<p>Hidrojen atomu, çekirdeğinin tek protondan ibaret olması nedeniyle güçlü manyetik
+alana sahiptir. İnsan vücudunda bol miktarda bulunan bu çekirdek sinyal kaynağı olarak
+Idealdir.</p>
 <p><strong>Spin</strong> :</p>
 <p>Atomik ve subatomik partiküllerin açısal momentumu.</p>
 <p>MRG Hidrojen atomunun manyetik özelliklerini kullanarak çalışır. Hidrojen atomunda bulunan proton normal şartlarda rastgele spinde döner. Fakat yüksek manyetik alan altında bütün Hidrojen atomlarının spinleri aynı yöne getirilir.</p>
 <p><strong>Devinim</strong> (Presesyon), manyetik alan altında sabit manyetik alan altında açısal momentuma sahip anatomik parçacıkların yaptığı harekete denir. Bu yapılan hareketin frekansı manyetik alana ve taneciğin gyromagnetic oranına bağlıdır.</p>
-<p><img src="/images/mri/image3.png" alt></p>
-<center>Şekil 3: Devinim hareketinin gösterimi</center>
-
-<p><img src="/images/mri/image4.png" alt></p>
-<center>Şekil 4: Farklı elementler için gyromagnetic oranlar</center>
-
-<p><img src="/images/mri/image5.jpg" alt></p>
-<center>Şekil 5: Negatif gyrometrik sabiti olan parçacıkların spin yönü ile manyetik moment yönü birbirine zıttır. [2]</center>
-
-<p>Protonların presesyonlarının frekansı, manyetik alanın gücü ile doğru orantılıdır.<br> Presesyon, manyetik rezonans olayının temelidir. Protonları etkileyebilmek için önce<br> onları manyetik alan içerisine koyarak presesyon yaptırmak gerekir. Ancak bu durumdaki<br> protonlar dışarıdan gönderilecek presesyon frekansındaki bir radyo dalgasıyla (RF) rezonansa<br> girebilirler [3]. Bu rezonans frekansına Larmor frekansı denir ve gyrometric oran ile manyatik alanın çarpımıyla hesaplanır.</p>
-<p><img src="/images/mri/image6.png" alt></p>
-<center>Şekil 6: Farklı elemenletlerin MR görüntülemede oluşturdukları duyarlılık oranları [4]</center>
-
-<p><img src="/images/mri/image7.png" alt></p>
-<center>Şekil 7: Larmor frekenası formulü</center>
-
+<p><img src=/images/mri/image3.png alt></p>
+<p>Şekil 3: Devinim hareketinin gösterimi</p>
+<p><img src=/images/mri/image4.png alt></p>
+<p>Şekil 4: Farklı elementler için gyromagnetic oranlar</p>
+<p><img src=/images/mri/image5.jpg alt></p>
+<p>Şekil 5: Negatif gyrometrik sabiti olan parçacıkların spin yönü ile manyetik moment yönü birbirine zıttır. [2]</p>
+<p>Protonların presesyonlarının frekansı, manyetik alanın gücü ile doğru orantılıdır.
+Presesyon, manyetik rezonans olayının temelidir. Protonları etkileyebilmek için önce
+onları manyetik alan içerisine koyarak presesyon yaptırmak gerekir. Ancak bu durumdaki
+protonlar dışarıdan gönderilecek presesyon frekansındaki bir radyo dalgasıyla (RF) rezonansa
+girebilirler [3]. Bu rezonans frekansına Larmor frekansı denir ve gyrometric oran ile manyatik alanın çarpımıyla hesaplanır.</p>
+<p><img src=/images/mri/image6.png alt></p>
+<p>Şekil 6: Farklı elemenletlerin MR görüntülemede oluşturdukları duyarlılık oranları [4]</p>
+<p><img src=/images/mri/image7.png alt></p>
+<p>Şekil 7: Larmor frekenası formulü</p>
 <p>Rezonans durumdaki Hidrojenler uyarıldıktan sonra geri eski durumlarına dönerlerken bir manyetik alanlarındaki değişimden dolayı bir sinyal yayarlar. Bu duruma relaksasyon denir. Bu uyarılma ve devamındaki zayıflarma esnasında sırasıyla aşağıdaki olaylar olur [2].</p>
 <ul>
 <li>Devinim durumundaki hidrojen atomları toplam manyeyik alan B0 manyetik alanı yönünde olacak şekilde hizalanmışlardır. Toplam net manyetik alan longitutunal (Z) düzlemde yukarı doğrudur. Transverse (X-Y) düzlemde ise toplam net manyetik alan sıfırdır.</li>
@@ -217,191 +115,88 @@
 <li>Uyarmayı yapan B1 manyetik alanı kaldırılır. Sistem eski haline dönmeye başlar. Bu olaya Free Induction Decay adı verilir. Sistemin relaksasyonu sırasında longitutional manyetik alanın eski halin gönmesine T1 relaksasyonu, transverse düzlemdeki dönmekte olan net manyetizasyonun tekrar sıfır olmasına ise T2 relaksasyonu denir.</li>
 </ul>
 <p>MR görüntüleme de bu iki relaksasyonun süreleri arasında yorumlar yaparak dokular hakkında bilgi edinilmeye çalışılır.</p>
-<p><img src="/images/mri/image8.png" alt></p>
-<center>Şekil 8: Relaksasyon sırasında toplam manyatik alanın zamana göre değişimi, Free Inductıon Decay</center>
-
-<h2 id="3-Faraday-Induksiyon-Akimi-Sinyal-Kaydi"><a href="#3-Faraday-Induksiyon-Akimi-Sinyal-Kaydi" class="headerlink" title="3. Faraday Indüksiyon Akımı Sinyal Kaydı"></a>3. Faraday Indüksiyon Akımı Sinyal Kaydı</h2><p>Faraday kanununa göre bir devrede indüklenen emk, devreden geçen manyetik akının zamana göre türevi ile doğru orantılıdır. Bu ifade şöyle yazılabilir [5]:<br> <img src="/images/mri/image7.1.png" alt></p>
-<p> ε: İndüklenen emk (Volt)<br> Φ: Manyetik akı (Weber)<br> t: Zaman (saniye)<br> N sarımlı bir bobinde oluşan emk</p>
-<p><img src="/images/mri/image7.2.png" alt></p>
-<p>Telin Doğrusal Hareketi<br> B manyetik alanına dik yönde v hızıyla hareket eden, l uzunluğundaki telin uçları arasında indüklenen emk<br> <img src="/images/mri/image7.3.png" alt><br> Telin Dairesel Hareketi<br> B manyetik alanına dik yönde w açısal hızıyla hareket eden, l uzunluğundaki telin uçları arasında indüklenen emk<br> <img src="/images/mri/image7.5.png" alt></p>
+<p><img src=/images/mri/image8.png alt></p>
+<p>Şekil 8: Relaksasyon sırasında toplam manyatik alanın zamana göre değişimi, Free Inductıon Decay</p>
+<h2 id=3-faraday-indüksiyon-akımı-sinyal-kaydı>3. Faraday Indüksiyon Akımı Sinyal Kaydı</h2>
+<p>Faraday kanununa göre bir devrede indüklenen emk, devreden geçen manyetik akının zamana göre türevi ile doğru orantılıdır. Bu ifade şöyle yazılabilir [5]:
+<img src=/images/mri/image7.1.png alt></p>
+<p>ε: İndüklenen emk (Volt)
+Φ: Manyetik akı (Weber)
+t: Zaman (saniye)
+N sarımlı bir bobinde oluşan emk</p>
+<p><img src=/images/mri/image7.2.png alt></p>
+<p>Telin Doğrusal Hareketi
+B manyetik alanına dik yönde v hızıyla hareket eden, l uzunluğundaki telin uçları arasında indüklenen emk
+<img src=/images/mri/image7.3.png alt>
+Telin Dairesel Hareketi
+B manyetik alanına dik yönde w açısal hızıyla hareket eden, l uzunluğundaki telin uçları arasında indüklenen emk
+<img src=/images/mri/image7.5.png alt></p>
 <p>Manyetik rezonans görüntülemede faraday yasasından yola çıkararak çeşitli dizaynlar yapılmaktadır. Gradyan magnetlerden manyetik alan elektrik ile değişken olarak indüklenmesi ve vücuttan yapılan radyo dalgaları ışımalarınının rf sargılar ile alınması da bu prensibe dayanarak tasarlanır.</p>
-<h2 id="4-MRG-Enstrumanyasyon"><a href="#4-MRG-Enstrumanyasyon" class="headerlink" title="4. MRG Enstrümanyasyon"></a>4. MRG Enstrümanyasyon</h2><p><img src="/images/mri/image9.png" alt></p>
-<center>Şekil 9:MR Enstrümantasyonu genel bakış [6]</center>
-
+<h2 id=4-mrg-enstrümanyasyon>4. MRG Enstrümanyasyon</h2>
+<p><img src=/images/mri/image9.png alt></p>
+<p>Şekil 9:MR Enstrümantasyonu genel bakış [6]</p>
 <p>Sistem temel olarak aşağıdaki kompenentlerden oluşur.</p>
 <p><strong>Birincil Magnetler:</strong> Birincil magnetler güçlü manyetik alanı üretmekten sorumludur. Statik güçte bir manyetik alan üretirler. Seviyeleri 1 Tesladan 3 Teslaya kadar değişebilmektedir. Bu kadar güçlü manyetik alana ulaşabilmek için genelde süper iletken kullanılır. Sürekli açık durumda bırakılırlar sadece bakım olacağı zaman bu magnetler manyetik alan üretmeyi bıraktırılır. 2000lerin başından bu yana 1.5 Teslalık magnetlerin yerini 3 Teslalık magnetler aldı [6].</p>
-<p><img src="/images/mri/image10.png" alt></p>
-<center>Şekil 10: Birincil magnetin oluşturduğu manyetik alanın formulü</center>
-
-<p>Yukarıdaki eşitlikte görüldüğü gibi elde edilen magnetik güç akımın karesi ve direncin çarpımı ile orantılıdır. Isı kaybını önlemek için tellerin dirençleri mümkün olduğunca düşük tutulur. Bu süperiletken kullanmayı zorunlu hale getiren etkendir. Bilinen bazı materyaller çok düşük sıcaklıklarda neredeyse 0 dirence kadar düşerler. MRG’de bu teller bir kaç yüz amperi taşıyabilir durumda olmalıdırlar. Niobium ve aluminyom alaşımı bir madde ile bu sağlanabilir. Manyetik alanın homojenliği bu magnet için çok önemlidir. MR makinlerine yıllık yapılan bakımda süperiletkenliği sağlamak için kullanılan soğuk gaz yıllık olarak yenilenir. Magnetlerin dışına yerleştirilen magnetik alan önleyiciler ile bu manyetik alanın dışarıya etkisi sıfırlanmaya çalışılır. Bu kalkan olarak çelik karbon tabanlı pasif zayıflatıcılar ya da tes yönde manyetik alan üreten aktif zayıflatıcılar kullanılır.</p>
-<p><img src="/images/mri/image11.png" alt></p>
-<center>Şekil 11: MR makinesinin 2D kesitinde birincil magnetlerin yeri [1]</center>
-
+<p><img src=/images/mri/image10.png alt></p>
+<p>Şekil 10: Birincil magnetin oluşturduğu manyetik alanın formulü</p>
+<p>Yukarıdaki eşitlikte görüldüğü gibi elde edilen magnetik güç akımın karesi ve direncin çarpımı ile orantılıdır. Isı kaybını önlemek için tellerin dirençleri mümkün olduğunca düşük tutulur. Bu süperiletken kullanmayı zorunlu hale getiren etkendir. Bilinen bazı materyaller çok düşük sıcaklıklarda neredeyse 0 dirence kadar düşerler. MRG&rsquo;de bu teller bir kaç yüz amperi taşıyabilir durumda olmalıdırlar. Niobium ve aluminyom alaşımı bir madde ile bu sağlanabilir. Manyetik alanın homojenliği bu magnet için çok önemlidir. MR makinlerine yıllık yapılan bakımda süperiletkenliği sağlamak için kullanılan soğuk gaz yıllık olarak yenilenir. Magnetlerin dışına yerleştirilen magnetik alan önleyiciler ile bu manyetik alanın dışarıya etkisi sıfırlanmaya çalışılır. Bu kalkan olarak çelik karbon tabanlı pasif zayıflatıcılar ya da tes yönde manyetik alan üreten aktif zayıflatıcılar kullanılır.</p>
+<p><img src=/images/mri/image11.png alt></p>
+<p>Şekil 11: MR makinesinin 2D kesitinde birincil magnetlerin yeri [1]</p>
 <p><strong>Gradyan Magnetler:</strong></p>
 <p>Üç düzlemde yerleştirilmiş bu bobinler sayesinde hastanın pozisyonu değiştirilmeden her üç düzlemde de kesit alınabilir. MR sırasında çıkan yüksek sesten bu bobinler sorumludur. Z ekseninde kullanılan sarglarda 2 ayrı sargı manyetik alanı z eksenin lineer olarak değiştirilebilecek şekilde yerleştirilmiştir. X ve Y ekseninde ise (saddle coin) belirtilen eksenlere dik yönde sarım yapılacak şekide sarımlar sisteme eklenmiştir.</p>
-<p><img src="/images/mri/image12.png" alt></p>
-<center>Şekil 12: X,Y ve Z ekseninde gradyan magnetler</center>
-
+<p><img src=/images/mri/image12.png alt></p>
+<p>Şekil 12: X,Y ve Z ekseninde gradyan magnetler</p>
 <p>Manyetik alan gradienti manyetik alan değişiminin uzaklık değişimine oranı olarak tanımlanır.</p>
-<p><img src="/images/mri/image13.png" alt></p>
-<center>Şekil 13: Gradyanın Formulü [7]</center>
-
+<p><img src=/images/mri/image13.png alt></p>
+<p>Şekil 13: Gradyanın Formulü [7]</p>
 <p>Gradyan Sargılar güçlü PWM kuvvetlendiriciler ile sürülürler. Anlık olarak 2500 V ve 1000 A gibi değeler görebilirler. Böyle durumlarda iç sıcaklıkları 55 - 60 dereceye kadar ulaşabilir. Bu nedenle gradyan sargıları soğutabilmek için MR cihazlarında gerekli üniteler bulunur.</p>
-<p><img src="/images/mri/image14.png" alt></p>
-<center>Şekil 14: Gradyan sargılar soğutma sistemleri [7]</center>
-
+<p><img src=/images/mri/image14.png alt></p>
+<p>Şekil 14: Gradyan sargılar soğutma sistemleri [7]</p>
 <p><strong>Radyo Frekans Bobinleri:</strong></p>
 <p>İki temel görevi vardır. Birincisi manyetik alan altındaki Hidrojen atomlarını uyararak spinlerini değiştirmlerini sağlamak ikinci olarak RF salınımı yaptığında salınan RF enerjisini toplamak için anten görevi görerek görüntünün oluşturulmasını sağlamak. Pulse sekansı oluşturarak belli bir bölgenin aktifleştirilip ölçülmesini sağlar. Genelde bir dizi radya frekans bobinleri bir arada kullanılır. Bu sayede pozisyonun alıcıya etkisindeki farklılıklar kompanze edilmeye çalışılır.</p>
-<p><img src="/images/mri/image15.png" alt></p>
-<center>Şekil 15: RF sargı giriş devresi örneği</center>
-
+<p><img src=/images/mri/image15.png alt></p>
+<p>Şekil 15: RF sargı giriş devresi örneği</p>
 <p>Çevre gürültülerden etkilenmemesi için ve o frekans kanalına kilitlemek için rf sargısının çıkışında aynı frekansta referans clock üretilmelidir. Bunu yapabilmek için kapasitans ve endüktans tabanlı devreler kullanılabilir. Fres frekansında sinyal üretmek için gerekli kapasite ve endüktans değeleri aşağıdaki formüle göre hesaplanabilir.</p>
-<p><img src="/images/mri/image15.1.png" alt></p>
+<p><img src=/images/mri/image15.1.png alt></p>
 <p>Aşağıda ise örnek bir devre şeması eklenmiştir. Verimli bir RF sargı devresi için bahsedilen frekanstaki hassasiyet yüksek ve devrenen giriş çıkış verimleri yüksek olmalıdır. Bunu sağlamak için empadans uydurma devreleri gereklidir. Bu devreler sayesinde alınan ya da yollanan sinyal koaksiyel kablonun girişinde 50 Ohm direncine getirilmelidir. Devredeki sanal komponentlerin birbirini yok etmesi de sağlanarak bu aşamada yaşanan hassasiyet kaybı en aza indirilir.</p>
-<p><img src="/images/mri/image16.png" alt></p>
-<center>Şekil 16: RF sargıların elektromanteik koruyucularla kaplanması(shielding)</center>
-
+<p><img src=/images/mri/image16.png alt></p>
+<p>Şekil 16: RF sargıların elektromanteik koruyucularla kaplanması(shielding)</p>
 <p>RF sargılara gürültü oluşturabilecek bir diğer etken de sistem içerisindeki komponentlerdir. MRG makineleri içerisinde yüksek akımların geçtiği bir çok komponent içerir bu manyetik alan ve rf tarafında kirliğe sebep olur bu gürültülerin azaltıması için sistemdeki farklı komponentler sistemden elektriksel olarak yalıtılmış durumdadır. Simetrik bir dizayn izlenerek bu gürültülerin mümkün olduğunca birbirini yok etkesi de yardımcı olabiliecek yöntemlerdendir [1].</p>
 <p>Rf sargıların hem alıcı hem verici olarak kullanılabilmesi için aşağıdaki gibi bir devreye dönüştürümelidir. DC sinya uygulanarak diyotlar aracılığıyla sargıların çalışma yönü seçilir. Diyot olarak genelde PIN diyotlar kullanılır [7].</p>
-<p><img src="/images/mri/image17.png" alt></p>
-<center>Şekil 17: Örnek pals sekansı. Bilgisayar sistemi hepsini senkron olarak çalışmasından sorumludur. [8]</center>
-
+<p><img src=/images/mri/image17.png alt></p>
+<p>Şekil 17: Örnek pals sekansı. Bilgisayar sistemi hepsini senkron olarak çalışmasından sorumludur. [8]</p>
 <p><strong>Bilgisayar Sistemi:</strong></p>
 <p>Alınan sinyal yukarıdaki gibi demodule edllir. Demodolasyon sırasında alınan sinyal 90 derece fazı kaydırılmış hali ile çarpılır çıkan sinyalde iki tane belirgin komponent olacaktır. Birincisi sinyalin base banda indilimiş hali ikinci olarak da f0 sinyalinin tam iki katındaki komponent. Sadece basebandaki sinyal istendiği için diğer sinyal alçak geçiren filtre ile gücü azaltılır. Devrenin devamında analog dijital çeviricilerle ile sinyal dijital ortama aktarılır. Genelde örnekleme frekansı 80 MHz örnekleme çözünürlüğü ise 14 bittir [8].</p>
 <p>Alınan sinyallerin toplanıp çeşitli veri işleme ve 3 boyutlu tahmin yöntemleriyle insanın anlayabileceği görüntüler haline çevirildiği yerdir.</p>
-<h1 id="Kaynakca"><a href="#Kaynakca" class="headerlink" title="Kaynakça"></a>Kaynakça</h1><p>[1] N. &amp; W. A. Smith, Introduction to Medical Imaging: Physics, Engineering and Clinical Applications, Cambridge: Cambridge University Press, 2010.<br>[2] P. E. P. R. Bloembergen N, «Relaxation effects in nuclear magnetic resonance absorption,» <em>Phys Rev 1948,</em> pp. 73:679-712, 1948.<br>[3] O. Konez, Manyetik Rezonans Görüntüleme, İstanbul: Nobel Tıp Kitabevleri, 1995.<br>[4] D. Moratal, «Medical Imaging: Principles, Detectors, and Electronics [Book Reviews],» %1 içinde <em>Pulse, IEEE</em>, 2011, p. 227.<br>[5] M. E. Davison, «A Simple Proof that the Lorentz Force, Law Implied Faradays Law of Induction, when B is Time Independent, cilt 41, no. 713, p. American Journal of Physics, 1973.<br>[6] P. Joseph P. Hornak, The Basics of MRI, Cornell, 1996-2018.<br>[7] M. F. Allen D. Elster, «the Questions and Answers in MRI,» [Çevrimiçi]. Available: <a href="http://mriquestions.com/index.html" target="_blank" rel="noopener">http://mriquestions.com/index.html</a>. [Erişildi: 5 1 2019]. |<br>[8] Y. Wang, «MRI Instrumentation and Pulse Sequences,» %1 içinde <em>Medical Imaging I</em>, New York.<br>[9] K. Inievski, Medical İmaging Priniples,Detetors and Electronics, Canada: John Wiley Sons, Inc., Hoboken, New Jersey, 2009. </p>
-
-  </div>
-</article>
-
-    <div class="blog-post-comments">
-        <div id="disqus_thread">
-            <noscript>Please enable JavaScript to view the comments.</noscript>
-        </div>
-    </div>
-
-
-
-        
-          <div id="footer-post-container">
-  <div id="footer-post">
-
-    <div id="nav-footer" style="display: none">
-      <ul>
-         
-          <li><a href="/">Home</a></li>
-         
-          <li><a href="/categories/">Category</a></li>
-         
-          <li><a href="/archives/">Blog</a></li>
-         
-          <li><a href="/about/">About</a></li>
-         
-          <li><a href="https://github.com/mozanunal">Projects</a></li>
-         
-          <li><a href="https://scholar.google.com/citations?user=u_HbXUUAAAAJ&hl=en">Publications</a></li>
-         
-          <li><a href="/search/">Search</a></li>
-        
-      </ul>
-    </div>
-
-    <div id="toc-footer" style="display: none">
-      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Manyetik-Rezonans-Goruntuleme"><span class="toc-number">1.</span> <span class="toc-text">Manyetik Rezonans Görüntüleme</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-Giris"><span class="toc-number">1.1.</span> <span class="toc-text">1.Giriş</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Tarihi"><span class="toc-number">1.1.1.</span> <span class="toc-text">Tarihi</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-Atomik-Partikuller-ve-Magnetizma"><span class="toc-number">1.2.</span> <span class="toc-text">2. Atomik Partiküller ve Magnetizma</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-Faraday-Induksiyon-Akimi-Sinyal-Kaydi"><span class="toc-number">1.3.</span> <span class="toc-text">3. Faraday Indüksiyon Akımı Sinyal Kaydı</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-MRG-Enstrumanyasyon"><span class="toc-number">1.4.</span> <span class="toc-text">4. MRG Enstrümanyasyon</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Kaynakca"><span class="toc-number">2.</span> <span class="toc-text">Kaynakça</span></a></li></ol>
-    </div>
-
-    <div id="share-footer" style="display: none">
-      <ul>
-  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=https://mozanunal.com/2020/04/mrg/"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="https://twitter.com/share?url=https://mozanunal.com/2020/04/mrg/&text=[TR] Manyetik Rezonans Görüntüleme"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=https://mozanunal.com/2020/04/mrg/&title=[TR] Manyetik Rezonans Görüntüleme"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https://mozanunal.com/2020/04/mrg/&is_video=false&description=[TR] Manyetik Rezonans Görüntüleme"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="mailto:?subject=[TR] Manyetik Rezonans Görüntüleme&body=Check out this article: https://mozanunal.com/2020/04/mrg/"><i class="fas fa-envelope fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="https://getpocket.com/save?url=https://mozanunal.com/2020/04/mrg/&title=[TR] Manyetik Rezonans Görüntüleme"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://reddit.com/submit?url=https://mozanunal.com/2020/04/mrg/&title=[TR] Manyetik Rezonans Görüntüleme"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=https://mozanunal.com/2020/04/mrg/&title=[TR] Manyetik Rezonans Görüntüleme"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://digg.com/submit?url=https://mozanunal.com/2020/04/mrg/&title=[TR] Manyetik Rezonans Görüntüleme"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://www.tumblr.com/share/link?url=https://mozanunal.com/2020/04/mrg/&name=[TR] Manyetik Rezonans Görüntüleme&description="><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+<h1 id=kaynakça>Kaynakça</h1>
+<ul>
+<li>[1] N. & W. A. Smith, Introduction to Medical Imaging: Physics, Engineering and Clinical Applications, Cambridge: Cambridge University Press, 2010.</li>
+<li>[2] P. E. P. R. Bloembergen N, «Relaxation effects in nuclear magnetic resonance absorption,» <em>Phys Rev 1948,</em> pp. 73:679-712, 1948.</li>
+<li>[3] O. Konez, Manyetik Rezonans Görüntüleme, İstanbul: Nobel Tıp Kitabevleri, 1995.</li>
+<li>[4] D. Moratal, «Medical Imaging: Principles, Detectors, and Electronics [Book Reviews],» %1 içinde <em>Pulse, IEEE</em>, 2011, p. 227.</li>
+<li>[5] M. E. Davison, «A Simple Proof that the Lorentz Force, Law Implied Faradays Law of Induction, when B is Time Independent, cilt 41, no. 713, p. American Journal of Physics, 1973.</li>
+<li>[6] P. Joseph P. Hornak, The Basics of MRI, Cornell, 1996-2018.</li>
+<li>[7] M. F. Allen D. Elster, «the Questions and Answers in MRI,» [Çevrimiçi]. Available: <a href=http://mriquestions.com/index.html>http://mriquestions.com/index.html</a>. [Erişildi: 5 1 2019]. |</li>
+<li>[8] Y. Wang, «MRI Instrumentation and Pulse Sequences,» %1 içinde <em>Medical Imaging I</em>, New York.</li>
+<li>[9] K. Inievski, Medical İmaging Priniples,Detetors and Electronics, Canada: John Wiley Sons, Inc., Hoboken, New Jersey, 2009.</li>
 </ul>
-
-    </div>
-
-    <div id="actions-footer">
-        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
-        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
-        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> Share</a>
-        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
-    </div>
-
-  </div>
-</div>
-
-        
-        <footer id="footer">
-  <div class="footer-left">
-    Copyright &copy; 2023 Mehmet Ozan Ünal
-  </div>
-  <div class="footer-right">
-    <nav>
-      <ul>
-         
-          <li><a href="/">Home</a></li>
-         
-          <li><a href="/categories/">Category</a></li>
-         
-          <li><a href="/archives/">Blog</a></li>
-         
-          <li><a href="/about/">About</a></li>
-         
-          <li><a href="https://github.com/mozanunal">Projects</a></li>
-         
-          <li><a href="https://scholar.google.com/citations?user=u_HbXUUAAAAJ&hl=en">Publications</a></li>
-         
-          <li><a href="/search/">Search</a></li>
-        
-      </ul>
-    </nav>
-  </div>
+</section>
+<footer class="mt-12 flex flex-wrap">
+<a class="mr-1.5 mb-1.5 rounded-lg bg-black/[3%] px-5 py-2 no-underline dark:bg-white/[8%]" href=https://mozanunal.com/tags/manyetik-rezondans-g%C3%B6r%C3%BCnt%C3%BCleme-mrg-mri>Manyetik Rezondans Görüntüleme, MRG, MRI</a>
 </footer>
-
-    </div>
-    <!-- styles -->
-<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
-<link rel="stylesheet" href="/lib/justified-gallery/css/justifiedGallery.min.css">
-
-    <!-- jquery -->
-<script src="/lib/jquery/jquery.min.js"></script>
-<script src="/lib/justified-gallery/js/jquery.justifiedGallery.min.js"></script>
-<script src="/js/main.js"></script>
-<!-- search -->
-
-<!-- Google Analytics -->
-
-    <script type="text/javascript">
-        (function(i,s,o,g,r,a,m) {i['GoogleAnalyticsObject']=r;i[r]=i[r]||function() {
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-        ga('create', 'UA-60655125-2', 'auto');
-        ga('send', 'pageview');
-    </script>
-
-<!-- Baidu Analytics -->
-
-<!-- Disqus Comments -->
-
-    <script type="text/javascript">
-        var disqus_shortname = 'mozanunal-com';
-
-        (function(){
-            var dsq = document.createElement('script');
-            dsq.type = 'text/javascript';
-            dsq.async = true;
-            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-        }());
-    </script>
-
-
+<nav class="mt-24 flex rounded-lg bg-black/[3%] text-lg dark:bg-white/[8%]">
+<a class="flex w-1/2 items-center rounded-l-md p-6 pr-3 no-underline hover:bg-black/[2%] dark:hover:bg-white/[3%]" href=https://mozanunal.com/2020/04/imaging-axis/><span class=mr-1.5>←</span><span>Medical Imaging Planes</span></a>
+<a class="ml-auto flex w-1/2 items-center justify-end rounded-r-md p-6 pl-3 no-underline hover:bg-black/[2%] dark:hover:bg-white/[3%]" href=https://mozanunal.com/2020/03/hash-code-2020/><span>Hash Code 2020</span><span class=ml-1.5>→</span></a>
+</nav>
+</article>
+</main>
+<footer class="opaco mx-auto flex h-[5rem] max-w-3xl items-center px-8 text-[0.9em] opacity-60">
+<div class=mr-auto>
+&copy; 2023
+<a class=link href=https://mozanunal.com/>Mehmet Ozan Ünal</a>
+</div>
+<a class="link mx-6" href=https://gohugo.io/ rel=noopener target=_blank>Powered by Hugo️️</a>️
+<a class=link href=https://github.com/nanxiaobei/hugo-paper rel=noopener target=_blank>Theme Paper</a>
+</footer>
 </body>
 </html>

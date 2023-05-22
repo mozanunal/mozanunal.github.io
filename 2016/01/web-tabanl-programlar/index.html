@@ -1,336 +1,144 @@
-<!DOCTYPE html>
-<html lang=en>
-<head><meta name="generator" content="Hexo 3.8.0">
-    <!-- so meta -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="HandheldFriendly" content="True">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="description" content="Herkese Merhabalar,Bugünkü yazımda web tabanlı programlardan bahsetmek istiyorum. Web teknolojilerinin gelişmesiyle beraber browser tabanlı oldukça yararlı ve kullanımı da bir o kadar kolay programlar">
-<meta name="keywords" content="html5,Web Tabanlı programlar">
-<meta property="og:type" content="article">
+<!doctype html><html class="not-ready text-sm lg:text-base" style=--bg:#fbfbfb lang=en>
+<head>
+<meta charset=utf-8>
+<meta http-equiv=x-ua-compatible content="IE=edge">
+<meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
+<title>[TR] Web Tabanlı Programlar - Mehmet Ozan Ünal</title>
+<meta name=theme-color>
+<meta name=description content="Herkese Merhabalar,
+Bugünkü yazımda web tabanlı programlardan bahsetmek istiyorum. Web teknolojilerinin gelişmesiyle beraber browser tabanlı oldukça yararlı ve kullanımı da bir o kadar kolay programlar ortaya çıkmaya başladı. Hatta bunun bir üst aşaması olarak ChromeOS browser tabanlı bir işletim sistemi bile var. Ayrıca bu tarz programların projelerine dosyalarına her bilgisayardan ulaşabilmek, kurulum yapmadan bir çok şeyi halletme gibi avantajları da var. Böyle olunca ben de bu şekilde çalışan yararlı programları bir yazı altında toplamak istedim.">
+<meta name=author content="Mehmet Ozan Ünal">
+<link rel="preload stylesheet" as=style href=https://mozanunal.com/main.min.css>
+<link rel=preload as=image href=https://mozanunal.com/theme.png>
+<link rel=preload as=image href="https://www.gravatar.com/avatar/998cbd3ab655239d8be787580cce0415?s=160&d=identicon">
+<link rel=preload as=image href=https://mozanunal.com/twitter.svg>
+<link rel=preload as=image href=https://mozanunal.com/github.svg>
+<link rel=icon href=https://mozanunal.com/favicon.ico>
+<link rel=apple-touch-icon href=https://mozanunal.com/apple-touch-icon.png>
+<meta name=generator content="Hugo 0.92.2">
+<script type=application/javascript>var doNotTrack=!1;doNotTrack||(window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga('create','G-N3F3XLS474','auto'),ga('send','pageview'))</script>
+<script async src=https://www.google-analytics.com/analytics.js></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-N3F3XLS474"></script>
+<script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-N3F3XLS474',{anonymize_ip:!1})}</script>
 <meta property="og:title" content="[TR] Web Tabanlı Programlar">
-<meta property="og:url" content="https://mozanunal.com/2016/01/web-tabanl-programlar/index.html">
-<meta property="og:site_name" content="Mehmet Ozan Ünal">
-<meta property="og:description" content="Herkese Merhabalar,Bugünkü yazımda web tabanlı programlardan bahsetmek istiyorum. Web teknolojilerinin gelişmesiyle beraber browser tabanlı oldukça yararlı ve kullanımı da bir o kadar kolay programlar">
-<meta property="og:locale" content="en">
-<meta property="og:image" content="https://3.bp.blogspot.com/-eqDoL8ZnXsc/VplqHUmLuXI/AAAAAAAAXzU/d-7lZapp7VQ/s640/Capture.PNG">
-<meta property="og:image" content="https://3.bp.blogspot.com/-IADN0RNfEeE/Vplq9T0Sx2I/AAAAAAAAXzg/H2_rGN45eAo/s640/Capture.PNG">
-<meta property="og:image" content="https://2.bp.blogspot.com/-RB6b246S-EU/VplrpfNxUeI/AAAAAAAAXzw/JmMpK0HQze4/s640/Capture2.PNG">
-<meta property="og:image" content="https://2.bp.blogspot.com/-zViNB4L5LxI/Vplr0X8l9kI/AAAAAAAAXz8/ZpcKRZ4qw8Q/s640/Capture.PNG">
-<meta property="og:image" content="https://4.bp.blogspot.com/-n84sEQjPu7M/VplsFbTXLaI/AAAAAAAAX0I/EHyjWy-aWFk/s640/Capture.PNG">
-<meta property="og:image" content="https://3.bp.blogspot.com/-zzZ5Cgy08iM/VpluLCufb9I/AAAAAAAAX0U/vHe6ZsEmAWg/s640/Capturess.PNG">
-<meta property="og:image" content="https://4.bp.blogspot.com/-dmtyhOkTYWg/VpluPSMnDmI/AAAAAAAAX0g/5HJAenfuiXQ/s640/sdadds.PNG">
-<meta property="og:image" content="https://1.bp.blogspot.com/-PDwgAxa4IJQ/VpluSgszWiI/AAAAAAAAX0s/99kodhUhGDU/s640/sdadad.PNG">
-<meta property="og:image" content="https://1.bp.blogspot.com/-6GtHZlXP9yo/VpluYsFbuUI/AAAAAAAAX04/8N_FPROoWZY/s640/Capturefsdfds.PNG">
-<meta property="og:image" content="https://2.bp.blogspot.com/-zUT2QtUWhKU/VpluaQxFjtI/AAAAAAAAX1E/UJfZLJDpyQo/s640/Capturesdad.PNG">
-<meta property="og:image" content="https://1.bp.blogspot.com/-rKuX1VrWgwU/VvxHEXQRtjI/AAAAAAAAZag/MIfLVc_DrewVqcTx0o6oV3IiET5zChPOw/s640/Capture.PNG">
-<meta property="og:image" content="https://3.bp.blogspot.com/-ZgkVeI-VZsg/VvxI31dNOvI/AAAAAAAAZas/i4oLECc1lFwcX1Eih0OrUdsUZqdfkhVZg/s640/Capture.PNG">
-<meta property="og:updated_time" content="2023-01-18T11:16:34.260Z">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="[TR] Web Tabanlı Programlar">
-<meta name="twitter:description" content="Herkese Merhabalar,Bugünkü yazımda web tabanlı programlardan bahsetmek istiyorum. Web teknolojilerinin gelişmesiyle beraber browser tabanlı oldukça yararlı ve kullanımı da bir o kadar kolay programlar">
-<meta name="twitter:image" content="https://3.bp.blogspot.com/-eqDoL8ZnXsc/VplqHUmLuXI/AAAAAAAAXzU/d-7lZapp7VQ/s640/Capture.PNG">
-    
-    
-        
-          
-              <link rel="shortcut icon" href="/images/favicon.ico">
-          
-        
-        
-          
-            <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
-          
-        
-        
-          
-            <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
-          
-        
-    
-    <!-- title -->
-    <title>[TR] Web Tabanlı Programlar</title>
-    <!-- styles -->
-    <link rel="stylesheet" href="/css/style.css">
-    <!-- persian styles -->
-    
-      <link rel="stylesheet" href="/css/rtl.css">
-    
-    <!-- rss -->
-    
-    
-      <link rel="alternate" href="/atom" title="Mehmet Ozan Ünal" type="application/atom+xml">
-    
-    <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/7ecf5c9db13693c2c7062ad3f/0e72f59463de1883a2a166735.js");</script>
+<meta property="og:description" content="Herkese Merhabalar,
+Bugünkü yazımda web tabanlı programlardan bahsetmek istiyorum. Web teknolojilerinin gelişmesiyle beraber browser tabanlı oldukça yararlı ve kullanımı da bir o kadar kolay programlar ortaya çıkmaya başladı. Hatta bunun bir üst aşaması olarak ChromeOS browser tabanlı bir işletim sistemi bile var. Ayrıca bu tarz programların projelerine dosyalarına her bilgisayardan ulaşabilmek, kurulum yapmadan bir çok şeyi halletme gibi avantajları da var. Böyle olunca ben de bu şekilde çalışan yararlı programları bir yazı altında toplamak istedim.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://mozanunal.com/2016/01/web-tabanl-programlar/"><meta property="article:section" content="posts">
+<meta property="article:published_time" content="2016-01-16T03:45:00+00:00">
+<meta property="article:modified_time" content="2016-01-16T03:45:00+00:00">
+<meta itemprop=name content="[TR] Web Tabanlı Programlar">
+<meta itemprop=description content="Herkese Merhabalar,
+Bugünkü yazımda web tabanlı programlardan bahsetmek istiyorum. Web teknolojilerinin gelişmesiyle beraber browser tabanlı oldukça yararlı ve kullanımı da bir o kadar kolay programlar ortaya çıkmaya başladı. Hatta bunun bir üst aşaması olarak ChromeOS browser tabanlı bir işletim sistemi bile var. Ayrıca bu tarz programların projelerine dosyalarına her bilgisayardan ulaşabilmek, kurulum yapmadan bir çok şeyi halletme gibi avantajları da var. Böyle olunca ben de bu şekilde çalışan yararlı programları bir yazı altında toplamak istedim."><meta itemprop=datePublished content="2016-01-16T03:45:00+00:00">
+<meta itemprop=dateModified content="2016-01-16T03:45:00+00:00">
+<meta itemprop=wordCount content="475">
+<meta itemprop=keywords content="html5,Web Tabanlı programlar,">
+<meta name=twitter:card content="summary">
+<meta name=twitter:title content="[TR] Web Tabanlı Programlar">
+<meta name=twitter:description content="Herkese Merhabalar,
+Bugünkü yazımda web tabanlı programlardan bahsetmek istiyorum. Web teknolojilerinin gelişmesiyle beraber browser tabanlı oldukça yararlı ve kullanımı da bir o kadar kolay programlar ortaya çıkmaya başladı. Hatta bunun bir üst aşaması olarak ChromeOS browser tabanlı bir işletim sistemi bile var. Ayrıca bu tarz programların projelerine dosyalarına her bilgisayardan ulaşabilmek, kurulum yapmadan bir çok şeyi halletme gibi avantajları da var. Böyle olunca ben de bu şekilde çalışan yararlı programları bir yazı altında toplamak istedim.">
 </head>
-
-<body class="max-width mx-auto px3 ltr">    
-      <div id="header-post">
-  <a id="menu-icon" href="#"><i class="fas fa-bars fa-lg"></i></a>
-  <a id="menu-icon-tablet" href="#"><i class="fas fa-bars fa-lg"></i></a>
-  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
-  <span id="menu">
-    <span id="nav">
-      <ul>
-         
-          <li><a href="/">Home</a></li>
-         
-          <li><a href="/categories/">Category</a></li>
-         
-          <li><a href="/archives/">Blog</a></li>
-         
-          <li><a href="/about/">About</a></li>
-         
-          <li><a href="https://github.com/mozanunal">Projects</a></li>
-         
-          <li><a href="https://scholar.google.com/citations?user=u_HbXUUAAAAJ&hl=en">Publications</a></li>
-         
-          <li><a href="/search/">Search</a></li>
-        
-      </ul>
-    </span>
-    <br>
-    <span id="actions">
-      <ul>
-        
-        <li><a class="icon" href="/2016/01/star-wars-bb-8-robot-yapm-bolum-1/"><i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i></a></li>
-        
-        
-        <li><a class="icon" href="/2016/01/rf-mesafe-hesaplama-exceli/"><i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
-        
-        <li><a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
-        <li><a class="icon" href="#"><i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
-      </ul>
-      <span id="i-prev" class="info" style="display:none;">Previous post</span>
-      <span id="i-next" class="info" style="display:none;">Next post</span>
-      <span id="i-top" class="info" style="display:none;">Back to top</span>
-      <span id="i-share" class="info" style="display:none;">Share post</span>
-    </span>
-    <br>
-    <div id="share" style="display: none">
-      <ul>
-  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=https://mozanunal.com/2016/01/web-tabanl-programlar/"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="https://twitter.com/share?url=https://mozanunal.com/2016/01/web-tabanl-programlar/&text=[TR] Web Tabanlı Programlar"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=https://mozanunal.com/2016/01/web-tabanl-programlar/&title=[TR] Web Tabanlı Programlar"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https://mozanunal.com/2016/01/web-tabanl-programlar/&is_video=false&description=[TR] Web Tabanlı Programlar"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="mailto:?subject=[TR] Web Tabanlı Programlar&body=Check out this article: https://mozanunal.com/2016/01/web-tabanl-programlar/"><i class="fas fa-envelope " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="https://getpocket.com/save?url=https://mozanunal.com/2016/01/web-tabanl-programlar/&title=[TR] Web Tabanlı Programlar"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://reddit.com/submit?url=https://mozanunal.com/2016/01/web-tabanl-programlar/&title=[TR] Web Tabanlı Programlar"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=https://mozanunal.com/2016/01/web-tabanl-programlar/&title=[TR] Web Tabanlı Programlar"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://digg.com/submit?url=https://mozanunal.com/2016/01/web-tabanl-programlar/&title=[TR] Web Tabanlı Programlar"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://www.tumblr.com/share/link?url=https://mozanunal.com/2016/01/web-tabanl-programlar/&name=[TR] Web Tabanlı Programlar&description="><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
-</ul>
-
-    </div>
-    <div id="toc">
-      <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#Scheme-It"><span class="toc-number">1.</span> <span class="toc-text">Scheme It</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Codenvy"><span class="toc-number">2.</span> <span class="toc-text">Codenvy</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#123D-Circuits"><span class="toc-number">3.</span> <span class="toc-text">123D Circuits</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Pixlr"><span class="toc-number">4.</span> <span class="toc-text">Pixlr</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Codebender"><span class="toc-number">5.</span> <span class="toc-text">Codebender</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#C9"><span class="toc-number">6.</span> <span class="toc-text">C9</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Designmantic"><span class="toc-number">7.</span> <span class="toc-text">Designmantic</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Wolfram-Alpha"><span class="toc-number">8.</span> <span class="toc-text">Wolfram Alpha</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Biodigital-Human-3D"><span class="toc-number">9.</span> <span class="toc-text">Biodigital Human 3D</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#MIT-App-Invertor"><span class="toc-number">10.</span> <span class="toc-text">MIT App Invertor</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Talky"><span class="toc-number">11.</span> <span class="toc-text">Talky</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Draw-io"><span class="toc-number">12.</span> <span class="toc-text">Draw.io</span></a></li></ol>
-    </div>
-  </span>
+<body class="text-black duration-200 ease-out dark:text-white">
+<header class="mx-auto flex h-[5rem] max-w-3xl px-8 lg:justify-center">
+<div class="relative z-50 mr-auto flex items-center">
+<a class="-translate-x-[1px] -translate-y-0.5 text-3xl font-bold" href=https://mozanunal.com/>Mehmet Ozan Ünal</a>
+<div class="btn-dark text-[0] ml-6 h-6 w-6 shrink-0 cursor-pointer [background:url(./theme.svg)_left_center/cover_no-repeat] dark:invert dark:[background-position:right]" role=button aria-label=Dark></div>
 </div>
-
-    
-    <div class="content index py4">
-        
-        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-  <header>
-    
-    <h1 class="posttitle" itemprop="name headline">
-        [TR] Web Tabanlı Programlar
-    </h1>
-
-
-
-    <div class="meta">
-      <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
-        <span itemprop="name">Mehmet Ozan Ünal</span>
-      </span>
-      
-    <div class="postdate">
-      
-        <time datetime="2016-01-16T01:45:00.000Z" itemprop="datePublished">2016-01-16</time>
-        
-      
-    </div>
-
-
-      
-    <div class="article-category">
-        <i class="fas fa-archive"></i>
-        <a class="category-link" href="/categories/Coding/">Coding</a>
-    </div>
-
-
-    </div>
-  </header>
-  
-
-  <div class="content" itemprop="articleBody">
-    <p><strong>Herkese Merhabalar,</strong><br>Bugünkü yazımda web tabanlı programlardan bahsetmek istiyorum. Web teknolojilerinin gelişmesiyle beraber browser tabanlı oldukça yararlı ve kullanımı da bir o kadar kolay programlar ortaya çıkmaya başladı. Hatta bunun bir üst aşaması olarak ChromeOS browser tabanlı bir işletim sistemi bile var. Ayrıca bu tarz programların projelerine dosyalarına her bilgisayardan ulaşabilmek, kurulum yapmadan bir çok şeyi halletme gibi avantajları da var. Böyle olunca ben de bu şekilde çalışan yararlı programları bir yazı altında toplamak istedim. Bilmediğim daha bir sürü program olduğuna eminim eğer bana yollayabilirseniz onları da yazıya ekleyebilirim.  </p>
-<h3 id="Scheme-It"><a href="#Scheme-It" class="headerlink" title="Scheme It"></a>Scheme It</h3><p><a href="https://www.digikey.com/schemeit/" target="_blank" rel="noopener">https://www.digikey.com/schemeit/</a>  </p>
-<p>Devre şeması çizilebilen pcb tasarlanabilen programdır. Digikey tarafından geliştirilmektedir. Kayıt olmanıza bile gerek yok tıklayın ve devrenizi çizmeye başlayın.  </p>
-<p><img src="https://3.bp.blogspot.com/-eqDoL8ZnXsc/VplqHUmLuXI/AAAAAAAAXzU/d-7lZapp7VQ/s640/Capture.PNG" alt></p>
-<h3 id="Codenvy"><a href="#Codenvy" class="headerlink" title="Codenvy"></a>Codenvy</h3><p><a href="https://codenvy.com/" target="_blank" rel="noopener">https://codenvy.com/</a>  </p>
-<p>Browser üzerinden kod yazıp yazdığınız kodları derleyebileceğiniz bulut tabanlı ide. Desteklediği programramlama dili yelpazesi ise oldukça geniş.  </p>
-<p><img src="https://3.bp.blogspot.com/-IADN0RNfEeE/Vplq9T0Sx2I/AAAAAAAAXzg/H2_rGN45eAo/s640/Capture.PNG" alt></p>
-<h3 id="123D-Circuits"><a href="#123D-Circuits" class="headerlink" title="123D Circuits"></a>123D Circuits</h3><p><a href="https://123d.circuits.io/" target="_blank" rel="noopener">https://123d.circuits.io/</a>  </p>
-<p>Elektronik devreler tasarlayıp simüle edip devreleriniz için PCB tasarlayabilirsiniz. Simülasyonlarınızda Arduino kullanabilirsiniz istediğiniz kodları da yüklemeniz mümkün. Programın kullanımı oldukça basit ve ciddi işler çıkarılabiliniyor. Autodesk firması tarafından geliştirilmekte olan bir program.  </p>
-<p><img src="https://2.bp.blogspot.com/-RB6b246S-EU/VplrpfNxUeI/AAAAAAAAXzw/JmMpK0HQze4/s640/Capture2.PNG" alt></p>
-<h3 id="Pixlr"><a href="#Pixlr" class="headerlink" title="Pixlr"></a>Pixlr</h3><p><a href="https://pixlr.com/editor/" target="_blank" rel="noopener">https://pixlr.com/editor/</a><br>Browser üzerinden fotoğraf düzenleyebileceğiniz bir program. Kayıt bile olmadan direk kullanmaya başlayabiliyorsunuz.  </p>
-<p><img src="https://2.bp.blogspot.com/-zViNB4L5LxI/Vplr0X8l9kI/AAAAAAAAXz8/ZpcKRZ4qw8Q/s640/Capture.PNG" alt></p>
-<h3 id="Codebender"><a href="#Codebender" class="headerlink" title="Codebender"></a>Codebender</h3><p><a href="https://codebender.cc/" target="_blank" rel="noopener">https://codebender.cc/</a>  </p>
-<p>Tarayıcı tabanlı Arduino IDE’sı kütüphane desteği ve kod paylaşımı yönünden çok iyi durumda. Kodunuzu yazıp kütüphanelerinizi online olarak ekleyip kodunuzu derleyip Arduino’ya yükleyebiliyorsunuz.  </p>
-<p><img src="https://4.bp.blogspot.com/-n84sEQjPu7M/VplsFbTXLaI/AAAAAAAAX0I/EHyjWy-aWFk/s640/Capture.PNG" alt></p>
-<h3 id="C9"><a href="#C9" class="headerlink" title="C9"></a>C9</h3><p><a href="https://c9.io/" target="_blank" rel="noopener">https://c9.io/</a>  </p>
-<p>Codenvy gibi bu da browser tabanlı bir IDE. Bir sürü programlama dili seçeneği mevcut.<br><img src="https://3.bp.blogspot.com/-zzZ5Cgy08iM/VpluLCufb9I/AAAAAAAAX0U/vHe6ZsEmAWg/s640/Capturess.PNG" alt></p>
-<h3 id="Designmantic"><a href="#Designmantic" class="headerlink" title="Designmantic"></a>Designmantic</h3><p><a href="https://www.designmantic.com/" target="_blank" rel="noopener">https://www.designmantic.com/</a><br>Logo dizayn programı, çok geniş bir ayar yelpazesi sunuyor ve kullanımı çok basit. Afiş kartvizit dizaynı gibi seçenekleri var.  </p>
-<p><img src="https://4.bp.blogspot.com/-dmtyhOkTYWg/VpluPSMnDmI/AAAAAAAAX0g/5HJAenfuiXQ/s640/sdadds.PNG" alt></p>
-<h3 id="Wolfram-Alpha"><a href="#Wolfram-Alpha" class="headerlink" title="Wolfram Alpha"></a>Wolfram Alpha</h3><p><a href="https://www.wolframalpha.com/examples/" target="_blank" rel="noopener">https://www.wolframalpha.com/examples/</a>  </p>
-<p>Bu site hakkında sayfalarca yazı hazırlanabilir sanırım. En başta matematik problemlerini çözmek için ortaya çıkmış site veri tabanını o kadar genişletti ki çözüm sunduğu şeyler buraya sığdıramayacağım kadar uzun. Görüntü işleme ile resimdeki nesnelerin tahmin edilmesinden, müzikten, alışverişten, yiyecek içeceğe varıncaya kadar geniş bir konuya yayılmış durumda. Bir çok bilimsel hesaplamayı kolayca yapabilir üstüne nasıl yapılacağını da buradan öğrenebilirsiniz. Üniversiteleri araştırıp eğitim kariyerinizi planlayabilirsiniz. Günlere göre döviz kurları verilerini erişip onları istediğiniz gibi işleyebilirsiniz. Şu anki favori sitelerimden biri.  </p>
-<p><img src="https://1.bp.blogspot.com/-PDwgAxa4IJQ/VpluSgszWiI/AAAAAAAAX0s/99kodhUhGDU/s640/sdadad.PNG" alt></p>
-<h3 id="Biodigital-Human-3D"><a href="#Biodigital-Human-3D" class="headerlink" title="Biodigital Human 3D"></a>Biodigital Human 3D</h3><p><a href="https://human.biodigital.com/index.html" target="_blank" rel="noopener">https://human.biodigital.com/index.html</a>  </p>
-<p>Bu da oldukça etkileyici bir çalışma. Human 3D programı kapsamında insan vücudu en küçük kılcallarına kadar modellenmiş. İstediklerinizi seçip istediklerinizi kaldırıp katman katman inceleyebilmeniz mümkün. Bir sürü hastalık için de yazılar ve vücuttaki hangi bölgeleri etkilediğini gösteren animasyonlar oluşturulmuş. Ayrıca bir kaç tık ile örneğin kolun anatomisine ulaşıp her hangi bir kasın üzerine tıklayıp işlevine ulaşabilirsiniz.  </p>
-<p><img src="https://1.bp.blogspot.com/-6GtHZlXP9yo/VpluYsFbuUI/AAAAAAAAX04/8N_FPROoWZY/s640/Capturefsdfds.PNG" alt></p>
-<h3 id="MIT-App-Invertor"><a href="#MIT-App-Invertor" class="headerlink" title="MIT App Invertor"></a>MIT App Invertor</h3><p><a href="https://appinventor.mit.edu/explore/" target="_blank" rel="noopener">https://appinventor.mit.edu/explore/</a><br>MIT App Inventor görsel programlama kullanarak Android programları yapmanıza yarayan bir sitedir. 5 dakika içerisinde android programınızı yapıp telefonunuza yükleyebilirsiniz. Arayüzü ve arkasındaki tüm kodu sürükle bırak ile tasarlıyorsunuz ama bu basitliği yapabileceklerinizi neredeyse hiç sınırlamıyor. Bir çok sorunuzu çözecek uygulamaları kolayca yapmanız mümkün.  </p>
-<p><img src="https://2.bp.blogspot.com/-zUT2QtUWhKU/VpluaQxFjtI/AAAAAAAAX1E/UJfZLJDpyQo/s640/Capturesdad.PNG" alt></p>
-<h3 id="Talky"><a href="#Talky" class="headerlink" title="Talky"></a>Talky</h3><p><a href="https://talky.io/" target="_blank" rel="noopener">https://talky.io/</a>  </p>
-<p>Basit video chart programı. Sadece bir kaç link paylaşarak kolayca beraber konuşmak mümkün.  </p>
-<p><img src="https://1.bp.blogspot.com/-rKuX1VrWgwU/VvxHEXQRtjI/AAAAAAAAZag/MIfLVc_DrewVqcTx0o6oV3IiET5zChPOw/s640/Capture.PNG" alt></p>
-<h3 id="Draw-io"><a href="#Draw-io" class="headerlink" title="Draw.io"></a>Draw.io</h3><p><a href="https://www.draw.io/" target="_blank" rel="noopener">https://www.draw.io/</a>  </p>
-<p>Basit bir şema, flowchart, tablo çizme programı. Direk google drive veya dropbox üzerinden çalışılabiliyor. Kullanımı kolay aynı zamanda başarılı ve çok fazla çeşit çizimler yaratabileceğiniz bir program.  </p>
-<p><img src="https://3.bp.blogspot.com/-ZgkVeI-VZsg/VvxI31dNOvI/AAAAAAAAZas/i4oLECc1lFwcX1Eih0OrUdsUZqdfkhVZg/s640/Capture.PNG" alt></p>
-
-  </div>
-</article>
-
-    <div class="blog-post-comments">
-        <div id="disqus_thread">
-            <noscript>Please enable JavaScript to view the comments.</noscript>
-        </div>
-    </div>
-
-
-
-        
-          <div id="footer-post-container">
-  <div id="footer-post">
-
-    <div id="nav-footer" style="display: none">
-      <ul>
-         
-          <li><a href="/">Home</a></li>
-         
-          <li><a href="/categories/">Category</a></li>
-         
-          <li><a href="/archives/">Blog</a></li>
-         
-          <li><a href="/about/">About</a></li>
-         
-          <li><a href="https://github.com/mozanunal">Projects</a></li>
-         
-          <li><a href="https://scholar.google.com/citations?user=u_HbXUUAAAAJ&hl=en">Publications</a></li>
-         
-          <li><a href="/search/">Search</a></li>
-        
-      </ul>
-    </div>
-
-    <div id="toc-footer" style="display: none">
-      <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#Scheme-It"><span class="toc-number">1.</span> <span class="toc-text">Scheme It</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Codenvy"><span class="toc-number">2.</span> <span class="toc-text">Codenvy</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#123D-Circuits"><span class="toc-number">3.</span> <span class="toc-text">123D Circuits</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Pixlr"><span class="toc-number">4.</span> <span class="toc-text">Pixlr</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Codebender"><span class="toc-number">5.</span> <span class="toc-text">Codebender</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#C9"><span class="toc-number">6.</span> <span class="toc-text">C9</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Designmantic"><span class="toc-number">7.</span> <span class="toc-text">Designmantic</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Wolfram-Alpha"><span class="toc-number">8.</span> <span class="toc-text">Wolfram Alpha</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Biodigital-Human-3D"><span class="toc-number">9.</span> <span class="toc-text">Biodigital Human 3D</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#MIT-App-Invertor"><span class="toc-number">10.</span> <span class="toc-text">MIT App Invertor</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Talky"><span class="toc-number">11.</span> <span class="toc-text">Talky</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Draw-io"><span class="toc-number">12.</span> <span class="toc-text">Draw.io</span></a></li></ol>
-    </div>
-
-    <div id="share-footer" style="display: none">
-      <ul>
-  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=https://mozanunal.com/2016/01/web-tabanl-programlar/"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="https://twitter.com/share?url=https://mozanunal.com/2016/01/web-tabanl-programlar/&text=[TR] Web Tabanlı Programlar"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=https://mozanunal.com/2016/01/web-tabanl-programlar/&title=[TR] Web Tabanlı Programlar"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https://mozanunal.com/2016/01/web-tabanl-programlar/&is_video=false&description=[TR] Web Tabanlı Programlar"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="mailto:?subject=[TR] Web Tabanlı Programlar&body=Check out this article: https://mozanunal.com/2016/01/web-tabanl-programlar/"><i class="fas fa-envelope fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="https://getpocket.com/save?url=https://mozanunal.com/2016/01/web-tabanl-programlar/&title=[TR] Web Tabanlı Programlar"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://reddit.com/submit?url=https://mozanunal.com/2016/01/web-tabanl-programlar/&title=[TR] Web Tabanlı Programlar"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=https://mozanunal.com/2016/01/web-tabanl-programlar/&title=[TR] Web Tabanlı Programlar"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://digg.com/submit?url=https://mozanunal.com/2016/01/web-tabanl-programlar/&title=[TR] Web Tabanlı Programlar"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://www.tumblr.com/share/link?url=https://mozanunal.com/2016/01/web-tabanl-programlar/&name=[TR] Web Tabanlı Programlar&description="><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
-</ul>
-
-    </div>
-
-    <div id="actions-footer">
-        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
-        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
-        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> Share</a>
-        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
-    </div>
-
-  </div>
+<div class="btn-menu relative z-50 -mr-8 flex h-[5rem] w-[5rem] shrink-0 cursor-pointer flex-col items-center justify-center gap-2.5 lg:hidden" role=button aria-label=Menu></div>
+<script>const htmlClass=document.documentElement.classList;setTimeout(()=>{htmlClass.remove('not-ready')},10);const btnMenu=document.querySelector('.btn-menu');btnMenu.addEventListener('click',()=>{htmlClass.toggle('open')});const metaTheme=document.querySelector('meta[name="theme-color"]'),lightBg=`"#fbfbfb"`.replace(/"/g,''),setDark=a=>{metaTheme.setAttribute('content',a?'#000':lightBg),htmlClass[a?'add':'remove']('dark'),localStorage.setItem('dark',a)},darkScheme=window.matchMedia('(prefers-color-scheme: dark)');if(htmlClass.contains('dark'))setDark(!0);else{const a=localStorage.getItem('dark');setDark(a?a==='true':darkScheme.matches)}darkScheme.addEventListener('change',a=>{setDark(a.matches)});const btnDark=document.querySelector('.btn-dark');btnDark.addEventListener('click',()=>{setDark(localStorage.getItem('dark')!=='true')})</script>
+<div class="nav-wrapper fixed inset-x-0 top-full z-40 flex h-full select-none flex-col justify-center pb-16 duration-200 dark:bg-black lg:static lg:h-auto lg:flex-row lg:!bg-transparent lg:pb-0 lg:transition-none">
+<nav class="lg:ml-12 lg:flex lg:flex-row lg:items-center lg:space-x-6">
+<a class="block text-center text-2xl leading-[5rem] lg:text-base lg:font-normal" href=/about/>About</a>
+<a class="block text-center text-2xl leading-[5rem] lg:text-base lg:font-normal" href=/contact/>Contact</a>
+</nav>
+<nav class="mt-12 flex justify-center space-x-10 dark:invert lg:mt-0 lg:ml-12 lg:items-center lg:space-x-6">
+<a class="h-8 w-8 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6" style=--url:url(./twitter.svg) href=https://twitter.com/MOzanUnal target=_blank rel=me>
+twitter
+</a>
+<a class="h-8 w-8 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6" style=--url:url(./github.svg) href=https://github.com/mozanunal target=_blank rel=me>
+github
+</a>
+</nav>
 </div>
-
-        
-        <footer id="footer">
-  <div class="footer-left">
-    Copyright &copy; 2023 Mehmet Ozan Ünal
-  </div>
-  <div class="footer-right">
-    <nav>
-      <ul>
-         
-          <li><a href="/">Home</a></li>
-         
-          <li><a href="/categories/">Category</a></li>
-         
-          <li><a href="/archives/">Blog</a></li>
-         
-          <li><a href="/about/">About</a></li>
-         
-          <li><a href="https://github.com/mozanunal">Projects</a></li>
-         
-          <li><a href="https://scholar.google.com/citations?user=u_HbXUUAAAAJ&hl=en">Publications</a></li>
-         
-          <li><a href="/search/">Search</a></li>
-        
-      </ul>
-    </nav>
-  </div>
+</header>
+<main class="prose prose-neutral relative mx-auto min-h-[calc(100%-10rem)] max-w-3xl px-8 pt-16 pb-24 dark:prose-invert">
+<article>
+<header class=mb-20>
+<h1 class="!my-0 pb-2.5">[TR] Web Tabanlı Programlar</h1>
+<div class="text-sm opacity-60">
+<time>Jan 16, 2016</time>
+<span class=mx-1>&#183;</span>
+<span>Mehmet Ozan Ünal</span>
+</div>
+</header>
+<section><p><strong>Herkese Merhabalar,</strong><br>
+Bugünkü yazımda web tabanlı programlardan bahsetmek istiyorum. Web teknolojilerinin gelişmesiyle beraber browser tabanlı oldukça yararlı ve kullanımı da bir o kadar kolay programlar ortaya çıkmaya başladı. Hatta bunun bir üst aşaması olarak ChromeOS browser tabanlı bir işletim sistemi bile var. Ayrıca bu tarz programların projelerine dosyalarına her bilgisayardan ulaşabilmek, kurulum yapmadan bir çok şeyi halletme gibi avantajları da var. Böyle olunca ben de bu şekilde çalışan yararlı programları bir yazı altında toplamak istedim. Bilmediğim daha bir sürü program olduğuna eminim eğer bana yollayabilirseniz onları da yazıya ekleyebilirim.</p>
+<h3 id=scheme-it>Scheme It</h3>
+<p><a href=https://www.digikey.com/schemeit/>https://www.digikey.com/schemeit/</a></p>
+<p>Devre şeması çizilebilen pcb tasarlanabilen programdır. Digikey tarafından geliştirilmektedir. Kayıt olmanıza bile gerek yok tıklayın ve devrenizi çizmeye başlayın.</p>
+<p><img src=https://3.bp.blogspot.com/-eqDoL8ZnXsc/VplqHUmLuXI/AAAAAAAAXzU/d-7lZapp7VQ/s640/Capture.PNG alt></p>
+<h3 id=codenvy>Codenvy</h3>
+<p><a href=https://codenvy.com/>https://codenvy.com/</a></p>
+<p>Browser üzerinden kod yazıp yazdığınız kodları derleyebileceğiniz bulut tabanlı ide. Desteklediği programramlama dili yelpazesi ise oldukça geniş.</p>
+<p><img src=https://3.bp.blogspot.com/-IADN0RNfEeE/Vplq9T0Sx2I/AAAAAAAAXzg/H2_rGN45eAo/s640/Capture.PNG alt></p>
+<h3 id=123d-circuits>123D Circuits</h3>
+<p><a href=https://123d.circuits.io/>https://123d.circuits.io/</a></p>
+<p>Elektronik devreler tasarlayıp simüle edip devreleriniz için PCB tasarlayabilirsiniz. Simülasyonlarınızda Arduino kullanabilirsiniz istediğiniz kodları da yüklemeniz mümkün. Programın kullanımı oldukça basit ve ciddi işler çıkarılabiliniyor. Autodesk firması tarafından geliştirilmekte olan bir program.</p>
+<p><img src=https://2.bp.blogspot.com/-RB6b246S-EU/VplrpfNxUeI/AAAAAAAAXzw/JmMpK0HQze4/s640/Capture2.PNG alt></p>
+<h3 id=pixlr>Pixlr</h3>
+<p><a href=https://pixlr.com/editor/>https://pixlr.com/editor/</a><br>
+Browser üzerinden fotoğraf düzenleyebileceğiniz bir program. Kayıt bile olmadan direk kullanmaya başlayabiliyorsunuz.</p>
+<p><img src=https://2.bp.blogspot.com/-zViNB4L5LxI/Vplr0X8l9kI/AAAAAAAAXz8/ZpcKRZ4qw8Q/s640/Capture.PNG alt></p>
+<h3 id=codebender>Codebender</h3>
+<p><a href=https://codebender.cc/>https://codebender.cc/</a></p>
+<p>Tarayıcı tabanlı Arduino IDE&rsquo;sı kütüphane desteği ve kod paylaşımı yönünden çok iyi durumda. Kodunuzu yazıp kütüphanelerinizi online olarak ekleyip kodunuzu derleyip Arduino&rsquo;ya yükleyebiliyorsunuz.</p>
+<p><img src=https://4.bp.blogspot.com/-n84sEQjPu7M/VplsFbTXLaI/AAAAAAAAX0I/EHyjWy-aWFk/s640/Capture.PNG alt></p>
+<h3 id=c9>C9</h3>
+<p><a href=https://c9.io/>https://c9.io/</a></p>
+<p>Codenvy gibi bu da browser tabanlı bir IDE. Bir sürü programlama dili seçeneği mevcut.<br>
+<img src=https://3.bp.blogspot.com/-zzZ5Cgy08iM/VpluLCufb9I/AAAAAAAAX0U/vHe6ZsEmAWg/s640/Capturess.PNG alt></p>
+<h3 id=designmantic>Designmantic</h3>
+<p><a href=https://www.designmantic.com/>https://www.designmantic.com/</a><br>
+Logo dizayn programı, çok geniş bir ayar yelpazesi sunuyor ve kullanımı çok basit. Afiş kartvizit dizaynı gibi seçenekleri var.</p>
+<p><img src=https://4.bp.blogspot.com/-dmtyhOkTYWg/VpluPSMnDmI/AAAAAAAAX0g/5HJAenfuiXQ/s640/sdadds.PNG alt></p>
+<h3 id=wolfram-alpha>Wolfram Alpha</h3>
+<p><a href=https://www.wolframalpha.com/examples/>https://www.wolframalpha.com/examples/</a></p>
+<p>Bu site hakkında sayfalarca yazı hazırlanabilir sanırım. En başta matematik problemlerini çözmek için ortaya çıkmış site veri tabanını o kadar genişletti ki çözüm sunduğu şeyler buraya sığdıramayacağım kadar uzun. Görüntü işleme ile resimdeki nesnelerin tahmin edilmesinden, müzikten, alışverişten, yiyecek içeceğe varıncaya kadar geniş bir konuya yayılmış durumda. Bir çok bilimsel hesaplamayı kolayca yapabilir üstüne nasıl yapılacağını da buradan öğrenebilirsiniz. Üniversiteleri araştırıp eğitim kariyerinizi planlayabilirsiniz. Günlere göre döviz kurları verilerini erişip onları istediğiniz gibi işleyebilirsiniz. Şu anki favori sitelerimden biri.</p>
+<p><img src=https://1.bp.blogspot.com/-PDwgAxa4IJQ/VpluSgszWiI/AAAAAAAAX0s/99kodhUhGDU/s640/sdadad.PNG alt></p>
+<h3 id=biodigital-human-3d>Biodigital Human 3D</h3>
+<p><a href=https://human.biodigital.com/index.html>https://human.biodigital.com/index.html</a></p>
+<p>Bu da oldukça etkileyici bir çalışma. Human 3D programı kapsamında insan vücudu en küçük kılcallarına kadar modellenmiş. İstediklerinizi seçip istediklerinizi kaldırıp katman katman inceleyebilmeniz mümkün. Bir sürü hastalık için de yazılar ve vücuttaki hangi bölgeleri etkilediğini gösteren animasyonlar oluşturulmuş. Ayrıca bir kaç tık ile örneğin kolun anatomisine ulaşıp her hangi bir kasın üzerine tıklayıp işlevine ulaşabilirsiniz.</p>
+<p><img src=https://1.bp.blogspot.com/-6GtHZlXP9yo/VpluYsFbuUI/AAAAAAAAX04/8N_FPROoWZY/s640/Capturefsdfds.PNG alt></p>
+<h3 id=mit-app-invertor>MIT App Invertor</h3>
+<p><a href=https://appinventor.mit.edu/explore/>https://appinventor.mit.edu/explore/</a><br>
+MIT App Inventor görsel programlama kullanarak Android programları yapmanıza yarayan bir sitedir. 5 dakika içerisinde android programınızı yapıp telefonunuza yükleyebilirsiniz. Arayüzü ve arkasındaki tüm kodu sürükle bırak ile tasarlıyorsunuz ama bu basitliği yapabileceklerinizi neredeyse hiç sınırlamıyor. Bir çok sorunuzu çözecek uygulamaları kolayca yapmanız mümkün.</p>
+<p><img src=https://2.bp.blogspot.com/-zUT2QtUWhKU/VpluaQxFjtI/AAAAAAAAX1E/UJfZLJDpyQo/s640/Capturesdad.PNG alt></p>
+<h3 id=talky>Talky</h3>
+<p><a href=https://talky.io/>https://talky.io/</a></p>
+<p>Basit video chart programı. Sadece bir kaç link paylaşarak kolayca beraber konuşmak mümkün.</p>
+<p><img src=https://1.bp.blogspot.com/-rKuX1VrWgwU/VvxHEXQRtjI/AAAAAAAAZag/MIfLVc_DrewVqcTx0o6oV3IiET5zChPOw/s640/Capture.PNG alt></p>
+<h3 id=drawio>Draw.io</h3>
+<p><a href=https://www.draw.io/>https://www.draw.io/</a></p>
+<p>Basit bir şema, flowchart, tablo çizme programı. Direk google drive veya dropbox üzerinden çalışılabiliyor. Kullanımı kolay aynı zamanda başarılı ve çok fazla çeşit çizimler yaratabileceğiniz bir program.</p>
+<p><img src=https://3.bp.blogspot.com/-ZgkVeI-VZsg/VvxI31dNOvI/AAAAAAAAZas/i4oLECc1lFwcX1Eih0OrUdsUZqdfkhVZg/s640/Capture.PNG alt></p>
+</section>
+<footer class="mt-12 flex flex-wrap">
+<a class="mr-1.5 mb-1.5 rounded-lg bg-black/[3%] px-5 py-2 no-underline dark:bg-white/[8%]" href=https://mozanunal.com/tags/html5>html5</a>
+<a class="mr-1.5 mb-1.5 rounded-lg bg-black/[3%] px-5 py-2 no-underline dark:bg-white/[8%]" href=https://mozanunal.com/tags/web-tabanl%C4%B1-programlar>Web Tabanlı programlar</a>
 </footer>
-
-    </div>
-    <!-- styles -->
-<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
-<link rel="stylesheet" href="/lib/justified-gallery/css/justifiedGallery.min.css">
-
-    <!-- jquery -->
-<script src="/lib/jquery/jquery.min.js"></script>
-<script src="/lib/justified-gallery/js/jquery.justifiedGallery.min.js"></script>
-<script src="/js/main.js"></script>
-<!-- search -->
-
-<!-- Google Analytics -->
-
-    <script type="text/javascript">
-        (function(i,s,o,g,r,a,m) {i['GoogleAnalyticsObject']=r;i[r]=i[r]||function() {
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-        ga('create', 'UA-60655125-2', 'auto');
-        ga('send', 'pageview');
-    </script>
-
-<!-- Baidu Analytics -->
-
-<!-- Disqus Comments -->
-
-    <script type="text/javascript">
-        var disqus_shortname = 'mozanunal-com';
-
-        (function(){
-            var dsq = document.createElement('script');
-            dsq.type = 'text/javascript';
-            dsq.async = true;
-            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-        }());
-    </script>
-
-
+<nav class="mt-24 flex rounded-lg bg-black/[3%] text-lg dark:bg-white/[8%]">
+<a class="flex w-1/2 items-center rounded-l-md p-6 pr-3 no-underline hover:bg-black/[2%] dark:hover:bg-white/[3%]" href=https://mozanunal.com/2016/01/star-wars-bb-8-robot-yapm-bolum-1/><span class=mr-1.5>←</span><span>[TR] Star Wars BB-8 Robot Yapımı</span></a>
+<a class="ml-auto flex w-1/2 items-center justify-end rounded-r-md p-6 pl-3 no-underline hover:bg-black/[2%] dark:hover:bg-white/[3%]" href=https://mozanunal.com/2016/01/rf-mesafe-hesaplama-exceli/><span>[TR] RF Mesafe Hesaplama Exceli</span><span class=ml-1.5>→</span></a>
+</nav>
+</article>
+</main>
+<footer class="opaco mx-auto flex h-[5rem] max-w-3xl items-center px-8 text-[0.9em] opacity-60">
+<div class=mr-auto>
+&copy; 2023
+<a class=link href=https://mozanunal.com/>Mehmet Ozan Ünal</a>
+</div>
+<a class="link mx-6" href=https://gohugo.io/ rel=noopener target=_blank>Powered by Hugo️️</a>️
+<a class=link href=https://github.com/nanxiaobei/hugo-paper rel=noopener target=_blank>Theme Paper</a>
+</footer>
 </body>
 </html>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Arduino Wifi Modulü on Mehmet Ozan Ünal</title><link>https://mozanunal.com/tags/arduino-wifi-modul%C3%BC/</link><description>Recent content in Arduino Wifi Modulü on Mehmet Ozan Ünal</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>Copyright © 2014–2023</copyright><lastBuildDate>Thu, 12 Mar 2015 00:49:00 +0000</lastBuildDate><atom:link href="https://mozanunal.com/tags/arduino-wifi-modul%C3%BC/index.xml" rel="self" type="application/rss+xml"/><item><title>[TR] ESP8266 Modulü Web Server</title><link>https://mozanunal.com/2015/03/esp8266-modulu-html-server/</link><pubDate>Thu, 12 Mar 2015 00:49:00 +0000</pubDate><guid>https://mozanunal.com/2015/03/esp8266-modulu-html-server/</guid><description>Merhaba arkadaşlar,
+Bugünkü yazımda ESP8266 modüllerinden bahsetmek istiyorum. Bu modül seri port üzerinden haberleşen wifi modülü. Fiyatı yaklaşık 5 $ özelliklerini gördüğünüz fiyatından çok daha fazlasını hakkettiğini göreceksiniz. Özelliklerine geçecek olursak;
+802.11 b/g/n desteği
+Wi-Fi Direct (P2P) Desteği
+Dahili TCP/IP protokol yığını
++19,5dBm çıkış gücü (802.11b modunda)
+Kaçak akım &amp;lt; 10uA
+Dahili düşük güç tüketimine sahip 32-bit&amp;rsquo;lik işlemci</description></item></channel></rss>

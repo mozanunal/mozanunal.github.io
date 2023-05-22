@@ -1,294 +1,193 @@
-<!DOCTYPE html>
-<html lang=en>
-<head><meta name="generator" content="Hexo 3.8.0">
-    <!-- so meta -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="HandheldFriendly" content="True">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="description" content="Herkese Merhabalar! Bu projemin amacı MPU6050 ile hesaplanan pitch ve roll açıları ile 2 eksenli bir gimbalı kontrol etmek. MPU6050 açılarını hesaplamak için FreeIMU kütüphanesini kullandım. Buradan i">
-<meta name="keywords" content="Electronics,Arduino,Hava Araçları,mpu6050,arduino servo kontrol,gimbal kontrol,IMU">
-<meta property="og:type" content="article">
+<!doctype html><html class="not-ready text-sm lg:text-base" style=--bg:#fbfbfb lang=en>
+<head>
+<meta charset=utf-8>
+<meta http-equiv=x-ua-compatible content="IE=edge">
+<meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
+<title>[TR] IMU ile Kamera Gimbalı Kontrolü - Mehmet Ozan Ünal</title>
+<meta name=theme-color>
+<meta name=description content="Herkese Merhabalar!
+Bu projemin amacı MPU6050 ile hesaplanan pitch ve roll açıları ile 2 eksenli bir gimbalı kontrol etmek. MPU6050 açılarını hesaplamak için FreeIMU kütüphanesini kullandım. Buradan indirebilirsiniz. Aldığım açılar belli bir değerden büyükse servoların açılarını kademeli olarak azalttım veya artırdım.Bu sayede gimbal, MPU6050yi eğdiğim yönde dönmüş oldu. Projemin tanıtım videosunu aşağıdan izleyebilirsiniz.
+  Arkadaşlar projemin Arduino kodunu da paylaşıyorum.
+#include <I2Cdev.h>#include <MPU60X0.h>#include <EEPROM.h> //#define DEBUG #include “DebugUtils.h”#include “CommunicationUtils.h”#include “FreeIMU.">
+<meta name=author content="Mehmet Ozan Ünal">
+<link rel="preload stylesheet" as=style href=https://mozanunal.com/main.min.css>
+<link rel=preload as=image href=https://mozanunal.com/theme.png>
+<link rel=preload as=image href="https://www.gravatar.com/avatar/998cbd3ab655239d8be787580cce0415?s=160&d=identicon">
+<link rel=preload as=image href=https://mozanunal.com/twitter.svg>
+<link rel=preload as=image href=https://mozanunal.com/github.svg>
+<link rel=icon href=https://mozanunal.com/favicon.ico>
+<link rel=apple-touch-icon href=https://mozanunal.com/apple-touch-icon.png>
+<meta name=generator content="Hugo 0.92.2">
+<script type=application/javascript>var doNotTrack=!1;doNotTrack||(window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga('create','G-N3F3XLS474','auto'),ga('send','pageview'))</script>
+<script async src=https://www.google-analytics.com/analytics.js></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-N3F3XLS474"></script>
+<script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-N3F3XLS474',{anonymize_ip:!1})}</script>
 <meta property="og:title" content="[TR] IMU ile Kamera Gimbalı Kontrolü">
-<meta property="og:url" content="https://mozanunal.com/2014/10/imu-ile-kamera-gimbal-kontrolu/index.html">
-<meta property="og:site_name" content="Mehmet Ozan Ünal">
-<meta property="og:description" content="Herkese Merhabalar! Bu projemin amacı MPU6050 ile hesaplanan pitch ve roll açıları ile 2 eksenli bir gimbalı kontrol etmek. MPU6050 açılarını hesaplamak için FreeIMU kütüphanesini kullandım. Buradan i">
-<meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2023-04-09T21:12:28.946Z">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="[TR] IMU ile Kamera Gimbalı Kontrolü">
-<meta name="twitter:description" content="Herkese Merhabalar! Bu projemin amacı MPU6050 ile hesaplanan pitch ve roll açıları ile 2 eksenli bir gimbalı kontrol etmek. MPU6050 açılarını hesaplamak için FreeIMU kütüphanesini kullandım. Buradan i">
-    
-    
-        
-          
-              <link rel="shortcut icon" href="/images/favicon.ico">
-          
-        
-        
-          
-            <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
-          
-        
-        
-          
-            <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
-          
-        
-    
-    <!-- title -->
-    <title>[TR] IMU ile Kamera Gimbalı Kontrolü</title>
-    <!-- styles -->
-    <link rel="stylesheet" href="/css/style.css">
-    <!-- persian styles -->
-    
-      <link rel="stylesheet" href="/css/rtl.css">
-    
-    <!-- rss -->
-    
-    
-      <link rel="alternate" href="/atom" title="Mehmet Ozan Ünal" type="application/atom+xml">
-    
-    <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/7ecf5c9db13693c2c7062ad3f/0e72f59463de1883a2a166735.js");</script>
+<meta property="og:description" content="Herkese Merhabalar!
+Bu projemin amacı MPU6050 ile hesaplanan pitch ve roll açıları ile 2 eksenli bir gimbalı kontrol etmek. MPU6050 açılarını hesaplamak için FreeIMU kütüphanesini kullandım. Buradan indirebilirsiniz. Aldığım açılar belli bir değerden büyükse servoların açılarını kademeli olarak azalttım veya artırdım.Bu sayede gimbal, MPU6050yi eğdiğim yönde dönmüş oldu. Projemin tanıtım videosunu aşağıdan izleyebilirsiniz.
+  Arkadaşlar projemin Arduino kodunu da paylaşıyorum.
+#include <I2Cdev.h>#include <MPU60X0.h>#include <EEPROM.h> //#define DEBUG #include “DebugUtils.h”#include “CommunicationUtils.h”#include “FreeIMU.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://mozanunal.com/2014/10/imu-ile-kamera-gimbal-kontrolu/"><meta property="article:section" content="posts">
+<meta property="article:published_time" content="2014-10-18T18:22:00+00:00">
+<meta property="article:modified_time" content="2014-10-18T18:22:00+00:00">
+<meta itemprop=name content="[TR] IMU ile Kamera Gimbalı Kontrolü">
+<meta itemprop=description content="Herkese Merhabalar!
+Bu projemin amacı MPU6050 ile hesaplanan pitch ve roll açıları ile 2 eksenli bir gimbalı kontrol etmek. MPU6050 açılarını hesaplamak için FreeIMU kütüphanesini kullandım. Buradan indirebilirsiniz. Aldığım açılar belli bir değerden büyükse servoların açılarını kademeli olarak azalttım veya artırdım.Bu sayede gimbal, MPU6050yi eğdiğim yönde dönmüş oldu. Projemin tanıtım videosunu aşağıdan izleyebilirsiniz.
+  Arkadaşlar projemin Arduino kodunu da paylaşıyorum.
+#include <I2Cdev.h>#include <MPU60X0.h>#include <EEPROM.h> //#define DEBUG #include “DebugUtils.h”#include “CommunicationUtils.h”#include “FreeIMU."><meta itemprop=datePublished content="2014-10-18T18:22:00+00:00">
+<meta itemprop=dateModified content="2014-10-18T18:22:00+00:00">
+<meta itemprop=wordCount content="175">
+<meta itemprop=keywords content="Electronics,Arduino,Hava Araçları,mpu6050,arduino servo kontrol,gimbal kontrol,IMU,">
+<meta name=twitter:card content="summary">
+<meta name=twitter:title content="[TR] IMU ile Kamera Gimbalı Kontrolü">
+<meta name=twitter:description content="Herkese Merhabalar!
+Bu projemin amacı MPU6050 ile hesaplanan pitch ve roll açıları ile 2 eksenli bir gimbalı kontrol etmek. MPU6050 açılarını hesaplamak için FreeIMU kütüphanesini kullandım. Buradan indirebilirsiniz. Aldığım açılar belli bir değerden büyükse servoların açılarını kademeli olarak azalttım veya artırdım.Bu sayede gimbal, MPU6050yi eğdiğim yönde dönmüş oldu. Projemin tanıtım videosunu aşağıdan izleyebilirsiniz.
+  Arkadaşlar projemin Arduino kodunu da paylaşıyorum.
+#include <I2Cdev.h>#include <MPU60X0.h>#include <EEPROM.h> //#define DEBUG #include “DebugUtils.h”#include “CommunicationUtils.h”#include “FreeIMU.">
 </head>
-
-<body class="max-width mx-auto px3 ltr">    
-      <div id="header-post">
-  <a id="menu-icon" href="#"><i class="fas fa-bars fa-lg"></i></a>
-  <a id="menu-icon-tablet" href="#"><i class="fas fa-bars fa-lg"></i></a>
-  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
-  <span id="menu">
-    <span id="nav">
-      <ul>
-         
-          <li><a href="/">Home</a></li>
-         
-          <li><a href="/categories/">Category</a></li>
-         
-          <li><a href="/archives/">Blog</a></li>
-         
-          <li><a href="/about/">About</a></li>
-         
-          <li><a href="https://github.com/mozanunal">Projects</a></li>
-         
-          <li><a href="https://scholar.google.com/citations?user=u_HbXUUAAAAJ&hl=en">Publications</a></li>
-         
-          <li><a href="/search/">Search</a></li>
-        
-      </ul>
-    </span>
-    <br>
-    <span id="actions">
-      <ul>
-        
-        <li><a class="icon" href="/2014/10/bilgisayardan-gimbal-kontrolu/"><i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i></a></li>
-        
-        
-        <li><a class="icon" href="/2014/10/yuz-tanma-ile-guvenlik-passface/"><i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
-        
-        <li><a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
-        <li><a class="icon" href="#"><i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
-      </ul>
-      <span id="i-prev" class="info" style="display:none;">Previous post</span>
-      <span id="i-next" class="info" style="display:none;">Next post</span>
-      <span id="i-top" class="info" style="display:none;">Back to top</span>
-      <span id="i-share" class="info" style="display:none;">Share post</span>
-    </span>
-    <br>
-    <div id="share" style="display: none">
-      <ul>
-  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=https://mozanunal.com/2014/10/imu-ile-kamera-gimbal-kontrolu/"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="https://twitter.com/share?url=https://mozanunal.com/2014/10/imu-ile-kamera-gimbal-kontrolu/&text=[TR] IMU ile Kamera Gimbalı Kontrolü"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=https://mozanunal.com/2014/10/imu-ile-kamera-gimbal-kontrolu/&title=[TR] IMU ile Kamera Gimbalı Kontrolü"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https://mozanunal.com/2014/10/imu-ile-kamera-gimbal-kontrolu/&is_video=false&description=[TR] IMU ile Kamera Gimbalı Kontrolü"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="mailto:?subject=[TR] IMU ile Kamera Gimbalı Kontrolü&body=Check out this article: https://mozanunal.com/2014/10/imu-ile-kamera-gimbal-kontrolu/"><i class="fas fa-envelope " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="https://getpocket.com/save?url=https://mozanunal.com/2014/10/imu-ile-kamera-gimbal-kontrolu/&title=[TR] IMU ile Kamera Gimbalı Kontrolü"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://reddit.com/submit?url=https://mozanunal.com/2014/10/imu-ile-kamera-gimbal-kontrolu/&title=[TR] IMU ile Kamera Gimbalı Kontrolü"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=https://mozanunal.com/2014/10/imu-ile-kamera-gimbal-kontrolu/&title=[TR] IMU ile Kamera Gimbalı Kontrolü"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://digg.com/submit?url=https://mozanunal.com/2014/10/imu-ile-kamera-gimbal-kontrolu/&title=[TR] IMU ile Kamera Gimbalı Kontrolü"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://www.tumblr.com/share/link?url=https://mozanunal.com/2014/10/imu-ile-kamera-gimbal-kontrolu/&name=[TR] IMU ile Kamera Gimbalı Kontrolü&description=&lt;p&gt;&lt;strong&gt;Herkese Merhabalar!&lt;/strong&gt;&lt;br&gt; Bu projemin amacı MPU6050 ile hesaplanan pitch ve roll açıları ile 2 eksenli bir gimbalı kontrol etmek. MPU6050 açılarını hesaplamak için FreeIMU kütüphanesini kullandım. &lt;a href=&quot;https://www.varesano.net/projects/hardware/FreeIMU&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Buradan indirebilirsiniz&lt;/a&gt;. Aldığım açılar belli bir değerden büyükse servoların açılarını kademeli olarak azalttım veya artırdım."><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
-</ul>
-
-    </div>
-    <div id="toc">
-      
-    </div>
-  </span>
+<body class="text-black duration-200 ease-out dark:text-white">
+<header class="mx-auto flex h-[5rem] max-w-3xl px-8 lg:justify-center">
+<div class="relative z-50 mr-auto flex items-center">
+<a class="-translate-x-[1px] -translate-y-0.5 text-3xl font-bold" href=https://mozanunal.com/>Mehmet Ozan Ünal</a>
+<div class="btn-dark text-[0] ml-6 h-6 w-6 shrink-0 cursor-pointer [background:url(./theme.svg)_left_center/cover_no-repeat] dark:invert dark:[background-position:right]" role=button aria-label=Dark></div>
 </div>
-
-    
-    <div class="content index py4">
-        
-        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-  <header>
-    
-    <h1 class="posttitle" itemprop="name headline">
-        [TR] IMU ile Kamera Gimbalı Kontrolü
-    </h1>
-
-
-
-    <div class="meta">
-      <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
-        <span itemprop="name">Mehmet Ozan Ünal</span>
-      </span>
-      
-    <div class="postdate">
-      
-        <time datetime="2014-10-18T15:22:00.000Z" itemprop="datePublished">2014-10-18</time>
-        
-      
-    </div>
-
-
-      
-    <div class="article-category">
-        <i class="fas fa-archive"></i>
-        <a class="category-link" href="/categories/Electronics/">Electronics</a> › <a class="category-link" href="/categories/Electronics/Drone/">Drone</a>
-    </div>
-
-
-    </div>
-  </header>
-  
-
-  <div class="content" itemprop="articleBody">
-    <p><strong>Herkese Merhabalar!</strong><br> Bu projemin amacı MPU6050 ile hesaplanan pitch ve roll açıları ile 2 eksenli bir gimbalı kontrol etmek. MPU6050 açılarını hesaplamak için FreeIMU kütüphanesini kullandım. <a href="https://www.varesano.net/projects/hardware/FreeIMU" target="_blank" rel="noopener">Buradan indirebilirsiniz</a>. Aldığım açılar belli bir değerden büyükse servoların açılarını kademeli olarak azalttım veya artırdım.<a id="more"></a>Bu sayede gimbal, MPU6050yi eğdiğim yönde dönmüş oldu. Projemin tanıtım videosunu aşağıdan izleyebilirsiniz.</p>
-<center><div class="video-container"><iframe src="//www.youtube.com/embed/MQi57R7bO8M" frameborder="0" allowfullscreen></iframe></div></center>
-
+<div class="btn-menu relative z-50 -mr-8 flex h-[5rem] w-[5rem] shrink-0 cursor-pointer flex-col items-center justify-center gap-2.5 lg:hidden" role=button aria-label=Menu></div>
+<script>const htmlClass=document.documentElement.classList;setTimeout(()=>{htmlClass.remove('not-ready')},10);const btnMenu=document.querySelector('.btn-menu');btnMenu.addEventListener('click',()=>{htmlClass.toggle('open')});const metaTheme=document.querySelector('meta[name="theme-color"]'),lightBg=`"#fbfbfb"`.replace(/"/g,''),setDark=a=>{metaTheme.setAttribute('content',a?'#000':lightBg),htmlClass[a?'add':'remove']('dark'),localStorage.setItem('dark',a)},darkScheme=window.matchMedia('(prefers-color-scheme: dark)');if(htmlClass.contains('dark'))setDark(!0);else{const a=localStorage.getItem('dark');setDark(a?a==='true':darkScheme.matches)}darkScheme.addEventListener('change',a=>{setDark(a.matches)});const btnDark=document.querySelector('.btn-dark');btnDark.addEventListener('click',()=>{setDark(localStorage.getItem('dark')!=='true')})</script>
+<div class="nav-wrapper fixed inset-x-0 top-full z-40 flex h-full select-none flex-col justify-center pb-16 duration-200 dark:bg-black lg:static lg:h-auto lg:flex-row lg:!bg-transparent lg:pb-0 lg:transition-none">
+<nav class="lg:ml-12 lg:flex lg:flex-row lg:items-center lg:space-x-6">
+<a class="block text-center text-2xl leading-[5rem] lg:text-base lg:font-normal" href=/about/>About</a>
+<a class="block text-center text-2xl leading-[5rem] lg:text-base lg:font-normal" href=/contact/>Contact</a>
+</nav>
+<nav class="mt-12 flex justify-center space-x-10 dark:invert lg:mt-0 lg:ml-12 lg:items-center lg:space-x-6">
+<a class="h-8 w-8 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6" style=--url:url(./twitter.svg) href=https://twitter.com/MOzanUnal target=_blank rel=me>
+twitter
+</a>
+<a class="h-8 w-8 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6" style=--url:url(./github.svg) href=https://github.com/mozanunal target=_blank rel=me>
+github
+</a>
+</nav>
+</div>
+</header>
+<main class="prose prose-neutral relative mx-auto min-h-[calc(100%-10rem)] max-w-3xl px-8 pt-16 pb-24 dark:prose-invert">
+<article>
+<header class=mb-20>
+<h1 class="!my-0 pb-2.5">[TR] IMU ile Kamera Gimbalı Kontrolü</h1>
+<div class="text-sm opacity-60">
+<time>Oct 18, 2014</time>
+<span class=mx-1>&#183;</span>
+<span>Mehmet Ozan Ünal</span>
+</div>
+</header>
+<section><p><strong>Herkese Merhabalar!</strong><br>
+ Bu projemin amacı MPU6050 ile hesaplanan pitch ve roll açıları ile 2 eksenli bir gimbalı kontrol etmek. MPU6050 açılarını hesaplamak için FreeIMU kütüphanesini kullandım. <a href=https://www.varesano.net/projects/hardware/FreeIMU>Buradan indirebilirsiniz</a>. Aldığım açılar belli bir değerden büyükse servoların açılarını kademeli olarak azalttım veya artırdım.Bu sayede gimbal, MPU6050yi eğdiğim yönde dönmüş oldu. Projemin tanıtım videosunu aşağıdan izleyebilirsiniz.</p>
+<div style=position:relative;padding-bottom:56.25%;height:0;overflow:hidden>
+<iframe src=https://www.youtube-nocookie.com/embed/MQi57R7bO8M style=position:absolute;top:0;left:0;width:100%;height:100%;border:0 allowfullscreen title="YouTube Video"></iframe>
+</div>
 <p>Arkadaşlar projemin Arduino kodunu da paylaşıyorum.</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;I2Cdev.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;MPU60X0.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;EEPROM.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="comment">//#define DEBUG</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> “DebugUtils.h”</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> “CommunicationUtils.h”</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> “FreeIMU.h”</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;Wire.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;SPI.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;Servo.h&gt;</span></span></span><br><span class="line"><span class="keyword">int</span> raw_values[<span class="number">9</span>];</span><br><span class="line">Servo myservo1;</span><br><span class="line"><span class="keyword">int</span> pos1 = <span class="number">90</span>;</span><br><span class="line">Servo myservo2;</span><br><span class="line"><span class="keyword">int</span> pos2 = <span class="number">90</span>;</span><br><span class="line"><span class="keyword">float</span> ypr[<span class="number">3</span>]; <span class="comment">// yaw pitch roll</span></span><br><span class="line"><span class="keyword">float</span> val[<span class="number">9</span>];</span><br><span class="line"></span><br><span class="line"><span class="comment">// Set the FreeIMU object</span></span><br><span class="line">FreeIMU my3IMU = FreeIMU();</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">setup</span><span class="params">()</span> </span>&#123;</span><br><span class="line">  Serial.begin(<span class="number">115200</span>);</span><br><span class="line">  Wire.begin();</span><br><span class="line">  myservo1.attach(<span class="number">9</span>);</span><br><span class="line">  myservo2.attach(<span class="number">8</span>);</span><br><span class="line">  delay(<span class="number">5</span>);</span><br><span class="line">  my3IMU.init(); <span class="comment">// the parameter enable or disable fast mode</span></span><br><span class="line">  delay(<span class="number">5</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">loop</span><span class="params">()</span></span>&#123;  </span><br><span class="line">  my3IMU.getYawPitchRoll(ypr);</span><br><span class="line">  Serial.print(“Yaw: “);</span><br><span class="line">  Serial.print(ypr[<span class="number">0</span>]);</span><br><span class="line">  Serial.print(“ Pitch: “);</span><br><span class="line">  Serial.print(ypr[<span class="number">1</span>]);</span><br><span class="line">  Serial.print(“ Roll: “);</span><br><span class="line">  Serial.print(ypr[<span class="number">2</span>]);</span><br><span class="line">  Serial.println(“”);</span><br><span class="line">    </span><br><span class="line">  <span class="keyword">if</span>(ypr[<span class="number">1</span>]&gt;<span class="number">20</span>)</span><br><span class="line">  &#123;</span><br><span class="line">    <span class="keyword">if</span>(pos1&lt;<span class="number">150</span>)</span><br><span class="line">    &#123;</span><br><span class="line">    pos1=pos1+<span class="number">2</span>;</span><br><span class="line">    myservo1.write(pos1);</span><br><span class="line">    delay(<span class="number">15</span>);</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">else</span> <span class="keyword">if</span>(ypr[<span class="number">1</span>]&lt;<span class="number">-20</span>)</span><br><span class="line">  &#123;</span><br><span class="line">    <span class="keyword">if</span>(pos1&gt;<span class="number">30</span>)</span><br><span class="line">    &#123;</span><br><span class="line">    pos1=pos1<span class="number">-2</span>;</span><br><span class="line">    myservo1.write(pos1);</span><br><span class="line">    delay(<span class="number">15</span>);</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">if</span>(ypr[<span class="number">2</span>]&gt;<span class="number">20</span>)</span><br><span class="line">  &#123;</span><br><span class="line">    <span class="keyword">if</span>(pos2&gt;<span class="number">30</span>)</span><br><span class="line">    &#123;</span><br><span class="line">    pos2=pos2<span class="number">-2</span>;</span><br><span class="line">    myservo2.write(pos2);</span><br><span class="line">    delay(<span class="number">15</span>);</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">if</span>(ypr[<span class="number">2</span>]&lt;<span class="number">-20</span>)</span><br><span class="line">  &#123;</span><br><span class="line">    <span class="keyword">if</span>(pos2&lt;<span class="number">150</span>)</span><br><span class="line">    &#123;</span><br><span class="line">    pos2=pos2+<span class="number">2</span>;</span><br><span class="line">    myservo2.write(pos2);</span><br><span class="line">    delay(<span class="number">15</span>);</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  delay(<span class="number">15</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-  </div>
-</article>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#ff79c6>#include</span> <span style=color:#ff79c6>&lt;I2Cdev.h&gt;</span><span style=color:#ff79c6>
+</span><span style=color:#ff79c6>#include</span> <span style=color:#ff79c6>&lt;MPU60X0.h&gt;</span><span style=color:#ff79c6>
+</span><span style=color:#ff79c6>#include</span> <span style=color:#ff79c6>&lt;EEPROM.h&gt;</span><span style=color:#ff79c6>
+</span><span style=color:#ff79c6></span>
+<span style=color:#6272a4>//#define DEBUG
+</span><span style=color:#6272a4></span><span style=color:#ff79c6>#include</span> <span style=color:#ff79c6>“DebugUtils.h”</span><span style=color:#ff79c6>
+</span><span style=color:#ff79c6>#include</span> <span style=color:#ff79c6>“CommunicationUtils.h”</span><span style=color:#ff79c6>
+</span><span style=color:#ff79c6>#include</span> <span style=color:#ff79c6>“FreeIMU.h”</span><span style=color:#ff79c6>
+</span><span style=color:#ff79c6>#include</span> <span style=color:#ff79c6>&lt;Wire.h&gt;</span><span style=color:#ff79c6>
+</span><span style=color:#ff79c6>#include</span> <span style=color:#ff79c6>&lt;SPI.h&gt;</span><span style=color:#ff79c6>
+</span><span style=color:#ff79c6>#include</span> <span style=color:#ff79c6>&lt;Servo.h&gt;</span><span style=color:#ff79c6>
+</span><span style=color:#ff79c6></span><span style=color:#8be9fd>int</span> raw_values[<span style=color:#bd93f9>9</span>];
+Servo myservo1;
+<span style=color:#8be9fd>int</span> pos1 <span style=color:#ff79c6>=</span> <span style=color:#bd93f9>90</span>;
+Servo myservo2;
+<span style=color:#8be9fd>int</span> pos2 <span style=color:#ff79c6>=</span> <span style=color:#bd93f9>90</span>;
+<span style=color:#8be9fd>float</span> ypr[<span style=color:#bd93f9>3</span>]; <span style=color:#6272a4>// yaw pitch roll
+</span><span style=color:#6272a4></span><span style=color:#8be9fd>float</span> val[<span style=color:#bd93f9>9</span>];
 
-    <div class="blog-post-comments">
-        <div id="disqus_thread">
-            <noscript>Please enable JavaScript to view the comments.</noscript>
-        </div>
-    </div>
+<span style=color:#6272a4>// Set the FreeIMU object
+</span><span style=color:#6272a4></span>FreeIMU my3IMU <span style=color:#ff79c6>=</span> FreeIMU();
 
+<span style=color:#8be9fd>void</span> <span style=color:#50fa7b>setup</span>() {
+  Serial.begin(<span style=color:#bd93f9>115200</span>);
+  Wire.begin();
+  myservo1.attach(<span style=color:#bd93f9>9</span>);
+  myservo2.attach(<span style=color:#bd93f9>8</span>);
+  delay(<span style=color:#bd93f9>5</span>);
+  my3IMU.init(); <span style=color:#6272a4>// the parameter enable or disable fast mode
+</span><span style=color:#6272a4></span>  delay(<span style=color:#bd93f9>5</span>);
+}
 
-
-        
-          <div id="footer-post-container">
-  <div id="footer-post">
-
-    <div id="nav-footer" style="display: none">
-      <ul>
-         
-          <li><a href="/">Home</a></li>
-         
-          <li><a href="/categories/">Category</a></li>
-         
-          <li><a href="/archives/">Blog</a></li>
-         
-          <li><a href="/about/">About</a></li>
-         
-          <li><a href="https://github.com/mozanunal">Projects</a></li>
-         
-          <li><a href="https://scholar.google.com/citations?user=u_HbXUUAAAAJ&hl=en">Publications</a></li>
-         
-          <li><a href="/search/">Search</a></li>
-        
-      </ul>
-    </div>
-
-    <div id="toc-footer" style="display: none">
-      
-    </div>
-
-    <div id="share-footer" style="display: none">
-      <ul>
-  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=https://mozanunal.com/2014/10/imu-ile-kamera-gimbal-kontrolu/"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="https://twitter.com/share?url=https://mozanunal.com/2014/10/imu-ile-kamera-gimbal-kontrolu/&text=[TR] IMU ile Kamera Gimbalı Kontrolü"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=https://mozanunal.com/2014/10/imu-ile-kamera-gimbal-kontrolu/&title=[TR] IMU ile Kamera Gimbalı Kontrolü"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https://mozanunal.com/2014/10/imu-ile-kamera-gimbal-kontrolu/&is_video=false&description=[TR] IMU ile Kamera Gimbalı Kontrolü"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="mailto:?subject=[TR] IMU ile Kamera Gimbalı Kontrolü&body=Check out this article: https://mozanunal.com/2014/10/imu-ile-kamera-gimbal-kontrolu/"><i class="fas fa-envelope fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="https://getpocket.com/save?url=https://mozanunal.com/2014/10/imu-ile-kamera-gimbal-kontrolu/&title=[TR] IMU ile Kamera Gimbalı Kontrolü"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://reddit.com/submit?url=https://mozanunal.com/2014/10/imu-ile-kamera-gimbal-kontrolu/&title=[TR] IMU ile Kamera Gimbalı Kontrolü"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=https://mozanunal.com/2014/10/imu-ile-kamera-gimbal-kontrolu/&title=[TR] IMU ile Kamera Gimbalı Kontrolü"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://digg.com/submit?url=https://mozanunal.com/2014/10/imu-ile-kamera-gimbal-kontrolu/&title=[TR] IMU ile Kamera Gimbalı Kontrolü"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://www.tumblr.com/share/link?url=https://mozanunal.com/2014/10/imu-ile-kamera-gimbal-kontrolu/&name=[TR] IMU ile Kamera Gimbalı Kontrolü&description=&lt;p&gt;&lt;strong&gt;Herkese Merhabalar!&lt;/strong&gt;&lt;br&gt; Bu projemin amacı MPU6050 ile hesaplanan pitch ve roll açıları ile 2 eksenli bir gimbalı kontrol etmek. MPU6050 açılarını hesaplamak için FreeIMU kütüphanesini kullandım. &lt;a href=&quot;https://www.varesano.net/projects/hardware/FreeIMU&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Buradan indirebilirsiniz&lt;/a&gt;. Aldığım açılar belli bir değerden büyükse servoların açılarını kademeli olarak azalttım veya artırdım."><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
-</ul>
-
-    </div>
-
-    <div id="actions-footer">
-        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
-        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
-        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> Share</a>
-        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
-    </div>
-
-  </div>
-</div>
-
-        
-        <footer id="footer">
-  <div class="footer-left">
-    Copyright &copy; 2023 Mehmet Ozan Ünal
-  </div>
-  <div class="footer-right">
-    <nav>
-      <ul>
-         
-          <li><a href="/">Home</a></li>
-         
-          <li><a href="/categories/">Category</a></li>
-         
-          <li><a href="/archives/">Blog</a></li>
-         
-          <li><a href="/about/">About</a></li>
-         
-          <li><a href="https://github.com/mozanunal">Projects</a></li>
-         
-          <li><a href="https://scholar.google.com/citations?user=u_HbXUUAAAAJ&hl=en">Publications</a></li>
-         
-          <li><a href="/search/">Search</a></li>
-        
-      </ul>
-    </nav>
-  </div>
+<span style=color:#8be9fd>void</span> <span style=color:#50fa7b>loop</span>(){  
+  my3IMU.getYawPitchRoll(ypr);
+  Serial.print(“<span style=color:#8be9fd;font-style:italic>Yaw</span>: “);
+  Serial.print(ypr[<span style=color:#bd93f9>0</span>]);
+  Serial.print(“ <span style=color:#8be9fd;font-style:italic>Pitch</span>: “);
+  Serial.print(ypr[<span style=color:#bd93f9>1</span>]);
+  Serial.print(“ <span style=color:#8be9fd;font-style:italic>Roll</span>: “);
+  Serial.print(ypr[<span style=color:#bd93f9>2</span>]);
+  Serial.println(“”);
+    
+  <span style=color:#ff79c6>if</span>(ypr[<span style=color:#bd93f9>1</span>]<span style=color:#ff79c6>&gt;</span><span style=color:#bd93f9>20</span>)
+  {
+    <span style=color:#ff79c6>if</span>(pos1<span style=color:#ff79c6>&lt;</span><span style=color:#bd93f9>150</span>)
+    {
+    pos1<span style=color:#ff79c6>=</span>pos1<span style=color:#ff79c6>+</span><span style=color:#bd93f9>2</span>;
+    myservo1.write(pos1);
+    delay(<span style=color:#bd93f9>15</span>);
+    }
+  }
+  <span style=color:#ff79c6>else</span> <span style=color:#ff79c6>if</span>(ypr[<span style=color:#bd93f9>1</span>]<span style=color:#ff79c6>&lt;-</span><span style=color:#bd93f9>20</span>)
+  {
+    <span style=color:#ff79c6>if</span>(pos1<span style=color:#ff79c6>&gt;</span><span style=color:#bd93f9>30</span>)
+    {
+    pos1<span style=color:#ff79c6>=</span>pos1<span style=color:#ff79c6>-</span><span style=color:#bd93f9>2</span>;
+    myservo1.write(pos1);
+    delay(<span style=color:#bd93f9>15</span>);
+    }
+  }
+  <span style=color:#ff79c6>if</span>(ypr[<span style=color:#bd93f9>2</span>]<span style=color:#ff79c6>&gt;</span><span style=color:#bd93f9>20</span>)
+  {
+    <span style=color:#ff79c6>if</span>(pos2<span style=color:#ff79c6>&gt;</span><span style=color:#bd93f9>30</span>)
+    {
+    pos2<span style=color:#ff79c6>=</span>pos2<span style=color:#ff79c6>-</span><span style=color:#bd93f9>2</span>;
+    myservo2.write(pos2);
+    delay(<span style=color:#bd93f9>15</span>);
+    }
+  }
+  <span style=color:#ff79c6>if</span>(ypr[<span style=color:#bd93f9>2</span>]<span style=color:#ff79c6>&lt;-</span><span style=color:#bd93f9>20</span>)
+  {
+    <span style=color:#ff79c6>if</span>(pos2<span style=color:#ff79c6>&lt;</span><span style=color:#bd93f9>150</span>)
+    {
+    pos2<span style=color:#ff79c6>=</span>pos2<span style=color:#ff79c6>+</span><span style=color:#bd93f9>2</span>;
+    myservo2.write(pos2);
+    delay(<span style=color:#bd93f9>15</span>);
+    }
+  }
+  delay(<span style=color:#bd93f9>15</span>);
+}
+</code></pre></div></section>
+<footer class="mt-12 flex flex-wrap">
+<a class="mr-1.5 mb-1.5 rounded-lg bg-black/[3%] px-5 py-2 no-underline dark:bg-white/[8%]" href=https://mozanunal.com/tags/electronics>Electronics</a>
+<a class="mr-1.5 mb-1.5 rounded-lg bg-black/[3%] px-5 py-2 no-underline dark:bg-white/[8%]" href=https://mozanunal.com/tags/arduino>Arduino</a>
+<a class="mr-1.5 mb-1.5 rounded-lg bg-black/[3%] px-5 py-2 no-underline dark:bg-white/[8%]" href=https://mozanunal.com/tags/hava-ara%C3%A7lar%C4%B1>Hava Araçları</a>
+<a class="mr-1.5 mb-1.5 rounded-lg bg-black/[3%] px-5 py-2 no-underline dark:bg-white/[8%]" href=https://mozanunal.com/tags/mpu6050>mpu6050</a>
+<a class="mr-1.5 mb-1.5 rounded-lg bg-black/[3%] px-5 py-2 no-underline dark:bg-white/[8%]" href=https://mozanunal.com/tags/arduino-servo-kontrol>arduino servo kontrol</a>
+<a class="mr-1.5 mb-1.5 rounded-lg bg-black/[3%] px-5 py-2 no-underline dark:bg-white/[8%]" href=https://mozanunal.com/tags/gimbal-kontrol>gimbal kontrol</a>
+<a class="mr-1.5 mb-1.5 rounded-lg bg-black/[3%] px-5 py-2 no-underline dark:bg-white/[8%]" href=https://mozanunal.com/tags/imu>IMU</a>
 </footer>
-
-    </div>
-    <!-- styles -->
-<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
-<link rel="stylesheet" href="/lib/justified-gallery/css/justifiedGallery.min.css">
-
-    <!-- jquery -->
-<script src="/lib/jquery/jquery.min.js"></script>
-<script src="/lib/justified-gallery/js/jquery.justifiedGallery.min.js"></script>
-<script src="/js/main.js"></script>
-<!-- search -->
-
-<!-- Google Analytics -->
-
-    <script type="text/javascript">
-        (function(i,s,o,g,r,a,m) {i['GoogleAnalyticsObject']=r;i[r]=i[r]||function() {
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-        ga('create', 'UA-60655125-2', 'auto');
-        ga('send', 'pageview');
-    </script>
-
-<!-- Baidu Analytics -->
-
-<!-- Disqus Comments -->
-
-    <script type="text/javascript">
-        var disqus_shortname = 'mozanunal-com';
-
-        (function(){
-            var dsq = document.createElement('script');
-            dsq.type = 'text/javascript';
-            dsq.async = true;
-            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-        }());
-    </script>
-
-
+<nav class="mt-24 flex rounded-lg bg-black/[3%] text-lg dark:bg-white/[8%]">
+<a class="flex w-1/2 items-center rounded-l-md p-6 pr-3 no-underline hover:bg-black/[2%] dark:hover:bg-white/[3%]" href=https://mozanunal.com/2014/10/bilgisayardan-gimbal-kontrolu/><span class=mr-1.5>←</span><span>[TR] Bilgisayardan Gimbal Kontrolü</span></a>
+<a class="ml-auto flex w-1/2 items-center justify-end rounded-r-md p-6 pl-3 no-underline hover:bg-black/[2%] dark:hover:bg-white/[3%]" href=https://mozanunal.com/2014/10/yuz-tanma-ile-guvenlik-passface/><span>[TR] Yüz Tanıma ile Güvenlik (Passface)</span><span class=ml-1.5>→</span></a>
+</nav>
+</article>
+</main>
+<footer class="opaco mx-auto flex h-[5rem] max-w-3xl items-center px-8 text-[0.9em] opacity-60">
+<div class=mr-auto>
+&copy; 2023
+<a class=link href=https://mozanunal.com/>Mehmet Ozan Ünal</a>
+</div>
+<a class="link mx-6" href=https://gohugo.io/ rel=noopener target=_blank>Powered by Hugo️️</a>️
+<a class=link href=https://github.com/nanxiaobei/hugo-paper rel=noopener target=_blank>Theme Paper</a>
+</footer>
 </body>
 </html>

@@ -1,292 +1,104 @@
-<!DOCTYPE html>
-<html lang=en>
-<head><meta name="generator" content="Hexo 3.8.0">
-    <!-- so meta -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="HandheldFriendly" content="True">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="description" content="İlk oyun denememi görsel programlayla çalışan Game Maker ile yaptım. Android oyunu olarak başladım fakat lisans satın almak gerektiğini öğrenince bilgisayar oyunu olarak kaldı. Bu benim ilk oyunumdur.">
-<meta name="keywords" content="Android Programlama ve Oyun,Gamemaker,gamemaker ile oyun yapımı">
-<meta property="og:type" content="article">
+<!doctype html><html class="not-ready text-sm lg:text-base" style=--bg:#fbfbfb lang=en>
+<head>
+<meta charset=utf-8>
+<meta http-equiv=x-ua-compatible content="IE=edge">
+<meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
+<title>[TR] Oyun (First Flight) - Mehmet Ozan Ünal</title>
+<meta name=theme-color>
+<meta name=description content="İlk oyun denememi görsel programlayla çalışan Game Maker ile yaptım. Android oyunu olarak başladım fakat lisans satın almak gerektiğini öğrenince bilgisayar oyunu olarak kaldı. Bu benim ilk oyunumdur. İsmi &ldquo;First Flight&rdquo; ilk defa uçan bir kuşun başına gelenlerden oluşuyor (uçaklar, füzeler, kartallar). Ona yardım edenler de var tabi ki Angry Birds :D. Umarım beğenirsiniz. Tekrar görüşmek üzere&mldr;
+Oyunumu buradan indirebilirsiniz
+  ">
+<meta name=author content="Mehmet Ozan Ünal">
+<link rel="preload stylesheet" as=style href=https://mozanunal.com/main.min.css>
+<link rel=preload as=image href=https://mozanunal.com/theme.png>
+<link rel=preload as=image href="https://www.gravatar.com/avatar/998cbd3ab655239d8be787580cce0415?s=160&d=identicon">
+<link rel=preload as=image href=https://mozanunal.com/twitter.svg>
+<link rel=preload as=image href=https://mozanunal.com/github.svg>
+<link rel=icon href=https://mozanunal.com/favicon.ico>
+<link rel=apple-touch-icon href=https://mozanunal.com/apple-touch-icon.png>
+<meta name=generator content="Hugo 0.92.2">
+<script type=application/javascript>var doNotTrack=!1;doNotTrack||(window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga('create','G-N3F3XLS474','auto'),ga('send','pageview'))</script>
+<script async src=https://www.google-analytics.com/analytics.js></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-N3F3XLS474"></script>
+<script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-N3F3XLS474',{anonymize_ip:!1})}</script>
 <meta property="og:title" content="[TR] Oyun (First Flight)">
-<meta property="og:url" content="https://mozanunal.com/2014/05/oyunfirst-flight/index.html">
-<meta property="og:site_name" content="Mehmet Ozan Ünal">
-<meta property="og:description" content="İlk oyun denememi görsel programlayla çalışan Game Maker ile yaptım. Android oyunu olarak başladım fakat lisans satın almak gerektiğini öğrenince bilgisayar oyunu olarak kaldı. Bu benim ilk oyunumdur.">
-<meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2023-01-18T11:16:34.257Z">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="[TR] Oyun (First Flight)">
-<meta name="twitter:description" content="İlk oyun denememi görsel programlayla çalışan Game Maker ile yaptım. Android oyunu olarak başladım fakat lisans satın almak gerektiğini öğrenince bilgisayar oyunu olarak kaldı. Bu benim ilk oyunumdur.">
-    
-    
-        
-          
-              <link rel="shortcut icon" href="/images/favicon.ico">
-          
-        
-        
-          
-            <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
-          
-        
-        
-          
-            <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
-          
-        
-    
-    <!-- title -->
-    <title>[TR] Oyun (First Flight)</title>
-    <!-- styles -->
-    <link rel="stylesheet" href="/css/style.css">
-    <!-- persian styles -->
-    
-      <link rel="stylesheet" href="/css/rtl.css">
-    
-    <!-- rss -->
-    
-    
-      <link rel="alternate" href="/atom" title="Mehmet Ozan Ünal" type="application/atom+xml">
-    
-    <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/7ecf5c9db13693c2c7062ad3f/0e72f59463de1883a2a166735.js");</script>
+<meta property="og:description" content="İlk oyun denememi görsel programlayla çalışan Game Maker ile yaptım. Android oyunu olarak başladım fakat lisans satın almak gerektiğini öğrenince bilgisayar oyunu olarak kaldı. Bu benim ilk oyunumdur. İsmi &ldquo;First Flight&rdquo; ilk defa uçan bir kuşun başına gelenlerden oluşuyor (uçaklar, füzeler, kartallar). Ona yardım edenler de var tabi ki Angry Birds :D. Umarım beğenirsiniz. Tekrar görüşmek üzere&mldr;
+Oyunumu buradan indirebilirsiniz
+  ">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://mozanunal.com/2014/05/oyunfirst-flight/"><meta property="article:section" content="posts">
+<meta property="article:published_time" content="2014-05-27T06:42:00+00:00">
+<meta property="article:modified_time" content="2014-05-27T06:42:00+00:00">
+<meta itemprop=name content="[TR] Oyun (First Flight)">
+<meta itemprop=description content="İlk oyun denememi görsel programlayla çalışan Game Maker ile yaptım. Android oyunu olarak başladım fakat lisans satın almak gerektiğini öğrenince bilgisayar oyunu olarak kaldı. Bu benim ilk oyunumdur. İsmi &ldquo;First Flight&rdquo; ilk defa uçan bir kuşun başına gelenlerden oluşuyor (uçaklar, füzeler, kartallar). Ona yardım edenler de var tabi ki Angry Birds :D. Umarım beğenirsiniz. Tekrar görüşmek üzere&mldr;
+Oyunumu buradan indirebilirsiniz
+  "><meta itemprop=datePublished content="2014-05-27T06:42:00+00:00">
+<meta itemprop=dateModified content="2014-05-27T06:42:00+00:00">
+<meta itemprop=wordCount content="60">
+<meta itemprop=keywords content="Android Programlama ve Oyun,Gamemaker,gamemaker ile oyun yapımı,">
+<meta name=twitter:card content="summary">
+<meta name=twitter:title content="[TR] Oyun (First Flight)">
+<meta name=twitter:description content="İlk oyun denememi görsel programlayla çalışan Game Maker ile yaptım. Android oyunu olarak başladım fakat lisans satın almak gerektiğini öğrenince bilgisayar oyunu olarak kaldı. Bu benim ilk oyunumdur. İsmi &ldquo;First Flight&rdquo; ilk defa uçan bir kuşun başına gelenlerden oluşuyor (uçaklar, füzeler, kartallar). Ona yardım edenler de var tabi ki Angry Birds :D. Umarım beğenirsiniz. Tekrar görüşmek üzere&mldr;
+Oyunumu buradan indirebilirsiniz
+  ">
 </head>
-
-<body class="max-width mx-auto px3 ltr">    
-      <div id="header-post">
-  <a id="menu-icon" href="#"><i class="fas fa-bars fa-lg"></i></a>
-  <a id="menu-icon-tablet" href="#"><i class="fas fa-bars fa-lg"></i></a>
-  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
-  <span id="menu">
-    <span id="nav">
-      <ul>
-         
-          <li><a href="/">Home</a></li>
-         
-          <li><a href="/categories/">Category</a></li>
-         
-          <li><a href="/archives/">Blog</a></li>
-         
-          <li><a href="/about/">About</a></li>
-         
-          <li><a href="https://github.com/mozanunal">Projects</a></li>
-         
-          <li><a href="https://scholar.google.com/citations?user=u_HbXUUAAAAJ&hl=en">Publications</a></li>
-         
-          <li><a href="/search/">Search</a></li>
-        
-      </ul>
-    </span>
-    <br>
-    <span id="actions">
-      <ul>
-        
-        <li><a class="icon" href="/2014/09/ses-kontrollu-robotik-el/"><i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i></a></li>
-        
-        
-        <li><a class="icon" href="/2014/05/c-gercek-zamanl-grafik-cizme-program/"><i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
-        
-        <li><a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
-        <li><a class="icon" href="#"><i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
-      </ul>
-      <span id="i-prev" class="info" style="display:none;">Previous post</span>
-      <span id="i-next" class="info" style="display:none;">Next post</span>
-      <span id="i-top" class="info" style="display:none;">Back to top</span>
-      <span id="i-share" class="info" style="display:none;">Share post</span>
-    </span>
-    <br>
-    <div id="share" style="display: none">
-      <ul>
-  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=https://mozanunal.com/2014/05/oyunfirst-flight/"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="https://twitter.com/share?url=https://mozanunal.com/2014/05/oyunfirst-flight/&text=[TR] Oyun (First Flight)"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=https://mozanunal.com/2014/05/oyunfirst-flight/&title=[TR] Oyun (First Flight)"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https://mozanunal.com/2014/05/oyunfirst-flight/&is_video=false&description=[TR] Oyun (First Flight)"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="mailto:?subject=[TR] Oyun (First Flight)&body=Check out this article: https://mozanunal.com/2014/05/oyunfirst-flight/"><i class="fas fa-envelope " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="https://getpocket.com/save?url=https://mozanunal.com/2014/05/oyunfirst-flight/&title=[TR] Oyun (First Flight)"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://reddit.com/submit?url=https://mozanunal.com/2014/05/oyunfirst-flight/&title=[TR] Oyun (First Flight)"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=https://mozanunal.com/2014/05/oyunfirst-flight/&title=[TR] Oyun (First Flight)"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://digg.com/submit?url=https://mozanunal.com/2014/05/oyunfirst-flight/&title=[TR] Oyun (First Flight)"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://www.tumblr.com/share/link?url=https://mozanunal.com/2014/05/oyunfirst-flight/&name=[TR] Oyun (First Flight)&description="><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
-</ul>
-
-    </div>
-    <div id="toc">
-      
-    </div>
-  </span>
+<body class="text-black duration-200 ease-out dark:text-white">
+<header class="mx-auto flex h-[5rem] max-w-3xl px-8 lg:justify-center">
+<div class="relative z-50 mr-auto flex items-center">
+<a class="-translate-x-[1px] -translate-y-0.5 text-3xl font-bold" href=https://mozanunal.com/>Mehmet Ozan Ünal</a>
+<div class="btn-dark text-[0] ml-6 h-6 w-6 shrink-0 cursor-pointer [background:url(./theme.svg)_left_center/cover_no-repeat] dark:invert dark:[background-position:right]" role=button aria-label=Dark></div>
 </div>
-
-    
-    <div class="content index py4">
-        
-        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-  <header>
-    
-    <h1 class="posttitle" itemprop="name headline">
-        [TR] Oyun (First Flight)
-    </h1>
-
-
-
-    <div class="meta">
-      <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
-        <span itemprop="name">Mehmet Ozan Ünal</span>
-      </span>
-      
-    <div class="postdate">
-      
-        <time datetime="2014-05-27T03:42:00.000Z" itemprop="datePublished">2014-05-27</time>
-        
-      
-    </div>
-
-
-      
-    <div class="article-category">
-        <i class="fas fa-archive"></i>
-        <a class="category-link" href="/categories/Coding/">Coding</a>
-    </div>
-
-
-    </div>
-  </header>
-  
-
-  <div class="content" itemprop="articleBody">
-    <p>İlk oyun denememi görsel programlayla çalışan Game Maker ile yaptım. Android oyunu olarak başladım fakat lisans satın almak gerektiğini öğrenince bilgisayar oyunu olarak kaldı. Bu benim ilk oyunumdur. İsmi “First Flight” ilk defa uçan bir kuşun başına gelenlerden oluşuyor (uçaklar, füzeler, kartallar). Ona yardım edenler de var tabi ki Angry Birds :D. Umarım beğenirsiniz. Tekrar görüşmek üzere…<br> <a href="https://docs.google.com/file/d/0B5j__Lyt9ozbOFBqa0JEQjI4NjA/edit" target="_blank" rel="noopener">Oyunumu buradan indirebilirsiniz</a></p>
-<center><div class="video-container"><iframe src="//www.youtube.com/embed/PL8fSl5TgSU" frameborder="0" allowfullscreen></iframe></div></center>
-
-  </div>
-</article>
-
-    <div class="blog-post-comments">
-        <div id="disqus_thread">
-            <noscript>Please enable JavaScript to view the comments.</noscript>
-        </div>
-    </div>
-
-
-
-        
-          <div id="footer-post-container">
-  <div id="footer-post">
-
-    <div id="nav-footer" style="display: none">
-      <ul>
-         
-          <li><a href="/">Home</a></li>
-         
-          <li><a href="/categories/">Category</a></li>
-         
-          <li><a href="/archives/">Blog</a></li>
-         
-          <li><a href="/about/">About</a></li>
-         
-          <li><a href="https://github.com/mozanunal">Projects</a></li>
-         
-          <li><a href="https://scholar.google.com/citations?user=u_HbXUUAAAAJ&hl=en">Publications</a></li>
-         
-          <li><a href="/search/">Search</a></li>
-        
-      </ul>
-    </div>
-
-    <div id="toc-footer" style="display: none">
-      
-    </div>
-
-    <div id="share-footer" style="display: none">
-      <ul>
-  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=https://mozanunal.com/2014/05/oyunfirst-flight/"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="https://twitter.com/share?url=https://mozanunal.com/2014/05/oyunfirst-flight/&text=[TR] Oyun (First Flight)"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=https://mozanunal.com/2014/05/oyunfirst-flight/&title=[TR] Oyun (First Flight)"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https://mozanunal.com/2014/05/oyunfirst-flight/&is_video=false&description=[TR] Oyun (First Flight)"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="mailto:?subject=[TR] Oyun (First Flight)&body=Check out this article: https://mozanunal.com/2014/05/oyunfirst-flight/"><i class="fas fa-envelope fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="https://getpocket.com/save?url=https://mozanunal.com/2014/05/oyunfirst-flight/&title=[TR] Oyun (First Flight)"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://reddit.com/submit?url=https://mozanunal.com/2014/05/oyunfirst-flight/&title=[TR] Oyun (First Flight)"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=https://mozanunal.com/2014/05/oyunfirst-flight/&title=[TR] Oyun (First Flight)"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://digg.com/submit?url=https://mozanunal.com/2014/05/oyunfirst-flight/&title=[TR] Oyun (First Flight)"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://www.tumblr.com/share/link?url=https://mozanunal.com/2014/05/oyunfirst-flight/&name=[TR] Oyun (First Flight)&description="><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
-</ul>
-
-    </div>
-
-    <div id="actions-footer">
-        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
-        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
-        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> Share</a>
-        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
-    </div>
-
-  </div>
+<div class="btn-menu relative z-50 -mr-8 flex h-[5rem] w-[5rem] shrink-0 cursor-pointer flex-col items-center justify-center gap-2.5 lg:hidden" role=button aria-label=Menu></div>
+<script>const htmlClass=document.documentElement.classList;setTimeout(()=>{htmlClass.remove('not-ready')},10);const btnMenu=document.querySelector('.btn-menu');btnMenu.addEventListener('click',()=>{htmlClass.toggle('open')});const metaTheme=document.querySelector('meta[name="theme-color"]'),lightBg=`"#fbfbfb"`.replace(/"/g,''),setDark=a=>{metaTheme.setAttribute('content',a?'#000':lightBg),htmlClass[a?'add':'remove']('dark'),localStorage.setItem('dark',a)},darkScheme=window.matchMedia('(prefers-color-scheme: dark)');if(htmlClass.contains('dark'))setDark(!0);else{const a=localStorage.getItem('dark');setDark(a?a==='true':darkScheme.matches)}darkScheme.addEventListener('change',a=>{setDark(a.matches)});const btnDark=document.querySelector('.btn-dark');btnDark.addEventListener('click',()=>{setDark(localStorage.getItem('dark')!=='true')})</script>
+<div class="nav-wrapper fixed inset-x-0 top-full z-40 flex h-full select-none flex-col justify-center pb-16 duration-200 dark:bg-black lg:static lg:h-auto lg:flex-row lg:!bg-transparent lg:pb-0 lg:transition-none">
+<nav class="lg:ml-12 lg:flex lg:flex-row lg:items-center lg:space-x-6">
+<a class="block text-center text-2xl leading-[5rem] lg:text-base lg:font-normal" href=/about/>About</a>
+<a class="block text-center text-2xl leading-[5rem] lg:text-base lg:font-normal" href=/contact/>Contact</a>
+</nav>
+<nav class="mt-12 flex justify-center space-x-10 dark:invert lg:mt-0 lg:ml-12 lg:items-center lg:space-x-6">
+<a class="h-8 w-8 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6" style=--url:url(./twitter.svg) href=https://twitter.com/MOzanUnal target=_blank rel=me>
+twitter
+</a>
+<a class="h-8 w-8 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6" style=--url:url(./github.svg) href=https://github.com/mozanunal target=_blank rel=me>
+github
+</a>
+</nav>
 </div>
-
-        
-        <footer id="footer">
-  <div class="footer-left">
-    Copyright &copy; 2023 Mehmet Ozan Ünal
-  </div>
-  <div class="footer-right">
-    <nav>
-      <ul>
-         
-          <li><a href="/">Home</a></li>
-         
-          <li><a href="/categories/">Category</a></li>
-         
-          <li><a href="/archives/">Blog</a></li>
-         
-          <li><a href="/about/">About</a></li>
-         
-          <li><a href="https://github.com/mozanunal">Projects</a></li>
-         
-          <li><a href="https://scholar.google.com/citations?user=u_HbXUUAAAAJ&hl=en">Publications</a></li>
-         
-          <li><a href="/search/">Search</a></li>
-        
-      </ul>
-    </nav>
-  </div>
+</header>
+<main class="prose prose-neutral relative mx-auto min-h-[calc(100%-10rem)] max-w-3xl px-8 pt-16 pb-24 dark:prose-invert">
+<article>
+<header class=mb-20>
+<h1 class="!my-0 pb-2.5">[TR] Oyun (First Flight)</h1>
+<div class="text-sm opacity-60">
+<time>May 27, 2014</time>
+<span class=mx-1>&#183;</span>
+<span>Mehmet Ozan Ünal</span>
+</div>
+</header>
+<section><p>İlk oyun denememi görsel programlayla çalışan Game Maker ile yaptım. Android oyunu olarak başladım fakat lisans satın almak gerektiğini öğrenince bilgisayar oyunu olarak kaldı. Bu benim ilk oyunumdur. İsmi &ldquo;First Flight&rdquo; ilk defa uçan bir kuşun başına gelenlerden oluşuyor (uçaklar, füzeler, kartallar). Ona yardım edenler de var tabi ki Angry Birds :D. Umarım beğenirsiniz. Tekrar görüşmek üzere&mldr;<br>
+ <a href=https://docs.google.com/file/d/0B5j__Lyt9ozbOFBqa0JEQjI4NjA/edit>Oyunumu buradan indirebilirsiniz</a></p>
+<div style=position:relative;padding-bottom:56.25%;height:0;overflow:hidden>
+<iframe src=https://www.youtube-nocookie.com/embed/PL8fSl5TgSU style=position:absolute;top:0;left:0;width:100%;height:100%;border:0 allowfullscreen title="YouTube Video"></iframe>
+</div>
+</section>
+<footer class="mt-12 flex flex-wrap">
+<a class="mr-1.5 mb-1.5 rounded-lg bg-black/[3%] px-5 py-2 no-underline dark:bg-white/[8%]" href=https://mozanunal.com/tags/android-programlama-ve-oyun>Android Programlama ve Oyun</a>
+<a class="mr-1.5 mb-1.5 rounded-lg bg-black/[3%] px-5 py-2 no-underline dark:bg-white/[8%]" href=https://mozanunal.com/tags/gamemaker>Gamemaker</a>
+<a class="mr-1.5 mb-1.5 rounded-lg bg-black/[3%] px-5 py-2 no-underline dark:bg-white/[8%]" href=https://mozanunal.com/tags/gamemaker-ile-oyun-yap%C4%B1m%C4%B1>gamemaker ile oyun yapımı</a>
 </footer>
-
-    </div>
-    <!-- styles -->
-<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
-<link rel="stylesheet" href="/lib/justified-gallery/css/justifiedGallery.min.css">
-
-    <!-- jquery -->
-<script src="/lib/jquery/jquery.min.js"></script>
-<script src="/lib/justified-gallery/js/jquery.justifiedGallery.min.js"></script>
-<script src="/js/main.js"></script>
-<!-- search -->
-
-<!-- Google Analytics -->
-
-    <script type="text/javascript">
-        (function(i,s,o,g,r,a,m) {i['GoogleAnalyticsObject']=r;i[r]=i[r]||function() {
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-        ga('create', 'UA-60655125-2', 'auto');
-        ga('send', 'pageview');
-    </script>
-
-<!-- Baidu Analytics -->
-
-<!-- Disqus Comments -->
-
-    <script type="text/javascript">
-        var disqus_shortname = 'mozanunal-com';
-
-        (function(){
-            var dsq = document.createElement('script');
-            dsq.type = 'text/javascript';
-            dsq.async = true;
-            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-        }());
-    </script>
-
-
+<nav class="mt-24 flex rounded-lg bg-black/[3%] text-lg dark:bg-white/[8%]">
+<a class="flex w-1/2 items-center rounded-l-md p-6 pr-3 no-underline hover:bg-black/[2%] dark:hover:bg-white/[3%]" href=https://mozanunal.com/2014/09/ses-kontrollu-robotik-el/><span class=mr-1.5>←</span><span>[TR] Ses Kontrollü Robotik El</span></a>
+<a class="ml-auto flex w-1/2 items-center justify-end rounded-r-md p-6 pl-3 no-underline hover:bg-black/[2%] dark:hover:bg-white/[3%]" href=https://mozanunal.com/2014/05/c-gercek-zamanl-grafik-cizme-program/><span>[TR] C# Gerçek Zamanlı Grafik Çizme Programı</span><span class=ml-1.5>→</span></a>
+</nav>
+</article>
+</main>
+<footer class="opaco mx-auto flex h-[5rem] max-w-3xl items-center px-8 text-[0.9em] opacity-60">
+<div class=mr-auto>
+&copy; 2023
+<a class=link href=https://mozanunal.com/>Mehmet Ozan Ünal</a>
+</div>
+<a class="link mx-6" href=https://gohugo.io/ rel=noopener target=_blank>Powered by Hugo️️</a>️
+<a class=link href=https://github.com/nanxiaobei/hugo-paper rel=noopener target=_blank>Theme Paper</a>
+</footer>
 </body>
 </html>

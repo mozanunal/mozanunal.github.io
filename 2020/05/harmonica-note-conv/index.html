@@ -1,317 +1,257 @@
-<!DOCTYPE html>
-<html lang=en>
-<head><meta name="generator" content="Hexo 3.8.0">
-    <!-- so meta -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="HandheldFriendly" content="True">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="description" content="Harmonica Note Converter aims to create a python library to convert notes or tabs for different kind of harmonicas.It is based on musthe. https://github.com/mozanunal/harmonica-note-converter StorySom">
-<meta name="keywords" content="harmonica, note conventer, music theory">
-<meta property="og:type" content="article">
+<!doctype html><html class="not-ready text-sm lg:text-base" style=--bg:#fbfbfb lang=en>
+<head>
+<meta charset=utf-8>
+<meta http-equiv=x-ua-compatible content="IE=edge">
+<meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
+<title>Harmonica Note Converter - Mehmet Ozan Ünal</title>
+<meta name=theme-color>
+<meta name=description content="Harmonica Note Converter aims to create a python library to convert notes or tabs for different kind of harmonicas. It is based on musthe.
+https://github.com/mozanunal/harmonica-note-converter
+Story Some of you know that I am an ameteur harmonica player and I love harmonicas. I usually play diatonic harmonicas but last time I have bought a chromatic harmonica, which has quite different tone and it is hard to find music notes for it.">
+<meta name=author content="Mehmet Ozan Ünal">
+<link rel="preload stylesheet" as=style href=https://mozanunal.com/main.min.css>
+<link rel=preload as=image href=https://mozanunal.com/theme.png>
+<link rel=preload as=image href="https://www.gravatar.com/avatar/998cbd3ab655239d8be787580cce0415?s=160&d=identicon">
+<link rel=preload as=image href=https://mozanunal.com/twitter.svg>
+<link rel=preload as=image href=https://mozanunal.com/github.svg>
+<link rel=icon href=https://mozanunal.com/favicon.ico>
+<link rel=apple-touch-icon href=https://mozanunal.com/apple-touch-icon.png>
+<meta name=generator content="Hugo 0.92.2">
+<script type=application/javascript>var doNotTrack=!1;doNotTrack||(window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga('create','G-N3F3XLS474','auto'),ga('send','pageview'))</script>
+<script async src=https://www.google-analytics.com/analytics.js></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-N3F3XLS474"></script>
+<script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-N3F3XLS474',{anonymize_ip:!1})}</script>
 <meta property="og:title" content="Harmonica Note Converter">
-<meta property="og:url" content="https://mozanunal.com/2020/05/harmonica-note-conv/index.html">
-<meta property="og:site_name" content="Mehmet Ozan Ünal">
-<meta property="og:description" content="Harmonica Note Converter aims to create a python library to convert notes or tabs for different kind of harmonicas.It is based on musthe. https://github.com/mozanunal/harmonica-note-converter StorySom">
-<meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2023-01-18T11:16:34.255Z">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Harmonica Note Converter">
-<meta name="twitter:description" content="Harmonica Note Converter aims to create a python library to convert notes or tabs for different kind of harmonicas.It is based on musthe. https://github.com/mozanunal/harmonica-note-converter StorySom">
-    
-    
-        
-          
-              <link rel="shortcut icon" href="/images/favicon.ico">
-          
-        
-        
-          
-            <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
-          
-        
-        
-          
-            <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
-          
-        
-    
-    <!-- title -->
-    <title>Harmonica Note Converter</title>
-    <!-- styles -->
-    <link rel="stylesheet" href="/css/style.css">
-    <!-- persian styles -->
-    
-      <link rel="stylesheet" href="/css/rtl.css">
-    
-    <!-- rss -->
-    
-    
-      <link rel="alternate" href="/atom" title="Mehmet Ozan Ünal" type="application/atom+xml">
-    
-    <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/7ecf5c9db13693c2c7062ad3f/0e72f59463de1883a2a166735.js");</script>
+<meta property="og:description" content="Harmonica Note Converter aims to create a python library to convert notes or tabs for different kind of harmonicas. It is based on musthe.
+https://github.com/mozanunal/harmonica-note-converter
+Story Some of you know that I am an ameteur harmonica player and I love harmonicas. I usually play diatonic harmonicas but last time I have bought a chromatic harmonica, which has quite different tone and it is hard to find music notes for it.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://mozanunal.com/2020/05/harmonica-note-conv/"><meta property="article:section" content="posts">
+<meta property="article:published_time" content="2020-05-07T23:44:00+00:00">
+<meta property="article:modified_time" content="2020-05-07T23:44:00+00:00">
+<meta itemprop=name content="Harmonica Note Converter">
+<meta itemprop=description content="Harmonica Note Converter aims to create a python library to convert notes or tabs for different kind of harmonicas. It is based on musthe.
+https://github.com/mozanunal/harmonica-note-converter
+Story Some of you know that I am an ameteur harmonica player and I love harmonicas. I usually play diatonic harmonicas but last time I have bought a chromatic harmonica, which has quite different tone and it is hard to find music notes for it."><meta itemprop=datePublished content="2020-05-07T23:44:00+00:00">
+<meta itemprop=dateModified content="2020-05-07T23:44:00+00:00">
+<meta itemprop=wordCount content="852">
+<meta itemprop=keywords content="python,harmonica,">
+<meta name=twitter:card content="summary">
+<meta name=twitter:title content="Harmonica Note Converter">
+<meta name=twitter:description content="Harmonica Note Converter aims to create a python library to convert notes or tabs for different kind of harmonicas. It is based on musthe.
+https://github.com/mozanunal/harmonica-note-converter
+Story Some of you know that I am an ameteur harmonica player and I love harmonicas. I usually play diatonic harmonicas but last time I have bought a chromatic harmonica, which has quite different tone and it is hard to find music notes for it.">
 </head>
-
-<body class="max-width mx-auto px3 ltr">    
-      <div id="header-post">
-  <a id="menu-icon" href="#"><i class="fas fa-bars fa-lg"></i></a>
-  <a id="menu-icon-tablet" href="#"><i class="fas fa-bars fa-lg"></i></a>
-  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
-  <span id="menu">
-    <span id="nav">
-      <ul>
-         
-          <li><a href="/">Home</a></li>
-         
-          <li><a href="/categories/">Category</a></li>
-         
-          <li><a href="/archives/">Blog</a></li>
-         
-          <li><a href="/about/">About</a></li>
-         
-          <li><a href="https://github.com/mozanunal">Projects</a></li>
-         
-          <li><a href="https://scholar.google.com/citations?user=u_HbXUUAAAAJ&hl=en">Publications</a></li>
-         
-          <li><a href="/search/">Search</a></li>
-        
-      </ul>
-    </span>
-    <br>
-    <span id="actions">
-      <ul>
-        
-        <li><a class="icon" href="/2021/10/wpctl-1/"><i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i></a></li>
-        
-        
-        <li><a class="icon" href="/2020/04/imaging-axis/"><i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
-        
-        <li><a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
-        <li><a class="icon" href="#"><i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
-      </ul>
-      <span id="i-prev" class="info" style="display:none;">Previous post</span>
-      <span id="i-next" class="info" style="display:none;">Next post</span>
-      <span id="i-top" class="info" style="display:none;">Back to top</span>
-      <span id="i-share" class="info" style="display:none;">Share post</span>
-    </span>
-    <br>
-    <div id="share" style="display: none">
-      <ul>
-  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=https://mozanunal.com/2020/05/harmonica-note-conv/"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="https://twitter.com/share?url=https://mozanunal.com/2020/05/harmonica-note-conv/&text=Harmonica Note Converter"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=https://mozanunal.com/2020/05/harmonica-note-conv/&title=Harmonica Note Converter"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https://mozanunal.com/2020/05/harmonica-note-conv/&is_video=false&description=Harmonica Note Converter"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="mailto:?subject=Harmonica Note Converter&body=Check out this article: https://mozanunal.com/2020/05/harmonica-note-conv/"><i class="fas fa-envelope " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="https://getpocket.com/save?url=https://mozanunal.com/2020/05/harmonica-note-conv/&title=Harmonica Note Converter"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://reddit.com/submit?url=https://mozanunal.com/2020/05/harmonica-note-conv/&title=Harmonica Note Converter"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=https://mozanunal.com/2020/05/harmonica-note-conv/&title=Harmonica Note Converter"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://digg.com/submit?url=https://mozanunal.com/2020/05/harmonica-note-conv/&title=Harmonica Note Converter"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://www.tumblr.com/share/link?url=https://mozanunal.com/2020/05/harmonica-note-conv/&name=Harmonica Note Converter&description="><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
-</ul>
-
-    </div>
-    <div id="toc">
-      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Story"><span class="toc-number">1.</span> <span class="toc-text">Story</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Getting-Started"><span class="toc-number">2.</span> <span class="toc-text">Getting Started</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Installing"><span class="toc-number">2.1.</span> <span class="toc-text">Installing</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Demo"><span class="toc-number">2.2.</span> <span class="toc-text">Demo</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Use-It-For-Your-Instruments-and-Notes"><span class="toc-number">3.</span> <span class="toc-text">Use It For Your Instruments and Notes</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Defining-Instruments"><span class="toc-number">3.1.</span> <span class="toc-text">Defining Instruments</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Converting-Tab-Between-Instruments"><span class="toc-number">3.2.</span> <span class="toc-text">Converting Tab Between Instruments</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Shifting-the-Tone"><span class="toc-number">4.</span> <span class="toc-text">Shifting the Tone</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Built-With"><span class="toc-number">5.</span> <span class="toc-text">Built With</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Contributing"><span class="toc-number">6.</span> <span class="toc-text">Contributing</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#License"><span class="toc-number">7.</span> <span class="toc-text">License</span></a></li></ol>
-    </div>
-  </span>
+<body class="text-black duration-200 ease-out dark:text-white">
+<header class="mx-auto flex h-[5rem] max-w-3xl px-8 lg:justify-center">
+<div class="relative z-50 mr-auto flex items-center">
+<a class="-translate-x-[1px] -translate-y-0.5 text-3xl font-bold" href=https://mozanunal.com/>Mehmet Ozan Ünal</a>
+<div class="btn-dark text-[0] ml-6 h-6 w-6 shrink-0 cursor-pointer [background:url(./theme.svg)_left_center/cover_no-repeat] dark:invert dark:[background-position:right]" role=button aria-label=Dark></div>
 </div>
+<div class="btn-menu relative z-50 -mr-8 flex h-[5rem] w-[5rem] shrink-0 cursor-pointer flex-col items-center justify-center gap-2.5 lg:hidden" role=button aria-label=Menu></div>
+<script>const htmlClass=document.documentElement.classList;setTimeout(()=>{htmlClass.remove('not-ready')},10);const btnMenu=document.querySelector('.btn-menu');btnMenu.addEventListener('click',()=>{htmlClass.toggle('open')});const metaTheme=document.querySelector('meta[name="theme-color"]'),lightBg=`"#fbfbfb"`.replace(/"/g,''),setDark=a=>{metaTheme.setAttribute('content',a?'#000':lightBg),htmlClass[a?'add':'remove']('dark'),localStorage.setItem('dark',a)},darkScheme=window.matchMedia('(prefers-color-scheme: dark)');if(htmlClass.contains('dark'))setDark(!0);else{const a=localStorage.getItem('dark');setDark(a?a==='true':darkScheme.matches)}darkScheme.addEventListener('change',a=>{setDark(a.matches)});const btnDark=document.querySelector('.btn-dark');btnDark.addEventListener('click',()=>{setDark(localStorage.getItem('dark')!=='true')})</script>
+<div class="nav-wrapper fixed inset-x-0 top-full z-40 flex h-full select-none flex-col justify-center pb-16 duration-200 dark:bg-black lg:static lg:h-auto lg:flex-row lg:!bg-transparent lg:pb-0 lg:transition-none">
+<nav class="lg:ml-12 lg:flex lg:flex-row lg:items-center lg:space-x-6">
+<a class="block text-center text-2xl leading-[5rem] lg:text-base lg:font-normal" href=/about/>About</a>
+<a class="block text-center text-2xl leading-[5rem] lg:text-base lg:font-normal" href=/contact/>Contact</a>
+</nav>
+<nav class="mt-12 flex justify-center space-x-10 dark:invert lg:mt-0 lg:ml-12 lg:items-center lg:space-x-6">
+<a class="h-8 w-8 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6" style=--url:url(./twitter.svg) href=https://twitter.com/MOzanUnal target=_blank rel=me>
+twitter
+</a>
+<a class="h-8 w-8 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6" style=--url:url(./github.svg) href=https://github.com/mozanunal target=_blank rel=me>
+github
+</a>
+</nav>
+</div>
+</header>
+<main class="prose prose-neutral relative mx-auto min-h-[calc(100%-10rem)] max-w-3xl px-8 pt-16 pb-24 dark:prose-invert">
+<article>
+<header class=mb-20>
+<h1 class="!my-0 pb-2.5">Harmonica Note Converter</h1>
+<div class="text-sm opacity-60">
+<time>May 7, 2020</time>
+<span class=mx-1>&#183;</span>
+<span>Mehmet Ozan Ünal</span>
+</div>
+</header>
+<section><p><strong>Harmonica Note Converter</strong> aims to create a python library to convert notes or tabs for different kind of harmonicas.
+It is based on <a href=https://github.com/gciruelos/musthe>musthe</a>.</p>
+<p><a href=https://github.com/mozanunal/harmonica-note-converter>https://github.com/mozanunal/harmonica-note-converter</a></p>
+<h2 id=story>Story</h2>
+<p>Some of you know that I am an ameteur harmonica player and I love harmonicas. I usually play diatonic harmonicas but last time I have bought a chromatic harmonica, which has quite different tone and it is hard to find music notes for it.</p>
+<p>I am not the best at playing instruments. However, I am good at coding and music theory. That&rsquo;s why I decide to develop a tool to convert music notes for any instrument to notes for my harmonicas. I also create an modular structure to define new instruments.</p>
+<h2 id=getting-started>Getting Started</h2>
+<h3 id=installing>Installing</h3>
+<p>First, The source code of the project should be cloned to your PC.</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sh data-lang=sh>git clone https://github.com/mozanunal/harmonica-note-converter
+</code></pre></div><h3 id=demo>Demo</h3>
+<p>To test this project in your computer, you should run following commands.</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sh data-lang=sh><span style=color:#8be9fd;font-style:italic>cd</span> harmonica-note-converter
+python3 test.py
+<span style=color:#6272a4>#python test.py</span>
+</code></pre></div><p>It is a video to demonstrate the tone shift feature of my code. It is quite easy to use. I suggest you to have a look in this link and test the script with following code. See you!</p>
+<div style=position:relative;padding-bottom:56.25%;height:0;overflow:hidden>
+<iframe src=https://www.youtube-nocookie.com/embed/loASU4cOY7c style=position:absolute;top:0;left:0;width:100%;height:100%;border:0 allowfullscreen title="YouTube Video"></iframe>
+</div>
+<h2 id=use-it-for-your-instruments-and-notes>Use It For Your Instruments and Notes</h2>
+<h3 id=defining-instruments>Defining Instruments</h3>
+<p>Example code of C tone diatonic harmonica. You should add your instrument to harmonica folder and add to init file.</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python>diatonic_C <span style=color:#ff79c6>=</span> {
+    <span style=color:#f1fa8c>&#34;1&#34;</span>: <span style=color:#f1fa8c>&#34;C2&#34;</span>,
+    <span style=color:#f1fa8c>&#34;1*&#34;</span>: <span style=color:#f1fa8c>&#34;C#2&#34;</span>,
+    <span style=color:#f1fa8c>&#34;-1&#34;</span>: <span style=color:#f1fa8c>&#34;D2&#34;</span>,
+    <span style=color:#f1fa8c>&#34;-1*&#34;</span>: <span style=color:#f1fa8c>&#34;D#2&#34;</span>,
+    <span style=color:#f1fa8c>&#34;2&#34;</span>: <span style=color:#f1fa8c>&#34;E3&#34;</span>,
+    <span style=color:#f1fa8c>&#34;2*&#34;</span>: <span style=color:#f1fa8c>&#34;E#3&#34;</span>,
+    <span style=color:#f1fa8c>&#34;-2&#34;</span>: <span style=color:#f1fa8c>&#34;G2&#34;</span>,
+    <span style=color:#f1fa8c>&#34;-2*&#34;</span>: <span style=color:#f1fa8c>&#34;G#2&#34;</span>,
+    <span style=color:#f1fa8c>&#34;3&#34;</span>: <span style=color:#f1fa8c>&#34;G2&#34;</span>,
+    <span style=color:#f1fa8c>&#34;3*&#34;</span>: <span style=color:#f1fa8c>&#34;G#2&#34;</span>,
+    <span style=color:#f1fa8c>&#34;-3&#34;</span>: <span style=color:#f1fa8c>&#34;B2&#34;</span>,
+    <span style=color:#f1fa8c>&#34;-3*&#34;</span>: <span style=color:#f1fa8c>&#34;B#2&#34;</span>,
+    <span style=color:#f1fa8c>&#34;4&#34;</span>: <span style=color:#f1fa8c>&#34;C3&#34;</span>,
+    <span style=color:#f1fa8c>&#34;4*&#34;</span>: <span style=color:#f1fa8c>&#34;C#3&#34;</span>,
+    <span style=color:#f1fa8c>&#34;-4&#34;</span>: <span style=color:#f1fa8c>&#34;D3&#34;</span>,
+    <span style=color:#f1fa8c>&#34;-4*&#34;</span>: <span style=color:#f1fa8c>&#34;D#3&#34;</span>,
+    <span style=color:#f1fa8c>&#34;5&#34;</span>: <span style=color:#f1fa8c>&#34;E3&#34;</span>,
+    <span style=color:#f1fa8c>&#34;5*&#34;</span>: <span style=color:#f1fa8c>&#34;E#3&#34;</span>,
+    <span style=color:#f1fa8c>&#34;-5&#34;</span>: <span style=color:#f1fa8c>&#34;F3&#34;</span>,
+    <span style=color:#f1fa8c>&#34;-5*&#34;</span>: <span style=color:#f1fa8c>&#34;F#3&#34;</span>,
+    <span style=color:#f1fa8c>&#34;6&#34;</span>: <span style=color:#f1fa8c>&#34;G3&#34;</span>,
+    <span style=color:#f1fa8c>&#34;6*&#34;</span>: <span style=color:#f1fa8c>&#34;G#3&#34;</span>,
+    <span style=color:#f1fa8c>&#34;-6&#34;</span>: <span style=color:#f1fa8c>&#34;A3&#34;</span>,
+    <span style=color:#f1fa8c>&#34;-6*&#34;</span>: <span style=color:#f1fa8c>&#34;A#3&#34;</span>,
+    <span style=color:#f1fa8c>&#34;7&#34;</span>: <span style=color:#f1fa8c>&#34;C4&#34;</span>,
+    <span style=color:#f1fa8c>&#34;7*&#34;</span>: <span style=color:#f1fa8c>&#34;C#4&#34;</span>,
+    <span style=color:#f1fa8c>&#34;-7&#34;</span>: <span style=color:#f1fa8c>&#34;B3&#34;</span>,
+    <span style=color:#f1fa8c>&#34;-7*&#34;</span>: <span style=color:#f1fa8c>&#34;B#3&#34;</span>,
+    <span style=color:#f1fa8c>&#34;8&#34;</span>: <span style=color:#f1fa8c>&#34;E4&#34;</span>,
+    <span style=color:#f1fa8c>&#34;8*&#34;</span>: <span style=color:#f1fa8c>&#34;E#4&#34;</span>,
+    <span style=color:#f1fa8c>&#34;-8&#34;</span>: <span style=color:#f1fa8c>&#34;D4&#34;</span>,
+    <span style=color:#f1fa8c>&#34;-8*&#34;</span>: <span style=color:#f1fa8c>&#34;D#4&#34;</span>,
+    <span style=color:#f1fa8c>&#34;9&#34;</span>: <span style=color:#f1fa8c>&#34;G4&#34;</span>,
+    <span style=color:#f1fa8c>&#34;9*&#34;</span>: <span style=color:#f1fa8c>&#34;G#4&#34;</span>,
+    <span style=color:#f1fa8c>&#34;-9&#34;</span>: <span style=color:#f1fa8c>&#34;F4&#34;</span>,
+    <span style=color:#f1fa8c>&#34;-9*&#34;</span>: <span style=color:#f1fa8c>&#34;F#4&#34;</span>,
+    <span style=color:#f1fa8c>&#34;10&#34;</span>: <span style=color:#f1fa8c>&#34;A4&#34;</span>,
+    <span style=color:#f1fa8c>&#34;10*&#34;</span>: <span style=color:#f1fa8c>&#34;A#4&#34;</span>,
+    <span style=color:#f1fa8c>&#34;-10&#34;</span>: <span style=color:#f1fa8c>&#34;C5&#34;</span>,
+    <span style=color:#f1fa8c>&#34;-10*&#34;</span>: <span style=color:#f1fa8c>&#34;C#5&#34;</span>
+}
+</code></pre></div><h3 id=converting-tab-between-instruments>Converting Tab Between Instruments</h3>
+<p>Following script is written to convert Game of Thrones theme song tabs
+for diatonic C harmonica to chromatic harmonica tabs. In the first part, the tab string is converted to a song object. Then song exported for <code>swan1040</code> harmonica. Above this part, you have already learned to implement your instrument. Now, you can export these notes as tab for your instrument.</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#ff79c6>from</span> harmonica <span style=color:#ff79c6>import</span> swan1040, diatonic_C
+<span style=color:#ff79c6>from</span> song <span style=color:#ff79c6>import</span> Song
 
-    
-    <div class="content index py4">
-        
-        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-  <header>
-    
-    <h1 class="posttitle" itemprop="name headline">
-        Harmonica Note Converter
-    </h1>
+gotTheme <span style=color:#ff79c6>=</span> Song(<span style=color:#f1fa8c>&#34;GoT Theme&#34;</span>)
+gotTheme<span style=color:#ff79c6>.</span>getFromTabs(
+    diatonic_C,
+<span style=color:#f1fa8c>&#34;&#34;&#34;
+</span><span style=color:#f1fa8c>-6  -4  -5  +6  -6  -4  -5  +6  +5
+</span><span style=color:#f1fa8c>+6  +4  +5  -5  +6  +4  -5  +5  -4
+</span><span style=color:#f1fa8c>-6  -4  -5  +6  -6  -4  -5  +6  +5
+</span><span style=color:#f1fa8c>+6  +4  +5  -5  +5  +4  -4
+</span><span style=color:#f1fa8c>-8  +7  -4  -6  -3* -5  +6  -6
+</span><span style=color:#f1fa8c>-8 +7 +6 -6 -3* -5 +5 -4
+</span><span style=color:#f1fa8c>&#34;&#34;&#34;</span><span style=color:#ff79c6>.</span>replace(<span style=color:#f1fa8c>&#34;</span><span style=color:#f1fa8c>\t</span><span style=color:#f1fa8c>&#34;</span>,<span style=color:#f1fa8c>&#34; &#34;</span>)<span style=color:#ff79c6>.</span>replace(<span style=color:#f1fa8c>&#34;+&#34;</span>,<span style=color:#f1fa8c>&#34;&#34;</span>)
+)
 
-
-
-    <div class="meta">
-      <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
-        <span itemprop="name">Mehmet Ozan Ünal</span>
-      </span>
-      
-    <div class="postdate">
-      
-        <time datetime="2020-05-07T20:44:00.000Z" itemprop="datePublished">2020-05-07</time>
-        
-      
-    </div>
-
-
-      
-    <div class="article-category">
-        <i class="fas fa-archive"></i>
-        <a class="category-link" href="/categories/Coding/">Coding</a>
-    </div>
-
-
-    </div>
-  </header>
-  
-
-  <div class="content" itemprop="articleBody">
-    <p><strong>Harmonica Note Converter</strong> aims to create a python library to convert notes or tabs for different kind of harmonicas.<br>It is based on <a href="https://github.com/gciruelos/musthe" target="_blank" rel="noopener">musthe</a>.</p>
-<p><a href="https://github.com/mozanunal/harmonica-note-converter" target="_blank" rel="noopener">https://github.com/mozanunal/harmonica-note-converter</a></p>
-<h2 id="Story"><a href="#Story" class="headerlink" title="Story"></a>Story</h2><p>Some of you know that I am an ameteur harmonica player and I love harmonicas. I usually play diatonic harmonicas but last time I have bought a chromatic harmonica, which has quite different tone and it is hard to find music notes for it.</p>
-<p>I am not the best at playing instruments. However, I am good at coding and music theory. That’s why I decide to develop a tool to convert music notes for any instrument to notes for my harmonicas. I also create an modular structure to define new instruments.</p>
-<h2 id="Getting-Started"><a href="#Getting-Started" class="headerlink" title="Getting Started"></a>Getting Started</h2><h3 id="Installing"><a href="#Installing" class="headerlink" title="Installing"></a>Installing</h3><p>First, The source code of the project should be cloned to your PC.</p>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/mozanunal/harmonica-note-converter</span><br></pre></td></tr></table></figure>
-<h3 id="Demo"><a href="#Demo" class="headerlink" title="Demo"></a>Demo</h3><p>To test this project in your computer, you should run following commands.</p>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> harmonica-note-converter</span><br><span class="line">python3 test.py</span><br><span class="line"><span class="comment">#python test.py</span></span><br></pre></td></tr></table></figure>
-<p>It is a video to demonstrate the tone shift feature of my code. It is quite easy to use. I suggest you to have a look in this link and test the script with following code. See you!</p>
-<div class="video-container"><iframe src="//www.youtube.com/embed/loASU4cOY7c" frameborder="0" allowfullscreen></iframe></div>
-<h2 id="Use-It-For-Your-Instruments-and-Notes"><a href="#Use-It-For-Your-Instruments-and-Notes" class="headerlink" title="Use It For Your Instruments and Notes"></a>Use It For Your Instruments and Notes</h2><h3 id="Defining-Instruments"><a href="#Defining-Instruments" class="headerlink" title="Defining Instruments"></a>Defining Instruments</h3><p>Example code of C tone diatonic harmonica. You should add your instrument to harmonica folder and add to init file.</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line">diatonic_C = &#123;</span><br><span class="line">    <span class="string">"1"</span>: <span class="string">"C2"</span>,</span><br><span class="line">    <span class="string">"1*"</span>: <span class="string">"C#2"</span>,</span><br><span class="line">    <span class="string">"-1"</span>: <span class="string">"D2"</span>,</span><br><span class="line">    <span class="string">"-1*"</span>: <span class="string">"D#2"</span>,</span><br><span class="line">    <span class="string">"2"</span>: <span class="string">"E3"</span>,</span><br><span class="line">    <span class="string">"2*"</span>: <span class="string">"E#3"</span>,</span><br><span class="line">    <span class="string">"-2"</span>: <span class="string">"G2"</span>,</span><br><span class="line">    <span class="string">"-2*"</span>: <span class="string">"G#2"</span>,</span><br><span class="line">    <span class="string">"3"</span>: <span class="string">"G2"</span>,</span><br><span class="line">    <span class="string">"3*"</span>: <span class="string">"G#2"</span>,</span><br><span class="line">    <span class="string">"-3"</span>: <span class="string">"B2"</span>,</span><br><span class="line">    <span class="string">"-3*"</span>: <span class="string">"B#2"</span>,</span><br><span class="line">    <span class="string">"4"</span>: <span class="string">"C3"</span>,</span><br><span class="line">    <span class="string">"4*"</span>: <span class="string">"C#3"</span>,</span><br><span class="line">    <span class="string">"-4"</span>: <span class="string">"D3"</span>,</span><br><span class="line">    <span class="string">"-4*"</span>: <span class="string">"D#3"</span>,</span><br><span class="line">    <span class="string">"5"</span>: <span class="string">"E3"</span>,</span><br><span class="line">    <span class="string">"5*"</span>: <span class="string">"E#3"</span>,</span><br><span class="line">    <span class="string">"-5"</span>: <span class="string">"F3"</span>,</span><br><span class="line">    <span class="string">"-5*"</span>: <span class="string">"F#3"</span>,</span><br><span class="line">    <span class="string">"6"</span>: <span class="string">"G3"</span>,</span><br><span class="line">    <span class="string">"6*"</span>: <span class="string">"G#3"</span>,</span><br><span class="line">    <span class="string">"-6"</span>: <span class="string">"A3"</span>,</span><br><span class="line">    <span class="string">"-6*"</span>: <span class="string">"A#3"</span>,</span><br><span class="line">    <span class="string">"7"</span>: <span class="string">"C4"</span>,</span><br><span class="line">    <span class="string">"7*"</span>: <span class="string">"C#4"</span>,</span><br><span class="line">    <span class="string">"-7"</span>: <span class="string">"B3"</span>,</span><br><span class="line">    <span class="string">"-7*"</span>: <span class="string">"B#3"</span>,</span><br><span class="line">    <span class="string">"8"</span>: <span class="string">"E4"</span>,</span><br><span class="line">    <span class="string">"8*"</span>: <span class="string">"E#4"</span>,</span><br><span class="line">    <span class="string">"-8"</span>: <span class="string">"D4"</span>,</span><br><span class="line">    <span class="string">"-8*"</span>: <span class="string">"D#4"</span>,</span><br><span class="line">    <span class="string">"9"</span>: <span class="string">"G4"</span>,</span><br><span class="line">    <span class="string">"9*"</span>: <span class="string">"G#4"</span>,</span><br><span class="line">    <span class="string">"-9"</span>: <span class="string">"F4"</span>,</span><br><span class="line">    <span class="string">"-9*"</span>: <span class="string">"F#4"</span>,</span><br><span class="line">    <span class="string">"10"</span>: <span class="string">"A4"</span>,</span><br><span class="line">    <span class="string">"10*"</span>: <span class="string">"A#4"</span>,</span><br><span class="line">    <span class="string">"-10"</span>: <span class="string">"C5"</span>,</span><br><span class="line">    <span class="string">"-10*"</span>: <span class="string">"C#5"</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h3 id="Converting-Tab-Between-Instruments"><a href="#Converting-Tab-Between-Instruments" class="headerlink" title="Converting Tab Between Instruments"></a>Converting Tab Between Instruments</h3><p>Following script is written to convert Game of Thrones theme song tabs<br>for diatonic C harmonica to chromatic harmonica tabs. In the first part, the tab string is converted to a song object. Then song exported for <code>swan1040</code> harmonica. Above this part, you have already learned to implement your instrument. Now, you can export these notes as tab for your instrument.</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> harmonica <span class="keyword">import</span> swan1040, diatonic_C</span><br><span class="line"><span class="keyword">from</span> song <span class="keyword">import</span> Song</span><br><span class="line"></span><br><span class="line">gotTheme = Song(<span class="string">"GoT Theme"</span>)</span><br><span class="line">gotTheme.getFromTabs(</span><br><span class="line">    diatonic_C,</span><br><span class="line"><span class="string">"""</span></span><br><span class="line"><span class="string">-6  -4  -5  +6  -6  -4  -5  +6  +5</span></span><br><span class="line"><span class="string">+6  +4  +5  -5  +6  +4  -5  +5  -4</span></span><br><span class="line"><span class="string">-6  -4  -5  +6  -6  -4  -5  +6  +5</span></span><br><span class="line"><span class="string">+6  +4  +5  -5  +5  +4  -4</span></span><br><span class="line"><span class="string">-8  +7  -4  -6  -3* -5  +6  -6</span></span><br><span class="line"><span class="string">-8 +7 +6 -6 -3* -5 +5 -4</span></span><br><span class="line"><span class="string">"""</span>.replace(<span class="string">"\t"</span>,<span class="string">" "</span>).replace(<span class="string">"+"</span>,<span class="string">""</span>)</span><br><span class="line">)</span><br><span class="line"></span><br><span class="line">gotTheme.exportTabs(swan1040)</span><br></pre></td></tr></table></figure>
-<p>Script output:</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">GoT Theme</span><br><span class="line">--------------</span><br><span class="line"><span class="number">-7</span> <span class="number">-5</span> <span class="number">-6</span> <span class="number">7</span> <span class="number">-7</span> <span class="number">-5</span> <span class="number">-6</span> <span class="number">7</span> <span class="number">6</span></span><br><span class="line"><span class="number">7</span> <span class="number">5</span> <span class="number">6</span> <span class="number">-6</span> <span class="number">7</span> <span class="number">5</span> <span class="number">-6</span> <span class="number">6</span> <span class="number">-5</span></span><br><span class="line"><span class="number">-7</span> <span class="number">-5</span> <span class="number">-6</span> <span class="number">7</span> <span class="number">-7</span> <span class="number">-5</span> <span class="number">-6</span> <span class="number">7</span> <span class="number">6</span></span><br><span class="line"><span class="number">7</span> <span class="number">5</span> <span class="number">6</span> <span class="number">-6</span> <span class="number">6</span> <span class="number">5</span> <span class="number">-5</span></span><br><span class="line"><span class="number">-9</span> <span class="number">-8</span>* <span class="number">-5</span> <span class="number">-7</span> <span class="number">5</span> <span class="number">-6</span> <span class="number">7</span> <span class="number">-7</span></span><br><span class="line"><span class="number">-9</span> <span class="number">-8</span>* <span class="number">7</span> <span class="number">-7</span> <span class="number">5</span> <span class="number">-6</span> <span class="number">6</span> <span class="number">-5</span></span><br><span class="line">--------------</span><br></pre></td></tr></table></figure>
-<h2 id="Shifting-the-Tone"><a href="#Shifting-the-Tone" class="headerlink" title="Shifting the Tone"></a>Shifting the Tone</h2><p>The other feature which I implemented is tone shifting. It is possible to shift the tone of the song which you give to the system. Probably, it is quite easy task for real musicians, but it is always a challenge for me. It is quite easy to implememted it with code. In that why, I can easily change the tone of the songs which I want to play with my harmonica.</p>
+gotTheme<span style=color:#ff79c6>.</span>exportTabs(swan1040)
+</code></pre></div><p>Script output:</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python>GoT Theme
+<span style=color:#ff79c6>--------------</span>
+<span style=color:#ff79c6>-</span><span style=color:#bd93f9>7</span> <span style=color:#ff79c6>-</span><span style=color:#bd93f9>5</span> <span style=color:#ff79c6>-</span><span style=color:#bd93f9>6</span> <span style=color:#bd93f9>7</span> <span style=color:#ff79c6>-</span><span style=color:#bd93f9>7</span> <span style=color:#ff79c6>-</span><span style=color:#bd93f9>5</span> <span style=color:#ff79c6>-</span><span style=color:#bd93f9>6</span> <span style=color:#bd93f9>7</span> <span style=color:#bd93f9>6</span>
+<span style=color:#bd93f9>7</span> <span style=color:#bd93f9>5</span> <span style=color:#bd93f9>6</span> <span style=color:#ff79c6>-</span><span style=color:#bd93f9>6</span> <span style=color:#bd93f9>7</span> <span style=color:#bd93f9>5</span> <span style=color:#ff79c6>-</span><span style=color:#bd93f9>6</span> <span style=color:#bd93f9>6</span> <span style=color:#ff79c6>-</span><span style=color:#bd93f9>5</span>
+<span style=color:#ff79c6>-</span><span style=color:#bd93f9>7</span> <span style=color:#ff79c6>-</span><span style=color:#bd93f9>5</span> <span style=color:#ff79c6>-</span><span style=color:#bd93f9>6</span> <span style=color:#bd93f9>7</span> <span style=color:#ff79c6>-</span><span style=color:#bd93f9>7</span> <span style=color:#ff79c6>-</span><span style=color:#bd93f9>5</span> <span style=color:#ff79c6>-</span><span style=color:#bd93f9>6</span> <span style=color:#bd93f9>7</span> <span style=color:#bd93f9>6</span>
+<span style=color:#bd93f9>7</span> <span style=color:#bd93f9>5</span> <span style=color:#bd93f9>6</span> <span style=color:#ff79c6>-</span><span style=color:#bd93f9>6</span> <span style=color:#bd93f9>6</span> <span style=color:#bd93f9>5</span> <span style=color:#ff79c6>-</span><span style=color:#bd93f9>5</span>
+<span style=color:#ff79c6>-</span><span style=color:#bd93f9>9</span> <span style=color:#ff79c6>-</span><span style=color:#bd93f9>8</span><span style=color:#ff79c6>*</span> <span style=color:#ff79c6>-</span><span style=color:#bd93f9>5</span> <span style=color:#ff79c6>-</span><span style=color:#bd93f9>7</span> <span style=color:#bd93f9>5</span> <span style=color:#ff79c6>-</span><span style=color:#bd93f9>6</span> <span style=color:#bd93f9>7</span> <span style=color:#ff79c6>-</span><span style=color:#bd93f9>7</span>
+<span style=color:#ff79c6>-</span><span style=color:#bd93f9>9</span> <span style=color:#ff79c6>-</span><span style=color:#bd93f9>8</span><span style=color:#ff79c6>*</span> <span style=color:#bd93f9>7</span> <span style=color:#ff79c6>-</span><span style=color:#bd93f9>7</span> <span style=color:#bd93f9>5</span> <span style=color:#ff79c6>-</span><span style=color:#bd93f9>6</span> <span style=color:#bd93f9>6</span> <span style=color:#ff79c6>-</span><span style=color:#bd93f9>5</span>
+<span style=color:#ff79c6>--------------</span>
+</code></pre></div><h2 id=shifting-the-tone>Shifting the Tone</h2>
+<p>The other feature which I implemented is tone shifting. It is possible to shift the tone of the song which you give to the system. Probably, it is quite easy task for real musicians, but it is always a challenge for me. It is quite easy to implememted it with code. In that why, I can easily change the tone of the songs which I want to play with my harmonica.</p>
 <p>Test script:</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> harmonica <span class="keyword">import</span> swan1040, diatonic_C</span><br><span class="line"><span class="keyword">from</span> song <span class="keyword">import</span> Song</span><br><span class="line"></span><br><span class="line">gotTheme = Song(<span class="string">"GoT Theme"</span>)</span><br><span class="line">gotTheme.getFromTabs(</span><br><span class="line">    diatonic_C,</span><br><span class="line"><span class="string">"""</span></span><br><span class="line"><span class="string">-6  -4  -5  +6  -6  -4  -5  +6  +5</span></span><br><span class="line"><span class="string">+6  +4  +5  -5  +6  +4  -5  +5  -4</span></span><br><span class="line"><span class="string">-6  -4  -5  +6  -6  -4  -5  +6  +5</span></span><br><span class="line"><span class="string">+6  +4  +5  -5  +5  +4  -4</span></span><br><span class="line"><span class="string">-8  +7  -4  -6  -3* -5  +6  -6</span></span><br><span class="line"><span class="string">-8 +7 +6 -6 -3* -5 +5 -4</span></span><br><span class="line"><span class="string">"""</span>.replace(<span class="string">"\t"</span>,<span class="string">" "</span>).replace(<span class="string">"+"</span>,<span class="string">""</span>)</span><br><span class="line">)</span><br><span class="line"></span><br><span class="line">gotTheme.exportTabs(swan1040)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">gotTheme.shift(<span class="number">-12</span>)</span><br><span class="line">gotTheme.exportTabs(swan1040)</span><br><span class="line"></span><br><span class="line">gotTheme.shift(+<span class="number">14</span>)</span><br></pre></td></tr></table></figure>
-<p>Output is like:</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">GoT Theme</span><br><span class="line">--------------</span><br><span class="line"><span class="number">-7</span> <span class="number">-5</span> <span class="number">-6</span> <span class="number">7</span> <span class="number">-7</span> <span class="number">-5</span> <span class="number">-6</span> <span class="number">7</span> <span class="number">6</span></span><br><span class="line"><span class="number">7</span> <span class="number">5</span> <span class="number">6</span> <span class="number">-6</span> <span class="number">7</span> <span class="number">5</span> <span class="number">-6</span> <span class="number">6</span> <span class="number">-5</span></span><br><span class="line"><span class="number">-7</span> <span class="number">-5</span> <span class="number">-6</span> <span class="number">7</span> <span class="number">-7</span> <span class="number">-5</span> <span class="number">-6</span> <span class="number">7</span> <span class="number">6</span></span><br><span class="line"><span class="number">7</span> <span class="number">5</span> <span class="number">6</span> <span class="number">-6</span> <span class="number">6</span> <span class="number">5</span> <span class="number">-5</span></span><br><span class="line"><span class="number">-9</span> <span class="number">-8</span>* <span class="number">-5</span> <span class="number">-7</span> <span class="number">5</span> <span class="number">-6</span> <span class="number">7</span> <span class="number">-7</span></span><br><span class="line"><span class="number">-9</span> <span class="number">-8</span>* <span class="number">7</span> <span class="number">-7</span> <span class="number">5</span> <span class="number">-6</span> <span class="number">6</span> <span class="number">-5</span></span><br><span class="line">--------------</span><br><span class="line">--------------</span><br><span class="line">GoT Theme</span><br><span class="line"></span><br><span class="line"><span class="number">-3</span> <span class="number">-1</span> <span class="number">-2</span> <span class="number">3</span> <span class="number">-3</span> <span class="number">-1</span> <span class="number">-2</span> <span class="number">3</span> <span class="number">2</span></span><br><span class="line"><span class="number">3</span> <span class="number">1</span> <span class="number">2</span> <span class="number">-2</span> <span class="number">3</span> <span class="number">1</span> <span class="number">-2</span> <span class="number">2</span> <span class="number">-1</span></span><br><span class="line"><span class="number">-3</span> <span class="number">-1</span> <span class="number">-2</span> <span class="number">3</span> <span class="number">-3</span> <span class="number">-1</span> <span class="number">-2</span> <span class="number">3</span> <span class="number">2</span></span><br><span class="line"><span class="number">3</span> <span class="number">1</span> <span class="number">2</span> <span class="number">-2</span> <span class="number">2</span> <span class="number">1</span> <span class="number">-1</span></span><br><span class="line"><span class="number">-5</span> <span class="number">5</span> <span class="number">-1</span> <span class="number">-3</span> <span class="number">1</span> <span class="number">-2</span> <span class="number">3</span> <span class="number">-3</span></span><br><span class="line"><span class="number">-5</span> <span class="number">5</span> <span class="number">3</span> <span class="number">-3</span> <span class="number">1</span> <span class="number">-2</span> <span class="number">2</span> <span class="number">-1</span></span><br><span class="line">--------------</span><br><span class="line">--------------</span><br><span class="line">GoT Theme</span><br><span class="line"></span><br><span class="line"><span class="number">-8</span> <span class="number">6</span> <span class="number">7</span> <span class="number">-7</span> <span class="number">-8</span> <span class="number">6</span> <span class="number">7</span> <span class="number">-7</span> <span class="number">-6</span>* </span><br><span class="line"><span class="number">-7</span> <span class="number">-5</span> <span class="number">-6</span>* <span class="number">7</span> <span class="number">-7</span> <span class="number">-5</span> <span class="number">7</span> <span class="number">-6</span>* <span class="number">6</span> </span><br><span class="line"><span class="number">-8</span> <span class="number">6</span> <span class="number">7</span> <span class="number">-7</span> <span class="number">-8</span> <span class="number">6</span> <span class="number">7</span> <span class="number">-7</span> <span class="number">-6</span>*</span><br><span class="line"><span class="number">-7</span> <span class="number">-5</span> <span class="number">-6</span>* <span class="number">7</span> <span class="number">-6</span>* <span class="number">-5</span> <span class="number">6</span></span><br><span class="line"><span class="number">9</span> <span class="number">-9</span> <span class="number">6</span> <span class="number">-8</span> <span class="number">-5</span> <span class="number">7</span> <span class="number">-7</span> <span class="number">-8</span></span><br><span class="line"><span class="number">9</span> <span class="number">-9</span> <span class="number">-7</span> <span class="number">-8</span> <span class="number">-5</span> <span class="number">7</span> <span class="number">-6</span>* <span class="number">6</span> </span><br><span class="line">--------------</span><br></pre></td></tr></table></figure>
-<h2 id="Built-With"><a href="#Built-With" class="headerlink" title="Built With"></a>Built With</h2><ul>
-<li><a href="https://python.org/" target="_blank" rel="noopener">Python</a> Python &lt;3</li>
-<li><a href="https://github.com/gciruelos/musthe" target="_blank" rel="noopener">musthe</a> Music Theory Implementation</li>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#ff79c6>from</span> harmonica <span style=color:#ff79c6>import</span> swan1040, diatonic_C
+<span style=color:#ff79c6>from</span> song <span style=color:#ff79c6>import</span> Song
+
+gotTheme <span style=color:#ff79c6>=</span> Song(<span style=color:#f1fa8c>&#34;GoT Theme&#34;</span>)
+gotTheme<span style=color:#ff79c6>.</span>getFromTabs(
+    diatonic_C,
+<span style=color:#f1fa8c>&#34;&#34;&#34;
+</span><span style=color:#f1fa8c>-6  -4  -5  +6  -6  -4  -5  +6  +5
+</span><span style=color:#f1fa8c>+6  +4  +5  -5  +6  +4  -5  +5  -4
+</span><span style=color:#f1fa8c>-6  -4  -5  +6  -6  -4  -5  +6  +5
+</span><span style=color:#f1fa8c>+6  +4  +5  -5  +5  +4  -4
+</span><span style=color:#f1fa8c>-8  +7  -4  -6  -3* -5  +6  -6
+</span><span style=color:#f1fa8c>-8 +7 +6 -6 -3* -5 +5 -4
+</span><span style=color:#f1fa8c>&#34;&#34;&#34;</span><span style=color:#ff79c6>.</span>replace(<span style=color:#f1fa8c>&#34;</span><span style=color:#f1fa8c>\t</span><span style=color:#f1fa8c>&#34;</span>,<span style=color:#f1fa8c>&#34; &#34;</span>)<span style=color:#ff79c6>.</span>replace(<span style=color:#f1fa8c>&#34;+&#34;</span>,<span style=color:#f1fa8c>&#34;&#34;</span>)
+)
+
+gotTheme<span style=color:#ff79c6>.</span>exportTabs(swan1040)
+
+
+gotTheme<span style=color:#ff79c6>.</span>shift(<span style=color:#ff79c6>-</span><span style=color:#bd93f9>12</span>)
+gotTheme<span style=color:#ff79c6>.</span>exportTabs(swan1040)
+
+gotTheme<span style=color:#ff79c6>.</span>shift(<span style=color:#ff79c6>+</span><span style=color:#bd93f9>14</span>)
+</code></pre></div><p>Output is like:</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python>GoT Theme
+<span style=color:#ff79c6>--------------</span>
+<span style=color:#ff79c6>-</span><span style=color:#bd93f9>7</span> <span style=color:#ff79c6>-</span><span style=color:#bd93f9>5</span> <span style=color:#ff79c6>-</span><span style=color:#bd93f9>6</span> <span style=color:#bd93f9>7</span> <span style=color:#ff79c6>-</span><span style=color:#bd93f9>7</span> <span style=color:#ff79c6>-</span><span style=color:#bd93f9>5</span> <span style=color:#ff79c6>-</span><span style=color:#bd93f9>6</span> <span style=color:#bd93f9>7</span> <span style=color:#bd93f9>6</span>
+<span style=color:#bd93f9>7</span> <span style=color:#bd93f9>5</span> <span style=color:#bd93f9>6</span> <span style=color:#ff79c6>-</span><span style=color:#bd93f9>6</span> <span style=color:#bd93f9>7</span> <span style=color:#bd93f9>5</span> <span style=color:#ff79c6>-</span><span style=color:#bd93f9>6</span> <span style=color:#bd93f9>6</span> <span style=color:#ff79c6>-</span><span style=color:#bd93f9>5</span>
+<span style=color:#ff79c6>-</span><span style=color:#bd93f9>7</span> <span style=color:#ff79c6>-</span><span style=color:#bd93f9>5</span> <span style=color:#ff79c6>-</span><span style=color:#bd93f9>6</span> <span style=color:#bd93f9>7</span> <span style=color:#ff79c6>-</span><span style=color:#bd93f9>7</span> <span style=color:#ff79c6>-</span><span style=color:#bd93f9>5</span> <span style=color:#ff79c6>-</span><span style=color:#bd93f9>6</span> <span style=color:#bd93f9>7</span> <span style=color:#bd93f9>6</span>
+<span style=color:#bd93f9>7</span> <span style=color:#bd93f9>5</span> <span style=color:#bd93f9>6</span> <span style=color:#ff79c6>-</span><span style=color:#bd93f9>6</span> <span style=color:#bd93f9>6</span> <span style=color:#bd93f9>5</span> <span style=color:#ff79c6>-</span><span style=color:#bd93f9>5</span>
+<span style=color:#ff79c6>-</span><span style=color:#bd93f9>9</span> <span style=color:#ff79c6>-</span><span style=color:#bd93f9>8</span><span style=color:#ff79c6>*</span> <span style=color:#ff79c6>-</span><span style=color:#bd93f9>5</span> <span style=color:#ff79c6>-</span><span style=color:#bd93f9>7</span> <span style=color:#bd93f9>5</span> <span style=color:#ff79c6>-</span><span style=color:#bd93f9>6</span> <span style=color:#bd93f9>7</span> <span style=color:#ff79c6>-</span><span style=color:#bd93f9>7</span>
+<span style=color:#ff79c6>-</span><span style=color:#bd93f9>9</span> <span style=color:#ff79c6>-</span><span style=color:#bd93f9>8</span><span style=color:#ff79c6>*</span> <span style=color:#bd93f9>7</span> <span style=color:#ff79c6>-</span><span style=color:#bd93f9>7</span> <span style=color:#bd93f9>5</span> <span style=color:#ff79c6>-</span><span style=color:#bd93f9>6</span> <span style=color:#bd93f9>6</span> <span style=color:#ff79c6>-</span><span style=color:#bd93f9>5</span>
+<span style=color:#ff79c6>--------------</span>
+<span style=color:#ff79c6>--------------</span>
+GoT Theme
+
+<span style=color:#ff79c6>-</span><span style=color:#bd93f9>3</span> <span style=color:#ff79c6>-</span><span style=color:#bd93f9>1</span> <span style=color:#ff79c6>-</span><span style=color:#bd93f9>2</span> <span style=color:#bd93f9>3</span> <span style=color:#ff79c6>-</span><span style=color:#bd93f9>3</span> <span style=color:#ff79c6>-</span><span style=color:#bd93f9>1</span> <span style=color:#ff79c6>-</span><span style=color:#bd93f9>2</span> <span style=color:#bd93f9>3</span> <span style=color:#bd93f9>2</span>
+<span style=color:#bd93f9>3</span> <span style=color:#bd93f9>1</span> <span style=color:#bd93f9>2</span> <span style=color:#ff79c6>-</span><span style=color:#bd93f9>2</span> <span style=color:#bd93f9>3</span> <span style=color:#bd93f9>1</span> <span style=color:#ff79c6>-</span><span style=color:#bd93f9>2</span> <span style=color:#bd93f9>2</span> <span style=color:#ff79c6>-</span><span style=color:#bd93f9>1</span>
+<span style=color:#ff79c6>-</span><span style=color:#bd93f9>3</span> <span style=color:#ff79c6>-</span><span style=color:#bd93f9>1</span> <span style=color:#ff79c6>-</span><span style=color:#bd93f9>2</span> <span style=color:#bd93f9>3</span> <span style=color:#ff79c6>-</span><span style=color:#bd93f9>3</span> <span style=color:#ff79c6>-</span><span style=color:#bd93f9>1</span> <span style=color:#ff79c6>-</span><span style=color:#bd93f9>2</span> <span style=color:#bd93f9>3</span> <span style=color:#bd93f9>2</span>
+<span style=color:#bd93f9>3</span> <span style=color:#bd93f9>1</span> <span style=color:#bd93f9>2</span> <span style=color:#ff79c6>-</span><span style=color:#bd93f9>2</span> <span style=color:#bd93f9>2</span> <span style=color:#bd93f9>1</span> <span style=color:#ff79c6>-</span><span style=color:#bd93f9>1</span>
+<span style=color:#ff79c6>-</span><span style=color:#bd93f9>5</span> <span style=color:#bd93f9>5</span> <span style=color:#ff79c6>-</span><span style=color:#bd93f9>1</span> <span style=color:#ff79c6>-</span><span style=color:#bd93f9>3</span> <span style=color:#bd93f9>1</span> <span style=color:#ff79c6>-</span><span style=color:#bd93f9>2</span> <span style=color:#bd93f9>3</span> <span style=color:#ff79c6>-</span><span style=color:#bd93f9>3</span>
+<span style=color:#ff79c6>-</span><span style=color:#bd93f9>5</span> <span style=color:#bd93f9>5</span> <span style=color:#bd93f9>3</span> <span style=color:#ff79c6>-</span><span style=color:#bd93f9>3</span> <span style=color:#bd93f9>1</span> <span style=color:#ff79c6>-</span><span style=color:#bd93f9>2</span> <span style=color:#bd93f9>2</span> <span style=color:#ff79c6>-</span><span style=color:#bd93f9>1</span>
+<span style=color:#ff79c6>--------------</span>
+<span style=color:#ff79c6>--------------</span>
+GoT Theme
+
+<span style=color:#ff79c6>-</span><span style=color:#bd93f9>8</span> <span style=color:#bd93f9>6</span> <span style=color:#bd93f9>7</span> <span style=color:#ff79c6>-</span><span style=color:#bd93f9>7</span> <span style=color:#ff79c6>-</span><span style=color:#bd93f9>8</span> <span style=color:#bd93f9>6</span> <span style=color:#bd93f9>7</span> <span style=color:#ff79c6>-</span><span style=color:#bd93f9>7</span> <span style=color:#ff79c6>-</span><span style=color:#bd93f9>6</span><span style=color:#ff79c6>*</span> 
+<span style=color:#ff79c6>-</span><span style=color:#bd93f9>7</span> <span style=color:#ff79c6>-</span><span style=color:#bd93f9>5</span> <span style=color:#ff79c6>-</span><span style=color:#bd93f9>6</span><span style=color:#ff79c6>*</span> <span style=color:#bd93f9>7</span> <span style=color:#ff79c6>-</span><span style=color:#bd93f9>7</span> <span style=color:#ff79c6>-</span><span style=color:#bd93f9>5</span> <span style=color:#bd93f9>7</span> <span style=color:#ff79c6>-</span><span style=color:#bd93f9>6</span><span style=color:#ff79c6>*</span> <span style=color:#bd93f9>6</span> 
+<span style=color:#ff79c6>-</span><span style=color:#bd93f9>8</span> <span style=color:#bd93f9>6</span> <span style=color:#bd93f9>7</span> <span style=color:#ff79c6>-</span><span style=color:#bd93f9>7</span> <span style=color:#ff79c6>-</span><span style=color:#bd93f9>8</span> <span style=color:#bd93f9>6</span> <span style=color:#bd93f9>7</span> <span style=color:#ff79c6>-</span><span style=color:#bd93f9>7</span> <span style=color:#ff79c6>-</span><span style=color:#bd93f9>6</span><span style=color:#ff79c6>*</span>
+<span style=color:#ff79c6>-</span><span style=color:#bd93f9>7</span> <span style=color:#ff79c6>-</span><span style=color:#bd93f9>5</span> <span style=color:#ff79c6>-</span><span style=color:#bd93f9>6</span><span style=color:#ff79c6>*</span> <span style=color:#bd93f9>7</span> <span style=color:#ff79c6>-</span><span style=color:#bd93f9>6</span><span style=color:#ff79c6>*</span> <span style=color:#ff79c6>-</span><span style=color:#bd93f9>5</span> <span style=color:#bd93f9>6</span>
+<span style=color:#bd93f9>9</span> <span style=color:#ff79c6>-</span><span style=color:#bd93f9>9</span> <span style=color:#bd93f9>6</span> <span style=color:#ff79c6>-</span><span style=color:#bd93f9>8</span> <span style=color:#ff79c6>-</span><span style=color:#bd93f9>5</span> <span style=color:#bd93f9>7</span> <span style=color:#ff79c6>-</span><span style=color:#bd93f9>7</span> <span style=color:#ff79c6>-</span><span style=color:#bd93f9>8</span>
+<span style=color:#bd93f9>9</span> <span style=color:#ff79c6>-</span><span style=color:#bd93f9>9</span> <span style=color:#ff79c6>-</span><span style=color:#bd93f9>7</span> <span style=color:#ff79c6>-</span><span style=color:#bd93f9>8</span> <span style=color:#ff79c6>-</span><span style=color:#bd93f9>5</span> <span style=color:#bd93f9>7</span> <span style=color:#ff79c6>-</span><span style=color:#bd93f9>6</span><span style=color:#ff79c6>*</span> <span style=color:#bd93f9>6</span> 
+<span style=color:#ff79c6>--------------</span>
+</code></pre></div><h2 id=built-with>Built With</h2>
+<ul>
+<li><a href=https://python.org/>Python</a> Python &lt;3</li>
+<li><a href=https://github.com/gciruelos/musthe>musthe</a> Music Theory Implementation</li>
 </ul>
-<h2 id="Contributing"><a href="#Contributing" class="headerlink" title="Contributing"></a>Contributing</h2><p>Please feel yourself free to add new instruments or new tricks to this mini script.</p>
-<h2 id="License"><a href="#License" class="headerlink" title="License"></a>License</h2><p>This project is licensed under the MIT License - see the <a href="LICENSE.md">LICENSE.md</a> file for details</p>
-
-  </div>
-</article>
-
-    <div class="blog-post-comments">
-        <div id="disqus_thread">
-            <noscript>Please enable JavaScript to view the comments.</noscript>
-        </div>
-    </div>
-
-
-
-        
-          <div id="footer-post-container">
-  <div id="footer-post">
-
-    <div id="nav-footer" style="display: none">
-      <ul>
-         
-          <li><a href="/">Home</a></li>
-         
-          <li><a href="/categories/">Category</a></li>
-         
-          <li><a href="/archives/">Blog</a></li>
-         
-          <li><a href="/about/">About</a></li>
-         
-          <li><a href="https://github.com/mozanunal">Projects</a></li>
-         
-          <li><a href="https://scholar.google.com/citations?user=u_HbXUUAAAAJ&hl=en">Publications</a></li>
-         
-          <li><a href="/search/">Search</a></li>
-        
-      </ul>
-    </div>
-
-    <div id="toc-footer" style="display: none">
-      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Story"><span class="toc-number">1.</span> <span class="toc-text">Story</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Getting-Started"><span class="toc-number">2.</span> <span class="toc-text">Getting Started</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Installing"><span class="toc-number">2.1.</span> <span class="toc-text">Installing</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Demo"><span class="toc-number">2.2.</span> <span class="toc-text">Demo</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Use-It-For-Your-Instruments-and-Notes"><span class="toc-number">3.</span> <span class="toc-text">Use It For Your Instruments and Notes</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Defining-Instruments"><span class="toc-number">3.1.</span> <span class="toc-text">Defining Instruments</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Converting-Tab-Between-Instruments"><span class="toc-number">3.2.</span> <span class="toc-text">Converting Tab Between Instruments</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Shifting-the-Tone"><span class="toc-number">4.</span> <span class="toc-text">Shifting the Tone</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Built-With"><span class="toc-number">5.</span> <span class="toc-text">Built With</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Contributing"><span class="toc-number">6.</span> <span class="toc-text">Contributing</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#License"><span class="toc-number">7.</span> <span class="toc-text">License</span></a></li></ol>
-    </div>
-
-    <div id="share-footer" style="display: none">
-      <ul>
-  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=https://mozanunal.com/2020/05/harmonica-note-conv/"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="https://twitter.com/share?url=https://mozanunal.com/2020/05/harmonica-note-conv/&text=Harmonica Note Converter"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=https://mozanunal.com/2020/05/harmonica-note-conv/&title=Harmonica Note Converter"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https://mozanunal.com/2020/05/harmonica-note-conv/&is_video=false&description=Harmonica Note Converter"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="mailto:?subject=Harmonica Note Converter&body=Check out this article: https://mozanunal.com/2020/05/harmonica-note-conv/"><i class="fas fa-envelope fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="https://getpocket.com/save?url=https://mozanunal.com/2020/05/harmonica-note-conv/&title=Harmonica Note Converter"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://reddit.com/submit?url=https://mozanunal.com/2020/05/harmonica-note-conv/&title=Harmonica Note Converter"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=https://mozanunal.com/2020/05/harmonica-note-conv/&title=Harmonica Note Converter"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://digg.com/submit?url=https://mozanunal.com/2020/05/harmonica-note-conv/&title=Harmonica Note Converter"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://www.tumblr.com/share/link?url=https://mozanunal.com/2020/05/harmonica-note-conv/&name=Harmonica Note Converter&description="><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
-</ul>
-
-    </div>
-
-    <div id="actions-footer">
-        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
-        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
-        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> Share</a>
-        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
-    </div>
-
-  </div>
-</div>
-
-        
-        <footer id="footer">
-  <div class="footer-left">
-    Copyright &copy; 2023 Mehmet Ozan Ünal
-  </div>
-  <div class="footer-right">
-    <nav>
-      <ul>
-         
-          <li><a href="/">Home</a></li>
-         
-          <li><a href="/categories/">Category</a></li>
-         
-          <li><a href="/archives/">Blog</a></li>
-         
-          <li><a href="/about/">About</a></li>
-         
-          <li><a href="https://github.com/mozanunal">Projects</a></li>
-         
-          <li><a href="https://scholar.google.com/citations?user=u_HbXUUAAAAJ&hl=en">Publications</a></li>
-         
-          <li><a href="/search/">Search</a></li>
-        
-      </ul>
-    </nav>
-  </div>
+<h2 id=contributing>Contributing</h2>
+<p>Please feel yourself free to add new instruments or new tricks to this mini script.</p>
+<h2 id=license>License</h2>
+<p>This project is licensed under the MIT License - see the <a href=LICENSE.md>LICENSE.md</a> file for details</p>
+</section>
+<footer class="mt-12 flex flex-wrap">
+<a class="mr-1.5 mb-1.5 rounded-lg bg-black/[3%] px-5 py-2 no-underline dark:bg-white/[8%]" href=https://mozanunal.com/tags/python>python</a>
+<a class="mr-1.5 mb-1.5 rounded-lg bg-black/[3%] px-5 py-2 no-underline dark:bg-white/[8%]" href=https://mozanunal.com/tags/harmonica>harmonica</a>
 </footer>
-
-    </div>
-    <!-- styles -->
-<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
-<link rel="stylesheet" href="/lib/justified-gallery/css/justifiedGallery.min.css">
-
-    <!-- jquery -->
-<script src="/lib/jquery/jquery.min.js"></script>
-<script src="/lib/justified-gallery/js/jquery.justifiedGallery.min.js"></script>
-<script src="/js/main.js"></script>
-<!-- search -->
-
-<!-- Google Analytics -->
-
-    <script type="text/javascript">
-        (function(i,s,o,g,r,a,m) {i['GoogleAnalyticsObject']=r;i[r]=i[r]||function() {
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-        ga('create', 'UA-60655125-2', 'auto');
-        ga('send', 'pageview');
-    </script>
-
-<!-- Baidu Analytics -->
-
-<!-- Disqus Comments -->
-
-    <script type="text/javascript">
-        var disqus_shortname = 'mozanunal-com';
-
-        (function(){
-            var dsq = document.createElement('script');
-            dsq.type = 'text/javascript';
-            dsq.async = true;
-            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-        }());
-    </script>
-
-
+<nav class="mt-24 flex rounded-lg bg-black/[3%] text-lg dark:bg-white/[8%]">
+<a class="flex w-1/2 items-center rounded-l-md p-6 pr-3 no-underline hover:bg-black/[2%] dark:hover:bg-white/[3%]" href=https://mozanunal.com/2021/10/wpctl-1/><span class=mr-1.5>←</span><span>Wallpaper Automation Tool: WPCTL</span></a>
+<a class="ml-auto flex w-1/2 items-center justify-end rounded-r-md p-6 pl-3 no-underline hover:bg-black/[2%] dark:hover:bg-white/[3%]" href=https://mozanunal.com/2020/04/imaging-axis/><span>Medical Imaging Planes</span><span class=ml-1.5>→</span></a>
+</nav>
+</article>
+</main>
+<footer class="opaco mx-auto flex h-[5rem] max-w-3xl items-center px-8 text-[0.9em] opacity-60">
+<div class=mr-auto>
+&copy; 2023
+<a class=link href=https://mozanunal.com/>Mehmet Ozan Ünal</a>
+</div>
+<a class="link mx-6" href=https://gohugo.io/ rel=noopener target=_blank>Powered by Hugo️️</a>️
+<a class=link href=https://github.com/nanxiaobei/hugo-paper rel=noopener target=_blank>Theme Paper</a>
+</footer>
 </body>
 </html>
