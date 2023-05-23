@@ -1,207 +1,317 @@
-<!doctype html><html class="not-ready text-sm lg:text-base" style=--bg:#fbfbfb lang=en><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><title>[TR] Veriloga Giriş - Mehmet Ozan Ünal</title><meta name=theme-color><meta name=description content="Herkes Merhabalar, Bugün bir &ldquo;hardware description language&rdquo; olan verilog diline giriş yapmak istiyorum. Verilog sayısal dizaynda( ASIC ve FPGA ) kullanılan bir tanımlama dilidir. Verilog dilini Fpga programlamak için bir çok projede kullandım fakat ASIC dizayn konusunda bir tecrübem yok. Fpga programlarken öğrendiğim şeyleri farklı yazılarda paylaşmıştım. Bu yazı da o yazılardan biri diyebiliriz. Verilog ile alakalı daha ileri düzey şeylerden bahsedeceğim yazılar da gelecektir diye düşünüyorum.
-Temel Kullanımlar İlk olarak basit mantık fonksiyonlarının verilog modüllerinin oluşturulmasıyla başlamak istiyorum."><meta name=author content="Moz"><link rel="preload stylesheet" as=style href=https://mozanunal.com/main.min.css><link rel=preload as=image href=https://mozanunal.com/theme.png><link rel=preload as=image href="https://www.gravatar.com/avatar/998cbd3ab655239d8be787580cce0415?s=160&amp;d=identicon"><link rel=preload as=image href=https://mozanunal.com/twitter.svg><link rel=preload as=image href=https://mozanunal.com/github.svg><link rel=icon href=https://mozanunal.com/favicon.ico><link rel=apple-touch-icon href=https://mozanunal.com/apple-touch-icon.png><meta name=generator content="Hugo 0.111.3"><script type=application/javascript>var doNotTrack=!1;doNotTrack||(window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","G-007KSW65JL","auto"),ga("send","pageview"))</script><script async src=https://www.google-analytics.com/analytics.js></script>
+<!doctype html><html class="not-ready text-sm lg:text-base" style=--bg:#fbfbfb lang=en>
+<head>
+<meta charset=utf-8>
+<meta http-equiv=x-ua-compatible content="IE=edge">
+<meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
+<title>[TR] Veriloga Giriş - Mehmet Ozan Ünal</title>
+<meta name=theme-color>
+<meta name=description content="Herkes Merhabalar, Bugün bir &ldquo;hardware description language&rdquo; olan verilog diline giriş yapmak istiyorum. Verilog sayısal dizaynda( ASIC ve FPGA ) kullanılan bir tanımlama dilidir. Verilog dilini Fpga programlamak için bir çok projede kullandım fakat ASIC dizayn konusunda bir tecrübem yok. Fpga programlarken öğrendiğim şeyleri farklı yazılarda paylaşmıştım. Bu yazı da o yazılardan biri diyebiliriz. Verilog ile alakalı daha ileri düzey şeylerden bahsedeceğim yazılar da gelecektir diye düşünüyorum.
+Temel Kullanımlar İlk olarak basit mantık fonksiyonlarının verilog modüllerinin oluşturulmasıyla başlamak istiyorum.">
+<meta name=author content="Moz">
+<link rel="preload stylesheet" as=style href=https://mozanunal.com/main.min.css>
+<link rel=preload as=image href=https://mozanunal.com/theme.png>
+<link rel=preload as=image href="https://www.gravatar.com/avatar/998cbd3ab655239d8be787580cce0415?s=160&d=identicon">
+<link rel=preload as=image href=https://mozanunal.com/twitter.svg>
+<link rel=preload as=image href=https://mozanunal.com/github.svg>
+<link rel=icon href=https://mozanunal.com/favicon.ico>
+<link rel=apple-touch-icon href=https://mozanunal.com/apple-touch-icon.png>
+<meta name=generator content="Hugo 0.92.2">
+<script type=application/javascript>var doNotTrack=!1;doNotTrack||(window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga('create','G-007KSW65JL','auto'),ga('send','pageview'))</script>
+<script async src=https://www.google-analytics.com/analytics.js></script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-007KSW65JL"></script>
-<script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-007KSW65JL",{anonymize_ip:!1})}</script><meta property="og:title" content="[TR] Veriloga Giriş"><meta property="og:description" content="Herkes Merhabalar, Bugün bir &ldquo;hardware description language&rdquo; olan verilog diline giriş yapmak istiyorum. Verilog sayısal dizaynda( ASIC ve FPGA ) kullanılan bir tanımlama dilidir. Verilog dilini Fpga programlamak için bir çok projede kullandım fakat ASIC dizayn konusunda bir tecrübem yok. Fpga programlarken öğrendiğim şeyleri farklı yazılarda paylaşmıştım. Bu yazı da o yazılardan biri diyebiliriz. Verilog ile alakalı daha ileri düzey şeylerden bahsedeceğim yazılar da gelecektir diye düşünüyorum.
-Temel Kullanımlar İlk olarak basit mantık fonksiyonlarının verilog modüllerinin oluşturulmasıyla başlamak istiyorum."><meta property="og:type" content="article"><meta property="og:url" content="https://mozanunal.com/2018/06/veriloga-giris/"><meta property="article:section" content="posts"><meta property="article:published_time" content="2018-06-02T11:07:45+00:00"><meta property="article:modified_time" content="2018-06-02T11:07:45+00:00"><meta itemprop=name content="[TR] Veriloga Giriş"><meta itemprop=description content="Herkes Merhabalar, Bugün bir &ldquo;hardware description language&rdquo; olan verilog diline giriş yapmak istiyorum. Verilog sayısal dizaynda( ASIC ve FPGA ) kullanılan bir tanımlama dilidir. Verilog dilini Fpga programlamak için bir çok projede kullandım fakat ASIC dizayn konusunda bir tecrübem yok. Fpga programlarken öğrendiğim şeyleri farklı yazılarda paylaşmıştım. Bu yazı da o yazılardan biri diyebiliriz. Verilog ile alakalı daha ileri düzey şeylerden bahsedeceğim yazılar da gelecektir diye düşünüyorum.
-Temel Kullanımlar İlk olarak basit mantık fonksiyonlarının verilog modüllerinin oluşturulmasıyla başlamak istiyorum."><meta itemprop=datePublished content="2018-06-02T11:07:45+00:00"><meta itemprop=dateModified content="2018-06-02T11:07:45+00:00"><meta itemprop=wordCount content="928"><meta itemprop=keywords content="Electronics,verilog,FPGA,"><meta name=twitter:card content="summary"><meta name=twitter:title content="[TR] Veriloga Giriş"><meta name=twitter:description content="Herkes Merhabalar, Bugün bir &ldquo;hardware description language&rdquo; olan verilog diline giriş yapmak istiyorum. Verilog sayısal dizaynda( ASIC ve FPGA ) kullanılan bir tanımlama dilidir. Verilog dilini Fpga programlamak için bir çok projede kullandım fakat ASIC dizayn konusunda bir tecrübem yok. Fpga programlarken öğrendiğim şeyleri farklı yazılarda paylaşmıştım. Bu yazı da o yazılardan biri diyebiliriz. Verilog ile alakalı daha ileri düzey şeylerden bahsedeceğim yazılar da gelecektir diye düşünüyorum.
-Temel Kullanımlar İlk olarak basit mantık fonksiyonlarının verilog modüllerinin oluşturulmasıyla başlamak istiyorum."></head><body class="text-black duration-200 ease-out dark:text-white"><header class="mx-auto flex h-[5rem] max-w-3xl px-8 lg:justify-center"><div class="relative z-50 mr-auto flex items-center"><a class="-translate-x-[1px] -translate-y-0.5 text-3xl font-bold" href=https://mozanunal.com/>Mehmet Ozan Ünal</a><div class="btn-dark text-[0] ml-6 h-6 w-6 shrink-0 cursor-pointer [background:url(./theme.svg)_left_center/cover_no-repeat] dark:invert dark:[background-position:right]" role=button aria-label=Dark></div></div><div class="btn-menu relative z-50 -mr-8 flex h-[5rem] w-[5rem] shrink-0 cursor-pointer flex-col items-center justify-center gap-2.5 lg:hidden" role=button aria-label=Menu></div><script>const htmlClass=document.documentElement.classList;setTimeout(()=>{htmlClass.remove("not-ready")},10);const btnMenu=document.querySelector(".btn-menu");btnMenu.addEventListener("click",()=>{htmlClass.toggle("open")});const metaTheme=document.querySelector('meta[name="theme-color"]'),lightBg=`"#fbfbfb"`.replace(/"/g,""),setDark=e=>{metaTheme.setAttribute("content",e?"#000":lightBg),htmlClass[e?"add":"remove"]("dark"),localStorage.setItem("dark",e)},darkScheme=window.matchMedia("(prefers-color-scheme: dark)");if(htmlClass.contains("dark"))setDark(!0);else{const e=localStorage.getItem("dark");setDark(e?e==="true":darkScheme.matches)}darkScheme.addEventListener("change",e=>{setDark(e.matches)});const btnDark=document.querySelector(".btn-dark");btnDark.addEventListener("click",()=>{setDark(localStorage.getItem("dark")!=="true")})</script><div class="nav-wrapper fixed inset-x-0 top-full z-40 flex h-full select-none flex-col justify-center pb-16 duration-200 dark:bg-black lg:static lg:h-auto lg:flex-row lg:!bg-transparent lg:pb-0 lg:transition-none"><nav class="lg:ml-12 lg:flex lg:flex-row lg:items-center lg:space-x-6"><a class="block text-center text-2xl leading-[5rem] lg:text-base lg:font-normal" href=/about/>About</a>
-<a class="block text-center text-2xl leading-[5rem] lg:text-base lg:font-normal" href=/contact/>Contact</a></nav><nav class="mt-12 flex justify-center space-x-10 dark:invert lg:mt-0 lg:ml-12 lg:items-center lg:space-x-6"><a class="h-8 w-8 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6" style=--url:url(./twitter.svg) href=https://twitter.com/MOzanUnal target=_blank rel=me>twitter</a>
-<a class="h-8 w-8 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6" style=--url:url(./github.svg) href=https://github.com/mozanunal target=_blank rel=me>github</a></nav></div></header><main class="prose prose-neutral relative mx-auto min-h-[calc(100%-10rem)] max-w-3xl px-8 pt-16 pb-24 dark:prose-invert"><article><header class=mb-20><h1 class="!my-0 pb-2.5">[TR] Veriloga Giriş</h1><div class="text-sm opacity-60"><time>Jun 2, 2018</time></div></header><section><p><strong>Herkes Merhabalar,</strong>
-Bugün bir &ldquo;hardware description language&rdquo; olan verilog diline giriş yapmak istiyorum. Verilog sayısal dizaynda( ASIC ve FPGA ) kullanılan bir tanımlama dilidir. Verilog dilini Fpga programlamak için bir çok projede kullandım fakat ASIC dizayn konusunda bir tecrübem yok. Fpga programlarken öğrendiğim şeyleri farklı yazılarda paylaşmıştım. Bu yazı da o yazılardan biri diyebiliriz. Verilog ile alakalı daha ileri düzey şeylerden bahsedeceğim yazılar da gelecektir diye düşünüyorum.</p><p><img src=/images/1527937147117.png alt="ZYBO Fpga Geliştirme Kartı"></p><h3 id=temel-kullanımlar>Temel Kullanımlar</h3><p>İlk olarak basit mantık fonksiyonlarının verilog modüllerinin oluşturulmasıyla başlamak istiyorum. Bu fonksiyonları oluşturmak için bir kaç farklı seçeneğimiz var. Ben kısaca hepsinin üzerinden geçmek istiyorum. Bu yöntemlerin hepsine aşina olmak şu açıdan önemlidir: Her projede farklı zorluklar karşımıza çıkabilir. Bu zorluklardan en çok ortaya çıkanlardan biri kaynak yetersizliğidir. Kaynak yetersizliği farklı açılardan ortaya çıkabilir.</p><ul><li>Zamanlamanın yetersiz olması</li><li>Fpgadeki mantık kapılarının yeterli olmaması</li><li>Performansın yeterli olmaması
-Bu 3 farklı dar boğaza göre farklı imlemantasyon yöntemini tercih etmeniz gerekebilir.</li></ul><h4 id=aritmetik-operatör-kullanarak>Aritmetik Operatör Kullanarak</h4><p>Aşağıdaki modül OR alan bir modül olarak tasarlanmıştır. Direk OR aritmetik oparatörü kullanarak aşağıdaki gibi oluşturulabilir. Burda dikkat çekmek istediğim ikinci şey bir modülün nasıl tanımlandığıdır. İlk olarak giriş ve çıkışlar tanımlanır. Bu modülde hepsi 1 bit olmak üzere 2 giriş 1 çıkış gereklidir. &ldquo;assign&rdquo; ile gerekli bağlantı yapılır. Hiç &ldquo;clock&rdquo; kullanılmadığı için kombinasyonel <strong>(combinational)</strong> bir modüldür.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-verilog data-lang=verilog><span style=display:flex><span><span style=color:#ff79c6>module</span> OR(
-</span></span><span style=display:flex><span>    <span style=color:#ff79c6>input</span> I1,
-</span></span><span style=display:flex><span>    <span style=color:#ff79c6>input</span> I2,
-</span></span><span style=display:flex><span>    <span style=color:#ff79c6>output</span> O
-</span></span><span style=display:flex><span>    );
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>	<span style=color:#ff79c6>assign</span> O <span style=color:#ff79c6>=</span> I1 <span style=color:#ff79c6>|</span> I2;
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#ff79c6>endmodule</span>
-</span></span></code></pre></div><h4 id=lut-kullanarak>LUT Kullanarak</h4><p>LUT, &ldquo;look up table&rdquo; teriminin kısaltmasıdır. FPGA bildiğiniz gibi verilog diliyle tasarladığımız ve zaman-kaynak sınırlamalarını aşmayan her türlü devrenin gerçeklenebildiği çip türüdür. Bu esnekliği uygulanabilir kılan FPGA yapısının en küçük birimlerindeki LUT&rsquo;lardır. Yani nasıl yazarsak yazalım kodu en son LUT dönüştürülüp devre üzerine öyle aktarılır. Verilog diliyle direk olarak LUT tanımlayarak da istediğimiz mantık fonksiyonunu gerçekleyebiliriz. Aşağıda EXNOR fonksiyonu LUT kullanılarak gerçeklenmiştir.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-verilog data-lang=verilog><span style=display:flex><span><span style=color:#ff79c6>module</span> EXNOR(
-</span></span><span style=display:flex><span>    <span style=color:#ff79c6>input</span> I1,
-</span></span><span style=display:flex><span>    <span style=color:#ff79c6>input</span> I2,
-</span></span><span style=display:flex><span>    <span style=color:#ff79c6>output</span> O
-</span></span><span style=display:flex><span>    );
-</span></span><span style=display:flex><span>LUT2 #(.INIT(<span style=color:#bd93f9>4</span><span style=color:#bd93f9>&#39;b1001</span>)
-</span></span><span style=display:flex><span>	) LUT2_inst(
-</span></span><span style=display:flex><span>	.O(O), .I0(I1), .I1(I2)
-</span></span><span style=display:flex><span>	);
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#ff79c6>endmodule</span>
-</span></span></code></pre></div><h4 id=always-kullanarak>Always Kullanarak</h4><p>Always yapısı sadece belli durumlarda çalışan mantık devreleri yazmak için kullanıyoruz. Örneğin &ldquo;if&rdquo; için burada bir &ldquo;always&rdquo; yapısına ihtiyacımız oluyor.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-verilog data-lang=verilog><span style=display:flex><span><span style=color:#ff79c6>module</span> NAND(
-</span></span><span style=display:flex><span>    <span style=color:#ff79c6>input</span> I1,
-</span></span><span style=display:flex><span>    <span style=color:#ff79c6>input</span> I2,
-</span></span><span style=display:flex><span>    <span style=color:#ff79c6>output</span> <span style=color:#8be9fd>reg</span> O
-</span></span><span style=display:flex><span>    );
-</span></span><span style=display:flex><span>	 
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>	<span style=color:#ff79c6>always</span> @( I1 <span style=color:#ff79c6>or</span> I2 )
-</span></span><span style=display:flex><span>		<span style=color:#ff79c6>begin</span>
-</span></span><span style=display:flex><span>			<span style=color:#ff79c6>if</span>( I1<span style=color:#ff79c6>==</span><span style=color:#bd93f9>1</span> <span style=color:#ff79c6>&amp;&amp;</span> I2<span style=color:#ff79c6>==</span><span style=color:#bd93f9>1</span>)
-</span></span><span style=display:flex><span>				<span style=color:#ff79c6>begin</span>
-</span></span><span style=display:flex><span>					O <span style=color:#ff79c6>&lt;=</span> <span style=color:#bd93f9>1</span><span style=color:#bd93f9>&#39;b0</span>;
-</span></span><span style=display:flex><span>				<span style=color:#ff79c6>end</span>
-</span></span><span style=display:flex><span>			<span style=color:#ff79c6>else</span>
-</span></span><span style=display:flex><span>				<span style=color:#ff79c6>begin</span>
-</span></span><span style=display:flex><span>					O <span style=color:#ff79c6>&lt;=</span> <span style=color:#bd93f9>1</span><span style=color:#bd93f9>&#39;b1</span>;
-</span></span><span style=display:flex><span>				<span style=color:#ff79c6>end</span>
-</span></span><span style=display:flex><span>		<span style=color:#ff79c6>end</span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#ff79c6>endmodule</span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#ff79c6>module</span> NOR(
-</span></span><span style=display:flex><span>    <span style=color:#ff79c6>input</span> I1,
-</span></span><span style=display:flex><span>    <span style=color:#ff79c6>input</span> I2,
-</span></span><span style=display:flex><span>    <span style=color:#ff79c6>output</span> <span style=color:#8be9fd>reg</span> O
-</span></span><span style=display:flex><span>    );
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>	<span style=color:#ff79c6>always</span> @( I1 <span style=color:#ff79c6>or</span> I2 )
-</span></span><span style=display:flex><span>		<span style=color:#ff79c6>begin</span>
-</span></span><span style=display:flex><span>			<span style=color:#ff79c6>if</span>( I1<span style=color:#ff79c6>==</span><span style=color:#bd93f9>0</span> <span style=color:#ff79c6>&amp;&amp;</span> I2<span style=color:#ff79c6>==</span><span style=color:#bd93f9>0</span>)
-</span></span><span style=display:flex><span>				<span style=color:#ff79c6>begin</span>
-</span></span><span style=display:flex><span>					O <span style=color:#ff79c6>&lt;=</span> <span style=color:#bd93f9>1</span><span style=color:#bd93f9>&#39;b1</span>;
-</span></span><span style=display:flex><span>				<span style=color:#ff79c6>end</span>
-</span></span><span style=display:flex><span>			<span style=color:#ff79c6>else</span>
-</span></span><span style=display:flex><span>				<span style=color:#ff79c6>begin</span>
-</span></span><span style=display:flex><span>					O <span style=color:#ff79c6>&lt;=</span> <span style=color:#bd93f9>1</span><span style=color:#bd93f9>&#39;b0</span>;
-</span></span><span style=display:flex><span>				<span style=color:#ff79c6>end</span>
-</span></span><span style=display:flex><span>		<span style=color:#ff79c6>end</span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#ff79c6>endmodule</span>
-</span></span></code></pre></div><h4 id=case-kullanarak>Case Kullanarak</h4><p>Case yapısı kullanarak aşağıdaki decoder kolayca gerçeklenebilir. Case kullanımı için de always yapısı gereklidir.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-verilog data-lang=verilog><span style=display:flex><span><span style=color:#ff79c6>module</span> DECODER(
-</span></span><span style=display:flex><span>	 <span style=color:#ff79c6>input</span>[<span style=color:#bd93f9>3</span><span style=color:#ff79c6>:</span><span style=color:#bd93f9>0</span>] IN,
-</span></span><span style=display:flex><span>	 <span style=color:#ff79c6>output</span> <span style=color:#8be9fd>reg</span> [<span style=color:#bd93f9>15</span><span style=color:#ff79c6>:</span><span style=color:#bd93f9>0</span>] OUT
-</span></span><span style=display:flex><span>    );
-</span></span><span style=display:flex><span>	
-</span></span><span style=display:flex><span><span style=color:#ff79c6>always</span> @(<span style=color:#ff79c6>*</span>)
-</span></span><span style=display:flex><span><span style=color:#ff79c6>begin</span>	 
-</span></span><span style=display:flex><span>	<span style=color:#ff79c6>case</span>(IN) 
-</span></span><span style=display:flex><span>	<span style=color:#bd93f9>4</span><span style=color:#bd93f9>&#39;b0000</span><span style=color:#ff79c6>:</span> OUT<span style=color:#ff79c6>&lt;=</span><span style=color:#bd93f9>16</span><span style=color:#bd93f9>&#39;b0000000000000000</span>;
-</span></span><span style=display:flex><span>	<span style=color:#bd93f9>4</span><span style=color:#bd93f9>&#39;b0001</span><span style=color:#ff79c6>:</span> OUT<span style=color:#ff79c6>&lt;=</span><span style=color:#bd93f9>16</span><span style=color:#bd93f9>&#39;b0000000000000010</span>;
-</span></span><span style=display:flex><span>	<span style=color:#bd93f9>4</span><span style=color:#bd93f9>&#39;b0010</span><span style=color:#ff79c6>:</span> OUT<span style=color:#ff79c6>&lt;=</span><span style=color:#bd93f9>16</span><span style=color:#bd93f9>&#39;b0000000000000100</span>;
-</span></span><span style=display:flex><span>	<span style=color:#bd93f9>4</span><span style=color:#bd93f9>&#39;b0011</span><span style=color:#ff79c6>:</span> OUT<span style=color:#ff79c6>&lt;=</span><span style=color:#bd93f9>16</span><span style=color:#bd93f9>&#39;b0000000000001000</span>;
-</span></span><span style=display:flex><span>	<span style=color:#bd93f9>4</span><span style=color:#bd93f9>&#39;b0100</span><span style=color:#ff79c6>:</span> OUT<span style=color:#ff79c6>&lt;=</span><span style=color:#bd93f9>16</span><span style=color:#bd93f9>&#39;b0000000000010000</span>;
-</span></span><span style=display:flex><span>	<span style=color:#bd93f9>4</span><span style=color:#bd93f9>&#39;b0101</span><span style=color:#ff79c6>:</span> OUT<span style=color:#ff79c6>&lt;=</span><span style=color:#bd93f9>16</span><span style=color:#bd93f9>&#39;b0000000000100000</span>;
-</span></span><span style=display:flex><span>	<span style=color:#bd93f9>4</span><span style=color:#bd93f9>&#39;b0110</span><span style=color:#ff79c6>:</span> OUT<span style=color:#ff79c6>&lt;=</span><span style=color:#bd93f9>16</span><span style=color:#bd93f9>&#39;b0000000001000000</span>;
-</span></span><span style=display:flex><span>	<span style=color:#bd93f9>4</span><span style=color:#bd93f9>&#39;b0111</span><span style=color:#ff79c6>:</span> OUT<span style=color:#ff79c6>&lt;=</span><span style=color:#bd93f9>16</span><span style=color:#bd93f9>&#39;b0000000010000000</span>;
-</span></span><span style=display:flex><span>	<span style=color:#bd93f9>4</span><span style=color:#bd93f9>&#39;b1000</span><span style=color:#ff79c6>:</span> OUT<span style=color:#ff79c6>&lt;=</span><span style=color:#bd93f9>16</span><span style=color:#bd93f9>&#39;b0000000100000000</span>;
-</span></span><span style=display:flex><span>	<span style=color:#bd93f9>4</span><span style=color:#bd93f9>&#39;b1001</span><span style=color:#ff79c6>:</span> OUT<span style=color:#ff79c6>&lt;=</span><span style=color:#bd93f9>16</span><span style=color:#bd93f9>&#39;b0000001000000000</span>;
-</span></span><span style=display:flex><span>	<span style=color:#bd93f9>4</span><span style=color:#bd93f9>&#39;b1010</span><span style=color:#ff79c6>:</span> OUT<span style=color:#ff79c6>&lt;=</span><span style=color:#bd93f9>16</span><span style=color:#bd93f9>&#39;b0000010000000000</span>;
-</span></span><span style=display:flex><span>	<span style=color:#bd93f9>4</span><span style=color:#bd93f9>&#39;b1011</span><span style=color:#ff79c6>:</span> OUT<span style=color:#ff79c6>&lt;=</span><span style=color:#bd93f9>16</span><span style=color:#bd93f9>&#39;b0000100000000000</span>;
-</span></span><span style=display:flex><span>	<span style=color:#bd93f9>4</span><span style=color:#bd93f9>&#39;b1100</span><span style=color:#ff79c6>:</span> OUT<span style=color:#ff79c6>&lt;=</span><span style=color:#bd93f9>16</span><span style=color:#bd93f9>&#39;b0001000000000000</span>;
-</span></span><span style=display:flex><span>	<span style=color:#bd93f9>4</span><span style=color:#bd93f9>&#39;b1101</span><span style=color:#ff79c6>:</span> OUT<span style=color:#ff79c6>&lt;=</span><span style=color:#bd93f9>16</span><span style=color:#bd93f9>&#39;b0010000000000000</span>;
-</span></span><span style=display:flex><span>	<span style=color:#bd93f9>4</span><span style=color:#bd93f9>&#39;b1110</span><span style=color:#ff79c6>:</span> OUT<span style=color:#ff79c6>&lt;=</span><span style=color:#bd93f9>16</span><span style=color:#bd93f9>&#39;b0100000000000000</span>;
-</span></span><span style=display:flex><span>	<span style=color:#bd93f9>4</span><span style=color:#bd93f9>&#39;b1111</span><span style=color:#ff79c6>:</span> OUT<span style=color:#ff79c6>&lt;=</span><span style=color:#bd93f9>16</span><span style=color:#bd93f9>&#39;b1000000000000000</span>;
-</span></span><span style=display:flex><span>	<span style=color:#ff79c6>endcase</span>
-</span></span><span style=display:flex><span><span style=color:#ff79c6>end</span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#ff79c6>endmodule</span>
-</span></span></code></pre></div><h3 id=modul-hiyerarşisi>Modul Hiyerarşisi</h3><p>Önemli kullanımlardan biri de hiyerarşik modul yapısıdır. Modüller diğer modelleri alt modül olarak çağırabilir bu sayede işlevler birbirinden ayrıştırılır. Örneğin decoder oluşturulduğunda projenin kalanından ayrı olarak test edilir. Çalıştığından emin olunan bir alt parça sağlanmış olur.
-Diger modulleri aşadaki gibi bir yazım kurallarıyla alt modul olarak çağırabilirsiniz. Modülün giriş ve çıkışlarını üst modüldeki kablolara bağlanmanız gerekir.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-verilog data-lang=verilog><span style=display:flex><span><span style=color:#ff79c6>module</span> topmodule(
-</span></span><span style=display:flex><span>	<span style=color:#ff79c6>input</span> [<span style=color:#bd93f9>7</span><span style=color:#ff79c6>:</span><span style=color:#bd93f9>0</span>]sw,
-</span></span><span style=display:flex><span>	<span style=color:#ff79c6>input</span> [<span style=color:#bd93f9>3</span><span style=color:#ff79c6>:</span><span style=color:#bd93f9>0</span>]btn,
-</span></span><span style=display:flex><span>	<span style=color:#ff79c6>output</span> [<span style=color:#bd93f9>7</span><span style=color:#ff79c6>:</span><span style=color:#bd93f9>0</span>]led,
-</span></span><span style=display:flex><span>	<span style=color:#ff79c6>output</span> [<span style=color:#bd93f9>6</span><span style=color:#ff79c6>:</span><span style=color:#bd93f9>0</span>]seg,
-</span></span><span style=display:flex><span>	<span style=color:#ff79c6>output</span> dp,
-</span></span><span style=display:flex><span>	<span style=color:#ff79c6>output</span> [<span style=color:#bd93f9>3</span><span style=color:#ff79c6>:</span><span style=color:#bd93f9>0</span>]an
-</span></span><span style=display:flex><span>    );
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>DEMUX demux1 ( .D(sw[<span style=color:#bd93f9>0</span>]), .S(btn[<span style=color:#bd93f9>1</span><span style=color:#ff79c6>:</span><span style=color:#bd93f9>0</span>]), .O(led[<span style=color:#bd93f9>3</span><span style=color:#ff79c6>:</span><span style=color:#bd93f9>0</span>]) );
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#ff79c6>assign</span> an <span style=color:#ff79c6>=</span> <span style=color:#bd93f9>4</span><span style=color:#bd93f9>&#39;b1110</span>;
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#ff79c6>endmodule</span>
-</span></span></code></pre></div><p>Aynı alt modülden farklı isimler vererek birden fazla oluşturabilirsiniz. Bu örnekte demux bir veya daha fazla kez oluşturulmuş başka alt modüller kullnarak yapılmıştır. Sonrasında da bu modül başka bir üst modülün parçası olabilir. Bu şekilde hiyerarşik bir yapı vardır.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-verilog data-lang=verilog><span style=display:flex><span>
-</span></span><span style=display:flex><span>`timescale <span style=color:#bd93f9>1</span>ns <span style=color:#ff79c6>/</span> <span style=color:#bd93f9>1</span>ps
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#ff79c6>module</span> DEMUX(
-</span></span><span style=display:flex><span>	 <span style=color:#ff79c6>input</span> D,
-</span></span><span style=display:flex><span>	 <span style=color:#ff79c6>input</span> [<span style=color:#bd93f9>1</span><span style=color:#ff79c6>:</span><span style=color:#bd93f9>0</span>] S,
-</span></span><span style=display:flex><span>	 <span style=color:#ff79c6>output</span> [<span style=color:#bd93f9>3</span><span style=color:#ff79c6>:</span><span style=color:#bd93f9>0</span>] O
-</span></span><span style=display:flex><span>    );
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#8be9fd>wire</span> W[<span style=color:#bd93f9>5</span><span style=color:#ff79c6>:</span><span style=color:#bd93f9>0</span>];
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>NOT not1(.O(W[<span style=color:#bd93f9>0</span>]),.I(S[<span style=color:#bd93f9>0</span>]));
-</span></span><span style=display:flex><span>NOT not2(.O(W[<span style=color:#bd93f9>1</span>]),.I(S[<span style=color:#bd93f9>1</span>]));
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>AND and1(.O(W[<span style=color:#bd93f9>2</span>]),.I1(W[<span style=color:#bd93f9>0</span>]),.I2(W[<span style=color:#bd93f9>1</span>]));
-</span></span><span style=display:flex><span>AND and2(.O(W[<span style=color:#bd93f9>3</span>]),.I1(S[<span style=color:#bd93f9>0</span>]),.I2(W[<span style=color:#bd93f9>1</span>]));
-</span></span><span style=display:flex><span>AND and3(.O(W[<span style=color:#bd93f9>4</span>]),.I1(W[<span style=color:#bd93f9>0</span>]),.I2(S[<span style=color:#bd93f9>1</span>]));
-</span></span><span style=display:flex><span>AND and4(.O(W[<span style=color:#bd93f9>5</span>]),.I1(S[<span style=color:#bd93f9>0</span>]),.I2(S[<span style=color:#bd93f9>1</span>]));
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>TRI tri00(.O(O[<span style=color:#bd93f9>0</span>]),.I(W[<span style=color:#bd93f9>2</span>]),.E(D));
-</span></span><span style=display:flex><span>TRI tri01(.O(O[<span style=color:#bd93f9>1</span>]),.I(W[<span style=color:#bd93f9>3</span>]),.E(D));
-</span></span><span style=display:flex><span>TRI tri10(.O(O[<span style=color:#bd93f9>2</span>]),.I(W[<span style=color:#bd93f9>4</span>]),.E(D));
-</span></span><span style=display:flex><span>TRI tri11(.O(O[<span style=color:#bd93f9>3</span>]),.I(W[<span style=color:#bd93f9>5</span>]),.E(D));
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#ff79c6>endmodule</span>
-</span></span></code></pre></div><h3 id=sıralı-sequential-mantık-devreleri>Sıralı (Sequential) Mantık Devreleri</h3><p>Sayısal devrelerin olmazsa olmazlarından biri <strong>&ldquo;clock&rdquo;</strong> sinyalidir. Peki neden böyle bir şeye ihtiyaç duyulur ? Devrelerde gerçeklenmek istenen işlevler genellikle belli durumların olduğu ve zamana bağlı olarak ard arda belli durumların birbini takip etmesiyle çalışan sistemlerdir. Çoğu durum tek bir kombinasyonel devre olarak gerçeklenemez. Bir çok gerçeklenebilecek durumda da yine de sıralı devreler tercih edilir. Çünkü çok daha az kaynak kullanarak daha stabil şekilde gerçeklemeye uygun devreler bu yöntem ile elde edilebilir.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-verilog data-lang=verilog><span style=display:flex><span><span style=color:#ff79c6>module</span> register(
-</span></span><span style=display:flex><span><span style=color:#ff79c6>input</span> [<span style=color:#bd93f9>7</span><span style=color:#ff79c6>:</span><span style=color:#bd93f9>0</span>] SW,
-</span></span><span style=display:flex><span><span style=color:#ff79c6>input</span> BTN,
-</span></span><span style=display:flex><span><span style=color:#ff79c6>input</span> CLEAR,
-</span></span><span style=display:flex><span><span style=color:#ff79c6>output</span> <span style=color:#8be9fd>reg</span> [<span style=color:#bd93f9>7</span><span style=color:#ff79c6>:</span><span style=color:#bd93f9>0</span>] LED
-</span></span><span style=display:flex><span>	);
-</span></span><span style=display:flex><span>	
-</span></span><span style=display:flex><span>	
-</span></span><span style=display:flex><span><span style=color:#ff79c6>always</span> @(<span style=color:#ff79c6>posedge</span> BTN , <span style=color:#ff79c6>posedge</span> CLEAR) 
-</span></span><span style=display:flex><span><span style=color:#ff79c6>begin</span>
-</span></span><span style=display:flex><span>	<span style=color:#ff79c6>case</span> (CLEAR)
-</span></span><span style=display:flex><span>	<span style=color:#bd93f9>1</span><span style=color:#bd93f9>&#39;b1</span><span style=color:#ff79c6>:</span> LED <span style=color:#ff79c6>&lt;=</span> <span style=color:#bd93f9>8</span><span style=color:#bd93f9>&#39;b00000000</span>;
-</span></span><span style=display:flex><span>	<span style=color:#ff79c6>default</span><span style=color:#ff79c6>:</span> LED <span style=color:#ff79c6>&lt;=</span>SW;
-</span></span><span style=display:flex><span>	<span style=color:#ff79c6>endcase</span>
-</span></span><span style=display:flex><span><span style=color:#ff79c6>end</span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>	
-</span></span><span style=display:flex><span><span style=color:#ff79c6>endmodule</span>
-</span></span></code></pre></div><p>Art-arda 4 tane 1 veya 4 tane 0 gelmesi durumunu tespit eden devrenin verilog kodu aşağıdaki gibidir. Bu devre tipi sıralı mantık devrelerine giriş niteliğinde bir örnektir. Bu devrenin kodu yazılırken ilkönce kağıt üzerinde yapılması gereken işlemler vardır. İlk olarak devrenin durumları çıkarılır. Mealy-Moore diagramı çizilerek durumlar arasındaki geçişler belirlenir ve eğer yapılabiliyorsa gerekli indirgemeler yapılır. Bu işlemlerin sonucuna göre aşağıdaki kod yazılabilir. <code>always @(posedge clk or posedge reset)</code> bu satır sayesinde her &ldquo;clock&rdquo; yükselen kenarında girişlerin değerlerine göre sistem sonraki duruma geçirilir.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-verilog data-lang=verilog><span style=display:flex><span>`timescale <span style=color:#bd93f9>1</span>ns <span style=color:#ff79c6>/</span> <span style=color:#bd93f9>1</span>ps
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#ff79c6>module</span> FSM1(
-</span></span><span style=display:flex><span>    <span style=color:#ff79c6>input</span> x,
-</span></span><span style=display:flex><span>	 <span style=color:#ff79c6>input</span> reset,
-</span></span><span style=display:flex><span>	 <span style=color:#ff79c6>input</span> clk,
-</span></span><span style=display:flex><span>    <span style=color:#ff79c6>output</span> <span style=color:#8be9fd>reg</span> z
-</span></span><span style=display:flex><span>    );
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#8be9fd>reg</span> q0,q1,q2;
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#8be9fd>wire</span> Q0,Q1,Q2,z_new;
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#ff79c6>assign</span> Q2 <span style=color:#ff79c6>=</span> x <span style=color:#ff79c6>&amp;</span> q2 <span style=color:#ff79c6>|</span> x <span style=color:#ff79c6>&amp;</span> q1 <span style=color:#ff79c6>&amp;</span> q0; 
-</span></span><span style=display:flex><span><span style=color:#ff79c6>assign</span> Q1 <span style=color:#ff79c6>=</span> (q1 <span style=color:#ff79c6>&amp;</span> (<span style=color:#ff79c6>~</span>q0)) <span style=color:#ff79c6>|</span> ((<span style=color:#ff79c6>~</span>q2) <span style=color:#ff79c6>&amp;</span> (<span style=color:#ff79c6>~</span>q1) <span style=color:#ff79c6>&amp;</span> q0) <span style=color:#ff79c6>|</span> (x <span style=color:#ff79c6>&amp;</span>  (<span style=color:#ff79c6>~</span>q2)  <span style=color:#ff79c6>&amp;</span> (<span style=color:#ff79c6>~</span>q1));  
-</span></span><span style=display:flex><span><span style=color:#ff79c6>assign</span> Q0 <span style=color:#ff79c6>=</span> (x  <span style=color:#ff79c6>&amp;</span> (<span style=color:#ff79c6>~</span>q1)) <span style=color:#ff79c6>|</span> (x <span style=color:#ff79c6>&amp;</span> (<span style=color:#ff79c6>~</span>q0) <span style=color:#ff79c6>|</span> (<span style=color:#ff79c6>~</span>q2)) <span style=color:#ff79c6>&amp;</span> ((<span style=color:#ff79c6>~</span>q1) <span style=color:#ff79c6>&amp;</span> (<span style=color:#ff79c6>~</span>q0));
-</span></span><span style=display:flex><span><span style=color:#ff79c6>assign</span> z_new  <span style=color:#ff79c6>=</span> ((<span style=color:#ff79c6>~</span>x) <span style=color:#ff79c6>&amp;</span> q1 <span style=color:#ff79c6>&amp;</span> (<span style=color:#ff79c6>~</span>q0)) <span style=color:#ff79c6>|</span> (x <span style=color:#ff79c6>&amp;</span> q2 <span style=color:#ff79c6>&amp;</span> q0);
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#ff79c6>always</span> @(<span style=color:#ff79c6>posedge</span> clk <span style=color:#ff79c6>or</span> <span style=color:#ff79c6>posedge</span> reset) 
-</span></span><span style=display:flex><span>	<span style=color:#ff79c6>begin</span>
-</span></span><span style=display:flex><span>		<span style=color:#ff79c6>if</span> (reset)
-</span></span><span style=display:flex><span>		<span style=color:#ff79c6>begin</span>
-</span></span><span style=display:flex><span>			q0 <span style=color:#ff79c6>&lt;=</span> <span style=color:#bd93f9>0</span>;
-</span></span><span style=display:flex><span>			q1 <span style=color:#ff79c6>&lt;=</span> <span style=color:#bd93f9>0</span>;
-</span></span><span style=display:flex><span>			q2 <span style=color:#ff79c6>&lt;=</span> <span style=color:#bd93f9>0</span>;
-</span></span><span style=display:flex><span>			 
-</span></span><span style=display:flex><span>		<span style=color:#ff79c6>end</span>
-</span></span><span style=display:flex><span>		<span style=color:#ff79c6>else</span>
-</span></span><span style=display:flex><span>		<span style=color:#ff79c6>begin</span>
-</span></span><span style=display:flex><span>			q0 <span style=color:#ff79c6>&lt;=</span> Q0;
-</span></span><span style=display:flex><span>			q1 <span style=color:#ff79c6>&lt;=</span> Q1;
-</span></span><span style=display:flex><span>			q2 <span style=color:#ff79c6>&lt;=</span> Q2;
-</span></span><span style=display:flex><span>			z<span style=color:#ff79c6>=</span> z_new;
-</span></span><span style=display:flex><span>		<span style=color:#ff79c6>end</span>
-</span></span><span style=display:flex><span>	<span style=color:#ff79c6>end</span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#ff79c6>endmodule</span>
-</span></span></code></pre></div></section><footer class="mt-12 flex flex-wrap"><a class="mr-1.5 mb-1.5 rounded-lg bg-black/[3%] px-5 py-2 no-underline dark:bg-white/[8%]" href=https://mozanunal.com/tags/electronics>Electronics</a>
+<script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-007KSW65JL',{anonymize_ip:!1})}</script>
+<meta property="og:title" content="[TR] Veriloga Giriş">
+<meta property="og:description" content="Herkes Merhabalar, Bugün bir &ldquo;hardware description language&rdquo; olan verilog diline giriş yapmak istiyorum. Verilog sayısal dizaynda( ASIC ve FPGA ) kullanılan bir tanımlama dilidir. Verilog dilini Fpga programlamak için bir çok projede kullandım fakat ASIC dizayn konusunda bir tecrübem yok. Fpga programlarken öğrendiğim şeyleri farklı yazılarda paylaşmıştım. Bu yazı da o yazılardan biri diyebiliriz. Verilog ile alakalı daha ileri düzey şeylerden bahsedeceğim yazılar da gelecektir diye düşünüyorum.
+Temel Kullanımlar İlk olarak basit mantık fonksiyonlarının verilog modüllerinin oluşturulmasıyla başlamak istiyorum.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://mozanunal.com/2018/06/veriloga-giris/"><meta property="article:section" content="posts">
+<meta property="article:published_time" content="2018-06-02T11:07:45+00:00">
+<meta property="article:modified_time" content="2018-06-02T11:07:45+00:00">
+<meta itemprop=name content="[TR] Veriloga Giriş">
+<meta itemprop=description content="Herkes Merhabalar, Bugün bir &ldquo;hardware description language&rdquo; olan verilog diline giriş yapmak istiyorum. Verilog sayısal dizaynda( ASIC ve FPGA ) kullanılan bir tanımlama dilidir. Verilog dilini Fpga programlamak için bir çok projede kullandım fakat ASIC dizayn konusunda bir tecrübem yok. Fpga programlarken öğrendiğim şeyleri farklı yazılarda paylaşmıştım. Bu yazı da o yazılardan biri diyebiliriz. Verilog ile alakalı daha ileri düzey şeylerden bahsedeceğim yazılar da gelecektir diye düşünüyorum.
+Temel Kullanımlar İlk olarak basit mantık fonksiyonlarının verilog modüllerinin oluşturulmasıyla başlamak istiyorum."><meta itemprop=datePublished content="2018-06-02T11:07:45+00:00">
+<meta itemprop=dateModified content="2018-06-02T11:07:45+00:00">
+<meta itemprop=wordCount content="928">
+<meta itemprop=keywords content="Electronics,verilog,FPGA,">
+<meta name=twitter:card content="summary">
+<meta name=twitter:title content="[TR] Veriloga Giriş">
+<meta name=twitter:description content="Herkes Merhabalar, Bugün bir &ldquo;hardware description language&rdquo; olan verilog diline giriş yapmak istiyorum. Verilog sayısal dizaynda( ASIC ve FPGA ) kullanılan bir tanımlama dilidir. Verilog dilini Fpga programlamak için bir çok projede kullandım fakat ASIC dizayn konusunda bir tecrübem yok. Fpga programlarken öğrendiğim şeyleri farklı yazılarda paylaşmıştım. Bu yazı da o yazılardan biri diyebiliriz. Verilog ile alakalı daha ileri düzey şeylerden bahsedeceğim yazılar da gelecektir diye düşünüyorum.
+Temel Kullanımlar İlk olarak basit mantık fonksiyonlarının verilog modüllerinin oluşturulmasıyla başlamak istiyorum.">
+</head>
+<body class="text-black duration-200 ease-out dark:text-white">
+<header class="mx-auto flex h-[5rem] max-w-3xl px-8 lg:justify-center">
+<div class="relative z-50 mr-auto flex items-center">
+<a class="-translate-x-[1px] -translate-y-0.5 text-3xl font-bold" href=https://mozanunal.com/>Mehmet Ozan Ünal</a>
+<div class="btn-dark text-[0] ml-6 h-6 w-6 shrink-0 cursor-pointer [background:url(./theme.svg)_left_center/cover_no-repeat] dark:invert dark:[background-position:right]" role=button aria-label=Dark></div>
+</div>
+<div class="btn-menu relative z-50 -mr-8 flex h-[5rem] w-[5rem] shrink-0 cursor-pointer flex-col items-center justify-center gap-2.5 lg:hidden" role=button aria-label=Menu></div>
+<script>const htmlClass=document.documentElement.classList;setTimeout(()=>{htmlClass.remove('not-ready')},10);const btnMenu=document.querySelector('.btn-menu');btnMenu.addEventListener('click',()=>{htmlClass.toggle('open')});const metaTheme=document.querySelector('meta[name="theme-color"]'),lightBg=`"#fbfbfb"`.replace(/"/g,''),setDark=a=>{metaTheme.setAttribute('content',a?'#000':lightBg),htmlClass[a?'add':'remove']('dark'),localStorage.setItem('dark',a)},darkScheme=window.matchMedia('(prefers-color-scheme: dark)');if(htmlClass.contains('dark'))setDark(!0);else{const a=localStorage.getItem('dark');setDark(a?a==='true':darkScheme.matches)}darkScheme.addEventListener('change',a=>{setDark(a.matches)});const btnDark=document.querySelector('.btn-dark');btnDark.addEventListener('click',()=>{setDark(localStorage.getItem('dark')!=='true')})</script>
+<div class="nav-wrapper fixed inset-x-0 top-full z-40 flex h-full select-none flex-col justify-center pb-16 duration-200 dark:bg-black lg:static lg:h-auto lg:flex-row lg:!bg-transparent lg:pb-0 lg:transition-none">
+<nav class="lg:ml-12 lg:flex lg:flex-row lg:items-center lg:space-x-6">
+<a class="block text-center text-2xl leading-[5rem] lg:text-base lg:font-normal" href=/about/>About</a>
+<a class="block text-center text-2xl leading-[5rem] lg:text-base lg:font-normal" href=/contact/>Contact</a>
+</nav>
+<nav class="mt-12 flex justify-center space-x-10 dark:invert lg:mt-0 lg:ml-12 lg:items-center lg:space-x-6">
+<a class="h-8 w-8 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6" style=--url:url(./twitter.svg) href=https://twitter.com/MOzanUnal target=_blank rel=me>
+twitter
+</a>
+<a class="h-8 w-8 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6" style=--url:url(./github.svg) href=https://github.com/mozanunal target=_blank rel=me>
+github
+</a>
+</nav>
+</div>
+</header>
+<main class="prose prose-neutral relative mx-auto min-h-[calc(100%-10rem)] max-w-3xl px-8 pt-16 pb-24 dark:prose-invert">
+<article>
+<header class=mb-20>
+<h1 class="!my-0 pb-2.5">[TR] Veriloga Giriş</h1>
+<div class="text-sm opacity-60">
+<time>Jun 2, 2018</time>
+</div>
+</header>
+<section><p><strong>Herkes Merhabalar,</strong>
+Bugün bir &ldquo;hardware description language&rdquo; olan verilog diline giriş yapmak istiyorum. Verilog sayısal dizaynda( ASIC ve FPGA ) kullanılan bir tanımlama dilidir. Verilog dilini Fpga programlamak için bir çok projede kullandım fakat ASIC dizayn konusunda bir tecrübem yok. Fpga programlarken öğrendiğim şeyleri farklı yazılarda paylaşmıştım. Bu yazı da o yazılardan biri diyebiliriz. Verilog ile alakalı daha ileri düzey şeylerden bahsedeceğim yazılar da gelecektir diye düşünüyorum.</p>
+<p><img src=/images/1527937147117.png alt="ZYBO Fpga Geliştirme Kartı"></p>
+<h3 id=temel-kullanımlar>Temel Kullanımlar</h3>
+<p>İlk olarak basit mantık fonksiyonlarının verilog modüllerinin oluşturulmasıyla başlamak istiyorum. Bu fonksiyonları oluşturmak için bir kaç farklı seçeneğimiz var. Ben kısaca hepsinin üzerinden geçmek istiyorum. Bu yöntemlerin hepsine aşina olmak şu açıdan önemlidir: Her projede farklı zorluklar karşımıza çıkabilir. Bu zorluklardan en çok ortaya çıkanlardan biri kaynak yetersizliğidir. Kaynak yetersizliği farklı açılardan ortaya çıkabilir.</p>
+<ul>
+<li>Zamanlamanın yetersiz olması</li>
+<li>Fpgadeki mantık kapılarının yeterli olmaması</li>
+<li>Performansın yeterli olmaması
+Bu 3 farklı dar boğaza göre farklı imlemantasyon yöntemini tercih etmeniz gerekebilir.</li>
+</ul>
+<h4 id=aritmetik-operatör-kullanarak>Aritmetik Operatör Kullanarak</h4>
+<p>Aşağıdaki modül OR alan bir modül olarak tasarlanmıştır. Direk OR aritmetik oparatörü kullanarak aşağıdaki gibi oluşturulabilir. Burda dikkat çekmek istediğim ikinci şey bir modülün nasıl tanımlandığıdır. İlk olarak giriş ve çıkışlar tanımlanır. Bu modülde hepsi 1 bit olmak üzere 2 giriş 1 çıkış gereklidir. &ldquo;assign&rdquo; ile gerekli bağlantı yapılır. Hiç &ldquo;clock&rdquo; kullanılmadığı için kombinasyonel <strong>(combinational)</strong> bir modüldür.</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-verilog data-lang=verilog><span style=color:#ff79c6>module</span> OR(
+    <span style=color:#ff79c6>input</span> I1,
+    <span style=color:#ff79c6>input</span> I2,
+    <span style=color:#ff79c6>output</span> O
+    );
+
+	<span style=color:#ff79c6>assign</span> O <span style=color:#ff79c6>=</span> I1 <span style=color:#ff79c6>|</span> I2;
+
+<span style=color:#ff79c6>endmodule</span>
+</code></pre></div><h4 id=lut-kullanarak>LUT Kullanarak</h4>
+<p>LUT, &ldquo;look up table&rdquo; teriminin kısaltmasıdır. FPGA bildiğiniz gibi verilog diliyle tasarladığımız ve zaman-kaynak sınırlamalarını aşmayan her türlü devrenin gerçeklenebildiği çip türüdür. Bu esnekliği uygulanabilir kılan FPGA yapısının en küçük birimlerindeki LUT&rsquo;lardır. Yani nasıl yazarsak yazalım kodu en son LUT dönüştürülüp devre üzerine öyle aktarılır. Verilog diliyle direk olarak LUT tanımlayarak da istediğimiz mantık fonksiyonunu gerçekleyebiliriz. Aşağıda EXNOR fonksiyonu LUT kullanılarak gerçeklenmiştir.</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-verilog data-lang=verilog><span style=color:#ff79c6>module</span> EXNOR(
+    <span style=color:#ff79c6>input</span> I1,
+    <span style=color:#ff79c6>input</span> I2,
+    <span style=color:#ff79c6>output</span> O
+    );
+LUT2 #(.INIT(<span style=color:#bd93f9>4</span><span style=color:#bd93f9>&#39;b1001</span>)
+	) LUT2_inst(
+	.O(O), .I0(I1), .I1(I2)
+	);
+
+<span style=color:#ff79c6>endmodule</span>
+
+</code></pre></div><h4 id=always-kullanarak>Always Kullanarak</h4>
+<p>Always yapısı sadece belli durumlarda çalışan mantık devreleri yazmak için kullanıyoruz. Örneğin &ldquo;if&rdquo; için burada bir &ldquo;always&rdquo; yapısına ihtiyacımız oluyor.</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-verilog data-lang=verilog><span style=color:#ff79c6>module</span> NAND(
+    <span style=color:#ff79c6>input</span> I1,
+    <span style=color:#ff79c6>input</span> I2,
+    <span style=color:#ff79c6>output</span> <span style=color:#8be9fd>reg</span> O
+    );
+	 
+
+	<span style=color:#ff79c6>always</span> @( I1 <span style=color:#ff79c6>or</span> I2 )
+		<span style=color:#ff79c6>begin</span>
+			<span style=color:#ff79c6>if</span>( I1<span style=color:#ff79c6>==</span><span style=color:#bd93f9>1</span> <span style=color:#ff79c6>&amp;&amp;</span> I2<span style=color:#ff79c6>==</span><span style=color:#bd93f9>1</span>)
+				<span style=color:#ff79c6>begin</span>
+					O <span style=color:#ff79c6>&lt;=</span> <span style=color:#bd93f9>1</span><span style=color:#bd93f9>&#39;b0</span>;
+				<span style=color:#ff79c6>end</span>
+			<span style=color:#ff79c6>else</span>
+				<span style=color:#ff79c6>begin</span>
+					O <span style=color:#ff79c6>&lt;=</span> <span style=color:#bd93f9>1</span><span style=color:#bd93f9>&#39;b1</span>;
+				<span style=color:#ff79c6>end</span>
+		<span style=color:#ff79c6>end</span>
+
+<span style=color:#ff79c6>endmodule</span>
+
+<span style=color:#ff79c6>module</span> NOR(
+    <span style=color:#ff79c6>input</span> I1,
+    <span style=color:#ff79c6>input</span> I2,
+    <span style=color:#ff79c6>output</span> <span style=color:#8be9fd>reg</span> O
+    );
+
+	<span style=color:#ff79c6>always</span> @( I1 <span style=color:#ff79c6>or</span> I2 )
+		<span style=color:#ff79c6>begin</span>
+			<span style=color:#ff79c6>if</span>( I1<span style=color:#ff79c6>==</span><span style=color:#bd93f9>0</span> <span style=color:#ff79c6>&amp;&amp;</span> I2<span style=color:#ff79c6>==</span><span style=color:#bd93f9>0</span>)
+				<span style=color:#ff79c6>begin</span>
+					O <span style=color:#ff79c6>&lt;=</span> <span style=color:#bd93f9>1</span><span style=color:#bd93f9>&#39;b1</span>;
+				<span style=color:#ff79c6>end</span>
+			<span style=color:#ff79c6>else</span>
+				<span style=color:#ff79c6>begin</span>
+					O <span style=color:#ff79c6>&lt;=</span> <span style=color:#bd93f9>1</span><span style=color:#bd93f9>&#39;b0</span>;
+				<span style=color:#ff79c6>end</span>
+		<span style=color:#ff79c6>end</span>
+
+<span style=color:#ff79c6>endmodule</span>
+
+</code></pre></div><h4 id=case-kullanarak>Case Kullanarak</h4>
+<p>Case yapısı kullanarak aşağıdaki decoder kolayca gerçeklenebilir. Case kullanımı için de always yapısı gereklidir.</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-verilog data-lang=verilog><span style=color:#ff79c6>module</span> DECODER(
+	 <span style=color:#ff79c6>input</span>[<span style=color:#bd93f9>3</span><span style=color:#ff79c6>:</span><span style=color:#bd93f9>0</span>] IN,
+	 <span style=color:#ff79c6>output</span> <span style=color:#8be9fd>reg</span> [<span style=color:#bd93f9>15</span><span style=color:#ff79c6>:</span><span style=color:#bd93f9>0</span>] OUT
+    );
+	
+<span style=color:#ff79c6>always</span> @(<span style=color:#ff79c6>*</span>)
+<span style=color:#ff79c6>begin</span>	 
+	<span style=color:#ff79c6>case</span>(IN) 
+	<span style=color:#bd93f9>4</span><span style=color:#bd93f9>&#39;b0000</span><span style=color:#ff79c6>:</span> OUT<span style=color:#ff79c6>&lt;=</span><span style=color:#bd93f9>16</span><span style=color:#bd93f9>&#39;b0000000000000000</span>;
+	<span style=color:#bd93f9>4</span><span style=color:#bd93f9>&#39;b0001</span><span style=color:#ff79c6>:</span> OUT<span style=color:#ff79c6>&lt;=</span><span style=color:#bd93f9>16</span><span style=color:#bd93f9>&#39;b0000000000000010</span>;
+	<span style=color:#bd93f9>4</span><span style=color:#bd93f9>&#39;b0010</span><span style=color:#ff79c6>:</span> OUT<span style=color:#ff79c6>&lt;=</span><span style=color:#bd93f9>16</span><span style=color:#bd93f9>&#39;b0000000000000100</span>;
+	<span style=color:#bd93f9>4</span><span style=color:#bd93f9>&#39;b0011</span><span style=color:#ff79c6>:</span> OUT<span style=color:#ff79c6>&lt;=</span><span style=color:#bd93f9>16</span><span style=color:#bd93f9>&#39;b0000000000001000</span>;
+	<span style=color:#bd93f9>4</span><span style=color:#bd93f9>&#39;b0100</span><span style=color:#ff79c6>:</span> OUT<span style=color:#ff79c6>&lt;=</span><span style=color:#bd93f9>16</span><span style=color:#bd93f9>&#39;b0000000000010000</span>;
+	<span style=color:#bd93f9>4</span><span style=color:#bd93f9>&#39;b0101</span><span style=color:#ff79c6>:</span> OUT<span style=color:#ff79c6>&lt;=</span><span style=color:#bd93f9>16</span><span style=color:#bd93f9>&#39;b0000000000100000</span>;
+	<span style=color:#bd93f9>4</span><span style=color:#bd93f9>&#39;b0110</span><span style=color:#ff79c6>:</span> OUT<span style=color:#ff79c6>&lt;=</span><span style=color:#bd93f9>16</span><span style=color:#bd93f9>&#39;b0000000001000000</span>;
+	<span style=color:#bd93f9>4</span><span style=color:#bd93f9>&#39;b0111</span><span style=color:#ff79c6>:</span> OUT<span style=color:#ff79c6>&lt;=</span><span style=color:#bd93f9>16</span><span style=color:#bd93f9>&#39;b0000000010000000</span>;
+	<span style=color:#bd93f9>4</span><span style=color:#bd93f9>&#39;b1000</span><span style=color:#ff79c6>:</span> OUT<span style=color:#ff79c6>&lt;=</span><span style=color:#bd93f9>16</span><span style=color:#bd93f9>&#39;b0000000100000000</span>;
+	<span style=color:#bd93f9>4</span><span style=color:#bd93f9>&#39;b1001</span><span style=color:#ff79c6>:</span> OUT<span style=color:#ff79c6>&lt;=</span><span style=color:#bd93f9>16</span><span style=color:#bd93f9>&#39;b0000001000000000</span>;
+	<span style=color:#bd93f9>4</span><span style=color:#bd93f9>&#39;b1010</span><span style=color:#ff79c6>:</span> OUT<span style=color:#ff79c6>&lt;=</span><span style=color:#bd93f9>16</span><span style=color:#bd93f9>&#39;b0000010000000000</span>;
+	<span style=color:#bd93f9>4</span><span style=color:#bd93f9>&#39;b1011</span><span style=color:#ff79c6>:</span> OUT<span style=color:#ff79c6>&lt;=</span><span style=color:#bd93f9>16</span><span style=color:#bd93f9>&#39;b0000100000000000</span>;
+	<span style=color:#bd93f9>4</span><span style=color:#bd93f9>&#39;b1100</span><span style=color:#ff79c6>:</span> OUT<span style=color:#ff79c6>&lt;=</span><span style=color:#bd93f9>16</span><span style=color:#bd93f9>&#39;b0001000000000000</span>;
+	<span style=color:#bd93f9>4</span><span style=color:#bd93f9>&#39;b1101</span><span style=color:#ff79c6>:</span> OUT<span style=color:#ff79c6>&lt;=</span><span style=color:#bd93f9>16</span><span style=color:#bd93f9>&#39;b0010000000000000</span>;
+	<span style=color:#bd93f9>4</span><span style=color:#bd93f9>&#39;b1110</span><span style=color:#ff79c6>:</span> OUT<span style=color:#ff79c6>&lt;=</span><span style=color:#bd93f9>16</span><span style=color:#bd93f9>&#39;b0100000000000000</span>;
+	<span style=color:#bd93f9>4</span><span style=color:#bd93f9>&#39;b1111</span><span style=color:#ff79c6>:</span> OUT<span style=color:#ff79c6>&lt;=</span><span style=color:#bd93f9>16</span><span style=color:#bd93f9>&#39;b1000000000000000</span>;
+	<span style=color:#ff79c6>endcase</span>
+<span style=color:#ff79c6>end</span>
+
+<span style=color:#ff79c6>endmodule</span>
+
+
+</code></pre></div><h3 id=modul-hiyerarşisi>Modul Hiyerarşisi</h3>
+<p>Önemli kullanımlardan biri de hiyerarşik modul yapısıdır. Modüller diğer modelleri alt modül olarak çağırabilir bu sayede işlevler birbirinden ayrıştırılır. Örneğin decoder oluşturulduğunda projenin kalanından ayrı olarak test edilir. Çalıştığından emin olunan bir alt parça sağlanmış olur.
+Diger modulleri aşadaki gibi bir yazım kurallarıyla alt modul olarak çağırabilirsiniz. Modülün giriş ve çıkışlarını üst modüldeki kablolara bağlanmanız gerekir.</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-verilog data-lang=verilog><span style=color:#ff79c6>module</span> topmodule(
+	<span style=color:#ff79c6>input</span> [<span style=color:#bd93f9>7</span><span style=color:#ff79c6>:</span><span style=color:#bd93f9>0</span>]sw,
+	<span style=color:#ff79c6>input</span> [<span style=color:#bd93f9>3</span><span style=color:#ff79c6>:</span><span style=color:#bd93f9>0</span>]btn,
+	<span style=color:#ff79c6>output</span> [<span style=color:#bd93f9>7</span><span style=color:#ff79c6>:</span><span style=color:#bd93f9>0</span>]led,
+	<span style=color:#ff79c6>output</span> [<span style=color:#bd93f9>6</span><span style=color:#ff79c6>:</span><span style=color:#bd93f9>0</span>]seg,
+	<span style=color:#ff79c6>output</span> dp,
+	<span style=color:#ff79c6>output</span> [<span style=color:#bd93f9>3</span><span style=color:#ff79c6>:</span><span style=color:#bd93f9>0</span>]an
+    );
+
+DEMUX demux1 ( .D(sw[<span style=color:#bd93f9>0</span>]), .S(btn[<span style=color:#bd93f9>1</span><span style=color:#ff79c6>:</span><span style=color:#bd93f9>0</span>]), .O(led[<span style=color:#bd93f9>3</span><span style=color:#ff79c6>:</span><span style=color:#bd93f9>0</span>]) );
+
+<span style=color:#ff79c6>assign</span> an <span style=color:#ff79c6>=</span> <span style=color:#bd93f9>4</span><span style=color:#bd93f9>&#39;b1110</span>;
+
+
+<span style=color:#ff79c6>endmodule</span>
+</code></pre></div><p>Aynı alt modülden farklı isimler vererek birden fazla oluşturabilirsiniz. Bu örnekte demux bir veya daha fazla kez oluşturulmuş başka alt modüller kullnarak yapılmıştır. Sonrasında da bu modül başka bir üst modülün parçası olabilir. Bu şekilde hiyerarşik bir yapı vardır.</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-verilog data-lang=verilog>
+`timescale <span style=color:#bd93f9>1</span>ns <span style=color:#ff79c6>/</span> <span style=color:#bd93f9>1</span>ps
+
+<span style=color:#ff79c6>module</span> DEMUX(
+	 <span style=color:#ff79c6>input</span> D,
+	 <span style=color:#ff79c6>input</span> [<span style=color:#bd93f9>1</span><span style=color:#ff79c6>:</span><span style=color:#bd93f9>0</span>] S,
+	 <span style=color:#ff79c6>output</span> [<span style=color:#bd93f9>3</span><span style=color:#ff79c6>:</span><span style=color:#bd93f9>0</span>] O
+    );
+
+<span style=color:#8be9fd>wire</span> W[<span style=color:#bd93f9>5</span><span style=color:#ff79c6>:</span><span style=color:#bd93f9>0</span>];
+
+
+NOT not1(.O(W[<span style=color:#bd93f9>0</span>]),.I(S[<span style=color:#bd93f9>0</span>]));
+NOT not2(.O(W[<span style=color:#bd93f9>1</span>]),.I(S[<span style=color:#bd93f9>1</span>]));
+
+AND and1(.O(W[<span style=color:#bd93f9>2</span>]),.I1(W[<span style=color:#bd93f9>0</span>]),.I2(W[<span style=color:#bd93f9>1</span>]));
+AND and2(.O(W[<span style=color:#bd93f9>3</span>]),.I1(S[<span style=color:#bd93f9>0</span>]),.I2(W[<span style=color:#bd93f9>1</span>]));
+AND and3(.O(W[<span style=color:#bd93f9>4</span>]),.I1(W[<span style=color:#bd93f9>0</span>]),.I2(S[<span style=color:#bd93f9>1</span>]));
+AND and4(.O(W[<span style=color:#bd93f9>5</span>]),.I1(S[<span style=color:#bd93f9>0</span>]),.I2(S[<span style=color:#bd93f9>1</span>]));
+
+
+TRI tri00(.O(O[<span style=color:#bd93f9>0</span>]),.I(W[<span style=color:#bd93f9>2</span>]),.E(D));
+TRI tri01(.O(O[<span style=color:#bd93f9>1</span>]),.I(W[<span style=color:#bd93f9>3</span>]),.E(D));
+TRI tri10(.O(O[<span style=color:#bd93f9>2</span>]),.I(W[<span style=color:#bd93f9>4</span>]),.E(D));
+TRI tri11(.O(O[<span style=color:#bd93f9>3</span>]),.I(W[<span style=color:#bd93f9>5</span>]),.E(D));
+
+
+<span style=color:#ff79c6>endmodule</span>
+
+</code></pre></div><h3 id=sıralı-sequential-mantık-devreleri>Sıralı (Sequential) Mantık Devreleri</h3>
+<p>Sayısal devrelerin olmazsa olmazlarından biri <strong>&ldquo;clock&rdquo;</strong> sinyalidir. Peki neden böyle bir şeye ihtiyaç duyulur ? Devrelerde gerçeklenmek istenen işlevler genellikle belli durumların olduğu ve zamana bağlı olarak ard arda belli durumların birbini takip etmesiyle çalışan sistemlerdir. Çoğu durum tek bir kombinasyonel devre olarak gerçeklenemez. Bir çok gerçeklenebilecek durumda da yine de sıralı devreler tercih edilir. Çünkü çok daha az kaynak kullanarak daha stabil şekilde gerçeklemeye uygun devreler bu yöntem ile elde edilebilir.</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-verilog data-lang=verilog><span style=color:#ff79c6>module</span> register(
+<span style=color:#ff79c6>input</span> [<span style=color:#bd93f9>7</span><span style=color:#ff79c6>:</span><span style=color:#bd93f9>0</span>] SW,
+<span style=color:#ff79c6>input</span> BTN,
+<span style=color:#ff79c6>input</span> CLEAR,
+<span style=color:#ff79c6>output</span> <span style=color:#8be9fd>reg</span> [<span style=color:#bd93f9>7</span><span style=color:#ff79c6>:</span><span style=color:#bd93f9>0</span>] LED
+	);
+	
+	
+<span style=color:#ff79c6>always</span> @(<span style=color:#ff79c6>posedge</span> BTN , <span style=color:#ff79c6>posedge</span> CLEAR) 
+<span style=color:#ff79c6>begin</span>
+	<span style=color:#ff79c6>case</span> (CLEAR)
+	<span style=color:#bd93f9>1</span><span style=color:#bd93f9>&#39;b1</span><span style=color:#ff79c6>:</span> LED <span style=color:#ff79c6>&lt;=</span> <span style=color:#bd93f9>8</span><span style=color:#bd93f9>&#39;b00000000</span>;
+	<span style=color:#ff79c6>default</span><span style=color:#ff79c6>:</span> LED <span style=color:#ff79c6>&lt;=</span>SW;
+	<span style=color:#ff79c6>endcase</span>
+<span style=color:#ff79c6>end</span>
+
+
+	
+<span style=color:#ff79c6>endmodule</span>
+
+
+</code></pre></div><p>Art-arda 4 tane 1 veya 4 tane 0 gelmesi durumunu tespit eden devrenin verilog kodu aşağıdaki gibidir. Bu devre tipi sıralı mantık devrelerine giriş niteliğinde bir örnektir. Bu devrenin kodu yazılırken ilkönce kağıt üzerinde yapılması gereken işlemler vardır. İlk olarak devrenin durumları çıkarılır. Mealy-Moore diagramı çizilerek durumlar arasındaki geçişler belirlenir ve eğer yapılabiliyorsa gerekli indirgemeler yapılır. Bu işlemlerin sonucuna göre aşağıdaki kod yazılabilir. <code>always @(posedge clk or posedge reset) </code> bu satır sayesinde her &ldquo;clock&rdquo; yükselen kenarında girişlerin değerlerine göre sistem sonraki duruma geçirilir.</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-verilog data-lang=verilog>`timescale <span style=color:#bd93f9>1</span>ns <span style=color:#ff79c6>/</span> <span style=color:#bd93f9>1</span>ps
+
+<span style=color:#ff79c6>module</span> FSM1(
+    <span style=color:#ff79c6>input</span> x,
+	 <span style=color:#ff79c6>input</span> reset,
+	 <span style=color:#ff79c6>input</span> clk,
+    <span style=color:#ff79c6>output</span> <span style=color:#8be9fd>reg</span> z
+    );
+
+<span style=color:#8be9fd>reg</span> q0,q1,q2;
+
+<span style=color:#8be9fd>wire</span> Q0,Q1,Q2,z_new;
+
+
+<span style=color:#ff79c6>assign</span> Q2 <span style=color:#ff79c6>=</span> x <span style=color:#ff79c6>&amp;</span> q2 <span style=color:#ff79c6>|</span> x <span style=color:#ff79c6>&amp;</span> q1 <span style=color:#ff79c6>&amp;</span> q0; 
+<span style=color:#ff79c6>assign</span> Q1 <span style=color:#ff79c6>=</span> (q1 <span style=color:#ff79c6>&amp;</span> (<span style=color:#ff79c6>~</span>q0)) <span style=color:#ff79c6>|</span> ((<span style=color:#ff79c6>~</span>q2) <span style=color:#ff79c6>&amp;</span> (<span style=color:#ff79c6>~</span>q1) <span style=color:#ff79c6>&amp;</span> q0) <span style=color:#ff79c6>|</span> (x <span style=color:#ff79c6>&amp;</span>  (<span style=color:#ff79c6>~</span>q2)  <span style=color:#ff79c6>&amp;</span> (<span style=color:#ff79c6>~</span>q1));  
+<span style=color:#ff79c6>assign</span> Q0 <span style=color:#ff79c6>=</span> (x  <span style=color:#ff79c6>&amp;</span> (<span style=color:#ff79c6>~</span>q1)) <span style=color:#ff79c6>|</span> (x <span style=color:#ff79c6>&amp;</span> (<span style=color:#ff79c6>~</span>q0) <span style=color:#ff79c6>|</span> (<span style=color:#ff79c6>~</span>q2)) <span style=color:#ff79c6>&amp;</span> ((<span style=color:#ff79c6>~</span>q1) <span style=color:#ff79c6>&amp;</span> (<span style=color:#ff79c6>~</span>q0));
+<span style=color:#ff79c6>assign</span> z_new  <span style=color:#ff79c6>=</span> ((<span style=color:#ff79c6>~</span>x) <span style=color:#ff79c6>&amp;</span> q1 <span style=color:#ff79c6>&amp;</span> (<span style=color:#ff79c6>~</span>q0)) <span style=color:#ff79c6>|</span> (x <span style=color:#ff79c6>&amp;</span> q2 <span style=color:#ff79c6>&amp;</span> q0);
+
+<span style=color:#ff79c6>always</span> @(<span style=color:#ff79c6>posedge</span> clk <span style=color:#ff79c6>or</span> <span style=color:#ff79c6>posedge</span> reset) 
+	<span style=color:#ff79c6>begin</span>
+		<span style=color:#ff79c6>if</span> (reset)
+		<span style=color:#ff79c6>begin</span>
+			q0 <span style=color:#ff79c6>&lt;=</span> <span style=color:#bd93f9>0</span>;
+			q1 <span style=color:#ff79c6>&lt;=</span> <span style=color:#bd93f9>0</span>;
+			q2 <span style=color:#ff79c6>&lt;=</span> <span style=color:#bd93f9>0</span>;
+			 
+		<span style=color:#ff79c6>end</span>
+		<span style=color:#ff79c6>else</span>
+		<span style=color:#ff79c6>begin</span>
+			q0 <span style=color:#ff79c6>&lt;=</span> Q0;
+			q1 <span style=color:#ff79c6>&lt;=</span> Q1;
+			q2 <span style=color:#ff79c6>&lt;=</span> Q2;
+			z<span style=color:#ff79c6>=</span> z_new;
+		<span style=color:#ff79c6>end</span>
+	<span style=color:#ff79c6>end</span>
+
+
+
+<span style=color:#ff79c6>endmodule</span>
+
+</code></pre></div></section>
+<footer class="mt-12 flex flex-wrap">
+<a class="mr-1.5 mb-1.5 rounded-lg bg-black/[3%] px-5 py-2 no-underline dark:bg-white/[8%]" href=https://mozanunal.com/tags/electronics>Electronics</a>
 <a class="mr-1.5 mb-1.5 rounded-lg bg-black/[3%] px-5 py-2 no-underline dark:bg-white/[8%]" href=https://mozanunal.com/tags/verilog>verilog</a>
-<a class="mr-1.5 mb-1.5 rounded-lg bg-black/[3%] px-5 py-2 no-underline dark:bg-white/[8%]" href=https://mozanunal.com/tags/fpga>FPGA</a></footer><nav class="mt-24 flex rounded-lg bg-black/[3%] text-lg dark:bg-white/[8%]"><a class="flex w-1/2 items-center rounded-l-md p-6 pr-3 no-underline hover:bg-black/[2%] dark:hover:bg-white/[3%]" href=https://mozanunal.com/2018/07/termux/><span class=mr-1.5>←</span><span>[TR] Android Terminal Emülatörü: Termux</span></a>
-<a class="ml-auto flex w-1/2 items-center justify-end rounded-r-md p-6 pl-3 no-underline hover:bg-black/[2%] dark:hover:bg-white/[3%]" href=https://mozanunal.com/2018/04/google-docs-data-collection/><span>[TR] En Basit IOT Bulut Sistemi: Google Forms</span><span class=ml-1.5>→</span></a></nav></article></main><footer class="opaco mx-auto flex h-[5rem] max-w-3xl items-center px-8 text-[0.9em] opacity-60"><div class=mr-auto>&copy; 2023
-<a class=link href=https://mozanunal.com/>Mehmet Ozan Ünal</a></div><a class="link mx-6" href=https://gohugo.io/ rel=noopener target=_blank>Powered by Hugo️️</a>️
-<a class=link href=https://github.com/nanxiaobei/hugo-paper rel=noopener target=_blank>Theme Paper</a></footer></body></html>
+<a class="mr-1.5 mb-1.5 rounded-lg bg-black/[3%] px-5 py-2 no-underline dark:bg-white/[8%]" href=https://mozanunal.com/tags/fpga>FPGA</a>
+</footer>
+<nav class="mt-24 flex rounded-lg bg-black/[3%] text-lg dark:bg-white/[8%]">
+<a class="flex w-1/2 items-center rounded-l-md p-6 pr-3 no-underline hover:bg-black/[2%] dark:hover:bg-white/[3%]" href=https://mozanunal.com/2018/07/termux/><span class=mr-1.5>←</span><span>[TR] Android Terminal Emülatörü: Termux</span></a>
+<a class="ml-auto flex w-1/2 items-center justify-end rounded-r-md p-6 pl-3 no-underline hover:bg-black/[2%] dark:hover:bg-white/[3%]" href=https://mozanunal.com/2018/04/google-docs-data-collection/><span>[TR] En Basit IOT Bulut Sistemi: Google Forms</span><span class=ml-1.5>→</span></a>
+</nav>
+</article>
+</main>
+<footer class="opaco mx-auto flex h-[5rem] max-w-3xl items-center px-8 text-[0.9em] opacity-60">
+<div class=mr-auto>
+&copy; 2023
+<a class=link href=https://mozanunal.com/>Mehmet Ozan Ünal</a>
+</div>
+<a class="link mx-6" href=https://gohugo.io/ rel=noopener target=_blank>Powered by Hugo️️</a>️
+<a class=link href=https://github.com/nanxiaobei/hugo-paper rel=noopener target=_blank>Theme Paper</a>
+</footer>
+</body>
+</html>

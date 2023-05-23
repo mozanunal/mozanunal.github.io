@@ -1,149 +1,275 @@
-<!doctype html><html class="not-ready text-sm lg:text-base" style=--bg:#fbfbfb lang=en><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><title>Show Images Directly on Terminal: img2sh - Mehmet Ozan Ünal</title><meta name=theme-color><meta name=description content="Img2sh Hello there,
+<!doctype html><html class="not-ready text-sm lg:text-base" style=--bg:#fbfbfb lang=en>
+<head>
+<meta charset=utf-8>
+<meta http-equiv=x-ua-compatible content="IE=edge">
+<meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
+<title>Show Images Directly on Terminal: img2sh - Mehmet Ozan Ünal</title>
+<meta name=theme-color>
+<meta name=description content="Img2sh Hello there,
 In this post, I want to tell a brief story of how I have created a tool named img2sh. It is also my first python package which is published over PyPI. In this very post, I will try to answer questions like: How is it developed? What are the challenges? How should a package created and deployed over PyPI? Let&rsquo;s continue!
-Img2sh is a tool to show images directly on the terminal."><meta name=author content="Moz"><link rel="preload stylesheet" as=style href=https://mozanunal.com/main.min.css><link rel=preload as=image href=https://mozanunal.com/theme.png><link rel=preload as=image href="https://www.gravatar.com/avatar/998cbd3ab655239d8be787580cce0415?s=160&amp;d=identicon"><link rel=preload as=image href=https://mozanunal.com/twitter.svg><link rel=preload as=image href=https://mozanunal.com/github.svg><link rel=icon href=https://mozanunal.com/favicon.ico><link rel=apple-touch-icon href=https://mozanunal.com/apple-touch-icon.png><meta name=generator content="Hugo 0.111.3"><script type=application/javascript>var doNotTrack=!1;doNotTrack||(window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","G-007KSW65JL","auto"),ga("send","pageview"))</script><script async src=https://www.google-analytics.com/analytics.js></script>
+Img2sh is a tool to show images directly on the terminal.">
+<meta name=author content="Moz">
+<link rel="preload stylesheet" as=style href=https://mozanunal.com/main.min.css>
+<link rel=preload as=image href=https://mozanunal.com/theme.png>
+<link rel=preload as=image href="https://www.gravatar.com/avatar/998cbd3ab655239d8be787580cce0415?s=160&d=identicon">
+<link rel=preload as=image href=https://mozanunal.com/twitter.svg>
+<link rel=preload as=image href=https://mozanunal.com/github.svg>
+<link rel=icon href=https://mozanunal.com/favicon.ico>
+<link rel=apple-touch-icon href=https://mozanunal.com/apple-touch-icon.png>
+<meta name=generator content="Hugo 0.92.2">
+<script type=application/javascript>var doNotTrack=!1;doNotTrack||(window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga('create','G-007KSW65JL','auto'),ga('send','pageview'))</script>
+<script async src=https://www.google-analytics.com/analytics.js></script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-007KSW65JL"></script>
-<script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-007KSW65JL",{anonymize_ip:!1})}</script><meta property="og:title" content="Show Images Directly on Terminal: img2sh"><meta property="og:description" content="Img2sh Hello there,
+<script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-007KSW65JL',{anonymize_ip:!1})}</script>
+<meta property="og:title" content="Show Images Directly on Terminal: img2sh">
+<meta property="og:description" content="Img2sh Hello there,
 In this post, I want to tell a brief story of how I have created a tool named img2sh. It is also my first python package which is published over PyPI. In this very post, I will try to answer questions like: How is it developed? What are the challenges? How should a package created and deployed over PyPI? Let&rsquo;s continue!
-Img2sh is a tool to show images directly on the terminal."><meta property="og:type" content="article"><meta property="og:url" content="https://mozanunal.com/2019/11/img2sh/"><meta property="article:section" content="posts"><meta property="article:published_time" content="2019-11-03T10:48:19+00:00"><meta property="article:modified_time" content="2019-11-03T10:48:19+00:00"><meta itemprop=name content="Show Images Directly on Terminal: img2sh"><meta itemprop=description content="Img2sh Hello there,
+Img2sh is a tool to show images directly on the terminal.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://mozanunal.com/2019/11/img2sh/"><meta property="article:section" content="posts">
+<meta property="article:published_time" content="2019-11-03T10:48:19+00:00">
+<meta property="article:modified_time" content="2019-11-03T10:48:19+00:00">
+<meta itemprop=name content="Show Images Directly on Terminal: img2sh">
+<meta itemprop=description content="Img2sh Hello there,
 In this post, I want to tell a brief story of how I have created a tool named img2sh. It is also my first python package which is published over PyPI. In this very post, I will try to answer questions like: How is it developed? What are the challenges? How should a package created and deployed over PyPI? Let&rsquo;s continue!
-Img2sh is a tool to show images directly on the terminal."><meta itemprop=datePublished content="2019-11-03T10:48:19+00:00"><meta itemprop=dateModified content="2019-11-03T10:48:19+00:00"><meta itemprop=wordCount content="1321"><meta itemprop=keywords content="linux,yazilim,bash script,ubuntu,"><meta name=twitter:card content="summary"><meta name=twitter:title content="Show Images Directly on Terminal: img2sh"><meta name=twitter:description content="Img2sh Hello there,
+Img2sh is a tool to show images directly on the terminal."><meta itemprop=datePublished content="2019-11-03T10:48:19+00:00">
+<meta itemprop=dateModified content="2019-11-03T10:48:19+00:00">
+<meta itemprop=wordCount content="1321">
+<meta itemprop=keywords content="linux,yazilim,bash script,ubuntu,">
+<meta name=twitter:card content="summary">
+<meta name=twitter:title content="Show Images Directly on Terminal: img2sh">
+<meta name=twitter:description content="Img2sh Hello there,
 In this post, I want to tell a brief story of how I have created a tool named img2sh. It is also my first python package which is published over PyPI. In this very post, I will try to answer questions like: How is it developed? What are the challenges? How should a package created and deployed over PyPI? Let&rsquo;s continue!
-Img2sh is a tool to show images directly on the terminal."></head><body class="text-black duration-200 ease-out dark:text-white"><header class="mx-auto flex h-[5rem] max-w-3xl px-8 lg:justify-center"><div class="relative z-50 mr-auto flex items-center"><a class="-translate-x-[1px] -translate-y-0.5 text-3xl font-bold" href=https://mozanunal.com/>Mehmet Ozan Ünal</a><div class="btn-dark text-[0] ml-6 h-6 w-6 shrink-0 cursor-pointer [background:url(./theme.svg)_left_center/cover_no-repeat] dark:invert dark:[background-position:right]" role=button aria-label=Dark></div></div><div class="btn-menu relative z-50 -mr-8 flex h-[5rem] w-[5rem] shrink-0 cursor-pointer flex-col items-center justify-center gap-2.5 lg:hidden" role=button aria-label=Menu></div><script>const htmlClass=document.documentElement.classList;setTimeout(()=>{htmlClass.remove("not-ready")},10);const btnMenu=document.querySelector(".btn-menu");btnMenu.addEventListener("click",()=>{htmlClass.toggle("open")});const metaTheme=document.querySelector('meta[name="theme-color"]'),lightBg=`"#fbfbfb"`.replace(/"/g,""),setDark=e=>{metaTheme.setAttribute("content",e?"#000":lightBg),htmlClass[e?"add":"remove"]("dark"),localStorage.setItem("dark",e)},darkScheme=window.matchMedia("(prefers-color-scheme: dark)");if(htmlClass.contains("dark"))setDark(!0);else{const e=localStorage.getItem("dark");setDark(e?e==="true":darkScheme.matches)}darkScheme.addEventListener("change",e=>{setDark(e.matches)});const btnDark=document.querySelector(".btn-dark");btnDark.addEventListener("click",()=>{setDark(localStorage.getItem("dark")!=="true")})</script><div class="nav-wrapper fixed inset-x-0 top-full z-40 flex h-full select-none flex-col justify-center pb-16 duration-200 dark:bg-black lg:static lg:h-auto lg:flex-row lg:!bg-transparent lg:pb-0 lg:transition-none"><nav class="lg:ml-12 lg:flex lg:flex-row lg:items-center lg:space-x-6"><a class="block text-center text-2xl leading-[5rem] lg:text-base lg:font-normal" href=/about/>About</a>
-<a class="block text-center text-2xl leading-[5rem] lg:text-base lg:font-normal" href=/contact/>Contact</a></nav><nav class="mt-12 flex justify-center space-x-10 dark:invert lg:mt-0 lg:ml-12 lg:items-center lg:space-x-6"><a class="h-8 w-8 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6" style=--url:url(./twitter.svg) href=https://twitter.com/MOzanUnal target=_blank rel=me>twitter</a>
-<a class="h-8 w-8 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6" style=--url:url(./github.svg) href=https://github.com/mozanunal target=_blank rel=me>github</a></nav></div></header><main class="prose prose-neutral relative mx-auto min-h-[calc(100%-10rem)] max-w-3xl px-8 pt-16 pb-24 dark:prose-invert"><article><header class=mb-20><h1 class="!my-0 pb-2.5">Show Images Directly on Terminal: img2sh</h1><div class="text-sm opacity-60"><time>Nov 3, 2019</time></div></header><section><h1 id=img2sh>Img2sh</h1><p>Hello there,</p><p><em>In this post, I want to tell a brief story of how I have created a tool named img2sh. It is also my first python package which is published over PyPI. In this very post, I will try to answer questions like:
+Img2sh is a tool to show images directly on the terminal.">
+</head>
+<body class="text-black duration-200 ease-out dark:text-white">
+<header class="mx-auto flex h-[5rem] max-w-3xl px-8 lg:justify-center">
+<div class="relative z-50 mr-auto flex items-center">
+<a class="-translate-x-[1px] -translate-y-0.5 text-3xl font-bold" href=https://mozanunal.com/>Mehmet Ozan Ünal</a>
+<div class="btn-dark text-[0] ml-6 h-6 w-6 shrink-0 cursor-pointer [background:url(./theme.svg)_left_center/cover_no-repeat] dark:invert dark:[background-position:right]" role=button aria-label=Dark></div>
+</div>
+<div class="btn-menu relative z-50 -mr-8 flex h-[5rem] w-[5rem] shrink-0 cursor-pointer flex-col items-center justify-center gap-2.5 lg:hidden" role=button aria-label=Menu></div>
+<script>const htmlClass=document.documentElement.classList;setTimeout(()=>{htmlClass.remove('not-ready')},10);const btnMenu=document.querySelector('.btn-menu');btnMenu.addEventListener('click',()=>{htmlClass.toggle('open')});const metaTheme=document.querySelector('meta[name="theme-color"]'),lightBg=`"#fbfbfb"`.replace(/"/g,''),setDark=a=>{metaTheme.setAttribute('content',a?'#000':lightBg),htmlClass[a?'add':'remove']('dark'),localStorage.setItem('dark',a)},darkScheme=window.matchMedia('(prefers-color-scheme: dark)');if(htmlClass.contains('dark'))setDark(!0);else{const a=localStorage.getItem('dark');setDark(a?a==='true':darkScheme.matches)}darkScheme.addEventListener('change',a=>{setDark(a.matches)});const btnDark=document.querySelector('.btn-dark');btnDark.addEventListener('click',()=>{setDark(localStorage.getItem('dark')!=='true')})</script>
+<div class="nav-wrapper fixed inset-x-0 top-full z-40 flex h-full select-none flex-col justify-center pb-16 duration-200 dark:bg-black lg:static lg:h-auto lg:flex-row lg:!bg-transparent lg:pb-0 lg:transition-none">
+<nav class="lg:ml-12 lg:flex lg:flex-row lg:items-center lg:space-x-6">
+<a class="block text-center text-2xl leading-[5rem] lg:text-base lg:font-normal" href=/about/>About</a>
+<a class="block text-center text-2xl leading-[5rem] lg:text-base lg:font-normal" href=/contact/>Contact</a>
+</nav>
+<nav class="mt-12 flex justify-center space-x-10 dark:invert lg:mt-0 lg:ml-12 lg:items-center lg:space-x-6">
+<a class="h-8 w-8 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6" style=--url:url(./twitter.svg) href=https://twitter.com/MOzanUnal target=_blank rel=me>
+twitter
+</a>
+<a class="h-8 w-8 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6" style=--url:url(./github.svg) href=https://github.com/mozanunal target=_blank rel=me>
+github
+</a>
+</nav>
+</div>
+</header>
+<main class="prose prose-neutral relative mx-auto min-h-[calc(100%-10rem)] max-w-3xl px-8 pt-16 pb-24 dark:prose-invert">
+<article>
+<header class=mb-20>
+<h1 class="!my-0 pb-2.5">Show Images Directly on Terminal: img2sh</h1>
+<div class="text-sm opacity-60">
+<time>Nov 3, 2019</time>
+</div>
+</header>
+<section><h1 id=img2sh>Img2sh</h1>
+<p>Hello there,</p>
+<p><em>In this post, I want to tell a brief story of how I have created a tool named img2sh. It is also my first python package which is published over PyPI. In this very post, I will try to answer questions like:
 How is it developed?
 What are the challenges?
 How should a package created and deployed over PyPI?
-Let&rsquo;s continue!</em></p><p>Img2sh is a tool to show images directly on the terminal. For colored images, 256 xterm color support is required. This script basically resizes the image with anti-aliasing and quantized its colors to xterm color pallette. <a href=https://github.com/mozanunal/img2sh>Github repository of the project can be reached from here</a></p><h2 id=demo>Demo</h2><p>Testing the package is super easy. Install using pip and run.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>pip install img2sh --user
-</span></span><span style=display:flex><span>img2sh demo.jpeg
-</span></span></code></pre></div><p>Result:</p><p><img src=https://user-images.githubusercontent.com/13440502/52919655-aa89d400-3315-11e9-8c4a-7a7e057b8fa4.png alt></p><p><strong>Interactive mode</strong></p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>img2sh demo.jpeg -w <span style=color:#bd93f9>80</span> -i
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>q: quit z: zoom+ x: zoom- c: reset 
-</span></span><span style=display:flex><span>arrow keys <span style=color:#ff79c6>for</span> navigation 
-</span></span><span style=display:flex><span>cmd: q
-</span></span></code></pre></div><p><img src=https://user-images.githubusercontent.com/13440502/59120360-e34dc780-895d-11e9-8b2a-1d7ea5b25fe4.gif alt></p><p>For detailed usage arguments:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>$ python img2sh/cli.py --help
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>usage: cli.py <span style=color:#ff79c6>[</span>-h<span style=color:#ff79c6>]</span> <span style=color:#ff79c6>[</span>-w WIDTH<span style=color:#ff79c6>]</span> <span style=color:#ff79c6>[</span>-i<span style=color:#ff79c6>]</span> Image
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>Show images directly on terminal.
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>positional arguments:
-</span></span><span style=display:flex><span>  Image                 the directory of the image which will be opened
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>optional arguments:
-</span></span><span style=display:flex><span>  -h, --help            show this <span style=color:#8be9fd;font-style:italic>help</span> message and <span style=color:#8be9fd;font-style:italic>exit</span>
-</span></span><span style=display:flex><span>  -w WIDTH, --width WIDTH
-</span></span><span style=display:flex><span>                        image width on the terminal
-</span></span><span style=display:flex><span>  -i, --interactive     open image in interactive mode
-</span></span></code></pre></div><h2 id=story>Story</h2><p>As it can be understood from its name, img2sh is a python app to show images directly in the terminal. I think it could be helpful when connected over ssh to a server with no desktop environment. The images can be examined quickly on the terminal screen.
-While the tool was developed, the followings are the challenges I have encountered.</p><h3 id=images>Images</h3><p>In the digital world, images are made of pixels. Pixel is the smallest part of the image which can contain only one color. Color changes with the pixel intensity values. To keep it simple, I added a grayscale image to illustrate the pixel concept. It is a quite low resolution, grayscale image. Pixel values are shown in the following image. Pixel intensity values are changing with how far the pixel value close to black or white.</p><p><img src=/images/pixel.png alt></p><p>Colored images basically work with the same concept. The difference is colored images are usually indicated with 3 different pixel values which are red, blue and green. By this method, the proportion of these color intensity is changed to show different colors on screen.</p><h3 id=colors-in-terminal>Colors in terminal</h3><p>How the coloring mechanism works in the terminal should be figured out to implement this app. I understood clearly how colors are handling in an image using the following link. After that, I have found colored python module which provides support for colored terminal output from python apps. I implement the colors using this library.</p><p><a href=http://jafrog.com/2013/11/23/colors-in-terminal.html>http://jafrog.com/2013/11/23/colors-in-terminal.html</a></p><p><img src=/images/colorcodes.png alt></p><h3 id=parsing-command-line-arguments>Parsing command-line arguments</h3><p>How should the command line arguments be parsed? Actually it is quite easy with python. Let&rsquo;s examine the next code block:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span><span style=color:#ff79c6>import</span> argparse
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>parser <span style=color:#ff79c6>=</span> argparse<span style=color:#ff79c6>.</span>ArgumentParser(
-</span></span><span style=display:flex><span>    description<span style=color:#ff79c6>=</span><span style=color:#f1fa8c>&#39;Show images directly on terminal.&#39;</span>)
-</span></span><span style=display:flex><span>parser<span style=color:#ff79c6>.</span>add_argument(<span style=color:#f1fa8c>&#34;Image&#34;</span>, help<span style=color:#ff79c6>=</span><span style=color:#f1fa8c>&#34;the directory of the image which will be opened&#34;</span>)
-</span></span><span style=display:flex><span>parser<span style=color:#ff79c6>.</span>add_argument(
-</span></span><span style=display:flex><span>    <span style=color:#f1fa8c>&#34;-w&#34;</span>, <span style=color:#f1fa8c>&#34;--width&#34;</span>,
-</span></span><span style=display:flex><span>    help<span style=color:#ff79c6>=</span><span style=color:#f1fa8c>&#34;image width on the terminal&#34;</span>,
-</span></span><span style=display:flex><span>    <span style=color:#8be9fd;font-style:italic>type</span><span style=color:#ff79c6>=</span><span style=color:#8be9fd;font-style:italic>int</span>
-</span></span><span style=display:flex><span>)
-</span></span><span style=display:flex><span>parser<span style=color:#ff79c6>.</span>add_argument(
-</span></span><span style=display:flex><span>    <span style=color:#f1fa8c>&#34;-i&#34;</span>, <span style=color:#f1fa8c>&#34;--interactive&#34;</span>,
-</span></span><span style=display:flex><span>    default<span style=color:#ff79c6>=</span><span style=color:#ff79c6>False</span>, action<span style=color:#ff79c6>=</span><span style=color:#f1fa8c>&#39;store_true&#39;</span>,
-</span></span><span style=display:flex><span>    help<span style=color:#ff79c6>=</span><span style=color:#f1fa8c>&#34;open image in interactive mode&#34;</span>,
-</span></span><span style=display:flex><span>)
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>args <span style=color:#ff79c6>=</span> parser<span style=color:#ff79c6>.</span>parse_args()
-</span></span></code></pre></div><p>After the initialization, arguments can be used with commands like <code>args.width</code>. The arguments can be configured as mandatory or optional and the type of argument also be specified. This package is a pretty useful and standard package that is widely used most of the python projects.</p><h3 id=image-formats>Image formats</h3><p>For further improvement in the project, it should be solved how different image formats can handle. Fortunately, Pillow package can handle various kinds of image formats such as jpeg, png, tiff. This packet can provide pixel values for different image types using the same get_pixel method interface. However, the problem is the dimension of the color values are representing. At standard jpeg a pixel value is represented with 24 bits which are 3 bytes. Each byte value represents a different color channels Red, Blue, and Green. Png differs from the alpha channel. At PNG images, colors are created with 4 bytes. Red, Blue, Green, and Alpha. Alpha is the transparency channel of the image. So the dimension of the pixel is different. But this problem is easily solved in findNearestColor function. In these functions, the dimension of the pixel is handled.</p><p><img src=/images/apple.jpeg alt></p><h3 id=setuppy>Setup.py</h3><p>In this section, I will try to answer the question that how to create a setup.py file which supports also entry point and can be executed without python shell. Setup.py file is used to define the python package metadata and its installation instructions.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span><span style=color:#ff79c6>from</span> setuptools <span style=color:#ff79c6>import</span> setup, find_packages
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#ff79c6>with</span> <span style=color:#8be9fd;font-style:italic>open</span>(<span style=color:#f1fa8c>&#39;requirements.txt&#39;</span>) <span style=color:#ff79c6>as</span> f:
-</span></span><span style=display:flex><span>    requirements <span style=color:#ff79c6>=</span> f<span style=color:#ff79c6>.</span>read()<span style=color:#ff79c6>.</span>splitlines()
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>setup(
-</span></span><span style=display:flex><span>    name<span style=color:#ff79c6>=</span><span style=color:#f1fa8c>&#39;img2sh&#39;</span>,
-</span></span><span style=display:flex><span>    version<span style=color:#ff79c6>=</span><span style=color:#8be9fd;font-style:italic>__import__</span>(<span style=color:#f1fa8c>&#39;img2sh&#39;</span>)<span style=color:#ff79c6>.</span>__version__,
-</span></span><span style=display:flex><span>    install_requires<span style=color:#ff79c6>=</span>requirements,
-</span></span><span style=display:flex><span>    description<span style=color:#ff79c6>=</span>(
-</span></span><span style=display:flex><span>        <span style=color:#f1fa8c>&#39;Show images directly on terminal using Xterm colors.&#39;</span>
-</span></span><span style=display:flex><span>    ),
-</span></span><span style=display:flex><span>    long_description<span style=color:#ff79c6>=</span><span style=color:#8be9fd;font-style:italic>open</span>(<span style=color:#f1fa8c>&#39;README.md&#39;</span>)<span style=color:#ff79c6>.</span>read(),
-</span></span><span style=display:flex><span>    long_description_content_type<span style=color:#ff79c6>=</span><span style=color:#f1fa8c>&#39;text/markdown&#39;</span>,
-</span></span><span style=display:flex><span>    author<span style=color:#ff79c6>=</span><span style=color:#f1fa8c>&#34;Mehmet Ozan Unal&#34;</span>,
-</span></span><span style=display:flex><span>    author_email<span style=color:#ff79c6>=</span><span style=color:#f1fa8c>&#39;mehmetozanunal@gmail.com&#39;</span>,
-</span></span><span style=display:flex><span>    maintainer<span style=color:#ff79c6>=</span><span style=color:#f1fa8c>&#34;Mehmet Ozan Unal&#34;</span>,
-</span></span><span style=display:flex><span>    maintainer_email<span style=color:#ff79c6>=</span><span style=color:#f1fa8c>&#39;mehmetozanunal@gmail.com&#39;</span>,
-</span></span><span style=display:flex><span>    license<span style=color:#ff79c6>=</span><span style=color:#f1fa8c>&#34;MIT&#34;</span>,
-</span></span><span style=display:flex><span>    packages<span style=color:#ff79c6>=</span>find_packages(),
-</span></span><span style=display:flex><span>    platforms<span style=color:#ff79c6>=</span>[<span style=color:#f1fa8c>&#34;all&#34;</span>],
-</span></span><span style=display:flex><span>    url<span style=color:#ff79c6>=</span><span style=color:#f1fa8c>&#39;https://github.com/mozanunal/img2sh&#39;</span>,
-</span></span><span style=display:flex><span>    classifiers<span style=color:#ff79c6>=</span>[
-</span></span><span style=display:flex><span>        <span style=color:#f1fa8c>&#39;Development Status :: 4 - Beta&#39;</span>,
-</span></span><span style=display:flex><span>        <span style=color:#f1fa8c>&#39;Operating System :: OS Independent&#39;</span>,
-</span></span><span style=display:flex><span>        <span style=color:#f1fa8c>&#39;Intended Audience :: Developers&#39;</span>,
-</span></span><span style=display:flex><span>        <span style=color:#f1fa8c>&#39;License :: OSI Approved :: BSD License&#39;</span>,
-</span></span><span style=display:flex><span>        <span style=color:#f1fa8c>&#39;Programming Language :: Python&#39;</span>,
-</span></span><span style=display:flex><span>        <span style=color:#f1fa8c>&#39;Programming Language :: Python :: Implementation&#39;</span>,
-</span></span><span style=display:flex><span>        <span style=color:#f1fa8c>&#39;Programming Language :: Python :: 2&#39;</span>,
-</span></span><span style=display:flex><span>        <span style=color:#f1fa8c>&#39;Programming Language :: Python :: 2.7&#39;</span>,
-</span></span><span style=display:flex><span>        <span style=color:#f1fa8c>&#39;Programming Language :: Python :: 3&#39;</span>,
-</span></span><span style=display:flex><span>        <span style=color:#f1fa8c>&#39;Programming Language :: Python :: 3.4&#39;</span>,
-</span></span><span style=display:flex><span>        <span style=color:#f1fa8c>&#39;Programming Language :: Python :: 3.5&#39;</span>,
-</span></span><span style=display:flex><span>        <span style=color:#f1fa8c>&#39;Programming Language :: Python :: 3.6&#39;</span>,
-</span></span><span style=display:flex><span>        <span style=color:#f1fa8c>&#39;Programming Language :: Python :: 3.7&#39;</span>,
-</span></span><span style=display:flex><span>        <span style=color:#f1fa8c>&#39;Topic :: Software Development :: Libraries&#39;</span>
-</span></span><span style=display:flex><span>    ],
-</span></span><span style=display:flex><span>    entry_points<span style=color:#ff79c6>=</span>{
-</span></span><span style=display:flex><span>        <span style=color:#f1fa8c>&#39;console_scripts&#39;</span>: [<span style=color:#f1fa8c>&#39;img2sh=img2sh.cli:main&#39;</span>],
-</span></span><span style=display:flex><span>    },
-</span></span><span style=display:flex><span>)
-</span></span></code></pre></div><p>The entry points of the module can be specified with specifying entry_points property of the object. It is defined as console script and first, the name of the executable should be written. It should be mapped to the executable python function. In my case, it is img2sh:cli:main.</p><p>There are useful tricks in the code block also. For example, you do not have to write a whole long description of this file. It can be read from different files like <code>README.md</code>. It is the same for your requirements. It still can be read from requirements.txt but with one condition. These files should be specified in the MANIFEST.in file.</p><p>MANIFEST.in</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>include README.md
-</span></span><span style=display:flex><span>include requirements.txt
-</span></span><span style=display:flex><span>include LICENCE
-</span></span></code></pre></div><p>The following link great resource to create a setup.py file. I learned from here. You should check it out.
-<a href=https://python-packaging.readthedocs.io/en/latest/everything.html>https://python-packaging.readthedocs.io/en/latest/everything.html</a></p><h3 id=uploading-python-package>Uploading python package</h3><p>As you may already know, python packages are usually distributed using PyPI servers. When we use the pip package manager in default, packages are downloaded from this server. In this project, I want that my package can be installed over PyPI. So I created a PyPI account and upload my package there.<br>to Uploading the PyPI package actually quite simple. The following commands are required to create a package from a module and to upload it to PyPI servers.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-fallback data-lang=fallback><span style=display:flex><span>python setup.py sdist bdist_wheel
-</span></span><span style=display:flex><span>twine upload --repository-url https://upload.pypi.org/legacy/ dist/*
-</span></span></code></pre></div><h3 id=optimizing-performance>Optimizing performance</h3><p>How can be the performance of the tool optimized?
+Let&rsquo;s continue!</em></p>
+<p>Img2sh is a tool to show images directly on the terminal. For colored images, 256 xterm color support is required. This script basically resizes the image with anti-aliasing and quantized its colors to xterm color pallette. <a href=https://github.com/mozanunal/img2sh>Github repository of the project can be reached from here</a></p>
+<h2 id=demo>Demo</h2>
+<p>Testing the package is super easy. Install using pip and run.</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>pip install img2sh --user
+img2sh demo.jpeg
+</code></pre></div><p>Result:</p>
+<p><img src=https://user-images.githubusercontent.com/13440502/52919655-aa89d400-3315-11e9-8c4a-7a7e057b8fa4.png alt></p>
+<p><strong>Interactive mode</strong></p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>img2sh demo.jpeg -w <span style=color:#bd93f9>80</span> -i
+
+q: quit z: zoom+ x: zoom- c: reset 
+arrow keys <span style=color:#ff79c6>for</span> navigation 
+cmd: q
+</code></pre></div><p><img src=https://user-images.githubusercontent.com/13440502/59120360-e34dc780-895d-11e9-8b2a-1d7ea5b25fe4.gif alt></p>
+<p>For detailed usage arguments:</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>$ python img2sh/cli.py --help
+
+usage: cli.py <span style=color:#ff79c6>[</span>-h<span style=color:#ff79c6>]</span> <span style=color:#ff79c6>[</span>-w WIDTH<span style=color:#ff79c6>]</span> <span style=color:#ff79c6>[</span>-i<span style=color:#ff79c6>]</span> Image
+
+Show images directly on terminal.
+
+positional arguments:
+  Image                 the directory of the image which will be opened
+
+optional arguments:
+  -h, --help            show this <span style=color:#8be9fd;font-style:italic>help</span> message and <span style=color:#8be9fd;font-style:italic>exit</span>
+  -w WIDTH, --width WIDTH
+                        image width on the terminal
+  -i, --interactive     open image in interactive mode
+</code></pre></div><h2 id=story>Story</h2>
+<p>As it can be understood from its name, img2sh is a python app to show images directly in the terminal. I think it could be helpful when connected over ssh to a server with no desktop environment. The images can be examined quickly on the terminal screen.
+While the tool was developed, the followings are the challenges I have encountered.</p>
+<h3 id=images>Images</h3>
+<p>In the digital world, images are made of pixels. Pixel is the smallest part of the image which can contain only one color. Color changes with the pixel intensity values. To keep it simple, I added a grayscale image to illustrate the pixel concept. It is a quite low resolution, grayscale image. Pixel values are shown in the following image. Pixel intensity values are changing with how far the pixel value close to black or white.</p>
+<p><img src=/images/pixel.png alt></p>
+<p>Colored images basically work with the same concept. The difference is colored images are usually indicated with 3 different pixel values which are red, blue and green. By this method, the proportion of these color intensity is changed to show different colors on screen.</p>
+<h3 id=colors-in-terminal>Colors in terminal</h3>
+<p>How the coloring mechanism works in the terminal should be figured out to implement this app. I understood clearly how colors are handling in an image using the following link. After that, I have found colored python module which provides support for colored terminal output from python apps. I implement the colors using this library.</p>
+<p><a href=http://jafrog.com/2013/11/23/colors-in-terminal.html>http://jafrog.com/2013/11/23/colors-in-terminal.html</a></p>
+<p><img src=/images/colorcodes.png alt></p>
+<h3 id=parsing-command-line-arguments>Parsing command-line arguments</h3>
+<p>How should the command line arguments be parsed? Actually it is quite easy with python. Let&rsquo;s examine the next code block:</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#ff79c6>import</span> argparse
+
+parser <span style=color:#ff79c6>=</span> argparse<span style=color:#ff79c6>.</span>ArgumentParser(
+    description<span style=color:#ff79c6>=</span><span style=color:#f1fa8c>&#39;Show images directly on terminal.&#39;</span>)
+parser<span style=color:#ff79c6>.</span>add_argument(<span style=color:#f1fa8c>&#34;Image&#34;</span>, help<span style=color:#ff79c6>=</span><span style=color:#f1fa8c>&#34;the directory of the image which will be opened&#34;</span>)
+parser<span style=color:#ff79c6>.</span>add_argument(
+    <span style=color:#f1fa8c>&#34;-w&#34;</span>, <span style=color:#f1fa8c>&#34;--width&#34;</span>,
+    help<span style=color:#ff79c6>=</span><span style=color:#f1fa8c>&#34;image width on the terminal&#34;</span>,
+    <span style=color:#8be9fd;font-style:italic>type</span><span style=color:#ff79c6>=</span><span style=color:#8be9fd;font-style:italic>int</span>
+)
+parser<span style=color:#ff79c6>.</span>add_argument(
+    <span style=color:#f1fa8c>&#34;-i&#34;</span>, <span style=color:#f1fa8c>&#34;--interactive&#34;</span>,
+    default<span style=color:#ff79c6>=</span><span style=color:#ff79c6>False</span>, action<span style=color:#ff79c6>=</span><span style=color:#f1fa8c>&#39;store_true&#39;</span>,
+    help<span style=color:#ff79c6>=</span><span style=color:#f1fa8c>&#34;open image in interactive mode&#34;</span>,
+)
+
+args <span style=color:#ff79c6>=</span> parser<span style=color:#ff79c6>.</span>parse_args()
+</code></pre></div><p>After the initialization, arguments can be used with commands like <code>args.width</code>. The arguments can be configured as mandatory or optional and the type of argument also be specified. This package is a pretty useful and standard package that is widely used most of the python projects.</p>
+<h3 id=image-formats>Image formats</h3>
+<p>For further improvement in the project, it should be solved how different image formats can handle. Fortunately, Pillow package can handle various kinds of image formats such as jpeg, png, tiff. This packet can provide pixel values for different image types using the same get_pixel method interface. However, the problem is the dimension of the color values are representing. At standard jpeg a pixel value is represented with 24 bits which are 3 bytes. Each byte value represents a different color channels Red, Blue, and Green. Png differs from the alpha channel. At PNG images, colors are created with 4 bytes. Red, Blue, Green, and Alpha. Alpha is the transparency channel of the image. So the dimension of the pixel is different. But this problem is easily solved in findNearestColor function. In these functions, the dimension of the pixel is handled.</p>
+<p><img src=/images/apple.jpeg alt></p>
+<h3 id=setuppy>Setup.py</h3>
+<p>In this section, I will try to answer the question that how to create a setup.py file which supports also entry point and can be executed without python shell. Setup.py file is used to define the python package metadata and its installation instructions.</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#ff79c6>from</span> setuptools <span style=color:#ff79c6>import</span> setup, find_packages
+
+<span style=color:#ff79c6>with</span> <span style=color:#8be9fd;font-style:italic>open</span>(<span style=color:#f1fa8c>&#39;requirements.txt&#39;</span>) <span style=color:#ff79c6>as</span> f:
+    requirements <span style=color:#ff79c6>=</span> f<span style=color:#ff79c6>.</span>read()<span style=color:#ff79c6>.</span>splitlines()
+
+setup(
+    name<span style=color:#ff79c6>=</span><span style=color:#f1fa8c>&#39;img2sh&#39;</span>,
+    version<span style=color:#ff79c6>=</span><span style=color:#8be9fd;font-style:italic>__import__</span>(<span style=color:#f1fa8c>&#39;img2sh&#39;</span>)<span style=color:#ff79c6>.</span>__version__,
+    install_requires<span style=color:#ff79c6>=</span>requirements,
+    description<span style=color:#ff79c6>=</span>(
+        <span style=color:#f1fa8c>&#39;Show images directly on terminal using Xterm colors.&#39;</span>
+    ),
+    long_description<span style=color:#ff79c6>=</span><span style=color:#8be9fd;font-style:italic>open</span>(<span style=color:#f1fa8c>&#39;README.md&#39;</span>)<span style=color:#ff79c6>.</span>read(),
+    long_description_content_type<span style=color:#ff79c6>=</span><span style=color:#f1fa8c>&#39;text/markdown&#39;</span>,
+    author<span style=color:#ff79c6>=</span><span style=color:#f1fa8c>&#34;Mehmet Ozan Unal&#34;</span>,
+    author_email<span style=color:#ff79c6>=</span><span style=color:#f1fa8c>&#39;mehmetozanunal@gmail.com&#39;</span>,
+    maintainer<span style=color:#ff79c6>=</span><span style=color:#f1fa8c>&#34;Mehmet Ozan Unal&#34;</span>,
+    maintainer_email<span style=color:#ff79c6>=</span><span style=color:#f1fa8c>&#39;mehmetozanunal@gmail.com&#39;</span>,
+    license<span style=color:#ff79c6>=</span><span style=color:#f1fa8c>&#34;MIT&#34;</span>,
+    packages<span style=color:#ff79c6>=</span>find_packages(),
+    platforms<span style=color:#ff79c6>=</span>[<span style=color:#f1fa8c>&#34;all&#34;</span>],
+    url<span style=color:#ff79c6>=</span><span style=color:#f1fa8c>&#39;https://github.com/mozanunal/img2sh&#39;</span>,
+    classifiers<span style=color:#ff79c6>=</span>[
+        <span style=color:#f1fa8c>&#39;Development Status :: 4 - Beta&#39;</span>,
+        <span style=color:#f1fa8c>&#39;Operating System :: OS Independent&#39;</span>,
+        <span style=color:#f1fa8c>&#39;Intended Audience :: Developers&#39;</span>,
+        <span style=color:#f1fa8c>&#39;License :: OSI Approved :: BSD License&#39;</span>,
+        <span style=color:#f1fa8c>&#39;Programming Language :: Python&#39;</span>,
+        <span style=color:#f1fa8c>&#39;Programming Language :: Python :: Implementation&#39;</span>,
+        <span style=color:#f1fa8c>&#39;Programming Language :: Python :: 2&#39;</span>,
+        <span style=color:#f1fa8c>&#39;Programming Language :: Python :: 2.7&#39;</span>,
+        <span style=color:#f1fa8c>&#39;Programming Language :: Python :: 3&#39;</span>,
+        <span style=color:#f1fa8c>&#39;Programming Language :: Python :: 3.4&#39;</span>,
+        <span style=color:#f1fa8c>&#39;Programming Language :: Python :: 3.5&#39;</span>,
+        <span style=color:#f1fa8c>&#39;Programming Language :: Python :: 3.6&#39;</span>,
+        <span style=color:#f1fa8c>&#39;Programming Language :: Python :: 3.7&#39;</span>,
+        <span style=color:#f1fa8c>&#39;Topic :: Software Development :: Libraries&#39;</span>
+    ],
+    entry_points<span style=color:#ff79c6>=</span>{
+        <span style=color:#f1fa8c>&#39;console_scripts&#39;</span>: [<span style=color:#f1fa8c>&#39;img2sh=img2sh.cli:main&#39;</span>],
+    },
+)
+</code></pre></div><p>The entry points of the module can be specified with specifying entry_points property of the object. It is defined as console script and first, the name of the executable should be written. It should be mapped to the executable python function. In my case, it is img2sh:cli:main.</p>
+<p>There are useful tricks in the code block also. For example, you do not have to write a whole long description of this file. It can be read from different files like <code>README.md</code>. It is the same for your requirements. It still can be read from requirements.txt but with one condition. These files should be specified in the MANIFEST.in file.</p>
+<p>MANIFEST.in</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>include README.md
+include requirements.txt
+include LICENCE
+</code></pre></div><p>The following link great resource to create a setup.py file. I learned from here. You should check it out.
+<a href=https://python-packaging.readthedocs.io/en/latest/everything.html>https://python-packaging.readthedocs.io/en/latest/everything.html</a></p>
+<h3 id=uploading-python-package>Uploading python package</h3>
+<p>As you may already know, python packages are usually distributed using PyPI servers. When we use the pip package manager in default, packages are downloaded from this server. In this project, I want that my package can be installed over PyPI. So I created a PyPI account and upload my package there.<br>
+to Uploading the PyPI package actually quite simple. The following commands are required to create a package from a module and to upload it to PyPI servers.</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-fallback data-lang=fallback>python setup.py sdist bdist_wheel
+twine upload --repository-url https://upload.pypi.org/legacy/ dist/*
+</code></pre></div><h3 id=optimizing-performance>Optimizing performance</h3>
+<p>How can be the performance of the tool optimized?
 In the first prototype, the code is written with simple logic. This causes too much processing time because of the for loops inside it. The following code part is written to find the nearest color inside a palette. The function loops in pallette and tries to find the smallest distance. In version 2, I implement it using numpy package. The operation executes in vectorial form and its execution time decreased exponentially.
-v1</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span><span style=color:#ff79c6>def</span> <span style=color:#50fa7b>findNearestColor</span>(color, pallette):
-</span></span><span style=display:flex><span>    distances <span style=color:#ff79c6>=</span> []
-</span></span><span style=display:flex><span>    <span style=color:#ff79c6>if</span> <span style=color:#8be9fd;font-style:italic>len</span>(color) <span style=color:#ff79c6>==</span> <span style=color:#bd93f9>3</span>:
-</span></span><span style=display:flex><span>        (colorr, colorg, colorb) <span style=color:#ff79c6>=</span> color
-</span></span><span style=display:flex><span>    <span style=color:#ff79c6>elif</span> <span style=color:#8be9fd;font-style:italic>len</span>(color) <span style=color:#ff79c6>==</span> <span style=color:#bd93f9>4</span>:
-</span></span><span style=display:flex><span>        (colorr, colorg, colorb, alpha) <span style=color:#ff79c6>=</span> color
-</span></span><span style=display:flex><span>        <span style=color:#ff79c6>if</span> alpha <span style=color:#ff79c6>==</span> <span style=color:#bd93f9>0</span>:
-</span></span><span style=display:flex><span>            <span style=color:#ff79c6>return</span> <span style=color:#ff79c6>None</span>  <span style=color:#6272a4># pallette.index((255,255,255))</span>
-</span></span><span style=display:flex><span>    <span style=color:#ff79c6>for</span> c <span style=color:#ff79c6>in</span> pallette:
-</span></span><span style=display:flex><span>        (cr, cg, cb) <span style=color:#ff79c6>=</span> c
-</span></span><span style=display:flex><span>        distances<span style=color:#ff79c6>.</span>append(
-</span></span><span style=display:flex><span>            (colorr<span style=color:#ff79c6>-</span>cr)<span style=color:#ff79c6>**</span><span style=color:#bd93f9>2</span> <span style=color:#ff79c6>+</span>
-</span></span><span style=display:flex><span>            (colorg<span style=color:#ff79c6>-</span>cg)<span style=color:#ff79c6>**</span><span style=color:#bd93f9>2</span> <span style=color:#ff79c6>+</span>
-</span></span><span style=display:flex><span>            (colorb<span style=color:#ff79c6>-</span>cb)<span style=color:#ff79c6>**</span><span style=color:#bd93f9>2</span>
-</span></span><span style=display:flex><span>        )
-</span></span><span style=display:flex><span>    <span style=color:#ff79c6>return</span> distances<span style=color:#ff79c6>.</span>index(<span style=color:#8be9fd;font-style:italic>min</span>(distances))
-</span></span></code></pre></div><p>v2</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span><span style=color:#ff79c6>def</span> <span style=color:#50fa7b>findNearestColor</span>(color, pallette):
-</span></span><span style=display:flex><span>    distances <span style=color:#ff79c6>=</span> []
-</span></span><span style=display:flex><span>    <span style=color:#ff79c6>if</span> <span style=color:#8be9fd;font-style:italic>len</span>(color) <span style=color:#ff79c6>==</span> <span style=color:#bd93f9>3</span>:
-</span></span><span style=display:flex><span>        (colorr, colorg, colorb) <span style=color:#ff79c6>=</span> color
-</span></span><span style=display:flex><span>    <span style=color:#ff79c6>elif</span> <span style=color:#8be9fd;font-style:italic>len</span>(color) <span style=color:#ff79c6>==</span> <span style=color:#bd93f9>4</span>:
-</span></span><span style=display:flex><span>        (colorr, colorg, colorb, alpha) <span style=color:#ff79c6>=</span> color
-</span></span><span style=display:flex><span>        <span style=color:#ff79c6>if</span> alpha <span style=color:#ff79c6>==</span> <span style=color:#bd93f9>0</span>:
-</span></span><span style=display:flex><span>            <span style=color:#ff79c6>return</span> <span style=color:#ff79c6>None</span>  <span style=color:#6272a4># pallette.index((255,255,255))</span>
-</span></span><span style=display:flex><span>    c <span style=color:#ff79c6>=</span> (colorr, colorg, colorb)
-</span></span><span style=display:flex><span>    diff <span style=color:#ff79c6>=</span> pallette <span style=color:#ff79c6>-</span> c
-</span></span><span style=display:flex><span>    diffSum <span style=color:#ff79c6>=</span> np<span style=color:#ff79c6>.</span>sum( np<span style=color:#ff79c6>.</span>square(diff), axis<span style=color:#ff79c6>=</span><span style=color:#bd93f9>1</span>)
-</span></span><span style=display:flex><span>    <span style=color:#ff79c6>return</span> np<span style=color:#ff79c6>.</span>argmin(diffSum)
-</span></span></code></pre></div><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span><span style=color:#6272a4># for v1</span>
-</span></span><span style=display:flex><span>real 0m2,618s
-</span></span><span style=display:flex><span>user 0m2,519s
-</span></span><span style=display:flex><span>sys 0m0,080s
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#6272a4># for v2</span>
-</span></span><span style=display:flex><span>real 0m1,690s
-</span></span><span style=display:flex><span>user 0m1,892s
-</span></span><span style=display:flex><span>sys 0m0,417s
-</span></span></code></pre></div><p>Thank you for your interest. See you later&mldr;</p><h2 id=acknowledges>Acknowledges</h2><p>This package is developed using:</p><ul><li><a href=https://pillow.readthedocs.io/en/stable/installation.html>Pillow</a></li><li><a href=https://gitlab.com/dslackw/colored>colored</a></li></ul></section><footer class="mt-12 flex flex-wrap"><a class="mr-1.5 mb-1.5 rounded-lg bg-black/[3%] px-5 py-2 no-underline dark:bg-white/[8%]" href=https://mozanunal.com/tags/linux>linux</a>
+v1</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#ff79c6>def</span> <span style=color:#50fa7b>findNearestColor</span>(color, pallette):
+    distances <span style=color:#ff79c6>=</span> []
+    <span style=color:#ff79c6>if</span> <span style=color:#8be9fd;font-style:italic>len</span>(color) <span style=color:#ff79c6>==</span> <span style=color:#bd93f9>3</span>:
+        (colorr, colorg, colorb) <span style=color:#ff79c6>=</span> color
+    <span style=color:#ff79c6>elif</span> <span style=color:#8be9fd;font-style:italic>len</span>(color) <span style=color:#ff79c6>==</span> <span style=color:#bd93f9>4</span>:
+        (colorr, colorg, colorb, alpha) <span style=color:#ff79c6>=</span> color
+        <span style=color:#ff79c6>if</span> alpha <span style=color:#ff79c6>==</span> <span style=color:#bd93f9>0</span>:
+            <span style=color:#ff79c6>return</span> <span style=color:#ff79c6>None</span>  <span style=color:#6272a4># pallette.index((255,255,255))</span>
+    <span style=color:#ff79c6>for</span> c <span style=color:#ff79c6>in</span> pallette:
+        (cr, cg, cb) <span style=color:#ff79c6>=</span> c
+        distances<span style=color:#ff79c6>.</span>append(
+            (colorr<span style=color:#ff79c6>-</span>cr)<span style=color:#ff79c6>**</span><span style=color:#bd93f9>2</span> <span style=color:#ff79c6>+</span>
+            (colorg<span style=color:#ff79c6>-</span>cg)<span style=color:#ff79c6>**</span><span style=color:#bd93f9>2</span> <span style=color:#ff79c6>+</span>
+            (colorb<span style=color:#ff79c6>-</span>cb)<span style=color:#ff79c6>**</span><span style=color:#bd93f9>2</span>
+        )
+    <span style=color:#ff79c6>return</span> distances<span style=color:#ff79c6>.</span>index(<span style=color:#8be9fd;font-style:italic>min</span>(distances))
+</code></pre></div><p>v2</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#ff79c6>def</span> <span style=color:#50fa7b>findNearestColor</span>(color, pallette):
+    distances <span style=color:#ff79c6>=</span> []
+    <span style=color:#ff79c6>if</span> <span style=color:#8be9fd;font-style:italic>len</span>(color) <span style=color:#ff79c6>==</span> <span style=color:#bd93f9>3</span>:
+        (colorr, colorg, colorb) <span style=color:#ff79c6>=</span> color
+    <span style=color:#ff79c6>elif</span> <span style=color:#8be9fd;font-style:italic>len</span>(color) <span style=color:#ff79c6>==</span> <span style=color:#bd93f9>4</span>:
+        (colorr, colorg, colorb, alpha) <span style=color:#ff79c6>=</span> color
+        <span style=color:#ff79c6>if</span> alpha <span style=color:#ff79c6>==</span> <span style=color:#bd93f9>0</span>:
+            <span style=color:#ff79c6>return</span> <span style=color:#ff79c6>None</span>  <span style=color:#6272a4># pallette.index((255,255,255))</span>
+    c <span style=color:#ff79c6>=</span> (colorr, colorg, colorb)
+    diff <span style=color:#ff79c6>=</span> pallette <span style=color:#ff79c6>-</span> c
+    diffSum <span style=color:#ff79c6>=</span> np<span style=color:#ff79c6>.</span>sum( np<span style=color:#ff79c6>.</span>square(diff), axis<span style=color:#ff79c6>=</span><span style=color:#bd93f9>1</span>)
+    <span style=color:#ff79c6>return</span> np<span style=color:#ff79c6>.</span>argmin(diffSum)
+
+</code></pre></div><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=color:#6272a4># for v1</span>
+real 0m2,618s
+user 0m2,519s
+sys 0m0,080s
+
+<span style=color:#6272a4># for v2</span>
+real 0m1,690s
+user 0m1,892s
+sys 0m0,417s
+</code></pre></div><p>Thank you for your interest. See you later&mldr;</p>
+<h2 id=acknowledges>Acknowledges</h2>
+<p>This package is developed using:</p>
+<ul>
+<li><a href=https://pillow.readthedocs.io/en/stable/installation.html>Pillow</a></li>
+<li><a href=https://gitlab.com/dslackw/colored>colored</a></li>
+</ul>
+</section>
+<footer class="mt-12 flex flex-wrap">
+<a class="mr-1.5 mb-1.5 rounded-lg bg-black/[3%] px-5 py-2 no-underline dark:bg-white/[8%]" href=https://mozanunal.com/tags/linux>linux</a>
 <a class="mr-1.5 mb-1.5 rounded-lg bg-black/[3%] px-5 py-2 no-underline dark:bg-white/[8%]" href=https://mozanunal.com/tags/yazilim>yazilim</a>
 <a class="mr-1.5 mb-1.5 rounded-lg bg-black/[3%] px-5 py-2 no-underline dark:bg-white/[8%]" href=https://mozanunal.com/tags/bash-script>bash script</a>
-<a class="mr-1.5 mb-1.5 rounded-lg bg-black/[3%] px-5 py-2 no-underline dark:bg-white/[8%]" href=https://mozanunal.com/tags/ubuntu>ubuntu</a></footer><nav class="mt-24 flex rounded-lg bg-black/[3%] text-lg dark:bg-white/[8%]"><a class="flex w-1/2 items-center rounded-l-md p-6 pr-3 no-underline hover:bg-black/[2%] dark:hover:bg-white/[3%]" href=https://mozanunal.com/2019/11/ecg-signal/><span class=mr-1.5>←</span><span>Digital Filtering of an ECG Signal</span></a>
-<a class="ml-auto flex w-1/2 items-center justify-end rounded-r-md p-6 pl-3 no-underline hover:bg-black/[2%] dark:hover:bg-white/[3%]" href=https://mozanunal.com/2019/08/yolocolabdemo/><span>Yolo on Google Colab</span><span class=ml-1.5>→</span></a></nav></article></main><footer class="opaco mx-auto flex h-[5rem] max-w-3xl items-center px-8 text-[0.9em] opacity-60"><div class=mr-auto>&copy; 2023
-<a class=link href=https://mozanunal.com/>Mehmet Ozan Ünal</a></div><a class="link mx-6" href=https://gohugo.io/ rel=noopener target=_blank>Powered by Hugo️️</a>️
-<a class=link href=https://github.com/nanxiaobei/hugo-paper rel=noopener target=_blank>Theme Paper</a></footer></body></html>
+<a class="mr-1.5 mb-1.5 rounded-lg bg-black/[3%] px-5 py-2 no-underline dark:bg-white/[8%]" href=https://mozanunal.com/tags/ubuntu>ubuntu</a>
+</footer>
+<nav class="mt-24 flex rounded-lg bg-black/[3%] text-lg dark:bg-white/[8%]">
+<a class="flex w-1/2 items-center rounded-l-md p-6 pr-3 no-underline hover:bg-black/[2%] dark:hover:bg-white/[3%]" href=https://mozanunal.com/2019/11/ecg-signal/><span class=mr-1.5>←</span><span>Digital Filtering of an ECG Signal</span></a>
+<a class="ml-auto flex w-1/2 items-center justify-end rounded-r-md p-6 pl-3 no-underline hover:bg-black/[2%] dark:hover:bg-white/[3%]" href=https://mozanunal.com/2019/08/yolocolabdemo/><span>Yolo on Google Colab</span><span class=ml-1.5>→</span></a>
+</nav>
+</article>
+</main>
+<footer class="opaco mx-auto flex h-[5rem] max-w-3xl items-center px-8 text-[0.9em] opacity-60">
+<div class=mr-auto>
+&copy; 2023
+<a class=link href=https://mozanunal.com/>Mehmet Ozan Ünal</a>
+</div>
+<a class="link mx-6" href=https://gohugo.io/ rel=noopener target=_blank>Powered by Hugo️️</a>️
+<a class=link href=https://github.com/nanxiaobei/hugo-paper rel=noopener target=_blank>Theme Paper</a>
+</footer>
+</body>
+</html>

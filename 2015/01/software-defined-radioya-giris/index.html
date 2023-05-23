@@ -1,20 +1,109 @@
-<!doctype html><html class="not-ready text-sm lg:text-base" style=--bg:#fbfbfb lang=en><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><title>[TR] Software Defined Radioya Giriş - Mehmet Ozan Ünal</title><meta name=theme-color><meta name=description content="Herkese Merhabalar!
-Bugünkü yazımda yeni bir hobimden bahsetmet istiyorum. Yeni hobim, &ldquo;Software defined radio&rdquo;. Bu aslında bir rf modulü, Farkı ise belli frekans aralığında dinleme yapabilmesi. Yani bu sayede farklı frekanslardaki radyo dalgalarını alıp inceleyebilir, çözümleyebilirsiniz. SDR hakkında deneysel bir şeyler yapmak isterseniz en iyi yöntem bilgisayar için ucuz tv alıcılarından almak. Ben Aliexpress sitesinden 10 $ aldım. En ucuz SDR&rsquo;ler genelde RTL2832U+R820T çip setlidir. Benim aldığım modül 25MHz - 1700MHz arası tarama yapabiliyor."><meta name=author content="Mehmet Ozan Ünal"><link rel="preload stylesheet" as=style href=https://mozanunal.com/main.min.css><link rel=preload as=image href=https://mozanunal.com/theme.png><link rel=preload as=image href="https://www.gravatar.com/avatar/998cbd3ab655239d8be787580cce0415?s=160&amp;d=identicon"><link rel=preload as=image href=https://mozanunal.com/twitter.svg><link rel=preload as=image href=https://mozanunal.com/github.svg><link rel=icon href=https://mozanunal.com/favicon.ico><link rel=apple-touch-icon href=https://mozanunal.com/apple-touch-icon.png><meta name=generator content="Hugo 0.111.3"><script type=application/javascript>var doNotTrack=!1;doNotTrack||(window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","G-007KSW65JL","auto"),ga("send","pageview"))</script><script async src=https://www.google-analytics.com/analytics.js></script>
+<!doctype html><html class="not-ready text-sm lg:text-base" style=--bg:#fbfbfb lang=en>
+<head>
+<meta charset=utf-8>
+<meta http-equiv=x-ua-compatible content="IE=edge">
+<meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
+<title>[TR] Software Defined Radioya Giriş - Mehmet Ozan Ünal</title>
+<meta name=theme-color>
+<meta name=description content="Herkese Merhabalar!
+Bugünkü yazımda yeni bir hobimden bahsetmet istiyorum. Yeni hobim, &ldquo;Software defined radio&rdquo;. Bu aslında bir rf modulü, Farkı ise belli frekans aralığında dinleme yapabilmesi. Yani bu sayede farklı frekanslardaki radyo dalgalarını alıp inceleyebilir, çözümleyebilirsiniz. SDR hakkında deneysel bir şeyler yapmak isterseniz en iyi yöntem bilgisayar için ucuz tv alıcılarından almak. Ben Aliexpress sitesinden 10 $ aldım. En ucuz SDR&rsquo;ler genelde RTL2832U+R820T çip setlidir. Benim aldığım modül 25MHz - 1700MHz arası tarama yapabiliyor.">
+<meta name=author content="Mehmet Ozan Ünal">
+<link rel="preload stylesheet" as=style href=https://mozanunal.com/main.min.css>
+<link rel=preload as=image href=https://mozanunal.com/theme.png>
+<link rel=preload as=image href="https://www.gravatar.com/avatar/998cbd3ab655239d8be787580cce0415?s=160&d=identicon">
+<link rel=preload as=image href=https://mozanunal.com/twitter.svg>
+<link rel=preload as=image href=https://mozanunal.com/github.svg>
+<link rel=icon href=https://mozanunal.com/favicon.ico>
+<link rel=apple-touch-icon href=https://mozanunal.com/apple-touch-icon.png>
+<meta name=generator content="Hugo 0.92.2">
+<script type=application/javascript>var doNotTrack=!1;doNotTrack||(window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga('create','G-007KSW65JL','auto'),ga('send','pageview'))</script>
+<script async src=https://www.google-analytics.com/analytics.js></script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-007KSW65JL"></script>
-<script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-007KSW65JL",{anonymize_ip:!1})}</script><meta property="og:title" content="[TR] Software Defined Radioya Giriş"><meta property="og:description" content="Herkese Merhabalar!
-Bugünkü yazımda yeni bir hobimden bahsetmet istiyorum. Yeni hobim, &ldquo;Software defined radio&rdquo;. Bu aslında bir rf modulü, Farkı ise belli frekans aralığında dinleme yapabilmesi. Yani bu sayede farklı frekanslardaki radyo dalgalarını alıp inceleyebilir, çözümleyebilirsiniz. SDR hakkında deneysel bir şeyler yapmak isterseniz en iyi yöntem bilgisayar için ucuz tv alıcılarından almak. Ben Aliexpress sitesinden 10 $ aldım. En ucuz SDR&rsquo;ler genelde RTL2832U+R820T çip setlidir. Benim aldığım modül 25MHz - 1700MHz arası tarama yapabiliyor."><meta property="og:type" content="article"><meta property="og:url" content="https://mozanunal.com/2015/01/software-defined-radioya-giris/"><meta property="article:section" content="posts"><meta property="article:published_time" content="2015-01-02T22:55:00+00:00"><meta property="article:modified_time" content="2015-01-02T22:55:00+00:00"><meta itemprop=name content="[TR] Software Defined Radioya Giriş"><meta itemprop=description content="Herkese Merhabalar!
-Bugünkü yazımda yeni bir hobimden bahsetmet istiyorum. Yeni hobim, &ldquo;Software defined radio&rdquo;. Bu aslında bir rf modulü, Farkı ise belli frekans aralığında dinleme yapabilmesi. Yani bu sayede farklı frekanslardaki radyo dalgalarını alıp inceleyebilir, çözümleyebilirsiniz. SDR hakkında deneysel bir şeyler yapmak isterseniz en iyi yöntem bilgisayar için ucuz tv alıcılarından almak. Ben Aliexpress sitesinden 10 $ aldım. En ucuz SDR&rsquo;ler genelde RTL2832U+R820T çip setlidir. Benim aldığım modül 25MHz - 1700MHz arası tarama yapabiliyor."><meta itemprop=datePublished content="2015-01-02T22:55:00+00:00"><meta itemprop=dateModified content="2015-01-02T22:55:00+00:00"><meta itemprop=wordCount content="297"><meta itemprop=keywords content="Software Defined Radio,SDR#,SDR FM,SDR Nedir,"><meta name=twitter:card content="summary"><meta name=twitter:title content="[TR] Software Defined Radioya Giriş"><meta name=twitter:description content="Herkese Merhabalar!
-Bugünkü yazımda yeni bir hobimden bahsetmet istiyorum. Yeni hobim, &ldquo;Software defined radio&rdquo;. Bu aslında bir rf modulü, Farkı ise belli frekans aralığında dinleme yapabilmesi. Yani bu sayede farklı frekanslardaki radyo dalgalarını alıp inceleyebilir, çözümleyebilirsiniz. SDR hakkında deneysel bir şeyler yapmak isterseniz en iyi yöntem bilgisayar için ucuz tv alıcılarından almak. Ben Aliexpress sitesinden 10 $ aldım. En ucuz SDR&rsquo;ler genelde RTL2832U+R820T çip setlidir. Benim aldığım modül 25MHz - 1700MHz arası tarama yapabiliyor."></head><body class="text-black duration-200 ease-out dark:text-white"><header class="mx-auto flex h-[5rem] max-w-3xl px-8 lg:justify-center"><div class="relative z-50 mr-auto flex items-center"><a class="-translate-x-[1px] -translate-y-0.5 text-3xl font-bold" href=https://mozanunal.com/>Mehmet Ozan Ünal</a><div class="btn-dark text-[0] ml-6 h-6 w-6 shrink-0 cursor-pointer [background:url(./theme.svg)_left_center/cover_no-repeat] dark:invert dark:[background-position:right]" role=button aria-label=Dark></div></div><div class="btn-menu relative z-50 -mr-8 flex h-[5rem] w-[5rem] shrink-0 cursor-pointer flex-col items-center justify-center gap-2.5 lg:hidden" role=button aria-label=Menu></div><script>const htmlClass=document.documentElement.classList;setTimeout(()=>{htmlClass.remove("not-ready")},10);const btnMenu=document.querySelector(".btn-menu");btnMenu.addEventListener("click",()=>{htmlClass.toggle("open")});const metaTheme=document.querySelector('meta[name="theme-color"]'),lightBg=`"#fbfbfb"`.replace(/"/g,""),setDark=e=>{metaTheme.setAttribute("content",e?"#000":lightBg),htmlClass[e?"add":"remove"]("dark"),localStorage.setItem("dark",e)},darkScheme=window.matchMedia("(prefers-color-scheme: dark)");if(htmlClass.contains("dark"))setDark(!0);else{const e=localStorage.getItem("dark");setDark(e?e==="true":darkScheme.matches)}darkScheme.addEventListener("change",e=>{setDark(e.matches)});const btnDark=document.querySelector(".btn-dark");btnDark.addEventListener("click",()=>{setDark(localStorage.getItem("dark")!=="true")})</script><div class="nav-wrapper fixed inset-x-0 top-full z-40 flex h-full select-none flex-col justify-center pb-16 duration-200 dark:bg-black lg:static lg:h-auto lg:flex-row lg:!bg-transparent lg:pb-0 lg:transition-none"><nav class="lg:ml-12 lg:flex lg:flex-row lg:items-center lg:space-x-6"><a class="block text-center text-2xl leading-[5rem] lg:text-base lg:font-normal" href=/about/>About</a>
-<a class="block text-center text-2xl leading-[5rem] lg:text-base lg:font-normal" href=/contact/>Contact</a></nav><nav class="mt-12 flex justify-center space-x-10 dark:invert lg:mt-0 lg:ml-12 lg:items-center lg:space-x-6"><a class="h-8 w-8 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6" style=--url:url(./twitter.svg) href=https://twitter.com/MOzanUnal target=_blank rel=me>twitter</a>
-<a class="h-8 w-8 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6" style=--url:url(./github.svg) href=https://github.com/mozanunal target=_blank rel=me>github</a></nav></div></header><main class="prose prose-neutral relative mx-auto min-h-[calc(100%-10rem)] max-w-3xl px-8 pt-16 pb-24 dark:prose-invert"><article><header class=mb-20><h1 class="!my-0 pb-2.5">[TR] Software Defined Radioya Giriş</h1><div class="text-sm opacity-60"><time>Jan 2, 2015</time>
+<script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-007KSW65JL',{anonymize_ip:!1})}</script>
+<meta property="og:title" content="[TR] Software Defined Radioya Giriş">
+<meta property="og:description" content="Herkese Merhabalar!
+Bugünkü yazımda yeni bir hobimden bahsetmet istiyorum. Yeni hobim, &ldquo;Software defined radio&rdquo;. Bu aslında bir rf modulü, Farkı ise belli frekans aralığında dinleme yapabilmesi. Yani bu sayede farklı frekanslardaki radyo dalgalarını alıp inceleyebilir, çözümleyebilirsiniz. SDR hakkında deneysel bir şeyler yapmak isterseniz en iyi yöntem bilgisayar için ucuz tv alıcılarından almak. Ben Aliexpress sitesinden 10 $ aldım. En ucuz SDR&rsquo;ler genelde RTL2832U+R820T çip setlidir. Benim aldığım modül 25MHz - 1700MHz arası tarama yapabiliyor.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://mozanunal.com/2015/01/software-defined-radioya-giris/"><meta property="article:section" content="posts">
+<meta property="article:published_time" content="2015-01-02T22:55:00+00:00">
+<meta property="article:modified_time" content="2015-01-02T22:55:00+00:00">
+<meta itemprop=name content="[TR] Software Defined Radioya Giriş">
+<meta itemprop=description content="Herkese Merhabalar!
+Bugünkü yazımda yeni bir hobimden bahsetmet istiyorum. Yeni hobim, &ldquo;Software defined radio&rdquo;. Bu aslında bir rf modulü, Farkı ise belli frekans aralığında dinleme yapabilmesi. Yani bu sayede farklı frekanslardaki radyo dalgalarını alıp inceleyebilir, çözümleyebilirsiniz. SDR hakkında deneysel bir şeyler yapmak isterseniz en iyi yöntem bilgisayar için ucuz tv alıcılarından almak. Ben Aliexpress sitesinden 10 $ aldım. En ucuz SDR&rsquo;ler genelde RTL2832U+R820T çip setlidir. Benim aldığım modül 25MHz - 1700MHz arası tarama yapabiliyor."><meta itemprop=datePublished content="2015-01-02T22:55:00+00:00">
+<meta itemprop=dateModified content="2015-01-02T22:55:00+00:00">
+<meta itemprop=wordCount content="297">
+<meta itemprop=keywords content="Software Defined Radio,SDR#,SDR FM,SDR Nedir,">
+<meta name=twitter:card content="summary">
+<meta name=twitter:title content="[TR] Software Defined Radioya Giriş">
+<meta name=twitter:description content="Herkese Merhabalar!
+Bugünkü yazımda yeni bir hobimden bahsetmet istiyorum. Yeni hobim, &ldquo;Software defined radio&rdquo;. Bu aslında bir rf modulü, Farkı ise belli frekans aralığında dinleme yapabilmesi. Yani bu sayede farklı frekanslardaki radyo dalgalarını alıp inceleyebilir, çözümleyebilirsiniz. SDR hakkında deneysel bir şeyler yapmak isterseniz en iyi yöntem bilgisayar için ucuz tv alıcılarından almak. Ben Aliexpress sitesinden 10 $ aldım. En ucuz SDR&rsquo;ler genelde RTL2832U+R820T çip setlidir. Benim aldığım modül 25MHz - 1700MHz arası tarama yapabiliyor.">
+</head>
+<body class="text-black duration-200 ease-out dark:text-white">
+<header class="mx-auto flex h-[5rem] max-w-3xl px-8 lg:justify-center">
+<div class="relative z-50 mr-auto flex items-center">
+<a class="-translate-x-[1px] -translate-y-0.5 text-3xl font-bold" href=https://mozanunal.com/>Mehmet Ozan Ünal</a>
+<div class="btn-dark text-[0] ml-6 h-6 w-6 shrink-0 cursor-pointer [background:url(./theme.svg)_left_center/cover_no-repeat] dark:invert dark:[background-position:right]" role=button aria-label=Dark></div>
+</div>
+<div class="btn-menu relative z-50 -mr-8 flex h-[5rem] w-[5rem] shrink-0 cursor-pointer flex-col items-center justify-center gap-2.5 lg:hidden" role=button aria-label=Menu></div>
+<script>const htmlClass=document.documentElement.classList;setTimeout(()=>{htmlClass.remove('not-ready')},10);const btnMenu=document.querySelector('.btn-menu');btnMenu.addEventListener('click',()=>{htmlClass.toggle('open')});const metaTheme=document.querySelector('meta[name="theme-color"]'),lightBg=`"#fbfbfb"`.replace(/"/g,''),setDark=a=>{metaTheme.setAttribute('content',a?'#000':lightBg),htmlClass[a?'add':'remove']('dark'),localStorage.setItem('dark',a)},darkScheme=window.matchMedia('(prefers-color-scheme: dark)');if(htmlClass.contains('dark'))setDark(!0);else{const a=localStorage.getItem('dark');setDark(a?a==='true':darkScheme.matches)}darkScheme.addEventListener('change',a=>{setDark(a.matches)});const btnDark=document.querySelector('.btn-dark');btnDark.addEventListener('click',()=>{setDark(localStorage.getItem('dark')!=='true')})</script>
+<div class="nav-wrapper fixed inset-x-0 top-full z-40 flex h-full select-none flex-col justify-center pb-16 duration-200 dark:bg-black lg:static lg:h-auto lg:flex-row lg:!bg-transparent lg:pb-0 lg:transition-none">
+<nav class="lg:ml-12 lg:flex lg:flex-row lg:items-center lg:space-x-6">
+<a class="block text-center text-2xl leading-[5rem] lg:text-base lg:font-normal" href=/about/>About</a>
+<a class="block text-center text-2xl leading-[5rem] lg:text-base lg:font-normal" href=/contact/>Contact</a>
+</nav>
+<nav class="mt-12 flex justify-center space-x-10 dark:invert lg:mt-0 lg:ml-12 lg:items-center lg:space-x-6">
+<a class="h-8 w-8 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6" style=--url:url(./twitter.svg) href=https://twitter.com/MOzanUnal target=_blank rel=me>
+twitter
+</a>
+<a class="h-8 w-8 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6" style=--url:url(./github.svg) href=https://github.com/mozanunal target=_blank rel=me>
+github
+</a>
+</nav>
+</div>
+</header>
+<main class="prose prose-neutral relative mx-auto min-h-[calc(100%-10rem)] max-w-3xl px-8 pt-16 pb-24 dark:prose-invert">
+<article>
+<header class=mb-20>
+<h1 class="!my-0 pb-2.5">[TR] Software Defined Radioya Giriş</h1>
+<div class="text-sm opacity-60">
+<time>Jan 2, 2015</time>
 <span class=mx-1>&#183;</span>
-<span>Mehmet Ozan Ünal</span></div></header><section><p><strong>Herkese Merhabalar!</strong></p><p>Bugünkü yazımda yeni bir hobimden bahsetmet istiyorum. Yeni hobim, &ldquo;Software defined radio&rdquo;. Bu aslında bir rf modulü, Farkı ise belli frekans aralığında dinleme yapabilmesi. Yani bu sayede farklı frekanslardaki radyo dalgalarını alıp inceleyebilir, çözümleyebilirsiniz. SDR hakkında deneysel bir şeyler yapmak isterseniz en iyi yöntem bilgisayar için ucuz tv alıcılarından almak. Ben Aliexpress sitesinden 10 $ aldım. En ucuz SDR&rsquo;ler genelde <strong>RTL2832U+R820T çip setlidir.</strong> Benim aldığım modül 25MHz - 1700MHz arası tarama yapabiliyor. Kendi anteni ve kumandasıyla beraber geldi. Genelde bu modullerle gelen antenlerle FMden başka bi şey dinleyebilmek pek mümkün olmuyor. Fakat geliştirilen uygun antenlerle Uluslararası Uzay İstasyonundan(ISS) bile veri alabilmek mümkün. Bunlardan kurulumdan sonra bahsedeceğim.</p><p><img src=https://1.bp.blogspot.com/-Zs-kbF0uC2U/VKX6zgnujoI/AAAAAAAAGWg/DqFsmZCoRq4/s720/image.jpg alt></p><p><img src=https://2.bp.blogspot.com/-0hbwFHwKuKg/VKX6y4BUu6I/AAAAAAAAGWY/N18flG1Ijb0/s720/IMG_20150102_033917.jpg alt></p><p>Evet gelelim kullanma kısmına. Genelde yazılım olarak SDR# Programı kullanılıyor. Programın kullanımı oldukça kolay ve bir çok eklentisi bulunuyor. Bu yüzden ben de SDR# seçtim. Programı <a href=https://sdrsharp.com/#download>buradan indirebilirsiniz.</a> Programın kurulumu oldukça basit o yüzden bu kısmı geçiyorum. Kurduktan sonra Driver değişimi yapmamız gerekiyor. Bunun için ise Zadig isimli programı kuallnabilirsiniz. Options&rsquo;tan &ldquo;Show All Devices&rdquo; seçilir. Daha sonra &ldquo;Bulk-In,Interface(Interface 0)&rdquo; seçilir. Sağ taraftaki driver olarak &ldquo;WinUSB&rdquo; seçilir &ldquo;Reinstall Driver&rdquo; tıklanır ve uzun bir yükleme sürecinin ardından SDR# programı kullanıma hazırdır.
+<span>Mehmet Ozan Ünal</span>
+</div>
+</header>
+<section><p><strong>Herkese Merhabalar!</strong></p>
+<p>Bugünkü yazımda yeni bir hobimden bahsetmet istiyorum. Yeni hobim, &ldquo;Software defined radio&rdquo;. Bu aslında bir rf modulü, Farkı ise belli frekans aralığında dinleme yapabilmesi. Yani bu sayede farklı frekanslardaki radyo dalgalarını alıp inceleyebilir, çözümleyebilirsiniz. SDR hakkında deneysel bir şeyler yapmak isterseniz en iyi yöntem bilgisayar için ucuz tv alıcılarından almak. Ben Aliexpress sitesinden 10 $ aldım. En ucuz SDR&rsquo;ler genelde <strong>RTL2832U+R820T çip setlidir.</strong> Benim aldığım modül 25MHz - 1700MHz arası tarama yapabiliyor. Kendi anteni ve kumandasıyla beraber geldi. Genelde bu modullerle gelen antenlerle FMden başka bi şey dinleyebilmek pek mümkün olmuyor. Fakat geliştirilen uygun antenlerle Uluslararası Uzay İstasyonundan(ISS) bile veri alabilmek mümkün. Bunlardan kurulumdan sonra bahsedeceğim.</p>
+<p><img src=https://1.bp.blogspot.com/-Zs-kbF0uC2U/VKX6zgnujoI/AAAAAAAAGWg/DqFsmZCoRq4/s720/image.jpg alt></p>
+<p><img src=https://2.bp.blogspot.com/-0hbwFHwKuKg/VKX6y4BUu6I/AAAAAAAAGWY/N18flG1Ijb0/s720/IMG_20150102_033917.jpg alt></p>
+<p>Evet gelelim kullanma kısmına. Genelde yazılım olarak SDR# Programı kullanılıyor. Programın kullanımı oldukça kolay ve bir çok eklentisi bulunuyor. Bu yüzden ben de SDR# seçtim. Programı <a href=https://sdrsharp.com/#download>buradan indirebilirsiniz.</a> Programın kurulumu oldukça basit o yüzden bu kısmı geçiyorum. Kurduktan sonra Driver değişimi yapmamız gerekiyor. Bunun için ise Zadig isimli programı kuallnabilirsiniz. Options&rsquo;tan &ldquo;Show All Devices&rdquo; seçilir. Daha sonra &ldquo;Bulk-In,Interface(Interface 0)&rdquo; seçilir. Sağ taraftaki driver olarak &ldquo;WinUSB&rdquo; seçilir &ldquo;Reinstall Driver&rdquo; tıklanır ve uzun bir yükleme sürecinin ardından SDR# programı kullanıma hazırdır.
 <img src=https://2.bp.blogspot.com/-F_xCxZ75r9s/VKX3u12Ir9I/AAAAAAAAGV8/YAZKHWAr-v8/s720/9.PNG alt>
 İlk uygulama olarak FM dinleme uygulaması yaptım çünkü ekstra anten gerektirmiyor. Modulü denemek için ideal bir uygulama. Ayar butonuna tıklayıp ayarları aşağıdaki gibi yapıyoruz.
-<img src=https://1.bp.blogspot.com/-XOHN-zCrE3Q/VKX3siViEEI/AAAAAAAAGVg/OuhlpJHD7Zg/s720/1.PNG alt></p><p>Radio sekmesinin altına WFM seçilir. Alttaki ayarları bu uygulama için değiştirmeye gerek yok.</p><p><img src=https://2.bp.blogspot.com/-eYoALLjPkzM/VKX3s1H_djI/AAAAAAAAGVk/GRqjeP63n9w/s720/2.PNG alt></p><p>Gerekli ayarlar yapıldığında  SDR# görüntüsü bu şekilde olacak. Sinyalin yüksek olduğu yerleri kırmızı renkten farkedebilirsiniz. Farklı kanallar ayrı ayrı gözükecektir.</p><p><img src=https://3.bp.blogspot.com/-twmiINwRyXE/VKX3wAY-ChI/AAAAAAAAGWI/AqZzk8tUxsk/s720/3.PNG alt></p><p>Gelelim Sdr ile yapabileceklerinize: FM radio dinlenebilir, karasal TV yayınına bağlanabilir, ISS den veri almak, NOAA Hava durumu uydularından veri ve resim almak(Wxtoimg), amatör radyo bandında iletişim kurmak, uçakların koordinant verilerini almak, GPS uydularına bağlanmak gibi uygun frekans aralığında iletişim kurulabilir. Tabi ki uygun anten gereklidir. Bunlardan sonraki yazılarımda bahsedeceğim. Tekrar görüşmek üzere..</p></section><footer class="mt-12 flex flex-wrap"><a class="mr-1.5 mb-1.5 rounded-lg bg-black/[3%] px-5 py-2 no-underline dark:bg-white/[8%]" href=https://mozanunal.com/tags/software-defined-radio>Software Defined Radio</a>
+<img src=https://1.bp.blogspot.com/-XOHN-zCrE3Q/VKX3siViEEI/AAAAAAAAGVg/OuhlpJHD7Zg/s720/1.PNG alt></p>
+<p>Radio sekmesinin altına WFM seçilir. Alttaki ayarları bu uygulama için değiştirmeye gerek yok.</p>
+<p><img src=https://2.bp.blogspot.com/-eYoALLjPkzM/VKX3s1H_djI/AAAAAAAAGVk/GRqjeP63n9w/s720/2.PNG alt></p>
+<p>Gerekli ayarlar yapıldığında  SDR# görüntüsü bu şekilde olacak. Sinyalin yüksek olduğu yerleri kırmızı renkten farkedebilirsiniz. Farklı kanallar ayrı ayrı gözükecektir.</p>
+<p><img src=https://3.bp.blogspot.com/-twmiINwRyXE/VKX3wAY-ChI/AAAAAAAAGWI/AqZzk8tUxsk/s720/3.PNG alt></p>
+<p>Gelelim Sdr ile yapabileceklerinize: FM radio dinlenebilir, karasal TV yayınına bağlanabilir, ISS den veri almak, NOAA Hava durumu uydularından veri ve resim almak(Wxtoimg), amatör radyo bandında iletişim kurmak, uçakların koordinant verilerini almak, GPS uydularına bağlanmak gibi uygun frekans aralığında iletişim kurulabilir. Tabi ki uygun anten gereklidir. Bunlardan sonraki yazılarımda bahsedeceğim. Tekrar görüşmek üzere..</p>
+</section>
+<footer class="mt-12 flex flex-wrap">
+<a class="mr-1.5 mb-1.5 rounded-lg bg-black/[3%] px-5 py-2 no-underline dark:bg-white/[8%]" href=https://mozanunal.com/tags/software-defined-radio>Software Defined Radio</a>
 <a class="mr-1.5 mb-1.5 rounded-lg bg-black/[3%] px-5 py-2 no-underline dark:bg-white/[8%]" href=https://mozanunal.com/tags/sdr>SDR#</a>
 <a class="mr-1.5 mb-1.5 rounded-lg bg-black/[3%] px-5 py-2 no-underline dark:bg-white/[8%]" href=https://mozanunal.com/tags/sdr-fm>SDR FM</a>
-<a class="mr-1.5 mb-1.5 rounded-lg bg-black/[3%] px-5 py-2 no-underline dark:bg-white/[8%]" href=https://mozanunal.com/tags/sdr-nedir>SDR Nedir</a></footer><nav class="mt-24 flex rounded-lg bg-black/[3%] text-lg dark:bg-white/[8%]"><a class="flex w-1/2 items-center rounded-l-md p-6 pr-3 no-underline hover:bg-black/[2%] dark:hover:bg-white/[3%]" href=https://mozanunal.com/2015/01/yeni-android-programm-adres-defteri/><span class=mr-1.5>←</span><span>[TR] Yeni Android Programım: Adres Defteri</span></a>
-<a class="ml-auto flex w-1/2 items-center justify-end rounded-r-md p-6 pl-3 no-underline hover:bg-black/[2%] dark:hover:bg-white/[3%]" href=https://mozanunal.com/2014/12/serial-port-grapher/><span>[TR] Serial Port Grapher</span><span class=ml-1.5>→</span></a></nav></article></main><footer class="opaco mx-auto flex h-[5rem] max-w-3xl items-center px-8 text-[0.9em] opacity-60"><div class=mr-auto>&copy; 2023
-<a class=link href=https://mozanunal.com/>Mehmet Ozan Ünal</a></div><a class="link mx-6" href=https://gohugo.io/ rel=noopener target=_blank>Powered by Hugo️️</a>️
-<a class=link href=https://github.com/nanxiaobei/hugo-paper rel=noopener target=_blank>Theme Paper</a></footer></body></html>
+<a class="mr-1.5 mb-1.5 rounded-lg bg-black/[3%] px-5 py-2 no-underline dark:bg-white/[8%]" href=https://mozanunal.com/tags/sdr-nedir>SDR Nedir</a>
+</footer>
+<nav class="mt-24 flex rounded-lg bg-black/[3%] text-lg dark:bg-white/[8%]">
+<a class="flex w-1/2 items-center rounded-l-md p-6 pr-3 no-underline hover:bg-black/[2%] dark:hover:bg-white/[3%]" href=https://mozanunal.com/2015/01/yeni-android-programm-adres-defteri/><span class=mr-1.5>←</span><span>[TR] Yeni Android Programım: Adres Defteri</span></a>
+<a class="ml-auto flex w-1/2 items-center justify-end rounded-r-md p-6 pl-3 no-underline hover:bg-black/[2%] dark:hover:bg-white/[3%]" href=https://mozanunal.com/2014/12/serial-port-grapher/><span>[TR] Serial Port Grapher</span><span class=ml-1.5>→</span></a>
+</nav>
+</article>
+</main>
+<footer class="opaco mx-auto flex h-[5rem] max-w-3xl items-center px-8 text-[0.9em] opacity-60">
+<div class=mr-auto>
+&copy; 2023
+<a class=link href=https://mozanunal.com/>Mehmet Ozan Ünal</a>
+</div>
+<a class="link mx-6" href=https://gohugo.io/ rel=noopener target=_blank>Powered by Hugo️️</a>️
+<a class=link href=https://github.com/nanxiaobei/hugo-paper rel=noopener target=_blank>Theme Paper</a>
+</footer>
+</body>
+</html>

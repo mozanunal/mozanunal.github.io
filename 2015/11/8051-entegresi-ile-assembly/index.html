@@ -1,88 +1,263 @@
-<!doctype html><html class="not-ready text-sm lg:text-base" style=--bg:#fbfbfb lang=en><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><title>[TR] 8051 Entegresi İle Assembly Programlamaya Giriş - Mehmet Ozan Ünal</title><meta name=theme-color><meta name=description content="Herkese Merhabalar,
+<!doctype html><html class="not-ready text-sm lg:text-base" style=--bg:#fbfbfb lang=en>
+<head>
+<meta charset=utf-8>
+<meta http-equiv=x-ua-compatible content="IE=edge">
+<meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
+<title>[TR] 8051 Entegresi İle Assembly Programlamaya Giriş - Mehmet Ozan Ünal</title>
+<meta name=theme-color>
+<meta name=description content="Herkese Merhabalar,
 Bu yazdımda ilk mikroişlemcilerden biri olan 8051 mikrokontrolcüsü üzerinden assembly dili ve mikroişlemci nedir nasıl çalışır bu konulara giriş yapmak istiyorum. Başlamadan önce benim de kullanacağım 8051 entegresi simülasyon programını önermek istiyorum. Programın ismi EdSim51. İlkönce mikroişlemcilerle alakalı temel bir kaç kavramla başlayalım.
 ROM(Read Only Memory): Temel olarak, belli bir miktarda bilginin kalıcı olarak yazıldığı bellektir**.** Bilgi saklamak için
 EEPROM: ROM&rsquo;un yeniden yazılabilir halidir.
-RAM(Random Access Memory): Bilgi saklamak için elektriğe ihtiyaç duyar."><meta name=author content="Mehmet Ozan Ünal"><link rel="preload stylesheet" as=style href=https://mozanunal.com/main.min.css><link rel=preload as=image href=https://mozanunal.com/theme.png><link rel=preload as=image href="https://www.gravatar.com/avatar/998cbd3ab655239d8be787580cce0415?s=160&amp;d=identicon"><link rel=preload as=image href=https://mozanunal.com/twitter.svg><link rel=preload as=image href=https://mozanunal.com/github.svg><link rel=icon href=https://mozanunal.com/favicon.ico><link rel=apple-touch-icon href=https://mozanunal.com/apple-touch-icon.png><meta name=generator content="Hugo 0.111.3"><script type=application/javascript>var doNotTrack=!1;doNotTrack||(window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","G-007KSW65JL","auto"),ga("send","pageview"))</script><script async src=https://www.google-analytics.com/analytics.js></script>
+RAM(Random Access Memory): Bilgi saklamak için elektriğe ihtiyaç duyar.">
+<meta name=author content="Mehmet Ozan Ünal">
+<link rel="preload stylesheet" as=style href=https://mozanunal.com/main.min.css>
+<link rel=preload as=image href=https://mozanunal.com/theme.png>
+<link rel=preload as=image href="https://www.gravatar.com/avatar/998cbd3ab655239d8be787580cce0415?s=160&d=identicon">
+<link rel=preload as=image href=https://mozanunal.com/twitter.svg>
+<link rel=preload as=image href=https://mozanunal.com/github.svg>
+<link rel=icon href=https://mozanunal.com/favicon.ico>
+<link rel=apple-touch-icon href=https://mozanunal.com/apple-touch-icon.png>
+<meta name=generator content="Hugo 0.92.2">
+<script type=application/javascript>var doNotTrack=!1;doNotTrack||(window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga('create','G-007KSW65JL','auto'),ga('send','pageview'))</script>
+<script async src=https://www.google-analytics.com/analytics.js></script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-007KSW65JL"></script>
-<script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-007KSW65JL",{anonymize_ip:!1})}</script><meta property="og:title" content="[TR] 8051 Entegresi İle Assembly Programlamaya Giriş"><meta property="og:description" content="Herkese Merhabalar,
+<script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-007KSW65JL',{anonymize_ip:!1})}</script>
+<meta property="og:title" content="[TR] 8051 Entegresi İle Assembly Programlamaya Giriş">
+<meta property="og:description" content="Herkese Merhabalar,
 Bu yazdımda ilk mikroişlemcilerden biri olan 8051 mikrokontrolcüsü üzerinden assembly dili ve mikroişlemci nedir nasıl çalışır bu konulara giriş yapmak istiyorum. Başlamadan önce benim de kullanacağım 8051 entegresi simülasyon programını önermek istiyorum. Programın ismi EdSim51. İlkönce mikroişlemcilerle alakalı temel bir kaç kavramla başlayalım.
 ROM(Read Only Memory): Temel olarak, belli bir miktarda bilginin kalıcı olarak yazıldığı bellektir**.** Bilgi saklamak için
 EEPROM: ROM&rsquo;un yeniden yazılabilir halidir.
-RAM(Random Access Memory): Bilgi saklamak için elektriğe ihtiyaç duyar."><meta property="og:type" content="article"><meta property="og:url" content="https://mozanunal.com/2015/11/8051-entegresi-ile-assembly/"><meta property="article:section" content="posts"><meta property="article:published_time" content="2015-11-05T05:25:00+00:00"><meta property="article:modified_time" content="2015-11-05T05:25:00+00:00"><meta itemprop=name content="[TR] 8051 Entegresi İle Assembly Programlamaya Giriş"><meta itemprop=description content="Herkese Merhabalar,
+RAM(Random Access Memory): Bilgi saklamak için elektriğe ihtiyaç duyar.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://mozanunal.com/2015/11/8051-entegresi-ile-assembly/"><meta property="article:section" content="posts">
+<meta property="article:published_time" content="2015-11-05T05:25:00+00:00">
+<meta property="article:modified_time" content="2015-11-05T05:25:00+00:00">
+<meta itemprop=name content="[TR] 8051 Entegresi İle Assembly Programlamaya Giriş">
+<meta itemprop=description content="Herkese Merhabalar,
 Bu yazdımda ilk mikroişlemcilerden biri olan 8051 mikrokontrolcüsü üzerinden assembly dili ve mikroişlemci nedir nasıl çalışır bu konulara giriş yapmak istiyorum. Başlamadan önce benim de kullanacağım 8051 entegresi simülasyon programını önermek istiyorum. Programın ismi EdSim51. İlkönce mikroişlemcilerle alakalı temel bir kaç kavramla başlayalım.
 ROM(Read Only Memory): Temel olarak, belli bir miktarda bilginin kalıcı olarak yazıldığı bellektir**.** Bilgi saklamak için
 EEPROM: ROM&rsquo;un yeniden yazılabilir halidir.
-RAM(Random Access Memory): Bilgi saklamak için elektriğe ihtiyaç duyar."><meta itemprop=datePublished content="2015-11-05T05:25:00+00:00"><meta itemprop=dateModified content="2015-11-05T05:25:00+00:00"><meta itemprop=wordCount content="1011"><meta itemprop=keywords content="Electronics,Microcontrollers,8051,Arm cortex m3,Assembly,"><meta name=twitter:card content="summary"><meta name=twitter:title content="[TR] 8051 Entegresi İle Assembly Programlamaya Giriş"><meta name=twitter:description content="Herkese Merhabalar,
+RAM(Random Access Memory): Bilgi saklamak için elektriğe ihtiyaç duyar."><meta itemprop=datePublished content="2015-11-05T05:25:00+00:00">
+<meta itemprop=dateModified content="2015-11-05T05:25:00+00:00">
+<meta itemprop=wordCount content="1011">
+<meta itemprop=keywords content="Electronics,Microcontrollers,8051,Arm cortex m3,Assembly,">
+<meta name=twitter:card content="summary">
+<meta name=twitter:title content="[TR] 8051 Entegresi İle Assembly Programlamaya Giriş">
+<meta name=twitter:description content="Herkese Merhabalar,
 Bu yazdımda ilk mikroişlemcilerden biri olan 8051 mikrokontrolcüsü üzerinden assembly dili ve mikroişlemci nedir nasıl çalışır bu konulara giriş yapmak istiyorum. Başlamadan önce benim de kullanacağım 8051 entegresi simülasyon programını önermek istiyorum. Programın ismi EdSim51. İlkönce mikroişlemcilerle alakalı temel bir kaç kavramla başlayalım.
 ROM(Read Only Memory): Temel olarak, belli bir miktarda bilginin kalıcı olarak yazıldığı bellektir**.** Bilgi saklamak için
 EEPROM: ROM&rsquo;un yeniden yazılabilir halidir.
-RAM(Random Access Memory): Bilgi saklamak için elektriğe ihtiyaç duyar."></head><body class="text-black duration-200 ease-out dark:text-white"><header class="mx-auto flex h-[5rem] max-w-3xl px-8 lg:justify-center"><div class="relative z-50 mr-auto flex items-center"><a class="-translate-x-[1px] -translate-y-0.5 text-3xl font-bold" href=https://mozanunal.com/>Mehmet Ozan Ünal</a><div class="btn-dark text-[0] ml-6 h-6 w-6 shrink-0 cursor-pointer [background:url(./theme.svg)_left_center/cover_no-repeat] dark:invert dark:[background-position:right]" role=button aria-label=Dark></div></div><div class="btn-menu relative z-50 -mr-8 flex h-[5rem] w-[5rem] shrink-0 cursor-pointer flex-col items-center justify-center gap-2.5 lg:hidden" role=button aria-label=Menu></div><script>const htmlClass=document.documentElement.classList;setTimeout(()=>{htmlClass.remove("not-ready")},10);const btnMenu=document.querySelector(".btn-menu");btnMenu.addEventListener("click",()=>{htmlClass.toggle("open")});const metaTheme=document.querySelector('meta[name="theme-color"]'),lightBg=`"#fbfbfb"`.replace(/"/g,""),setDark=e=>{metaTheme.setAttribute("content",e?"#000":lightBg),htmlClass[e?"add":"remove"]("dark"),localStorage.setItem("dark",e)},darkScheme=window.matchMedia("(prefers-color-scheme: dark)");if(htmlClass.contains("dark"))setDark(!0);else{const e=localStorage.getItem("dark");setDark(e?e==="true":darkScheme.matches)}darkScheme.addEventListener("change",e=>{setDark(e.matches)});const btnDark=document.querySelector(".btn-dark");btnDark.addEventListener("click",()=>{setDark(localStorage.getItem("dark")!=="true")})</script><div class="nav-wrapper fixed inset-x-0 top-full z-40 flex h-full select-none flex-col justify-center pb-16 duration-200 dark:bg-black lg:static lg:h-auto lg:flex-row lg:!bg-transparent lg:pb-0 lg:transition-none"><nav class="lg:ml-12 lg:flex lg:flex-row lg:items-center lg:space-x-6"><a class="block text-center text-2xl leading-[5rem] lg:text-base lg:font-normal" href=/about/>About</a>
-<a class="block text-center text-2xl leading-[5rem] lg:text-base lg:font-normal" href=/contact/>Contact</a></nav><nav class="mt-12 flex justify-center space-x-10 dark:invert lg:mt-0 lg:ml-12 lg:items-center lg:space-x-6"><a class="h-8 w-8 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6" style=--url:url(./twitter.svg) href=https://twitter.com/MOzanUnal target=_blank rel=me>twitter</a>
-<a class="h-8 w-8 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6" style=--url:url(./github.svg) href=https://github.com/mozanunal target=_blank rel=me>github</a></nav></div></header><main class="prose prose-neutral relative mx-auto min-h-[calc(100%-10rem)] max-w-3xl px-8 pt-16 pb-24 dark:prose-invert"><article><header class=mb-20><h1 class="!my-0 pb-2.5">[TR] 8051 Entegresi İle Assembly Programlamaya Giriş</h1><div class="text-sm opacity-60"><time>Nov 5, 2015</time>
+RAM(Random Access Memory): Bilgi saklamak için elektriğe ihtiyaç duyar.">
+</head>
+<body class="text-black duration-200 ease-out dark:text-white">
+<header class="mx-auto flex h-[5rem] max-w-3xl px-8 lg:justify-center">
+<div class="relative z-50 mr-auto flex items-center">
+<a class="-translate-x-[1px] -translate-y-0.5 text-3xl font-bold" href=https://mozanunal.com/>Mehmet Ozan Ünal</a>
+<div class="btn-dark text-[0] ml-6 h-6 w-6 shrink-0 cursor-pointer [background:url(./theme.svg)_left_center/cover_no-repeat] dark:invert dark:[background-position:right]" role=button aria-label=Dark></div>
+</div>
+<div class="btn-menu relative z-50 -mr-8 flex h-[5rem] w-[5rem] shrink-0 cursor-pointer flex-col items-center justify-center gap-2.5 lg:hidden" role=button aria-label=Menu></div>
+<script>const htmlClass=document.documentElement.classList;setTimeout(()=>{htmlClass.remove('not-ready')},10);const btnMenu=document.querySelector('.btn-menu');btnMenu.addEventListener('click',()=>{htmlClass.toggle('open')});const metaTheme=document.querySelector('meta[name="theme-color"]'),lightBg=`"#fbfbfb"`.replace(/"/g,''),setDark=a=>{metaTheme.setAttribute('content',a?'#000':lightBg),htmlClass[a?'add':'remove']('dark'),localStorage.setItem('dark',a)},darkScheme=window.matchMedia('(prefers-color-scheme: dark)');if(htmlClass.contains('dark'))setDark(!0);else{const a=localStorage.getItem('dark');setDark(a?a==='true':darkScheme.matches)}darkScheme.addEventListener('change',a=>{setDark(a.matches)});const btnDark=document.querySelector('.btn-dark');btnDark.addEventListener('click',()=>{setDark(localStorage.getItem('dark')!=='true')})</script>
+<div class="nav-wrapper fixed inset-x-0 top-full z-40 flex h-full select-none flex-col justify-center pb-16 duration-200 dark:bg-black lg:static lg:h-auto lg:flex-row lg:!bg-transparent lg:pb-0 lg:transition-none">
+<nav class="lg:ml-12 lg:flex lg:flex-row lg:items-center lg:space-x-6">
+<a class="block text-center text-2xl leading-[5rem] lg:text-base lg:font-normal" href=/about/>About</a>
+<a class="block text-center text-2xl leading-[5rem] lg:text-base lg:font-normal" href=/contact/>Contact</a>
+</nav>
+<nav class="mt-12 flex justify-center space-x-10 dark:invert lg:mt-0 lg:ml-12 lg:items-center lg:space-x-6">
+<a class="h-8 w-8 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6" style=--url:url(./twitter.svg) href=https://twitter.com/MOzanUnal target=_blank rel=me>
+twitter
+</a>
+<a class="h-8 w-8 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6" style=--url:url(./github.svg) href=https://github.com/mozanunal target=_blank rel=me>
+github
+</a>
+</nav>
+</div>
+</header>
+<main class="prose prose-neutral relative mx-auto min-h-[calc(100%-10rem)] max-w-3xl px-8 pt-16 pb-24 dark:prose-invert">
+<article>
+<header class=mb-20>
+<h1 class="!my-0 pb-2.5">[TR] 8051 Entegresi İle Assembly Programlamaya Giriş</h1>
+<div class="text-sm opacity-60">
+<time>Nov 5, 2015</time>
 <span class=mx-1>&#183;</span>
-<span>Mehmet Ozan Ünal</span></div></header><section><p><strong>Herkese Merhabalar,</strong><br>       Bu yazdımda ilk mikroişlemcilerden biri olan 8051 mikrokontrolcüsü üzerinden assembly dili ve mikroişlemci nedir nasıl çalışır bu konulara giriş yapmak istiyorum. Başlamadan önce benim de kullanacağım 8051 entegresi simülasyon programını önermek istiyorum. Programın ismi EdSim51. İlkönce mikroişlemcilerle alakalı temel bir kaç kavramla başlayalım.</p><p><strong>ROM(Read Only Memory):</strong> Temel olarak, belli bir miktarda bilginin kalıcı olarak yazıldığı bellektir**.** Bilgi saklamak için<br><strong>EEPROM:</strong> ROM&rsquo;un yeniden yazılabilir halidir.<br><strong>RAM(Random Access Memory):</strong> Bilgi saklamak için elektriğe ihtiyaç duyar. CPU veri işlemek için kullandığı bellek tipi RAM&rsquo;dir.<br><strong>Registers:</strong> CPU registerları verileri geçici olarak saklamak için kullanılır. 8051 entegresinde bir tane data çeşidi vardır. O da 8 bittir. Eğer 8 bitten büyük datalarla işlem yapılmak istenirse data 8 bitlik parçalara ayrılmalıdır. 8051&rsquo;de en çok kullanılar registerlar aşağıdaki gibidir.</p><ul><li>A (accumulator) : Lojik ve numeric işlemleri gerçekleştirmede kullanılır </li><li>R0, R1, R2, R3, R4, R5, R6 : Genel amaçlı registerlar</li><li>DTPR (data pointer) : low ve high olmak üzere 2 bytedan oluşur bu sayede 16 bitlik veri saklanır.</li><li>PC (program counter) : Programın Kod hafızasındaki kaçıncı işlemde olduğunu tutar</li><li>PSW (Program Status Word) : Aşağıda tekrar değineceğim</li><li>Stack Pointer Register: Yine 8 bitlik stackin en üzerindeki adresi gösteren registerdır. </li></ul><h2 id=18051-entegresi-bazı-assembly-komutları-ve-örnekleri><strong>1.8051 Entegresi Bazı Assembly Komutları ve Örnekleri</strong></h2><h3 id=mov-komutu>MOV Komutu:</h3><p>Bir registera veri yüklemek için kullanılır.
-Kullanımı şöyledir:</p><p>MOV data yüklenecek register, yüklenecek data</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-fallback data-lang=fallback><span style=display:flex><span>MOV A,#51H
-</span></span></code></pre></div><p>A registerına 51 hexadecimal sayısı yükleniştir.
-<code>#</code> Bir sayı olduğunu görtermek için kullanılmıştır.<br>51 yüklenecek hexadecimal sayımız. Değeri 5x16+1=81<br>H sayının hexadecimal olduğunu göstermek için kullanılır. Binary için B, Decimal için D kullanılır.<br>Eğer hexadecimal sayısı harfle baslıyorsa başına 0 koyulur.</p><p>Aşağıdaki kod grubunu çalıştırdığımızda simülasyon programımızın son görüntüsü aşağıdaki gibi olacaktır.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-asm data-lang=asm><span style=display:flex><span><span style=color:#50fa7b>MOV</span> A,<span style=color:#6272a4>#51H     
-</span></span></span><span style=display:flex><span><span style=color:#6272a4></span>
-</span></span><span style=display:flex><span><span style=color:#50fa7b>MOV</span> R1,<span style=color:#6272a4>#0FFH  
-</span></span></span><span style=display:flex><span><span style=color:#6272a4></span>
-</span></span><span style=display:flex><span><span style=color:#50fa7b>MOV</span> R2,<span style=color:#6272a4>#3BH  
-</span></span></span></code></pre></div><p><img src=https://1.bp.blogspot.com/-UyzZoP7m_8Y/VjineW2uopI/AAAAAAAAOm4/ySzZ6WrkOT8/s640/Ekran%2BAl%25C4%25B1nt%25C4%25B1s%25C4%25B1.PNG alt>
-Görüldüğü gibi R1 R2 ve Accummulatora veriler yüklenmiştir.</p><p><strong>ORG ve END Komutları</strong><br>Org CPU&rsquo;ya kaçıncı code memory satırıncan başlamısı gerektiğini söyleyen komuttur. Aşağıdaki gibi kullanılır.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-asm data-lang=asm><span style=display:flex><span>             <span style=color:#50fa7b>ORG</span>  <span style=color:#bd93f9>0</span>H  
-</span></span><span style=display:flex><span>             MOV  R1,<span style=color:#6272a4>#31H  
-</span></span></span><span style=display:flex><span><span style=color:#6272a4></span>             <span style=color:#50fa7b>MOV</span>  R2, <span style=color:#bd93f9>20</span>H  
-</span></span><span style=display:flex><span>             MOV  R3,R2  
-</span></span><span style=display:flex><span>             MOV  R4,R3  
-</span></span><span style=display:flex><span>HERE:  SJMP HERE  
-</span></span><span style=display:flex><span>             END  
-</span></span></code></pre></div><p><strong>ADD Komutu</strong></p><p>Toplama komutudur kullanımı şöyledir.<br>ADD Toplamın saklanacağı yer, eklenecek bilgi<br>ADD A,R1<br>A=A+R1 olur.<br>ADD R1, A olamaz. Toplamın saklanacağı yer hep Accumlator registeri olmalıdır.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-asm data-lang=asm><span style=display:flex><span><span style=color:#50fa7b>ADD</span> A, @R2   : R2 registerinin sakladığı adresteki ramde tutulan değer A&#39;ya eklenir  
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>ADD A, <span style=color:#bd93f9>05</span>       : <span style=color:#bd93f9>05</span> adresindeki ramde tutulan değer A&#39;ya eklenir.
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#50fa7b>ADD</span> A, <span style=color:#6272a4>#05     : 05 sayısı A&#39;ya eklenir.
-</span></span></span></code></pre></div><p>Bazı toplamalarda sonuç 255den büyük çıkabilir. Bu durumda bir eldemiz olmuş olur. Peki 8051 bu durumla nasıl başa çıkıyor. PSW registerını kullanarak tabi ki:</p><p><strong>PSW Registerı</strong><br>8 bitlik bir registerdır. Her biri ayrı bir durumu tutar.<br>CY (PSW.7): Carry Flag yani eldeyi tutan bit budur. CLR C komutu ile temizlenebilir.<br>AC (PSW.6); Auxiliary Carry Flag D3 bitinden D4 bitine elde olduğunda 1 olan bittir.<br>F0 (PSW.5 ve PSW.1); Kullanıcının kendi tanımlayacağı şeyler için ayrılmıştır.<br>RS1 and RS0 (PSW.4 ve PSW.3): Register Bank değiştirmak için kullanılır.<br>OV (PSW.2): Over flow flag&rsquo;tir.<br>P (PSW.0): Parity Flagtır. Accumulatordaki sayı tek ise 1, çift ise 0dır.</p><p><strong>SUBB komutu</strong><br>Çıkarma işlemi komutudur.<br>SUBB A,B<br>A=A-B<br><strong>MUL komutu</strong><br>Çarpım komutudur.<br>MUL AB şeklinde kullanılır arada virgül yoktur. Sadece A ve B registerları kullanılabilir.<br>A=A.B</p><p><strong>DIV komutu</strong><br>Bölme komutudur.<br>DIV AB şekilde kullnılır arada virgül yoktur. Sadece A ve B registerları kullanılabilir.<br>A=A/B</p><p><strong>Loop ve Jump komutu</strong></p><p><img src=https://2.bp.blogspot.com/-s3eVl_wFjZ0/VjkszPwX-jI/AAAAAAAAOn8/ZYp-ZWfsxkk/s1600/Ekran%2BAl%25C4%25B1nt%25C4%25B1s%25C4%25B1.PNG alt></p><p>Loop oluşturmak için kullanılan komutlar yukarıdaki gibidir. Hepsi farklı bir koşulu kullanmak içindir. Aşağıdaki örnek kod ise kullanımlarına örnektir.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-asm data-lang=asm><span style=display:flex><span>             <span style=color:#50fa7b>ORG</span> <span style=color:#bd93f9>0</span>H  
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>             MOV A, <span style=color:#6272a4>#0              ; clear A  
-</span></span></span><span style=display:flex><span><span style=color:#6272a4></span>
-</span></span><span style=display:flex><span>             <span style=color:#50fa7b>MOV</span> R1, <span style=color:#6272a4>#10           ; load counter R1 =10  
-</span></span></span><span style=display:flex><span><span style=color:#6272a4></span>
-</span></span><span style=display:flex><span><span style=color:#8be9fd;font-style:italic>AGAIN:</span> <span style=color:#50fa7b>ADD</span> A, <span style=color:#6272a4># 05             ; add five to register A  
-</span></span></span><span style=display:flex><span><span style=color:#6272a4></span>
-</span></span><span style=display:flex><span>             <span style=color:#50fa7b>DJNZ</span> R1, AGAIN     <span style=color:#6272a4>; repeat until R1=0 (10 times)  
-</span></span></span><span style=display:flex><span><span style=color:#6272a4></span>
-</span></span><span style=display:flex><span>             <span style=color:#50fa7b>MOV</span> R3, A              <span style=color:#6272a4>; save A in R3  
-</span></span></span><span style=display:flex><span><span style=color:#6272a4></span>
-</span></span><span style=display:flex><span>             <span style=color:#50fa7b>END</span>
-</span></span></code></pre></div><p>SJMP: Program counterdan en fazla yarım byte uzaklıklarda bulunan bir yere atlamak için kullanılır.</p><p>LJMP: Program counterdan yarım bytedan fazla uzaklıklarda bulunan bir yere atlamak için kullanılır.</p><p>LCALL: Fonksiyon tanımlayıp çağırmak benzeri bir kullanımı vardır. Aşağıdaki örneği inceleyebilirsiniz.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-asm data-lang=asm><span style=display:flex><span>             <span style=color:#50fa7b>ORG</span> <span style=color:#bd93f9>0</span>H  
-</span></span><span style=display:flex><span>BACK : MOV A, <span style=color:#6272a4>#55H            ; load A= 55 hex value  
-</span></span></span><span style=display:flex><span><span style=color:#6272a4></span>             <span style=color:#50fa7b>MOV</span> P1, A                <span style=color:#6272a4>; issue value of register A to port1  
-</span></span></span><span style=display:flex><span><span style=color:#6272a4></span>             <span style=color:#50fa7b>LCALL</span>  DELAY        <span style=color:#6272a4>; to call DELAY function created below  
-</span></span></span><span style=display:flex><span><span style=color:#6272a4></span>             <span style=color:#50fa7b>MOV</span> A, <span style=color:#6272a4>#0AAH         ;load AAH hex value to A  
-</span></span></span><span style=display:flex><span><span style=color:#6272a4></span>             <span style=color:#50fa7b>MOV</span> P1,A                  <span style=color:#6272a4>;issue value of register A to port 1  
-</span></span></span><span style=display:flex><span><span style=color:#6272a4></span>             <span style=color:#50fa7b>LCALL</span> DELAY         <span style=color:#6272a4>; to call DELAY function as created below  
-</span></span></span><span style=display:flex><span><span style=color:#6272a4></span>             <span style=color:#50fa7b>SJMP</span> BACK              <span style=color:#6272a4>; keep doing this  
-</span></span></span><span style=display:flex><span><span style=color:#6272a4></span>                                               <span style=color:#6272a4>; ________ this is the delay subroutine  
-</span></span></span><span style=display:flex><span><span style=color:#6272a4></span>             <span style=color:#8be9fd;font-style:italic>DELAY:</span>  
-</span></span><span style=display:flex><span>             <span style=color:#50fa7b>MOV</span> R5, <span style=color:#6272a4>#0FFH         ; R5= 255 hex, the counter  
-</span></span></span><span style=display:flex><span><span style=color:#6272a4></span><span style=color:#8be9fd;font-style:italic>AGAIN:</span> <span style=color:#50fa7b>DJNZ</span> R5, AGAIN       <span style=color:#6272a4>; stay here until R5 becomes zero  
-</span></span></span><span style=display:flex><span><span style=color:#6272a4></span>             <span style=color:#50fa7b>RET</span>                           <span style=color:#6272a4>; return to caller  
-</span></span></span><span style=display:flex><span><span style=color:#6272a4></span>             <span style=color:#50fa7b>END</span>
-</span></span></code></pre></div><h2 id=movx-komutu>MOVX komutu</h2><p>MOVX komutu harici RAM&rsquo;den veri alış verişi yapmak için kullanılır.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-asm data-lang=asm><span style=display:flex><span><span style=color:#50fa7b>MOV</span>      R0, <span style=color:#6272a4>#50H  
-</span></span></span><span style=display:flex><span><span style=color:#6272a4></span><span style=color:#50fa7b>MOVX</span>   A, @R0  
-</span></span></code></pre></div><p>Bu iki satır kod ile harici RAM&rsquo;deki 50H adresli yerdeki veri Accumulator registerına yüklenir.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-fallback data-lang=fallback><span style=display:flex><span>MOV      DTPR, #5000H  
-</span></span><span style=display:flex><span>MOVX   A, @DTPR  
-</span></span></code></pre></div><p>DTPR registerı 16 bitliktir. Eğer 8 bitten büyük adresteki bir veriye ulaşılmak istenirse DTPR registerı kullanılabilir.</p><p><strong>POP ve PUSH komutu</strong><br>Stack işlemleri için kullanılır. Stack ilk giren datanın en son çıktığı veri yapısı çeşididir.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-fallback data-lang=fallback><span style=display:flex><span>MOV R6,#25H;
-</span></span><span style=display:flex><span>MOV R1,#12H; 
-</span></span><span style=display:flex><span>MOV R4,#OF3H; 
-</span></span><span style=display:flex><span>PUSH 06H;
-</span></span><span style=display:flex><span>PUSH 01H; 
-</span></span><span style=display:flex><span>POP 04H;
-</span></span></code></pre></div><p>Bu kod şöyle çalışacaktır. 25H sayısı (R6) stack&rsquo;e eklenir.  12H sayısı stack&rsquo;e eklenir. 12H sayısı stackten çıkarılır.</p><p><strong>XCH komutu</strong><br>XCH A, R2 şeklinde kullanılır. A ve R2nin içeriklerini değiştirir böyle kullanıldığında.</p><p><strong>MOVC komutu</strong></p><h3 id=harici-ram-ve-rom-kullanımı><strong>Harici RAM ve ROM kullanımı</strong></h3><p>8051 ile harici ram veya romlar çalıştırılabilir. Bunun için öncelikle 8051 üzerindeki bazı pinlerin ne işe yaradığıyla başlayalım.</p><p><strong>ALE/PROG pini:</strong> Adress Latch Enable. Harici ram erişimi sırasında kullanılır. Mandallama işlevi vardır.</p><p><strong>PSEN pini:</strong>  Program Store Enable. Harici program hafızasından veri okunacağı zaman kullanılır. Ayrıca harici rom veya epromlara  OE giriş pini olarak da kullanılır.</p><p><strong>EA pini:</strong> External Adress. 0 olduğu zaman mikrokontrolcü program kodunu dışarıdan alabilir.<br><strong>RD pini:</strong> Okuma işlemini &ldquo;enable&rdquo; yapmak için kullanılır.<br><strong>WR pini:</strong> Yazma işlemini &ldquo;enable " yapmak için kullanılır.</p><p><img src=https://1.bp.blogspot.com/-DmQjmwjLeFM/VjqdGYxkMfI/AAAAAAAAOps/kOfQ02wBFBI/s400/8051-pin-diagram1.jpg alt></p><p><strong>Harici Program Belleği Kullanımı</strong></p><p><img src=https://4.bp.blogspot.com/-4sFt53OMVzs/VjqnQAe1gsI/AAAAAAAAOp8/GyB_BTnFiPE/s640/fig3.JPG alt></p><p><strong>Harici Veri Belleği Kullanımı</strong></p><p><img src=https://1.bp.blogspot.com/-O8yzo3TmaQc/Vjqn3O4ApAI/AAAAAAAAOqE/1VCrQw-3BGo/s640/Untitled.png alt></p><p><strong>Adres Ayrıştırma</strong><br>Bazı durumlarda adres değerleri için yeterli bit sayısına sahip olunamayabilir. Bu soruları çözmek için adres çözücü devreler kullanılır.</p><h3 id=paralel-uygulamalar><strong>Paralel Uygulamalar</strong></h3><h3 id=adc-dac-kullanımı>ADC-DAC Kullanımı</h3><h3 id=timer-uygulamaları>Timer Uygulamaları</h3><h3 id=uzun-lafın-kısası><strong>Uzun Lafın Kısası</strong></h3><p>Aşağıdaki 2 görsel işlemci mimarisini çok iyi açıklayan 2 şema peki bize ne anlatıyorlar.</p><p><img src=https://4.bp.blogspot.com/-Cz2wvnB7EBc/Vjip-41saWI/AAAAAAAAOnE/c9ihppaVK0c/s640/architecture_s.jpg alt></p><p><img src=https://1.bp.blogspot.com/-pp8NbAyNGXM/Vjip-wv2UMI/AAAAAAAAOnI/NnDlcfyacUw/s640/01.gif alt></p><h3 id=8051-entegresi-instruction-set>8051 Entegresi Instruction Set</h3><p>Aşağdaki linkte hepsini kullanım anlatımlarıyla beraber bulabilirsiniz. Aynı zaman da OP-Code&rsquo;ları da verilmiştir.</p><p><a href=https://www.win.tue.nl/~aeb/comp/8051/set8051.html%5D(https://www.win.tue.nl/~aeb/comp/8051/set8051.html)>https://www.win.tue.nl/~aeb/comp/8051/set8051.html](https://www.win.tue.nl/~aeb/comp/8051/set8051.html)</a></p><p>Aşağıdaki 2 resimde ise sık kullanılan komutları açıklamalarıyla bulabilirsiniz.</p><p><img src=https://2.bp.blogspot.com/-2bs2b_ITBsk/VjjAX1OUMfI/AAAAAAAAOnc/UUajD1pycVE/s640/1.PNG alt></p><p><img src=https://4.bp.blogspot.com/-Tc4MjvFq0us/VjjAX1hOFYI/AAAAAAAAOng/y7t_hF5X26E/s640/2.PNG alt></p></section><footer class="mt-12 flex flex-wrap"><a class="mr-1.5 mb-1.5 rounded-lg bg-black/[3%] px-5 py-2 no-underline dark:bg-white/[8%]" href=https://mozanunal.com/tags/electronics>Electronics</a>
+<span>Mehmet Ozan Ünal</span>
+</div>
+</header>
+<section><p><strong>Herkese Merhabalar,</strong><br>
+       Bu yazdımda ilk mikroişlemcilerden biri olan 8051 mikrokontrolcüsü üzerinden assembly dili ve mikroişlemci nedir nasıl çalışır bu konulara giriş yapmak istiyorum. Başlamadan önce benim de kullanacağım 8051 entegresi simülasyon programını önermek istiyorum. Programın ismi EdSim51. İlkönce mikroişlemcilerle alakalı temel bir kaç kavramla başlayalım.</p>
+<p><strong>ROM(Read Only Memory):</strong> Temel olarak, belli bir miktarda bilginin kalıcı olarak yazıldığı bellektir**.** Bilgi saklamak için<br>
+<strong>EEPROM:</strong> ROM&rsquo;un yeniden yazılabilir halidir.<br>
+<strong>RAM(Random Access Memory):</strong> Bilgi saklamak için elektriğe ihtiyaç duyar. CPU veri işlemek için kullandığı bellek tipi RAM&rsquo;dir.<br>
+<strong>Registers:</strong> CPU registerları verileri geçici olarak saklamak için kullanılır. 8051 entegresinde bir tane data çeşidi vardır. O da 8 bittir. Eğer 8 bitten büyük datalarla işlem yapılmak istenirse data 8 bitlik parçalara ayrılmalıdır. 8051&rsquo;de en çok kullanılar registerlar aşağıdaki gibidir.</p>
+<ul>
+<li>A (accumulator) : Lojik ve numeric işlemleri gerçekleştirmede kullanılır </li>
+<li>R0, R1, R2, R3, R4, R5, R6 : Genel amaçlı registerlar</li>
+<li>DTPR (data pointer) : low ve high olmak üzere 2 bytedan oluşur bu sayede 16 bitlik veri saklanır.</li>
+<li>PC (program counter) : Programın Kod hafızasındaki kaçıncı işlemde olduğunu tutar</li>
+<li>PSW (Program Status Word) : Aşağıda tekrar değineceğim</li>
+<li>Stack Pointer Register: Yine 8 bitlik stackin en üzerindeki adresi gösteren registerdır. </li>
+</ul>
+<h2 id=18051-entegresi-bazı-assembly-komutları-ve-örnekleri><strong>1.8051 Entegresi Bazı Assembly Komutları ve Örnekleri</strong></h2>
+<h3 id=mov-komutu>MOV Komutu:</h3>
+<p>Bir registera veri yüklemek için kullanılır.
+Kullanımı şöyledir:</p>
+<p>MOV data yüklenecek register, yüklenecek data</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-fallback data-lang=fallback>MOV A,#51H
+</code></pre></div><p>A registerına 51 hexadecimal sayısı yükleniştir.
+<code>#</code> Bir sayı olduğunu görtermek için kullanılmıştır.<br>
+51 yüklenecek hexadecimal sayımız. Değeri 5x16+1=81<br>
+H sayının hexadecimal olduğunu göstermek için kullanılır. Binary için B, Decimal için D kullanılır.<br>
+Eğer hexadecimal sayısı harfle baslıyorsa başına 0 koyulur.</p>
+<p>Aşağıdaki kod grubunu çalıştırdığımızda simülasyon programımızın son görüntüsü aşağıdaki gibi olacaktır.</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-asm data-lang=asm><span style=color:#50fa7b>MOV</span> A,<span style=color:#6272a4>#51H     
+</span><span style=color:#6272a4></span>
+<span style=color:#50fa7b>MOV</span> R1,<span style=color:#6272a4>#0FFH  
+</span><span style=color:#6272a4></span>
+<span style=color:#50fa7b>MOV</span> R2,<span style=color:#6272a4>#3BH  
+</span></code></pre></div><p><img src=https://1.bp.blogspot.com/-UyzZoP7m_8Y/VjineW2uopI/AAAAAAAAOm4/ySzZ6WrkOT8/s640/Ekran%2BAl%25C4%25B1nt%25C4%25B1s%25C4%25B1.PNG alt>
+Görüldüğü gibi R1 R2 ve Accummulatora veriler yüklenmiştir.</p>
+<p><strong>ORG ve END Komutları</strong><br>
+Org CPU&rsquo;ya kaçıncı code memory satırıncan başlamısı gerektiğini söyleyen komuttur. Aşağıdaki gibi kullanılır.</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-asm data-lang=asm>             <span style=color:#50fa7b>ORG</span>  <span style=color:#bd93f9>0</span>H  
+             MOV  R1,<span style=color:#6272a4>#31H  
+</span><span style=color:#6272a4></span>             MOV  R2, <span style=color:#bd93f9>20</span>H  
+             MOV  R3,R2  
+             MOV  R4,R3  
+HERE:  SJMP HERE  
+             END  
+</code></pre></div><p><strong>ADD Komutu</strong></p>
+<p>Toplama komutudur kullanımı şöyledir.<br>
+ADD Toplamın saklanacağı yer, eklenecek bilgi<br>
+ADD A,R1<br>
+A=A+R1 olur.<br>
+ADD R1, A olamaz. Toplamın saklanacağı yer hep Accumlator registeri olmalıdır.</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-asm data-lang=asm><span style=color:#50fa7b>ADD</span> A, @R2   : R2 registerinin sakladığı adresteki ramde tutulan değer A&#39;ya eklenir  
+
+ADD A, <span style=color:#bd93f9>05</span>       : <span style=color:#bd93f9>05</span> adresindeki ramde tutulan değer A&#39;ya eklenir.
+
+<span style=color:#50fa7b>ADD</span> A, <span style=color:#6272a4>#05     : 05 sayısı A&#39;ya eklenir.
+</span></code></pre></div><p>Bazı toplamalarda sonuç 255den büyük çıkabilir. Bu durumda bir eldemiz olmuş olur. Peki 8051 bu durumla nasıl başa çıkıyor. PSW registerını kullanarak tabi ki:</p>
+<p><strong>PSW Registerı</strong><br>
+8 bitlik bir registerdır. Her biri ayrı bir durumu tutar.<br>
+CY (PSW.7): Carry Flag yani eldeyi tutan bit budur. CLR C komutu ile temizlenebilir.<br>
+AC (PSW.6); Auxiliary Carry Flag D3 bitinden D4 bitine elde olduğunda 1 olan bittir.<br>
+F0 (PSW.5 ve PSW.1); Kullanıcının kendi tanımlayacağı şeyler için ayrılmıştır.<br>
+RS1 and RS0 (PSW.4 ve PSW.3): Register Bank değiştirmak için kullanılır.<br>
+OV (PSW.2): Over flow flag&rsquo;tir.<br>
+P (PSW.0): Parity Flagtır. Accumulatordaki sayı tek ise 1, çift ise 0dır.</p>
+<p><strong>SUBB komutu</strong><br>
+Çıkarma işlemi komutudur.<br>
+SUBB A,B<br>
+A=A-B<br>
+<strong>MUL komutu</strong><br>
+Çarpım komutudur.<br>
+MUL AB şeklinde kullanılır arada virgül yoktur. Sadece A ve B registerları kullanılabilir.<br>
+A=A.B</p>
+<p><strong>DIV komutu</strong><br>
+Bölme komutudur.<br>
+DIV AB şekilde kullnılır arada virgül yoktur. Sadece A ve B registerları kullanılabilir.<br>
+A=A/B</p>
+<p><strong>Loop ve Jump komutu</strong></p>
+<p><img src=https://2.bp.blogspot.com/-s3eVl_wFjZ0/VjkszPwX-jI/AAAAAAAAOn8/ZYp-ZWfsxkk/s1600/Ekran%2BAl%25C4%25B1nt%25C4%25B1s%25C4%25B1.PNG alt></p>
+<p>Loop oluşturmak için kullanılan komutlar yukarıdaki gibidir. Hepsi farklı bir koşulu kullanmak içindir. Aşağıdaki örnek kod ise kullanımlarına örnektir.</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-asm data-lang=asm>             <span style=color:#50fa7b>ORG</span> <span style=color:#bd93f9>0</span>H  
+
+             MOV A, <span style=color:#6272a4>#0              ; clear A  
+</span><span style=color:#6272a4></span>
+             <span style=color:#50fa7b>MOV</span> R1, <span style=color:#6272a4>#10           ; load counter R1 =10  
+</span><span style=color:#6272a4></span>
+<span style=color:#8be9fd;font-style:italic>AGAIN:</span> <span style=color:#50fa7b>ADD</span> A, <span style=color:#6272a4># 05             ; add five to register A  
+</span><span style=color:#6272a4></span>
+             <span style=color:#50fa7b>DJNZ</span> R1, AGAIN     <span style=color:#6272a4>; repeat until R1=0 (10 times)  
+</span><span style=color:#6272a4></span>
+             <span style=color:#50fa7b>MOV</span> R3, A              <span style=color:#6272a4>; save A in R3  
+</span><span style=color:#6272a4></span>
+             <span style=color:#50fa7b>END</span>
+</code></pre></div><p>SJMP: Program counterdan en fazla yarım byte uzaklıklarda bulunan bir yere atlamak için kullanılır.</p>
+<p>LJMP: Program counterdan yarım bytedan fazla uzaklıklarda bulunan bir yere atlamak için kullanılır.</p>
+<p>LCALL: Fonksiyon tanımlayıp çağırmak benzeri bir kullanımı vardır. Aşağıdaki örneği inceleyebilirsiniz.</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-asm data-lang=asm>             <span style=color:#50fa7b>ORG</span> <span style=color:#bd93f9>0</span>H  
+BACK : MOV A, <span style=color:#6272a4>#55H            ; load A= 55 hex value  
+</span><span style=color:#6272a4></span>             MOV P1, A                <span style=color:#6272a4>; issue value of register A to port1  
+</span><span style=color:#6272a4></span>             LCALL  DELAY        <span style=color:#6272a4>; to call DELAY function created below  
+</span><span style=color:#6272a4></span>             MOV A, <span style=color:#6272a4>#0AAH         ;load AAH hex value to A  
+</span><span style=color:#6272a4></span>             MOV P1,A                  <span style=color:#6272a4>;issue value of register A to port 1  
+</span><span style=color:#6272a4></span>             LCALL DELAY         <span style=color:#6272a4>; to call DELAY function as created below  
+</span><span style=color:#6272a4></span>             SJMP BACK              <span style=color:#6272a4>; keep doing this  
+</span><span style=color:#6272a4></span>                                               <span style=color:#6272a4>; ________ this is the delay subroutine  
+</span><span style=color:#6272a4></span>             DELAY:  
+             MOV R5, <span style=color:#6272a4>#0FFH         ; R5= 255 hex, the counter  
+</span><span style=color:#6272a4></span>AGAIN: DJNZ R5, AGAIN       <span style=color:#6272a4>; stay here until R5 becomes zero  
+</span><span style=color:#6272a4></span>             RET                           <span style=color:#6272a4>; return to caller  
+</span><span style=color:#6272a4></span>             END
+</code></pre></div><h2 id=movx-komutu>MOVX komutu</h2>
+<p>MOVX komutu harici RAM&rsquo;den veri alış verişi yapmak için kullanılır.</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-asm data-lang=asm><span style=color:#50fa7b>MOV</span>      R0, <span style=color:#6272a4>#50H  
+</span><span style=color:#6272a4></span>MOVX   A, @R0  
+</code></pre></div><p>Bu iki satır kod ile harici RAM&rsquo;deki 50H adresli yerdeki veri Accumulator registerına yüklenir.</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-fallback data-lang=fallback>MOV      DTPR, #5000H  
+MOVX   A, @DTPR  
+</code></pre></div><p>DTPR registerı 16 bitliktir. Eğer 8 bitten büyük adresteki bir veriye ulaşılmak istenirse DTPR registerı kullanılabilir.</p>
+<p><strong>POP ve PUSH komutu</strong><br>
+Stack işlemleri için kullanılır. Stack ilk giren datanın en son çıktığı veri yapısı çeşididir.</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-fallback data-lang=fallback>MOV R6,#25H;
+MOV R1,#12H; 
+MOV R4,#OF3H; 
+PUSH 06H;
+PUSH 01H; 
+POP 04H;
+</code></pre></div><p>Bu kod şöyle çalışacaktır. 25H sayısı (R6) stack&rsquo;e eklenir.  12H sayısı stack&rsquo;e eklenir. 12H sayısı stackten çıkarılır.</p>
+<p><strong>XCH komutu</strong><br>
+XCH A, R2 şeklinde kullanılır. A ve R2nin içeriklerini değiştirir böyle kullanıldığında.</p>
+<p><strong>MOVC komutu</strong></p>
+<h3 id=harici-ram-ve-rom-kullanımı><strong>Harici RAM ve ROM kullanımı</strong></h3>
+<p>8051 ile harici ram veya romlar çalıştırılabilir. Bunun için öncelikle 8051 üzerindeki bazı pinlerin ne işe yaradığıyla başlayalım.</p>
+<p><strong>ALE/PROG pini:</strong> Adress Latch Enable. Harici ram erişimi sırasında kullanılır. Mandallama işlevi vardır.</p>
+<p><strong>PSEN pini:</strong>  Program Store Enable. Harici program hafızasından veri okunacağı zaman kullanılır. Ayrıca harici rom veya epromlara  OE giriş pini olarak da kullanılır.</p>
+<p><strong>EA pini:</strong> External Adress. 0 olduğu zaman mikrokontrolcü program kodunu dışarıdan alabilir.<br>
+<strong>RD pini:</strong> Okuma işlemini &ldquo;enable&rdquo; yapmak için kullanılır.<br>
+<strong>WR pini:</strong> Yazma işlemini &ldquo;enable " yapmak için kullanılır.</p>
+<p><img src=https://1.bp.blogspot.com/-DmQjmwjLeFM/VjqdGYxkMfI/AAAAAAAAOps/kOfQ02wBFBI/s400/8051-pin-diagram1.jpg alt></p>
+<p><strong>Harici Program Belleği Kullanımı</strong></p>
+<p><img src=https://4.bp.blogspot.com/-4sFt53OMVzs/VjqnQAe1gsI/AAAAAAAAOp8/GyB_BTnFiPE/s640/fig3.JPG alt></p>
+<p><strong>Harici Veri Belleği Kullanımı</strong></p>
+<p><img src=https://1.bp.blogspot.com/-O8yzo3TmaQc/Vjqn3O4ApAI/AAAAAAAAOqE/1VCrQw-3BGo/s640/Untitled.png alt></p>
+<p><strong>Adres Ayrıştırma</strong><br>
+Bazı durumlarda adres değerleri için yeterli bit sayısına sahip olunamayabilir. Bu soruları çözmek için adres çözücü devreler kullanılır.</p>
+<h3 id=paralel-uygulamalar><strong>Paralel Uygulamalar</strong></h3>
+<h3 id=adc-dac-kullanımı>ADC-DAC Kullanımı</h3>
+<h3 id=timer-uygulamaları>Timer Uygulamaları</h3>
+<h3 id=uzun-lafın-kısası><strong>Uzun Lafın Kısası</strong></h3>
+<p>Aşağıdaki 2 görsel işlemci mimarisini çok iyi açıklayan 2 şema peki bize ne anlatıyorlar.</p>
+<p><img src=https://4.bp.blogspot.com/-Cz2wvnB7EBc/Vjip-41saWI/AAAAAAAAOnE/c9ihppaVK0c/s640/architecture_s.jpg alt></p>
+<p><img src=https://1.bp.blogspot.com/-pp8NbAyNGXM/Vjip-wv2UMI/AAAAAAAAOnI/NnDlcfyacUw/s640/01.gif alt></p>
+<h3 id=8051-entegresi-instruction-set>8051 Entegresi Instruction Set</h3>
+<p>Aşağdaki linkte hepsini kullanım anlatımlarıyla beraber bulabilirsiniz. Aynı zaman da OP-Code&rsquo;ları da verilmiştir.</p>
+<p><a href=https://www.win.tue.nl/~aeb/comp/8051/set8051.html%5D(https://www.win.tue.nl/~aeb/comp/8051/set8051.html)>https://www.win.tue.nl/~aeb/comp/8051/set8051.html](https://www.win.tue.nl/~aeb/comp/8051/set8051.html)</a></p>
+<p>Aşağıdaki 2 resimde ise sık kullanılan komutları açıklamalarıyla bulabilirsiniz.</p>
+<p><img src=https://2.bp.blogspot.com/-2bs2b_ITBsk/VjjAX1OUMfI/AAAAAAAAOnc/UUajD1pycVE/s640/1.PNG alt></p>
+<p><img src=https://4.bp.blogspot.com/-Tc4MjvFq0us/VjjAX1hOFYI/AAAAAAAAOng/y7t_hF5X26E/s640/2.PNG alt></p>
+</section>
+<footer class="mt-12 flex flex-wrap">
+<a class="mr-1.5 mb-1.5 rounded-lg bg-black/[3%] px-5 py-2 no-underline dark:bg-white/[8%]" href=https://mozanunal.com/tags/electronics>Electronics</a>
 <a class="mr-1.5 mb-1.5 rounded-lg bg-black/[3%] px-5 py-2 no-underline dark:bg-white/[8%]" href=https://mozanunal.com/tags/microcontrollers>Microcontrollers</a>
 <a class="mr-1.5 mb-1.5 rounded-lg bg-black/[3%] px-5 py-2 no-underline dark:bg-white/[8%]" href=https://mozanunal.com/tags/8051>8051</a>
 <a class="mr-1.5 mb-1.5 rounded-lg bg-black/[3%] px-5 py-2 no-underline dark:bg-white/[8%]" href=https://mozanunal.com/tags/arm-cortex-m3>Arm cortex m3</a>
-<a class="mr-1.5 mb-1.5 rounded-lg bg-black/[3%] px-5 py-2 no-underline dark:bg-white/[8%]" href=https://mozanunal.com/tags/assembly>Assembly</a></footer><nav class="mt-24 flex rounded-lg bg-black/[3%] text-lg dark:bg-white/[8%]"><a class="flex w-1/2 items-center rounded-l-md p-6 pr-3 no-underline hover:bg-black/[2%] dark:hover:bg-white/[3%]" href=https://mozanunal.com/2015/11/diy-rc-kumanda-yapm/><span class=mr-1.5>←</span><span>[TR] DIY RC Kumanda Yapımı</span></a>
-<a class="ml-auto flex w-1/2 items-center justify-end rounded-r-md p-6 pl-3 no-underline hover:bg-black/[2%] dark:hover:bg-white/[3%]" href=https://mozanunal.com/2015/10/diy-raspberry-pi-laptop-16/><span>DIY Raspberry Pi Laptop</span><span class=ml-1.5>→</span></a></nav></article></main><footer class="opaco mx-auto flex h-[5rem] max-w-3xl items-center px-8 text-[0.9em] opacity-60"><div class=mr-auto>&copy; 2023
-<a class=link href=https://mozanunal.com/>Mehmet Ozan Ünal</a></div><a class="link mx-6" href=https://gohugo.io/ rel=noopener target=_blank>Powered by Hugo️️</a>️
-<a class=link href=https://github.com/nanxiaobei/hugo-paper rel=noopener target=_blank>Theme Paper</a></footer></body></html>
+<a class="mr-1.5 mb-1.5 rounded-lg bg-black/[3%] px-5 py-2 no-underline dark:bg-white/[8%]" href=https://mozanunal.com/tags/assembly>Assembly</a>
+</footer>
+<nav class="mt-24 flex rounded-lg bg-black/[3%] text-lg dark:bg-white/[8%]">
+<a class="flex w-1/2 items-center rounded-l-md p-6 pr-3 no-underline hover:bg-black/[2%] dark:hover:bg-white/[3%]" href=https://mozanunal.com/2015/11/diy-rc-kumanda-yapm/><span class=mr-1.5>←</span><span>[TR] DIY RC Kumanda Yapımı</span></a>
+<a class="ml-auto flex w-1/2 items-center justify-end rounded-r-md p-6 pl-3 no-underline hover:bg-black/[2%] dark:hover:bg-white/[3%]" href=https://mozanunal.com/2015/10/diy-raspberry-pi-laptop-16/><span>DIY Raspberry Pi Laptop</span><span class=ml-1.5>→</span></a>
+</nav>
+</article>
+</main>
+<footer class="opaco mx-auto flex h-[5rem] max-w-3xl items-center px-8 text-[0.9em] opacity-60">
+<div class=mr-auto>
+&copy; 2023
+<a class=link href=https://mozanunal.com/>Mehmet Ozan Ünal</a>
+</div>
+<a class="link mx-6" href=https://gohugo.io/ rel=noopener target=_blank>Powered by Hugo️️</a>️
+<a class=link href=https://github.com/nanxiaobei/hugo-paper rel=noopener target=_blank>Theme Paper</a>
+</footer>
+</body>
+</html>

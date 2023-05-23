@@ -1,31 +1,130 @@
-<!doctype html><html class="not-ready text-sm lg:text-base" style=--bg:#fbfbfb lang=en><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><title>Yolo on Google Colab - Mehmet Ozan Ünal</title><meta name=theme-color><meta name=description content="Run YOLO V3 on Colab for images/videos Hello there, Today, we will be discussing how we can use the Darknet project on Google Colab platform. For those who are not familiar with these terms:
-The Darknet project is an open-source project written in C, which is a framework to develop deep neural networks. Yolo V3 is an object detection algorithm. It is one of the state of the art solution when accuracy/processing power needed metric is considered."><meta name=author content="Moz"><link rel="preload stylesheet" as=style href=https://mozanunal.com/main.min.css><link rel=preload as=image href=https://mozanunal.com/theme.png><link rel=preload as=image href="https://www.gravatar.com/avatar/998cbd3ab655239d8be787580cce0415?s=160&amp;d=identicon"><link rel=preload as=image href=https://mozanunal.com/twitter.svg><link rel=preload as=image href=https://mozanunal.com/github.svg><link rel=icon href=https://mozanunal.com/favicon.ico><link rel=apple-touch-icon href=https://mozanunal.com/apple-touch-icon.png><meta name=generator content="Hugo 0.111.3"><script type=application/javascript>var doNotTrack=!1;doNotTrack||(window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","G-007KSW65JL","auto"),ga("send","pageview"))</script><script async src=https://www.google-analytics.com/analytics.js></script>
+<!doctype html><html class="not-ready text-sm lg:text-base" style=--bg:#fbfbfb lang=en>
+<head>
+<meta charset=utf-8>
+<meta http-equiv=x-ua-compatible content="IE=edge">
+<meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
+<title>Yolo on Google Colab - Mehmet Ozan Ünal</title>
+<meta name=theme-color>
+<meta name=description content="Run YOLO V3 on Colab for images/videos Hello there, Today, we will be discussing how we can use the Darknet project on Google Colab platform. For those who are not familiar with these terms:
+ The Darknet project is an open-source project written in C, which is a framework to develop deep neural networks. Yolo V3 is an object detection algorithm. It is one of the state of the art solution when accuracy/processing power needed metric is considered.">
+<meta name=author content="Moz">
+<link rel="preload stylesheet" as=style href=https://mozanunal.com/main.min.css>
+<link rel=preload as=image href=https://mozanunal.com/theme.png>
+<link rel=preload as=image href="https://www.gravatar.com/avatar/998cbd3ab655239d8be787580cce0415?s=160&d=identicon">
+<link rel=preload as=image href=https://mozanunal.com/twitter.svg>
+<link rel=preload as=image href=https://mozanunal.com/github.svg>
+<link rel=icon href=https://mozanunal.com/favicon.ico>
+<link rel=apple-touch-icon href=https://mozanunal.com/apple-touch-icon.png>
+<meta name=generator content="Hugo 0.92.2">
+<script type=application/javascript>var doNotTrack=!1;doNotTrack||(window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga('create','G-007KSW65JL','auto'),ga('send','pageview'))</script>
+<script async src=https://www.google-analytics.com/analytics.js></script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-007KSW65JL"></script>
-<script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-007KSW65JL",{anonymize_ip:!1})}</script><meta property="og:title" content="Yolo on Google Colab"><meta property="og:description" content="Run YOLO V3 on Colab for images/videos Hello there, Today, we will be discussing how we can use the Darknet project on Google Colab platform. For those who are not familiar with these terms:
-The Darknet project is an open-source project written in C, which is a framework to develop deep neural networks. Yolo V3 is an object detection algorithm. It is one of the state of the art solution when accuracy/processing power needed metric is considered."><meta property="og:type" content="article"><meta property="og:url" content="https://mozanunal.com/2019/08/yolocolabdemo/"><meta property="article:section" content="posts"><meta property="article:published_time" content="2019-08-13T00:09:50+00:00"><meta property="article:modified_time" content="2019-08-13T00:09:50+00:00"><meta itemprop=name content="Yolo on Google Colab"><meta itemprop=description content="Run YOLO V3 on Colab for images/videos Hello there, Today, we will be discussing how we can use the Darknet project on Google Colab platform. For those who are not familiar with these terms:
-The Darknet project is an open-source project written in C, which is a framework to develop deep neural networks. Yolo V3 is an object detection algorithm. It is one of the state of the art solution when accuracy/processing power needed metric is considered."><meta itemprop=datePublished content="2019-08-13T00:09:50+00:00"><meta itemprop=dateModified content="2019-08-13T00:09:50+00:00"><meta itemprop=wordCount content="701"><meta itemprop=keywords content="google colab,deeplearning,yolov3,collabrotary,"><meta name=twitter:card content="summary"><meta name=twitter:title content="Yolo on Google Colab"><meta name=twitter:description content="Run YOLO V3 on Colab for images/videos Hello there, Today, we will be discussing how we can use the Darknet project on Google Colab platform. For those who are not familiar with these terms:
-The Darknet project is an open-source project written in C, which is a framework to develop deep neural networks. Yolo V3 is an object detection algorithm. It is one of the state of the art solution when accuracy/processing power needed metric is considered."></head><body class="text-black duration-200 ease-out dark:text-white"><header class="mx-auto flex h-[5rem] max-w-3xl px-8 lg:justify-center"><div class="relative z-50 mr-auto flex items-center"><a class="-translate-x-[1px] -translate-y-0.5 text-3xl font-bold" href=https://mozanunal.com/>Mehmet Ozan Ünal</a><div class="btn-dark text-[0] ml-6 h-6 w-6 shrink-0 cursor-pointer [background:url(./theme.svg)_left_center/cover_no-repeat] dark:invert dark:[background-position:right]" role=button aria-label=Dark></div></div><div class="btn-menu relative z-50 -mr-8 flex h-[5rem] w-[5rem] shrink-0 cursor-pointer flex-col items-center justify-center gap-2.5 lg:hidden" role=button aria-label=Menu></div><script>const htmlClass=document.documentElement.classList;setTimeout(()=>{htmlClass.remove("not-ready")},10);const btnMenu=document.querySelector(".btn-menu");btnMenu.addEventListener("click",()=>{htmlClass.toggle("open")});const metaTheme=document.querySelector('meta[name="theme-color"]'),lightBg=`"#fbfbfb"`.replace(/"/g,""),setDark=e=>{metaTheme.setAttribute("content",e?"#000":lightBg),htmlClass[e?"add":"remove"]("dark"),localStorage.setItem("dark",e)},darkScheme=window.matchMedia("(prefers-color-scheme: dark)");if(htmlClass.contains("dark"))setDark(!0);else{const e=localStorage.getItem("dark");setDark(e?e==="true":darkScheme.matches)}darkScheme.addEventListener("change",e=>{setDark(e.matches)});const btnDark=document.querySelector(".btn-dark");btnDark.addEventListener("click",()=>{setDark(localStorage.getItem("dark")!=="true")})</script><div class="nav-wrapper fixed inset-x-0 top-full z-40 flex h-full select-none flex-col justify-center pb-16 duration-200 dark:bg-black lg:static lg:h-auto lg:flex-row lg:!bg-transparent lg:pb-0 lg:transition-none"><nav class="lg:ml-12 lg:flex lg:flex-row lg:items-center lg:space-x-6"><a class="block text-center text-2xl leading-[5rem] lg:text-base lg:font-normal" href=/about/>About</a>
-<a class="block text-center text-2xl leading-[5rem] lg:text-base lg:font-normal" href=/contact/>Contact</a></nav><nav class="mt-12 flex justify-center space-x-10 dark:invert lg:mt-0 lg:ml-12 lg:items-center lg:space-x-6"><a class="h-8 w-8 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6" style=--url:url(./twitter.svg) href=https://twitter.com/MOzanUnal target=_blank rel=me>twitter</a>
-<a class="h-8 w-8 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6" style=--url:url(./github.svg) href=https://github.com/mozanunal target=_blank rel=me>github</a></nav></div></header><main class="prose prose-neutral relative mx-auto min-h-[calc(100%-10rem)] max-w-3xl px-8 pt-16 pb-24 dark:prose-invert"><article><header class=mb-20><h1 class="!my-0 pb-2.5">Yolo on Google Colab</h1><div class="text-sm opacity-60"><time>Aug 13, 2019</time></div></header><section><h1 id=run-yolo-v3-on-colab-for-imagesvideos>Run YOLO V3 on Colab for images/videos</h1><p>Hello there,
-Today, we will be discussing how we can use the Darknet project on Google Colab platform. For those who are not familiar with these terms:</p><p><img src=/images/yoloroad.gif alt="YOLO in action!"></p><ul><li>The Darknet project is an open-source project written in C, which is a framework to develop deep neural networks.</li><li>Yolo V3 is an object detection algorithm. It is one of the state of the art solution when <strong>accuracy/processing power needed</strong> metric is considered.</li><li>Google Cola is a cloud-based data science workspace similar to the jupyter notebook. Each Collabrotary session is equipped with a virtual machine running 13 GB of ram and either a CPU, GPU, or TPU processor. In most case, all the required packages are already installed on these machines and you can quite easily start development using Google Collaboratory. It saves us from installing process and it provides us <strong>easy to accessible GPU&rsquo;s</strong> which is also <strong>free</strong> under some constraints.</li></ul><p>Have a look Ted Talk by Joseph Redmon the developer of the darknet project. The talk is about Darknet and YOLO projects which titled as “How computers learn to recognize objects instantly” . Darknet project aims to create a new neural network framework which is completely focused on simplicity and performance. The thing which I like about is its clarity and performance. All the code is written in C, to define a deep learning network you should only create a config file which defines the layers. By this way, it does not lose its performance capabilities also it provides us easy to use interface for development with this library.</p><p>Since I love both YOLO project and Google Colab, I decided to create a tutorial to use them together. I create a GitHub repository and a Collaboratory notebook for this purpose</p><ul><li><a href=https://colab.research.google.com/drive/1DcXQ_pLtLVvQAwILZR-kF0ZJwhkp11Jl>Colab Notebook</a></li><li><a href=https://github.com/mozanunal/yoloOnGoogleColab>mozanunal/yoloOnGoogleColab</a></li></ul><div style=position:relative;padding-bottom:56.25%;height:0;overflow:hidden><iframe src=https://www.youtube-nocookie.com/embed/Cgxsv1riJhI style=position:absolute;top:0;left:0;width:100%;height:100%;border:0 allowfullscreen title="YouTube Video"></iframe></div><p><strong>Please check</strong></p><ul><li><a href=https://pjreddie.com/darknet/yolo/>YOLO website</a></li><li><a href=https://pjreddie.com/darknet/>Darknet website</a></li><li><a href=https://arxiv.org/abs/1804.02767>YOLOV3 Paper</a></li></ul><h2 id=install>Install</h2><p>Go to the directory, clear and install everthing</p><ul><li>Clone the project</li><li>Change make file configurations and make OPENCV and GPU enable</li><li>Install opencv library</li></ul><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#ff79c6>import</span> cv2<span style=color:#ff79c6>,</span> os
-</span></span><span style=display:flex><span><span style=color:#ff79c6>import</span> matplotlib.pyplot <span style=color:#ff79c6>as</span> plt
-</span></span><span style=display:flex><span><span style=color:#ff79c6>%</span>matplotlib inline
-</span></span><span style=display:flex><span>  
-</span></span></code></pre></div><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span>
-</span></span><span style=display:flex><span>!ls
-</span></span><span style=display:flex><span>!cd <span style=color:#ff79c6>/</span>content
-</span></span><span style=display:flex><span>!rm <span style=color:#ff79c6>-</span>fr darknet
-</span></span><span style=display:flex><span>!git clone https:<span style=color:#ff79c6>//</span>github<span style=color:#ff79c6>.</span>com<span style=color:#ff79c6>/</span>AlexeyAB<span style=color:#ff79c6>/</span>darknet<span style=color:#ff79c6>/</span>
-</span></span><span style=display:flex><span><span style=color:#ff79c6>%</span> cd darknet
-</span></span><span style=display:flex><span>!sed <span style=color:#ff79c6>-</span>i <span style=color:#f1fa8c>&#39;s/OPENCV=0/OPENCV=1/g&#39;</span> Makefile
-</span></span><span style=display:flex><span>!sed <span style=color:#ff79c6>-</span>i <span style=color:#f1fa8c>&#39;s/GPU=0/GPU=1/g&#39;</span> Makefile
-</span></span><span style=display:flex><span>!sed <span style=color:#ff79c6>-</span>i <span style=color:#f1fa8c>&#39;s/CUDNN=0/CUDNN=1/g&#39;</span> Makefile
-</span></span><span style=display:flex><span>!apt update
-</span></span><span style=display:flex><span>!apt<span style=color:#ff79c6>-</span>get install libopencv<span style=color:#ff79c6>-</span>dev
-</span></span></code></pre></div><h2 id=compile-and-configure>Compile and Configure</h2><ul><li>Compile YOLO</li><li>Download YOLO weights</li></ul><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span>!make <span style=color:#ff79c6>&amp;&gt;</span> <span style=color:#8be9fd;font-style:italic>compile</span><span style=color:#ff79c6>.</span>log
-</span></span></code></pre></div><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span>!wget https:<span style=color:#ff79c6>//</span>pjreddie<span style=color:#ff79c6>.</span>com<span style=color:#ff79c6>/</span>media<span style=color:#ff79c6>/</span>files<span style=color:#ff79c6>/</span>yolov3<span style=color:#ff79c6>.</span>weights
-</span></span></code></pre></div><pre><code>--2019-08-11 23:58:44--  https://pjreddie.com/media/files/yolov3.weights
+<script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-007KSW65JL',{anonymize_ip:!1})}</script>
+<meta property="og:title" content="Yolo on Google Colab">
+<meta property="og:description" content="Run YOLO V3 on Colab for images/videos Hello there, Today, we will be discussing how we can use the Darknet project on Google Colab platform. For those who are not familiar with these terms:
+ The Darknet project is an open-source project written in C, which is a framework to develop deep neural networks. Yolo V3 is an object detection algorithm. It is one of the state of the art solution when accuracy/processing power needed metric is considered.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://mozanunal.com/2019/08/yolocolabdemo/"><meta property="article:section" content="posts">
+<meta property="article:published_time" content="2019-08-13T00:09:50+00:00">
+<meta property="article:modified_time" content="2019-08-13T00:09:50+00:00">
+<meta itemprop=name content="Yolo on Google Colab">
+<meta itemprop=description content="Run YOLO V3 on Colab for images/videos Hello there, Today, we will be discussing how we can use the Darknet project on Google Colab platform. For those who are not familiar with these terms:
+ The Darknet project is an open-source project written in C, which is a framework to develop deep neural networks. Yolo V3 is an object detection algorithm. It is one of the state of the art solution when accuracy/processing power needed metric is considered."><meta itemprop=datePublished content="2019-08-13T00:09:50+00:00">
+<meta itemprop=dateModified content="2019-08-13T00:09:50+00:00">
+<meta itemprop=wordCount content="700">
+<meta itemprop=keywords content="google colab,deeplearning,yolov3,collabrotary,">
+<meta name=twitter:card content="summary">
+<meta name=twitter:title content="Yolo on Google Colab">
+<meta name=twitter:description content="Run YOLO V3 on Colab for images/videos Hello there, Today, we will be discussing how we can use the Darknet project on Google Colab platform. For those who are not familiar with these terms:
+ The Darknet project is an open-source project written in C, which is a framework to develop deep neural networks. Yolo V3 is an object detection algorithm. It is one of the state of the art solution when accuracy/processing power needed metric is considered.">
+</head>
+<body class="text-black duration-200 ease-out dark:text-white">
+<header class="mx-auto flex h-[5rem] max-w-3xl px-8 lg:justify-center">
+<div class="relative z-50 mr-auto flex items-center">
+<a class="-translate-x-[1px] -translate-y-0.5 text-3xl font-bold" href=https://mozanunal.com/>Mehmet Ozan Ünal</a>
+<div class="btn-dark text-[0] ml-6 h-6 w-6 shrink-0 cursor-pointer [background:url(./theme.svg)_left_center/cover_no-repeat] dark:invert dark:[background-position:right]" role=button aria-label=Dark></div>
+</div>
+<div class="btn-menu relative z-50 -mr-8 flex h-[5rem] w-[5rem] shrink-0 cursor-pointer flex-col items-center justify-center gap-2.5 lg:hidden" role=button aria-label=Menu></div>
+<script>const htmlClass=document.documentElement.classList;setTimeout(()=>{htmlClass.remove('not-ready')},10);const btnMenu=document.querySelector('.btn-menu');btnMenu.addEventListener('click',()=>{htmlClass.toggle('open')});const metaTheme=document.querySelector('meta[name="theme-color"]'),lightBg=`"#fbfbfb"`.replace(/"/g,''),setDark=a=>{metaTheme.setAttribute('content',a?'#000':lightBg),htmlClass[a?'add':'remove']('dark'),localStorage.setItem('dark',a)},darkScheme=window.matchMedia('(prefers-color-scheme: dark)');if(htmlClass.contains('dark'))setDark(!0);else{const a=localStorage.getItem('dark');setDark(a?a==='true':darkScheme.matches)}darkScheme.addEventListener('change',a=>{setDark(a.matches)});const btnDark=document.querySelector('.btn-dark');btnDark.addEventListener('click',()=>{setDark(localStorage.getItem('dark')!=='true')})</script>
+<div class="nav-wrapper fixed inset-x-0 top-full z-40 flex h-full select-none flex-col justify-center pb-16 duration-200 dark:bg-black lg:static lg:h-auto lg:flex-row lg:!bg-transparent lg:pb-0 lg:transition-none">
+<nav class="lg:ml-12 lg:flex lg:flex-row lg:items-center lg:space-x-6">
+<a class="block text-center text-2xl leading-[5rem] lg:text-base lg:font-normal" href=/about/>About</a>
+<a class="block text-center text-2xl leading-[5rem] lg:text-base lg:font-normal" href=/contact/>Contact</a>
+</nav>
+<nav class="mt-12 flex justify-center space-x-10 dark:invert lg:mt-0 lg:ml-12 lg:items-center lg:space-x-6">
+<a class="h-8 w-8 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6" style=--url:url(./twitter.svg) href=https://twitter.com/MOzanUnal target=_blank rel=me>
+twitter
+</a>
+<a class="h-8 w-8 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6" style=--url:url(./github.svg) href=https://github.com/mozanunal target=_blank rel=me>
+github
+</a>
+</nav>
+</div>
+</header>
+<main class="prose prose-neutral relative mx-auto min-h-[calc(100%-10rem)] max-w-3xl px-8 pt-16 pb-24 dark:prose-invert">
+<article>
+<header class=mb-20>
+<h1 class="!my-0 pb-2.5">Yolo on Google Colab</h1>
+<div class="text-sm opacity-60">
+<time>Aug 13, 2019</time>
+</div>
+</header>
+<section><h1 id=run-yolo-v3-on-colab-for-imagesvideos>Run YOLO V3 on Colab for images/videos</h1>
+<p>Hello there,
+Today, we will be discussing how we can use the Darknet project on Google Colab platform. For those who are not familiar with these terms:</p>
+<p><img src=/images/yoloroad.gif alt="YOLO in action!"></p>
+<ul>
+<li>The Darknet project is an open-source project written in C, which is a framework to develop deep neural networks.</li>
+<li>Yolo V3 is an object detection algorithm. It is one of the state of the art solution when <strong>accuracy/processing power needed</strong> metric is considered.</li>
+<li>Google Cola is a cloud-based data science workspace similar to the jupyter notebook. Each Collabrotary session is equipped with a virtual machine running 13 GB of ram and either a CPU, GPU, or TPU processor. In most case, all the required packages are already installed on these machines and you can quite easily start development using Google Collaboratory. It saves us from installing process and it provides us <strong>easy to accessible GPU&rsquo;s</strong> which is also <strong>free</strong> under some constraints.</li>
+</ul>
+<p>Have a look Ted Talk by Joseph Redmon the developer of the darknet project. The talk is about Darknet and YOLO projects which titled as “How computers learn to recognize objects instantly” . Darknet project aims to create a new neural network framework which is completely focused on simplicity and performance. The thing which I like about is its clarity and performance. All the code is written in C, to define a deep learning network you should only create a config file which defines the layers. By this way, it does not lose its performance capabilities also it provides us easy to use interface for development with this library.</p>
+<p>Since I love both YOLO project and Google Colab, I decided to create a tutorial to use them together. I create a GitHub repository and a Collaboratory notebook for this purpose</p>
+<ul>
+<li><a href=https://colab.research.google.com/drive/1DcXQ_pLtLVvQAwILZR-kF0ZJwhkp11Jl>Colab Notebook</a></li>
+<li><a href=https://github.com/mozanunal/yoloOnGoogleColab>mozanunal/yoloOnGoogleColab</a></li>
+</ul>
+<div style=position:relative;padding-bottom:56.25%;height:0;overflow:hidden>
+<iframe src=https://www.youtube-nocookie.com/embed/Cgxsv1riJhI style=position:absolute;top:0;left:0;width:100%;height:100%;border:0 allowfullscreen title="YouTube Video"></iframe>
+</div>
+<p><strong>Please check</strong></p>
+<ul>
+<li><a href=https://pjreddie.com/darknet/yolo/>YOLO website</a></li>
+<li><a href=https://pjreddie.com/darknet/>Darknet website</a></li>
+<li><a href=https://arxiv.org/abs/1804.02767>YOLOV3 Paper</a></li>
+</ul>
+<h2 id=install>Install</h2>
+<p>Go to the directory, clear and install everthing</p>
+<ul>
+<li>Clone the project</li>
+<li>Change make file configurations and make OPENCV and GPU enable</li>
+<li>Install opencv library</li>
+</ul>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python>
+<span style=color:#ff79c6>import</span> cv2<span style=color:#ff79c6>,</span> os
+<span style=color:#ff79c6>import</span> matplotlib.pyplot <span style=color:#ff79c6>as</span> plt
+<span style=color:#ff79c6>%</span>matplotlib inline
+  
+</code></pre></div><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python>
+!ls
+!cd <span style=color:#ff79c6>/</span>content
+!rm <span style=color:#ff79c6>-</span>fr darknet
+!git clone https:<span style=color:#ff79c6>//</span>github<span style=color:#ff79c6>.</span>com<span style=color:#ff79c6>/</span>AlexeyAB<span style=color:#ff79c6>/</span>darknet<span style=color:#ff79c6>/</span>
+<span style=color:#ff79c6>%</span> cd darknet
+!sed <span style=color:#ff79c6>-</span>i <span style=color:#f1fa8c>&#39;s/OPENCV=0/OPENCV=1/g&#39;</span> Makefile
+!sed <span style=color:#ff79c6>-</span>i <span style=color:#f1fa8c>&#39;s/GPU=0/GPU=1/g&#39;</span> Makefile
+!sed <span style=color:#ff79c6>-</span>i <span style=color:#f1fa8c>&#39;s/CUDNN=0/CUDNN=1/g&#39;</span> Makefile
+!apt update
+!apt<span style=color:#ff79c6>-</span>get install libopencv<span style=color:#ff79c6>-</span>dev
+</code></pre></div><h2 id=compile-and-configure>Compile and Configure</h2>
+<ul>
+<li>Compile YOLO</li>
+<li>Download YOLO weights</li>
+</ul>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python>!make <span style=color:#ff79c6>&amp;&gt;</span> <span style=color:#8be9fd;font-style:italic>compile</span><span style=color:#ff79c6>.</span>log
+
+</code></pre></div><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python>!wget https:<span style=color:#ff79c6>//</span>pjreddie<span style=color:#ff79c6>.</span>com<span style=color:#ff79c6>/</span>media<span style=color:#ff79c6>/</span>files<span style=color:#ff79c6>/</span>yolov3<span style=color:#ff79c6>.</span>weights
+</code></pre></div><pre><code>--2019-08-11 23:58:44--  https://pjreddie.com/media/files/yolov3.weights
 Resolving pjreddie.com (pjreddie.com)... 128.208.4.108
 Connecting to pjreddie.com (pjreddie.com)|128.208.4.108|:443... connected.
 HTTP request sent, awaiting response... 200 OK
@@ -35,21 +134,24 @@ Saving to: ‘yolov3.weights’
 yolov3.weights      100%[===================&gt;] 236.52M  62.1MB/s    in 4.1s    
 
 2019-08-11 23:58:48 (57.7 MB/s) - ‘yolov3.weights’ saved [248007048/248007048]
-</code></pre><h2 id=test-an-image>Test An Image</h2><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span><span style=color:#ff79c6>def</span> <span style=color:#50fa7b>predictImage</span>(imageDir):
-</span></span><span style=display:flex><span>  os<span style=color:#ff79c6>.</span>system(<span style=color:#f1fa8c>&#34;cd /content/darknet &amp;&amp; ./darknet detect cfg/yolov3.cfg yolov3.weights </span><span style=color:#f1fa8c>{}</span><span style=color:#f1fa8c>&#34;</span><span style=color:#ff79c6>.</span>format(imageDir))
-</span></span><span style=display:flex><span>  image <span style=color:#ff79c6>=</span> cv2<span style=color:#ff79c6>.</span>imread(<span style=color:#f1fa8c>&#34;/content/darknet/predictions.jpg&#34;</span>)
-</span></span><span style=display:flex><span>  height, width <span style=color:#ff79c6>=</span> image<span style=color:#ff79c6>.</span>shape[:<span style=color:#bd93f9>2</span>]
-</span></span><span style=display:flex><span>  resized_image <span style=color:#ff79c6>=</span> cv2<span style=color:#ff79c6>.</span>resize(image,(<span style=color:#bd93f9>3</span><span style=color:#ff79c6>*</span>width, <span style=color:#bd93f9>3</span><span style=color:#ff79c6>*</span>height), interpolation <span style=color:#ff79c6>=</span> cv2<span style=color:#ff79c6>.</span>INTER_CUBIC)
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>  fig <span style=color:#ff79c6>=</span> plt<span style=color:#ff79c6>.</span>gcf()
-</span></span><span style=display:flex><span>  fig<span style=color:#ff79c6>.</span>set_size_inches(<span style=color:#bd93f9>18</span>, <span style=color:#bd93f9>10</span>)
-</span></span><span style=display:flex><span>  plt<span style=color:#ff79c6>.</span>axis(<span style=color:#f1fa8c>&#34;off&#34;</span>)
-</span></span><span style=display:flex><span>  <span style=color:#6272a4>#plt.rcParams[&#39;figure.figsize&#39;] = [10, 5]</span>
-</span></span><span style=display:flex><span>  plt<span style=color:#ff79c6>.</span>imshow(cv2<span style=color:#ff79c6>.</span>cvtColor(resized_image, cv2<span style=color:#ff79c6>.</span>COLOR_BGR2RGB))
-</span></span><span style=display:flex><span>  plt<span style=color:#ff79c6>.</span>show()
-</span></span></code></pre></div><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span>!wget https:<span style=color:#ff79c6>//</span>github<span style=color:#ff79c6>.</span>com<span style=color:#ff79c6>/</span>mozanunal<span style=color:#ff79c6>/</span>yoloOnGoogleColab<span style=color:#ff79c6>/</span>raw<span style=color:#ff79c6>/</span>master<span style=color:#ff79c6>/</span>test<span style=color:#ff79c6>/</span>test<span style=color:#ff79c6>.</span>jpg
-</span></span><span style=display:flex><span>!ls
-</span></span></code></pre></div><pre><code>--2019-08-11 23:58:49--  https://github.com/mozanunal/yoloOnGoogleColab/raw/master/test/test.jpg
+</code></pre>
+<h2 id=test-an-image>Test An Image</h2>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#ff79c6>def</span> <span style=color:#50fa7b>predictImage</span>(imageDir):
+  os<span style=color:#ff79c6>.</span>system(<span style=color:#f1fa8c>&#34;cd /content/darknet &amp;&amp; ./darknet detect cfg/yolov3.cfg yolov3.weights </span><span style=color:#f1fa8c>{}</span><span style=color:#f1fa8c>&#34;</span><span style=color:#ff79c6>.</span>format(imageDir))
+  image <span style=color:#ff79c6>=</span> cv2<span style=color:#ff79c6>.</span>imread(<span style=color:#f1fa8c>&#34;/content/darknet/predictions.jpg&#34;</span>)
+  height, width <span style=color:#ff79c6>=</span> image<span style=color:#ff79c6>.</span>shape[:<span style=color:#bd93f9>2</span>]
+  resized_image <span style=color:#ff79c6>=</span> cv2<span style=color:#ff79c6>.</span>resize(image,(<span style=color:#bd93f9>3</span><span style=color:#ff79c6>*</span>width, <span style=color:#bd93f9>3</span><span style=color:#ff79c6>*</span>height), interpolation <span style=color:#ff79c6>=</span> cv2<span style=color:#ff79c6>.</span>INTER_CUBIC)
+
+  fig <span style=color:#ff79c6>=</span> plt<span style=color:#ff79c6>.</span>gcf()
+  fig<span style=color:#ff79c6>.</span>set_size_inches(<span style=color:#bd93f9>18</span>, <span style=color:#bd93f9>10</span>)
+  plt<span style=color:#ff79c6>.</span>axis(<span style=color:#f1fa8c>&#34;off&#34;</span>)
+  <span style=color:#6272a4>#plt.rcParams[&#39;figure.figsize&#39;] = [10, 5]</span>
+  plt<span style=color:#ff79c6>.</span>imshow(cv2<span style=color:#ff79c6>.</span>cvtColor(resized_image, cv2<span style=color:#ff79c6>.</span>COLOR_BGR2RGB))
+  plt<span style=color:#ff79c6>.</span>show()
+
+</code></pre></div><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python>!wget https:<span style=color:#ff79c6>//</span>github<span style=color:#ff79c6>.</span>com<span style=color:#ff79c6>/</span>mozanunal<span style=color:#ff79c6>/</span>yoloOnGoogleColab<span style=color:#ff79c6>/</span>raw<span style=color:#ff79c6>/</span>master<span style=color:#ff79c6>/</span>test<span style=color:#ff79c6>/</span>test<span style=color:#ff79c6>.</span>jpg
+!ls
+</code></pre></div><pre><code>--2019-08-11 23:58:49--  https://github.com/mozanunal/yoloOnGoogleColab/raw/master/test/test.jpg
 Resolving github.com (github.com)... 192.30.253.113
 Connecting to github.com (github.com)|192.30.253.113|:443... connected.
 HTTP request sent, awaiting response... 302 Found
@@ -73,14 +175,20 @@ build.ps1     darknet.py	      Makefile		     video_v2.sh
 build.sh      darknet_video.py	      net_cam_v3.sh	     video_yolov3.sh
 cfg	      data		      obj		     yolov3.weights
 cmake	      image_yolov2.sh	      README.md
-</code></pre><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span>predictImage(<span style=color:#f1fa8c>&#34;test.jpg&#34;</span>)
-</span></span></code></pre></div><p><img src=/images/output_11_0.png alt=png></p><h2 id=test-with-video>Test with Video</h2><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span><span style=color:#ff79c6>def</span> <span style=color:#50fa7b>predictVideo</span>(videoDir):
-</span></span><span style=display:flex><span>  os<span style=color:#ff79c6>.</span>system(<span style=color:#f1fa8c>&#34;&#34;&#34; cd /content/darknet &amp;&amp; ./darknet detector demo cfg/coco.data cfg/yolov3.cfg yolov3.weights </span><span style=color:#f1fa8c>\
-</span></span></span><span style=display:flex><span><span style=color:#f1fa8c></span><span style=color:#f1fa8c>  -dont_show </span><span style=color:#f1fa8c>{}</span><span style=color:#f1fa8c> -i 0 -out_filename res.avi
-</span></span></span><span style=display:flex><span><span style=color:#f1fa8c>  &#34;&#34;&#34;</span><span style=color:#ff79c6>.</span>format(videoDir))
-</span></span></code></pre></div><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span>!wget https:<span style=color:#ff79c6>//</span>github<span style=color:#ff79c6>.</span>com<span style=color:#ff79c6>/</span>mozanunal<span style=color:#ff79c6>/</span>yoloOnGoogleColab<span style=color:#ff79c6>/</span>raw<span style=color:#ff79c6>/</span>master<span style=color:#ff79c6>/</span>test<span style=color:#ff79c6>/</span>test<span style=color:#ff79c6>.</span>avi
-</span></span><span style=display:flex><span>!ls
-</span></span></code></pre></div><pre><code>--2019-08-11 23:59:01--  https://github.com/mozanunal/yoloOnGoogleColab/raw/master/test/test.avi
+</code></pre>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python>predictImage(<span style=color:#f1fa8c>&#34;test.jpg&#34;</span>)
+
+
+</code></pre></div><p><img src=/images/output_11_0.png alt=png></p>
+<h2 id=test-with-video>Test with Video</h2>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#ff79c6>def</span> <span style=color:#50fa7b>predictVideo</span>(videoDir):
+  os<span style=color:#ff79c6>.</span>system(<span style=color:#f1fa8c>&#34;&#34;&#34; cd /content/darknet &amp;&amp; ./darknet detector demo cfg/coco.data cfg/yolov3.cfg yolov3.weights </span><span style=color:#f1fa8c>\
+</span><span style=color:#f1fa8c></span><span style=color:#f1fa8c>  -dont_show </span><span style=color:#f1fa8c>{}</span><span style=color:#f1fa8c> -i 0 -out_filename res.avi
+</span><span style=color:#f1fa8c>  &#34;&#34;&#34;</span><span style=color:#ff79c6>.</span>format(videoDir))
+
+</code></pre></div><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python>!wget https:<span style=color:#ff79c6>//</span>github<span style=color:#ff79c6>.</span>com<span style=color:#ff79c6>/</span>mozanunal<span style=color:#ff79c6>/</span>yoloOnGoogleColab<span style=color:#ff79c6>/</span>raw<span style=color:#ff79c6>/</span>master<span style=color:#ff79c6>/</span>test<span style=color:#ff79c6>/</span>test<span style=color:#ff79c6>.</span>avi
+!ls
+</code></pre></div><pre><code>--2019-08-11 23:59:01--  https://github.com/mozanunal/yoloOnGoogleColab/raw/master/test/test.avi
 Resolving github.com (github.com)... 192.30.253.113
 Connecting to github.com (github.com)|192.30.253.113|:443... connected.
 HTTP request sent, awaiting response... 302 Found
@@ -105,16 +213,37 @@ build.sh	data			predictions.jpg        yolov3.weights
 cfg		image_yolov2.sh		README.md
 cmake		image_yolov3.sh		results
 CMakeLists.txt	include			scripts
-</code></pre><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span>predictVideo(<span style=color:#f1fa8c>&#34;test.avi&#34;</span>)
-</span></span></code></pre></div><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span>!du <span style=color:#ff79c6>-</span>h res<span style=color:#ff79c6>.</span>avi
-</span></span></code></pre></div><pre><code>93M	res.avi
-</code></pre><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span><span style=color:#ff79c6>from</span> google.colab <span style=color:#ff79c6>import</span> files
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>files<span style=color:#ff79c6>.</span>download(<span style=color:#f1fa8c>&#39;/content/darknet/res.avi&#39;</span>)
-</span></span></code></pre></div><p><strong>See you later!</strong></p></section><footer class="mt-12 flex flex-wrap"><a class="mr-1.5 mb-1.5 rounded-lg bg-black/[3%] px-5 py-2 no-underline dark:bg-white/[8%]" href=https://mozanunal.com/tags/google-colab>google colab</a>
+</code></pre>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python>predictVideo(<span style=color:#f1fa8c>&#34;test.avi&#34;</span>)
+
+</code></pre></div><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python>!du <span style=color:#ff79c6>-</span>h res<span style=color:#ff79c6>.</span>avi
+</code></pre></div><pre><code>93M	res.avi
+</code></pre>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#ff79c6>from</span> google.colab <span style=color:#ff79c6>import</span> files
+
+files<span style=color:#ff79c6>.</span>download(<span style=color:#f1fa8c>&#39;/content/darknet/res.avi&#39;</span>)
+
+</code></pre></div><p><strong>See you later!</strong></p>
+</section>
+<footer class="mt-12 flex flex-wrap">
+<a class="mr-1.5 mb-1.5 rounded-lg bg-black/[3%] px-5 py-2 no-underline dark:bg-white/[8%]" href=https://mozanunal.com/tags/google-colab>google colab</a>
 <a class="mr-1.5 mb-1.5 rounded-lg bg-black/[3%] px-5 py-2 no-underline dark:bg-white/[8%]" href=https://mozanunal.com/tags/deeplearning>deeplearning</a>
 <a class="mr-1.5 mb-1.5 rounded-lg bg-black/[3%] px-5 py-2 no-underline dark:bg-white/[8%]" href=https://mozanunal.com/tags/yolov3>yolov3</a>
-<a class="mr-1.5 mb-1.5 rounded-lg bg-black/[3%] px-5 py-2 no-underline dark:bg-white/[8%]" href=https://mozanunal.com/tags/collabrotary>collabrotary</a></footer><nav class="mt-24 flex rounded-lg bg-black/[3%] text-lg dark:bg-white/[8%]"><a class="flex w-1/2 items-center rounded-l-md p-6 pr-3 no-underline hover:bg-black/[2%] dark:hover:bg-white/[3%]" href=https://mozanunal.com/2019/11/img2sh/><span class=mr-1.5>←</span><span>Show Images Directly on Terminal: img2sh</span></a>
-<a class="ml-auto flex w-1/2 items-center justify-end rounded-r-md p-6 pl-3 no-underline hover:bg-black/[2%] dark:hover:bg-white/[3%]" href=https://mozanunal.com/2019/02/steam-link-on-rpi/><span>Playing DOTA on Raspberry Pi using Steam Link</span><span class=ml-1.5>→</span></a></nav></article></main><footer class="opaco mx-auto flex h-[5rem] max-w-3xl items-center px-8 text-[0.9em] opacity-60"><div class=mr-auto>&copy; 2023
-<a class=link href=https://mozanunal.com/>Mehmet Ozan Ünal</a></div><a class="link mx-6" href=https://gohugo.io/ rel=noopener target=_blank>Powered by Hugo️️</a>️
-<a class=link href=https://github.com/nanxiaobei/hugo-paper rel=noopener target=_blank>Theme Paper</a></footer></body></html>
+<a class="mr-1.5 mb-1.5 rounded-lg bg-black/[3%] px-5 py-2 no-underline dark:bg-white/[8%]" href=https://mozanunal.com/tags/collabrotary>collabrotary</a>
+</footer>
+<nav class="mt-24 flex rounded-lg bg-black/[3%] text-lg dark:bg-white/[8%]">
+<a class="flex w-1/2 items-center rounded-l-md p-6 pr-3 no-underline hover:bg-black/[2%] dark:hover:bg-white/[3%]" href=https://mozanunal.com/2019/11/img2sh/><span class=mr-1.5>←</span><span>Show Images Directly on Terminal: img2sh</span></a>
+<a class="ml-auto flex w-1/2 items-center justify-end rounded-r-md p-6 pl-3 no-underline hover:bg-black/[2%] dark:hover:bg-white/[3%]" href=https://mozanunal.com/2019/02/steam-link-on-rpi/><span>Playing DOTA on Raspberry Pi using Steam Link</span><span class=ml-1.5>→</span></a>
+</nav>
+</article>
+</main>
+<footer class="opaco mx-auto flex h-[5rem] max-w-3xl items-center px-8 text-[0.9em] opacity-60">
+<div class=mr-auto>
+&copy; 2023
+<a class=link href=https://mozanunal.com/>Mehmet Ozan Ünal</a>
+</div>
+<a class="link mx-6" href=https://gohugo.io/ rel=noopener target=_blank>Powered by Hugo️️</a>️
+<a class=link href=https://github.com/nanxiaobei/hugo-paper rel=noopener target=_blank>Theme Paper</a>
+</footer>
+</body>
+</html>
