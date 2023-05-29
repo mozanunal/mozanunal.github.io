@@ -70,7 +70,7 @@ This repo is a tool to develop sparse view CT reconstruction projects and compar
 Img2sh is a tool to show images directly on the terminal. For color images, 256 xterm color support is required. This script basically resize the image with antialiasing and quantized its colors to xterm color pallette.
 
 **SimpleDSP**
-2018, [Github Link](github.com/mozanunal/SimpleDSP).
+2018, [Github Link](https://github.com/mozanunal/SimpleDSP).
 SimpleDSP is a basic DSP library which is for Arduino and most of the microcontrollers which can be programmed in C/C++.
 
 **Digilent Design Contest**
