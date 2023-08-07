@@ -31,12 +31,15 @@ title = "Mehmet Ozan Ünal"
   bio = 'Data / ML Engineer. Interested in big data and deep learning. Lover of Linux, Python, Scala'
   disableHLJS = true
   monoDarkIcon = true
+  math = true
 # ------------------------------
 # needed to  render raw HTML (e.g. <sub>, <sup>, <kbd>, <mark>)
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
+    [markup.goldmark.extensions]
+      footnote = true
   [markup.highlight]
     style = "dracula"
     codeFences = true
