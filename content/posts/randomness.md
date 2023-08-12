@@ -18,7 +18,7 @@ But: 1, 3, 5, 7, 9, 11, 13 …the ‘13’ doesn’t seem very random because yo
 
 ## Central Limit Theorem
 
-Mathematically, if \\(X_{1}, X_{2}, \ldots, X_{n}\\) is a random sample of size \\(n\\) taken from a population with mean \\(\mu\\) and finite variance \\(\sigma^{2}\\) and if \\(\bar{X}\\) is the sample mean, the limiting form of the distribution of $$Z=\left(\frac{X-\mu}{\sigma / N / N}\right)$$ as $n \rightarrow \infty$, is the standard normal distribution. There are no constraints on the distribution of the input signal. It can be anything, even if the distribution of the source signal does not seem like the Gaussian Distribution, eventually, the sample means will be converged to Gaussian Distribution.
+Mathematically, if \\(X_{1}, X_{2}, \ldots, X_{n}\\) is a random sample of size \\(n\\) taken from a population with mean \\(\mu\\) and finite variance \\(\sigma^{2}\\) and if \\(\bar{X}\\) is the sample mean, the limiting form of the distribution of $$Z=\left(\frac{X-\mu}{\sigma / N / N}\right)$$ as \\(n \rightarrow \infty\\), is the standard normal distribution. There are no constraints on the distribution of the input signal. It can be anything, even if the distribution of the source signal does not seem like the Gaussian Distribution, eventually, the sample means will be converged to Gaussian Distribution.
 
 ## Berry-Essen Theorem
 
