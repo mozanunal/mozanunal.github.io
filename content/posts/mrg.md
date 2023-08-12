@@ -5,7 +5,7 @@ tags:
 categories:
    - Electronics
 author: Mehmet Ozan Ünal
-date: 2020-04-26 03:44:00
+date: 2019-04-26 03:44:00
 ---
 
 # Manyetik Rezonans Görüntüleme
