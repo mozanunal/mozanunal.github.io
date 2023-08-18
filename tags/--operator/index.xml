@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>--> operator on Mehmet Ozan Ünal</title><link>https://mozanunal.com/tags/--operator/</link><description>Recent content in --> operator on Mehmet Ozan Ünal</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>Copyright © 2014–2023</copyright><lastBuildDate>Mon, 30 Mar 2020 23:45:00 +0000</lastBuildDate><atom:link href="https://mozanunal.com/tags/--operator/index.xml" rel="self" type="application/rss+xml"/><item><title>Coolest C Trick</title><link>https://mozanunal.com/2020/03/coolest-c-trick/</link><pubDate>Mon, 30 Mar 2020 23:45:00 +0000</pubDate><guid>https://mozanunal.com/2020/03/coolest-c-trick/</guid><description>Hello Everyone,
+Just a quick post here&amp;hellip;
+Today I have seen a code snippet which makes me quite happy.
+#include &amp;lt;stdio.h&amp;gt;int main() { int x = 10; while (x --&amp;gt; 0) // x goes to 0 { printf(&amp;#34;%d &amp;#34;, x); } } The the output of this is:
+9 8 7 6 5 4 3 2 1 0 It was a little suprising for me at first sight.</description></item></channel></rss>

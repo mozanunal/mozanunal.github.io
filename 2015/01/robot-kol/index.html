@@ -1,110 +1,22 @@
-<!doctype html><html class="not-ready lg:text-base" style=--bg:#fbfbfb lang=en>
-<head>
-<meta charset=utf-8>
-<meta http-equiv=x-ua-compatible content="IE=edge">
-<meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
-<title>[TR] Robot Kol - Mehmet Ozan Ünal</title>
-<meta name=theme-color>
-<meta name=description content="Merhabalar,
-Bugünkü yazımda yaptığım robot koldan bahsedeceğim. Robot kolum Arduino kontrollü. Mekanik aksamında 4 adet servo kullandım. Alt kısmını 2 eksenli mini kamera gimbalinden yaptım. Kalan kısmı ise plastik bir kapı keserek yaptım. Servoları plastik parçalara vidaladım. Kullandığım servolar 9 gramlık mikro servolar. Verebilecekleri tork 1.8 kg.cm . Ben robot kola kesme şeker ve kalemtıraş gibi küçük nesneler taşıttım. Onlar için yeterli oldu. Kolun kontrolü için 2 tane 2 eksenli joystick kullandım.">
-<meta name=author content="Mehmet Ozan Ünal">
-<link rel="preload stylesheet" as=style href=https://mozanunal.com/main.min.css>
-<link rel=preload as=image href=https://mozanunal.com/theme.svg>
-<link rel=preload as=image href="https://www.gravatar.com/avatar/998cbd3ab655239d8be787580cce0415?s=160&d=identicon">
-<link rel=preload as=image href=https://mozanunal.com/twitter.svg>
-<link rel=preload as=image href=https://mozanunal.com/github.svg>
-<link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.css integrity=sha384-3UiQGuEI4TTMaFmGIZumfRPtfKQ3trwQE2JgosJxCnGmQpL/lJdjpcHkaaFwHlcI crossorigin=anonymous>
-<script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.js integrity=sha384-G0zcxDFp5LWZtDuRMnBkk3EphCK1lhEf4UEyEM693ka574TZGwo4IWwS6QLzM/2t crossorigin=anonymous></script>
+<!doctype html><html class="not-ready lg:text-base" style=--bg:#fbfbfb lang=en><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><title>[TR] Robot Kol - Mehmet Ozan Ünal</title><meta name=theme-color><meta name=description content="Merhabalar,
+Bugünkü yazımda yaptığım robot koldan bahsedeceğim. Robot kolum Arduino kontrollü. Mekanik aksamında 4 adet servo kullandım. Alt kısmını 2 eksenli mini kamera gimbalinden yaptım. Kalan kısmı ise plastik bir kapı keserek yaptım. Servoları plastik parçalara vidaladım. Kullandığım servolar 9 gramlık mikro servolar. Verebilecekleri tork 1.8 kg.cm . Ben robot kola kesme şeker ve kalemtıraş gibi küçük nesneler taşıttım. Onlar için yeterli oldu. Kolun kontrolü için 2 tane 2 eksenli joystick kullandım."><meta name=author content="Mehmet Ozan Ünal"><link rel="preload stylesheet" as=style href=https://mozanunal.com/main.min.css><link rel=preload as=image href=https://mozanunal.com/theme.svg><link rel=preload as=image href="https://www.gravatar.com/avatar/998cbd3ab655239d8be787580cce0415?s=160&d=identicon"><link rel=preload as=image href=https://mozanunal.com/twitter.svg><link rel=preload as=image href=https://mozanunal.com/github.svg><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.css integrity=sha384-3UiQGuEI4TTMaFmGIZumfRPtfKQ3trwQE2JgosJxCnGmQpL/lJdjpcHkaaFwHlcI crossorigin=anonymous><script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.js integrity=sha384-G0zcxDFp5LWZtDuRMnBkk3EphCK1lhEf4UEyEM693ka574TZGwo4IWwS6QLzM/2t crossorigin=anonymous></script>
 <script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/contrib/auto-render.min.js integrity=sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05 crossorigin=anonymous onload=renderMathInElement(document.body)></script>
-<link rel=icon href=https://mozanunal.com/favicon.ico>
-<link rel=apple-touch-icon href=https://mozanunal.com/apple-touch-icon.png>
-<meta name=generator content="Hugo 0.92.2">
-<script type=application/javascript>var doNotTrack=!1;doNotTrack||(window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga('create','G-007KSW65JL','auto'),ga('send','pageview'))</script>
-<script async src=https://www.google-analytics.com/analytics.js></script>
+<link rel=icon href=https://mozanunal.com/favicon.ico><link rel=apple-touch-icon href=https://mozanunal.com/apple-touch-icon.png><meta name=generator content="Hugo 0.98.0"><script type=application/javascript>var doNotTrack=!1;doNotTrack||(window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","G-007KSW65JL","auto"),ga("send","pageview"))</script><script async src=https://www.google-analytics.com/analytics.js></script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-007KSW65JL"></script>
-<script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-007KSW65JL',{anonymize_ip:!1})}</script>
-<meta property="og:title" content="[TR] Robot Kol">
-<meta property="og:description" content="Merhabalar,
-Bugünkü yazımda yaptığım robot koldan bahsedeceğim. Robot kolum Arduino kontrollü. Mekanik aksamında 4 adet servo kullandım. Alt kısmını 2 eksenli mini kamera gimbalinden yaptım. Kalan kısmı ise plastik bir kapı keserek yaptım. Servoları plastik parçalara vidaladım. Kullandığım servolar 9 gramlık mikro servolar. Verebilecekleri tork 1.8 kg.cm . Ben robot kola kesme şeker ve kalemtıraş gibi küçük nesneler taşıttım. Onlar için yeterli oldu. Kolun kontrolü için 2 tane 2 eksenli joystick kullandım.">
-<meta property="og:type" content="article">
-<meta property="og:url" content="https://mozanunal.com/2015/01/robot-kol/"><meta property="article:section" content="posts">
-<meta property="article:published_time" content="2015-01-16T15:07:00+00:00">
-<meta property="article:modified_time" content="2015-01-16T15:07:00+00:00">
-<meta itemprop=name content="[TR] Robot Kol">
-<meta itemprop=description content="Merhabalar,
-Bugünkü yazımda yaptığım robot koldan bahsedeceğim. Robot kolum Arduino kontrollü. Mekanik aksamında 4 adet servo kullandım. Alt kısmını 2 eksenli mini kamera gimbalinden yaptım. Kalan kısmı ise plastik bir kapı keserek yaptım. Servoları plastik parçalara vidaladım. Kullandığım servolar 9 gramlık mikro servolar. Verebilecekleri tork 1.8 kg.cm . Ben robot kola kesme şeker ve kalemtıraş gibi küçük nesneler taşıttım. Onlar için yeterli oldu. Kolun kontrolü için 2 tane 2 eksenli joystick kullandım."><meta itemprop=datePublished content="2015-01-16T15:07:00+00:00">
-<meta itemprop=dateModified content="2015-01-16T15:07:00+00:00">
-<meta itemprop=wordCount content="114">
-<meta itemprop=keywords content="Electronics,Arduino,Arduino,arduino servo kontrol,Arduino Robotik Kol,Arduino Robotik Kontrol,DIY Robotic Hand,">
-<meta name=twitter:card content="summary">
-<meta name=twitter:title content="[TR] Robot Kol">
-<meta name=twitter:description content="Merhabalar,
-Bugünkü yazımda yaptığım robot koldan bahsedeceğim. Robot kolum Arduino kontrollü. Mekanik aksamında 4 adet servo kullandım. Alt kısmını 2 eksenli mini kamera gimbalinden yaptım. Kalan kısmı ise plastik bir kapı keserek yaptım. Servoları plastik parçalara vidaladım. Kullandığım servolar 9 gramlık mikro servolar. Verebilecekleri tork 1.8 kg.cm . Ben robot kola kesme şeker ve kalemtıraş gibi küçük nesneler taşıttım. Onlar için yeterli oldu. Kolun kontrolü için 2 tane 2 eksenli joystick kullandım.">
-</head>
-<body class="text-black duration-200 ease-out dark:text-white">
-<header class="mx-auto flex h-[4.5rem] max-w-3xl px-8 lg:justify-center">
-<div class="relative z-50 mr-auto flex items-center">
-<a class="-translate-x-[1px] -translate-y-[1px] text-2xl font-semibold" href=https://mozanunal.com/>Mehmet Ozan Ünal</a>
-<div class="btn-dark text-[0] ml-4 h-6 w-6 shrink-0 cursor-pointer [background:url(./theme.svg)_left_center/cover_no-repeat] dark:invert dark:[background-position:right]" role=button aria-label=Dark></div>
-</div>
-<div class="btn-menu relative z-50 -mr-8 flex h-[4.5rem] w-[5rem] shrink-0 cursor-pointer flex-col items-center justify-center gap-2.5 lg:hidden" role=button aria-label=Menu></div>
-<script>const htmlClass=document.documentElement.classList;setTimeout(()=>{htmlClass.remove('not-ready')},10);const btnMenu=document.querySelector('.btn-menu');btnMenu.addEventListener('click',()=>{htmlClass.toggle('open')});const metaTheme=document.querySelector('meta[name="theme-color"]'),lightBg='#fbfbfb'.replace(/"/g,''),setDark=a=>{metaTheme.setAttribute('content',a?'#000':lightBg),htmlClass[a?'add':'remove']('dark'),localStorage.setItem('dark',a)},darkScheme=window.matchMedia('(prefers-color-scheme: dark)');if(htmlClass.contains('dark'))setDark(!0);else{const a=localStorage.getItem('dark');setDark(a?a==='true':darkScheme.matches)}darkScheme.addEventListener('change',a=>{setDark(a.matches)});const btnDark=document.querySelector('.btn-dark');btnDark.addEventListener('click',()=>{setDark(localStorage.getItem('dark')!=='true')})</script>
-<div class="nav-wrapper fixed inset-x-0 top-full z-40 flex h-full select-none flex-col justify-center pb-16 duration-200 dark:bg-black lg:static lg:h-auto lg:flex-row lg:!bg-transparent lg:pb-0 lg:transition-none">
-<nav class="lg:ml-12 lg:flex lg:flex-row lg:items-center lg:space-x-6">
-<a class="block text-center text-2xl leading-[5rem] lg:text-base lg:font-normal" href=/about/>About</a>
-<a class="block text-center text-2xl leading-[5rem] lg:text-base lg:font-normal" href=/contact/>Contact</a>
-</nav>
-<nav class="mt-12 flex justify-center space-x-10 dark:invert lg:ml-12 lg:mt-0 lg:items-center lg:space-x-6">
-<a class="h-8 w-8 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6" style=--url:url(./twitter.svg) href=https://twitter.com/MOzanUnal target=_blank rel=me>
-twitter
-</a>
-<a class="h-8 w-8 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6" style=--url:url(./github.svg) href=https://github.com/mozanunal target=_blank rel=me>
-github
-</a>
-</nav>
-</div>
-</header>
-<main class="prose prose-neutral relative mx-auto min-h-[calc(100%-9rem)] max-w-3xl px-8 pb-16 pt-12 dark:prose-invert">
-<article>
-<header class=mb-16>
-<h1 class="!my-0 pb-2.5">[TR] Robot Kol</h1>
-<div class="text-sm antialiased opacity-60">
-<time>Jan 16, 2015</time>
+<script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-007KSW65JL",{anonymize_ip:!1})}</script><meta property="og:title" content="[TR] Robot Kol"><meta property="og:description" content="Merhabalar,
+Bugünkü yazımda yaptığım robot koldan bahsedeceğim. Robot kolum Arduino kontrollü. Mekanik aksamında 4 adet servo kullandım. Alt kısmını 2 eksenli mini kamera gimbalinden yaptım. Kalan kısmı ise plastik bir kapı keserek yaptım. Servoları plastik parçalara vidaladım. Kullandığım servolar 9 gramlık mikro servolar. Verebilecekleri tork 1.8 kg.cm . Ben robot kola kesme şeker ve kalemtıraş gibi küçük nesneler taşıttım. Onlar için yeterli oldu. Kolun kontrolü için 2 tane 2 eksenli joystick kullandım."><meta property="og:type" content="article"><meta property="og:url" content="https://mozanunal.com/2015/01/robot-kol/"><meta property="article:section" content="posts"><meta property="article:published_time" content="2015-01-16T15:07:00+00:00"><meta property="article:modified_time" content="2015-01-16T15:07:00+00:00"><meta itemprop=name content="[TR] Robot Kol"><meta itemprop=description content="Merhabalar,
+Bugünkü yazımda yaptığım robot koldan bahsedeceğim. Robot kolum Arduino kontrollü. Mekanik aksamında 4 adet servo kullandım. Alt kısmını 2 eksenli mini kamera gimbalinden yaptım. Kalan kısmı ise plastik bir kapı keserek yaptım. Servoları plastik parçalara vidaladım. Kullandığım servolar 9 gramlık mikro servolar. Verebilecekleri tork 1.8 kg.cm . Ben robot kola kesme şeker ve kalemtıraş gibi küçük nesneler taşıttım. Onlar için yeterli oldu. Kolun kontrolü için 2 tane 2 eksenli joystick kullandım."><meta itemprop=datePublished content="2015-01-16T15:07:00+00:00"><meta itemprop=dateModified content="2015-01-16T15:07:00+00:00"><meta itemprop=wordCount content="114"><meta itemprop=keywords content="Electronics,Arduino,Arduino,arduino servo kontrol,Arduino Robotik Kol,Arduino Robotik Kontrol,DIY Robotic Hand,"><meta name=twitter:card content="summary"><meta name=twitter:title content="[TR] Robot Kol"><meta name=twitter:description content="Merhabalar,
+Bugünkü yazımda yaptığım robot koldan bahsedeceğim. Robot kolum Arduino kontrollü. Mekanik aksamında 4 adet servo kullandım. Alt kısmını 2 eksenli mini kamera gimbalinden yaptım. Kalan kısmı ise plastik bir kapı keserek yaptım. Servoları plastik parçalara vidaladım. Kullandığım servolar 9 gramlık mikro servolar. Verebilecekleri tork 1.8 kg.cm . Ben robot kola kesme şeker ve kalemtıraş gibi küçük nesneler taşıttım. Onlar için yeterli oldu. Kolun kontrolü için 2 tane 2 eksenli joystick kullandım."></head><body class="text-black duration-200 ease-out dark:text-white"><header class="mx-auto flex h-[4.5rem] max-w-3xl px-8 lg:justify-center"><div class="relative z-50 mr-auto flex items-center"><a class="-translate-x-[1px] -translate-y-[1px] text-2xl font-semibold" href=https://mozanunal.com/>Mehmet Ozan Ünal</a><div class="btn-dark text-[0] ml-4 h-6 w-6 shrink-0 cursor-pointer [background:url(./theme.svg)_left_center/cover_no-repeat] dark:invert dark:[background-position:right]" role=button aria-label=Dark></div></div><div class="btn-menu relative z-50 -mr-8 flex h-[4.5rem] w-[5rem] shrink-0 cursor-pointer flex-col items-center justify-center gap-2.5 lg:hidden" role=button aria-label=Menu></div><script>const htmlClass=document.documentElement.classList;setTimeout(()=>{htmlClass.remove("not-ready")},10);const btnMenu=document.querySelector(".btn-menu");btnMenu.addEventListener("click",()=>{htmlClass.toggle("open")});const metaTheme=document.querySelector('meta[name="theme-color"]'),lightBg="#fbfbfb".replace(/"/g,''),setDark=e=>{metaTheme.setAttribute("content",e?"#000":lightBg),htmlClass[e?"add":"remove"]("dark"),localStorage.setItem("dark",e)},darkScheme=window.matchMedia("(prefers-color-scheme: dark)");if(htmlClass.contains("dark"))setDark(!0);else{const e=localStorage.getItem("dark");setDark(e?e==="true":darkScheme.matches)}darkScheme.addEventListener("change",e=>{setDark(e.matches)});const btnDark=document.querySelector(".btn-dark");btnDark.addEventListener("click",()=>{setDark(localStorage.getItem("dark")!=="true")})</script><div class="nav-wrapper fixed inset-x-0 top-full z-40 flex h-full select-none flex-col justify-center pb-16 duration-200 dark:bg-black lg:static lg:h-auto lg:flex-row lg:!bg-transparent lg:pb-0 lg:transition-none"><nav class="lg:ml-12 lg:flex lg:flex-row lg:items-center lg:space-x-6"><a class="block text-center text-2xl leading-[5rem] lg:text-base lg:font-normal" href=/about/>About</a>
+<a class="block text-center text-2xl leading-[5rem] lg:text-base lg:font-normal" href=/contact/>Contact</a></nav><nav class="mt-12 flex justify-center space-x-10 dark:invert lg:ml-12 lg:mt-0 lg:items-center lg:space-x-6"><a class="h-8 w-8 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6" style=--url:url(./twitter.svg) href=https://twitter.com/MOzanUnal target=_blank rel=me>twitter</a>
+<a class="h-8 w-8 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6" style=--url:url(./github.svg) href=https://github.com/mozanunal target=_blank rel=me>github</a></nav></div></header><main class="prose prose-neutral relative mx-auto min-h-[calc(100%-9rem)] max-w-3xl px-8 pb-16 pt-12 dark:prose-invert"><article><header class=mb-16><h1 class="!my-0 pb-2.5">[TR] Robot Kol</h1><div class="text-sm antialiased opacity-60"><time>Jan 16, 2015</time>
 <span class=mx-1>&#183;</span>
-<span>Mehmet Ozan Ünal</span>
-</div>
-</header>
-<section><p><strong>Merhabalar,</strong><br>
-      Bugünkü yazımda yaptığım robot koldan bahsedeceğim. Robot kolum Arduino kontrollü. Mekanik aksamında 4 adet servo kullandım. Alt kısmını 2 eksenli mini kamera gimbalinden yaptım. Kalan kısmı ise plastik bir kapı keserek yaptım. Servoları plastik parçalara vidaladım. Kullandığım servolar 9 gramlık mikro servolar. Verebilecekleri tork 1.8 kg.cm . Ben robot kola kesme şeker ve kalemtıraş gibi küçük nesneler taşıttım. Onlar için yeterli oldu. Kolun kontrolü için 2 tane 2 eksenli joystick kullandım. Arduinonun 4 analog pininden joystickleri bağladım. 4 servonun kontrolü için de 4 dijital pini kullandım. Tutma mekanizması olarak ise ataçtan bir kıskaç yaptım. Servolara güç uygulatıp sıkıştırınca esnekliği sayesinde oldukça iyi sonuç verdi. Aşağıda resimleri ve tanıtım videosu bulunmaktadır. Tekrar görüşmek üzere.</p>
-<div style=position:relative;padding-bottom:56.25%;height:0;overflow:hidden>
-<iframe src=https://www.youtube-nocookie.com/embed/OwPbECn37NQ style=position:absolute;top:0;left:0;width:100%;height:100%;border:0 allowfullscreen title="YouTube Video"></iframe>
-</div>
-<p><img src=https://4.bp.blogspot.com/-PxW1bFX5pFU/VLj81heA3KI/AAAAAAAAGt0/htv3W6Wvf54/s720/IMG_20150115_210717.jpg alt></p>
-<p><img src=https://2.bp.blogspot.com/-JLOczQ5BzVU/VLj9B0cViSI/AAAAAAAAGt8/m7YCB8hxfUg/s720/IMG_20150115_210751.jpg alt></p>
-<p><img src=https://4.bp.blogspot.com/-4KueUkTjHLs/VLj9LqZ8jaI/AAAAAAAAGuU/lLBYnnLPDes/s720/IMG_20150115_212457.jpg alt></p>
-</section>
-<footer class="mt-12 flex flex-wrap">
-<a class="mb-1.5 mr-1.5 rounded-lg bg-black/[3%] px-5 py-1.5 no-underline dark:bg-white/[8%]" href=https://mozanunal.com/tags/electronics>Electronics</a>
+<span>Mehmet Ozan Ünal</span></div></header><section><p><strong>Merhabalar,</strong><br>      Bugünkü yazımda yaptığım robot koldan bahsedeceğim. Robot kolum Arduino kontrollü. Mekanik aksamında 4 adet servo kullandım. Alt kısmını 2 eksenli mini kamera gimbalinden yaptım. Kalan kısmı ise plastik bir kapı keserek yaptım. Servoları plastik parçalara vidaladım. Kullandığım servolar 9 gramlık mikro servolar. Verebilecekleri tork 1.8 kg.cm . Ben robot kola kesme şeker ve kalemtıraş gibi küçük nesneler taşıttım. Onlar için yeterli oldu. Kolun kontrolü için 2 tane 2 eksenli joystick kullandım. Arduinonun 4 analog pininden joystickleri bağladım. 4 servonun kontrolü için de 4 dijital pini kullandım. Tutma mekanizması olarak ise ataçtan bir kıskaç yaptım. Servolara güç uygulatıp sıkıştırınca esnekliği sayesinde oldukça iyi sonuç verdi. Aşağıda resimleri ve tanıtım videosu bulunmaktadır. Tekrar görüşmek üzere.</p><div style=position:relative;padding-bottom:56.25%;height:0;overflow:hidden><iframe src=https://www.youtube-nocookie.com/embed/OwPbECn37NQ style=position:absolute;top:0;left:0;width:100%;height:100%;border:0 allowfullscreen title="YouTube Video"></iframe></div><p><img src=https://4.bp.blogspot.com/-PxW1bFX5pFU/VLj81heA3KI/AAAAAAAAGt0/htv3W6Wvf54/s720/IMG_20150115_210717.jpg alt></p><p><img src=https://2.bp.blogspot.com/-JLOczQ5BzVU/VLj9B0cViSI/AAAAAAAAGt8/m7YCB8hxfUg/s720/IMG_20150115_210751.jpg alt></p><p><img src=https://4.bp.blogspot.com/-4KueUkTjHLs/VLj9LqZ8jaI/AAAAAAAAGuU/lLBYnnLPDes/s720/IMG_20150115_212457.jpg alt></p></section><footer class="mt-12 flex flex-wrap"><a class="mb-1.5 mr-1.5 rounded-lg bg-black/[3%] px-5 py-1.5 no-underline dark:bg-white/[8%]" href=https://mozanunal.com/tags/electronics>Electronics</a>
 <a class="mb-1.5 mr-1.5 rounded-lg bg-black/[3%] px-5 py-1.5 no-underline dark:bg-white/[8%]" href=https://mozanunal.com/tags/arduino>Arduino</a>
 <a class="mb-1.5 mr-1.5 rounded-lg bg-black/[3%] px-5 py-1.5 no-underline dark:bg-white/[8%]" href=https://mozanunal.com/tags/arduino>Arduino</a>
 <a class="mb-1.5 mr-1.5 rounded-lg bg-black/[3%] px-5 py-1.5 no-underline dark:bg-white/[8%]" href=https://mozanunal.com/tags/arduino-servo-kontrol>arduino servo kontrol</a>
 <a class="mb-1.5 mr-1.5 rounded-lg bg-black/[3%] px-5 py-1.5 no-underline dark:bg-white/[8%]" href=https://mozanunal.com/tags/arduino-robotik-kol>Arduino Robotik Kol</a>
 <a class="mb-1.5 mr-1.5 rounded-lg bg-black/[3%] px-5 py-1.5 no-underline dark:bg-white/[8%]" href=https://mozanunal.com/tags/arduino-robotik-kontrol>Arduino Robotik Kontrol</a>
-<a class="mb-1.5 mr-1.5 rounded-lg bg-black/[3%] px-5 py-1.5 no-underline dark:bg-white/[8%]" href=https://mozanunal.com/tags/diy-robotic-hand>DIY Robotic Hand</a>
-</footer>
-<nav class="mt-24 flex rounded-lg bg-black/[3%] text-lg dark:bg-white/[8%]">
-<a class="flex w-1/2 items-center rounded-l-md p-6 pr-3 font-semibold no-underline hover:bg-black/[2%] dark:hover:bg-white/[3%]" href=https://mozanunal.com/2015/01/arduino-ile-super-mario-melodisi-calmak/><span class=mr-1.5>←</span><span>[TR] Arduino İle Super Mario Melodisi Çalmak</span></a>
-<a class="ml-auto flex w-1/2 items-center justify-end rounded-r-md p-6 pl-3 font-semibold no-underline hover:bg-black/[2%] dark:hover:bg-white/[3%]" href=https://mozanunal.com/2015/01/lm78xx-voltaj-regulatoru-entegrelerini/><span>[TR] LM78XX Voltaj Regülatörü Entegrelerini Kullanma</span><span class=ml-1.5>→</span></a>
-</nav>
-</article>
-</main>
-<footer class="opaco mx-auto flex h-[4.5rem] max-w-3xl items-center px-8 text-[0.9em] opacity-60">
-<div class=mr-auto>
-&copy; 2023
-<a class=link href=https://mozanunal.com/>Mehmet Ozan Ünal</a>
-</div>
-<a class="link mx-6" href=https://gohugo.io/ rel=noopener target=_blank>Powered by Hugo️️</a>️
-<a class=link href=https://github.com/nanxiaobei/hugo-paper rel=noopener target=_blank>✎ Paper</a>
-</footer>
-</body>
-</html>
+<a class="mb-1.5 mr-1.5 rounded-lg bg-black/[3%] px-5 py-1.5 no-underline dark:bg-white/[8%]" href=https://mozanunal.com/tags/diy-robotic-hand>DIY Robotic Hand</a></footer><nav class="mt-24 flex rounded-lg bg-black/[3%] text-lg dark:bg-white/[8%]"><a class="flex w-1/2 items-center rounded-l-md p-6 pr-3 font-semibold no-underline hover:bg-black/[2%] dark:hover:bg-white/[3%]" href=https://mozanunal.com/2015/01/arduino-ile-super-mario-melodisi-calmak/><span class=mr-1.5>←</span><span>[TR] Arduino İle Super Mario Melodisi Çalmak</span></a>
+<a class="ml-auto flex w-1/2 items-center justify-end rounded-r-md p-6 pl-3 font-semibold no-underline hover:bg-black/[2%] dark:hover:bg-white/[3%]" href=https://mozanunal.com/2015/01/lm78xx-voltaj-regulatoru-entegrelerini/><span>[TR] LM78XX Voltaj Regülatörü Entegrelerini Kullanma</span><span class=ml-1.5>→</span></a></nav></article></main><footer class="opaco mx-auto flex h-[4.5rem] max-w-3xl items-center px-8 text-[0.9em] opacity-60"><div class=mr-auto>&copy; 2023
+<a class=link href=https://mozanunal.com/>Mehmet Ozan Ünal</a></div><a class="link mx-6" href=https://gohugo.io/ rel=noopener target=_blank>Powered by Hugo️️</a>️
+<a class=link href=https://github.com/nanxiaobei/hugo-paper rel=noopener target=_blank>✎ Paper</a></footer></body></html>

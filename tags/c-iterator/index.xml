@@ -2,4 +2,4 @@
 Just a quick post here&amp;hellip;
 Today I have seen a code snippet which makes me quite happy.
 #include &amp;lt;stdio.h&amp;gt;int main() { int x = 10; while (x --&amp;gt; 0) // x goes to 0 { printf(&amp;#34;%d &amp;#34;, x); } } The the output of this is:
-9 8 7 6 5 4 3 2 1 0 It was a little suprising for me at first sight. I thought that what the hell is --&amp;gt; operator.</description></item></channel></rss>
+9 8 7 6 5 4 3 2 1 0 It was a little suprising for me at first sight.</description></item></channel></rss>

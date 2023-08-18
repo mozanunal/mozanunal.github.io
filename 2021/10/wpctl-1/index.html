@@ -1,166 +1,42 @@
-<!doctype html><html class="not-ready lg:text-base" style=--bg:#fbfbfb lang=en>
-<head>
-<meta charset=utf-8>
-<meta http-equiv=x-ua-compatible content="IE=edge">
-<meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
-<title>Wallpaper Automation Tool: WPCTL - Mehmet Ozan Ünal</title>
-<meta name=theme-color>
-<meta name=description content="Hey,
-Today I will come up with a very minimalistic wallpaper automation tool WPCTL. I spend most of my time on the computer. There are not too many options to have fun with while working on the computer. Interesting and colorful photos are one of the favorite entertainment sources for my daily routine. Therefore, I really like auto wallpaper changer programs which surprises me with different photos. I decided to use one of these programs.">
-<meta name=author content="Moz">
-<link rel="preload stylesheet" as=style href=https://mozanunal.com/main.min.css>
-<link rel=preload as=image href=https://mozanunal.com/theme.svg>
-<link rel=preload as=image href="https://www.gravatar.com/avatar/998cbd3ab655239d8be787580cce0415?s=160&d=identicon">
-<link rel=preload as=image href=https://mozanunal.com/twitter.svg>
-<link rel=preload as=image href=https://mozanunal.com/github.svg>
-<link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.css integrity=sha384-3UiQGuEI4TTMaFmGIZumfRPtfKQ3trwQE2JgosJxCnGmQpL/lJdjpcHkaaFwHlcI crossorigin=anonymous>
-<script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.js integrity=sha384-G0zcxDFp5LWZtDuRMnBkk3EphCK1lhEf4UEyEM693ka574TZGwo4IWwS6QLzM/2t crossorigin=anonymous></script>
+<!doctype html><html class="not-ready lg:text-base" style=--bg:#fbfbfb lang=en><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><title>Wallpaper Automation Tool: WPCTL - Mehmet Ozan Ünal</title><meta name=theme-color><meta name=description content="Hey,
+Today I will come up with a very minimalistic wallpaper automation tool WPCTL. I spend most of my time on the computer. There are not too many options to have fun with while working on the computer. Interesting and colorful photos are one of the favorite entertainment sources for my daily routine. Therefore, I really like auto wallpaper changer programs which surprises me with different photos. I decided to use one of these programs."><meta name=author content="Moz"><link rel="preload stylesheet" as=style href=https://mozanunal.com/main.min.css><link rel=preload as=image href=https://mozanunal.com/theme.svg><link rel=preload as=image href="https://www.gravatar.com/avatar/998cbd3ab655239d8be787580cce0415?s=160&d=identicon"><link rel=preload as=image href=https://mozanunal.com/twitter.svg><link rel=preload as=image href=https://mozanunal.com/github.svg><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.css integrity=sha384-3UiQGuEI4TTMaFmGIZumfRPtfKQ3trwQE2JgosJxCnGmQpL/lJdjpcHkaaFwHlcI crossorigin=anonymous><script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.js integrity=sha384-G0zcxDFp5LWZtDuRMnBkk3EphCK1lhEf4UEyEM693ka574TZGwo4IWwS6QLzM/2t crossorigin=anonymous></script>
 <script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/contrib/auto-render.min.js integrity=sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05 crossorigin=anonymous onload=renderMathInElement(document.body)></script>
-<link rel=icon href=https://mozanunal.com/favicon.ico>
-<link rel=apple-touch-icon href=https://mozanunal.com/apple-touch-icon.png>
-<meta name=generator content="Hugo 0.92.2">
-<script type=application/javascript>var doNotTrack=!1;doNotTrack||(window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga('create','G-007KSW65JL','auto'),ga('send','pageview'))</script>
-<script async src=https://www.google-analytics.com/analytics.js></script>
+<link rel=icon href=https://mozanunal.com/favicon.ico><link rel=apple-touch-icon href=https://mozanunal.com/apple-touch-icon.png><meta name=generator content="Hugo 0.98.0"><script type=application/javascript>var doNotTrack=!1;doNotTrack||(window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","G-007KSW65JL","auto"),ga("send","pageview"))</script><script async src=https://www.google-analytics.com/analytics.js></script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-007KSW65JL"></script>
-<script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-007KSW65JL',{anonymize_ip:!1})}</script>
-<meta property="og:title" content="Wallpaper Automation Tool: WPCTL">
-<meta property="og:description" content="Hey,
-Today I will come up with a very minimalistic wallpaper automation tool WPCTL. I spend most of my time on the computer. There are not too many options to have fun with while working on the computer. Interesting and colorful photos are one of the favorite entertainment sources for my daily routine. Therefore, I really like auto wallpaper changer programs which surprises me with different photos. I decided to use one of these programs.">
-<meta property="og:type" content="article">
-<meta property="og:url" content="https://mozanunal.com/2021/10/wpctl-1/"><meta property="article:section" content="posts">
-<meta property="article:published_time" content="2021-10-12T08:14:07+00:00">
-<meta property="article:modified_time" content="2021-10-12T08:14:07+00:00">
-<meta itemprop=name content="Wallpaper Automation Tool: WPCTL">
-<meta itemprop=description content="Hey,
-Today I will come up with a very minimalistic wallpaper automation tool WPCTL. I spend most of my time on the computer. There are not too many options to have fun with while working on the computer. Interesting and colorful photos are one of the favorite entertainment sources for my daily routine. Therefore, I really like auto wallpaper changer programs which surprises me with different photos. I decided to use one of these programs."><meta itemprop=datePublished content="2021-10-12T08:14:07+00:00">
-<meta itemprop=dateModified content="2021-10-12T08:14:07+00:00">
-<meta itemprop=wordCount content="464">
-<meta itemprop=keywords content="linux,yazilim,wallpaper,unsplash,bash script,ubuntu,">
-<meta name=twitter:card content="summary">
-<meta name=twitter:title content="Wallpaper Automation Tool: WPCTL">
-<meta name=twitter:description content="Hey,
-Today I will come up with a very minimalistic wallpaper automation tool WPCTL. I spend most of my time on the computer. There are not too many options to have fun with while working on the computer. Interesting and colorful photos are one of the favorite entertainment sources for my daily routine. Therefore, I really like auto wallpaper changer programs which surprises me with different photos. I decided to use one of these programs.">
-</head>
-<body class="text-black duration-200 ease-out dark:text-white">
-<header class="mx-auto flex h-[4.5rem] max-w-3xl px-8 lg:justify-center">
-<div class="relative z-50 mr-auto flex items-center">
-<a class="-translate-x-[1px] -translate-y-[1px] text-2xl font-semibold" href=https://mozanunal.com/>Mehmet Ozan Ünal</a>
-<div class="btn-dark text-[0] ml-4 h-6 w-6 shrink-0 cursor-pointer [background:url(./theme.svg)_left_center/cover_no-repeat] dark:invert dark:[background-position:right]" role=button aria-label=Dark></div>
-</div>
-<div class="btn-menu relative z-50 -mr-8 flex h-[4.5rem] w-[5rem] shrink-0 cursor-pointer flex-col items-center justify-center gap-2.5 lg:hidden" role=button aria-label=Menu></div>
-<script>const htmlClass=document.documentElement.classList;setTimeout(()=>{htmlClass.remove('not-ready')},10);const btnMenu=document.querySelector('.btn-menu');btnMenu.addEventListener('click',()=>{htmlClass.toggle('open')});const metaTheme=document.querySelector('meta[name="theme-color"]'),lightBg='#fbfbfb'.replace(/"/g,''),setDark=a=>{metaTheme.setAttribute('content',a?'#000':lightBg),htmlClass[a?'add':'remove']('dark'),localStorage.setItem('dark',a)},darkScheme=window.matchMedia('(prefers-color-scheme: dark)');if(htmlClass.contains('dark'))setDark(!0);else{const a=localStorage.getItem('dark');setDark(a?a==='true':darkScheme.matches)}darkScheme.addEventListener('change',a=>{setDark(a.matches)});const btnDark=document.querySelector('.btn-dark');btnDark.addEventListener('click',()=>{setDark(localStorage.getItem('dark')!=='true')})</script>
-<div class="nav-wrapper fixed inset-x-0 top-full z-40 flex h-full select-none flex-col justify-center pb-16 duration-200 dark:bg-black lg:static lg:h-auto lg:flex-row lg:!bg-transparent lg:pb-0 lg:transition-none">
-<nav class="lg:ml-12 lg:flex lg:flex-row lg:items-center lg:space-x-6">
-<a class="block text-center text-2xl leading-[5rem] lg:text-base lg:font-normal" href=/about/>About</a>
-<a class="block text-center text-2xl leading-[5rem] lg:text-base lg:font-normal" href=/contact/>Contact</a>
-</nav>
-<nav class="mt-12 flex justify-center space-x-10 dark:invert lg:ml-12 lg:mt-0 lg:items-center lg:space-x-6">
-<a class="h-8 w-8 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6" style=--url:url(./twitter.svg) href=https://twitter.com/MOzanUnal target=_blank rel=me>
-twitter
-</a>
-<a class="h-8 w-8 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6" style=--url:url(./github.svg) href=https://github.com/mozanunal target=_blank rel=me>
-github
-</a>
-</nav>
-</div>
-</header>
-<main class="prose prose-neutral relative mx-auto min-h-[calc(100%-9rem)] max-w-3xl px-8 pb-16 pt-12 dark:prose-invert">
-<article>
-<header class=mb-16>
-<h1 class="!my-0 pb-2.5">Wallpaper Automation Tool: WPCTL</h1>
-<div class="text-sm antialiased opacity-60">
-<time>Oct 12, 2021</time>
-</div>
-</header>
-<section><p>Hey,</p>
-<p>Today I will come up with a very minimalistic wallpaper automation tool <a href=https://github.com/mozanunal/wpctl><strong>WPCTL</strong></a>. I spend most of my time on the computer. There are not too many options to have fun with while working on the computer. Interesting and colorful photos are one of the favorite entertainment sources for my daily routine. Therefore, I really like auto wallpaper changer programs which surprises me with different photos. I decided to use one of these programs. However, none of them is fulfiled my requirements. I want a wallpaper changer which should be like:</p>
-<ul>
-<li>It must have <strong>beautifull image</strong> sources</li>
-<li>It should be <strong>configured easily</strong></li>
-<li>It should be <strong>lightweight</strong> and has <strong>minimal dependency</strong></li>
-<li>It should work with <strong>multi-monitor</strong> and different <strong>resolution</strong> options
-In a nutshell, I decided to develop a wallpaper changer script according to my requirements.</li>
-</ul>
-<p>I started with the image source for my script. There is a website called <em><a href=https://unsplash.com/>Unsplash</a></em> which is a photo sharing website. However, it has a unique feature which differ it from similar apps. It has a very nice and license free API. To keep application similar and with minimum dependency I have written it as a bash scripts. Basically, wpctl script, get image source as argument, read the monitor resolutions and contruct Unsplash url according to them. It download the images from the constructed url and set it as wallpaper using Gnome wallpaper controller. This script also can be add as crontab script. By this, your wallpaper can be changed at the frequency you want. For source there are also 4 options. Details are from readme of <a href=https://github.com/mozanunal/wpctl>Github repository</a>. See you!</p>
-<p><img src=/images/wallpaper.jpeg alt="Example Wallpaper from Unsplash"></p>
-<h1 id=wpctl>wpctl</h1>
-<p>Wallpaper Control is a minimalist wallpaaper automation tool for linux based on <a href=https://unsplash.com/>Unsplash</a></p>
-<h2 id=getting-started>Getting Started</h2>
-<p>It is working with Unsplash Api</p>
-<ul>
-<li>Minimalist 100 lines of code zero dependency</li>
-<li>Auto resolution detection</li>
-<li>Multi monitor handling</li>
-<li>Tested on Ubuntu 18.04 with GNOME Desktop</li>
-</ul>
-<h3 id=prerequisities>Prerequisities</h3>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sh data-lang=sh>sudo apt-get install wget notify-send
-</code></pre></div><h3 id=installing>Installing</h3>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sh data-lang=sh>sudo wget --quiet https://github.com/mozanunal/wpctl/releases/download/0.1.0/wpctl <span style=color:#f1fa8c>\
-</span><span style=color:#f1fa8c></span>          -O /usr/local/bin/wpctl <span style=color:#ff79c6>&amp;&amp;</span> <span style=color:#f1fa8c>\
-</span><span style=color:#f1fa8c></span>          sudo chmod +x /usr/local/bin/wpctl
-
-</code></pre></div><p>Try the application</p>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sh data-lang=sh>user@user:$ wpctl
-Please provide a valid wallpaper <span style=color:#8be9fd;font-style:italic>source</span>
-Usage:
-wpctl &lt;SOURCE&gt;
-       random
-       daily
-       collection
-       topic1,topic2
-user@user:$ wpctl random
---&gt; Random is selected as source.
-https://source.unsplash.com/random/1920x1080
---&gt; From <span style=color:#8be9fd;font-style:italic>source</span> <span style=color:#f1fa8c>&#39;random&#39;</span> wallpaper set. <span style=color:#bd93f9>1920</span> x <span style=color:#bd93f9>1080</span>
-</code></pre></div><p>Wallpapers can automatically updated using crontab. Write following command and add line according to your favorite configuration</p>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sh data-lang=sh>crontab -e
-</code></pre></div><p>Every hours pick a random wallpaper</p>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sh data-lang=sh><span style=color:#bd93f9>0</span> * * * * /usr/local/bin/wpctl random
-</code></pre></div><p>Every day get daily photo as wallpaper</p>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sh data-lang=sh><span style=color:#bd93f9>0</span> <span style=color:#bd93f9>10</span> * * * /usr/local/bin/wpctl daily
-</code></pre></div><p>Every 15 mins pick a cat image as your wallpaper</p>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sh data-lang=sh>*/15 * * * * /usr/local/bin/wpctl cat
-</code></pre></div><p>Every 3 hours pick a blue image as your wallpaper</p>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sh data-lang=sh><span style=color:#bd93f9>0</span> */3 * * * /usr/local/bin/wpctl blue
-</code></pre></div><h3 id=uninstalling>Uninstalling</h3>
-<p>Remove binaries</p>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sh data-lang=sh>sudo rm /usr/local/bin/wpctl
-</code></pre></div><p>Remove picture</p>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sh data-lang=sh>rm -rf <span style=color:#8be9fd;font-style:italic>$HOME</span>/wpctl
-</code></pre></div><h2 id=authors>Authors</h2>
-<ul>
-<li><strong>Mehmet Ozan Ünal</strong></li>
-</ul>
-<h2 id=license>License</h2>
-<ul>
-<li>MIT</li>
-</ul>
-<h2 id=acknowledgments>Acknowledgments</h2>
-<ul>
-<li><a href=https://unsplash.com/>Unsplash</a></li>
-</ul>
-</section>
-<footer class="mt-12 flex flex-wrap">
-<a class="mb-1.5 mr-1.5 rounded-lg bg-black/[3%] px-5 py-1.5 no-underline dark:bg-white/[8%]" href=https://mozanunal.com/tags/linux>linux</a>
+<script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-007KSW65JL",{anonymize_ip:!1})}</script><meta property="og:title" content="Wallpaper Automation Tool: WPCTL"><meta property="og:description" content="Hey,
+Today I will come up with a very minimalistic wallpaper automation tool WPCTL. I spend most of my time on the computer. There are not too many options to have fun with while working on the computer. Interesting and colorful photos are one of the favorite entertainment sources for my daily routine. Therefore, I really like auto wallpaper changer programs which surprises me with different photos. I decided to use one of these programs."><meta property="og:type" content="article"><meta property="og:url" content="https://mozanunal.com/2021/10/wpctl-1/"><meta property="article:section" content="posts"><meta property="article:published_time" content="2021-10-12T08:14:07+00:00"><meta property="article:modified_time" content="2021-10-12T08:14:07+00:00"><meta itemprop=name content="Wallpaper Automation Tool: WPCTL"><meta itemprop=description content="Hey,
+Today I will come up with a very minimalistic wallpaper automation tool WPCTL. I spend most of my time on the computer. There are not too many options to have fun with while working on the computer. Interesting and colorful photos are one of the favorite entertainment sources for my daily routine. Therefore, I really like auto wallpaper changer programs which surprises me with different photos. I decided to use one of these programs."><meta itemprop=datePublished content="2021-10-12T08:14:07+00:00"><meta itemprop=dateModified content="2021-10-12T08:14:07+00:00"><meta itemprop=wordCount content="464"><meta itemprop=keywords content="linux,yazilim,wallpaper,unsplash,bash script,ubuntu,"><meta name=twitter:card content="summary"><meta name=twitter:title content="Wallpaper Automation Tool: WPCTL"><meta name=twitter:description content="Hey,
+Today I will come up with a very minimalistic wallpaper automation tool WPCTL. I spend most of my time on the computer. There are not too many options to have fun with while working on the computer. Interesting and colorful photos are one of the favorite entertainment sources for my daily routine. Therefore, I really like auto wallpaper changer programs which surprises me with different photos. I decided to use one of these programs."></head><body class="text-black duration-200 ease-out dark:text-white"><header class="mx-auto flex h-[4.5rem] max-w-3xl px-8 lg:justify-center"><div class="relative z-50 mr-auto flex items-center"><a class="-translate-x-[1px] -translate-y-[1px] text-2xl font-semibold" href=https://mozanunal.com/>Mehmet Ozan Ünal</a><div class="btn-dark text-[0] ml-4 h-6 w-6 shrink-0 cursor-pointer [background:url(./theme.svg)_left_center/cover_no-repeat] dark:invert dark:[background-position:right]" role=button aria-label=Dark></div></div><div class="btn-menu relative z-50 -mr-8 flex h-[4.5rem] w-[5rem] shrink-0 cursor-pointer flex-col items-center justify-center gap-2.5 lg:hidden" role=button aria-label=Menu></div><script>const htmlClass=document.documentElement.classList;setTimeout(()=>{htmlClass.remove("not-ready")},10);const btnMenu=document.querySelector(".btn-menu");btnMenu.addEventListener("click",()=>{htmlClass.toggle("open")});const metaTheme=document.querySelector('meta[name="theme-color"]'),lightBg="#fbfbfb".replace(/"/g,''),setDark=e=>{metaTheme.setAttribute("content",e?"#000":lightBg),htmlClass[e?"add":"remove"]("dark"),localStorage.setItem("dark",e)},darkScheme=window.matchMedia("(prefers-color-scheme: dark)");if(htmlClass.contains("dark"))setDark(!0);else{const e=localStorage.getItem("dark");setDark(e?e==="true":darkScheme.matches)}darkScheme.addEventListener("change",e=>{setDark(e.matches)});const btnDark=document.querySelector(".btn-dark");btnDark.addEventListener("click",()=>{setDark(localStorage.getItem("dark")!=="true")})</script><div class="nav-wrapper fixed inset-x-0 top-full z-40 flex h-full select-none flex-col justify-center pb-16 duration-200 dark:bg-black lg:static lg:h-auto lg:flex-row lg:!bg-transparent lg:pb-0 lg:transition-none"><nav class="lg:ml-12 lg:flex lg:flex-row lg:items-center lg:space-x-6"><a class="block text-center text-2xl leading-[5rem] lg:text-base lg:font-normal" href=/about/>About</a>
+<a class="block text-center text-2xl leading-[5rem] lg:text-base lg:font-normal" href=/contact/>Contact</a></nav><nav class="mt-12 flex justify-center space-x-10 dark:invert lg:ml-12 lg:mt-0 lg:items-center lg:space-x-6"><a class="h-8 w-8 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6" style=--url:url(./twitter.svg) href=https://twitter.com/MOzanUnal target=_blank rel=me>twitter</a>
+<a class="h-8 w-8 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6" style=--url:url(./github.svg) href=https://github.com/mozanunal target=_blank rel=me>github</a></nav></div></header><main class="prose prose-neutral relative mx-auto min-h-[calc(100%-9rem)] max-w-3xl px-8 pb-16 pt-12 dark:prose-invert"><article><header class=mb-16><h1 class="!my-0 pb-2.5">Wallpaper Automation Tool: WPCTL</h1><div class="text-sm antialiased opacity-60"><time>Oct 12, 2021</time></div></header><section><p>Hey,</p><p>Today I will come up with a very minimalistic wallpaper automation tool <a href=https://github.com/mozanunal/wpctl><strong>WPCTL</strong></a>. I spend most of my time on the computer. There are not too many options to have fun with while working on the computer. Interesting and colorful photos are one of the favorite entertainment sources for my daily routine. Therefore, I really like auto wallpaper changer programs which surprises me with different photos. I decided to use one of these programs. However, none of them is fulfiled my requirements. I want a wallpaper changer which should be like:</p><ul><li>It must have <strong>beautifull image</strong> sources</li><li>It should be <strong>configured easily</strong></li><li>It should be <strong>lightweight</strong> and has <strong>minimal dependency</strong></li><li>It should work with <strong>multi-monitor</strong> and different <strong>resolution</strong> options
+In a nutshell, I decided to develop a wallpaper changer script according to my requirements.</li></ul><p>I started with the image source for my script. There is a website called <em><a href=https://unsplash.com/>Unsplash</a></em> which is a photo sharing website. However, it has a unique feature which differ it from similar apps. It has a very nice and license free API. To keep application similar and with minimum dependency I have written it as a bash scripts. Basically, wpctl script, get image source as argument, read the monitor resolutions and contruct Unsplash url according to them. It download the images from the constructed url and set it as wallpaper using Gnome wallpaper controller. This script also can be add as crontab script. By this, your wallpaper can be changed at the frequency you want. For source there are also 4 options. Details are from readme of <a href=https://github.com/mozanunal/wpctl>Github repository</a>. See you!</p><p><img src=/images/wallpaper.jpeg alt="Example Wallpaper from Unsplash"></p><h1 id=wpctl>wpctl</h1><p>Wallpaper Control is a minimalist wallpaaper automation tool for linux based on <a href=https://unsplash.com/>Unsplash</a></p><h2 id=getting-started>Getting Started</h2><p>It is working with Unsplash Api</p><ul><li>Minimalist 100 lines of code zero dependency</li><li>Auto resolution detection</li><li>Multi monitor handling</li><li>Tested on Ubuntu 18.04 with GNOME Desktop</li></ul><h3 id=prerequisities>Prerequisities</h3><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sh data-lang=sh><span style=display:flex><span>sudo apt-get install wget notify-send
+</span></span></code></pre></div><h3 id=installing>Installing</h3><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sh data-lang=sh><span style=display:flex><span>sudo wget --quiet https://github.com/mozanunal/wpctl/releases/download/0.1.0/wpctl <span style=color:#f1fa8c>\
+</span></span></span><span style=display:flex><span><span style=color:#f1fa8c></span>          -O /usr/local/bin/wpctl <span style=color:#ff79c6>&amp;&amp;</span> <span style=color:#f1fa8c>\
+</span></span></span><span style=display:flex><span><span style=color:#f1fa8c></span>          sudo chmod +x /usr/local/bin/wpctl
+</span></span></code></pre></div><p>Try the application</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sh data-lang=sh><span style=display:flex><span>user@user:$ wpctl
+</span></span><span style=display:flex><span>Please provide a valid wallpaper <span style=color:#8be9fd;font-style:italic>source</span>
+</span></span><span style=display:flex><span>Usage:
+</span></span><span style=display:flex><span>wpctl &lt;SOURCE&gt;
+</span></span><span style=display:flex><span>       random
+</span></span><span style=display:flex><span>       daily
+</span></span><span style=display:flex><span>       collection
+</span></span><span style=display:flex><span>       topic1,topic2
+</span></span><span style=display:flex><span>user@user:$ wpctl random
+</span></span><span style=display:flex><span>--&gt; Random is selected as source.
+</span></span><span style=display:flex><span>https://source.unsplash.com/random/1920x1080
+</span></span><span style=display:flex><span>--&gt; From <span style=color:#8be9fd;font-style:italic>source</span> <span style=color:#f1fa8c>&#39;random&#39;</span> wallpaper set. <span style=color:#bd93f9>1920</span> x <span style=color:#bd93f9>1080</span>
+</span></span></code></pre></div><p>Wallpapers can automatically updated using crontab. Write following command and add line according to your favorite configuration</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sh data-lang=sh><span style=display:flex><span>crontab -e
+</span></span></code></pre></div><p>Every hours pick a random wallpaper</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sh data-lang=sh><span style=display:flex><span><span style=color:#bd93f9>0</span> * * * * /usr/local/bin/wpctl random
+</span></span></code></pre></div><p>Every day get daily photo as wallpaper</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sh data-lang=sh><span style=display:flex><span><span style=color:#bd93f9>0</span> <span style=color:#bd93f9>10</span> * * * /usr/local/bin/wpctl daily
+</span></span></code></pre></div><p>Every 15 mins pick a cat image as your wallpaper</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sh data-lang=sh><span style=display:flex><span>*/15 * * * * /usr/local/bin/wpctl cat
+</span></span></code></pre></div><p>Every 3 hours pick a blue image as your wallpaper</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sh data-lang=sh><span style=display:flex><span><span style=color:#bd93f9>0</span> */3 * * * /usr/local/bin/wpctl blue
+</span></span></code></pre></div><h3 id=uninstalling>Uninstalling</h3><p>Remove binaries</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sh data-lang=sh><span style=display:flex><span>sudo rm /usr/local/bin/wpctl
+</span></span></code></pre></div><p>Remove picture</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sh data-lang=sh><span style=display:flex><span>rm -rf <span style=color:#8be9fd;font-style:italic>$HOME</span>/wpctl
+</span></span></code></pre></div><h2 id=authors>Authors</h2><ul><li><strong>Mehmet Ozan Ünal</strong></li></ul><h2 id=license>License</h2><ul><li>MIT</li></ul><h2 id=acknowledgments>Acknowledgments</h2><ul><li><a href=https://unsplash.com/>Unsplash</a></li></ul></section><footer class="mt-12 flex flex-wrap"><a class="mb-1.5 mr-1.5 rounded-lg bg-black/[3%] px-5 py-1.5 no-underline dark:bg-white/[8%]" href=https://mozanunal.com/tags/linux>linux</a>
 <a class="mb-1.5 mr-1.5 rounded-lg bg-black/[3%] px-5 py-1.5 no-underline dark:bg-white/[8%]" href=https://mozanunal.com/tags/yazilim>yazilim</a>
 <a class="mb-1.5 mr-1.5 rounded-lg bg-black/[3%] px-5 py-1.5 no-underline dark:bg-white/[8%]" href=https://mozanunal.com/tags/wallpaper>wallpaper</a>
 <a class="mb-1.5 mr-1.5 rounded-lg bg-black/[3%] px-5 py-1.5 no-underline dark:bg-white/[8%]" href=https://mozanunal.com/tags/unsplash>unsplash</a>
 <a class="mb-1.5 mr-1.5 rounded-lg bg-black/[3%] px-5 py-1.5 no-underline dark:bg-white/[8%]" href=https://mozanunal.com/tags/bash-script>bash script</a>
-<a class="mb-1.5 mr-1.5 rounded-lg bg-black/[3%] px-5 py-1.5 no-underline dark:bg-white/[8%]" href=https://mozanunal.com/tags/ubuntu>ubuntu</a>
-</footer>
-<nav class="mt-24 flex rounded-lg bg-black/[3%] text-lg dark:bg-white/[8%]">
-<a class="ml-auto flex w-1/2 items-center justify-end rounded-r-md p-6 pl-3 font-semibold no-underline hover:bg-black/[2%] dark:hover:bg-white/[3%]" href=https://mozanunal.com/2020/06/randomness/><span>Rambling On Randomness</span><span class=ml-1.5>→</span></a>
-</nav>
-</article>
-</main>
-<footer class="opaco mx-auto flex h-[4.5rem] max-w-3xl items-center px-8 text-[0.9em] opacity-60">
-<div class=mr-auto>
-&copy; 2023
-<a class=link href=https://mozanunal.com/>Mehmet Ozan Ünal</a>
-</div>
-<a class="link mx-6" href=https://gohugo.io/ rel=noopener target=_blank>Powered by Hugo️️</a>️
-<a class=link href=https://github.com/nanxiaobei/hugo-paper rel=noopener target=_blank>✎ Paper</a>
-</footer>
-</body>
-</html>
+<a class="mb-1.5 mr-1.5 rounded-lg bg-black/[3%] px-5 py-1.5 no-underline dark:bg-white/[8%]" href=https://mozanunal.com/tags/ubuntu>ubuntu</a></footer><nav class="mt-24 flex rounded-lg bg-black/[3%] text-lg dark:bg-white/[8%]"><a class="ml-auto flex w-1/2 items-center justify-end rounded-r-md p-6 pl-3 font-semibold no-underline hover:bg-black/[2%] dark:hover:bg-white/[3%]" href=https://mozanunal.com/2020/06/randomness/><span>Rambling On Randomness</span><span class=ml-1.5>→</span></a></nav></article></main><footer class="opaco mx-auto flex h-[4.5rem] max-w-3xl items-center px-8 text-[0.9em] opacity-60"><div class=mr-auto>&copy; 2023
+<a class=link href=https://mozanunal.com/>Mehmet Ozan Ünal</a></div><a class="link mx-6" href=https://gohugo.io/ rel=noopener target=_blank>Powered by Hugo️️</a>️
+<a class=link href=https://github.com/nanxiaobei/hugo-paper rel=noopener target=_blank>✎ Paper</a></footer></body></html>
