@@ -30,7 +30,7 @@ Where: C is a constant, Fn is the cumulative distribution function, and \\(\thet
 
 ## Gödel's Incompleteness Theorems
 
-It is not possible at all to say is a finite series of numbers is random or not. It is a consequence of the Gödel's incompleteness theorems [^Arbib, 1987]. For example, if there is a number generators which creates numbers from 1 to 10 and it is creating the sequence of "2 2 2 2 2 2 2 2". However it still can be the part of a random series and you just saw a lucky (unlucky) sequence. On the other hand "4,9,1,5,5,7,2,1,1,9,5,6" is not also indicates randomness. Our source could following a certain sequence and it start to repeat after $(n+1)_th$ step.  
+It is not possible at all to say is a finite series of numbers is random or not. It is a consequence of the Gödel's incompleteness theorems [^Arbib, 1987]. For example, if there is a number generators which creates numbers from 1 to 10 and it is creating the sequence of "2 2 2 2 2 2 2 2". However it still can be the part of a random series and you just saw a lucky (unlucky) sequence. On the other hand "4,9,1,5,5,7,2,1,1,9,5,6" is not also indicates randomness. Our source could following a certain sequence and it start to repeat after \\((n+1)^{th}\\) step.  
 
 # Practical Examples
 
