@@ -20,8 +20,7 @@ Bu yazımda size, daha önceden yapıp (lise yıllarımda), bloğa koymak icin t
 
 Projenin tanıtım videosu ve devresinin çizimi aşağıdadır. Tekrar görüşmek üzere...  
 
-{% youtube w-EO97_3_Ec %}
-
+{{< youtube id="w-EO97_3_Ec" >}}
 ![](https://1.bp.blogspot.com/-BBaMnNWpwWk/VDLekKoQj1I/AAAAAAAAEX0/FdT7mk9ur0A/s1600/IMG_20141005_174701.jpg)
 
 ** Malzeme Listesi**

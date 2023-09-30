@@ -204,16 +204,8 @@ GoT Theme
 --------------
 ```
 
-
 ## Built With
 
 * [Python](https://python.org/) Python <3
 * [musthe](https://github.com/gciruelos/musthe) Music Theory Implementation
 
-## Contributing
-
-Please feel yourself free to add new instruments or new tricks to this mini script.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
