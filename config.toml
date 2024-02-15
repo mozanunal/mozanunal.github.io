@@ -1,8 +1,8 @@
 baseURL = "https://mozanunal.com/"
 # title = "Hugo Themes"
 author = "Mehmet Ozan Ünal"
-copyright = "Copyright © 2014–2023"
-paginate = 20
+copyright = "Copyright © 2014–2024"
+paginate = 40
 languageCode = "en"
 
 googleAnalytics = 'G-007KSW65JL'
@@ -28,7 +28,7 @@ title = "Mehmet Ozan Ünal"
 
   avatar = 'mehmetozanunal@gmail.com'
   name = 'Moz'
-  bio = 'Data / ML Engineer. Interested in big data and deep learning. Lover of Linux, Python, Scala'
+  bio = 'ML & Data Engineer. Expertise in big data and deep learning'
   disableHLJS = true
   monoDarkIcon = true
   math = true
