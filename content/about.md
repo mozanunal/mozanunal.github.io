@@ -5,7 +5,7 @@ date: 2019-08-12 11:29:30
 
 **Hello Everyone!**
 
-I am Moz. I am a data Engineer with 6+ more years of experience in transforming business requirements into analytical models, designing algorithms, building models, developing data mining and reporting solutions that scale across a massive volume of structured and unstructured data, and expertise working in various industries.
+I am M.Ozan. I am a data Engineer with 6+ more years of experience in transforming business requirements into analytical models, designing algorithms, building models, developing data mining and reporting solutions that scale across a massive volume of structured and unstructured data, and expertise working in various industries.
 
 ### Skills
 **Data Engineering:** 
