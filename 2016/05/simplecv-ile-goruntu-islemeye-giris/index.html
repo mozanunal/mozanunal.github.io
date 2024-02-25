@@ -1,360 +1,455 @@
-<!doctype html><html class="not-ready lg:text-base" style=--bg:#fbfbfb lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><title>[TR] SimpleCV ile Görüntü İşlemeye Giriş - Mehmet Ozan Ünal</title>
-<meta name=theme-color><meta name=description content="Herkese Merhabalar,
+<!doctype html><html class="not-ready lg:text-base" style=--bg:#fbfbfb lang=en>
+<head>
+<meta charset=utf-8>
+<meta http-equiv=x-ua-compatible content="IE=edge">
+<meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
+<title>[TR] SimpleCV ile Görüntü İşlemeye Giriş - Mehmet Ozan Ünal</title>
+<meta name=theme-color>
+<meta name=description content="Herkese Merhabalar,
 Görüntü işleme hızla popülerleşen ve gittikçe daha fazla üzerine projeler geliştirilen ve hatta hayatımızda kullandığımız araç gereçlerde kullanılan bir alan olmaya başladı. Bu durumda bir sürü insan bu konu üzerine bir şeyler yapmak istiyor fakat daha kurulum aşamasında veya kaynak yetersizliğinden dolayı bu ilgilerinden vazgeçiyorlar. Bu sorun için önerebileceğim bir çözüm var. SimpleCV!
 https://simplecv.org/download/
-SimpleCV görüntü işlemeyle alakalı paketlerin bir arada toplandığı bir python paketler bütünüdür. yukarıdaki linkten kurulum dosyasını indirip sadece bir kaç tık ile kurabilirsiniz."><meta name=author content="Mehmet Ozan Ünal"><link rel="preload stylesheet" as=style href=https://mozanunal.com/main.min.css><link rel=preload as=image href=https://mozanunal.com/theme.svg><link rel=preload as=image href="https://www.gravatar.com/avatar/998cbd3ab655239d8be787580cce0415?s=160&amp;d=identicon"><link rel=preload as=image href=https://mozanunal.com/twitter.svg><link rel=preload as=image href=https://mozanunal.com/github.svg><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.css integrity=sha384-3UiQGuEI4TTMaFmGIZumfRPtfKQ3trwQE2JgosJxCnGmQpL/lJdjpcHkaaFwHlcI crossorigin=anonymous><script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.js integrity=sha384-G0zcxDFp5LWZtDuRMnBkk3EphCK1lhEf4UEyEM693ka574TZGwo4IWwS6QLzM/2t crossorigin=anonymous></script><script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/contrib/auto-render.min.js integrity=sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05 crossorigin=anonymous onload=renderMathInElement(document.body)></script><link rel=icon href=https://mozanunal.com/favicon.ico><link rel=apple-touch-icon href=https://mozanunal.com/apple-touch-icon.png><meta name=generator content="Hugo 0.121.1"><script>var doNotTrack=!1;doNotTrack||(window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","G-007KSW65JL","auto"),ga("send","pageview"))</script><script async src=https://www.google-analytics.com/analytics.js></script><script async src="https://www.googletagmanager.com/gtag/js?id=G-007KSW65JL"></script><script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-007KSW65JL",{anonymize_ip:!1})}</script><meta property="og:title" content="[TR] SimpleCV ile Görüntü İşlemeye Giriş"><meta property="og:description" content="Herkese Merhabalar,
+SimpleCV görüntü işlemeyle alakalı paketlerin bir arada toplandığı bir python paketler bütünüdür. yukarıdaki linkten kurulum dosyasını indirip sadece bir kaç tık ile kurabilirsiniz.">
+<meta name=author content="Mehmet Ozan Ünal">
+<link rel="preload stylesheet" as=style href=https://mozanunal.com/main.min.css>
+<link rel=preload as=image href=https://mozanunal.com/theme.svg>
+<link rel=preload as=image href="https://www.gravatar.com/avatar/998cbd3ab655239d8be787580cce0415?s=160&d=identicon">
+<link rel=preload as=image href=https://mozanunal.com/twitter.svg>
+<link rel=preload as=image href=https://mozanunal.com/github.svg>
+<link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.css integrity=sha384-3UiQGuEI4TTMaFmGIZumfRPtfKQ3trwQE2JgosJxCnGmQpL/lJdjpcHkaaFwHlcI crossorigin=anonymous>
+<script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.js integrity=sha384-G0zcxDFp5LWZtDuRMnBkk3EphCK1lhEf4UEyEM693ka574TZGwo4IWwS6QLzM/2t crossorigin=anonymous></script>
+<script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/contrib/auto-render.min.js integrity=sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05 crossorigin=anonymous onload=renderMathInElement(document.body)></script>
+<link rel=icon href=https://mozanunal.com/favicon.ico>
+<link rel=apple-touch-icon href=https://mozanunal.com/apple-touch-icon.png>
+<meta name=generator content="Hugo 0.92.2">
+<script type=application/javascript>var doNotTrack=!1;doNotTrack||(window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga('create','G-007KSW65JL','auto'),ga('send','pageview'))</script>
+<script async src=https://www.google-analytics.com/analytics.js></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-007KSW65JL"></script>
+<script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-007KSW65JL',{anonymize_ip:!1})}</script>
+<meta property="og:title" content="[TR] SimpleCV ile Görüntü İşlemeye Giriş">
+<meta property="og:description" content="Herkese Merhabalar,
 Görüntü işleme hızla popülerleşen ve gittikçe daha fazla üzerine projeler geliştirilen ve hatta hayatımızda kullandığımız araç gereçlerde kullanılan bir alan olmaya başladı. Bu durumda bir sürü insan bu konu üzerine bir şeyler yapmak istiyor fakat daha kurulum aşamasında veya kaynak yetersizliğinden dolayı bu ilgilerinden vazgeçiyorlar. Bu sorun için önerebileceğim bir çözüm var. SimpleCV!
 https://simplecv.org/download/
-SimpleCV görüntü işlemeyle alakalı paketlerin bir arada toplandığı bir python paketler bütünüdür. yukarıdaki linkten kurulum dosyasını indirip sadece bir kaç tık ile kurabilirsiniz."><meta property="og:type" content="article"><meta property="og:url" content="https://mozanunal.com/2016/05/simplecv-ile-goruntu-islemeye-giris/"><meta property="article:section" content="posts"><meta property="article:published_time" content="2016-05-01T20:23:00+00:00"><meta property="article:modified_time" content="2016-05-01T20:23:00+00:00"><meta itemprop=name content="[TR] SimpleCV ile Görüntü İşlemeye Giriş"><meta itemprop=description content="Herkese Merhabalar,
+SimpleCV görüntü işlemeyle alakalı paketlerin bir arada toplandığı bir python paketler bütünüdür. yukarıdaki linkten kurulum dosyasını indirip sadece bir kaç tık ile kurabilirsiniz.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://mozanunal.com/2016/05/simplecv-ile-goruntu-islemeye-giris/"><meta property="article:section" content="posts">
+<meta property="article:published_time" content="2016-05-01T20:23:00+00:00">
+<meta property="article:modified_time" content="2016-05-01T20:23:00+00:00">
+<meta itemprop=name content="[TR] SimpleCV ile Görüntü İşlemeye Giriş">
+<meta itemprop=description content="Herkese Merhabalar,
 Görüntü işleme hızla popülerleşen ve gittikçe daha fazla üzerine projeler geliştirilen ve hatta hayatımızda kullandığımız araç gereçlerde kullanılan bir alan olmaya başladı. Bu durumda bir sürü insan bu konu üzerine bir şeyler yapmak istiyor fakat daha kurulum aşamasında veya kaynak yetersizliğinden dolayı bu ilgilerinden vazgeçiyorlar. Bu sorun için önerebileceğim bir çözüm var. SimpleCV!
 https://simplecv.org/download/
-SimpleCV görüntü işlemeyle alakalı paketlerin bir arada toplandığı bir python paketler bütünüdür. yukarıdaki linkten kurulum dosyasını indirip sadece bir kaç tık ile kurabilirsiniz."><meta itemprop=datePublished content="2016-05-01T20:23:00+00:00"><meta itemprop=dateModified content="2016-05-01T20:23:00+00:00"><meta itemprop=wordCount content="1274"><meta itemprop=keywords content="Image Processing,SimpleCV,"><meta name=twitter:card content="summary"><meta name=twitter:title content="[TR] SimpleCV ile Görüntü İşlemeye Giriş"><meta name=twitter:description content="Herkese Merhabalar,
+SimpleCV görüntü işlemeyle alakalı paketlerin bir arada toplandığı bir python paketler bütünüdür. yukarıdaki linkten kurulum dosyasını indirip sadece bir kaç tık ile kurabilirsiniz."><meta itemprop=datePublished content="2016-05-01T20:23:00+00:00">
+<meta itemprop=dateModified content="2016-05-01T20:23:00+00:00">
+<meta itemprop=wordCount content="1274">
+<meta itemprop=keywords content="Image Processing,SimpleCV,">
+<meta name=twitter:card content="summary">
+<meta name=twitter:title content="[TR] SimpleCV ile Görüntü İşlemeye Giriş">
+<meta name=twitter:description content="Herkese Merhabalar,
 Görüntü işleme hızla popülerleşen ve gittikçe daha fazla üzerine projeler geliştirilen ve hatta hayatımızda kullandığımız araç gereçlerde kullanılan bir alan olmaya başladı. Bu durumda bir sürü insan bu konu üzerine bir şeyler yapmak istiyor fakat daha kurulum aşamasında veya kaynak yetersizliğinden dolayı bu ilgilerinden vazgeçiyorlar. Bu sorun için önerebileceğim bir çözüm var. SimpleCV!
 https://simplecv.org/download/
-SimpleCV görüntü işlemeyle alakalı paketlerin bir arada toplandığı bir python paketler bütünüdür. yukarıdaki linkten kurulum dosyasını indirip sadece bir kaç tık ile kurabilirsiniz."></head><body class="text-black duration-200 ease-out dark:text-white"><header class="mx-auto flex h-[4.5rem] max-w-3xl px-8 lg:justify-center"><div class="relative z-50 mr-auto flex items-center"><a class="-translate-x-[1px] -translate-y-[1px] text-2xl font-semibold" href=https://mozanunal.com/>Mehmet Ozan Ünal</a><div class="btn-dark text-[0] ml-4 h-6 w-6 shrink-0 cursor-pointer [background:url(./theme.svg)_left_center/cover_no-repeat] dark:invert dark:[background-position:right]" role=button aria-label=Dark></div></div><div class="btn-menu relative z-50 -mr-8 flex h-[4.5rem] w-[5rem] shrink-0 cursor-pointer flex-col items-center justify-center gap-2.5 lg:hidden" role=button aria-label=Menu></div><script>const htmlClass=document.documentElement.classList;setTimeout(()=>{htmlClass.remove("not-ready")},10);const btnMenu=document.querySelector(".btn-menu");btnMenu.addEventListener("click",()=>{htmlClass.toggle("open")});const metaTheme=document.querySelector('meta[name="theme-color"]'),lightBg="#fbfbfb".replace(/"/g,""),setDark=e=>{metaTheme.setAttribute("content",e?"#000":lightBg),htmlClass[e?"add":"remove"]("dark"),localStorage.setItem("dark",e)},darkScheme=window.matchMedia("(prefers-color-scheme: dark)");if(htmlClass.contains("dark"))setDark(!0);else{const e=localStorage.getItem("dark");setDark(e?e==="true":darkScheme.matches)}darkScheme.addEventListener("change",e=>{setDark(e.matches)});const btnDark=document.querySelector(".btn-dark");btnDark.addEventListener("click",()=>{setDark(localStorage.getItem("dark")!=="true")})</script><div class="nav-wrapper fixed inset-x-0 top-full z-40 flex h-full select-none flex-col justify-center pb-16 duration-200 dark:bg-black lg:static lg:h-auto lg:flex-row lg:!bg-transparent lg:pb-0 lg:transition-none"><nav class="lg:ml-12 lg:flex lg:flex-row lg:items-center lg:space-x-6"><a class="block text-center text-2xl leading-[5rem] lg:text-base lg:font-normal" href=/about/>About</a>
-<a class="block text-center text-2xl leading-[5rem] lg:text-base lg:font-normal" href=/contact/>Contact</a></nav><nav class="mt-12 flex justify-center space-x-10 dark:invert lg:ml-12 lg:mt-0 lg:items-center lg:space-x-6"><a class="h-8 w-8 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6" style=--url:url(./twitter.svg) href=https://twitter.com/MOzanUnal target=_blank rel=me>twitter
-</a><a class="h-8 w-8 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6" style=--url:url(./github.svg) href=https://github.com/mozanunal target=_blank rel=me>github</a></nav></div></header><main class="prose prose-neutral relative mx-auto min-h-[calc(100%-9rem)] max-w-3xl px-8 pb-16 pt-12 dark:prose-invert"><article><header class=mb-16><h1 class="!my-0 pb-2.5">[TR] SimpleCV ile Görüntü İşlemeye Giriş</h1><div class="text-sm antialiased opacity-60"><time>May 1, 2016</time>
+SimpleCV görüntü işlemeyle alakalı paketlerin bir arada toplandığı bir python paketler bütünüdür. yukarıdaki linkten kurulum dosyasını indirip sadece bir kaç tık ile kurabilirsiniz.">
+</head>
+<body class="text-black duration-200 ease-out dark:text-white">
+<header class="mx-auto flex h-[4.5rem] max-w-3xl px-8 lg:justify-center">
+<div class="relative z-50 mr-auto flex items-center">
+<a class="-translate-x-[1px] -translate-y-[1px] text-2xl font-semibold" href=https://mozanunal.com/>Mehmet Ozan Ünal</a>
+<div class="btn-dark text-[0] ml-4 h-6 w-6 shrink-0 cursor-pointer [background:url(./theme.svg)_left_center/cover_no-repeat] dark:invert dark:[background-position:right]" role=button aria-label=Dark></div>
+</div>
+<div class="btn-menu relative z-50 -mr-8 flex h-[4.5rem] w-[5rem] shrink-0 cursor-pointer flex-col items-center justify-center gap-2.5 lg:hidden" role=button aria-label=Menu></div>
+<script>const htmlClass=document.documentElement.classList;setTimeout(()=>{htmlClass.remove('not-ready')},10);const btnMenu=document.querySelector('.btn-menu');btnMenu.addEventListener('click',()=>{htmlClass.toggle('open')});const metaTheme=document.querySelector('meta[name="theme-color"]'),lightBg='#fbfbfb'.replace(/"/g,''),setDark=a=>{metaTheme.setAttribute('content',a?'#000':lightBg),htmlClass[a?'add':'remove']('dark'),localStorage.setItem('dark',a)},darkScheme=window.matchMedia('(prefers-color-scheme: dark)');if(htmlClass.contains('dark'))setDark(!0);else{const a=localStorage.getItem('dark');setDark(a?a==='true':darkScheme.matches)}darkScheme.addEventListener('change',a=>{setDark(a.matches)});const btnDark=document.querySelector('.btn-dark');btnDark.addEventListener('click',()=>{setDark(localStorage.getItem('dark')!=='true')})</script>
+<div class="nav-wrapper fixed inset-x-0 top-full z-40 flex h-full select-none flex-col justify-center pb-16 duration-200 dark:bg-black lg:static lg:h-auto lg:flex-row lg:!bg-transparent lg:pb-0 lg:transition-none">
+<nav class="lg:ml-12 lg:flex lg:flex-row lg:items-center lg:space-x-6">
+<a class="block text-center text-2xl leading-[5rem] lg:text-base lg:font-normal" href=/about/>About</a>
+<a class="block text-center text-2xl leading-[5rem] lg:text-base lg:font-normal" href=/contact/>Contact</a>
+</nav>
+<nav class="mt-12 flex justify-center space-x-10 dark:invert lg:ml-12 lg:mt-0 lg:items-center lg:space-x-6">
+<a class="h-8 w-8 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6" style=--url:url(./twitter.svg) href=https://twitter.com/MOzanUnal target=_blank rel=me>
+twitter
+</a>
+<a class="h-8 w-8 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6" style=--url:url(./github.svg) href=https://github.com/mozanunal target=_blank rel=me>
+github
+</a>
+</nav>
+</div>
+</header>
+<main class="prose prose-neutral relative mx-auto min-h-[calc(100%-9rem)] max-w-3xl px-8 pb-16 pt-12 dark:prose-invert">
+<article>
+<header class=mb-16>
+<h1 class="!my-0 pb-2.5">[TR] SimpleCV ile Görüntü İşlemeye Giriş</h1>
+<div class="text-sm antialiased opacity-60">
+<time>May 1, 2016</time>
 <span class=mx-1>&#183;</span>
-<span>Mehmet Ozan Ünal</span></div></header><section><p><strong>Herkese Merhabalar,</strong><br>Görüntü işleme hızla popülerleşen ve gittikçe daha fazla üzerine projeler geliştirilen ve hatta hayatımızda kullandığımız araç gereçlerde kullanılan bir alan olmaya başladı. Bu durumda bir sürü insan bu konu üzerine bir şeyler yapmak istiyor fakat daha kurulum aşamasında veya kaynak yetersizliğinden dolayı bu ilgilerinden vazgeçiyorlar. Bu sorun için önerebileceğim bir çözüm var. SimpleCV!</p><p><a href=https://simplecv.org/download/>https://simplecv.org/download/</a></p><p><img src=https://2.bp.blogspot.com/-A3EQ_sYxKKk/VxNvyqTmt-I/AAAAAAAAZq4/piY02JIgXGUKU1iHwuqo3Kgev-zUjXvFACK4B/s640/Capture.PNG alt></p><p>SimpleCV görüntü işlemeyle alakalı paketlerin bir arada toplandığı bir python paketler bütünüdür. yukarıdaki linkten kurulum dosyasını indirip sadece bir kaç tık ile kurabilirsiniz.<br>SimpleCV ile yüklediğimiz paketler ise şöyle:</p><p><img src=https://4.bp.blogspot.com/-RzFG56nj0Bw/VyX8xjlS35I/AAAAAAAAZwY/o1BjczDB6IQlTLjJkDZf6By0s515sV64gCK4B/s640/Capture.PNG alt></p><p>Görüldüğü gibi Python&rsquo;un bile yüklü olmasına gerek yok ihtiyacımız olan tüm paketler bir kaç tık ile yükleniyor. Aşağıda basit bir SimpleCV kodu bulunmakta aynı zamanda aşağıdaki linklerden dökümantasyona ve örneklere bakabilirsiniz.<br><a href=https://simplecv.readthedocs.io/en/latest/>https://simplecv.readthedocs.io/en/latest/</a><br><a href=https://examples.simplecv.org/en/latest/>https://examples.simplecv.org/en/latest/</a></p><p>SimpleCV fonksiyonları ve kullanımları:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span><span style=color:#6272a4>#Reading an image</span>
-</span></span><span style=display:flex><span>Image(’lenna<span style=color:#ff79c6>.</span>png’)
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#6272a4>#Converting the image to RGB colorspace</span>
-</span></span><span style=display:flex><span>img<span style=color:#ff79c6>.</span>toRGB()
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#6272a4>#Converting the image to BGR colorspace</span>
-</span></span><span style=display:flex><span>img<span style=color:#ff79c6>.</span>toBGR()
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#6272a4>#Converting the image to HLS colorspace</span>
-</span></span><span style=display:flex><span>img<span style=color:#ff79c6>.</span>toHLS()
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#6272a4>#Converting the image to HSV colorspace</span>
-</span></span><span style=display:flex><span>img<span style=color:#ff79c6>.</span>toHSV()
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#6272a4>#Converting the image to XYZ colorspace</span>
-</span></span><span style=display:flex><span>img<span style=color:#ff79c6>.</span>toXYZ()
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#6272a4>#Converting the image to GRAY colorspace</span>
-</span></span><span style=display:flex><span>img<span style=color:#ff79c6>.</span>toGray()
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#6272a4>#Create a new, empty OpenCV bitmap</span>
-</span></span><span style=display:flex><span>img<span style=color:#ff79c6>.</span>getEmpty(channels)
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#6272a4>#Full copy of the  image</span>
-</span></span><span style=display:flex><span>img<span style=color:#ff79c6>.</span>copy()
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#6272a4>#Resize the image</span>
-</span></span><span style=display:flex><span>img<span style=color:#ff79c6>.</span>resize(x,y)
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#6272a4>#Invert image</span>
-</span></span><span style=display:flex><span>img<span style=color:#ff79c6>.</span>invert()
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#6272a4>#Horizontally mirror an image</span>
-</span></span><span style=display:flex><span>img<span style=color:#ff79c6>.</span>flipHorizontal()
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#6272a4>#Vertically mirror an image</span>
-</span></span><span style=display:flex><span>img<span style=color:#ff79c6>.</span>flipVertical()
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#6272a4>#Stretch  filter  on a greyscale image</span>
-</span></span><span style=display:flex><span>img<span style=color:#ff79c6>.</span>stretch(thresh low, thresh high)
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#6272a4>#Binary threshold</span>
-</span></span><span style=display:flex><span>img<span style=color:#ff79c6>.</span>binarize(thresh, maxv, blocksize, p)
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#6272a4>#Mean color of the  image</span>
-</span></span><span style=display:flex><span>img<span style=color:#ff79c6>.</span>meanColor()
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#6272a4>#Finds the FeatureSet strongest corners first</span>
-</span></span><span style=display:flex><span>img<span style=color:#ff79c6>.</span>findCorners(maxnum, minquality, mindistance)
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#6272a4>#Blobs are continuous light regions</span>
-</span></span><span style=display:flex><span>img<span style=color:#ff79c6>.</span>findBlobs(threshval, minsize, maxsize, threshblocksize, threshconstant)
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#6272a4>#Finding the location of a known object</span>
-</span></span><span style=display:flex><span>findHaarFeatures(self,  cascade, scale factor, <span style=color:#8be9fd;font-style:italic>min</span> neighbors, use canny)
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#6272a4>#Uploading the Image to Imgur or Flickr</span>
-</span></span><span style=display:flex><span>img<span style=color:#ff79c6>.</span>upload(dest,api key, api secret,verbose)
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#6272a4>#Smooth the image</span>
-</span></span><span style=display:flex><span>img<span style=color:#ff79c6>.</span>smooth(algorithm name, aperature, sigma, spatial sigma, grayscale)
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#6272a4>#Draw a circle on the Image</span>
-</span></span><span style=display:flex><span>img<span style=color:#ff79c6>.</span>drawCircle(ctr, rad, color, thickness)
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#6272a4>#Draw a line</span>
-</span></span><span style=display:flex><span>img<span style=color:#ff79c6>.</span>drawLine(pt1, pt2, color, thickness)
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#6272a4>#Size of image</span>
-</span></span><span style=display:flex><span>img<span style=color:#ff79c6>.</span>size()
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#6272a4>#Split the image into a series of image chunks</span>
-</span></span><span style=display:flex><span>img<span style=color:#ff79c6>.</span>split(cols, rows)
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#6272a4>#Images of R,G,B channels are recombined into a single image</span>
-</span></span><span style=display:flex><span>img<span style=color:#ff79c6>.</span>mergeChannels(r,b,g)
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#6272a4>#Apply a color correction curve in HSL space</span>
-</span></span><span style=display:flex><span>img<span style=color:#ff79c6>.</span>applyHLSCurve(hCurve, lCurve, sCurve)
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#6272a4>#Apply a color correction curve in RGB space</span>
-</span></span><span style=display:flex><span>img<span style=color:#ff79c6>.</span>applyRGBCurve(rCurve, gCurve, bCurve)
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#6272a4>#Applies Intensity to all three color channels</span>
-</span></span><span style=display:flex><span>img<span style=color:#ff79c6>.</span>applyIntensityCurve(curve)
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#6272a4>#Returns Image of the string</span>
-</span></span><span style=display:flex><span>img<span style=color:#ff79c6>.</span>toString()
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#6272a4>#Split the channels of an image into RGB</span>
-</span></span><span style=display:flex><span>img<span style=color:#ff79c6>.</span>splitChannels(grayscale)
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#6272a4>#Returns image representing the distance of each pixel from a given color tuple</span>
-</span></span><span style=display:flex><span>img<span style=color:#ff79c6>.</span>colorDistance(color)
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#6272a4>#Apply morphological erosion to a image</span>
-</span></span><span style=display:flex><span>img<span style=color:#ff79c6>.</span>erode(iterations)
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#6272a4>#Apply morphological dilation to a image</span>
-</span></span><span style=display:flex><span>img<span style=color:#ff79c6>.</span>dilate(iterations)
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#6272a4>#Histogram equalization on the image</span>
-</span></span><span style=display:flex><span>img<span style=color:#ff79c6>.</span>equalize()
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#6272a4>#Applies erosion operation followed by a morphological dilation</span>
-</span></span><span style=display:flex><span>img<span style=color:#ff79c6>.</span>morphOpen()
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#6272a4>#The difference between the morphological dilation and</span>
-</span></span><span style=display:flex><span>img<span style=color:#ff79c6>.</span>morphGradient()
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#6272a4>#the morphological gradient 1D </span>
-</span></span><span style=display:flex><span><span style=color:#6272a4>#histogram(numpy array) of intensity for pixels in the image</span>
-</span></span><span style=display:flex><span>img<span style=color:#ff79c6>.</span>histogram(numbins)
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#6272a4>#The histogram of the hue channel for the image</span>
-</span></span><span style=display:flex><span>img<span style=color:#ff79c6>.</span>hueHistogram(bins)
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#6272a4>#Returns the peak hue values histogram of hues</span>
-</span></span><span style=display:flex><span>img<span style=color:#ff79c6>.</span>huePeaks(bins)
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#6272a4>#Add two images</span>
-</span></span><span style=display:flex><span>img<span style=color:#ff79c6>.</span>add(other)
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#6272a4>#Subtract two images Or two images</span>
-</span></span><span style=display:flex><span>img<span style=color:#ff79c6>.</span>sub(other) img<span style=color:#ff79c6>.</span>  <span style=color:#ff79c6>or</span>  (other)
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#6272a4>#Image division operation taking two images as input</span>
-</span></span><span style=display:flex><span>img<span style=color:#ff79c6>.</span>div(other)
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#6272a4>#Raises every array element in image array to a power</span>
-</span></span><span style=display:flex><span>img<span style=color:#ff79c6>.</span>pow(other)
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#6272a4>#Finds 2d and 1d barcodes in the image</span>
-</span></span><span style=display:flex><span>img<span style=color:#ff79c6>.</span>findBarcode(zxing path)
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#6272a4>#Finds line segments in the image</span>
-</span></span><span style=display:flex><span>img<span style=color:#ff79c6>.</span>findLines(threshold,  minlinelength,maxlinegap, cannyth1, cannyth2)
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#6272a4>#Finds a chessboard within that image</span>
-</span></span><span style=display:flex><span>img<span style=color:#ff79c6>.</span>findChessboard(dimensions,  subpixel)
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#6272a4>#Canny edge detection method</span>
-</span></span><span style=display:flex><span>img<span style=color:#ff79c6>.</span>edges(t1, t2)
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#6272a4>#function rotates an image around a specific point</span>
-</span></span><span style=display:flex><span>img<span style=color:#ff79c6>.</span>rotate(angle, fixed, point, scale)
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#6272a4>#return a shear-ed image from the cornerpoints</span>
-</span></span><span style=display:flex><span>img<span style=color:#ff79c6>.</span>shear(cornerpoints)
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#6272a4>#Function for warp performs an affine rotation</span>
-</span></span><span style=display:flex><span>img<span style=color:#ff79c6>.</span>transformPerspective(rotMatrix)
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#6272a4>#Returns the RGB value for a particular image pixel</span>
-</span></span><span style=display:flex><span>img<span style=color:#ff79c6>.</span>getPixel(x, y)
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#6272a4>#Returns a single row of RGB values from the  image</span>
-</span></span><span style=display:flex><span>img<span style=color:#ff79c6>.</span>getHorzScanline(row)
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#6272a4>#Returns a single column of gray values from the  image</span>
-</span></span><span style=display:flex><span>getVertScanlineGray(column)
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#6272a4>#Returns a single row of gray values from the  image</span>
-</span></span><span style=display:flex><span>getHorzScanlineGray(row)
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#6272a4>#Crops the image based on parameters</span>
-</span></span><span style=display:flex><span>img<span style=color:#ff79c6>.</span>crop(x , y, w, h, centered)
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#6272a4>#Returns the selected region.</span>
-</span></span><span style=display:flex><span>img<span style=color:#ff79c6>.</span>regionSelect(x1, y1, x2, y2  )
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#6272a4>#Clears out the entire image</span>
-</span></span><span style=display:flex><span>img<span style=color:#ff79c6>.</span>clear()
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#6272a4>#Draws the string on the image at the specified coordinates.</span>
-</span></span><span style=display:flex><span>img<span style=color:#ff79c6>.</span>drawText(text , x , y , color, fontsize)
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#6272a4>#Draw a rectangle on the image</span>
-</span></span><span style=display:flex><span>img<span style=color:#ff79c6>.</span>drawRectangle(x,y,w,h,color,width,alpha)
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#6272a4>#Shows the current image</span>
-</span></span><span style=display:flex><span>img<span style=color:#ff79c6>.</span>show(<span style=color:#8be9fd;font-style:italic>type</span>)
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#6272a4>#Push a new drawing layer onto the back of the layer stack</span>
-</span></span><span style=display:flex><span>img<span style=color:#ff79c6>.</span>addDrawingLayer(layer)
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#6272a4>#Insert a new layer into the layer stack at the specified index</span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>img<span style=color:#ff79c6>.</span>insertDrawingLayer(layer,  index)
-</span></span><span style=display:flex><span>Remove a layer <span style=color:#ff79c6>from</span> the layer stack based on the layer’s index
-</span></span><span style=display:flex><span>img<span style=color:#ff79c6>.</span>removeDrawingLayer(index)
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#6272a4>#Return a drawing layer based on the index</span>
-</span></span><span style=display:flex><span>img<span style=color:#ff79c6>.</span>getDrawingLayer(index)
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#6272a4>#Returns the gray value for a particular image pixel</span>
-</span></span><span style=display:flex><span>img<span style=color:#ff79c6>.</span>getGrayPixel( x, y)
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#6272a4>#Returns a single column of RGB values from the  image</span>
-</span></span><span style=display:flex><span>img<span style=color:#ff79c6>.</span>getVertScanline(column)
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#6272a4>#Remove all of the drawing layers</span>
-</span></span><span style=display:flex><span>img<span style=color:#ff79c6>.</span>clearLayers()
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#6272a4>#Return the array of DrawingLayer objects</span>
-</span></span><span style=display:flex><span>img<span style=color:#ff79c6>.</span>layers()
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#6272a4>#Return all DrawingLayer objects as a single DrawingLayer.</span>
-</span></span><span style=display:flex><span>img<span style=color:#ff79c6>.</span>mergedLayers()
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#6272a4>#Render all of the layers onto the current image</span>
-</span></span><span style=display:flex><span>img<span style=color:#ff79c6>.</span>applyLayers(indicies)
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#6272a4>#automatically adjust image size to match the display size</span>
-</span></span><span style=display:flex><span>img<span style=color:#ff79c6>.</span>adaptiveScale(resolution,fit<span style=color:#ff79c6>=</span><span style=color:#ff79c6>True</span>)
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#6272a4>#Combine two images as a side by side images</span>
-</span></span><span style=display:flex><span>img1<span style=color:#ff79c6>.</span>sideBySide(img2, side, scale)
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#6272a4>#Generate a binary mask of the image based on a range of rgb values</span>
-</span></span><span style=display:flex><span>createBinaryMask(self,color1,color2)
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#6272a4>#Make the canvas larger but keep the image the same size</span>
-</span></span><span style=display:flex><span>img<span style=color:#ff79c6>.</span>embiggen(size, color, pos)
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#6272a4>#The white areas of the mask will be kept and the black areas removed</span>
-</span></span><span style=display:flex><span>img<span style=color:#ff79c6>.</span>applyBinaryMask(mask,bg  color)
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#6272a4>#Generate a grayscale or binary mask image based either on a hue or an RGB triplet</span>
-</span></span><span style=display:flex><span>img<span style=color:#ff79c6>.</span>createAlphaMask(hue, hue lb,hue ub)
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#6272a4>#Apply a function to every pixel and return the  result</span>
-</span></span><span style=display:flex><span>img<span style=color:#ff79c6>.</span>applyPixelFunction(theFunc)
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#6272a4>#Calculate the integral image and return it as a numpy  array</span>
-</span></span><span style=display:flex><span>img<span style=color:#ff79c6>.</span>integralImage(tilted)
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#6272a4>#Convolution performs a shape change on an image.</span>
-</span></span><span style=display:flex><span>img<span style=color:#ff79c6>.</span>convolve(,kernel,center)
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#6272a4>#Function searches an image for a template image</span>
-</span></span><span style=display:flex><span>img<span style=color:#ff79c6>.</span>findTemplate(template image, threshold, method)
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#6272a4>#Return any text it can find using OCR on the image</span>
-</span></span><span style=display:flex><span>img<span style=color:#ff79c6>.</span>readText()
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#6272a4>#extract perfect circles from the image</span>
-</span></span><span style=display:flex><span>img<span style=color:#ff79c6>.</span>findCircle(canny,thresh,distance)
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#6272a4>#Attempts to perform automatic white balancing</span>
-</span></span><span style=display:flex><span>img<span style=color:#ff79c6>.</span>whiteBalance(method)
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#6272a4>#Apply a LUT (look up table) to the pixels in a image</span>
-</span></span><span style=display:flex><span>img<span style=color:#ff79c6>.</span>applyLUT(rLUT,bLUT,gLUT)
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#6272a4>#Finds keypoints in an image and returns them as the raw keypoints</span>
-</span></span><span style=display:flex><span>img<span style=color:#ff79c6>.</span> getRawKeypoints(thresh,flavor, highQuality, forceReset)
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#6272a4>#Method does a fast local approximate nearest neighbors (FLANN) calculation between two sets of feature vectors</span>
-</span></span><span style=display:flex><span>img<span style=color:#ff79c6>.</span> getFLANNMatches(sd,td
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#6272a4>#Calculates keypoints for both images, determines the keypoint correspondences</span>
-</span></span><span style=display:flex><span>img<span style=color:#ff79c6>.</span>drawKeypointMatches(template, thresh, minDist,width)
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#6272a4>#Match a template image with another image using SURF keypoints.</span>
-</span></span><span style=display:flex><span>img<span style=color:#ff79c6>.</span>findKeypointMatch(template, quality,minDist,minMatch)
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#6272a4>#This method finds keypoints in an image and returns them as a feature  set</span>
-</span></span><span style=display:flex><span>img<span style=color:#ff79c6>.</span>findKeypoints(<span style=color:#8be9fd;font-style:italic>min</span> quality, flavor,highQuality)
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#6272a4>#Returns the colors in the palette of the image</span>
-</span></span><span style=display:flex><span>img<span style=color:#ff79c6>.</span>getPalette(bins,hue)
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#6272a4>#Takes in the palette from another image and attempts to apply it to this image</span>
-</span></span><span style=display:flex><span>img<span style=color:#ff79c6>.</span>rePalette(palette,hue)
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#6272a4>#returns the visual representation (swatches) of the palette in an image</span>
-</span></span><span style=display:flex><span>img<span style=color:#ff79c6>.</span>drawPaletteColors(size,horizontal,bins,hue)
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#6272a4>#The method then goes through and replaces each pixel with the centroid of the clutsters found by k-means</span>
-</span></span><span style=display:flex><span>img<span style=color:#ff79c6>.</span>palettize(bins,hue)
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#6272a4>#Palettization and behaves similar to the fndBlobs</span>
-</span></span><span style=display:flex><span>img<span style=color:#ff79c6>.</span>findBlobsFromPalette(palette selection, minsize, maxsize)
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#6272a4>#Method uses the color palette to generate a binary image</span>
-</span></span><span style=display:flex><span>img<span style=color:#ff79c6>.</span>binarizeFromPalette(palette selection)
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#6272a4>#Returns the RAW DFT transform of an image</span>
-</span></span><span style=display:flex><span>img<span style=color:#ff79c6>.</span>rawDFTImage(grayscale)
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#6272a4>#Method applies a simple band pass DFT filter</span>
-</span></span><span style=display:flex><span>img<span style=color:#ff79c6>.</span>bandPassFilter(xCutoffLow, xCutoffHigh, yCutoffLow, yCutoffHigh,grayscale)
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#6272a4>#Skeletonization of the image smartThreshold uses a method</span>
-</span></span><span style=display:flex><span>img<span style=color:#ff79c6>.</span>skeletonize(radius)
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#6272a4>#graph cut, to automagically generate a grayscale mask image</span>
-</span></span><span style=display:flex><span>img<span style=color:#ff79c6>.</span>smartThreshold(mask, rect)
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#6272a4>#It takes a image converts it to grayscale, and applies a threshold</span>
-</span></span><span style=display:flex><span>img<span style=color:#ff79c6>.</span>smartFindBlobs(mask,rect,thresh level)
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#6272a4>#This method is same as Paint bucket tool in image manipulation program</span>
-</span></span><span style=display:flex><span>img<span style=color:#ff79c6>.</span>floodFill(points,tolerance,color,lower,upper,fixed <span style=color:#8be9fd;font-style:italic>range</span>)
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#6272a4>#Returns Image where the values similar to the seed pixel have been replaced by the input color</span>
-</span></span><span style=display:flex><span>img<span style=color:#ff79c6>.</span>floodFillToMask(points,tolerance,color,lower,upper,fixed  <span style=color:#8be9fd;font-style:italic>range</span>,mask)
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#6272a4>#A featureset of blobs form the Mask Image</span>
-</span></span><span style=display:flex><span>img<span style=color:#ff79c6>.</span>findBlobsFromMask(mask,threshold, minsize, maxsize )
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#6272a4>#Returns the log value of the magnitude image of the DFT transform</span>
-</span></span><span style=display:flex><span>img<span style=color:#ff79c6>.</span>getDFTLogMagnitude(grayscale)
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#6272a4>#Apply an arbitrary filter to the DFT of an image</span>
-</span></span><span style=display:flex><span>img<span style=color:#ff79c6>.</span>applyDFTFilter(flt,grayscale)
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#6272a4>#Applies a high pass DFT filter</span>
-</span></span><span style=display:flex><span>img<span style=color:#ff79c6>.</span>highPassFilter(xCutoff,yCutoff,grayscale)
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#6272a4>#Applies a low pass DFT  filter</span>
-</span></span><span style=display:flex><span>img<span style=color:#ff79c6>.</span>lowPassFilter(xCutoff,yCutoff,grayscale)
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#6272a4>#InverseDFT(raw dft image) DFT is applied on image using gaussian lowpass filter</span>
-</span></span><span style=display:flex><span>img<span style=color:#ff79c6>.</span>applyUnsharpMask(boost,dia,grayscale)
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#6272a4>#Performs an optical flow calculation and attempts to find motion between two subsequent frames</span>
-</span></span><span style=display:flex><span>img<span style=color:#ff79c6>.</span>findMotion(previous frame, window, method, aggregate)
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#6272a4>#Creates a butterworth filter of 64x64 pixels, resizes it to fit the image</span>
-</span></span><span style=display:flex><span>img<span style=color:#ff79c6>.</span>applyButterworthFilter(dia, order,highpass,grayscale)
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#6272a4>#Creates a gaussian filter of 64x64 pixels, resizes it to fit image</span>
-</span></span><span style=display:flex><span>img<span style=color:#ff79c6>.</span>applyGaussianFilter(dia, highpass, grayscale)
-</span></span></code></pre></div></section><footer class="mt-12 flex flex-wrap"><a class="mb-1.5 mr-1.5 rounded-lg bg-black/[3%] px-5 py-1.5 no-underline dark:bg-white/[8%]" href=https://mozanunal.com/tags/image-processing>Image Processing</a>
-<a class="mb-1.5 mr-1.5 rounded-lg bg-black/[3%] px-5 py-1.5 no-underline dark:bg-white/[8%]" href=https://mozanunal.com/tags/simplecv>SimpleCV</a></footer><nav class="mt-24 flex rounded-lg bg-black/[3%] text-lg dark:bg-white/[8%]"><a class="flex w-1/2 items-center rounded-l-md p-6 pr-3 font-semibold no-underline hover:bg-black/[2%] dark:hover:bg-white/[3%]" href=https://mozanunal.com/2016/06/passface-face-recognition-using-opencv/><span class=mr-1.5>←</span><span>PassFace: Face Recognition Using OpenCV</span></a>
-<a class="ml-auto flex w-1/2 items-center justify-end rounded-r-md p-6 pl-3 font-semibold no-underline hover:bg-black/[2%] dark:hover:bg-white/[3%]" href=https://mozanunal.com/2016/03/ayarlanabilir-tasnabilir-guc-kaynag-yapm/><span>[TR] Ayarlanabilir Taşınabilir Güç Kaynağı Yapımı</span><span class=ml-1.5>→</span></a></nav></article></main><footer class="opaco mx-auto flex h-[4.5rem] max-w-3xl items-center px-8 text-[0.9em] opacity-60"><div class=mr-auto>&copy; 2024
-<a class=link href=https://mozanunal.com/>Mehmet Ozan Ünal</a></div><a class="link mx-6" href=https://gohugo.io/ rel=noopener target=_blank>Powered by Hugo️️</a>️
-<a class=link href=https://github.com/nanxiaobei/hugo-paper rel=noopener target=_blank>✎ Paper</a></footer></body></html>
+<span>Mehmet Ozan Ünal</span>
+</div>
+</header>
+<section><p><strong>Herkese Merhabalar,</strong><br>
+Görüntü işleme hızla popülerleşen ve gittikçe daha fazla üzerine projeler geliştirilen ve hatta hayatımızda kullandığımız araç gereçlerde kullanılan bir alan olmaya başladı. Bu durumda bir sürü insan bu konu üzerine bir şeyler yapmak istiyor fakat daha kurulum aşamasında veya kaynak yetersizliğinden dolayı bu ilgilerinden vazgeçiyorlar. Bu sorun için önerebileceğim bir çözüm var. SimpleCV!</p>
+<p><a href=https://simplecv.org/download/>https://simplecv.org/download/</a></p>
+<p><img src=https://2.bp.blogspot.com/-A3EQ_sYxKKk/VxNvyqTmt-I/AAAAAAAAZq4/piY02JIgXGUKU1iHwuqo3Kgev-zUjXvFACK4B/s640/Capture.PNG alt></p>
+<p>SimpleCV görüntü işlemeyle alakalı paketlerin bir arada toplandığı bir python paketler bütünüdür. yukarıdaki linkten kurulum dosyasını indirip sadece bir kaç tık ile kurabilirsiniz.<br>
+SimpleCV ile yüklediğimiz paketler ise şöyle:</p>
+<p><img src=https://4.bp.blogspot.com/-RzFG56nj0Bw/VyX8xjlS35I/AAAAAAAAZwY/o1BjczDB6IQlTLjJkDZf6By0s515sV64gCK4B/s640/Capture.PNG alt></p>
+<p>Görüldüğü gibi Python&rsquo;un bile yüklü olmasına gerek yok ihtiyacımız olan tüm paketler bir kaç tık ile yükleniyor. Aşağıda basit bir SimpleCV kodu bulunmakta aynı zamanda aşağıdaki linklerden dökümantasyona ve örneklere bakabilirsiniz.<br>
+<a href=https://simplecv.readthedocs.io/en/latest/>https://simplecv.readthedocs.io/en/latest/</a><br>
+<a href=https://examples.simplecv.org/en/latest/>https://examples.simplecv.org/en/latest/</a></p>
+<p>SimpleCV fonksiyonları ve kullanımları:</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#6272a4>#Reading an image</span>
+Image(’lenna<span style=color:#ff79c6>.</span>png’)
+
+<span style=color:#6272a4>#Converting the image to RGB colorspace</span>
+img<span style=color:#ff79c6>.</span>toRGB()
+
+<span style=color:#6272a4>#Converting the image to BGR colorspace</span>
+img<span style=color:#ff79c6>.</span>toBGR()
+
+<span style=color:#6272a4>#Converting the image to HLS colorspace</span>
+img<span style=color:#ff79c6>.</span>toHLS()
+
+<span style=color:#6272a4>#Converting the image to HSV colorspace</span>
+img<span style=color:#ff79c6>.</span>toHSV()
+
+<span style=color:#6272a4>#Converting the image to XYZ colorspace</span>
+img<span style=color:#ff79c6>.</span>toXYZ()
+
+<span style=color:#6272a4>#Converting the image to GRAY colorspace</span>
+img<span style=color:#ff79c6>.</span>toGray()
+
+<span style=color:#6272a4>#Create a new, empty OpenCV bitmap</span>
+img<span style=color:#ff79c6>.</span>getEmpty(channels)
+
+<span style=color:#6272a4>#Full copy of the  image</span>
+img<span style=color:#ff79c6>.</span>copy()
+
+<span style=color:#6272a4>#Resize the image</span>
+img<span style=color:#ff79c6>.</span>resize(x,y)
+
+<span style=color:#6272a4>#Invert image</span>
+img<span style=color:#ff79c6>.</span>invert()
+
+<span style=color:#6272a4>#Horizontally mirror an image</span>
+img<span style=color:#ff79c6>.</span>flipHorizontal()
+
+<span style=color:#6272a4>#Vertically mirror an image</span>
+img<span style=color:#ff79c6>.</span>flipVertical()
+
+<span style=color:#6272a4>#Stretch  filter  on a greyscale image</span>
+img<span style=color:#ff79c6>.</span>stretch(thresh low, thresh high)
+
+<span style=color:#6272a4>#Binary threshold</span>
+img<span style=color:#ff79c6>.</span>binarize(thresh, maxv, blocksize, p)
+
+<span style=color:#6272a4>#Mean color of the  image</span>
+img<span style=color:#ff79c6>.</span>meanColor()
+
+<span style=color:#6272a4>#Finds the FeatureSet strongest corners first</span>
+img<span style=color:#ff79c6>.</span>findCorners(maxnum, minquality, mindistance)
+
+<span style=color:#6272a4>#Blobs are continuous light regions</span>
+img<span style=color:#ff79c6>.</span>findBlobs(threshval, minsize, maxsize, threshblocksize, threshconstant)
+
+<span style=color:#6272a4>#Finding the location of a known object</span>
+findHaarFeatures(self,  cascade, scale factor, <span style=color:#8be9fd;font-style:italic>min</span> neighbors, use canny)
+
+<span style=color:#6272a4>#Uploading the Image to Imgur or Flickr</span>
+img<span style=color:#ff79c6>.</span>upload(dest,api key, api secret,verbose)
+
+<span style=color:#6272a4>#Smooth the image</span>
+img<span style=color:#ff79c6>.</span>smooth(algorithm name, aperature, sigma, spatial sigma, grayscale)
+
+<span style=color:#6272a4>#Draw a circle on the Image</span>
+img<span style=color:#ff79c6>.</span>drawCircle(ctr, rad, color, thickness)
+
+<span style=color:#6272a4>#Draw a line</span>
+img<span style=color:#ff79c6>.</span>drawLine(pt1, pt2, color, thickness)
+
+<span style=color:#6272a4>#Size of image</span>
+img<span style=color:#ff79c6>.</span>size()
+
+<span style=color:#6272a4>#Split the image into a series of image chunks</span>
+img<span style=color:#ff79c6>.</span>split(cols, rows)
+
+<span style=color:#6272a4>#Images of R,G,B channels are recombined into a single image</span>
+img<span style=color:#ff79c6>.</span>mergeChannels(r,b,g)
+
+<span style=color:#6272a4>#Apply a color correction curve in HSL space</span>
+img<span style=color:#ff79c6>.</span>applyHLSCurve(hCurve, lCurve, sCurve)
+
+<span style=color:#6272a4>#Apply a color correction curve in RGB space</span>
+img<span style=color:#ff79c6>.</span>applyRGBCurve(rCurve, gCurve, bCurve)
+
+<span style=color:#6272a4>#Applies Intensity to all three color channels</span>
+img<span style=color:#ff79c6>.</span>applyIntensityCurve(curve)
+
+<span style=color:#6272a4>#Returns Image of the string</span>
+img<span style=color:#ff79c6>.</span>toString()
+
+<span style=color:#6272a4>#Split the channels of an image into RGB</span>
+img<span style=color:#ff79c6>.</span>splitChannels(grayscale)
+
+<span style=color:#6272a4>#Returns image representing the distance of each pixel from a given color tuple</span>
+img<span style=color:#ff79c6>.</span>colorDistance(color)
+
+<span style=color:#6272a4>#Apply morphological erosion to a image</span>
+img<span style=color:#ff79c6>.</span>erode(iterations)
+
+<span style=color:#6272a4>#Apply morphological dilation to a image</span>
+img<span style=color:#ff79c6>.</span>dilate(iterations)
+
+<span style=color:#6272a4>#Histogram equalization on the image</span>
+img<span style=color:#ff79c6>.</span>equalize()
+
+<span style=color:#6272a4>#Applies erosion operation followed by a morphological dilation</span>
+img<span style=color:#ff79c6>.</span>morphOpen()
+
+<span style=color:#6272a4>#The difference between the morphological dilation and</span>
+img<span style=color:#ff79c6>.</span>morphGradient()
+
+<span style=color:#6272a4>#the morphological gradient 1D </span>
+<span style=color:#6272a4>#histogram(numpy array) of intensity for pixels in the image</span>
+img<span style=color:#ff79c6>.</span>histogram(numbins)
+
+<span style=color:#6272a4>#The histogram of the hue channel for the image</span>
+img<span style=color:#ff79c6>.</span>hueHistogram(bins)
+
+<span style=color:#6272a4>#Returns the peak hue values histogram of hues</span>
+img<span style=color:#ff79c6>.</span>huePeaks(bins)
+
+<span style=color:#6272a4>#Add two images</span>
+img<span style=color:#ff79c6>.</span>add(other)
+
+<span style=color:#6272a4>#Subtract two images Or two images</span>
+img<span style=color:#ff79c6>.</span>sub(other) img<span style=color:#ff79c6>.</span>  <span style=color:#ff79c6>or</span>  (other)
+
+<span style=color:#6272a4>#Image division operation taking two images as input</span>
+img<span style=color:#ff79c6>.</span>div(other)
+
+<span style=color:#6272a4>#Raises every array element in image array to a power</span>
+img<span style=color:#ff79c6>.</span>pow(other)
+
+<span style=color:#6272a4>#Finds 2d and 1d barcodes in the image</span>
+img<span style=color:#ff79c6>.</span>findBarcode(zxing path)
+
+<span style=color:#6272a4>#Finds line segments in the image</span>
+img<span style=color:#ff79c6>.</span>findLines(threshold,  minlinelength,maxlinegap, cannyth1, cannyth2)
+
+
+<span style=color:#6272a4>#Finds a chessboard within that image</span>
+img<span style=color:#ff79c6>.</span>findChessboard(dimensions,  subpixel)
+
+<span style=color:#6272a4>#Canny edge detection method</span>
+img<span style=color:#ff79c6>.</span>edges(t1, t2)
+
+<span style=color:#6272a4>#function rotates an image around a specific point</span>
+img<span style=color:#ff79c6>.</span>rotate(angle, fixed, point, scale)
+
+
+<span style=color:#6272a4>#return a shear-ed image from the cornerpoints</span>
+img<span style=color:#ff79c6>.</span>shear(cornerpoints)
+
+<span style=color:#6272a4>#Function for warp performs an affine rotation</span>
+img<span style=color:#ff79c6>.</span>transformPerspective(rotMatrix)
+
+<span style=color:#6272a4>#Returns the RGB value for a particular image pixel</span>
+img<span style=color:#ff79c6>.</span>getPixel(x, y)
+
+<span style=color:#6272a4>#Returns a single row of RGB values from the  image</span>
+img<span style=color:#ff79c6>.</span>getHorzScanline(row)
+
+<span style=color:#6272a4>#Returns a single column of gray values from the  image</span>
+getVertScanlineGray(column)
+
+<span style=color:#6272a4>#Returns a single row of gray values from the  image</span>
+getHorzScanlineGray(row)
+
+<span style=color:#6272a4>#Crops the image based on parameters</span>
+img<span style=color:#ff79c6>.</span>crop(x , y, w, h, centered)
+
+<span style=color:#6272a4>#Returns the selected region.</span>
+img<span style=color:#ff79c6>.</span>regionSelect(x1, y1, x2, y2  )
+
+<span style=color:#6272a4>#Clears out the entire image</span>
+img<span style=color:#ff79c6>.</span>clear()
+
+<span style=color:#6272a4>#Draws the string on the image at the specified coordinates.</span>
+img<span style=color:#ff79c6>.</span>drawText(text , x , y , color, fontsize)
+
+<span style=color:#6272a4>#Draw a rectangle on the image</span>
+img<span style=color:#ff79c6>.</span>drawRectangle(x,y,w,h,color,width,alpha)
+
+<span style=color:#6272a4>#Shows the current image</span>
+img<span style=color:#ff79c6>.</span>show(<span style=color:#8be9fd;font-style:italic>type</span>)
+
+<span style=color:#6272a4>#Push a new drawing layer onto the back of the layer stack</span>
+img<span style=color:#ff79c6>.</span>addDrawingLayer(layer)
+
+<span style=color:#6272a4>#Insert a new layer into the layer stack at the specified index</span>
+
+img<span style=color:#ff79c6>.</span>insertDrawingLayer(layer,  index)
+Remove a layer <span style=color:#ff79c6>from</span> the layer stack based on the layer’s index
+img<span style=color:#ff79c6>.</span>removeDrawingLayer(index)
+
+<span style=color:#6272a4>#Return a drawing layer based on the index</span>
+img<span style=color:#ff79c6>.</span>getDrawingLayer(index)
+
+<span style=color:#6272a4>#Returns the gray value for a particular image pixel</span>
+img<span style=color:#ff79c6>.</span>getGrayPixel( x, y)
+
+<span style=color:#6272a4>#Returns a single column of RGB values from the  image</span>
+img<span style=color:#ff79c6>.</span>getVertScanline(column)
+
+<span style=color:#6272a4>#Remove all of the drawing layers</span>
+img<span style=color:#ff79c6>.</span>clearLayers()
+
+<span style=color:#6272a4>#Return the array of DrawingLayer objects</span>
+img<span style=color:#ff79c6>.</span>layers()
+
+<span style=color:#6272a4>#Return all DrawingLayer objects as a single DrawingLayer.</span>
+img<span style=color:#ff79c6>.</span>mergedLayers()
+
+<span style=color:#6272a4>#Render all of the layers onto the current image</span>
+img<span style=color:#ff79c6>.</span>applyLayers(indicies)
+
+<span style=color:#6272a4>#automatically adjust image size to match the display size</span>
+img<span style=color:#ff79c6>.</span>adaptiveScale(resolution,fit<span style=color:#ff79c6>=</span><span style=color:#ff79c6>True</span>)
+
+<span style=color:#6272a4>#Combine two images as a side by side images</span>
+img1<span style=color:#ff79c6>.</span>sideBySide(img2, side, scale)
+
+<span style=color:#6272a4>#Generate a binary mask of the image based on a range of rgb values</span>
+createBinaryMask(self,color1,color2)
+
+<span style=color:#6272a4>#Make the canvas larger but keep the image the same size</span>
+img<span style=color:#ff79c6>.</span>embiggen(size, color, pos)
+
+<span style=color:#6272a4>#The white areas of the mask will be kept and the black areas removed</span>
+img<span style=color:#ff79c6>.</span>applyBinaryMask(mask,bg  color)
+
+<span style=color:#6272a4>#Generate a grayscale or binary mask image based either on a hue or an RGB triplet</span>
+img<span style=color:#ff79c6>.</span>createAlphaMask(hue, hue lb,hue ub)
+
+<span style=color:#6272a4>#Apply a function to every pixel and return the  result</span>
+img<span style=color:#ff79c6>.</span>applyPixelFunction(theFunc)
+
+<span style=color:#6272a4>#Calculate the integral image and return it as a numpy  array</span>
+img<span style=color:#ff79c6>.</span>integralImage(tilted)
+
+<span style=color:#6272a4>#Convolution performs a shape change on an image.</span>
+img<span style=color:#ff79c6>.</span>convolve(,kernel,center)
+
+<span style=color:#6272a4>#Function searches an image for a template image</span>
+img<span style=color:#ff79c6>.</span>findTemplate(template image, threshold, method)
+
+<span style=color:#6272a4>#Return any text it can find using OCR on the image</span>
+img<span style=color:#ff79c6>.</span>readText()
+
+<span style=color:#6272a4>#extract perfect circles from the image</span>
+img<span style=color:#ff79c6>.</span>findCircle(canny,thresh,distance)
+
+<span style=color:#6272a4>#Attempts to perform automatic white balancing</span>
+img<span style=color:#ff79c6>.</span>whiteBalance(method)
+
+<span style=color:#6272a4>#Apply a LUT (look up table) to the pixels in a image</span>
+img<span style=color:#ff79c6>.</span>applyLUT(rLUT,bLUT,gLUT)
+
+<span style=color:#6272a4>#Finds keypoints in an image and returns them as the raw keypoints</span>
+img<span style=color:#ff79c6>.</span> getRawKeypoints(thresh,flavor, highQuality, forceReset)
+
+<span style=color:#6272a4>#Method does a fast local approximate nearest neighbors (FLANN) calculation between two sets of feature vectors</span>
+img<span style=color:#ff79c6>.</span> getFLANNMatches(sd,td
+
+<span style=color:#6272a4>#Calculates keypoints for both images, determines the keypoint correspondences</span>
+img<span style=color:#ff79c6>.</span>drawKeypointMatches(template, thresh, minDist,width)
+
+<span style=color:#6272a4>#Match a template image with another image using SURF keypoints.</span>
+img<span style=color:#ff79c6>.</span>findKeypointMatch(template, quality,minDist,minMatch)
+
+<span style=color:#6272a4>#This method finds keypoints in an image and returns them as a feature  set</span>
+img<span style=color:#ff79c6>.</span>findKeypoints(<span style=color:#8be9fd;font-style:italic>min</span> quality, flavor,highQuality)
+
+<span style=color:#6272a4>#Returns the colors in the palette of the image</span>
+img<span style=color:#ff79c6>.</span>getPalette(bins,hue)
+
+<span style=color:#6272a4>#Takes in the palette from another image and attempts to apply it to this image</span>
+img<span style=color:#ff79c6>.</span>rePalette(palette,hue)
+
+<span style=color:#6272a4>#returns the visual representation (swatches) of the palette in an image</span>
+img<span style=color:#ff79c6>.</span>drawPaletteColors(size,horizontal,bins,hue)
+
+<span style=color:#6272a4>#The method then goes through and replaces each pixel with the centroid of the clutsters found by k-means</span>
+img<span style=color:#ff79c6>.</span>palettize(bins,hue)
+
+<span style=color:#6272a4>#Palettization and behaves similar to the fndBlobs</span>
+img<span style=color:#ff79c6>.</span>findBlobsFromPalette(palette selection, minsize, maxsize)
+
+<span style=color:#6272a4>#Method uses the color palette to generate a binary image</span>
+img<span style=color:#ff79c6>.</span>binarizeFromPalette(palette selection)
+
+<span style=color:#6272a4>#Returns the RAW DFT transform of an image</span>
+img<span style=color:#ff79c6>.</span>rawDFTImage(grayscale)
+
+<span style=color:#6272a4>#Method applies a simple band pass DFT filter</span>
+img<span style=color:#ff79c6>.</span>bandPassFilter(xCutoffLow, xCutoffHigh, yCutoffLow, yCutoffHigh,grayscale)
+
+<span style=color:#6272a4>#Skeletonization of the image smartThreshold uses a method</span>
+img<span style=color:#ff79c6>.</span>skeletonize(radius)
+
+<span style=color:#6272a4>#graph cut, to automagically generate a grayscale mask image</span>
+img<span style=color:#ff79c6>.</span>smartThreshold(mask, rect)
+
+<span style=color:#6272a4>#It takes a image converts it to grayscale, and applies a threshold</span>
+img<span style=color:#ff79c6>.</span>smartFindBlobs(mask,rect,thresh level)
+
+<span style=color:#6272a4>#This method is same as Paint bucket tool in image manipulation program</span>
+img<span style=color:#ff79c6>.</span>floodFill(points,tolerance,color,lower,upper,fixed <span style=color:#8be9fd;font-style:italic>range</span>)
+
+<span style=color:#6272a4>#Returns Image where the values similar to the seed pixel have been replaced by the input color</span>
+img<span style=color:#ff79c6>.</span>floodFillToMask(points,tolerance,color,lower,upper,fixed  <span style=color:#8be9fd;font-style:italic>range</span>,mask)
+
+<span style=color:#6272a4>#A featureset of blobs form the Mask Image</span>
+img<span style=color:#ff79c6>.</span>findBlobsFromMask(mask,threshold, minsize, maxsize )
+
+<span style=color:#6272a4>#Returns the log value of the magnitude image of the DFT transform</span>
+img<span style=color:#ff79c6>.</span>getDFTLogMagnitude(grayscale)
+
+<span style=color:#6272a4>#Apply an arbitrary filter to the DFT of an image</span>
+img<span style=color:#ff79c6>.</span>applyDFTFilter(flt,grayscale)
+
+<span style=color:#6272a4>#Applies a high pass DFT filter</span>
+img<span style=color:#ff79c6>.</span>highPassFilter(xCutoff,yCutoff,grayscale)
+
+<span style=color:#6272a4>#Applies a low pass DFT  filter</span>
+img<span style=color:#ff79c6>.</span>lowPassFilter(xCutoff,yCutoff,grayscale)
+
+<span style=color:#6272a4>#InverseDFT(raw dft image) DFT is applied on image using gaussian lowpass filter</span>
+img<span style=color:#ff79c6>.</span>applyUnsharpMask(boost,dia,grayscale)
+
+<span style=color:#6272a4>#Performs an optical flow calculation and attempts to find motion between two subsequent frames</span>
+img<span style=color:#ff79c6>.</span>findMotion(previous frame, window, method, aggregate)
+
+<span style=color:#6272a4>#Creates a butterworth filter of 64x64 pixels, resizes it to fit the image</span>
+img<span style=color:#ff79c6>.</span>applyButterworthFilter(dia, order,highpass,grayscale)
+
+<span style=color:#6272a4>#Creates a gaussian filter of 64x64 pixels, resizes it to fit image</span>
+img<span style=color:#ff79c6>.</span>applyGaussianFilter(dia, highpass, grayscale)
+
+</code></pre></div></section>
+<footer class="mt-12 flex flex-wrap">
+<a class="mb-1.5 mr-1.5 rounded-lg bg-black/[3%] px-5 py-1.5 no-underline dark:bg-white/[8%]" href=https://mozanunal.com/tags/image-processing>Image Processing</a>
+<a class="mb-1.5 mr-1.5 rounded-lg bg-black/[3%] px-5 py-1.5 no-underline dark:bg-white/[8%]" href=https://mozanunal.com/tags/simplecv>SimpleCV</a>
+</footer>
+<nav class="mt-24 flex rounded-lg bg-black/[3%] text-lg dark:bg-white/[8%]">
+<a class="flex w-1/2 items-center rounded-l-md p-6 pr-3 font-semibold no-underline hover:bg-black/[2%] dark:hover:bg-white/[3%]" href=https://mozanunal.com/2016/06/passface-face-recognition-using-opencv/><span class=mr-1.5>←</span><span>PassFace: Face Recognition Using OpenCV</span></a>
+<a class="ml-auto flex w-1/2 items-center justify-end rounded-r-md p-6 pl-3 font-semibold no-underline hover:bg-black/[2%] dark:hover:bg-white/[3%]" href=https://mozanunal.com/2016/03/ayarlanabilir-tasnabilir-guc-kaynag-yapm/><span>[TR] Ayarlanabilir Taşınabilir Güç Kaynağı Yapımı</span><span class=ml-1.5>→</span></a>
+</nav>
+</article>
+</main>
+<footer class="opaco mx-auto flex h-[4.5rem] max-w-3xl items-center px-8 text-[0.9em] opacity-60">
+<div class=mr-auto>
+&copy; 2024
+<a class=link href=https://mozanunal.com/>Mehmet Ozan Ünal</a>
+</div>
+<a class="link mx-6" href=https://gohugo.io/ rel=noopener target=_blank>Powered by Hugo️️</a>️
+<a class=link href=https://github.com/nanxiaobei/hugo-paper rel=noopener target=_blank>✎ Paper</a>
+</footer>
+</body>
+</html>

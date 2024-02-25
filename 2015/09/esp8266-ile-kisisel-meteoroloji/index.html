@@ -1,34 +1,160 @@
-<!doctype html><html class="not-ready lg:text-base" style=--bg:#fbfbfb lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><title>[TR] ESP8266 ile Kişisel Meteoroloji İstasyonu - Mehmet Ozan Ünal</title>
-<meta name=theme-color><meta name=description content="Herkese Merhabalar,
-Bugünkü yazımda ESP8266 Wifi modülünün kullanımına yönelik yaptığım uygulamayı anlatacağım. Bu modülü daha önceki şu yazımda anlatmıştım. Ucuz fiyatına rağmen çok yetenekli bir modül. O yazımda ESP8266 Access Point olarak kullanılmıştı.Bu yazımdaki uygulamamda, hali hazırda var olan wifi ağına da bağlanabilecek. Bu sayede wifi olan yerlerde direk wifi üzerinden verilere ulaşılabilinirken, wifi çekmediği yerlerde ESP8266&rsquo;nın kendi oluşturduğu Access Point üzerinden ulaşabilecek. Bilgilere istersek web browser üzerinden direk IP adresini yazarak, istersek aşağıda linkini verdiğim kendi yazdığım android programını kullanarak ulaşabileceğiz."><meta name=author content="Mehmet Ozan Ünal"><link rel="preload stylesheet" as=style href=https://mozanunal.com/main.min.css><link rel=preload as=image href=https://mozanunal.com/theme.svg><link rel=preload as=image href="https://www.gravatar.com/avatar/998cbd3ab655239d8be787580cce0415?s=160&amp;d=identicon"><link rel=preload as=image href=https://mozanunal.com/twitter.svg><link rel=preload as=image href=https://mozanunal.com/github.svg><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.css integrity=sha384-3UiQGuEI4TTMaFmGIZumfRPtfKQ3trwQE2JgosJxCnGmQpL/lJdjpcHkaaFwHlcI crossorigin=anonymous><script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.js integrity=sha384-G0zcxDFp5LWZtDuRMnBkk3EphCK1lhEf4UEyEM693ka574TZGwo4IWwS6QLzM/2t crossorigin=anonymous></script><script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/contrib/auto-render.min.js integrity=sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05 crossorigin=anonymous onload=renderMathInElement(document.body)></script><link rel=icon href=https://mozanunal.com/favicon.ico><link rel=apple-touch-icon href=https://mozanunal.com/apple-touch-icon.png><meta name=generator content="Hugo 0.121.1"><script>var doNotTrack=!1;doNotTrack||(window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","G-007KSW65JL","auto"),ga("send","pageview"))</script><script async src=https://www.google-analytics.com/analytics.js></script><script async src="https://www.googletagmanager.com/gtag/js?id=G-007KSW65JL"></script><script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-007KSW65JL",{anonymize_ip:!1})}</script><meta property="og:title" content="[TR] ESP8266 ile Kişisel Meteoroloji İstasyonu"><meta property="og:description" content="Herkese Merhabalar,
-Bugünkü yazımda ESP8266 Wifi modülünün kullanımına yönelik yaptığım uygulamayı anlatacağım. Bu modülü daha önceki şu yazımda anlatmıştım. Ucuz fiyatına rağmen çok yetenekli bir modül. O yazımda ESP8266 Access Point olarak kullanılmıştı.Bu yazımdaki uygulamamda, hali hazırda var olan wifi ağına da bağlanabilecek. Bu sayede wifi olan yerlerde direk wifi üzerinden verilere ulaşılabilinirken, wifi çekmediği yerlerde ESP8266&rsquo;nın kendi oluşturduğu Access Point üzerinden ulaşabilecek. Bilgilere istersek web browser üzerinden direk IP adresini yazarak, istersek aşağıda linkini verdiğim kendi yazdığım android programını kullanarak ulaşabileceğiz."><meta property="og:type" content="article"><meta property="og:url" content="https://mozanunal.com/2015/09/esp8266-ile-kisisel-meteoroloji/"><meta property="article:section" content="posts"><meta property="article:published_time" content="2015-09-30T02:51:00+00:00"><meta property="article:modified_time" content="2015-09-30T02:51:00+00:00"><meta itemprop=name content="[TR] ESP8266 ile Kişisel Meteoroloji İstasyonu"><meta itemprop=description content="Herkese Merhabalar,
-Bugünkü yazımda ESP8266 Wifi modülünün kullanımına yönelik yaptığım uygulamayı anlatacağım. Bu modülü daha önceki şu yazımda anlatmıştım. Ucuz fiyatına rağmen çok yetenekli bir modül. O yazımda ESP8266 Access Point olarak kullanılmıştı.Bu yazımdaki uygulamamda, hali hazırda var olan wifi ağına da bağlanabilecek. Bu sayede wifi olan yerlerde direk wifi üzerinden verilere ulaşılabilinirken, wifi çekmediği yerlerde ESP8266&rsquo;nın kendi oluşturduğu Access Point üzerinden ulaşabilecek. Bilgilere istersek web browser üzerinden direk IP adresini yazarak, istersek aşağıda linkini verdiğim kendi yazdığım android programını kullanarak ulaşabileceğiz."><meta itemprop=datePublished content="2015-09-30T02:51:00+00:00"><meta itemprop=dateModified content="2015-09-30T02:51:00+00:00"><meta itemprop=wordCount content="412"><meta itemprop=keywords content="Electronics,Arduino,Dht11,ESP8266,Html,MQ135,Yağış sensörü,"><meta name=twitter:card content="summary"><meta name=twitter:title content="[TR] ESP8266 ile Kişisel Meteoroloji İstasyonu"><meta name=twitter:description content="Herkese Merhabalar,
-Bugünkü yazımda ESP8266 Wifi modülünün kullanımına yönelik yaptığım uygulamayı anlatacağım. Bu modülü daha önceki şu yazımda anlatmıştım. Ucuz fiyatına rağmen çok yetenekli bir modül. O yazımda ESP8266 Access Point olarak kullanılmıştı.Bu yazımdaki uygulamamda, hali hazırda var olan wifi ağına da bağlanabilecek. Bu sayede wifi olan yerlerde direk wifi üzerinden verilere ulaşılabilinirken, wifi çekmediği yerlerde ESP8266&rsquo;nın kendi oluşturduğu Access Point üzerinden ulaşabilecek. Bilgilere istersek web browser üzerinden direk IP adresini yazarak, istersek aşağıda linkini verdiğim kendi yazdığım android programını kullanarak ulaşabileceğiz."></head><body class="text-black duration-200 ease-out dark:text-white"><header class="mx-auto flex h-[4.5rem] max-w-3xl px-8 lg:justify-center"><div class="relative z-50 mr-auto flex items-center"><a class="-translate-x-[1px] -translate-y-[1px] text-2xl font-semibold" href=https://mozanunal.com/>Mehmet Ozan Ünal</a><div class="btn-dark text-[0] ml-4 h-6 w-6 shrink-0 cursor-pointer [background:url(./theme.svg)_left_center/cover_no-repeat] dark:invert dark:[background-position:right]" role=button aria-label=Dark></div></div><div class="btn-menu relative z-50 -mr-8 flex h-[4.5rem] w-[5rem] shrink-0 cursor-pointer flex-col items-center justify-center gap-2.5 lg:hidden" role=button aria-label=Menu></div><script>const htmlClass=document.documentElement.classList;setTimeout(()=>{htmlClass.remove("not-ready")},10);const btnMenu=document.querySelector(".btn-menu");btnMenu.addEventListener("click",()=>{htmlClass.toggle("open")});const metaTheme=document.querySelector('meta[name="theme-color"]'),lightBg="#fbfbfb".replace(/"/g,""),setDark=e=>{metaTheme.setAttribute("content",e?"#000":lightBg),htmlClass[e?"add":"remove"]("dark"),localStorage.setItem("dark",e)},darkScheme=window.matchMedia("(prefers-color-scheme: dark)");if(htmlClass.contains("dark"))setDark(!0);else{const e=localStorage.getItem("dark");setDark(e?e==="true":darkScheme.matches)}darkScheme.addEventListener("change",e=>{setDark(e.matches)});const btnDark=document.querySelector(".btn-dark");btnDark.addEventListener("click",()=>{setDark(localStorage.getItem("dark")!=="true")})</script><div class="nav-wrapper fixed inset-x-0 top-full z-40 flex h-full select-none flex-col justify-center pb-16 duration-200 dark:bg-black lg:static lg:h-auto lg:flex-row lg:!bg-transparent lg:pb-0 lg:transition-none"><nav class="lg:ml-12 lg:flex lg:flex-row lg:items-center lg:space-x-6"><a class="block text-center text-2xl leading-[5rem] lg:text-base lg:font-normal" href=/about/>About</a>
-<a class="block text-center text-2xl leading-[5rem] lg:text-base lg:font-normal" href=/contact/>Contact</a></nav><nav class="mt-12 flex justify-center space-x-10 dark:invert lg:ml-12 lg:mt-0 lg:items-center lg:space-x-6"><a class="h-8 w-8 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6" style=--url:url(./twitter.svg) href=https://twitter.com/MOzanUnal target=_blank rel=me>twitter
-</a><a class="h-8 w-8 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6" style=--url:url(./github.svg) href=https://github.com/mozanunal target=_blank rel=me>github</a></nav></div></header><main class="prose prose-neutral relative mx-auto min-h-[calc(100%-9rem)] max-w-3xl px-8 pb-16 pt-12 dark:prose-invert"><article><header class=mb-16><h1 class="!my-0 pb-2.5">[TR] ESP8266 ile Kişisel Meteoroloji İstasyonu</h1><div class="text-sm antialiased opacity-60"><time>Sep 30, 2015</time>
+<!doctype html><html class="not-ready lg:text-base" style=--bg:#fbfbfb lang=en>
+<head>
+<meta charset=utf-8>
+<meta http-equiv=x-ua-compatible content="IE=edge">
+<meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
+<title>[TR] ESP8266 ile Kişisel Meteoroloji İstasyonu - Mehmet Ozan Ünal</title>
+<meta name=theme-color>
+<meta name=description content="Herkese Merhabalar,
+Bugünkü yazımda ESP8266 Wifi modülünün kullanımına yönelik yaptığım uygulamayı anlatacağım. Bu modülü daha önceki şu yazımda anlatmıştım. Ucuz fiyatına rağmen çok yetenekli bir modül. O yazımda ESP8266 Access Point olarak kullanılmıştı.Bu yazımdaki uygulamamda, hali hazırda var olan wifi ağına da bağlanabilecek. Bu sayede wifi olan yerlerde direk wifi üzerinden verilere ulaşılabilinirken, wifi çekmediği yerlerde ESP8266&rsquo;nın kendi oluşturduğu Access Point üzerinden ulaşabilecek. Bilgilere istersek web browser üzerinden direk IP adresini yazarak, istersek aşağıda linkini verdiğim kendi yazdığım android programını kullanarak ulaşabileceğiz.">
+<meta name=author content="Mehmet Ozan Ünal">
+<link rel="preload stylesheet" as=style href=https://mozanunal.com/main.min.css>
+<link rel=preload as=image href=https://mozanunal.com/theme.svg>
+<link rel=preload as=image href="https://www.gravatar.com/avatar/998cbd3ab655239d8be787580cce0415?s=160&d=identicon">
+<link rel=preload as=image href=https://mozanunal.com/twitter.svg>
+<link rel=preload as=image href=https://mozanunal.com/github.svg>
+<link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.css integrity=sha384-3UiQGuEI4TTMaFmGIZumfRPtfKQ3trwQE2JgosJxCnGmQpL/lJdjpcHkaaFwHlcI crossorigin=anonymous>
+<script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.js integrity=sha384-G0zcxDFp5LWZtDuRMnBkk3EphCK1lhEf4UEyEM693ka574TZGwo4IWwS6QLzM/2t crossorigin=anonymous></script>
+<script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/contrib/auto-render.min.js integrity=sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05 crossorigin=anonymous onload=renderMathInElement(document.body)></script>
+<link rel=icon href=https://mozanunal.com/favicon.ico>
+<link rel=apple-touch-icon href=https://mozanunal.com/apple-touch-icon.png>
+<meta name=generator content="Hugo 0.92.2">
+<script type=application/javascript>var doNotTrack=!1;doNotTrack||(window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga('create','G-007KSW65JL','auto'),ga('send','pageview'))</script>
+<script async src=https://www.google-analytics.com/analytics.js></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-007KSW65JL"></script>
+<script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-007KSW65JL',{anonymize_ip:!1})}</script>
+<meta property="og:title" content="[TR] ESP8266 ile Kişisel Meteoroloji İstasyonu">
+<meta property="og:description" content="Herkese Merhabalar,
+Bugünkü yazımda ESP8266 Wifi modülünün kullanımına yönelik yaptığım uygulamayı anlatacağım. Bu modülü daha önceki şu yazımda anlatmıştım. Ucuz fiyatına rağmen çok yetenekli bir modül. O yazımda ESP8266 Access Point olarak kullanılmıştı.Bu yazımdaki uygulamamda, hali hazırda var olan wifi ağına da bağlanabilecek. Bu sayede wifi olan yerlerde direk wifi üzerinden verilere ulaşılabilinirken, wifi çekmediği yerlerde ESP8266&rsquo;nın kendi oluşturduğu Access Point üzerinden ulaşabilecek. Bilgilere istersek web browser üzerinden direk IP adresini yazarak, istersek aşağıda linkini verdiğim kendi yazdığım android programını kullanarak ulaşabileceğiz.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://mozanunal.com/2015/09/esp8266-ile-kisisel-meteoroloji/"><meta property="article:section" content="posts">
+<meta property="article:published_time" content="2015-09-30T02:51:00+00:00">
+<meta property="article:modified_time" content="2015-09-30T02:51:00+00:00">
+<meta itemprop=name content="[TR] ESP8266 ile Kişisel Meteoroloji İstasyonu">
+<meta itemprop=description content="Herkese Merhabalar,
+Bugünkü yazımda ESP8266 Wifi modülünün kullanımına yönelik yaptığım uygulamayı anlatacağım. Bu modülü daha önceki şu yazımda anlatmıştım. Ucuz fiyatına rağmen çok yetenekli bir modül. O yazımda ESP8266 Access Point olarak kullanılmıştı.Bu yazımdaki uygulamamda, hali hazırda var olan wifi ağına da bağlanabilecek. Bu sayede wifi olan yerlerde direk wifi üzerinden verilere ulaşılabilinirken, wifi çekmediği yerlerde ESP8266&rsquo;nın kendi oluşturduğu Access Point üzerinden ulaşabilecek. Bilgilere istersek web browser üzerinden direk IP adresini yazarak, istersek aşağıda linkini verdiğim kendi yazdığım android programını kullanarak ulaşabileceğiz."><meta itemprop=datePublished content="2015-09-30T02:51:00+00:00">
+<meta itemprop=dateModified content="2015-09-30T02:51:00+00:00">
+<meta itemprop=wordCount content="412">
+<meta itemprop=keywords content="Electronics,Arduino,Dht11,ESP8266,Html,MQ135,Yağış sensörü,">
+<meta name=twitter:card content="summary">
+<meta name=twitter:title content="[TR] ESP8266 ile Kişisel Meteoroloji İstasyonu">
+<meta name=twitter:description content="Herkese Merhabalar,
+Bugünkü yazımda ESP8266 Wifi modülünün kullanımına yönelik yaptığım uygulamayı anlatacağım. Bu modülü daha önceki şu yazımda anlatmıştım. Ucuz fiyatına rağmen çok yetenekli bir modül. O yazımda ESP8266 Access Point olarak kullanılmıştı.Bu yazımdaki uygulamamda, hali hazırda var olan wifi ağına da bağlanabilecek. Bu sayede wifi olan yerlerde direk wifi üzerinden verilere ulaşılabilinirken, wifi çekmediği yerlerde ESP8266&rsquo;nın kendi oluşturduğu Access Point üzerinden ulaşabilecek. Bilgilere istersek web browser üzerinden direk IP adresini yazarak, istersek aşağıda linkini verdiğim kendi yazdığım android programını kullanarak ulaşabileceğiz.">
+</head>
+<body class="text-black duration-200 ease-out dark:text-white">
+<header class="mx-auto flex h-[4.5rem] max-w-3xl px-8 lg:justify-center">
+<div class="relative z-50 mr-auto flex items-center">
+<a class="-translate-x-[1px] -translate-y-[1px] text-2xl font-semibold" href=https://mozanunal.com/>Mehmet Ozan Ünal</a>
+<div class="btn-dark text-[0] ml-4 h-6 w-6 shrink-0 cursor-pointer [background:url(./theme.svg)_left_center/cover_no-repeat] dark:invert dark:[background-position:right]" role=button aria-label=Dark></div>
+</div>
+<div class="btn-menu relative z-50 -mr-8 flex h-[4.5rem] w-[5rem] shrink-0 cursor-pointer flex-col items-center justify-center gap-2.5 lg:hidden" role=button aria-label=Menu></div>
+<script>const htmlClass=document.documentElement.classList;setTimeout(()=>{htmlClass.remove('not-ready')},10);const btnMenu=document.querySelector('.btn-menu');btnMenu.addEventListener('click',()=>{htmlClass.toggle('open')});const metaTheme=document.querySelector('meta[name="theme-color"]'),lightBg='#fbfbfb'.replace(/"/g,''),setDark=a=>{metaTheme.setAttribute('content',a?'#000':lightBg),htmlClass[a?'add':'remove']('dark'),localStorage.setItem('dark',a)},darkScheme=window.matchMedia('(prefers-color-scheme: dark)');if(htmlClass.contains('dark'))setDark(!0);else{const a=localStorage.getItem('dark');setDark(a?a==='true':darkScheme.matches)}darkScheme.addEventListener('change',a=>{setDark(a.matches)});const btnDark=document.querySelector('.btn-dark');btnDark.addEventListener('click',()=>{setDark(localStorage.getItem('dark')!=='true')})</script>
+<div class="nav-wrapper fixed inset-x-0 top-full z-40 flex h-full select-none flex-col justify-center pb-16 duration-200 dark:bg-black lg:static lg:h-auto lg:flex-row lg:!bg-transparent lg:pb-0 lg:transition-none">
+<nav class="lg:ml-12 lg:flex lg:flex-row lg:items-center lg:space-x-6">
+<a class="block text-center text-2xl leading-[5rem] lg:text-base lg:font-normal" href=/about/>About</a>
+<a class="block text-center text-2xl leading-[5rem] lg:text-base lg:font-normal" href=/contact/>Contact</a>
+</nav>
+<nav class="mt-12 flex justify-center space-x-10 dark:invert lg:ml-12 lg:mt-0 lg:items-center lg:space-x-6">
+<a class="h-8 w-8 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6" style=--url:url(./twitter.svg) href=https://twitter.com/MOzanUnal target=_blank rel=me>
+twitter
+</a>
+<a class="h-8 w-8 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6" style=--url:url(./github.svg) href=https://github.com/mozanunal target=_blank rel=me>
+github
+</a>
+</nav>
+</div>
+</header>
+<main class="prose prose-neutral relative mx-auto min-h-[calc(100%-9rem)] max-w-3xl px-8 pb-16 pt-12 dark:prose-invert">
+<article>
+<header class=mb-16>
+<h1 class="!my-0 pb-2.5">[TR] ESP8266 ile Kişisel Meteoroloji İstasyonu</h1>
+<div class="text-sm antialiased opacity-60">
+<time>Sep 30, 2015</time>
 <span class=mx-1>&#183;</span>
-<span>Mehmet Ozan Ünal</span></div></header><section><p><strong>Herkese Merhabalar,</strong></p><p>Bugünkü yazımda ESP8266 Wifi modülünün kullanımına yönelik yaptığım uygulamayı anlatacağım. Bu modülü daha önceki <a href=https://mozanunal.com/2015/03/esp8266-modulu-html-server/>şu yazımda</a> anlatmıştım. Ucuz fiyatına rağmen çok yetenekli bir modül. O yazımda ESP8266 Access Point olarak kullanılmıştı.Bu yazımdaki uygulamamda, hali hazırda var olan wifi ağına da bağlanabilecek. Bu sayede wifi olan yerlerde direk wifi üzerinden verilere ulaşılabilinirken, wifi çekmediği yerlerde ESP8266&rsquo;nın kendi oluşturduğu Access Point üzerinden ulaşabilecek. Bilgilere istersek web browser üzerinden direk IP adresini yazarak, istersek aşağıda linkini verdiğim kendi yazdığım android programını kullanarak ulaşabileceğiz.</p><p>Temel olarak proje şu şekilde çalışıyor: ESP8266 gerekli ayarlarda başlatılır. Belli aralıklarla Sıcaklık- Nem, Yağış ve CO2 sensöründen veri alınır. Daha sonra ESP üzerinde oluşturulan http server güncellenir.</p><p><strong>Kodlar</strong></p><p><a href="https://drive.google.com/file/d/0B5j__Lyt9ozbTnpTSnFqMXN0ZmM/view?usp=sharing">Kodları ve gerekli 2 kütüphaneyi bu linkten indirebilirsiniz.</a></p><p><strong>Malzemeler ve Bağlantılar</strong></p><p>Arduino Nano<br>DHT11 sıcaklık ve nem sensörü
+<span>Mehmet Ozan Ünal</span>
+</div>
+</header>
+<section><p><strong>Herkese Merhabalar,</strong></p>
+<p>Bugünkü yazımda ESP8266 Wifi modülünün kullanımına yönelik yaptığım uygulamayı anlatacağım. Bu modülü daha önceki <a href=https://mozanunal.com/2015/03/esp8266-modulu-html-server/>şu yazımda</a> anlatmıştım. Ucuz fiyatına rağmen çok yetenekli bir modül. O yazımda ESP8266 Access Point olarak kullanılmıştı.Bu yazımdaki uygulamamda, hali hazırda var olan wifi ağına da bağlanabilecek. Bu sayede wifi olan yerlerde direk wifi üzerinden verilere ulaşılabilinirken, wifi çekmediği yerlerde ESP8266&rsquo;nın kendi oluşturduğu Access Point üzerinden ulaşabilecek. Bilgilere istersek web browser üzerinden direk IP adresini yazarak, istersek aşağıda linkini verdiğim kendi yazdığım android programını kullanarak ulaşabileceğiz.</p>
+<p>Temel olarak proje şu şekilde çalışıyor: ESP8266 gerekli ayarlarda başlatılır. Belli aralıklarla Sıcaklık- Nem, Yağış ve CO2 sensöründen veri alınır. Daha sonra ESP üzerinde oluşturulan http server güncellenir.</p>
+<p><strong>Kodlar</strong></p>
+<p><a href="https://drive.google.com/file/d/0B5j__Lyt9ozbTnpTSnFqMXN0ZmM/view?usp=sharing">Kodları ve gerekli 2 kütüphaneyi bu linkten indirebilirsiniz.</a></p>
+<p><strong>Malzemeler ve Bağlantılar</strong></p>
+<p>Arduino Nano<br>
+DHT11 sıcaklık ve nem sensörü
 Yağmur sensörü
 MQ135 Gaz sensörü
 3.3v-5v Logic Conventer
 ESP8266
-2 Adet Diyot</p><p>ESP8266 3.3 volt ile çalışıyor fakat arduinonun pinleri 5 volt giriş çıkış veriyor. Bu sorunun çözmek için Logic Conventer kullandım. Arduino Nano&rsquo;nun 3.3 Volt pininden çok yüksek güç çekilemiyor bu yüzden ESP8266&rsquo;yı direk bu pinden besleyemedim onun yerine.5 volt pininden çıkış aldım araya 2 adet diyot bağladım. Diyotlar voltajı 0.7&rsquo;şer volt düşüyor. Bu sayede ESP&rsquo;nin üzerindeki voltaj  3.6 volt oluyor. Bu voltajda ESP sorunsuz çalıştı. <em>Zaman sorunundan dolayı böyle pratik bir çözüm yaptım, benim tavsiyem uygun güç değerinde 3.3 volt bir regülatör almanızdır.</em></p><p><strong>DHT11-Arduino</strong></p><p>VCC-> 5V
+2 Adet Diyot</p>
+<p>ESP8266 3.3 volt ile çalışıyor fakat arduinonun pinleri 5 volt giriş çıkış veriyor. Bu sorunun çözmek için Logic Conventer kullandım. Arduino Nano&rsquo;nun 3.3 Volt pininden çok yüksek güç çekilemiyor bu yüzden ESP8266&rsquo;yı direk bu pinden besleyemedim onun yerine.5 volt pininden çıkış aldım araya 2 adet diyot bağladım. Diyotlar voltajı 0.7&rsquo;şer volt düşüyor. Bu sayede ESP&rsquo;nin üzerindeki voltaj  3.6 volt oluyor. Bu voltajda ESP sorunsuz çalıştı. <em>Zaman sorunundan dolayı böyle pratik bir çözüm yaptım, benim tavsiyem uygun güç değerinde 3.3 volt bir regülatör almanızdır.</em></p>
+<p><strong>DHT11-Arduino</strong></p>
+<p>VCC-> 5V
 GND-> GND
-OUT-> D4</p><p><strong>MQ135-Arduino</strong></p><p>VCC-> 5V
+OUT-> D4</p>
+<p><strong>MQ135-Arduino</strong></p>
+<p>VCC-> 5V
 GND-> GND
-A0-> A1</p><p><strong>Yağmur Sensörü-Arduino</strong></p><p>VCC-> 5V
+A0-> A1</p>
+<p><strong>Yağmur Sensörü-Arduino</strong></p>
+<p>VCC-> 5V
 GND-> GND
-A0-> A3</p><p><strong>ESP8266</strong></p><p>VCC->5 volt ama 2 diyot üzerinden
+A0-> A3</p>
+<p><strong>ESP8266</strong></p>
+<p>VCC->5 volt ama 2 diyot üzerinden
 GND-> GND
 RX-> D11
 TX-> D10
-CH_PD->  3.3 V</p><p>Logic Conventer üzerinden</p><p><img src=https://3.bp.blogspot.com/-UsQPPk3G-MI/VgnJI9pRNrI/AAAAAAAAN30/7GegSuJOKME/s720/IMG_20150925_212341.jpg alt></p><p><img src=https://2.bp.blogspot.com/-oiJYi4TyoMw/VgnJIzmC2wI/AAAAAAAAN30/7WTyKCPeXfs/s720/IMG_20150925_212313.jpg alt></p><p><img src=https://2.bp.blogspot.com/-7MZxz-XQeTY/VgnJI1fHQaI/AAAAAAAAN30/v7xnKD6yuRY/s720/IMG_20150925_212355.jpg alt></p><p>Bu ekran alıntıları evimde hali hazırda varolan wifi bağlı iken aldığım verilere aittir.</p><p><img src=https://3.bp.blogspot.com/-ftOtLZRfSes/VgnJo1gLsVI/AAAAAAAAN38/AckuZXojd20/s720/Screenshot_2015-09-21-03-29-17.png alt></p><p><img src=https://1.bp.blogspot.com/-6ZQQErWn0kk/VgnJo0T65TI/AAAAAAAAN38/XBIjLV4sOSs/s720/Screenshot_2015-09-21-03-28-56.png alt></p><p><a href="https://drive.google.com/file/d/0B5j__Lyt9ozbR3dLVTI1aUluaDQ/view?usp=sharing">Android programını buradan indirebilirsiniz.</a></p><p>ESP8266 wifi bulamadığı zaman kendi bağlantı noktası kurar ve o wifi üzerinden verileri alabiliriz. Bu ekran görüntüleri ise wifi olmadığı bir yerdeki kullanımına aittir.</p><p><img src=https://2.bp.blogspot.com/-bvwApOI45EQ/VgnJo8LjAmI/AAAAAAAAN38/zZT_0rPKcj0/s720/Screenshot_2015-09-21-03-32-30.png alt></p><p><img src=https://3.bp.blogspot.com/--MXnSlm1V-w/VgnJo5ZT8eI/AAAAAAAAN38/MdtZNLbApng/s720/Screenshot_2015-09-21-03-32-20.png alt></p><p><strong>Kutunun Yapılışından Fotoğraflar</strong></p><p>İstasyona uygun kolay yapılabilecek bir kutu yapmaya karar verdim. Kutu gerekli idi çünkü yağmur sensörü yağmura temas etmeli fakat diğer sensörler ve arduino suyla temas etmemeli. Bir diğer sıkıntı ise gaz sensörünün gaz ölçümü için havayı ısıtması. Bu sensörün de sıcaklık sensöründen yalıtılması gereklidir. Bu sorunları çözmek için gaz sensörü kabın altında bıraktım bu sayede hem diğer sensörleri etkilemeyecek hem de yağmur yağarsa yağmurdan korunacak. Yağmur sensörü de kutunun üst tarafına monte ettim.</p><p>Açıkca söylemek gerekirse kutum çok da güzel bir kutu olmadı ama benim deneme sürecim boyunca işimi görmeme yetti. Kutu konusunu geliştirmem gerektiğimin farkındayım ama :)</p><p>Tekrar görüşmek üzere&mldr;</p><p><img src=https://4.bp.blogspot.com/-RGH6ITJsFyE/VgnKily7kAI/AAAAAAAAN4I/9hpkiDRVoGI/s720/IMG_20150927_051714.jpg alt></p><p><img src=https://4.bp.blogspot.com/-UT7zNRBiyOo/VgnKij25wkI/AAAAAAAAN4I/5KahfdHf-9M/s720/IMG_20150927_051020.jpg alt></p><p><img src=https://2.bp.blogspot.com/-sFqrsX7Z2AY/VgnKilp7m9I/AAAAAAAAN4I/qVjUq3gUgAc/s720/IMG_20150927_051025.jpg alt></p><p><img src=https://3.bp.blogspot.com/-XlJhaF-ukVg/VgnKisqzSSI/AAAAAAAAN4I/v0GvktwQYxc/s720/IMG_20150927_052253.jpg alt></p><p><img src=https://2.bp.blogspot.com/-Hi9uNCDzUZA/VgnKivThhwI/AAAAAAAAN4I/p0qCZvtBTo8/s720/IMG_20150927_052257.jpg alt></p><p><strong>Kullanımdan Fotoğraflar</strong></p><p><img src=https://2.bp.blogspot.com/-i-Hnpx085Y0/VgnKqjbYhGI/AAAAAAAAN4Q/hdOeMIs6FyA/s720/IMG_20150927_052636.jpg alt></p><p><img src=https://3.bp.blogspot.com/-8fMHQZUC4BY/VgnKqnuVNtI/AAAAAAAAN4Q/JnbNiOKbmWU/s720/IMG_20150927_052610.jpg alt></p><p><img src=https://4.bp.blogspot.com/-6lK1r9Lwnqo/VgnKqnbjVWI/AAAAAAAAN4Q/Fvf8tIzwfd0/s720/IMG_20150927_092540.jpg alt></p><p><img src=https://4.bp.blogspot.com/-Que5jw7wr_M/VgnKqm2KyCI/AAAAAAAAN4Q/gyI_bqgkNDI/s720/IMG_20150927_052528.jpg alt></p><p><img src=https://4.bp.blogspot.com/-GMjB4GNfzxA/VgnKqnih3_I/AAAAAAAAN4Q/_8x55IdwthM/s720/IMG_20150927_092548.jpg alt></p></section><footer class="mt-12 flex flex-wrap"><a class="mb-1.5 mr-1.5 rounded-lg bg-black/[3%] px-5 py-1.5 no-underline dark:bg-white/[8%]" href=https://mozanunal.com/tags/electronics>Electronics</a>
+CH_PD->  3.3 V</p>
+<p>Logic Conventer üzerinden</p>
+<p><img src=https://3.bp.blogspot.com/-UsQPPk3G-MI/VgnJI9pRNrI/AAAAAAAAN30/7GegSuJOKME/s720/IMG_20150925_212341.jpg alt></p>
+<p><img src=https://2.bp.blogspot.com/-oiJYi4TyoMw/VgnJIzmC2wI/AAAAAAAAN30/7WTyKCPeXfs/s720/IMG_20150925_212313.jpg alt></p>
+<p><img src=https://2.bp.blogspot.com/-7MZxz-XQeTY/VgnJI1fHQaI/AAAAAAAAN30/v7xnKD6yuRY/s720/IMG_20150925_212355.jpg alt></p>
+<p>Bu ekran alıntıları evimde hali hazırda varolan wifi bağlı iken aldığım verilere aittir.</p>
+<p><img src=https://3.bp.blogspot.com/-ftOtLZRfSes/VgnJo1gLsVI/AAAAAAAAN38/AckuZXojd20/s720/Screenshot_2015-09-21-03-29-17.png alt></p>
+<p><img src=https://1.bp.blogspot.com/-6ZQQErWn0kk/VgnJo0T65TI/AAAAAAAAN38/XBIjLV4sOSs/s720/Screenshot_2015-09-21-03-28-56.png alt></p>
+<p><a href="https://drive.google.com/file/d/0B5j__Lyt9ozbR3dLVTI1aUluaDQ/view?usp=sharing">Android programını buradan indirebilirsiniz.</a></p>
+<p>ESP8266 wifi bulamadığı zaman kendi bağlantı noktası kurar ve o wifi üzerinden verileri alabiliriz. Bu ekran görüntüleri ise wifi olmadığı bir yerdeki kullanımına aittir.</p>
+<p><img src=https://2.bp.blogspot.com/-bvwApOI45EQ/VgnJo8LjAmI/AAAAAAAAN38/zZT_0rPKcj0/s720/Screenshot_2015-09-21-03-32-30.png alt></p>
+<p><img src=https://3.bp.blogspot.com/--MXnSlm1V-w/VgnJo5ZT8eI/AAAAAAAAN38/MdtZNLbApng/s720/Screenshot_2015-09-21-03-32-20.png alt></p>
+<p><strong>Kutunun Yapılışından Fotoğraflar</strong></p>
+<p>İstasyona uygun kolay yapılabilecek bir kutu yapmaya karar verdim. Kutu gerekli idi çünkü yağmur sensörü yağmura temas etmeli fakat diğer sensörler ve arduino suyla temas etmemeli. Bir diğer sıkıntı ise gaz sensörünün gaz ölçümü için havayı ısıtması. Bu sensörün de sıcaklık sensöründen yalıtılması gereklidir. Bu sorunları çözmek için gaz sensörü kabın altında bıraktım bu sayede hem diğer sensörleri etkilemeyecek hem de yağmur yağarsa yağmurdan korunacak. Yağmur sensörü de kutunun üst tarafına monte ettim.</p>
+<p>Açıkca söylemek gerekirse kutum çok da güzel bir kutu olmadı ama benim deneme sürecim boyunca işimi görmeme yetti. Kutu konusunu geliştirmem gerektiğimin farkındayım ama :)</p>
+<p>Tekrar görüşmek üzere&mldr;</p>
+<p><img src=https://4.bp.blogspot.com/-RGH6ITJsFyE/VgnKily7kAI/AAAAAAAAN4I/9hpkiDRVoGI/s720/IMG_20150927_051714.jpg alt></p>
+<p><img src=https://4.bp.blogspot.com/-UT7zNRBiyOo/VgnKij25wkI/AAAAAAAAN4I/5KahfdHf-9M/s720/IMG_20150927_051020.jpg alt></p>
+<p><img src=https://2.bp.blogspot.com/-sFqrsX7Z2AY/VgnKilp7m9I/AAAAAAAAN4I/qVjUq3gUgAc/s720/IMG_20150927_051025.jpg alt></p>
+<p><img src=https://3.bp.blogspot.com/-XlJhaF-ukVg/VgnKisqzSSI/AAAAAAAAN4I/v0GvktwQYxc/s720/IMG_20150927_052253.jpg alt></p>
+<p><img src=https://2.bp.blogspot.com/-Hi9uNCDzUZA/VgnKivThhwI/AAAAAAAAN4I/p0qCZvtBTo8/s720/IMG_20150927_052257.jpg alt></p>
+<p><strong>Kullanımdan Fotoğraflar</strong></p>
+<p><img src=https://2.bp.blogspot.com/-i-Hnpx085Y0/VgnKqjbYhGI/AAAAAAAAN4Q/hdOeMIs6FyA/s720/IMG_20150927_052636.jpg alt></p>
+<p><img src=https://3.bp.blogspot.com/-8fMHQZUC4BY/VgnKqnuVNtI/AAAAAAAAN4Q/JnbNiOKbmWU/s720/IMG_20150927_052610.jpg alt></p>
+<p><img src=https://4.bp.blogspot.com/-6lK1r9Lwnqo/VgnKqnbjVWI/AAAAAAAAN4Q/Fvf8tIzwfd0/s720/IMG_20150927_092540.jpg alt></p>
+<p><img src=https://4.bp.blogspot.com/-Que5jw7wr_M/VgnKqm2KyCI/AAAAAAAAN4Q/gyI_bqgkNDI/s720/IMG_20150927_052528.jpg alt></p>
+<p><img src=https://4.bp.blogspot.com/-GMjB4GNfzxA/VgnKqnih3_I/AAAAAAAAN4Q/_8x55IdwthM/s720/IMG_20150927_092548.jpg alt></p>
+</section>
+<footer class="mt-12 flex flex-wrap">
+<a class="mb-1.5 mr-1.5 rounded-lg bg-black/[3%] px-5 py-1.5 no-underline dark:bg-white/[8%]" href=https://mozanunal.com/tags/electronics>Electronics</a>
 <a class="mb-1.5 mr-1.5 rounded-lg bg-black/[3%] px-5 py-1.5 no-underline dark:bg-white/[8%]" href=https://mozanunal.com/tags/arduino>Arduino</a>
 <a class="mb-1.5 mr-1.5 rounded-lg bg-black/[3%] px-5 py-1.5 no-underline dark:bg-white/[8%]" href=https://mozanunal.com/tags/dht11>Dht11</a>
 <a class="mb-1.5 mr-1.5 rounded-lg bg-black/[3%] px-5 py-1.5 no-underline dark:bg-white/[8%]" href=https://mozanunal.com/tags/esp8266>ESP8266</a>
 <a class="mb-1.5 mr-1.5 rounded-lg bg-black/[3%] px-5 py-1.5 no-underline dark:bg-white/[8%]" href=https://mozanunal.com/tags/html>Html</a>
 <a class="mb-1.5 mr-1.5 rounded-lg bg-black/[3%] px-5 py-1.5 no-underline dark:bg-white/[8%]" href=https://mozanunal.com/tags/mq135>MQ135</a>
-<a class="mb-1.5 mr-1.5 rounded-lg bg-black/[3%] px-5 py-1.5 no-underline dark:bg-white/[8%]" href=https://mozanunal.com/tags/ya%C4%9F%C4%B1%C5%9F-sens%C3%B6r%C3%BC>Yağış sensörü</a></footer><nav class="mt-24 flex rounded-lg bg-black/[3%] text-lg dark:bg-white/[8%]"><a class="flex w-1/2 items-center rounded-l-md p-6 pr-3 font-semibold no-underline hover:bg-black/[2%] dark:hover:bg-white/[3%]" href=https://mozanunal.com/2015/10/diy-raspberry-pi-laptop-16/><span class=mr-1.5>←</span><span>DIY Raspberry Pi Laptop</span></a>
-<a class="ml-auto flex w-1/2 items-center justify-end rounded-r-md p-6 pl-3 font-semibold no-underline hover:bg-black/[2%] dark:hover:bg-white/[3%]" href=https://mozanunal.com/2015/09/diy-raspberry-pi-laptop/><span>[TR] DIY Raspberry Pi Laptop</span><span class=ml-1.5>→</span></a></nav></article></main><footer class="opaco mx-auto flex h-[4.5rem] max-w-3xl items-center px-8 text-[0.9em] opacity-60"><div class=mr-auto>&copy; 2024
-<a class=link href=https://mozanunal.com/>Mehmet Ozan Ünal</a></div><a class="link mx-6" href=https://gohugo.io/ rel=noopener target=_blank>Powered by Hugo️️</a>️
-<a class=link href=https://github.com/nanxiaobei/hugo-paper rel=noopener target=_blank>✎ Paper</a></footer></body></html>
+<a class="mb-1.5 mr-1.5 rounded-lg bg-black/[3%] px-5 py-1.5 no-underline dark:bg-white/[8%]" href=https://mozanunal.com/tags/ya%C4%9F%C4%B1%C5%9F-sens%C3%B6r%C3%BC>Yağış sensörü</a>
+</footer>
+<nav class="mt-24 flex rounded-lg bg-black/[3%] text-lg dark:bg-white/[8%]">
+<a class="flex w-1/2 items-center rounded-l-md p-6 pr-3 font-semibold no-underline hover:bg-black/[2%] dark:hover:bg-white/[3%]" href=https://mozanunal.com/2015/10/diy-raspberry-pi-laptop-16/><span class=mr-1.5>←</span><span>DIY Raspberry Pi Laptop</span></a>
+<a class="ml-auto flex w-1/2 items-center justify-end rounded-r-md p-6 pl-3 font-semibold no-underline hover:bg-black/[2%] dark:hover:bg-white/[3%]" href=https://mozanunal.com/2015/09/diy-raspberry-pi-laptop/><span>[TR] DIY Raspberry Pi Laptop</span><span class=ml-1.5>→</span></a>
+</nav>
+</article>
+</main>
+<footer class="opaco mx-auto flex h-[4.5rem] max-w-3xl items-center px-8 text-[0.9em] opacity-60">
+<div class=mr-auto>
+&copy; 2024
+<a class=link href=https://mozanunal.com/>Mehmet Ozan Ünal</a>
+</div>
+<a class="link mx-6" href=https://gohugo.io/ rel=noopener target=_blank>Powered by Hugo️️</a>️
+<a class=link href=https://github.com/nanxiaobei/hugo-paper rel=noopener target=_blank>✎ Paper</a>
+</footer>
+</body>
+</html>

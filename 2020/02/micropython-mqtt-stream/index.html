@@ -1,96 +1,200 @@
-<!doctype html><html class="not-ready lg:text-base" style=--bg:#fbfbfb lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><title>Micropython Mqtt Streamer - Mehmet Ozan Ünal</title>
-<meta name=theme-color><meta name=description content="Micropython Mqtt Streamer Hello everyone, I have developed a micropython code to stream accelerometer data over mqtt. Also I have created a tool to visualize the data which is transferred from remote MQTT device which is executing micropython code.
-Demo Development The first thing which I tried with micropython is connecting ESP8266 to a WiFi. I have tried the following script which I found from the official documentation of the micropython."><meta name=author content="Mehmet Ozan Ünal"><link rel="preload stylesheet" as=style href=https://mozanunal.com/main.min.css><link rel=preload as=image href=https://mozanunal.com/theme.svg><link rel=preload as=image href="https://www.gravatar.com/avatar/998cbd3ab655239d8be787580cce0415?s=160&amp;d=identicon"><link rel=preload as=image href=https://mozanunal.com/twitter.svg><link rel=preload as=image href=https://mozanunal.com/github.svg><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.css integrity=sha384-3UiQGuEI4TTMaFmGIZumfRPtfKQ3trwQE2JgosJxCnGmQpL/lJdjpcHkaaFwHlcI crossorigin=anonymous><script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.js integrity=sha384-G0zcxDFp5LWZtDuRMnBkk3EphCK1lhEf4UEyEM693ka574TZGwo4IWwS6QLzM/2t crossorigin=anonymous></script><script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/contrib/auto-render.min.js integrity=sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05 crossorigin=anonymous onload=renderMathInElement(document.body)></script><link rel=icon href=https://mozanunal.com/favicon.ico><link rel=apple-touch-icon href=https://mozanunal.com/apple-touch-icon.png><meta name=generator content="Hugo 0.121.1"><script>var doNotTrack=!1;doNotTrack||(window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","G-007KSW65JL","auto"),ga("send","pageview"))</script><script async src=https://www.google-analytics.com/analytics.js></script><script async src="https://www.googletagmanager.com/gtag/js?id=G-007KSW65JL"></script><script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-007KSW65JL",{anonymize_ip:!1})}</script><meta property="og:title" content="Micropython Mqtt Streamer"><meta property="og:description" content="Micropython Mqtt Streamer Hello everyone, I have developed a micropython code to stream accelerometer data over mqtt. Also I have created a tool to visualize the data which is transferred from remote MQTT device which is executing micropython code.
-Demo Development The first thing which I tried with micropython is connecting ESP8266 to a WiFi. I have tried the following script which I found from the official documentation of the micropython."><meta property="og:type" content="article"><meta property="og:url" content="https://mozanunal.com/2020/02/micropython-mqtt-stream/"><meta property="article:section" content="posts"><meta property="article:published_time" content="2020-02-26T22:36:00+00:00"><meta property="article:modified_time" content="2020-02-26T22:36:00+00:00"><meta itemprop=name content="Micropython Mqtt Streamer"><meta itemprop=description content="Micropython Mqtt Streamer Hello everyone, I have developed a micropython code to stream accelerometer data over mqtt. Also I have created a tool to visualize the data which is transferred from remote MQTT device which is executing micropython code.
-Demo Development The first thing which I tried with micropython is connecting ESP8266 to a WiFi. I have tried the following script which I found from the official documentation of the micropython."><meta itemprop=datePublished content="2020-02-26T22:36:00+00:00"><meta itemprop=dateModified content="2020-02-26T22:36:00+00:00"><meta itemprop=wordCount content="505"><meta itemprop=keywords content="MPU6050,Mqtt,IoT,Arduino,"><meta name=twitter:card content="summary"><meta name=twitter:title content="Micropython Mqtt Streamer"><meta name=twitter:description content="Micropython Mqtt Streamer Hello everyone, I have developed a micropython code to stream accelerometer data over mqtt. Also I have created a tool to visualize the data which is transferred from remote MQTT device which is executing micropython code.
-Demo Development The first thing which I tried with micropython is connecting ESP8266 to a WiFi. I have tried the following script which I found from the official documentation of the micropython."></head><body class="text-black duration-200 ease-out dark:text-white"><header class="mx-auto flex h-[4.5rem] max-w-3xl px-8 lg:justify-center"><div class="relative z-50 mr-auto flex items-center"><a class="-translate-x-[1px] -translate-y-[1px] text-2xl font-semibold" href=https://mozanunal.com/>Mehmet Ozan Ünal</a><div class="btn-dark text-[0] ml-4 h-6 w-6 shrink-0 cursor-pointer [background:url(./theme.svg)_left_center/cover_no-repeat] dark:invert dark:[background-position:right]" role=button aria-label=Dark></div></div><div class="btn-menu relative z-50 -mr-8 flex h-[4.5rem] w-[5rem] shrink-0 cursor-pointer flex-col items-center justify-center gap-2.5 lg:hidden" role=button aria-label=Menu></div><script>const htmlClass=document.documentElement.classList;setTimeout(()=>{htmlClass.remove("not-ready")},10);const btnMenu=document.querySelector(".btn-menu");btnMenu.addEventListener("click",()=>{htmlClass.toggle("open")});const metaTheme=document.querySelector('meta[name="theme-color"]'),lightBg="#fbfbfb".replace(/"/g,""),setDark=e=>{metaTheme.setAttribute("content",e?"#000":lightBg),htmlClass[e?"add":"remove"]("dark"),localStorage.setItem("dark",e)},darkScheme=window.matchMedia("(prefers-color-scheme: dark)");if(htmlClass.contains("dark"))setDark(!0);else{const e=localStorage.getItem("dark");setDark(e?e==="true":darkScheme.matches)}darkScheme.addEventListener("change",e=>{setDark(e.matches)});const btnDark=document.querySelector(".btn-dark");btnDark.addEventListener("click",()=>{setDark(localStorage.getItem("dark")!=="true")})</script><div class="nav-wrapper fixed inset-x-0 top-full z-40 flex h-full select-none flex-col justify-center pb-16 duration-200 dark:bg-black lg:static lg:h-auto lg:flex-row lg:!bg-transparent lg:pb-0 lg:transition-none"><nav class="lg:ml-12 lg:flex lg:flex-row lg:items-center lg:space-x-6"><a class="block text-center text-2xl leading-[5rem] lg:text-base lg:font-normal" href=/about/>About</a>
-<a class="block text-center text-2xl leading-[5rem] lg:text-base lg:font-normal" href=/contact/>Contact</a></nav><nav class="mt-12 flex justify-center space-x-10 dark:invert lg:ml-12 lg:mt-0 lg:items-center lg:space-x-6"><a class="h-8 w-8 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6" style=--url:url(./twitter.svg) href=https://twitter.com/MOzanUnal target=_blank rel=me>twitter
-</a><a class="h-8 w-8 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6" style=--url:url(./github.svg) href=https://github.com/mozanunal target=_blank rel=me>github</a></nav></div></header><main class="prose prose-neutral relative mx-auto min-h-[calc(100%-9rem)] max-w-3xl px-8 pb-16 pt-12 dark:prose-invert"><article><header class=mb-16><h1 class="!my-0 pb-2.5">Micropython Mqtt Streamer</h1><div class="text-sm antialiased opacity-60"><time>Feb 26, 2020</time>
+<!doctype html><html class="not-ready lg:text-base" style=--bg:#fbfbfb lang=en>
+<head>
+<meta charset=utf-8>
+<meta http-equiv=x-ua-compatible content="IE=edge">
+<meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
+<title>Micropython Mqtt Streamer - Mehmet Ozan Ünal</title>
+<meta name=theme-color>
+<meta name=description content="Micropython Mqtt Streamer Hello everyone, I have developed a micropython code to stream accelerometer data over mqtt. Also I have created a tool to visualize the data which is transferred from remote MQTT device which is executing micropython code.
+Demo   Development The first thing which I tried with micropython is connecting ESP8266 to a WiFi. I have tried the following script which I found from the official documentation of the micropython.">
+<meta name=author content="Mehmet Ozan Ünal">
+<link rel="preload stylesheet" as=style href=https://mozanunal.com/main.min.css>
+<link rel=preload as=image href=https://mozanunal.com/theme.svg>
+<link rel=preload as=image href="https://www.gravatar.com/avatar/998cbd3ab655239d8be787580cce0415?s=160&d=identicon">
+<link rel=preload as=image href=https://mozanunal.com/twitter.svg>
+<link rel=preload as=image href=https://mozanunal.com/github.svg>
+<link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.css integrity=sha384-3UiQGuEI4TTMaFmGIZumfRPtfKQ3trwQE2JgosJxCnGmQpL/lJdjpcHkaaFwHlcI crossorigin=anonymous>
+<script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.js integrity=sha384-G0zcxDFp5LWZtDuRMnBkk3EphCK1lhEf4UEyEM693ka574TZGwo4IWwS6QLzM/2t crossorigin=anonymous></script>
+<script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/contrib/auto-render.min.js integrity=sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05 crossorigin=anonymous onload=renderMathInElement(document.body)></script>
+<link rel=icon href=https://mozanunal.com/favicon.ico>
+<link rel=apple-touch-icon href=https://mozanunal.com/apple-touch-icon.png>
+<meta name=generator content="Hugo 0.92.2">
+<script type=application/javascript>var doNotTrack=!1;doNotTrack||(window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga('create','G-007KSW65JL','auto'),ga('send','pageview'))</script>
+<script async src=https://www.google-analytics.com/analytics.js></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-007KSW65JL"></script>
+<script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-007KSW65JL',{anonymize_ip:!1})}</script>
+<meta property="og:title" content="Micropython Mqtt Streamer">
+<meta property="og:description" content="Micropython Mqtt Streamer Hello everyone, I have developed a micropython code to stream accelerometer data over mqtt. Also I have created a tool to visualize the data which is transferred from remote MQTT device which is executing micropython code.
+Demo   Development The first thing which I tried with micropython is connecting ESP8266 to a WiFi. I have tried the following script which I found from the official documentation of the micropython.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://mozanunal.com/2020/02/micropython-mqtt-stream/"><meta property="article:section" content="posts">
+<meta property="article:published_time" content="2020-02-26T22:36:00+00:00">
+<meta property="article:modified_time" content="2020-02-26T22:36:00+00:00">
+<meta itemprop=name content="Micropython Mqtt Streamer">
+<meta itemprop=description content="Micropython Mqtt Streamer Hello everyone, I have developed a micropython code to stream accelerometer data over mqtt. Also I have created a tool to visualize the data which is transferred from remote MQTT device which is executing micropython code.
+Demo   Development The first thing which I tried with micropython is connecting ESP8266 to a WiFi. I have tried the following script which I found from the official documentation of the micropython."><meta itemprop=datePublished content="2020-02-26T22:36:00+00:00">
+<meta itemprop=dateModified content="2020-02-26T22:36:00+00:00">
+<meta itemprop=wordCount content="505">
+<meta itemprop=keywords content="MPU6050,Mqtt,IoT,Arduino,">
+<meta name=twitter:card content="summary">
+<meta name=twitter:title content="Micropython Mqtt Streamer">
+<meta name=twitter:description content="Micropython Mqtt Streamer Hello everyone, I have developed a micropython code to stream accelerometer data over mqtt. Also I have created a tool to visualize the data which is transferred from remote MQTT device which is executing micropython code.
+Demo   Development The first thing which I tried with micropython is connecting ESP8266 to a WiFi. I have tried the following script which I found from the official documentation of the micropython.">
+</head>
+<body class="text-black duration-200 ease-out dark:text-white">
+<header class="mx-auto flex h-[4.5rem] max-w-3xl px-8 lg:justify-center">
+<div class="relative z-50 mr-auto flex items-center">
+<a class="-translate-x-[1px] -translate-y-[1px] text-2xl font-semibold" href=https://mozanunal.com/>Mehmet Ozan Ünal</a>
+<div class="btn-dark text-[0] ml-4 h-6 w-6 shrink-0 cursor-pointer [background:url(./theme.svg)_left_center/cover_no-repeat] dark:invert dark:[background-position:right]" role=button aria-label=Dark></div>
+</div>
+<div class="btn-menu relative z-50 -mr-8 flex h-[4.5rem] w-[5rem] shrink-0 cursor-pointer flex-col items-center justify-center gap-2.5 lg:hidden" role=button aria-label=Menu></div>
+<script>const htmlClass=document.documentElement.classList;setTimeout(()=>{htmlClass.remove('not-ready')},10);const btnMenu=document.querySelector('.btn-menu');btnMenu.addEventListener('click',()=>{htmlClass.toggle('open')});const metaTheme=document.querySelector('meta[name="theme-color"]'),lightBg='#fbfbfb'.replace(/"/g,''),setDark=a=>{metaTheme.setAttribute('content',a?'#000':lightBg),htmlClass[a?'add':'remove']('dark'),localStorage.setItem('dark',a)},darkScheme=window.matchMedia('(prefers-color-scheme: dark)');if(htmlClass.contains('dark'))setDark(!0);else{const a=localStorage.getItem('dark');setDark(a?a==='true':darkScheme.matches)}darkScheme.addEventListener('change',a=>{setDark(a.matches)});const btnDark=document.querySelector('.btn-dark');btnDark.addEventListener('click',()=>{setDark(localStorage.getItem('dark')!=='true')})</script>
+<div class="nav-wrapper fixed inset-x-0 top-full z-40 flex h-full select-none flex-col justify-center pb-16 duration-200 dark:bg-black lg:static lg:h-auto lg:flex-row lg:!bg-transparent lg:pb-0 lg:transition-none">
+<nav class="lg:ml-12 lg:flex lg:flex-row lg:items-center lg:space-x-6">
+<a class="block text-center text-2xl leading-[5rem] lg:text-base lg:font-normal" href=/about/>About</a>
+<a class="block text-center text-2xl leading-[5rem] lg:text-base lg:font-normal" href=/contact/>Contact</a>
+</nav>
+<nav class="mt-12 flex justify-center space-x-10 dark:invert lg:ml-12 lg:mt-0 lg:items-center lg:space-x-6">
+<a class="h-8 w-8 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6" style=--url:url(./twitter.svg) href=https://twitter.com/MOzanUnal target=_blank rel=me>
+twitter
+</a>
+<a class="h-8 w-8 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6" style=--url:url(./github.svg) href=https://github.com/mozanunal target=_blank rel=me>
+github
+</a>
+</nav>
+</div>
+</header>
+<main class="prose prose-neutral relative mx-auto min-h-[calc(100%-9rem)] max-w-3xl px-8 pb-16 pt-12 dark:prose-invert">
+<article>
+<header class=mb-16>
+<h1 class="!my-0 pb-2.5">Micropython Mqtt Streamer</h1>
+<div class="text-sm antialiased opacity-60">
+<time>Feb 26, 2020</time>
 <span class=mx-1>&#183;</span>
-<span>Mehmet Ozan Ünal</span></div></header><section><h1 id=micropython-mqtt-streamer>Micropython Mqtt Streamer</h1><p>Hello everyone,
-I have developed a micropython code to stream accelerometer data over mqtt. Also I have created a tool to visualize the data which is transferred from remote MQTT device which is executing micropython code.</p><h2 id=demo>Demo</h2><div style=position:relative;padding-bottom:56.25%;height:0;overflow:hidden><iframe src=https://www.youtube-nocookie.com/embed/5v9RwN818p8 style=position:absolute;top:0;left:0;width:100%;height:100%;border:0 allowfullscreen title="YouTube Video"></iframe></div><h2 id=development>Development</h2><p>The first thing which I tried with micropython is connecting ESP8266 to a WiFi. I have tried the following script which I found from the official documentation of the micropython.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span><span style=color:#ff79c6>import</span> network
-</span></span><span style=display:flex><span>wlan <span style=color:#ff79c6>=</span> network<span style=color:#ff79c6>.</span>WLAN(network<span style=color:#ff79c6>.</span>STA_IF)
-</span></span><span style=display:flex><span>wlan<span style=color:#ff79c6>.</span>active(<span style=color:#ff79c6>True</span>)
-</span></span><span style=display:flex><span>wlan<span style=color:#ff79c6>.</span>connect(<span style=color:#f1fa8c>&#39;ssid&#39;</span>, <span style=color:#f1fa8c>&#39;password&#39;</span>)
-</span></span></code></pre></div><p>The wifi ip of the module can be examined with <code>wlan.ifconfig()</code> command. I should say that scripting with a microcontoller is quite fun. ESP8266 was connected over usb over Uart line to my computer and I can scripting using micropython shell. For example: I have used upip module to install <code>umqtt.simple</code> upython module to my ESP8266. After installing the umqtt module, I have tested its basic examples and they worked without any problem.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span><span style=color:#ff79c6>&gt;&gt;&gt;</span> <span style=color:#ff79c6>import</span> upip
-</span></span><span style=display:flex><span><span style=color:#ff79c6>&gt;&gt;&gt;</span> <span style=color:#8be9fd;font-style:italic>dir</span>(upip)
-</span></span><span style=display:flex><span>[<span style=color:#f1fa8c>&#39;__class__&#39;</span>, <span style=color:#f1fa8c>&#39;__name__&#39;</span>, <span style=color:#f1fa8c>&#39;errno&#39;</span>, <span style=color:#f1fa8c>&#39;gc&#39;</span>, <span style=color:#f1fa8c>&#39;help&#39;</span>, <span style=color:#f1fa8c>&#39;json&#39;</span>, <span style=color:#f1fa8c>&#39;os&#39;</span>, <span style=color:#f1fa8c>&#39;sys&#39;</span>, <span style=color:#f1fa8c>&#39;usocket&#39;</span>, <span style=color:#f1fa8c>&#39;ussl&#39;</span>, <span style=color:#f1fa8c>&#39;uzlib&#39;</span>, <span style=color:#f1fa8c>&#39;main&#39;</span>, <span style=color:#f1fa8c>&#39;debug&#39;</span>, <span style=color:#f1fa8c>&#39;tarfile&#39;</span>, <span style=color:#f1fa8c>&#39;install_path&#39;</span>, <span style=color:#f1fa8c>&#39;cleanup_files&#39;</span>, <span style=color:#f1fa8c>&#39;gzdict_sz&#39;</span>, <span style=color:#f1fa8c>&#39;file_buf&#39;</span>, <span style=color:#f1fa8c>&#39;NotFoundError&#39;</span>, <span style=color:#f1fa8c>&#39;op_split&#39;</span>, <span style=color:#f1fa8c>&#39;op_basename&#39;</span>, <span style=color:#f1fa8c>&#39;_makedirs&#39;</span>, <span style=color:#f1fa8c>&#39;save_file&#39;</span>, <span style=color:#f1fa8c>&#39;install_tar&#39;</span>, <span style=color:#f1fa8c>&#39;expandhome&#39;</span>, <span style=color:#f1fa8c>&#39;warn_ussl&#39;</span>, <span style=color:#f1fa8c>&#39;url_open&#39;</span>, <span style=color:#f1fa8c>&#39;get_pkg_metadata&#39;</span>, <span style=color:#f1fa8c>&#39;fatal&#39;</span>, <span style=color:#f1fa8c>&#39;install_pkg&#39;</span>, <span style=color:#f1fa8c>&#39;install&#39;</span>, <span style=color:#f1fa8c>&#39;get_install_path&#39;</span>, <span style=color:#f1fa8c>&#39;cleanup&#39;</span>]
-</span></span><span style=display:flex><span><span style=color:#ff79c6>&gt;&gt;&gt;</span> upip<span style=color:#ff79c6>.</span>install(<span style=color:#f1fa8c>&#34;umqtt.simple&#34;</span>)
-</span></span></code></pre></div><p>Next phase is reading data from accelerometer. I have used MPU6050 as the IMU sensor. It consists a gyro and an accelerometer sensor. I have used i2c scanner example code to detect the i2c address of the device. The address of my MPU6050 is <code>0x68</code>.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span><span style=color:#ff79c6>&gt;&gt;&gt;</span> i2c<span style=color:#ff79c6>.</span>scan() 
-</span></span><span style=display:flex><span><span style=color:#6272a4># scan for slaves on the bus, </span>
-</span></span><span style=display:flex><span><span style=color:#6272a4># returning a list of valid addresses</span>
-</span></span><span style=display:flex><span><span style=color:#ff79c6>&gt;&gt;&gt;</span> <span style=color:#ff79c6>for</span> device <span style=color:#ff79c6>in</span> devices:
-</span></span><span style=display:flex><span><span style=color:#ff79c6>...</span>     <span style=color:#8be9fd;font-style:italic>print</span>(<span style=color:#f1fa8c>&#34;Decimal address: &#34;</span>,device,<span style=color:#f1fa8c>&#34; | Hexa address: &#34;</span>,<span style=color:#8be9fd;font-style:italic>hex</span>(device))
-</span></span><span style=display:flex><span><span style=color:#ff79c6>...</span>
-</span></span><span style=display:flex><span><span style=color:#ff79c6>...</span>
-</span></span><span style=display:flex><span><span style=color:#ff79c6>...</span>
-</span></span><span style=display:flex><span>Decimal address:  <span style=color:#bd93f9>104</span>  <span style=color:#ff79c6>|</span> Hexa address:  <span style=color:#bd93f9>0x68</span>
-</span></span></code></pre></div><p>The following class is developed to read sensor values directly from MPU6050.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span><span style=color:#ff79c6>import</span> machine
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#ff79c6>class</span> <span style=color:#50fa7b>accel</span>():
-</span></span><span style=display:flex><span>    <span style=color:#ff79c6>def</span> __init__(self, i2c, addr<span style=color:#ff79c6>=</span><span style=color:#bd93f9>0x68</span>):
-</span></span><span style=display:flex><span>        self<span style=color:#ff79c6>.</span>iic <span style=color:#ff79c6>=</span> i2c
-</span></span><span style=display:flex><span>        self<span style=color:#ff79c6>.</span>addr <span style=color:#ff79c6>=</span> addr
-</span></span><span style=display:flex><span>        self<span style=color:#ff79c6>.</span>iic<span style=color:#ff79c6>.</span>start()
-</span></span><span style=display:flex><span>        self<span style=color:#ff79c6>.</span>iic<span style=color:#ff79c6>.</span>writeto(self<span style=color:#ff79c6>.</span>addr, <span style=color:#8be9fd;font-style:italic>bytearray</span>([<span style=color:#bd93f9>107</span>, <span style=color:#bd93f9>0</span>]))
-</span></span><span style=display:flex><span>        self<span style=color:#ff79c6>.</span>iic<span style=color:#ff79c6>.</span>stop()
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>    <span style=color:#ff79c6>def</span> <span style=color:#50fa7b>get_raw_values</span>(self):
-</span></span><span style=display:flex><span>        self<span style=color:#ff79c6>.</span>iic<span style=color:#ff79c6>.</span>start()
-</span></span><span style=display:flex><span>        a <span style=color:#ff79c6>=</span> self<span style=color:#ff79c6>.</span>iic<span style=color:#ff79c6>.</span>readfrom_mem(self<span style=color:#ff79c6>.</span>addr, <span style=color:#bd93f9>0x3B</span>, <span style=color:#bd93f9>14</span>)
-</span></span><span style=display:flex><span>        self<span style=color:#ff79c6>.</span>iic<span style=color:#ff79c6>.</span>stop()
-</span></span><span style=display:flex><span>        <span style=color:#ff79c6>return</span> a
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>    <span style=color:#ff79c6>def</span> <span style=color:#50fa7b>get_ints</span>(self):
-</span></span><span style=display:flex><span>        b <span style=color:#ff79c6>=</span> self<span style=color:#ff79c6>.</span>get_raw_values()
-</span></span><span style=display:flex><span>        c <span style=color:#ff79c6>=</span> []
-</span></span><span style=display:flex><span>        <span style=color:#ff79c6>for</span> i <span style=color:#ff79c6>in</span> b:
-</span></span><span style=display:flex><span>            c<span style=color:#ff79c6>.</span>append(i)
-</span></span><span style=display:flex><span>        <span style=color:#ff79c6>return</span> c
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>    <span style=color:#ff79c6>def</span> <span style=color:#50fa7b>bytes_toint</span>(self, firstbyte, secondbyte):
-</span></span><span style=display:flex><span>        <span style=color:#ff79c6>if</span> <span style=color:#ff79c6>not</span> firstbyte <span style=color:#ff79c6>&amp;</span> <span style=color:#bd93f9>0x80</span>:
-</span></span><span style=display:flex><span>            <span style=color:#ff79c6>return</span> firstbyte <span style=color:#ff79c6>&lt;&lt;</span> <span style=color:#bd93f9>8</span> <span style=color:#ff79c6>|</span> secondbyte
-</span></span><span style=display:flex><span>        <span style=color:#ff79c6>return</span> <span style=color:#ff79c6>-</span> (((firstbyte <span style=color:#ff79c6>^</span> <span style=color:#bd93f9>255</span>) <span style=color:#ff79c6>&lt;&lt;</span> <span style=color:#bd93f9>8</span>) <span style=color:#ff79c6>|</span> (secondbyte <span style=color:#ff79c6>^</span> <span style=color:#bd93f9>255</span>) <span style=color:#ff79c6>+</span> <span style=color:#bd93f9>1</span>)
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>    <span style=color:#ff79c6>def</span> <span style=color:#50fa7b>get_values</span>(self):
-</span></span><span style=display:flex><span>        raw_ints <span style=color:#ff79c6>=</span> self<span style=color:#ff79c6>.</span>get_raw_values()
-</span></span><span style=display:flex><span>        vals <span style=color:#ff79c6>=</span> {}
-</span></span><span style=display:flex><span>        vals[<span style=color:#f1fa8c>&#34;AcX&#34;</span>] <span style=color:#ff79c6>=</span> self<span style=color:#ff79c6>.</span>bytes_toint(raw_ints[<span style=color:#bd93f9>0</span>], raw_ints[<span style=color:#bd93f9>1</span>])
-</span></span><span style=display:flex><span>        vals[<span style=color:#f1fa8c>&#34;AcY&#34;</span>] <span style=color:#ff79c6>=</span> self<span style=color:#ff79c6>.</span>bytes_toint(raw_ints[<span style=color:#bd93f9>2</span>], raw_ints[<span style=color:#bd93f9>3</span>])
-</span></span><span style=display:flex><span>        vals[<span style=color:#f1fa8c>&#34;AcZ&#34;</span>] <span style=color:#ff79c6>=</span> self<span style=color:#ff79c6>.</span>bytes_toint(raw_ints[<span style=color:#bd93f9>4</span>], raw_ints[<span style=color:#bd93f9>5</span>])
-</span></span><span style=display:flex><span>        vals[<span style=color:#f1fa8c>&#34;Tmp&#34;</span>] <span style=color:#ff79c6>=</span> self<span style=color:#ff79c6>.</span>bytes_toint(raw_ints[<span style=color:#bd93f9>6</span>], raw_ints[<span style=color:#bd93f9>7</span>]) <span style=color:#ff79c6>/</span> <span style=color:#bd93f9>340.00</span> <span style=color:#ff79c6>+</span> <span style=color:#bd93f9>36.53</span>
-</span></span><span style=display:flex><span>        vals[<span style=color:#f1fa8c>&#34;GyX&#34;</span>] <span style=color:#ff79c6>=</span> self<span style=color:#ff79c6>.</span>bytes_toint(raw_ints[<span style=color:#bd93f9>8</span>], raw_ints[<span style=color:#bd93f9>9</span>])
-</span></span><span style=display:flex><span>        vals[<span style=color:#f1fa8c>&#34;GyY&#34;</span>] <span style=color:#ff79c6>=</span> self<span style=color:#ff79c6>.</span>bytes_toint(raw_ints[<span style=color:#bd93f9>10</span>], raw_ints[<span style=color:#bd93f9>11</span>])
-</span></span><span style=display:flex><span>        vals[<span style=color:#f1fa8c>&#34;GyZ&#34;</span>] <span style=color:#ff79c6>=</span> self<span style=color:#ff79c6>.</span>bytes_toint(raw_ints[<span style=color:#bd93f9>12</span>], raw_ints[<span style=color:#bd93f9>13</span>])
-</span></span><span style=display:flex><span>        <span style=color:#ff79c6>return</span> vals  <span style=color:#6272a4># returned in range of Int16</span>
-</span></span><span style=display:flex><span>        <span style=color:#6272a4># -32768 to 32767</span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>    <span style=color:#ff79c6>def</span> <span style=color:#50fa7b>val_test</span>(self):  <span style=color:#6272a4># ONLY FOR TESTING! Also, fast reading sometimes crashes IIC</span>
-</span></span><span style=display:flex><span>        <span style=color:#ff79c6>from</span> time <span style=color:#ff79c6>import</span> sleep
-</span></span><span style=display:flex><span>        <span style=color:#ff79c6>while</span> <span style=color:#bd93f9>1</span>:
-</span></span><span style=display:flex><span>            <span style=color:#8be9fd;font-style:italic>print</span>(self<span style=color:#ff79c6>.</span>get_values())
-</span></span><span style=display:flex><span>            sleep(<span style=color:#bd93f9>0.05</span>)
-</span></span></code></pre></div><p>Main loop is also quite strait-forward. It read samples from acc and send these over mqtt protocol directly to the server.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span><span style=color:#ff79c6>from</span> machine <span style=color:#ff79c6>import</span> I2C, Pin
-</span></span><span style=display:flex><span><span style=color:#ff79c6>import</span> mpu6050
-</span></span><span style=display:flex><span><span style=color:#ff79c6>from</span> umqtt.simple <span style=color:#ff79c6>import</span> MQTTClient
-</span></span><span style=display:flex><span><span style=color:#ff79c6>import</span> time<span style=color:#ff79c6>,</span> json
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>i2c <span style=color:#ff79c6>=</span> I2C(scl<span style=color:#ff79c6>=</span>Pin(<span style=color:#bd93f9>5</span>), sda<span style=color:#ff79c6>=</span>Pin(<span style=color:#bd93f9>4</span>))
-</span></span><span style=display:flex><span>accelerometer <span style=color:#ff79c6>=</span> mpu6050<span style=color:#ff79c6>.</span>accel(i2c)
-</span></span><span style=display:flex><span>c <span style=color:#ff79c6>=</span> MQTTClient(<span style=color:#f1fa8c>&#34;umqtt_client&#34;</span>, <span style=color:#f1fa8c>&#34;iot.eclipse.org&#34;</span>)
-</span></span><span style=display:flex><span>c<span style=color:#ff79c6>.</span>connect()
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#ff79c6>def</span> <span style=color:#50fa7b>run</span>():
-</span></span><span style=display:flex><span>    <span style=color:#ff79c6>while</span> <span style=color:#ff79c6>True</span>:
-</span></span><span style=display:flex><span>        c<span style=color:#ff79c6>.</span>publish( <span style=color:#f1fa8c>b</span><span style=color:#f1fa8c>&#34;micropython/test/mpu6050&#34;</span>, json<span style=color:#ff79c6>.</span>dumps(accelerometer<span style=color:#ff79c6>.</span>get_values()) )
-</span></span><span style=display:flex><span>        time<span style=color:#ff79c6>.</span>sleep_ms(<span style=color:#bd93f9>45</span>)
-</span></span><span style=display:flex><span>run()
-</span></span></code></pre></div><p><a href=https://github.com/mozanunal/micropython-mpu6050-mqtt-streamer>The code can be reached from this github repo.</a></p><h2 id=references>References</h2><ul><li><a href=https://randomnerdtutorials.com/micropython-mqtt-esp32-esp8266/>https://randomnerdtutorials.com/micropython-mqtt-esp32-esp8266/</a></li><li><a href=https://github.com/adamjezek98/MPU6050-ESP8266-MicroPython>https://github.com/adamjezek98/MPU6050-ESP8266-MicroPython</a> mpu6050.py</li><li><a href=https://docs.micropython.org/en/latest/library/network.WLAN.html>https://docs.micropython.org/en/latest/library/network.WLAN.html</a></li><li><a href=https://learn.adafruit.com/micropython-basics-esp8266-webrepl/access-webrepl>https://learn.adafruit.com/micropython-basics-esp8266-webrepl/access-webrepl</a></li></ul></section><footer class="mt-12 flex flex-wrap"><a class="mb-1.5 mr-1.5 rounded-lg bg-black/[3%] px-5 py-1.5 no-underline dark:bg-white/[8%]" href=https://mozanunal.com/tags/mpu6050>MPU6050</a>
+<span>Mehmet Ozan Ünal</span>
+</div>
+</header>
+<section><h1 id=micropython-mqtt-streamer>Micropython Mqtt Streamer</h1>
+<p>Hello everyone,
+I have developed a micropython code to stream accelerometer data over mqtt. Also I have created a tool to visualize the data which is transferred from remote MQTT device which is executing micropython code.</p>
+<h2 id=demo>Demo</h2>
+<div style=position:relative;padding-bottom:56.25%;height:0;overflow:hidden>
+<iframe src=https://www.youtube-nocookie.com/embed/5v9RwN818p8 style=position:absolute;top:0;left:0;width:100%;height:100%;border:0 allowfullscreen title="YouTube Video"></iframe>
+</div>
+<h2 id=development>Development</h2>
+<p>The first thing which I tried with micropython is connecting ESP8266 to a WiFi. I have tried the following script which I found from the official documentation of the micropython.</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#ff79c6>import</span> network
+wlan <span style=color:#ff79c6>=</span> network<span style=color:#ff79c6>.</span>WLAN(network<span style=color:#ff79c6>.</span>STA_IF)
+wlan<span style=color:#ff79c6>.</span>active(<span style=color:#ff79c6>True</span>)
+wlan<span style=color:#ff79c6>.</span>connect(<span style=color:#f1fa8c>&#39;ssid&#39;</span>, <span style=color:#f1fa8c>&#39;password&#39;</span>)
+</code></pre></div><p>The wifi ip of the module can be examined with <code>wlan.ifconfig()</code> command. I should say that scripting with a microcontoller is quite fun. ESP8266 was connected over usb over Uart line to my computer and I can scripting using micropython shell. For example: I have used upip module to install <code>umqtt.simple</code> upython module to my ESP8266. After installing the umqtt module, I have tested its basic examples and they worked without any problem.</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#ff79c6>&gt;&gt;&gt;</span> <span style=color:#ff79c6>import</span> upip
+<span style=color:#ff79c6>&gt;&gt;&gt;</span> <span style=color:#8be9fd;font-style:italic>dir</span>(upip)
+[<span style=color:#f1fa8c>&#39;__class__&#39;</span>, <span style=color:#f1fa8c>&#39;__name__&#39;</span>, <span style=color:#f1fa8c>&#39;errno&#39;</span>, <span style=color:#f1fa8c>&#39;gc&#39;</span>, <span style=color:#f1fa8c>&#39;help&#39;</span>, <span style=color:#f1fa8c>&#39;json&#39;</span>, <span style=color:#f1fa8c>&#39;os&#39;</span>, <span style=color:#f1fa8c>&#39;sys&#39;</span>, <span style=color:#f1fa8c>&#39;usocket&#39;</span>, <span style=color:#f1fa8c>&#39;ussl&#39;</span>, <span style=color:#f1fa8c>&#39;uzlib&#39;</span>, <span style=color:#f1fa8c>&#39;main&#39;</span>, <span style=color:#f1fa8c>&#39;debug&#39;</span>, <span style=color:#f1fa8c>&#39;tarfile&#39;</span>, <span style=color:#f1fa8c>&#39;install_path&#39;</span>, <span style=color:#f1fa8c>&#39;cleanup_files&#39;</span>, <span style=color:#f1fa8c>&#39;gzdict_sz&#39;</span>, <span style=color:#f1fa8c>&#39;file_buf&#39;</span>, <span style=color:#f1fa8c>&#39;NotFoundError&#39;</span>, <span style=color:#f1fa8c>&#39;op_split&#39;</span>, <span style=color:#f1fa8c>&#39;op_basename&#39;</span>, <span style=color:#f1fa8c>&#39;_makedirs&#39;</span>, <span style=color:#f1fa8c>&#39;save_file&#39;</span>, <span style=color:#f1fa8c>&#39;install_tar&#39;</span>, <span style=color:#f1fa8c>&#39;expandhome&#39;</span>, <span style=color:#f1fa8c>&#39;warn_ussl&#39;</span>, <span style=color:#f1fa8c>&#39;url_open&#39;</span>, <span style=color:#f1fa8c>&#39;get_pkg_metadata&#39;</span>, <span style=color:#f1fa8c>&#39;fatal&#39;</span>, <span style=color:#f1fa8c>&#39;install_pkg&#39;</span>, <span style=color:#f1fa8c>&#39;install&#39;</span>, <span style=color:#f1fa8c>&#39;get_install_path&#39;</span>, <span style=color:#f1fa8c>&#39;cleanup&#39;</span>]
+<span style=color:#ff79c6>&gt;&gt;&gt;</span> upip<span style=color:#ff79c6>.</span>install(<span style=color:#f1fa8c>&#34;umqtt.simple&#34;</span>)
+
+</code></pre></div><p>Next phase is reading data from accelerometer. I have used MPU6050 as the IMU sensor. It consists a gyro and an accelerometer sensor. I have used i2c scanner example code to detect the i2c address of the device. The address of my MPU6050 is <code>0x68</code>.</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#ff79c6>&gt;&gt;&gt;</span> i2c<span style=color:#ff79c6>.</span>scan() 
+<span style=color:#6272a4># scan for slaves on the bus, </span>
+<span style=color:#6272a4># returning a list of valid addresses</span>
+<span style=color:#ff79c6>&gt;&gt;&gt;</span> <span style=color:#ff79c6>for</span> device <span style=color:#ff79c6>in</span> devices:
+<span style=color:#ff79c6>...</span>     <span style=color:#8be9fd;font-style:italic>print</span>(<span style=color:#f1fa8c>&#34;Decimal address: &#34;</span>,device,<span style=color:#f1fa8c>&#34; | Hexa address: &#34;</span>,<span style=color:#8be9fd;font-style:italic>hex</span>(device))
+<span style=color:#ff79c6>...</span>
+<span style=color:#ff79c6>...</span>
+<span style=color:#ff79c6>...</span>
+Decimal address:  <span style=color:#bd93f9>104</span>  <span style=color:#ff79c6>|</span> Hexa address:  <span style=color:#bd93f9>0x68</span>
+</code></pre></div><p>The following class is developed to read sensor values directly from MPU6050.</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#ff79c6>import</span> machine
+
+
+<span style=color:#ff79c6>class</span> <span style=color:#50fa7b>accel</span>():
+    <span style=color:#ff79c6>def</span> __init__(self, i2c, addr<span style=color:#ff79c6>=</span><span style=color:#bd93f9>0x68</span>):
+        self<span style=color:#ff79c6>.</span>iic <span style=color:#ff79c6>=</span> i2c
+        self<span style=color:#ff79c6>.</span>addr <span style=color:#ff79c6>=</span> addr
+        self<span style=color:#ff79c6>.</span>iic<span style=color:#ff79c6>.</span>start()
+        self<span style=color:#ff79c6>.</span>iic<span style=color:#ff79c6>.</span>writeto(self<span style=color:#ff79c6>.</span>addr, <span style=color:#8be9fd;font-style:italic>bytearray</span>([<span style=color:#bd93f9>107</span>, <span style=color:#bd93f9>0</span>]))
+        self<span style=color:#ff79c6>.</span>iic<span style=color:#ff79c6>.</span>stop()
+
+    <span style=color:#ff79c6>def</span> <span style=color:#50fa7b>get_raw_values</span>(self):
+        self<span style=color:#ff79c6>.</span>iic<span style=color:#ff79c6>.</span>start()
+        a <span style=color:#ff79c6>=</span> self<span style=color:#ff79c6>.</span>iic<span style=color:#ff79c6>.</span>readfrom_mem(self<span style=color:#ff79c6>.</span>addr, <span style=color:#bd93f9>0x3B</span>, <span style=color:#bd93f9>14</span>)
+        self<span style=color:#ff79c6>.</span>iic<span style=color:#ff79c6>.</span>stop()
+        <span style=color:#ff79c6>return</span> a
+
+    <span style=color:#ff79c6>def</span> <span style=color:#50fa7b>get_ints</span>(self):
+        b <span style=color:#ff79c6>=</span> self<span style=color:#ff79c6>.</span>get_raw_values()
+        c <span style=color:#ff79c6>=</span> []
+        <span style=color:#ff79c6>for</span> i <span style=color:#ff79c6>in</span> b:
+            c<span style=color:#ff79c6>.</span>append(i)
+        <span style=color:#ff79c6>return</span> c
+
+    <span style=color:#ff79c6>def</span> <span style=color:#50fa7b>bytes_toint</span>(self, firstbyte, secondbyte):
+        <span style=color:#ff79c6>if</span> <span style=color:#ff79c6>not</span> firstbyte <span style=color:#ff79c6>&amp;</span> <span style=color:#bd93f9>0x80</span>:
+            <span style=color:#ff79c6>return</span> firstbyte <span style=color:#ff79c6>&lt;&lt;</span> <span style=color:#bd93f9>8</span> <span style=color:#ff79c6>|</span> secondbyte
+        <span style=color:#ff79c6>return</span> <span style=color:#ff79c6>-</span> (((firstbyte <span style=color:#ff79c6>^</span> <span style=color:#bd93f9>255</span>) <span style=color:#ff79c6>&lt;&lt;</span> <span style=color:#bd93f9>8</span>) <span style=color:#ff79c6>|</span> (secondbyte <span style=color:#ff79c6>^</span> <span style=color:#bd93f9>255</span>) <span style=color:#ff79c6>+</span> <span style=color:#bd93f9>1</span>)
+
+    <span style=color:#ff79c6>def</span> <span style=color:#50fa7b>get_values</span>(self):
+        raw_ints <span style=color:#ff79c6>=</span> self<span style=color:#ff79c6>.</span>get_raw_values()
+        vals <span style=color:#ff79c6>=</span> {}
+        vals[<span style=color:#f1fa8c>&#34;AcX&#34;</span>] <span style=color:#ff79c6>=</span> self<span style=color:#ff79c6>.</span>bytes_toint(raw_ints[<span style=color:#bd93f9>0</span>], raw_ints[<span style=color:#bd93f9>1</span>])
+        vals[<span style=color:#f1fa8c>&#34;AcY&#34;</span>] <span style=color:#ff79c6>=</span> self<span style=color:#ff79c6>.</span>bytes_toint(raw_ints[<span style=color:#bd93f9>2</span>], raw_ints[<span style=color:#bd93f9>3</span>])
+        vals[<span style=color:#f1fa8c>&#34;AcZ&#34;</span>] <span style=color:#ff79c6>=</span> self<span style=color:#ff79c6>.</span>bytes_toint(raw_ints[<span style=color:#bd93f9>4</span>], raw_ints[<span style=color:#bd93f9>5</span>])
+        vals[<span style=color:#f1fa8c>&#34;Tmp&#34;</span>] <span style=color:#ff79c6>=</span> self<span style=color:#ff79c6>.</span>bytes_toint(raw_ints[<span style=color:#bd93f9>6</span>], raw_ints[<span style=color:#bd93f9>7</span>]) <span style=color:#ff79c6>/</span> <span style=color:#bd93f9>340.00</span> <span style=color:#ff79c6>+</span> <span style=color:#bd93f9>36.53</span>
+        vals[<span style=color:#f1fa8c>&#34;GyX&#34;</span>] <span style=color:#ff79c6>=</span> self<span style=color:#ff79c6>.</span>bytes_toint(raw_ints[<span style=color:#bd93f9>8</span>], raw_ints[<span style=color:#bd93f9>9</span>])
+        vals[<span style=color:#f1fa8c>&#34;GyY&#34;</span>] <span style=color:#ff79c6>=</span> self<span style=color:#ff79c6>.</span>bytes_toint(raw_ints[<span style=color:#bd93f9>10</span>], raw_ints[<span style=color:#bd93f9>11</span>])
+        vals[<span style=color:#f1fa8c>&#34;GyZ&#34;</span>] <span style=color:#ff79c6>=</span> self<span style=color:#ff79c6>.</span>bytes_toint(raw_ints[<span style=color:#bd93f9>12</span>], raw_ints[<span style=color:#bd93f9>13</span>])
+        <span style=color:#ff79c6>return</span> vals  <span style=color:#6272a4># returned in range of Int16</span>
+        <span style=color:#6272a4># -32768 to 32767</span>
+
+    <span style=color:#ff79c6>def</span> <span style=color:#50fa7b>val_test</span>(self):  <span style=color:#6272a4># ONLY FOR TESTING! Also, fast reading sometimes crashes IIC</span>
+        <span style=color:#ff79c6>from</span> time <span style=color:#ff79c6>import</span> sleep
+        <span style=color:#ff79c6>while</span> <span style=color:#bd93f9>1</span>:
+            <span style=color:#8be9fd;font-style:italic>print</span>(self<span style=color:#ff79c6>.</span>get_values())
+            sleep(<span style=color:#bd93f9>0.05</span>)
+</code></pre></div><p>Main loop is also quite strait-forward. It read samples from acc and send these over mqtt protocol directly to the server.</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#ff79c6>from</span> machine <span style=color:#ff79c6>import</span> I2C, Pin
+<span style=color:#ff79c6>import</span> mpu6050
+<span style=color:#ff79c6>from</span> umqtt.simple <span style=color:#ff79c6>import</span> MQTTClient
+<span style=color:#ff79c6>import</span> time<span style=color:#ff79c6>,</span> json
+
+i2c <span style=color:#ff79c6>=</span> I2C(scl<span style=color:#ff79c6>=</span>Pin(<span style=color:#bd93f9>5</span>), sda<span style=color:#ff79c6>=</span>Pin(<span style=color:#bd93f9>4</span>))
+accelerometer <span style=color:#ff79c6>=</span> mpu6050<span style=color:#ff79c6>.</span>accel(i2c)
+c <span style=color:#ff79c6>=</span> MQTTClient(<span style=color:#f1fa8c>&#34;umqtt_client&#34;</span>, <span style=color:#f1fa8c>&#34;iot.eclipse.org&#34;</span>)
+c<span style=color:#ff79c6>.</span>connect()
+
+<span style=color:#ff79c6>def</span> <span style=color:#50fa7b>run</span>():
+    <span style=color:#ff79c6>while</span> <span style=color:#ff79c6>True</span>:
+        c<span style=color:#ff79c6>.</span>publish( <span style=color:#f1fa8c>b</span><span style=color:#f1fa8c>&#34;micropython/test/mpu6050&#34;</span>, json<span style=color:#ff79c6>.</span>dumps(accelerometer<span style=color:#ff79c6>.</span>get_values()) )
+        time<span style=color:#ff79c6>.</span>sleep_ms(<span style=color:#bd93f9>45</span>)
+run()
+</code></pre></div><p><a href=https://github.com/mozanunal/micropython-mpu6050-mqtt-streamer>The code can be reached from this github repo.</a></p>
+<h2 id=references>References</h2>
+<ul>
+<li><a href=https://randomnerdtutorials.com/micropython-mqtt-esp32-esp8266/>https://randomnerdtutorials.com/micropython-mqtt-esp32-esp8266/</a></li>
+<li><a href=https://github.com/adamjezek98/MPU6050-ESP8266-MicroPython>https://github.com/adamjezek98/MPU6050-ESP8266-MicroPython</a> mpu6050.py</li>
+<li><a href=https://docs.micropython.org/en/latest/library/network.WLAN.html>https://docs.micropython.org/en/latest/library/network.WLAN.html</a></li>
+<li><a href=https://learn.adafruit.com/micropython-basics-esp8266-webrepl/access-webrepl>https://learn.adafruit.com/micropython-basics-esp8266-webrepl/access-webrepl</a></li>
+</ul>
+</section>
+<footer class="mt-12 flex flex-wrap">
+<a class="mb-1.5 mr-1.5 rounded-lg bg-black/[3%] px-5 py-1.5 no-underline dark:bg-white/[8%]" href=https://mozanunal.com/tags/mpu6050>MPU6050</a>
 <a class="mb-1.5 mr-1.5 rounded-lg bg-black/[3%] px-5 py-1.5 no-underline dark:bg-white/[8%]" href=https://mozanunal.com/tags/mqtt>Mqtt</a>
 <a class="mb-1.5 mr-1.5 rounded-lg bg-black/[3%] px-5 py-1.5 no-underline dark:bg-white/[8%]" href=https://mozanunal.com/tags/iot>IoT</a>
-<a class="mb-1.5 mr-1.5 rounded-lg bg-black/[3%] px-5 py-1.5 no-underline dark:bg-white/[8%]" href=https://mozanunal.com/tags/arduino>Arduino</a></footer><nav class="mt-24 flex rounded-lg bg-black/[3%] text-lg dark:bg-white/[8%]"><a class="flex w-1/2 items-center rounded-l-md p-6 pr-3 font-semibold no-underline hover:bg-black/[2%] dark:hover:bg-white/[3%]" href=https://mozanunal.com/2020/03/coolest-c-trick/><span class=mr-1.5>←</span><span>Coolest C Trick</span></a>
-<a class="ml-auto flex w-1/2 items-center justify-end rounded-r-md p-6 pl-3 font-semibold no-underline hover:bg-black/[2%] dark:hover:bg-white/[3%]" href=https://mozanunal.com/2019/11/ecg-signal/><span>Digital Filtering of an ECG Signal</span><span class=ml-1.5>→</span></a></nav></article></main><footer class="opaco mx-auto flex h-[4.5rem] max-w-3xl items-center px-8 text-[0.9em] opacity-60"><div class=mr-auto>&copy; 2024
-<a class=link href=https://mozanunal.com/>Mehmet Ozan Ünal</a></div><a class="link mx-6" href=https://gohugo.io/ rel=noopener target=_blank>Powered by Hugo️️</a>️
-<a class=link href=https://github.com/nanxiaobei/hugo-paper rel=noopener target=_blank>✎ Paper</a></footer></body></html>
+<a class="mb-1.5 mr-1.5 rounded-lg bg-black/[3%] px-5 py-1.5 no-underline dark:bg-white/[8%]" href=https://mozanunal.com/tags/arduino>Arduino</a>
+</footer>
+<nav class="mt-24 flex rounded-lg bg-black/[3%] text-lg dark:bg-white/[8%]">
+<a class="flex w-1/2 items-center rounded-l-md p-6 pr-3 font-semibold no-underline hover:bg-black/[2%] dark:hover:bg-white/[3%]" href=https://mozanunal.com/2020/03/coolest-c-trick/><span class=mr-1.5>←</span><span>Coolest C Trick</span></a>
+<a class="ml-auto flex w-1/2 items-center justify-end rounded-r-md p-6 pl-3 font-semibold no-underline hover:bg-black/[2%] dark:hover:bg-white/[3%]" href=https://mozanunal.com/2019/11/ecg-signal/><span>Digital Filtering of an ECG Signal</span><span class=ml-1.5>→</span></a>
+</nav>
+</article>
+</main>
+<footer class="opaco mx-auto flex h-[4.5rem] max-w-3xl items-center px-8 text-[0.9em] opacity-60">
+<div class=mr-auto>
+&copy; 2024
+<a class=link href=https://mozanunal.com/>Mehmet Ozan Ünal</a>
+</div>
+<a class="link mx-6" href=https://gohugo.io/ rel=noopener target=_blank>Powered by Hugo️️</a>️
+<a class=link href=https://github.com/nanxiaobei/hugo-paper rel=noopener target=_blank>✎ Paper</a>
+</footer>
+</body>
+</html>
