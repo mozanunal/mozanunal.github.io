@@ -105,6 +105,7 @@ I decided to open a blog (2013) so that I could archive my projects and make the
 - *2008 - 2012* High School. Bornova Anatolian High School
 
 ### Publications
+- M.O. Unal, M. Ertas, I. Yildirim. Proj2Proj: self-supervised low-dose CT reconstruction, PeerJ Computer Science 10, e1849, 2024.
 - **M.O. Unal, M. Ertas, I. Yildirim.** An Unsupervised Reconstruction Method For Low-Dose CT Using Deep Generative Regularization Prior, *Biomedical Signal Processing and Control 75 (1746-8094), 2022.*
 - **M.O. Unal, M. Ertas, I. Yildirim.** Self-Supervised Training For Low Dose CT Reconstruction, *IEEE International Symposium on Biomedical Imaging, 2021.*
 - **D. Gunduzalp, B. Cengiz, M.O. Unal, I. Yildirim.** 3D U-NetR: Low Dose Computed Tomography Reconstruction via Deep Learning and 3D Convolutions, *arxiv.org, 2021.*
