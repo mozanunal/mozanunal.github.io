@@ -1,236 +1,131 @@
-<!doctype html><html class="not-ready lg:text-base" style=--bg:#fbfbfb lang=en>
-<head>
-<meta charset=utf-8>
-<meta http-equiv=x-ua-compatible content="IE=edge">
-<meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
-<title>[TR] Bitcoin Madencileri için Online Dashboard - Mehmet Ozan Ünal</title>
-<meta name=theme-color>
-<meta name=description content="Herkes merhabalar,
-Bitcoin son dönemlerin popüler konularından birisi. Aslında genel olarak crypto currency son zamanlarda çok popüler. Peki nedir bu kavramlar? Crypto currency güvenliği şifreleme teknojileriyle sağlanan sanal para birimleridir. Her gün bir yeni bir tür crypto currency ortaya çıkıyor. Bunlar arasında en geçerli olanı ise bitcoin. Sanırım popülerliği en eskilerinden biri olmasından ve anlık olarak üretimi sınırlayabilen ilki olmasından geliyor. Bahsetmek istediğim 3. kavram ise bit coin mining: Yüksek hesaplama gücü kullanarak bitcoin üretebilmeniz mümkün.">
-<meta name=author content="Mehmet Ozan Ünal">
-<link rel="preload stylesheet" as=style href=https://mozanunal.com/main.min.css>
-<link rel=preload as=image href=https://mozanunal.com/theme.svg>
-<link rel=preload as=image href="https://www.gravatar.com/avatar/998cbd3ab655239d8be787580cce0415?s=160&d=identicon">
-<link rel=preload as=image href=https://mozanunal.com/twitter.svg>
-<link rel=preload as=image href=https://mozanunal.com/github.svg>
-<link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.css integrity=sha384-3UiQGuEI4TTMaFmGIZumfRPtfKQ3trwQE2JgosJxCnGmQpL/lJdjpcHkaaFwHlcI crossorigin=anonymous>
-<script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.js integrity=sha384-G0zcxDFp5LWZtDuRMnBkk3EphCK1lhEf4UEyEM693ka574TZGwo4IWwS6QLzM/2t crossorigin=anonymous></script>
-<script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/contrib/auto-render.min.js integrity=sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05 crossorigin=anonymous onload=renderMathInElement(document.body)></script>
-<link rel=icon href=https://mozanunal.com/favicon.ico>
-<link rel=apple-touch-icon href=https://mozanunal.com/apple-touch-icon.png>
-<meta name=generator content="Hugo 0.92.2">
-<script type=application/javascript>var doNotTrack=!1;doNotTrack||(window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga('create','G-007KSW65JL','auto'),ga('send','pageview'))</script>
-<script async src=https://www.google-analytics.com/analytics.js></script>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-007KSW65JL"></script>
-<script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-007KSW65JL',{anonymize_ip:!1})}</script>
-<meta property="og:title" content="[TR] Bitcoin Madencileri için Online Dashboard">
-<meta property="og:description" content="Herkes merhabalar,
-Bitcoin son dönemlerin popüler konularından birisi. Aslında genel olarak crypto currency son zamanlarda çok popüler. Peki nedir bu kavramlar? Crypto currency güvenliği şifreleme teknojileriyle sağlanan sanal para birimleridir. Her gün bir yeni bir tür crypto currency ortaya çıkıyor. Bunlar arasında en geçerli olanı ise bitcoin. Sanırım popülerliği en eskilerinden biri olmasından ve anlık olarak üretimi sınırlayabilen ilki olmasından geliyor. Bahsetmek istediğim 3. kavram ise bit coin mining: Yüksek hesaplama gücü kullanarak bitcoin üretebilmeniz mümkün.">
-<meta property="og:type" content="article">
-<meta property="og:url" content="https://mozanunal.com/2017/07/bitcoin-madencileri-icin-online-dashboard/"><meta property="article:section" content="posts">
-<meta property="article:published_time" content="2017-07-30T15:50:00+00:00">
-<meta property="article:modified_time" content="2017-07-30T15:50:00+00:00">
-<meta itemprop=name content="[TR] Bitcoin Madencileri için Online Dashboard">
-<meta itemprop=description content="Herkes merhabalar,
-Bitcoin son dönemlerin popüler konularından birisi. Aslında genel olarak crypto currency son zamanlarda çok popüler. Peki nedir bu kavramlar? Crypto currency güvenliği şifreleme teknojileriyle sağlanan sanal para birimleridir. Her gün bir yeni bir tür crypto currency ortaya çıkıyor. Bunlar arasında en geçerli olanı ise bitcoin. Sanırım popülerliği en eskilerinden biri olmasından ve anlık olarak üretimi sınırlayabilen ilki olmasından geliyor. Bahsetmek istediğim 3. kavram ise bit coin mining: Yüksek hesaplama gücü kullanarak bitcoin üretebilmeniz mümkün."><meta itemprop=datePublished content="2017-07-30T15:50:00+00:00">
-<meta itemprop=dateModified content="2017-07-30T15:50:00+00:00">
-<meta itemprop=wordCount content="829">
-<meta itemprop=keywords content="IoT,wemos,esp8266,bitcoin mining,">
-<meta name=twitter:card content="summary">
-<meta name=twitter:title content="[TR] Bitcoin Madencileri için Online Dashboard">
-<meta name=twitter:description content="Herkes merhabalar,
-Bitcoin son dönemlerin popüler konularından birisi. Aslında genel olarak crypto currency son zamanlarda çok popüler. Peki nedir bu kavramlar? Crypto currency güvenliği şifreleme teknojileriyle sağlanan sanal para birimleridir. Her gün bir yeni bir tür crypto currency ortaya çıkıyor. Bunlar arasında en geçerli olanı ise bitcoin. Sanırım popülerliği en eskilerinden biri olmasından ve anlık olarak üretimi sınırlayabilen ilki olmasından geliyor. Bahsetmek istediğim 3. kavram ise bit coin mining: Yüksek hesaplama gücü kullanarak bitcoin üretebilmeniz mümkün.">
-</head>
-<body class="text-black duration-200 ease-out dark:text-white">
-<header class="mx-auto flex h-[4.5rem] max-w-3xl px-8 lg:justify-center">
-<div class="relative z-50 mr-auto flex items-center">
-<a class="-translate-x-[1px] -translate-y-[1px] text-2xl font-semibold" href=https://mozanunal.com/>Mehmet Ozan Ünal</a>
-<div class="btn-dark text-[0] ml-4 h-6 w-6 shrink-0 cursor-pointer [background:url(./theme.svg)_left_center/cover_no-repeat] dark:invert dark:[background-position:right]" role=button aria-label=Dark></div>
-</div>
-<div class="btn-menu relative z-50 -mr-8 flex h-[4.5rem] w-[5rem] shrink-0 cursor-pointer flex-col items-center justify-center gap-2.5 lg:hidden" role=button aria-label=Menu></div>
-<script>const htmlClass=document.documentElement.classList;setTimeout(()=>{htmlClass.remove('not-ready')},10);const btnMenu=document.querySelector('.btn-menu');btnMenu.addEventListener('click',()=>{htmlClass.toggle('open')});const metaTheme=document.querySelector('meta[name="theme-color"]'),lightBg='#fbfbfb'.replace(/"/g,''),setDark=a=>{metaTheme.setAttribute('content',a?'#000':lightBg),htmlClass[a?'add':'remove']('dark'),localStorage.setItem('dark',a)},darkScheme=window.matchMedia('(prefers-color-scheme: dark)');if(htmlClass.contains('dark'))setDark(!0);else{const a=localStorage.getItem('dark');setDark(a?a==='true':darkScheme.matches)}darkScheme.addEventListener('change',a=>{setDark(a.matches)});const btnDark=document.querySelector('.btn-dark');btnDark.addEventListener('click',()=>{setDark(localStorage.getItem('dark')!=='true')})</script>
-<div class="nav-wrapper fixed inset-x-0 top-full z-40 flex h-full select-none flex-col justify-center pb-16 duration-200 dark:bg-black lg:static lg:h-auto lg:flex-row lg:!bg-transparent lg:pb-0 lg:transition-none">
-<nav class="lg:ml-12 lg:flex lg:flex-row lg:items-center lg:space-x-6">
-<a class="block text-center text-2xl leading-[5rem] lg:text-base lg:font-normal" href=/about/>About</a>
-<a class="block text-center text-2xl leading-[5rem] lg:text-base lg:font-normal" href=/contact/>Contact</a>
-</nav>
-<nav class="mt-12 flex justify-center space-x-10 dark:invert lg:ml-12 lg:mt-0 lg:items-center lg:space-x-6">
-<a class="h-8 w-8 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6" style=--url:url(./twitter.svg) href=https://twitter.com/MOzanUnal target=_blank rel=me>
-twitter
-</a>
-<a class="h-8 w-8 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6" style=--url:url(./github.svg) href=https://github.com/mozanunal target=_blank rel=me>
-github
-</a>
-</nav>
-</div>
-</header>
-<main class="prose prose-neutral relative mx-auto min-h-[calc(100%-9rem)] max-w-3xl px-8 pb-16 pt-12 dark:prose-invert">
-<article>
-<header class=mb-16>
-<h1 class="!my-0 pb-2.5">[TR] Bitcoin Madencileri için Online Dashboard</h1>
-<div class="text-sm antialiased opacity-60">
-<time>Jul 30, 2017</time>
+<!doctype html><html class="not-ready lg:text-base" style=--bg:#fbfbfb lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><title>[TR] Bitcoin Madencileri için Online Dashboard - Mehmet Ozan Ünal</title>
+<meta name=theme-color><meta name=description content="Herkes merhabalar,
+Bitcoin son dönemlerin popüler konularından birisi. Aslında genel olarak crypto currency son zamanlarda çok popüler. Peki nedir bu kavramlar? Crypto currency güvenliği şifreleme teknojileriyle sağlanan sanal para birimleridir. Her gün bir yeni bir tür crypto currency ortaya çıkıyor. Bunlar arasında en geçerli olanı ise bitcoin. Sanırım popülerliği en eskilerinden biri olmasından ve anlık olarak üretimi sınırlayabilen ilki olmasından geliyor. Bahsetmek istediğim 3. kavram ise bit coin mining: Yüksek hesaplama gücü kullanarak bitcoin üretebilmeniz mümkün."><meta name=author content="Mehmet Ozan Ünal"><link rel="preload stylesheet" as=style href=https://mozanunal.com/main.min.css><link rel=preload as=image href=https://mozanunal.com/theme.svg><link rel=preload as=image href="https://www.gravatar.com/avatar/998cbd3ab655239d8be787580cce0415?s=160&amp;d=identicon"><link rel=preload as=image href=https://mozanunal.com/twitter.svg><link rel=preload as=image href=https://mozanunal.com/github.svg><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.css integrity=sha384-3UiQGuEI4TTMaFmGIZumfRPtfKQ3trwQE2JgosJxCnGmQpL/lJdjpcHkaaFwHlcI crossorigin=anonymous><script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.js integrity=sha384-G0zcxDFp5LWZtDuRMnBkk3EphCK1lhEf4UEyEM693ka574TZGwo4IWwS6QLzM/2t crossorigin=anonymous></script><script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/contrib/auto-render.min.js integrity=sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05 crossorigin=anonymous></script><script>document.addEventListener("DOMContentLoaded",()=>renderMathInElement(document.body,{delimiters:[{left:"$$",right:"$$",display:!0},{left:"$",right:"$",display:!1}],throwOnError:!1}))</script><link rel=icon href=https://mozanunal.com/favicon.ico><link rel=apple-touch-icon href=https://mozanunal.com/apple-touch-icon.png><meta name=generator content="Hugo 0.121.1"><script async src="https://www.googletagmanager.com/gtag/js?id=G-007KSW65JL"></script><script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-007KSW65JL",{anonymize_ip:!1})}</script><meta itemprop=name content="[TR] Bitcoin Madencileri için Online Dashboard"><meta itemprop=description content="Herkes merhabalar,
+Bitcoin son dönemlerin popüler konularından birisi. Aslında genel olarak crypto currency son zamanlarda çok popüler. Peki nedir bu kavramlar? Crypto currency güvenliği şifreleme teknojileriyle sağlanan sanal para birimleridir. Her gün bir yeni bir tür crypto currency ortaya çıkıyor. Bunlar arasında en geçerli olanı ise bitcoin. Sanırım popülerliği en eskilerinden biri olmasından ve anlık olarak üretimi sınırlayabilen ilki olmasından geliyor. Bahsetmek istediğim 3. kavram ise bit coin mining: Yüksek hesaplama gücü kullanarak bitcoin üretebilmeniz mümkün."><meta itemprop=datePublished content="2017-07-30T15:50:00+00:00"><meta itemprop=dateModified content="2017-07-30T15:50:00+00:00"><meta itemprop=wordCount content="830"><meta itemprop=keywords content="IoT,wemos,esp8266,bitcoin mining,"><meta property="og:title" content="[TR] Bitcoin Madencileri için Online Dashboard"><meta property="og:description" content="Herkes merhabalar,
+Bitcoin son dönemlerin popüler konularından birisi. Aslında genel olarak crypto currency son zamanlarda çok popüler. Peki nedir bu kavramlar? Crypto currency güvenliği şifreleme teknojileriyle sağlanan sanal para birimleridir. Her gün bir yeni bir tür crypto currency ortaya çıkıyor. Bunlar arasında en geçerli olanı ise bitcoin. Sanırım popülerliği en eskilerinden biri olmasından ve anlık olarak üretimi sınırlayabilen ilki olmasından geliyor. Bahsetmek istediğim 3. kavram ise bit coin mining: Yüksek hesaplama gücü kullanarak bitcoin üretebilmeniz mümkün."><meta property="og:type" content="article"><meta property="og:url" content="https://mozanunal.com/2017/07/bitcoin-madencileri-icin-online-dashboard/"><meta property="article:section" content="posts"><meta property="article:published_time" content="2017-07-30T15:50:00+00:00"><meta property="article:modified_time" content="2017-07-30T15:50:00+00:00"><meta name=twitter:card content="summary"><meta name=twitter:title content="[TR] Bitcoin Madencileri için Online Dashboard"><meta name=twitter:description content="Herkes merhabalar,
+Bitcoin son dönemlerin popüler konularından birisi. Aslında genel olarak crypto currency son zamanlarda çok popüler. Peki nedir bu kavramlar? Crypto currency güvenliği şifreleme teknojileriyle sağlanan sanal para birimleridir. Her gün bir yeni bir tür crypto currency ortaya çıkıyor. Bunlar arasında en geçerli olanı ise bitcoin. Sanırım popülerliği en eskilerinden biri olmasından ve anlık olarak üretimi sınırlayabilen ilki olmasından geliyor. Bahsetmek istediğim 3. kavram ise bit coin mining: Yüksek hesaplama gücü kullanarak bitcoin üretebilmeniz mümkün."><link rel=canonical href=https://mozanunal.com/2017/07/bitcoin-madencileri-icin-online-dashboard/></head><body class="text-black duration-200 ease-out dark:text-white"><header class="mx-auto flex h-[4.5rem] max-w-3xl px-8 lg:justify-center"><div class="relative z-50 mr-auto flex items-center"><a class="-translate-x-[1px] -translate-y-[1px] text-2xl font-semibold" href=https://mozanunal.com/>Mehmet Ozan Ünal</a><div class="btn-dark text-[0] ml-4 h-6 w-6 shrink-0 cursor-pointer [background:url(./theme.svg)_left_center/cover_no-repeat] dark:invert dark:[background-position:right]" role=button aria-label=Dark></div></div><div class="btn-menu relative z-50 -mr-8 flex h-[4.5rem] w-[5rem] shrink-0 cursor-pointer flex-col items-center justify-center gap-2.5 lg:hidden" role=button aria-label=Menu></div><script>const htmlClass=document.documentElement.classList;setTimeout(()=>{htmlClass.remove("not-ready")},10);const btnMenu=document.querySelector(".btn-menu");btnMenu.addEventListener("click",()=>{htmlClass.toggle("open")});const metaTheme=document.querySelector('meta[name="theme-color"]'),lightBg="#fbfbfb".replace(/"/g,""),setDark=e=>{metaTheme.setAttribute("content",e?"#000":lightBg),htmlClass[e?"add":"remove"]("dark"),localStorage.setItem("dark",e)},darkScheme=window.matchMedia("(prefers-color-scheme: dark)");if(htmlClass.contains("dark"))setDark(!0);else{const e=localStorage.getItem("dark");setDark(e?e==="true":darkScheme.matches)}darkScheme.addEventListener("change",e=>{setDark(e.matches)});const btnDark=document.querySelector(".btn-dark");btnDark.addEventListener("click",()=>{setDark(localStorage.getItem("dark")!=="true")})</script><div class="nav-wrapper fixed inset-x-0 top-full z-40 flex h-full select-none flex-col justify-center pb-16 duration-200 dark:bg-black lg:static lg:h-auto lg:flex-row lg:!bg-transparent lg:pb-0 lg:transition-none"><nav class="lg:ml-12 lg:flex lg:flex-row lg:items-center lg:space-x-6"><a class="block text-center text-2xl leading-[5rem] lg:text-base lg:font-normal" href=/about/>About</a>
+<a class="block text-center text-2xl leading-[5rem] lg:text-base lg:font-normal" href=/contact/>Contact</a></nav><nav class="mt-12 flex justify-center space-x-10 dark:invert lg:ml-12 lg:mt-0 lg:items-center lg:space-x-6"><a class="h-8 w-8 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6" style=--url:url(./twitter.svg) href=https://twitter.com/MOzanUnal target=_blank rel=me>twitter
+</a><a class="h-8 w-8 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6" style=--url:url(./github.svg) href=https://github.com/mozanunal target=_blank rel=me>github</a></nav></div></header><main class="prose prose-neutral relative mx-auto min-h-[calc(100%-9rem)] max-w-3xl px-8 pb-16 pt-12 dark:prose-invert"><article><header class=mb-16><h1 class="!my-0 pb-2.5">[TR] Bitcoin Madencileri için Online Dashboard</h1><div class="text-sm antialiased opacity-60"><time>Jul 30, 2017</time>
 <span class=mx-1>&#183;</span>
-<span>Mehmet Ozan Ünal</span>
-</div>
-</header>
-<section><p><strong>Herkes merhabalar,</strong></p>
-<p>Bitcoin son dönemlerin popüler konularından birisi. Aslında genel olarak crypto currency son zamanlarda çok popüler. Peki nedir bu kavramlar? Crypto currency güvenliği şifreleme teknojileriyle sağlanan sanal para birimleridir. Her gün bir yeni bir tür crypto currency ortaya çıkıyor. Bunlar arasında en geçerli olanı ise bitcoin. Sanırım popülerliği en eskilerinden biri olmasından ve anlık olarak üretimi sınırlayabilen ilki olmasından geliyor. Bahsetmek istediğim 3. kavram ise bit coin mining: Yüksek hesaplama gücü kullanarak bitcoin üretebilmeniz mümkün. Bitcoin alışverişlerinin geçerli olması için bir şifre ile onaylanması gerekiyor. Bu şifreyi de bir hash çözerek oluşturuyorsunuz ve bunun karşılığında sistem sizi bitcoin ile ödüllendiriyor. Bu amaçla bir sürü insan sağlan ekran kartları alıp bitcoin tarlaları kurdular ve bu işten para kazanıyorlar. Tabi aklınıza, bitcoinin dünyaya katkısı nedir ya da ne kadar riskli, yatırım yapılır mı? gibi türlü türlü farklı açılardan sorular gelebilir. Ama malesef ben bu konuda uzman değilim ve daha nedir sorusuna bile tam olarak cevap vermek çok zor.</p>
-<p>Neyse konuyu biraz fazla dağıttım bu yazının konusu aslında bunlar değil. Konuma dönecek olursam; bitcoin mining işini kolaylaştıran sistem var, adı Nice Hash. Programını kuruyorsunuz ve bilgisayarınızın hesaplama gücünü satarak para kazanıyorsunuz. Arka planda o crypto currency&rsquo;lerden en karlı olanı &ldquo;mine&rdquo; ediyor. Size de ona göre bir para ödüyor tabi bitcoin olarak. Bir arkadaşım da bu mining işine girdi. Projemin asıl amacı ona anlık olarak kazandığı parayı gösterebilecek bir sistem yapmaktı. Proje böyle başladı yani :). Bu projede kapsamında yaptığım; gerçek zamanlı olarak bu programın web apisini kullanarak bir miner&rsquo;ın kazandığı parayı ve o andaki bitcoin kurunu çekip 1 inchlik oled ekranda gösteren bir sistem.</p>
-<p><img src=/images/btc1.jpg alt=btc1></p>
-<p>Bu proje ESP8266 modülleri kullanarak gerçekleştirildi. Bildiğiniz üzere minik bir wifi modulü. Bitcoin idnizi girerek yazdığım kodu derlerseniz direk olarak bilgilerinize ulaşabilirsiniz. ESP8266 minik bir oled ekranı kontrol ederek aldığı anlık kur datasını, kullanıcının toplam bitcoinini ve dolar karşılığını gösterecek şekilde bir program geliştirildi. ESP8266 olarak wemos d1 mini modullerinden kullandım. I2C pinlerini Oled ekrana den gelecek şekilde bir pertinanks oluşturdum uygun pinleri de lehimleyerek shield haline getirmiş oldum. Yukarıdaki fotoğrafta ESP8266 tamamen shieldın altına gizlenmiş halde bu sayede sistem baya toplanmış oldu tek parça bir görüntü kazandı.</p>
-<div style=position:relative;padding-bottom:56.25%;height:0;overflow:hidden>
-<iframe src=https://www.youtube-nocookie.com/embed/s9yCTyRUi5U style=position:absolute;top:0;left:0;width:100%;height:100%;border:0 allowfullscreen title="YouTube Video"></iframe>
-</div>
-<h4 id=kod>Kod</h4>
-<p>Kodu <a href=https://github.com/mozanunal/NiceHashDashBoard>buradan</a> inceleyebilirsiniz.</p>
-<h4 id=wifi-bağlanma-ve-ekran-ayarları>Wifi bağlanma ve ekran ayarları</h4>
-<p>Wifi multi kullandığım için birden fazla wifi girebilirsiniz. Hangisi çevrede varsa onu kullanarak internete çıkar. Ekranın boyutu çok küçük olmasına rağmen çözünürlüğü böyle bir sisteme göre oldukça yüksek bu sayede baya hoş gözüküyor.</p>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp>    <span style=color:#6272a4>//Setup Oled
-</span><span style=color:#6272a4></span>    display.init();
-    display.flipScreenVertically();
-    display.setFont(ArialMT_Plain_16);
-    display.setTextAlignment(TEXT_ALIGN_LEFT);
-    display.clear();
-    
-    <span style=color:#6272a4>//Setup Wifi
-</span><span style=color:#6272a4></span>    WiFiMulti.addAP( ssid_1 , pass_1);
-    WiFiMulti.addAP( ssid_2 , pass_2);
-    display.clear();
-    display.drawString(<span style=color:#bd93f9>0</span> , <span style=color:#bd93f9>20</span>, <span style=color:#f1fa8c>&#34;Waiting for wifi...&#34;</span>);
-    display.display();
-    <span style=color:#8be9fd>int</span> xpos <span style=color:#ff79c6>=</span> <span style=color:#bd93f9>0</span>;
-    <span style=color:#ff79c6>while</span>(WiFiMulti.run() <span style=color:#ff79c6>!=</span> WL_CONNECTED) {
-        display.drawString(xpos ,<span style=color:#bd93f9>40</span> , <span style=color:#f1fa8c>&#34;.&#34;</span>);
-        xpos<span style=color:#ff79c6>=</span> xpos <span style=color:#ff79c6>+</span> <span style=color:#bd93f9>3</span>;
-        display.display();
-        delay(<span style=color:#bd93f9>500</span>);
-    }
-</code></pre></div><h4 id=gerekli-verilerin-internetten-çekilmesi>Gerekli verilerin internetten çekilmesi</h4>
-<p>Data alma kısmında buradaki Nice Hash api dökumanından yararlandım. Bitcoin id ile http request yapıldığında geriye bir json dönüyor. Json Arduinojson library ile parçalanıp içinden gerekli bilgi çekiliyor. Verilen urlden datayı string almak için aşağıdaki fonksiyonu yazdım.</p>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp>String <span style=color:#50fa7b>getJsonFromUrl</span>(<span style=color:#8be9fd>char</span> <span style=color:#ff79c6>*</span>url)
-{
-    HTTPClient http;  <span style=color:#6272a4>//Declare an object of class HTTPClient
-</span><span style=color:#6272a4></span>    String payload;
-    http.begin(url);  <span style=color:#6272a4>//Specify request destination
-</span><span style=color:#6272a4></span>    <span style=color:#8be9fd>int</span> httpCode <span style=color:#ff79c6>=</span> http.GET(); <span style=color:#6272a4>//Send the request
-</span><span style=color:#6272a4></span>    Serial.print(<span style=color:#f1fa8c>&#34;</span><span style=color:#f1fa8c>\n</span><span style=color:#f1fa8c> Received http code &#34;</span>);
-    Serial.println(httpCode);     
-    <span style=color:#ff79c6>if</span> (httpCode <span style=color:#ff79c6>&gt;</span> <span style=color:#bd93f9>0</span>) <span style=color:#6272a4>//Check the returning code
-</span><span style=color:#6272a4></span>    { 
-      Serial.println(<span style=color:#f1fa8c>&#34;HTTP OK&#34;</span>);
-      payload <span style=color:#ff79c6>=</span> http.getString();   <span style=color:#6272a4>//Get the request response payload
-</span><span style=color:#6272a4></span>      Serial.println(payload);      <span style=color:#6272a4>//Print the response payloa
-</span><span style=color:#6272a4></span>      <span style=color:#ff79c6>return</span> payload;
-    }
-    <span style=color:#ff79c6>else</span>
-    {
-      Serial.println(<span style=color:#f1fa8c>&#34;HTTP ERROR&#34;</span>);
-      <span style=color:#ff79c6>return</span> <span style=color:#f1fa8c>&#34;{}&#34;</span>;
-    }
-    http.end();   <span style=color:#6272a4>//Close connection
-</span><span style=color:#6272a4></span>}
-</code></pre></div><h5 id=kur-bilgisinin-alınması>Kur bilgisinin alınması</h5>
-<p>Yukarıdaki data alma fonksiyonu kullanılarak data string olarak çekilip json&rsquo;a dönüştürülüyor. Daha sonrasında kur bilgisi aşağıdaki fonksiyon kullanılarak çekiliyor. Json parçalanıp içindeki &ldquo;USD&rdquo; objesinin &ldquo;last&rdquo; değikeni çekiliyor. Bizim için güncel bitcoin kuru.</p>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#8be9fd>double</span> <span style=color:#50fa7b>getCurrency</span>()
-{
-    JsonObject<span style=color:#ff79c6>&amp;</span> root_Currency <span style=color:#ff79c6>=</span> jsonBuffer_Currency.parseObject( getJsonFromUrl(url_Currency) );
-    <span style=color:#ff79c6>if</span> (root_Currency.success()) 
-    {
-      <span style=color:#8be9fd>double</span> currency <span style=color:#ff79c6>=</span> root_Currency[<span style=color:#f1fa8c>&#34;USD&#34;</span>][<span style=color:#f1fa8c>&#34;last&#34;</span>];
-      <span style=color:#ff79c6>return</span> currency;
-    }
-    <span style=color:#ff79c6>else</span>
-    {
-      <span style=color:#ff79c6>return</span> <span style=color:#bd93f9>0.0</span>;
-    }
-}
-</code></pre></div><h5 id=kazanılan-bitcoin-bilgisinin-alınması>Kazanılan bitcoin bilgisinin alınması</h5>
-<p>Kaznılan bitcoin için <a href="https://www.nicehash.com/?p=api">NiceHash Api</a> kullanılıyor. Bitcoin cüzdanı ID&rsquo;si ile request yapıldığında oldukça büyük bir obje dönüyor. Aşağıdaki gibi bir parçalama işlemiyle şu ana kadar kazanılan para bitcoin olarak çekiliyor. Bitcoin değeri ile kur çarpılarak dolar karşılığı da hesaplanıyor.</p>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#8be9fd>double</span> <span style=color:#50fa7b>getTotalBTC</span>(<span style=color:#ff79c6>const</span> <span style=color:#8be9fd>char</span> <span style=color:#ff79c6>*</span>BitCoinWallet)
-{     
-  <span style=color:#6272a4>//Setup URLs
-</span><span style=color:#6272a4></span>  strcpy( url_Balence, url_Balance_base );
-  strcat( url_Balence, BitCoinWallet );
-  JsonObject<span style=color:#ff79c6>&amp;</span> root_Balance <span style=color:#ff79c6>=</span> jsonBuffer_Balance.parseObject( getJsonFromUrl(url_Balence) );
-  <span style=color:#8be9fd>double</span> total_balance_btc <span style=color:#ff79c6>=</span> <span style=color:#bd93f9>0.0</span>;
-  <span style=color:#ff79c6>if</span> (root_Balance.success()) 
-  {
-    <span style=color:#8be9fd>double</span> balances[<span style=color:#bd93f9>8</span>];
-    <span style=color:#8be9fd>int</span> algos[<span style=color:#bd93f9>8</span>];
-    <span style=color:#ff79c6>for</span> (<span style=color:#8be9fd>int</span> i <span style=color:#ff79c6>=</span> <span style=color:#bd93f9>0</span>; i<span style=color:#ff79c6>&lt;</span><span style=color:#bd93f9>8</span>; i<span style=color:#ff79c6>++</span>)
-    {
-        algos[i] <span style=color:#ff79c6>=</span> root_Balance[<span style=color:#f1fa8c>&#34;result&#34;</span>][<span style=color:#f1fa8c>&#34;stats&#34;</span>][i][<span style=color:#f1fa8c>&#34;algo&#34;</span>];
-        <span style=color:#ff79c6>const</span> <span style=color:#8be9fd>char</span><span style=color:#ff79c6>*</span> balchar <span style=color:#ff79c6>=</span> root_Balance[<span style=color:#f1fa8c>&#34;result&#34;</span>][<span style=color:#f1fa8c>&#34;stats&#34;</span>][i][<span style=color:#f1fa8c>&#34;balance&#34;</span>];
-        balances[i] <span style=color:#ff79c6>=</span> strtod(balchar, <span style=color:#8be9fd;font-style:italic>NULL</span>);
-        Serial.print(balchar);
-        Serial.println(balances[i]);
-        total_balance_btc <span style=color:#ff79c6>+=</span> balances[i];
-    }
-  }
-
-  <span style=color:#ff79c6>return</span> total_balance_btc;
-}
-</code></pre></div><p><img src=/images/btc2.jpg alt="Bitcoin Dashboard"></p>
-<h4 id=verilerin-ekranda-gösterilmesi>Verilerin ekranda gösterilmesi</h4>
-<p>Çekilen veriler aşağıdaki fonksiyon yardımıyla ekranda sırasıyla gösteriliyor. Her bir frame 2 saniye ekranda durup sonraki frame geçecek şekilde bir yapı kurdum.</p>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#8be9fd>void</span> <span style=color:#50fa7b>frameLoop</span>(<span style=color:#8be9fd>double</span> currency, <span style=color:#8be9fd>double</span> totol_balance_btc, <span style=color:#8be9fd>double</span> total_balance)
-{
-  
-  <span style=color:#6272a4>//currency
-</span><span style=color:#6272a4></span>  delay(<span style=color:#bd93f9>2000</span>);
-  <span style=color:#8be9fd>char</span> currency_line[<span style=color:#bd93f9>30</span>];
-  dtostrf(currency,<span style=color:#bd93f9>0</span>, <span style=color:#bd93f9>2</span>, currency_line);
-  sprintf(currency_line,<span style=color:#f1fa8c>&#34;%s %s&#34;</span>, currency_line, <span style=color:#f1fa8c>&#34; $&#34;</span>);
-  display.clear();
-  display.drawString(<span style=color:#bd93f9>0</span> , <span style=color:#bd93f9>0</span>,  <span style=color:#f1fa8c>&#34;1 BTC:&#34;</span>);
-  display.drawString(<span style=color:#bd93f9>0</span> , <span style=color:#bd93f9>20</span>, currency_line);
-  display.display();
-
-
-  <span style=color:#6272a4>// total dollar
-</span><span style=color:#6272a4></span>  delay(<span style=color:#bd93f9>2000</span>);
-  <span style=color:#8be9fd>char</span> total_balance_line[<span style=color:#bd93f9>30</span>];
-  dtostrf(total_balance,<span style=color:#bd93f9>0</span>, <span style=color:#bd93f9>8</span>, total_balance_line); 
-  sprintf(total_balance_line,<span style=color:#f1fa8c>&#34;%s %s&#34;</span>, total_balance_line, <span style=color:#f1fa8c>&#34; $&#34;</span>);
-  display.clear();
-  display.drawString(<span style=color:#bd93f9>0</span> , <span style=color:#bd93f9>0</span>,  <span style=color:#f1fa8c>&#34;Total:&#34;</span>);
-  display.drawString(<span style=color:#bd93f9>0</span> , <span style=color:#bd93f9>20</span>, total_balance_line);
-  display.display();
-
-
-  <span style=color:#6272a4>// total btc
-</span><span style=color:#6272a4></span>  delay(<span style=color:#bd93f9>2000</span>);
-  <span style=color:#8be9fd>char</span> totol_balance_btc_line[<span style=color:#bd93f9>30</span>];
-  dtostrf(totol_balance_btc,<span style=color:#bd93f9>0</span>, <span style=color:#bd93f9>8</span>, totol_balance_btc_line);
-  sprintf(totol_balance_btc_line,<span style=color:#f1fa8c>&#34;%s %s&#34;</span>, totol_balance_btc_line, <span style=color:#f1fa8c>&#34; BTC&#34;</span>);
-  display.clear();
-  display.drawString(<span style=color:#bd93f9>0</span> , <span style=color:#bd93f9>0</span>,  <span style=color:#f1fa8c>&#34;Total:&#34;</span>);
-  display.drawString(<span style=color:#bd93f9>0</span> , <span style=color:#bd93f9>20</span>, totol_balance_btc_line);
-  display.display();
-  
-} 
-</code></pre></div><p><em>Şimdilik bu proje için yazacaklarım bu kadar. Ayrıntılı bilgi için mesaj atabilirsiniz. Görüşmek üzere.</em></p>
-</section>
-<footer class="mt-12 flex flex-wrap">
-<a class="mb-1.5 mr-1.5 rounded-lg bg-black/[3%] px-5 py-1.5 no-underline dark:bg-white/[8%]" href=https://mozanunal.com/tags/iot>IoT</a>
+<span>Mehmet Ozan Ünal</span></div></header><section><p><strong>Herkes merhabalar,</strong></p><p>Bitcoin son dönemlerin popüler konularından birisi. Aslında genel olarak crypto currency son zamanlarda çok popüler. Peki nedir bu kavramlar? Crypto currency güvenliği şifreleme teknojileriyle sağlanan sanal para birimleridir. Her gün bir yeni bir tür crypto currency ortaya çıkıyor. Bunlar arasında en geçerli olanı ise bitcoin. Sanırım popülerliği en eskilerinden biri olmasından ve anlık olarak üretimi sınırlayabilen ilki olmasından geliyor. Bahsetmek istediğim 3. kavram ise bit coin mining: Yüksek hesaplama gücü kullanarak bitcoin üretebilmeniz mümkün. Bitcoin alışverişlerinin geçerli olması için bir şifre ile onaylanması gerekiyor. Bu şifreyi de bir hash çözerek oluşturuyorsunuz ve bunun karşılığında sistem sizi bitcoin ile ödüllendiriyor. Bu amaçla bir sürü insan sağlan ekran kartları alıp bitcoin tarlaları kurdular ve bu işten para kazanıyorlar. Tabi aklınıza, bitcoinin dünyaya katkısı nedir ya da ne kadar riskli, yatırım yapılır mı? gibi türlü türlü farklı açılardan sorular gelebilir. Ama malesef ben bu konuda uzman değilim ve daha nedir sorusuna bile tam olarak cevap vermek çok zor.</p><p>Neyse konuyu biraz fazla dağıttım bu yazının konusu aslında bunlar değil. Konuma dönecek olursam; bitcoin mining işini kolaylaştıran sistem var, adı Nice Hash. Programını kuruyorsunuz ve bilgisayarınızın hesaplama gücünü satarak para kazanıyorsunuz. Arka planda o crypto currency&rsquo;lerden en karlı olanı &ldquo;mine&rdquo; ediyor. Size de ona göre bir para ödüyor tabi bitcoin olarak. Bir arkadaşım da bu mining işine girdi. Projemin asıl amacı ona anlık olarak kazandığı parayı gösterebilecek bir sistem yapmaktı. Proje böyle başladı yani :). Bu projede kapsamında yaptığım; gerçek zamanlı olarak bu programın web apisini kullanarak bir miner&rsquo;ın kazandığı parayı ve o andaki bitcoin kurunu çekip 1 inchlik oled ekranda gösteren bir sistem.</p><p><img src=/images/btc1.jpg alt=btc1></p><p>Bu proje ESP8266 modülleri kullanarak gerçekleştirildi. Bildiğiniz üzere minik bir wifi modulü. Bitcoin idnizi girerek yazdığım kodu derlerseniz direk olarak bilgilerinize ulaşabilirsiniz. ESP8266 minik bir oled ekranı kontrol ederek aldığı anlık kur datasını, kullanıcının toplam bitcoinini ve dolar karşılığını gösterecek şekilde bir program geliştirildi. ESP8266 olarak wemos d1 mini modullerinden kullandım. I2C pinlerini Oled ekrana den gelecek şekilde bir pertinanks oluşturdum uygun pinleri de lehimleyerek shield haline getirmiş oldum. Yukarıdaki fotoğrafta ESP8266 tamamen shieldın altına gizlenmiş halde bu sayede sistem baya toplanmış oldu tek parça bir görüntü kazandı.</p><div style=position:relative;padding-bottom:56.25%;height:0;overflow:hidden><iframe src=https://www.youtube-nocookie.com/embed/s9yCTyRUi5U style=position:absolute;top:0;left:0;width:100%;height:100%;border:0 allowfullscreen title="YouTube Video"></iframe></div><h4 id=kod>Kod</h4><p>Kodu <a href=https://github.com/mozanunal/NiceHashDashBoard>buradan</a> inceleyebilirsiniz.</p><h4 id=wifi-bağlanma-ve-ekran-ayarları>Wifi bağlanma ve ekran ayarları</h4><p>Wifi multi kullandığım için birden fazla wifi girebilirsiniz. Hangisi çevrede varsa onu kullanarak internete çıkar. Ekranın boyutu çok küçük olmasına rağmen çözünürlüğü böyle bir sisteme göre oldukça yüksek bu sayede baya hoş gözüküyor.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=display:flex><span>    <span style=color:#6272a4>//Setup Oled
+</span></span></span><span style=display:flex><span><span style=color:#6272a4></span>    display.init();
+</span></span><span style=display:flex><span>    display.flipScreenVertically();
+</span></span><span style=display:flex><span>    display.setFont(ArialMT_Plain_16);
+</span></span><span style=display:flex><span>    display.setTextAlignment(TEXT_ALIGN_LEFT);
+</span></span><span style=display:flex><span>    display.clear();
+</span></span><span style=display:flex><span>    
+</span></span><span style=display:flex><span>    <span style=color:#6272a4>//Setup Wifi
+</span></span></span><span style=display:flex><span><span style=color:#6272a4></span>    WiFiMulti.addAP( ssid_1 , pass_1);
+</span></span><span style=display:flex><span>    WiFiMulti.addAP( ssid_2 , pass_2);
+</span></span><span style=display:flex><span>    display.clear();
+</span></span><span style=display:flex><span>    display.drawString(<span style=color:#bd93f9>0</span> , <span style=color:#bd93f9>20</span>, <span style=color:#f1fa8c>&#34;Waiting for wifi...&#34;</span>);
+</span></span><span style=display:flex><span>    display.display();
+</span></span><span style=display:flex><span>    <span style=color:#8be9fd>int</span> xpos <span style=color:#ff79c6>=</span> <span style=color:#bd93f9>0</span>;
+</span></span><span style=display:flex><span>    <span style=color:#ff79c6>while</span>(WiFiMulti.run() <span style=color:#ff79c6>!=</span> WL_CONNECTED) {
+</span></span><span style=display:flex><span>        display.drawString(xpos ,<span style=color:#bd93f9>40</span> , <span style=color:#f1fa8c>&#34;.&#34;</span>);
+</span></span><span style=display:flex><span>        xpos<span style=color:#ff79c6>=</span> xpos <span style=color:#ff79c6>+</span> <span style=color:#bd93f9>3</span>;
+</span></span><span style=display:flex><span>        display.display();
+</span></span><span style=display:flex><span>        delay(<span style=color:#bd93f9>500</span>);
+</span></span><span style=display:flex><span>    }
+</span></span></code></pre></div><h4 id=gerekli-verilerin-internetten-çekilmesi>Gerekli verilerin internetten çekilmesi</h4><p>Data alma kısmında buradaki Nice Hash api dökumanından yararlandım. Bitcoin id ile http request yapıldığında geriye bir json dönüyor. Json Arduinojson library ile parçalanıp içinden gerekli bilgi çekiliyor. Verilen urlden datayı string almak için aşağıdaki fonksiyonu yazdım.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=display:flex><span>String <span style=color:#50fa7b>getJsonFromUrl</span>(<span style=color:#8be9fd>char</span> <span style=color:#ff79c6>*</span>url)
+</span></span><span style=display:flex><span>{
+</span></span><span style=display:flex><span>    HTTPClient http;  <span style=color:#6272a4>//Declare an object of class HTTPClient
+</span></span></span><span style=display:flex><span><span style=color:#6272a4></span>    String payload;
+</span></span><span style=display:flex><span>    http.begin(url);  <span style=color:#6272a4>//Specify request destination
+</span></span></span><span style=display:flex><span><span style=color:#6272a4></span>    <span style=color:#8be9fd>int</span> httpCode <span style=color:#ff79c6>=</span> http.GET(); <span style=color:#6272a4>//Send the request
+</span></span></span><span style=display:flex><span><span style=color:#6272a4></span>    Serial.print(<span style=color:#f1fa8c>&#34;</span><span style=color:#f1fa8c>\n</span><span style=color:#f1fa8c> Received http code &#34;</span>);
+</span></span><span style=display:flex><span>    Serial.println(httpCode);     
+</span></span><span style=display:flex><span>    <span style=color:#ff79c6>if</span> (httpCode <span style=color:#ff79c6>&gt;</span> <span style=color:#bd93f9>0</span>) <span style=color:#6272a4>//Check the returning code
+</span></span></span><span style=display:flex><span><span style=color:#6272a4></span>    { 
+</span></span><span style=display:flex><span>      Serial.println(<span style=color:#f1fa8c>&#34;HTTP OK&#34;</span>);
+</span></span><span style=display:flex><span>      payload <span style=color:#ff79c6>=</span> http.getString();   <span style=color:#6272a4>//Get the request response payload
+</span></span></span><span style=display:flex><span><span style=color:#6272a4></span>      Serial.println(payload);      <span style=color:#6272a4>//Print the response payloa
+</span></span></span><span style=display:flex><span><span style=color:#6272a4></span>      <span style=color:#ff79c6>return</span> payload;
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>    <span style=color:#ff79c6>else</span>
+</span></span><span style=display:flex><span>    {
+</span></span><span style=display:flex><span>      Serial.println(<span style=color:#f1fa8c>&#34;HTTP ERROR&#34;</span>);
+</span></span><span style=display:flex><span>      <span style=color:#ff79c6>return</span> <span style=color:#f1fa8c>&#34;{}&#34;</span>;
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>    http.end();   <span style=color:#6272a4>//Close connection
+</span></span></span><span style=display:flex><span><span style=color:#6272a4></span>}
+</span></span></code></pre></div><h5 id=kur-bilgisinin-alınması>Kur bilgisinin alınması</h5><p>Yukarıdaki data alma fonksiyonu kullanılarak data string olarak çekilip json&rsquo;a dönüştürülüyor. Daha sonrasında kur bilgisi aşağıdaki fonksiyon kullanılarak çekiliyor. Json parçalanıp içindeki &ldquo;USD&rdquo; objesinin &ldquo;last&rdquo; değikeni çekiliyor. Bizim için güncel bitcoin kuru.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=display:flex><span><span style=color:#8be9fd>double</span> <span style=color:#50fa7b>getCurrency</span>()
+</span></span><span style=display:flex><span>{
+</span></span><span style=display:flex><span>    JsonObject<span style=color:#ff79c6>&amp;</span> root_Currency <span style=color:#ff79c6>=</span> jsonBuffer_Currency.parseObject( getJsonFromUrl(url_Currency) );
+</span></span><span style=display:flex><span>    <span style=color:#ff79c6>if</span> (root_Currency.success()) 
+</span></span><span style=display:flex><span>    {
+</span></span><span style=display:flex><span>      <span style=color:#8be9fd>double</span> currency <span style=color:#ff79c6>=</span> root_Currency[<span style=color:#f1fa8c>&#34;USD&#34;</span>][<span style=color:#f1fa8c>&#34;last&#34;</span>];
+</span></span><span style=display:flex><span>      <span style=color:#ff79c6>return</span> currency;
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>    <span style=color:#ff79c6>else</span>
+</span></span><span style=display:flex><span>    {
+</span></span><span style=display:flex><span>      <span style=color:#ff79c6>return</span> <span style=color:#bd93f9>0.0</span>;
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>}
+</span></span></code></pre></div><h5 id=kazanılan-bitcoin-bilgisinin-alınması>Kazanılan bitcoin bilgisinin alınması</h5><p>Kaznılan bitcoin için <a href="https://www.nicehash.com/?p=api">NiceHash Api</a> kullanılıyor. Bitcoin cüzdanı ID&rsquo;si ile request yapıldığında oldukça büyük bir obje dönüyor. Aşağıdaki gibi bir parçalama işlemiyle şu ana kadar kazanılan para bitcoin olarak çekiliyor. Bitcoin değeri ile kur çarpılarak dolar karşılığı da hesaplanıyor.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=display:flex><span><span style=color:#8be9fd>double</span> <span style=color:#50fa7b>getTotalBTC</span>(<span style=color:#ff79c6>const</span> <span style=color:#8be9fd>char</span> <span style=color:#ff79c6>*</span>BitCoinWallet)
+</span></span><span style=display:flex><span>{     
+</span></span><span style=display:flex><span>  <span style=color:#6272a4>//Setup URLs
+</span></span></span><span style=display:flex><span><span style=color:#6272a4></span>  strcpy( url_Balence, url_Balance_base );
+</span></span><span style=display:flex><span>  strcat( url_Balence, BitCoinWallet );
+</span></span><span style=display:flex><span>  JsonObject<span style=color:#ff79c6>&amp;</span> root_Balance <span style=color:#ff79c6>=</span> jsonBuffer_Balance.parseObject( getJsonFromUrl(url_Balence) );
+</span></span><span style=display:flex><span>  <span style=color:#8be9fd>double</span> total_balance_btc <span style=color:#ff79c6>=</span> <span style=color:#bd93f9>0.0</span>;
+</span></span><span style=display:flex><span>  <span style=color:#ff79c6>if</span> (root_Balance.success()) 
+</span></span><span style=display:flex><span>  {
+</span></span><span style=display:flex><span>    <span style=color:#8be9fd>double</span> balances[<span style=color:#bd93f9>8</span>];
+</span></span><span style=display:flex><span>    <span style=color:#8be9fd>int</span> algos[<span style=color:#bd93f9>8</span>];
+</span></span><span style=display:flex><span>    <span style=color:#ff79c6>for</span> (<span style=color:#8be9fd>int</span> i <span style=color:#ff79c6>=</span> <span style=color:#bd93f9>0</span>; i<span style=color:#ff79c6>&lt;</span><span style=color:#bd93f9>8</span>; i<span style=color:#ff79c6>++</span>)
+</span></span><span style=display:flex><span>    {
+</span></span><span style=display:flex><span>        algos[i] <span style=color:#ff79c6>=</span> root_Balance[<span style=color:#f1fa8c>&#34;result&#34;</span>][<span style=color:#f1fa8c>&#34;stats&#34;</span>][i][<span style=color:#f1fa8c>&#34;algo&#34;</span>];
+</span></span><span style=display:flex><span>        <span style=color:#ff79c6>const</span> <span style=color:#8be9fd>char</span><span style=color:#ff79c6>*</span> balchar <span style=color:#ff79c6>=</span> root_Balance[<span style=color:#f1fa8c>&#34;result&#34;</span>][<span style=color:#f1fa8c>&#34;stats&#34;</span>][i][<span style=color:#f1fa8c>&#34;balance&#34;</span>];
+</span></span><span style=display:flex><span>        balances[i] <span style=color:#ff79c6>=</span> strtod(balchar, <span style=color:#8be9fd;font-style:italic>NULL</span>);
+</span></span><span style=display:flex><span>        Serial.print(balchar);
+</span></span><span style=display:flex><span>        Serial.println(balances[i]);
+</span></span><span style=display:flex><span>        total_balance_btc <span style=color:#ff79c6>+=</span> balances[i];
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>  }
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>  <span style=color:#ff79c6>return</span> total_balance_btc;
+</span></span><span style=display:flex><span>}
+</span></span></code></pre></div><p><img src=/images/btc2.jpg alt="Bitcoin Dashboard"></p><h4 id=verilerin-ekranda-gösterilmesi>Verilerin ekranda gösterilmesi</h4><p>Çekilen veriler aşağıdaki fonksiyon yardımıyla ekranda sırasıyla gösteriliyor. Her bir frame 2 saniye ekranda durup sonraki frame geçecek şekilde bir yapı kurdum.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=display:flex><span><span style=color:#8be9fd>void</span> <span style=color:#50fa7b>frameLoop</span>(<span style=color:#8be9fd>double</span> currency, <span style=color:#8be9fd>double</span> totol_balance_btc, <span style=color:#8be9fd>double</span> total_balance)
+</span></span><span style=display:flex><span>{
+</span></span><span style=display:flex><span>  
+</span></span><span style=display:flex><span>  <span style=color:#6272a4>//currency
+</span></span></span><span style=display:flex><span><span style=color:#6272a4></span>  delay(<span style=color:#bd93f9>2000</span>);
+</span></span><span style=display:flex><span>  <span style=color:#8be9fd>char</span> currency_line[<span style=color:#bd93f9>30</span>];
+</span></span><span style=display:flex><span>  dtostrf(currency,<span style=color:#bd93f9>0</span>, <span style=color:#bd93f9>2</span>, currency_line);
+</span></span><span style=display:flex><span>  sprintf(currency_line,<span style=color:#f1fa8c>&#34;%s %s&#34;</span>, currency_line, <span style=color:#f1fa8c>&#34; $&#34;</span>);
+</span></span><span style=display:flex><span>  display.clear();
+</span></span><span style=display:flex><span>  display.drawString(<span style=color:#bd93f9>0</span> , <span style=color:#bd93f9>0</span>,  <span style=color:#f1fa8c>&#34;1 BTC:&#34;</span>);
+</span></span><span style=display:flex><span>  display.drawString(<span style=color:#bd93f9>0</span> , <span style=color:#bd93f9>20</span>, currency_line);
+</span></span><span style=display:flex><span>  display.display();
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>  <span style=color:#6272a4>// total dollar
+</span></span></span><span style=display:flex><span><span style=color:#6272a4></span>  delay(<span style=color:#bd93f9>2000</span>);
+</span></span><span style=display:flex><span>  <span style=color:#8be9fd>char</span> total_balance_line[<span style=color:#bd93f9>30</span>];
+</span></span><span style=display:flex><span>  dtostrf(total_balance,<span style=color:#bd93f9>0</span>, <span style=color:#bd93f9>8</span>, total_balance_line); 
+</span></span><span style=display:flex><span>  sprintf(total_balance_line,<span style=color:#f1fa8c>&#34;%s %s&#34;</span>, total_balance_line, <span style=color:#f1fa8c>&#34; $&#34;</span>);
+</span></span><span style=display:flex><span>  display.clear();
+</span></span><span style=display:flex><span>  display.drawString(<span style=color:#bd93f9>0</span> , <span style=color:#bd93f9>0</span>,  <span style=color:#f1fa8c>&#34;Total:&#34;</span>);
+</span></span><span style=display:flex><span>  display.drawString(<span style=color:#bd93f9>0</span> , <span style=color:#bd93f9>20</span>, total_balance_line);
+</span></span><span style=display:flex><span>  display.display();
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>  <span style=color:#6272a4>// total btc
+</span></span></span><span style=display:flex><span><span style=color:#6272a4></span>  delay(<span style=color:#bd93f9>2000</span>);
+</span></span><span style=display:flex><span>  <span style=color:#8be9fd>char</span> totol_balance_btc_line[<span style=color:#bd93f9>30</span>];
+</span></span><span style=display:flex><span>  dtostrf(totol_balance_btc,<span style=color:#bd93f9>0</span>, <span style=color:#bd93f9>8</span>, totol_balance_btc_line);
+</span></span><span style=display:flex><span>  sprintf(totol_balance_btc_line,<span style=color:#f1fa8c>&#34;%s %s&#34;</span>, totol_balance_btc_line, <span style=color:#f1fa8c>&#34; BTC&#34;</span>);
+</span></span><span style=display:flex><span>  display.clear();
+</span></span><span style=display:flex><span>  display.drawString(<span style=color:#bd93f9>0</span> , <span style=color:#bd93f9>0</span>,  <span style=color:#f1fa8c>&#34;Total:&#34;</span>);
+</span></span><span style=display:flex><span>  display.drawString(<span style=color:#bd93f9>0</span> , <span style=color:#bd93f9>20</span>, totol_balance_btc_line);
+</span></span><span style=display:flex><span>  display.display();
+</span></span><span style=display:flex><span>  
+</span></span><span style=display:flex><span>} 
+</span></span></code></pre></div><p><em>Şimdilik bu proje için yazacaklarım bu kadar. Ayrıntılı bilgi için mesaj atabilirsiniz. Görüşmek üzere.</em></p></section><footer class="mt-12 flex flex-wrap"><a class="mb-1.5 mr-1.5 rounded-lg bg-black/[3%] px-5 py-1.5 no-underline dark:bg-white/[8%]" href=https://mozanunal.com/tags/iot>IoT</a>
 <a class="mb-1.5 mr-1.5 rounded-lg bg-black/[3%] px-5 py-1.5 no-underline dark:bg-white/[8%]" href=https://mozanunal.com/tags/wemos>wemos</a>
 <a class="mb-1.5 mr-1.5 rounded-lg bg-black/[3%] px-5 py-1.5 no-underline dark:bg-white/[8%]" href=https://mozanunal.com/tags/esp8266>esp8266</a>
-<a class="mb-1.5 mr-1.5 rounded-lg bg-black/[3%] px-5 py-1.5 no-underline dark:bg-white/[8%]" href=https://mozanunal.com/tags/bitcoin-mining>bitcoin mining</a>
-</footer>
-<nav class="mt-24 flex rounded-lg bg-black/[3%] text-lg dark:bg-white/[8%]">
-<a class="flex w-1/2 items-center rounded-l-md p-6 pr-3 font-semibold no-underline hover:bg-black/[2%] dark:hover:bg-white/[3%]" href=https://mozanunal.com/2017/12/favori-editor-vscode/><span class=mr-1.5>←</span><span>[TR] Neden Favori Kod Editörüm Visual Studio Code</span></a>
-<a class="ml-auto flex w-1/2 items-center justify-end rounded-r-md p-6 pl-3 font-semibold no-underline hover:bg-black/[2%] dark:hover:bg-white/[3%]" href=https://mozanunal.com/2017/07/hexo-blog-servisi-nedir/><span>[TR] Hexo Blog Servisi Nedir</span><span class=ml-1.5>→</span></a>
-</nav>
-</article>
-</main>
-<footer class="opaco mx-auto flex h-[4.5rem] max-w-3xl items-center px-8 text-[0.9em] opacity-60">
-<div class=mr-auto>
-&copy; 2024
-<a class=link href=https://mozanunal.com/>Mehmet Ozan Ünal</a>
-</div>
-<a class="link mx-6" href=https://gohugo.io/ rel=noopener target=_blank>Powered by Hugo️️</a>️
-<a class=link href=https://github.com/nanxiaobei/hugo-paper rel=noopener target=_blank>✎ Paper</a>
-</footer>
-</body>
-</html>
+<a class="mb-1.5 mr-1.5 rounded-lg bg-black/[3%] px-5 py-1.5 no-underline dark:bg-white/[8%]" href=https://mozanunal.com/tags/bitcoin-mining>bitcoin mining</a></footer><nav class="mt-24 flex rounded-lg bg-black/[3%] text-lg dark:bg-white/[8%]"><a class="flex w-1/2 items-center rounded-l-md p-6 pr-3 font-semibold no-underline hover:bg-black/[2%] dark:hover:bg-white/[3%]" href=https://mozanunal.com/2017/12/favori-editor-vscode/><span class=mr-1.5>←</span><span>[TR] Neden Favori Kod Editörüm Visual Studio Code</span></a>
+<a class="ml-auto flex w-1/2 items-center justify-end rounded-r-md p-6 pl-3 font-semibold no-underline hover:bg-black/[2%] dark:hover:bg-white/[3%]" href=https://mozanunal.com/2017/07/hexo-blog-servisi-nedir/><span>[TR] Hexo Blog Servisi Nedir</span><span class=ml-1.5>→</span></a></nav></article></main><footer class="opaco mx-auto flex h-[4.5rem] max-w-3xl items-center px-8 text-[0.9em] opacity-60"><div class=mr-auto>&copy; 2024
+<a class=link href=https://mozanunal.com/>Mehmet Ozan Ünal</a></div><a class="link mx-6" href=https://gohugo.io/ rel=noopener target=_blank>Powered by Hugo️️</a>️
+<a class=link href=https://github.com/nanxiaobei/hugo-paper rel=noopener target=_blank>✎ Paper</a></footer></body></html>

@@ -5,4 +5,7 @@ Wi-Fi Direct (P2P) Desteği
 Dahili TCP/IP protokol yığını
 +19,5dBm çıkış gücü (802.11b modunda)
 Kaçak akım &amp;lt; 10uA
-Dahili düşük güç tüketimine sahip 32-bit&amp;rsquo;lik işlemci</description></item></channel></rss>
+Dahili düşük güç tüketimine sahip 32-bit&amp;rsquo;lik işlemci
+SDIO 1.1/2.0, SPI ve UART desteği
+STBC, 1x1 MIMO, 2x1 MIMO
+Uyanma ve veri paketi alma süresi &amp;lt; 2ms</description></item></channel></rss>

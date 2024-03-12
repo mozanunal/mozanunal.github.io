@@ -1,381 +1,290 @@
-<!doctype html><html class="not-ready lg:text-base" style=--bg:#fbfbfb lang=en>
-<head>
-<meta charset=utf-8>
-<meta http-equiv=x-ua-compatible content="IE=edge">
-<meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
-<title>[TR] Google Hash Code 2017 - Mehmet Ozan Ünal</title>
-<meta name=theme-color>
-<meta name=description content="Herkese Merhabalar,
-Google bir kaç senedir tüm dünyada programlama ve algoritmalar üzerine bir yarışma düzenliyor. Bu yarışma kapsamında, yarışmanın katılımcılarına karmaşık algoritmik problemler veriliyor ve istenilen data kümeleri için yine verilen formatta sonuçlar oluşturacak algoritmalar yazılması gerekiyor. Son olarak bu sonuç dosyaları Google&rsquo;ın sistemine yükleniyor ve skor hesaplanıyor. Yarışma 2 aşamadan oluşuyor 1. aşama online eleme. İkinci aşama ise ilk 30&rsquo;a giren gruplar bir merkezde yarışıyor. Ben de yarışmaya 2016 ve 2017 yıllarında katıldım.">
-<meta name=author content="Mehmet Ozan Ünal">
-<link rel="preload stylesheet" as=style href=https://mozanunal.com/main.min.css>
-<link rel=preload as=image href=https://mozanunal.com/theme.svg>
-<link rel=preload as=image href="https://www.gravatar.com/avatar/998cbd3ab655239d8be787580cce0415?s=160&d=identicon">
-<link rel=preload as=image href=https://mozanunal.com/twitter.svg>
-<link rel=preload as=image href=https://mozanunal.com/github.svg>
-<link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.css integrity=sha384-3UiQGuEI4TTMaFmGIZumfRPtfKQ3trwQE2JgosJxCnGmQpL/lJdjpcHkaaFwHlcI crossorigin=anonymous>
-<script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.js integrity=sha384-G0zcxDFp5LWZtDuRMnBkk3EphCK1lhEf4UEyEM693ka574TZGwo4IWwS6QLzM/2t crossorigin=anonymous></script>
-<script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/contrib/auto-render.min.js integrity=sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05 crossorigin=anonymous onload=renderMathInElement(document.body)></script>
-<link rel=icon href=https://mozanunal.com/favicon.ico>
-<link rel=apple-touch-icon href=https://mozanunal.com/apple-touch-icon.png>
-<meta name=generator content="Hugo 0.92.2">
-<script type=application/javascript>var doNotTrack=!1;doNotTrack||(window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga('create','G-007KSW65JL','auto'),ga('send','pageview'))</script>
-<script async src=https://www.google-analytics.com/analytics.js></script>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-007KSW65JL"></script>
-<script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-007KSW65JL',{anonymize_ip:!1})}</script>
-<meta property="og:title" content="[TR] Google Hash Code 2017">
-<meta property="og:description" content="Herkese Merhabalar,
-Google bir kaç senedir tüm dünyada programlama ve algoritmalar üzerine bir yarışma düzenliyor. Bu yarışma kapsamında, yarışmanın katılımcılarına karmaşık algoritmik problemler veriliyor ve istenilen data kümeleri için yine verilen formatta sonuçlar oluşturacak algoritmalar yazılması gerekiyor. Son olarak bu sonuç dosyaları Google&rsquo;ın sistemine yükleniyor ve skor hesaplanıyor. Yarışma 2 aşamadan oluşuyor 1. aşama online eleme. İkinci aşama ise ilk 30&rsquo;a giren gruplar bir merkezde yarışıyor. Ben de yarışmaya 2016 ve 2017 yıllarında katıldım.">
-<meta property="og:type" content="article">
-<meta property="og:url" content="https://mozanunal.com/2017/07/google-hash-code-2017/"><meta property="article:section" content="posts">
-<meta property="article:published_time" content="2017-07-13T02:51:00+00:00">
-<meta property="article:modified_time" content="2017-07-13T02:51:00+00:00">
-<meta itemprop=name content="[TR] Google Hash Code 2017">
-<meta itemprop=description content="Herkese Merhabalar,
-Google bir kaç senedir tüm dünyada programlama ve algoritmalar üzerine bir yarışma düzenliyor. Bu yarışma kapsamında, yarışmanın katılımcılarına karmaşık algoritmik problemler veriliyor ve istenilen data kümeleri için yine verilen formatta sonuçlar oluşturacak algoritmalar yazılması gerekiyor. Son olarak bu sonuç dosyaları Google&rsquo;ın sistemine yükleniyor ve skor hesaplanıyor. Yarışma 2 aşamadan oluşuyor 1. aşama online eleme. İkinci aşama ise ilk 30&rsquo;a giren gruplar bir merkezde yarışıyor. Ben de yarışmaya 2016 ve 2017 yıllarında katıldım."><meta itemprop=datePublished content="2017-07-13T02:51:00+00:00">
-<meta itemprop=dateModified content="2017-07-13T02:51:00+00:00">
-<meta itemprop=wordCount content="1333">
-<meta itemprop=keywords content="Hash Code,">
-<meta name=twitter:card content="summary">
-<meta name=twitter:title content="[TR] Google Hash Code 2017">
-<meta name=twitter:description content="Herkese Merhabalar,
-Google bir kaç senedir tüm dünyada programlama ve algoritmalar üzerine bir yarışma düzenliyor. Bu yarışma kapsamında, yarışmanın katılımcılarına karmaşık algoritmik problemler veriliyor ve istenilen data kümeleri için yine verilen formatta sonuçlar oluşturacak algoritmalar yazılması gerekiyor. Son olarak bu sonuç dosyaları Google&rsquo;ın sistemine yükleniyor ve skor hesaplanıyor. Yarışma 2 aşamadan oluşuyor 1. aşama online eleme. İkinci aşama ise ilk 30&rsquo;a giren gruplar bir merkezde yarışıyor. Ben de yarışmaya 2016 ve 2017 yıllarında katıldım.">
-</head>
-<body class="text-black duration-200 ease-out dark:text-white">
-<header class="mx-auto flex h-[4.5rem] max-w-3xl px-8 lg:justify-center">
-<div class="relative z-50 mr-auto flex items-center">
-<a class="-translate-x-[1px] -translate-y-[1px] text-2xl font-semibold" href=https://mozanunal.com/>Mehmet Ozan Ünal</a>
-<div class="btn-dark text-[0] ml-4 h-6 w-6 shrink-0 cursor-pointer [background:url(./theme.svg)_left_center/cover_no-repeat] dark:invert dark:[background-position:right]" role=button aria-label=Dark></div>
-</div>
-<div class="btn-menu relative z-50 -mr-8 flex h-[4.5rem] w-[5rem] shrink-0 cursor-pointer flex-col items-center justify-center gap-2.5 lg:hidden" role=button aria-label=Menu></div>
-<script>const htmlClass=document.documentElement.classList;setTimeout(()=>{htmlClass.remove('not-ready')},10);const btnMenu=document.querySelector('.btn-menu');btnMenu.addEventListener('click',()=>{htmlClass.toggle('open')});const metaTheme=document.querySelector('meta[name="theme-color"]'),lightBg='#fbfbfb'.replace(/"/g,''),setDark=a=>{metaTheme.setAttribute('content',a?'#000':lightBg),htmlClass[a?'add':'remove']('dark'),localStorage.setItem('dark',a)},darkScheme=window.matchMedia('(prefers-color-scheme: dark)');if(htmlClass.contains('dark'))setDark(!0);else{const a=localStorage.getItem('dark');setDark(a?a==='true':darkScheme.matches)}darkScheme.addEventListener('change',a=>{setDark(a.matches)});const btnDark=document.querySelector('.btn-dark');btnDark.addEventListener('click',()=>{setDark(localStorage.getItem('dark')!=='true')})</script>
-<div class="nav-wrapper fixed inset-x-0 top-full z-40 flex h-full select-none flex-col justify-center pb-16 duration-200 dark:bg-black lg:static lg:h-auto lg:flex-row lg:!bg-transparent lg:pb-0 lg:transition-none">
-<nav class="lg:ml-12 lg:flex lg:flex-row lg:items-center lg:space-x-6">
-<a class="block text-center text-2xl leading-[5rem] lg:text-base lg:font-normal" href=/about/>About</a>
-<a class="block text-center text-2xl leading-[5rem] lg:text-base lg:font-normal" href=/contact/>Contact</a>
-</nav>
-<nav class="mt-12 flex justify-center space-x-10 dark:invert lg:ml-12 lg:mt-0 lg:items-center lg:space-x-6">
-<a class="h-8 w-8 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6" style=--url:url(./twitter.svg) href=https://twitter.com/MOzanUnal target=_blank rel=me>
-twitter
-</a>
-<a class="h-8 w-8 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6" style=--url:url(./github.svg) href=https://github.com/mozanunal target=_blank rel=me>
-github
-</a>
-</nav>
-</div>
-</header>
-<main class="prose prose-neutral relative mx-auto min-h-[calc(100%-9rem)] max-w-3xl px-8 pb-16 pt-12 dark:prose-invert">
-<article>
-<header class=mb-16>
-<h1 class="!my-0 pb-2.5">[TR] Google Hash Code 2017</h1>
-<div class="text-sm antialiased opacity-60">
-<time>Jul 13, 2017</time>
+<!doctype html><html class="not-ready lg:text-base" style=--bg:#fbfbfb lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><title>[TR] Google Hash Code 2017 - Mehmet Ozan Ünal</title>
+<meta name=theme-color><meta name=description content="Herkese Merhabalar,
+Google bir kaç senedir tüm dünyada programlama ve algoritmalar üzerine bir yarışma düzenliyor. Bu yarışma kapsamında, yarışmanın katılımcılarına karmaşık algoritmik problemler veriliyor ve istenilen data kümeleri için yine verilen formatta sonuçlar oluşturacak algoritmalar yazılması gerekiyor. Son olarak bu sonuç dosyaları Google&rsquo;ın sistemine yükleniyor ve skor hesaplanıyor. Yarışma 2 aşamadan oluşuyor 1. aşama online eleme. İkinci aşama ise ilk 30&rsquo;a giren gruplar bir merkezde yarışıyor. Ben de yarışmaya 2016 ve 2017 yıllarında katıldım."><meta name=author content="Mehmet Ozan Ünal"><link rel="preload stylesheet" as=style href=https://mozanunal.com/main.min.css><link rel=preload as=image href=https://mozanunal.com/theme.svg><link rel=preload as=image href="https://www.gravatar.com/avatar/998cbd3ab655239d8be787580cce0415?s=160&amp;d=identicon"><link rel=preload as=image href=https://mozanunal.com/twitter.svg><link rel=preload as=image href=https://mozanunal.com/github.svg><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.css integrity=sha384-3UiQGuEI4TTMaFmGIZumfRPtfKQ3trwQE2JgosJxCnGmQpL/lJdjpcHkaaFwHlcI crossorigin=anonymous><script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.js integrity=sha384-G0zcxDFp5LWZtDuRMnBkk3EphCK1lhEf4UEyEM693ka574TZGwo4IWwS6QLzM/2t crossorigin=anonymous></script><script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/contrib/auto-render.min.js integrity=sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05 crossorigin=anonymous></script><script>document.addEventListener("DOMContentLoaded",()=>renderMathInElement(document.body,{delimiters:[{left:"$$",right:"$$",display:!0},{left:"$",right:"$",display:!1}],throwOnError:!1}))</script><link rel=icon href=https://mozanunal.com/favicon.ico><link rel=apple-touch-icon href=https://mozanunal.com/apple-touch-icon.png><meta name=generator content="Hugo 0.121.1"><script async src="https://www.googletagmanager.com/gtag/js?id=G-007KSW65JL"></script><script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-007KSW65JL",{anonymize_ip:!1})}</script><meta itemprop=name content="[TR] Google Hash Code 2017"><meta itemprop=description content="Herkese Merhabalar,
+Google bir kaç senedir tüm dünyada programlama ve algoritmalar üzerine bir yarışma düzenliyor. Bu yarışma kapsamında, yarışmanın katılımcılarına karmaşık algoritmik problemler veriliyor ve istenilen data kümeleri için yine verilen formatta sonuçlar oluşturacak algoritmalar yazılması gerekiyor. Son olarak bu sonuç dosyaları Google&rsquo;ın sistemine yükleniyor ve skor hesaplanıyor. Yarışma 2 aşamadan oluşuyor 1. aşama online eleme. İkinci aşama ise ilk 30&rsquo;a giren gruplar bir merkezde yarışıyor. Ben de yarışmaya 2016 ve 2017 yıllarında katıldım."><meta itemprop=datePublished content="2017-07-13T02:51:00+00:00"><meta itemprop=dateModified content="2017-07-13T02:51:00+00:00"><meta itemprop=wordCount content="1333"><meta itemprop=keywords content="Hash Code,"><meta property="og:title" content="[TR] Google Hash Code 2017"><meta property="og:description" content="Herkese Merhabalar,
+Google bir kaç senedir tüm dünyada programlama ve algoritmalar üzerine bir yarışma düzenliyor. Bu yarışma kapsamında, yarışmanın katılımcılarına karmaşık algoritmik problemler veriliyor ve istenilen data kümeleri için yine verilen formatta sonuçlar oluşturacak algoritmalar yazılması gerekiyor. Son olarak bu sonuç dosyaları Google&rsquo;ın sistemine yükleniyor ve skor hesaplanıyor. Yarışma 2 aşamadan oluşuyor 1. aşama online eleme. İkinci aşama ise ilk 30&rsquo;a giren gruplar bir merkezde yarışıyor. Ben de yarışmaya 2016 ve 2017 yıllarında katıldım."><meta property="og:type" content="article"><meta property="og:url" content="https://mozanunal.com/2017/07/google-hash-code-2017/"><meta property="article:section" content="posts"><meta property="article:published_time" content="2017-07-13T02:51:00+00:00"><meta property="article:modified_time" content="2017-07-13T02:51:00+00:00"><meta name=twitter:card content="summary"><meta name=twitter:title content="[TR] Google Hash Code 2017"><meta name=twitter:description content="Herkese Merhabalar,
+Google bir kaç senedir tüm dünyada programlama ve algoritmalar üzerine bir yarışma düzenliyor. Bu yarışma kapsamında, yarışmanın katılımcılarına karmaşık algoritmik problemler veriliyor ve istenilen data kümeleri için yine verilen formatta sonuçlar oluşturacak algoritmalar yazılması gerekiyor. Son olarak bu sonuç dosyaları Google&rsquo;ın sistemine yükleniyor ve skor hesaplanıyor. Yarışma 2 aşamadan oluşuyor 1. aşama online eleme. İkinci aşama ise ilk 30&rsquo;a giren gruplar bir merkezde yarışıyor. Ben de yarışmaya 2016 ve 2017 yıllarında katıldım."><link rel=canonical href=https://mozanunal.com/2017/07/google-hash-code-2017/></head><body class="text-black duration-200 ease-out dark:text-white"><header class="mx-auto flex h-[4.5rem] max-w-3xl px-8 lg:justify-center"><div class="relative z-50 mr-auto flex items-center"><a class="-translate-x-[1px] -translate-y-[1px] text-2xl font-semibold" href=https://mozanunal.com/>Mehmet Ozan Ünal</a><div class="btn-dark text-[0] ml-4 h-6 w-6 shrink-0 cursor-pointer [background:url(./theme.svg)_left_center/cover_no-repeat] dark:invert dark:[background-position:right]" role=button aria-label=Dark></div></div><div class="btn-menu relative z-50 -mr-8 flex h-[4.5rem] w-[5rem] shrink-0 cursor-pointer flex-col items-center justify-center gap-2.5 lg:hidden" role=button aria-label=Menu></div><script>const htmlClass=document.documentElement.classList;setTimeout(()=>{htmlClass.remove("not-ready")},10);const btnMenu=document.querySelector(".btn-menu");btnMenu.addEventListener("click",()=>{htmlClass.toggle("open")});const metaTheme=document.querySelector('meta[name="theme-color"]'),lightBg="#fbfbfb".replace(/"/g,""),setDark=e=>{metaTheme.setAttribute("content",e?"#000":lightBg),htmlClass[e?"add":"remove"]("dark"),localStorage.setItem("dark",e)},darkScheme=window.matchMedia("(prefers-color-scheme: dark)");if(htmlClass.contains("dark"))setDark(!0);else{const e=localStorage.getItem("dark");setDark(e?e==="true":darkScheme.matches)}darkScheme.addEventListener("change",e=>{setDark(e.matches)});const btnDark=document.querySelector(".btn-dark");btnDark.addEventListener("click",()=>{setDark(localStorage.getItem("dark")!=="true")})</script><div class="nav-wrapper fixed inset-x-0 top-full z-40 flex h-full select-none flex-col justify-center pb-16 duration-200 dark:bg-black lg:static lg:h-auto lg:flex-row lg:!bg-transparent lg:pb-0 lg:transition-none"><nav class="lg:ml-12 lg:flex lg:flex-row lg:items-center lg:space-x-6"><a class="block text-center text-2xl leading-[5rem] lg:text-base lg:font-normal" href=/about/>About</a>
+<a class="block text-center text-2xl leading-[5rem] lg:text-base lg:font-normal" href=/contact/>Contact</a></nav><nav class="mt-12 flex justify-center space-x-10 dark:invert lg:ml-12 lg:mt-0 lg:items-center lg:space-x-6"><a class="h-8 w-8 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6" style=--url:url(./twitter.svg) href=https://twitter.com/MOzanUnal target=_blank rel=me>twitter
+</a><a class="h-8 w-8 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6" style=--url:url(./github.svg) href=https://github.com/mozanunal target=_blank rel=me>github</a></nav></div></header><main class="prose prose-neutral relative mx-auto min-h-[calc(100%-9rem)] max-w-3xl px-8 pb-16 pt-12 dark:prose-invert"><article><header class=mb-16><h1 class="!my-0 pb-2.5">[TR] Google Hash Code 2017</h1><div class="text-sm antialiased opacity-60"><time>Jul 13, 2017</time>
 <span class=mx-1>&#183;</span>
-<span>Mehmet Ozan Ünal</span>
-</div>
-</header>
-<section><p><strong>Herkese Merhabalar</strong>,</p>
-<p>Google bir kaç senedir tüm dünyada programlama ve algoritmalar üzerine bir yarışma düzenliyor. Bu yarışma kapsamında, yarışmanın katılımcılarına karmaşık algoritmik problemler veriliyor ve istenilen data kümeleri için yine verilen formatta sonuçlar oluşturacak algoritmalar yazılması gerekiyor. Son olarak bu sonuç dosyaları Google&rsquo;ın sistemine yükleniyor ve skor hesaplanıyor. Yarışma 2 aşamadan oluşuyor 1. aşama online eleme. İkinci aşama ise ilk 30&rsquo;a giren gruplar bir merkezde yarışıyor. Ben de yarışmaya 2016 ve 2017 yıllarında katıldım. Bu yazıda 2017 yılındaki online eleme sorusu ve pratik sorusu hakkında paylaşımlar yapmak istiyorum. Bu arada bu soruları 4 saat içerisinde çözememiz gerekiyor bu nedenle kodlar hızlı yazıldı hata içerebilir fakat her iki kod da google&rsquo;ın sisteminde oldukça iyi puanlar alıyordu.</p>
-<p>*Yarışmada yazdığımız çözümlere yarışma sorularına ve örnek datalara <a href=https://github.com/mozanunal/NOP_HashCode2017>bu bağlantıdan</a> ulaşabilirsiniz
+<span>Mehmet Ozan Ünal</span></div></header><section><p><strong>Herkese Merhabalar</strong>,</p><p>Google bir kaç senedir tüm dünyada programlama ve algoritmalar üzerine bir yarışma düzenliyor. Bu yarışma kapsamında, yarışmanın katılımcılarına karmaşık algoritmik problemler veriliyor ve istenilen data kümeleri için yine verilen formatta sonuçlar oluşturacak algoritmalar yazılması gerekiyor. Son olarak bu sonuç dosyaları Google&rsquo;ın sistemine yükleniyor ve skor hesaplanıyor. Yarışma 2 aşamadan oluşuyor 1. aşama online eleme. İkinci aşama ise ilk 30&rsquo;a giren gruplar bir merkezde yarışıyor. Ben de yarışmaya 2016 ve 2017 yıllarında katıldım. Bu yazıda 2017 yılındaki online eleme sorusu ve pratik sorusu hakkında paylaşımlar yapmak istiyorum. Bu arada bu soruları 4 saat içerisinde çözememiz gerekiyor bu nedenle kodlar hızlı yazıldı hata içerebilir fakat her iki kod da google&rsquo;ın sisteminde oldukça iyi puanlar alıyordu.</p><p>*Yarışmada yazdığımız çözümlere yarışma sorularına ve örnek datalara <a href=https://github.com/mozanunal/NOP_HashCode2017>bu bağlantıdan</a> ulaşabilirsiniz
 *
-<img src=https://i.ytimg.com/vi/BCv_7yXNuP4/maxresdefault.jpg alt></p>
-<h4 id=pratik-sorusu-pizza>Pratik Sorusu: Pizza</h4>
-<p>İlk soru &ldquo;Pizza&rdquo; sorusu. Bu soruda bir pizzayı istenilen maddelerden en az içerek şekilde parçalamamız isteniyor. Amaç pizzanın mümkün olduğunca fazla kısmını kullanmak. Pizzamız dikdörtgen ve ilk kısımda pizza sınıfı oluşturuluyor. Bunun için dosyadan ilk satır okunuyor ve bu satır, sütun ve içerik bilgisi dosyadan &lsquo;parse&rsquo; edilip sınıfıun özellikleri olarak bir matrise kopyalanıyor. Kodun devamında ise belirlenen özelliklerde dilimler oluşturmak üzerine. Dilim geçerli bir dilim mi? Dilim içerisindeki domates, mantar sayısı kaç şeklinde sorulara cevap veren methodlar var. Dilim hakkında verileri alan fonksiyonlar eklendikten sonra algoritmayı oluşturduk. Amacı en köşeden başlayarak gerekli dilimi oluşturduktan sonra sonraki dilime geçiyor. Daha sonra ikinci bir tur atıp genişletilebilecek dilimlere göz atıyor. Ve eğer dilim genişletilebilir durumdaysa genişletiyor pizzanın daha büyük bir kısmını kullanabilmek için. &lsquo;Commit&rsquo; fonksiyonu ile de değişlikler matrise kaydediliyor. Böylece zaten kullanımda olan parçalar diğer dilimlerde kullanılamıyor. İkinci tur dolaşımda anlık olarak o dilimi &lsquo;decommit&rsquo; yapıp o çevrede daha büyük bir dilim oluşturmaya çalışıyor. Son olarak başarı oranını hesaplayan bir fonksiyon var. Eğer algoritma üzerinde değişiklik yaparsanız bu fonksiyonu kullanarak performansını deneyebilirsiniz.</p>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#ff79c6>class</span> <span style=color:#50fa7b>pizza</span>:
-    <span style=color:#ff79c6>def</span> __init__(self, file):
-        f <span style=color:#ff79c6>=</span> <span style=color:#8be9fd;font-style:italic>open</span>(file, <span style=color:#f1fa8c>&#39;r&#39;</span>)
-        fline <span style=color:#ff79c6>=</span> f<span style=color:#ff79c6>.</span>readline()
-        [R, C, L, H] <span style=color:#ff79c6>=</span> fline<span style=color:#ff79c6>.</span>split(<span style=color:#f1fa8c>&#39; &#39;</span>)
-        self<span style=color:#ff79c6>.</span>L <span style=color:#ff79c6>=</span> <span style=color:#8be9fd;font-style:italic>int</span>(L)
-        self<span style=color:#ff79c6>.</span>H <span style=color:#ff79c6>=</span> <span style=color:#8be9fd;font-style:italic>int</span>(H)
-        self<span style=color:#ff79c6>.</span>R <span style=color:#ff79c6>=</span> <span style=color:#8be9fd;font-style:italic>int</span>(R)
-        self<span style=color:#ff79c6>.</span>C <span style=color:#ff79c6>=</span> <span style=color:#8be9fd;font-style:italic>int</span>(C)
-        self<span style=color:#ff79c6>.</span>Matrix <span style=color:#ff79c6>=</span> []
-        self<span style=color:#ff79c6>.</span>Matrix2 <span style=color:#ff79c6>=</span> []
-        self<span style=color:#ff79c6>.</span>result <span style=color:#ff79c6>=</span> []
-        self<span style=color:#ff79c6>.</span>resultS <span style=color:#ff79c6>=</span> []
-        <span style=color:#ff79c6>for</span> index, line <span style=color:#ff79c6>in</span> <span style=color:#8be9fd;font-style:italic>enumerate</span>(f):
-            self<span style=color:#ff79c6>.</span>Matrix<span style=color:#ff79c6>.</span>append([])
-            self<span style=color:#ff79c6>.</span>Matrix2<span style=color:#ff79c6>.</span>append([])
-            <span style=color:#ff79c6>for</span> i <span style=color:#ff79c6>in</span> <span style=color:#8be9fd;font-style:italic>range</span>(<span style=color:#bd93f9>0</span>, self<span style=color:#ff79c6>.</span>C):
-                self<span style=color:#ff79c6>.</span>Matrix[index]<span style=color:#ff79c6>.</span>append(line[i])
-                self<span style=color:#ff79c6>.</span>Matrix2[index]<span style=color:#ff79c6>.</span>append(<span style=color:#ff79c6>False</span>)
-
-    <span style=color:#ff79c6>def</span> <span style=color:#50fa7b>calculate</span>(self):
-        <span style=color:#6272a4># print(&#39;Calculating&#39;)</span>
-        <span style=color:#ff79c6>for</span> i <span style=color:#ff79c6>in</span> <span style=color:#8be9fd;font-style:italic>range</span>(<span style=color:#bd93f9>0</span>, self<span style=color:#ff79c6>.</span>R):
-            <span style=color:#ff79c6>for</span> j <span style=color:#ff79c6>in</span> <span style=color:#8be9fd;font-style:italic>range</span>(<span style=color:#bd93f9>0</span>, self<span style=color:#ff79c6>.</span>C):
-                <span style=color:#ff79c6>if</span> self<span style=color:#ff79c6>.</span>Matrix2[i][j] <span style=color:#ff79c6>is</span> <span style=color:#ff79c6>False</span>:
-                    self<span style=color:#ff79c6>.</span>trycreateSlice(i, j)
-        
-        <span style=color:#ff79c6>for</span> index,curSlice <span style=color:#ff79c6>in</span> <span style=color:#8be9fd;font-style:italic>enumerate</span>(self<span style=color:#ff79c6>.</span>result):
-            self<span style=color:#ff79c6>.</span>decommitResult(curSlice)
-            <span style=color:#ff79c6>for</span> i <span style=color:#ff79c6>in</span> [<span style=color:#bd93f9>3</span>,<span style=color:#bd93f9>2</span>,<span style=color:#bd93f9>1</span>,<span style=color:#bd93f9>0</span>]:
-                <span style=color:#ff79c6>for</span> j <span style=color:#ff79c6>in</span> [<span style=color:#bd93f9>3</span>,<span style=color:#bd93f9>2</span>,<span style=color:#bd93f9>1</span>,<span style=color:#bd93f9>0</span>]:
-                    trySlice <span style=color:#ff79c6>=</span> <span style=color:#8be9fd;font-style:italic>slice</span>(curSlice<span style=color:#ff79c6>.</span>r1, curSlice<span style=color:#ff79c6>.</span>c1, curSlice<span style=color:#ff79c6>.</span>r2 <span style=color:#ff79c6>+</span> i, curSlice<span style=color:#ff79c6>.</span>c2 <span style=color:#ff79c6>+</span> j)
-                    <span style=color:#ff79c6>if</span> self<span style=color:#ff79c6>.</span>testSlice(trySlice) <span style=color:#ff79c6>is</span> <span style=color:#ff79c6>True</span>:
-                        <span style=color:#6272a4>#print &#39;updated&#39;</span>
-                        self<span style=color:#ff79c6>.</span>result[index]<span style=color:#ff79c6>.</span>r1 <span style=color:#ff79c6>=</span> trySlice<span style=color:#ff79c6>.</span>r1
-                        self<span style=color:#ff79c6>.</span>result[index]<span style=color:#ff79c6>.</span>c1 <span style=color:#ff79c6>=</span> trySlice<span style=color:#ff79c6>.</span>c1
-                        self<span style=color:#ff79c6>.</span>result[index]<span style=color:#ff79c6>.</span>r2 <span style=color:#ff79c6>=</span> trySlice<span style=color:#ff79c6>.</span>r2
-                        self<span style=color:#ff79c6>.</span>result[index]<span style=color:#ff79c6>.</span>c2 <span style=color:#ff79c6>=</span> trySlice<span style=color:#ff79c6>.</span>c2
-                        <span style=color:#ff79c6>for</span> i <span style=color:#ff79c6>in</span> <span style=color:#8be9fd;font-style:italic>range</span>(trySlice<span style=color:#ff79c6>.</span>r1, trySlice<span style=color:#ff79c6>.</span>r2 <span style=color:#ff79c6>+</span> <span style=color:#bd93f9>1</span>):
-                            <span style=color:#ff79c6>for</span> j <span style=color:#ff79c6>in</span> <span style=color:#8be9fd;font-style:italic>range</span>(trySlice<span style=color:#ff79c6>.</span>c1, trySlice<span style=color:#ff79c6>.</span>c2 <span style=color:#ff79c6>+</span> <span style=color:#bd93f9>1</span>):
-                                self<span style=color:#ff79c6>.</span>Matrix2[i][j] <span style=color:#ff79c6>=</span> <span style=color:#ff79c6>True</span>
-                        <span style=color:#ff79c6>break</span>
-        
-
-    <span style=color:#ff79c6>def</span> <span style=color:#50fa7b>trycreateSlice</span>(self, r, c):
-        <span style=color:#6272a4># print(r,c),&#39;start&#39;</span>
-        <span style=color:#ff79c6>for</span> i <span style=color:#ff79c6>in</span> <span style=color:#8be9fd;font-style:italic>range</span>(<span style=color:#bd93f9>0</span>, <span style=color:#bd93f9>15</span>):
-            <span style=color:#ff79c6>for</span> j <span style=color:#ff79c6>in</span> <span style=color:#8be9fd;font-style:italic>range</span>(<span style=color:#bd93f9>0</span>, <span style=color:#bd93f9>15</span>):
-                trySlice <span style=color:#ff79c6>=</span> <span style=color:#8be9fd;font-style:italic>slice</span>(r, c, r <span style=color:#ff79c6>+</span> i, c <span style=color:#ff79c6>+</span> j)
-                <span style=color:#ff79c6>if</span> self<span style=color:#ff79c6>.</span>testSlice(trySlice) <span style=color:#ff79c6>is</span> <span style=color:#ff79c6>True</span>:
-                    <span style=color:#6272a4># print &#39;finded&#39;</span>
-                    self<span style=color:#ff79c6>.</span>commitResult(trySlice)
-                    <span style=color:#ff79c6>break</span>
-        <span style=color:#ff79c6>return</span> (r, c)
-
-    <span style=color:#ff79c6>def</span> <span style=color:#50fa7b>testSlice</span>(self, <span style=color:#8be9fd;font-style:italic>slice</span>):
-        test <span style=color:#ff79c6>=</span> <span style=color:#ff79c6>False</span>
-        <span style=color:#ff79c6>if</span> (((<span style=color:#8be9fd;font-style:italic>slice</span><span style=color:#ff79c6>.</span>r2 <span style=color:#ff79c6>-</span> <span style=color:#8be9fd;font-style:italic>slice</span><span style=color:#ff79c6>.</span>r1 <span style=color:#ff79c6>+</span> <span style=color:#bd93f9>1</span>) <span style=color:#ff79c6>*</span> (<span style=color:#8be9fd;font-style:italic>slice</span><span style=color:#ff79c6>.</span>c2 <span style=color:#ff79c6>-</span> <span style=color:#8be9fd;font-style:italic>slice</span><span style=color:#ff79c6>.</span>c1 <span style=color:#ff79c6>+</span> <span style=color:#bd93f9>1</span>)) <span style=color:#ff79c6>&gt;</span> self<span style=color:#ff79c6>.</span>H) <span style=color:#ff79c6>|</span> ((<span style=color:#8be9fd;font-style:italic>slice</span><span style=color:#ff79c6>.</span>r2 <span style=color:#ff79c6>+</span> <span style=color:#bd93f9>1</span>) <span style=color:#ff79c6>&gt;</span> self<span style=color:#ff79c6>.</span>R) <span style=color:#ff79c6>|</span> ((<span style=color:#8be9fd;font-style:italic>slice</span><span style=color:#ff79c6>.</span>c2 <span style=color:#ff79c6>+</span> <span style=color:#bd93f9>1</span>) <span style=color:#ff79c6>&gt;</span> self<span style=color:#ff79c6>.</span>C):
-            <span style=color:#6272a4># print &#39;&gt;boundries&#39;</span>
-            a <span style=color:#ff79c6>=</span> <span style=color:#bd93f9>5</span>
-        <span style=color:#ff79c6>else</span>:
-            tNum, mNum <span style=color:#ff79c6>=</span> self<span style=color:#ff79c6>.</span>getNumbers(<span style=color:#8be9fd;font-style:italic>slice</span>)
-            avaible <span style=color:#ff79c6>=</span> self<span style=color:#ff79c6>.</span>getAvaible(<span style=color:#8be9fd;font-style:italic>slice</span>)
-            <span style=color:#ff79c6>if</span> avaible <span style=color:#ff79c6>is</span> <span style=color:#ff79c6>True</span>:
-                <span style=color:#ff79c6>if</span>(mNum <span style=color:#ff79c6>&gt;=</span> self<span style=color:#ff79c6>.</span>L) <span style=color:#ff79c6>&amp;</span> (tNum <span style=color:#ff79c6>&gt;=</span> self<span style=color:#ff79c6>.</span>L):
-                    test <span style=color:#ff79c6>=</span> <span style=color:#ff79c6>True</span>
-            <span style=color:#ff79c6>else</span>:
-                <span style=color:#6272a4># print &#39;not Avaible&#39;</span>
-                a <span style=color:#ff79c6>=</span> <span style=color:#bd93f9>5</span>
-        <span style=color:#ff79c6>return</span> test
-
-    <span style=color:#ff79c6>def</span> <span style=color:#50fa7b>getAvaible</span>(self, <span style=color:#8be9fd;font-style:italic>slice</span>):
-        avaible <span style=color:#ff79c6>=</span> <span style=color:#ff79c6>True</span>
-        <span style=color:#ff79c6>for</span> i <span style=color:#ff79c6>in</span> <span style=color:#8be9fd;font-style:italic>range</span>(<span style=color:#8be9fd;font-style:italic>slice</span><span style=color:#ff79c6>.</span>r1, <span style=color:#8be9fd;font-style:italic>slice</span><span style=color:#ff79c6>.</span>r2 <span style=color:#ff79c6>+</span> <span style=color:#bd93f9>1</span>):
-            <span style=color:#ff79c6>for</span> j <span style=color:#ff79c6>in</span> <span style=color:#8be9fd;font-style:italic>range</span>(<span style=color:#8be9fd;font-style:italic>slice</span><span style=color:#ff79c6>.</span>c1, <span style=color:#8be9fd;font-style:italic>slice</span><span style=color:#ff79c6>.</span>c2 <span style=color:#ff79c6>+</span> <span style=color:#bd93f9>1</span>):
-                <span style=color:#ff79c6>if</span> self<span style=color:#ff79c6>.</span>Matrix2[i][j] <span style=color:#ff79c6>==</span> <span style=color:#ff79c6>True</span>:
-                    avaible <span style=color:#ff79c6>=</span> <span style=color:#ff79c6>False</span>
-        <span style=color:#ff79c6>return</span> avaible
-
-    <span style=color:#ff79c6>def</span> <span style=color:#50fa7b>getNumbers</span>(self, <span style=color:#8be9fd;font-style:italic>slice</span>):
-        tNum <span style=color:#ff79c6>=</span> <span style=color:#bd93f9>0</span>
-        mNum <span style=color:#ff79c6>=</span> <span style=color:#bd93f9>0</span>
-        <span style=color:#ff79c6>for</span> i <span style=color:#ff79c6>in</span> <span style=color:#8be9fd;font-style:italic>range</span>(<span style=color:#8be9fd;font-style:italic>slice</span><span style=color:#ff79c6>.</span>r1, <span style=color:#8be9fd;font-style:italic>slice</span><span style=color:#ff79c6>.</span>r2 <span style=color:#ff79c6>+</span> <span style=color:#bd93f9>1</span>):
-            <span style=color:#ff79c6>for</span> j <span style=color:#ff79c6>in</span> <span style=color:#8be9fd;font-style:italic>range</span>(<span style=color:#8be9fd;font-style:italic>slice</span><span style=color:#ff79c6>.</span>c1, <span style=color:#8be9fd;font-style:italic>slice</span><span style=color:#ff79c6>.</span>c2 <span style=color:#ff79c6>+</span> <span style=color:#bd93f9>1</span>):
-                <span style=color:#ff79c6>if</span> self<span style=color:#ff79c6>.</span>Matrix[i][j] <span style=color:#ff79c6>==</span> <span style=color:#f1fa8c>&#39;T&#39;</span>:
-                    tNum <span style=color:#ff79c6>+=</span> <span style=color:#bd93f9>1</span>
-                <span style=color:#ff79c6>elif</span> self<span style=color:#ff79c6>.</span>Matrix[i][j] <span style=color:#ff79c6>==</span> <span style=color:#f1fa8c>&#39;M&#39;</span>:
-                    mNum <span style=color:#ff79c6>+=</span> <span style=color:#bd93f9>1</span>
-        <span style=color:#ff79c6>return</span> tNum, mNum
-
-    <span style=color:#ff79c6>def</span> <span style=color:#50fa7b>commitResult</span>(self, <span style=color:#8be9fd;font-style:italic>slice</span>):
-        self<span style=color:#ff79c6>.</span>result<span style=color:#ff79c6>.</span>append(<span style=color:#8be9fd;font-style:italic>slice</span>)
-        <span style=color:#6272a4># print &#39;done&#39;,str(r1)+&#34; &#34;+str(c1)+&#34; &#34;+str(r2)+&#34; &#34;+str(c2)</span>
-        <span style=color:#ff79c6>for</span> i <span style=color:#ff79c6>in</span> <span style=color:#8be9fd;font-style:italic>range</span>(<span style=color:#8be9fd;font-style:italic>slice</span><span style=color:#ff79c6>.</span>r1, <span style=color:#8be9fd;font-style:italic>slice</span><span style=color:#ff79c6>.</span>r2 <span style=color:#ff79c6>+</span> <span style=color:#bd93f9>1</span>):
-            <span style=color:#ff79c6>for</span> j <span style=color:#ff79c6>in</span> <span style=color:#8be9fd;font-style:italic>range</span>(<span style=color:#8be9fd;font-style:italic>slice</span><span style=color:#ff79c6>.</span>c1, <span style=color:#8be9fd;font-style:italic>slice</span><span style=color:#ff79c6>.</span>c2 <span style=color:#ff79c6>+</span> <span style=color:#bd93f9>1</span>):
-                self<span style=color:#ff79c6>.</span>Matrix2[i][j] <span style=color:#ff79c6>=</span> <span style=color:#ff79c6>True</span>
-
-    <span style=color:#ff79c6>def</span> <span style=color:#50fa7b>decommitResult</span>(self, <span style=color:#8be9fd;font-style:italic>slice</span>):
-        <span style=color:#6272a4># print &#39;done&#39;,str(r1)+&#34; &#34;+str(c1)+&#34; &#34;+str(r2)+&#34; &#34;+str(c2)</span>
-        <span style=color:#ff79c6>for</span> i <span style=color:#ff79c6>in</span> <span style=color:#8be9fd;font-style:italic>range</span>(<span style=color:#8be9fd;font-style:italic>slice</span><span style=color:#ff79c6>.</span>r1, <span style=color:#8be9fd;font-style:italic>slice</span><span style=color:#ff79c6>.</span>r2 <span style=color:#ff79c6>+</span> <span style=color:#bd93f9>1</span>):
-            <span style=color:#ff79c6>for</span> j <span style=color:#ff79c6>in</span> <span style=color:#8be9fd;font-style:italic>range</span>(<span style=color:#8be9fd;font-style:italic>slice</span><span style=color:#ff79c6>.</span>c1, <span style=color:#8be9fd;font-style:italic>slice</span><span style=color:#ff79c6>.</span>c2 <span style=color:#ff79c6>+</span> <span style=color:#bd93f9>1</span>):
-                self<span style=color:#ff79c6>.</span>Matrix2[i][j] <span style=color:#ff79c6>=</span> <span style=color:#ff79c6>False</span>
-
-    <span style=color:#ff79c6>def</span> <span style=color:#50fa7b>convertRestultString</span>(self):
-        <span style=color:#ff79c6>for</span> <span style=color:#8be9fd;font-style:italic>slice</span> <span style=color:#ff79c6>in</span> self<span style=color:#ff79c6>.</span>result:
-            self<span style=color:#ff79c6>.</span>resultS<span style=color:#ff79c6>.</span>append(<span style=color:#8be9fd;font-style:italic>str</span>(<span style=color:#8be9fd;font-style:italic>slice</span><span style=color:#ff79c6>.</span>r1) <span style=color:#ff79c6>+</span> <span style=color:#f1fa8c>&#34; &#34;</span> <span style=color:#ff79c6>+</span> <span style=color:#8be9fd;font-style:italic>str</span>(<span style=color:#8be9fd;font-style:italic>slice</span><span style=color:#ff79c6>.</span>c1) <span style=color:#ff79c6>+</span>
-                           <span style=color:#f1fa8c>&#34; &#34;</span> <span style=color:#ff79c6>+</span> <span style=color:#8be9fd;font-style:italic>str</span>(<span style=color:#8be9fd;font-style:italic>slice</span><span style=color:#ff79c6>.</span>r2) <span style=color:#ff79c6>+</span> <span style=color:#f1fa8c>&#34; &#34;</span> <span style=color:#ff79c6>+</span> <span style=color:#8be9fd;font-style:italic>str</span>(<span style=color:#8be9fd;font-style:italic>slice</span><span style=color:#ff79c6>.</span>c2))    
-
-    <span style=color:#ff79c6>def</span> <span style=color:#50fa7b>printSucces</span>(self):  
-        trueC <span style=color:#ff79c6>=</span> <span style=color:#bd93f9>0</span>
-        falseC <span style=color:#ff79c6>=</span> <span style=color:#bd93f9>0</span>
-        <span style=color:#ff79c6>for</span> i <span style=color:#ff79c6>in</span> <span style=color:#8be9fd;font-style:italic>range</span>(<span style=color:#bd93f9>0</span>, self<span style=color:#ff79c6>.</span>R):
-            <span style=color:#ff79c6>for</span> j <span style=color:#ff79c6>in</span> <span style=color:#8be9fd;font-style:italic>range</span>(<span style=color:#bd93f9>0</span>, self<span style=color:#ff79c6>.</span>C):
-                <span style=color:#ff79c6>if</span> self<span style=color:#ff79c6>.</span>Matrix2[i][j] <span style=color:#ff79c6>==</span> <span style=color:#ff79c6>True</span>:
-                    trueC <span style=color:#ff79c6>+=</span> <span style=color:#bd93f9>1</span>
-                <span style=color:#ff79c6>else</span>:
-                    falseC <span style=color:#ff79c6>+=</span> <span style=color:#bd93f9>1</span>
-        <span style=color:#8be9fd;font-style:italic>print</span> <span style=color:#f1fa8c>&#34;Score: &#34;</span>, trueC, <span style=color:#f1fa8c>&#34; / &#34;</span>, trueC<span style=color:#ff79c6>+</span>falseC
-
-<span style=color:#ff79c6>class</span> <span style=color:#50fa7b>slice</span>:
-    <span style=color:#ff79c6>def</span> __init__(self,r1,c1,r2,c2):
-        self<span style=color:#ff79c6>.</span>r1 <span style=color:#ff79c6>=</span> r1
-        self<span style=color:#ff79c6>.</span>c1 <span style=color:#ff79c6>=</span> c1
-        self<span style=color:#ff79c6>.</span>r2 <span style=color:#ff79c6>=</span> r2
-        self<span style=color:#ff79c6>.</span>c2 <span style=color:#ff79c6>=</span> c2
-
-
-mypizza <span style=color:#ff79c6>=</span> pizza(<span style=color:#f1fa8c>&#39;medium.in&#39;</span>)
-<span style=color:#6272a4># print mypizza.Matrix</span>
-<span style=color:#6272a4># print mypizza.Matrix2</span>
-mypizza<span style=color:#ff79c6>.</span>calculate()
-mypizza<span style=color:#ff79c6>.</span>convertRestultString()
-s <span style=color:#ff79c6>=</span> <span style=color:#8be9fd;font-style:italic>str</span>(<span style=color:#8be9fd;font-style:italic>len</span>(mypizza<span style=color:#ff79c6>.</span>resultS))<span style=color:#ff79c6>+</span><span style=color:#f1fa8c>&#34;</span><span style=color:#f1fa8c>\n</span><span style=color:#f1fa8c>&#34;</span>
-<span style=color:#ff79c6>for</span> res <span style=color:#ff79c6>in</span> mypizza<span style=color:#ff79c6>.</span>resultS:
-    s <span style=color:#ff79c6>+=</span> res <span style=color:#ff79c6>+</span> <span style=color:#f1fa8c>&#34;</span><span style=color:#f1fa8c>\n</span><span style=color:#f1fa8c>&#34;</span>
-file <span style=color:#ff79c6>=</span> <span style=color:#8be9fd;font-style:italic>open</span>(<span style=color:#f1fa8c>&#34;medium.txt&#34;</span>,<span style=color:#f1fa8c>&#34;w&#34;</span>)
-file<span style=color:#ff79c6>.</span>write(s)
-file<span style=color:#ff79c6>.</span>close()
-
-
-mypizza<span style=color:#ff79c6>.</span>printSucces()
-</code></pre></div><h4 id=online-eleme-sorusu-streaming-videos>Online eleme sorusu: Streaming Videos</h4>
-<p>Bu soruda ise video izleme gecikmesini azaltmak için videoları &lsquo;cache&rsquo; sunuclara yerleştirmemiz isteniyor. Yüksek puan almak için toplam gecikme süresi minimum olmalı. Bu kapsam da ilk aşamada gerekli sınıflar oluşturuldu. Daha sonrasında bu sınıflar arasında bağlantılar oluşturuldu. Algoritmanın amacı herhangibir bir cache serverın bütün videoları için latency hesaplayıp sonra bunları skorlayarak bir optimizasyon yapmak. Burda tabi bağlantıları yapmak biraz zor oldu benim açımdan. Pizza sorusuyla karşılaştırınca çok daha fazla farklı sınıf olduğunu farketmişsiniz. Burda çözümü anlatmanın çok bir anlamı olmadığını düşünüyorum. Daha çok yarışma hakkında bir kaç izlenimimden bahsetmek isterim. Yarışmada farkettiğiniz üzere aslında tam olarak çözümü belli olmayan sorular soruluyor. Daha doğrusu mutlak doğru sonuç var ama onu hesaplamak imkansız bir seviyede. Yani Brute force ile neredeyse sonsuz olasılıkla karşı karşıya kaldığımız sorular soruluyor. Lütfen soruları çözerken hep onu dikkat alın. Sürekli algoritmanınızın karmaşıklığına dikkat ederek geliştirin. Ben de bu konuda yeterince tecrübeli olmadığım için bir kaç kere büyük data kümelerinde sonsuz işleme doğru giden algoritmalar yazdım. İkinci önerim ise kesinlikle verilen datalara bakarak çözümünüzü üretin. Çünkü bütün sorularda genelde 3 4 adet farklı data kümesi verilliyor ve genelde her bir data farklı bir şeyi ölçüyor. Biri için geliştirdiğiniz algoritma diğerlerine uymayabiliyor. Bugünlük bu kadar daha ayrıntılı sorularınızı her zaman sorabilirsiniz. Görüşmek üzere</p>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#ff79c6>class</span> <span style=color:#50fa7b>scoring</span>:
-    <span style=color:#ff79c6>def</span> __init__(self,video,score):
-       self<span style=color:#ff79c6>.</span>video<span style=color:#ff79c6>=</span> video
-       self<span style=color:#ff79c6>.</span>score <span style=color:#ff79c6>=</span> score
-    <span style=color:#ff79c6>def</span> __lt__(self, other):
-         <span style=color:#ff79c6>return</span> self<span style=color:#ff79c6>.</span>score <span style=color:#ff79c6>&gt;</span> other<span style=color:#ff79c6>.</span>score <span style=color:#ff79c6>+</span> <span style=color:#bd93f9>5</span> 
-         
-<span style=color:#ff79c6>class</span> <span style=color:#50fa7b>connection</span>:
-    <span style=color:#ff79c6>def</span> __init__(self,ep,cacheNum,latency):
-        self<span style=color:#ff79c6>.</span>ep <span style=color:#ff79c6>=</span> ep
-        self<span style=color:#ff79c6>.</span>cacheNum <span style=color:#ff79c6>=</span> cacheNum
-        self<span style=color:#ff79c6>.</span>latency <span style=color:#ff79c6>=</span> latency
-
-<span style=color:#ff79c6>class</span> <span style=color:#50fa7b>video</span>:
-    <span style=color:#ff79c6>def</span> __init__(self, <span style=color:#8be9fd;font-style:italic>id</span> , size):
-        self<span style=color:#ff79c6>.</span>id <span style=color:#ff79c6>=</span> <span style=color:#8be9fd;font-style:italic>id</span>
-        self<span style=color:#ff79c6>.</span>size <span style=color:#ff79c6>=</span> size
-
-<span style=color:#ff79c6>class</span> <span style=color:#50fa7b>cache</span>:
-    <span style=color:#ff79c6>def</span> __init__(self, <span style=color:#8be9fd;font-style:italic>id</span> , capacity):
-        self<span style=color:#ff79c6>.</span>id <span style=color:#ff79c6>=</span> <span style=color:#8be9fd;font-style:italic>id</span>
-        self<span style=color:#ff79c6>.</span>capacity <span style=color:#ff79c6>=</span> capacity
-        self<span style=color:#ff79c6>.</span>videos <span style=color:#ff79c6>=</span> []
-        self<span style=color:#ff79c6>.</span>endpoints <span style=color:#ff79c6>=</span> []
-
-    <span style=color:#ff79c6>def</span> <span style=color:#50fa7b>addVideo</span>(self,video):
-        <span style=color:#ff79c6>if</span> self<span style=color:#ff79c6>.</span>capacity <span style=color:#ff79c6>&gt;=</span> video<span style=color:#ff79c6>.</span>size: 
-            self<span style=color:#ff79c6>.</span>videos<span style=color:#ff79c6>.</span>append(video)
-            self<span style=color:#ff79c6>.</span>capacity <span style=color:#ff79c6>=</span> self<span style=color:#ff79c6>.</span>capacity <span style=color:#ff79c6>-</span> video<span style=color:#ff79c6>.</span>size
-            <span style=color:#ff79c6>return</span> <span style=color:#ff79c6>True</span>
-        <span style=color:#ff79c6>else</span>:
-            <span style=color:#ff79c6>return</span> <span style=color:#ff79c6>False</span>
-        
-
-<span style=color:#ff79c6>class</span> <span style=color:#50fa7b>endpoint</span>:
-    <span style=color:#ff79c6>def</span> __init__(self,<span style=color:#8be9fd;font-style:italic>id</span>,latencyDataC,connectionNumber):
-        self<span style=color:#ff79c6>.</span>id <span style=color:#ff79c6>=</span> <span style=color:#8be9fd;font-style:italic>id</span> 
-        self<span style=color:#ff79c6>.</span>latencyDataC<span style=color:#ff79c6>=</span> latencyDataC
-        self<span style=color:#ff79c6>.</span>connections <span style=color:#ff79c6>=</span> []
-        self<span style=color:#ff79c6>.</span>requests <span style=color:#ff79c6>=</span> [] 
-
-<span style=color:#ff79c6>class</span> <span style=color:#50fa7b>request</span>:
-    <span style=color:#ff79c6>def</span> __init__(self,reqNumber, videoID, endpointID,count):
-        self<span style=color:#ff79c6>.</span>reqNumber <span style=color:#ff79c6>=</span> reqNumber
-        self<span style=color:#ff79c6>.</span>videoID <span style=color:#ff79c6>=</span> videoID
-        self<span style=color:#ff79c6>.</span>endpointID <span style=color:#ff79c6>=</span> endpointID
-        self<span style=color:#ff79c6>.</span>count <span style=color:#ff79c6>=</span> count
-
-
-<span style=color:#ff79c6>class</span> <span style=color:#50fa7b>solver</span>:
-    <span style=color:#ff79c6>def</span> __init__(self, file):
-        self<span style=color:#ff79c6>.</span>videos <span style=color:#ff79c6>=</span> []
-        self<span style=color:#ff79c6>.</span>eps <span style=color:#ff79c6>=</span> []
-        self<span style=color:#ff79c6>.</span>requests <span style=color:#ff79c6>=</span> []
-        self<span style=color:#ff79c6>.</span>caches<span style=color:#ff79c6>=</span> []
-        f <span style=color:#ff79c6>=</span> <span style=color:#8be9fd;font-style:italic>open</span>(file, <span style=color:#f1fa8c>&#39;r&#39;</span>)
-        fline <span style=color:#ff79c6>=</span> f<span style=color:#ff79c6>.</span>readline()
-        [V, E, R, C, X] <span style=color:#ff79c6>=</span> fline<span style=color:#ff79c6>.</span>split(<span style=color:#f1fa8c>&#39; &#39;</span>)
-        self<span style=color:#ff79c6>.</span>videoCount <span style=color:#ff79c6>=</span> <span style=color:#8be9fd;font-style:italic>int</span>(V)
-        <span style=color:#ff79c6>for</span> indexC <span style=color:#ff79c6>in</span> <span style=color:#8be9fd;font-style:italic>range</span>(<span style=color:#bd93f9>0</span>,<span style=color:#8be9fd;font-style:italic>int</span>(C)):
-            c <span style=color:#ff79c6>=</span> cache(indexC, <span style=color:#8be9fd;font-style:italic>int</span>(X))
-            self<span style=color:#ff79c6>.</span>caches<span style=color:#ff79c6>.</span>append(c)
-        fline <span style=color:#ff79c6>=</span> f<span style=color:#ff79c6>.</span>readline()
-        <span style=color:#ff79c6>for</span> index, size <span style=color:#ff79c6>in</span> <span style=color:#8be9fd;font-style:italic>enumerate</span>(fline<span style=color:#ff79c6>.</span>split(<span style=color:#f1fa8c>&#39; &#39;</span>)):
-            v <span style=color:#ff79c6>=</span> video(index,<span style=color:#8be9fd;font-style:italic>int</span>(size))
-            self<span style=color:#ff79c6>.</span>videos<span style=color:#ff79c6>.</span>append(v)
-        <span style=color:#ff79c6>for</span> currentEpID <span style=color:#ff79c6>in</span> <span style=color:#8be9fd;font-style:italic>range</span>(<span style=color:#bd93f9>0</span>,<span style=color:#8be9fd;font-style:italic>int</span>(E)):
-            fline <span style=color:#ff79c6>=</span> f<span style=color:#ff79c6>.</span>readline()
-            [latencyDataC, connectionNumber] <span style=color:#ff79c6>=</span> fline<span style=color:#ff79c6>.</span>split(<span style=color:#f1fa8c>&#39; &#39;</span>)
-            ep <span style=color:#ff79c6>=</span> endpoint(currentEpID,<span style=color:#8be9fd;font-style:italic>int</span>(latencyDataC),<span style=color:#8be9fd;font-style:italic>int</span>(connectionNumber))
-            self<span style=color:#ff79c6>.</span>eps<span style=color:#ff79c6>.</span>append(ep)
-            <span style=color:#ff79c6>for</span> i <span style=color:#ff79c6>in</span> <span style=color:#8be9fd;font-style:italic>range</span>(<span style=color:#bd93f9>0</span>,<span style=color:#8be9fd;font-style:italic>int</span>(connectionNumber)):
-                [cNUm,latency] <span style=color:#ff79c6>=</span> f<span style=color:#ff79c6>.</span>readline()<span style=color:#ff79c6>.</span>split(<span style=color:#f1fa8c>&#39; &#39;</span>)
-                c <span style=color:#ff79c6>=</span> connection(ep,<span style=color:#8be9fd;font-style:italic>int</span>(cNUm),<span style=color:#8be9fd;font-style:italic>int</span>(latency))
-                ep<span style=color:#ff79c6>.</span>connections<span style=color:#ff79c6>.</span>append(c)
-                self<span style=color:#ff79c6>.</span>caches[<span style=color:#8be9fd;font-style:italic>int</span>(cNUm)]<span style=color:#ff79c6>.</span>endpoints<span style=color:#ff79c6>.</span>append(self<span style=color:#ff79c6>.</span>eps[currentEpID])
-        <span style=color:#ff79c6>for</span> curReqId <span style=color:#ff79c6>in</span> <span style=color:#8be9fd;font-style:italic>range</span>(<span style=color:#bd93f9>0</span>,<span style=color:#8be9fd;font-style:italic>int</span>(R)):
-            [reqVideoID,reqEpID,reqCount] <span style=color:#ff79c6>=</span> f<span style=color:#ff79c6>.</span>readline()<span style=color:#ff79c6>.</span>split(<span style=color:#f1fa8c>&#39; &#39;</span>)
-            r <span style=color:#ff79c6>=</span> request(curReqId,<span style=color:#8be9fd;font-style:italic>int</span>(reqVideoID),<span style=color:#8be9fd;font-style:italic>int</span>(reqEpID),<span style=color:#8be9fd;font-style:italic>int</span>(reqCount))
-            self<span style=color:#ff79c6>.</span>requests<span style=color:#ff79c6>.</span>append(r)
-            self<span style=color:#ff79c6>.</span>eps[<span style=color:#8be9fd;font-style:italic>int</span>(reqEpID)]<span style=color:#ff79c6>.</span>requests<span style=color:#ff79c6>.</span>append(r)
-
-
-    <span style=color:#ff79c6>def</span> <span style=color:#50fa7b>getvideosofcache</span>(self,cache):
-        <span style=color:#6272a4>#print &#34;cache id:&#34;, cache,</span>
-        scoreList <span style=color:#ff79c6>=</span> []
-        <span style=color:#ff79c6>for</span> i <span style=color:#ff79c6>in</span> self<span style=color:#ff79c6>.</span>videos:
-            s <span style=color:#ff79c6>=</span> scoring(i,<span style=color:#bd93f9>0</span>)
-            scoreList<span style=color:#ff79c6>.</span>append(s)
-        <span style=color:#ff79c6>for</span> ep <span style=color:#ff79c6>in</span> cache<span style=color:#ff79c6>.</span>endpoints:
-            <span style=color:#ff79c6>for</span> req <span style=color:#ff79c6>in</span> ep<span style=color:#ff79c6>.</span>requests:
-                curLat <span style=color:#ff79c6>=</span> self<span style=color:#ff79c6>.</span>getlatency(cache,ep)
-                score <span style=color:#ff79c6>=</span> (req<span style=color:#ff79c6>.</span>count<span style=color:#ff79c6>*</span>(ep<span style=color:#ff79c6>.</span>latencyDataC<span style=color:#ff79c6>-</span>curLat))
-                <span style=color:#6272a4>#print &#34;videoid : &#34;, req.videoID, &#34;ep: &#34;, ep.id, &#34;req count&#34;, req.count, &#34;dc latiency: &#34;, ep.latencyDataC, &#34;connect latency&#34;,curLat, &#34;puan&#34;, score)</span>
-                scoreList[req<span style=color:#ff79c6>.</span>videoID]<span style=color:#ff79c6>.</span>score <span style=color:#ff79c6>+=</span> score
-                <span style=color:#6272a4>#print &#34;videoid : &#34;, req.videoID, scoreList[req.videoID].score</span>
-        scoreList<span style=color:#ff79c6>.</span>sort()
-        <span style=color:#6272a4>#for a in scoreList:</span>
-            <span style=color:#6272a4>#print a.video.id, a.score, a.video.size</span>
-        <span style=color:#ff79c6>return</span> scoreList
-
-    <span style=color:#ff79c6>def</span> <span style=color:#50fa7b>getlatency</span>(self,cache,endpoint):
-        ali <span style=color:#ff79c6>=</span> <span style=color:#bd93f9>0</span>
-        <span style=color:#ff79c6>for</span> i <span style=color:#ff79c6>in</span> endpoint<span style=color:#ff79c6>.</span>connections:
-            <span style=color:#ff79c6>if</span> i<span style=color:#ff79c6>.</span>cacheNum <span style=color:#ff79c6>==</span> cache<span style=color:#ff79c6>.</span>id:
-                ali <span style=color:#ff79c6>=</span> i<span style=color:#ff79c6>.</span>latency
-                <span style=color:#ff79c6>break</span>
-        <span style=color:#ff79c6>return</span> ali
-
-    <span style=color:#ff79c6>def</span> <span style=color:#50fa7b>solve</span>(self):
-        <span style=color:#ff79c6>for</span> curCache <span style=color:#ff79c6>in</span> self<span style=color:#ff79c6>.</span>caches:
-            <span style=color:#8be9fd;font-style:italic>print</span> curCache<span style=color:#ff79c6>.</span>id
-            scoreList <span style=color:#ff79c6>=</span> mysolver<span style=color:#ff79c6>.</span>getvideosofcache(curCache)
-            <span style=color:#ff79c6>for</span> curVideo <span style=color:#ff79c6>in</span> scoreList:
-                <span style=color:#ff79c6>if</span> curVideo<span style=color:#ff79c6>.</span>score <span style=color:#ff79c6>==</span> <span style=color:#bd93f9>0</span>:
-                    <span style=color:#ff79c6>break</span>
-                curCache<span style=color:#ff79c6>.</span>addVideo(curVideo<span style=color:#ff79c6>.</span>video)
-    
-    <span style=color:#ff79c6>def</span> <span style=color:#50fa7b>result</span>(self):
-        result <span style=color:#ff79c6>=</span> <span style=color:#8be9fd;font-style:italic>str</span>(<span style=color:#8be9fd;font-style:italic>len</span>(self<span style=color:#ff79c6>.</span>caches))
-        <span style=color:#ff79c6>for</span> curCache <span style=color:#ff79c6>in</span> self<span style=color:#ff79c6>.</span>caches:
-            result <span style=color:#ff79c6>+=</span> <span style=color:#f1fa8c>&#34;</span><span style=color:#f1fa8c>\n</span><span style=color:#f1fa8c>&#34;</span><span style=color:#ff79c6>+</span><span style=color:#8be9fd;font-style:italic>str</span>(curCache<span style=color:#ff79c6>.</span>id)  
-            <span style=color:#ff79c6>for</span> curVideo <span style=color:#ff79c6>in</span> curCache<span style=color:#ff79c6>.</span>videos:
-                result <span style=color:#ff79c6>+=</span> <span style=color:#f1fa8c>&#34; &#34;</span><span style=color:#ff79c6>+</span><span style=color:#8be9fd;font-style:italic>str</span>(curVideo<span style=color:#ff79c6>.</span>id)
-        <span style=color:#6272a4>#print result </span>
-        file <span style=color:#ff79c6>=</span> <span style=color:#8be9fd;font-style:italic>open</span>(<span style=color:#f1fa8c>&#34;videos_worth_spreading.txt&#34;</span>,<span style=color:#f1fa8c>&#34;w&#34;</span>)
-        file<span style=color:#ff79c6>.</span>write(result)
-        file<span style=color:#ff79c6>.</span>close()  
-
-
-
-mysolver <span style=color:#ff79c6>=</span> solver(<span style=color:#f1fa8c>&#39;videos_worth_spreading.in&#39;</span>)
-mysolver<span style=color:#ff79c6>.</span>solve()
-mysolver<span style=color:#ff79c6>.</span>result()
-
-</code></pre></div></section>
-<footer class="mt-12 flex flex-wrap">
-<a class="mb-1.5 mr-1.5 rounded-lg bg-black/[3%] px-5 py-1.5 no-underline dark:bg-white/[8%]" href=https://mozanunal.com/tags/hash-code>Hash Code</a>
-</footer>
-<nav class="mt-24 flex rounded-lg bg-black/[3%] text-lg dark:bg-white/[8%]">
-<a class="flex w-1/2 items-center rounded-l-md p-6 pr-3 font-semibold no-underline hover:bg-black/[2%] dark:hover:bg-white/[3%]" href=https://mozanunal.com/2017/07/pmod-microphone-driver/><span class=mr-1.5>←</span><span>PMod Microphone Driver</span></a>
-<a class="ml-auto flex w-1/2 items-center justify-end rounded-r-md p-6 pl-3 font-semibold no-underline hover:bg-black/[2%] dark:hover:bg-white/[3%]" href=https://mozanunal.com/2017/06/internet-of-beaches/><span>Internet of Beach</span><span class=ml-1.5>→</span></a>
-</nav>
-</article>
-</main>
-<footer class="opaco mx-auto flex h-[4.5rem] max-w-3xl items-center px-8 text-[0.9em] opacity-60">
-<div class=mr-auto>
-&copy; 2024
-<a class=link href=https://mozanunal.com/>Mehmet Ozan Ünal</a>
-</div>
-<a class="link mx-6" href=https://gohugo.io/ rel=noopener target=_blank>Powered by Hugo️️</a>️
-<a class=link href=https://github.com/nanxiaobei/hugo-paper rel=noopener target=_blank>✎ Paper</a>
-</footer>
-</body>
-</html>
+<img src=https://i.ytimg.com/vi/BCv_7yXNuP4/maxresdefault.jpg alt></p><h4 id=pratik-sorusu-pizza>Pratik Sorusu: Pizza</h4><p>İlk soru &ldquo;Pizza&rdquo; sorusu. Bu soruda bir pizzayı istenilen maddelerden en az içerek şekilde parçalamamız isteniyor. Amaç pizzanın mümkün olduğunca fazla kısmını kullanmak. Pizzamız dikdörtgen ve ilk kısımda pizza sınıfı oluşturuluyor. Bunun için dosyadan ilk satır okunuyor ve bu satır, sütun ve içerik bilgisi dosyadan &lsquo;parse&rsquo; edilip sınıfıun özellikleri olarak bir matrise kopyalanıyor. Kodun devamında ise belirlenen özelliklerde dilimler oluşturmak üzerine. Dilim geçerli bir dilim mi? Dilim içerisindeki domates, mantar sayısı kaç şeklinde sorulara cevap veren methodlar var. Dilim hakkında verileri alan fonksiyonlar eklendikten sonra algoritmayı oluşturduk. Amacı en köşeden başlayarak gerekli dilimi oluşturduktan sonra sonraki dilime geçiyor. Daha sonra ikinci bir tur atıp genişletilebilecek dilimlere göz atıyor. Ve eğer dilim genişletilebilir durumdaysa genişletiyor pizzanın daha büyük bir kısmını kullanabilmek için. &lsquo;Commit&rsquo; fonksiyonu ile de değişlikler matrise kaydediliyor. Böylece zaten kullanımda olan parçalar diğer dilimlerde kullanılamıyor. İkinci tur dolaşımda anlık olarak o dilimi &lsquo;decommit&rsquo; yapıp o çevrede daha büyük bir dilim oluşturmaya çalışıyor. Son olarak başarı oranını hesaplayan bir fonksiyon var. Eğer algoritma üzerinde değişiklik yaparsanız bu fonksiyonu kullanarak performansını deneyebilirsiniz.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span><span style=color:#ff79c6>class</span> <span style=color:#50fa7b>pizza</span>:
+</span></span><span style=display:flex><span>    <span style=color:#ff79c6>def</span> __init__(self, file):
+</span></span><span style=display:flex><span>        f <span style=color:#ff79c6>=</span> <span style=color:#8be9fd;font-style:italic>open</span>(file, <span style=color:#f1fa8c>&#39;r&#39;</span>)
+</span></span><span style=display:flex><span>        fline <span style=color:#ff79c6>=</span> f<span style=color:#ff79c6>.</span>readline()
+</span></span><span style=display:flex><span>        [R, C, L, H] <span style=color:#ff79c6>=</span> fline<span style=color:#ff79c6>.</span>split(<span style=color:#f1fa8c>&#39; &#39;</span>)
+</span></span><span style=display:flex><span>        self<span style=color:#ff79c6>.</span>L <span style=color:#ff79c6>=</span> <span style=color:#8be9fd;font-style:italic>int</span>(L)
+</span></span><span style=display:flex><span>        self<span style=color:#ff79c6>.</span>H <span style=color:#ff79c6>=</span> <span style=color:#8be9fd;font-style:italic>int</span>(H)
+</span></span><span style=display:flex><span>        self<span style=color:#ff79c6>.</span>R <span style=color:#ff79c6>=</span> <span style=color:#8be9fd;font-style:italic>int</span>(R)
+</span></span><span style=display:flex><span>        self<span style=color:#ff79c6>.</span>C <span style=color:#ff79c6>=</span> <span style=color:#8be9fd;font-style:italic>int</span>(C)
+</span></span><span style=display:flex><span>        self<span style=color:#ff79c6>.</span>Matrix <span style=color:#ff79c6>=</span> []
+</span></span><span style=display:flex><span>        self<span style=color:#ff79c6>.</span>Matrix2 <span style=color:#ff79c6>=</span> []
+</span></span><span style=display:flex><span>        self<span style=color:#ff79c6>.</span>result <span style=color:#ff79c6>=</span> []
+</span></span><span style=display:flex><span>        self<span style=color:#ff79c6>.</span>resultS <span style=color:#ff79c6>=</span> []
+</span></span><span style=display:flex><span>        <span style=color:#ff79c6>for</span> index, line <span style=color:#ff79c6>in</span> <span style=color:#8be9fd;font-style:italic>enumerate</span>(f):
+</span></span><span style=display:flex><span>            self<span style=color:#ff79c6>.</span>Matrix<span style=color:#ff79c6>.</span>append([])
+</span></span><span style=display:flex><span>            self<span style=color:#ff79c6>.</span>Matrix2<span style=color:#ff79c6>.</span>append([])
+</span></span><span style=display:flex><span>            <span style=color:#ff79c6>for</span> i <span style=color:#ff79c6>in</span> <span style=color:#8be9fd;font-style:italic>range</span>(<span style=color:#bd93f9>0</span>, self<span style=color:#ff79c6>.</span>C):
+</span></span><span style=display:flex><span>                self<span style=color:#ff79c6>.</span>Matrix[index]<span style=color:#ff79c6>.</span>append(line[i])
+</span></span><span style=display:flex><span>                self<span style=color:#ff79c6>.</span>Matrix2[index]<span style=color:#ff79c6>.</span>append(<span style=color:#ff79c6>False</span>)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#ff79c6>def</span> <span style=color:#50fa7b>calculate</span>(self):
+</span></span><span style=display:flex><span>        <span style=color:#6272a4># print(&#39;Calculating&#39;)</span>
+</span></span><span style=display:flex><span>        <span style=color:#ff79c6>for</span> i <span style=color:#ff79c6>in</span> <span style=color:#8be9fd;font-style:italic>range</span>(<span style=color:#bd93f9>0</span>, self<span style=color:#ff79c6>.</span>R):
+</span></span><span style=display:flex><span>            <span style=color:#ff79c6>for</span> j <span style=color:#ff79c6>in</span> <span style=color:#8be9fd;font-style:italic>range</span>(<span style=color:#bd93f9>0</span>, self<span style=color:#ff79c6>.</span>C):
+</span></span><span style=display:flex><span>                <span style=color:#ff79c6>if</span> self<span style=color:#ff79c6>.</span>Matrix2[i][j] <span style=color:#ff79c6>is</span> <span style=color:#ff79c6>False</span>:
+</span></span><span style=display:flex><span>                    self<span style=color:#ff79c6>.</span>trycreateSlice(i, j)
+</span></span><span style=display:flex><span>        
+</span></span><span style=display:flex><span>        <span style=color:#ff79c6>for</span> index,curSlice <span style=color:#ff79c6>in</span> <span style=color:#8be9fd;font-style:italic>enumerate</span>(self<span style=color:#ff79c6>.</span>result):
+</span></span><span style=display:flex><span>            self<span style=color:#ff79c6>.</span>decommitResult(curSlice)
+</span></span><span style=display:flex><span>            <span style=color:#ff79c6>for</span> i <span style=color:#ff79c6>in</span> [<span style=color:#bd93f9>3</span>,<span style=color:#bd93f9>2</span>,<span style=color:#bd93f9>1</span>,<span style=color:#bd93f9>0</span>]:
+</span></span><span style=display:flex><span>                <span style=color:#ff79c6>for</span> j <span style=color:#ff79c6>in</span> [<span style=color:#bd93f9>3</span>,<span style=color:#bd93f9>2</span>,<span style=color:#bd93f9>1</span>,<span style=color:#bd93f9>0</span>]:
+</span></span><span style=display:flex><span>                    trySlice <span style=color:#ff79c6>=</span> <span style=color:#8be9fd;font-style:italic>slice</span>(curSlice<span style=color:#ff79c6>.</span>r1, curSlice<span style=color:#ff79c6>.</span>c1, curSlice<span style=color:#ff79c6>.</span>r2 <span style=color:#ff79c6>+</span> i, curSlice<span style=color:#ff79c6>.</span>c2 <span style=color:#ff79c6>+</span> j)
+</span></span><span style=display:flex><span>                    <span style=color:#ff79c6>if</span> self<span style=color:#ff79c6>.</span>testSlice(trySlice) <span style=color:#ff79c6>is</span> <span style=color:#ff79c6>True</span>:
+</span></span><span style=display:flex><span>                        <span style=color:#6272a4>#print &#39;updated&#39;</span>
+</span></span><span style=display:flex><span>                        self<span style=color:#ff79c6>.</span>result[index]<span style=color:#ff79c6>.</span>r1 <span style=color:#ff79c6>=</span> trySlice<span style=color:#ff79c6>.</span>r1
+</span></span><span style=display:flex><span>                        self<span style=color:#ff79c6>.</span>result[index]<span style=color:#ff79c6>.</span>c1 <span style=color:#ff79c6>=</span> trySlice<span style=color:#ff79c6>.</span>c1
+</span></span><span style=display:flex><span>                        self<span style=color:#ff79c6>.</span>result[index]<span style=color:#ff79c6>.</span>r2 <span style=color:#ff79c6>=</span> trySlice<span style=color:#ff79c6>.</span>r2
+</span></span><span style=display:flex><span>                        self<span style=color:#ff79c6>.</span>result[index]<span style=color:#ff79c6>.</span>c2 <span style=color:#ff79c6>=</span> trySlice<span style=color:#ff79c6>.</span>c2
+</span></span><span style=display:flex><span>                        <span style=color:#ff79c6>for</span> i <span style=color:#ff79c6>in</span> <span style=color:#8be9fd;font-style:italic>range</span>(trySlice<span style=color:#ff79c6>.</span>r1, trySlice<span style=color:#ff79c6>.</span>r2 <span style=color:#ff79c6>+</span> <span style=color:#bd93f9>1</span>):
+</span></span><span style=display:flex><span>                            <span style=color:#ff79c6>for</span> j <span style=color:#ff79c6>in</span> <span style=color:#8be9fd;font-style:italic>range</span>(trySlice<span style=color:#ff79c6>.</span>c1, trySlice<span style=color:#ff79c6>.</span>c2 <span style=color:#ff79c6>+</span> <span style=color:#bd93f9>1</span>):
+</span></span><span style=display:flex><span>                                self<span style=color:#ff79c6>.</span>Matrix2[i][j] <span style=color:#ff79c6>=</span> <span style=color:#ff79c6>True</span>
+</span></span><span style=display:flex><span>                        <span style=color:#ff79c6>break</span>
+</span></span><span style=display:flex><span>        
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#ff79c6>def</span> <span style=color:#50fa7b>trycreateSlice</span>(self, r, c):
+</span></span><span style=display:flex><span>        <span style=color:#6272a4># print(r,c),&#39;start&#39;</span>
+</span></span><span style=display:flex><span>        <span style=color:#ff79c6>for</span> i <span style=color:#ff79c6>in</span> <span style=color:#8be9fd;font-style:italic>range</span>(<span style=color:#bd93f9>0</span>, <span style=color:#bd93f9>15</span>):
+</span></span><span style=display:flex><span>            <span style=color:#ff79c6>for</span> j <span style=color:#ff79c6>in</span> <span style=color:#8be9fd;font-style:italic>range</span>(<span style=color:#bd93f9>0</span>, <span style=color:#bd93f9>15</span>):
+</span></span><span style=display:flex><span>                trySlice <span style=color:#ff79c6>=</span> <span style=color:#8be9fd;font-style:italic>slice</span>(r, c, r <span style=color:#ff79c6>+</span> i, c <span style=color:#ff79c6>+</span> j)
+</span></span><span style=display:flex><span>                <span style=color:#ff79c6>if</span> self<span style=color:#ff79c6>.</span>testSlice(trySlice) <span style=color:#ff79c6>is</span> <span style=color:#ff79c6>True</span>:
+</span></span><span style=display:flex><span>                    <span style=color:#6272a4># print &#39;finded&#39;</span>
+</span></span><span style=display:flex><span>                    self<span style=color:#ff79c6>.</span>commitResult(trySlice)
+</span></span><span style=display:flex><span>                    <span style=color:#ff79c6>break</span>
+</span></span><span style=display:flex><span>        <span style=color:#ff79c6>return</span> (r, c)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#ff79c6>def</span> <span style=color:#50fa7b>testSlice</span>(self, <span style=color:#8be9fd;font-style:italic>slice</span>):
+</span></span><span style=display:flex><span>        test <span style=color:#ff79c6>=</span> <span style=color:#ff79c6>False</span>
+</span></span><span style=display:flex><span>        <span style=color:#ff79c6>if</span> (((<span style=color:#8be9fd;font-style:italic>slice</span><span style=color:#ff79c6>.</span>r2 <span style=color:#ff79c6>-</span> <span style=color:#8be9fd;font-style:italic>slice</span><span style=color:#ff79c6>.</span>r1 <span style=color:#ff79c6>+</span> <span style=color:#bd93f9>1</span>) <span style=color:#ff79c6>*</span> (<span style=color:#8be9fd;font-style:italic>slice</span><span style=color:#ff79c6>.</span>c2 <span style=color:#ff79c6>-</span> <span style=color:#8be9fd;font-style:italic>slice</span><span style=color:#ff79c6>.</span>c1 <span style=color:#ff79c6>+</span> <span style=color:#bd93f9>1</span>)) <span style=color:#ff79c6>&gt;</span> self<span style=color:#ff79c6>.</span>H) <span style=color:#ff79c6>|</span> ((<span style=color:#8be9fd;font-style:italic>slice</span><span style=color:#ff79c6>.</span>r2 <span style=color:#ff79c6>+</span> <span style=color:#bd93f9>1</span>) <span style=color:#ff79c6>&gt;</span> self<span style=color:#ff79c6>.</span>R) <span style=color:#ff79c6>|</span> ((<span style=color:#8be9fd;font-style:italic>slice</span><span style=color:#ff79c6>.</span>c2 <span style=color:#ff79c6>+</span> <span style=color:#bd93f9>1</span>) <span style=color:#ff79c6>&gt;</span> self<span style=color:#ff79c6>.</span>C):
+</span></span><span style=display:flex><span>            <span style=color:#6272a4># print &#39;&gt;boundries&#39;</span>
+</span></span><span style=display:flex><span>            a <span style=color:#ff79c6>=</span> <span style=color:#bd93f9>5</span>
+</span></span><span style=display:flex><span>        <span style=color:#ff79c6>else</span>:
+</span></span><span style=display:flex><span>            tNum, mNum <span style=color:#ff79c6>=</span> self<span style=color:#ff79c6>.</span>getNumbers(<span style=color:#8be9fd;font-style:italic>slice</span>)
+</span></span><span style=display:flex><span>            avaible <span style=color:#ff79c6>=</span> self<span style=color:#ff79c6>.</span>getAvaible(<span style=color:#8be9fd;font-style:italic>slice</span>)
+</span></span><span style=display:flex><span>            <span style=color:#ff79c6>if</span> avaible <span style=color:#ff79c6>is</span> <span style=color:#ff79c6>True</span>:
+</span></span><span style=display:flex><span>                <span style=color:#ff79c6>if</span>(mNum <span style=color:#ff79c6>&gt;=</span> self<span style=color:#ff79c6>.</span>L) <span style=color:#ff79c6>&amp;</span> (tNum <span style=color:#ff79c6>&gt;=</span> self<span style=color:#ff79c6>.</span>L):
+</span></span><span style=display:flex><span>                    test <span style=color:#ff79c6>=</span> <span style=color:#ff79c6>True</span>
+</span></span><span style=display:flex><span>            <span style=color:#ff79c6>else</span>:
+</span></span><span style=display:flex><span>                <span style=color:#6272a4># print &#39;not Avaible&#39;</span>
+</span></span><span style=display:flex><span>                a <span style=color:#ff79c6>=</span> <span style=color:#bd93f9>5</span>
+</span></span><span style=display:flex><span>        <span style=color:#ff79c6>return</span> test
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#ff79c6>def</span> <span style=color:#50fa7b>getAvaible</span>(self, <span style=color:#8be9fd;font-style:italic>slice</span>):
+</span></span><span style=display:flex><span>        avaible <span style=color:#ff79c6>=</span> <span style=color:#ff79c6>True</span>
+</span></span><span style=display:flex><span>        <span style=color:#ff79c6>for</span> i <span style=color:#ff79c6>in</span> <span style=color:#8be9fd;font-style:italic>range</span>(<span style=color:#8be9fd;font-style:italic>slice</span><span style=color:#ff79c6>.</span>r1, <span style=color:#8be9fd;font-style:italic>slice</span><span style=color:#ff79c6>.</span>r2 <span style=color:#ff79c6>+</span> <span style=color:#bd93f9>1</span>):
+</span></span><span style=display:flex><span>            <span style=color:#ff79c6>for</span> j <span style=color:#ff79c6>in</span> <span style=color:#8be9fd;font-style:italic>range</span>(<span style=color:#8be9fd;font-style:italic>slice</span><span style=color:#ff79c6>.</span>c1, <span style=color:#8be9fd;font-style:italic>slice</span><span style=color:#ff79c6>.</span>c2 <span style=color:#ff79c6>+</span> <span style=color:#bd93f9>1</span>):
+</span></span><span style=display:flex><span>                <span style=color:#ff79c6>if</span> self<span style=color:#ff79c6>.</span>Matrix2[i][j] <span style=color:#ff79c6>==</span> <span style=color:#ff79c6>True</span>:
+</span></span><span style=display:flex><span>                    avaible <span style=color:#ff79c6>=</span> <span style=color:#ff79c6>False</span>
+</span></span><span style=display:flex><span>        <span style=color:#ff79c6>return</span> avaible
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#ff79c6>def</span> <span style=color:#50fa7b>getNumbers</span>(self, <span style=color:#8be9fd;font-style:italic>slice</span>):
+</span></span><span style=display:flex><span>        tNum <span style=color:#ff79c6>=</span> <span style=color:#bd93f9>0</span>
+</span></span><span style=display:flex><span>        mNum <span style=color:#ff79c6>=</span> <span style=color:#bd93f9>0</span>
+</span></span><span style=display:flex><span>        <span style=color:#ff79c6>for</span> i <span style=color:#ff79c6>in</span> <span style=color:#8be9fd;font-style:italic>range</span>(<span style=color:#8be9fd;font-style:italic>slice</span><span style=color:#ff79c6>.</span>r1, <span style=color:#8be9fd;font-style:italic>slice</span><span style=color:#ff79c6>.</span>r2 <span style=color:#ff79c6>+</span> <span style=color:#bd93f9>1</span>):
+</span></span><span style=display:flex><span>            <span style=color:#ff79c6>for</span> j <span style=color:#ff79c6>in</span> <span style=color:#8be9fd;font-style:italic>range</span>(<span style=color:#8be9fd;font-style:italic>slice</span><span style=color:#ff79c6>.</span>c1, <span style=color:#8be9fd;font-style:italic>slice</span><span style=color:#ff79c6>.</span>c2 <span style=color:#ff79c6>+</span> <span style=color:#bd93f9>1</span>):
+</span></span><span style=display:flex><span>                <span style=color:#ff79c6>if</span> self<span style=color:#ff79c6>.</span>Matrix[i][j] <span style=color:#ff79c6>==</span> <span style=color:#f1fa8c>&#39;T&#39;</span>:
+</span></span><span style=display:flex><span>                    tNum <span style=color:#ff79c6>+=</span> <span style=color:#bd93f9>1</span>
+</span></span><span style=display:flex><span>                <span style=color:#ff79c6>elif</span> self<span style=color:#ff79c6>.</span>Matrix[i][j] <span style=color:#ff79c6>==</span> <span style=color:#f1fa8c>&#39;M&#39;</span>:
+</span></span><span style=display:flex><span>                    mNum <span style=color:#ff79c6>+=</span> <span style=color:#bd93f9>1</span>
+</span></span><span style=display:flex><span>        <span style=color:#ff79c6>return</span> tNum, mNum
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#ff79c6>def</span> <span style=color:#50fa7b>commitResult</span>(self, <span style=color:#8be9fd;font-style:italic>slice</span>):
+</span></span><span style=display:flex><span>        self<span style=color:#ff79c6>.</span>result<span style=color:#ff79c6>.</span>append(<span style=color:#8be9fd;font-style:italic>slice</span>)
+</span></span><span style=display:flex><span>        <span style=color:#6272a4># print &#39;done&#39;,str(r1)+&#34; &#34;+str(c1)+&#34; &#34;+str(r2)+&#34; &#34;+str(c2)</span>
+</span></span><span style=display:flex><span>        <span style=color:#ff79c6>for</span> i <span style=color:#ff79c6>in</span> <span style=color:#8be9fd;font-style:italic>range</span>(<span style=color:#8be9fd;font-style:italic>slice</span><span style=color:#ff79c6>.</span>r1, <span style=color:#8be9fd;font-style:italic>slice</span><span style=color:#ff79c6>.</span>r2 <span style=color:#ff79c6>+</span> <span style=color:#bd93f9>1</span>):
+</span></span><span style=display:flex><span>            <span style=color:#ff79c6>for</span> j <span style=color:#ff79c6>in</span> <span style=color:#8be9fd;font-style:italic>range</span>(<span style=color:#8be9fd;font-style:italic>slice</span><span style=color:#ff79c6>.</span>c1, <span style=color:#8be9fd;font-style:italic>slice</span><span style=color:#ff79c6>.</span>c2 <span style=color:#ff79c6>+</span> <span style=color:#bd93f9>1</span>):
+</span></span><span style=display:flex><span>                self<span style=color:#ff79c6>.</span>Matrix2[i][j] <span style=color:#ff79c6>=</span> <span style=color:#ff79c6>True</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#ff79c6>def</span> <span style=color:#50fa7b>decommitResult</span>(self, <span style=color:#8be9fd;font-style:italic>slice</span>):
+</span></span><span style=display:flex><span>        <span style=color:#6272a4># print &#39;done&#39;,str(r1)+&#34; &#34;+str(c1)+&#34; &#34;+str(r2)+&#34; &#34;+str(c2)</span>
+</span></span><span style=display:flex><span>        <span style=color:#ff79c6>for</span> i <span style=color:#ff79c6>in</span> <span style=color:#8be9fd;font-style:italic>range</span>(<span style=color:#8be9fd;font-style:italic>slice</span><span style=color:#ff79c6>.</span>r1, <span style=color:#8be9fd;font-style:italic>slice</span><span style=color:#ff79c6>.</span>r2 <span style=color:#ff79c6>+</span> <span style=color:#bd93f9>1</span>):
+</span></span><span style=display:flex><span>            <span style=color:#ff79c6>for</span> j <span style=color:#ff79c6>in</span> <span style=color:#8be9fd;font-style:italic>range</span>(<span style=color:#8be9fd;font-style:italic>slice</span><span style=color:#ff79c6>.</span>c1, <span style=color:#8be9fd;font-style:italic>slice</span><span style=color:#ff79c6>.</span>c2 <span style=color:#ff79c6>+</span> <span style=color:#bd93f9>1</span>):
+</span></span><span style=display:flex><span>                self<span style=color:#ff79c6>.</span>Matrix2[i][j] <span style=color:#ff79c6>=</span> <span style=color:#ff79c6>False</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#ff79c6>def</span> <span style=color:#50fa7b>convertRestultString</span>(self):
+</span></span><span style=display:flex><span>        <span style=color:#ff79c6>for</span> <span style=color:#8be9fd;font-style:italic>slice</span> <span style=color:#ff79c6>in</span> self<span style=color:#ff79c6>.</span>result:
+</span></span><span style=display:flex><span>            self<span style=color:#ff79c6>.</span>resultS<span style=color:#ff79c6>.</span>append(<span style=color:#8be9fd;font-style:italic>str</span>(<span style=color:#8be9fd;font-style:italic>slice</span><span style=color:#ff79c6>.</span>r1) <span style=color:#ff79c6>+</span> <span style=color:#f1fa8c>&#34; &#34;</span> <span style=color:#ff79c6>+</span> <span style=color:#8be9fd;font-style:italic>str</span>(<span style=color:#8be9fd;font-style:italic>slice</span><span style=color:#ff79c6>.</span>c1) <span style=color:#ff79c6>+</span>
+</span></span><span style=display:flex><span>                           <span style=color:#f1fa8c>&#34; &#34;</span> <span style=color:#ff79c6>+</span> <span style=color:#8be9fd;font-style:italic>str</span>(<span style=color:#8be9fd;font-style:italic>slice</span><span style=color:#ff79c6>.</span>r2) <span style=color:#ff79c6>+</span> <span style=color:#f1fa8c>&#34; &#34;</span> <span style=color:#ff79c6>+</span> <span style=color:#8be9fd;font-style:italic>str</span>(<span style=color:#8be9fd;font-style:italic>slice</span><span style=color:#ff79c6>.</span>c2))    
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#ff79c6>def</span> <span style=color:#50fa7b>printSucces</span>(self):  
+</span></span><span style=display:flex><span>        trueC <span style=color:#ff79c6>=</span> <span style=color:#bd93f9>0</span>
+</span></span><span style=display:flex><span>        falseC <span style=color:#ff79c6>=</span> <span style=color:#bd93f9>0</span>
+</span></span><span style=display:flex><span>        <span style=color:#ff79c6>for</span> i <span style=color:#ff79c6>in</span> <span style=color:#8be9fd;font-style:italic>range</span>(<span style=color:#bd93f9>0</span>, self<span style=color:#ff79c6>.</span>R):
+</span></span><span style=display:flex><span>            <span style=color:#ff79c6>for</span> j <span style=color:#ff79c6>in</span> <span style=color:#8be9fd;font-style:italic>range</span>(<span style=color:#bd93f9>0</span>, self<span style=color:#ff79c6>.</span>C):
+</span></span><span style=display:flex><span>                <span style=color:#ff79c6>if</span> self<span style=color:#ff79c6>.</span>Matrix2[i][j] <span style=color:#ff79c6>==</span> <span style=color:#ff79c6>True</span>:
+</span></span><span style=display:flex><span>                    trueC <span style=color:#ff79c6>+=</span> <span style=color:#bd93f9>1</span>
+</span></span><span style=display:flex><span>                <span style=color:#ff79c6>else</span>:
+</span></span><span style=display:flex><span>                    falseC <span style=color:#ff79c6>+=</span> <span style=color:#bd93f9>1</span>
+</span></span><span style=display:flex><span>        <span style=color:#8be9fd;font-style:italic>print</span> <span style=color:#f1fa8c>&#34;Score: &#34;</span>, trueC, <span style=color:#f1fa8c>&#34; / &#34;</span>, trueC<span style=color:#ff79c6>+</span>falseC
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#ff79c6>class</span> <span style=color:#50fa7b>slice</span>:
+</span></span><span style=display:flex><span>    <span style=color:#ff79c6>def</span> __init__(self,r1,c1,r2,c2):
+</span></span><span style=display:flex><span>        self<span style=color:#ff79c6>.</span>r1 <span style=color:#ff79c6>=</span> r1
+</span></span><span style=display:flex><span>        self<span style=color:#ff79c6>.</span>c1 <span style=color:#ff79c6>=</span> c1
+</span></span><span style=display:flex><span>        self<span style=color:#ff79c6>.</span>r2 <span style=color:#ff79c6>=</span> r2
+</span></span><span style=display:flex><span>        self<span style=color:#ff79c6>.</span>c2 <span style=color:#ff79c6>=</span> c2
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>mypizza <span style=color:#ff79c6>=</span> pizza(<span style=color:#f1fa8c>&#39;medium.in&#39;</span>)
+</span></span><span style=display:flex><span><span style=color:#6272a4># print mypizza.Matrix</span>
+</span></span><span style=display:flex><span><span style=color:#6272a4># print mypizza.Matrix2</span>
+</span></span><span style=display:flex><span>mypizza<span style=color:#ff79c6>.</span>calculate()
+</span></span><span style=display:flex><span>mypizza<span style=color:#ff79c6>.</span>convertRestultString()
+</span></span><span style=display:flex><span>s <span style=color:#ff79c6>=</span> <span style=color:#8be9fd;font-style:italic>str</span>(<span style=color:#8be9fd;font-style:italic>len</span>(mypizza<span style=color:#ff79c6>.</span>resultS))<span style=color:#ff79c6>+</span><span style=color:#f1fa8c>&#34;</span><span style=color:#f1fa8c>\n</span><span style=color:#f1fa8c>&#34;</span>
+</span></span><span style=display:flex><span><span style=color:#ff79c6>for</span> res <span style=color:#ff79c6>in</span> mypizza<span style=color:#ff79c6>.</span>resultS:
+</span></span><span style=display:flex><span>    s <span style=color:#ff79c6>+=</span> res <span style=color:#ff79c6>+</span> <span style=color:#f1fa8c>&#34;</span><span style=color:#f1fa8c>\n</span><span style=color:#f1fa8c>&#34;</span>
+</span></span><span style=display:flex><span>file <span style=color:#ff79c6>=</span> <span style=color:#8be9fd;font-style:italic>open</span>(<span style=color:#f1fa8c>&#34;medium.txt&#34;</span>,<span style=color:#f1fa8c>&#34;w&#34;</span>)
+</span></span><span style=display:flex><span>file<span style=color:#ff79c6>.</span>write(s)
+</span></span><span style=display:flex><span>file<span style=color:#ff79c6>.</span>close()
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>mypizza<span style=color:#ff79c6>.</span>printSucces()
+</span></span></code></pre></div><h4 id=online-eleme-sorusu-streaming-videos>Online eleme sorusu: Streaming Videos</h4><p>Bu soruda ise video izleme gecikmesini azaltmak için videoları &lsquo;cache&rsquo; sunuclara yerleştirmemiz isteniyor. Yüksek puan almak için toplam gecikme süresi minimum olmalı. Bu kapsam da ilk aşamada gerekli sınıflar oluşturuldu. Daha sonrasında bu sınıflar arasında bağlantılar oluşturuldu. Algoritmanın amacı herhangibir bir cache serverın bütün videoları için latency hesaplayıp sonra bunları skorlayarak bir optimizasyon yapmak. Burda tabi bağlantıları yapmak biraz zor oldu benim açımdan. Pizza sorusuyla karşılaştırınca çok daha fazla farklı sınıf olduğunu farketmişsiniz. Burda çözümü anlatmanın çok bir anlamı olmadığını düşünüyorum. Daha çok yarışma hakkında bir kaç izlenimimden bahsetmek isterim. Yarışmada farkettiğiniz üzere aslında tam olarak çözümü belli olmayan sorular soruluyor. Daha doğrusu mutlak doğru sonuç var ama onu hesaplamak imkansız bir seviyede. Yani Brute force ile neredeyse sonsuz olasılıkla karşı karşıya kaldığımız sorular soruluyor. Lütfen soruları çözerken hep onu dikkat alın. Sürekli algoritmanınızın karmaşıklığına dikkat ederek geliştirin. Ben de bu konuda yeterince tecrübeli olmadığım için bir kaç kere büyük data kümelerinde sonsuz işleme doğru giden algoritmalar yazdım. İkinci önerim ise kesinlikle verilen datalara bakarak çözümünüzü üretin. Çünkü bütün sorularda genelde 3 4 adet farklı data kümesi verilliyor ve genelde her bir data farklı bir şeyi ölçüyor. Biri için geliştirdiğiniz algoritma diğerlerine uymayabiliyor. Bugünlük bu kadar daha ayrıntılı sorularınızı her zaman sorabilirsiniz. Görüşmek üzere</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span><span style=color:#ff79c6>class</span> <span style=color:#50fa7b>scoring</span>:
+</span></span><span style=display:flex><span>    <span style=color:#ff79c6>def</span> __init__(self,video,score):
+</span></span><span style=display:flex><span>       self<span style=color:#ff79c6>.</span>video<span style=color:#ff79c6>=</span> video
+</span></span><span style=display:flex><span>       self<span style=color:#ff79c6>.</span>score <span style=color:#ff79c6>=</span> score
+</span></span><span style=display:flex><span>    <span style=color:#ff79c6>def</span> __lt__(self, other):
+</span></span><span style=display:flex><span>         <span style=color:#ff79c6>return</span> self<span style=color:#ff79c6>.</span>score <span style=color:#ff79c6>&gt;</span> other<span style=color:#ff79c6>.</span>score <span style=color:#ff79c6>+</span> <span style=color:#bd93f9>5</span> 
+</span></span><span style=display:flex><span>         
+</span></span><span style=display:flex><span><span style=color:#ff79c6>class</span> <span style=color:#50fa7b>connection</span>:
+</span></span><span style=display:flex><span>    <span style=color:#ff79c6>def</span> __init__(self,ep,cacheNum,latency):
+</span></span><span style=display:flex><span>        self<span style=color:#ff79c6>.</span>ep <span style=color:#ff79c6>=</span> ep
+</span></span><span style=display:flex><span>        self<span style=color:#ff79c6>.</span>cacheNum <span style=color:#ff79c6>=</span> cacheNum
+</span></span><span style=display:flex><span>        self<span style=color:#ff79c6>.</span>latency <span style=color:#ff79c6>=</span> latency
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#ff79c6>class</span> <span style=color:#50fa7b>video</span>:
+</span></span><span style=display:flex><span>    <span style=color:#ff79c6>def</span> __init__(self, <span style=color:#8be9fd;font-style:italic>id</span> , size):
+</span></span><span style=display:flex><span>        self<span style=color:#ff79c6>.</span>id <span style=color:#ff79c6>=</span> <span style=color:#8be9fd;font-style:italic>id</span>
+</span></span><span style=display:flex><span>        self<span style=color:#ff79c6>.</span>size <span style=color:#ff79c6>=</span> size
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#ff79c6>class</span> <span style=color:#50fa7b>cache</span>:
+</span></span><span style=display:flex><span>    <span style=color:#ff79c6>def</span> __init__(self, <span style=color:#8be9fd;font-style:italic>id</span> , capacity):
+</span></span><span style=display:flex><span>        self<span style=color:#ff79c6>.</span>id <span style=color:#ff79c6>=</span> <span style=color:#8be9fd;font-style:italic>id</span>
+</span></span><span style=display:flex><span>        self<span style=color:#ff79c6>.</span>capacity <span style=color:#ff79c6>=</span> capacity
+</span></span><span style=display:flex><span>        self<span style=color:#ff79c6>.</span>videos <span style=color:#ff79c6>=</span> []
+</span></span><span style=display:flex><span>        self<span style=color:#ff79c6>.</span>endpoints <span style=color:#ff79c6>=</span> []
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#ff79c6>def</span> <span style=color:#50fa7b>addVideo</span>(self,video):
+</span></span><span style=display:flex><span>        <span style=color:#ff79c6>if</span> self<span style=color:#ff79c6>.</span>capacity <span style=color:#ff79c6>&gt;=</span> video<span style=color:#ff79c6>.</span>size: 
+</span></span><span style=display:flex><span>            self<span style=color:#ff79c6>.</span>videos<span style=color:#ff79c6>.</span>append(video)
+</span></span><span style=display:flex><span>            self<span style=color:#ff79c6>.</span>capacity <span style=color:#ff79c6>=</span> self<span style=color:#ff79c6>.</span>capacity <span style=color:#ff79c6>-</span> video<span style=color:#ff79c6>.</span>size
+</span></span><span style=display:flex><span>            <span style=color:#ff79c6>return</span> <span style=color:#ff79c6>True</span>
+</span></span><span style=display:flex><span>        <span style=color:#ff79c6>else</span>:
+</span></span><span style=display:flex><span>            <span style=color:#ff79c6>return</span> <span style=color:#ff79c6>False</span>
+</span></span><span style=display:flex><span>        
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#ff79c6>class</span> <span style=color:#50fa7b>endpoint</span>:
+</span></span><span style=display:flex><span>    <span style=color:#ff79c6>def</span> __init__(self,<span style=color:#8be9fd;font-style:italic>id</span>,latencyDataC,connectionNumber):
+</span></span><span style=display:flex><span>        self<span style=color:#ff79c6>.</span>id <span style=color:#ff79c6>=</span> <span style=color:#8be9fd;font-style:italic>id</span> 
+</span></span><span style=display:flex><span>        self<span style=color:#ff79c6>.</span>latencyDataC<span style=color:#ff79c6>=</span> latencyDataC
+</span></span><span style=display:flex><span>        self<span style=color:#ff79c6>.</span>connections <span style=color:#ff79c6>=</span> []
+</span></span><span style=display:flex><span>        self<span style=color:#ff79c6>.</span>requests <span style=color:#ff79c6>=</span> [] 
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#ff79c6>class</span> <span style=color:#50fa7b>request</span>:
+</span></span><span style=display:flex><span>    <span style=color:#ff79c6>def</span> __init__(self,reqNumber, videoID, endpointID,count):
+</span></span><span style=display:flex><span>        self<span style=color:#ff79c6>.</span>reqNumber <span style=color:#ff79c6>=</span> reqNumber
+</span></span><span style=display:flex><span>        self<span style=color:#ff79c6>.</span>videoID <span style=color:#ff79c6>=</span> videoID
+</span></span><span style=display:flex><span>        self<span style=color:#ff79c6>.</span>endpointID <span style=color:#ff79c6>=</span> endpointID
+</span></span><span style=display:flex><span>        self<span style=color:#ff79c6>.</span>count <span style=color:#ff79c6>=</span> count
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#ff79c6>class</span> <span style=color:#50fa7b>solver</span>:
+</span></span><span style=display:flex><span>    <span style=color:#ff79c6>def</span> __init__(self, file):
+</span></span><span style=display:flex><span>        self<span style=color:#ff79c6>.</span>videos <span style=color:#ff79c6>=</span> []
+</span></span><span style=display:flex><span>        self<span style=color:#ff79c6>.</span>eps <span style=color:#ff79c6>=</span> []
+</span></span><span style=display:flex><span>        self<span style=color:#ff79c6>.</span>requests <span style=color:#ff79c6>=</span> []
+</span></span><span style=display:flex><span>        self<span style=color:#ff79c6>.</span>caches<span style=color:#ff79c6>=</span> []
+</span></span><span style=display:flex><span>        f <span style=color:#ff79c6>=</span> <span style=color:#8be9fd;font-style:italic>open</span>(file, <span style=color:#f1fa8c>&#39;r&#39;</span>)
+</span></span><span style=display:flex><span>        fline <span style=color:#ff79c6>=</span> f<span style=color:#ff79c6>.</span>readline()
+</span></span><span style=display:flex><span>        [V, E, R, C, X] <span style=color:#ff79c6>=</span> fline<span style=color:#ff79c6>.</span>split(<span style=color:#f1fa8c>&#39; &#39;</span>)
+</span></span><span style=display:flex><span>        self<span style=color:#ff79c6>.</span>videoCount <span style=color:#ff79c6>=</span> <span style=color:#8be9fd;font-style:italic>int</span>(V)
+</span></span><span style=display:flex><span>        <span style=color:#ff79c6>for</span> indexC <span style=color:#ff79c6>in</span> <span style=color:#8be9fd;font-style:italic>range</span>(<span style=color:#bd93f9>0</span>,<span style=color:#8be9fd;font-style:italic>int</span>(C)):
+</span></span><span style=display:flex><span>            c <span style=color:#ff79c6>=</span> cache(indexC, <span style=color:#8be9fd;font-style:italic>int</span>(X))
+</span></span><span style=display:flex><span>            self<span style=color:#ff79c6>.</span>caches<span style=color:#ff79c6>.</span>append(c)
+</span></span><span style=display:flex><span>        fline <span style=color:#ff79c6>=</span> f<span style=color:#ff79c6>.</span>readline()
+</span></span><span style=display:flex><span>        <span style=color:#ff79c6>for</span> index, size <span style=color:#ff79c6>in</span> <span style=color:#8be9fd;font-style:italic>enumerate</span>(fline<span style=color:#ff79c6>.</span>split(<span style=color:#f1fa8c>&#39; &#39;</span>)):
+</span></span><span style=display:flex><span>            v <span style=color:#ff79c6>=</span> video(index,<span style=color:#8be9fd;font-style:italic>int</span>(size))
+</span></span><span style=display:flex><span>            self<span style=color:#ff79c6>.</span>videos<span style=color:#ff79c6>.</span>append(v)
+</span></span><span style=display:flex><span>        <span style=color:#ff79c6>for</span> currentEpID <span style=color:#ff79c6>in</span> <span style=color:#8be9fd;font-style:italic>range</span>(<span style=color:#bd93f9>0</span>,<span style=color:#8be9fd;font-style:italic>int</span>(E)):
+</span></span><span style=display:flex><span>            fline <span style=color:#ff79c6>=</span> f<span style=color:#ff79c6>.</span>readline()
+</span></span><span style=display:flex><span>            [latencyDataC, connectionNumber] <span style=color:#ff79c6>=</span> fline<span style=color:#ff79c6>.</span>split(<span style=color:#f1fa8c>&#39; &#39;</span>)
+</span></span><span style=display:flex><span>            ep <span style=color:#ff79c6>=</span> endpoint(currentEpID,<span style=color:#8be9fd;font-style:italic>int</span>(latencyDataC),<span style=color:#8be9fd;font-style:italic>int</span>(connectionNumber))
+</span></span><span style=display:flex><span>            self<span style=color:#ff79c6>.</span>eps<span style=color:#ff79c6>.</span>append(ep)
+</span></span><span style=display:flex><span>            <span style=color:#ff79c6>for</span> i <span style=color:#ff79c6>in</span> <span style=color:#8be9fd;font-style:italic>range</span>(<span style=color:#bd93f9>0</span>,<span style=color:#8be9fd;font-style:italic>int</span>(connectionNumber)):
+</span></span><span style=display:flex><span>                [cNUm,latency] <span style=color:#ff79c6>=</span> f<span style=color:#ff79c6>.</span>readline()<span style=color:#ff79c6>.</span>split(<span style=color:#f1fa8c>&#39; &#39;</span>)
+</span></span><span style=display:flex><span>                c <span style=color:#ff79c6>=</span> connection(ep,<span style=color:#8be9fd;font-style:italic>int</span>(cNUm),<span style=color:#8be9fd;font-style:italic>int</span>(latency))
+</span></span><span style=display:flex><span>                ep<span style=color:#ff79c6>.</span>connections<span style=color:#ff79c6>.</span>append(c)
+</span></span><span style=display:flex><span>                self<span style=color:#ff79c6>.</span>caches[<span style=color:#8be9fd;font-style:italic>int</span>(cNUm)]<span style=color:#ff79c6>.</span>endpoints<span style=color:#ff79c6>.</span>append(self<span style=color:#ff79c6>.</span>eps[currentEpID])
+</span></span><span style=display:flex><span>        <span style=color:#ff79c6>for</span> curReqId <span style=color:#ff79c6>in</span> <span style=color:#8be9fd;font-style:italic>range</span>(<span style=color:#bd93f9>0</span>,<span style=color:#8be9fd;font-style:italic>int</span>(R)):
+</span></span><span style=display:flex><span>            [reqVideoID,reqEpID,reqCount] <span style=color:#ff79c6>=</span> f<span style=color:#ff79c6>.</span>readline()<span style=color:#ff79c6>.</span>split(<span style=color:#f1fa8c>&#39; &#39;</span>)
+</span></span><span style=display:flex><span>            r <span style=color:#ff79c6>=</span> request(curReqId,<span style=color:#8be9fd;font-style:italic>int</span>(reqVideoID),<span style=color:#8be9fd;font-style:italic>int</span>(reqEpID),<span style=color:#8be9fd;font-style:italic>int</span>(reqCount))
+</span></span><span style=display:flex><span>            self<span style=color:#ff79c6>.</span>requests<span style=color:#ff79c6>.</span>append(r)
+</span></span><span style=display:flex><span>            self<span style=color:#ff79c6>.</span>eps[<span style=color:#8be9fd;font-style:italic>int</span>(reqEpID)]<span style=color:#ff79c6>.</span>requests<span style=color:#ff79c6>.</span>append(r)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#ff79c6>def</span> <span style=color:#50fa7b>getvideosofcache</span>(self,cache):
+</span></span><span style=display:flex><span>        <span style=color:#6272a4>#print &#34;cache id:&#34;, cache,</span>
+</span></span><span style=display:flex><span>        scoreList <span style=color:#ff79c6>=</span> []
+</span></span><span style=display:flex><span>        <span style=color:#ff79c6>for</span> i <span style=color:#ff79c6>in</span> self<span style=color:#ff79c6>.</span>videos:
+</span></span><span style=display:flex><span>            s <span style=color:#ff79c6>=</span> scoring(i,<span style=color:#bd93f9>0</span>)
+</span></span><span style=display:flex><span>            scoreList<span style=color:#ff79c6>.</span>append(s)
+</span></span><span style=display:flex><span>        <span style=color:#ff79c6>for</span> ep <span style=color:#ff79c6>in</span> cache<span style=color:#ff79c6>.</span>endpoints:
+</span></span><span style=display:flex><span>            <span style=color:#ff79c6>for</span> req <span style=color:#ff79c6>in</span> ep<span style=color:#ff79c6>.</span>requests:
+</span></span><span style=display:flex><span>                curLat <span style=color:#ff79c6>=</span> self<span style=color:#ff79c6>.</span>getlatency(cache,ep)
+</span></span><span style=display:flex><span>                score <span style=color:#ff79c6>=</span> (req<span style=color:#ff79c6>.</span>count<span style=color:#ff79c6>*</span>(ep<span style=color:#ff79c6>.</span>latencyDataC<span style=color:#ff79c6>-</span>curLat))
+</span></span><span style=display:flex><span>                <span style=color:#6272a4>#print &#34;videoid : &#34;, req.videoID, &#34;ep: &#34;, ep.id, &#34;req count&#34;, req.count, &#34;dc latiency: &#34;, ep.latencyDataC, &#34;connect latency&#34;,curLat, &#34;puan&#34;, score)</span>
+</span></span><span style=display:flex><span>                scoreList[req<span style=color:#ff79c6>.</span>videoID]<span style=color:#ff79c6>.</span>score <span style=color:#ff79c6>+=</span> score
+</span></span><span style=display:flex><span>                <span style=color:#6272a4>#print &#34;videoid : &#34;, req.videoID, scoreList[req.videoID].score</span>
+</span></span><span style=display:flex><span>        scoreList<span style=color:#ff79c6>.</span>sort()
+</span></span><span style=display:flex><span>        <span style=color:#6272a4>#for a in scoreList:</span>
+</span></span><span style=display:flex><span>            <span style=color:#6272a4>#print a.video.id, a.score, a.video.size</span>
+</span></span><span style=display:flex><span>        <span style=color:#ff79c6>return</span> scoreList
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#ff79c6>def</span> <span style=color:#50fa7b>getlatency</span>(self,cache,endpoint):
+</span></span><span style=display:flex><span>        ali <span style=color:#ff79c6>=</span> <span style=color:#bd93f9>0</span>
+</span></span><span style=display:flex><span>        <span style=color:#ff79c6>for</span> i <span style=color:#ff79c6>in</span> endpoint<span style=color:#ff79c6>.</span>connections:
+</span></span><span style=display:flex><span>            <span style=color:#ff79c6>if</span> i<span style=color:#ff79c6>.</span>cacheNum <span style=color:#ff79c6>==</span> cache<span style=color:#ff79c6>.</span>id:
+</span></span><span style=display:flex><span>                ali <span style=color:#ff79c6>=</span> i<span style=color:#ff79c6>.</span>latency
+</span></span><span style=display:flex><span>                <span style=color:#ff79c6>break</span>
+</span></span><span style=display:flex><span>        <span style=color:#ff79c6>return</span> ali
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#ff79c6>def</span> <span style=color:#50fa7b>solve</span>(self):
+</span></span><span style=display:flex><span>        <span style=color:#ff79c6>for</span> curCache <span style=color:#ff79c6>in</span> self<span style=color:#ff79c6>.</span>caches:
+</span></span><span style=display:flex><span>            <span style=color:#8be9fd;font-style:italic>print</span> curCache<span style=color:#ff79c6>.</span>id
+</span></span><span style=display:flex><span>            scoreList <span style=color:#ff79c6>=</span> mysolver<span style=color:#ff79c6>.</span>getvideosofcache(curCache)
+</span></span><span style=display:flex><span>            <span style=color:#ff79c6>for</span> curVideo <span style=color:#ff79c6>in</span> scoreList:
+</span></span><span style=display:flex><span>                <span style=color:#ff79c6>if</span> curVideo<span style=color:#ff79c6>.</span>score <span style=color:#ff79c6>==</span> <span style=color:#bd93f9>0</span>:
+</span></span><span style=display:flex><span>                    <span style=color:#ff79c6>break</span>
+</span></span><span style=display:flex><span>                curCache<span style=color:#ff79c6>.</span>addVideo(curVideo<span style=color:#ff79c6>.</span>video)
+</span></span><span style=display:flex><span>    
+</span></span><span style=display:flex><span>    <span style=color:#ff79c6>def</span> <span style=color:#50fa7b>result</span>(self):
+</span></span><span style=display:flex><span>        result <span style=color:#ff79c6>=</span> <span style=color:#8be9fd;font-style:italic>str</span>(<span style=color:#8be9fd;font-style:italic>len</span>(self<span style=color:#ff79c6>.</span>caches))
+</span></span><span style=display:flex><span>        <span style=color:#ff79c6>for</span> curCache <span style=color:#ff79c6>in</span> self<span style=color:#ff79c6>.</span>caches:
+</span></span><span style=display:flex><span>            result <span style=color:#ff79c6>+=</span> <span style=color:#f1fa8c>&#34;</span><span style=color:#f1fa8c>\n</span><span style=color:#f1fa8c>&#34;</span><span style=color:#ff79c6>+</span><span style=color:#8be9fd;font-style:italic>str</span>(curCache<span style=color:#ff79c6>.</span>id)  
+</span></span><span style=display:flex><span>            <span style=color:#ff79c6>for</span> curVideo <span style=color:#ff79c6>in</span> curCache<span style=color:#ff79c6>.</span>videos:
+</span></span><span style=display:flex><span>                result <span style=color:#ff79c6>+=</span> <span style=color:#f1fa8c>&#34; &#34;</span><span style=color:#ff79c6>+</span><span style=color:#8be9fd;font-style:italic>str</span>(curVideo<span style=color:#ff79c6>.</span>id)
+</span></span><span style=display:flex><span>        <span style=color:#6272a4>#print result </span>
+</span></span><span style=display:flex><span>        file <span style=color:#ff79c6>=</span> <span style=color:#8be9fd;font-style:italic>open</span>(<span style=color:#f1fa8c>&#34;videos_worth_spreading.txt&#34;</span>,<span style=color:#f1fa8c>&#34;w&#34;</span>)
+</span></span><span style=display:flex><span>        file<span style=color:#ff79c6>.</span>write(result)
+</span></span><span style=display:flex><span>        file<span style=color:#ff79c6>.</span>close()  
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>mysolver <span style=color:#ff79c6>=</span> solver(<span style=color:#f1fa8c>&#39;videos_worth_spreading.in&#39;</span>)
+</span></span><span style=display:flex><span>mysolver<span style=color:#ff79c6>.</span>solve()
+</span></span><span style=display:flex><span>mysolver<span style=color:#ff79c6>.</span>result()
+</span></span></code></pre></div></section><footer class="mt-12 flex flex-wrap"><a class="mb-1.5 mr-1.5 rounded-lg bg-black/[3%] px-5 py-1.5 no-underline dark:bg-white/[8%]" href=https://mozanunal.com/tags/hash-code>Hash Code</a></footer><nav class="mt-24 flex rounded-lg bg-black/[3%] text-lg dark:bg-white/[8%]"><a class="flex w-1/2 items-center rounded-l-md p-6 pr-3 font-semibold no-underline hover:bg-black/[2%] dark:hover:bg-white/[3%]" href=https://mozanunal.com/2017/07/pmod-microphone-driver/><span class=mr-1.5>←</span><span>PMod Microphone Driver</span></a>
+<a class="ml-auto flex w-1/2 items-center justify-end rounded-r-md p-6 pl-3 font-semibold no-underline hover:bg-black/[2%] dark:hover:bg-white/[3%]" href=https://mozanunal.com/2017/06/internet-of-beaches/><span>Internet of Beach</span><span class=ml-1.5>→</span></a></nav></article></main><footer class="opaco mx-auto flex h-[4.5rem] max-w-3xl items-center px-8 text-[0.9em] opacity-60"><div class=mr-auto>&copy; 2024
+<a class=link href=https://mozanunal.com/>Mehmet Ozan Ünal</a></div><a class="link mx-6" href=https://gohugo.io/ rel=noopener target=_blank>Powered by Hugo️️</a>️
+<a class=link href=https://github.com/nanxiaobei/hugo-paper rel=noopener target=_blank>✎ Paper</a></footer></body></html>
