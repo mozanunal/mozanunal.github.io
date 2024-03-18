@@ -16,6 +16,8 @@ deploy: build
 	rm -rf $(BUILD_DIR)/*
 	cp -r public/* $(BUILD_DIR)
 	cd $(BUILD_DIR) && \
+	git config user.name "mozanunal"
+	git config user.email "mehmetozanunal@gmail.com"
 	git add -A && \
 	git commit -m "Site update" && \
 	git push origin public
