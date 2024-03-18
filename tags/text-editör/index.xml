@@ -1,1 +1,20 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>text editör on Mehmet Ozan Ünal</title><link>https://mozanunal.com/tags/text-edit%C3%B6r/</link><description>Recent content in text editör on Mehmet Ozan Ünal</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>Copyright © 2014–2024</copyright><lastBuildDate>Mon, 11 Dec 2017 05:56:37 +0000</lastBuildDate><atom:link href="https://mozanunal.com/tags/text-edit%C3%B6r/index.xml" rel="self" type="application/rss+xml"/><item><title>[TR] Neden Favori Kod Editörüm Visual Studio Code</title><link>https://mozanunal.com/2017/12/favori-editor-vscode/</link><pubDate>Mon, 11 Dec 2017 05:56:37 +0000</pubDate><guid>https://mozanunal.com/2017/12/favori-editor-vscode/</guid><description>Herkese merhabalar, Bir süre önce bir geliştirme ortamı olmadan sadece kod editör kullanarak proje geliştirmek istediğime karar verdim. Çünkü sık sık farklı programlama dilleri ve farklı işletim sistemlerinde programlar yazmam gerekiyordu ve hepsinde aynı platformda yapmanın daha kolay olacağını düşündüm. Bunun bana 2 temel faydası olduğunu söyleyebilirim. 1.si paket yönetimi, kodun derlemesi, test edilmesi gibi prosedürleri ide sınırlamasından kurtarmış oldum. 2. Olarak da farklı platformalarda yazarken aynı kısa yolları kullanabiliyorum aynı metin işleme operasyonları ve yardımcı toolar ile çalışabilme imkanı kazandım.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Text Editör on Mehmet Ozan Ünal</title>
+    <link>http://localhost:1313/tags/text-edit%C3%B6r/</link>
+    <description>Recent content in Text Editör on Mehmet Ozan Ünal</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Copyright © 2014–2024</copyright>
+    <lastBuildDate>Mon, 11 Dec 2017 05:56:37 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/text-edit%C3%B6r/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[TR] Neden Favori Kod Editörüm Visual Studio Code</title>
+      <link>http://localhost:1313/2017/12/favori-editor-vscode/</link>
+      <pubDate>Mon, 11 Dec 2017 05:56:37 +0000</pubDate>
+      <guid>http://localhost:1313/2017/12/favori-editor-vscode/</guid>
+      <description>Herkese merhabalar, Bir süre önce bir geliştirme ortamı olmadan sadece kod editör kullanarak proje geliştirmek istediğime karar verdim. Çünkü sık sık farklı programlama dilleri ve farklı işletim sistemlerinde programlar yazmam gerekiyordu ve hepsinde aynı platformda yapmanın daha kolay olacağını düşündüm. Bunun bana 2 temel faydası olduğunu söyleyebilirim. 1.si paket yönetimi, kodun derlemesi, test edilmesi gibi prosedürleri ide sınırlamasından kurtarmış oldum. 2. Olarak da farklı platformalarda yazarken aynı kısa yolları kullanabiliyorum aynı metin işleme operasyonları ve yardımcı toolar ile çalışabilme imkanı kazandım.</description>
+    </item>
+  </channel>
+</rss>
