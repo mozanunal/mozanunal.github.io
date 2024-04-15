@@ -1,6 +1,6 @@
 baseURL = "https://mozanunal.com/"
 # title = "Hugo Themes"
-author = "Mehmet Ozan Ünal"
+author = "M.Ozan Unal"
 copyright = "Copyright © 2014–2024"
 paginate = 40
 languageCode = "en"
@@ -10,11 +10,11 @@ DefaultContentLanguage = "en"
 enableInlineShortcodes = true
 # prevent build failures when using Hugo's Instagram shortcode due to deprecated Instagram API.
 # See https://github.com/gohugoio/hugo/issues/7228#issuecomment-714490456
-ignoreErrors = ["error-remote-getjson"]
+# ignoreErrors = ["error-remote-getjson"]
 
 # ------------------------------
 theme = "paper"
-title = "Mehmet Ozan Ünal"
+title = "M.Ozan Unal"
 
 [permalinks]
   posts = "/:year/:month/:filename"
@@ -27,7 +27,7 @@ title = "Mehmet Ozan Ünal"
   # instagram = 'nan.xiaobei'
 
   avatar = 'mehmetozanunal@gmail.com'
-  name = 'Moz'
+  name = 'M.Ozan Unal'
   bio = 'ML & Data Engineer. Expertise in big data and deep learning'
   disableHLJS = true
   monoDarkIcon = true
