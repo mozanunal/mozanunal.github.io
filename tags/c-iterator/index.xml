@@ -1,5 +1,18 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>C-Iterator on M.Ozan Unal</title><link>https://mozanunal.com/tags/c-iterator/</link><description>Recent content in C-Iterator on M.Ozan Unal</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>Copyright © 2014–2024</copyright><lastBuildDate>Mon, 30 Mar 2020 23:45:00 +0000</lastBuildDate><atom:link href="https://mozanunal.com/tags/c-iterator/index.xml" rel="self" type="application/rss+xml"/><item><title>Coolest C Trick</title><link>https://mozanunal.com/2020/03/coolest-c-trick/</link><pubDate>Mon, 30 Mar 2020 23:45:00 +0000</pubDate><guid>https://mozanunal.com/2020/03/coolest-c-trick/</guid><description>Hello Everyone,
-Just a quick post here&amp;hellip;
-Today I have seen a code snippet which makes me quite happy.
-#include &amp;lt;stdio.h&amp;gt; int main() { int x = 10; while (x --&amp;gt; 0) // x goes to 0 { printf(&amp;#34;%d &amp;#34;, x); } } The the output of this is:
-9 8 7 6 5 4 3 2 1 0 It was a little suprising for me at first sight. I thought that what the hell is --&amp;gt; operator.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>C-Iterator on M.Ozan Unal</title><link>https://mozanunal.com/tags/c-iterator/</link><description>Recent content in C-Iterator on M.Ozan Unal</description><generator>Hugo</generator><language>en</language><copyright>Copyright © 2014–2024</copyright><lastBuildDate>Mon, 30 Mar 2020 23:45:00 +0000</lastBuildDate><atom:link href="https://mozanunal.com/tags/c-iterator/index.xml" rel="self" type="application/rss+xml"/><item><title>Coolest C Trick</title><link>https://mozanunal.com/2020/03/coolest-c-trick/</link><pubDate>Mon, 30 Mar 2020 23:45:00 +0000</pubDate><guid>https://mozanunal.com/2020/03/coolest-c-trick/</guid><description>&lt;p>Hello Everyone,&lt;/p>
+&lt;p>Just a quick post here&amp;hellip;&lt;/p>
+&lt;p>Today I have seen a code snippet which makes me quite happy.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-cpp" data-lang="cpp">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ff79c6">#include&lt;/span> &lt;span style="color:#ff79c6">&amp;lt;stdio.h&amp;gt;&lt;/span>&lt;span style="color:#ff79c6">
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ff79c6">&lt;/span>&lt;span style="color:#8be9fd">int&lt;/span> &lt;span style="color:#50fa7b">main&lt;/span>()
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>{
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#8be9fd">int&lt;/span> x &lt;span style="color:#ff79c6">=&lt;/span> &lt;span style="color:#bd93f9">10&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#ff79c6">while&lt;/span> (x &lt;span style="color:#ff79c6">--&amp;gt;&lt;/span> &lt;span style="color:#bd93f9">0&lt;/span>) &lt;span style="color:#6272a4">// x goes to 0
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#6272a4">&lt;/span> {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> printf(&lt;span style="color:#f1fa8c">&amp;#34;%d &amp;#34;&lt;/span>, x);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>The the output of this is:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-fallback" data-lang="fallback">&lt;span style="display:flex;">&lt;span>9 8 7 6 5 4 3 2 1 0
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>It was a little suprising for me at first sight.
+I thought that what the hell is &lt;code>--&amp;gt;&lt;/code> operator.
+After then I understand that it is actually &lt;code>x--&lt;/code> and &lt;code>&amp;gt;&lt;/code>. X compared with 0 (cheked if it is bigger than 0) and then it is decremented by 1.
+Therefore, this loop can be decoded to this:&lt;/p></description></item></channel></rss>

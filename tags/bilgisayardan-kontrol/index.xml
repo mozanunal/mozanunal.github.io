@@ -1,5 +1,13 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Bilgisayardan Kontrol on M.Ozan Unal</title><link>https://mozanunal.com/tags/bilgisayardan-kontrol/</link><description>Recent content in Bilgisayardan Kontrol on M.Ozan Unal</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>Copyright © 2014–2024</copyright><lastBuildDate>Tue, 21 Oct 2014 02:47:00 +0000</lastBuildDate><atom:link href="https://mozanunal.com/tags/bilgisayardan-kontrol/index.xml" rel="self" type="application/rss+xml"/><item><title>[TR] Bilgisayardan Gimbal Kontrolü</title><link>https://mozanunal.com/2014/10/bilgisayardan-gimbal-kontrolu/</link><pubDate>Tue, 21 Oct 2014 02:47:00 +0000</pubDate><guid>https://mozanunal.com/2014/10/bilgisayardan-gimbal-kontrolu/</guid><description>Herkese Merhabalar!
-Bugün size bilgisayardan gimbal kontrolü projemden bahsedeceğim. Bu projedeki amacım C# ile yazdığım bir arayüzde gimbali kontrol etmek. Gimbal ve bilgisayar arasında haberleşmeyi sağlaması ve servoları kontrol etmesi için bir arduino yerleştirdim. C# arayüzünün görevi, tıkladığım butonlara göre arduinoya &amp;ldquo;serial port&amp;rdquo; üzerinden gönderilecek karakteri değiştirmesidir.
-Arduino da serial porttan aldığı karaktere göre servoları yönetir.
-Bilgisayardan Gimbal Kontrolü
-Arayüz programını C# kodlarının bu proje için örnek kısımlar aşağıdaki gibidir.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Bilgisayardan Kontrol on M.Ozan Unal</title><link>https://mozanunal.com/tags/bilgisayardan-kontrol/</link><description>Recent content in Bilgisayardan Kontrol on M.Ozan Unal</description><generator>Hugo</generator><language>en</language><copyright>Copyright © 2014–2024</copyright><lastBuildDate>Tue, 21 Oct 2014 02:47:00 +0000</lastBuildDate><atom:link href="https://mozanunal.com/tags/bilgisayardan-kontrol/index.xml" rel="self" type="application/rss+xml"/><item><title>[TR] Bilgisayardan Gimbal Kontrolü</title><link>https://mozanunal.com/2014/10/bilgisayardan-gimbal-kontrolu/</link><pubDate>Tue, 21 Oct 2014 02:47:00 +0000</pubDate><guid>https://mozanunal.com/2014/10/bilgisayardan-gimbal-kontrolu/</guid><description>&lt;p>&lt;strong>Herkese Merhabalar!&lt;/strong>&lt;br>
+Bugün size bilgisayardan gimbal kontrolü projemden bahsedeceğim. Bu projedeki amacım C# ile yazdığım bir arayüzde gimbali kontrol etmek. Gimbal ve bilgisayar arasında haberleşmeyi sağlaması ve servoları kontrol etmesi için bir arduino yerleştirdim. C# arayüzünün görevi, tıkladığım butonlara göre arduinoya &amp;ldquo;serial port&amp;rdquo; üzerinden gönderilecek karakteri değiştirmesidir.&lt;br>
+Arduino da serial porttan aldığı karaktere göre servoları yönetir.&lt;/p>
+&lt;p>Bilgisayardan Gimbal Kontrolü&lt;/p>
+
+
+ 
+ &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+ &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube-nocookie.com/embed/Z61XZI12bS0?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+ >&lt;/iframe>
+ &lt;/div>
+
+&lt;p>Arayüz programını C# kodlarının bu proje için örnek kısımlar aşağıdaki gibidir.&lt;/p></description></item></channel></rss>
