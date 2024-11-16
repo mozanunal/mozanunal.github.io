@@ -28,7 +28,7 @@ title = "M.Ozan Unal"
   disableHLJS = true
   monoDarkIcon = true
   math = true
-# ------------------------------
+
 # needed to  render raw HTML (e.g. <sub>, <sup>, <kbd>, <mark>)
 [markup]
   [markup.goldmark]
@@ -49,13 +49,7 @@ title = "M.Ozan Unal"
 
 
 [menu]
-
-  [[menu.main]]
-    identifier = "about"
-    name = "About"
-    url = "/about/"
-    weight = 10
-  [[menu.main]]
+	[[menu.main]]
     identifier = "contact"
     name = "Contact"
     url = "/contact/"
@@ -63,7 +57,7 @@ title = "M.Ozan Unal"
 
 [taxonomies]
   category = "categories"
-  tag = "tags"
+  # tag = "tags"
 
 [privacy]
 
