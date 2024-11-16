@@ -1,5 +1,4 @@
 baseURL = "https://mozanunal.com/"
-# title = "Hugo Themes"
 author = "M.Ozan Unal"
 copyright = "Copyright © 2014–2024"
 paginate = 40
@@ -8,9 +7,6 @@ languageCode = "en"
 googleAnalytics = 'G-007KSW65JL'
 DefaultContentLanguage = "en"
 enableInlineShortcodes = true
-# prevent build failures when using Hugo's Instagram shortcode due to deprecated Instagram API.
-# See https://github.com/gohugoio/hugo/issues/7228#issuecomment-714490456
-# ignoreErrors = ["error-remote-getjson"]
 
 # ------------------------------
 theme = "paper"
@@ -24,7 +20,7 @@ title = "M.Ozan Unal"
 
   twitter = 'MOzanUnal'
   github = 'mozanunal'
-  # instagram = 'nan.xiaobei'
+  instagram = 'mozanunal'
 
   avatar = 'mehmetozanunal@gmail.com'
   name = 'M.Ozan Unal'
