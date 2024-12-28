@@ -1,7 +1,6 @@
 baseURL = "https://mozanunal.com/"
 author = "M.Ozan Unal"
 copyright = "Copyright © 2014–2024"
-paginate = 40
 languageCode = "en"
 
 googleAnalytics = 'G-007KSW65JL'
@@ -12,6 +11,9 @@ enableInlineShortcodes = true
 theme = "paper"
 title = "M.Ozan Unal"
 
+[pagination]
+  paperSize = 6
+
 [permalinks]
   posts = "/:year/:month/:filename"
 
@@ -21,6 +23,7 @@ title = "M.Ozan Unal"
   twitter = 'MOzanUnal'
   github = 'mozanunal'
   instagram = 'mozanunal'
+  rss = true
 
   avatar = 'mehmetozanunal@gmail.com'
   name = 'M.Ozan Unal'
