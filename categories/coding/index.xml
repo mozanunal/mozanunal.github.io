@@ -142,8 +142,7 @@ Steam Link is software which provides support to Steam to stream screen view of 
 &lt;p>Benim gibi sıklıkla linuxla uğraşan bir insansanız işinize çok fazla yarıyabilecek bir araçtan bahsedeceğim. Bu Androidte çalışan terminal emülatörü &lt;strong>Termux&lt;/strong>. Termux linux kullanmaya alışık olduğumuz araçları androidde de kullanabilmemizi sağlayan bir android app aslında. Direk play store üzerinden &lt;a href="https://play.google.com/store/apps/details?id=com.termux&amp;amp;hl=en">bu link &lt;/a> üzerinden yükleyebilirsiniz. Termux aynı zamanda açık kaynaklı bir proje github hesabına &lt;a href="https://github.com/termux">buradan&lt;/a> ulaşabilirsiniz. Burada android app ve bütün paketlerin kaynak kodu mevcut.&lt;/p>
 &lt;p>&lt;img src="https://mozanunal.com/images/termux_ssh.jpg" alt="termux ssh bağlantısı">&lt;/p>
 &lt;p>Özelliklerine gelecek olursak kendi paket yöneticilerini geliştirmişler. İsmi pkg bir sürü popüler paketi kurabilmeniz mümkün. Programa girdiğinizde direk bir bash terminal karşılıyor bizi. Burada standart bash komutlarının çoğu çalışıyor. Örneğin ls, pwd, cat, echo&amp;hellip;&lt;/p></description></item><item><title>[TR] Hackhathon Getir 2018</title><link>https://mozanunal.com/2018/04/getir-hackhathon/</link><pubDate>Mon, 16 Apr 2018 18:10:04 +0000</pubDate><guid>https://mozanunal.com/2018/04/getir-hackhathon/</guid><description>&lt;blockquote>
-&lt;p>It is a project developed for BiTaksi Getir Hackathon 2018. Detailed information can be found from below.&lt;/p>
-&lt;/blockquote>
+&lt;p>It is a project developed for BiTaksi Getir Hackathon 2018. Detailed information can be found from below.&lt;/p>&lt;/blockquote>
 &lt;h1 id="team-paketci">Team Paketci!&lt;/h1>
 &lt;p>&lt;img src="https://mozanunal.com/images/1523149456799.jpg" alt="image">&lt;/p>
 &lt;p>&lt;a href="https://hackhathon-getir-2018.herokuapp.com/">Check our app from here&lt;/a> which is deployed using heroku.&lt;/p>
@@ -155,12 +154,7 @@ Sertan Sezgin Kutlu
 Ertuğrul Çınar
 Mehmet Ozan Ünal&lt;/p>
 &lt;h1 id="paketci-app">Paketci App&lt;/h1>
-&lt;p>Its a work on pack collection and delivery for courier and observer.&lt;/p>
-&lt;h3 id="features">Features:&lt;/h3>
-&lt;p>By Backend:
-1.Assign routes for couries by relate most efficent path.
-2.Update states of packets.
-3.Update states of couriers.&lt;/p></description></item><item><title>[TR] Hash Code 2018</title><link>https://mozanunal.com/2018/04/hash-code-2018/</link><pubDate>Sun, 08 Apr 2018 00:45:01 +0000</pubDate><guid>https://mozanunal.com/2018/04/hash-code-2018/</guid><description>&lt;p>&lt;strong>Herkese Merhabalar,&lt;/strong>
+&lt;p>Its a work on pack collection and delivery for courier and observer.&lt;/p></description></item><item><title>[TR] Hash Code 2018</title><link>https://mozanunal.com/2018/04/hash-code-2018/</link><pubDate>Sun, 08 Apr 2018 00:45:01 +0000</pubDate><guid>https://mozanunal.com/2018/04/hash-code-2018/</guid><description>&lt;p>&lt;strong>Herkese Merhabalar,&lt;/strong>
 Hash Code Google tarafından dünya çapında düzenlenen bir algoritma yarışmasıdır. Bu yıl itibariyle son 3 tanesine ben de katılmış bulunuyorum. Hatta geçen sene yarışma hakkında bir yazı da yazmıştım. Bu geleneği bu yıl da devam ettirmeye karar verdım.&lt;/p>
 &lt;p>Bu seneki yarışmada çok başarılı olamadık derece anlamında. Ama yarışmada çalışan, puan alabilen bir çözüm sunmak bile baya zor. O nedenle ben de çözümüzü birazcık açıklamak istiyorum. Aşağıdan direk github reposunu inceleyebilirsiniz.
 &lt;a href="https://github.com/mozanunal/hashcode-2018-qualificationQuestion">Github Repo&lt;/a>&lt;/p></description></item><item><title>[TR] Hexo Blog Servisi Nedir</title><link>https://mozanunal.com/2017/07/hexo-blog-servisi-nedir/</link><pubDate>Thu, 27 Jul 2017 10:48:00 +0000</pubDate><guid>https://mozanunal.com/2017/07/hexo-blog-servisi-nedir/</guid><description>&lt;p>Herkese merhabalar,&lt;/p>
@@ -175,8 +169,7 @@ Hash Code Google tarafından dünya çapında düzenlenen bir algoritma yarışm
 &lt;/ul>
 &lt;p>&lt;img src="https://mozanunal.com/images/1521977188211.png" alt="image">&lt;/p>
 &lt;p>&lt;img src="https://mozanunal.com/images/1521977228493.png" alt="image">&lt;/p>
-
- &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
  &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube-nocookie.com/embed/agt2mLnlgAk?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
  &lt;/div>
 
@@ -237,8 +230,7 @@ Bugün size flash belleğe ubuntu kurmaktan bahsedeceğim. Open source seven ins
 &lt;p>Processing dili son yıllarda Arduino ile popülerleşmeye başlayan görsel programlama dilidir. Hızlı prototipleme için geliştirilmiştir Arduinoya görsel arayüz hazırlama için sıklıkla kullanılmaktadır. Processing Windows, Linux, Android, Mac her platformda çalışmaktadır. Kendi program geliştirme arayüzü bulunmaktadır. Bu programlama diliyle kolay bir şekilde 2D, 3D görsel uygulamalar yapılabilir.&lt;/p>
 &lt;p>Ben bugünkü yazımda nasıl Android telefonda Android için nasıl Processing diliyle görsel uygulama yapılacağını anlatacağım. Öncelikle Google Playden uygulama geliştirmek için gerekli IDE&amp;rsquo;yi(geliştirme ortamını) indiriyoruz. Bir çok çeşit geliştirme ortamı var fakat ben APDE uygulamasını tercih ettim. Bu uygulama ile processing kodu yazıp onu derleyip telefon üzerinde deneyebiliyoruz.&lt;/p></description></item><item><title>[TR] Oyun (First Flight)</title><link>https://mozanunal.com/2014/05/oyunfirst-flight/</link><pubDate>Tue, 27 May 2014 06:42:00 +0000</pubDate><guid>https://mozanunal.com/2014/05/oyunfirst-flight/</guid><description>&lt;p>İlk oyun denememi görsel programlayla çalışan Game Maker ile yaptım. Android oyunu olarak başladım fakat lisans satın almak gerektiğini öğrenince bilgisayar oyunu olarak kaldı. Bu benim ilk oyunumdur. İsmi &amp;ldquo;First Flight&amp;rdquo; ilk defa uçan bir kuşun başına gelenlerden oluşuyor (uçaklar, füzeler, kartallar). Ona yardım edenler de var tabi ki Angry Birds :D. Umarım beğenirsiniz. Tekrar görüşmek üzere&amp;hellip;&lt;br>
  &lt;a href="https://docs.google.com/file/d/0B5j__Lyt9ozbOFBqa0JEQjI4NjA/edit">Oyunumu buradan indirebilirsiniz&lt;/a>&lt;/p>
-
- &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
  &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube-nocookie.com/embed/PL8fSl5TgSU?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
  &lt;/div></description></item><item><title>[TR] C# Gerçek Zamanlı Grafik Çizme Programı</title><link>https://mozanunal.com/2014/05/c-gercek-zamanl-grafik-cizme-program/</link><pubDate>Tue, 27 May 2014 05:17:00 +0000</pubDate><guid>https://mozanunal.com/2014/05/c-gercek-zamanl-grafik-cizme-program/</guid><description>&lt;p>&lt;strong>Herkese Merhabalar!&lt;/strong>&lt;br>
 &lt;a href="https://github.com/mozanunal/serialPortGrapher">Programın kaynak koduna buradan ulaşabilirsiniz.&lt;/a>&lt;br>
