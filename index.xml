@@ -1,4 +1,18 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>M.Ozan Unal</title><link>https://mozanunal.com/</link><description>Recent content on M.Ozan Unal</description><generator>Hugo</generator><language>en</language><copyright>Copyright © 2014–2024</copyright><lastBuildDate>Sat, 16 Nov 2024 11:46:14 +0300</lastBuildDate><atom:link href="https://mozanunal.com/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://mozanunal.com/contact/</link><pubDate>Sat, 16 Nov 2024 11:46:14 +0300</pubDate><guid>https://mozanunal.com/contact/</guid><description>&lt;p>Hello there!&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>M.Ozan Unal</title><link>https://mozanunal.com/</link><description>Recent content on M.Ozan Unal</description><generator>Hugo</generator><language>en</language><copyright>Copyright © 2014–2024</copyright><lastBuildDate>Fri, 30 May 2025 19:31:03 +0300</lastBuildDate><atom:link href="https://mozanunal.com/index.xml" rel="self" type="application/rss+xml"/><item><title>No-Build Client Islands</title><link>https://mozanunal.com/2025/05/client-islands/</link><pubDate>Fri, 30 May 2025 19:31:03 +0300</pubDate><guid>https://mozanunal.com/2025/05/client-islands/</guid><description>&lt;h1 id="-no-build-client-islands">🏝️ No-Build Client Islands&lt;/h1>
+&lt;h2 id="long-lasting-framework-free-web-apps-with-preact-htm-and-pagejs">Long-Lasting, Framework-Free Web Apps with Preact, HTM, and Page.js&lt;/h2>
+&lt;p>Are you tired of:&lt;/p>
+&lt;ul>
+&lt;li>Relearning your static site generator every 6 months?&lt;/li>
+&lt;li>Chasing backwards-incompatible updates from Astro, Next.js, or Fresh?&lt;/li>
+&lt;li>Deploying full Node.js stacks just to serve a couple buttons and forms?&lt;/li>
+&lt;/ul>
+&lt;p>What if you could build fast, reactive web apps that:&lt;/p>
+&lt;ul>
+&lt;li>Run forever without framework churn&lt;/li>
+&lt;li>Need no build tools or hydration pipelines&lt;/li>
+&lt;li>Use your favorite backend (Go, Rust, Java, Python&amp;hellip;) without coupling to JS frameworks?&lt;/li>
+&lt;/ul>
+&lt;p>Welcome to &lt;strong>No-Build Client Islands&lt;/strong> — a practical, zero-build architecture for interactive SPAs using native JavaScript modules, Preact + HTM for rendering, and Page.js for routing.&lt;/p></description></item><item><title/><link>https://mozanunal.com/contact/</link><pubDate>Sat, 16 Nov 2024 11:46:14 +0300</pubDate><guid>https://mozanunal.com/contact/</guid><description>&lt;p>Hello there!&lt;/p>
 &lt;p>I&amp;rsquo;m M.Ozan Unal, and I specialize in big data, data engineering, and ML engineering.
 Feel free to reach out with any questions, ideas to discuss, or collaboration opportunities.
 You can contact me via email at &lt;a href="mailto:mehmetozanunal@gmail.com">mehmetozanunal@gmail.com&lt;/a>.
