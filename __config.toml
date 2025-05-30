@@ -8,7 +8,7 @@ DefaultContentLanguage = "en"
 enableInlineShortcodes = true
 
 # ------------------------------
-theme = "paper"
+theme = "hugo-PaperMod"
 title = "M.Ozan Unal"
 
 [pagination]

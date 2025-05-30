@@ -1,11 +1,11 @@
-
 PWD="$(shell pwd)"
-SEP="\e[1;32m-------------------------------------------\e[0m"
+SEP="-------------------------------------------"
 
 REPO_URL := git@github.com:mozanunal/mozanunal.github.io.git
 BUILD_DIR := deploy_git
 
-.PHONY: build deploy
+serve:
+	hugo serve --openBrowser --enableGitInfo --navigateToChanged --disableFastRender
 
 build:
 	hugo --minify

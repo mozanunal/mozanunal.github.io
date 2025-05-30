@@ -1,4 +1,3 @@
-
 ---
 title: 'Rambling On Randomness'
 categories:

@@ -16,3 +16,4 @@
 public/
 deploy_git
 content/.obsidian/workspace.json
+.DS_Store
