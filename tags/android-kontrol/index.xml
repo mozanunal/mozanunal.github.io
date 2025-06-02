@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Android Kontrol on mozanunal.com</title>
+    <link>https://mozanunal.com/tags/android-kontrol/</link>
+    <description>Recent content in Android Kontrol on mozanunal.com</description>
+    <image>
+      <title>mozanunal.com</title>
+      <url>https://mozanunal.com/images/papermod-cover.png</url>
+      <link>https://mozanunal.com/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- 0.147.5</generator>
+    <language>en</language>
+    <copyright>mozanunal</copyright>
+    <lastBuildDate>Sun, 21 Sep 2014 03:57:00 +0000</lastBuildDate>
+    <atom:link href="https://mozanunal.com/tags/android-kontrol/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[TR] Ses Kontrollü Robotik El</title>
+      <link>https://mozanunal.com/2014/09/ses-kontrollu-robotik-el/</link>
+      <pubDate>Sun, 21 Sep 2014 03:57:00 +0000</pubDate>
+      <guid>https://mozanunal.com/2014/09/ses-kontrollu-robotik-el/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar!&lt;/strong&gt;&lt;br&gt;
+Uzun bir aradan sonra bu yazımda &amp;ldquo;Ses Kontrollü Robotik El&amp;rdquo; projemden bahsetmek istiyorum. Bu proje tamamen hobi amaçlı bir projedir. Mekanik parçaları, çevreden bulduğum malzemelerden, elektronik kısmı ise çinden aldığım Arduino, HC-06 Bluetooth modulü ve 5 adet servo ile yapmaya çalıştım. Sesle kontrol işini sağlamak için ise android tabanlı bir telefon gerekmektedir. Ses kontrolü için ayrı bir modül eklemememin sebebi ise herkesin akıllı telefona sahip olduğu şu zamanda ekstra maliyetten kaçmaktır. Buradan projenin tanıtım videosunu seyredebilirsiniz. Projelerin teknik detayları yazının devamındadır.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

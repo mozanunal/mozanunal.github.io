@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Microcontrollers on mozanunal.com</title>
+    <link>https://mozanunal.com/tags/microcontrollers/</link>
+    <description>Recent content in Microcontrollers on mozanunal.com</description>
+    <image>
+      <title>mozanunal.com</title>
+      <url>https://mozanunal.com/images/papermod-cover.png</url>
+      <link>https://mozanunal.com/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- 0.147.5</generator>
+    <language>en</language>
+    <copyright>mozanunal</copyright>
+    <lastBuildDate>Sun, 27 Dec 2015 04:03:00 +0000</lastBuildDate>
+    <atom:link href="https://mozanunal.com/tags/microcontrollers/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[TR] 5$ Logic Analyzer</title>
+      <link>https://mozanunal.com/2015/12/5-logic-analyzer/</link>
+      <pubDate>Sun, 27 Dec 2015 04:03:00 +0000</pubDate>
+      <guid>https://mozanunal.com/2015/12/5-logic-analyzer/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar&lt;/strong&gt;,&lt;/p&gt;
+&lt;p&gt;Bu yazımda 5 $ dolara aldığım Saleae marka logic analyzerın (aslında orjinal ürün değil aldığım, o ürünün klonu) incelemesini paylaşmak istiyorum. Bu ürünü seçmemin nedeni fiyat performans oranını çok beğenmem ve dijital elektronikle uğraşan herkesin vazgeçilmezlerinden biri olacağını düşünmem.&lt;/p&gt;
+&lt;p&gt;Öncelikle logic analzer nedir ile başlayalım. Logic analyzer, belli süre aralıklarında bir sinyali örnekleyerek oradaki sinyal seviyesinin binary olarak kaydedilmesini ve incelenebilmesini sağlayan alettir. Aynı zamanda bazılarında gelen bu binary verileri işleyip farklı protokoller kullanarak çözebilme özelliği vardır.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>[TR] 8051 Entegresi İle Assembly Programlamaya Giriş</title>
+      <link>https://mozanunal.com/2015/11/8051-entegresi-ile-assembly/</link>
+      <pubDate>Thu, 05 Nov 2015 05:25:00 +0000</pubDate>
+      <guid>https://mozanunal.com/2015/11/8051-entegresi-ile-assembly/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;br&gt;
+       Bu yazdımda ilk mikroişlemcilerden biri olan 8051 mikrokontrolcüsü üzerinden assembly dili ve mikroişlemci nedir nasıl çalışır bu konulara giriş yapmak istiyorum. Başlamadan önce benim de kullanacağım 8051 entegresi simülasyon programını önermek istiyorum. Programın ismi EdSim51. İlkönce mikroişlemcilerle alakalı temel bir kaç kavramla başlayalım.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;ROM(Read Only Memory):&lt;/strong&gt; Temel olarak, belli bir miktarda bilginin kalıcı olarak yazıldığı bellektir**.** Bilgi saklamak için&lt;br&gt;
+&lt;strong&gt;EEPROM:&lt;/strong&gt; ROM&amp;rsquo;un yeniden yazılabilir halidir.&lt;br&gt;
+&lt;strong&gt;RAM(Random Access Memory):&lt;/strong&gt; Bilgi saklamak için elektriğe ihtiyaç duyar. CPU veri işlemek için kullandığı bellek tipi RAM&amp;rsquo;dir.&lt;br&gt;
+&lt;strong&gt;Registers:&lt;/strong&gt; CPU registerları verileri geçici olarak saklamak için kullanılır. 8051 entegresinde bir tane data çeşidi vardır. O da 8 bittir. Eğer 8 bitten büyük datalarla işlem yapılmak istenirse data 8 bitlik parçalara ayrılmalıdır. 8051&amp;rsquo;de en çok kullanılar registerlar aşağıdaki gibidir.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>[TR] PIC İçin In Circuit Serial Programming (ICSP)</title>
+      <link>https://mozanunal.com/2015/01/pic-icin-in-circuit-serial/</link>
+      <pubDate>Sat, 31 Jan 2015 20:34:00 +0000</pubDate>
+      <guid>https://mozanunal.com/2015/01/pic-icin-in-circuit-serial/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Bugünkü yazımda ICSP olarak kısaltıllan &amp;ldquo;In Circuit Serial Programing&amp;quot;ten bahsedeceğim. Türkçeye devre içerisinde programlama olarak çevrilebilir. Oldukça avantajlı bir programlama şeklidir. Özellikle Pic programlarken sıkça kullanılır. Devresi hazır hale getirilmiş lehimlenmiş Picleri bu yöntem ile devreden sökmeden programlayabiliriz.PIC KIT 2, ICSP
+programlama için en  çok kullanılan modullerden biridir. Ben de onu kullandım, kullandığım Pic ise PIC16f877a&amp;rsquo;dır. Bağlantılar ise okla işaretletli yönden diğer tarafa doğru şu şekildedir;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;MCRL(VPP)&lt;/li&gt;
+&lt;li&gt;VDD&lt;/li&gt;
+&lt;li&gt;GND&lt;/li&gt;
+&lt;li&gt;ICSPDAT/PGD&lt;/li&gt;
+&lt;li&gt;ICSPCLK/PGK&lt;/li&gt;
+&lt;li&gt;Auxiliary&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Programınızı pic için geliştirilmiş bir dilde yazmanız gerekiyor. Seçeneklerinizden bazıları, Pic C, Pic Basic Pro, Assembly, Mikro C. Bu yazdığımız programı derleyip .hex formatına çeviriyoruz. Başka bir program kullanarak da derlediğimiz .hex formatındaki dosyaları Pic&amp;rsquo;e aktarıyoruz.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>[TR] İlk Yayın</title>
+      <link>https://mozanunal.com/2014/05/ilk-yayn/</link>
+      <pubDate>Sun, 25 May 2014 03:44:00 +0000</pubDate>
+      <guid>https://mozanunal.com/2014/05/ilk-yayn/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar!&lt;/strong&gt;&lt;br&gt;
+    Yaptığım projeleri arşivleyebilmek ve bunlardan herkesin yararlanabilmesi için blog açmaya karar verdim. Blogumda size C# üzerinden arayüz yapımı, bilgisayar mikroişlemci iletişimi, arduino uygulamaları, pic uygulamaları ve basit sensörlü elektronik alanında projeleri fotoğraflarıyla ve işin teorisini de anlatarak paylaşmayı planlıyorum. Aynı zamanda az da olsa Android programlamadan(robotik uygulamalar için gerekli olan kısımdan) ve hobi olarak yaptığım oyunları da buradan sizinle paylaşmayı planlıyorum. Elektroniğe merak salmış arkadaşlarımın elimden geldiğince(ben de yolun çok başındayım) en iyi şekilde bilgilendirmek dileğim :).  Daha önce üniversitemde uzun mesafe takip sistemleri üzerine çalışmalar yaptım. Gps, IMU, ve daha bir sürü sensörden aldığımız verileri, yer istasyonuna iletmek ve arayüz programıyla bunların görsellenmesiydi görevim. Şimdi ise insansız hava araçları ve görüntü işleme üzerine çalışmaktayım. Aynı zamanda hobi olarak pic ve arduino devreleri, çeşitli devreler üretmeye, yapmaya devam ediyorum. Tekrar görüşmek üzere&amp;hellip;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

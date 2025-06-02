@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Quadcopter Uçuş Prensibi on mozanunal.com</title>
+    <link>https://mozanunal.com/tags/quadcopter-u%C3%A7u%C5%9F-prensibi/</link>
+    <description>Recent content in Quadcopter Uçuş Prensibi on mozanunal.com</description>
+    <image>
+      <title>mozanunal.com</title>
+      <url>https://mozanunal.com/images/papermod-cover.png</url>
+      <link>https://mozanunal.com/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- 0.147.5</generator>
+    <language>en</language>
+    <copyright>mozanunal</copyright>
+    <lastBuildDate>Wed, 29 Jul 2015 15:44:00 +0000</lastBuildDate>
+    <atom:link href="https://mozanunal.com/tags/quadcopter-u%C3%A7u%C5%9F-prensibi/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[TR] Multikopterler için PID kontrol</title>
+      <link>https://mozanunal.com/2015/07/multikopterler-icin-pid-kontrol/</link>
+      <pubDate>Wed, 29 Jul 2015 15:44:00 +0000</pubDate>
+      <guid>https://mozanunal.com/2015/07/multikopterler-icin-pid-kontrol/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Bu yazımda PID kontrol algoritmalarından bahsetmek istiyorum. Bu yazıyı yazmamın 2 sebebi var. PID algoritmaları hakkında bir çok yazı okudum fakat coğu akademik ve karmaşık yazılar. Benim amacım anlaşılırlığı ve ayrıntıyı dengeli bir şekilde maximum değerlerinde kullanmak. İkincisi ise bu algoritmanın özel olarak multikopterlerde kullanımını basit bir şekilde açıklayan bir yazıya rastlamadım. Bu yüzden bu yazıyı yazmaya karar verdim.&lt;/p&gt;
+&lt;p&gt;Bir otopilotun en temel 2 bileşeni hava aracının yönelimini tespit eden IMU sensörü ve PID algoritmasıdır. IMU sensörü içinde bir kaç sensör barındırır ve amacı hava aracının 3 boyutlu uzaydaki yönelimini bulmaktır. IMU konusundan &lt;a href=&#34;https://mozanunal.com/2014/11/imu-aclarnn-3-boyutlu-olarak/&#34;&gt;bu yazımda bahsetmiştim&lt;/a&gt;. PID algoritmasının görevi ise temel olarak şöyledir: Yönelimi (3 eksendeki yere göre açılar) sensörler üzerinden alır, istenen açıları da kullanıcıdan alır. Bu ikisi arasındaki farkı en düşük seviyeye düşürmeyi amaçlar. İşte PID algoritmasının görevi bu farkı minimuma indirmek için gerekli motor hız değerlerini hesaplamaktır.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

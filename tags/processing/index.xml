@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Processing on mozanunal.com</title>
+    <link>https://mozanunal.com/tags/processing/</link>
+    <description>Recent content in Processing on mozanunal.com</description>
+    <image>
+      <title>mozanunal.com</title>
+      <url>https://mozanunal.com/images/papermod-cover.png</url>
+      <link>https://mozanunal.com/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- 0.147.5</generator>
+    <language>en</language>
+    <copyright>mozanunal</copyright>
+    <lastBuildDate>Sat, 25 Apr 2015 03:03:00 +0000</lastBuildDate>
+    <atom:link href="https://mozanunal.com/tags/processing/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[TR] Processing ile Artırılmış Gerçeklik</title>
+      <link>https://mozanunal.com/2015/04/processing-ile-artrlms-gerceklik/</link>
+      <pubDate>Sat, 25 Apr 2015 03:03:00 +0000</pubDate>
+      <guid>https://mozanunal.com/2015/04/processing-ile-artrlms-gerceklik/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Merhaba Arkadaşlar,&lt;/strong&gt;&lt;br&gt;
+Bugünkü yazımda NyARToolkit&amp;rsquo;ten bahsedeceğim. Bu toolkit sayesinde kameradan aldığımız görüntüler üzerine 3 Boyutlu nesneler yerleştirebiliyoruz. İstediğimiz 3 boyutlu grafik hatta animasyon yerleştirilebilir. Google Glass tarzı giyilebilir teknolojilerle daha yaratıcı uygulamalar yapılabilir. Simülasyon ve oyun dünyası için çeşitli uygulamalar geliştirilebilir. Hatta hologramlar yapmanın şimdilik en gerçekleştirilebilir yolu olarak gözüküyor. Toolkit bir çok programlama diliyle kullanılabiliyor. Ben Processing ile kullandım basit olduğu için. Toolkiti kullandığım şöyle bir tanıtım videosu hazırladım:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>[TR] Bakış Açısı Tabanlı 3 Boyutlu Görüş Versiyon 2.00</title>
+      <link>https://mozanunal.com/2015/03/baks-acs-tabanl-3-boyutlu-gorus2/</link>
+      <pubDate>Tue, 31 Mar 2015 06:55:00 +0000</pubDate>
+      <guid>https://mozanunal.com/2015/03/baks-acs-tabanl-3-boyutlu-gorus2/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Bu yazımda daha önce yaptığım bir uygulamanın 2. versiyonundan bahsedeceğim. Programımı daha önce şöyle anlatmıştım: 
+Bu program sayesinde ekstra hiç bir ekipman kullanmadan 2 boyutlu bilgisayar ekranını 3 boyutlu görme uygulamasını gerçekleştirebileceğimiz bir şeye dönüştürüyoruz. Bunu nasıl yapıyor diye soracak olursanız görüntü işleme sayesinde!.Programda webcam üzerinden yüz tespiti yapılıyor ve ekrana nereden baktığı tespit ediliyor. Hesaplanan bu açı daha sonra kullandığım 3 boyut kütüphanesi olan OpenGL&amp;rsquo;in kamerasını ayarlamak için kullanılıyor. böylece ekrana bakış yönünüze göre değişen bir 3D görme uygulaması hazırlanmış oluyor.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>[TR] Bakış Açısı Tabanlı 3 Boyutlu Görüş</title>
+      <link>https://mozanunal.com/2014/12/baks-acs-tabanl-3-boyutlu-gorus/</link>
+      <pubDate>Tue, 09 Dec 2014 18:13:00 +0000</pubDate>
+      <guid>https://mozanunal.com/2014/12/baks-acs-tabanl-3-boyutlu-gorus/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Bu yazımda size uzun zamandır üzerinde araştırmalar yaptığım ve bir şeyler üretmek istediğim 3 boyutlu görme konusunda yaptığım programdan bahsedeceğim. Bu program sayesinde ekstra hiç bir ekipman kullanmadan 2 boyutlu bilgisayar ekranını 3 boyutlu görme uygulamasını gerçekleştirebileceğimiz bir şeye dönüştürüyoruz. Bunu nasıl yapıyor diye soracak olursanız görüntü işleme sayesinde!. Programda webcam üzerinden yüz tespiti yapılıyor ve ekrana nereden baktığı tespit ediliyor. Hesaplanan bu açı daha sonra kullandığım 3 boyut kütüphanesi olan OpenGL&amp;rsquo;in kamerasını ayarlamak için kullanılıyor. böylece ekrana bakış yönünüze göre değişen bir 3D görme uygulaması hazırlanmış oluyor.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>[TR] Processing ile Android Telefonda Uygulama Geliştirme</title>
+      <link>https://mozanunal.com/2014/11/processing-ile-android-telefonda/</link>
+      <pubDate>Sun, 09 Nov 2014 06:27:00 +0000</pubDate>
+      <guid>https://mozanunal.com/2014/11/processing-ile-android-telefonda/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar!&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://4.bp.blogspot.com/-mWaFbWIHvPk/VF7g4rYgSxI/AAAAAAAAFHw/vbMO-hISTB4/s720/primitives3D.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Processing dili son yıllarda Arduino ile popülerleşmeye başlayan görsel programlama dilidir. Hızlı prototipleme için geliştirilmiştir Arduinoya görsel arayüz hazırlama için sıklıkla kullanılmaktadır. Processing Windows, Linux, Android, Mac her platformda çalışmaktadır. Kendi program geliştirme arayüzü bulunmaktadır. Bu programlama diliyle kolay bir şekilde 2D, 3D görsel uygulamalar yapılabilir.&lt;/p&gt;
+&lt;p&gt;Ben bugünkü yazımda nasıl Android telefonda Android için nasıl Processing diliyle görsel uygulama yapılacağını anlatacağım. Öncelikle Google Playden uygulama geliştirmek için gerekli IDE&amp;rsquo;yi(geliştirme ortamını) indiriyoruz. Bir çok çeşit geliştirme ortamı var fakat ben APDE uygulamasını tercih ettim. Bu uygulama ile processing kodu yazıp onu derleyip telefon üzerinde deneyebiliyoruz.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

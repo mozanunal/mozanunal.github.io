@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Linux on mozanunal.com</title>
+    <link>https://mozanunal.com/tags/linux/</link>
+    <description>Recent content in Linux on mozanunal.com</description>
+    <image>
+      <title>mozanunal.com</title>
+      <url>https://mozanunal.com/images/papermod-cover.png</url>
+      <link>https://mozanunal.com/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- 0.147.5</generator>
+    <language>en</language>
+    <copyright>mozanunal</copyright>
+    <lastBuildDate>Tue, 12 Oct 2021 08:14:07 +0000</lastBuildDate>
+    <atom:link href="https://mozanunal.com/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Wallpaper Automation Tool: WPCTL</title>
+      <link>https://mozanunal.com/2021/10/wpctl-1/</link>
+      <pubDate>Tue, 12 Oct 2021 08:14:07 +0000</pubDate>
+      <guid>https://mozanunal.com/2021/10/wpctl-1/</guid>
+      <description>&lt;p&gt;Hey,&lt;/p&gt;
+&lt;p&gt;Today I will come up with a very minimalistic wallpaper automation tool &lt;a href=&#34;https://github.com/mozanunal/wpctl&#34;&gt;&lt;strong&gt;WPCTL&lt;/strong&gt;&lt;/a&gt;. I spend most of my time on the computer. There are not too many options to have fun with while working on the computer. Interesting and colorful photos are one of the favorite entertainment sources for my daily routine. Therefore, I really like auto wallpaper changer programs which surprises me with different photos. I decided to use one of these programs. However, none of them is fulfiled my requirements. I want a wallpaper changer which should be like:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Show Images Directly on Terminal: img2sh</title>
+      <link>https://mozanunal.com/2019/11/img2sh/</link>
+      <pubDate>Sun, 03 Nov 2019 10:48:19 +0000</pubDate>
+      <guid>https://mozanunal.com/2019/11/img2sh/</guid>
+      <description>&lt;h1 id=&#34;img2sh&#34;&gt;Img2sh&lt;/h1&gt;
+&lt;p&gt;Hello there,&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;In this post, I want to tell a brief story of how I have created a tool named img2sh. It is also my first python package which is published over PyPI. In this very post, I will try to answer questions like:
+How is it developed?
+What are the challenges?
+How should a package created and deployed over PyPI?
+Let&amp;rsquo;s continue!&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Img2sh is a tool to show images directly on the terminal. For colored images, 256 xterm color support is required. This script basically resizes the image with anti-aliasing and quantized its colors to xterm color pallette. &lt;a href=&#34;https://github.com/mozanunal/img2sh&#34;&gt;Github repository of the project can be reached from here&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>[TR] Açık Kaynak Yazılım Lisans Türleri ve Farkları</title>
+      <link>https://mozanunal.com/2016/09/ack-kaynak-yazlm-lisans-turleri-ve/</link>
+      <pubDate>Sun, 04 Sep 2016 20:16:00 +0000</pubDate>
+      <guid>https://mozanunal.com/2016/09/ack-kaynak-yazlm-lisans-turleri-ve/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;br&gt;
+       Yazılım dünyasında son zamanlarda artan bir &amp;ldquo;Açık Kaynak&amp;rdquo; çılgınlığı var. Hobi amaçlı bu işi yapanlardan bu konuyla alakalı en büyük şirketlere ve kuruluşlara kadar bir çok kişi veya kuruluş yazılımlarını &amp;ldquo;açık kaynaklı&amp;rdquo; olarak yayıyor. Peki bu yazılımları kullanmak istediğimiz veya kendi yazılımımızı açık kaynaklı olarak dağıtmak istediğimizde sınırlarımız ve sorumluluklarımız neler? İşte bu noktada açık kaynaklı yazılımların lisansları devreye giriyor. Bazıları bir çok şeyi serbest bırakırken, bazıları ticari projelerde kullanılmasına izin vermiyor, bazıları ise yazılımın değiştirilmesine olanak tanımıyor. İşte bu farklar ve sorumlulukları bu yazımda özetlemeye çalıştım. Sırayla popüler açık kaynak yazılım lisanslarını tek tek inceleyeceğiz.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>[TR] Linuxta Kullanabileceğiniz 10 Yararlı Program</title>
+      <link>https://mozanunal.com/2014/12/linuxta-kullanabileceginiz-10-yararl/</link>
+      <pubDate>Wed, 03 Dec 2014 06:30:00 +0000</pubDate>
+      <guid>https://mozanunal.com/2014/12/linuxta-kullanabileceginiz-10-yararl/</guid>
+      <description>&lt;p&gt;Herkese Merhabalar,&lt;/p&gt;
+&lt;p&gt;Bugünkü yazımda Linuxta kullanabileceğiniz bir kaç yararlı programdan bahsetmek istiyorum. Bu programlar windows kullanıcılarının aşina olduğu, güzel alternatif programlar. Ben de kullandığım bu programları sizinle paylaşmak istedim. Yani öyle Linux&amp;rsquo;taki en iyi 10 program bunlar, hepsi sıfır hatalı diye iddalı bir başlıkla çıkmıyorum kaşınıza :D. Neyse programlara geçelim.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;İlk program Ubuntu Software Center. Bu program üzerinden Ubuntu&amp;rsquo;da çalışabilen bir çok programa ulaşabiliyorsunuz ve onları indirip kurabiliyorsunuz. Güzel şekilde kategorize edilmiş ve eklenti seçeneklerini seçme özelliği eklenmiş gerçekten hoş ve işleri kolaylaştıran bir program.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://4.bp.blogspot.com/-Bm-g47lRV64/VH5qesXPW5I/AAAAAAAAFhU/K_bf45ZAXaM/s1600/Screenshot%2Bfrom%2B2014-12-03%2B01%3A33%3A30.png&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>[TR] Flash Belleğe Ubuntu Kurmak</title>
+      <link>https://mozanunal.com/2014/12/flash-bellege-ubuntu-kurmak/</link>
+      <pubDate>Wed, 03 Dec 2014 03:28:00 +0000</pubDate>
+      <guid>https://mozanunal.com/2014/12/flash-bellege-ubuntu-kurmak/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Merhabalar,&lt;/strong&gt;&lt;br&gt;
+Bugün size flash belleğe ubuntu kurmaktan bahsedeceğim. Open source seven insanlar için Linux her zaman en çekici gelen işletim sistemi olmuştur. Fakat program desteği, driver sorunları derken linux tek işletim sistemi olarak kullanmak oldukça zor bir olay haline geliyor. İşte bunun için çok güzel çözümler var. Bunlardan bir tanesi aynı hard disk üzerine ikinci bir işletim sistemi kurmak. Bu çözüm bana daha zor ve karışık geliyor, benim tercih ettiğim ise bir flash belleğe Ubuntu kurup gerekli zamanlarda bilgisayarı onun üzerinden boot ederek Linuxun özgür dünyasına dalmak. Evet anlatıma geçersem aslında çok basit olduğunu göreceksiniz.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>[TR] İlk Yayın</title>
+      <link>https://mozanunal.com/2014/05/ilk-yayn/</link>
+      <pubDate>Sun, 25 May 2014 03:44:00 +0000</pubDate>
+      <guid>https://mozanunal.com/2014/05/ilk-yayn/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar!&lt;/strong&gt;&lt;br&gt;
+    Yaptığım projeleri arşivleyebilmek ve bunlardan herkesin yararlanabilmesi için blog açmaya karar verdim. Blogumda size C# üzerinden arayüz yapımı, bilgisayar mikroişlemci iletişimi, arduino uygulamaları, pic uygulamaları ve basit sensörlü elektronik alanında projeleri fotoğraflarıyla ve işin teorisini de anlatarak paylaşmayı planlıyorum. Aynı zamanda az da olsa Android programlamadan(robotik uygulamalar için gerekli olan kısımdan) ve hobi olarak yaptığım oyunları da buradan sizinle paylaşmayı planlıyorum. Elektroniğe merak salmış arkadaşlarımın elimden geldiğince(ben de yolun çok başındayım) en iyi şekilde bilgilendirmek dileğim :).  Daha önce üniversitemde uzun mesafe takip sistemleri üzerine çalışmalar yaptım. Gps, IMU, ve daha bir sürü sensörden aldığımız verileri, yer istasyonuna iletmek ve arayüz programıyla bunların görsellenmesiydi görevim. Şimdi ise insansız hava araçları ve görüntü işleme üzerine çalışmaktayım. Aynı zamanda hobi olarak pic ve arduino devreleri, çeşitli devreler üretmeye, yapmaya devam ediyorum. Tekrar görüşmek üzere&amp;hellip;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

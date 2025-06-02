@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Termux on mozanunal.com</title>
+    <link>https://mozanunal.com/tags/termux/</link>
+    <description>Recent content in Termux on mozanunal.com</description>
+    <image>
+      <title>mozanunal.com</title>
+      <url>https://mozanunal.com/images/papermod-cover.png</url>
+      <link>https://mozanunal.com/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- 0.147.5</generator>
+    <language>en</language>
+    <copyright>mozanunal</copyright>
+    <lastBuildDate>Mon, 30 Jul 2018 20:04:35 +0000</lastBuildDate>
+    <atom:link href="https://mozanunal.com/tags/termux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[TR] Android Terminal Emülatörü: Termux</title>
+      <link>https://mozanunal.com/2018/07/termux/</link>
+      <pubDate>Mon, 30 Jul 2018 20:04:35 +0000</pubDate>
+      <guid>https://mozanunal.com/2018/07/termux/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Benim gibi sıklıkla linuxla uğraşan bir insansanız işinize çok fazla yarıyabilecek bir araçtan bahsedeceğim. Bu Androidte çalışan terminal emülatörü &lt;strong&gt;Termux&lt;/strong&gt;.  Termux linux kullanmaya alışık olduğumuz araçları androidde de kullanabilmemizi sağlayan bir android app aslında. Direk play store üzerinden &lt;a href=&#34;https://play.google.com/store/apps/details?id=com.termux&amp;amp;hl=en&#34;&gt;bu link &lt;/a&gt; üzerinden yükleyebilirsiniz. Termux aynı zamanda açık kaynaklı bir proje github hesabına &lt;a href=&#34;https://github.com/termux&#34;&gt;buradan&lt;/a&gt; ulaşabilirsiniz. Burada android app ve bütün paketlerin kaynak kodu mevcut.&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;termux ssh bağlantısı&#34; loading=&#34;lazy&#34; src=&#34;https://mozanunal.com/images/termux_ssh.jpg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Özelliklerine gelecek olursak kendi paket yöneticilerini geliştirmişler. İsmi pkg bir sürü popüler paketi kurabilmeniz mümkün. Programa girdiğinizde direk bir bash terminal karşılıyor bizi. Burada standart bash komutlarının çoğu çalışıyor. Örneğin ls, pwd, cat, echo&amp;hellip;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

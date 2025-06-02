@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Sabit Akım Kaynağı on mozanunal.com</title>
+    <link>https://mozanunal.com/tags/sabit-ak%C4%B1m-kayna%C4%9F%C4%B1/</link>
+    <description>Recent content in Sabit Akım Kaynağı on mozanunal.com</description>
+    <image>
+      <title>mozanunal.com</title>
+      <url>https://mozanunal.com/images/papermod-cover.png</url>
+      <link>https://mozanunal.com/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- 0.147.5</generator>
+    <language>en</language>
+    <copyright>mozanunal</copyright>
+    <lastBuildDate>Wed, 05 Aug 2015 15:08:00 +0000</lastBuildDate>
+    <atom:link href="https://mozanunal.com/tags/sabit-ak%C4%B1m-kayna%C4%9F%C4%B1/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[TR] Bataryalar için Sabit Akım Deşarj Devresi Yapımı</title>
+      <link>https://mozanunal.com/2015/08/bataryalar-icin-sabit-akm-desarj/</link>
+      <pubDate>Wed, 05 Aug 2015 15:08:00 +0000</pubDate>
+      <guid>https://mozanunal.com/2015/08/bataryalar-icin-sabit-akm-desarj/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Batarya kapasite testi için çeşitli yöntemler geliştirilmiştir. Bunlardan ilk akıla geleni bataryanın uçlarına sabit direnç bağlayıp çekilen akım ve zaman üzerinden kapasite hesabı yapmaktır. Fakat bataryaların zamanla deşarj oldukça voltajı azalır bu da akımın değişmesine yol açacaktır. Bu sorunu çözmek için ise deşarj esnasında mümkün olduğunca çok voltaj örneklenerek anlık akım hesaplanıp interpolasyon yöntemleriyle kapasiteye ulaşılabilir. Fakat bu sıkıntıları aşmak için ikinci bir ölçüm yöntemi vardır; Sabit akım deşarj devresi.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

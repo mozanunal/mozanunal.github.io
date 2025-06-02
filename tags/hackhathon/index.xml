@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Hackhathon on mozanunal.com</title>
+    <link>https://mozanunal.com/tags/hackhathon/</link>
+    <description>Recent content in Hackhathon on mozanunal.com</description>
+    <image>
+      <title>mozanunal.com</title>
+      <url>https://mozanunal.com/images/papermod-cover.png</url>
+      <link>https://mozanunal.com/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- 0.147.5</generator>
+    <language>en</language>
+    <copyright>mozanunal</copyright>
+    <lastBuildDate>Mon, 16 Apr 2018 18:10:04 +0000</lastBuildDate>
+    <atom:link href="https://mozanunal.com/tags/hackhathon/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[TR] Hackhathon Getir 2018</title>
+      <link>https://mozanunal.com/2018/04/getir-hackhathon/</link>
+      <pubDate>Mon, 16 Apr 2018 18:10:04 +0000</pubDate>
+      <guid>https://mozanunal.com/2018/04/getir-hackhathon/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;It is a project developed for BiTaksi Getir Hackathon 2018. Detailed information can be found from below.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h1 id=&#34;team-paketci&#34;&gt;Team Paketci!&lt;/h1&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://mozanunal.com/images/1523149456799.jpg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://hackhathon-getir-2018.herokuapp.com/&#34;&gt;Check our app from here&lt;/a&gt; which is deployed using heroku.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/mozanunal/paketci-backend&#34;&gt;Check github repo of app from here&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;Timeline of our little project!&#34; loading=&#34;lazy&#34; src=&#34;https://github.com/mozanunal/paketci-backend/blob/master/doc/images/timeLine.PNG?raw=true&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Getir Hackhathon 2018
+Team Members:
+Sertan Sezgin Kutlu
+Ertuğrul Çınar
+Mehmet Ozan Ünal&lt;/p&gt;
+&lt;h1 id=&#34;paketci-app&#34;&gt;Paketci App&lt;/h1&gt;
+&lt;p&gt;Its a work on pack collection and delivery for courier and observer.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>[TR] Hash Code 2018</title>
+      <link>https://mozanunal.com/2018/04/hash-code-2018/</link>
+      <pubDate>Sun, 08 Apr 2018 00:45:01 +0000</pubDate>
+      <guid>https://mozanunal.com/2018/04/hash-code-2018/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;
+Hash Code Google tarafından dünya çapında düzenlenen bir algoritma yarışmasıdır. Bu yıl itibariyle son 3 tanesine ben de katılmış bulunuyorum. Hatta geçen sene yarışma hakkında bir yazı da yazmıştım. Bu geleneği bu yıl da devam ettirmeye karar verdım.&lt;/p&gt;
+&lt;p&gt;Bu seneki yarışmada çok başarılı olamadık derece anlamında. Ama yarışmada çalışan, puan alabilen bir çözüm sunmak bile baya zor. O nedenle ben de çözümüzü birazcık açıklamak istiyorum. Aşağıdan direk github reposunu inceleyebilirsiniz.
+&lt;a href=&#34;https://github.com/mozanunal/hashcode-2018-qualificationQuestion&#34;&gt;Github Repo&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Artwork Sharing Platform with Augmented Reality</title>
+      <link>https://mozanunal.com/2017/04/art-sharing-platform-1521976119976/</link>
+      <pubDate>Sun, 16 Apr 2017 18:04:36 +0000</pubDate>
+      <guid>https://mozanunal.com/2017/04/art-sharing-platform-1521976119976/</guid>
+      <description>&lt;p&gt;This is a project develop for Tech4Culture Hackhathon 2017.&lt;/p&gt;
+&lt;p&gt;Project features:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;You can share artworks&lt;/li&gt;
+&lt;li&gt;You can follow artist who you like&lt;/li&gt;
+&lt;li&gt;You can explore and experience artworks with augmented reality&lt;/li&gt;
+&lt;li&gt;You can follow art foundations for art and culture activities&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://mozanunal.com/images/1521977188211.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://mozanunal.com/images/1521977228493.png&#34;&gt;&lt;/p&gt;
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube-nocookie.com/embed/agt2mLnlgAk?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;&gt;&lt;/iframe&gt;
+    &lt;/div&gt;
+
+&lt;p&gt;Future Improvements&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

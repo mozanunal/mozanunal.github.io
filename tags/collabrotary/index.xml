@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Collabrotary on mozanunal.com</title>
+    <link>https://mozanunal.com/tags/collabrotary/</link>
+    <description>Recent content in Collabrotary on mozanunal.com</description>
+    <image>
+      <title>mozanunal.com</title>
+      <url>https://mozanunal.com/images/papermod-cover.png</url>
+      <link>https://mozanunal.com/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- 0.147.5</generator>
+    <language>en</language>
+    <copyright>mozanunal</copyright>
+    <lastBuildDate>Tue, 13 Aug 2019 00:09:50 +0000</lastBuildDate>
+    <atom:link href="https://mozanunal.com/tags/collabrotary/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Yolo on Google Colab</title>
+      <link>https://mozanunal.com/2019/08/yolocolabdemo/</link>
+      <pubDate>Tue, 13 Aug 2019 00:09:50 +0000</pubDate>
+      <guid>https://mozanunal.com/2019/08/yolocolabdemo/</guid>
+      <description>&lt;h1 id=&#34;run-yolo-v3-on-colab-for-imagesvideos&#34;&gt;Run YOLO V3 on Colab for images/videos&lt;/h1&gt;
+&lt;p&gt;Hello there,
+Today, we will be discussing how we can use the Darknet project on Google Colab platform. For those who are not familiar with these terms:&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;YOLO in action!&#34; loading=&#34;lazy&#34; src=&#34;https://mozanunal.com/images/yoloroad.gif&#34;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The Darknet project is an open-source project written in C, which is a framework to develop deep neural networks.&lt;/li&gt;
+&lt;li&gt;Yolo V3 is an object detection algorithm. It is one of the state of the art solution when &lt;strong&gt;accuracy/processing power needed&lt;/strong&gt; metric is considered.&lt;/li&gt;
+&lt;li&gt;Google Cola is a cloud-based data science workspace similar to the jupyter notebook. Each Collabrotary session is equipped with a virtual machine running 13 GB of ram and either a CPU, GPU, or TPU processor. In most case, all the required packages are already installed on these machines and you can quite easily start development using Google Collaboratory. It saves us from installing process and it provides us &lt;strong&gt;easy to accessible GPU&amp;rsquo;s&lt;/strong&gt; which is also &lt;strong&gt;free&lt;/strong&gt; under some constraints.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Have a look Ted Talk by Joseph Redmon the developer of the darknet project. The talk is about Darknet and YOLO projects which titled as “How computers learn to recognize objects instantly” . Darknet project aims to create a new neural network framework which is completely focused on simplicity and performance. The thing which I like about is its clarity and performance. All the code is written in C, to define a deep learning network you should only create a config file which defines the layers. By this way, it does not lose its performance capabilities also it provides us easy to use interface for development with this library.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

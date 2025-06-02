@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Micropython on mozanunal.com</title>
+    <link>https://mozanunal.com/tags/micropython/</link>
+    <description>Recent content in Micropython on mozanunal.com</description>
+    <image>
+      <title>mozanunal.com</title>
+      <url>https://mozanunal.com/images/papermod-cover.png</url>
+      <link>https://mozanunal.com/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- 0.147.5</generator>
+    <language>en</language>
+    <copyright>mozanunal</copyright>
+    <lastBuildDate>Wed, 14 Mar 2018 21:29:02 +0000</lastBuildDate>
+    <atom:link href="https://mozanunal.com/tags/micropython/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[TR] Micropython Nedir?</title>
+      <link>https://mozanunal.com/2018/03/micropython-1516117222475/</link>
+      <pubDate>Wed, 14 Mar 2018 21:29:02 +0000</pubDate>
+      <guid>https://mozanunal.com/2018/03/micropython-1516117222475/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Bildiğiniz üzere gömülü sistemlerde programlama C ile yapılır. Bunun sebebi makine diline en yakın dil olması bu nedenle sistem kaynaklarını az kullanarak programlar geliştirilebilmesi ve gömülü sistemdeki donanımları kolay programlanabilmesidir. Fakat buna rağmen işlemcilerin de güçlenmesiyle ve ihtiyaçların da değişmesiyle farklı diller ile programlama yapabilmek için farklı denemeler yapılmaktadır. Daha önce ESP8266 için scripting dili kullanma denemeleri olmuştu. Bir ara Lua dili ile programlanabiliyordu. Hatta bir ara beklediğimden çok daha popüler hale gelmişti. Lua dili bilmediğim için o firmware test etme şansım olmadı. Fakat yakın zamanda benzer bir projenin favori programlama dilim olan python ile de yapıldığını gördüm. ESP8266&amp;rsquo;nın python ile programlanabildiğini görünce dayanamadım. Bu projenin ismi &lt;strong&gt;micropython&lt;/strong&gt; ve  denediğimde micropython firmware oldukça hoşuma gitti o yüzden hakkında bir şeyler yazmak istedim.
+&lt;img alt=&#34;upython&#34; loading=&#34;lazy&#34; src=&#34;https://mozanunal.com/images/1516117467411.jpg&#34;&gt;
+Micropython bir &lt;strong&gt;kickstarter&lt;/strong&gt; projesi olarak çıkmış ortaya. İlk olarak Stm32f4 boardları için yapılmış. &lt;strong&gt;Amacı mikroişlemciler üzerinde python çalıştırmak ve python shell mantığıyla prototipleme yapabilmek.&lt;/strong&gt; Bildiğiniz üzere python en büyük eksilerinden biri yüksek ram harcaması. Bu sorunu çözmek için bütün standart python kütüphanleri micropython diye yeni bir yapıya portlanmış ve flashda ve ramda kapladığı alan sorunları çözülmeye çalışılınmış.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

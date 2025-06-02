@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Rustik Ampul on mozanunal.com</title>
+    <link>https://mozanunal.com/tags/rustik-ampul/</link>
+    <description>Recent content in Rustik Ampul on mozanunal.com</description>
+    <image>
+      <title>mozanunal.com</title>
+      <url>https://mozanunal.com/images/papermod-cover.png</url>
+      <link>https://mozanunal.com/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- 0.147.5</generator>
+    <language>en</language>
+    <copyright>mozanunal</copyright>
+    <lastBuildDate>Sat, 19 Nov 2016 23:05:00 +0000</lastBuildDate>
+    <atom:link href="https://mozanunal.com/tags/rustik-ampul/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[TR] Rustik Ampul Gece Lambası Yapımı</title>
+      <link>https://mozanunal.com/2016/11/rustik-ampul-gece-lambas-yapm/</link>
+      <pubDate>Sat, 19 Nov 2016 23:05:00 +0000</pubDate>
+      <guid>https://mozanunal.com/2016/11/rustik-ampul-gece-lambas-yapm/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Merhaba Arkadaşlar,&lt;/strong&gt;&lt;br&gt;
+Bu yazımda odam için yaptığım gece lambasından bahsedeceğim.Yazının başından belirtmek isterim projenin yapım aşamaları yüksek gerilimle uğraşmak gerektiriyor. Bu yüzden yeterli bilgi ve deneyimi olmayanlar için tehlikeli olabilir, kendilerinin denememelerini öneririm.
+Lambanın son hali aşağıdaki gibi devre temel olarak bi anahtar ve bir lambalar için dimmer düğmesinin devresini içeriyor.&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://2.bp.blogspot.com/-4DDX_lqYDlo/WDBnXDOjYMI/AAAAAAAAehc/_FWN6h2aW9Q8r5m6KY1mcrWcCKG6yobtACKgB/s720/IMG_20161116_105346.jpg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Gerekli ilk malzememiz rustik ampul. Benim ampulümün duyu e 27 ve full parlaklıkta kendisi 40w harcıyor. Bu yünden çıkardığı ışık açısından verimliliğinin çok kötü olduğunu söyleyebilirim fakat genelde aydınlatmadan ziyade dekorasyon amacıyla kullanılıyorlar.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

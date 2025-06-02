@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Bilgisayardan Kontrol on mozanunal.com</title>
+    <link>https://mozanunal.com/tags/bilgisayardan-kontrol/</link>
+    <description>Recent content in Bilgisayardan Kontrol on mozanunal.com</description>
+    <image>
+      <title>mozanunal.com</title>
+      <url>https://mozanunal.com/images/papermod-cover.png</url>
+      <link>https://mozanunal.com/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- 0.147.5</generator>
+    <language>en</language>
+    <copyright>mozanunal</copyright>
+    <lastBuildDate>Tue, 21 Oct 2014 02:47:00 +0000</lastBuildDate>
+    <atom:link href="https://mozanunal.com/tags/bilgisayardan-kontrol/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[TR] Bilgisayardan Gimbal Kontrolü</title>
+      <link>https://mozanunal.com/2014/10/bilgisayardan-gimbal-kontrolu/</link>
+      <pubDate>Tue, 21 Oct 2014 02:47:00 +0000</pubDate>
+      <guid>https://mozanunal.com/2014/10/bilgisayardan-gimbal-kontrolu/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar!&lt;/strong&gt;&lt;br&gt;
+Bugün size bilgisayardan gimbal kontrolü projemden bahsedeceğim. Bu projedeki amacım C# ile yazdığım bir arayüzde gimbali kontrol etmek. Gimbal ve bilgisayar arasında haberleşmeyi sağlaması ve servoları kontrol etmesi için bir arduino yerleştirdim. C# arayüzünün görevi, tıkladığım butonlara göre arduinoya &amp;ldquo;serial port&amp;rdquo; üzerinden gönderilecek karakteri değiştirmesidir.&lt;br&gt;
+Arduino da serial porttan aldığı karaktere göre servoları yönetir.&lt;/p&gt;
+&lt;p&gt;Bilgisayardan Gimbal Kontrolü&lt;/p&gt;
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube-nocookie.com/embed/Z61XZI12bS0?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;&gt;&lt;/iframe&gt;
+    &lt;/div&gt;
+
+&lt;p&gt;Arayüz programını C# kodlarının bu proje için örnek kısımlar aşağıdaki gibidir.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

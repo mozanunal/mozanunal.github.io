@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Eigenfaces on mozanunal.com</title>
+    <link>https://mozanunal.com/tags/eigenfaces/</link>
+    <description>Recent content in Eigenfaces on mozanunal.com</description>
+    <image>
+      <title>mozanunal.com</title>
+      <url>https://mozanunal.com/images/papermod-cover.png</url>
+      <link>https://mozanunal.com/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- 0.147.5</generator>
+    <language>en</language>
+    <copyright>mozanunal</copyright>
+    <lastBuildDate>Sat, 04 Jun 2016 19:50:00 +0000</lastBuildDate>
+    <atom:link href="https://mozanunal.com/tags/eigenfaces/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PassFace: Face Recognition Using OpenCV</title>
+      <link>https://mozanunal.com/2016/06/passface-face-recognition-using-opencv/</link>
+      <pubDate>Sat, 04 Jun 2016 19:50:00 +0000</pubDate>
+      <guid>https://mozanunal.com/2016/06/passface-face-recognition-using-opencv/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Hi,&lt;/strong&gt;&lt;br&gt;
+PassFace is a face recognizing program develop using EmguCV (OpenCV wrapper). It is possible to use 4 different algorithm and 3 different source(Camera, Video, Image) in this program. Most of the tryings have been made using LFW data set which have 13000 pictures of 1500 different people.Details of project can be reached below:&lt;/p&gt;
+&lt;p&gt;Source Code: &lt;a href=&#34;https://github.com/mozanunal/PassFace&#34;&gt;https://github.com/mozanunal/PassFace&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;{% youtube d6LI42NEZZY? %}&lt;/p&gt;
+&lt;h4 id=&#34;1-introduction&#34;&gt;1. Introduction&lt;/h4&gt;
+&lt;h5 id=&#34;definition-of-the-problem&#34;&gt;Definition of the Problem&lt;/h5&gt;
+&lt;p&gt;In this project, a program is going to develop to recognize the faces and compare them the faces it learned and give the identity of the person. All this identifying system is going to work in real time. Main subjects in this project are image processing and machine learning. Project aim to develop some algorithm to detect faces specifically recognize the faces using pattern recognition algorithms. The number of faces and the equipment needed is going to be determined according to test of different algorithms.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

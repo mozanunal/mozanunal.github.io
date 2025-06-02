@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Android Phone IMU Visualizer on mozanunal.com</title>
+    <link>https://mozanunal.com/tags/android-phone-imu-visualizer/</link>
+    <description>Recent content in Android Phone IMU Visualizer on mozanunal.com</description>
+    <image>
+      <title>mozanunal.com</title>
+      <url>https://mozanunal.com/images/papermod-cover.png</url>
+      <link>https://mozanunal.com/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- 0.147.5</generator>
+    <language>en</language>
+    <copyright>mozanunal</copyright>
+    <lastBuildDate>Mon, 18 May 2015 06:23:00 +0000</lastBuildDate>
+    <atom:link href="https://mozanunal.com/tags/android-phone-imu-visualizer/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[TR] Android Phone IMU Visualizer</title>
+      <link>https://mozanunal.com/2015/05/android-phone-imu-visualizer/</link>
+      <pubDate>Mon, 18 May 2015 06:23:00 +0000</pubDate>
+      <guid>https://mozanunal.com/2015/05/android-phone-imu-visualizer/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Hi,&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;I usually write my blog in Turkish but at this project i decided to write it in English. Because I cannot find any successful tutorial about this issue. I took e-mails or contacts from different countries about my projects if they are unusual so i am going to write some of my article in English.&lt;/p&gt;
+&lt;p&gt;At this project, visualization of android device with IMU sensors will be explained.The orientation of an android device will be shown at PC. Android camera and PC communicate with each other with a WI- FI connection. I wrote 2 program for this project. First one is android app (&lt;a href=&#34;https://drive.google.com/file/d/0B5j__Lyt9ozbNG9SdVBOOVowTjg/view?usp=sharing&#34;&gt;can download from here&lt;/a&gt;). Second one is visualizer program for PC. At android app IMU angles of the&lt;br&gt;
+Android phone are sent to PC by using UDP network protocol. After you install the app write your PC&amp;rsquo;s IP to this program. Also you can change the using port.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

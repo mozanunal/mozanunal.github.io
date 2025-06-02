@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>NRF24L01 on mozanunal.com</title>
+    <link>https://mozanunal.com/tags/nrf24l01/</link>
+    <description>Recent content in NRF24L01 on mozanunal.com</description>
+    <image>
+      <title>mozanunal.com</title>
+      <url>https://mozanunal.com/images/papermod-cover.png</url>
+      <link>https://mozanunal.com/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- 0.147.5</generator>
+    <language>en</language>
+    <copyright>mozanunal</copyright>
+    <lastBuildDate>Sun, 15 Nov 2015 14:30:00 +0000</lastBuildDate>
+    <atom:link href="https://mozanunal.com/tags/nrf24l01/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[TR] DIY RC Kumanda Yapımı</title>
+      <link>https://mozanunal.com/2015/11/diy-rc-kumanda-yapm/</link>
+      <pubDate>Sun, 15 Nov 2015 14:30:00 +0000</pubDate>
+      <guid>https://mozanunal.com/2015/11/diy-rc-kumanda-yapm/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Bu yazımda arduino kullanarak nasıl basit, ucuz ve işlevli bir RC kumanda yapabileceğimizi anlatacağım. Yapacağımız RC kumanda ile istediğiniz türde aracı, istediğiniz kadar kanalla kontrol etmeniz mümkün. Benim uygulamamda 2 adet 2 eksen joystick ve 1 potansiyometre bulunuyor. Yani 5 kanallı örnek bir uygulama yaptım. Öncelikle malzemelerden başlayalım.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Arduino Nano&lt;/li&gt;
+&lt;li&gt;Nrf24l01&lt;/li&gt;
+&lt;li&gt;1 adet 10k potansiyometre&lt;/li&gt;
+&lt;li&gt;1 adet 10k direnç&lt;/li&gt;
+&lt;li&gt;2 adet 2 eksen joystick modulü&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Bu malzemelerle beraber toplam maliyetimiz 7- 8 dolar civarı oluyor. Maximum kullanım mesafesi ise 30 40 metre civarında hobi uygulamarına göre oldukça yeterli bir mesafe elde ediyoruz.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

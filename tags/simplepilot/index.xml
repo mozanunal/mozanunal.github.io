@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>SimplePilot on mozanunal.com</title>
+    <link>https://mozanunal.com/tags/simplepilot/</link>
+    <description>Recent content in SimplePilot on mozanunal.com</description>
+    <image>
+      <title>mozanunal.com</title>
+      <url>https://mozanunal.com/images/papermod-cover.png</url>
+      <link>https://mozanunal.com/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- 0.147.5</generator>
+    <language>en</language>
+    <copyright>mozanunal</copyright>
+    <lastBuildDate>Tue, 07 Feb 2017 23:55:00 +0000</lastBuildDate>
+    <atom:link href="https://mozanunal.com/tags/simplepilot/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[TR] Multikopterler için otopilot yapmak</title>
+      <link>https://mozanunal.com/2017/02/multikopterler-icin-otopilot-yapmak/</link>
+      <pubDate>Tue, 07 Feb 2017 23:55:00 +0000</pubDate>
+      <guid>https://mozanunal.com/2017/02/multikopterler-icin-otopilot-yapmak/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Merhaba arkadaşlar,&lt;/strong&gt;&lt;br&gt;
+      Bugünkü yazımda geçen senelerde üzerinde uzun zaman harcadığım fakat tamamlayamadığım bir konu olan otopilot yapmak üzerine edindiğim tecrübeleri anlatmak istiyorum. Yazıya başlamadan önce bu çalışmaların tamamını beraber yaptığım &lt;strong&gt;Bahadır Gökçeaslan&lt;/strong&gt; teşekkür etmeyi bir borç bilirim.&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;SimplePilotlogoPNG.png&#34; loading=&#34;lazy&#34; src=&#34;https://github.com/mozanunal/SimplePilot/blob/master/LOGO/SimplePilotlogoPNG.png?raw=true&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Evet otopilot aslında benim anlatacağım bölüme kıyasla biraz fazla geniş bir kavram oldu. Zira malesef proje uçuş kontrolcüsü aşamalarında kaldı. Bir soru ile başlayalım. Bir uçuş kontrolcüsü nedir? Bir uçuş kontrolcüsü temel olarak havada uçan bir aracın yere göre açılarının istenilen şekilde olmasını sağlayan sensör ve hareketli mekanizmalar bütünüdür. Aslında yere göre açılarla sınırlamak çok mantıklı değil. Bir hava aracının yükseliğinin sabit olması veya istenilen hızda istenilen konumda kalmasını sağlamak da bunun işidir. Fakat bu projede, bir Quadcopter uçuş kontrolcüsü olarak tasarlanmış olan bu yapıda amaç quadcopterin yere göre açılarını kumandadan gelen girdilere göre kontrol etmekti.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>MQ135 on mozanunal.com</title>
+    <link>https://mozanunal.com/tags/mq135/</link>
+    <description>Recent content in MQ135 on mozanunal.com</description>
+    <image>
+      <title>mozanunal.com</title>
+      <url>https://mozanunal.com/images/papermod-cover.png</url>
+      <link>https://mozanunal.com/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- 0.147.5</generator>
+    <language>en</language>
+    <copyright>mozanunal</copyright>
+    <lastBuildDate>Wed, 30 Sep 2015 02:51:00 +0000</lastBuildDate>
+    <atom:link href="https://mozanunal.com/tags/mq135/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[TR] ESP8266 ile Kişisel Meteoroloji İstasyonu</title>
+      <link>https://mozanunal.com/2015/09/esp8266-ile-kisisel-meteoroloji/</link>
+      <pubDate>Wed, 30 Sep 2015 02:51:00 +0000</pubDate>
+      <guid>https://mozanunal.com/2015/09/esp8266-ile-kisisel-meteoroloji/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Bugünkü yazımda ESP8266 Wifi modülünün kullanımına yönelik yaptığım uygulamayı anlatacağım. Bu modülü daha önceki &lt;a href=&#34;https://mozanunal.com/2015/03/esp8266-modulu-html-server/&#34;&gt;şu yazımda&lt;/a&gt; anlatmıştım. Ucuz fiyatına rağmen çok yetenekli bir modül. O yazımda ESP8266 Access Point olarak kullanılmıştı.Bu yazımdaki uygulamamda, hali hazırda var olan wifi ağına da bağlanabilecek. Bu sayede wifi olan yerlerde direk wifi üzerinden verilere ulaşılabilinirken, wifi çekmediği yerlerde ESP8266&amp;rsquo;nın kendi oluşturduğu Access Point üzerinden ulaşabilecek. Bilgilere istersek web browser üzerinden direk IP adresini yazarak, istersek aşağıda linkini verdiğim kendi yazdığım android programını kullanarak ulaşabileceğiz.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

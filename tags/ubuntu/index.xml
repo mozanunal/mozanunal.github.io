@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Ubuntu on mozanunal.com</title>
+    <link>https://mozanunal.com/tags/ubuntu/</link>
+    <description>Recent content in Ubuntu on mozanunal.com</description>
+    <image>
+      <title>mozanunal.com</title>
+      <url>https://mozanunal.com/images/papermod-cover.png</url>
+      <link>https://mozanunal.com/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- 0.147.5</generator>
+    <language>en</language>
+    <copyright>mozanunal</copyright>
+    <lastBuildDate>Tue, 12 Oct 2021 08:14:07 +0000</lastBuildDate>
+    <atom:link href="https://mozanunal.com/tags/ubuntu/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Wallpaper Automation Tool: WPCTL</title>
+      <link>https://mozanunal.com/2021/10/wpctl-1/</link>
+      <pubDate>Tue, 12 Oct 2021 08:14:07 +0000</pubDate>
+      <guid>https://mozanunal.com/2021/10/wpctl-1/</guid>
+      <description>&lt;p&gt;Hey,&lt;/p&gt;
+&lt;p&gt;Today I will come up with a very minimalistic wallpaper automation tool &lt;a href=&#34;https://github.com/mozanunal/wpctl&#34;&gt;&lt;strong&gt;WPCTL&lt;/strong&gt;&lt;/a&gt;. I spend most of my time on the computer. There are not too many options to have fun with while working on the computer. Interesting and colorful photos are one of the favorite entertainment sources for my daily routine. Therefore, I really like auto wallpaper changer programs which surprises me with different photos. I decided to use one of these programs. However, none of them is fulfiled my requirements. I want a wallpaper changer which should be like:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Show Images Directly on Terminal: img2sh</title>
+      <link>https://mozanunal.com/2019/11/img2sh/</link>
+      <pubDate>Sun, 03 Nov 2019 10:48:19 +0000</pubDate>
+      <guid>https://mozanunal.com/2019/11/img2sh/</guid>
+      <description>&lt;h1 id=&#34;img2sh&#34;&gt;Img2sh&lt;/h1&gt;
+&lt;p&gt;Hello there,&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;In this post, I want to tell a brief story of how I have created a tool named img2sh. It is also my first python package which is published over PyPI. In this very post, I will try to answer questions like:
+How is it developed?
+What are the challenges?
+How should a package created and deployed over PyPI?
+Let&amp;rsquo;s continue!&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Img2sh is a tool to show images directly on the terminal. For colored images, 256 xterm color support is required. This script basically resizes the image with anti-aliasing and quantized its colors to xterm color pallette. &lt;a href=&#34;https://github.com/mozanunal/img2sh&#34;&gt;Github repository of the project can be reached from here&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
