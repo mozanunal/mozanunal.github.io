@@ -12,8 +12,15 @@
     <generator>Hugo -- 0.147.5</generator>
     <language>en</language>
     <copyright>mozanunal</copyright>
-    <lastBuildDate>Fri, 30 May 2025 19:31:03 +0300</lastBuildDate>
+    <lastBuildDate>Wed, 04 Jun 2025 22:45:54 +0300</lastBuildDate>
     <atom:link href="https://mozanunal.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Llm Tools Kiwix V0.1.0</title>
+      <link>https://mozanunal.com/2025/06/llm-tools-kiwix-v0.1.0/</link>
+      <pubDate>Wed, 04 Jun 2025 22:45:54 +0300</pubDate>
+      <guid>https://mozanunal.com/2025/06/llm-tools-kiwix-v0.1.0/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;m excited to announce the &lt;strong&gt;llm-tools-kiwix&lt;/strong&gt; plugin: now available for &lt;a href=&#34;https://llm.datasette.io/&#34;&gt;llm.datasette.io&lt;/a&gt;. This tool allows you to expose offline &lt;a href=&#34;https://www.kiwix.org/&#34;&gt;Kiwix&lt;/a&gt; ZIM archives (think Wikipedia, Stack Exchange, DevDocs, etc.) to Large Language Models (LLMs) via the &lt;code&gt;llm&lt;/code&gt; command-line tool or Python API.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>🏝️ No-Build Client Islands</title>
       <link>https://mozanunal.com/2025/05/client-islands/</link>
