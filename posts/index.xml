@@ -42,6 +42,14 @@
 &lt;p&gt;Welcome to &lt;strong&gt;No-Build Client Islands&lt;/strong&gt; — a practical, zero-build architecture for interactive SPAs using native JavaScript modules, Preact + HTM for rendering, and Page.js for routing.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Introducing sllm.nvim: A Neovim Plugin for Seamless LLM Integration</title>
+      <link>https://mozanunal.com/2025/05/sllm.nvim/</link>
+      <pubDate>Wed, 21 May 2025 23:07:48 +0300</pubDate>
+      <guid>https://mozanunal.com/2025/05/sllm.nvim/</guid>
+      <description>&lt;p&gt;As developers, we all know the pain of context-switching between our code editor and separate AI interfaces just to ask a question, get code completion, or analyze an error message. What if you could bring the power of Large Language Models—powered by the incredibly flexible &lt;a href=&#34;https://llm.datasette.io/en/stable/&#34;&gt;&lt;code&gt;llm&lt;/code&gt; CLI by Simon Willison&lt;/a&gt;—&lt;strong&gt;directly inside Neovim&lt;/strong&gt;, with streaming replies, model/tool selection, and one-key context management?&lt;/p&gt;
+&lt;p&gt;Today, I’m excited to announce &lt;a href=&#34;https://github.com/mozanunal/sllm.nvim&#34;&gt;&lt;code&gt;sllm.nvim&lt;/code&gt;&lt;/a&gt;: a (roughly 500-line) Lua plugin that brings deep &lt;code&gt;llm&lt;/code&gt; CLI integration to Neovim in an asynchronous, focused, and highly hackable way.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Wallpaper Automation Tool: WPCTL</title>
       <link>https://mozanunal.com/2021/10/wpctl-1/</link>
       <pubDate>Tue, 12 Oct 2021 08:14:07 +0000</pubDate>
