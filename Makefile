@@ -10,6 +10,9 @@ serve:
 build:
 	hugo --minify
 
+format:
+	deno fmt --ext md content/
+
 deploy: build
 	rm -rf $(BUILD_DIR)
 	git clone $(REPO_URL) $(BUILD_DIR) --branch=public --depth=1

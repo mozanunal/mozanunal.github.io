@@ -15,7 +15,6 @@ pygmentsUseClasses: true
 mainsections: ["posts"]
 googleAnalytics: "G-007KSW65JL"
 
-
 minify:
   disableXML: true
   # minifyOutput: true
@@ -29,9 +28,9 @@ languages:
     languageName: "English"
     weight: 1
     taxonomies:
-      # category: categories
-      # tag: tags
-      # series: series
+    # category: categories
+    # tag: tags
+    # series: series
     menu:
       main:
         - name: Posts
@@ -58,11 +57,11 @@ languages:
         subtitle: "💾 Data | ☁️ Cloud | 🤖 AI"
         buttons:
           - name: Posts
-            url: posts
-          - name: Contact
-            url: contact
+            url: https://mozanunal.com/posts/
           - name: Projects
             url: https://github.com/mozanunal
+          - name: Papers
+            url: https://scholar.google.com/citations?user=u_HbXUUAAAAJ&hl=en
 
 outputs:
   home:
@@ -133,8 +132,8 @@ params:
   # iconHeight: 35
 
   analytics:
-      google:
-          SiteVerificationTag: "G-007KSW65JL"
+    google:
+      SiteVerificationTag: "G-007KSW65JL"
 
   assets:
     disableHLJS: true
@@ -150,13 +149,13 @@ params:
   #     hiddenInSingle: true # hide on single page
 
   fuseOpts:
-      isCaseSensitive: false
-      shouldSort: true
-      location: 0
-      distance: 1000
-      threshold: 0.4
-      minMatchCharLength: 0
-      keys: ["title", "permalink", "summary", "content"]
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys: ["title", "permalink", "summary", "content"]
 
 markup:
   goldmark:
