@@ -103,18 +103,6 @@ PassFace is a face recognizing program develop using EmguCV (OpenCV wrapper). It
 &lt;p&gt;In this project, a program is going to develop to recognize the faces and compare them the faces it learned and give the identity of the person. All this identifying system is going to work in real time. Main subjects in this project are image processing and machine learning. Project aim to develop some algorithm to detect faces specifically recognize the faces using pattern recognition algorithms. The number of faces and the equipment needed is going to be determined according to test of different algorithms.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>[TR] SimpleCV ile Görüntü İşlemeye Giriş</title>
-      <link>https://mozanunal.com/2016/05/simplecv-ile-goruntu-islemeye-giris/</link>
-      <pubDate>Sun, 01 May 2016 20:23:00 +0000</pubDate>
-      <guid>https://mozanunal.com/2016/05/simplecv-ile-goruntu-islemeye-giris/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;br&gt;
-Görüntü işleme hızla popülerleşen ve gittikçe daha fazla üzerine projeler geliştirilen ve hatta hayatımızda kullandığımız araç gereçlerde kullanılan bir alan olmaya başladı. Bu durumda bir sürü insan bu konu üzerine bir şeyler yapmak istiyor fakat daha kurulum aşamasında veya kaynak yetersizliğinden dolayı bu ilgilerinden vazgeçiyorlar. Bu sorun için önerebileceğim bir çözüm var. SimpleCV!&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://simplecv.org/download/&#34;&gt;https://simplecv.org/download/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://2.bp.blogspot.com/-A3EQ_sYxKKk/VxNvyqTmt-I/AAAAAAAAZq4/piY02JIgXGUKU1iHwuqo3Kgev-zUjXvFACK4B/s640/Capture.PNG&#34;&gt;&lt;/p&gt;
-&lt;p&gt;SimpleCV görüntü işlemeyle alakalı paketlerin bir arada toplandığı bir python paketler bütünüdür. yukarıdaki linkten kurulum dosyasını indirip sadece bir kaç tık ile kurabilirsiniz.&lt;br&gt;
-SimpleCV ile yüklediğimiz paketler ise şöyle:&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>[TR] RF Mesafe Hesaplama Exceli</title>
       <link>https://mozanunal.com/2016/01/rf-mesafe-hesaplama-exceli/</link>
       <pubDate>Sat, 02 Jan 2016 04:34:00 +0000</pubDate>

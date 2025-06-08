@@ -363,14 +363,6 @@ Hash Code Google tarafından dünya çapında düzenlenen bir algoritma yarışm
 &lt;a href=&#34;https://github.com/mozanunal/hashcode-2018-qualificationQuestion&#34;&gt;Github Repo&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
-      <title>[TR] Hexo Blog Servisi Nedir</title>
-      <link>https://mozanunal.com/2017/07/hexo-blog-servisi-nedir/</link>
-      <pubDate>Thu, 27 Jul 2017 10:48:00 +0000</pubDate>
-      <guid>https://mozanunal.com/2017/07/hexo-blog-servisi-nedir/</guid>
-      <description>&lt;p&gt;Herkese merhabalar,&lt;/p&gt;
-&lt;p&gt;Beni takip ediyorsanız farketmişsinizdir çok yakın zamanda blogumu baştan sona değiştirdim. Bunu yapmamın sebebi önceden blogger kullanıyordum fakat bir süre sonra bazı özellikleri yetersiz gelmeye başladı. Daha çok özelleştirilebilir ve farklı eklentileri destekleyen bir blog yönetim aracına ihtiyacım olduğuna karar verdim ve araştırmaya koyuldum. Karşıma ilk çıkanlar en popüler olanlardı tabi ki fakat biraz daha ayrıntılı araştırınca hexo.io buldum. Kendisi şu anda kullandığım blog aracı. Temel olarak node.js tabanlı bir statik site generator. İnanılmaz bir eklenti ve tema desteği var. Benim için tercih sebebi yapan neydi diye sorarsanız 2 şeyi sayabilirim: Markdown desteği olması ve github pages üzerinden host edilebilmesi. Markdown yazılarınızı kolayca biçimlendirmenizi sağlayan bir servis. Kolaylığına öyle alıştım ki yazmam gereken herhangi bir yazıda onu arıyorum. Daha sonrasında kategori, yorum olaylarını desteklemesi ve arama motorları için kolayca rss feed, site map oluşturabilmem hoşuma giden diğer özellikler oldu.&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>[TR] Google Hash Code 2017</title>
       <link>https://mozanunal.com/2017/07/google-hash-code-2017/</link>
       <pubDate>Thu, 13 Jul 2017 02:51:00 +0000</pubDate>

@@ -33,17 +33,6 @@
 &lt;p&gt;Bu projemde nasıl elimizde kalan fazla hoparlörleri bluetooth speakera dönüştürebileceğinizden bahsedeceğim. Geçen yaz bir arkadaşımın 5 +1 ses sisteminin kuvvetlendirici kutusu yanmış böyle olunca da hoparlörler boşa çıkmış ben de bir projede kullanırım diyerek kenara ayırdım. Aklıma sonradan bunları bluetooth hoparlöre dönüştürmek geldi. Direk ses cihazı olarak görünen bluetooth ses alıcılarını araştırmaya başladım. Bir kaç model bulsam da yaklaşık 10 W olan bu hoparlörleri sürecek kadar güç çıkışı vermiyorlardı. Bu nedenle projeye bir de kuvvetlendirici ekledim. Kuvvetlendirici  olarak PAM8610 seçtim. Kendisi bir class D güç kuvvetlendiricisi yani en verimli olanlarından. Yüksek verini sayesinde çok az enerji ısıya dönüşüyor ve soğutucu metal parçaya vb ihtiyaç duymuyor. Yaptığım proje ile bu hoparlörleri, bluetooth üzerinden ya da doğrudan kablo ile ses çıkışlarına bağlanabilecek duruma getirmiş oluyorum.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>[TR] Rustik Ampul Gece Lambası Yapımı</title>
-      <link>https://mozanunal.com/2016/11/rustik-ampul-gece-lambas-yapm/</link>
-      <pubDate>Sat, 19 Nov 2016 23:05:00 +0000</pubDate>
-      <guid>https://mozanunal.com/2016/11/rustik-ampul-gece-lambas-yapm/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Merhaba Arkadaşlar,&lt;/strong&gt;&lt;br&gt;
-Bu yazımda odam için yaptığım gece lambasından bahsedeceğim.Yazının başından belirtmek isterim projenin yapım aşamaları yüksek gerilimle uğraşmak gerektiriyor. Bu yüzden yeterli bilgi ve deneyimi olmayanlar için tehlikeli olabilir, kendilerinin denememelerini öneririm.
-Lambanın son hali aşağıdaki gibi devre temel olarak bi anahtar ve bir lambalar için dimmer düğmesinin devresini içeriyor.&lt;/p&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://2.bp.blogspot.com/-4DDX_lqYDlo/WDBnXDOjYMI/AAAAAAAAehc/_FWN6h2aW9Q8r5m6KY1mcrWcCKG6yobtACKgB/s720/IMG_20161116_105346.jpg&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Gerekli ilk malzememiz rustik ampul. Benim ampulümün duyu e 27 ve full parlaklıkta kendisi 40w harcıyor. Bu yünden çıkardığı ışık açısından verimliliğinin çok kötü olduğunu söyleyebilirim fakat genelde aydınlatmadan ziyade dekorasyon amacıyla kullanılıyorlar.&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>[TR] Ayarlanabilir Taşınabilir Güç Kaynağı Yapımı</title>
       <link>https://mozanunal.com/2016/03/ayarlanabilir-tasnabilir-guc-kaynag-yapm/</link>
       <pubDate>Sun, 13 Mar 2016 01:24:00 +0000</pubDate>

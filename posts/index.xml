@@ -12,8 +12,16 @@
     <generator>Hugo -- 0.147.7</generator>
     <language>en</language>
     <copyright>mozanunal</copyright>
-    <lastBuildDate>Wed, 04 Jun 2025 22:45:54 +0300</lastBuildDate>
+    <lastBuildDate>Sun, 08 Jun 2025 18:44:27 +0300</lastBuildDate>
     <atom:link href="https://mozanunal.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Sllm.nvim v0.2.0: On-the-fly Tools and a CLI-First Philosophy</title>
+      <link>https://mozanunal.com/2025/06/sllm.nvim.v020/</link>
+      <pubDate>Sun, 08 Jun 2025 18:44:27 +0300</pubDate>
+      <guid>https://mozanunal.com/2025/06/sllm.nvim.v020/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;m thrilled to announce the v0.2.0 release of &lt;a href=&#34;https://github.com/mozanunal/sllm.nvim&#34;&gt;mozanunal/sllm.nvim&lt;/a&gt; – a thin Neovim wrapper around Simon Willison’s amazing &lt;code&gt;llm&lt;/code&gt; CLI. This release introduces powerful new features, most notably the ability to define LLM tools on-the-fly from your code, and further refines the plugin&amp;rsquo;s core philosophy.&lt;/p&gt;
+&lt;p&gt;The Neovim AI plugin space is indeed bustling! A fair question for any new entry is: where does it fit? This post aims to answer that by exploring the philosophy behind &lt;code&gt;sllm.nvim&lt;/code&gt; and detailing what&amp;rsquo;s new in v0.2.0.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Llm Tools Kiwix V0.1.0</title>
       <link>https://mozanunal.com/2025/06/llm-tools-kiwix-v0.1.0/</link>
@@ -540,14 +548,6 @@ Son yıllarda hobi elektroniği inanılmaz bir hızla gelişti. Şüphesiz bu h�
 &lt;p&gt;Bitcoin son dönemlerin popüler konularından birisi. Aslında genel olarak crypto currency son zamanlarda çok popüler. Peki nedir bu kavramlar? Crypto currency güvenliği şifreleme teknojileriyle sağlanan sanal para birimleridir. Her gün bir yeni bir tür crypto currency ortaya çıkıyor. Bunlar arasında en geçerli olanı ise bitcoin. Sanırım popülerliği en eskilerinden biri olmasından ve anlık olarak üretimi sınırlayabilen ilki olmasından geliyor. Bahsetmek istediğim 3. kavram ise bit coin mining: Yüksek hesaplama gücü kullanarak bitcoin üretebilmeniz mümkün. Bitcoin alışverişlerinin geçerli olması için bir şifre ile onaylanması gerekiyor. Bu şifreyi de bir hash çözerek oluşturuyorsunuz ve bunun karşılığında sistem sizi bitcoin ile ödüllendiriyor. Bu amaçla bir sürü insan sağlan ekran kartları alıp bitcoin tarlaları kurdular ve bu işten para kazanıyorlar. Tabi aklınıza, bitcoinin dünyaya katkısı nedir ya da ne kadar riskli, yatırım yapılır mı? gibi türlü türlü farklı açılardan sorular gelebilir. Ama malesef ben bu konuda uzman değilim ve daha nedir sorusuna bile tam olarak cevap vermek çok zor.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>[TR] Hexo Blog Servisi Nedir</title>
-      <link>https://mozanunal.com/2017/07/hexo-blog-servisi-nedir/</link>
-      <pubDate>Thu, 27 Jul 2017 10:48:00 +0000</pubDate>
-      <guid>https://mozanunal.com/2017/07/hexo-blog-servisi-nedir/</guid>
-      <description>&lt;p&gt;Herkese merhabalar,&lt;/p&gt;
-&lt;p&gt;Beni takip ediyorsanız farketmişsinizdir çok yakın zamanda blogumu baştan sona değiştirdim. Bunu yapmamın sebebi önceden blogger kullanıyordum fakat bir süre sonra bazı özellikleri yetersiz gelmeye başladı. Daha çok özelleştirilebilir ve farklı eklentileri destekleyen bir blog yönetim aracına ihtiyacım olduğuna karar verdim ve araştırmaya koyuldum. Karşıma ilk çıkanlar en popüler olanlardı tabi ki fakat biraz daha ayrıntılı araştırınca hexo.io buldum. Kendisi şu anda kullandığım blog aracı. Temel olarak node.js tabanlı bir statik site generator. İnanılmaz bir eklenti ve tema desteği var. Benim için tercih sebebi yapan neydi diye sorarsanız 2 şeyi sayabilirim: Markdown desteği olması ve github pages üzerinden host edilebilmesi. Markdown yazılarınızı kolayca biçimlendirmenizi sağlayan bir servis. Kolaylığına öyle alıştım ki yazmam gereken herhangi bir yazıda onu arıyorum. Daha sonrasında kategori, yorum olaylarını desteklemesi ve arama motorları için kolayca rss feed, site map oluşturabilmem hoşuma giden diğer özellikler oldu.&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>PMod Microphone Driver</title>
       <link>https://mozanunal.com/2017/07/pmod-microphone-driver/</link>
       <pubDate>Thu, 20 Jul 2017 23:14:00 +0000</pubDate>
@@ -655,17 +655,6 @@ Bildiğiniz gibi gömülü sistemlerde kullanılabilecek basit bir DSP kütüpha
 &lt;p&gt;Bu projemde nasıl elimizde kalan fazla hoparlörleri bluetooth speakera dönüştürebileceğinizden bahsedeceğim. Geçen yaz bir arkadaşımın 5 +1 ses sisteminin kuvvetlendirici kutusu yanmış böyle olunca da hoparlörler boşa çıkmış ben de bir projede kullanırım diyerek kenara ayırdım. Aklıma sonradan bunları bluetooth hoparlöre dönüştürmek geldi. Direk ses cihazı olarak görünen bluetooth ses alıcılarını araştırmaya başladım. Bir kaç model bulsam da yaklaşık 10 W olan bu hoparlörleri sürecek kadar güç çıkışı vermiyorlardı. Bu nedenle projeye bir de kuvvetlendirici ekledim. Kuvvetlendirici  olarak PAM8610 seçtim. Kendisi bir class D güç kuvvetlendiricisi yani en verimli olanlarından. Yüksek verini sayesinde çok az enerji ısıya dönüşüyor ve soğutucu metal parçaya vb ihtiyaç duymuyor. Yaptığım proje ile bu hoparlörleri, bluetooth üzerinden ya da doğrudan kablo ile ses çıkışlarına bağlanabilecek duruma getirmiş oluyorum.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>[TR] Rustik Ampul Gece Lambası Yapımı</title>
-      <link>https://mozanunal.com/2016/11/rustik-ampul-gece-lambas-yapm/</link>
-      <pubDate>Sat, 19 Nov 2016 23:05:00 +0000</pubDate>
-      <guid>https://mozanunal.com/2016/11/rustik-ampul-gece-lambas-yapm/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Merhaba Arkadaşlar,&lt;/strong&gt;&lt;br&gt;
-Bu yazımda odam için yaptığım gece lambasından bahsedeceğim.Yazının başından belirtmek isterim projenin yapım aşamaları yüksek gerilimle uğraşmak gerektiriyor. Bu yüzden yeterli bilgi ve deneyimi olmayanlar için tehlikeli olabilir, kendilerinin denememelerini öneririm.
-Lambanın son hali aşağıdaki gibi devre temel olarak bi anahtar ve bir lambalar için dimmer düğmesinin devresini içeriyor.&lt;/p&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://2.bp.blogspot.com/-4DDX_lqYDlo/WDBnXDOjYMI/AAAAAAAAehc/_FWN6h2aW9Q8r5m6KY1mcrWcCKG6yobtACKgB/s720/IMG_20161116_105346.jpg&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Gerekli ilk malzememiz rustik ampul. Benim ampulümün duyu e 27 ve full parlaklıkta kendisi 40w harcıyor. Bu yünden çıkardığı ışık açısından verimliliğinin çok kötü olduğunu söyleyebilirim fakat genelde aydınlatmadan ziyade dekorasyon amacıyla kullanılıyorlar.&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>[TR] STM32 Mikroişlemci Dünyasına Giriş</title>
       <link>https://mozanunal.com/2016/11/stm32-mikroislemci-dunyasna-giris/</link>
       <pubDate>Tue, 08 Nov 2016 15:53:00 +0000</pubDate>
@@ -723,18 +712,6 @@ PassFace is a face recognizing program develop using EmguCV (OpenCV wrapper). It
 &lt;h4 id=&#34;1-introduction&#34;&gt;1. Introduction&lt;/h4&gt;
 &lt;h5 id=&#34;definition-of-the-problem&#34;&gt;Definition of the Problem&lt;/h5&gt;
 &lt;p&gt;In this project, a program is going to develop to recognize the faces and compare them the faces it learned and give the identity of the person. All this identifying system is going to work in real time. Main subjects in this project are image processing and machine learning. Project aim to develop some algorithm to detect faces specifically recognize the faces using pattern recognition algorithms. The number of faces and the equipment needed is going to be determined according to test of different algorithms.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>[TR] SimpleCV ile Görüntü İşlemeye Giriş</title>
-      <link>https://mozanunal.com/2016/05/simplecv-ile-goruntu-islemeye-giris/</link>
-      <pubDate>Sun, 01 May 2016 20:23:00 +0000</pubDate>
-      <guid>https://mozanunal.com/2016/05/simplecv-ile-goruntu-islemeye-giris/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;br&gt;
-Görüntü işleme hızla popülerleşen ve gittikçe daha fazla üzerine projeler geliştirilen ve hatta hayatımızda kullandığımız araç gereçlerde kullanılan bir alan olmaya başladı. Bu durumda bir sürü insan bu konu üzerine bir şeyler yapmak istiyor fakat daha kurulum aşamasında veya kaynak yetersizliğinden dolayı bu ilgilerinden vazgeçiyorlar. Bu sorun için önerebileceğim bir çözüm var. SimpleCV!&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://simplecv.org/download/&#34;&gt;https://simplecv.org/download/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://2.bp.blogspot.com/-A3EQ_sYxKKk/VxNvyqTmt-I/AAAAAAAAZq4/piY02JIgXGUKU1iHwuqo3Kgev-zUjXvFACK4B/s640/Capture.PNG&#34;&gt;&lt;/p&gt;
-&lt;p&gt;SimpleCV görüntü işlemeyle alakalı paketlerin bir arada toplandığı bir python paketler bütünüdür. yukarıdaki linkten kurulum dosyasını indirip sadece bir kaç tık ile kurabilirsiniz.&lt;br&gt;
-SimpleCV ile yüklediğimiz paketler ise şöyle:&lt;/p&gt;</description>
     </item>
     <item>
       <title>[TR] Ayarlanabilir Taşınabilir Güç Kaynağı Yapımı</title>
@@ -887,14 +864,6 @@ Fare                                     2$&lt;br&gt;
 &lt;strong&gt;Toplam:                             110$&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
     <item>
-      <title>[TR] All Terrain Rover Version 2.0</title>
-      <link>https://mozanunal.com/2015/08/all-terrain-rover-version-20/</link>
-      <pubDate>Wed, 26 Aug 2015 16:48:00 +0000</pubDate>
-      <guid>https://mozanunal.com/2015/08/all-terrain-rover-version-20/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;
-Bu yazımda eski bir robotumun 2. versiyonunu size tanıtmak istiyorum. Bu robotumun 1. versiyonunu daha önce yapmıştım. Yeni versiyonunda robotumuzun boyu neredeyse 2 katına çıktı. Santimetreye 5 kg tork verebilen, 360 dönebilmesi icin modifiye edilmiş servolar kullandim. Ağırlığı yaklaşık 300 gram bu sayede oldukca atik bir robot oldu. Geçen robota benzer tel+ silikon ayak sistemi kullandim. Aynı zamanda bazı yapisal yenilikler de var. Ana isketeleti oluşturan ataçları değiştirdim bu sayede çok daha dayanıklı oldu ve süspansiyon etkisi yaratacak şekilde büktüm. Silikon uçları ise naylon eldivenden parmaklar kesip onunla kapladım amacım sürtünmeyi arttırmaktı Geçen robottaki gibi ağırlık merkezi önüne doğru bu sayede yüksek tırmanma kabiliyetine sahip olmuş oluyor. Robot ters geldigi anda kendini düzeltme özelliğine sahip bunu da yine yüksek torklu motorlarına ve agırlık merkezine borçlu. Robotun elektronik kısmı için hala pek bir şey yapmadım. Bluetooth kontrollü veya wifi kontrollü yapmayı düşünüyorum. Şimdilik bir arduino var üzerinde ve motorların hızlarını kontrol edebiliyorum. Aşağıda projeden kısa bir tanıtım videosu bulabilirsiniz iyi seyirler.&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>[TR] Fırçalı motorlar için ESC Yapımı</title>
       <link>https://mozanunal.com/2015/08/frcal-motorlar-icin-esc-yapm/</link>
       <pubDate>Wed, 19 Aug 2015 18:42:00 +0000</pubDate>
@@ -1015,14 +984,6 @@ Bugünkü yazımda NyARToolkit&amp;rsquo;ten bahsedeceğim. Bu toolkit sayesinde
       <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Bu yazımda daha önce yaptığım bir uygulamanın 2. versiyonundan bahsedeceğim. Programımı daha önce şöyle anlatmıştım: 
 Bu program sayesinde ekstra hiç bir ekipman kullanmadan 2 boyutlu bilgisayar ekranını 3 boyutlu görme uygulamasını gerçekleştirebileceğimiz bir şeye dönüştürüyoruz. Bunu nasıl yapıyor diye soracak olursanız görüntü işleme sayesinde!.Programda webcam üzerinden yüz tespiti yapılıyor ve ekrana nereden baktığı tespit ediliyor. Hesaplanan bu açı daha sonra kullandığım 3 boyut kütüphanesi olan OpenGL&amp;rsquo;in kamerasını ayarlamak için kullanılıyor. böylece ekrana bakış yönünüze göre değişen bir 3D görme uygulaması hazırlanmış oluyor.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>[TR] All Terrain Rover Version 1.00</title>
-      <link>https://mozanunal.com/2015/03/all-terrain-rover-version100/</link>
-      <pubDate>Mon, 23 Mar 2015 02:09:00 +0000</pubDate>
-      <guid>https://mozanunal.com/2015/03/all-terrain-rover-version100/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Bugünkü yazımda, uzun süreli bir geliştirme düşündüğüm All Terrain Rover projemin ilk denemesini sizlerle paylaşıyorum. Bu isim için oldukça basit bir başlangıç oldu tabi ama malzemelerim gelene kadar bir deneme yapayım diyerek yola çıktım ve ortaya çıkan sonuç beni bile şaşırttı. Robotumun şimdilik hiç bir kontrolü yok sadece pili takıp bırakıyorum. ATR&amp;rsquo;nin gövdesi hafif ve dayanıklı olması için karbon bir plakadan yapıldı. Ayakları ataç ve silikondan yapıldı bu sayede esnek ve maksimum sürtünmeyi sağlıyor. Motor olarak 2 adet, 360 derece dönmesi için modifiye edilmiş servo (1.8kg*cm torklu) kullanıldı.Yüksek tork tırmanma olayının artırmasını sağladı. ATR&amp;rsquo; yi bir kaç farklı zeminlerde ve engellerle denedim. Sonuçlarla alakalı video ve ATR&amp;rsquo;nin resimleri aşağıdadır.&lt;/p&gt;</description>
     </item>
     <item>
       <title>[TR] HC-SR501 PIR Sensörü</title>
@@ -1343,14 +1304,6 @@ Programın genel algoritmasına gelirsek, şöyle özetleyebiliriz;&lt;/p&gt;
 &lt;li&gt;Counter Analysis ile görüntü &amp;ldquo;counter&amp;quot;lara ayrılmıştır. Sadece &amp;ldquo;counter&amp;rdquo; alanı belli bir değerden büyük olan &amp;ldquo;counter&amp;quot;lar dikkat alınmıştır. Bu sayede son kalan gürültüler de engelenmiştir.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;Projemin tanıtım videosuna aşağıdan ulaşabilirsiniz. Kodlar videoda gösterilmektedir. Tekrar görüşmek üzere&amp;hellip;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>[TR] Ses Kontrollü Robotik El</title>
-      <link>https://mozanunal.com/2014/09/ses-kontrollu-robotik-el/</link>
-      <pubDate>Sun, 21 Sep 2014 03:57:00 +0000</pubDate>
-      <guid>https://mozanunal.com/2014/09/ses-kontrollu-robotik-el/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar!&lt;/strong&gt;&lt;br&gt;
-Uzun bir aradan sonra bu yazımda &amp;ldquo;Ses Kontrollü Robotik El&amp;rdquo; projemden bahsetmek istiyorum. Bu proje tamamen hobi amaçlı bir projedir. Mekanik parçaları, çevreden bulduğum malzemelerden, elektronik kısmı ise çinden aldığım Arduino, HC-06 Bluetooth modulü ve 5 adet servo ile yapmaya çalıştım. Sesle kontrol işini sağlamak için ise android tabanlı bir telefon gerekmektedir. Ses kontrolü için ayrı bir modül eklemememin sebebi ise herkesin akıllı telefona sahip olduğu şu zamanda ekstra maliyetten kaçmaktır. Buradan projenin tanıtım videosunu seyredebilirsiniz. Projelerin teknik detayları yazının devamındadır.&lt;/p&gt;</description>
     </item>
     <item>
       <title>[TR] Oyun (First Flight)</title>

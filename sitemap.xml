@@ -2,13 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://mozanunal.com/2025/06/llm-tools-kiwix-v0.1.0/</loc>
-    <lastmod>2025-06-04T22:45:54+03:00</lastmod>
-  </url><url>
     <loc>https://mozanunal.com/</loc>
-    <lastmod>2025-06-04T22:45:54+03:00</lastmod>
+    <lastmod>2025-06-08T18:44:27+03:00</lastmod>
   </url><url>
     <loc>https://mozanunal.com/posts/</loc>
+    <lastmod>2025-06-08T18:44:27+03:00</lastmod>
+  </url><url>
+    <loc>https://mozanunal.com/2025/06/sllm.nvim.v020/</loc>
+    <lastmod>2025-06-08T18:44:27+03:00</lastmod>
+  </url><url>
+    <loc>https://mozanunal.com/2025/06/llm-tools-kiwix-v0.1.0/</loc>
     <lastmod>2025-06-04T22:45:54+03:00</lastmod>
   </url><url>
     <loc>https://mozanunal.com/2025/05/client-islands/</loc>
@@ -302,21 +305,6 @@
     <loc>https://mozanunal.com/tags/wemos/</loc>
     <lastmod>2017-07-30T15:50:00+00:00</lastmod>
   </url><url>
-    <loc>https://mozanunal.com/2017/07/hexo-blog-servisi-nedir/</loc>
-    <lastmod>2017-07-27T10:48:00+00:00</lastmod>
-  </url><url>
-    <loc>https://mozanunal.com/tags/blog/</loc>
-    <lastmod>2017-07-27T10:48:00+00:00</lastmod>
-  </url><url>
-    <loc>https://mozanunal.com/tags/hexo/</loc>
-    <lastmod>2017-07-27T10:48:00+00:00</lastmod>
-  </url><url>
-    <loc>https://mozanunal.com/tags/hexo.io/</loc>
-    <lastmod>2017-07-27T10:48:00+00:00</lastmod>
-  </url><url>
-    <loc>https://mozanunal.com/tags/static-site-generator/</loc>
-    <lastmod>2017-07-27T10:48:00+00:00</lastmod>
-  </url><url>
     <loc>https://mozanunal.com/tags/microphone-verilog/</loc>
     <lastmod>2017-07-20T23:14:00+00:00</lastmod>
   </url><url>
@@ -434,15 +422,6 @@
     <loc>https://mozanunal.com/tags/pam8610/</loc>
     <lastmod>2016-12-05T21:23:00+00:00</lastmod>
   </url><url>
-    <loc>https://mozanunal.com/2016/11/rustik-ampul-gece-lambas-yapm/</loc>
-    <lastmod>2016-11-19T23:05:00+00:00</lastmod>
-  </url><url>
-    <loc>https://mozanunal.com/tags/pwm/</loc>
-    <lastmod>2016-11-19T23:05:00+00:00</lastmod>
-  </url><url>
-    <loc>https://mozanunal.com/tags/rustik-ampul/</loc>
-    <lastmod>2016-11-19T23:05:00+00:00</lastmod>
-  </url><url>
     <loc>https://mozanunal.com/2016/11/stm32-mikroislemci-dunyasna-giris/</loc>
     <lastmod>2016-11-08T15:53:00+00:00</lastmod>
   </url><url>
@@ -532,12 +511,6 @@
   </url><url>
     <loc>https://mozanunal.com/2016/06/passface-face-recognition-using-opencv/</loc>
     <lastmod>2016-06-04T19:50:00+00:00</lastmod>
-  </url><url>
-    <loc>https://mozanunal.com/2016/05/simplecv-ile-goruntu-islemeye-giris/</loc>
-    <lastmod>2016-05-01T20:23:00+00:00</lastmod>
-  </url><url>
-    <loc>https://mozanunal.com/tags/simplecv/</loc>
-    <lastmod>2016-05-01T20:23:00+00:00</lastmod>
   </url><url>
     <loc>https://mozanunal.com/2016/03/ayarlanabilir-tasnabilir-guc-kaynag-yapm/</loc>
     <lastmod>2016-03-13T01:24:00+00:00</lastmod>
@@ -665,18 +638,6 @@
     <loc>https://mozanunal.com/tags/raspberry-pi-2-projeleri/</loc>
     <lastmod>2015-09-17T01:20:00+00:00</lastmod>
   </url><url>
-    <loc>https://mozanunal.com/2015/08/all-terrain-rover-version-20/</loc>
-    <lastmod>2015-08-26T16:48:00+00:00</lastmod>
-  </url><url>
-    <loc>https://mozanunal.com/tags/360-servo/</loc>
-    <lastmod>2015-08-26T16:48:00+00:00</lastmod>
-  </url><url>
-    <loc>https://mozanunal.com/tags/all-terrain-rover/</loc>
-    <lastmod>2015-08-26T16:48:00+00:00</lastmod>
-  </url><url>
-    <loc>https://mozanunal.com/tags/arduino-projeleri/</loc>
-    <lastmod>2015-08-26T16:48:00+00:00</lastmod>
-  </url><url>
     <loc>https://mozanunal.com/2015/08/frcal-motorlar-icin-esc-yapm/</loc>
     <lastmod>2015-08-19T18:42:00+00:00</lastmod>
   </url><url>
@@ -729,6 +690,9 @@
     <lastmod>2015-07-04T03:30:00+00:00</lastmod>
   </url><url>
     <loc>https://mozanunal.com/tags/arduino-mpu6050/</loc>
+    <lastmod>2015-07-04T03:30:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mozanunal.com/tags/arduino-projeleri/</loc>
     <lastmod>2015-07-04T03:30:00+00:00</lastmod>
   </url><url>
     <loc>https://mozanunal.com/tags/imu-gimbal-stabilizasyonu/</loc>
@@ -799,12 +763,6 @@
   </url><url>
     <loc>https://mozanunal.com/tags/opencv-3-boyutlu-g%C3%B6rme/</loc>
     <lastmod>2015-03-31T06:55:00+00:00</lastmod>
-  </url><url>
-    <loc>https://mozanunal.com/2015/03/all-terrain-rover-version100/</loc>
-    <lastmod>2015-03-23T02:09:00+00:00</lastmod>
-  </url><url>
-    <loc>https://mozanunal.com/tags/robot/</loc>
-    <lastmod>2015-03-23T02:09:00+00:00</lastmod>
   </url><url>
     <loc>https://mozanunal.com/2015/03/hc-sr501-pir-sensoru/</loc>
     <lastmod>2015-03-15T01:36:00+00:00</lastmod>
@@ -1090,15 +1048,6 @@
   </url><url>
     <loc>https://mozanunal.com/tags/object-tracking/</loc>
     <lastmod>2014-09-29T15:54:00+00:00</lastmod>
-  </url><url>
-    <loc>https://mozanunal.com/2014/09/ses-kontrollu-robotik-el/</loc>
-    <lastmod>2014-09-21T03:57:00+00:00</lastmod>
-  </url><url>
-    <loc>https://mozanunal.com/tags/android-kontrol/</loc>
-    <lastmod>2014-09-21T03:57:00+00:00</lastmod>
-  </url><url>
-    <loc>https://mozanunal.com/tags/ses-kontroll%C3%BC-robotik-el/</loc>
-    <lastmod>2014-09-21T03:57:00+00:00</lastmod>
   </url><url>
     <loc>https://mozanunal.com/2014/05/oyunfirst-flight/</loc>
     <lastmod>2014-05-27T06:42:00+00:00</lastmod>

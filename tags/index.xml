@@ -456,34 +456,6 @@
       <description></description>
     </item>
     <item>
-      <title>Blog</title>
-      <link>https://mozanunal.com/tags/blog/</link>
-      <pubDate>Thu, 27 Jul 2017 10:48:00 +0000</pubDate>
-      <guid>https://mozanunal.com/tags/blog/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Hexo</title>
-      <link>https://mozanunal.com/tags/hexo/</link>
-      <pubDate>Thu, 27 Jul 2017 10:48:00 +0000</pubDate>
-      <guid>https://mozanunal.com/tags/hexo/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Hexo.io</title>
-      <link>https://mozanunal.com/tags/hexo.io/</link>
-      <pubDate>Thu, 27 Jul 2017 10:48:00 +0000</pubDate>
-      <guid>https://mozanunal.com/tags/hexo.io/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Static Site Generator</title>
-      <link>https://mozanunal.com/tags/static-site-generator/</link>
-      <pubDate>Thu, 27 Jul 2017 10:48:00 +0000</pubDate>
-      <guid>https://mozanunal.com/tags/static-site-generator/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Microphone Verilog</title>
       <link>https://mozanunal.com/tags/microphone-verilog/</link>
       <pubDate>Thu, 20 Jul 2017 23:14:00 +0000</pubDate>
@@ -680,20 +652,6 @@
       <description></description>
     </item>
     <item>
-      <title>Pwm</title>
-      <link>https://mozanunal.com/tags/pwm/</link>
-      <pubDate>Sat, 19 Nov 2016 23:05:00 +0000</pubDate>
-      <guid>https://mozanunal.com/tags/pwm/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Rustik Ampul</title>
-      <link>https://mozanunal.com/tags/rustik-ampul/</link>
-      <pubDate>Sat, 19 Nov 2016 23:05:00 +0000</pubDate>
-      <guid>https://mozanunal.com/tags/rustik-ampul/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Arm Cortex M3</title>
       <link>https://mozanunal.com/tags/arm-cortex-m3/</link>
       <pubDate>Tue, 08 Nov 2016 15:53:00 +0000</pubDate>
@@ -845,13 +803,6 @@
       <link>https://mozanunal.com/tags/opencv/</link>
       <pubDate>Sat, 04 Jun 2016 19:50:00 +0000</pubDate>
       <guid>https://mozanunal.com/tags/opencv/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>SimpleCV</title>
-      <link>https://mozanunal.com/tags/simplecv/</link>
-      <pubDate>Sun, 01 May 2016 20:23:00 +0000</pubDate>
-      <guid>https://mozanunal.com/tags/simplecv/</guid>
       <description></description>
     </item>
     <item>
@@ -1051,27 +1002,6 @@
       <description></description>
     </item>
     <item>
-      <title>360 Servo</title>
-      <link>https://mozanunal.com/tags/360-servo/</link>
-      <pubDate>Wed, 26 Aug 2015 16:48:00 +0000</pubDate>
-      <guid>https://mozanunal.com/tags/360-servo/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>All Terrain Rover</title>
-      <link>https://mozanunal.com/tags/all-terrain-rover/</link>
-      <pubDate>Wed, 26 Aug 2015 16:48:00 +0000</pubDate>
-      <guid>https://mozanunal.com/tags/all-terrain-rover/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Arduino Projeleri</title>
-      <link>https://mozanunal.com/tags/arduino-projeleri/</link>
-      <pubDate>Wed, 26 Aug 2015 16:48:00 +0000</pubDate>
-      <guid>https://mozanunal.com/tags/arduino-projeleri/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>ESC</title>
       <link>https://mozanunal.com/tags/esc/</link>
       <pubDate>Wed, 19 Aug 2015 18:42:00 +0000</pubDate>
@@ -1160,6 +1090,13 @@
       <link>https://mozanunal.com/tags/arduino-mpu6050/</link>
       <pubDate>Sat, 04 Jul 2015 03:30:00 +0000</pubDate>
       <guid>https://mozanunal.com/tags/arduino-mpu6050/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Arduino Projeleri</title>
+      <link>https://mozanunal.com/tags/arduino-projeleri/</link>
+      <pubDate>Sat, 04 Jul 2015 03:30:00 +0000</pubDate>
+      <guid>https://mozanunal.com/tags/arduino-projeleri/</guid>
       <description></description>
     </item>
     <item>
@@ -1279,13 +1216,6 @@
       <link>https://mozanunal.com/tags/opencv-3-boyutlu-g%C3%B6rme/</link>
       <pubDate>Tue, 31 Mar 2015 06:55:00 +0000</pubDate>
       <guid>https://mozanunal.com/tags/opencv-3-boyutlu-g%C3%B6rme/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Robot</title>
-      <link>https://mozanunal.com/tags/robot/</link>
-      <pubDate>Mon, 23 Mar 2015 02:09:00 +0000</pubDate>
-      <guid>https://mozanunal.com/tags/robot/</guid>
       <description></description>
     </item>
     <item>
@@ -1762,20 +1692,6 @@
       <link>https://mozanunal.com/tags/object-tracking/</link>
       <pubDate>Mon, 29 Sep 2014 15:54:00 +0000</pubDate>
       <guid>https://mozanunal.com/tags/object-tracking/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Android Kontrol</title>
-      <link>https://mozanunal.com/tags/android-kontrol/</link>
-      <pubDate>Sun, 21 Sep 2014 03:57:00 +0000</pubDate>
-      <guid>https://mozanunal.com/tags/android-kontrol/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Ses Kontrollü Robotik El</title>
-      <link>https://mozanunal.com/tags/ses-kontroll%C3%BC-robotik-el/</link>
-      <pubDate>Sun, 21 Sep 2014 03:57:00 +0000</pubDate>
-      <guid>https://mozanunal.com/tags/ses-kontroll%C3%BC-robotik-el/</guid>
       <description></description>
     </item>
     <item>

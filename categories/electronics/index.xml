@@ -160,17 +160,6 @@ Son yıllarda hobi elektroniği inanılmaz bir hızla gelişti. Şüphesiz bu h�
 &lt;p&gt;Bu projemde nasıl elimizde kalan fazla hoparlörleri bluetooth speakera dönüştürebileceğinizden bahsedeceğim. Geçen yaz bir arkadaşımın 5 +1 ses sisteminin kuvvetlendirici kutusu yanmış böyle olunca da hoparlörler boşa çıkmış ben de bir projede kullanırım diyerek kenara ayırdım. Aklıma sonradan bunları bluetooth hoparlöre dönüştürmek geldi. Direk ses cihazı olarak görünen bluetooth ses alıcılarını araştırmaya başladım. Bir kaç model bulsam da yaklaşık 10 W olan bu hoparlörleri sürecek kadar güç çıkışı vermiyorlardı. Bu nedenle projeye bir de kuvvetlendirici ekledim. Kuvvetlendirici  olarak PAM8610 seçtim. Kendisi bir class D güç kuvvetlendiricisi yani en verimli olanlarından. Yüksek verini sayesinde çok az enerji ısıya dönüşüyor ve soğutucu metal parçaya vb ihtiyaç duymuyor. Yaptığım proje ile bu hoparlörleri, bluetooth üzerinden ya da doğrudan kablo ile ses çıkışlarına bağlanabilecek duruma getirmiş oluyorum.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>[TR] Rustik Ampul Gece Lambası Yapımı</title>
-      <link>https://mozanunal.com/2016/11/rustik-ampul-gece-lambas-yapm/</link>
-      <pubDate>Sat, 19 Nov 2016 23:05:00 +0000</pubDate>
-      <guid>https://mozanunal.com/2016/11/rustik-ampul-gece-lambas-yapm/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Merhaba Arkadaşlar,&lt;/strong&gt;&lt;br&gt;
-Bu yazımda odam için yaptığım gece lambasından bahsedeceğim.Yazının başından belirtmek isterim projenin yapım aşamaları yüksek gerilimle uğraşmak gerektiriyor. Bu yüzden yeterli bilgi ve deneyimi olmayanlar için tehlikeli olabilir, kendilerinin denememelerini öneririm.
-Lambanın son hali aşağıdaki gibi devre temel olarak bi anahtar ve bir lambalar için dimmer düğmesinin devresini içeriyor.&lt;/p&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://2.bp.blogspot.com/-4DDX_lqYDlo/WDBnXDOjYMI/AAAAAAAAehc/_FWN6h2aW9Q8r5m6KY1mcrWcCKG6yobtACKgB/s720/IMG_20161116_105346.jpg&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Gerekli ilk malzememiz rustik ampul. Benim ampulümün duyu e 27 ve full parlaklıkta kendisi 40w harcıyor. Bu yünden çıkardığı ışık açısından verimliliğinin çok kötü olduğunu söyleyebilirim fakat genelde aydınlatmadan ziyade dekorasyon amacıyla kullanılıyorlar.&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>[TR] STM32 Mikroişlemci Dünyasına Giriş</title>
       <link>https://mozanunal.com/2016/11/stm32-mikroislemci-dunyasna-giris/</link>
       <pubDate>Tue, 08 Nov 2016 15:53:00 +0000</pubDate>
@@ -331,14 +320,6 @@ Fare                                     2$&lt;br&gt;
 &lt;strong&gt;Toplam:                             110$&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
     <item>
-      <title>[TR] All Terrain Rover Version 2.0</title>
-      <link>https://mozanunal.com/2015/08/all-terrain-rover-version-20/</link>
-      <pubDate>Wed, 26 Aug 2015 16:48:00 +0000</pubDate>
-      <guid>https://mozanunal.com/2015/08/all-terrain-rover-version-20/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;
-Bu yazımda eski bir robotumun 2. versiyonunu size tanıtmak istiyorum. Bu robotumun 1. versiyonunu daha önce yapmıştım. Yeni versiyonunda robotumuzun boyu neredeyse 2 katına çıktı. Santimetreye 5 kg tork verebilen, 360 dönebilmesi icin modifiye edilmiş servolar kullandim. Ağırlığı yaklaşık 300 gram bu sayede oldukca atik bir robot oldu. Geçen robota benzer tel+ silikon ayak sistemi kullandim. Aynı zamanda bazı yapisal yenilikler de var. Ana isketeleti oluşturan ataçları değiştirdim bu sayede çok daha dayanıklı oldu ve süspansiyon etkisi yaratacak şekilde büktüm. Silikon uçları ise naylon eldivenden parmaklar kesip onunla kapladım amacım sürtünmeyi arttırmaktı Geçen robottaki gibi ağırlık merkezi önüne doğru bu sayede yüksek tırmanma kabiliyetine sahip olmuş oluyor. Robot ters geldigi anda kendini düzeltme özelliğine sahip bunu da yine yüksek torklu motorlarına ve agırlık merkezine borçlu. Robotun elektronik kısmı için hala pek bir şey yapmadım. Bluetooth kontrollü veya wifi kontrollü yapmayı düşünüyorum. Şimdilik bir arduino var üzerinde ve motorların hızlarını kontrol edebiliyorum. Aşağıda projeden kısa bir tanıtım videosu bulabilirsiniz iyi seyirler.&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>[TR] Fırçalı motorlar için ESC Yapımı</title>
       <link>https://mozanunal.com/2015/08/frcal-motorlar-icin-esc-yapm/</link>
       <pubDate>Wed, 19 Aug 2015 18:42:00 +0000</pubDate>
@@ -399,14 +380,6 @@ Bu yazımda her yerde temin edilebilecek ve maliyetsiz malzemelerle nasıl mini 
       <description>&lt;p&gt;&lt;strong&gt;Merhaba Arkadaşlar,&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Bugün size Arduino Due ile yaptığım osiloskop bahsedeceğim. Arduino Dueyi seçmemin bir kaç nedeni var tabi. Arduino Duede standart Arduinoların 8 bitlik Atmega işlemcilerinden farklı olarak 32 bitlik Arm Cortex M3 var. Bu işlemcinin 84 Mhzlik saat hızı bu proje için elverişli kılıyor.&lt;/p&gt;
 &lt;p&gt;Osiloskop projesine başlarken amacım Due ile mümkün olan en yüksek örnekleme hızlı osiloskobu yapmaktı. İlk olarak arduinonun standart AnalogRead() fonksiyonunu denedim. Bir örnek alma süresi 40 uS kadar sürdü. Daha sonra &lt;a href=&#34;https://frenki.net/2013/10/fast-analogread-with-arduino-due/&#34;&gt;bu bağlantıyı&lt;/a&gt; buldum ve oradaki ayarları Duenin ADCsine uyguladım. Osiloskobun son kodu aşağıdaki gibidir. Bu kod sayesinde ADClere direk registerlar.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>[TR] All Terrain Rover Version 1.00</title>
-      <link>https://mozanunal.com/2015/03/all-terrain-rover-version100/</link>
-      <pubDate>Mon, 23 Mar 2015 02:09:00 +0000</pubDate>
-      <guid>https://mozanunal.com/2015/03/all-terrain-rover-version100/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Bugünkü yazımda, uzun süreli bir geliştirme düşündüğüm All Terrain Rover projemin ilk denemesini sizlerle paylaşıyorum. Bu isim için oldukça basit bir başlangıç oldu tabi ama malzemelerim gelene kadar bir deneme yapayım diyerek yola çıktım ve ortaya çıkan sonuç beni bile şaşırttı. Robotumun şimdilik hiç bir kontrolü yok sadece pili takıp bırakıyorum. ATR&amp;rsquo;nin gövdesi hafif ve dayanıklı olması için karbon bir plakadan yapıldı. Ayakları ataç ve silikondan yapıldı bu sayede esnek ve maksimum sürtünmeyi sağlıyor. Motor olarak 2 adet, 360 derece dönmesi için modifiye edilmiş servo (1.8kg*cm torklu) kullanıldı.Yüksek tork tırmanma olayının artırmasını sağladı. ATR&amp;rsquo; yi bir kaç farklı zeminlerde ve engellerle denedim. Sonuçlarla alakalı video ve ATR&amp;rsquo;nin resimleri aşağıdadır.&lt;/p&gt;</description>
     </item>
     <item>
       <title>[TR] HC-SR501 PIR Sensörü</title>
@@ -587,14 +560,6 @@ Bu yazımda size, daha önceden yapıp (lise yıllarımda), bloğa koymak icin t
 &lt;li&gt;sağlanan çıkışa bağlı olan transistör kontrol edilir. Yüksek ses gelirse transistör aktifleşir ve rölenin çalışmasını sağlar.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Projenin tanıtım videosu ve devresinin çizimi aşağıdadır. Tekrar görüşmek üzere&amp;hellip;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>[TR] Ses Kontrollü Robotik El</title>
-      <link>https://mozanunal.com/2014/09/ses-kontrollu-robotik-el/</link>
-      <pubDate>Sun, 21 Sep 2014 03:57:00 +0000</pubDate>
-      <guid>https://mozanunal.com/2014/09/ses-kontrollu-robotik-el/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar!&lt;/strong&gt;&lt;br&gt;
-Uzun bir aradan sonra bu yazımda &amp;ldquo;Ses Kontrollü Robotik El&amp;rdquo; projemden bahsetmek istiyorum. Bu proje tamamen hobi amaçlı bir projedir. Mekanik parçaları, çevreden bulduğum malzemelerden, elektronik kısmı ise çinden aldığım Arduino, HC-06 Bluetooth modulü ve 5 adet servo ile yapmaya çalıştım. Sesle kontrol işini sağlamak için ise android tabanlı bir telefon gerekmektedir. Ses kontrolü için ayrı bir modül eklemememin sebebi ise herkesin akıllı telefona sahip olduğu şu zamanda ekstra maliyetten kaçmaktır. Buradan projenin tanıtım videosunu seyredebilirsiniz. Projelerin teknik detayları yazının devamındadır.&lt;/p&gt;</description>
     </item>
     <item>
       <title>[TR] İlk Yayın</title>
