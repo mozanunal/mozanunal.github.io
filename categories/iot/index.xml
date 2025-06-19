@@ -9,7 +9,7 @@
       <url>https://mozanunal.com/images/papermod-cover.png</url>
       <link>https://mozanunal.com/images/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.147.7</generator>
+    <generator>Hugo -- 0.147.8</generator>
     <language>en</language>
     <copyright>mozanunal</copyright>
     <lastBuildDate>Wed, 26 Feb 2020 22:36:00 +0000</lastBuildDate>
@@ -20,15 +20,18 @@
       <pubDate>Wed, 26 Feb 2020 22:36:00 +0000</pubDate>
       <guid>https://mozanunal.com/2020/02/micropython-mqtt-stream/</guid>
       <description>&lt;h1 id=&#34;micropython-mqtt-streamer&#34;&gt;Micropython Mqtt Streamer&lt;/h1&gt;
-&lt;p&gt;Hello everyone,
-I have developed a micropython code to stream accelerometer data over mqtt. Also I have created a tool to visualize the data which is transferred from remote MQTT device which is executing micropython code.&lt;/p&gt;
+&lt;p&gt;Hello everyone, I have developed a micropython code to stream accelerometer data
+over mqtt. Also I have created a tool to visualize the data which is transferred
+from remote MQTT device which is executing micropython code.&lt;/p&gt;
 &lt;h2 id=&#34;demo&#34;&gt;Demo&lt;/h2&gt;
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
       &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube-nocookie.com/embed/5v9RwN818p8?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;&gt;&lt;/iframe&gt;
     &lt;/div&gt;
 
 &lt;h2 id=&#34;development&#34;&gt;Development&lt;/h2&gt;
-&lt;p&gt;The first thing which I tried with micropython is connecting ESP8266 to a WiFi. I have tried the following script which I found from the official documentation of the micropython.&lt;/p&gt;</description>
+&lt;p&gt;The first thing which I tried with micropython is connecting ESP8266 to a WiFi.
+I have tried the following script which I found from the official documentation
+of the micropython.&lt;/p&gt;</description>
     </item>
     <item>
       <title>[TR] En Basit IOT Bulut Sistemi: Google Forms</title>
@@ -36,9 +39,18 @@ I have developed a micropython code to stream accelerometer data over mqtt. Also
       <pubDate>Tue, 17 Apr 2018 21:24:57 +0000</pubDate>
       <guid>https://mozanunal.com/2018/04/google-docs-data-collection/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Bugün basit, ilginç ve kullanışlı bir proje ile karşınızdayım. Bulut tabanlı programlar oldukça populer oldu son zamanlarda. Ben bütün ofis programı ihtiyaçlarımı google&amp;rsquo;in çevrimiçi programlarıyla karşılıyorum. Google form da anket yapmanızı sağlayan bu araçlardan biri. Bu aracın olağan kullanımı anket yapmaktır. Bu projede bambaşka bir şey için kullanacağız: IOT sistemler için basit bulut sistemi.&lt;/p&gt;
-&lt;p&gt;Şöyle ki normalde anket için yapılmış bu form sistemini IOT cihazımızdan buluta veri göndermek için kullanacağız. Bu sistem sayesinde çok fazla uğraş vermeden cihazımızı uzaktan takip edebiliyor ve verilerini izleyebiliyor olacağız.
-Hatta direk olarak excel sistemine aktarılacağı için direk oradan analiz bile edebiliriz. Birden fazla cihazlı sistemler bile kurmak mümkün görünüyor. Online olarak takip etmek istediğimiz şeyler olduğunda kullanılabilir gibi gözüküyor.&lt;/p&gt;</description>
+&lt;p&gt;Bugün basit, ilginç ve kullanışlı bir proje ile karşınızdayım. Bulut tabanlı
+programlar oldukça populer oldu son zamanlarda. Ben bütün ofis programı
+ihtiyaçlarımı google&amp;rsquo;in çevrimiçi programlarıyla karşılıyorum. Google form da
+anket yapmanızı sağlayan bu araçlardan biri. Bu aracın olağan kullanımı anket
+yapmaktır. Bu projede bambaşka bir şey için kullanacağız: IOT sistemler için
+basit bulut sistemi.&lt;/p&gt;
+&lt;p&gt;Şöyle ki normalde anket için yapılmış bu form sistemini IOT cihazımızdan buluta
+veri göndermek için kullanacağız. Bu sistem sayesinde çok fazla uğraş vermeden
+cihazımızı uzaktan takip edebiliyor ve verilerini izleyebiliyor olacağız. Hatta
+direk olarak excel sistemine aktarılacağı için direk oradan analiz bile
+edebiliriz. Birden fazla cihazlı sistemler bile kurmak mümkün görünüyor. Online
+olarak takip etmek istediğimiz şeyler olduğunda kullanılabilir gibi gözüküyor.&lt;/p&gt;</description>
     </item>
     <item>
       <title>[TR] Micropython Nedir?</title>
@@ -46,9 +58,25 @@ Hatta direk olarak excel sistemine aktarılacağı için direk oradan analiz bil
       <pubDate>Wed, 14 Mar 2018 21:29:02 +0000</pubDate>
       <guid>https://mozanunal.com/2018/03/micropython-1516117222475/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Bildiğiniz üzere gömülü sistemlerde programlama C ile yapılır. Bunun sebebi makine diline en yakın dil olması bu nedenle sistem kaynaklarını az kullanarak programlar geliştirilebilmesi ve gömülü sistemdeki donanımları kolay programlanabilmesidir. Fakat buna rağmen işlemcilerin de güçlenmesiyle ve ihtiyaçların da değişmesiyle farklı diller ile programlama yapabilmek için farklı denemeler yapılmaktadır. Daha önce ESP8266 için scripting dili kullanma denemeleri olmuştu. Bir ara Lua dili ile programlanabiliyordu. Hatta bir ara beklediğimden çok daha popüler hale gelmişti. Lua dili bilmediğim için o firmware test etme şansım olmadı. Fakat yakın zamanda benzer bir projenin favori programlama dilim olan python ile de yapıldığını gördüm. ESP8266&amp;rsquo;nın python ile programlanabildiğini görünce dayanamadım. Bu projenin ismi &lt;strong&gt;micropython&lt;/strong&gt; ve  denediğimde micropython firmware oldukça hoşuma gitti o yüzden hakkında bir şeyler yazmak istedim.
-&lt;img alt=&#34;upython&#34; loading=&#34;lazy&#34; src=&#34;https://mozanunal.com/images/1516117467411.jpg&#34;&gt;
-Micropython bir &lt;strong&gt;kickstarter&lt;/strong&gt; projesi olarak çıkmış ortaya. İlk olarak Stm32f4 boardları için yapılmış. &lt;strong&gt;Amacı mikroişlemciler üzerinde python çalıştırmak ve python shell mantığıyla prototipleme yapabilmek.&lt;/strong&gt; Bildiğiniz üzere python en büyük eksilerinden biri yüksek ram harcaması. Bu sorunu çözmek için bütün standart python kütüphanleri micropython diye yeni bir yapıya portlanmış ve flashda ve ramda kapladığı alan sorunları çözülmeye çalışılınmış.&lt;/p&gt;</description>
+&lt;p&gt;Bildiğiniz üzere gömülü sistemlerde programlama C ile yapılır. Bunun sebebi
+makine diline en yakın dil olması bu nedenle sistem kaynaklarını az kullanarak
+programlar geliştirilebilmesi ve gömülü sistemdeki donanımları kolay
+programlanabilmesidir. Fakat buna rağmen işlemcilerin de güçlenmesiyle ve
+ihtiyaçların da değişmesiyle farklı diller ile programlama yapabilmek için
+farklı denemeler yapılmaktadır. Daha önce ESP8266 için scripting dili kullanma
+denemeleri olmuştu. Bir ara Lua dili ile programlanabiliyordu. Hatta bir ara
+beklediğimden çok daha popüler hale gelmişti. Lua dili bilmediğim için o
+firmware test etme şansım olmadı. Fakat yakın zamanda benzer bir projenin favori
+programlama dilim olan python ile de yapıldığını gördüm. ESP8266&amp;rsquo;nın python ile
+programlanabildiğini görünce dayanamadım. Bu projenin ismi &lt;strong&gt;micropython&lt;/strong&gt; ve
+denediğimde micropython firmware oldukça hoşuma gitti o yüzden hakkında bir
+şeyler yazmak istedim. &lt;img alt=&#34;upython&#34; loading=&#34;lazy&#34; src=&#34;https://mozanunal.com/images/1516117467411.jpg&#34;&gt; Micropython bir
+&lt;strong&gt;kickstarter&lt;/strong&gt; projesi olarak çıkmış ortaya. İlk olarak Stm32f4 boardları için
+yapılmış. &lt;strong&gt;Amacı mikroişlemciler üzerinde python çalıştırmak ve python shell
+mantığıyla prototipleme yapabilmek.&lt;/strong&gt; Bildiğiniz üzere python en büyük
+eksilerinden biri yüksek ram harcaması. Bu sorunu çözmek için bütün standart
+python kütüphanleri micropython diye yeni bir yapıya portlanmış ve flashda ve
+ramda kapladığı alan sorunları çözülmeye çalışılınmış.&lt;/p&gt;</description>
     </item>
     <item>
       <title>[TR] Bitcoin Madencileri için Online Dashboard</title>
@@ -56,7 +84,21 @@ Micropython bir &lt;strong&gt;kickstarter&lt;/strong&gt; projesi olarak çıkmı
       <pubDate>Sun, 30 Jul 2017 15:50:00 +0000</pubDate>
       <guid>https://mozanunal.com/2017/07/bitcoin-madencileri-icin-online-dashboard/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Herkes merhabalar,&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Bitcoin son dönemlerin popüler konularından birisi. Aslında genel olarak crypto currency son zamanlarda çok popüler. Peki nedir bu kavramlar? Crypto currency güvenliği şifreleme teknojileriyle sağlanan sanal para birimleridir. Her gün bir yeni bir tür crypto currency ortaya çıkıyor. Bunlar arasında en geçerli olanı ise bitcoin. Sanırım popülerliği en eskilerinden biri olmasından ve anlık olarak üretimi sınırlayabilen ilki olmasından geliyor. Bahsetmek istediğim 3. kavram ise bit coin mining: Yüksek hesaplama gücü kullanarak bitcoin üretebilmeniz mümkün. Bitcoin alışverişlerinin geçerli olması için bir şifre ile onaylanması gerekiyor. Bu şifreyi de bir hash çözerek oluşturuyorsunuz ve bunun karşılığında sistem sizi bitcoin ile ödüllendiriyor. Bu amaçla bir sürü insan sağlan ekran kartları alıp bitcoin tarlaları kurdular ve bu işten para kazanıyorlar. Tabi aklınıza, bitcoinin dünyaya katkısı nedir ya da ne kadar riskli, yatırım yapılır mı? gibi türlü türlü farklı açılardan sorular gelebilir. Ama malesef ben bu konuda uzman değilim ve daha nedir sorusuna bile tam olarak cevap vermek çok zor.&lt;/p&gt;</description>
+&lt;p&gt;Bitcoin son dönemlerin popüler konularından birisi. Aslında genel olarak crypto
+currency son zamanlarda çok popüler. Peki nedir bu kavramlar? Crypto currency
+güvenliği şifreleme teknojileriyle sağlanan sanal para birimleridir. Her gün bir
+yeni bir tür crypto currency ortaya çıkıyor. Bunlar arasında en geçerli olanı
+ise bitcoin. Sanırım popülerliği en eskilerinden biri olmasından ve anlık olarak
+üretimi sınırlayabilen ilki olmasından geliyor. Bahsetmek istediğim 3. kavram
+ise bit coin mining: Yüksek hesaplama gücü kullanarak bitcoin üretebilmeniz
+mümkün. Bitcoin alışverişlerinin geçerli olması için bir şifre ile onaylanması
+gerekiyor. Bu şifreyi de bir hash çözerek oluşturuyorsunuz ve bunun karşılığında
+sistem sizi bitcoin ile ödüllendiriyor. Bu amaçla bir sürü insan sağlan ekran
+kartları alıp bitcoin tarlaları kurdular ve bu işten para kazanıyorlar. Tabi
+aklınıza, bitcoinin dünyaya katkısı nedir ya da ne kadar riskli, yatırım yapılır
+mı? gibi türlü türlü farklı açılardan sorular gelebilir. Ama malesef ben bu
+konuda uzman değilim ve daha nedir sorusuna bile tam olarak cevap vermek çok
+zor.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Internet of Beach</title>
@@ -64,7 +106,14 @@ Micropython bir &lt;strong&gt;kickstarter&lt;/strong&gt; projesi olarak çıkmı
       <pubDate>Tue, 27 Jun 2017 20:18:00 +0000</pubDate>
       <guid>https://mozanunal.com/2017/06/internet-of-beaches/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Bugünkü yazımda arkadaşlarımla katıldığım Nasa Space Apps Challenge 2017 hakkında bir paylaşımda bulunacağım. Bu hackhathon Nasa tarafından dünya genelinde düzenleniyor. 24 saat içerinde önceden yayınlanan sorunlardan birine çözüm bulmamız isteniyor. Tüm dünya genelinde aynı gün bu problemlere çözüm aranıyor. Biz de Koç Üniversitesi IEEE topluluğunca organize edilen yarışmanın İstanbul şubesinden katıldık. Öncellikle şunu söylemem gerek organizasyon oldukça güzeldi, hiç bir aksaklık yaşanmadan çok keyifli ve eğlenceli bir 24 saat yaşadık. Burdan IEEE Koç ailesine teşekkürlerimi iletiyorum.&lt;/p&gt;</description>
+&lt;p&gt;Bugünkü yazımda arkadaşlarımla katıldığım Nasa Space Apps Challenge 2017
+hakkında bir paylaşımda bulunacağım. Bu hackhathon Nasa tarafından dünya
+genelinde düzenleniyor. 24 saat içerinde önceden yayınlanan sorunlardan birine
+çözüm bulmamız isteniyor. Tüm dünya genelinde aynı gün bu problemlere çözüm
+aranıyor. Biz de Koç Üniversitesi IEEE topluluğunca organize edilen yarışmanın
+İstanbul şubesinden katıldık. Öncellikle şunu söylemem gerek organizasyon
+oldukça güzeldi, hiç bir aksaklık yaşanmadan çok keyifli ve eğlenceli bir 24
+saat yaşadık. Burdan IEEE Koç ailesine teşekkürlerimi iletiyorum.&lt;/p&gt;</description>
     </item>
     <item>
       <title>[TR] WPF ile Ev Otomasyonu Arayüzü</title>
@@ -72,7 +121,14 @@ Micropython bir &lt;strong&gt;kickstarter&lt;/strong&gt; projesi olarak çıkmı
       <pubDate>Thu, 09 Jun 2016 04:45:00 +0000</pubDate>
       <guid>https://mozanunal.com/2016/06/wpf-ile-ev-otomasyonu-arayuzu/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;br&gt;
-Bu yazımda .NET platformunun bir teknolojisi olan WPF kullanarak ev otomasyonu kontrol paneli yapmayı anlatacağım. Yaptığım bu projenin başlıca işlevi şudur; 5 farklı sensörden bulunulan ortamın sıcaklığı, nemi, zehirli gaz durumu, ortamda canlı olup olmadığı, ortamda yağış olup olmadığı Arduino yardımıyla alınır ve bu sensor dataları C# arayüzünde gösterilir. Eğer onay kutusu işaretlenirse istenmeyen bir durumda (gaz sızıntısı, eve hırsız girmesi, yağmur için kurulabilir.) program uyarı olarak girilen adrese bir adet mail gönderir.&lt;a href=&#34;https://drive.google.com/file/d/0B5j__Lyt9ozbVTRIOVFVcVVWX3c/view?usp=sharing&#34;&gt;Projenin Arduino ve C# kaynak kodunu buradan indirebilirsiniz.&lt;/a&gt;&lt;/p&gt;</description>
+Bu yazımda .NET platformunun bir teknolojisi olan WPF kullanarak ev otomasyonu
+kontrol paneli yapmayı anlatacağım. Yaptığım bu projenin başlıca işlevi şudur; 5
+farklı sensörden bulunulan ortamın sıcaklığı, nemi, zehirli gaz durumu, ortamda
+canlı olup olmadığı, ortamda yağış olup olmadığı Arduino yardımıyla alınır ve bu
+sensor dataları C# arayüzünde gösterilir. Eğer onay kutusu işaretlenirse
+istenmeyen bir durumda (gaz sızıntısı, eve hırsız girmesi, yağmur için
+kurulabilir.) program uyarı olarak girilen adrese bir adet mail
+gönderir.&lt;a href=&#34;https://drive.google.com/file/d/0B5j__Lyt9ozbVTRIOVFVcVVWX3c/view?usp=sharing&#34;&gt;Projenin Arduino ve C# kaynak kodunu buradan indirebilirsiniz.&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>[TR] ESP8266 ile Kişisel Meteoroloji İstasyonu</title>
@@ -80,7 +136,16 @@ Bu yazımda .NET platformunun bir teknolojisi olan WPF kullanarak ev otomasyonu 
       <pubDate>Wed, 30 Sep 2015 02:51:00 +0000</pubDate>
       <guid>https://mozanunal.com/2015/09/esp8266-ile-kisisel-meteoroloji/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Bugünkü yazımda ESP8266 Wifi modülünün kullanımına yönelik yaptığım uygulamayı anlatacağım. Bu modülü daha önceki &lt;a href=&#34;https://mozanunal.com/2015/03/esp8266-modulu-html-server/&#34;&gt;şu yazımda&lt;/a&gt; anlatmıştım. Ucuz fiyatına rağmen çok yetenekli bir modül. O yazımda ESP8266 Access Point olarak kullanılmıştı.Bu yazımdaki uygulamamda, hali hazırda var olan wifi ağına da bağlanabilecek. Bu sayede wifi olan yerlerde direk wifi üzerinden verilere ulaşılabilinirken, wifi çekmediği yerlerde ESP8266&amp;rsquo;nın kendi oluşturduğu Access Point üzerinden ulaşabilecek. Bilgilere istersek web browser üzerinden direk IP adresini yazarak, istersek aşağıda linkini verdiğim kendi yazdığım android programını kullanarak ulaşabileceğiz.&lt;/p&gt;</description>
+&lt;p&gt;Bugünkü yazımda ESP8266 Wifi modülünün kullanımına yönelik yaptığım uygulamayı
+anlatacağım. Bu modülü daha önceki
+&lt;a href=&#34;https://mozanunal.com/2015/03/esp8266-modulu-html-server/&#34;&gt;şu yazımda&lt;/a&gt;
+anlatmıştım. Ucuz fiyatına rağmen çok yetenekli bir modül. O yazımda ESP8266
+Access Point olarak kullanılmıştı.Bu yazımdaki uygulamamda, hali hazırda var
+olan wifi ağına da bağlanabilecek. Bu sayede wifi olan yerlerde direk wifi
+üzerinden verilere ulaşılabilinirken, wifi çekmediği yerlerde ESP8266&amp;rsquo;nın kendi
+oluşturduğu Access Point üzerinden ulaşabilecek. Bilgilere istersek web browser
+üzerinden direk IP adresini yazarak, istersek aşağıda linkini verdiğim kendi
+yazdığım android programını kullanarak ulaşabileceğiz.&lt;/p&gt;</description>
     </item>
     <item>
       <title>[TR] ESP8266 Modulü Web Server</title>
@@ -88,7 +153,10 @@ Bu yazımda .NET platformunun bir teknolojisi olan WPF kullanarak ev otomasyonu 
       <pubDate>Thu, 12 Mar 2015 00:49:00 +0000</pubDate>
       <guid>https://mozanunal.com/2015/03/esp8266-modulu-html-server/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Merhaba arkadaşlar,&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Bugünkü yazımda ESP8266 modüllerinden bahsetmek istiyorum. Bu modül seri port üzerinden haberleşen wifi modülü. Fiyatı yaklaşık 5 $ özelliklerini gördüğünüz fiyatından çok daha fazlasını hakkettiğini göreceksiniz. Özelliklerine geçecek olursak;&lt;/p&gt;
+&lt;p&gt;Bugünkü yazımda ESP8266 modüllerinden bahsetmek istiyorum. Bu modül seri port
+üzerinden haberleşen wifi modülü. Fiyatı yaklaşık 5 $ özelliklerini gördüğünüz
+fiyatından çok daha fazlasını hakkettiğini göreceksiniz. Özelliklerine geçecek
+olursak;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;802.11 b/g/n desteği&lt;/p&gt;

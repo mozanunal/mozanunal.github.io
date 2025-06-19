@@ -9,7 +9,7 @@
       <url>https://mozanunal.com/images/papermod-cover.png</url>
       <link>https://mozanunal.com/images/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.147.7</generator>
+    <generator>Hugo -- 0.147.8</generator>
     <language>en</language>
     <copyright>mozanunal</copyright>
     <lastBuildDate>Tue, 08 Nov 2016 15:53:00 +0000</lastBuildDate>
@@ -20,7 +20,17 @@
       <pubDate>Tue, 08 Nov 2016 15:53:00 +0000</pubDate>
       <guid>https://mozanunal.com/2016/11/stm32-mikroislemci-dunyasna-giris/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;br&gt;
-Bu yazımda yeni bir alana hızlıca bir giriş yapıyorum. Zaman zaman projelerimizde 8 bitlik atmel veya pic işlemcilerin beklentiyi karşılamadığı oluyor. Böyle durumlar için ST Microelectronics firmasının STM32 isimli 32 bitlik işlemcilerini önerebilirim. 32 Bit işlemciler için en çok kaynak bulanabilecek işlemci takip ettiğim kadarıyla. ST firması çoğu gelişitme aracını da ücretsiz olarak sağlıyor. Bu yazıda tanıtacağım kartlar Arm Cortex M3 mimarisi tabanlı geliştirme kartlarıdır. Peki bu çekirdeği neden seçtim? Bir cümleyle özetlemek gerekirse 8 bitlik islemcilere bariz üstünlük sağlayan ve projelerin pek çoğu için yeterli özelliklere sahip olan en uygun fiyatlı işlemci. Geliştirme kartı olmadan sadece işlemci 1 - 2 dolar gibi çok iyi bir fiyata sahip. Özelliklerine aşağıdan ulaşabilirsiniz.&lt;/p&gt;</description>
+Bu yazımda yeni bir alana hızlıca bir giriş yapıyorum. Zaman zaman
+projelerimizde 8 bitlik atmel veya pic işlemcilerin beklentiyi karşılamadığı
+oluyor. Böyle durumlar için ST Microelectronics firmasının STM32 isimli 32
+bitlik işlemcilerini önerebilirim. 32 Bit işlemciler için en çok kaynak
+bulanabilecek işlemci takip ettiğim kadarıyla. ST firması çoğu gelişitme aracını
+da ücretsiz olarak sağlıyor. Bu yazıda tanıtacağım kartlar Arm Cortex M3
+mimarisi tabanlı geliştirme kartlarıdır. Peki bu çekirdeği neden seçtim? Bir
+cümleyle özetlemek gerekirse 8 bitlik islemcilere bariz üstünlük sağlayan ve
+projelerin pek çoğu için yeterli özelliklere sahip olan en uygun fiyatlı
+işlemci. Geliştirme kartı olmadan sadece işlemci 1 - 2 dolar gibi çok iyi bir
+fiyata sahip. Özelliklerine aşağıdan ulaşabilirsiniz.&lt;/p&gt;</description>
     </item>
     <item>
       <title>[TR] 5$ Logic Analyzer</title>
@@ -28,8 +38,15 @@ Bu yazımda yeni bir alana hızlıca bir giriş yapıyorum. Zaman zaman projeler
       <pubDate>Sun, 27 Dec 2015 04:03:00 +0000</pubDate>
       <guid>https://mozanunal.com/2015/12/5-logic-analyzer/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar&lt;/strong&gt;,&lt;/p&gt;
-&lt;p&gt;Bu yazımda 5 $ dolara aldığım Saleae marka logic analyzerın (aslında orjinal ürün değil aldığım, o ürünün klonu) incelemesini paylaşmak istiyorum. Bu ürünü seçmemin nedeni fiyat performans oranını çok beğenmem ve dijital elektronikle uğraşan herkesin vazgeçilmezlerinden biri olacağını düşünmem.&lt;/p&gt;
-&lt;p&gt;Öncelikle logic analzer nedir ile başlayalım. Logic analyzer, belli süre aralıklarında bir sinyali örnekleyerek oradaki sinyal seviyesinin binary olarak kaydedilmesini ve incelenebilmesini sağlayan alettir. Aynı zamanda bazılarında gelen bu binary verileri işleyip farklı protokoller kullanarak çözebilme özelliği vardır.&lt;/p&gt;</description>
+&lt;p&gt;Bu yazımda 5 $ dolara aldığım Saleae marka logic analyzerın (aslında orjinal
+ürün değil aldığım, o ürünün klonu) incelemesini paylaşmak istiyorum. Bu ürünü
+seçmemin nedeni fiyat performans oranını çok beğenmem ve dijital elektronikle
+uğraşan herkesin vazgeçilmezlerinden biri olacağını düşünmem.&lt;/p&gt;
+&lt;p&gt;Öncelikle logic analzer nedir ile başlayalım. Logic analyzer, belli süre
+aralıklarında bir sinyali örnekleyerek oradaki sinyal seviyesinin binary olarak
+kaydedilmesini ve incelenebilmesini sağlayan alettir. Aynı zamanda bazılarında
+gelen bu binary verileri işleyip farklı protokoller kullanarak çözebilme
+özelliği vardır.&lt;/p&gt;</description>
     </item>
     <item>
       <title>[TR] 8051 Entegresi İle Assembly Programlamaya Giriş</title>
@@ -37,11 +54,20 @@ Bu yazımda yeni bir alana hızlıca bir giriş yapıyorum. Zaman zaman projeler
       <pubDate>Thu, 05 Nov 2015 05:25:00 +0000</pubDate>
       <guid>https://mozanunal.com/2015/11/8051-entegresi-ile-assembly/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;br&gt;
-       Bu yazdımda ilk mikroişlemcilerden biri olan 8051 mikrokontrolcüsü üzerinden assembly dili ve mikroişlemci nedir nasıl çalışır bu konulara giriş yapmak istiyorum. Başlamadan önce benim de kullanacağım 8051 entegresi simülasyon programını önermek istiyorum. Programın ismi EdSim51. İlkönce mikroişlemcilerle alakalı temel bir kaç kavramla başlayalım.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;ROM(Read Only Memory):&lt;/strong&gt; Temel olarak, belli bir miktarda bilginin kalıcı olarak yazıldığı bellektir**.** Bilgi saklamak için&lt;br&gt;
+       Bu yazdımda ilk mikroişlemcilerden biri olan 8051 mikrokontrolcüsü
+üzerinden assembly dili ve mikroişlemci nedir nasıl çalışır bu konulara giriş
+yapmak istiyorum. Başlamadan önce benim de kullanacağım 8051 entegresi
+simülasyon programını önermek istiyorum. Programın ismi EdSim51. İlkönce
+mikroişlemcilerle alakalı temel bir kaç kavramla başlayalım.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;ROM(Read Only Memory):&lt;/strong&gt; Temel olarak, belli bir miktarda bilginin kalıcı
+olarak yazıldığı bellektir**.** Bilgi saklamak için&lt;br&gt;
 &lt;strong&gt;EEPROM:&lt;/strong&gt; ROM&amp;rsquo;un yeniden yazılabilir halidir.&lt;br&gt;
-&lt;strong&gt;RAM(Random Access Memory):&lt;/strong&gt; Bilgi saklamak için elektriğe ihtiyaç duyar. CPU veri işlemek için kullandığı bellek tipi RAM&amp;rsquo;dir.&lt;br&gt;
-&lt;strong&gt;Registers:&lt;/strong&gt; CPU registerları verileri geçici olarak saklamak için kullanılır. 8051 entegresinde bir tane data çeşidi vardır. O da 8 bittir. Eğer 8 bitten büyük datalarla işlem yapılmak istenirse data 8 bitlik parçalara ayrılmalıdır. 8051&amp;rsquo;de en çok kullanılar registerlar aşağıdaki gibidir.&lt;/p&gt;</description>
+&lt;strong&gt;RAM(Random Access Memory):&lt;/strong&gt; Bilgi saklamak için elektriğe ihtiyaç duyar. CPU
+veri işlemek için kullandığı bellek tipi RAM&amp;rsquo;dir.&lt;br&gt;
+&lt;strong&gt;Registers:&lt;/strong&gt; CPU registerları verileri geçici olarak saklamak için kullanılır.
+8051 entegresinde bir tane data çeşidi vardır. O da 8 bittir. Eğer 8 bitten
+büyük datalarla işlem yapılmak istenirse data 8 bitlik parçalara ayrılmalıdır.
+8051&amp;rsquo;de en çok kullanılar registerlar aşağıdaki gibidir.&lt;/p&gt;</description>
     </item>
     <item>
       <title>[TR] PIC İçin In Circuit Serial Programming (ICSP)</title>
@@ -49,8 +75,14 @@ Bu yazımda yeni bir alana hızlıca bir giriş yapıyorum. Zaman zaman projeler
       <pubDate>Sat, 31 Jan 2015 20:34:00 +0000</pubDate>
       <guid>https://mozanunal.com/2015/01/pic-icin-in-circuit-serial/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Bugünkü yazımda ICSP olarak kısaltıllan &amp;ldquo;In Circuit Serial Programing&amp;quot;ten bahsedeceğim. Türkçeye devre içerisinde programlama olarak çevrilebilir. Oldukça avantajlı bir programlama şeklidir. Özellikle Pic programlarken sıkça kullanılır. Devresi hazır hale getirilmiş lehimlenmiş Picleri bu yöntem ile devreden sökmeden programlayabiliriz.PIC KIT 2, ICSP
-programlama için en  çok kullanılan modullerden biridir. Ben de onu kullandım, kullandığım Pic ise PIC16f877a&amp;rsquo;dır. Bağlantılar ise okla işaretletli yönden diğer tarafa doğru şu şekildedir;&lt;/p&gt;
+&lt;p&gt;Bugünkü yazımda ICSP olarak kısaltıllan &amp;ldquo;In Circuit Serial Programing&amp;quot;ten
+bahsedeceğim. Türkçeye devre içerisinde programlama olarak çevrilebilir. Oldukça
+avantajlı bir programlama şeklidir. Özellikle Pic programlarken sıkça
+kullanılır. Devresi hazır hale getirilmiş lehimlenmiş Picleri bu yöntem ile
+devreden sökmeden programlayabiliriz.PIC KIT 2, ICSP programlama için en  çok
+kullanılan modullerden biridir. Ben de onu kullandım, kullandığım Pic ise
+PIC16f877a&amp;rsquo;dır. Bağlantılar ise okla işaretletli yönden diğer tarafa doğru şu
+şekildedir;&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;MCRL(VPP)&lt;/li&gt;
 &lt;li&gt;VDD&lt;/li&gt;
@@ -59,7 +91,10 @@ programlama için en  çok kullanılan modullerden biridir. Ben de onu kulland�
 &lt;li&gt;ICSPCLK/PGK&lt;/li&gt;
 &lt;li&gt;Auxiliary&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;Programınızı pic için geliştirilmiş bir dilde yazmanız gerekiyor. Seçeneklerinizden bazıları, Pic C, Pic Basic Pro, Assembly, Mikro C. Bu yazdığımız programı derleyip .hex formatına çeviriyoruz. Başka bir program kullanarak da derlediğimiz .hex formatındaki dosyaları Pic&amp;rsquo;e aktarıyoruz.&lt;/p&gt;</description>
+&lt;p&gt;Programınızı pic için geliştirilmiş bir dilde yazmanız gerekiyor.
+Seçeneklerinizden bazıları, Pic C, Pic Basic Pro, Assembly, Mikro C. Bu
+yazdığımız programı derleyip .hex formatına çeviriyoruz. Başka bir program
+kullanarak da derlediğimiz .hex formatındaki dosyaları Pic&amp;rsquo;e aktarıyoruz.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

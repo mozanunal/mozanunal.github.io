@@ -9,7 +9,7 @@
       <url>https://mozanunal.com/images/papermod-cover.png</url>
       <link>https://mozanunal.com/images/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.147.7</generator>
+    <generator>Hugo -- 0.147.8</generator>
     <language>en</language>
     <copyright>mozanunal</copyright>
     <lastBuildDate>Fri, 09 Jan 2015 23:35:00 +0000</lastBuildDate>
@@ -20,7 +20,23 @@
       <pubDate>Fri, 09 Jan 2015 23:35:00 +0000</pubDate>
       <guid>https://mozanunal.com/2015/01/sdr-ile-ucaklarn-yaynlarndan-yerlerini/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Merhabalar!&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Bugünkü yazımda SDR ile uçaklardan veri alıp onları haritada takip etmeyi anlatacağım. Bunun için gerekli olan yazılımlar ADSBsharp ve ADSBScope yazılımlarıdır. Ben donanım olarak 10 $ Çin&amp;rsquo;den aldığım SDR&amp;rsquo;yi kullandım. Anten olarak ise 5 TL&amp;rsquo;lik TV anteni kullandık. Bu anten tabi ki bu iş için uygun anten değil. Çalışacağımız frekans 1090 Mhz benim antenimle sadece yakın çevredeki uçaklardan veri almak mümkün. En kısa zamanda antenlerle ilgili bir yazı yayınlayacağım o zamana kadar &lt;a href=&#34;https://www.rtl-sdr.com/adsb-aircraft-radar-with-rtl-sdr/&#34;&gt;şurayı inceleyebilirsiniz&lt;/a&gt;. Yapacağımız iş temel olarak söyle: Uçaklar uçarken koordinantları, rotaları vb şeklinde ADSB diye kısaltılan bir bilgilendirme dataları yollayarak uçarlar. Bizim SDR ile yaptığımız şey 1090 Mhz sinyalleri alıp onları decode etmek. Decode işlemi için ADSBSharp (RTL 1090 alternatifidir.) yazılımını kullanabilirsiniz. Daha sonra decode edilen data port üzerinden başka bir programa aktarılır. Bu program ile elde edilen veriler bir arayüze aktarılır ve uçak harita üzerinde gösterilir. Haritada gösterme işi için ADSBScope yazılıımını kullandım. Aşağıda yazılımların nasıl kullanıldığını anlatığım videoyu paylaşıyorum 2 adet fotoğrafla beraber. Görüşmek üzere&amp;hellip;&lt;/p&gt;</description>
+&lt;p&gt;Bugünkü yazımda SDR ile uçaklardan veri alıp onları haritada takip etmeyi
+anlatacağım. Bunun için gerekli olan yazılımlar ADSBsharp ve ADSBScope
+yazılımlarıdır. Ben donanım olarak 10 $ Çin&amp;rsquo;den aldığım SDR&amp;rsquo;yi kullandım. Anten
+olarak ise 5 TL&amp;rsquo;lik TV anteni kullandık. Bu anten tabi ki bu iş için uygun anten
+değil. Çalışacağımız frekans 1090 Mhz benim antenimle sadece yakın çevredeki
+uçaklardan veri almak mümkün. En kısa zamanda antenlerle ilgili bir yazı
+yayınlayacağım o zamana kadar
+&lt;a href=&#34;https://www.rtl-sdr.com/adsb-aircraft-radar-with-rtl-sdr/&#34;&gt;şurayı inceleyebilirsiniz&lt;/a&gt;.
+Yapacağımız iş temel olarak söyle: Uçaklar uçarken koordinantları, rotaları vb
+şeklinde ADSB diye kısaltılan bir bilgilendirme dataları yollayarak uçarlar.
+Bizim SDR ile yaptığımız şey 1090 Mhz sinyalleri alıp onları decode etmek.
+Decode işlemi için ADSBSharp (RTL 1090 alternatifidir.) yazılımını
+kullanabilirsiniz. Daha sonra decode edilen data port üzerinden başka bir
+programa aktarılır. Bu program ile elde edilen veriler bir arayüze aktarılır ve
+uçak harita üzerinde gösterilir. Haritada gösterme işi için ADSBScope
+yazılıımını kullandım. Aşağıda yazılımların nasıl kullanıldığını anlatığım
+videoyu paylaşıyorum 2 adet fotoğrafla beraber. Görüşmek üzere&amp;hellip;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

@@ -9,7 +9,7 @@
       <url>https://mozanunal.com/images/papermod-cover.png</url>
       <link>https://mozanunal.com/images/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.147.7</generator>
+    <generator>Hugo -- 0.147.8</generator>
     <language>en</language>
     <copyright>mozanunal</copyright>
     <lastBuildDate>Wed, 23 Jan 2019 23:45:00 +0000</lastBuildDate>
@@ -20,9 +20,11 @@
       <pubDate>Wed, 23 Jan 2019 23:45:00 +0000</pubDate>
       <guid>https://mozanunal.com/2019/01/simpledsp-iir-feature/</guid>
       <description>&lt;h1 id=&#34;simpledsp&#34;&gt;&lt;a href=&#34;https://github.com/mozanunal/SimpleDSP&#34;&gt;SimpleDSP&lt;/a&gt;&lt;/h1&gt;
-&lt;p&gt;&lt;a href=&#34;https://github.com/mozanunal/SimpleDSP&#34;&gt;SimpleDSP&lt;/a&gt; is a basic DSP library which is for Arduino and most of the microcontrollers which can be programmed in C/C++&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/mozanunal/SimpleDSP&#34;&gt;SimpleDSP&lt;/a&gt; is a basic DSP library which
+is for Arduino and most of the microcontrollers which can be programmed in C/C++&lt;/p&gt;
 &lt;h2 id=&#34;performance&#34;&gt;Performance:&lt;/h2&gt;
-&lt;p&gt;Here is some examples for its performance. Actually it is not optimized for performance. Its main focuses are portability and education.&lt;/p&gt;
+&lt;p&gt;Here is some examples for its performance. Actually it is not optimized for
+performance. Its main focuses are portability and education.&lt;/p&gt;
 &lt;h3 id=&#34;arduino-nano&#34;&gt;Arduino Nano&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;FFT 16 points: 2 ms&lt;/li&gt;

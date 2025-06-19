@@ -9,7 +9,7 @@
       <url>https://mozanunal.com/images/papermod-cover.png</url>
       <link>https://mozanunal.com/images/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.147.7</generator>
+    <generator>Hugo -- 0.147.8</generator>
     <language>en</language>
     <copyright>mozanunal</copyright>
     <lastBuildDate>Sun, 04 Sep 2016 20:16:00 +0000</lastBuildDate>
@@ -20,7 +20,16 @@
       <pubDate>Sun, 04 Sep 2016 20:16:00 +0000</pubDate>
       <guid>https://mozanunal.com/2016/09/ack-kaynak-yazlm-lisans-turleri-ve/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;br&gt;
-       Yazılım dünyasında son zamanlarda artan bir &amp;ldquo;Açık Kaynak&amp;rdquo; çılgınlığı var. Hobi amaçlı bu işi yapanlardan bu konuyla alakalı en büyük şirketlere ve kuruluşlara kadar bir çok kişi veya kuruluş yazılımlarını &amp;ldquo;açık kaynaklı&amp;rdquo; olarak yayıyor. Peki bu yazılımları kullanmak istediğimiz veya kendi yazılımımızı açık kaynaklı olarak dağıtmak istediğimizde sınırlarımız ve sorumluluklarımız neler? İşte bu noktada açık kaynaklı yazılımların lisansları devreye giriyor. Bazıları bir çok şeyi serbest bırakırken, bazıları ticari projelerde kullanılmasına izin vermiyor, bazıları ise yazılımın değiştirilmesine olanak tanımıyor. İşte bu farklar ve sorumlulukları bu yazımda özetlemeye çalıştım. Sırayla popüler açık kaynak yazılım lisanslarını tek tek inceleyeceğiz.&lt;/p&gt;</description>
+       Yazılım dünyasında son zamanlarda artan bir &amp;ldquo;Açık Kaynak&amp;rdquo; çılgınlığı var.
+Hobi amaçlı bu işi yapanlardan bu konuyla alakalı en büyük şirketlere ve
+kuruluşlara kadar bir çok kişi veya kuruluş yazılımlarını &amp;ldquo;açık kaynaklı&amp;rdquo; olarak
+yayıyor. Peki bu yazılımları kullanmak istediğimiz veya kendi yazılımımızı açık
+kaynaklı olarak dağıtmak istediğimizde sınırlarımız ve sorumluluklarımız neler?
+İşte bu noktada açık kaynaklı yazılımların lisansları devreye giriyor. Bazıları
+bir çok şeyi serbest bırakırken, bazıları ticari projelerde kullanılmasına izin
+vermiyor, bazıları ise yazılımın değiştirilmesine olanak tanımıyor. İşte bu
+farklar ve sorumlulukları bu yazımda özetlemeye çalıştım. Sırayla popüler açık
+kaynak yazılım lisanslarını tek tek inceleyeceğiz.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

@@ -9,7 +9,7 @@
       <url>https://mozanunal.com/images/papermod-cover.png</url>
       <link>https://mozanunal.com/images/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.147.7</generator>
+    <generator>Hugo -- 0.147.8</generator>
     <language>en</language>
     <copyright>mozanunal</copyright>
     <lastBuildDate>Sat, 25 Apr 2015 03:03:00 +0000</lastBuildDate>
@@ -20,7 +20,14 @@
       <pubDate>Sat, 25 Apr 2015 03:03:00 +0000</pubDate>
       <guid>https://mozanunal.com/2015/04/processing-ile-artrlms-gerceklik/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Merhaba Arkadaşlar,&lt;/strong&gt;&lt;br&gt;
-Bugünkü yazımda NyARToolkit&amp;rsquo;ten bahsedeceğim. Bu toolkit sayesinde kameradan aldığımız görüntüler üzerine 3 Boyutlu nesneler yerleştirebiliyoruz. İstediğimiz 3 boyutlu grafik hatta animasyon yerleştirilebilir. Google Glass tarzı giyilebilir teknolojilerle daha yaratıcı uygulamalar yapılabilir. Simülasyon ve oyun dünyası için çeşitli uygulamalar geliştirilebilir. Hatta hologramlar yapmanın şimdilik en gerçekleştirilebilir yolu olarak gözüküyor. Toolkit bir çok programlama diliyle kullanılabiliyor. Ben Processing ile kullandım basit olduğu için. Toolkiti kullandığım şöyle bir tanıtım videosu hazırladım:&lt;/p&gt;</description>
+Bugünkü yazımda NyARToolkit&amp;rsquo;ten bahsedeceğim. Bu toolkit sayesinde kameradan
+aldığımız görüntüler üzerine 3 Boyutlu nesneler yerleştirebiliyoruz. İstediğimiz
+3 boyutlu grafik hatta animasyon yerleştirilebilir. Google Glass tarzı
+giyilebilir teknolojilerle daha yaratıcı uygulamalar yapılabilir. Simülasyon ve
+oyun dünyası için çeşitli uygulamalar geliştirilebilir. Hatta hologramlar
+yapmanın şimdilik en gerçekleştirilebilir yolu olarak gözüküyor. Toolkit bir çok
+programlama diliyle kullanılabiliyor. Ben Processing ile kullandım basit olduğu
+için. Toolkiti kullandığım şöyle bir tanıtım videosu hazırladım:&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

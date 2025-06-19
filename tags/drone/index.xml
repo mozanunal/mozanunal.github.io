@@ -9,7 +9,7 @@
       <url>https://mozanunal.com/images/papermod-cover.png</url>
       <link>https://mozanunal.com/images/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.147.7</generator>
+    <generator>Hugo -- 0.147.8</generator>
     <language>en</language>
     <copyright>mozanunal</copyright>
     <lastBuildDate>Tue, 07 Feb 2017 23:55:00 +0000</lastBuildDate>
@@ -20,9 +20,21 @@
       <pubDate>Tue, 07 Feb 2017 23:55:00 +0000</pubDate>
       <guid>https://mozanunal.com/2017/02/multikopterler-icin-otopilot-yapmak/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Merhaba arkadaşlar,&lt;/strong&gt;&lt;br&gt;
-      Bugünkü yazımda geçen senelerde üzerinde uzun zaman harcadığım fakat tamamlayamadığım bir konu olan otopilot yapmak üzerine edindiğim tecrübeleri anlatmak istiyorum. Yazıya başlamadan önce bu çalışmaların tamamını beraber yaptığım &lt;strong&gt;Bahadır Gökçeaslan&lt;/strong&gt; teşekkür etmeyi bir borç bilirim.&lt;/p&gt;
+      Bugünkü yazımda geçen senelerde üzerinde uzun zaman harcadığım fakat
+tamamlayamadığım bir konu olan otopilot yapmak üzerine edindiğim tecrübeleri
+anlatmak istiyorum. Yazıya başlamadan önce bu çalışmaların tamamını beraber
+yaptığım &lt;strong&gt;Bahadır Gökçeaslan&lt;/strong&gt; teşekkür etmeyi bir borç bilirim.&lt;/p&gt;
 &lt;p&gt;&lt;img alt=&#34;SimplePilotlogoPNG.png&#34; loading=&#34;lazy&#34; src=&#34;https://github.com/mozanunal/SimplePilot/blob/master/LOGO/SimplePilotlogoPNG.png?raw=true&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Evet otopilot aslında benim anlatacağım bölüme kıyasla biraz fazla geniş bir kavram oldu. Zira malesef proje uçuş kontrolcüsü aşamalarında kaldı. Bir soru ile başlayalım. Bir uçuş kontrolcüsü nedir? Bir uçuş kontrolcüsü temel olarak havada uçan bir aracın yere göre açılarının istenilen şekilde olmasını sağlayan sensör ve hareketli mekanizmalar bütünüdür. Aslında yere göre açılarla sınırlamak çok mantıklı değil. Bir hava aracının yükseliğinin sabit olması veya istenilen hızda istenilen konumda kalmasını sağlamak da bunun işidir. Fakat bu projede, bir Quadcopter uçuş kontrolcüsü olarak tasarlanmış olan bu yapıda amaç quadcopterin yere göre açılarını kumandadan gelen girdilere göre kontrol etmekti.&lt;/p&gt;</description>
+&lt;p&gt;Evet otopilot aslında benim anlatacağım bölüme kıyasla biraz fazla geniş bir
+kavram oldu. Zira malesef proje uçuş kontrolcüsü aşamalarında kaldı. Bir soru
+ile başlayalım. Bir uçuş kontrolcüsü nedir? Bir uçuş kontrolcüsü temel olarak
+havada uçan bir aracın yere göre açılarının istenilen şekilde olmasını sağlayan
+sensör ve hareketli mekanizmalar bütünüdür. Aslında yere göre açılarla
+sınırlamak çok mantıklı değil. Bir hava aracının yükseliğinin sabit olması veya
+istenilen hızda istenilen konumda kalmasını sağlamak da bunun işidir. Fakat bu
+projede, bir Quadcopter uçuş kontrolcüsü olarak tasarlanmış olan bu yapıda amaç
+quadcopterin yere göre açılarını kumandadan gelen girdilere göre kontrol
+etmekti.&lt;/p&gt;</description>
     </item>
     <item>
       <title>[TR] İTÜNOM Takımı</title>
@@ -30,10 +42,19 @@
       <pubDate>Wed, 27 Jan 2016 01:01:00 +0000</pubDate>
       <guid>https://mozanunal.com/2016/01/itunom-takm/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;2014 yılının Nisan ayında arkadaşlarımla beraber İstanbul Teknik Üniversitesi bünyesinde İTÜNOM Otonom Hava Araçları Takımını kurduk. 2 Senedir aktif olarak çalışmalarımıza devam ediyoruz. Amerikanın Maryland Eyaletinde düzenlenmekte olan Student Unmanned Air System yarışmasına 2015 yılında katıldık 2016 yılında da katılmak için hazırlanıyoruz.&lt;/p&gt;
-&lt;p&gt;Takımımızda şu an 10 kişiyiz. 3 adet uçak, 2 adet uzay, 2 adet elektronik, 2 adet bilgisayar, 1 adet kontrol mühendisliğinden üyemiz var. Özellikle multidisipliner bir takım olmayı tercih ettik. Bu sayede her üyemizin farklı bir uzmanlığı var ve kolayca farklı sistemleri tasarlayıp bir araya getirebiliyoruz.&lt;br&gt;
+&lt;p&gt;2014 yılının Nisan ayında arkadaşlarımla beraber İstanbul Teknik Üniversitesi
+bünyesinde İTÜNOM Otonom Hava Araçları Takımını kurduk. 2 Senedir aktif olarak
+çalışmalarımıza devam ediyoruz. Amerikanın Maryland Eyaletinde düzenlenmekte
+olan Student Unmanned Air System yarışmasına 2015 yılında katıldık 2016 yılında
+da katılmak için hazırlanıyoruz.&lt;/p&gt;
+&lt;p&gt;Takımımızda şu an 10 kişiyiz. 3 adet uçak, 2 adet uzay, 2 adet elektronik, 2
+adet bilgisayar, 1 adet kontrol mühendisliğinden üyemiz var. Özellikle
+multidisipliner bir takım olmayı tercih ettik. Bu sayede her üyemizin farklı bir
+uzmanlığı var ve kolayca farklı sistemleri tasarlayıp bir araya
+getirebiliyoruz.&lt;br&gt;
 Takımımızın Sitesi: &lt;a href=&#34;https://www.itunom.com/&#34;&gt;https://www.itunom.com/&lt;/a&gt;&lt;br&gt;
-Facebook Sayfası: &lt;a href=&#34;https://www.facebook.com/itunom&#34;&gt;https://www.facebook.com/itunom&lt;/a&gt;&lt;/p&gt;</description>
+Facebook
+Sayfası: &lt;a href=&#34;https://www.facebook.com/itunom&#34;&gt;https://www.facebook.com/itunom&lt;/a&gt;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

@@ -9,7 +9,7 @@
       <url>https://mozanunal.com/images/papermod-cover.png</url>
       <link>https://mozanunal.com/images/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.147.7</generator>
+    <generator>Hugo -- 0.147.8</generator>
     <language>en</language>
     <copyright>mozanunal</copyright>
     <lastBuildDate>Fri, 26 Apr 2019 03:44:00 +0000</lastBuildDate>
@@ -22,11 +22,14 @@
       <description>&lt;h1 id=&#34;manyetik-rezonans-görüntüleme&#34;&gt;Manyetik Rezonans Görüntüleme&lt;/h1&gt;
 &lt;h2 id=&#34;1giriş&#34;&gt;1.Giriş&lt;/h2&gt;
 &lt;p&gt;Normalde vücudumuz RF enerjisine duyarsızdır. Önce veri kaynağımız olan
-protonların RF enerjisi ile uyarılır hale getirilmesi gerekir. Bunun için hasta çok
-güçlü bir manyetik alan içerisine yerleştirilir. Bu manyetik etkiyle protonlar
-manyetik alana uygun şekilde dizilir ve uyarılmaya hazır hale gelirler.
-Kesit alınacak bölgeye RF enerjisi gönderilir. Protonlar bu enerjiyi alır ve
-enerjinin miktarına göre konumlarından saparlar. RF enerjisi kesilir. Protonlar eski konumlarına dönerler. Bu dönüş sürecinde aldıkları enerjiyi bir sinyal şeklinde yayarlar. Bu sinyal kayıt edilerek seçilen alanın Hidrojen yoğunluğuyla alakalı bilgi edinilmiş olur.&lt;/p&gt;</description>
+protonların RF enerjisi ile uyarılır hale getirilmesi gerekir. Bunun için hasta
+çok güçlü bir manyetik alan içerisine yerleştirilir. Bu manyetik etkiyle
+protonlar manyetik alana uygun şekilde dizilir ve uyarılmaya hazır hale
+gelirler. Kesit alınacak bölgeye RF enerjisi gönderilir. Protonlar bu enerjiyi
+alır ve enerjinin miktarına göre konumlarından saparlar. RF enerjisi kesilir.
+Protonlar eski konumlarına dönerler. Bu dönüş sürecinde aldıkları enerjiyi bir
+sinyal şeklinde yayarlar. Bu sinyal kayıt edilerek seçilen alanın Hidrojen
+yoğunluğuyla alakalı bilgi edinilmiş olur.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

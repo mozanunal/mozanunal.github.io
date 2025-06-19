@@ -9,7 +9,7 @@
       <url>https://mozanunal.com/images/papermod-cover.png</url>
       <link>https://mozanunal.com/images/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.147.7</generator>
+    <generator>Hugo -- 0.147.8</generator>
     <language>en</language>
     <copyright>mozanunal</copyright>
     <lastBuildDate>Tue, 17 Apr 2018 21:24:57 +0000</lastBuildDate>
@@ -20,9 +20,18 @@
       <pubDate>Tue, 17 Apr 2018 21:24:57 +0000</pubDate>
       <guid>https://mozanunal.com/2018/04/google-docs-data-collection/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Bugün basit, ilginç ve kullanışlı bir proje ile karşınızdayım. Bulut tabanlı programlar oldukça populer oldu son zamanlarda. Ben bütün ofis programı ihtiyaçlarımı google&amp;rsquo;in çevrimiçi programlarıyla karşılıyorum. Google form da anket yapmanızı sağlayan bu araçlardan biri. Bu aracın olağan kullanımı anket yapmaktır. Bu projede bambaşka bir şey için kullanacağız: IOT sistemler için basit bulut sistemi.&lt;/p&gt;
-&lt;p&gt;Şöyle ki normalde anket için yapılmış bu form sistemini IOT cihazımızdan buluta veri göndermek için kullanacağız. Bu sistem sayesinde çok fazla uğraş vermeden cihazımızı uzaktan takip edebiliyor ve verilerini izleyebiliyor olacağız.
-Hatta direk olarak excel sistemine aktarılacağı için direk oradan analiz bile edebiliriz. Birden fazla cihazlı sistemler bile kurmak mümkün görünüyor. Online olarak takip etmek istediğimiz şeyler olduğunda kullanılabilir gibi gözüküyor.&lt;/p&gt;</description>
+&lt;p&gt;Bugün basit, ilginç ve kullanışlı bir proje ile karşınızdayım. Bulut tabanlı
+programlar oldukça populer oldu son zamanlarda. Ben bütün ofis programı
+ihtiyaçlarımı google&amp;rsquo;in çevrimiçi programlarıyla karşılıyorum. Google form da
+anket yapmanızı sağlayan bu araçlardan biri. Bu aracın olağan kullanımı anket
+yapmaktır. Bu projede bambaşka bir şey için kullanacağız: IOT sistemler için
+basit bulut sistemi.&lt;/p&gt;
+&lt;p&gt;Şöyle ki normalde anket için yapılmış bu form sistemini IOT cihazımızdan buluta
+veri göndermek için kullanacağız. Bu sistem sayesinde çok fazla uğraş vermeden
+cihazımızı uzaktan takip edebiliyor ve verilerini izleyebiliyor olacağız. Hatta
+direk olarak excel sistemine aktarılacağı için direk oradan analiz bile
+edebiliriz. Birden fazla cihazlı sistemler bile kurmak mümkün görünüyor. Online
+olarak takip etmek istediğimiz şeyler olduğunda kullanılabilir gibi gözüküyor.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

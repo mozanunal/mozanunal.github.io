@@ -9,7 +9,7 @@
       <url>https://mozanunal.com/images/papermod-cover.png</url>
       <link>https://mozanunal.com/images/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.147.7</generator>
+    <generator>Hugo -- 0.147.8</generator>
     <language>en</language>
     <copyright>mozanunal</copyright>
     <lastBuildDate>Fri, 02 Jan 2015 22:55:00 +0000</lastBuildDate>
@@ -20,7 +20,17 @@
       <pubDate>Fri, 02 Jan 2015 22:55:00 +0000</pubDate>
       <guid>https://mozanunal.com/2015/01/software-defined-radioya-giris/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar!&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Bugünkü yazımda yeni bir hobimden bahsetmet istiyorum. Yeni hobim, &amp;ldquo;Software defined radio&amp;rdquo;. Bu aslında bir rf modulü, Farkı ise belli frekans aralığında dinleme yapabilmesi. Yani bu sayede farklı frekanslardaki radyo dalgalarını alıp inceleyebilir, çözümleyebilirsiniz. SDR hakkında deneysel bir şeyler yapmak isterseniz en iyi yöntem bilgisayar için ucuz tv alıcılarından almak. Ben Aliexpress sitesinden 10 $ aldım. En ucuz SDR&amp;rsquo;ler genelde &lt;strong&gt;RTL2832U+R820T çip setlidir.&lt;/strong&gt; Benim aldığım modül 25MHz - 1700MHz arası tarama yapabiliyor. Kendi anteni ve kumandasıyla beraber geldi. Genelde bu modullerle gelen antenlerle FMden başka bi şey dinleyebilmek pek mümkün olmuyor. Fakat geliştirilen uygun antenlerle Uluslararası Uzay İstasyonundan(ISS) bile veri alabilmek mümkün. Bunlardan kurulumdan sonra bahsedeceğim.&lt;/p&gt;</description>
+&lt;p&gt;Bugünkü yazımda yeni bir hobimden bahsetmet istiyorum. Yeni hobim, &amp;ldquo;Software
+defined radio&amp;rdquo;. Bu aslında bir rf modulü, Farkı ise belli frekans aralığında
+dinleme yapabilmesi. Yani bu sayede farklı frekanslardaki radyo dalgalarını alıp
+inceleyebilir, çözümleyebilirsiniz. SDR hakkında deneysel bir şeyler yapmak
+isterseniz en iyi yöntem bilgisayar için ucuz tv alıcılarından almak. Ben
+Aliexpress sitesinden 10 $ aldım. En ucuz SDR&amp;rsquo;ler genelde &lt;strong&gt;RTL2832U+R820T çip
+setlidir.&lt;/strong&gt; Benim aldığım modül 25MHz - 1700MHz arası tarama yapabiliyor. Kendi
+anteni ve kumandasıyla beraber geldi. Genelde bu modullerle gelen antenlerle
+FMden başka bi şey dinleyebilmek pek mümkün olmuyor. Fakat geliştirilen uygun
+antenlerle Uluslararası Uzay İstasyonundan(ISS) bile veri alabilmek mümkün.
+Bunlardan kurulumdan sonra bahsedeceğim.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

@@ -9,7 +9,7 @@
       <url>https://mozanunal.com/images/papermod-cover.png</url>
       <link>https://mozanunal.com/images/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.147.7</generator>
+    <generator>Hugo -- 0.147.8</generator>
     <language>en</language>
     <copyright>mozanunal</copyright>
     <lastBuildDate>Thu, 01 Sep 2016 14:26:00 +0000</lastBuildDate>
@@ -20,11 +20,19 @@
       <pubDate>Thu, 01 Sep 2016 14:26:00 +0000</pubDate>
       <guid>https://mozanunal.com/2016/09/pixhawk-otopilot-ve-ozellikleri/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;br&gt;
-        Uzun bir aradan sonra tekrar bir yazı hazırladım. Aslında bu yazıya çok önceden başlamıştım fakat devamını getirmemiştim şimdi tamamlayabildim ancak :). Evet bu yazımda Pixhawk isimli otopilottan bahsetmek istiyorum. Pixhawk açık kaynak kodlu Stm32 tabanlı yazılım tabanı olarak da ArduPilota dayanan bir otopilot modülü. Burada bir yorumda bulunmam gerekirse, açık kaynaklı otopilotlar arasında en başarılısı bana göre. Bu teorimi kanıtlamak için de hemen özelliklerine geçmek istiyorum.&lt;/p&gt;
+        Uzun bir aradan sonra tekrar bir yazı hazırladım. Aslında bu yazıya çok
+önceden başlamıştım fakat devamını getirmemiştim şimdi tamamlayabildim ancak :).
+Evet bu yazımda Pixhawk isimli otopilottan bahsetmek istiyorum. Pixhawk açık
+kaynak kodlu Stm32 tabanlı yazılım tabanı olarak da ArduPilota dayanan bir
+otopilot modülü. Burada bir yorumda bulunmam gerekirse, açık kaynaklı
+otopilotlar arasında en başarılısı bana göre. Bu teorimi kanıtlamak için de
+hemen özelliklerine geçmek istiyorum.&lt;/p&gt;
 &lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://4.bp.blogspot.com/-p4zpkVZrQWU/V8faC6OGbjI/AAAAAAAAc_U/rx-zCY8cZksKXnRpi2GC8lY-b-aB_MA_ACLcB/s640/pic-prod-pixhawk1.jpg&#34;&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;Ana işlemcisi 32 bit Arm Cortex M4 tabanlı ST Microelectronic&amp;rsquo;in bir ürünü( STM32F427 Cortex M4 core with FPU).  Bu işlemci &amp;ldquo;NuttX Real Time Operating System&amp;rdquo; ile kullanılıyor. &lt;/p&gt;</description>
+&lt;p&gt;Ana işlemcisi 32 bit Arm Cortex M4 tabanlı ST Microelectronic&amp;rsquo;in bir ürünü(
+STM32F427 Cortex M4 core with FPU).  Bu işlemci &amp;ldquo;NuttX Real Time Operating
+System&amp;rdquo; ile kullanılıyor. &lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

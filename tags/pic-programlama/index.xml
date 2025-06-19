@@ -9,7 +9,7 @@
       <url>https://mozanunal.com/images/papermod-cover.png</url>
       <link>https://mozanunal.com/images/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.147.7</generator>
+    <generator>Hugo -- 0.147.8</generator>
     <language>en</language>
     <copyright>mozanunal</copyright>
     <lastBuildDate>Sat, 31 Jan 2015 20:34:00 +0000</lastBuildDate>
@@ -20,8 +20,14 @@
       <pubDate>Sat, 31 Jan 2015 20:34:00 +0000</pubDate>
       <guid>https://mozanunal.com/2015/01/pic-icin-in-circuit-serial/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Bugünkü yazımda ICSP olarak kısaltıllan &amp;ldquo;In Circuit Serial Programing&amp;quot;ten bahsedeceğim. Türkçeye devre içerisinde programlama olarak çevrilebilir. Oldukça avantajlı bir programlama şeklidir. Özellikle Pic programlarken sıkça kullanılır. Devresi hazır hale getirilmiş lehimlenmiş Picleri bu yöntem ile devreden sökmeden programlayabiliriz.PIC KIT 2, ICSP
-programlama için en  çok kullanılan modullerden biridir. Ben de onu kullandım, kullandığım Pic ise PIC16f877a&amp;rsquo;dır. Bağlantılar ise okla işaretletli yönden diğer tarafa doğru şu şekildedir;&lt;/p&gt;
+&lt;p&gt;Bugünkü yazımda ICSP olarak kısaltıllan &amp;ldquo;In Circuit Serial Programing&amp;quot;ten
+bahsedeceğim. Türkçeye devre içerisinde programlama olarak çevrilebilir. Oldukça
+avantajlı bir programlama şeklidir. Özellikle Pic programlarken sıkça
+kullanılır. Devresi hazır hale getirilmiş lehimlenmiş Picleri bu yöntem ile
+devreden sökmeden programlayabiliriz.PIC KIT 2, ICSP programlama için en  çok
+kullanılan modullerden biridir. Ben de onu kullandım, kullandığım Pic ise
+PIC16f877a&amp;rsquo;dır. Bağlantılar ise okla işaretletli yönden diğer tarafa doğru şu
+şekildedir;&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;MCRL(VPP)&lt;/li&gt;
 &lt;li&gt;VDD&lt;/li&gt;
@@ -30,7 +36,10 @@ programlama için en  çok kullanılan modullerden biridir. Ben de onu kulland�
 &lt;li&gt;ICSPCLK/PGK&lt;/li&gt;
 &lt;li&gt;Auxiliary&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;Programınızı pic için geliştirilmiş bir dilde yazmanız gerekiyor. Seçeneklerinizden bazıları, Pic C, Pic Basic Pro, Assembly, Mikro C. Bu yazdığımız programı derleyip .hex formatına çeviriyoruz. Başka bir program kullanarak da derlediğimiz .hex formatındaki dosyaları Pic&amp;rsquo;e aktarıyoruz.&lt;/p&gt;</description>
+&lt;p&gt;Programınızı pic için geliştirilmiş bir dilde yazmanız gerekiyor.
+Seçeneklerinizden bazıları, Pic C, Pic Basic Pro, Assembly, Mikro C. Bu
+yazdığımız programı derleyip .hex formatına çeviriyoruz. Başka bir program
+kullanarak da derlediğimiz .hex formatındaki dosyaları Pic&amp;rsquo;e aktarıyoruz.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

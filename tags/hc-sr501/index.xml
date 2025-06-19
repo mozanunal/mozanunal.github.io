@@ -9,7 +9,7 @@
       <url>https://mozanunal.com/images/papermod-cover.png</url>
       <link>https://mozanunal.com/images/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.147.7</generator>
+    <generator>Hugo -- 0.147.8</generator>
     <language>en</language>
     <copyright>mozanunal</copyright>
     <lastBuildDate>Sun, 15 Mar 2015 01:36:00 +0000</lastBuildDate>
@@ -20,8 +20,15 @@
       <pubDate>Sun, 15 Mar 2015 01:36:00 +0000</pubDate>
       <guid>https://mozanunal.com/2015/03/hc-sr501-pir-sensoru/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Merhaba arkadaşlar,&lt;/strong&gt;&lt;br&gt;
-Bugünkü yazımda bir PIR sensörü olan HC-SR501 inceleyeceğiz. PIR sensörünün açılımı Passive Infrared Sensor. Son 4- 5 yılda çok hızlı bir yayılım gösterdi bu sensörler ve insan algılayınca çalışan lambalar, otomatik el kurutma vb makinalar olarak hayatımıza girdi. Modulumüzden bahsetmeden önce PIR sensör nedir onu açıklamak istiyorum. PIR sensör ortamdaki kızılötesi ışınları ölçer.&lt;/p&gt;
-&lt;p&gt;Alıcılarda çok farklı yere doğru odaklanan frensel lensi bulunur bu sayede belli bir alandaki tüm enerji ölçülmüş olur. Canlıların sıcaklığı ortalama 36 derece civarlarında olduğundan merceğin üzerine düşen kızılötesi ışınların toplam enerjisi y ir. Böylece canlı varlığı tespit edilmiş olur.&lt;/p&gt;</description>
+Bugünkü yazımda bir PIR sensörü olan HC-SR501 inceleyeceğiz. PIR sensörünün
+açılımı Passive Infrared Sensor. Son 4- 5 yılda çok hızlı bir yayılım gösterdi
+bu sensörler ve insan algılayınca çalışan lambalar, otomatik el kurutma vb
+makinalar olarak hayatımıza girdi. Modulumüzden bahsetmeden önce PIR sensör
+nedir onu açıklamak istiyorum. PIR sensör ortamdaki kızılötesi ışınları ölçer.&lt;/p&gt;
+&lt;p&gt;Alıcılarda çok farklı yere doğru odaklanan frensel lensi bulunur bu sayede belli
+bir alandaki tüm enerji ölçülmüş olur. Canlıların sıcaklığı ortalama 36 derece
+civarlarında olduğundan merceğin üzerine düşen kızılötesi ışınların toplam
+enerjisi y ir. Böylece canlı varlığı tespit edilmiş olur.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

@@ -9,7 +9,7 @@
       <url>https://mozanunal.com/images/papermod-cover.png</url>
       <link>https://mozanunal.com/images/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.147.7</generator>
+    <generator>Hugo -- 0.147.8</generator>
     <language>en</language>
     <copyright>mozanunal</copyright>
     <lastBuildDate>Tue, 07 Oct 2014 01:28:00 +0000</lastBuildDate>
@@ -20,14 +20,21 @@
       <pubDate>Tue, 07 Oct 2014 01:28:00 +0000</pubDate>
       <guid>https://mozanunal.com/2014/10/alks-ile-lamba-kontrolu/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar!&lt;/strong&gt;&lt;br&gt;
-Bu yazımda size, daha önceden yapıp (lise yıllarımda), bloğa koymak icin tekrar tamir ettiğim bir projemden bahsetmek istiyorum. Projenin ismi &amp;ldquo;Alkış ile lamba kontrolü&amp;rdquo; amacı ise alkış gibi yüksek bir sesle bir röle kontrol etmek. Bu projede, röleye toplam 12 led bağlayıp aydınlatma sağlanmıştır. Devrenin teknik detaylarına gelirsek temel mantığı şöyle;&lt;/p&gt;
+Bu yazımda size, daha önceden yapıp (lise yıllarımda), bloğa koymak icin tekrar
+tamir ettiğim bir projemden bahsetmek istiyorum. Projenin ismi &amp;ldquo;Alkış ile lamba
+kontrolü&amp;rdquo; amacı ise alkış gibi yüksek bir sesle bir röle kontrol etmek. Bu
+projede, röleye toplam 12 led bağlayıp aydınlatma sağlanmıştır. Devrenin teknik
+detaylarına gelirsek temel mantığı şöyle;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;mikrofondan ses sinyali alınır.&lt;/li&gt;
 &lt;li&gt;alınan ses opamp devrelerle yükseltilir.&lt;/li&gt;
-&lt;li&gt;yükseltilen sinyaller 4011 entegresinde işlenerek yüksek ses geldiğinde çıkış sağlanır.&lt;/li&gt;
-&lt;li&gt;sağlanan çıkışa bağlı olan transistör kontrol edilir. Yüksek ses gelirse transistör aktifleşir ve rölenin çalışmasını sağlar.&lt;/li&gt;
+&lt;li&gt;yükseltilen sinyaller 4011 entegresinde işlenerek yüksek ses geldiğinde çıkış
+sağlanır.&lt;/li&gt;
+&lt;li&gt;sağlanan çıkışa bağlı olan transistör kontrol edilir. Yüksek ses gelirse
+transistör aktifleşir ve rölenin çalışmasını sağlar.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Projenin tanıtım videosu ve devresinin çizimi aşağıdadır. Tekrar görüşmek üzere&amp;hellip;&lt;/p&gt;</description>
+&lt;p&gt;Projenin tanıtım videosu ve devresinin çizimi aşağıdadır. Tekrar görüşmek
+üzere&amp;hellip;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

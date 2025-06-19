@@ -9,7 +9,7 @@
       <url>https://mozanunal.com/images/papermod-cover.png</url>
       <link>https://mozanunal.com/images/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.147.7</generator>
+    <generator>Hugo -- 0.147.8</generator>
     <language>en</language>
     <copyright>mozanunal</copyright>
     <lastBuildDate>Tue, 27 Dec 2016 00:59:00 +0000</lastBuildDate>
@@ -20,9 +20,18 @@
       <pubDate>Tue, 27 Dec 2016 00:59:00 +0000</pubDate>
       <guid>https://mozanunal.com/2016/12/eski-bilgisayar-guc-kaynagn-masaustu/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;br&gt;
-       Bugünkü yazımda nasıl eski bilgisayarınızdan kalan güç kaynağınızı elektronik projelerinizde kullanabileceğiniz güç kaynağına dönüştürebileceğinizi anlatacağım. Özellikle yüksek güç gerektiren projelerde farklı voltajlarda yüksek güç sağlayabilen bu güç kaynaklarının oldukça yararlı olabileceğini düşünüyorum. Hemen hemen herkesin de bir şekilde ıskartaya çıkmış bir bilgisayarı vardır. Eğer güç kaynağı sağlamsa sıfır maliyetle kendinize bir güç kaynağı edinmiş olursunuz.&lt;/p&gt;
+       Bugünkü yazımda nasıl eski bilgisayarınızdan kalan güç kaynağınızı
+elektronik projelerinizde kullanabileceğiniz güç kaynağına dönüştürebileceğinizi
+anlatacağım. Özellikle yüksek güç gerektiren projelerde farklı voltajlarda
+yüksek güç sağlayabilen bu güç kaynaklarının oldukça yararlı olabileceğini
+düşünüyorum. Hemen hemen herkesin de bir şekilde ıskartaya çıkmış bir
+bilgisayarı vardır. Eğer güç kaynağı sağlamsa sıfır maliyetle kendinize bir güç
+kaynağı edinmiş olursunuz.&lt;/p&gt;
 &lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://2.bp.blogspot.com/-EXt6RrgC7lg/WGAUWvxMZ9I/AAAAAAAAfKQ/FDJd61MfgYAZ4pKE_46vAyzQHT_AN6evgCKgB/s720/IMG_20161224_190300.jpg&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Benim elimdeki güç kaynağının çıkışlarını aşağıdan görebilirsiniz. Eski bilgisayarımdan kalan 250 W bir güç kaynağı kendisi. Hali hazırda 3.3 V 5V 12 V ve  -12 V çıkışları var. Farklı voltaj ihtiyaçlarına göre regülatörler veya akım koruma devreleri eklenerek güç kaynağı daha işlevsel hale getirilebilir.&lt;/p&gt;</description>
+&lt;p&gt;Benim elimdeki güç kaynağının çıkışlarını aşağıdan görebilirsiniz. Eski
+bilgisayarımdan kalan 250 W bir güç kaynağı kendisi. Hali hazırda 3.3 V 5V 12 V
+ve  -12 V çıkışları var. Farklı voltaj ihtiyaçlarına göre regülatörler veya akım
+koruma devreleri eklenerek güç kaynağı daha işlevsel hale getirilebilir.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

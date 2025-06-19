@@ -9,7 +9,7 @@
       <url>https://mozanunal.com/images/papermod-cover.png</url>
       <link>https://mozanunal.com/images/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.147.7</generator>
+    <generator>Hugo -- 0.147.8</generator>
     <language>en</language>
     <copyright>mozanunal</copyright>
     <lastBuildDate>Mon, 30 Mar 2020 23:45:00 +0000</lastBuildDate>
@@ -55,9 +55,9 @@
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;9 8 7 6 5 4 3 2 1 0
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;It was a little suprising for me at first sight.
-I thought that what the hell is &lt;code&gt;--&amp;gt;&lt;/code&gt; operator.
-After then I understand that it is actually &lt;code&gt;x--&lt;/code&gt; and &lt;code&gt;&amp;gt;&lt;/code&gt;. X compared with 0 (cheked if it is bigger than 0) and then it is decremented by 1.
+&lt;/div&gt;&lt;p&gt;It was a little suprising for me at first sight. I thought that what the hell is
+&lt;code&gt;--&amp;gt;&lt;/code&gt; operator. After then I understand that it is actually &lt;code&gt;x--&lt;/code&gt; and &lt;code&gt;&amp;gt;&lt;/code&gt;. X
+compared with 0 (cheked if it is bigger than 0) and then it is decremented by 1.
 Therefore, this loop can be decoded to this:&lt;/p&gt;</description>
     </item>
   </channel>

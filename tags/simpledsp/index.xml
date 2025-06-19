@@ -9,7 +9,7 @@
       <url>https://mozanunal.com/images/papermod-cover.png</url>
       <link>https://mozanunal.com/images/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.147.7</generator>
+    <generator>Hugo -- 0.147.8</generator>
     <language>en</language>
     <copyright>mozanunal</copyright>
     <lastBuildDate>Thu, 26 Jan 2017 00:13:00 +0000</lastBuildDate>
@@ -20,7 +20,12 @@
       <pubDate>Thu, 26 Jan 2017 00:13:00 +0000</pubDate>
       <guid>https://mozanunal.com/2017/01/simpledsp-gomulu-sistemler-icin-dsp/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Bu yazımda gömülü sistemler için yazdığım sayısal isaret isleme kütüphanesini tanıtacağım. Kütüphanenin tamamını &amp;ldquo;C&amp;rdquo; kullanarak ve harici bir kütüphaneye bağlı kalmadan yazmayı planlıyorum. Böylece diğer mikrokontolcülerde de rahatça kullanılabilecek. Hatta bilgisayar programlarında bile kolayca eklenip derlenebilecek şekilde projeyi tamamlamak istiyorum. Bu kütüphane kapsamında çözüm sağlamak istediğim konular şunlardır.&lt;/p&gt;
+&lt;p&gt;Bu yazımda gömülü sistemler için yazdığım sayısal isaret isleme kütüphanesini
+tanıtacağım. Kütüphanenin tamamını &amp;ldquo;C&amp;rdquo; kullanarak ve harici bir kütüphaneye
+bağlı kalmadan yazmayı planlıyorum. Böylece diğer mikrokontolcülerde de rahatça
+kullanılabilecek. Hatta bilgisayar programlarında bile kolayca eklenip
+derlenebilecek şekilde projeyi tamamlamak istiyorum. Bu kütüphane kapsamında
+çözüm sağlamak istediğim konular şunlardır.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;FFT&lt;/li&gt;
 &lt;li&gt;ters FFT&lt;/li&gt;
@@ -36,7 +41,14 @@
 &lt;li&gt;Farklı islemcilerle performansı&lt;/li&gt;
 &lt;li&gt;Örnek Grafikler&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;gibi kaynakları hazırlamayı planlıyorum. Proje tamamen açık kaynaklı olarak sürdürülecektir. &lt;a href=&#34;https://github.com/mozanunal/SimpleDSP/&#34;&gt;Siz de github üzerinden projenin herhangi bir aşamasına katkıda bulunabilirsiniz.&lt;/a&gt; Projenin ismini &amp;ldquo;SimpleDSP&amp;rdquo; olarak seçtim. Çünkü yapmak istediğim olay Digital Signal Processing olayını gömülü ve gerçek zamanlı sistemlerde kolaylaştırmak ve projelerde basit bir şekilde eklenebilmesini sağlamak. Şu an itibariyle FFT ve ters FFT fonksiyonlarını yazdım arduino kütüphanesi haline getirdim ve örnek kodlarını oluşturdum. Bahsettiğim ayrıntılara aşağıdan ulaşabilirsiniz.&lt;br&gt;
+&lt;p&gt;gibi kaynakları hazırlamayı planlıyorum. Proje tamamen açık kaynaklı olarak
+sürdürülecektir.
+&lt;a href=&#34;https://github.com/mozanunal/SimpleDSP/&#34;&gt;Siz de github üzerinden projenin herhangi bir aşamasına katkıda bulunabilirsiniz.&lt;/a&gt;
+Projenin ismini &amp;ldquo;SimpleDSP&amp;rdquo; olarak seçtim. Çünkü yapmak istediğim olay Digital
+Signal Processing olayını gömülü ve gerçek zamanlı sistemlerde kolaylaştırmak ve
+projelerde basit bir şekilde eklenebilmesini sağlamak. Şu an itibariyle FFT ve
+ters FFT fonksiyonlarını yazdım arduino kütüphanesi haline getirdim ve örnek
+kodlarını oluşturdum. Bahsettiğim ayrıntılara aşağıdan ulaşabilirsiniz.&lt;br&gt;
 &lt;a href=&#34;https://github.com/mozanunal/SimpleDSP/wiki/FFT-IFFT&#34;&gt;https://github.com/mozanunal/SimpleDSP/wiki/FFT-IFFT&lt;/a&gt;&lt;/p&gt;</description>
     </item>
   </channel>

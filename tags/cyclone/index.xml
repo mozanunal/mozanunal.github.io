@@ -9,7 +9,7 @@
       <url>https://mozanunal.com/images/papermod-cover.png</url>
       <link>https://mozanunal.com/images/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.147.7</generator>
+    <generator>Hugo -- 0.147.8</generator>
     <language>en</language>
     <copyright>mozanunal</copyright>
     <lastBuildDate>Mon, 05 Mar 2018 21:48:22 +0000</lastBuildDate>
@@ -19,8 +19,17 @@
       <link>https://mozanunal.com/2018/03/altera-cyclone-4-fpga/</link>
       <pubDate>Mon, 05 Mar 2018 21:48:22 +0000</pubDate>
       <guid>https://mozanunal.com/2018/03/altera-cyclone-4-fpga/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;
-Son yıllarda hobi elektroniği inanılmaz bir hızla gelişti. Şüphesiz bu hızlı gelişmenin mimarı Arduino. Atmelin 8 bitlik işlemcilerini temel alarak tasarlanan bu kart ve programala dili sayesinde insanlar kolayca projeler geliştirmeye ve hobi uygulamaları yapmaya başladılar. Ama Arduinonun ve hatta daha iyi bir mikroişlemcinin de yeterli olmadığı projeler var. Böyle bir ihtiyaç doğduğunda seçenekler kendini geliştirmek isteyenler için çok sıkıntılı hale geliyor. Önceki yazılarımdan birinde STM32 öğrenmeye nasıl başlanır ve proje nasıl oluşturulur onu anlatmıştım. Bu sefer mikroişlemcinin yanı sıra bir fpga üzerine gitmek istiyorum. Mesela yüksek hesaplama gücü ve paralel işlem gerektiren proje yapmak istiyorsunuz ve fgpa öğrenmek istiyorsunuz. Nasıl başlayabilirsiniz onu anlatmak istiyorum.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt; Son yıllarda hobi elektroniği inanılmaz bir hızla
+gelişti. Şüphesiz bu hızlı gelişmenin mimarı Arduino. Atmelin 8 bitlik
+işlemcilerini temel alarak tasarlanan bu kart ve programala dili sayesinde
+insanlar kolayca projeler geliştirmeye ve hobi uygulamaları yapmaya başladılar.
+Ama Arduinonun ve hatta daha iyi bir mikroişlemcinin de yeterli olmadığı
+projeler var. Böyle bir ihtiyaç doğduğunda seçenekler kendini geliştirmek
+isteyenler için çok sıkıntılı hale geliyor. Önceki yazılarımdan birinde STM32
+öğrenmeye nasıl başlanır ve proje nasıl oluşturulur onu anlatmıştım. Bu sefer
+mikroişlemcinin yanı sıra bir fpga üzerine gitmek istiyorum. Mesela yüksek
+hesaplama gücü ve paralel işlem gerektiren proje yapmak istiyorsunuz ve fgpa
+öğrenmek istiyorsunuz. Nasıl başlayabilirsiniz onu anlatmak istiyorum.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

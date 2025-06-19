@@ -9,7 +9,7 @@
       <url>https://mozanunal.com/images/papermod-cover.png</url>
       <link>https://mozanunal.com/images/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.147.7</generator>
+    <generator>Hugo -- 0.147.8</generator>
     <language>en</language>
     <copyright>mozanunal</copyright>
     <lastBuildDate>Fri, 01 Feb 2019 00:45:01 +0000</lastBuildDate>
@@ -19,8 +19,14 @@
       <link>https://mozanunal.com/2019/02/steam-link-on-rpi/</link>
       <pubDate>Fri, 01 Feb 2019 00:45:01 +0000</pubDate>
       <guid>https://mozanunal.com/2019/02/steam-link-on-rpi/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Hello,&lt;/strong&gt;
-Steam Link is software which provides support to Steam to stream screen view of the games to devices which is on same local area network. In this setup, there are 2 devices. First one is the device to run the Steam and the games which act as a server. The second one is the one which runs Steam Link and acts as a client to this server. By using this technology you can play games directly on a device which is connected to the same router. The connection is also 2 way. Thus, control devices such as keyboard, mouse and game controllers can be connected directly to the client device.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;strong&gt;Hello,&lt;/strong&gt; Steam Link is software which provides support to Steam to stream
+screen view of the games to devices which is on same local area network. In this
+setup, there are 2 devices. First one is the device to run the Steam and the
+games which act as a server. The second one is the one which runs Steam Link and
+acts as a client to this server. By using this technology you can play games
+directly on a device which is connected to the same router. The connection is
+also 2 way. Thus, control devices such as keyboard, mouse and game controllers
+can be connected directly to the client device.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

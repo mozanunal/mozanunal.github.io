@@ -9,7 +9,7 @@
       <url>https://mozanunal.com/images/papermod-cover.png</url>
       <link>https://mozanunal.com/images/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.147.7</generator>
+    <generator>Hugo -- 0.147.8</generator>
     <language>en</language>
     <copyright>mozanunal</copyright>
     <lastBuildDate>Tue, 07 Feb 2017 23:55:00 +0000</lastBuildDate>
@@ -20,9 +20,21 @@
       <pubDate>Tue, 07 Feb 2017 23:55:00 +0000</pubDate>
       <guid>https://mozanunal.com/2017/02/multikopterler-icin-otopilot-yapmak/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Merhaba arkadaşlar,&lt;/strong&gt;&lt;br&gt;
-      Bugünkü yazımda geçen senelerde üzerinde uzun zaman harcadığım fakat tamamlayamadığım bir konu olan otopilot yapmak üzerine edindiğim tecrübeleri anlatmak istiyorum. Yazıya başlamadan önce bu çalışmaların tamamını beraber yaptığım &lt;strong&gt;Bahadır Gökçeaslan&lt;/strong&gt; teşekkür etmeyi bir borç bilirim.&lt;/p&gt;
+      Bugünkü yazımda geçen senelerde üzerinde uzun zaman harcadığım fakat
+tamamlayamadığım bir konu olan otopilot yapmak üzerine edindiğim tecrübeleri
+anlatmak istiyorum. Yazıya başlamadan önce bu çalışmaların tamamını beraber
+yaptığım &lt;strong&gt;Bahadır Gökçeaslan&lt;/strong&gt; teşekkür etmeyi bir borç bilirim.&lt;/p&gt;
 &lt;p&gt;&lt;img alt=&#34;SimplePilotlogoPNG.png&#34; loading=&#34;lazy&#34; src=&#34;https://github.com/mozanunal/SimplePilot/blob/master/LOGO/SimplePilotlogoPNG.png?raw=true&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Evet otopilot aslında benim anlatacağım bölüme kıyasla biraz fazla geniş bir kavram oldu. Zira malesef proje uçuş kontrolcüsü aşamalarında kaldı. Bir soru ile başlayalım. Bir uçuş kontrolcüsü nedir? Bir uçuş kontrolcüsü temel olarak havada uçan bir aracın yere göre açılarının istenilen şekilde olmasını sağlayan sensör ve hareketli mekanizmalar bütünüdür. Aslında yere göre açılarla sınırlamak çok mantıklı değil. Bir hava aracının yükseliğinin sabit olması veya istenilen hızda istenilen konumda kalmasını sağlamak da bunun işidir. Fakat bu projede, bir Quadcopter uçuş kontrolcüsü olarak tasarlanmış olan bu yapıda amaç quadcopterin yere göre açılarını kumandadan gelen girdilere göre kontrol etmekti.&lt;/p&gt;</description>
+&lt;p&gt;Evet otopilot aslında benim anlatacağım bölüme kıyasla biraz fazla geniş bir
+kavram oldu. Zira malesef proje uçuş kontrolcüsü aşamalarında kaldı. Bir soru
+ile başlayalım. Bir uçuş kontrolcüsü nedir? Bir uçuş kontrolcüsü temel olarak
+havada uçan bir aracın yere göre açılarının istenilen şekilde olmasını sağlayan
+sensör ve hareketli mekanizmalar bütünüdür. Aslında yere göre açılarla
+sınırlamak çok mantıklı değil. Bir hava aracının yükseliğinin sabit olması veya
+istenilen hızda istenilen konumda kalmasını sağlamak da bunun işidir. Fakat bu
+projede, bir Quadcopter uçuş kontrolcüsü olarak tasarlanmış olan bu yapıda amaç
+quadcopterin yere göre açılarını kumandadan gelen girdilere göre kontrol
+etmekti.&lt;/p&gt;</description>
     </item>
     <item>
       <title>[TR] Multikopterler için PID kontrol</title>
@@ -30,8 +42,21 @@
       <pubDate>Wed, 29 Jul 2015 15:44:00 +0000</pubDate>
       <guid>https://mozanunal.com/2015/07/multikopterler-icin-pid-kontrol/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Bu yazımda PID kontrol algoritmalarından bahsetmek istiyorum. Bu yazıyı yazmamın 2 sebebi var. PID algoritmaları hakkında bir çok yazı okudum fakat coğu akademik ve karmaşık yazılar. Benim amacım anlaşılırlığı ve ayrıntıyı dengeli bir şekilde maximum değerlerinde kullanmak. İkincisi ise bu algoritmanın özel olarak multikopterlerde kullanımını basit bir şekilde açıklayan bir yazıya rastlamadım. Bu yüzden bu yazıyı yazmaya karar verdim.&lt;/p&gt;
-&lt;p&gt;Bir otopilotun en temel 2 bileşeni hava aracının yönelimini tespit eden IMU sensörü ve PID algoritmasıdır. IMU sensörü içinde bir kaç sensör barındırır ve amacı hava aracının 3 boyutlu uzaydaki yönelimini bulmaktır. IMU konusundan &lt;a href=&#34;https://mozanunal.com/2014/11/imu-aclarnn-3-boyutlu-olarak/&#34;&gt;bu yazımda bahsetmiştim&lt;/a&gt;. PID algoritmasının görevi ise temel olarak şöyledir: Yönelimi (3 eksendeki yere göre açılar) sensörler üzerinden alır, istenen açıları da kullanıcıdan alır. Bu ikisi arasındaki farkı en düşük seviyeye düşürmeyi amaçlar. İşte PID algoritmasının görevi bu farkı minimuma indirmek için gerekli motor hız değerlerini hesaplamaktır.&lt;/p&gt;</description>
+&lt;p&gt;Bu yazımda PID kontrol algoritmalarından bahsetmek istiyorum. Bu yazıyı yazmamın
+2 sebebi var. PID algoritmaları hakkında bir çok yazı okudum fakat coğu akademik
+ve karmaşık yazılar. Benim amacım anlaşılırlığı ve ayrıntıyı dengeli bir şekilde
+maximum değerlerinde kullanmak. İkincisi ise bu algoritmanın özel olarak
+multikopterlerde kullanımını basit bir şekilde açıklayan bir yazıya rastlamadım.
+Bu yüzden bu yazıyı yazmaya karar verdim.&lt;/p&gt;
+&lt;p&gt;Bir otopilotun en temel 2 bileşeni hava aracının yönelimini tespit eden IMU
+sensörü ve PID algoritmasıdır. IMU sensörü içinde bir kaç sensör barındırır ve
+amacı hava aracının 3 boyutlu uzaydaki yönelimini bulmaktır. IMU konusundan
+&lt;a href=&#34;https://mozanunal.com/2014/11/imu-aclarnn-3-boyutlu-olarak/&#34;&gt;bu yazımda bahsetmiştim&lt;/a&gt;.
+PID algoritmasının görevi ise temel olarak şöyledir: Yönelimi (3 eksendeki yere
+göre açılar) sensörler üzerinden alır, istenen açıları da kullanıcıdan alır. Bu
+ikisi arasındaki farkı en düşük seviyeye düşürmeyi amaçlar. İşte PID
+algoritmasının görevi bu farkı minimuma indirmek için gerekli motor hız
+değerlerini hesaplamaktır.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

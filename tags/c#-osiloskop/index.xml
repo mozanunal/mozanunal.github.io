@@ -9,7 +9,7 @@
       <url>https://mozanunal.com/images/papermod-cover.png</url>
       <link>https://mozanunal.com/images/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.147.7</generator>
+    <generator>Hugo -- 0.147.8</generator>
     <language>en</language>
     <copyright>mozanunal</copyright>
     <lastBuildDate>Sat, 02 May 2015 01:38:00 +0000</lastBuildDate>
@@ -20,8 +20,16 @@
       <pubDate>Sat, 02 May 2015 01:38:00 +0000</pubDate>
       <guid>https://mozanunal.com/2015/05/arduino-due-osiloskop/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Merhaba Arkadaşlar,&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Bugün size Arduino Due ile yaptığım osiloskop bahsedeceğim. Arduino Dueyi seçmemin bir kaç nedeni var tabi. Arduino Duede standart Arduinoların 8 bitlik Atmega işlemcilerinden farklı olarak 32 bitlik Arm Cortex M3 var. Bu işlemcinin 84 Mhzlik saat hızı bu proje için elverişli kılıyor.&lt;/p&gt;
-&lt;p&gt;Osiloskop projesine başlarken amacım Due ile mümkün olan en yüksek örnekleme hızlı osiloskobu yapmaktı. İlk olarak arduinonun standart AnalogRead() fonksiyonunu denedim. Bir örnek alma süresi 40 uS kadar sürdü. Daha sonra &lt;a href=&#34;https://frenki.net/2013/10/fast-analogread-with-arduino-due/&#34;&gt;bu bağlantıyı&lt;/a&gt; buldum ve oradaki ayarları Duenin ADCsine uyguladım. Osiloskobun son kodu aşağıdaki gibidir. Bu kod sayesinde ADClere direk registerlar.&lt;/p&gt;</description>
+&lt;p&gt;Bugün size Arduino Due ile yaptığım osiloskop bahsedeceğim. Arduino Dueyi
+seçmemin bir kaç nedeni var tabi. Arduino Duede standart Arduinoların 8 bitlik
+Atmega işlemcilerinden farklı olarak 32 bitlik Arm Cortex M3 var. Bu işlemcinin
+84 Mhzlik saat hızı bu proje için elverişli kılıyor.&lt;/p&gt;
+&lt;p&gt;Osiloskop projesine başlarken amacım Due ile mümkün olan en yüksek örnekleme
+hızlı osiloskobu yapmaktı. İlk olarak arduinonun standart AnalogRead()
+fonksiyonunu denedim. Bir örnek alma süresi 40 uS kadar sürdü. Daha sonra
+&lt;a href=&#34;https://frenki.net/2013/10/fast-analogread-with-arduino-due/&#34;&gt;bu bağlantıyı&lt;/a&gt;
+buldum ve oradaki ayarları Duenin ADCsine uyguladım. Osiloskobun son kodu
+aşağıdaki gibidir. Bu kod sayesinde ADClere direk registerlar.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

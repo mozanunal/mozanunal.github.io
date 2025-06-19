@@ -9,7 +9,7 @@
       <url>https://mozanunal.com/images/papermod-cover.png</url>
       <link>https://mozanunal.com/images/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.147.7</generator>
+    <generator>Hugo -- 0.147.8</generator>
     <language>en</language>
     <copyright>mozanunal</copyright>
     <lastBuildDate>Wed, 03 Dec 2014 03:28:00 +0000</lastBuildDate>
@@ -20,7 +20,15 @@
       <pubDate>Wed, 03 Dec 2014 03:28:00 +0000</pubDate>
       <guid>https://mozanunal.com/2014/12/flash-bellege-ubuntu-kurmak/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Merhabalar,&lt;/strong&gt;&lt;br&gt;
-Bugün size flash belleğe ubuntu kurmaktan bahsedeceğim. Open source seven insanlar için Linux her zaman en çekici gelen işletim sistemi olmuştur. Fakat program desteği, driver sorunları derken linux tek işletim sistemi olarak kullanmak oldukça zor bir olay haline geliyor. İşte bunun için çok güzel çözümler var. Bunlardan bir tanesi aynı hard disk üzerine ikinci bir işletim sistemi kurmak. Bu çözüm bana daha zor ve karışık geliyor, benim tercih ettiğim ise bir flash belleğe Ubuntu kurup gerekli zamanlarda bilgisayarı onun üzerinden boot ederek Linuxun özgür dünyasına dalmak. Evet anlatıma geçersem aslında çok basit olduğunu göreceksiniz.&lt;/p&gt;</description>
+Bugün size flash belleğe ubuntu kurmaktan bahsedeceğim. Open source seven
+insanlar için Linux her zaman en çekici gelen işletim sistemi olmuştur. Fakat
+program desteği, driver sorunları derken linux tek işletim sistemi olarak
+kullanmak oldukça zor bir olay haline geliyor. İşte bunun için çok güzel
+çözümler var. Bunlardan bir tanesi aynı hard disk üzerine ikinci bir işletim
+sistemi kurmak. Bu çözüm bana daha zor ve karışık geliyor, benim tercih ettiğim
+ise bir flash belleğe Ubuntu kurup gerekli zamanlarda bilgisayarı onun üzerinden
+boot ederek Linuxun özgür dünyasına dalmak. Evet anlatıma geçersem aslında çok
+basit olduğunu göreceksiniz.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

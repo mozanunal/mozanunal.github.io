@@ -9,7 +9,7 @@
       <url>https://mozanunal.com/images/papermod-cover.png</url>
       <link>https://mozanunal.com/images/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.147.7</generator>
+    <generator>Hugo -- 0.147.8</generator>
     <language>en</language>
     <copyright>mozanunal</copyright>
     <lastBuildDate>Sat, 02 Jan 2016 04:34:00 +0000</lastBuildDate>
@@ -20,9 +20,21 @@
       <pubDate>Sat, 02 Jan 2016 04:34:00 +0000</pubDate>
       <guid>https://mozanunal.com/2016/01/rf-mesafe-hesaplama-exceli/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Merhaba Arkadaşlar,&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Bugünkü yazımda bir radyo modülünün teorik olarak ne kadar uzaklıkta çalışabildiğini hesaplayan projemi paylaşacağım. Amacım haberleşme modülleri seçilirken kolayca karşılaştırmalar yapılabilecek basit bir hesaplama ortamı oluşturmaktı. Bu tarz işler için en uygun program olduğunu düşündüğüm Excel programını kullandım.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.mikrodalgamuhendisi.com/index.php/rf-soru-cevap-anasayfa/90-yeni-baslayanlar-icin-iletisim-mesafesi-hesab&#34;&gt;Öncelikle bu hesabı anlamama şuradaki link çok yardımcı oldu&lt;/a&gt;. Öncelikle onu incelemenizi tavsiye ederim. Oradaki bilgileri kısaca özetleyecek olursam:&lt;/p&gt;
-&lt;p&gt;İlk olarak mesafeyi temel olarak etkilen 2 kavram var. Birincisi vericinin çıkış gücü, ikincisi ise alıcının alış hassasiyeti. Özellikle 2. etken sık sık önemi unutulan konulardan biri. Genelde aktarılan veri akış hızının artmasıyla alış hassasiyeti düşmektedir. Yeterli olacak minimum veri akış hızını seçmek de önemli noktalardan bir tanesidir. Çıkış gücüne anten ve kuvvetlendirici kazançları da eklenir. Bulunan bu değere toplam güç denir. Hesabımızı belirleyen bağıntı ise şöyledir:&lt;/p&gt;</description>
+&lt;p&gt;Bugünkü yazımda bir radyo modülünün teorik olarak ne kadar uzaklıkta
+çalışabildiğini hesaplayan projemi paylaşacağım. Amacım haberleşme modülleri
+seçilirken kolayca karşılaştırmalar yapılabilecek basit bir hesaplama ortamı
+oluşturmaktı. Bu tarz işler için en uygun program olduğunu düşündüğüm Excel
+programını kullandım.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.mikrodalgamuhendisi.com/index.php/rf-soru-cevap-anasayfa/90-yeni-baslayanlar-icin-iletisim-mesafesi-hesab&#34;&gt;Öncelikle bu hesabı anlamama şuradaki link çok yardımcı oldu&lt;/a&gt;.
+Öncelikle onu incelemenizi tavsiye ederim. Oradaki bilgileri kısaca özetleyecek
+olursam:&lt;/p&gt;
+&lt;p&gt;İlk olarak mesafeyi temel olarak etkilen 2 kavram var. Birincisi vericinin çıkış
+gücü, ikincisi ise alıcının alış hassasiyeti. Özellikle 2. etken sık sık önemi
+unutulan konulardan biri. Genelde aktarılan veri akış hızının artmasıyla alış
+hassasiyeti düşmektedir. Yeterli olacak minimum veri akış hızını seçmek de
+önemli noktalardan bir tanesidir. Çıkış gücüne anten ve kuvvetlendirici
+kazançları da eklenir. Bulunan bu değere toplam güç denir. Hesabımızı belirleyen
+bağıntı ise şöyledir:&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

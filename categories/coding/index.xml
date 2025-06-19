@@ -9,7 +9,7 @@
       <url>https://mozanunal.com/images/papermod-cover.png</url>
       <link>https://mozanunal.com/images/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.147.7</generator>
+    <generator>Hugo -- 0.147.8</generator>
     <language>en</language>
     <copyright>mozanunal</copyright>
     <lastBuildDate>Tue, 12 Oct 2021 08:14:07 +0000</lastBuildDate>
@@ -20,7 +20,14 @@
       <pubDate>Tue, 12 Oct 2021 08:14:07 +0000</pubDate>
       <guid>https://mozanunal.com/2021/10/wpctl-1/</guid>
       <description>&lt;p&gt;Hey,&lt;/p&gt;
-&lt;p&gt;Today I will come up with a very minimalistic wallpaper automation tool &lt;a href=&#34;https://github.com/mozanunal/wpctl&#34;&gt;&lt;strong&gt;WPCTL&lt;/strong&gt;&lt;/a&gt;. I spend most of my time on the computer. There are not too many options to have fun with while working on the computer. Interesting and colorful photos are one of the favorite entertainment sources for my daily routine. Therefore, I really like auto wallpaper changer programs which surprises me with different photos. I decided to use one of these programs. However, none of them is fulfiled my requirements. I want a wallpaper changer which should be like:&lt;/p&gt;</description>
+&lt;p&gt;Today I will come up with a very minimalistic wallpaper automation tool
+&lt;a href=&#34;https://github.com/mozanunal/wpctl&#34;&gt;&lt;strong&gt;WPCTL&lt;/strong&gt;&lt;/a&gt;. I spend most of my time on the
+computer. There are not too many options to have fun with while working on the
+computer. Interesting and colorful photos are one of the favorite entertainment
+sources for my daily routine. Therefore, I really like auto wallpaper changer
+programs which surprises me with different photos. I decided to use one of these
+programs. However, none of them is fulfiled my requirements. I want a wallpaper
+changer which should be like:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Rambling On Randomness</title>
@@ -28,22 +35,32 @@
       <pubDate>Fri, 12 Jun 2020 02:41:00 +0000</pubDate>
       <guid>https://mozanunal.com/2020/06/randomness/</guid>
       <description>&lt;h1 id=&#34;what-is-randomness&#34;&gt;What is randomness&lt;/h1&gt;
-&lt;p&gt;According to the Oxford Dictionary, &lt;em&gt;&amp;ldquo;the randomness is the apparent lack of pattern or predictability in events&amp;rdquo;&lt;/em&gt;. Randomness implies &amp;ldquo;Unpredictability&amp;rdquo;.
-To practically illustrated it: if a sequence of numbers is given and you have no way to predict what the next number in the sequence will be - then the sequence is random.
-A single number cannot ever be random. 13…ok…not random.
-But: 1, 3, 5, 7, 9, 11, 13 …the ‘13’ doesn’t seem very random because you could have predicted it with almost complete certainty.&lt;/p&gt;</description>
+&lt;p&gt;According to the Oxford Dictionary, &lt;em&gt;&amp;ldquo;the randomness is the apparent lack of
+pattern or predictability in events&amp;rdquo;&lt;/em&gt;. Randomness implies &amp;ldquo;Unpredictability&amp;rdquo;. To
+practically illustrated it: if a sequence of numbers is given and you have no
+way to predict what the next number in the sequence will be - then the sequence
+is random. A single number cannot ever be random. 13…ok…not random. But: 1, 3,
+5, 7, 9, 11, 13 …the ‘13’ doesn’t seem very random because you could have
+predicted it with almost complete certainty.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Harmonica Note Converter</title>
       <link>https://mozanunal.com/2020/05/harmonica-note-conv/</link>
       <pubDate>Thu, 07 May 2020 23:44:00 +0000</pubDate>
       <guid>https://mozanunal.com/2020/05/harmonica-note-conv/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Harmonica Note Converter&lt;/strong&gt; aims to create a python library to convert notes or tabs for different kind of harmonicas.
-It is based on &lt;a href=&#34;https://github.com/gciruelos/musthe&#34;&gt;musthe&lt;/a&gt;.&lt;/p&gt;
+      <description>&lt;p&gt;&lt;strong&gt;Harmonica Note Converter&lt;/strong&gt; aims to create a python library to convert notes or
+tabs for different kind of harmonicas. It is based on
+&lt;a href=&#34;https://github.com/gciruelos/musthe&#34;&gt;musthe&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://github.com/mozanunal/harmonica-note-converter&#34;&gt;https://github.com/mozanunal/harmonica-note-converter&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;story&#34;&gt;Story&lt;/h2&gt;
-&lt;p&gt;Some of you know that I am an ameteur harmonica player and I love harmonicas. I usually play diatonic harmonicas but last time I have bought a chromatic harmonica, which has quite different tone and it is hard to find music notes for it.&lt;/p&gt;
-&lt;p&gt;I am not the best at playing instruments. However, I am good at coding and music theory. That&amp;rsquo;s why I decide to develop a tool to convert music notes for any instrument to notes for my harmonicas. I also create an modular structure to define new instruments.&lt;/p&gt;</description>
+&lt;p&gt;Some of you know that I am an ameteur harmonica player and I love harmonicas. I
+usually play diatonic harmonicas but last time I have bought a chromatic
+harmonica, which has quite different tone and it is hard to find music notes for
+it.&lt;/p&gt;
+&lt;p&gt;I am not the best at playing instruments. However, I am good at coding and music
+theory. That&amp;rsquo;s why I decide to develop a tool to convert music notes for any
+instrument to notes for my harmonicas. I also create an modular structure to
+define new instruments.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Hash Code 2020</title>
@@ -51,15 +68,22 @@ It is based on &lt;a href=&#34;https://github.com/gciruelos/musthe&#34;&gt;musth
       <pubDate>Tue, 31 Mar 2020 23:00:12 +0000</pubDate>
       <guid>https://mozanunal.com/2020/03/hash-code-2020/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Hello Everyone,&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;I want to share our solution for Google Hash Code 2020. It is the code repo of team titanium-white for Google Hash Code 2020 Online Qualification Round. We have writen our code in Python.&lt;/p&gt;
+&lt;p&gt;I want to share our solution for Google Hash Code 2020. It is the code repo of
+team titanium-white for Google Hash Code 2020 Online Qualification Round. We
+have writen our code in Python.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://github.com/mozanunal/hashcode2020&#34;&gt;Code can be reached from here&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;code&#34;&gt;Code&lt;/h2&gt;
 &lt;p&gt;Basically, the problem class is the backbone of the system.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;It handles the inputs and outputs with functions &lt;code&gt;__init__&lt;/code&gt; and &lt;code&gt;dump&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;It read the input files and creates objects according to that. I think the one of the thing we did well is this &lt;code&gt;__init__&lt;/code&gt; function.
-It create all the objects like books, libraries even if book2score dictionary.&lt;/li&gt;
-&lt;li&gt;It also handles the solving opeartion. It iterate trough the days and get max predicted score from every library available. When the libraries calculating the max pred scores, they get the current state as input. Therefore their predictionsa are more accurate. After the library is selected the state is updated such as day, already scanned books and state of the selected library.&lt;/li&gt;
+&lt;li&gt;It read the input files and creates objects according to that. I think the one
+of the thing we did well is this &lt;code&gt;__init__&lt;/code&gt; function. It create all the
+objects like books, libraries even if book2score dictionary.&lt;/li&gt;
+&lt;li&gt;It also handles the solving opeartion. It iterate trough the days and get max
+predicted score from every library available. When the libraries calculating
+the max pred scores, they get the current state as input. Therefore their
+predictionsa are more accurate. After the library is selected the state is
+updated such as day, already scanned books and state of the selected library.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -235,8 +259,13 @@ It create all the objects like books, libraries even if book2score dictionary.&l
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;p&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;dump&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;solution&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;The Second critical class is &lt;code&gt;Library&lt;/code&gt; class. The vital function in our implementation is predMaxScore. We are doing calculating this with
-&lt;code&gt;total book score / (sign day*sign day)&lt;/code&gt;. Because, during our experiments, we saw that the sign days length is quite important especially for some datasets. Total book score is simply if in that day the library is chosen, how much of the books can be scanned until the end of total days. Of course these books are selecting according to their scores and they should be not scanned before.&lt;/p&gt;</description>
+&lt;/div&gt;&lt;p&gt;The Second critical class is &lt;code&gt;Library&lt;/code&gt; class. The vital function in our
+implementation is predMaxScore. We are doing calculating this with
+&lt;code&gt;total book score / (sign day*sign day)&lt;/code&gt;. Because, during our experiments, we
+saw that the sign days length is quite important especially for some datasets.
+Total book score is simply if in that day the library is chosen, how much of the
+books can be scanned until the end of total days. Of course these books are
+selecting according to their scores and they should be not scanned before.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Coolest C Trick</title>
@@ -279,9 +308,9 @@ It create all the objects like books, libraries even if book2score dictionary.&l
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;9 8 7 6 5 4 3 2 1 0
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;It was a little suprising for me at first sight.
-I thought that what the hell is &lt;code&gt;--&amp;gt;&lt;/code&gt; operator.
-After then I understand that it is actually &lt;code&gt;x--&lt;/code&gt; and &lt;code&gt;&amp;gt;&lt;/code&gt;. X compared with 0 (cheked if it is bigger than 0) and then it is decremented by 1.
+&lt;/div&gt;&lt;p&gt;It was a little suprising for me at first sight. I thought that what the hell is
+&lt;code&gt;--&amp;gt;&lt;/code&gt; operator. After then I understand that it is actually &lt;code&gt;x--&lt;/code&gt; and &lt;code&gt;&amp;gt;&lt;/code&gt;. X
+compared with 0 (cheked if it is bigger than 0) and then it is decremented by 1.
 Therefore, this loop can be decoded to this:&lt;/p&gt;</description>
     </item>
     <item>
@@ -291,12 +320,15 @@ Therefore, this loop can be decoded to this:&lt;/p&gt;</description>
       <guid>https://mozanunal.com/2019/11/img2sh/</guid>
       <description>&lt;h1 id=&#34;img2sh&#34;&gt;Img2sh&lt;/h1&gt;
 &lt;p&gt;Hello there,&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;In this post, I want to tell a brief story of how I have created a tool named img2sh. It is also my first python package which is published over PyPI. In this very post, I will try to answer questions like:
-How is it developed?
-What are the challenges?
-How should a package created and deployed over PyPI?
-Let&amp;rsquo;s continue!&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;Img2sh is a tool to show images directly on the terminal. For colored images, 256 xterm color support is required. This script basically resizes the image with anti-aliasing and quantized its colors to xterm color pallette. &lt;a href=&#34;https://github.com/mozanunal/img2sh&#34;&gt;Github repository of the project can be reached from here&lt;/a&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;em&gt;In this post, I want to tell a brief story of how I have created a tool named
+img2sh. It is also my first python package which is published over PyPI. In this
+very post, I will try to answer questions like: How is it developed? What are
+the challenges? How should a package created and deployed over PyPI? Let&amp;rsquo;s
+continue!&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Img2sh is a tool to show images directly on the terminal. For colored images,
+256 xterm color support is required. This script basically resizes the image
+with anti-aliasing and quantized its colors to xterm color pallette.
+&lt;a href=&#34;https://github.com/mozanunal/img2sh&#34;&gt;Github repository of the project can be reached from here&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Yolo on Google Colab</title>
@@ -304,23 +336,45 @@ Let&amp;rsquo;s continue!&lt;/em&gt;&lt;/p&gt;
       <pubDate>Tue, 13 Aug 2019 00:09:50 +0000</pubDate>
       <guid>https://mozanunal.com/2019/08/yolocolabdemo/</guid>
       <description>&lt;h1 id=&#34;run-yolo-v3-on-colab-for-imagesvideos&#34;&gt;Run YOLO V3 on Colab for images/videos&lt;/h1&gt;
-&lt;p&gt;Hello there,
-Today, we will be discussing how we can use the Darknet project on Google Colab platform. For those who are not familiar with these terms:&lt;/p&gt;
+&lt;p&gt;Hello there, Today, we will be discussing how we can use the Darknet project on
+Google Colab platform. For those who are not familiar with these terms:&lt;/p&gt;
 &lt;p&gt;&lt;img alt=&#34;YOLO in action!&#34; loading=&#34;lazy&#34; src=&#34;https://mozanunal.com/images/yoloroad.gif&#34;&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;The Darknet project is an open-source project written in C, which is a framework to develop deep neural networks.&lt;/li&gt;
-&lt;li&gt;Yolo V3 is an object detection algorithm. It is one of the state of the art solution when &lt;strong&gt;accuracy/processing power needed&lt;/strong&gt; metric is considered.&lt;/li&gt;
-&lt;li&gt;Google Cola is a cloud-based data science workspace similar to the jupyter notebook. Each Collabrotary session is equipped with a virtual machine running 13 GB of ram and either a CPU, GPU, or TPU processor. In most case, all the required packages are already installed on these machines and you can quite easily start development using Google Collaboratory. It saves us from installing process and it provides us &lt;strong&gt;easy to accessible GPU&amp;rsquo;s&lt;/strong&gt; which is also &lt;strong&gt;free&lt;/strong&gt; under some constraints.&lt;/li&gt;
+&lt;li&gt;The Darknet project is an open-source project written in C, which is a
+framework to develop deep neural networks.&lt;/li&gt;
+&lt;li&gt;Yolo V3 is an object detection algorithm. It is one of the state of the art
+solution when &lt;strong&gt;accuracy/processing power needed&lt;/strong&gt; metric is considered.&lt;/li&gt;
+&lt;li&gt;Google Cola is a cloud-based data science workspace similar to the jupyter
+notebook. Each Collabrotary session is equipped with a virtual machine running
+13 GB of ram and either a CPU, GPU, or TPU processor. In most case, all the
+required packages are already installed on these machines and you can quite
+easily start development using Google Collaboratory. It saves us from
+installing process and it provides us &lt;strong&gt;easy to accessible GPU&amp;rsquo;s&lt;/strong&gt; which is
+also &lt;strong&gt;free&lt;/strong&gt; under some constraints.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Have a look Ted Talk by Joseph Redmon the developer of the darknet project. The talk is about Darknet and YOLO projects which titled as “How computers learn to recognize objects instantly” . Darknet project aims to create a new neural network framework which is completely focused on simplicity and performance. The thing which I like about is its clarity and performance. All the code is written in C, to define a deep learning network you should only create a config file which defines the layers. By this way, it does not lose its performance capabilities also it provides us easy to use interface for development with this library.&lt;/p&gt;</description>
+&lt;p&gt;Have a look Ted Talk by Joseph Redmon the developer of the darknet project. The
+talk is about Darknet and YOLO projects which titled as “How computers learn to
+recognize objects instantly” . Darknet project aims to create a new neural
+network framework which is completely focused on simplicity and performance. The
+thing which I like about is its clarity and performance. All the code is written
+in C, to define a deep learning network you should only create a config file
+which defines the layers. By this way, it does not lose its performance
+capabilities also it provides us easy to use interface for development with this
+library.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Playing DOTA on Raspberry Pi using Steam Link</title>
       <link>https://mozanunal.com/2019/02/steam-link-on-rpi/</link>
       <pubDate>Fri, 01 Feb 2019 00:45:01 +0000</pubDate>
       <guid>https://mozanunal.com/2019/02/steam-link-on-rpi/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Hello,&lt;/strong&gt;
-Steam Link is software which provides support to Steam to stream screen view of the games to devices which is on same local area network. In this setup, there are 2 devices. First one is the device to run the Steam and the games which act as a server. The second one is the one which runs Steam Link and acts as a client to this server. By using this technology you can play games directly on a device which is connected to the same router. The connection is also 2 way. Thus, control devices such as keyboard, mouse and game controllers can be connected directly to the client device.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;strong&gt;Hello,&lt;/strong&gt; Steam Link is software which provides support to Steam to stream
+screen view of the games to devices which is on same local area network. In this
+setup, there are 2 devices. First one is the device to run the Steam and the
+games which act as a server. The second one is the one which runs Steam Link and
+acts as a client to this server. By using this technology you can play games
+directly on a device which is connected to the same router. The connection is
+also 2 way. Thus, control devices such as keyboard, mouse and game controllers
+can be connected directly to the client device.&lt;/p&gt;</description>
     </item>
     <item>
       <title>[TR] Android Terminal Emülatörü: Termux</title>
@@ -328,9 +382,19 @@ Steam Link is software which provides support to Steam to stream screen view of 
       <pubDate>Mon, 30 Jul 2018 20:04:35 +0000</pubDate>
       <guid>https://mozanunal.com/2018/07/termux/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Benim gibi sıklıkla linuxla uğraşan bir insansanız işinize çok fazla yarıyabilecek bir araçtan bahsedeceğim. Bu Androidte çalışan terminal emülatörü &lt;strong&gt;Termux&lt;/strong&gt;.  Termux linux kullanmaya alışık olduğumuz araçları androidde de kullanabilmemizi sağlayan bir android app aslında. Direk play store üzerinden &lt;a href=&#34;https://play.google.com/store/apps/details?id=com.termux&amp;amp;hl=en&#34;&gt;bu link &lt;/a&gt; üzerinden yükleyebilirsiniz. Termux aynı zamanda açık kaynaklı bir proje github hesabına &lt;a href=&#34;https://github.com/termux&#34;&gt;buradan&lt;/a&gt; ulaşabilirsiniz. Burada android app ve bütün paketlerin kaynak kodu mevcut.&lt;/p&gt;
+&lt;p&gt;Benim gibi sıklıkla linuxla uğraşan bir insansanız işinize çok fazla
+yarıyabilecek bir araçtan bahsedeceğim. Bu Androidte çalışan terminal emülatörü
+&lt;strong&gt;Termux&lt;/strong&gt;. Termux linux kullanmaya alışık olduğumuz araçları androidde de
+kullanabilmemizi sağlayan bir android app aslında. Direk play store üzerinden
+&lt;a href=&#34;https://play.google.com/store/apps/details?id=com.termux&amp;amp;hl=en&#34;&gt;bu link&lt;/a&gt;
+üzerinden yükleyebilirsiniz. Termux aynı zamanda açık kaynaklı bir proje github
+hesabına &lt;a href=&#34;https://github.com/termux&#34;&gt;buradan&lt;/a&gt; ulaşabilirsiniz. Burada android
+app ve bütün paketlerin kaynak kodu mevcut.&lt;/p&gt;
 &lt;p&gt;&lt;img alt=&#34;termux ssh bağlantısı&#34; loading=&#34;lazy&#34; src=&#34;https://mozanunal.com/images/termux_ssh.jpg&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Özelliklerine gelecek olursak kendi paket yöneticilerini geliştirmişler. İsmi pkg bir sürü popüler paketi kurabilmeniz mümkün. Programa girdiğinizde direk bir bash terminal karşılıyor bizi. Burada standart bash komutlarının çoğu çalışıyor. Örneğin ls, pwd, cat, echo&amp;hellip;&lt;/p&gt;</description>
+&lt;p&gt;Özelliklerine gelecek olursak kendi paket yöneticilerini geliştirmişler. İsmi
+pkg bir sürü popüler paketi kurabilmeniz mümkün. Programa girdiğinizde direk bir
+bash terminal karşılıyor bizi. Burada standart bash komutlarının çoğu çalışıyor.
+Örneğin ls, pwd, cat, echo&amp;hellip;&lt;/p&gt;</description>
     </item>
     <item>
       <title>[TR] Hackhathon Getir 2018</title>
@@ -338,17 +402,16 @@ Steam Link is software which provides support to Steam to stream screen view of 
       <pubDate>Mon, 16 Apr 2018 18:10:04 +0000</pubDate>
       <guid>https://mozanunal.com/2018/04/getir-hackhathon/</guid>
       <description>&lt;blockquote&gt;
-&lt;p&gt;It is a project developed for BiTaksi Getir Hackathon 2018. Detailed information can be found from below.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;It is a project developed for BiTaksi Getir Hackathon 2018. Detailed
+information can be found from below.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h1 id=&#34;team-paketci&#34;&gt;Team Paketci!&lt;/h1&gt;
 &lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://mozanunal.com/images/1523149456799.jpg&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://hackhathon-getir-2018.herokuapp.com/&#34;&gt;Check our app from here&lt;/a&gt; which is deployed using heroku.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://hackhathon-getir-2018.herokuapp.com/&#34;&gt;Check our app from here&lt;/a&gt; which is
+deployed using heroku.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://github.com/mozanunal/paketci-backend&#34;&gt;Check github repo of app from here&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img alt=&#34;Timeline of our little project!&#34; loading=&#34;lazy&#34; src=&#34;https://github.com/mozanunal/paketci-backend/blob/master/doc/images/timeLine.PNG?raw=true&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Getir Hackhathon 2018
-Team Members:
-Sertan Sezgin Kutlu
-Ertuğrul Çınar
-Mehmet Ozan Ünal&lt;/p&gt;
+&lt;p&gt;Getir Hackhathon 2018 Team Members: Sertan Sezgin Kutlu Ertuğrul Çınar Mehmet
+Ozan Ünal&lt;/p&gt;
 &lt;h1 id=&#34;paketci-app&#34;&gt;Paketci App&lt;/h1&gt;
 &lt;p&gt;Its a work on pack collection and delivery for courier and observer.&lt;/p&gt;</description>
     </item>
@@ -357,9 +420,13 @@ Mehmet Ozan Ünal&lt;/p&gt;
       <link>https://mozanunal.com/2018/04/hash-code-2018/</link>
       <pubDate>Sun, 08 Apr 2018 00:45:01 +0000</pubDate>
       <guid>https://mozanunal.com/2018/04/hash-code-2018/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;
-Hash Code Google tarafından dünya çapında düzenlenen bir algoritma yarışmasıdır. Bu yıl itibariyle son 3 tanesine ben de katılmış bulunuyorum. Hatta geçen sene yarışma hakkında bir yazı da yazmıştım. Bu geleneği bu yıl da devam ettirmeye karar verdım.&lt;/p&gt;
-&lt;p&gt;Bu seneki yarışmada çok başarılı olamadık derece anlamında. Ama yarışmada çalışan, puan alabilen bir çözüm sunmak bile baya zor. O nedenle ben de çözümüzü birazcık açıklamak istiyorum. Aşağıdan direk github reposunu inceleyebilirsiniz.
+      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt; Hash Code Google tarafından dünya çapında düzenlenen bir
+algoritma yarışmasıdır. Bu yıl itibariyle son 3 tanesine ben de katılmış
+bulunuyorum. Hatta geçen sene yarışma hakkında bir yazı da yazmıştım. Bu
+geleneği bu yıl da devam ettirmeye karar verdım.&lt;/p&gt;
+&lt;p&gt;Bu seneki yarışmada çok başarılı olamadık derece anlamında. Ama yarışmada
+çalışan, puan alabilen bir çözüm sunmak bile baya zor. O nedenle ben de çözümüzü
+birazcık açıklamak istiyorum. Aşağıdan direk github reposunu inceleyebilirsiniz.
 &lt;a href=&#34;https://github.com/mozanunal/hashcode-2018-qualificationQuestion&#34;&gt;Github Repo&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
@@ -368,7 +435,17 @@ Hash Code Google tarafından dünya çapında düzenlenen bir algoritma yarışm
       <pubDate>Thu, 13 Jul 2017 02:51:00 +0000</pubDate>
       <guid>https://mozanunal.com/2017/07/google-hash-code-2017/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar&lt;/strong&gt;,&lt;/p&gt;
-&lt;p&gt;Google bir kaç senedir tüm dünyada programlama ve algoritmalar üzerine bir yarışma düzenliyor. Bu yarışma kapsamında, yarışmanın katılımcılarına karmaşık algoritmik problemler veriliyor ve istenilen data kümeleri için yine verilen formatta sonuçlar oluşturacak algoritmalar yazılması gerekiyor. Son olarak bu sonuç dosyaları Google&amp;rsquo;ın sistemine yükleniyor ve skor hesaplanıyor. Yarışma 2 aşamadan oluşuyor 1. aşama online eleme. İkinci aşama ise ilk 30&amp;rsquo;a giren gruplar bir merkezde yarışıyor. Ben de yarışmaya 2016 ve 2017 yıllarında katıldım. Bu yazıda 2017 yılındaki online eleme sorusu ve pratik sorusu hakkında paylaşımlar yapmak istiyorum. Bu arada bu soruları 4 saat içerisinde çözememiz gerekiyor bu nedenle kodlar hızlı yazıldı hata içerebilir fakat her iki kod da google&amp;rsquo;ın sisteminde oldukça iyi puanlar alıyordu.&lt;/p&gt;</description>
+&lt;p&gt;Google bir kaç senedir tüm dünyada programlama ve algoritmalar üzerine bir
+yarışma düzenliyor. Bu yarışma kapsamında, yarışmanın katılımcılarına karmaşık
+algoritmik problemler veriliyor ve istenilen data kümeleri için yine verilen
+formatta sonuçlar oluşturacak algoritmalar yazılması gerekiyor. Son olarak bu
+sonuç dosyaları Google&amp;rsquo;ın sistemine yükleniyor ve skor hesaplanıyor. Yarışma 2
+aşamadan oluşuyor 1. aşama online eleme. İkinci aşama ise ilk 30&amp;rsquo;a giren gruplar
+bir merkezde yarışıyor. Ben de yarışmaya 2016 ve 2017 yıllarında katıldım. Bu
+yazıda 2017 yılındaki online eleme sorusu ve pratik sorusu hakkında paylaşımlar
+yapmak istiyorum. Bu arada bu soruları 4 saat içerisinde çözememiz gerekiyor bu
+nedenle kodlar hızlı yazıldı hata içerebilir fakat her iki kod da google&amp;rsquo;ın
+sisteminde oldukça iyi puanlar alıyordu.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Artwork Sharing Platform with Augmented Reality</title>
@@ -397,8 +474,19 @@ Hash Code Google tarafından dünya çapında düzenlenen bir algoritma yarışm
       <pubDate>Mon, 12 Sep 2016 02:41:00 +0000</pubDate>
       <guid>https://mozanunal.com/2016/09/python-icin-komple-bir-cozum-anaconda/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;br&gt;
-Bugünkü yazımda en sevdiğim programlama dillerinden biri olan pyhtondan bahsetmek istiyorum. Python son yıllarda popüleritesini iyice arttıran, özellikle bilimsel araştırmalarda sıklıkla kullanılan bir programlama dilidir. Neredeyse her konu hakkında python kütüphanesi bulmak mümkün. Linux ortamı altında gerekli kütüphaneleri yüklemek ve projenizde bu paketleri referanslamak inanılmaz kolay. Ayrıca python programları derlenmiyor yorumlanarak çalıştırılıyor. Bu saydığım son 2 özellik pythonu kullanması kolay ve geliştirmesi hızlı hale getiriyor. Bu yazıda asıl gündeme getireceğim konu python üzerinden veri bilimi ile uğraşanların işlerini kolaylaştırmak için geliştirilmiş bir &amp;ldquo;Enterprise&amp;rdquo;. İsmi Anaconda.&lt;br&gt;
-Yüklediğiniz zaman veri işleme ve raporlama ile alakalı 100 paket doğrudan geliyor ayrıca 700 paket &amp;ldquo;conda&amp;rdquo; isimli paket yöneticisiyle kurulabiliyor. Aşağıdan linkine ulaşabilirsiniz&lt;br&gt;
+Bugünkü yazımda en sevdiğim programlama dillerinden biri olan pyhtondan
+bahsetmek istiyorum. Python son yıllarda popüleritesini iyice arttıran,
+özellikle bilimsel araştırmalarda sıklıkla kullanılan bir programlama dilidir.
+Neredeyse her konu hakkında python kütüphanesi bulmak mümkün. Linux ortamı
+altında gerekli kütüphaneleri yüklemek ve projenizde bu paketleri referanslamak
+inanılmaz kolay. Ayrıca python programları derlenmiyor yorumlanarak
+çalıştırılıyor. Bu saydığım son 2 özellik pythonu kullanması kolay ve
+geliştirmesi hızlı hale getiriyor. Bu yazıda asıl gündeme getireceğim konu
+python üzerinden veri bilimi ile uğraşanların işlerini kolaylaştırmak için
+geliştirilmiş bir &amp;ldquo;Enterprise&amp;rdquo;. İsmi Anaconda.&lt;br&gt;
+Yüklediğiniz zaman veri işleme ve raporlama ile alakalı 100 paket doğrudan
+geliyor ayrıca 700 paket &amp;ldquo;conda&amp;rdquo; isimli paket yöneticisiyle kurulabiliyor.
+Aşağıdan linkine ulaşabilirsiniz&lt;br&gt;
 &lt;a href=&#34;https://www.continuum.io/downloads&#34;&gt;https://www.continuum.io/downloads&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
@@ -407,7 +495,16 @@ Yüklediğiniz zaman veri işleme ve raporlama ile alakalı 100 paket doğrudan 
       <pubDate>Sun, 04 Sep 2016 20:16:00 +0000</pubDate>
       <guid>https://mozanunal.com/2016/09/ack-kaynak-yazlm-lisans-turleri-ve/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;br&gt;
-       Yazılım dünyasında son zamanlarda artan bir &amp;ldquo;Açık Kaynak&amp;rdquo; çılgınlığı var. Hobi amaçlı bu işi yapanlardan bu konuyla alakalı en büyük şirketlere ve kuruluşlara kadar bir çok kişi veya kuruluş yazılımlarını &amp;ldquo;açık kaynaklı&amp;rdquo; olarak yayıyor. Peki bu yazılımları kullanmak istediğimiz veya kendi yazılımımızı açık kaynaklı olarak dağıtmak istediğimizde sınırlarımız ve sorumluluklarımız neler? İşte bu noktada açık kaynaklı yazılımların lisansları devreye giriyor. Bazıları bir çok şeyi serbest bırakırken, bazıları ticari projelerde kullanılmasına izin vermiyor, bazıları ise yazılımın değiştirilmesine olanak tanımıyor. İşte bu farklar ve sorumlulukları bu yazımda özetlemeye çalıştım. Sırayla popüler açık kaynak yazılım lisanslarını tek tek inceleyeceğiz.&lt;/p&gt;</description>
+       Yazılım dünyasında son zamanlarda artan bir &amp;ldquo;Açık Kaynak&amp;rdquo; çılgınlığı var.
+Hobi amaçlı bu işi yapanlardan bu konuyla alakalı en büyük şirketlere ve
+kuruluşlara kadar bir çok kişi veya kuruluş yazılımlarını &amp;ldquo;açık kaynaklı&amp;rdquo; olarak
+yayıyor. Peki bu yazılımları kullanmak istediğimiz veya kendi yazılımımızı açık
+kaynaklı olarak dağıtmak istediğimizde sınırlarımız ve sorumluluklarımız neler?
+İşte bu noktada açık kaynaklı yazılımların lisansları devreye giriyor. Bazıları
+bir çok şeyi serbest bırakırken, bazıları ticari projelerde kullanılmasına izin
+vermiyor, bazıları ise yazılımın değiştirilmesine olanak tanımıyor. İşte bu
+farklar ve sorumlulukları bu yazımda özetlemeye çalıştım. Sırayla popüler açık
+kaynak yazılım lisanslarını tek tek inceleyeceğiz.&lt;/p&gt;</description>
     </item>
     <item>
       <title>[TR] Web Tabanlı Programlar</title>
@@ -415,7 +512,15 @@ Yüklediğiniz zaman veri işleme ve raporlama ile alakalı 100 paket doğrudan 
       <pubDate>Sat, 16 Jan 2016 03:45:00 +0000</pubDate>
       <guid>https://mozanunal.com/2016/01/web-tabanl-programlar/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;br&gt;
-Bugünkü yazımda web tabanlı programlardan bahsetmek istiyorum. Web teknolojilerinin gelişmesiyle beraber browser tabanlı oldukça yararlı ve kullanımı da bir o kadar kolay programlar ortaya çıkmaya başladı. Hatta bunun bir üst aşaması olarak ChromeOS browser tabanlı bir işletim sistemi bile var. Ayrıca bu tarz programların projelerine dosyalarına her bilgisayardan ulaşabilmek, kurulum yapmadan bir çok şeyi halletme gibi avantajları da var. Böyle olunca ben de bu şekilde çalışan yararlı programları bir yazı altında toplamak istedim. Bilmediğim daha bir sürü program olduğuna eminim eğer bana yollayabilirseniz onları da yazıya ekleyebilirim.&lt;/p&gt;</description>
+Bugünkü yazımda web tabanlı programlardan bahsetmek istiyorum. Web
+teknolojilerinin gelişmesiyle beraber browser tabanlı oldukça yararlı ve
+kullanımı da bir o kadar kolay programlar ortaya çıkmaya başladı. Hatta bunun
+bir üst aşaması olarak ChromeOS browser tabanlı bir işletim sistemi bile var.
+Ayrıca bu tarz programların projelerine dosyalarına her bilgisayardan
+ulaşabilmek, kurulum yapmadan bir çok şeyi halletme gibi avantajları da var.
+Böyle olunca ben de bu şekilde çalışan yararlı programları bir yazı altında
+toplamak istedim. Bilmediğim daha bir sürü program olduğuna eminim eğer bana
+yollayabilirseniz onları da yazıya ekleyebilirim.&lt;/p&gt;</description>
     </item>
     <item>
       <title>[TR] Droid Script</title>
@@ -423,19 +528,34 @@ Bugünkü yazımda web tabanlı programlardan bahsetmek istiyorum. Web teknoloji
       <pubDate>Mon, 17 Aug 2015 10:15:00 +0000</pubDate>
       <guid>https://mozanunal.com/2015/08/droid-script/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;br&gt;
-      Bugün size bir android uygulaması olan Droid Script uygulamasından bahsetmek istiyorum. &lt;a href=&#34;https://play.google.com/store/apps/details?id=com.smartphoneremote.androidscriptfree&#34;&gt;Programa burayı tıklayarak ulaşabilirsiniz&lt;/a&gt;. Bu uygulama bana göre en iyi android uygulamasıdır. Droid Script java script tabanlı Android uygulama geliştirme uygulamasıdır. Bu program sayesinde android üzerinde android için kolayca uygulama geliştirebilirsiniz. Bunu yapabileceğiniz farklı uygulamalar bulabilmeniz mümkün. Droid Script ayıran özellikler ise şöyle sıralayabiliriz:&lt;/p&gt;
+      Bugün size bir android uygulaması olan Droid Script uygulamasından
+bahsetmek istiyorum.
+&lt;a href=&#34;https://play.google.com/store/apps/details?id=com.smartphoneremote.androidscriptfree&#34;&gt;Programa burayı tıklayarak ulaşabilirsiniz&lt;/a&gt;.
+Bu uygulama bana göre en iyi android uygulamasıdır. Droid Script java script
+tabanlı Android uygulama geliştirme uygulamasıdır. Bu program sayesinde android
+üzerinde android için kolayca uygulama geliştirebilirsiniz. Bunu yapabileceğiniz
+farklı uygulamalar bulabilmeniz mümkün. Droid Script ayıran özellikler ise şöyle
+sıralayabiliriz:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Çok gelişmiş program içi dokümantasyon (Programdan hiç çıkmadan dokümantasyon bölümünden bakarak uygulamalarınızı geliştirebilirsiniz )&lt;/li&gt;
+&lt;li&gt;Çok gelişmiş program içi dokümantasyon (Programdan hiç çıkmadan dokümantasyon
+bölümünden bakarak uygulamalarınızı geliştirebilirsiniz )&lt;/li&gt;
 &lt;li&gt;Telefon donanımına kolay ulaşım (Gps, kamera, sensörler, bluetooth)&lt;/li&gt;
-&lt;li&gt;Çok geniş örnek uygulama havuzu (Aklınıza gelebilecek her şeyin örneği var ve yine program içinden ulaşabiliyorsunuz.)&lt;/li&gt;
-&lt;li&gt;Jqplot Canvgauge gibi Java Script kütüphanelerini uygulamalarınızda gömülü olarak kullanabilirsiniz.( Gerçek zamanlı sensör grafikleri çizdirebilir, çeşitli Gauge ekleyebilirsiniz.)&lt;/li&gt;
+&lt;li&gt;Çok geniş örnek uygulama havuzu (Aklınıza gelebilecek her şeyin örneği var ve
+yine program içinden ulaşabiliyorsunuz.)&lt;/li&gt;
+&lt;li&gt;Jqplot Canvgauge gibi Java Script kütüphanelerini uygulamalarınızda gömülü
+olarak kullanabilirsiniz.( Gerçek zamanlı sensör grafikleri çizdirebilir,
+çeşitli Gauge ekleyebilirsiniz.)&lt;/li&gt;
 &lt;li&gt;Google Speech Recognition ve Google Text to Speech desteği&lt;/li&gt;
 &lt;li&gt;WebGL sayesinde yüksek performanslı yüksek görsellikte oyun tasarımı&lt;/li&gt;
 &lt;li&gt;Veri tabanı oluşturabilirsiniz.&lt;/li&gt;
 &lt;li&gt;Web browser ve TCP UDP gibi network programlama desteği.&lt;/li&gt;
-&lt;li&gt;Eğer telefon üzerinden geliştirmek istemiyorsanız Wifi aracılığıyla bilgisayarınızdaki browser üzerinden doğrudan bilgisayarınızda programınızı geliştirip tek tuş ile telefonunuzda deneyebilirsiniz.&lt;/li&gt;
+&lt;li&gt;Eğer telefon üzerinden geliştirmek istemiyorsanız Wifi aracılığıyla
+bilgisayarınızdaki browser üzerinden doğrudan bilgisayarınızda programınızı
+geliştirip tek tuş ile telefonunuzda deneyebilirsiniz.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Kısacası, Android programlama asıl odaklandığınız nokta değilse fakat projelerinizde Android kullanmak istiyorsanız Droid Script tam aradığınız program. Fazla zaman ayırmadan istediğiniz uygulamayı geliştirmeniz mümkün.&lt;/p&gt;</description>
+&lt;p&gt;Kısacası, Android programlama asıl odaklandığınız nokta değilse fakat
+projelerinizde Android kullanmak istiyorsanız Droid Script tam aradığınız
+program. Fazla zaman ayırmadan istediğiniz uygulamayı geliştirmeniz mümkün.&lt;/p&gt;</description>
     </item>
     <item>
       <title>[TR] Youtube Arka Plan Müzik Dinleyici</title>
@@ -443,12 +563,20 @@ Bugünkü yazımda web tabanlı programlardan bahsetmek istiyorum. Web teknoloji
       <pubDate>Mon, 29 Jun 2015 03:09:00 +0000</pubDate>
       <guid>https://mozanunal.com/2015/06/youtube-arka-plan-muzik-dinleyici/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Merhaba Arkadaşlar,&lt;/strong&gt;&lt;br&gt;
-Bu yazımda kendi yazdığım bir Android uygulamasından bahsedeceğim. Telefonda youtube kullanmanın en sıkıntılı yanlarından biri video açıkken başka uygulamalara geçtiğimiz zaman videonun durdurulmasıdır. Bu uygulama sayesinde program arka plana alınsa bile video oynamaya devam eder ve sesini duyabilirsiniz.&lt;a href=&#34;https://drive.google.com/file/d/0B5j__Lyt9ozbQXExRTRnX1pSTW8/view?usp=sharing&#34;&gt;Programı burdan indirebilirsiniz.&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Not: Programı sadece 3 telefonda deneme şansı bulabildim. Belki başka telefonlarda çalışmayabilir şimdiden uyarmak isterim.&lt;/p&gt;
+Bu yazımda kendi yazdığım bir Android uygulamasından bahsedeceğim. Telefonda
+youtube kullanmanın en sıkıntılı yanlarından biri video açıkken başka
+uygulamalara geçtiğimiz zaman videonun durdurulmasıdır. Bu uygulama sayesinde
+program arka plana alınsa bile video oynamaya devam eder ve sesini
+duyabilirsiniz.&lt;a href=&#34;https://drive.google.com/file/d/0B5j__Lyt9ozbQXExRTRnX1pSTW8/view?usp=sharing&#34;&gt;Programı burdan indirebilirsiniz.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Not: Programı sadece 3 telefonda deneme şansı bulabildim. Belki başka
+telefonlarda çalışmayabilir şimdiden uyarmak isterim.&lt;/p&gt;
 &lt;p&gt;For foreign visitors:&lt;br&gt;
-One of the biggest problem about Youtube is that stopping videos when youtube at back ground or screen off. Therefore i decided to develop an app for solving this problem.
+One of the biggest problem about Youtube is that stopping videos when youtube at
+back ground or screen off. Therefore i decided to develop an app for solving
+this problem.
 &lt;a href=&#34;https://drive.google.com/file/d/0B5j__Lyt9ozbQXExRTRnX1pSTW8/view&#34;&gt;You can download the app from here. &lt;/a&gt;&lt;br&gt;
-Note: I can try the app only 3 android phone may be it does not work another android phones.&lt;/p&gt;</description>
+Note: I can try the app only 3 android phone may be it does not work another
+android phones.&lt;/p&gt;</description>
     </item>
     <item>
       <title>[TR] Android Phone IMU Visualizer</title>
@@ -456,9 +584,18 @@ Note: I can try the app only 3 android phone may be it does not work another and
       <pubDate>Mon, 18 May 2015 06:23:00 +0000</pubDate>
       <guid>https://mozanunal.com/2015/05/android-phone-imu-visualizer/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Hi,&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;I usually write my blog in Turkish but at this project i decided to write it in English. Because I cannot find any successful tutorial about this issue. I took e-mails or contacts from different countries about my projects if they are unusual so i am going to write some of my article in English.&lt;/p&gt;
-&lt;p&gt;At this project, visualization of android device with IMU sensors will be explained.The orientation of an android device will be shown at PC. Android camera and PC communicate with each other with a WI- FI connection. I wrote 2 program for this project. First one is android app (&lt;a href=&#34;https://drive.google.com/file/d/0B5j__Lyt9ozbNG9SdVBOOVowTjg/view?usp=sharing&#34;&gt;can download from here&lt;/a&gt;). Second one is visualizer program for PC. At android app IMU angles of the&lt;br&gt;
-Android phone are sent to PC by using UDP network protocol. After you install the app write your PC&amp;rsquo;s IP to this program. Also you can change the using port.&lt;/p&gt;</description>
+&lt;p&gt;I usually write my blog in Turkish but at this project i decided to write it in
+English. Because I cannot find any successful tutorial about this issue. I took
+e-mails or contacts from different countries about my projects if they
+are unusual so i am going to write some of my article in English.&lt;/p&gt;
+&lt;p&gt;At this project, visualization of android device with IMU sensors will be
+explained.The orientation of an android device will be shown at PC. Android
+camera and PC communicate with each other with a WI- FI connection. I wrote 2
+program for this project. First one is android app
+(&lt;a href=&#34;https://drive.google.com/file/d/0B5j__Lyt9ozbNG9SdVBOOVowTjg/view?usp=sharing&#34;&gt;can download from here&lt;/a&gt;).
+Second one is visualizer program for PC. At android app IMU angles of the&lt;br&gt;
+Android phone are sent to PC by using UDP network protocol. After you install
+the app write your PC&amp;rsquo;s IP to this program. Also you can change the using port.&lt;/p&gt;</description>
     </item>
     <item>
       <title>[TR] Yeni Android Programım: Adres Defteri</title>
@@ -466,7 +603,11 @@ Android phone are sent to PC by using UDP network protocol. After you install th
       <pubDate>Thu, 08 Jan 2015 02:46:00 +0000</pubDate>
       <guid>https://mozanunal.com/2015/01/yeni-android-programm-adres-defteri/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar!&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Bu yazımda yaptığım Android programı sizlerle paylaşmak istiyorum. Programımın adı Adres Defteri, Size gerekli olan adresleri kolayca kaydetmenize daha sonra navigasyon için kullanmanızı veya başkalarıyla paylaşmanızı sağlayan ve bunu çok kolaylaştıran bir program. &lt;a href=&#34;https://drive.google.com/file/d/0B5j__Lyt9ozbdElDaVBKWmlKY1k/view?usp=sharing&#34;&gt;Adres Defteri Programımını buradan indirebilirsiniz.&lt;/a&gt;H
+&lt;p&gt;Bu yazımda yaptığım Android programı sizlerle paylaşmak istiyorum. Programımın
+adı Adres Defteri, Size gerekli olan adresleri kolayca kaydetmenize daha sonra
+navigasyon için kullanmanızı veya başkalarıyla paylaşmanızı sağlayan ve bunu çok
+kolaylaştıran bir
+program. &lt;a href=&#34;https://drive.google.com/file/d/0B5j__Lyt9ozbdElDaVBKWmlKY1k/view?usp=sharing&#34;&gt;Adres Defteri Programımını buradan indirebilirsiniz.&lt;/a&gt;H
 Programın kullanımını aşağıdan öğrenebilirsiniz.&lt;/p&gt;
 &lt;p&gt;Gps bağlanınca GPS: yazan yerde bulunduğunuz yerin koordinantları çıkar.&lt;/p&gt;
 &lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://2.bp.blogspot.com/-QXEe-6LkU14/VK29Nfmx__I/AAAAAAAAGak/xogtu16x_og/s720/Screenshot_2015-01-07-14-06-02.png&#34;&gt;&lt;/p&gt;
@@ -480,16 +621,25 @@ Programın kullanımını aşağıdan öğrenebilirsiniz.&lt;/p&gt;
       <pubDate>Tue, 23 Dec 2014 02:59:00 +0000</pubDate>
       <guid>https://mozanunal.com/2014/12/serial-port-grapher/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;br&gt;
-İlk yazılarımdan birinde seri port üzerinden grafik çizen bir programın C#&amp;rsquo;ta nasıl yazılabileceğini anlatmıştım(&lt;a href=&#34;https://mozanunal.com/2014/05/c-gercek-zamanl-grafik-cizme-program/&#34;&gt;Buradan ulaşabilirsiniz&lt;/a&gt;.) Bu yazımda ise programın derlenmiş ve setup haline getirilmiş halini paylaşıyorum. Fark ettim ki bir sürü insan böyle bir programa ihtiyaç duyuyormuş. Bu program sayesinde Arduinonuzdan(başka işlemciler veya boardlar da olabilir.) veya herhangi bir serial port cihazından gönderdiğiniz &amp;ldquo;string&amp;rdquo; formattındaki verilerin gerçek zamanlı  olarak grafiğini çizdirebilirsiniz. Tek dikkat etmeniz gereken gelen verinin&lt;/p&gt;
+İlk yazılarımdan birinde seri port üzerinden grafik çizen bir programın C#&amp;rsquo;ta
+nasıl yazılabileceğini
+anlatmıştım(&lt;a href=&#34;https://mozanunal.com/2014/05/c-gercek-zamanl-grafik-cizme-program/&#34;&gt;Buradan ulaşabilirsiniz&lt;/a&gt;.)
+Bu yazımda ise programın derlenmiş ve setup haline getirilmiş halini
+paylaşıyorum. Fark ettim ki bir sürü insan böyle bir programa ihtiyaç
+duyuyormuş. Bu program sayesinde Arduinonuzdan(başka işlemciler veya boardlar da
+olabilir.) veya herhangi bir serial port cihazından gönderdiğiniz &amp;ldquo;string&amp;rdquo;
+formattındaki verilerin gerçek zamanlı  olarak grafiğini çizdirebilirsiniz. Tek
+dikkat etmeniz gereken gelen verinin&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$,data1,data2,data3, 
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$,data1,data2,data3,
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;şeklinde olmasıdır aksi takdirde program gelen veriyi dikkate almaz. Programla alakalı iyi, kötü görüşlerinizi veya sorunları, bugları bana yollayabilirsiniz.&lt;br&gt;
+&lt;/div&gt;&lt;p&gt;şeklinde olmasıdır aksi takdirde program gelen veriyi dikkate almaz. Programla
+alakalı iyi, kötü görüşlerinizi veya sorunları, bugları bana yollayabilirsiniz.&lt;br&gt;
 &lt;a href=&#34;https://drive.google.com/file/d/0B5j__Lyt9ozbU3JELTV3MWpqWFk/view?usp=sharing&#34;&gt;Programı buradan indirebiliriniz&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
@@ -498,9 +648,16 @@ Programın kullanımını aşağıdan öğrenebilirsiniz.&lt;/p&gt;
       <pubDate>Wed, 03 Dec 2014 06:30:00 +0000</pubDate>
       <guid>https://mozanunal.com/2014/12/linuxta-kullanabileceginiz-10-yararl/</guid>
       <description>&lt;p&gt;Herkese Merhabalar,&lt;/p&gt;
-&lt;p&gt;Bugünkü yazımda Linuxta kullanabileceğiniz bir kaç yararlı programdan bahsetmek istiyorum. Bu programlar windows kullanıcılarının aşina olduğu, güzel alternatif programlar. Ben de kullandığım bu programları sizinle paylaşmak istedim. Yani öyle Linux&amp;rsquo;taki en iyi 10 program bunlar, hepsi sıfır hatalı diye iddalı bir başlıkla çıkmıyorum kaşınıza :D. Neyse programlara geçelim.&lt;/p&gt;
+&lt;p&gt;Bugünkü yazımda Linuxta kullanabileceğiniz bir kaç yararlı programdan bahsetmek
+istiyorum. Bu programlar windows kullanıcılarının aşina olduğu, güzel alternatif
+programlar. Ben de kullandığım bu programları sizinle paylaşmak istedim. Yani
+öyle Linux&amp;rsquo;taki en iyi 10 program bunlar, hepsi sıfır hatalı diye iddalı bir
+başlıkla çıkmıyorum kaşınıza :D. Neyse programlara geçelim.&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;İlk program Ubuntu Software Center. Bu program üzerinden Ubuntu&amp;rsquo;da çalışabilen bir çok programa ulaşabiliyorsunuz ve onları indirip kurabiliyorsunuz. Güzel şekilde kategorize edilmiş ve eklenti seçeneklerini seçme özelliği eklenmiş gerçekten hoş ve işleri kolaylaştıran bir program.&lt;/li&gt;
+&lt;li&gt;İlk program Ubuntu Software Center. Bu program üzerinden Ubuntu&amp;rsquo;da çalışabilen
+bir çok programa ulaşabiliyorsunuz ve onları indirip kurabiliyorsunuz. Güzel
+şekilde kategorize edilmiş ve eklenti seçeneklerini seçme özelliği eklenmiş
+gerçekten hoş ve işleri kolaylaştıran bir program.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://4.bp.blogspot.com/-Bm-g47lRV64/VH5qesXPW5I/AAAAAAAAFhU/K_bf45ZAXaM/s1600/Screenshot%2Bfrom%2B2014-12-03%2B01%3A33%3A30.png&#34;&gt;&lt;/p&gt;</description>
     </item>
@@ -510,7 +667,15 @@ Programın kullanımını aşağıdan öğrenebilirsiniz.&lt;/p&gt;
       <pubDate>Wed, 03 Dec 2014 03:28:00 +0000</pubDate>
       <guid>https://mozanunal.com/2014/12/flash-bellege-ubuntu-kurmak/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Merhabalar,&lt;/strong&gt;&lt;br&gt;
-Bugün size flash belleğe ubuntu kurmaktan bahsedeceğim. Open source seven insanlar için Linux her zaman en çekici gelen işletim sistemi olmuştur. Fakat program desteği, driver sorunları derken linux tek işletim sistemi olarak kullanmak oldukça zor bir olay haline geliyor. İşte bunun için çok güzel çözümler var. Bunlardan bir tanesi aynı hard disk üzerine ikinci bir işletim sistemi kurmak. Bu çözüm bana daha zor ve karışık geliyor, benim tercih ettiğim ise bir flash belleğe Ubuntu kurup gerekli zamanlarda bilgisayarı onun üzerinden boot ederek Linuxun özgür dünyasına dalmak. Evet anlatıma geçersem aslında çok basit olduğunu göreceksiniz.&lt;/p&gt;</description>
+Bugün size flash belleğe ubuntu kurmaktan bahsedeceğim. Open source seven
+insanlar için Linux her zaman en çekici gelen işletim sistemi olmuştur. Fakat
+program desteği, driver sorunları derken linux tek işletim sistemi olarak
+kullanmak oldukça zor bir olay haline geliyor. İşte bunun için çok güzel
+çözümler var. Bunlardan bir tanesi aynı hard disk üzerine ikinci bir işletim
+sistemi kurmak. Bu çözüm bana daha zor ve karışık geliyor, benim tercih ettiğim
+ise bir flash belleğe Ubuntu kurup gerekli zamanlarda bilgisayarı onun üzerinden
+boot ederek Linuxun özgür dünyasına dalmak. Evet anlatıma geçersem aslında çok
+basit olduğunu göreceksiniz.&lt;/p&gt;</description>
     </item>
     <item>
       <title>[TR] Processing ile Android Telefonda Uygulama Geliştirme</title>
@@ -519,16 +684,31 @@ Bugün size flash belleğe ubuntu kurmaktan bahsedeceğim. Open source seven ins
       <guid>https://mozanunal.com/2014/11/processing-ile-android-telefonda/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar!&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://4.bp.blogspot.com/-mWaFbWIHvPk/VF7g4rYgSxI/AAAAAAAAFHw/vbMO-hISTB4/s720/primitives3D.png&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Processing dili son yıllarda Arduino ile popülerleşmeye başlayan görsel programlama dilidir. Hızlı prototipleme için geliştirilmiştir Arduinoya görsel arayüz hazırlama için sıklıkla kullanılmaktadır. Processing Windows, Linux, Android, Mac her platformda çalışmaktadır. Kendi program geliştirme arayüzü bulunmaktadır. Bu programlama diliyle kolay bir şekilde 2D, 3D görsel uygulamalar yapılabilir.&lt;/p&gt;
-&lt;p&gt;Ben bugünkü yazımda nasıl Android telefonda Android için nasıl Processing diliyle görsel uygulama yapılacağını anlatacağım. Öncelikle Google Playden uygulama geliştirmek için gerekli IDE&amp;rsquo;yi(geliştirme ortamını) indiriyoruz. Bir çok çeşit geliştirme ortamı var fakat ben APDE uygulamasını tercih ettim. Bu uygulama ile processing kodu yazıp onu derleyip telefon üzerinde deneyebiliyoruz.&lt;/p&gt;</description>
+&lt;p&gt;Processing dili son yıllarda Arduino ile popülerleşmeye başlayan görsel
+programlama dilidir. Hızlı prototipleme için geliştirilmiştir Arduinoya görsel
+arayüz hazırlama için sıklıkla kullanılmaktadır. Processing Windows, Linux,
+Android, Mac her platformda çalışmaktadır. Kendi program geliştirme arayüzü
+bulunmaktadır. Bu programlama diliyle kolay bir şekilde 2D, 3D görsel
+uygulamalar yapılabilir.&lt;/p&gt;
+&lt;p&gt;Ben bugünkü yazımda nasıl Android telefonda Android için nasıl Processing
+diliyle görsel uygulama yapılacağını anlatacağım. Öncelikle Google Playden
+uygulama geliştirmek için gerekli IDE&amp;rsquo;yi(geliştirme ortamını) indiriyoruz. Bir
+çok çeşit geliştirme ortamı var fakat ben APDE uygulamasını tercih ettim. Bu
+uygulama ile processing kodu yazıp onu derleyip telefon üzerinde
+deneyebiliyoruz.&lt;/p&gt;</description>
     </item>
     <item>
       <title>[TR] Oyun (First Flight)</title>
       <link>https://mozanunal.com/2014/05/oyunfirst-flight/</link>
       <pubDate>Tue, 27 May 2014 06:42:00 +0000</pubDate>
       <guid>https://mozanunal.com/2014/05/oyunfirst-flight/</guid>
-      <description>&lt;p&gt;İlk oyun denememi görsel programlayla çalışan Game Maker ile yaptım. Android oyunu olarak başladım fakat lisans satın almak gerektiğini öğrenince bilgisayar oyunu olarak kaldı. Bu benim ilk oyunumdur. İsmi &amp;ldquo;First Flight&amp;rdquo; ilk defa uçan bir kuşun başına gelenlerden oluşuyor (uçaklar, füzeler, kartallar). Ona yardım edenler de var tabi ki Angry Birds :D. Umarım beğenirsiniz. Tekrar görüşmek üzere&amp;hellip;&lt;br&gt;
- &lt;a href=&#34;https://docs.google.com/file/d/0B5j__Lyt9ozbOFBqa0JEQjI4NjA/edit&#34;&gt;Oyunumu buradan indirebilirsiniz&lt;/a&gt;&lt;/p&gt;
+      <description>&lt;p&gt;İlk oyun denememi görsel programlayla çalışan Game Maker ile yaptım. Android
+oyunu olarak başladım fakat lisans satın almak gerektiğini öğrenince bilgisayar
+oyunu olarak kaldı. Bu benim ilk oyunumdur. İsmi &amp;ldquo;First Flight&amp;rdquo; ilk defa uçan
+bir kuşun başına gelenlerden oluşuyor (uçaklar, füzeler, kartallar). Ona yardım
+edenler de var tabi ki Angry Birds :D. Umarım beğenirsiniz. Tekrar görüşmek
+üzere&amp;hellip;&lt;br&gt;
+&lt;a href=&#34;https://docs.google.com/file/d/0B5j__Lyt9ozbOFBqa0JEQjI4NjA/edit&#34;&gt;Oyunumu buradan indirebilirsiniz&lt;/a&gt;&lt;/p&gt;
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
       &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube-nocookie.com/embed/PL8fSl5TgSU?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;&gt;&lt;/iframe&gt;
     &lt;/div&gt;</description>
@@ -540,7 +720,18 @@ Bugün size flash belleğe ubuntu kurmaktan bahsedeceğim. Open source seven ins
       <guid>https://mozanunal.com/2014/05/c-gercek-zamanl-grafik-cizme-program/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar!&lt;/strong&gt;&lt;br&gt;
 &lt;a href=&#34;https://github.com/mozanunal/serialPortGrapher&#34;&gt;Programın kaynak koduna buradan ulaşabilirsiniz.&lt;/a&gt;&lt;br&gt;
-İkinci yazımda C# ile gerçek zamanlı grafik çizdirme uygulamasından bahsedeceğim. Bu uygulamada C# programlama dili ve Microsoft Visual Studio 2010 kullanılmıştır. C# ile grafik çizmemize olanak sağlayan zed graph kütüphanesinden yararlanılmıştır.&lt;a href=&#34;https://zedgraph.sourceforge.net/index.html&#34;&gt;Bu kütüphaneyi buradan indirebilirsiniz&lt;/a&gt;. Sistemin genel algoritmasına bakarsak şöyle çalışır; seri porttan veri okunur, veri aralardaki virgüllere göre parse edilip labellera aktarılır, Eklenen &amp;ldquo;Timer&amp;rdquo; öğesi ile timerın her periyodunda zaman belirten labela geçen zaman kadar eklenir böylece kaçıncı saniye olduğu tutulur, aynı zamanda timerın her bir periyodunda x değerleri zaman, y değerleri data noktaları olmak üzere grafiğe bir nokta eklenir. Şimdi çalışma şeklini daha ayrıntılı bir şekilde inceleyelim.&lt;/p&gt;</description>
+İkinci yazımda C# ile gerçek zamanlı grafik çizdirme uygulamasından
+bahsedeceğim. Bu uygulamada C# programlama dili ve Microsoft Visual Studio 2010
+kullanılmıştır. C# ile grafik çizmemize olanak sağlayan zed graph
+kütüphanesinden
+yararlanılmıştır.&lt;a href=&#34;https://zedgraph.sourceforge.net/index.html&#34;&gt;Bu kütüphaneyi buradan indirebilirsiniz&lt;/a&gt;.
+Sistemin genel algoritmasına bakarsak şöyle çalışır; seri porttan veri okunur,
+veri aralardaki virgüllere göre parse edilip labellera aktarılır, Eklenen
+&amp;ldquo;Timer&amp;rdquo; öğesi ile timerın her periyodunda zaman belirten labela geçen zaman
+kadar eklenir böylece kaçıncı saniye olduğu tutulur, aynı zamanda timerın her
+bir periyodunda x değerleri zaman, y değerleri data noktaları olmak üzere
+grafiğe bir nokta eklenir. Şimdi çalışma şeklini daha ayrıntılı bir şekilde
+inceleyelim.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

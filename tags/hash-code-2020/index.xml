@@ -9,7 +9,7 @@
       <url>https://mozanunal.com/images/papermod-cover.png</url>
       <link>https://mozanunal.com/images/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.147.7</generator>
+    <generator>Hugo -- 0.147.8</generator>
     <language>en</language>
     <copyright>mozanunal</copyright>
     <lastBuildDate>Tue, 31 Mar 2020 23:00:12 +0000</lastBuildDate>
@@ -20,15 +20,22 @@
       <pubDate>Tue, 31 Mar 2020 23:00:12 +0000</pubDate>
       <guid>https://mozanunal.com/2020/03/hash-code-2020/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Hello Everyone,&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;I want to share our solution for Google Hash Code 2020. It is the code repo of team titanium-white for Google Hash Code 2020 Online Qualification Round. We have writen our code in Python.&lt;/p&gt;
+&lt;p&gt;I want to share our solution for Google Hash Code 2020. It is the code repo of
+team titanium-white for Google Hash Code 2020 Online Qualification Round. We
+have writen our code in Python.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://github.com/mozanunal/hashcode2020&#34;&gt;Code can be reached from here&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;code&#34;&gt;Code&lt;/h2&gt;
 &lt;p&gt;Basically, the problem class is the backbone of the system.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;It handles the inputs and outputs with functions &lt;code&gt;__init__&lt;/code&gt; and &lt;code&gt;dump&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;It read the input files and creates objects according to that. I think the one of the thing we did well is this &lt;code&gt;__init__&lt;/code&gt; function.
-It create all the objects like books, libraries even if book2score dictionary.&lt;/li&gt;
-&lt;li&gt;It also handles the solving opeartion. It iterate trough the days and get max predicted score from every library available. When the libraries calculating the max pred scores, they get the current state as input. Therefore their predictionsa are more accurate. After the library is selected the state is updated such as day, already scanned books and state of the selected library.&lt;/li&gt;
+&lt;li&gt;It read the input files and creates objects according to that. I think the one
+of the thing we did well is this &lt;code&gt;__init__&lt;/code&gt; function. It create all the
+objects like books, libraries even if book2score dictionary.&lt;/li&gt;
+&lt;li&gt;It also handles the solving opeartion. It iterate trough the days and get max
+predicted score from every library available. When the libraries calculating
+the max pred scores, they get the current state as input. Therefore their
+predictionsa are more accurate. After the library is selected the state is
+updated such as day, already scanned books and state of the selected library.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -204,8 +211,13 @@ It create all the objects like books, libraries even if book2score dictionary.&l
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;p&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;dump&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;solution&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;The Second critical class is &lt;code&gt;Library&lt;/code&gt; class. The vital function in our implementation is predMaxScore. We are doing calculating this with
-&lt;code&gt;total book score / (sign day*sign day)&lt;/code&gt;. Because, during our experiments, we saw that the sign days length is quite important especially for some datasets. Total book score is simply if in that day the library is chosen, how much of the books can be scanned until the end of total days. Of course these books are selecting according to their scores and they should be not scanned before.&lt;/p&gt;</description>
+&lt;/div&gt;&lt;p&gt;The Second critical class is &lt;code&gt;Library&lt;/code&gt; class. The vital function in our
+implementation is predMaxScore. We are doing calculating this with
+&lt;code&gt;total book score / (sign day*sign day)&lt;/code&gt;. Because, during our experiments, we
+saw that the sign days length is quite important especially for some datasets.
+Total book score is simply if in that day the library is chosen, how much of the
+books can be scanned until the end of total days. Of course these books are
+selecting according to their scores and they should be not scanned before.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

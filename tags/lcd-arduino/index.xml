@@ -9,7 +9,7 @@
       <url>https://mozanunal.com/images/papermod-cover.png</url>
       <link>https://mozanunal.com/images/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.147.7</generator>
+    <generator>Hugo -- 0.147.8</generator>
     <language>en</language>
     <copyright>mozanunal</copyright>
     <lastBuildDate>Sun, 11 Jan 2015 20:57:00 +0000</lastBuildDate>
@@ -20,10 +20,17 @@
       <pubDate>Sun, 11 Jan 2015 20:57:00 +0000</pubDate>
       <guid>https://mozanunal.com/2015/01/lcd-gostergeli-mesafe-olcer/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Merhabalar!&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Bugünkü yazımda LCD göstergeli bir mesafe ölçerin nasıl yapılabileceğini anlatacağım. Projede Arduino, LCD modülü ve HC-SR04 modülü kullandım. Mesafe hesaplama işini &amp;ldquo;NewPing&amp;rdquo; isimli kütüphaneye yaptırdım. Bu aldığım mesafe verilerini de LCD ekrana bastırıyorum kod bu kadar basit. HC-SR04 ultrasonik mesafe hesaplama modulü. Mesafe hesabı için ses dalgalarını kullanıyor. Ses hızına göre geri dönüş süresini hesaplıyor bu sayede uzaklık hakkında bilgi sahibi olmuş oluyoruz.&lt;/p&gt;
+&lt;p&gt;Bugünkü yazımda LCD göstergeli bir mesafe ölçerin nasıl yapılabileceğini
+anlatacağım. Projede Arduino, LCD modülü ve HC-SR04 modülü kullandım. Mesafe
+hesaplama işini &amp;ldquo;NewPing&amp;rdquo; isimli kütüphaneye yaptırdım. Bu aldığım mesafe
+verilerini de LCD ekrana bastırıyorum kod bu kadar basit. HC-SR04 ultrasonik
+mesafe hesaplama modulü. Mesafe hesabı için ses dalgalarını kullanıyor. Ses
+hızına göre geri dönüş süresini hesaplıyor bu sayede uzaklık hakkında bilgi
+sahibi olmuş oluyoruz.&lt;/p&gt;
 &lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://2.bp.blogspot.com/-imW1-EwFBzI/VLK22y3CYhI/AAAAAAAAGjE/IiK8R_IY9rM/s1600/IMG_20150111_183709.jpg&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://3.bp.blogspot.com/-QmoDFE2QbYc/VLK23M3z7hI/AAAAAAAAGjI/q0U5KHUuEiU/s1600/IMG_20150111_183748.jpg&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Uygulamanın Arduino Kodunu paylaşıyorum. Bağlantılar da kod içerisinde verilmiştir.&lt;/p&gt;</description>
+&lt;p&gt;Uygulamanın Arduino Kodunu paylaşıyorum. Bağlantılar da kod içerisinde
+verilmiştir.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

@@ -9,7 +9,7 @@
       <url>https://mozanunal.com/images/papermod-cover.png</url>
       <link>https://mozanunal.com/images/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.147.7</generator>
+    <generator>Hugo -- 0.147.8</generator>
     <language>en</language>
     <copyright>mozanunal</copyright>
     <lastBuildDate>Sat, 02 Jun 2018 11:07:45 +0000</lastBuildDate>
@@ -19,8 +19,13 @@
       <link>https://mozanunal.com/2018/06/veriloga-giris/</link>
       <pubDate>Sat, 02 Jun 2018 11:07:45 +0000</pubDate>
       <guid>https://mozanunal.com/2018/06/veriloga-giris/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Herkes Merhabalar,&lt;/strong&gt;
-Bugün bir &amp;ldquo;hardware  description language&amp;rdquo; olan verilog diline giriş yapmak istiyorum. Verilog sayısal dizaynda( ASIC ve FPGA ) kullanılan bir tanımlama dilidir. Verilog dilini Fpga programlamak için bir çok projede kullandım fakat ASIC dizayn konusunda bir tecrübem yok. Fpga programlarken öğrendiğim şeyleri farklı yazılarda paylaşmıştım. Bu yazı da o yazılardan biri diyebiliriz. Verilog ile alakalı daha ileri düzey şeylerden bahsedeceğim yazılar da gelecektir diye düşünüyorum.&lt;/p&gt;
+      <description>&lt;p&gt;&lt;strong&gt;Herkes Merhabalar,&lt;/strong&gt; Bugün bir &amp;ldquo;hardware description language&amp;rdquo; olan verilog
+diline giriş yapmak istiyorum. Verilog sayısal dizaynda( ASIC ve FPGA )
+kullanılan bir tanımlama dilidir. Verilog dilini Fpga programlamak için bir çok
+projede kullandım fakat ASIC dizayn konusunda bir tecrübem yok. Fpga
+programlarken öğrendiğim şeyleri farklı yazılarda paylaşmıştım. Bu yazı da o
+yazılardan biri diyebiliriz. Verilog ile alakalı daha ileri düzey şeylerden
+bahsedeceğim yazılar da gelecektir diye düşünüyorum.&lt;/p&gt;
 &lt;p&gt;&lt;img alt=&#34;ZYBO Fpga Geliştirme Kartı&#34; loading=&#34;lazy&#34; src=&#34;https://mozanunal.com/images/1527937147117.png&#34;&gt;&lt;/p&gt;</description>
     </item>
     <item>
@@ -28,8 +33,17 @@ Bugün bir &amp;ldquo;hardware  description language&amp;rdquo; olan verilog dil
       <link>https://mozanunal.com/2018/03/altera-cyclone-4-fpga/</link>
       <pubDate>Mon, 05 Mar 2018 21:48:22 +0000</pubDate>
       <guid>https://mozanunal.com/2018/03/altera-cyclone-4-fpga/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;
-Son yıllarda hobi elektroniği inanılmaz bir hızla gelişti. Şüphesiz bu hızlı gelişmenin mimarı Arduino. Atmelin 8 bitlik işlemcilerini temel alarak tasarlanan bu kart ve programala dili sayesinde insanlar kolayca projeler geliştirmeye ve hobi uygulamaları yapmaya başladılar. Ama Arduinonun ve hatta daha iyi bir mikroişlemcinin de yeterli olmadığı projeler var. Böyle bir ihtiyaç doğduğunda seçenekler kendini geliştirmek isteyenler için çok sıkıntılı hale geliyor. Önceki yazılarımdan birinde STM32 öğrenmeye nasıl başlanır ve proje nasıl oluşturulur onu anlatmıştım. Bu sefer mikroişlemcinin yanı sıra bir fpga üzerine gitmek istiyorum. Mesela yüksek hesaplama gücü ve paralel işlem gerektiren proje yapmak istiyorsunuz ve fgpa öğrenmek istiyorsunuz. Nasıl başlayabilirsiniz onu anlatmak istiyorum.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt; Son yıllarda hobi elektroniği inanılmaz bir hızla
+gelişti. Şüphesiz bu hızlı gelişmenin mimarı Arduino. Atmelin 8 bitlik
+işlemcilerini temel alarak tasarlanan bu kart ve programala dili sayesinde
+insanlar kolayca projeler geliştirmeye ve hobi uygulamaları yapmaya başladılar.
+Ama Arduinonun ve hatta daha iyi bir mikroişlemcinin de yeterli olmadığı
+projeler var. Böyle bir ihtiyaç doğduğunda seçenekler kendini geliştirmek
+isteyenler için çok sıkıntılı hale geliyor. Önceki yazılarımdan birinde STM32
+öğrenmeye nasıl başlanır ve proje nasıl oluşturulur onu anlatmıştım. Bu sefer
+mikroişlemcinin yanı sıra bir fpga üzerine gitmek istiyorum. Mesela yüksek
+hesaplama gücü ve paralel işlem gerektiren proje yapmak istiyorsunuz ve fgpa
+öğrenmek istiyorsunuz. Nasıl başlayabilirsiniz onu anlatmak istiyorum.&lt;/p&gt;</description>
     </item>
     <item>
       <title>PMod Microphone Driver</title>
@@ -37,7 +51,16 @@ Son yıllarda hobi elektroniği inanılmaz bir hızla gelişti. Şüphesiz bu h�
       <pubDate>Thu, 20 Jul 2017 23:14:00 +0000</pubDate>
       <guid>https://mozanunal.com/2017/07/pmod-microphone-driver/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Hi&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;In this post, the Pmod microphone driver which is written in Verilog for Zynq boards is discussed. The driver is developed for Digilent Design Competition 2017. We have a project which microphone array is used. Therefore we have to get data from Pmod Mic also 5 of them should work synchronously. The microphone is sampled with an external ADC and this ADC is using basic SPI for communication. This module should be added to main FPGA code and you should make the connections required. clk/16 sample rate is succeeded for the microphone.  clk input frequency should select according to required sampling rate for the microphone. SS can be used as out enable also.  You can ask any question directly to me if you have a problem with the driver. See you&amp;hellip;&lt;/p&gt;</description>
+&lt;p&gt;In this post, the Pmod microphone driver which is written in Verilog for Zynq
+boards is discussed. The driver is developed for Digilent Design
+Competition 2017. We have a project which microphone array is used. Therefore we
+have to get data from Pmod Mic also 5 of them should work synchronously. The
+microphone is sampled with an external ADC and this ADC is using basic SPI for
+communication. This module should be added to main FPGA code and you should make
+the connections required. clk/16 sample rate is succeeded for the microphone.
+clk input frequency should select according to required sampling rate for the
+microphone. SS can be used as out enable also. You can ask any question directly
+to me if you have a problem with the driver. See you&amp;hellip;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

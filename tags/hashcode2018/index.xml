@@ -9,7 +9,7 @@
       <url>https://mozanunal.com/images/papermod-cover.png</url>
       <link>https://mozanunal.com/images/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.147.7</generator>
+    <generator>Hugo -- 0.147.8</generator>
     <language>en</language>
     <copyright>mozanunal</copyright>
     <lastBuildDate>Sun, 08 Apr 2018 00:45:01 +0000</lastBuildDate>
@@ -19,9 +19,13 @@
       <link>https://mozanunal.com/2018/04/hash-code-2018/</link>
       <pubDate>Sun, 08 Apr 2018 00:45:01 +0000</pubDate>
       <guid>https://mozanunal.com/2018/04/hash-code-2018/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;
-Hash Code Google tarafından dünya çapında düzenlenen bir algoritma yarışmasıdır. Bu yıl itibariyle son 3 tanesine ben de katılmış bulunuyorum. Hatta geçen sene yarışma hakkında bir yazı da yazmıştım. Bu geleneği bu yıl da devam ettirmeye karar verdım.&lt;/p&gt;
-&lt;p&gt;Bu seneki yarışmada çok başarılı olamadık derece anlamında. Ama yarışmada çalışan, puan alabilen bir çözüm sunmak bile baya zor. O nedenle ben de çözümüzü birazcık açıklamak istiyorum. Aşağıdan direk github reposunu inceleyebilirsiniz.
+      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt; Hash Code Google tarafından dünya çapında düzenlenen bir
+algoritma yarışmasıdır. Bu yıl itibariyle son 3 tanesine ben de katılmış
+bulunuyorum. Hatta geçen sene yarışma hakkında bir yazı da yazmıştım. Bu
+geleneği bu yıl da devam ettirmeye karar verdım.&lt;/p&gt;
+&lt;p&gt;Bu seneki yarışmada çok başarılı olamadık derece anlamında. Ama yarışmada
+çalışan, puan alabilen bir çözüm sunmak bile baya zor. O nedenle ben de çözümüzü
+birazcık açıklamak istiyorum. Aşağıdan direk github reposunu inceleyebilirsiniz.
 &lt;a href=&#34;https://github.com/mozanunal/hashcode-2018-qualificationQuestion&#34;&gt;Github Repo&lt;/a&gt;&lt;/p&gt;</description>
     </item>
   </channel>

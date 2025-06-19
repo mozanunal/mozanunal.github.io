@@ -9,7 +9,7 @@
       <url>https://mozanunal.com/images/papermod-cover.png</url>
       <link>https://mozanunal.com/images/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.147.7</generator>
+    <generator>Hugo -- 0.147.8</generator>
     <language>en</language>
     <copyright>mozanunal</copyright>
     <lastBuildDate>Mon, 20 Aug 2018 15:14:07 +0000</lastBuildDate>
@@ -19,11 +19,16 @@
       <link>https://mozanunal.com/2018/08/opizero-dump1090/</link>
       <pubDate>Mon, 20 Aug 2018 15:14:07 +0000</pubDate>
       <guid>https://mozanunal.com/2018/08/opizero-dump1090/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Herkese merhabalar,&lt;/strong&gt;
-Bugünkü yazımda dump1090 programını nasıl bir orange pi zero üzerinde çalıştırabiliriz ondan bahsedeceğim. Bildiğiniz gibi dump1090 sdr kullanarak uçakların adsb yayınlarını çözmeye yarayan bir kod parçası. Bu projeyi gerçekleştirdiğim mini pc olarak orange pi zero seçmemin sebebi ise maliyeti ve kompaklığı. 5-10 dolara satın alınabiliniyor ve boyutları gerçekten küçük.&lt;/p&gt;
+      <description>&lt;p&gt;&lt;strong&gt;Herkese merhabalar,&lt;/strong&gt; Bugünkü yazımda dump1090 programını nasıl bir orange pi
+zero üzerinde çalıştırabiliriz ondan bahsedeceğim. Bildiğiniz gibi dump1090 sdr
+kullanarak uçakların adsb yayınlarını çözmeye yarayan bir kod parçası. Bu
+projeyi gerçekleştirdiğim mini pc olarak orange pi zero seçmemin sebebi ise
+maliyeti ve kompaklığı. 5-10 dolara satın alınabiliniyor ve boyutları gerçekten
+küçük.&lt;/p&gt;
 &lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://mozanunal.com/images/1534768337583.png&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;rtlsdr-sürücüsünün-kurulması&#34;&gt;Rtlsdr Sürücüsünün Kurulması&lt;/h2&gt;
-&lt;p&gt;Ben orange pi zeroyu armbian işletim sistemi ve mainline kernel ile kullanıyorum. Sistemde uname -a çalıştırdığımda aldığım çıktı aşağıdaki gibi:&lt;/p&gt;</description>
+&lt;p&gt;Ben orange pi zeroyu armbian işletim sistemi ve mainline kernel ile
+kullanıyorum. Sistemde uname -a çalıştırdığımda aldığım çıktı aşağıdaki gibi:&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

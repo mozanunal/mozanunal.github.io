@@ -9,7 +9,7 @@
       <url>https://mozanunal.com/images/papermod-cover.png</url>
       <link>https://mozanunal.com/images/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.147.7</generator>
+    <generator>Hugo -- 0.147.8</generator>
     <language>en</language>
     <copyright>mozanunal</copyright>
     <lastBuildDate>Tue, 07 Oct 2014 19:52:00 +0000</lastBuildDate>
@@ -20,7 +20,14 @@
       <pubDate>Tue, 07 Oct 2014 19:52:00 +0000</pubDate>
       <guid>https://mozanunal.com/2014/10/karanlkta-yanan-gece-lambas/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar!&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Projemin ismi karanlıkta çalışan gece lambası, transistörü teorik olarak öğrendikten sonra bunu uygulamaya geçirmek istedim ve bu devreyi tasarladım. 1 adet transistör, 1 adet ldr, 1 adet led ve bir kaç tane direnç kullandım. LDR ışığa göre direnci değiskenlik gösteren bir devre elemanıdır. Karanlıkta direnci artarken, aydınlıkta direnci azalmaktadır. Aydınlıktan karanlığa geçişte direnci artar ve uçları arasındaki gerilim artar bu sayede transistör aktif olur ve ledin yanmasını sağlar. Devre şeması ve tanıtım videosu aşağıdadır. Tekrar görüşmek üzere&amp;hellip;\&lt;/p&gt;</description>
+&lt;p&gt;Projemin ismi karanlıkta çalışan gece lambası, transistörü teorik olarak
+öğrendikten sonra bunu uygulamaya geçirmek istedim ve bu devreyi tasarladım. 1
+adet transistör, 1 adet ldr, 1 adet led ve bir kaç tane direnç kullandım. LDR
+ışığa göre direnci değiskenlik gösteren bir devre elemanıdır. Karanlıkta direnci
+artarken, aydınlıkta direnci azalmaktadır. Aydınlıktan karanlığa geçişte direnci
+artar ve uçları arasındaki gerilim artar bu sayede transistör aktif olur ve
+ledin yanmasını sağlar. Devre şeması ve tanıtım videosu aşağıdadır. Tekrar
+görüşmek üzere&amp;hellip;\&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

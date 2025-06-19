@@ -9,7 +9,7 @@
       <url>https://mozanunal.com/images/papermod-cover.png</url>
       <link>https://mozanunal.com/images/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.147.7</generator>
+    <generator>Hugo -- 0.147.8</generator>
     <language>en</language>
     <copyright>mozanunal</copyright>
     <lastBuildDate>Thu, 09 Jun 2016 04:45:00 +0000</lastBuildDate>
@@ -20,7 +20,14 @@
       <pubDate>Thu, 09 Jun 2016 04:45:00 +0000</pubDate>
       <guid>https://mozanunal.com/2016/06/wpf-ile-ev-otomasyonu-arayuzu/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;br&gt;
-Bu yazımda .NET platformunun bir teknolojisi olan WPF kullanarak ev otomasyonu kontrol paneli yapmayı anlatacağım. Yaptığım bu projenin başlıca işlevi şudur; 5 farklı sensörden bulunulan ortamın sıcaklığı, nemi, zehirli gaz durumu, ortamda canlı olup olmadığı, ortamda yağış olup olmadığı Arduino yardımıyla alınır ve bu sensor dataları C# arayüzünde gösterilir. Eğer onay kutusu işaretlenirse istenmeyen bir durumda (gaz sızıntısı, eve hırsız girmesi, yağmur için kurulabilir.) program uyarı olarak girilen adrese bir adet mail gönderir.&lt;a href=&#34;https://drive.google.com/file/d/0B5j__Lyt9ozbVTRIOVFVcVVWX3c/view?usp=sharing&#34;&gt;Projenin Arduino ve C# kaynak kodunu buradan indirebilirsiniz.&lt;/a&gt;&lt;/p&gt;</description>
+Bu yazımda .NET platformunun bir teknolojisi olan WPF kullanarak ev otomasyonu
+kontrol paneli yapmayı anlatacağım. Yaptığım bu projenin başlıca işlevi şudur; 5
+farklı sensörden bulunulan ortamın sıcaklığı, nemi, zehirli gaz durumu, ortamda
+canlı olup olmadığı, ortamda yağış olup olmadığı Arduino yardımıyla alınır ve bu
+sensor dataları C# arayüzünde gösterilir. Eğer onay kutusu işaretlenirse
+istenmeyen bir durumda (gaz sızıntısı, eve hırsız girmesi, yağmur için
+kurulabilir.) program uyarı olarak girilen adrese bir adet mail
+gönderir.&lt;a href=&#34;https://drive.google.com/file/d/0B5j__Lyt9ozbVTRIOVFVcVVWX3c/view?usp=sharing&#34;&gt;Projenin Arduino ve C# kaynak kodunu buradan indirebilirsiniz.&lt;/a&gt;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

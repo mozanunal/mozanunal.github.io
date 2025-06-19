@@ -9,7 +9,7 @@
       <url>https://mozanunal.com/images/papermod-cover.png</url>
       <link>https://mozanunal.com/images/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.147.7</generator>
+    <generator>Hugo -- 0.147.8</generator>
     <language>en</language>
     <copyright>mozanunal</copyright>
     <lastBuildDate>Tue, 12 Oct 2021 08:14:07 +0000</lastBuildDate>
@@ -407,7 +407,7 @@
       <description></description>
     </item>
     <item>
-      <title>ESP8266</title>
+      <title>Esp8266</title>
       <link>https://mozanunal.com/tags/esp8266/</link>
       <pubDate>Wed, 14 Mar 2018 21:29:02 +0000</pubDate>
       <guid>https://mozanunal.com/tags/esp8266/</guid>
@@ -831,20 +831,6 @@
       <link>https://mozanunal.com/tags/laser-haberle%C5%9Fme/</link>
       <pubDate>Sun, 07 Feb 2016 23:18:00 +0000</pubDate>
       <guid>https://mozanunal.com/tags/laser-haberle%C5%9Fme/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Kitap Ayıracı</title>
-      <link>https://mozanunal.com/tags/kitap-ay%C4%B1rac%C4%B1/</link>
-      <pubDate>Fri, 05 Feb 2016 02:49:00 +0000</pubDate>
-      <guid>https://mozanunal.com/tags/kitap-ay%C4%B1rac%C4%B1/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Mıknatıslı</title>
-      <link>https://mozanunal.com/tags/m%C4%B1knat%C4%B1sl%C4%B1/</link>
-      <pubDate>Fri, 05 Feb 2016 02:49:00 +0000</pubDate>
-      <guid>https://mozanunal.com/tags/m%C4%B1knat%C4%B1sl%C4%B1/</guid>
       <description></description>
     </item>
     <item>
@@ -1580,34 +1566,6 @@
       <link>https://mozanunal.com/tags/imu/</link>
       <pubDate>Sat, 18 Oct 2014 18:22:00 +0000</pubDate>
       <guid>https://mozanunal.com/tags/imu/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Face Recognize</title>
-      <link>https://mozanunal.com/tags/face-recognize/</link>
-      <pubDate>Tue, 14 Oct 2014 17:39:00 +0000</pubDate>
-      <guid>https://mozanunal.com/tags/face-recognize/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Passface</title>
-      <link>https://mozanunal.com/tags/passface/</link>
-      <pubDate>Tue, 14 Oct 2014 17:39:00 +0000</pubDate>
-      <guid>https://mozanunal.com/tags/passface/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Yüz Tanıma</title>
-      <link>https://mozanunal.com/tags/y%C3%BCz-tan%C4%B1ma/</link>
-      <pubDate>Tue, 14 Oct 2014 17:39:00 +0000</pubDate>
-      <guid>https://mozanunal.com/tags/y%C3%BCz-tan%C4%B1ma/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Yüz Tanıma Ile Güvenlik</title>
-      <link>https://mozanunal.com/tags/y%C3%BCz-tan%C4%B1ma-ile-g%C3%BCvenlik/</link>
-      <pubDate>Tue, 14 Oct 2014 17:39:00 +0000</pubDate>
-      <guid>https://mozanunal.com/tags/y%C3%BCz-tan%C4%B1ma-ile-g%C3%BCvenlik/</guid>
       <description></description>
     </item>
     <item>

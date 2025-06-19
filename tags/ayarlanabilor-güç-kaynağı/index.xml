@@ -9,7 +9,7 @@
       <url>https://mozanunal.com/images/papermod-cover.png</url>
       <link>https://mozanunal.com/images/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.147.7</generator>
+    <generator>Hugo -- 0.147.8</generator>
     <language>en</language>
     <copyright>mozanunal</copyright>
     <lastBuildDate>Sun, 13 Mar 2016 01:24:00 +0000</lastBuildDate>
@@ -20,7 +20,16 @@
       <pubDate>Sun, 13 Mar 2016 01:24:00 +0000</pubDate>
       <guid>https://mozanunal.com/2016/03/ayarlanabilir-tasnabilir-guc-kaynag-yapm/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Bugünkü yazımda nasıl basit bir şekilde bir powerbank&amp;rsquo;i ayarlanabilir güç kaynağına dönüştürebileceğimizden bahsedeceğim. Gerekli olan malzemeler sadece bir adet power bank ve bir adet MT3608 boost converter. Projeye başlamadan önce boost converter nedir ondan bahsetmek istiyorum. Boost converterlar voltaj yükseltmek için kullanılır. Kondansatör ve bobin ve diyot kullanarak bir switch yapısı kurarlar ve bu yapı ile hem voltajı yükseltirler hem de verimleri çok yüksek olur. Benim kulladığım modül MT3608 powerbankin pilinin çalışma voltaji olan 3.6 volt ile beslenebiliyor. 0 28 Volt arası 2 amper çıkış alınabiliyor. Verimi de yüzde 93 civarı. Projemize çok uygun yapıyor bu özellikler de onu. Hem de kısa devre koruması da var. Bu da güvenlik açısından da uygun hale getiriyor.&lt;/p&gt;</description>
+&lt;p&gt;Bugünkü yazımda nasıl basit bir şekilde bir powerbank&amp;rsquo;i ayarlanabilir güç
+kaynağına dönüştürebileceğimizden bahsedeceğim. Gerekli olan malzemeler sadece
+bir adet power bank ve bir adet MT3608 boost converter. Projeye başlamadan önce
+boost converter nedir ondan bahsetmek istiyorum. Boost converterlar voltaj
+yükseltmek için kullanılır. Kondansatör ve bobin ve diyot kullanarak bir switch
+yapısı kurarlar ve bu yapı ile hem voltajı yükseltirler hem de verimleri çok
+yüksek olur. Benim kulladığım modül MT3608 powerbankin pilinin çalışma voltaji
+olan 3.6 volt ile beslenebiliyor. 0 28 Volt arası 2 amper çıkış alınabiliyor.
+Verimi de yüzde 93 civarı. Projemize çok uygun yapıyor bu özellikler de onu. Hem
+de kısa devre koruması da var. Bu da güvenlik açısından da uygun hale getiriyor.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

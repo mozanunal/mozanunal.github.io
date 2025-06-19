@@ -9,7 +9,7 @@
       <url>https://mozanunal.com/images/papermod-cover.png</url>
       <link>https://mozanunal.com/images/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.147.7</generator>
+    <generator>Hugo -- 0.147.8</generator>
     <language>en</language>
     <copyright>mozanunal</copyright>
     <lastBuildDate>Fri, 07 Nov 2014 14:15:00 +0000</lastBuildDate>
@@ -20,8 +20,16 @@
       <pubDate>Fri, 07 Nov 2014 14:15:00 +0000</pubDate>
       <guid>https://mozanunal.com/2014/11/imu-aclarnn-3-boyutlu-olarak/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar!&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Bu yazımda size hava araçlarının en temel elektronik ekipmanı olan IMU modullerinden bahsetmek istiyorum. IMU modullerinin hayati önem taşımasının sebebi, modüllerin yönelim açılarını hesaplamak için kullanılmasıdır. En büyük yolcu uçağından, roketten en küçük bir quadrokoptere kadar tüm hava araçları stabil ve sağlıklı bir uçuş için bu modullerden birine sahip olmalıdırlar.&lt;/p&gt;
-&lt;p&gt;IMU ingilizcedeki &amp;ldquo;Inertial Mesurament Unit&amp;rdquo; kelime grubunun kısaltılmış halidir. IMU ile bir cismin uzaydaki 3 boyutlu yönelimi bulunabilir. 3 boyutlu yönelimi anlatmanın  en kolay yolu Euler Açılarını kullanmaktır. Havacılık sektöründe sıklıkla Euler açılarının özelleşmiş bir versiyonu olan &amp;ldquo;Yaw, Pitch, Roll&amp;rdquo; açıları kullanılmaktadır.&lt;/p&gt;</description>
+&lt;p&gt;Bu yazımda size hava araçlarının en temel elektronik ekipmanı olan IMU
+modullerinden bahsetmek istiyorum. IMU modullerinin hayati önem taşımasının
+sebebi, modüllerin yönelim açılarını hesaplamak için kullanılmasıdır. En büyük
+yolcu uçağından, roketten en küçük bir quadrokoptere kadar tüm hava araçları
+stabil ve sağlıklı bir uçuş için bu modullerden birine sahip olmalıdırlar.&lt;/p&gt;
+&lt;p&gt;IMU ingilizcedeki &amp;ldquo;Inertial Mesurament Unit&amp;rdquo; kelime grubunun kısaltılmış
+halidir. IMU ile bir cismin uzaydaki 3 boyutlu yönelimi bulunabilir. 3 boyutlu
+yönelimi anlatmanın  en kolay yolu Euler Açılarını kullanmaktır. Havacılık
+sektöründe sıklıkla Euler açılarının özelleşmiş bir versiyonu olan &amp;ldquo;Yaw, Pitch,
+Roll&amp;rdquo; açıları kullanılmaktadır.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

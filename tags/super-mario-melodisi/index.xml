@@ -9,7 +9,7 @@
       <url>https://mozanunal.com/images/papermod-cover.png</url>
       <link>https://mozanunal.com/images/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.147.7</generator>
+    <generator>Hugo -- 0.147.8</generator>
     <language>en</language>
     <copyright>mozanunal</copyright>
     <lastBuildDate>Sun, 25 Jan 2015 20:03:00 +0000</lastBuildDate>
@@ -20,7 +20,16 @@
       <pubDate>Sun, 25 Jan 2015 20:03:00 +0000</pubDate>
       <guid>https://mozanunal.com/2015/01/arduino-ile-super-mario-melodisi-calmak/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Merhaba Arkadaşlar&lt;/strong&gt;&lt;br&gt;
-Bugünkü yazımda Arduino ile melodi çalma uygulamasından bahsedeceğim. Kullandığım malzemeler Arduino ve bir buzzer. Pin bağlantıları da oldukça basit buzzerın eksi ucu GND&amp;rsquo;ye,  + ucu da 12. pine bağlanıyor. 12. Pin dijital pin, farklı frekanslarda 1-0 yapılarak notaların çalınması sağlanır. Notaların çalınma süreleri de nota frekansının verilme süresi değiştirilerek arduino tarafından ayarlanıyor. Böylece istediğimiz melodiyi elde etmiş oluyoruz. Ayrıntılı bilgiye &lt;a href=&#34;https://www.arduino.cc/en/Tutorial/Melody&#34;&gt;buradan&lt;/a&gt; ulaşabilirsiniz. Arduino koduna aşağıdan ulaşabilirsiniz(Kod alıntıdır. Tek tek notalarla uğraşmamak için notaları çıkarılmış bir koddan aldım.). Tekrar görüşmek üzere.&lt;/p&gt;</description>
+Bugünkü yazımda Arduino ile melodi çalma uygulamasından bahsedeceğim.
+Kullandığım malzemeler Arduino ve bir buzzer. Pin bağlantıları da oldukça basit
+buzzerın eksi ucu GND&amp;rsquo;ye,  + ucu da 12. pine bağlanıyor. 12. Pin dijital pin,
+farklı frekanslarda 1-0 yapılarak notaların çalınması sağlanır. Notaların
+çalınma süreleri de nota frekansının verilme süresi değiştirilerek arduino
+tarafından ayarlanıyor. Böylece istediğimiz melodiyi elde etmiş oluyoruz.
+Ayrıntılı bilgiye &lt;a href=&#34;https://www.arduino.cc/en/Tutorial/Melody&#34;&gt;buradan&lt;/a&gt;
+ulaşabilirsiniz. Arduino koduna aşağıdan ulaşabilirsiniz(Kod alıntıdır. Tek tek
+notalarla uğraşmamak için notaları çıkarılmış bir koddan aldım.). Tekrar
+görüşmek üzere.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

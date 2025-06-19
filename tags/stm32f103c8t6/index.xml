@@ -9,7 +9,7 @@
       <url>https://mozanunal.com/images/papermod-cover.png</url>
       <link>https://mozanunal.com/images/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.147.7</generator>
+    <generator>Hugo -- 0.147.8</generator>
     <language>en</language>
     <copyright>mozanunal</copyright>
     <lastBuildDate>Tue, 08 Nov 2016 15:53:00 +0000</lastBuildDate>
@@ -20,7 +20,17 @@
       <pubDate>Tue, 08 Nov 2016 15:53:00 +0000</pubDate>
       <guid>https://mozanunal.com/2016/11/stm32-mikroislemci-dunyasna-giris/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;br&gt;
-Bu yazımda yeni bir alana hızlıca bir giriş yapıyorum. Zaman zaman projelerimizde 8 bitlik atmel veya pic işlemcilerin beklentiyi karşılamadığı oluyor. Böyle durumlar için ST Microelectronics firmasının STM32 isimli 32 bitlik işlemcilerini önerebilirim. 32 Bit işlemciler için en çok kaynak bulanabilecek işlemci takip ettiğim kadarıyla. ST firması çoğu gelişitme aracını da ücretsiz olarak sağlıyor. Bu yazıda tanıtacağım kartlar Arm Cortex M3 mimarisi tabanlı geliştirme kartlarıdır. Peki bu çekirdeği neden seçtim? Bir cümleyle özetlemek gerekirse 8 bitlik islemcilere bariz üstünlük sağlayan ve projelerin pek çoğu için yeterli özelliklere sahip olan en uygun fiyatlı işlemci. Geliştirme kartı olmadan sadece işlemci 1 - 2 dolar gibi çok iyi bir fiyata sahip. Özelliklerine aşağıdan ulaşabilirsiniz.&lt;/p&gt;</description>
+Bu yazımda yeni bir alana hızlıca bir giriş yapıyorum. Zaman zaman
+projelerimizde 8 bitlik atmel veya pic işlemcilerin beklentiyi karşılamadığı
+oluyor. Böyle durumlar için ST Microelectronics firmasının STM32 isimli 32
+bitlik işlemcilerini önerebilirim. 32 Bit işlemciler için en çok kaynak
+bulanabilecek işlemci takip ettiğim kadarıyla. ST firması çoğu gelişitme aracını
+da ücretsiz olarak sağlıyor. Bu yazıda tanıtacağım kartlar Arm Cortex M3
+mimarisi tabanlı geliştirme kartlarıdır. Peki bu çekirdeği neden seçtim? Bir
+cümleyle özetlemek gerekirse 8 bitlik islemcilere bariz üstünlük sağlayan ve
+projelerin pek çoğu için yeterli özelliklere sahip olan en uygun fiyatlı
+işlemci. Geliştirme kartı olmadan sadece işlemci 1 - 2 dolar gibi çok iyi bir
+fiyata sahip. Özelliklerine aşağıdan ulaşabilirsiniz.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
