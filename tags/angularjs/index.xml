@@ -1,15 +1,37 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Angularjs on mozanunal.com</title><link>https://mozanunal.com/tags/angularjs/</link><description>Recent content in Angularjs on mozanunal.com</description><generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>mehmetozanunal@gmail.com (M.Ozan Unal)</managingEditor><webMaster>mehmetozanunal@gmail.com (M.Ozan Unal)</webMaster><copyright>© 2025 M.Ozan Unal</copyright><lastBuildDate>Mon, 16 Apr 2018 18:10:04 +0000</lastBuildDate><atom:link href="https://mozanunal.com/tags/angularjs/index.xml" rel="self" type="application/rss+xml"/><item><title>[TR] Hackhathon Getir 2018</title><link>https://mozanunal.com/posts/2018/getir-hackhathon/</link><pubDate>Mon, 16 Apr 2018 18:10:04 +0000</pubDate><author>mehmetozanunal@gmail.com (M.Ozan Unal)</author><guid>https://mozanunal.com/posts/2018/getir-hackhathon/</guid><description>&lt;blockquote>
-&lt;p>It is a project developed for BiTaksi Getir Hackathon 2018. Detailed
-information can be found from below.&lt;/p>&lt;/blockquote>
-&lt;h1 class="relative group">Team Paketci!
-&lt;div id="team-paketci" class="anchor">&lt;/div>
-&lt;span
-class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#team-paketci" aria-label="Anchor">#&lt;/a>
-&lt;/span>
-&lt;/h1>
-&lt;p>
-&lt;figure>
-&lt;img class="my-0 rounded-md" loading="lazy" alt="image" src="https://mozanunal.com/images/1523149456799.jpg">
-&lt;/figure>
-&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Angularjs on mozanunal.com</title>
+    <link>https://mozanunal.com/tags/angularjs/</link>
+    <description>Recent content in Angularjs on mozanunal.com</description>
+    <image>
+      <title>mozanunal.com</title>
+      <url>https://mozanunal.com/images/papermod-cover.png</url>
+      <link>https://mozanunal.com/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- 0.147.8</generator>
+    <language>en</language>
+    <copyright>mozanunal</copyright>
+    <lastBuildDate>Mon, 16 Apr 2018 18:10:04 +0000</lastBuildDate>
+    <atom:link href="https://mozanunal.com/tags/angularjs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[TR] Hackhathon Getir 2018</title>
+      <link>https://mozanunal.com/2018/04/getir-hackhathon/</link>
+      <pubDate>Mon, 16 Apr 2018 18:10:04 +0000</pubDate>
+      <guid>https://mozanunal.com/2018/04/getir-hackhathon/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;It is a project developed for BiTaksi Getir Hackathon 2018. Detailed
+information can be found from below.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h1 id=&#34;team-paketci&#34;&gt;Team Paketci!&lt;/h1&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://mozanunal.com/images/1523149456799.jpg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://hackhathon-getir-2018.herokuapp.com/&#34;&gt;Check our app from here&lt;/a&gt; which is
+deployed using heroku.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/mozanunal/paketci-backend&#34;&gt;Check github repo of app from here&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;Timeline of our little project!&#34; loading=&#34;lazy&#34; src=&#34;https://github.com/mozanunal/paketci-backend/blob/master/doc/images/timeLine.PNG?raw=true&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Getir Hackhathon 2018 Team Members: Sertan Sezgin Kutlu Ertuğrul Çınar Mehmet
+Ozan Ünal&lt;/p&gt;
+&lt;h1 id=&#34;paketci-app&#34;&gt;Paketci App&lt;/h1&gt;
+&lt;p&gt;Its a work on pack collection and delivery for courier and observer.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

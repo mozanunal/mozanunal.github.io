@@ -1,9 +1,33 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Nasa Space Apps Challenge 2017 on mozanunal.com</title><link>https://mozanunal.com/tags/nasa-space-apps-challenge-2017/</link><description>Recent content in Nasa Space Apps Challenge 2017 on mozanunal.com</description><generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>mehmetozanunal@gmail.com (M.Ozan Unal)</managingEditor><webMaster>mehmetozanunal@gmail.com (M.Ozan Unal)</webMaster><copyright>© 2025 M.Ozan Unal</copyright><lastBuildDate>Tue, 27 Jun 2017 20:18:00 +0000</lastBuildDate><atom:link href="https://mozanunal.com/tags/nasa-space-apps-challenge-2017/index.xml" rel="self" type="application/rss+xml"/><item><title>Internet of Beach</title><link>https://mozanunal.com/posts/2017/internet-of-beaches/</link><pubDate>Tue, 27 Jun 2017 20:18:00 +0000</pubDate><author>mehmetozanunal@gmail.com (M.Ozan Unal)</author><guid>https://mozanunal.com/posts/2017/internet-of-beaches/</guid><description>&lt;p>&lt;strong>Herkese Merhabalar,&lt;/strong>&lt;/p>
-&lt;p>Bugünkü yazımda arkadaşlarımla katıldığım Nasa Space Apps Challenge 2017
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Nasa Space Apps Challenge 2017 on mozanunal.com</title>
+    <link>https://mozanunal.com/tags/nasa-space-apps-challenge-2017/</link>
+    <description>Recent content in Nasa Space Apps Challenge 2017 on mozanunal.com</description>
+    <image>
+      <title>mozanunal.com</title>
+      <url>https://mozanunal.com/images/papermod-cover.png</url>
+      <link>https://mozanunal.com/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- 0.147.8</generator>
+    <language>en</language>
+    <copyright>mozanunal</copyright>
+    <lastBuildDate>Tue, 27 Jun 2017 20:18:00 +0000</lastBuildDate>
+    <atom:link href="https://mozanunal.com/tags/nasa-space-apps-challenge-2017/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Internet of Beach</title>
+      <link>https://mozanunal.com/2017/06/internet-of-beaches/</link>
+      <pubDate>Tue, 27 Jun 2017 20:18:00 +0000</pubDate>
+      <guid>https://mozanunal.com/2017/06/internet-of-beaches/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Bugünkü yazımda arkadaşlarımla katıldığım Nasa Space Apps Challenge 2017
 hakkında bir paylaşımda bulunacağım. Bu hackhathon Nasa tarafından dünya
 genelinde düzenleniyor. 24 saat içerinde önceden yayınlanan sorunlardan birine
 çözüm bulmamız isteniyor. Tüm dünya genelinde aynı gün bu problemlere çözüm
 aranıyor. Biz de Koç Üniversitesi IEEE topluluğunca organize edilen yarışmanın
 İstanbul şubesinden katıldık. Öncellikle şunu söylemem gerek organizasyon
 oldukça güzeldi, hiç bir aksaklık yaşanmadan çok keyifli ve eğlenceli bir 24
-saat yaşadık. Burdan IEEE Koç ailesine teşekkürlerimi iletiyorum.&lt;/p></description></item></channel></rss>
+saat yaşadık. Burdan IEEE Koç ailesine teşekkürlerimi iletiyorum.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

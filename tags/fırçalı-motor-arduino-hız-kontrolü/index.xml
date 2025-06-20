@@ -1,4 +1,41 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Fırçalı Motor Arduino Hız Kontrolü on mozanunal.com</title><link>https://mozanunal.com/tags/f%C4%B1r%C3%A7al%C4%B1-motor-arduino-h%C4%B1z-kontrol%C3%BC/</link><description>Recent content in Fırçalı Motor Arduino Hız Kontrolü on mozanunal.com</description><generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>mehmetozanunal@gmail.com (M.Ozan Unal)</managingEditor><webMaster>mehmetozanunal@gmail.com (M.Ozan Unal)</webMaster><copyright>© 2025 M.Ozan Unal</copyright><lastBuildDate>Wed, 19 Aug 2015 18:42:00 +0000</lastBuildDate><atom:link href="https://mozanunal.com/tags/f%C4%B1r%C3%A7al%C4%B1-motor-arduino-h%C4%B1z-kontrol%C3%BC/index.xml" rel="self" type="application/rss+xml"/><item><title>[TR] Fırçalı motorlar için ESC Yapımı</title><link>https://mozanunal.com/posts/2015/frcal-motorlar-icin-esc-yapm/</link><pubDate>Wed, 19 Aug 2015 18:42:00 +0000</pubDate><author>mehmetozanunal@gmail.com (M.Ozan Unal)</author><guid>https://mozanunal.com/posts/2015/frcal-motorlar-icin-esc-yapm/</guid><description>&lt;p>&lt;strong>Herkese Merhabalar,&lt;/strong>&lt;/p>
-&lt;p>Yapacağım bir proje için fırçalı bir motorun Arduino ile hızını kontrol etmem
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Fırçalı Motor Arduino Hız Kontrolü on mozanunal.com</title>
+    <link>https://mozanunal.com/tags/f%C4%B1r%C3%A7al%C4%B1-motor-arduino-h%C4%B1z-kontrol%C3%BC/</link>
+    <description>Recent content in Fırçalı Motor Arduino Hız Kontrolü on mozanunal.com</description>
+    <image>
+      <title>mozanunal.com</title>
+      <url>https://mozanunal.com/images/papermod-cover.png</url>
+      <link>https://mozanunal.com/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- 0.147.8</generator>
+    <language>en</language>
+    <copyright>mozanunal</copyright>
+    <lastBuildDate>Wed, 19 Aug 2015 18:42:00 +0000</lastBuildDate>
+    <atom:link href="https://mozanunal.com/tags/f%C4%B1r%C3%A7al%C4%B1-motor-arduino-h%C4%B1z-kontrol%C3%BC/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[TR] Fırçalı motorlar için ESC Yapımı</title>
+      <link>https://mozanunal.com/2015/08/frcal-motorlar-icin-esc-yapm/</link>
+      <pubDate>Wed, 19 Aug 2015 18:42:00 +0000</pubDate>
+      <guid>https://mozanunal.com/2015/08/frcal-motorlar-icin-esc-yapm/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Yapacağım bir proje için fırçalı bir motorun Arduino ile hızını kontrol etmem
 gerekiyordu. Bunun için elimdeki fırçalı motor için elektronik hız kontrolü yani
-ESC (Electronic Speed Control) yapmaya karar verdim.&lt;/p></description></item></channel></rss>
+ESC (Electronic Speed Control) yapmaya karar verdim.&lt;/p&gt;
+&lt;p&gt;Öncellikle kendi motorumun ve devrelerimin besleme gerilimi yazayım. Çünkü devre
+bu özelliklere göre dizayn edilecektir. Siz de kendi malzemelerinize ve
+voltajlarınıza göre kendi devrenizi dizayn edebilirsiniz. Benim elimdeki motoru
+besleme voltajım 7.4 volt ve motorun çektiği maximum akım 2 amperdir. Hız
+kontrolü için göndereceğim PWM sinyalinin genliği de (Arduinonun çalışma
+voltajı) 5 volttur. Bu şartlar altında devremi bir power mosfet ile tasarlamaya
+karar verdim. Mosfette var olması gereken özellikler 5 volt anahtarlamaya uygun
+rds ve Vgs özelliklerine sahip olması, üzerinden 2 amper akım rahatça
+geçebilmesidir. Bu nedenlerden dolayı ben IRL540N mosfetini seçtim. Kendisi bir
+logic mosfet bu sayede 5 volt gibi düşük bir Vgs voltajı ile devreyi
+anahtarlayabiliyor. Ayıca üzerinden 28 amper sıkıntısız geçebiliyor. Bu
+özellikleriyle projemiz için oldukça
+uygun. &lt;a href=&#34;https://www.irf.com/product-info/datasheets/data/irl540n.pdf&#34;&gt;Datasheetine buradan ulaşabilirsiniz.&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

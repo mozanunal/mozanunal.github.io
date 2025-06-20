@@ -1,4 +1,25 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Quartus on mozanunal.com</title><link>https://mozanunal.com/tags/quartus/</link><description>Recent content in Quartus on mozanunal.com</description><generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>mehmetozanunal@gmail.com (M.Ozan Unal)</managingEditor><webMaster>mehmetozanunal@gmail.com (M.Ozan Unal)</webMaster><copyright>© 2025 M.Ozan Unal</copyright><lastBuildDate>Mon, 05 Mar 2018 21:48:22 +0000</lastBuildDate><atom:link href="https://mozanunal.com/tags/quartus/index.xml" rel="self" type="application/rss+xml"/><item><title>[TR] Altera Cyclone IV ile FPGA Dünyasına Giriş</title><link>https://mozanunal.com/posts/2018/altera-cyclone-4-fpga/</link><pubDate>Mon, 05 Mar 2018 21:48:22 +0000</pubDate><author>mehmetozanunal@gmail.com (M.Ozan Unal)</author><guid>https://mozanunal.com/posts/2018/altera-cyclone-4-fpga/</guid><description>&lt;p>&lt;strong>Herkese Merhabalar,&lt;/strong> Son yıllarda hobi elektroniği inanılmaz bir hızla
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Quartus on mozanunal.com</title>
+    <link>https://mozanunal.com/tags/quartus/</link>
+    <description>Recent content in Quartus on mozanunal.com</description>
+    <image>
+      <title>mozanunal.com</title>
+      <url>https://mozanunal.com/images/papermod-cover.png</url>
+      <link>https://mozanunal.com/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- 0.147.8</generator>
+    <language>en</language>
+    <copyright>mozanunal</copyright>
+    <lastBuildDate>Mon, 05 Mar 2018 21:48:22 +0000</lastBuildDate>
+    <atom:link href="https://mozanunal.com/tags/quartus/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[TR] Altera Cyclone IV ile FPGA Dünyasına Giriş</title>
+      <link>https://mozanunal.com/2018/03/altera-cyclone-4-fpga/</link>
+      <pubDate>Mon, 05 Mar 2018 21:48:22 +0000</pubDate>
+      <guid>https://mozanunal.com/2018/03/altera-cyclone-4-fpga/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt; Son yıllarda hobi elektroniği inanılmaz bir hızla
 gelişti. Şüphesiz bu hızlı gelişmenin mimarı Arduino. Atmelin 8 bitlik
 işlemcilerini temel alarak tasarlanan bu kart ve programala dili sayesinde
 insanlar kolayca projeler geliştirmeye ve hobi uygulamaları yapmaya başladılar.
@@ -8,4 +29,7 @@ isteyenler için çok sıkıntılı hale geliyor. Önceki yazılarımdan birinde
 öğrenmeye nasıl başlanır ve proje nasıl oluşturulur onu anlatmıştım. Bu sefer
 mikroişlemcinin yanı sıra bir fpga üzerine gitmek istiyorum. Mesela yüksek
 hesaplama gücü ve paralel işlem gerektiren proje yapmak istiyorsunuz ve fgpa
-öğrenmek istiyorsunuz. Nasıl başlayabilirsiniz onu anlatmak istiyorum.&lt;/p></description></item></channel></rss>
+öğrenmek istiyorsunuz. Nasıl başlayabilirsiniz onu anlatmak istiyorum.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

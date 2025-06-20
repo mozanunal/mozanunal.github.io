@@ -1,22 +1,38 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Arduino Mpu6050 on mozanunal.com</title><link>https://mozanunal.com/tags/arduino-mpu6050/</link><description>Recent content in Arduino Mpu6050 on mozanunal.com</description><generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>mehmetozanunal@gmail.com (M.Ozan Unal)</managingEditor><webMaster>mehmetozanunal@gmail.com (M.Ozan Unal)</webMaster><copyright>© 2025 M.Ozan Unal</copyright><lastBuildDate>Sat, 04 Jul 2015 03:30:00 +0000</lastBuildDate><atom:link href="https://mozanunal.com/tags/arduino-mpu6050/index.xml" rel="self" type="application/rss+xml"/><item><title>[TR] Arduino Gimbal Kontrol Kartı</title><link>https://mozanunal.com/posts/2015/arduino-gimbal-kontrol-kart/</link><pubDate>Sat, 04 Jul 2015 03:30:00 +0000</pubDate><author>mehmetozanunal@gmail.com (M.Ozan Unal)</author><guid>https://mozanunal.com/posts/2015/arduino-gimbal-kontrol-kart/</guid><description>&lt;p>&lt;strong>Herkese Merhabalar,&lt;/strong>&lt;/p>
-&lt;p>Daha önce kolay bulunabilecek malzemelerden nasıl gimbal yapılabileceğinden
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Arduino Mpu6050 on mozanunal.com</title>
+    <link>https://mozanunal.com/tags/arduino-mpu6050/</link>
+    <description>Recent content in Arduino Mpu6050 on mozanunal.com</description>
+    <image>
+      <title>mozanunal.com</title>
+      <url>https://mozanunal.com/images/papermod-cover.png</url>
+      <link>https://mozanunal.com/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- 0.147.8</generator>
+    <language>en</language>
+    <copyright>mozanunal</copyright>
+    <lastBuildDate>Sat, 04 Jul 2015 03:30:00 +0000</lastBuildDate>
+    <atom:link href="https://mozanunal.com/tags/arduino-mpu6050/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[TR] Arduino Gimbal Kontrol Kartı</title>
+      <link>https://mozanunal.com/2015/07/arduino-gimbal-kontrol-kart/</link>
+      <pubDate>Sat, 04 Jul 2015 03:30:00 +0000</pubDate>
+      <guid>https://mozanunal.com/2015/07/arduino-gimbal-kontrol-kart/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Daha önce kolay bulunabilecek malzemelerden nasıl gimbal yapılabileceğinden
 bahsetmiştim
-(&lt;a
-href="https://mozanunal.com/2015/06/2-eksenli-servo-gimbal-yapm/"
-target="_blank"
->O yazıya buradan ulaşabiliriniz&lt;/a>
-).
+(&lt;a href=&#34;https://mozanunal.com/2015/06/2-eksenli-servo-gimbal-yapm/&#34;&gt;O yazıya buradan ulaşabiliriniz&lt;/a&gt;).
 Kontrol kartını sonra anlatacağım demiştim. Veee bu yazımda arduino ve MPU6050
 sensörü kullanarak nasıl bir gimbal kontrol kartı yapabileceğimizden
 bahsedeceğim. Bu kart sayesinde gimbalin yere göre açısını kontrol edebileceğiz.
 Yere göre açısının sabit kalmasını da kontrol kartı üzerindeki IMU sensörü ile
-sağlayacağız(&lt;a
-href="https://mozanunal.com/2014/11/imu-aclarnn-3-boyutlu-olarak/"
-target="_blank"
->Ayrıntılı bilgi için tıklayınız&lt;/a>
-).
+sağlayacağız(&lt;a href=&#34;https://mozanunal.com/2014/11/imu-aclarnn-3-boyutlu-olarak/&#34;&gt;Ayrıntılı bilgi için tıklayınız&lt;/a&gt;).
 Kontrol kartı saniyede 100 değer okuyup servo PWM değerlerini ona göre
 güncelliyor. Bu sayede oldukça yüksek çözünürlüklü her türlü seviyede
 kullanılabilecek bir kontrol kartı yapmış oluyoruz. Ayrıca başa koyduğum ayar
 parametreleri sayesinde her boyutta ve çeşitte servo gimbale kolayca uyumlu hale
-getirilebilir. Kontrol kartının tanıtım videosu aşağıdadır.&lt;/p></description></item></channel></rss>
+getirilebilir. Kontrol kartının tanıtım videosu aşağıdadır.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

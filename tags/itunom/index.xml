@@ -1,6 +1,38 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ITUNOM on mozanunal.com</title><link>https://mozanunal.com/tags/itunom/</link><description>Recent content in ITUNOM on mozanunal.com</description><generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>mehmetozanunal@gmail.com (M.Ozan Unal)</managingEditor><webMaster>mehmetozanunal@gmail.com (M.Ozan Unal)</webMaster><copyright>© 2025 M.Ozan Unal</copyright><lastBuildDate>Wed, 27 Jan 2016 01:01:00 +0000</lastBuildDate><atom:link href="https://mozanunal.com/tags/itunom/index.xml" rel="self" type="application/rss+xml"/><item><title>[TR] İTÜNOM Takımı</title><link>https://mozanunal.com/posts/2016/itunom-takm/</link><pubDate>Wed, 27 Jan 2016 01:01:00 +0000</pubDate><author>mehmetozanunal@gmail.com (M.Ozan Unal)</author><guid>https://mozanunal.com/posts/2016/itunom-takm/</guid><description>&lt;p>&lt;strong>Herkese Merhabalar,&lt;/strong>&lt;/p>
-&lt;p>2014 yılının Nisan ayında arkadaşlarımla beraber İstanbul Teknik Üniversitesi
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>ITUNOM on mozanunal.com</title>
+    <link>https://mozanunal.com/tags/itunom/</link>
+    <description>Recent content in ITUNOM on mozanunal.com</description>
+    <image>
+      <title>mozanunal.com</title>
+      <url>https://mozanunal.com/images/papermod-cover.png</url>
+      <link>https://mozanunal.com/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- 0.147.8</generator>
+    <language>en</language>
+    <copyright>mozanunal</copyright>
+    <lastBuildDate>Wed, 27 Jan 2016 01:01:00 +0000</lastBuildDate>
+    <atom:link href="https://mozanunal.com/tags/itunom/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[TR] İTÜNOM Takımı</title>
+      <link>https://mozanunal.com/2016/01/itunom-takm/</link>
+      <pubDate>Wed, 27 Jan 2016 01:01:00 +0000</pubDate>
+      <guid>https://mozanunal.com/2016/01/itunom-takm/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;2014 yılının Nisan ayında arkadaşlarımla beraber İstanbul Teknik Üniversitesi
 bünyesinde İTÜNOM Otonom Hava Araçları Takımını kurduk. 2 Senedir aktif olarak
 çalışmalarımıza devam ediyoruz. Amerikanın Maryland Eyaletinde düzenlenmekte
 olan Student Unmanned Air System yarışmasına 2015 yılında katıldık 2016 yılında
-da katılmak için hazırlanıyoruz.&lt;/p></description></item></channel></rss>
+da katılmak için hazırlanıyoruz.&lt;/p&gt;
+&lt;p&gt;Takımımızda şu an 10 kişiyiz. 3 adet uçak, 2 adet uzay, 2 adet elektronik, 2
+adet bilgisayar, 1 adet kontrol mühendisliğinden üyemiz var. Özellikle
+multidisipliner bir takım olmayı tercih ettik. Bu sayede her üyemizin farklı bir
+uzmanlığı var ve kolayca farklı sistemleri tasarlayıp bir araya
+getirebiliyoruz.&lt;br&gt;
+Takımımızın Sitesi: &lt;a href=&#34;https://www.itunom.com/&#34;&gt;https://www.itunom.com/&lt;/a&gt;&lt;br&gt;
+Facebook
+Sayfası: &lt;a href=&#34;https://www.facebook.com/itunom&#34;&gt;https://www.facebook.com/itunom&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

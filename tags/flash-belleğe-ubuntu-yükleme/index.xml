@@ -1,4 +1,25 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Flash Belleğe Ubuntu Yükleme on mozanunal.com</title><link>https://mozanunal.com/tags/flash-belle%C4%9Fe-ubuntu-y%C3%BCkleme/</link><description>Recent content in Flash Belleğe Ubuntu Yükleme on mozanunal.com</description><generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>mehmetozanunal@gmail.com (M.Ozan Unal)</managingEditor><webMaster>mehmetozanunal@gmail.com (M.Ozan Unal)</webMaster><copyright>© 2025 M.Ozan Unal</copyright><lastBuildDate>Wed, 03 Dec 2014 03:28:00 +0000</lastBuildDate><atom:link href="https://mozanunal.com/tags/flash-belle%C4%9Fe-ubuntu-y%C3%BCkleme/index.xml" rel="self" type="application/rss+xml"/><item><title>[TR] Flash Belleğe Ubuntu Kurmak</title><link>https://mozanunal.com/posts/2014/flash-bellege-ubuntu-kurmak/</link><pubDate>Wed, 03 Dec 2014 03:28:00 +0000</pubDate><author>mehmetozanunal@gmail.com (M.Ozan Unal)</author><guid>https://mozanunal.com/posts/2014/flash-bellege-ubuntu-kurmak/</guid><description>&lt;p>&lt;strong>Merhabalar,&lt;/strong>&lt;br>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Flash Belleğe Ubuntu Yükleme on mozanunal.com</title>
+    <link>https://mozanunal.com/tags/flash-belle%C4%9Fe-ubuntu-y%C3%BCkleme/</link>
+    <description>Recent content in Flash Belleğe Ubuntu Yükleme on mozanunal.com</description>
+    <image>
+      <title>mozanunal.com</title>
+      <url>https://mozanunal.com/images/papermod-cover.png</url>
+      <link>https://mozanunal.com/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- 0.147.8</generator>
+    <language>en</language>
+    <copyright>mozanunal</copyright>
+    <lastBuildDate>Wed, 03 Dec 2014 03:28:00 +0000</lastBuildDate>
+    <atom:link href="https://mozanunal.com/tags/flash-belle%C4%9Fe-ubuntu-y%C3%BCkleme/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[TR] Flash Belleğe Ubuntu Kurmak</title>
+      <link>https://mozanunal.com/2014/12/flash-bellege-ubuntu-kurmak/</link>
+      <pubDate>Wed, 03 Dec 2014 03:28:00 +0000</pubDate>
+      <guid>https://mozanunal.com/2014/12/flash-bellege-ubuntu-kurmak/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Merhabalar,&lt;/strong&gt;&lt;br&gt;
 Bugün size flash belleğe ubuntu kurmaktan bahsedeceğim. Open source seven
 insanlar için Linux her zaman en çekici gelen işletim sistemi olmuştur. Fakat
 program desteği, driver sorunları derken linux tek işletim sistemi olarak
@@ -7,4 +28,7 @@ kullanmak oldukça zor bir olay haline geliyor. İşte bunun için çok güzel
 sistemi kurmak. Bu çözüm bana daha zor ve karışık geliyor, benim tercih ettiğim
 ise bir flash belleğe Ubuntu kurup gerekli zamanlarda bilgisayarı onun üzerinden
 boot ederek Linuxun özgür dünyasına dalmak. Evet anlatıma geçersem aslında çok
-basit olduğunu göreceksiniz.&lt;/p></description></item></channel></rss>
+basit olduğunu göreceksiniz.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

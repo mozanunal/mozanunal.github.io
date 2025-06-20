@@ -1,14 +1,71 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Raspberry Pi Laptop on mozanunal.com</title><link>https://mozanunal.com/tags/raspberry-pi-laptop/</link><description>Recent content in Raspberry Pi Laptop on mozanunal.com</description><generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>mehmetozanunal@gmail.com (M.Ozan Unal)</managingEditor><webMaster>mehmetozanunal@gmail.com (M.Ozan Unal)</webMaster><copyright>© 2025 M.Ozan Unal</copyright><lastBuildDate>Mon, 05 Oct 2015 01:06:00 +0000</lastBuildDate><atom:link href="https://mozanunal.com/tags/raspberry-pi-laptop/index.xml" rel="self" type="application/rss+xml"/><item><title>DIY Raspberry Pi Laptop</title><link>https://mozanunal.com/posts/2015/diy-raspberry-pi-laptop-16/</link><pubDate>Mon, 05 Oct 2015 01:06:00 +0000</pubDate><author>mehmetozanunal@gmail.com (M.Ozan Unal)</author><guid>https://mozanunal.com/posts/2015/diy-raspberry-pi-laptop-16/</guid><description>&lt;p>&lt;strong>Hi,&lt;/strong>&lt;br>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Raspberry Pi Laptop on mozanunal.com</title>
+    <link>https://mozanunal.com/tags/raspberry-pi-laptop/</link>
+    <description>Recent content in Raspberry Pi Laptop on mozanunal.com</description>
+    <image>
+      <title>mozanunal.com</title>
+      <url>https://mozanunal.com/images/papermod-cover.png</url>
+      <link>https://mozanunal.com/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- 0.147.8</generator>
+    <language>en</language>
+    <copyright>mozanunal</copyright>
+    <lastBuildDate>Mon, 05 Oct 2015 01:06:00 +0000</lastBuildDate>
+    <atom:link href="https://mozanunal.com/tags/raspberry-pi-laptop/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>DIY Raspberry Pi Laptop</title>
+      <link>https://mozanunal.com/2015/10/diy-raspberry-pi-laptop-16/</link>
+      <pubDate>Mon, 05 Oct 2015 01:06:00 +0000</pubDate>
+      <guid>https://mozanunal.com/2015/10/diy-raspberry-pi-laptop-16/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Hi,&lt;/strong&gt;&lt;br&gt;
 In this article, DIY Raspberry Pi Laptop project will be told. I needed a low
 cost mini computer with high mobility but then i decided to make my own and i
 start to this project. Most of the parts(expect Raspberry pi 2 and its some of
 materials) were bought from china and the total cost of this project is 110$.
 There is video of this project under this paragraph. You can watch this then you
-learn how i did this project step by step.&lt;/p></description></item><item><title>[TR] DIY Raspberry Pi Laptop</title><link>https://mozanunal.com/posts/2015/diy-raspberry-pi-laptop/</link><pubDate>Thu, 17 Sep 2015 01:20:00 +0000</pubDate><author>mehmetozanunal@gmail.com (M.Ozan Unal)</author><guid>https://mozanunal.com/posts/2015/diy-raspberry-pi-laptop/</guid><description>&lt;p>&lt;strong>Herkese Merhabalar,&lt;/strong>&lt;br>
+learn how i did this project step by step.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>[TR] DIY Raspberry Pi Laptop</title>
+      <link>https://mozanunal.com/2015/09/diy-raspberry-pi-laptop/</link>
+      <pubDate>Thu, 17 Sep 2015 01:20:00 +0000</pubDate>
+      <guid>https://mozanunal.com/2015/09/diy-raspberry-pi-laptop/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;br&gt;
        Bu yazımda Raspberry Pi 2 kartını kullanarak kendim için yaptığım laptop
 projesinden bahsetmek istiyorum. Kendime düşük maliyetli gündelik işlerimi
 halletmek için taşınabilir bir bilgisayar almaya karar vermiştim fakat neden
 kendim yapmak yerine satın alayım dedim ve bu projeye başladım. Malzemelerin
-çoğunu yurt dışından aldım ve bana toplam maliyeti 110$ kadar oldu.&lt;br>
+çoğunu yurt dışından aldım ve bana toplam maliyeti 110$ kadar oldu.&lt;br&gt;
 Projemin tanıtım videosunu izleyebilirsiniz. Yazının devamında ise Raspberry Pi
-laptopun yapılışını adım adım öğrenebilirsiniz.&lt;/p></description></item></channel></rss>
+laptopun yapılışını adım adım öğrenebilirsiniz.&lt;/p&gt;
+&lt;div class=&#34;separator&#34; style=&#34;clear: both; text-align: center;&#34;&gt;&lt;iframe allowfullscreen=&#34;&#34; class=&#34;YOUTUBE-iframe-video&#34; data-thumbnail-src=&#34;https://i.ytimg.com/vi/Ys97-3S9MQo/0.jpg&#34; frameborder=&#34;0&#34; height=&#34;266&#34; src=&#34;https://www.youtube.com/embed/Ys97-3S9MQo?feature=player_embedded&#34; width=&#34;320&#34;&gt;&lt;/iframe&gt;&lt;/div&gt;
+&lt;div class=&#34;separator&#34; style=&#34;clear: both; text-align: center;&#34;&gt;[![](https://1.bp.blogspot.com/-32Tefe5cxxQ/VfQJVHRLDKI/AAAAAAAANq0/a35hSfl8s2s/s320/IMG_20150912_123948.jpg)](https://1.bp.blogspot.com/-32Tefe5cxxQ/VfQJVHRLDKI/AAAAAAAANq0/a35hSfl8s2s/s1600/IMG_20150912_123948.jpg)&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;1. Raspberry Pi Nedir?&lt;/strong&gt;&lt;br&gt;
+      Öncelikle Raspberry Pi&amp;rsquo;dan bahsetmek istiyorum. Raspberry Pi tüm
+bilgisayar bileşenlerinin bir kartta toplandığı, düşük maliyetli mini
+bilgisayardır. Şu an itibariyle, en son Raspberry Pi 2 çıkmıştır ve satış fiyatı
+35 dolardır.&lt;br&gt;
+&lt;strong&gt;2. Neden Raspberry Pi Laptop?&lt;/strong&gt;&lt;br&gt;
+      Raspberry pi yazılım geliştirmek için çok önemli bir portal fakat her
+zaman uygun ekran klavye bulmak zor ve Raspberry Pi&amp;rsquo;ın taşınabilirliğini
+azaltıyor. Ayrıca üzerinde 4 usb portu, Hdmi portu gibi giriş çıkış birimleri
+bulunması sayesinde laptop yapılmaya oldukça uygun durumda. 3. olarak düşük güç
+tüketiminden söz edebiliriz. Benim sistemimin toplam güç tüketimi 7,8 watt
+civarında. 3S lipo pilimden ekranla beraber yaklaşık 650 mA akım çekiyor.&lt;br&gt;
+&lt;strong&gt;3. Malzemeler ve Maliyet&lt;/strong&gt;&lt;br&gt;
+Raspberry Pi 2                     35$&lt;br&gt;
+4 Gb SD Kart                       4$&lt;br&gt;
+N070ICG-LD1 LCD Ekran   45$&lt;br&gt;
+HDMI Kablo                        3$&lt;br&gt;
+Klavyeli Tablet Kılıfı            4$&lt;br&gt;
+USB WIFI Adaptörü            5$&lt;br&gt;
+LM2596 Regülatör               2$&lt;br&gt;
+1500 Mah 3S Lipo Pil           10$&lt;br&gt;
+Fare                                     2$&lt;br&gt;
+1 Metre Kablo Koruyucu       2$&lt;br&gt;
+&lt;strong&gt;Toplam:                             110$&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

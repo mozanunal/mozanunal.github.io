@@ -1,8 +1,38 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Ardupilot on mozanunal.com</title><link>https://mozanunal.com/tags/ardupilot/</link><description>Recent content in Ardupilot on mozanunal.com</description><generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>mehmetozanunal@gmail.com (M.Ozan Unal)</managingEditor><webMaster>mehmetozanunal@gmail.com (M.Ozan Unal)</webMaster><copyright>© 2025 M.Ozan Unal</copyright><lastBuildDate>Thu, 01 Sep 2016 14:26:00 +0000</lastBuildDate><atom:link href="https://mozanunal.com/tags/ardupilot/index.xml" rel="self" type="application/rss+xml"/><item><title>[TR] Pixhawk Otopilot ve Özellikleri</title><link>https://mozanunal.com/posts/2016/pixhawk-otopilot-ve-ozellikleri/</link><pubDate>Thu, 01 Sep 2016 14:26:00 +0000</pubDate><author>mehmetozanunal@gmail.com (M.Ozan Unal)</author><guid>https://mozanunal.com/posts/2016/pixhawk-otopilot-ve-ozellikleri/</guid><description>&lt;p>&lt;strong>Herkese Merhabalar,&lt;/strong>&lt;br>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Ardupilot on mozanunal.com</title>
+    <link>https://mozanunal.com/tags/ardupilot/</link>
+    <description>Recent content in Ardupilot on mozanunal.com</description>
+    <image>
+      <title>mozanunal.com</title>
+      <url>https://mozanunal.com/images/papermod-cover.png</url>
+      <link>https://mozanunal.com/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- 0.147.8</generator>
+    <language>en</language>
+    <copyright>mozanunal</copyright>
+    <lastBuildDate>Thu, 01 Sep 2016 14:26:00 +0000</lastBuildDate>
+    <atom:link href="https://mozanunal.com/tags/ardupilot/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[TR] Pixhawk Otopilot ve Özellikleri</title>
+      <link>https://mozanunal.com/2016/09/pixhawk-otopilot-ve-ozellikleri/</link>
+      <pubDate>Thu, 01 Sep 2016 14:26:00 +0000</pubDate>
+      <guid>https://mozanunal.com/2016/09/pixhawk-otopilot-ve-ozellikleri/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;br&gt;
         Uzun bir aradan sonra tekrar bir yazı hazırladım. Aslında bu yazıya çok
 önceden başlamıştım fakat devamını getirmemiştim şimdi tamamlayabildim ancak :).
 Evet bu yazımda Pixhawk isimli otopilottan bahsetmek istiyorum. Pixhawk açık
 kaynak kodlu Stm32 tabanlı yazılım tabanı olarak da ArduPilota dayanan bir
 otopilot modülü. Burada bir yorumda bulunmam gerekirse, açık kaynaklı
 otopilotlar arasında en başarılısı bana göre. Bu teorimi kanıtlamak için de
-hemen özelliklerine geçmek istiyorum.&lt;/p></description></item></channel></rss>
+hemen özelliklerine geçmek istiyorum.&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://4.bp.blogspot.com/-p4zpkVZrQWU/V8faC6OGbjI/AAAAAAAAc_U/rx-zCY8cZksKXnRpi2GC8lY-b-aB_MA_ACLcB/s640/pic-prod-pixhawk1.jpg&#34;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Ana işlemcisi 32 bit Arm Cortex M4 tabanlı ST Microelectronic&amp;rsquo;in bir ürünü(
+STM32F427 Cortex M4 core with FPU).  Bu işlemci &amp;ldquo;NuttX Real Time Operating
+System&amp;rdquo; ile kullanılıyor. &lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

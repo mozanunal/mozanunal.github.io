@@ -1,6 +1,34 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>HC-SR501 on mozanunal.com</title><link>https://mozanunal.com/tags/hc-sr501/</link><description>Recent content in HC-SR501 on mozanunal.com</description><generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>mehmetozanunal@gmail.com (M.Ozan Unal)</managingEditor><webMaster>mehmetozanunal@gmail.com (M.Ozan Unal)</webMaster><copyright>© 2025 M.Ozan Unal</copyright><lastBuildDate>Sun, 15 Mar 2015 01:36:00 +0000</lastBuildDate><atom:link href="https://mozanunal.com/tags/hc-sr501/index.xml" rel="self" type="application/rss+xml"/><item><title>[TR] HC-SR501 PIR Sensörü</title><link>https://mozanunal.com/posts/2015/hc-sr501-pir-sensoru/</link><pubDate>Sun, 15 Mar 2015 01:36:00 +0000</pubDate><author>mehmetozanunal@gmail.com (M.Ozan Unal)</author><guid>https://mozanunal.com/posts/2015/hc-sr501-pir-sensoru/</guid><description>&lt;p>&lt;strong>Merhaba arkadaşlar,&lt;/strong>&lt;br>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>HC-SR501 on mozanunal.com</title>
+    <link>https://mozanunal.com/tags/hc-sr501/</link>
+    <description>Recent content in HC-SR501 on mozanunal.com</description>
+    <image>
+      <title>mozanunal.com</title>
+      <url>https://mozanunal.com/images/papermod-cover.png</url>
+      <link>https://mozanunal.com/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- 0.147.8</generator>
+    <language>en</language>
+    <copyright>mozanunal</copyright>
+    <lastBuildDate>Sun, 15 Mar 2015 01:36:00 +0000</lastBuildDate>
+    <atom:link href="https://mozanunal.com/tags/hc-sr501/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[TR] HC-SR501 PIR Sensörü</title>
+      <link>https://mozanunal.com/2015/03/hc-sr501-pir-sensoru/</link>
+      <pubDate>Sun, 15 Mar 2015 01:36:00 +0000</pubDate>
+      <guid>https://mozanunal.com/2015/03/hc-sr501-pir-sensoru/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Merhaba arkadaşlar,&lt;/strong&gt;&lt;br&gt;
 Bugünkü yazımda bir PIR sensörü olan HC-SR501 inceleyeceğiz. PIR sensörünün
 açılımı Passive Infrared Sensor. Son 4- 5 yılda çok hızlı bir yayılım gösterdi
 bu sensörler ve insan algılayınca çalışan lambalar, otomatik el kurutma vb
 makinalar olarak hayatımıza girdi. Modulumüzden bahsetmeden önce PIR sensör
-nedir onu açıklamak istiyorum. PIR sensör ortamdaki kızılötesi ışınları ölçer.&lt;/p></description></item></channel></rss>
+nedir onu açıklamak istiyorum. PIR sensör ortamdaki kızılötesi ışınları ölçer.&lt;/p&gt;
+&lt;p&gt;Alıcılarda çok farklı yere doğru odaklanan frensel lensi bulunur bu sayede belli
+bir alandaki tüm enerji ölçülmüş olur. Canlıların sıcaklığı ortalama 36 derece
+civarlarında olduğundan merceğin üzerine düşen kızılötesi ışınların toplam
+enerjisi y ir. Böylece canlı varlığı tespit edilmiş olur.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

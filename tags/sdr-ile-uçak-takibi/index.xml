@@ -1,16 +1,33 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Sdr Ile Uçak Takibi on mozanunal.com</title><link>https://mozanunal.com/tags/sdr-ile-u%C3%A7ak-takibi/</link><description>Recent content in Sdr Ile Uçak Takibi on mozanunal.com</description><generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>mehmetozanunal@gmail.com (M.Ozan Unal)</managingEditor><webMaster>mehmetozanunal@gmail.com (M.Ozan Unal)</webMaster><copyright>© 2025 M.Ozan Unal</copyright><lastBuildDate>Fri, 09 Jan 2015 23:35:00 +0000</lastBuildDate><atom:link href="https://mozanunal.com/tags/sdr-ile-u%C3%A7ak-takibi/index.xml" rel="self" type="application/rss+xml"/><item><title>[TR] SDR ile Uçakların Yayınlarından Yerlerini Tespit Etmek</title><link>https://mozanunal.com/posts/2015/sdr-ile-ucaklarn-yaynlarndan-yerlerini/</link><pubDate>Fri, 09 Jan 2015 23:35:00 +0000</pubDate><author>mehmetozanunal@gmail.com (M.Ozan Unal)</author><guid>https://mozanunal.com/posts/2015/sdr-ile-ucaklarn-yaynlarndan-yerlerini/</guid><description>&lt;p>&lt;strong>Merhabalar!&lt;/strong>&lt;/p>
-&lt;p>Bugünkü yazımda SDR ile uçaklardan veri alıp onları haritada takip etmeyi
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Sdr Ile Uçak Takibi on mozanunal.com</title>
+    <link>https://mozanunal.com/tags/sdr-ile-u%C3%A7ak-takibi/</link>
+    <description>Recent content in Sdr Ile Uçak Takibi on mozanunal.com</description>
+    <image>
+      <title>mozanunal.com</title>
+      <url>https://mozanunal.com/images/papermod-cover.png</url>
+      <link>https://mozanunal.com/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- 0.147.8</generator>
+    <language>en</language>
+    <copyright>mozanunal</copyright>
+    <lastBuildDate>Fri, 09 Jan 2015 23:35:00 +0000</lastBuildDate>
+    <atom:link href="https://mozanunal.com/tags/sdr-ile-u%C3%A7ak-takibi/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[TR] SDR ile Uçakların Yayınlarından Yerlerini Tespit Etmek</title>
+      <link>https://mozanunal.com/2015/01/sdr-ile-ucaklarn-yaynlarndan-yerlerini/</link>
+      <pubDate>Fri, 09 Jan 2015 23:35:00 +0000</pubDate>
+      <guid>https://mozanunal.com/2015/01/sdr-ile-ucaklarn-yaynlarndan-yerlerini/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Merhabalar!&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Bugünkü yazımda SDR ile uçaklardan veri alıp onları haritada takip etmeyi
 anlatacağım. Bunun için gerekli olan yazılımlar ADSBsharp ve ADSBScope
 yazılımlarıdır. Ben donanım olarak 10 $ Çin&amp;rsquo;den aldığım SDR&amp;rsquo;yi kullandım. Anten
 olarak ise 5 TL&amp;rsquo;lik TV anteni kullandık. Bu anten tabi ki bu iş için uygun anten
 değil. Çalışacağımız frekans 1090 Mhz benim antenimle sadece yakın çevredeki
 uçaklardan veri almak mümkün. En kısa zamanda antenlerle ilgili bir yazı
 yayınlayacağım o zamana kadar
-&lt;a
-href="https://www.rtl-sdr.com/adsb-aircraft-radar-with-rtl-sdr/"
-target="_blank"
->şurayı inceleyebilirsiniz&lt;/a>
-.
+&lt;a href=&#34;https://www.rtl-sdr.com/adsb-aircraft-radar-with-rtl-sdr/&#34;&gt;şurayı inceleyebilirsiniz&lt;/a&gt;.
 Yapacağımız iş temel olarak söyle: Uçaklar uçarken koordinantları, rotaları vb
 şeklinde ADSB diye kısaltılan bir bilgilendirme dataları yollayarak uçarlar.
 Bizim SDR ile yaptığımız şey 1090 Mhz sinyalleri alıp onları decode etmek.
@@ -19,4 +36,7 @@ kullanabilirsiniz. Daha sonra decode edilen data port üzerinden başka bir
 programa aktarılır. Bu program ile elde edilen veriler bir arayüze aktarılır ve
 uçak harita üzerinde gösterilir. Haritada gösterme işi için ADSBScope
 yazılıımını kullandım. Aşağıda yazılımların nasıl kullanıldığını anlatığım
-videoyu paylaşıyorum 2 adet fotoğrafla beraber. Görüşmek üzere&amp;hellip;&lt;/p></description></item></channel></rss>
+videoyu paylaşıyorum 2 adet fotoğrafla beraber. Görüşmek üzere&amp;hellip;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

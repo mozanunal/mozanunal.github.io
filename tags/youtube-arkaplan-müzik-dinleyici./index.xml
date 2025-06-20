@@ -1,10 +1,39 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Youtube Arkaplan Müzik Dinleyici. on mozanunal.com</title><link>https://mozanunal.com/tags/youtube-arkaplan-m%C3%BCzik-dinleyici./</link><description>Recent content in Youtube Arkaplan Müzik Dinleyici. on mozanunal.com</description><generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>mehmetozanunal@gmail.com (M.Ozan Unal)</managingEditor><webMaster>mehmetozanunal@gmail.com (M.Ozan Unal)</webMaster><copyright>© 2025 M.Ozan Unal</copyright><lastBuildDate>Mon, 29 Jun 2015 03:09:00 +0000</lastBuildDate><atom:link href="https://mozanunal.com/tags/youtube-arkaplan-m%C3%BCzik-dinleyici./index.xml" rel="self" type="application/rss+xml"/><item><title>[TR] Youtube Arka Plan Müzik Dinleyici</title><link>https://mozanunal.com/posts/2015/youtube-arka-plan-muzik-dinleyici/</link><pubDate>Mon, 29 Jun 2015 03:09:00 +0000</pubDate><author>mehmetozanunal@gmail.com (M.Ozan Unal)</author><guid>https://mozanunal.com/posts/2015/youtube-arka-plan-muzik-dinleyici/</guid><description>&lt;p>&lt;strong>Merhaba Arkadaşlar,&lt;/strong>&lt;br>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Youtube Arkaplan Müzik Dinleyici. on mozanunal.com</title>
+    <link>https://mozanunal.com/tags/youtube-arkaplan-m%C3%BCzik-dinleyici./</link>
+    <description>Recent content in Youtube Arkaplan Müzik Dinleyici. on mozanunal.com</description>
+    <image>
+      <title>mozanunal.com</title>
+      <url>https://mozanunal.com/images/papermod-cover.png</url>
+      <link>https://mozanunal.com/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- 0.147.8</generator>
+    <language>en</language>
+    <copyright>mozanunal</copyright>
+    <lastBuildDate>Mon, 29 Jun 2015 03:09:00 +0000</lastBuildDate>
+    <atom:link href="https://mozanunal.com/tags/youtube-arkaplan-m%C3%BCzik-dinleyici./index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[TR] Youtube Arka Plan Müzik Dinleyici</title>
+      <link>https://mozanunal.com/2015/06/youtube-arka-plan-muzik-dinleyici/</link>
+      <pubDate>Mon, 29 Jun 2015 03:09:00 +0000</pubDate>
+      <guid>https://mozanunal.com/2015/06/youtube-arka-plan-muzik-dinleyici/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Merhaba Arkadaşlar,&lt;/strong&gt;&lt;br&gt;
 Bu yazımda kendi yazdığım bir Android uygulamasından bahsedeceğim. Telefonda
 youtube kullanmanın en sıkıntılı yanlarından biri video açıkken başka
 uygulamalara geçtiğimiz zaman videonun durdurulmasıdır. Bu uygulama sayesinde
 program arka plana alınsa bile video oynamaya devam eder ve sesini
-duyabilirsiniz.&lt;a
-href="https://drive.google.com/file/d/0B5j__Lyt9ozbQXExRTRnX1pSTW8/view?usp=sharing"
-target="_blank"
->Programı burdan indirebilirsiniz.&lt;/a>
-&lt;/p></description></item></channel></rss>
+duyabilirsiniz.&lt;a href=&#34;https://drive.google.com/file/d/0B5j__Lyt9ozbQXExRTRnX1pSTW8/view?usp=sharing&#34;&gt;Programı burdan indirebilirsiniz.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Not: Programı sadece 3 telefonda deneme şansı bulabildim. Belki başka
+telefonlarda çalışmayabilir şimdiden uyarmak isterim.&lt;/p&gt;
+&lt;p&gt;For foreign visitors:&lt;br&gt;
+One of the biggest problem about Youtube is that stopping videos when youtube at
+back ground or screen off. Therefore i decided to develop an app for solving
+this problem.
+&lt;a href=&#34;https://drive.google.com/file/d/0B5j__Lyt9ozbQXExRTRnX1pSTW8/view&#34;&gt;You can download the app from here. &lt;/a&gt;&lt;br&gt;
+Note: I can try the app only 3 android phone may be it does not work another
+android phones.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

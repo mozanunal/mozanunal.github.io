@@ -1,12 +1,36 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>SDR Nedir on mozanunal.com</title><link>https://mozanunal.com/tags/sdr-nedir/</link><description>Recent content in SDR Nedir on mozanunal.com</description><generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>mehmetozanunal@gmail.com (M.Ozan Unal)</managingEditor><webMaster>mehmetozanunal@gmail.com (M.Ozan Unal)</webMaster><copyright>© 2025 M.Ozan Unal</copyright><lastBuildDate>Fri, 02 Jan 2015 22:55:00 +0000</lastBuildDate><atom:link href="https://mozanunal.com/tags/sdr-nedir/index.xml" rel="self" type="application/rss+xml"/><item><title>[TR] Software Defined Radioya Giriş</title><link>https://mozanunal.com/posts/2015/software-defined-radioya-giris/</link><pubDate>Fri, 02 Jan 2015 22:55:00 +0000</pubDate><author>mehmetozanunal@gmail.com (M.Ozan Unal)</author><guid>https://mozanunal.com/posts/2015/software-defined-radioya-giris/</guid><description>&lt;p>&lt;strong>Herkese Merhabalar!&lt;/strong>&lt;/p>
-&lt;p>Bugünkü yazımda yeni bir hobimden bahsetmet istiyorum. Yeni hobim, &amp;ldquo;Software
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>SDR Nedir on mozanunal.com</title>
+    <link>https://mozanunal.com/tags/sdr-nedir/</link>
+    <description>Recent content in SDR Nedir on mozanunal.com</description>
+    <image>
+      <title>mozanunal.com</title>
+      <url>https://mozanunal.com/images/papermod-cover.png</url>
+      <link>https://mozanunal.com/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- 0.147.8</generator>
+    <language>en</language>
+    <copyright>mozanunal</copyright>
+    <lastBuildDate>Fri, 02 Jan 2015 22:55:00 +0000</lastBuildDate>
+    <atom:link href="https://mozanunal.com/tags/sdr-nedir/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[TR] Software Defined Radioya Giriş</title>
+      <link>https://mozanunal.com/2015/01/software-defined-radioya-giris/</link>
+      <pubDate>Fri, 02 Jan 2015 22:55:00 +0000</pubDate>
+      <guid>https://mozanunal.com/2015/01/software-defined-radioya-giris/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar!&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Bugünkü yazımda yeni bir hobimden bahsetmet istiyorum. Yeni hobim, &amp;ldquo;Software
 defined radio&amp;rdquo;. Bu aslında bir rf modulü, Farkı ise belli frekans aralığında
 dinleme yapabilmesi. Yani bu sayede farklı frekanslardaki radyo dalgalarını alıp
 inceleyebilir, çözümleyebilirsiniz. SDR hakkında deneysel bir şeyler yapmak
 isterseniz en iyi yöntem bilgisayar için ucuz tv alıcılarından almak. Ben
-Aliexpress sitesinden 10 $ aldım. En ucuz SDR&amp;rsquo;ler genelde &lt;strong>RTL2832U+R820T çip
-setlidir.&lt;/strong> Benim aldığım modül 25MHz - 1700MHz arası tarama yapabiliyor. Kendi
+Aliexpress sitesinden 10 $ aldım. En ucuz SDR&amp;rsquo;ler genelde &lt;strong&gt;RTL2832U+R820T çip
+setlidir.&lt;/strong&gt; Benim aldığım modül 25MHz - 1700MHz arası tarama yapabiliyor. Kendi
 anteni ve kumandasıyla beraber geldi. Genelde bu modullerle gelen antenlerle
 FMden başka bi şey dinleyebilmek pek mümkün olmuyor. Fakat geliştirilen uygun
 antenlerle Uluslararası Uzay İstasyonundan(ISS) bile veri alabilmek mümkün.
-Bunlardan kurulumdan sonra bahsedeceğim.&lt;/p></description></item></channel></rss>
+Bunlardan kurulumdan sonra bahsedeceğim.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

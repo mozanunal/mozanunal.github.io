@@ -1,51 +1,183 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Signal Processing on mozanunal.com</title><link>https://mozanunal.com/categories/signal-processing/</link><description>Recent content in Signal Processing on mozanunal.com</description><generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>mehmetozanunal@gmail.com (M.Ozan Unal)</managingEditor><webMaster>mehmetozanunal@gmail.com (M.Ozan Unal)</webMaster><copyright>© 2025 M.Ozan Unal</copyright><lastBuildDate>Wed, 23 Jan 2019 23:45:00 +0000</lastBuildDate><atom:link href="https://mozanunal.com/categories/signal-processing/index.xml" rel="self" type="application/rss+xml"/><item><title>SimpleDSP: IIR Filter Feature Added</title><link>https://mozanunal.com/posts/2019/simpledsp-iir-feature/</link><pubDate>Wed, 23 Jan 2019 23:45:00 +0000</pubDate><author>mehmetozanunal@gmail.com (M.Ozan Unal)</author><guid>https://mozanunal.com/posts/2019/simpledsp-iir-feature/</guid><description>&lt;h1 class="relative group">&lt;a
-href="https://github.com/mozanunal/SimpleDSP"
-target="_blank"
->SimpleDSP&lt;/a>
-&lt;div id="simpledsp" class="anchor">&lt;/div>
-&lt;span
-class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#simpledsp" aria-label="Anchor">#&lt;/a>
-&lt;/span>
-&lt;/h1>
-&lt;p>&lt;a
-href="https://github.com/mozanunal/SimpleDSP"
-target="_blank"
->SimpleDSP&lt;/a>
-is a basic DSP library which
-is for Arduino and most of the microcontrollers which can be programmed in C/C++&lt;/p></description></item><item><title>[TR] Orange Pi Zero Üzerinde Dump1090 Çalıştırmak</title><link>https://mozanunal.com/posts/2018/opizero-dump1090/</link><pubDate>Mon, 20 Aug 2018 15:14:07 +0000</pubDate><author>mehmetozanunal@gmail.com (M.Ozan Unal)</author><guid>https://mozanunal.com/posts/2018/opizero-dump1090/</guid><description>&lt;p>&lt;strong>Herkese merhabalar,&lt;/strong> Bugünkü yazımda dump1090 programını nasıl bir orange pi
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Signal Processing on mozanunal.com</title>
+    <link>https://mozanunal.com/categories/signal-processing/</link>
+    <description>Recent content in Signal Processing on mozanunal.com</description>
+    <image>
+      <title>mozanunal.com</title>
+      <url>https://mozanunal.com/images/papermod-cover.png</url>
+      <link>https://mozanunal.com/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- 0.147.8</generator>
+    <language>en</language>
+    <copyright>mozanunal</copyright>
+    <lastBuildDate>Wed, 23 Jan 2019 23:45:00 +0000</lastBuildDate>
+    <atom:link href="https://mozanunal.com/categories/signal-processing/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SimpleDSP: IIR Filter Feature Added</title>
+      <link>https://mozanunal.com/2019/01/simpledsp-iir-feature/</link>
+      <pubDate>Wed, 23 Jan 2019 23:45:00 +0000</pubDate>
+      <guid>https://mozanunal.com/2019/01/simpledsp-iir-feature/</guid>
+      <description>&lt;h1 id=&#34;simpledsp&#34;&gt;&lt;a href=&#34;https://github.com/mozanunal/SimpleDSP&#34;&gt;SimpleDSP&lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/mozanunal/SimpleDSP&#34;&gt;SimpleDSP&lt;/a&gt; is a basic DSP library which
+is for Arduino and most of the microcontrollers which can be programmed in C/C++&lt;/p&gt;
+&lt;h2 id=&#34;performance&#34;&gt;Performance:&lt;/h2&gt;
+&lt;p&gt;Here is some examples for its performance. Actually it is not optimized for
+performance. Its main focuses are portability and education.&lt;/p&gt;
+&lt;h3 id=&#34;arduino-nano&#34;&gt;Arduino Nano&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;FFT 16 points: 2 ms&lt;/li&gt;
+&lt;li&gt;FFT 32 points: 6 ms&lt;/li&gt;
+&lt;li&gt;FFT 64 points: 16 ms&lt;/li&gt;
+&lt;li&gt;fir filter 10 coefficients: 190 us&lt;/li&gt;
+&lt;li&gt;fir filter 23 coefficients: 453 us&lt;/li&gt;
+&lt;li&gt;fir filter 46 coefficients: 900 us&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;10 coefficients FIR filter can be run at 5khz max frequency on an Arduino Nano.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>[TR] Orange Pi Zero Üzerinde Dump1090 Çalıştırmak</title>
+      <link>https://mozanunal.com/2018/08/opizero-dump1090/</link>
+      <pubDate>Mon, 20 Aug 2018 15:14:07 +0000</pubDate>
+      <guid>https://mozanunal.com/2018/08/opizero-dump1090/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Herkese merhabalar,&lt;/strong&gt; Bugünkü yazımda dump1090 programını nasıl bir orange pi
 zero üzerinde çalıştırabiliriz ondan bahsedeceğim. Bildiğiniz gibi dump1090 sdr
 kullanarak uçakların adsb yayınlarını çözmeye yarayan bir kod parçası. Bu
 projeyi gerçekleştirdiğim mini pc olarak orange pi zero seçmemin sebebi ise
 maliyeti ve kompaklığı. 5-10 dolara satın alınabiliniyor ve boyutları gerçekten
-küçük.&lt;/p></description></item><item><title>[TR] GNU Radio Giriş</title><link>https://mozanunal.com/posts/2018/gnu-radio-giris/</link><pubDate>Mon, 19 Mar 2018 19:04:39 +0000</pubDate><author>mehmetozanunal@gmail.com (M.Ozan Unal)</author><guid>https://mozanunal.com/posts/2018/gnu-radio-giris/</guid><description>&lt;p>&lt;strong>Herkese Merhabalar,&lt;/strong> Gnu Radio son zamanlarda keşfetmekten en çok keyif
+küçük.&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://mozanunal.com/images/1534768337583.png&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;rtlsdr-sürücüsünün-kurulması&#34;&gt;Rtlsdr Sürücüsünün Kurulması&lt;/h2&gt;
+&lt;p&gt;Ben orange pi zeroyu armbian işletim sistemi ve mainline kernel ile
+kullanıyorum. Sistemde uname -a çalıştırdığımda aldığım çıktı aşağıdaki gibi:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>[TR] GNU Radio Giriş</title>
+      <link>https://mozanunal.com/2018/03/gnu-radio-giris/</link>
+      <pubDate>Mon, 19 Mar 2018 19:04:39 +0000</pubDate>
+      <guid>https://mozanunal.com/2018/03/gnu-radio-giris/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt; Gnu Radio son zamanlarda keşfetmekten en çok keyif
 aldığım program olabilir. İlk defa duyanlar için özetlemem gerekirse içerisinde
 sinyal işleme ve sayısal haberleşme araçları toplanmış görsel programlama
 editörü. Sinyal dosyadan veya daha önce bahsettiğim SDR isimli cihazlardan
 alınabiliyor. Alınan sinyaller sayısız çeşitlilikte araçlar ile işlenebiliyor.
 Coding, modulasyon, demodulasyon gibi haberleşme işlemlerini sürükle bıraklarla
-kolayca uygulamak mümkün.&lt;/p></description></item><item><title>[TR] SimpleDSP: FIR filtreleme özelliği eklendi</title><link>https://mozanunal.com/posts/2017/simpledsp-fir-filtreleme-ozelligi/</link><pubDate>Fri, 07 Apr 2017 00:13:00 +0000</pubDate><author>mehmetozanunal@gmail.com (M.Ozan Unal)</author><guid>https://mozanunal.com/posts/2017/simpledsp-fir-filtreleme-ozelligi/</guid><description>&lt;p>&lt;strong>Herkese Merhabalar,&lt;/strong>&lt;br>
+kolayca uygulamak mümkün.&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;gnu-radio-logo&#34; loading=&#34;lazy&#34; src=&#34;https://aaronscher.com/GNU_Radio_Companion_Collection/GNU_Radio_Companion_Collection_docs/audio_modem_schematic.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Programı kurduktan sonra bizi ilk olarak aşağıdaki gibi bir ekran karşılıyor.
+Sağ tarafta program içerisindeki araçları görebilirsiniz. Hepsi aslında belli
+işlevi olan bir kutu. Sürükleyerek yapmak istediğimiz operasyonu gerçekliyoruz.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>[TR] SimpleDSP: FIR filtreleme özelliği eklendi</title>
+      <link>https://mozanunal.com/2017/04/simpledsp-fir-filtreleme-ozelligi/</link>
+      <pubDate>Fri, 07 Apr 2017 00:13:00 +0000</pubDate>
+      <guid>https://mozanunal.com/2017/04/simpledsp-fir-filtreleme-ozelligi/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;br&gt;
 Bildiğiniz gibi gömülü sistemlerde kullanılabilecek basit bir DSP kütüphanesi
 geliştirmeye çalışıyorum son olarak FIR filtreleme özelliğini bu kütüphaneye
 ekledim. FIR filtre ile alçak geçiren, yüksek geçiren, band geçiren veya
 durduran filtreler tasarlayabilirsiniz. FIR filtreler yapısı gereği hep stabil
-filtrelerdir. Bu nedenle bir kararlılık analizi gerektirmeden kullanılabilirler.&lt;/p></description></item><item><title>[TR] SimpleDSP: Gömülü Sistemler için DSP Kütühanesi</title><link>https://mozanunal.com/posts/2017/simpledsp-gomulu-sistemler-icin-dsp/</link><pubDate>Thu, 26 Jan 2017 00:13:00 +0000</pubDate><author>mehmetozanunal@gmail.com (M.Ozan Unal)</author><guid>https://mozanunal.com/posts/2017/simpledsp-gomulu-sistemler-icin-dsp/</guid><description>&lt;p>&lt;strong>Herkese Merhabalar,&lt;/strong>&lt;/p>
-&lt;p>Bu yazımda gömülü sistemler için yazdığım sayısal isaret isleme kütüphanesini
+filtrelerdir. Bu nedenle bir kararlılık analizi gerektirmeden kullanılabilirler.&lt;/p&gt;
+&lt;p&gt;Ayrıca wiki sayfasını kesinlikle ziyaret etmenizi tavsiye ederim orada Matlab
+veya Octave kullanarak nasıl filtreyi tasarlayacağınız. Filtreyi nasıl
+kullanacağınız ve karakteristiğini nasıl görselleyebileceğinize kadar bir çok
+bilgi bulunmakta.
+&lt;a href=&#34;https://github.com/mozanunal/SimpleDSP/wiki/FIR&#34;&gt;Ziyaret etmek için tıklayın.&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>[TR] SimpleDSP: Gömülü Sistemler için DSP Kütühanesi</title>
+      <link>https://mozanunal.com/2017/01/simpledsp-gomulu-sistemler-icin-dsp/</link>
+      <pubDate>Thu, 26 Jan 2017 00:13:00 +0000</pubDate>
+      <guid>https://mozanunal.com/2017/01/simpledsp-gomulu-sistemler-icin-dsp/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Bu yazımda gömülü sistemler için yazdığım sayısal isaret isleme kütüphanesini
 tanıtacağım. Kütüphanenin tamamını &amp;ldquo;C&amp;rdquo; kullanarak ve harici bir kütüphaneye
 bağlı kalmadan yazmayı planlıyorum. Böylece diğer mikrokontolcülerde de rahatça
 kullanılabilecek. Hatta bilgisayar programlarında bile kolayca eklenip
 derlenebilecek şekilde projeyi tamamlamak istiyorum. Bu kütüphane kapsamında
-çözüm sağlamak istediğim konular şunlardır.&lt;/p></description></item><item><title>PassFace: Face Recognition Using OpenCV</title><link>https://mozanunal.com/posts/2016/passface-face-recognition-using-opencv/</link><pubDate>Sat, 04 Jun 2016 19:50:00 +0000</pubDate><author>mehmetozanunal@gmail.com (M.Ozan Unal)</author><guid>https://mozanunal.com/posts/2016/passface-face-recognition-using-opencv/</guid><description>&lt;p>&lt;strong>Hi,&lt;/strong>&lt;br>
+çözüm sağlamak istediğim konular şunlardır.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;FFT&lt;/li&gt;
+&lt;li&gt;ters FFT&lt;/li&gt;
+&lt;li&gt;Hartley transform&lt;/li&gt;
+&lt;li&gt;FIR filtre&lt;/li&gt;
+&lt;li&gt;IIR filtre&lt;/li&gt;
+&lt;li&gt;Basit &amp;ldquo;moving avarage&amp;rdquo;, &amp;ldquo;smoothing&amp;rdquo; filtreleri&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Ayrıca her fonksiyon için:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Teorik olarak yapılan iş&lt;/li&gt;
+&lt;li&gt;Deneme, ölçüm ve filtre katsayısı hesabı için gerekli Matlab veya Octave kodu.&lt;/li&gt;
+&lt;li&gt;Farklı islemcilerle performansı&lt;/li&gt;
+&lt;li&gt;Örnek Grafikler&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;gibi kaynakları hazırlamayı planlıyorum. Proje tamamen açık kaynaklı olarak
+sürdürülecektir.
+&lt;a href=&#34;https://github.com/mozanunal/SimpleDSP/&#34;&gt;Siz de github üzerinden projenin herhangi bir aşamasına katkıda bulunabilirsiniz.&lt;/a&gt;
+Projenin ismini &amp;ldquo;SimpleDSP&amp;rdquo; olarak seçtim. Çünkü yapmak istediğim olay Digital
+Signal Processing olayını gömülü ve gerçek zamanlı sistemlerde kolaylaştırmak ve
+projelerde basit bir şekilde eklenebilmesini sağlamak. Şu an itibariyle FFT ve
+ters FFT fonksiyonlarını yazdım arduino kütüphanesi haline getirdim ve örnek
+kodlarını oluşturdum. Bahsettiğim ayrıntılara aşağıdan ulaşabilirsiniz.&lt;br&gt;
+&lt;a href=&#34;https://github.com/mozanunal/SimpleDSP/wiki/FFT-IFFT&#34;&gt;https://github.com/mozanunal/SimpleDSP/wiki/FFT-IFFT&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>PassFace: Face Recognition Using OpenCV</title>
+      <link>https://mozanunal.com/2016/06/passface-face-recognition-using-opencv/</link>
+      <pubDate>Sat, 04 Jun 2016 19:50:00 +0000</pubDate>
+      <guid>https://mozanunal.com/2016/06/passface-face-recognition-using-opencv/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Hi,&lt;/strong&gt;&lt;br&gt;
 PassFace is a face recognizing program develop using EmguCV (OpenCV wrapper). It
 is possible to use 4 different algorithm and 3 different source(Camera, Video,
 Image) in this program. Most of the tryings have been made using LFW data set
 which have 13000 pictures of 1500 different people.Details of project can be
-reached below:&lt;/p></description></item><item><title>[TR] RF Mesafe Hesaplama Exceli</title><link>https://mozanunal.com/posts/2016/rf-mesafe-hesaplama-exceli/</link><pubDate>Sat, 02 Jan 2016 04:34:00 +0000</pubDate><author>mehmetozanunal@gmail.com (M.Ozan Unal)</author><guid>https://mozanunal.com/posts/2016/rf-mesafe-hesaplama-exceli/</guid><description>&lt;p>&lt;strong>Merhaba Arkadaşlar,&lt;/strong>&lt;/p>
-&lt;p>Bugünkü yazımda bir radyo modülünün teorik olarak ne kadar uzaklıkta
+reached below:&lt;/p&gt;
+&lt;p&gt;Source Code:
+&lt;a href=&#34;https://github.com/mozanunal/PassFace&#34;&gt;https://github.com/mozanunal/PassFace&lt;/a&gt;&lt;/p&gt;
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube-nocookie.com/embed/d6LI42NEZZY??autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;&gt;&lt;/iframe&gt;
+    &lt;/div&gt;
+
+&lt;h4 id=&#34;1-introduction&#34;&gt;1. Introduction&lt;/h4&gt;
+&lt;h5 id=&#34;definition-of-the-problem&#34;&gt;Definition of the Problem&lt;/h5&gt;
+&lt;p&gt;In this project, a program is going to develop to recognize the faces and
+compare them the faces it learned and give the identity of the person. All this
+identifying system is going to work in real time. Main subjects in this project
+are image processing and machine learning. Project aim to develop some algorithm
+to detect faces specifically recognize the faces using pattern recognition
+algorithms. The number of faces and the equipment needed is going to be
+determined according to test of different algorithms.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>[TR] RF Mesafe Hesaplama Exceli</title>
+      <link>https://mozanunal.com/2016/01/rf-mesafe-hesaplama-exceli/</link>
+      <pubDate>Sat, 02 Jan 2016 04:34:00 +0000</pubDate>
+      <guid>https://mozanunal.com/2016/01/rf-mesafe-hesaplama-exceli/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Merhaba Arkadaşlar,&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Bugünkü yazımda bir radyo modülünün teorik olarak ne kadar uzaklıkta
 çalışabildiğini hesaplayan projemi paylaşacağım. Amacım haberleşme modülleri
 seçilirken kolayca karşılaştırmalar yapılabilecek basit bir hesaplama ortamı
 oluşturmaktı. Bu tarz işler için en uygun program olduğunu düşündüğüm Excel
-programını kullandım.&lt;/p></description></item><item><title>[TR] Processing ile Artırılmış Gerçeklik</title><link>https://mozanunal.com/posts/2015/processing-ile-artrlms-gerceklik/</link><pubDate>Sat, 25 Apr 2015 03:03:00 +0000</pubDate><author>mehmetozanunal@gmail.com (M.Ozan Unal)</author><guid>https://mozanunal.com/posts/2015/processing-ile-artrlms-gerceklik/</guid><description>&lt;p>&lt;strong>Merhaba Arkadaşlar,&lt;/strong>&lt;br>
+programını kullandım.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.mikrodalgamuhendisi.com/index.php/rf-soru-cevap-anasayfa/90-yeni-baslayanlar-icin-iletisim-mesafesi-hesab&#34;&gt;Öncelikle bu hesabı anlamama şuradaki link çok yardımcı oldu&lt;/a&gt;.
+Öncelikle onu incelemenizi tavsiye ederim. Oradaki bilgileri kısaca özetleyecek
+olursam:&lt;/p&gt;
+&lt;p&gt;İlk olarak mesafeyi temel olarak etkilen 2 kavram var. Birincisi vericinin çıkış
+gücü, ikincisi ise alıcının alış hassasiyeti. Özellikle 2. etken sık sık önemi
+unutulan konulardan biri. Genelde aktarılan veri akış hızının artmasıyla alış
+hassasiyeti düşmektedir. Yeterli olacak minimum veri akış hızını seçmek de
+önemli noktalardan bir tanesidir. Çıkış gücüne anten ve kuvvetlendirici
+kazançları da eklenir. Bulunan bu değere toplam güç denir. Hesabımızı belirleyen
+bağıntı ise şöyledir:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>[TR] Processing ile Artırılmış Gerçeklik</title>
+      <link>https://mozanunal.com/2015/04/processing-ile-artrlms-gerceklik/</link>
+      <pubDate>Sat, 25 Apr 2015 03:03:00 +0000</pubDate>
+      <guid>https://mozanunal.com/2015/04/processing-ile-artrlms-gerceklik/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Merhaba Arkadaşlar,&lt;/strong&gt;&lt;br&gt;
 Bugünkü yazımda NyARToolkit&amp;rsquo;ten bahsedeceğim. Bu toolkit sayesinde kameradan
 aldığımız görüntüler üzerine 3 Boyutlu nesneler yerleştirebiliyoruz. İstediğimiz
 3 boyutlu grafik hatta animasyon yerleştirilebilir. Google Glass tarzı
@@ -53,8 +185,15 @@ giyilebilir teknolojilerle daha yaratıcı uygulamalar yapılabilir. Simülasyon
 oyun dünyası için çeşitli uygulamalar geliştirilebilir. Hatta hologramlar
 yapmanın şimdilik en gerçekleştirilebilir yolu olarak gözüküyor. Toolkit bir çok
 programlama diliyle kullanılabiliyor. Ben Processing ile kullandım basit olduğu
-için. Toolkiti kullandığım şöyle bir tanıtım videosu hazırladım:&lt;/p></description></item><item><title>[TR] Bakış Açısı Tabanlı 3 Boyutlu Görüş Versiyon 2.00</title><link>https://mozanunal.com/posts/2015/baks-acs-tabanl-3-boyutlu-gorus2/</link><pubDate>Tue, 31 Mar 2015 06:55:00 +0000</pubDate><author>mehmetozanunal@gmail.com (M.Ozan Unal)</author><guid>https://mozanunal.com/posts/2015/baks-acs-tabanl-3-boyutlu-gorus2/</guid><description>&lt;p>&lt;strong>Herkese Merhabalar,&lt;/strong>&lt;/p>
-&lt;p>Bu yazımda daha önce yaptığım bir uygulamanın 2. versiyonundan bahsedeceğim.
+için. Toolkiti kullandığım şöyle bir tanıtım videosu hazırladım:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>[TR] Bakış Açısı Tabanlı 3 Boyutlu Görüş Versiyon 2.00</title>
+      <link>https://mozanunal.com/2015/03/baks-acs-tabanl-3-boyutlu-gorus2/</link>
+      <pubDate>Tue, 31 Mar 2015 06:55:00 +0000</pubDate>
+      <guid>https://mozanunal.com/2015/03/baks-acs-tabanl-3-boyutlu-gorus2/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Bu yazımda daha önce yaptığım bir uygulamanın 2. versiyonundan bahsedeceğim.
 Programımı daha önce şöyle anlatmıştım:  Bu program sayesinde ekstra hiç bir
 ekipman kullanmadan 2 boyutlu bilgisayar ekranını 3 boyutlu görme uygulamasını
 gerçekleştirebileceğimiz bir şeye dönüştürüyoruz. Bunu nasıl yapıyor diye
@@ -62,19 +201,22 @@ soracak olursanız görüntü işleme sayesinde!.Programda webcam üzerinden yü
 tespiti yapılıyor ve ekrana nereden baktığı tespit ediliyor. Hesaplanan bu açı
 daha sonra kullandığım 3 boyut kütüphanesi olan OpenGL&amp;rsquo;in kamerasını ayarlamak
 için kullanılıyor. böylece ekrana bakış yönünüze göre değişen bir 3D görme
-uygulaması hazırlanmış oluyor.&lt;/p></description></item><item><title>[TR] SDR ile Uçakların Yayınlarından Yerlerini Tespit Etmek</title><link>https://mozanunal.com/posts/2015/sdr-ile-ucaklarn-yaynlarndan-yerlerini/</link><pubDate>Fri, 09 Jan 2015 23:35:00 +0000</pubDate><author>mehmetozanunal@gmail.com (M.Ozan Unal)</author><guid>https://mozanunal.com/posts/2015/sdr-ile-ucaklarn-yaynlarndan-yerlerini/</guid><description>&lt;p>&lt;strong>Merhabalar!&lt;/strong>&lt;/p>
-&lt;p>Bugünkü yazımda SDR ile uçaklardan veri alıp onları haritada takip etmeyi
+uygulaması hazırlanmış oluyor.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>[TR] SDR ile Uçakların Yayınlarından Yerlerini Tespit Etmek</title>
+      <link>https://mozanunal.com/2015/01/sdr-ile-ucaklarn-yaynlarndan-yerlerini/</link>
+      <pubDate>Fri, 09 Jan 2015 23:35:00 +0000</pubDate>
+      <guid>https://mozanunal.com/2015/01/sdr-ile-ucaklarn-yaynlarndan-yerlerini/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Merhabalar!&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Bugünkü yazımda SDR ile uçaklardan veri alıp onları haritada takip etmeyi
 anlatacağım. Bunun için gerekli olan yazılımlar ADSBsharp ve ADSBScope
 yazılımlarıdır. Ben donanım olarak 10 $ Çin&amp;rsquo;den aldığım SDR&amp;rsquo;yi kullandım. Anten
 olarak ise 5 TL&amp;rsquo;lik TV anteni kullandık. Bu anten tabi ki bu iş için uygun anten
 değil. Çalışacağımız frekans 1090 Mhz benim antenimle sadece yakın çevredeki
 uçaklardan veri almak mümkün. En kısa zamanda antenlerle ilgili bir yazı
 yayınlayacağım o zamana kadar
-&lt;a
-href="https://www.rtl-sdr.com/adsb-aircraft-radar-with-rtl-sdr/"
-target="_blank"
->şurayı inceleyebilirsiniz&lt;/a>
-.
+&lt;a href=&#34;https://www.rtl-sdr.com/adsb-aircraft-radar-with-rtl-sdr/&#34;&gt;şurayı inceleyebilirsiniz&lt;/a&gt;.
 Yapacağımız iş temel olarak söyle: Uçaklar uçarken koordinantları, rotaları vb
 şeklinde ADSB diye kısaltılan bir bilgilendirme dataları yollayarak uçarlar.
 Bizim SDR ile yaptığımız şey 1090 Mhz sinyalleri alıp onları decode etmek.
@@ -83,26 +225,47 @@ kullanabilirsiniz. Daha sonra decode edilen data port üzerinden başka bir
 programa aktarılır. Bu program ile elde edilen veriler bir arayüze aktarılır ve
 uçak harita üzerinde gösterilir. Haritada gösterme işi için ADSBScope
 yazılıımını kullandım. Aşağıda yazılımların nasıl kullanıldığını anlatığım
-videoyu paylaşıyorum 2 adet fotoğrafla beraber. Görüşmek üzere&amp;hellip;&lt;/p></description></item><item><title>[TR] SDR ile Bilgisayardan TV izlemek</title><link>https://mozanunal.com/posts/2015/sdr-ile-bilgisayardan-tv-izlemek/</link><pubDate>Fri, 09 Jan 2015 03:14:00 +0000</pubDate><author>mehmetozanunal@gmail.com (M.Ozan Unal)</author><guid>https://mozanunal.com/posts/2015/sdr-ile-bilgisayardan-tv-izlemek/</guid><description>&lt;p>&lt;strong>Herkese Merhabalar!&lt;/strong>&lt;/p>
-&lt;p>SDR için ilk uygulama olarak TV izleme uygulamasını seçtim. Çünkü bu modüller Tv
+videoyu paylaşıyorum 2 adet fotoğrafla beraber. Görüşmek üzere&amp;hellip;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>[TR] SDR ile Bilgisayardan TV izlemek</title>
+      <link>https://mozanunal.com/2015/01/sdr-ile-bilgisayardan-tv-izlemek/</link>
+      <pubDate>Fri, 09 Jan 2015 03:14:00 +0000</pubDate>
+      <guid>https://mozanunal.com/2015/01/sdr-ile-bilgisayardan-tv-izlemek/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar!&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;SDR için ilk uygulama olarak TV izleme uygulamasını seçtim. Çünkü bu modüller Tv
 alıcı modülleri olarak satılıyorlar. Bunu yapmak için 2 program seçeneğiniz var
 1.si TVSharp, ikincisi ise SDR# + PAL / SECAM TV  plugin. Program ve plugin aynı
 kişi tarafından yazılmıştır ve kullanımları benzerdir. Aşağıda programların
 kullanıldığı bir video hazırladım. Antenim ve evimin konumu kötü olduğu için
 yayın kalitesi çok kötü ama en azından yazılımsal olarak nasıl hazırlık
-yapılması gerektiğini anlatmaya çalıştım. Tekrar görüşmek üzere&amp;hellip;&lt;/p></description></item><item><title>[TR] Software Defined Radioya Giriş</title><link>https://mozanunal.com/posts/2015/software-defined-radioya-giris/</link><pubDate>Fri, 02 Jan 2015 22:55:00 +0000</pubDate><author>mehmetozanunal@gmail.com (M.Ozan Unal)</author><guid>https://mozanunal.com/posts/2015/software-defined-radioya-giris/</guid><description>&lt;p>&lt;strong>Herkese Merhabalar!&lt;/strong>&lt;/p>
-&lt;p>Bugünkü yazımda yeni bir hobimden bahsetmet istiyorum. Yeni hobim, &amp;ldquo;Software
+yapılması gerektiğini anlatmaya çalıştım. Tekrar görüşmek üzere&amp;hellip;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>[TR] Software Defined Radioya Giriş</title>
+      <link>https://mozanunal.com/2015/01/software-defined-radioya-giris/</link>
+      <pubDate>Fri, 02 Jan 2015 22:55:00 +0000</pubDate>
+      <guid>https://mozanunal.com/2015/01/software-defined-radioya-giris/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar!&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Bugünkü yazımda yeni bir hobimden bahsetmet istiyorum. Yeni hobim, &amp;ldquo;Software
 defined radio&amp;rdquo;. Bu aslında bir rf modulü, Farkı ise belli frekans aralığında
 dinleme yapabilmesi. Yani bu sayede farklı frekanslardaki radyo dalgalarını alıp
 inceleyebilir, çözümleyebilirsiniz. SDR hakkında deneysel bir şeyler yapmak
 isterseniz en iyi yöntem bilgisayar için ucuz tv alıcılarından almak. Ben
-Aliexpress sitesinden 10 $ aldım. En ucuz SDR&amp;rsquo;ler genelde &lt;strong>RTL2832U+R820T çip
-setlidir.&lt;/strong> Benim aldığım modül 25MHz - 1700MHz arası tarama yapabiliyor. Kendi
+Aliexpress sitesinden 10 $ aldım. En ucuz SDR&amp;rsquo;ler genelde &lt;strong&gt;RTL2832U+R820T çip
+setlidir.&lt;/strong&gt; Benim aldığım modül 25MHz - 1700MHz arası tarama yapabiliyor. Kendi
 anteni ve kumandasıyla beraber geldi. Genelde bu modullerle gelen antenlerle
 FMden başka bi şey dinleyebilmek pek mümkün olmuyor. Fakat geliştirilen uygun
 antenlerle Uluslararası Uzay İstasyonundan(ISS) bile veri alabilmek mümkün.
-Bunlardan kurulumdan sonra bahsedeceğim.&lt;/p></description></item><item><title>[TR] Bakış Açısı Tabanlı 3 Boyutlu Görüş</title><link>https://mozanunal.com/posts/2014/baks-acs-tabanl-3-boyutlu-gorus/</link><pubDate>Tue, 09 Dec 2014 18:13:00 +0000</pubDate><author>mehmetozanunal@gmail.com (M.Ozan Unal)</author><guid>https://mozanunal.com/posts/2014/baks-acs-tabanl-3-boyutlu-gorus/</guid><description>&lt;p>&lt;strong>Herkese Merhabalar,&lt;/strong>&lt;/p>
-&lt;p>Bu yazımda size uzun zamandır üzerinde araştırmalar yaptığım ve bir şeyler
+Bunlardan kurulumdan sonra bahsedeceğim.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>[TR] Bakış Açısı Tabanlı 3 Boyutlu Görüş</title>
+      <link>https://mozanunal.com/2014/12/baks-acs-tabanl-3-boyutlu-gorus/</link>
+      <pubDate>Tue, 09 Dec 2014 18:13:00 +0000</pubDate>
+      <guid>https://mozanunal.com/2014/12/baks-acs-tabanl-3-boyutlu-gorus/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Bu yazımda size uzun zamandır üzerinde araştırmalar yaptığım ve bir şeyler
 üretmek istediğim 3 boyutlu görme konusunda yaptığım programdan bahsedeceğim. Bu
 program sayesinde ekstra hiç bir ekipman kullanmadan 2 boyutlu bilgisayar
 ekranını 3 boyutlu görme uygulamasını gerçekleştirebileceğimiz bir şeye
@@ -110,22 +273,69 @@ dönüştürüyoruz. Bunu nasıl yapıyor diye soracak olursanız görüntü iş
 sayesinde!. Programda webcam üzerinden yüz tespiti yapılıyor ve ekrana nereden
 baktığı tespit ediliyor. Hesaplanan bu açı daha sonra kullandığım 3 boyut
 kütüphanesi olan OpenGL&amp;rsquo;in kamerasını ayarlamak için kullanılıyor. böylece
-ekrana bakış yönünüze göre değişen bir 3D görme uygulaması hazırlanmış oluyor.&lt;/p></description></item><item><title>[TR] Kamera ile Araç Sayısı Takibi</title><link>https://mozanunal.com/posts/2014/kamera-ile-arac-says-takibi/</link><pubDate>Fri, 21 Nov 2014 03:41:00 +0000</pubDate><author>mehmetozanunal@gmail.com (M.Ozan Unal)</author><guid>https://mozanunal.com/posts/2014/kamera-ile-arac-says-takibi/</guid><description>&lt;p>&lt;strong>Herkese Merhabalar!&lt;/strong>&lt;/p>
-&lt;p>Bugün size uzun süredir üzerinden uğraştığım bir projeden bahsetmek istiyorum.
+ekrana bakış yönünüze göre değişen bir 3D görme uygulaması hazırlanmış oluyor.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>[TR] Kamera ile Araç Sayısı Takibi</title>
+      <link>https://mozanunal.com/2014/11/kamera-ile-arac-says-takibi/</link>
+      <pubDate>Fri, 21 Nov 2014 03:41:00 +0000</pubDate>
+      <guid>https://mozanunal.com/2014/11/kamera-ile-arac-says-takibi/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar!&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Bugün size uzun süredir üzerinden uğraştığım bir projeden bahsetmek istiyorum.
 Projenin amacı kamera ile bir yoldan geçen araç sayını saymak. Ben de bunu
 okulumun önündeki caddeden çektiğim videoda gerçekleştirdim. İleriki aşamalarda
 insan sayma uygulaması da geliştirmek istiyorum. Araç uygulaması da hız
 belirleyecek şekilde veya araç büyüklüğüne, markasına göre sınıflandırma yapacak
 şekilde geliştirilebilir. Proje Emgucv kütüphanesinin Video Survilance modulü
-kullanılarak yapılmıştır. Tekrar görüşmek dileğiyle&amp;hellip;&lt;/p></description></item><item><title>[TR] Kamera ile Fare Kontrolü</title><link>https://mozanunal.com/posts/2014/kamera-ile-fare-kontrolu/</link><pubDate>Fri, 10 Oct 2014 01:24:00 +0000</pubDate><author>mehmetozanunal@gmail.com (M.Ozan Unal)</author><guid>https://mozanunal.com/posts/2014/kamera-ile-fare-kontrolu/</guid><description>&lt;p>&lt;strong>Herkese Merhabalar!&lt;/strong>&lt;/p>
-&lt;p>Bu yazımda Kamera ile Fare Kontrolü projemden bahsetmek istiyorum. Bu proje
+kullanılarak yapılmıştır. Tekrar görüşmek dileğiyle&amp;hellip;&lt;/p&gt;
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube-nocookie.com/embed/N8HpOoq8yYk?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;&gt;&lt;/iframe&gt;
+    &lt;/div&gt;</description>
+    </item>
+    <item>
+      <title>[TR] Kamera ile Fare Kontrolü</title>
+      <link>https://mozanunal.com/2014/10/kamera-ile-fare-kontrolu/</link>
+      <pubDate>Fri, 10 Oct 2014 01:24:00 +0000</pubDate>
+      <guid>https://mozanunal.com/2014/10/kamera-ile-fare-kontrolu/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar!&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Bu yazımda Kamera ile Fare Kontrolü projemden bahsetmek istiyorum. Bu proje
 aslında bir görüntü işleme projesidir. Eli filtrelerle tespit edip fare gibi
 kullanmak amaçlanmıştır. El açılınca tıklama sağlanır, tıklama olayı çok hassas
 değil maalesef arka arkaya çok tıklama yapabiliyor. Biraz daha uzaktan kontrol
-edilirse gezinme olayı da daha hassas olabilir.&lt;/p></description></item><item><title>[TR] Gerçek Zamanlı Obje Takibi(EmguCv ile)</title><link>https://mozanunal.com/posts/2014/gercek-zamanl-obje-takibiemgucv-ile/</link><pubDate>Mon, 29 Sep 2014 15:54:00 +0000</pubDate><author>mehmetozanunal@gmail.com (M.Ozan Unal)</author><guid>https://mozanunal.com/posts/2014/gercek-zamanl-obje-takibiemgucv-ile/</guid><description>&lt;p>&lt;strong>Herkese Merhabalar!&lt;/strong>&lt;/p>
-&lt;p>Bu yazımda sizlere EmguCv kütüphanesi ile yazdığım görüntü işleme uygulaması
+edilirse gezinme olayı da daha hassas olabilir.&lt;/p&gt;
+&lt;p&gt;Program C# dilinde Emgucv kütüphanesiyle yazılmıştır. Algoritmasına gelecek
+olursak, Hsv ve Ycbcr renk uzaylarında &amp;ldquo;skin detection&amp;rdquo; algoritmaları
+uygulanmıştır. Bu sayede el &amp;ldquo;counter&amp;rdquo; olarak tespit edilmiştir. Merkezi
+kullanılarak farenin gitmesi&lt;br&gt;
+gereken koordinantlar belirlenmiştir. &amp;ldquo;convexity defects&amp;rdquo; methodu kullanılarak
+da parmak sayısı belirlenmiştir. 5. parmakta pek hassas olarak çalışamamasına
+rağmen diğer parmakları rahat bir şekilde sayılmasını sağlamaktadır.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>[TR] Gerçek Zamanlı Obje Takibi(EmguCv ile)</title>
+      <link>https://mozanunal.com/2014/09/gercek-zamanl-obje-takibiemgucv-ile/</link>
+      <pubDate>Mon, 29 Sep 2014 15:54:00 +0000</pubDate>
+      <guid>https://mozanunal.com/2014/09/gercek-zamanl-obje-takibiemgucv-ile/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar!&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Bu yazımda sizlere EmguCv kütüphanesi ile yazdığım görüntü işleme uygulaması
 hakkında bilgi vermek istiyorum. Uygulamada ortamdan farklı bir renkte olan
 nesneyi rengine göre filtre edip onu gerçek zamanlı olarak takip etme
 amaçlanmıştır. Geliştirme ortamı olarak Microsoft Visual Studio, dil olarak C#
-programlama dili kullanılmıştır.&lt;br>
-Programın genel algoritmasına gelirsek, şöyle özetleyebiliriz;&lt;/p></description></item></channel></rss>
+programlama dili kullanılmıştır.&lt;br&gt;
+Programın genel algoritmasına gelirsek, şöyle özetleyebiliriz;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Görüntü kameradan RGB formatında alınıp başka bir renkli resim görüntüleme
+yöntemi olan HSV formatına dönüştürülmüştür.&lt;/li&gt;
+&lt;li&gt;HSV filtresi için uygun değerler test edilip bulunmuştur ve renk filtesi
+uygunlanmıştır.&lt;/li&gt;
+&lt;li&gt;Renk filtresinden kalan gürültüler erode ve dilate morfolojik operatörleriyle
+azaltılmıştır.&lt;/li&gt;
+&lt;li&gt;Counter Analysis ile görüntü &amp;ldquo;counter&amp;quot;lara ayrılmıştır. Sadece &amp;ldquo;counter&amp;rdquo;
+alanı belli bir değerden büyük olan &amp;ldquo;counter&amp;quot;lar dikkat alınmıştır. Bu sayede
+son kalan gürültüler de engelenmiştir.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Projemin tanıtım videosuna aşağıdan ulaşabilirsiniz. Kodlar videoda
+gösterilmektedir. Tekrar görüşmek üzere&amp;hellip;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

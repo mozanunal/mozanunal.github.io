@@ -1,12 +1,45 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Analog on mozanunal.com</title><link>https://mozanunal.com/categories/analog/</link><description>Recent content in Analog on mozanunal.com</description><generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>mehmetozanunal@gmail.com (M.Ozan Unal)</managingEditor><webMaster>mehmetozanunal@gmail.com (M.Ozan Unal)</webMaster><copyright>© 2025 M.Ozan Unal</copyright><lastBuildDate>Tue, 27 Dec 2016 00:59:00 +0000</lastBuildDate><atom:link href="https://mozanunal.com/categories/analog/index.xml" rel="self" type="application/rss+xml"/><item><title>[TR] Eski Bilgisayar Güç Kaynağını Masaüstü Güç Kaynağına Çevirme</title><link>https://mozanunal.com/posts/2016/eski-bilgisayar-guc-kaynagn-masaustu/</link><pubDate>Tue, 27 Dec 2016 00:59:00 +0000</pubDate><author>mehmetozanunal@gmail.com (M.Ozan Unal)</author><guid>https://mozanunal.com/posts/2016/eski-bilgisayar-guc-kaynagn-masaustu/</guid><description>&lt;p>&lt;strong>Herkese Merhabalar,&lt;/strong>&lt;br>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Analog on mozanunal.com</title>
+    <link>https://mozanunal.com/categories/analog/</link>
+    <description>Recent content in Analog on mozanunal.com</description>
+    <image>
+      <title>mozanunal.com</title>
+      <url>https://mozanunal.com/images/papermod-cover.png</url>
+      <link>https://mozanunal.com/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- 0.147.8</generator>
+    <language>en</language>
+    <copyright>mozanunal</copyright>
+    <lastBuildDate>Tue, 27 Dec 2016 00:59:00 +0000</lastBuildDate>
+    <atom:link href="https://mozanunal.com/categories/analog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[TR] Eski Bilgisayar Güç Kaynağını Masaüstü Güç Kaynağına Çevirme</title>
+      <link>https://mozanunal.com/2016/12/eski-bilgisayar-guc-kaynagn-masaustu/</link>
+      <pubDate>Tue, 27 Dec 2016 00:59:00 +0000</pubDate>
+      <guid>https://mozanunal.com/2016/12/eski-bilgisayar-guc-kaynagn-masaustu/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;br&gt;
        Bugünkü yazımda nasıl eski bilgisayarınızdan kalan güç kaynağınızı
 elektronik projelerinizde kullanabileceğiniz güç kaynağına dönüştürebileceğinizi
 anlatacağım. Özellikle yüksek güç gerektiren projelerde farklı voltajlarda
 yüksek güç sağlayabilen bu güç kaynaklarının oldukça yararlı olabileceğini
 düşünüyorum. Hemen hemen herkesin de bir şekilde ıskartaya çıkmış bir
 bilgisayarı vardır. Eğer güç kaynağı sağlamsa sıfır maliyetle kendinize bir güç
-kaynağı edinmiş olursunuz.&lt;/p></description></item><item><title>[TR] DIY Bluetooth Speaker</title><link>https://mozanunal.com/posts/2016/diy-bluetooth-speaker/</link><pubDate>Mon, 05 Dec 2016 21:23:00 +0000</pubDate><author>mehmetozanunal@gmail.com (M.Ozan Unal)</author><guid>https://mozanunal.com/posts/2016/diy-bluetooth-speaker/</guid><description>&lt;p>&lt;strong>Merhaba Arkadaşlar,&lt;/strong>&lt;/p>
-&lt;p>Bu projemde nasıl elimizde kalan fazla hoparlörleri bluetooth speakera
+kaynağı edinmiş olursunuz.&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://2.bp.blogspot.com/-EXt6RrgC7lg/WGAUWvxMZ9I/AAAAAAAAfKQ/FDJd61MfgYAZ4pKE_46vAyzQHT_AN6evgCKgB/s720/IMG_20161224_190300.jpg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Benim elimdeki güç kaynağının çıkışlarını aşağıdan görebilirsiniz. Eski
+bilgisayarımdan kalan 250 W bir güç kaynağı kendisi. Hali hazırda 3.3 V 5V 12 V
+ve  -12 V çıkışları var. Farklı voltaj ihtiyaçlarına göre regülatörler veya akım
+koruma devreleri eklenerek güç kaynağı daha işlevsel hale getirilebilir.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>[TR] DIY Bluetooth Speaker</title>
+      <link>https://mozanunal.com/2016/12/diy-bluetooth-speaker/</link>
+      <pubDate>Mon, 05 Dec 2016 21:23:00 +0000</pubDate>
+      <guid>https://mozanunal.com/2016/12/diy-bluetooth-speaker/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Merhaba Arkadaşlar,&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Bu projemde nasıl elimizde kalan fazla hoparlörleri bluetooth speakera
 dönüştürebileceğinizden bahsedeceğim. Geçen yaz bir arkadaşımın 5 +1 ses
 sisteminin kuvvetlendirici kutusu yanmış böyle olunca da hoparlörler boşa çıkmış
 ben de bir projede kullanırım diyerek kenara ayırdım. Aklıma sonradan bunları
@@ -17,8 +50,15 @@ de kuvvetlendirici ekledim. Kuvvetlendirici  olarak PAM8610 seçtim. Kendisi bi
 class D güç kuvvetlendiricisi yani en verimli olanlarından. Yüksek verini
 sayesinde çok az enerji ısıya dönüşüyor ve soğutucu metal parçaya vb ihtiyaç
 duymuyor. Yaptığım proje ile bu hoparlörleri, bluetooth üzerinden ya da doğrudan
-kablo ile ses çıkışlarına bağlanabilecek duruma getirmiş oluyorum.&lt;/p></description></item><item><title>[TR] Ayarlanabilir Taşınabilir Güç Kaynağı Yapımı</title><link>https://mozanunal.com/posts/2016/ayarlanabilir-tasnabilir-guc-kaynag-yapm/</link><pubDate>Sun, 13 Mar 2016 01:24:00 +0000</pubDate><author>mehmetozanunal@gmail.com (M.Ozan Unal)</author><guid>https://mozanunal.com/posts/2016/ayarlanabilir-tasnabilir-guc-kaynag-yapm/</guid><description>&lt;p>&lt;strong>Herkese Merhabalar,&lt;/strong>&lt;/p>
-&lt;p>Bugünkü yazımda nasıl basit bir şekilde bir powerbank&amp;rsquo;i ayarlanabilir güç
+kablo ile ses çıkışlarına bağlanabilecek duruma getirmiş oluyorum.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>[TR] Ayarlanabilir Taşınabilir Güç Kaynağı Yapımı</title>
+      <link>https://mozanunal.com/2016/03/ayarlanabilir-tasnabilir-guc-kaynag-yapm/</link>
+      <pubDate>Sun, 13 Mar 2016 01:24:00 +0000</pubDate>
+      <guid>https://mozanunal.com/2016/03/ayarlanabilir-tasnabilir-guc-kaynag-yapm/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Bugünkü yazımda nasıl basit bir şekilde bir powerbank&amp;rsquo;i ayarlanabilir güç
 kaynağına dönüştürebileceğimizden bahsedeceğim. Gerekli olan malzemeler sadece
 bir adet power bank ve bir adet MT3608 boost converter. Projeye başlamadan önce
 boost converter nedir ondan bahsetmek istiyorum. Boost converterlar voltaj
@@ -27,43 +67,94 @@ yapısı kurarlar ve bu yapı ile hem voltajı yükseltirler hem de verimleri ç
 yüksek olur. Benim kulladığım modül MT3608 powerbankin pilinin çalışma voltaji
 olan 3.6 volt ile beslenebiliyor. 0 28 Volt arası 2 amper çıkış alınabiliyor.
 Verimi de yüzde 93 civarı. Projemize çok uygun yapıyor bu özellikler de onu. Hem
-de kısa devre koruması da var. Bu da güvenlik açısından da uygun hale getiriyor.&lt;/p></description></item><item><title>[TR] Bataryalar için Sabit Akım Deşarj Devresi Yapımı</title><link>https://mozanunal.com/posts/2015/bataryalar-icin-sabit-akm-desarj/</link><pubDate>Wed, 05 Aug 2015 15:08:00 +0000</pubDate><author>mehmetozanunal@gmail.com (M.Ozan Unal)</author><guid>https://mozanunal.com/posts/2015/bataryalar-icin-sabit-akm-desarj/</guid><description>&lt;p>&lt;strong>Herkese Merhabalar,&lt;/strong>&lt;/p>
-&lt;p>Batarya kapasite testi için çeşitli yöntemler geliştirilmiştir. Bunlardan ilk
+de kısa devre koruması da var. Bu da güvenlik açısından da uygun hale getiriyor.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>[TR] Bataryalar için Sabit Akım Deşarj Devresi Yapımı</title>
+      <link>https://mozanunal.com/2015/08/bataryalar-icin-sabit-akm-desarj/</link>
+      <pubDate>Wed, 05 Aug 2015 15:08:00 +0000</pubDate>
+      <guid>https://mozanunal.com/2015/08/bataryalar-icin-sabit-akm-desarj/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Batarya kapasite testi için çeşitli yöntemler geliştirilmiştir. Bunlardan ilk
 akıla geleni bataryanın uçlarına sabit direnç bağlayıp çekilen akım ve zaman
 üzerinden kapasite hesabı yapmaktır. Fakat bataryaların zamanla deşarj oldukça
 voltajı azalır bu da akımın değişmesine yol açacaktır. Bu sorunu çözmek için ise
 deşarj esnasında mümkün olduğunca çok voltaj örneklenerek anlık akım hesaplanıp
 interpolasyon yöntemleriyle kapasiteye ulaşılabilir. Fakat bu sıkıntıları aşmak
-için ikinci bir ölçüm yöntemi vardır; Sabit akım deşarj devresi.&lt;/p></description></item><item><title>[TR] LM78XX Voltaj Regülatörü Entegrelerini Kullanma</title><link>https://mozanunal.com/posts/2015/lm78xx-voltaj-regulatoru-entegrelerini/</link><pubDate>Sun, 11 Jan 2015 23:30:00 +0000</pubDate><author>mehmetozanunal@gmail.com (M.Ozan Unal)</author><guid>https://mozanunal.com/posts/2015/lm78xx-voltaj-regulatoru-entegrelerini/</guid><description>&lt;p>&lt;strong>Tekrardan Merhabalar,&lt;/strong>&lt;/p>
-&lt;p>Voltaj regülatörleri elektronik devrelerde büyük önem taşır. Çoğu mikroişlemci,
+için ikinci bir ölçüm yöntemi vardır; Sabit akım deşarj devresi.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>[TR] LM78XX Voltaj Regülatörü Entegrelerini Kullanma</title>
+      <link>https://mozanunal.com/2015/01/lm78xx-voltaj-regulatoru-entegrelerini/</link>
+      <pubDate>Sun, 11 Jan 2015 23:30:00 +0000</pubDate>
+      <guid>https://mozanunal.com/2015/01/lm78xx-voltaj-regulatoru-entegrelerini/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Tekrardan Merhabalar,&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Voltaj regülatörleri elektronik devrelerde büyük önem taşır. Çoğu mikroişlemci,
 entegre belli bir voltajda çalışır. Aynı zamanda bir devrede farklı voltajlarda
 çalışan bölümler olabilir. Bu gibi durumlarda regülatör kullanırız.Yazıda
 konumuz LM78XX entegreleri. LM78XX entegreleri, voltaj regülatörü
 entegreleridir. Geniş voltaj aralığında voltajı regüle edebilirler. Entegrelerin
 ismindeki son 2 rakam hangi voltaja regüle ettiğini gösterirler. Örneğin; LM7805
 5 volta, LM7812 12 volta regüle eder. Kullanımı oldukça kolay olduğu için
-sıklıkla kullanılırlar. Kullanımını 7805 üzerinden aşağıda anlattım.&lt;/p></description></item><item><title>[TR] Karanlıkta Yanan Gece Lambası</title><link>https://mozanunal.com/posts/2014/karanlkta-yanan-gece-lambas/</link><pubDate>Tue, 07 Oct 2014 19:52:00 +0000</pubDate><author>mehmetozanunal@gmail.com (M.Ozan Unal)</author><guid>https://mozanunal.com/posts/2014/karanlkta-yanan-gece-lambas/</guid><description>&lt;p>&lt;strong>Herkese Merhabalar!&lt;/strong>&lt;/p>
-&lt;p>Projemin ismi karanlıkta çalışan gece lambası, transistörü teorik olarak
+sıklıkla kullanılırlar. Kullanımını 7805 üzerinden aşağıda anlattım.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>[TR] Karanlıkta Yanan Gece Lambası</title>
+      <link>https://mozanunal.com/2014/10/karanlkta-yanan-gece-lambas/</link>
+      <pubDate>Tue, 07 Oct 2014 19:52:00 +0000</pubDate>
+      <guid>https://mozanunal.com/2014/10/karanlkta-yanan-gece-lambas/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar!&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Projemin ismi karanlıkta çalışan gece lambası, transistörü teorik olarak
 öğrendikten sonra bunu uygulamaya geçirmek istedim ve bu devreyi tasarladım. 1
 adet transistör, 1 adet ldr, 1 adet led ve bir kaç tane direnç kullandım. LDR
 ışığa göre direnci değiskenlik gösteren bir devre elemanıdır. Karanlıkta direnci
 artarken, aydınlıkta direnci azalmaktadır. Aydınlıktan karanlığa geçişte direnci
 artar ve uçları arasındaki gerilim artar bu sayede transistör aktif olur ve
 ledin yanmasını sağlar. Devre şeması ve tanıtım videosu aşağıdadır. Tekrar
-görüşmek üzere&amp;hellip;\&lt;/p></description></item><item><title>[TR] 555 Entegresi Tanıtım</title><link>https://mozanunal.com/posts/2014/555-entegresi-tantm/</link><pubDate>Tue, 07 Oct 2014 02:49:00 +0000</pubDate><author>mehmetozanunal@gmail.com (M.Ozan Unal)</author><guid>https://mozanunal.com/posts/2014/555-entegresi-tantm/</guid><description>&lt;p>&lt;strong>Herkese Merhabalar!&lt;/strong>&lt;br>
+görüşmek üzere&amp;hellip;\&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>[TR] 555 Entegresi Tanıtım</title>
+      <link>https://mozanunal.com/2014/10/555-entegresi-tantm/</link>
+      <pubDate>Tue, 07 Oct 2014 02:49:00 +0000</pubDate>
+      <guid>https://mozanunal.com/2014/10/555-entegresi-tantm/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar!&lt;/strong&gt;&lt;br&gt;
 Bu yazımda size 555 entegresini tanıtmak istiyorum. Başlamadan önce şunu da
 belirtmek isterim 555 entegresi benim en çok sempati duyduğum entegrelerden
 biridir. Bunun nedeni ise 8 bacaklı, çok basit ve küçük bir entegre olmasına
 rağmen çok yararlı ve kullanım alanı çok geniş bir entegre olmasıdır. İnternette
-555 entegresi ile yapılan bir çok proje&lt;br>
+555 entegresi ile yapılan bir çok proje&lt;br&gt;
 bulabilirsiniz.(örneğin ==&amp;gt;
-&lt;a
-href="https://www.instructables.com/id/47-projects-to-do-with-a-555/"
-target="_blank"
->https://www.instructables.com/id/47-projects-to-do-with-a-555/&lt;/a>
-). Bu video da benim 555 entegresi hakkında tanıtım videom.&lt;/p></description></item><item><title>[TR] Alkış ile Lamba Kontrolü</title><link>https://mozanunal.com/posts/2014/alks-ile-lamba-kontrolu/</link><pubDate>Tue, 07 Oct 2014 01:28:00 +0000</pubDate><author>mehmetozanunal@gmail.com (M.Ozan Unal)</author><guid>https://mozanunal.com/posts/2014/alks-ile-lamba-kontrolu/</guid><description>&lt;p>&lt;strong>Herkese Merhabalar!&lt;/strong>&lt;br>
+&lt;a href=&#34;https://www.instructables.com/id/47-projects-to-do-with-a-555/&#34;&gt;https://www.instructables.com/id/47-projects-to-do-with-a-555/&lt;/a&gt;
+). Bu video da benim 555 entegresi hakkında tanıtım videom.&lt;/p&gt;
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube-nocookie.com/embed/OpG5PGl0PE4?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;&gt;&lt;/iframe&gt;
+    &lt;/div&gt;
+
+&lt;p&gt;Teknik detaylarına gelirsek, 555 entegresi aslında tek işlevi kare dalga üretmek
+olan bir timer devresidir. 555 entegre devresi pin bağlantıları şu şekildedir;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>[TR] Alkış ile Lamba Kontrolü</title>
+      <link>https://mozanunal.com/2014/10/alks-ile-lamba-kontrolu/</link>
+      <pubDate>Tue, 07 Oct 2014 01:28:00 +0000</pubDate>
+      <guid>https://mozanunal.com/2014/10/alks-ile-lamba-kontrolu/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar!&lt;/strong&gt;&lt;br&gt;
 Bu yazımda size, daha önceden yapıp (lise yıllarımda), bloğa koymak icin tekrar
 tamir ettiğim bir projemden bahsetmek istiyorum. Projenin ismi &amp;ldquo;Alkış ile lamba
 kontrolü&amp;rdquo; amacı ise alkış gibi yüksek bir sesle bir röle kontrol etmek. Bu
 projede, röleye toplam 12 led bağlayıp aydınlatma sağlanmıştır. Devrenin teknik
-detaylarına gelirsek temel mantığı şöyle;&lt;/p></description></item></channel></rss>
+detaylarına gelirsek temel mantığı şöyle;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;mikrofondan ses sinyali alınır.&lt;/li&gt;
+&lt;li&gt;alınan ses opamp devrelerle yükseltilir.&lt;/li&gt;
+&lt;li&gt;yükseltilen sinyaller 4011 entegresinde işlenerek yüksek ses geldiğinde çıkış
+sağlanır.&lt;/li&gt;
+&lt;li&gt;sağlanan çıkışa bağlı olan transistör kontrol edilir. Yüksek ses gelirse
+transistör aktifleşir ve rölenin çalışmasını sağlar.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Projenin tanıtım videosu ve devresinin çizimi aşağıdadır. Tekrar görüşmek
+üzere&amp;hellip;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

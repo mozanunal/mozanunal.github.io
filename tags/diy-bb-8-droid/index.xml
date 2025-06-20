@@ -1,4 +1,25 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>DIY BB-8 Droid on mozanunal.com</title><link>https://mozanunal.com/tags/diy-bb-8-droid/</link><description>Recent content in DIY BB-8 Droid on mozanunal.com</description><generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>mehmetozanunal@gmail.com (M.Ozan Unal)</managingEditor><webMaster>mehmetozanunal@gmail.com (M.Ozan Unal)</webMaster><copyright>© 2025 M.Ozan Unal</copyright><lastBuildDate>Thu, 21 Jan 2016 03:26:00 +0000</lastBuildDate><atom:link href="https://mozanunal.com/tags/diy-bb-8-droid/index.xml" rel="self" type="application/rss+xml"/><item><title>[TR] Star Wars BB-8 Robot Yapımı</title><link>https://mozanunal.com/posts/2016/star-wars-bb-8-robot-yapm-bolum-1/</link><pubDate>Thu, 21 Jan 2016 03:26:00 +0000</pubDate><author>mehmetozanunal@gmail.com (M.Ozan Unal)</author><guid>https://mozanunal.com/posts/2016/star-wars-bb-8-robot-yapm-bolum-1/</guid><description>&lt;p>&lt;strong>Herkese Merhabalar,&lt;/strong>&lt;br>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>DIY BB-8 Droid on mozanunal.com</title>
+    <link>https://mozanunal.com/tags/diy-bb-8-droid/</link>
+    <description>Recent content in DIY BB-8 Droid on mozanunal.com</description>
+    <image>
+      <title>mozanunal.com</title>
+      <url>https://mozanunal.com/images/papermod-cover.png</url>
+      <link>https://mozanunal.com/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- 0.147.8</generator>
+    <language>en</language>
+    <copyright>mozanunal</copyright>
+    <lastBuildDate>Thu, 21 Jan 2016 03:26:00 +0000</lastBuildDate>
+    <atom:link href="https://mozanunal.com/tags/diy-bb-8-droid/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[TR] Star Wars BB-8 Robot Yapımı</title>
+      <link>https://mozanunal.com/2016/01/star-wars-bb-8-robot-yapm-bolum-1/</link>
+      <pubDate>Thu, 21 Jan 2016 03:26:00 +0000</pubDate>
+      <guid>https://mozanunal.com/2016/01/star-wars-bb-8-robot-yapm-bolum-1/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;br&gt;
 Bu seferki projem Star Warsa son film ile katılan BB-8 isimli droidin bir
 benzerini yapmak. Bu fikir aklıma nereden geldi derseniz. Son filmdeki en
 sempatik ve ilgi çekici karakterin BB-8 olduğunu düşünüyorum. Tabi ilk aklıma
@@ -8,4 +29,7 @@ tasarımlar ortaya çıkmaya başlayınca malzemelerimi topladım ve projeye ba�
 Proje oldukça uzun ve daha çok mekanik bir proje bu yüzden 2 parçaya ayırdım
 kalanını ne zaman bitiririm bilmiyorum. Şu an devam edemiyorum çünkü lipo
 pillerim bitti ve şarj aletini malesef istanbulda unutmuşum. Neyse projemize
-geçelim.&lt;/p></description></item></channel></rss>
+geçelim.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

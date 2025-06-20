@@ -1,24 +1,32 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Biomedical Imaging on mozanunal.com</title><link>https://mozanunal.com/tags/biomedical-imaging/</link><description>Recent content in Biomedical Imaging on mozanunal.com</description><generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>mehmetozanunal@gmail.com (M.Ozan Unal)</managingEditor><webMaster>mehmetozanunal@gmail.com (M.Ozan Unal)</webMaster><copyright>© 2025 M.Ozan Unal</copyright><lastBuildDate>Thu, 30 Apr 2020 02:12:00 +0000</lastBuildDate><atom:link href="https://mozanunal.com/tags/biomedical-imaging/index.xml" rel="self" type="application/rss+xml"/><item><title>Medical Imaging Planes</title><link>https://mozanunal.com/posts/2020/imaging-axis/</link><pubDate>Thu, 30 Apr 2020 02:12:00 +0000</pubDate><author>mehmetozanunal@gmail.com (M.Ozan Unal)</author><guid>https://mozanunal.com/posts/2020/imaging-axis/</guid><description>&lt;h1 class="relative group">Medical Imaging Planes
-&lt;div id="medical-imaging-planes" class="anchor">&lt;/div>
-&lt;span
-class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#medical-imaging-planes" aria-label="Anchor">#&lt;/a>
-&lt;/span>
-&lt;/h1>
-&lt;p>
-&lt;figure>
-&lt;img class="my-0 rounded-md" loading="lazy" alt="Source: https://mevislabdownloads.mevis.de/docs/current/MeVisLab/Resources/Documentation/Publish/SDK/GettingStarted/ch12s05.html" src="https://mozanunal.com/images/imaging/planes.png">
-&lt;/figure>
-&lt;/p>
-&lt;h2 class="relative group">Axial (Transverse) Plane
-&lt;div id="axial-transverse-plane" class="anchor">&lt;/div>
-&lt;span
-class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#axial-transverse-plane" aria-label="Anchor">#&lt;/a>
-&lt;/span>
-&lt;/h2>
-&lt;p>
-&lt;figure>
-&lt;img class="my-0 rounded-md" loading="lazy" alt="" src="https://mozanunal.com/images/imaging/axial.gif">
-&lt;/figure>
-&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Biomedical Imaging on mozanunal.com</title>
+    <link>https://mozanunal.com/tags/biomedical-imaging/</link>
+    <description>Recent content in Biomedical Imaging on mozanunal.com</description>
+    <image>
+      <title>mozanunal.com</title>
+      <url>https://mozanunal.com/images/papermod-cover.png</url>
+      <link>https://mozanunal.com/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- 0.147.8</generator>
+    <language>en</language>
+    <copyright>mozanunal</copyright>
+    <lastBuildDate>Thu, 30 Apr 2020 02:12:00 +0000</lastBuildDate>
+    <atom:link href="https://mozanunal.com/tags/biomedical-imaging/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Medical Imaging Planes</title>
+      <link>https://mozanunal.com/2020/04/imaging-axis/</link>
+      <pubDate>Thu, 30 Apr 2020 02:12:00 +0000</pubDate>
+      <guid>https://mozanunal.com/2020/04/imaging-axis/</guid>
+      <description>&lt;h1 id=&#34;medical-imaging-planes&#34;&gt;Medical Imaging Planes&lt;/h1&gt;
+&lt;p&gt;&lt;img alt=&#34;Source: https://mevislabdownloads.mevis.de/docs/current/MeVisLab/Resources/Documentation/Publish/SDK/GettingStarted/ch12s05.html&#34; loading=&#34;lazy&#34; src=&#34;https://mozanunal.com/images/imaging/planes.png&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;axial-transverse-plane&#34;&gt;Axial (Transverse) Plane&lt;/h2&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://mozanunal.com/images/imaging/axial.gif&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;coronal-plane&#34;&gt;Coronal Plane&lt;/h2&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://mozanunal.com/images/imaging/coronal.gif&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;sagittal-plane&#34;&gt;Sagittal Plane&lt;/h2&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://mozanunal.com/images/imaging/sagittal.gif&#34;&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

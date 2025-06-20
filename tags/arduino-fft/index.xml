@@ -1,7 +1,55 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Arduino FFT on mozanunal.com</title><link>https://mozanunal.com/tags/arduino-fft/</link><description>Recent content in Arduino FFT on mozanunal.com</description><generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>mehmetozanunal@gmail.com (M.Ozan Unal)</managingEditor><webMaster>mehmetozanunal@gmail.com (M.Ozan Unal)</webMaster><copyright>© 2025 M.Ozan Unal</copyright><lastBuildDate>Thu, 26 Jan 2017 00:13:00 +0000</lastBuildDate><atom:link href="https://mozanunal.com/tags/arduino-fft/index.xml" rel="self" type="application/rss+xml"/><item><title>[TR] SimpleDSP: Gömülü Sistemler için DSP Kütühanesi</title><link>https://mozanunal.com/posts/2017/simpledsp-gomulu-sistemler-icin-dsp/</link><pubDate>Thu, 26 Jan 2017 00:13:00 +0000</pubDate><author>mehmetozanunal@gmail.com (M.Ozan Unal)</author><guid>https://mozanunal.com/posts/2017/simpledsp-gomulu-sistemler-icin-dsp/</guid><description>&lt;p>&lt;strong>Herkese Merhabalar,&lt;/strong>&lt;/p>
-&lt;p>Bu yazımda gömülü sistemler için yazdığım sayısal isaret isleme kütüphanesini
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Arduino FFT on mozanunal.com</title>
+    <link>https://mozanunal.com/tags/arduino-fft/</link>
+    <description>Recent content in Arduino FFT on mozanunal.com</description>
+    <image>
+      <title>mozanunal.com</title>
+      <url>https://mozanunal.com/images/papermod-cover.png</url>
+      <link>https://mozanunal.com/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- 0.147.8</generator>
+    <language>en</language>
+    <copyright>mozanunal</copyright>
+    <lastBuildDate>Thu, 26 Jan 2017 00:13:00 +0000</lastBuildDate>
+    <atom:link href="https://mozanunal.com/tags/arduino-fft/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[TR] SimpleDSP: Gömülü Sistemler için DSP Kütühanesi</title>
+      <link>https://mozanunal.com/2017/01/simpledsp-gomulu-sistemler-icin-dsp/</link>
+      <pubDate>Thu, 26 Jan 2017 00:13:00 +0000</pubDate>
+      <guid>https://mozanunal.com/2017/01/simpledsp-gomulu-sistemler-icin-dsp/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Bu yazımda gömülü sistemler için yazdığım sayısal isaret isleme kütüphanesini
 tanıtacağım. Kütüphanenin tamamını &amp;ldquo;C&amp;rdquo; kullanarak ve harici bir kütüphaneye
 bağlı kalmadan yazmayı planlıyorum. Böylece diğer mikrokontolcülerde de rahatça
 kullanılabilecek. Hatta bilgisayar programlarında bile kolayca eklenip
 derlenebilecek şekilde projeyi tamamlamak istiyorum. Bu kütüphane kapsamında
-çözüm sağlamak istediğim konular şunlardır.&lt;/p></description></item></channel></rss>
+çözüm sağlamak istediğim konular şunlardır.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;FFT&lt;/li&gt;
+&lt;li&gt;ters FFT&lt;/li&gt;
+&lt;li&gt;Hartley transform&lt;/li&gt;
+&lt;li&gt;FIR filtre&lt;/li&gt;
+&lt;li&gt;IIR filtre&lt;/li&gt;
+&lt;li&gt;Basit &amp;ldquo;moving avarage&amp;rdquo;, &amp;ldquo;smoothing&amp;rdquo; filtreleri&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Ayrıca her fonksiyon için:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Teorik olarak yapılan iş&lt;/li&gt;
+&lt;li&gt;Deneme, ölçüm ve filtre katsayısı hesabı için gerekli Matlab veya Octave kodu.&lt;/li&gt;
+&lt;li&gt;Farklı islemcilerle performansı&lt;/li&gt;
+&lt;li&gt;Örnek Grafikler&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;gibi kaynakları hazırlamayı planlıyorum. Proje tamamen açık kaynaklı olarak
+sürdürülecektir.
+&lt;a href=&#34;https://github.com/mozanunal/SimpleDSP/&#34;&gt;Siz de github üzerinden projenin herhangi bir aşamasına katkıda bulunabilirsiniz.&lt;/a&gt;
+Projenin ismini &amp;ldquo;SimpleDSP&amp;rdquo; olarak seçtim. Çünkü yapmak istediğim olay Digital
+Signal Processing olayını gömülü ve gerçek zamanlı sistemlerde kolaylaştırmak ve
+projelerde basit bir şekilde eklenebilmesini sağlamak. Şu an itibariyle FFT ve
+ters FFT fonksiyonlarını yazdım arduino kütüphanesi haline getirdim ve örnek
+kodlarını oluşturdum. Bahsettiğim ayrıntılara aşağıdan ulaşabilirsiniz.&lt;br&gt;
+&lt;a href=&#34;https://github.com/mozanunal/SimpleDSP/wiki/FFT-IFFT&#34;&gt;https://github.com/mozanunal/SimpleDSP/wiki/FFT-IFFT&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

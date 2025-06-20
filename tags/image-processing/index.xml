@@ -1,9 +1,52 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Image Processing on mozanunal.com</title><link>https://mozanunal.com/tags/image-processing/</link><description>Recent content in Image Processing on mozanunal.com</description><generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>mehmetozanunal@gmail.com (M.Ozan Unal)</managingEditor><webMaster>mehmetozanunal@gmail.com (M.Ozan Unal)</webMaster><copyright>© 2025 M.Ozan Unal</copyright><lastBuildDate>Sat, 04 Jun 2016 19:50:00 +0000</lastBuildDate><atom:link href="https://mozanunal.com/tags/image-processing/index.xml" rel="self" type="application/rss+xml"/><item><title>PassFace: Face Recognition Using OpenCV</title><link>https://mozanunal.com/posts/2016/passface-face-recognition-using-opencv/</link><pubDate>Sat, 04 Jun 2016 19:50:00 +0000</pubDate><author>mehmetozanunal@gmail.com (M.Ozan Unal)</author><guid>https://mozanunal.com/posts/2016/passface-face-recognition-using-opencv/</guid><description>&lt;p>&lt;strong>Hi,&lt;/strong>&lt;br>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Image Processing on mozanunal.com</title>
+    <link>https://mozanunal.com/tags/image-processing/</link>
+    <description>Recent content in Image Processing on mozanunal.com</description>
+    <image>
+      <title>mozanunal.com</title>
+      <url>https://mozanunal.com/images/papermod-cover.png</url>
+      <link>https://mozanunal.com/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- 0.147.8</generator>
+    <language>en</language>
+    <copyright>mozanunal</copyright>
+    <lastBuildDate>Sat, 04 Jun 2016 19:50:00 +0000</lastBuildDate>
+    <atom:link href="https://mozanunal.com/tags/image-processing/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PassFace: Face Recognition Using OpenCV</title>
+      <link>https://mozanunal.com/2016/06/passface-face-recognition-using-opencv/</link>
+      <pubDate>Sat, 04 Jun 2016 19:50:00 +0000</pubDate>
+      <guid>https://mozanunal.com/2016/06/passface-face-recognition-using-opencv/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Hi,&lt;/strong&gt;&lt;br&gt;
 PassFace is a face recognizing program develop using EmguCV (OpenCV wrapper). It
 is possible to use 4 different algorithm and 3 different source(Camera, Video,
 Image) in this program. Most of the tryings have been made using LFW data set
 which have 13000 pictures of 1500 different people.Details of project can be
-reached below:&lt;/p></description></item><item><title>[TR] Processing ile Artırılmış Gerçeklik</title><link>https://mozanunal.com/posts/2015/processing-ile-artrlms-gerceklik/</link><pubDate>Sat, 25 Apr 2015 03:03:00 +0000</pubDate><author>mehmetozanunal@gmail.com (M.Ozan Unal)</author><guid>https://mozanunal.com/posts/2015/processing-ile-artrlms-gerceklik/</guid><description>&lt;p>&lt;strong>Merhaba Arkadaşlar,&lt;/strong>&lt;br>
+reached below:&lt;/p&gt;
+&lt;p&gt;Source Code:
+&lt;a href=&#34;https://github.com/mozanunal/PassFace&#34;&gt;https://github.com/mozanunal/PassFace&lt;/a&gt;&lt;/p&gt;
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube-nocookie.com/embed/d6LI42NEZZY??autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;&gt;&lt;/iframe&gt;
+    &lt;/div&gt;
+
+&lt;h4 id=&#34;1-introduction&#34;&gt;1. Introduction&lt;/h4&gt;
+&lt;h5 id=&#34;definition-of-the-problem&#34;&gt;Definition of the Problem&lt;/h5&gt;
+&lt;p&gt;In this project, a program is going to develop to recognize the faces and
+compare them the faces it learned and give the identity of the person. All this
+identifying system is going to work in real time. Main subjects in this project
+are image processing and machine learning. Project aim to develop some algorithm
+to detect faces specifically recognize the faces using pattern recognition
+algorithms. The number of faces and the equipment needed is going to be
+determined according to test of different algorithms.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>[TR] Processing ile Artırılmış Gerçeklik</title>
+      <link>https://mozanunal.com/2015/04/processing-ile-artrlms-gerceklik/</link>
+      <pubDate>Sat, 25 Apr 2015 03:03:00 +0000</pubDate>
+      <guid>https://mozanunal.com/2015/04/processing-ile-artrlms-gerceklik/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Merhaba Arkadaşlar,&lt;/strong&gt;&lt;br&gt;
 Bugünkü yazımda NyARToolkit&amp;rsquo;ten bahsedeceğim. Bu toolkit sayesinde kameradan
 aldığımız görüntüler üzerine 3 Boyutlu nesneler yerleştirebiliyoruz. İstediğimiz
 3 boyutlu grafik hatta animasyon yerleştirilebilir. Google Glass tarzı
@@ -11,8 +54,15 @@ giyilebilir teknolojilerle daha yaratıcı uygulamalar yapılabilir. Simülasyon
 oyun dünyası için çeşitli uygulamalar geliştirilebilir. Hatta hologramlar
 yapmanın şimdilik en gerçekleştirilebilir yolu olarak gözüküyor. Toolkit bir çok
 programlama diliyle kullanılabiliyor. Ben Processing ile kullandım basit olduğu
-için. Toolkiti kullandığım şöyle bir tanıtım videosu hazırladım:&lt;/p></description></item><item><title>[TR] Bakış Açısı Tabanlı 3 Boyutlu Görüş Versiyon 2.00</title><link>https://mozanunal.com/posts/2015/baks-acs-tabanl-3-boyutlu-gorus2/</link><pubDate>Tue, 31 Mar 2015 06:55:00 +0000</pubDate><author>mehmetozanunal@gmail.com (M.Ozan Unal)</author><guid>https://mozanunal.com/posts/2015/baks-acs-tabanl-3-boyutlu-gorus2/</guid><description>&lt;p>&lt;strong>Herkese Merhabalar,&lt;/strong>&lt;/p>
-&lt;p>Bu yazımda daha önce yaptığım bir uygulamanın 2. versiyonundan bahsedeceğim.
+için. Toolkiti kullandığım şöyle bir tanıtım videosu hazırladım:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>[TR] Bakış Açısı Tabanlı 3 Boyutlu Görüş Versiyon 2.00</title>
+      <link>https://mozanunal.com/2015/03/baks-acs-tabanl-3-boyutlu-gorus2/</link>
+      <pubDate>Tue, 31 Mar 2015 06:55:00 +0000</pubDate>
+      <guid>https://mozanunal.com/2015/03/baks-acs-tabanl-3-boyutlu-gorus2/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Bu yazımda daha önce yaptığım bir uygulamanın 2. versiyonundan bahsedeceğim.
 Programımı daha önce şöyle anlatmıştım:  Bu program sayesinde ekstra hiç bir
 ekipman kullanmadan 2 boyutlu bilgisayar ekranını 3 boyutlu görme uygulamasını
 gerçekleştirebileceğimiz bir şeye dönüştürüyoruz. Bunu nasıl yapıyor diye
@@ -20,8 +70,15 @@ soracak olursanız görüntü işleme sayesinde!.Programda webcam üzerinden yü
 tespiti yapılıyor ve ekrana nereden baktığı tespit ediliyor. Hesaplanan bu açı
 daha sonra kullandığım 3 boyut kütüphanesi olan OpenGL&amp;rsquo;in kamerasını ayarlamak
 için kullanılıyor. böylece ekrana bakış yönünüze göre değişen bir 3D görme
-uygulaması hazırlanmış oluyor.&lt;/p></description></item><item><title>[TR] Bakış Açısı Tabanlı 3 Boyutlu Görüş</title><link>https://mozanunal.com/posts/2014/baks-acs-tabanl-3-boyutlu-gorus/</link><pubDate>Tue, 09 Dec 2014 18:13:00 +0000</pubDate><author>mehmetozanunal@gmail.com (M.Ozan Unal)</author><guid>https://mozanunal.com/posts/2014/baks-acs-tabanl-3-boyutlu-gorus/</guid><description>&lt;p>&lt;strong>Herkese Merhabalar,&lt;/strong>&lt;/p>
-&lt;p>Bu yazımda size uzun zamandır üzerinde araştırmalar yaptığım ve bir şeyler
+uygulaması hazırlanmış oluyor.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>[TR] Bakış Açısı Tabanlı 3 Boyutlu Görüş</title>
+      <link>https://mozanunal.com/2014/12/baks-acs-tabanl-3-boyutlu-gorus/</link>
+      <pubDate>Tue, 09 Dec 2014 18:13:00 +0000</pubDate>
+      <guid>https://mozanunal.com/2014/12/baks-acs-tabanl-3-boyutlu-gorus/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Bu yazımda size uzun zamandır üzerinde araştırmalar yaptığım ve bir şeyler
 üretmek istediğim 3 boyutlu görme konusunda yaptığım programdan bahsedeceğim. Bu
 program sayesinde ekstra hiç bir ekipman kullanmadan 2 boyutlu bilgisayar
 ekranını 3 boyutlu görme uygulamasını gerçekleştirebileceğimiz bir şeye
@@ -29,25 +86,76 @@ dönüştürüyoruz. Bunu nasıl yapıyor diye soracak olursanız görüntü iş
 sayesinde!. Programda webcam üzerinden yüz tespiti yapılıyor ve ekrana nereden
 baktığı tespit ediliyor. Hesaplanan bu açı daha sonra kullandığım 3 boyut
 kütüphanesi olan OpenGL&amp;rsquo;in kamerasını ayarlamak için kullanılıyor. böylece
-ekrana bakış yönünüze göre değişen bir 3D görme uygulaması hazırlanmış oluyor.&lt;/p></description></item><item><title>[TR] Kamera ile Araç Sayısı Takibi</title><link>https://mozanunal.com/posts/2014/kamera-ile-arac-says-takibi/</link><pubDate>Fri, 21 Nov 2014 03:41:00 +0000</pubDate><author>mehmetozanunal@gmail.com (M.Ozan Unal)</author><guid>https://mozanunal.com/posts/2014/kamera-ile-arac-says-takibi/</guid><description>&lt;p>&lt;strong>Herkese Merhabalar!&lt;/strong>&lt;/p>
-&lt;p>Bugün size uzun süredir üzerinden uğraştığım bir projeden bahsetmek istiyorum.
+ekrana bakış yönünüze göre değişen bir 3D görme uygulaması hazırlanmış oluyor.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>[TR] Kamera ile Araç Sayısı Takibi</title>
+      <link>https://mozanunal.com/2014/11/kamera-ile-arac-says-takibi/</link>
+      <pubDate>Fri, 21 Nov 2014 03:41:00 +0000</pubDate>
+      <guid>https://mozanunal.com/2014/11/kamera-ile-arac-says-takibi/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar!&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Bugün size uzun süredir üzerinden uğraştığım bir projeden bahsetmek istiyorum.
 Projenin amacı kamera ile bir yoldan geçen araç sayını saymak. Ben de bunu
 okulumun önündeki caddeden çektiğim videoda gerçekleştirdim. İleriki aşamalarda
 insan sayma uygulaması da geliştirmek istiyorum. Araç uygulaması da hız
 belirleyecek şekilde veya araç büyüklüğüne, markasına göre sınıflandırma yapacak
 şekilde geliştirilebilir. Proje Emgucv kütüphanesinin Video Survilance modulü
-kullanılarak yapılmıştır. Tekrar görüşmek dileğiyle&amp;hellip;&lt;/p></description></item><item><title>[TR] Kamera ile Fare Kontrolü</title><link>https://mozanunal.com/posts/2014/kamera-ile-fare-kontrolu/</link><pubDate>Fri, 10 Oct 2014 01:24:00 +0000</pubDate><author>mehmetozanunal@gmail.com (M.Ozan Unal)</author><guid>https://mozanunal.com/posts/2014/kamera-ile-fare-kontrolu/</guid><description>&lt;p>&lt;strong>Herkese Merhabalar!&lt;/strong>&lt;/p>
-&lt;p>Bu yazımda Kamera ile Fare Kontrolü projemden bahsetmek istiyorum. Bu proje
+kullanılarak yapılmıştır. Tekrar görüşmek dileğiyle&amp;hellip;&lt;/p&gt;
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube-nocookie.com/embed/N8HpOoq8yYk?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;&gt;&lt;/iframe&gt;
+    &lt;/div&gt;</description>
+    </item>
+    <item>
+      <title>[TR] Kamera ile Fare Kontrolü</title>
+      <link>https://mozanunal.com/2014/10/kamera-ile-fare-kontrolu/</link>
+      <pubDate>Fri, 10 Oct 2014 01:24:00 +0000</pubDate>
+      <guid>https://mozanunal.com/2014/10/kamera-ile-fare-kontrolu/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar!&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Bu yazımda Kamera ile Fare Kontrolü projemden bahsetmek istiyorum. Bu proje
 aslında bir görüntü işleme projesidir. Eli filtrelerle tespit edip fare gibi
 kullanmak amaçlanmıştır. El açılınca tıklama sağlanır, tıklama olayı çok hassas
 değil maalesef arka arkaya çok tıklama yapabiliyor. Biraz daha uzaktan kontrol
-edilirse gezinme olayı da daha hassas olabilir.&lt;/p></description></item><item><title>[TR] Gerçek Zamanlı Obje Takibi(EmguCv ile)</title><link>https://mozanunal.com/posts/2014/gercek-zamanl-obje-takibiemgucv-ile/</link><pubDate>Mon, 29 Sep 2014 15:54:00 +0000</pubDate><author>mehmetozanunal@gmail.com (M.Ozan Unal)</author><guid>https://mozanunal.com/posts/2014/gercek-zamanl-obje-takibiemgucv-ile/</guid><description>&lt;p>&lt;strong>Herkese Merhabalar!&lt;/strong>&lt;/p>
-&lt;p>Bu yazımda sizlere EmguCv kütüphanesi ile yazdığım görüntü işleme uygulaması
+edilirse gezinme olayı da daha hassas olabilir.&lt;/p&gt;
+&lt;p&gt;Program C# dilinde Emgucv kütüphanesiyle yazılmıştır. Algoritmasına gelecek
+olursak, Hsv ve Ycbcr renk uzaylarında &amp;ldquo;skin detection&amp;rdquo; algoritmaları
+uygulanmıştır. Bu sayede el &amp;ldquo;counter&amp;rdquo; olarak tespit edilmiştir. Merkezi
+kullanılarak farenin gitmesi&lt;br&gt;
+gereken koordinantlar belirlenmiştir. &amp;ldquo;convexity defects&amp;rdquo; methodu kullanılarak
+da parmak sayısı belirlenmiştir. 5. parmakta pek hassas olarak çalışamamasına
+rağmen diğer parmakları rahat bir şekilde sayılmasını sağlamaktadır.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>[TR] Gerçek Zamanlı Obje Takibi(EmguCv ile)</title>
+      <link>https://mozanunal.com/2014/09/gercek-zamanl-obje-takibiemgucv-ile/</link>
+      <pubDate>Mon, 29 Sep 2014 15:54:00 +0000</pubDate>
+      <guid>https://mozanunal.com/2014/09/gercek-zamanl-obje-takibiemgucv-ile/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar!&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Bu yazımda sizlere EmguCv kütüphanesi ile yazdığım görüntü işleme uygulaması
 hakkında bilgi vermek istiyorum. Uygulamada ortamdan farklı bir renkte olan
 nesneyi rengine göre filtre edip onu gerçek zamanlı olarak takip etme
 amaçlanmıştır. Geliştirme ortamı olarak Microsoft Visual Studio, dil olarak C#
-programlama dili kullanılmıştır.&lt;br>
-Programın genel algoritmasına gelirsek, şöyle özetleyebiliriz;&lt;/p></description></item><item><title>[TR] İlk Yayın</title><link>https://mozanunal.com/posts/2014/ilk-yayn/</link><pubDate>Sun, 25 May 2014 03:44:00 +0000</pubDate><author>mehmetozanunal@gmail.com (M.Ozan Unal)</author><guid>https://mozanunal.com/posts/2014/ilk-yayn/</guid><description>&lt;p>&lt;strong>Herkese Merhabalar!&lt;/strong>&lt;br>
+programlama dili kullanılmıştır.&lt;br&gt;
+Programın genel algoritmasına gelirsek, şöyle özetleyebiliriz;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Görüntü kameradan RGB formatında alınıp başka bir renkli resim görüntüleme
+yöntemi olan HSV formatına dönüştürülmüştür.&lt;/li&gt;
+&lt;li&gt;HSV filtresi için uygun değerler test edilip bulunmuştur ve renk filtesi
+uygunlanmıştır.&lt;/li&gt;
+&lt;li&gt;Renk filtresinden kalan gürültüler erode ve dilate morfolojik operatörleriyle
+azaltılmıştır.&lt;/li&gt;
+&lt;li&gt;Counter Analysis ile görüntü &amp;ldquo;counter&amp;quot;lara ayrılmıştır. Sadece &amp;ldquo;counter&amp;rdquo;
+alanı belli bir değerden büyük olan &amp;ldquo;counter&amp;quot;lar dikkat alınmıştır. Bu sayede
+son kalan gürültüler de engelenmiştir.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Projemin tanıtım videosuna aşağıdan ulaşabilirsiniz. Kodlar videoda
+gösterilmektedir. Tekrar görüşmek üzere&amp;hellip;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>[TR] İlk Yayın</title>
+      <link>https://mozanunal.com/2014/05/ilk-yayn/</link>
+      <pubDate>Sun, 25 May 2014 03:44:00 +0000</pubDate>
+      <guid>https://mozanunal.com/2014/05/ilk-yayn/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar!&lt;/strong&gt;&lt;br&gt;
     Yaptığım projeleri arşivleyebilmek ve bunlardan herkesin yararlanabilmesi
 için blog açmaya karar verdim. Blogumda size C# üzerinden arayüz yapımı,
 bilgisayar mikroişlemci iletişimi, arduino uygulamaları, pic uygulamaları ve
@@ -61,4 +169,7 @@ sistemleri üzerine çalışmalar yaptım. Gps, IMU, ve daha bir sürü sensörd
 aldığımız verileri, yer istasyonuna iletmek ve arayüz programıyla bunların
 görsellenmesiydi görevim. Şimdi ise insansız hava araçları ve görüntü işleme
 üzerine çalışmaktayım. Aynı zamanda hobi olarak pic ve arduino devreleri,
-çeşitli devreler üretmeye, yapmaya devam ediyorum. Tekrar görüşmek üzere&amp;hellip;&lt;/p></description></item></channel></rss>
+çeşitli devreler üretmeye, yapmaya devam ediyorum. Tekrar görüşmek üzere&amp;hellip;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

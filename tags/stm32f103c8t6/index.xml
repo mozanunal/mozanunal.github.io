@@ -1,4 +1,25 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Stm32f103c8t6 on mozanunal.com</title><link>https://mozanunal.com/tags/stm32f103c8t6/</link><description>Recent content in Stm32f103c8t6 on mozanunal.com</description><generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>mehmetozanunal@gmail.com (M.Ozan Unal)</managingEditor><webMaster>mehmetozanunal@gmail.com (M.Ozan Unal)</webMaster><copyright>© 2025 M.Ozan Unal</copyright><lastBuildDate>Tue, 08 Nov 2016 15:53:00 +0000</lastBuildDate><atom:link href="https://mozanunal.com/tags/stm32f103c8t6/index.xml" rel="self" type="application/rss+xml"/><item><title>[TR] STM32 Mikroişlemci Dünyasına Giriş</title><link>https://mozanunal.com/posts/2016/stm32-mikroislemci-dunyasna-giris/</link><pubDate>Tue, 08 Nov 2016 15:53:00 +0000</pubDate><author>mehmetozanunal@gmail.com (M.Ozan Unal)</author><guid>https://mozanunal.com/posts/2016/stm32-mikroislemci-dunyasna-giris/</guid><description>&lt;p>&lt;strong>Herkese Merhabalar,&lt;/strong>&lt;br>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Stm32f103c8t6 on mozanunal.com</title>
+    <link>https://mozanunal.com/tags/stm32f103c8t6/</link>
+    <description>Recent content in Stm32f103c8t6 on mozanunal.com</description>
+    <image>
+      <title>mozanunal.com</title>
+      <url>https://mozanunal.com/images/papermod-cover.png</url>
+      <link>https://mozanunal.com/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- 0.147.8</generator>
+    <language>en</language>
+    <copyright>mozanunal</copyright>
+    <lastBuildDate>Tue, 08 Nov 2016 15:53:00 +0000</lastBuildDate>
+    <atom:link href="https://mozanunal.com/tags/stm32f103c8t6/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[TR] STM32 Mikroişlemci Dünyasına Giriş</title>
+      <link>https://mozanunal.com/2016/11/stm32-mikroislemci-dunyasna-giris/</link>
+      <pubDate>Tue, 08 Nov 2016 15:53:00 +0000</pubDate>
+      <guid>https://mozanunal.com/2016/11/stm32-mikroislemci-dunyasna-giris/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;br&gt;
 Bu yazımda yeni bir alana hızlıca bir giriş yapıyorum. Zaman zaman
 projelerimizde 8 bitlik atmel veya pic işlemcilerin beklentiyi karşılamadığı
 oluyor. Böyle durumlar için ST Microelectronics firmasının STM32 isimli 32
@@ -9,4 +30,7 @@ mimarisi tabanlı geliştirme kartlarıdır. Peki bu çekirdeği neden seçtim? 
 cümleyle özetlemek gerekirse 8 bitlik islemcilere bariz üstünlük sağlayan ve
 projelerin pek çoğu için yeterli özelliklere sahip olan en uygun fiyatlı
 işlemci. Geliştirme kartı olmadan sadece işlemci 1 - 2 dolar gibi çok iyi bir
-fiyata sahip. Özelliklerine aşağıdan ulaşabilirsiniz.&lt;/p></description></item></channel></rss>
+fiyata sahip. Özelliklerine aşağıdan ulaşabilirsiniz.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,4 +1,25 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Html5 on mozanunal.com</title><link>https://mozanunal.com/tags/html5/</link><description>Recent content in Html5 on mozanunal.com</description><generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>mehmetozanunal@gmail.com (M.Ozan Unal)</managingEditor><webMaster>mehmetozanunal@gmail.com (M.Ozan Unal)</webMaster><copyright>© 2025 M.Ozan Unal</copyright><lastBuildDate>Sat, 16 Jan 2016 03:45:00 +0000</lastBuildDate><atom:link href="https://mozanunal.com/tags/html5/index.xml" rel="self" type="application/rss+xml"/><item><title>[TR] Web Tabanlı Programlar</title><link>https://mozanunal.com/posts/2016/web-tabanl-programlar/</link><pubDate>Sat, 16 Jan 2016 03:45:00 +0000</pubDate><author>mehmetozanunal@gmail.com (M.Ozan Unal)</author><guid>https://mozanunal.com/posts/2016/web-tabanl-programlar/</guid><description>&lt;p>&lt;strong>Herkese Merhabalar,&lt;/strong>&lt;br>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Html5 on mozanunal.com</title>
+    <link>https://mozanunal.com/tags/html5/</link>
+    <description>Recent content in Html5 on mozanunal.com</description>
+    <image>
+      <title>mozanunal.com</title>
+      <url>https://mozanunal.com/images/papermod-cover.png</url>
+      <link>https://mozanunal.com/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- 0.147.8</generator>
+    <language>en</language>
+    <copyright>mozanunal</copyright>
+    <lastBuildDate>Sat, 16 Jan 2016 03:45:00 +0000</lastBuildDate>
+    <atom:link href="https://mozanunal.com/tags/html5/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[TR] Web Tabanlı Programlar</title>
+      <link>https://mozanunal.com/2016/01/web-tabanl-programlar/</link>
+      <pubDate>Sat, 16 Jan 2016 03:45:00 +0000</pubDate>
+      <guid>https://mozanunal.com/2016/01/web-tabanl-programlar/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;br&gt;
 Bugünkü yazımda web tabanlı programlardan bahsetmek istiyorum. Web
 teknolojilerinin gelişmesiyle beraber browser tabanlı oldukça yararlı ve
 kullanımı da bir o kadar kolay programlar ortaya çıkmaya başladı. Hatta bunun
@@ -7,4 +28,7 @@ Ayrıca bu tarz programların projelerine dosyalarına her bilgisayardan
 ulaşabilmek, kurulum yapmadan bir çok şeyi halletme gibi avantajları da var.
 Böyle olunca ben de bu şekilde çalışan yararlı programları bir yazı altında
 toplamak istedim. Bilmediğim daha bir sürü program olduğuna eminim eğer bana
-yollayabilirseniz onları da yazıya ekleyebilirim.&lt;/p></description></item></channel></rss>
+yollayabilirseniz onları da yazıya ekleyebilirim.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

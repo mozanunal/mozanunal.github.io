@@ -1,5 +1,26 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Mt3608 on mozanunal.com</title><link>https://mozanunal.com/tags/mt3608/</link><description>Recent content in Mt3608 on mozanunal.com</description><generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>mehmetozanunal@gmail.com (M.Ozan Unal)</managingEditor><webMaster>mehmetozanunal@gmail.com (M.Ozan Unal)</webMaster><copyright>© 2025 M.Ozan Unal</copyright><lastBuildDate>Sun, 13 Mar 2016 01:24:00 +0000</lastBuildDate><atom:link href="https://mozanunal.com/tags/mt3608/index.xml" rel="self" type="application/rss+xml"/><item><title>[TR] Ayarlanabilir Taşınabilir Güç Kaynağı Yapımı</title><link>https://mozanunal.com/posts/2016/ayarlanabilir-tasnabilir-guc-kaynag-yapm/</link><pubDate>Sun, 13 Mar 2016 01:24:00 +0000</pubDate><author>mehmetozanunal@gmail.com (M.Ozan Unal)</author><guid>https://mozanunal.com/posts/2016/ayarlanabilir-tasnabilir-guc-kaynag-yapm/</guid><description>&lt;p>&lt;strong>Herkese Merhabalar,&lt;/strong>&lt;/p>
-&lt;p>Bugünkü yazımda nasıl basit bir şekilde bir powerbank&amp;rsquo;i ayarlanabilir güç
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Mt3608 on mozanunal.com</title>
+    <link>https://mozanunal.com/tags/mt3608/</link>
+    <description>Recent content in Mt3608 on mozanunal.com</description>
+    <image>
+      <title>mozanunal.com</title>
+      <url>https://mozanunal.com/images/papermod-cover.png</url>
+      <link>https://mozanunal.com/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- 0.147.8</generator>
+    <language>en</language>
+    <copyright>mozanunal</copyright>
+    <lastBuildDate>Sun, 13 Mar 2016 01:24:00 +0000</lastBuildDate>
+    <atom:link href="https://mozanunal.com/tags/mt3608/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[TR] Ayarlanabilir Taşınabilir Güç Kaynağı Yapımı</title>
+      <link>https://mozanunal.com/2016/03/ayarlanabilir-tasnabilir-guc-kaynag-yapm/</link>
+      <pubDate>Sun, 13 Mar 2016 01:24:00 +0000</pubDate>
+      <guid>https://mozanunal.com/2016/03/ayarlanabilir-tasnabilir-guc-kaynag-yapm/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Bugünkü yazımda nasıl basit bir şekilde bir powerbank&amp;rsquo;i ayarlanabilir güç
 kaynağına dönüştürebileceğimizden bahsedeceğim. Gerekli olan malzemeler sadece
 bir adet power bank ve bir adet MT3608 boost converter. Projeye başlamadan önce
 boost converter nedir ondan bahsetmek istiyorum. Boost converterlar voltaj
@@ -8,4 +29,7 @@ yapısı kurarlar ve bu yapı ile hem voltajı yükseltirler hem de verimleri ç
 yüksek olur. Benim kulladığım modül MT3608 powerbankin pilinin çalışma voltaji
 olan 3.6 volt ile beslenebiliyor. 0 28 Volt arası 2 amper çıkış alınabiliyor.
 Verimi de yüzde 93 civarı. Projemize çok uygun yapıyor bu özellikler de onu. Hem
-de kısa devre koruması da var. Bu da güvenlik açısından da uygun hale getiriyor.&lt;/p></description></item></channel></rss>
+de kısa devre koruması da var. Bu da güvenlik açısından da uygun hale getiriyor.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

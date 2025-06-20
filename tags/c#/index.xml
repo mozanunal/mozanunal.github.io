@@ -1,4 +1,25 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>C# on mozanunal.com</title><link>https://mozanunal.com/tags/c%23/</link><description>Recent content in C# on mozanunal.com</description><generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>mehmetozanunal@gmail.com (M.Ozan Unal)</managingEditor><webMaster>mehmetozanunal@gmail.com (M.Ozan Unal)</webMaster><copyright>© 2025 M.Ozan Unal</copyright><lastBuildDate>Thu, 09 Jun 2016 04:45:00 +0000</lastBuildDate><atom:link href="https://mozanunal.com/tags/c%23/index.xml" rel="self" type="application/rss+xml"/><item><title>[TR] WPF ile Ev Otomasyonu Arayüzü</title><link>https://mozanunal.com/posts/2016/wpf-ile-ev-otomasyonu-arayuzu/</link><pubDate>Thu, 09 Jun 2016 04:45:00 +0000</pubDate><author>mehmetozanunal@gmail.com (M.Ozan Unal)</author><guid>https://mozanunal.com/posts/2016/wpf-ile-ev-otomasyonu-arayuzu/</guid><description>&lt;p>&lt;strong>Herkese Merhabalar,&lt;/strong>&lt;br>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>C# on mozanunal.com</title>
+    <link>https://mozanunal.com/tags/c%23/</link>
+    <description>Recent content in C# on mozanunal.com</description>
+    <image>
+      <title>mozanunal.com</title>
+      <url>https://mozanunal.com/images/papermod-cover.png</url>
+      <link>https://mozanunal.com/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- 0.147.8</generator>
+    <language>en</language>
+    <copyright>mozanunal</copyright>
+    <lastBuildDate>Thu, 09 Jun 2016 04:45:00 +0000</lastBuildDate>
+    <atom:link href="https://mozanunal.com/tags/c%23/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[TR] WPF ile Ev Otomasyonu Arayüzü</title>
+      <link>https://mozanunal.com/2016/06/wpf-ile-ev-otomasyonu-arayuzu/</link>
+      <pubDate>Thu, 09 Jun 2016 04:45:00 +0000</pubDate>
+      <guid>https://mozanunal.com/2016/06/wpf-ile-ev-otomasyonu-arayuzu/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;br&gt;
 Bu yazımda .NET platformunun bir teknolojisi olan WPF kullanarak ev otomasyonu
 kontrol paneli yapmayı anlatacağım. Yaptığım bu projenin başlıca işlevi şudur; 5
 farklı sensörden bulunulan ortamın sıcaklığı, nemi, zehirli gaz durumu, ortamda
@@ -6,73 +27,159 @@ canlı olup olmadığı, ortamda yağış olup olmadığı Arduino yardımıyla 
 sensor dataları C# arayüzünde gösterilir. Eğer onay kutusu işaretlenirse
 istenmeyen bir durumda (gaz sızıntısı, eve hırsız girmesi, yağmur için
 kurulabilir.) program uyarı olarak girilen adrese bir adet mail
-gönderir.&lt;a
-href="https://drive.google.com/file/d/0B5j__Lyt9ozbVTRIOVFVcVVWX3c/view?usp=sharing"
-target="_blank"
->Projenin Arduino ve C# kaynak kodunu buradan indirebilirsiniz.&lt;/a>
-&lt;/p></description></item><item><title>[TR] Arduino Due Osiloskop</title><link>https://mozanunal.com/posts/2015/arduino-due-osiloskop/</link><pubDate>Sat, 02 May 2015 01:38:00 +0000</pubDate><author>mehmetozanunal@gmail.com (M.Ozan Unal)</author><guid>https://mozanunal.com/posts/2015/arduino-due-osiloskop/</guid><description>&lt;p>&lt;strong>Merhaba Arkadaşlar,&lt;/strong>&lt;/p>
-&lt;p>Bugün size Arduino Due ile yaptığım osiloskop bahsedeceğim. Arduino Dueyi
+gönderir.&lt;a href=&#34;https://drive.google.com/file/d/0B5j__Lyt9ozbVTRIOVFVcVVWX3c/view?usp=sharing&#34;&gt;Projenin Arduino ve C# kaynak kodunu buradan indirebilirsiniz.&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>[TR] Arduino Due Osiloskop</title>
+      <link>https://mozanunal.com/2015/05/arduino-due-osiloskop/</link>
+      <pubDate>Sat, 02 May 2015 01:38:00 +0000</pubDate>
+      <guid>https://mozanunal.com/2015/05/arduino-due-osiloskop/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Merhaba Arkadaşlar,&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Bugün size Arduino Due ile yaptığım osiloskop bahsedeceğim. Arduino Dueyi
 seçmemin bir kaç nedeni var tabi. Arduino Duede standart Arduinoların 8 bitlik
 Atmega işlemcilerinden farklı olarak 32 bitlik Arm Cortex M3 var. Bu işlemcinin
-84 Mhzlik saat hızı bu proje için elverişli kılıyor.&lt;/p></description></item><item><title>[TR] Serial Port Grapher</title><link>https://mozanunal.com/posts/2014/serial-port-grapher/</link><pubDate>Tue, 23 Dec 2014 02:59:00 +0000</pubDate><author>mehmetozanunal@gmail.com (M.Ozan Unal)</author><guid>https://mozanunal.com/posts/2014/serial-port-grapher/</guid><description>&lt;p>&lt;strong>Herkese Merhabalar,&lt;/strong>&lt;br>
+84 Mhzlik saat hızı bu proje için elverişli kılıyor.&lt;/p&gt;
+&lt;p&gt;Osiloskop projesine başlarken amacım Due ile mümkün olan en yüksek örnekleme
+hızlı osiloskobu yapmaktı. İlk olarak arduinonun standart AnalogRead()
+fonksiyonunu denedim. Bir örnek alma süresi 40 uS kadar sürdü. Daha sonra
+&lt;a href=&#34;https://frenki.net/2013/10/fast-analogread-with-arduino-due/&#34;&gt;bu bağlantıyı&lt;/a&gt;
+buldum ve oradaki ayarları Duenin ADCsine uyguladım. Osiloskobun son kodu
+aşağıdaki gibidir. Bu kod sayesinde ADClere direk registerlar.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>[TR] Serial Port Grapher</title>
+      <link>https://mozanunal.com/2014/12/serial-port-grapher/</link>
+      <pubDate>Tue, 23 Dec 2014 02:59:00 +0000</pubDate>
+      <guid>https://mozanunal.com/2014/12/serial-port-grapher/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;br&gt;
 İlk yazılarımdan birinde seri port üzerinden grafik çizen bir programın C#&amp;rsquo;ta
 nasıl yazılabileceğini
-anlatmıştım(&lt;a
-href="https://mozanunal.com/2014/05/c-gercek-zamanl-grafik-cizme-program/"
-target="_blank"
->Buradan ulaşabilirsiniz&lt;/a>
-.)
+anlatmıştım(&lt;a href=&#34;https://mozanunal.com/2014/05/c-gercek-zamanl-grafik-cizme-program/&#34;&gt;Buradan ulaşabilirsiniz&lt;/a&gt;.)
 Bu yazımda ise programın derlenmiş ve setup haline getirilmiş halini
 paylaşıyorum. Fark ettim ki bir sürü insan böyle bir programa ihtiyaç
 duyuyormuş. Bu program sayesinde Arduinonuzdan(başka işlemciler veya boardlar da
 olabilir.) veya herhangi bir serial port cihazından gönderdiğiniz &amp;ldquo;string&amp;rdquo;
 formattındaki verilerin gerçek zamanlı  olarak grafiğini çizdirebilirsiniz. Tek
-dikkat etmeniz gereken gelen verinin&lt;/p></description></item><item><title>[TR] Kamera ile Araç Sayısı Takibi</title><link>https://mozanunal.com/posts/2014/kamera-ile-arac-says-takibi/</link><pubDate>Fri, 21 Nov 2014 03:41:00 +0000</pubDate><author>mehmetozanunal@gmail.com (M.Ozan Unal)</author><guid>https://mozanunal.com/posts/2014/kamera-ile-arac-says-takibi/</guid><description>&lt;p>&lt;strong>Herkese Merhabalar!&lt;/strong>&lt;/p>
-&lt;p>Bugün size uzun süredir üzerinden uğraştığım bir projeden bahsetmek istiyorum.
+dikkat etmeniz gereken gelen verinin&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$,data1,data2,data3,
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;şeklinde olmasıdır aksi takdirde program gelen veriyi dikkate almaz. Programla
+alakalı iyi, kötü görüşlerinizi veya sorunları, bugları bana yollayabilirsiniz.&lt;br&gt;
+&lt;a href=&#34;https://drive.google.com/file/d/0B5j__Lyt9ozbU3JELTV3MWpqWFk/view?usp=sharing&#34;&gt;Programı buradan indirebiliriniz&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>[TR] Kamera ile Araç Sayısı Takibi</title>
+      <link>https://mozanunal.com/2014/11/kamera-ile-arac-says-takibi/</link>
+      <pubDate>Fri, 21 Nov 2014 03:41:00 +0000</pubDate>
+      <guid>https://mozanunal.com/2014/11/kamera-ile-arac-says-takibi/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar!&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Bugün size uzun süredir üzerinden uğraştığım bir projeden bahsetmek istiyorum.
 Projenin amacı kamera ile bir yoldan geçen araç sayını saymak. Ben de bunu
 okulumun önündeki caddeden çektiğim videoda gerçekleştirdim. İleriki aşamalarda
 insan sayma uygulaması da geliştirmek istiyorum. Araç uygulaması da hız
 belirleyecek şekilde veya araç büyüklüğüne, markasına göre sınıflandırma yapacak
 şekilde geliştirilebilir. Proje Emgucv kütüphanesinin Video Survilance modulü
-kullanılarak yapılmıştır. Tekrar görüşmek dileğiyle&amp;hellip;&lt;/p></description></item><item><title>[TR] Bilgisayardan Gimbal Kontrolü</title><link>https://mozanunal.com/posts/2014/bilgisayardan-gimbal-kontrolu/</link><pubDate>Tue, 21 Oct 2014 02:47:00 +0000</pubDate><author>mehmetozanunal@gmail.com (M.Ozan Unal)</author><guid>https://mozanunal.com/posts/2014/bilgisayardan-gimbal-kontrolu/</guid><description>&lt;p>&lt;strong>Herkese Merhabalar!&lt;/strong>&lt;br>
+kullanılarak yapılmıştır. Tekrar görüşmek dileğiyle&amp;hellip;&lt;/p&gt;
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube-nocookie.com/embed/N8HpOoq8yYk?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;&gt;&lt;/iframe&gt;
+    &lt;/div&gt;</description>
+    </item>
+    <item>
+      <title>[TR] Bilgisayardan Gimbal Kontrolü</title>
+      <link>https://mozanunal.com/2014/10/bilgisayardan-gimbal-kontrolu/</link>
+      <pubDate>Tue, 21 Oct 2014 02:47:00 +0000</pubDate>
+      <guid>https://mozanunal.com/2014/10/bilgisayardan-gimbal-kontrolu/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar!&lt;/strong&gt;&lt;br&gt;
 Bugün size bilgisayardan gimbal kontrolü projemden bahsedeceğim. Bu projedeki
 amacım C# ile yazdığım bir arayüzde gimbali kontrol etmek. Gimbal ve bilgisayar
 arasında haberleşmeyi sağlaması ve servoları kontrol etmesi için bir arduino
 yerleştirdim. C# arayüzünün görevi, tıkladığım butonlara göre arduinoya &amp;ldquo;serial
-port&amp;rdquo; üzerinden gönderilecek karakteri değiştirmesidir.&lt;br>
-Arduino da serial porttan aldığı karaktere göre servoları yönetir.&lt;/p></description></item><item><title>[TR] Kamera ile Fare Kontrolü</title><link>https://mozanunal.com/posts/2014/kamera-ile-fare-kontrolu/</link><pubDate>Fri, 10 Oct 2014 01:24:00 +0000</pubDate><author>mehmetozanunal@gmail.com (M.Ozan Unal)</author><guid>https://mozanunal.com/posts/2014/kamera-ile-fare-kontrolu/</guid><description>&lt;p>&lt;strong>Herkese Merhabalar!&lt;/strong>&lt;/p>
-&lt;p>Bu yazımda Kamera ile Fare Kontrolü projemden bahsetmek istiyorum. Bu proje
+port&amp;rdquo; üzerinden gönderilecek karakteri değiştirmesidir.&lt;br&gt;
+Arduino da serial porttan aldığı karaktere göre servoları yönetir.&lt;/p&gt;
+&lt;p&gt;Bilgisayardan Gimbal Kontrolü&lt;/p&gt;
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube-nocookie.com/embed/Z61XZI12bS0?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;&gt;&lt;/iframe&gt;
+    &lt;/div&gt;
+
+&lt;p&gt;Arayüz programını C# kodlarının bu proje için örnek kısımlar aşağıdaki gibidir.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>[TR] Kamera ile Fare Kontrolü</title>
+      <link>https://mozanunal.com/2014/10/kamera-ile-fare-kontrolu/</link>
+      <pubDate>Fri, 10 Oct 2014 01:24:00 +0000</pubDate>
+      <guid>https://mozanunal.com/2014/10/kamera-ile-fare-kontrolu/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar!&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Bu yazımda Kamera ile Fare Kontrolü projemden bahsetmek istiyorum. Bu proje
 aslında bir görüntü işleme projesidir. Eli filtrelerle tespit edip fare gibi
 kullanmak amaçlanmıştır. El açılınca tıklama sağlanır, tıklama olayı çok hassas
 değil maalesef arka arkaya çok tıklama yapabiliyor. Biraz daha uzaktan kontrol
-edilirse gezinme olayı da daha hassas olabilir.&lt;/p></description></item><item><title>[TR] Gerçek Zamanlı Obje Takibi(EmguCv ile)</title><link>https://mozanunal.com/posts/2014/gercek-zamanl-obje-takibiemgucv-ile/</link><pubDate>Mon, 29 Sep 2014 15:54:00 +0000</pubDate><author>mehmetozanunal@gmail.com (M.Ozan Unal)</author><guid>https://mozanunal.com/posts/2014/gercek-zamanl-obje-takibiemgucv-ile/</guid><description>&lt;p>&lt;strong>Herkese Merhabalar!&lt;/strong>&lt;/p>
-&lt;p>Bu yazımda sizlere EmguCv kütüphanesi ile yazdığım görüntü işleme uygulaması
+edilirse gezinme olayı da daha hassas olabilir.&lt;/p&gt;
+&lt;p&gt;Program C# dilinde Emgucv kütüphanesiyle yazılmıştır. Algoritmasına gelecek
+olursak, Hsv ve Ycbcr renk uzaylarında &amp;ldquo;skin detection&amp;rdquo; algoritmaları
+uygulanmıştır. Bu sayede el &amp;ldquo;counter&amp;rdquo; olarak tespit edilmiştir. Merkezi
+kullanılarak farenin gitmesi&lt;br&gt;
+gereken koordinantlar belirlenmiştir. &amp;ldquo;convexity defects&amp;rdquo; methodu kullanılarak
+da parmak sayısı belirlenmiştir. 5. parmakta pek hassas olarak çalışamamasına
+rağmen diğer parmakları rahat bir şekilde sayılmasını sağlamaktadır.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>[TR] Gerçek Zamanlı Obje Takibi(EmguCv ile)</title>
+      <link>https://mozanunal.com/2014/09/gercek-zamanl-obje-takibiemgucv-ile/</link>
+      <pubDate>Mon, 29 Sep 2014 15:54:00 +0000</pubDate>
+      <guid>https://mozanunal.com/2014/09/gercek-zamanl-obje-takibiemgucv-ile/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar!&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Bu yazımda sizlere EmguCv kütüphanesi ile yazdığım görüntü işleme uygulaması
 hakkında bilgi vermek istiyorum. Uygulamada ortamdan farklı bir renkte olan
 nesneyi rengine göre filtre edip onu gerçek zamanlı olarak takip etme
 amaçlanmıştır. Geliştirme ortamı olarak Microsoft Visual Studio, dil olarak C#
-programlama dili kullanılmıştır.&lt;br>
-Programın genel algoritmasına gelirsek, şöyle özetleyebiliriz;&lt;/p></description></item><item><title>[TR] C# Gerçek Zamanlı Grafik Çizme Programı</title><link>https://mozanunal.com/posts/2014/c-gercek-zamanl-grafik-cizme-program/</link><pubDate>Tue, 27 May 2014 05:17:00 +0000</pubDate><author>mehmetozanunal@gmail.com (M.Ozan Unal)</author><guid>https://mozanunal.com/posts/2014/c-gercek-zamanl-grafik-cizme-program/</guid><description>&lt;p>&lt;strong>Herkese Merhabalar!&lt;/strong>&lt;br>
-&lt;a
-href="https://github.com/mozanunal/serialPortGrapher"
-target="_blank"
->Programın kaynak koduna buradan ulaşabilirsiniz.&lt;/a>
-&lt;br>
+programlama dili kullanılmıştır.&lt;br&gt;
+Programın genel algoritmasına gelirsek, şöyle özetleyebiliriz;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Görüntü kameradan RGB formatında alınıp başka bir renkli resim görüntüleme
+yöntemi olan HSV formatına dönüştürülmüştür.&lt;/li&gt;
+&lt;li&gt;HSV filtresi için uygun değerler test edilip bulunmuştur ve renk filtesi
+uygunlanmıştır.&lt;/li&gt;
+&lt;li&gt;Renk filtresinden kalan gürültüler erode ve dilate morfolojik operatörleriyle
+azaltılmıştır.&lt;/li&gt;
+&lt;li&gt;Counter Analysis ile görüntü &amp;ldquo;counter&amp;quot;lara ayrılmıştır. Sadece &amp;ldquo;counter&amp;rdquo;
+alanı belli bir değerden büyük olan &amp;ldquo;counter&amp;quot;lar dikkat alınmıştır. Bu sayede
+son kalan gürültüler de engelenmiştir.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Projemin tanıtım videosuna aşağıdan ulaşabilirsiniz. Kodlar videoda
+gösterilmektedir. Tekrar görüşmek üzere&amp;hellip;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>[TR] C# Gerçek Zamanlı Grafik Çizme Programı</title>
+      <link>https://mozanunal.com/2014/05/c-gercek-zamanl-grafik-cizme-program/</link>
+      <pubDate>Tue, 27 May 2014 05:17:00 +0000</pubDate>
+      <guid>https://mozanunal.com/2014/05/c-gercek-zamanl-grafik-cizme-program/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar!&lt;/strong&gt;&lt;br&gt;
+&lt;a href=&#34;https://github.com/mozanunal/serialPortGrapher&#34;&gt;Programın kaynak koduna buradan ulaşabilirsiniz.&lt;/a&gt;&lt;br&gt;
 İkinci yazımda C# ile gerçek zamanlı grafik çizdirme uygulamasından
 bahsedeceğim. Bu uygulamada C# programlama dili ve Microsoft Visual Studio 2010
 kullanılmıştır. C# ile grafik çizmemize olanak sağlayan zed graph
 kütüphanesinden
-yararlanılmıştır.&lt;a
-href="https://zedgraph.sourceforge.net/index.html"
-target="_blank"
->Bu kütüphaneyi buradan indirebilirsiniz&lt;/a>
-.
+yararlanılmıştır.&lt;a href=&#34;https://zedgraph.sourceforge.net/index.html&#34;&gt;Bu kütüphaneyi buradan indirebilirsiniz&lt;/a&gt;.
 Sistemin genel algoritmasına bakarsak şöyle çalışır; seri porttan veri okunur,
 veri aralardaki virgüllere göre parse edilip labellera aktarılır, Eklenen
 &amp;ldquo;Timer&amp;rdquo; öğesi ile timerın her periyodunda zaman belirten labela geçen zaman
 kadar eklenir böylece kaçıncı saniye olduğu tutulur, aynı zamanda timerın her
 bir periyodunda x değerleri zaman, y değerleri data noktaları olmak üzere
 grafiğe bir nokta eklenir. Şimdi çalışma şeklini daha ayrıntılı bir şekilde
-inceleyelim.&lt;/p></description></item><item><title>[TR] İlk Yayın</title><link>https://mozanunal.com/posts/2014/ilk-yayn/</link><pubDate>Sun, 25 May 2014 03:44:00 +0000</pubDate><author>mehmetozanunal@gmail.com (M.Ozan Unal)</author><guid>https://mozanunal.com/posts/2014/ilk-yayn/</guid><description>&lt;p>&lt;strong>Herkese Merhabalar!&lt;/strong>&lt;br>
+inceleyelim.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>[TR] İlk Yayın</title>
+      <link>https://mozanunal.com/2014/05/ilk-yayn/</link>
+      <pubDate>Sun, 25 May 2014 03:44:00 +0000</pubDate>
+      <guid>https://mozanunal.com/2014/05/ilk-yayn/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar!&lt;/strong&gt;&lt;br&gt;
     Yaptığım projeleri arşivleyebilmek ve bunlardan herkesin yararlanabilmesi
 için blog açmaya karar verdim. Blogumda size C# üzerinden arayüz yapımı,
 bilgisayar mikroişlemci iletişimi, arduino uygulamaları, pic uygulamaları ve
@@ -86,4 +193,7 @@ sistemleri üzerine çalışmalar yaptım. Gps, IMU, ve daha bir sürü sensörd
 aldığımız verileri, yer istasyonuna iletmek ve arayüz programıyla bunların
 görsellenmesiydi görevim. Şimdi ise insansız hava araçları ve görüntü işleme
 üzerine çalışmaktayım. Aynı zamanda hobi olarak pic ve arduino devreleri,
-çeşitli devreler üretmeye, yapmaya devam ediyorum. Tekrar görüşmek üzere&amp;hellip;&lt;/p></description></item></channel></rss>
+çeşitli devreler üretmeye, yapmaya devam ediyorum. Tekrar görüşmek üzere&amp;hellip;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

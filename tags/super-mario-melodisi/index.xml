@@ -1,14 +1,35 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Super Mario Melodisi on mozanunal.com</title><link>https://mozanunal.com/tags/super-mario-melodisi/</link><description>Recent content in Super Mario Melodisi on mozanunal.com</description><generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>mehmetozanunal@gmail.com (M.Ozan Unal)</managingEditor><webMaster>mehmetozanunal@gmail.com (M.Ozan Unal)</webMaster><copyright>© 2025 M.Ozan Unal</copyright><lastBuildDate>Sun, 25 Jan 2015 20:03:00 +0000</lastBuildDate><atom:link href="https://mozanunal.com/tags/super-mario-melodisi/index.xml" rel="self" type="application/rss+xml"/><item><title>[TR] Arduino İle Super Mario Melodisi Çalmak</title><link>https://mozanunal.com/posts/2015/arduino-ile-super-mario-melodisi-calmak/</link><pubDate>Sun, 25 Jan 2015 20:03:00 +0000</pubDate><author>mehmetozanunal@gmail.com (M.Ozan Unal)</author><guid>https://mozanunal.com/posts/2015/arduino-ile-super-mario-melodisi-calmak/</guid><description>&lt;p>&lt;strong>Merhaba Arkadaşlar&lt;/strong>&lt;br>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Super Mario Melodisi on mozanunal.com</title>
+    <link>https://mozanunal.com/tags/super-mario-melodisi/</link>
+    <description>Recent content in Super Mario Melodisi on mozanunal.com</description>
+    <image>
+      <title>mozanunal.com</title>
+      <url>https://mozanunal.com/images/papermod-cover.png</url>
+      <link>https://mozanunal.com/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- 0.147.8</generator>
+    <language>en</language>
+    <copyright>mozanunal</copyright>
+    <lastBuildDate>Sun, 25 Jan 2015 20:03:00 +0000</lastBuildDate>
+    <atom:link href="https://mozanunal.com/tags/super-mario-melodisi/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[TR] Arduino İle Super Mario Melodisi Çalmak</title>
+      <link>https://mozanunal.com/2015/01/arduino-ile-super-mario-melodisi-calmak/</link>
+      <pubDate>Sun, 25 Jan 2015 20:03:00 +0000</pubDate>
+      <guid>https://mozanunal.com/2015/01/arduino-ile-super-mario-melodisi-calmak/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Merhaba Arkadaşlar&lt;/strong&gt;&lt;br&gt;
 Bugünkü yazımda Arduino ile melodi çalma uygulamasından bahsedeceğim.
 Kullandığım malzemeler Arduino ve bir buzzer. Pin bağlantıları da oldukça basit
 buzzerın eksi ucu GND&amp;rsquo;ye,  + ucu da 12. pine bağlanıyor. 12. Pin dijital pin,
 farklı frekanslarda 1-0 yapılarak notaların çalınması sağlanır. Notaların
 çalınma süreleri de nota frekansının verilme süresi değiştirilerek arduino
 tarafından ayarlanıyor. Böylece istediğimiz melodiyi elde etmiş oluyoruz.
-Ayrıntılı bilgiye &lt;a
-href="https://www.arduino.cc/en/Tutorial/Melody"
-target="_blank"
->buradan&lt;/a>
+Ayrıntılı bilgiye &lt;a href=&#34;https://www.arduino.cc/en/Tutorial/Melody&#34;&gt;buradan&lt;/a&gt;
 ulaşabilirsiniz. Arduino koduna aşağıdan ulaşabilirsiniz(Kod alıntıdır. Tek tek
 notalarla uğraşmamak için notaları çıkarılmış bir koddan aldım.). Tekrar
-görüşmek üzere.&lt;/p></description></item></channel></rss>
+görüşmek üzere.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

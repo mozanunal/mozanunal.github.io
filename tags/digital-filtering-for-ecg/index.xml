@@ -1,13 +1,32 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Digital Filtering for ECG on mozanunal.com</title><link>https://mozanunal.com/tags/digital-filtering-for-ecg/</link><description>Recent content in Digital Filtering for ECG on mozanunal.com</description><generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>mehmetozanunal@gmail.com (M.Ozan Unal)</managingEditor><webMaster>mehmetozanunal@gmail.com (M.Ozan Unal)</webMaster><copyright>© 2025 M.Ozan Unal</copyright><lastBuildDate>Sun, 17 Nov 2019 02:36:00 +0000</lastBuildDate><atom:link href="https://mozanunal.com/tags/digital-filtering-for-ecg/index.xml" rel="self" type="application/rss+xml"/><item><title>Digital Filtering of an ECG Signal</title><link>https://mozanunal.com/posts/2019/ecg-signal/</link><pubDate>Sun, 17 Nov 2019 02:36:00 +0000</pubDate><author>mehmetozanunal@gmail.com (M.Ozan Unal)</author><guid>https://mozanunal.com/posts/2019/ecg-signal/</guid><description>&lt;p>Hello everyone, Today, I will show how can you filter out the noise from the raw
-ECG signal. Let&amp;rsquo;s start!&lt;/p>
-&lt;h3 class="relative group">What is ECG?
-&lt;div id="what-is-ecg" class="anchor">&lt;/div>
-&lt;span
-class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#what-is-ecg" aria-label="Anchor">#&lt;/a>
-&lt;/span>
-&lt;/h3>
-&lt;p>Electrocardiography (ECG) is the measurement of the bioelectrical activity
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Digital Filtering for ECG on mozanunal.com</title>
+    <link>https://mozanunal.com/tags/digital-filtering-for-ecg/</link>
+    <description>Recent content in Digital Filtering for ECG on mozanunal.com</description>
+    <image>
+      <title>mozanunal.com</title>
+      <url>https://mozanunal.com/images/papermod-cover.png</url>
+      <link>https://mozanunal.com/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- 0.147.8</generator>
+    <language>en</language>
+    <copyright>mozanunal</copyright>
+    <lastBuildDate>Sun, 17 Nov 2019 02:36:00 +0000</lastBuildDate>
+    <atom:link href="https://mozanunal.com/tags/digital-filtering-for-ecg/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Digital Filtering of an ECG Signal</title>
+      <link>https://mozanunal.com/2019/11/ecg-signal/</link>
+      <pubDate>Sun, 17 Nov 2019 02:36:00 +0000</pubDate>
+      <guid>https://mozanunal.com/2019/11/ecg-signal/</guid>
+      <description>&lt;p&gt;Hello everyone, Today, I will show how can you filter out the noise from the raw
+ECG signal. Let&amp;rsquo;s start!&lt;/p&gt;
+&lt;h3 id=&#34;what-is-ecg&#34;&gt;What is ECG?&lt;/h3&gt;
+&lt;p&gt;Electrocardiography (ECG) is the measurement of the bioelectrical activity
 during the contraction and relaxation stages of the atria and ventricles of the
 heart, the stimulation of the heart and the conduction of the stimulus. ECG
-signal has some specific waves which correspond to particular conditions.&lt;/p></description></item></channel></rss>
+signal has some specific waves which correspond to particular conditions.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Part of the ECG Signal&lt;/strong&gt; &lt;img loading=&#34;lazy&#34; src=&#34;https://mozanunal.com/images/ekg15.jpg&#34;&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
