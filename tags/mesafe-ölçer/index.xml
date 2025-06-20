@@ -1,36 +1,8 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>Mesafe Ölçer on mozanunal.com</title>
-    <link>https://mozanunal.com/tags/mesafe-%C3%B6l%C3%A7er/</link>
-    <description>Recent content in Mesafe Ölçer on mozanunal.com</description>
-    <image>
-      <title>mozanunal.com</title>
-      <url>https://mozanunal.com/images/papermod-cover.png</url>
-      <link>https://mozanunal.com/images/papermod-cover.png</link>
-    </image>
-    <generator>Hugo -- 0.147.8</generator>
-    <language>en</language>
-    <copyright>mozanunal</copyright>
-    <lastBuildDate>Sun, 11 Jan 2015 20:57:00 +0000</lastBuildDate>
-    <atom:link href="https://mozanunal.com/tags/mesafe-%C3%B6l%C3%A7er/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>[TR] LCD Göstergeli Mesafe Ölçer</title>
-      <link>https://mozanunal.com/2015/01/lcd-gostergeli-mesafe-olcer/</link>
-      <pubDate>Sun, 11 Jan 2015 20:57:00 +0000</pubDate>
-      <guid>https://mozanunal.com/2015/01/lcd-gostergeli-mesafe-olcer/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Merhabalar!&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Bugünkü yazımda LCD göstergeli bir mesafe ölçerin nasıl yapılabileceğini
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Mesafe Ölçer on mozanunal.com</title><link>https://mozanunal.com/tags/mesafe-%C3%B6l%C3%A7er/</link><description>Recent content in Mesafe Ölçer on mozanunal.com</description><generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>mehmetozanunal@gmail.com (M.Ozan Unal)</managingEditor><webMaster>mehmetozanunal@gmail.com (M.Ozan Unal)</webMaster><copyright>© 2025 M.Ozan Unal</copyright><lastBuildDate>Sun, 11 Jan 2015 20:57:00 +0000</lastBuildDate><atom:link href="https://mozanunal.com/tags/mesafe-%C3%B6l%C3%A7er/index.xml" rel="self" type="application/rss+xml"/><item><title>[TR] LCD Göstergeli Mesafe Ölçer</title><link>https://mozanunal.com/posts/2015/lcd-gostergeli-mesafe-olcer/</link><pubDate>Sun, 11 Jan 2015 20:57:00 +0000</pubDate><author>mehmetozanunal@gmail.com (M.Ozan Unal)</author><guid>https://mozanunal.com/posts/2015/lcd-gostergeli-mesafe-olcer/</guid><description>&lt;p>&lt;strong>Merhabalar!&lt;/strong>&lt;/p>
+&lt;p>Bugünkü yazımda LCD göstergeli bir mesafe ölçerin nasıl yapılabileceğini
 anlatacağım. Projede Arduino, LCD modülü ve HC-SR04 modülü kullandım. Mesafe
 hesaplama işini &amp;ldquo;NewPing&amp;rdquo; isimli kütüphaneye yaptırdım. Bu aldığım mesafe
 verilerini de LCD ekrana bastırıyorum kod bu kadar basit. HC-SR04 ultrasonik
 mesafe hesaplama modulü. Mesafe hesabı için ses dalgalarını kullanıyor. Ses
 hızına göre geri dönüş süresini hesaplıyor bu sayede uzaklık hakkında bilgi
-sahibi olmuş oluyoruz.&lt;/p&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://2.bp.blogspot.com/-imW1-EwFBzI/VLK22y3CYhI/AAAAAAAAGjE/IiK8R_IY9rM/s1600/IMG_20150111_183709.jpg&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://3.bp.blogspot.com/-QmoDFE2QbYc/VLK23M3z7hI/AAAAAAAAGjI/q0U5KHUuEiU/s1600/IMG_20150111_183748.jpg&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Uygulamanın Arduino Kodunu paylaşıyorum. Bağlantılar da kod içerisinde
-verilmiştir.&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+sahibi olmuş oluyoruz.&lt;/p></description></item></channel></rss>

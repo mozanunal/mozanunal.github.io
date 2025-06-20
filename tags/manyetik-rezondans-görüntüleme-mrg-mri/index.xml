@@ -1,27 +1,18 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>Manyetik Rezondans Görüntüleme, MRG, MRI on mozanunal.com</title>
-    <link>https://mozanunal.com/tags/manyetik-rezondans-g%C3%B6r%C3%BCnt%C3%BCleme-mrg-mri/</link>
-    <description>Recent content in Manyetik Rezondans Görüntüleme, MRG, MRI on mozanunal.com</description>
-    <image>
-      <title>mozanunal.com</title>
-      <url>https://mozanunal.com/images/papermod-cover.png</url>
-      <link>https://mozanunal.com/images/papermod-cover.png</link>
-    </image>
-    <generator>Hugo -- 0.147.8</generator>
-    <language>en</language>
-    <copyright>mozanunal</copyright>
-    <lastBuildDate>Fri, 26 Apr 2019 03:44:00 +0000</lastBuildDate>
-    <atom:link href="https://mozanunal.com/tags/manyetik-rezondans-g%C3%B6r%C3%BCnt%C3%BCleme-mrg-mri/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>[TR] Manyetik Rezonans Görüntüleme</title>
-      <link>https://mozanunal.com/2019/04/mrg/</link>
-      <pubDate>Fri, 26 Apr 2019 03:44:00 +0000</pubDate>
-      <guid>https://mozanunal.com/2019/04/mrg/</guid>
-      <description>&lt;h1 id=&#34;manyetik-rezonans-görüntüleme&#34;&gt;Manyetik Rezonans Görüntüleme&lt;/h1&gt;
-&lt;h2 id=&#34;1giriş&#34;&gt;1.Giriş&lt;/h2&gt;
-&lt;p&gt;Normalde vücudumuz RF enerjisine duyarsızdır. Önce veri kaynağımız olan
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Manyetik Rezondans Görüntüleme, MRG, MRI on mozanunal.com</title><link>https://mozanunal.com/tags/manyetik-rezondans-g%C3%B6r%C3%BCnt%C3%BCleme-mrg-mri/</link><description>Recent content in Manyetik Rezondans Görüntüleme, MRG, MRI on mozanunal.com</description><generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>mehmetozanunal@gmail.com (M.Ozan Unal)</managingEditor><webMaster>mehmetozanunal@gmail.com (M.Ozan Unal)</webMaster><copyright>© 2025 M.Ozan Unal</copyright><lastBuildDate>Fri, 26 Apr 2019 03:44:00 +0000</lastBuildDate><atom:link href="https://mozanunal.com/tags/manyetik-rezondans-g%C3%B6r%C3%BCnt%C3%BCleme-mrg-mri/index.xml" rel="self" type="application/rss+xml"/><item><title>[TR] Manyetik Rezonans Görüntüleme</title><link>https://mozanunal.com/posts/2019/mrg/</link><pubDate>Fri, 26 Apr 2019 03:44:00 +0000</pubDate><author>mehmetozanunal@gmail.com (M.Ozan Unal)</author><guid>https://mozanunal.com/posts/2019/mrg/</guid><description>&lt;h1 class="relative group">Manyetik Rezonans Görüntüleme
+&lt;div id="manyetik-rezonans-görüntüleme" class="anchor">&lt;/div>
+&lt;span
+class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#manyetik-rezonans-g%c3%b6r%c3%bcnt%c3%bcleme" aria-label="Anchor">#&lt;/a>
+&lt;/span>
+&lt;/h1>
+&lt;h2 class="relative group">1.Giriş
+&lt;div id="1giriş" class="anchor">&lt;/div>
+&lt;span
+class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#1giri%c5%9f" aria-label="Anchor">#&lt;/a>
+&lt;/span>
+&lt;/h2>
+&lt;p>Normalde vücudumuz RF enerjisine duyarsızdır. Önce veri kaynağımız olan
 protonların RF enerjisi ile uyarılır hale getirilmesi gerekir. Bunun için hasta
 çok güçlü bir manyetik alan içerisine yerleştirilir. Bu manyetik etkiyle
 protonlar manyetik alana uygun şekilde dizilir ve uyarılmaya hazır hale
@@ -29,7 +20,4 @@ gelirler. Kesit alınacak bölgeye RF enerjisi gönderilir. Protonlar bu enerjiy
 alır ve enerjinin miktarına göre konumlarından saparlar. RF enerjisi kesilir.
 Protonlar eski konumlarına dönerler. Bu dönüş sürecinde aldıkları enerjiyi bir
 sinyal şeklinde yayarlar. Bu sinyal kayıt edilerek seçilen alanın Hidrojen
-yoğunluğuyla alakalı bilgi edinilmiş olur.&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+yoğunluğuyla alakalı bilgi edinilmiş olur.&lt;/p></description></item></channel></rss>

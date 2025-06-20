@@ -1,57 +1,28 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>Arduino C# on mozanunal.com</title>
-    <link>https://mozanunal.com/tags/arduino-c%23/</link>
-    <description>Recent content in Arduino C# on mozanunal.com</description>
-    <image>
-      <title>mozanunal.com</title>
-      <url>https://mozanunal.com/images/papermod-cover.png</url>
-      <link>https://mozanunal.com/images/papermod-cover.png</link>
-    </image>
-    <generator>Hugo -- 0.147.8</generator>
-    <language>en</language>
-    <copyright>mozanunal</copyright>
-    <lastBuildDate>Tue, 21 Oct 2014 02:47:00 +0000</lastBuildDate>
-    <atom:link href="https://mozanunal.com/tags/arduino-c%23/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>[TR] Bilgisayardan Gimbal Kontrolü</title>
-      <link>https://mozanunal.com/2014/10/bilgisayardan-gimbal-kontrolu/</link>
-      <pubDate>Tue, 21 Oct 2014 02:47:00 +0000</pubDate>
-      <guid>https://mozanunal.com/2014/10/bilgisayardan-gimbal-kontrolu/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar!&lt;/strong&gt;&lt;br&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Arduino C# on mozanunal.com</title><link>https://mozanunal.com/tags/arduino-c%23/</link><description>Recent content in Arduino C# on mozanunal.com</description><generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>mehmetozanunal@gmail.com (M.Ozan Unal)</managingEditor><webMaster>mehmetozanunal@gmail.com (M.Ozan Unal)</webMaster><copyright>© 2025 M.Ozan Unal</copyright><lastBuildDate>Tue, 21 Oct 2014 02:47:00 +0000</lastBuildDate><atom:link href="https://mozanunal.com/tags/arduino-c%23/index.xml" rel="self" type="application/rss+xml"/><item><title>[TR] Bilgisayardan Gimbal Kontrolü</title><link>https://mozanunal.com/posts/2014/bilgisayardan-gimbal-kontrolu/</link><pubDate>Tue, 21 Oct 2014 02:47:00 +0000</pubDate><author>mehmetozanunal@gmail.com (M.Ozan Unal)</author><guid>https://mozanunal.com/posts/2014/bilgisayardan-gimbal-kontrolu/</guid><description>&lt;p>&lt;strong>Herkese Merhabalar!&lt;/strong>&lt;br>
 Bugün size bilgisayardan gimbal kontrolü projemden bahsedeceğim. Bu projedeki
 amacım C# ile yazdığım bir arayüzde gimbali kontrol etmek. Gimbal ve bilgisayar
 arasında haberleşmeyi sağlaması ve servoları kontrol etmesi için bir arduino
 yerleştirdim. C# arayüzünün görevi, tıkladığım butonlara göre arduinoya &amp;ldquo;serial
-port&amp;rdquo; üzerinden gönderilecek karakteri değiştirmesidir.&lt;br&gt;
-Arduino da serial porttan aldığı karaktere göre servoları yönetir.&lt;/p&gt;
-&lt;p&gt;Bilgisayardan Gimbal Kontrolü&lt;/p&gt;
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube-nocookie.com/embed/Z61XZI12bS0?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;&gt;&lt;/iframe&gt;
-    &lt;/div&gt;
-
-&lt;p&gt;Arayüz programını C# kodlarının bu proje için örnek kısımlar aşağıdaki gibidir.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>[TR] C# Gerçek Zamanlı Grafik Çizme Programı</title>
-      <link>https://mozanunal.com/2014/05/c-gercek-zamanl-grafik-cizme-program/</link>
-      <pubDate>Tue, 27 May 2014 05:17:00 +0000</pubDate>
-      <guid>https://mozanunal.com/2014/05/c-gercek-zamanl-grafik-cizme-program/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar!&lt;/strong&gt;&lt;br&gt;
-&lt;a href=&#34;https://github.com/mozanunal/serialPortGrapher&#34;&gt;Programın kaynak koduna buradan ulaşabilirsiniz.&lt;/a&gt;&lt;br&gt;
+port&amp;rdquo; üzerinden gönderilecek karakteri değiştirmesidir.&lt;br>
+Arduino da serial porttan aldığı karaktere göre servoları yönetir.&lt;/p></description></item><item><title>[TR] C# Gerçek Zamanlı Grafik Çizme Programı</title><link>https://mozanunal.com/posts/2014/c-gercek-zamanl-grafik-cizme-program/</link><pubDate>Tue, 27 May 2014 05:17:00 +0000</pubDate><author>mehmetozanunal@gmail.com (M.Ozan Unal)</author><guid>https://mozanunal.com/posts/2014/c-gercek-zamanl-grafik-cizme-program/</guid><description>&lt;p>&lt;strong>Herkese Merhabalar!&lt;/strong>&lt;br>
+&lt;a
+href="https://github.com/mozanunal/serialPortGrapher"
+target="_blank"
+>Programın kaynak koduna buradan ulaşabilirsiniz.&lt;/a>
+&lt;br>
 İkinci yazımda C# ile gerçek zamanlı grafik çizdirme uygulamasından
 bahsedeceğim. Bu uygulamada C# programlama dili ve Microsoft Visual Studio 2010
 kullanılmıştır. C# ile grafik çizmemize olanak sağlayan zed graph
 kütüphanesinden
-yararlanılmıştır.&lt;a href=&#34;https://zedgraph.sourceforge.net/index.html&#34;&gt;Bu kütüphaneyi buradan indirebilirsiniz&lt;/a&gt;.
+yararlanılmıştır.&lt;a
+href="https://zedgraph.sourceforge.net/index.html"
+target="_blank"
+>Bu kütüphaneyi buradan indirebilirsiniz&lt;/a>
+.
 Sistemin genel algoritmasına bakarsak şöyle çalışır; seri porttan veri okunur,
 veri aralardaki virgüllere göre parse edilip labellera aktarılır, Eklenen
 &amp;ldquo;Timer&amp;rdquo; öğesi ile timerın her periyodunda zaman belirten labela geçen zaman
 kadar eklenir böylece kaçıncı saniye olduğu tutulur, aynı zamanda timerın her
 bir periyodunda x değerleri zaman, y değerleri data noktaları olmak üzere
 grafiğe bir nokta eklenir. Şimdi çalışma şeklini daha ayrıntılı bir şekilde
-inceleyelim.&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+inceleyelim.&lt;/p></description></item></channel></rss>

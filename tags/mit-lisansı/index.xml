@@ -1,25 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>Mit Lisansı on mozanunal.com</title>
-    <link>https://mozanunal.com/tags/mit-lisans%C4%B1/</link>
-    <description>Recent content in Mit Lisansı on mozanunal.com</description>
-    <image>
-      <title>mozanunal.com</title>
-      <url>https://mozanunal.com/images/papermod-cover.png</url>
-      <link>https://mozanunal.com/images/papermod-cover.png</link>
-    </image>
-    <generator>Hugo -- 0.147.8</generator>
-    <language>en</language>
-    <copyright>mozanunal</copyright>
-    <lastBuildDate>Sun, 04 Sep 2016 20:16:00 +0000</lastBuildDate>
-    <atom:link href="https://mozanunal.com/tags/mit-lisans%C4%B1/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>[TR] Açık Kaynak Yazılım Lisans Türleri ve Farkları</title>
-      <link>https://mozanunal.com/2016/09/ack-kaynak-yazlm-lisans-turleri-ve/</link>
-      <pubDate>Sun, 04 Sep 2016 20:16:00 +0000</pubDate>
-      <guid>https://mozanunal.com/2016/09/ack-kaynak-yazlm-lisans-turleri-ve/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;br&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Mit Lisansı on mozanunal.com</title><link>https://mozanunal.com/tags/mit-lisans%C4%B1/</link><description>Recent content in Mit Lisansı on mozanunal.com</description><generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>mehmetozanunal@gmail.com (M.Ozan Unal)</managingEditor><webMaster>mehmetozanunal@gmail.com (M.Ozan Unal)</webMaster><copyright>© 2025 M.Ozan Unal</copyright><lastBuildDate>Sun, 04 Sep 2016 20:16:00 +0000</lastBuildDate><atom:link href="https://mozanunal.com/tags/mit-lisans%C4%B1/index.xml" rel="self" type="application/rss+xml"/><item><title>[TR] Açık Kaynak Yazılım Lisans Türleri ve Farkları</title><link>https://mozanunal.com/posts/2016/ack-kaynak-yazlm-lisans-turleri-ve/</link><pubDate>Sun, 04 Sep 2016 20:16:00 +0000</pubDate><author>mehmetozanunal@gmail.com (M.Ozan Unal)</author><guid>https://mozanunal.com/posts/2016/ack-kaynak-yazlm-lisans-turleri-ve/</guid><description>&lt;p>&lt;strong>Herkese Merhabalar,&lt;/strong>&lt;br>
        Yazılım dünyasında son zamanlarda artan bir &amp;ldquo;Açık Kaynak&amp;rdquo; çılgınlığı var.
 Hobi amaçlı bu işi yapanlardan bu konuyla alakalı en büyük şirketlere ve
 kuruluşlara kadar bir çok kişi veya kuruluş yazılımlarını &amp;ldquo;açık kaynaklı&amp;rdquo; olarak
@@ -29,7 +8,4 @@ kaynaklı olarak dağıtmak istediğimizde sınırlarımız ve sorumluluklarım�
 bir çok şeyi serbest bırakırken, bazıları ticari projelerde kullanılmasına izin
 vermiyor, bazıları ise yazılımın değiştirilmesine olanak tanımıyor. İşte bu
 farklar ve sorumlulukları bu yazımda özetlemeye çalıştım. Sırayla popüler açık
-kaynak yazılım lisanslarını tek tek inceleyeceğiz.&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+kaynak yazılım lisanslarını tek tek inceleyeceğiz.&lt;/p></description></item></channel></rss>

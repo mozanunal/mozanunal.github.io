@@ -1,37 +1,6 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>Linux Türkçe Klavye on mozanunal.com</title>
-    <link>https://mozanunal.com/tags/linux-t%C3%BCrk%C3%A7e-klavye/</link>
-    <description>Recent content in Linux Türkçe Klavye on mozanunal.com</description>
-    <image>
-      <title>mozanunal.com</title>
-      <url>https://mozanunal.com/images/papermod-cover.png</url>
-      <link>https://mozanunal.com/images/papermod-cover.png</link>
-    </image>
-    <generator>Hugo -- 0.147.8</generator>
-    <language>en</language>
-    <copyright>mozanunal</copyright>
-    <lastBuildDate>Wed, 03 Dec 2014 06:30:00 +0000</lastBuildDate>
-    <atom:link href="https://mozanunal.com/tags/linux-t%C3%BCrk%C3%A7e-klavye/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>[TR] Linuxta Kullanabileceğiniz 10 Yararlı Program</title>
-      <link>https://mozanunal.com/2014/12/linuxta-kullanabileceginiz-10-yararl/</link>
-      <pubDate>Wed, 03 Dec 2014 06:30:00 +0000</pubDate>
-      <guid>https://mozanunal.com/2014/12/linuxta-kullanabileceginiz-10-yararl/</guid>
-      <description>&lt;p&gt;Herkese Merhabalar,&lt;/p&gt;
-&lt;p&gt;Bugünkü yazımda Linuxta kullanabileceğiniz bir kaç yararlı programdan bahsetmek
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Linux Türkçe Klavye on mozanunal.com</title><link>https://mozanunal.com/tags/linux-t%C3%BCrk%C3%A7e-klavye/</link><description>Recent content in Linux Türkçe Klavye on mozanunal.com</description><generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>mehmetozanunal@gmail.com (M.Ozan Unal)</managingEditor><webMaster>mehmetozanunal@gmail.com (M.Ozan Unal)</webMaster><copyright>© 2025 M.Ozan Unal</copyright><lastBuildDate>Wed, 03 Dec 2014 06:30:00 +0000</lastBuildDate><atom:link href="https://mozanunal.com/tags/linux-t%C3%BCrk%C3%A7e-klavye/index.xml" rel="self" type="application/rss+xml"/><item><title>[TR] Linuxta Kullanabileceğiniz 10 Yararlı Program</title><link>https://mozanunal.com/posts/2014/linuxta-kullanabileceginiz-10-yararl/</link><pubDate>Wed, 03 Dec 2014 06:30:00 +0000</pubDate><author>mehmetozanunal@gmail.com (M.Ozan Unal)</author><guid>https://mozanunal.com/posts/2014/linuxta-kullanabileceginiz-10-yararl/</guid><description>&lt;p>Herkese Merhabalar,&lt;/p>
+&lt;p>Bugünkü yazımda Linuxta kullanabileceğiniz bir kaç yararlı programdan bahsetmek
 istiyorum. Bu programlar windows kullanıcılarının aşina olduğu, güzel alternatif
 programlar. Ben de kullandığım bu programları sizinle paylaşmak istedim. Yani
 öyle Linux&amp;rsquo;taki en iyi 10 program bunlar, hepsi sıfır hatalı diye iddalı bir
-başlıkla çıkmıyorum kaşınıza :D. Neyse programlara geçelim.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;İlk program Ubuntu Software Center. Bu program üzerinden Ubuntu&amp;rsquo;da çalışabilen
-bir çok programa ulaşabiliyorsunuz ve onları indirip kurabiliyorsunuz. Güzel
-şekilde kategorize edilmiş ve eklenti seçeneklerini seçme özelliği eklenmiş
-gerçekten hoş ve işleri kolaylaştıran bir program.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://4.bp.blogspot.com/-Bm-g47lRV64/VH5qesXPW5I/AAAAAAAAFhU/K_bf45ZAXaM/s1600/Screenshot%2Bfrom%2B2014-12-03%2B01%3A33%3A30.png&#34;&gt;&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+başlıkla çıkmıyorum kaşınıza :D. Neyse programlara geçelim.&lt;/p></description></item></channel></rss>

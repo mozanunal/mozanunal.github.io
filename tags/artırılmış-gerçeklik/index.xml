@@ -1,25 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>Artırılmış Gerçeklik on mozanunal.com</title>
-    <link>https://mozanunal.com/tags/art%C4%B1r%C4%B1lm%C4%B1%C5%9F-ger%C3%A7eklik/</link>
-    <description>Recent content in Artırılmış Gerçeklik on mozanunal.com</description>
-    <image>
-      <title>mozanunal.com</title>
-      <url>https://mozanunal.com/images/papermod-cover.png</url>
-      <link>https://mozanunal.com/images/papermod-cover.png</link>
-    </image>
-    <generator>Hugo -- 0.147.8</generator>
-    <language>en</language>
-    <copyright>mozanunal</copyright>
-    <lastBuildDate>Sat, 25 Apr 2015 03:03:00 +0000</lastBuildDate>
-    <atom:link href="https://mozanunal.com/tags/art%C4%B1r%C4%B1lm%C4%B1%C5%9F-ger%C3%A7eklik/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>[TR] Processing ile Artırılmış Gerçeklik</title>
-      <link>https://mozanunal.com/2015/04/processing-ile-artrlms-gerceklik/</link>
-      <pubDate>Sat, 25 Apr 2015 03:03:00 +0000</pubDate>
-      <guid>https://mozanunal.com/2015/04/processing-ile-artrlms-gerceklik/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Merhaba Arkadaşlar,&lt;/strong&gt;&lt;br&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Artırılmış Gerçeklik on mozanunal.com</title><link>https://mozanunal.com/tags/art%C4%B1r%C4%B1lm%C4%B1%C5%9F-ger%C3%A7eklik/</link><description>Recent content in Artırılmış Gerçeklik on mozanunal.com</description><generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>mehmetozanunal@gmail.com (M.Ozan Unal)</managingEditor><webMaster>mehmetozanunal@gmail.com (M.Ozan Unal)</webMaster><copyright>© 2025 M.Ozan Unal</copyright><lastBuildDate>Sat, 25 Apr 2015 03:03:00 +0000</lastBuildDate><atom:link href="https://mozanunal.com/tags/art%C4%B1r%C4%B1lm%C4%B1%C5%9F-ger%C3%A7eklik/index.xml" rel="self" type="application/rss+xml"/><item><title>[TR] Processing ile Artırılmış Gerçeklik</title><link>https://mozanunal.com/posts/2015/processing-ile-artrlms-gerceklik/</link><pubDate>Sat, 25 Apr 2015 03:03:00 +0000</pubDate><author>mehmetozanunal@gmail.com (M.Ozan Unal)</author><guid>https://mozanunal.com/posts/2015/processing-ile-artrlms-gerceklik/</guid><description>&lt;p>&lt;strong>Merhaba Arkadaşlar,&lt;/strong>&lt;br>
 Bugünkü yazımda NyARToolkit&amp;rsquo;ten bahsedeceğim. Bu toolkit sayesinde kameradan
 aldığımız görüntüler üzerine 3 Boyutlu nesneler yerleştirebiliyoruz. İstediğimiz
 3 boyutlu grafik hatta animasyon yerleştirilebilir. Google Glass tarzı
@@ -27,7 +6,4 @@ giyilebilir teknolojilerle daha yaratıcı uygulamalar yapılabilir. Simülasyon
 oyun dünyası için çeşitli uygulamalar geliştirilebilir. Hatta hologramlar
 yapmanın şimdilik en gerçekleştirilebilir yolu olarak gözüküyor. Toolkit bir çok
 programlama diliyle kullanılabiliyor. Ben Processing ile kullandım basit olduğu
-için. Toolkiti kullandığım şöyle bir tanıtım videosu hazırladım:&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+için. Toolkiti kullandığım şöyle bir tanıtım videosu hazırladım:&lt;/p></description></item></channel></rss>

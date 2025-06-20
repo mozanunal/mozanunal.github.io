@@ -1,73 +1,26 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>MPU6050 on mozanunal.com</title>
-    <link>https://mozanunal.com/tags/mpu6050/</link>
-    <description>Recent content in MPU6050 on mozanunal.com</description>
-    <image>
-      <title>mozanunal.com</title>
-      <url>https://mozanunal.com/images/papermod-cover.png</url>
-      <link>https://mozanunal.com/images/papermod-cover.png</link>
-    </image>
-    <generator>Hugo -- 0.147.8</generator>
-    <language>en</language>
-    <copyright>mozanunal</copyright>
-    <lastBuildDate>Wed, 26 Feb 2020 22:36:00 +0000</lastBuildDate>
-    <atom:link href="https://mozanunal.com/tags/mpu6050/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Micropython Mqtt Streamer</title>
-      <link>https://mozanunal.com/2020/02/micropython-mqtt-stream/</link>
-      <pubDate>Wed, 26 Feb 2020 22:36:00 +0000</pubDate>
-      <guid>https://mozanunal.com/2020/02/micropython-mqtt-stream/</guid>
-      <description>&lt;h1 id=&#34;micropython-mqtt-streamer&#34;&gt;Micropython Mqtt Streamer&lt;/h1&gt;
-&lt;p&gt;Hello everyone, I have developed a micropython code to stream accelerometer data
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>MPU6050 on mozanunal.com</title><link>https://mozanunal.com/tags/mpu6050/</link><description>Recent content in MPU6050 on mozanunal.com</description><generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>mehmetozanunal@gmail.com (M.Ozan Unal)</managingEditor><webMaster>mehmetozanunal@gmail.com (M.Ozan Unal)</webMaster><copyright>© 2025 M.Ozan Unal</copyright><lastBuildDate>Wed, 26 Feb 2020 22:36:00 +0000</lastBuildDate><atom:link href="https://mozanunal.com/tags/mpu6050/index.xml" rel="self" type="application/rss+xml"/><item><title>Micropython Mqtt Streamer</title><link>https://mozanunal.com/posts/2020/micropython-mqtt-stream/</link><pubDate>Wed, 26 Feb 2020 22:36:00 +0000</pubDate><author>mehmetozanunal@gmail.com (M.Ozan Unal)</author><guid>https://mozanunal.com/posts/2020/micropython-mqtt-stream/</guid><description>&lt;h1 class="relative group">Micropython Mqtt Streamer
+&lt;div id="micropython-mqtt-streamer" class="anchor">&lt;/div>
+&lt;span
+class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#micropython-mqtt-streamer" aria-label="Anchor">#&lt;/a>
+&lt;/span>
+&lt;/h1>
+&lt;p>Hello everyone, I have developed a micropython code to stream accelerometer data
 over mqtt. Also I have created a tool to visualize the data which is transferred
-from remote MQTT device which is executing micropython code.&lt;/p&gt;
-&lt;h2 id=&#34;demo&#34;&gt;Demo&lt;/h2&gt;
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube-nocookie.com/embed/5v9RwN818p8?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;&gt;&lt;/iframe&gt;
-    &lt;/div&gt;
-
-&lt;h2 id=&#34;development&#34;&gt;Development&lt;/h2&gt;
-&lt;p&gt;The first thing which I tried with micropython is connecting ESP8266 to a WiFi.
-I have tried the following script which I found from the official documentation
-of the micropython.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>[TR] IMU Açılarının 3 Boyutlu Olarak Görsellenmesi</title>
-      <link>https://mozanunal.com/2014/11/imu-aclarnn-3-boyutlu-olarak/</link>
-      <pubDate>Fri, 07 Nov 2014 14:15:00 +0000</pubDate>
-      <guid>https://mozanunal.com/2014/11/imu-aclarnn-3-boyutlu-olarak/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar!&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Bu yazımda size hava araçlarının en temel elektronik ekipmanı olan IMU
+from remote MQTT device which is executing micropython code.&lt;/p></description></item><item><title>[TR] IMU Açılarının 3 Boyutlu Olarak Görsellenmesi</title><link>https://mozanunal.com/posts/2014/imu-aclarnn-3-boyutlu-olarak/</link><pubDate>Fri, 07 Nov 2014 14:15:00 +0000</pubDate><author>mehmetozanunal@gmail.com (M.Ozan Unal)</author><guid>https://mozanunal.com/posts/2014/imu-aclarnn-3-boyutlu-olarak/</guid><description>&lt;p>&lt;strong>Herkese Merhabalar!&lt;/strong>&lt;/p>
+&lt;p>Bu yazımda size hava araçlarının en temel elektronik ekipmanı olan IMU
 modullerinden bahsetmek istiyorum. IMU modullerinin hayati önem taşımasının
 sebebi, modüllerin yönelim açılarını hesaplamak için kullanılmasıdır. En büyük
 yolcu uçağından, roketten en küçük bir quadrokoptere kadar tüm hava araçları
-stabil ve sağlıklı bir uçuş için bu modullerden birine sahip olmalıdırlar.&lt;/p&gt;
-&lt;p&gt;IMU ingilizcedeki &amp;ldquo;Inertial Mesurament Unit&amp;rdquo; kelime grubunun kısaltılmış
-halidir. IMU ile bir cismin uzaydaki 3 boyutlu yönelimi bulunabilir. 3 boyutlu
-yönelimi anlatmanın  en kolay yolu Euler Açılarını kullanmaktır. Havacılık
-sektöründe sıklıkla Euler açılarının özelleşmiş bir versiyonu olan &amp;ldquo;Yaw, Pitch,
-Roll&amp;rdquo; açıları kullanılmaktadır.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>[TR] IMU ile Kamera Gimbalı Kontrolü</title>
-      <link>https://mozanunal.com/2014/10/imu-ile-kamera-gimbal-kontrolu/</link>
-      <pubDate>Sat, 18 Oct 2014 18:22:00 +0000</pubDate>
-      <guid>https://mozanunal.com/2014/10/imu-ile-kamera-gimbal-kontrolu/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar!&lt;/strong&gt;&lt;br&gt;
+stabil ve sağlıklı bir uçuş için bu modullerden birine sahip olmalıdırlar.&lt;/p></description></item><item><title>[TR] IMU ile Kamera Gimbalı Kontrolü</title><link>https://mozanunal.com/posts/2014/imu-ile-kamera-gimbal-kontrolu/</link><pubDate>Sat, 18 Oct 2014 18:22:00 +0000</pubDate><author>mehmetozanunal@gmail.com (M.Ozan Unal)</author><guid>https://mozanunal.com/posts/2014/imu-ile-kamera-gimbal-kontrolu/</guid><description>&lt;p>&lt;strong>Herkese Merhabalar!&lt;/strong>&lt;br>
  Bu projemin amacı MPU6050 ile hesaplanan pitch ve roll açıları ile 2 eksenli
 bir gimbalı kontrol etmek. MPU6050 açılarını hesaplamak için FreeIMU
 kütüphanesini kullandım.
-&lt;a href=&#34;https://www.varesano.net/projects/hardware/FreeIMU&#34;&gt;Buradan indirebilirsiniz&lt;/a&gt;.
+&lt;a
+href="https://www.varesano.net/projects/hardware/FreeIMU"
+target="_blank"
+>Buradan indirebilirsiniz&lt;/a>
+.
 Aldığım açılar belli bir değerden büyükse servoların açılarını kademeli olarak
 azalttım veya artırdım.Bu sayede gimbal, MPU6050yi eğdiğim yönde dönmüş oldu.
-Projemin tanıtım videosunu aşağıdan izleyebilirsiniz.&lt;/p&gt;
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube-nocookie.com/embed/MQi57R7bO8M?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;&gt;&lt;/iframe&gt;
-    &lt;/div&gt;
-
-&lt;p&gt;Arkadaşlar projemin Arduino kodunu da paylaşıyorum.&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+Projemin tanıtım videosunu aşağıdan izleyebilirsiniz.&lt;/p></description></item></channel></rss>

@@ -1,33 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>Voltaj Regülatörü on mozanunal.com</title>
-    <link>https://mozanunal.com/tags/voltaj-reg%C3%BClat%C3%B6r%C3%BC/</link>
-    <description>Recent content in Voltaj Regülatörü on mozanunal.com</description>
-    <image>
-      <title>mozanunal.com</title>
-      <url>https://mozanunal.com/images/papermod-cover.png</url>
-      <link>https://mozanunal.com/images/papermod-cover.png</link>
-    </image>
-    <generator>Hugo -- 0.147.8</generator>
-    <language>en</language>
-    <copyright>mozanunal</copyright>
-    <lastBuildDate>Sun, 11 Jan 2015 23:30:00 +0000</lastBuildDate>
-    <atom:link href="https://mozanunal.com/tags/voltaj-reg%C3%BClat%C3%B6r%C3%BC/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>[TR] LM78XX Voltaj Regülatörü Entegrelerini Kullanma</title>
-      <link>https://mozanunal.com/2015/01/lm78xx-voltaj-regulatoru-entegrelerini/</link>
-      <pubDate>Sun, 11 Jan 2015 23:30:00 +0000</pubDate>
-      <guid>https://mozanunal.com/2015/01/lm78xx-voltaj-regulatoru-entegrelerini/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Tekrardan Merhabalar,&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Voltaj regülatörleri elektronik devrelerde büyük önem taşır. Çoğu mikroişlemci,
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Voltaj Regülatörü on mozanunal.com</title><link>https://mozanunal.com/tags/voltaj-reg%C3%BClat%C3%B6r%C3%BC/</link><description>Recent content in Voltaj Regülatörü on mozanunal.com</description><generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>mehmetozanunal@gmail.com (M.Ozan Unal)</managingEditor><webMaster>mehmetozanunal@gmail.com (M.Ozan Unal)</webMaster><copyright>© 2025 M.Ozan Unal</copyright><lastBuildDate>Sun, 11 Jan 2015 23:30:00 +0000</lastBuildDate><atom:link href="https://mozanunal.com/tags/voltaj-reg%C3%BClat%C3%B6r%C3%BC/index.xml" rel="self" type="application/rss+xml"/><item><title>[TR] LM78XX Voltaj Regülatörü Entegrelerini Kullanma</title><link>https://mozanunal.com/posts/2015/lm78xx-voltaj-regulatoru-entegrelerini/</link><pubDate>Sun, 11 Jan 2015 23:30:00 +0000</pubDate><author>mehmetozanunal@gmail.com (M.Ozan Unal)</author><guid>https://mozanunal.com/posts/2015/lm78xx-voltaj-regulatoru-entegrelerini/</guid><description>&lt;p>&lt;strong>Tekrardan Merhabalar,&lt;/strong>&lt;/p>
+&lt;p>Voltaj regülatörleri elektronik devrelerde büyük önem taşır. Çoğu mikroişlemci,
 entegre belli bir voltajda çalışır. Aynı zamanda bir devrede farklı voltajlarda
 çalışan bölümler olabilir. Bu gibi durumlarda regülatör kullanırız.Yazıda
 konumuz LM78XX entegreleri. LM78XX entegreleri, voltaj regülatörü
 entegreleridir. Geniş voltaj aralığında voltajı regüle edebilirler. Entegrelerin
 ismindeki son 2 rakam hangi voltaja regüle ettiğini gösterirler. Örneğin; LM7805
 5 volta, LM7812 12 volta regüle eder. Kullanımı oldukça kolay olduğu için
-sıklıkla kullanılırlar. Kullanımını 7805 üzerinden aşağıda anlattım.&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+sıklıkla kullanılırlar. Kullanımını 7805 üzerinden aşağıda anlattım.&lt;/p></description></item></channel></rss>

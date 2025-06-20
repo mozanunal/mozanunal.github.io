@@ -1,44 +1,7 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>Object Tracking on mozanunal.com</title>
-    <link>https://mozanunal.com/tags/object-tracking/</link>
-    <description>Recent content in Object Tracking on mozanunal.com</description>
-    <image>
-      <title>mozanunal.com</title>
-      <url>https://mozanunal.com/images/papermod-cover.png</url>
-      <link>https://mozanunal.com/images/papermod-cover.png</link>
-    </image>
-    <generator>Hugo -- 0.147.8</generator>
-    <language>en</language>
-    <copyright>mozanunal</copyright>
-    <lastBuildDate>Mon, 29 Sep 2014 15:54:00 +0000</lastBuildDate>
-    <atom:link href="https://mozanunal.com/tags/object-tracking/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>[TR] Gerçek Zamanlı Obje Takibi(EmguCv ile)</title>
-      <link>https://mozanunal.com/2014/09/gercek-zamanl-obje-takibiemgucv-ile/</link>
-      <pubDate>Mon, 29 Sep 2014 15:54:00 +0000</pubDate>
-      <guid>https://mozanunal.com/2014/09/gercek-zamanl-obje-takibiemgucv-ile/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar!&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Bu yazımda sizlere EmguCv kütüphanesi ile yazdığım görüntü işleme uygulaması
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Object Tracking on mozanunal.com</title><link>https://mozanunal.com/tags/object-tracking/</link><description>Recent content in Object Tracking on mozanunal.com</description><generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>mehmetozanunal@gmail.com (M.Ozan Unal)</managingEditor><webMaster>mehmetozanunal@gmail.com (M.Ozan Unal)</webMaster><copyright>© 2025 M.Ozan Unal</copyright><lastBuildDate>Mon, 29 Sep 2014 15:54:00 +0000</lastBuildDate><atom:link href="https://mozanunal.com/tags/object-tracking/index.xml" rel="self" type="application/rss+xml"/><item><title>[TR] Gerçek Zamanlı Obje Takibi(EmguCv ile)</title><link>https://mozanunal.com/posts/2014/gercek-zamanl-obje-takibiemgucv-ile/</link><pubDate>Mon, 29 Sep 2014 15:54:00 +0000</pubDate><author>mehmetozanunal@gmail.com (M.Ozan Unal)</author><guid>https://mozanunal.com/posts/2014/gercek-zamanl-obje-takibiemgucv-ile/</guid><description>&lt;p>&lt;strong>Herkese Merhabalar!&lt;/strong>&lt;/p>
+&lt;p>Bu yazımda sizlere EmguCv kütüphanesi ile yazdığım görüntü işleme uygulaması
 hakkında bilgi vermek istiyorum. Uygulamada ortamdan farklı bir renkte olan
 nesneyi rengine göre filtre edip onu gerçek zamanlı olarak takip etme
 amaçlanmıştır. Geliştirme ortamı olarak Microsoft Visual Studio, dil olarak C#
-programlama dili kullanılmıştır.&lt;br&gt;
-Programın genel algoritmasına gelirsek, şöyle özetleyebiliriz;&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Görüntü kameradan RGB formatında alınıp başka bir renkli resim görüntüleme
-yöntemi olan HSV formatına dönüştürülmüştür.&lt;/li&gt;
-&lt;li&gt;HSV filtresi için uygun değerler test edilip bulunmuştur ve renk filtesi
-uygunlanmıştır.&lt;/li&gt;
-&lt;li&gt;Renk filtresinden kalan gürültüler erode ve dilate morfolojik operatörleriyle
-azaltılmıştır.&lt;/li&gt;
-&lt;li&gt;Counter Analysis ile görüntü &amp;ldquo;counter&amp;quot;lara ayrılmıştır. Sadece &amp;ldquo;counter&amp;rdquo;
-alanı belli bir değerden büyük olan &amp;ldquo;counter&amp;quot;lar dikkat alınmıştır. Bu sayede
-son kalan gürültüler de engelenmiştir.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Projemin tanıtım videosuna aşağıdan ulaşabilirsiniz. Kodlar videoda
-gösterilmektedir. Tekrar görüşmek üzere&amp;hellip;&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+programlama dili kullanılmıştır.&lt;br>
+Programın genel algoritmasına gelirsek, şöyle özetleyebiliriz;&lt;/p></description></item></channel></rss>

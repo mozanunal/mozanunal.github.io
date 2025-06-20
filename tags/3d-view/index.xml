@@ -1,26 +1,5 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>3D View on mozanunal.com</title>
-    <link>https://mozanunal.com/tags/3d-view/</link>
-    <description>Recent content in 3D View on mozanunal.com</description>
-    <image>
-      <title>mozanunal.com</title>
-      <url>https://mozanunal.com/images/papermod-cover.png</url>
-      <link>https://mozanunal.com/images/papermod-cover.png</link>
-    </image>
-    <generator>Hugo -- 0.147.8</generator>
-    <language>en</language>
-    <copyright>mozanunal</copyright>
-    <lastBuildDate>Tue, 31 Mar 2015 06:55:00 +0000</lastBuildDate>
-    <atom:link href="https://mozanunal.com/tags/3d-view/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>[TR] Bakış Açısı Tabanlı 3 Boyutlu Görüş Versiyon 2.00</title>
-      <link>https://mozanunal.com/2015/03/baks-acs-tabanl-3-boyutlu-gorus2/</link>
-      <pubDate>Tue, 31 Mar 2015 06:55:00 +0000</pubDate>
-      <guid>https://mozanunal.com/2015/03/baks-acs-tabanl-3-boyutlu-gorus2/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Bu yazımda daha önce yaptığım bir uygulamanın 2. versiyonundan bahsedeceğim.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>3D View on mozanunal.com</title><link>https://mozanunal.com/tags/3d-view/</link><description>Recent content in 3D View on mozanunal.com</description><generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>mehmetozanunal@gmail.com (M.Ozan Unal)</managingEditor><webMaster>mehmetozanunal@gmail.com (M.Ozan Unal)</webMaster><copyright>© 2025 M.Ozan Unal</copyright><lastBuildDate>Tue, 31 Mar 2015 06:55:00 +0000</lastBuildDate><atom:link href="https://mozanunal.com/tags/3d-view/index.xml" rel="self" type="application/rss+xml"/><item><title>[TR] Bakış Açısı Tabanlı 3 Boyutlu Görüş Versiyon 2.00</title><link>https://mozanunal.com/posts/2015/baks-acs-tabanl-3-boyutlu-gorus2/</link><pubDate>Tue, 31 Mar 2015 06:55:00 +0000</pubDate><author>mehmetozanunal@gmail.com (M.Ozan Unal)</author><guid>https://mozanunal.com/posts/2015/baks-acs-tabanl-3-boyutlu-gorus2/</guid><description>&lt;p>&lt;strong>Herkese Merhabalar,&lt;/strong>&lt;/p>
+&lt;p>Bu yazımda daha önce yaptığım bir uygulamanın 2. versiyonundan bahsedeceğim.
 Programımı daha önce şöyle anlatmıştım:  Bu program sayesinde ekstra hiç bir
 ekipman kullanmadan 2 boyutlu bilgisayar ekranını 3 boyutlu görme uygulamasını
 gerçekleştirebileceğimiz bir şeye dönüştürüyoruz. Bunu nasıl yapıyor diye
@@ -28,15 +7,8 @@ soracak olursanız görüntü işleme sayesinde!.Programda webcam üzerinden yü
 tespiti yapılıyor ve ekrana nereden baktığı tespit ediliyor. Hesaplanan bu açı
 daha sonra kullandığım 3 boyut kütüphanesi olan OpenGL&amp;rsquo;in kamerasını ayarlamak
 için kullanılıyor. böylece ekrana bakış yönünüze göre değişen bir 3D görme
-uygulaması hazırlanmış oluyor.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>[TR] Bakış Açısı Tabanlı 3 Boyutlu Görüş</title>
-      <link>https://mozanunal.com/2014/12/baks-acs-tabanl-3-boyutlu-gorus/</link>
-      <pubDate>Tue, 09 Dec 2014 18:13:00 +0000</pubDate>
-      <guid>https://mozanunal.com/2014/12/baks-acs-tabanl-3-boyutlu-gorus/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Bu yazımda size uzun zamandır üzerinde araştırmalar yaptığım ve bir şeyler
+uygulaması hazırlanmış oluyor.&lt;/p></description></item><item><title>[TR] Bakış Açısı Tabanlı 3 Boyutlu Görüş</title><link>https://mozanunal.com/posts/2014/baks-acs-tabanl-3-boyutlu-gorus/</link><pubDate>Tue, 09 Dec 2014 18:13:00 +0000</pubDate><author>mehmetozanunal@gmail.com (M.Ozan Unal)</author><guid>https://mozanunal.com/posts/2014/baks-acs-tabanl-3-boyutlu-gorus/</guid><description>&lt;p>&lt;strong>Herkese Merhabalar,&lt;/strong>&lt;/p>
+&lt;p>Bu yazımda size uzun zamandır üzerinde araştırmalar yaptığım ve bir şeyler
 üretmek istediğim 3 boyutlu görme konusunda yaptığım programdan bahsedeceğim. Bu
 program sayesinde ekstra hiç bir ekipman kullanmadan 2 boyutlu bilgisayar
 ekranını 3 boyutlu görme uygulamasını gerçekleştirebileceğimiz bir şeye
@@ -44,7 +16,4 @@ dönüştürüyoruz. Bunu nasıl yapıyor diye soracak olursanız görüntü iş
 sayesinde!. Programda webcam üzerinden yüz tespiti yapılıyor ve ekrana nereden
 baktığı tespit ediliyor. Hesaplanan bu açı daha sonra kullandığım 3 boyut
 kütüphanesi olan OpenGL&amp;rsquo;in kamerasını ayarlamak için kullanılıyor. böylece
-ekrana bakış yönünüze göre değişen bir 3D görme uygulaması hazırlanmış oluyor.&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+ekrana bakış yönünüze göre değişen bir 3D görme uygulaması hazırlanmış oluyor.&lt;/p></description></item></channel></rss>

@@ -1,71 +1,26 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>Software Defined Radio on mozanunal.com</title>
-    <link>https://mozanunal.com/tags/software-defined-radio/</link>
-    <description>Recent content in Software Defined Radio on mozanunal.com</description>
-    <image>
-      <title>mozanunal.com</title>
-      <url>https://mozanunal.com/images/papermod-cover.png</url>
-      <link>https://mozanunal.com/images/papermod-cover.png</link>
-    </image>
-    <generator>Hugo -- 0.147.8</generator>
-    <language>en</language>
-    <copyright>mozanunal</copyright>
-    <lastBuildDate>Mon, 20 Aug 2018 15:14:07 +0000</lastBuildDate>
-    <atom:link href="https://mozanunal.com/tags/software-defined-radio/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>[TR] Orange Pi Zero Üzerinde Dump1090 Çalıştırmak</title>
-      <link>https://mozanunal.com/2018/08/opizero-dump1090/</link>
-      <pubDate>Mon, 20 Aug 2018 15:14:07 +0000</pubDate>
-      <guid>https://mozanunal.com/2018/08/opizero-dump1090/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Herkese merhabalar,&lt;/strong&gt; Bugünkü yazımda dump1090 programını nasıl bir orange pi
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Software Defined Radio on mozanunal.com</title><link>https://mozanunal.com/tags/software-defined-radio/</link><description>Recent content in Software Defined Radio on mozanunal.com</description><generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>mehmetozanunal@gmail.com (M.Ozan Unal)</managingEditor><webMaster>mehmetozanunal@gmail.com (M.Ozan Unal)</webMaster><copyright>© 2025 M.Ozan Unal</copyright><lastBuildDate>Mon, 20 Aug 2018 15:14:07 +0000</lastBuildDate><atom:link href="https://mozanunal.com/tags/software-defined-radio/index.xml" rel="self" type="application/rss+xml"/><item><title>[TR] Orange Pi Zero Üzerinde Dump1090 Çalıştırmak</title><link>https://mozanunal.com/posts/2018/opizero-dump1090/</link><pubDate>Mon, 20 Aug 2018 15:14:07 +0000</pubDate><author>mehmetozanunal@gmail.com (M.Ozan Unal)</author><guid>https://mozanunal.com/posts/2018/opizero-dump1090/</guid><description>&lt;p>&lt;strong>Herkese merhabalar,&lt;/strong> Bugünkü yazımda dump1090 programını nasıl bir orange pi
 zero üzerinde çalıştırabiliriz ondan bahsedeceğim. Bildiğiniz gibi dump1090 sdr
 kullanarak uçakların adsb yayınlarını çözmeye yarayan bir kod parçası. Bu
 projeyi gerçekleştirdiğim mini pc olarak orange pi zero seçmemin sebebi ise
 maliyeti ve kompaklığı. 5-10 dolara satın alınabiliniyor ve boyutları gerçekten
-küçük.&lt;/p&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://mozanunal.com/images/1534768337583.png&#34;&gt;&lt;/p&gt;
-&lt;h2 id=&#34;rtlsdr-sürücüsünün-kurulması&#34;&gt;Rtlsdr Sürücüsünün Kurulması&lt;/h2&gt;
-&lt;p&gt;Ben orange pi zeroyu armbian işletim sistemi ve mainline kernel ile
-kullanıyorum. Sistemde uname -a çalıştırdığımda aldığım çıktı aşağıdaki gibi:&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>[TR] RF Mesafe Hesaplama Exceli</title>
-      <link>https://mozanunal.com/2016/01/rf-mesafe-hesaplama-exceli/</link>
-      <pubDate>Sat, 02 Jan 2016 04:34:00 +0000</pubDate>
-      <guid>https://mozanunal.com/2016/01/rf-mesafe-hesaplama-exceli/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Merhaba Arkadaşlar,&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Bugünkü yazımda bir radyo modülünün teorik olarak ne kadar uzaklıkta
+küçük.&lt;/p></description></item><item><title>[TR] RF Mesafe Hesaplama Exceli</title><link>https://mozanunal.com/posts/2016/rf-mesafe-hesaplama-exceli/</link><pubDate>Sat, 02 Jan 2016 04:34:00 +0000</pubDate><author>mehmetozanunal@gmail.com (M.Ozan Unal)</author><guid>https://mozanunal.com/posts/2016/rf-mesafe-hesaplama-exceli/</guid><description>&lt;p>&lt;strong>Merhaba Arkadaşlar,&lt;/strong>&lt;/p>
+&lt;p>Bugünkü yazımda bir radyo modülünün teorik olarak ne kadar uzaklıkta
 çalışabildiğini hesaplayan projemi paylaşacağım. Amacım haberleşme modülleri
 seçilirken kolayca karşılaştırmalar yapılabilecek basit bir hesaplama ortamı
 oluşturmaktı. Bu tarz işler için en uygun program olduğunu düşündüğüm Excel
-programını kullandım.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.mikrodalgamuhendisi.com/index.php/rf-soru-cevap-anasayfa/90-yeni-baslayanlar-icin-iletisim-mesafesi-hesab&#34;&gt;Öncelikle bu hesabı anlamama şuradaki link çok yardımcı oldu&lt;/a&gt;.
-Öncelikle onu incelemenizi tavsiye ederim. Oradaki bilgileri kısaca özetleyecek
-olursam:&lt;/p&gt;
-&lt;p&gt;İlk olarak mesafeyi temel olarak etkilen 2 kavram var. Birincisi vericinin çıkış
-gücü, ikincisi ise alıcının alış hassasiyeti. Özellikle 2. etken sık sık önemi
-unutulan konulardan biri. Genelde aktarılan veri akış hızının artmasıyla alış
-hassasiyeti düşmektedir. Yeterli olacak minimum veri akış hızını seçmek de
-önemli noktalardan bir tanesidir. Çıkış gücüne anten ve kuvvetlendirici
-kazançları da eklenir. Bulunan bu değere toplam güç denir. Hesabımızı belirleyen
-bağıntı ise şöyledir:&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>[TR] SDR ile Uçakların Yayınlarından Yerlerini Tespit Etmek</title>
-      <link>https://mozanunal.com/2015/01/sdr-ile-ucaklarn-yaynlarndan-yerlerini/</link>
-      <pubDate>Fri, 09 Jan 2015 23:35:00 +0000</pubDate>
-      <guid>https://mozanunal.com/2015/01/sdr-ile-ucaklarn-yaynlarndan-yerlerini/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Merhabalar!&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Bugünkü yazımda SDR ile uçaklardan veri alıp onları haritada takip etmeyi
+programını kullandım.&lt;/p></description></item><item><title>[TR] SDR ile Uçakların Yayınlarından Yerlerini Tespit Etmek</title><link>https://mozanunal.com/posts/2015/sdr-ile-ucaklarn-yaynlarndan-yerlerini/</link><pubDate>Fri, 09 Jan 2015 23:35:00 +0000</pubDate><author>mehmetozanunal@gmail.com (M.Ozan Unal)</author><guid>https://mozanunal.com/posts/2015/sdr-ile-ucaklarn-yaynlarndan-yerlerini/</guid><description>&lt;p>&lt;strong>Merhabalar!&lt;/strong>&lt;/p>
+&lt;p>Bugünkü yazımda SDR ile uçaklardan veri alıp onları haritada takip etmeyi
 anlatacağım. Bunun için gerekli olan yazılımlar ADSBsharp ve ADSBScope
 yazılımlarıdır. Ben donanım olarak 10 $ Çin&amp;rsquo;den aldığım SDR&amp;rsquo;yi kullandım. Anten
 olarak ise 5 TL&amp;rsquo;lik TV anteni kullandık. Bu anten tabi ki bu iş için uygun anten
 değil. Çalışacağımız frekans 1090 Mhz benim antenimle sadece yakın çevredeki
 uçaklardan veri almak mümkün. En kısa zamanda antenlerle ilgili bir yazı
 yayınlayacağım o zamana kadar
-&lt;a href=&#34;https://www.rtl-sdr.com/adsb-aircraft-radar-with-rtl-sdr/&#34;&gt;şurayı inceleyebilirsiniz&lt;/a&gt;.
+&lt;a
+href="https://www.rtl-sdr.com/adsb-aircraft-radar-with-rtl-sdr/"
+target="_blank"
+>şurayı inceleyebilirsiniz&lt;/a>
+.
 Yapacağımız iş temel olarak söyle: Uçaklar uçarken koordinantları, rotaları vb
 şeklinde ADSB diye kısaltılan bir bilgilendirme dataları yollayarak uçarlar.
 Bizim SDR ile yaptığımız şey 1090 Mhz sinyalleri alıp onları decode etmek.
@@ -74,46 +29,25 @@ kullanabilirsiniz. Daha sonra decode edilen data port üzerinden başka bir
 programa aktarılır. Bu program ile elde edilen veriler bir arayüze aktarılır ve
 uçak harita üzerinde gösterilir. Haritada gösterme işi için ADSBScope
 yazılıımını kullandım. Aşağıda yazılımların nasıl kullanıldığını anlatığım
-videoyu paylaşıyorum 2 adet fotoğrafla beraber. Görüşmek üzere&amp;hellip;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>[TR] SDR ile Bilgisayardan TV izlemek</title>
-      <link>https://mozanunal.com/2015/01/sdr-ile-bilgisayardan-tv-izlemek/</link>
-      <pubDate>Fri, 09 Jan 2015 03:14:00 +0000</pubDate>
-      <guid>https://mozanunal.com/2015/01/sdr-ile-bilgisayardan-tv-izlemek/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar!&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;SDR için ilk uygulama olarak TV izleme uygulamasını seçtim. Çünkü bu modüller Tv
+videoyu paylaşıyorum 2 adet fotoğrafla beraber. Görüşmek üzere&amp;hellip;&lt;/p></description></item><item><title>[TR] SDR ile Bilgisayardan TV izlemek</title><link>https://mozanunal.com/posts/2015/sdr-ile-bilgisayardan-tv-izlemek/</link><pubDate>Fri, 09 Jan 2015 03:14:00 +0000</pubDate><author>mehmetozanunal@gmail.com (M.Ozan Unal)</author><guid>https://mozanunal.com/posts/2015/sdr-ile-bilgisayardan-tv-izlemek/</guid><description>&lt;p>&lt;strong>Herkese Merhabalar!&lt;/strong>&lt;/p>
+&lt;p>SDR için ilk uygulama olarak TV izleme uygulamasını seçtim. Çünkü bu modüller Tv
 alıcı modülleri olarak satılıyorlar. Bunu yapmak için 2 program seçeneğiniz var
 1.si TVSharp, ikincisi ise SDR# + PAL / SECAM TV  plugin. Program ve plugin aynı
 kişi tarafından yazılmıştır ve kullanımları benzerdir. Aşağıda programların
 kullanıldığı bir video hazırladım. Antenim ve evimin konumu kötü olduğu için
 yayın kalitesi çok kötü ama en azından yazılımsal olarak nasıl hazırlık
-yapılması gerektiğini anlatmaya çalıştım. Tekrar görüşmek üzere&amp;hellip;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>[TR] Software Defined Radioya Giriş</title>
-      <link>https://mozanunal.com/2015/01/software-defined-radioya-giris/</link>
-      <pubDate>Fri, 02 Jan 2015 22:55:00 +0000</pubDate>
-      <guid>https://mozanunal.com/2015/01/software-defined-radioya-giris/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar!&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Bugünkü yazımda yeni bir hobimden bahsetmet istiyorum. Yeni hobim, &amp;ldquo;Software
+yapılması gerektiğini anlatmaya çalıştım. Tekrar görüşmek üzere&amp;hellip;&lt;/p></description></item><item><title>[TR] Software Defined Radioya Giriş</title><link>https://mozanunal.com/posts/2015/software-defined-radioya-giris/</link><pubDate>Fri, 02 Jan 2015 22:55:00 +0000</pubDate><author>mehmetozanunal@gmail.com (M.Ozan Unal)</author><guid>https://mozanunal.com/posts/2015/software-defined-radioya-giris/</guid><description>&lt;p>&lt;strong>Herkese Merhabalar!&lt;/strong>&lt;/p>
+&lt;p>Bugünkü yazımda yeni bir hobimden bahsetmet istiyorum. Yeni hobim, &amp;ldquo;Software
 defined radio&amp;rdquo;. Bu aslında bir rf modulü, Farkı ise belli frekans aralığında
 dinleme yapabilmesi. Yani bu sayede farklı frekanslardaki radyo dalgalarını alıp
 inceleyebilir, çözümleyebilirsiniz. SDR hakkında deneysel bir şeyler yapmak
 isterseniz en iyi yöntem bilgisayar için ucuz tv alıcılarından almak. Ben
-Aliexpress sitesinden 10 $ aldım. En ucuz SDR&amp;rsquo;ler genelde &lt;strong&gt;RTL2832U+R820T çip
-setlidir.&lt;/strong&gt; Benim aldığım modül 25MHz - 1700MHz arası tarama yapabiliyor. Kendi
+Aliexpress sitesinden 10 $ aldım. En ucuz SDR&amp;rsquo;ler genelde &lt;strong>RTL2832U+R820T çip
+setlidir.&lt;/strong> Benim aldığım modül 25MHz - 1700MHz arası tarama yapabiliyor. Kendi
 anteni ve kumandasıyla beraber geldi. Genelde bu modullerle gelen antenlerle
 FMden başka bi şey dinleyebilmek pek mümkün olmuyor. Fakat geliştirilen uygun
 antenlerle Uluslararası Uzay İstasyonundan(ISS) bile veri alabilmek mümkün.
-Bunlardan kurulumdan sonra bahsedeceğim.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>[TR] İlk Yayın</title>
-      <link>https://mozanunal.com/2014/05/ilk-yayn/</link>
-      <pubDate>Sun, 25 May 2014 03:44:00 +0000</pubDate>
-      <guid>https://mozanunal.com/2014/05/ilk-yayn/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar!&lt;/strong&gt;&lt;br&gt;
+Bunlardan kurulumdan sonra bahsedeceğim.&lt;/p></description></item><item><title>[TR] İlk Yayın</title><link>https://mozanunal.com/posts/2014/ilk-yayn/</link><pubDate>Sun, 25 May 2014 03:44:00 +0000</pubDate><author>mehmetozanunal@gmail.com (M.Ozan Unal)</author><guid>https://mozanunal.com/posts/2014/ilk-yayn/</guid><description>&lt;p>&lt;strong>Herkese Merhabalar!&lt;/strong>&lt;br>
     Yaptığım projeleri arşivleyebilmek ve bunlardan herkesin yararlanabilmesi
 için blog açmaya karar verdim. Blogumda size C# üzerinden arayüz yapımı,
 bilgisayar mikroişlemci iletişimi, arduino uygulamaları, pic uygulamaları ve
@@ -127,7 +61,4 @@ sistemleri üzerine çalışmalar yaptım. Gps, IMU, ve daha bir sürü sensörd
 aldığımız verileri, yer istasyonuna iletmek ve arayüz programıyla bunların
 görsellenmesiydi görevim. Şimdi ise insansız hava araçları ve görüntü işleme
 üzerine çalışmaktayım. Aynı zamanda hobi olarak pic ve arduino devreleri,
-çeşitli devreler üretmeye, yapmaya devam ediyorum. Tekrar görüşmek üzere&amp;hellip;&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+çeşitli devreler üretmeye, yapmaya devam ediyorum. Tekrar görüşmek üzere&amp;hellip;&lt;/p></description></item></channel></rss>

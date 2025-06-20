@@ -1,26 +1,5 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>Bluetooth Speaker on mozanunal.com</title>
-    <link>https://mozanunal.com/tags/bluetooth-speaker/</link>
-    <description>Recent content in Bluetooth Speaker on mozanunal.com</description>
-    <image>
-      <title>mozanunal.com</title>
-      <url>https://mozanunal.com/images/papermod-cover.png</url>
-      <link>https://mozanunal.com/images/papermod-cover.png</link>
-    </image>
-    <generator>Hugo -- 0.147.8</generator>
-    <language>en</language>
-    <copyright>mozanunal</copyright>
-    <lastBuildDate>Mon, 05 Dec 2016 21:23:00 +0000</lastBuildDate>
-    <atom:link href="https://mozanunal.com/tags/bluetooth-speaker/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>[TR] DIY Bluetooth Speaker</title>
-      <link>https://mozanunal.com/2016/12/diy-bluetooth-speaker/</link>
-      <pubDate>Mon, 05 Dec 2016 21:23:00 +0000</pubDate>
-      <guid>https://mozanunal.com/2016/12/diy-bluetooth-speaker/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Merhaba Arkadaşlar,&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Bu projemde nasıl elimizde kalan fazla hoparlörleri bluetooth speakera
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Bluetooth Speaker on mozanunal.com</title><link>https://mozanunal.com/tags/bluetooth-speaker/</link><description>Recent content in Bluetooth Speaker on mozanunal.com</description><generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>mehmetozanunal@gmail.com (M.Ozan Unal)</managingEditor><webMaster>mehmetozanunal@gmail.com (M.Ozan Unal)</webMaster><copyright>© 2025 M.Ozan Unal</copyright><lastBuildDate>Mon, 05 Dec 2016 21:23:00 +0000</lastBuildDate><atom:link href="https://mozanunal.com/tags/bluetooth-speaker/index.xml" rel="self" type="application/rss+xml"/><item><title>[TR] DIY Bluetooth Speaker</title><link>https://mozanunal.com/posts/2016/diy-bluetooth-speaker/</link><pubDate>Mon, 05 Dec 2016 21:23:00 +0000</pubDate><author>mehmetozanunal@gmail.com (M.Ozan Unal)</author><guid>https://mozanunal.com/posts/2016/diy-bluetooth-speaker/</guid><description>&lt;p>&lt;strong>Merhaba Arkadaşlar,&lt;/strong>&lt;/p>
+&lt;p>Bu projemde nasıl elimizde kalan fazla hoparlörleri bluetooth speakera
 dönüştürebileceğinizden bahsedeceğim. Geçen yaz bir arkadaşımın 5 +1 ses
 sisteminin kuvvetlendirici kutusu yanmış böyle olunca da hoparlörler boşa çıkmış
 ben de bir projede kullanırım diyerek kenara ayırdım. Aklıma sonradan bunları
@@ -31,7 +10,4 @@ de kuvvetlendirici ekledim. Kuvvetlendirici  olarak PAM8610 seçtim. Kendisi bi
 class D güç kuvvetlendiricisi yani en verimli olanlarından. Yüksek verini
 sayesinde çok az enerji ısıya dönüşüyor ve soğutucu metal parçaya vb ihtiyaç
 duymuyor. Yaptığım proje ile bu hoparlörleri, bluetooth üzerinden ya da doğrudan
-kablo ile ses çıkışlarına bağlanabilecek duruma getirmiş oluyorum.&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+kablo ile ses çıkışlarına bağlanabilecek duruma getirmiş oluyorum.&lt;/p></description></item></channel></rss>

@@ -1,35 +1,6 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>FIR Filtre Dizayn on mozanunal.com</title>
-    <link>https://mozanunal.com/tags/fir-filtre-dizayn/</link>
-    <description>Recent content in FIR Filtre Dizayn on mozanunal.com</description>
-    <image>
-      <title>mozanunal.com</title>
-      <url>https://mozanunal.com/images/papermod-cover.png</url>
-      <link>https://mozanunal.com/images/papermod-cover.png</link>
-    </image>
-    <generator>Hugo -- 0.147.8</generator>
-    <language>en</language>
-    <copyright>mozanunal</copyright>
-    <lastBuildDate>Fri, 07 Apr 2017 00:13:00 +0000</lastBuildDate>
-    <atom:link href="https://mozanunal.com/tags/fir-filtre-dizayn/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>[TR] SimpleDSP: FIR filtreleme özelliği eklendi</title>
-      <link>https://mozanunal.com/2017/04/simpledsp-fir-filtreleme-ozelligi/</link>
-      <pubDate>Fri, 07 Apr 2017 00:13:00 +0000</pubDate>
-      <guid>https://mozanunal.com/2017/04/simpledsp-fir-filtreleme-ozelligi/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;br&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>FIR Filtre Dizayn on mozanunal.com</title><link>https://mozanunal.com/tags/fir-filtre-dizayn/</link><description>Recent content in FIR Filtre Dizayn on mozanunal.com</description><generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>mehmetozanunal@gmail.com (M.Ozan Unal)</managingEditor><webMaster>mehmetozanunal@gmail.com (M.Ozan Unal)</webMaster><copyright>© 2025 M.Ozan Unal</copyright><lastBuildDate>Fri, 07 Apr 2017 00:13:00 +0000</lastBuildDate><atom:link href="https://mozanunal.com/tags/fir-filtre-dizayn/index.xml" rel="self" type="application/rss+xml"/><item><title>[TR] SimpleDSP: FIR filtreleme özelliği eklendi</title><link>https://mozanunal.com/posts/2017/simpledsp-fir-filtreleme-ozelligi/</link><pubDate>Fri, 07 Apr 2017 00:13:00 +0000</pubDate><author>mehmetozanunal@gmail.com (M.Ozan Unal)</author><guid>https://mozanunal.com/posts/2017/simpledsp-fir-filtreleme-ozelligi/</guid><description>&lt;p>&lt;strong>Herkese Merhabalar,&lt;/strong>&lt;br>
 Bildiğiniz gibi gömülü sistemlerde kullanılabilecek basit bir DSP kütüphanesi
 geliştirmeye çalışıyorum son olarak FIR filtreleme özelliğini bu kütüphaneye
 ekledim. FIR filtre ile alçak geçiren, yüksek geçiren, band geçiren veya
 durduran filtreler tasarlayabilirsiniz. FIR filtreler yapısı gereği hep stabil
-filtrelerdir. Bu nedenle bir kararlılık analizi gerektirmeden kullanılabilirler.&lt;/p&gt;
-&lt;p&gt;Ayrıca wiki sayfasını kesinlikle ziyaret etmenizi tavsiye ederim orada Matlab
-veya Octave kullanarak nasıl filtreyi tasarlayacağınız. Filtreyi nasıl
-kullanacağınız ve karakteristiğini nasıl görselleyebileceğinize kadar bir çok
-bilgi bulunmakta.
-&lt;a href=&#34;https://github.com/mozanunal/SimpleDSP/wiki/FIR&#34;&gt;Ziyaret etmek için tıklayın.&lt;/a&gt;&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+filtrelerdir. Bu nedenle bir kararlılık analizi gerektirmeden kullanılabilirler.&lt;/p></description></item></channel></rss>

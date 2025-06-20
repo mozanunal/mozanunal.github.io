@@ -1,65 +1,35 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>Arduino Grafik on mozanunal.com</title>
-    <link>https://mozanunal.com/tags/arduino-grafik/</link>
-    <description>Recent content in Arduino Grafik on mozanunal.com</description>
-    <image>
-      <title>mozanunal.com</title>
-      <url>https://mozanunal.com/images/papermod-cover.png</url>
-      <link>https://mozanunal.com/images/papermod-cover.png</link>
-    </image>
-    <generator>Hugo -- 0.147.8</generator>
-    <language>en</language>
-    <copyright>mozanunal</copyright>
-    <lastBuildDate>Tue, 23 Dec 2014 02:59:00 +0000</lastBuildDate>
-    <atom:link href="https://mozanunal.com/tags/arduino-grafik/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>[TR] Serial Port Grapher</title>
-      <link>https://mozanunal.com/2014/12/serial-port-grapher/</link>
-      <pubDate>Tue, 23 Dec 2014 02:59:00 +0000</pubDate>
-      <guid>https://mozanunal.com/2014/12/serial-port-grapher/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;br&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Arduino Grafik on mozanunal.com</title><link>https://mozanunal.com/tags/arduino-grafik/</link><description>Recent content in Arduino Grafik on mozanunal.com</description><generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>mehmetozanunal@gmail.com (M.Ozan Unal)</managingEditor><webMaster>mehmetozanunal@gmail.com (M.Ozan Unal)</webMaster><copyright>© 2025 M.Ozan Unal</copyright><lastBuildDate>Tue, 23 Dec 2014 02:59:00 +0000</lastBuildDate><atom:link href="https://mozanunal.com/tags/arduino-grafik/index.xml" rel="self" type="application/rss+xml"/><item><title>[TR] Serial Port Grapher</title><link>https://mozanunal.com/posts/2014/serial-port-grapher/</link><pubDate>Tue, 23 Dec 2014 02:59:00 +0000</pubDate><author>mehmetozanunal@gmail.com (M.Ozan Unal)</author><guid>https://mozanunal.com/posts/2014/serial-port-grapher/</guid><description>&lt;p>&lt;strong>Herkese Merhabalar,&lt;/strong>&lt;br>
 İlk yazılarımdan birinde seri port üzerinden grafik çizen bir programın C#&amp;rsquo;ta
 nasıl yazılabileceğini
-anlatmıştım(&lt;a href=&#34;https://mozanunal.com/2014/05/c-gercek-zamanl-grafik-cizme-program/&#34;&gt;Buradan ulaşabilirsiniz&lt;/a&gt;.)
+anlatmıştım(&lt;a
+href="https://mozanunal.com/2014/05/c-gercek-zamanl-grafik-cizme-program/"
+target="_blank"
+>Buradan ulaşabilirsiniz&lt;/a>
+.)
 Bu yazımda ise programın derlenmiş ve setup haline getirilmiş halini
 paylaşıyorum. Fark ettim ki bir sürü insan böyle bir programa ihtiyaç
 duyuyormuş. Bu program sayesinde Arduinonuzdan(başka işlemciler veya boardlar da
 olabilir.) veya herhangi bir serial port cihazından gönderdiğiniz &amp;ldquo;string&amp;rdquo;
 formattındaki verilerin gerçek zamanlı  olarak grafiğini çizdirebilirsiniz. Tek
-dikkat etmeniz gereken gelen verinin&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$,data1,data2,data3,
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;şeklinde olmasıdır aksi takdirde program gelen veriyi dikkate almaz. Programla
-alakalı iyi, kötü görüşlerinizi veya sorunları, bugları bana yollayabilirsiniz.&lt;br&gt;
-&lt;a href=&#34;https://drive.google.com/file/d/0B5j__Lyt9ozbU3JELTV3MWpqWFk/view?usp=sharing&#34;&gt;Programı buradan indirebiliriniz&lt;/a&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>[TR] C# Gerçek Zamanlı Grafik Çizme Programı</title>
-      <link>https://mozanunal.com/2014/05/c-gercek-zamanl-grafik-cizme-program/</link>
-      <pubDate>Tue, 27 May 2014 05:17:00 +0000</pubDate>
-      <guid>https://mozanunal.com/2014/05/c-gercek-zamanl-grafik-cizme-program/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar!&lt;/strong&gt;&lt;br&gt;
-&lt;a href=&#34;https://github.com/mozanunal/serialPortGrapher&#34;&gt;Programın kaynak koduna buradan ulaşabilirsiniz.&lt;/a&gt;&lt;br&gt;
+dikkat etmeniz gereken gelen verinin&lt;/p></description></item><item><title>[TR] C# Gerçek Zamanlı Grafik Çizme Programı</title><link>https://mozanunal.com/posts/2014/c-gercek-zamanl-grafik-cizme-program/</link><pubDate>Tue, 27 May 2014 05:17:00 +0000</pubDate><author>mehmetozanunal@gmail.com (M.Ozan Unal)</author><guid>https://mozanunal.com/posts/2014/c-gercek-zamanl-grafik-cizme-program/</guid><description>&lt;p>&lt;strong>Herkese Merhabalar!&lt;/strong>&lt;br>
+&lt;a
+href="https://github.com/mozanunal/serialPortGrapher"
+target="_blank"
+>Programın kaynak koduna buradan ulaşabilirsiniz.&lt;/a>
+&lt;br>
 İkinci yazımda C# ile gerçek zamanlı grafik çizdirme uygulamasından
 bahsedeceğim. Bu uygulamada C# programlama dili ve Microsoft Visual Studio 2010
 kullanılmıştır. C# ile grafik çizmemize olanak sağlayan zed graph
 kütüphanesinden
-yararlanılmıştır.&lt;a href=&#34;https://zedgraph.sourceforge.net/index.html&#34;&gt;Bu kütüphaneyi buradan indirebilirsiniz&lt;/a&gt;.
+yararlanılmıştır.&lt;a
+href="https://zedgraph.sourceforge.net/index.html"
+target="_blank"
+>Bu kütüphaneyi buradan indirebilirsiniz&lt;/a>
+.
 Sistemin genel algoritmasına bakarsak şöyle çalışır; seri porttan veri okunur,
 veri aralardaki virgüllere göre parse edilip labellera aktarılır, Eklenen
 &amp;ldquo;Timer&amp;rdquo; öğesi ile timerın her periyodunda zaman belirten labela geçen zaman
 kadar eklenir böylece kaçıncı saniye olduğu tutulur, aynı zamanda timerın her
 bir periyodunda x değerleri zaman, y değerleri data noktaları olmak üzere
 grafiğe bir nokta eklenir. Şimdi çalışma şeklini daha ayrıntılı bir şekilde
-inceleyelim.&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+inceleyelim.&lt;/p></description></item></channel></rss>

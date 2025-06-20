@@ -1,26 +1,5 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>Wemos on mozanunal.com</title>
-    <link>https://mozanunal.com/tags/wemos/</link>
-    <description>Recent content in Wemos on mozanunal.com</description>
-    <image>
-      <title>mozanunal.com</title>
-      <url>https://mozanunal.com/images/papermod-cover.png</url>
-      <link>https://mozanunal.com/images/papermod-cover.png</link>
-    </image>
-    <generator>Hugo -- 0.147.8</generator>
-    <language>en</language>
-    <copyright>mozanunal</copyright>
-    <lastBuildDate>Sun, 30 Jul 2017 15:50:00 +0000</lastBuildDate>
-    <atom:link href="https://mozanunal.com/tags/wemos/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>[TR] Bitcoin Madencileri için Online Dashboard</title>
-      <link>https://mozanunal.com/2017/07/bitcoin-madencileri-icin-online-dashboard/</link>
-      <pubDate>Sun, 30 Jul 2017 15:50:00 +0000</pubDate>
-      <guid>https://mozanunal.com/2017/07/bitcoin-madencileri-icin-online-dashboard/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Herkes merhabalar,&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Bitcoin son dönemlerin popüler konularından birisi. Aslında genel olarak crypto
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Wemos on mozanunal.com</title><link>https://mozanunal.com/tags/wemos/</link><description>Recent content in Wemos on mozanunal.com</description><generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>mehmetozanunal@gmail.com (M.Ozan Unal)</managingEditor><webMaster>mehmetozanunal@gmail.com (M.Ozan Unal)</webMaster><copyright>© 2025 M.Ozan Unal</copyright><lastBuildDate>Sun, 30 Jul 2017 15:50:00 +0000</lastBuildDate><atom:link href="https://mozanunal.com/tags/wemos/index.xml" rel="self" type="application/rss+xml"/><item><title>[TR] Bitcoin Madencileri için Online Dashboard</title><link>https://mozanunal.com/posts/2017/bitcoin-madencileri-icin-online-dashboard/</link><pubDate>Sun, 30 Jul 2017 15:50:00 +0000</pubDate><author>mehmetozanunal@gmail.com (M.Ozan Unal)</author><guid>https://mozanunal.com/posts/2017/bitcoin-madencileri-icin-online-dashboard/</guid><description>&lt;p>&lt;strong>Herkes merhabalar,&lt;/strong>&lt;/p>
+&lt;p>Bitcoin son dönemlerin popüler konularından birisi. Aslında genel olarak crypto
 currency son zamanlarda çok popüler. Peki nedir bu kavramlar? Crypto currency
 güvenliği şifreleme teknojileriyle sağlanan sanal para birimleridir. Her gün bir
 yeni bir tür crypto currency ortaya çıkıyor. Bunlar arasında en geçerli olanı
@@ -34,7 +13,4 @@ kartları alıp bitcoin tarlaları kurdular ve bu işten para kazanıyorlar. Tab
 aklınıza, bitcoinin dünyaya katkısı nedir ya da ne kadar riskli, yatırım yapılır
 mı? gibi türlü türlü farklı açılardan sorular gelebilir. Ama malesef ben bu
 konuda uzman değilim ve daha nedir sorusuna bile tam olarak cevap vermek çok
-zor.&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+zor.&lt;/p></description></item></channel></rss>

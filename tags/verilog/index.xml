@@ -1,39 +1,10 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>Verilog on mozanunal.com</title>
-    <link>https://mozanunal.com/tags/verilog/</link>
-    <description>Recent content in Verilog on mozanunal.com</description>
-    <image>
-      <title>mozanunal.com</title>
-      <url>https://mozanunal.com/images/papermod-cover.png</url>
-      <link>https://mozanunal.com/images/papermod-cover.png</link>
-    </image>
-    <generator>Hugo -- 0.147.8</generator>
-    <language>en</language>
-    <copyright>mozanunal</copyright>
-    <lastBuildDate>Sat, 02 Jun 2018 11:07:45 +0000</lastBuildDate>
-    <atom:link href="https://mozanunal.com/tags/verilog/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>[TR] Veriloga Giriş</title>
-      <link>https://mozanunal.com/2018/06/veriloga-giris/</link>
-      <pubDate>Sat, 02 Jun 2018 11:07:45 +0000</pubDate>
-      <guid>https://mozanunal.com/2018/06/veriloga-giris/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Herkes Merhabalar,&lt;/strong&gt; Bugün bir &amp;ldquo;hardware description language&amp;rdquo; olan verilog
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Verilog on mozanunal.com</title><link>https://mozanunal.com/tags/verilog/</link><description>Recent content in Verilog on mozanunal.com</description><generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>mehmetozanunal@gmail.com (M.Ozan Unal)</managingEditor><webMaster>mehmetozanunal@gmail.com (M.Ozan Unal)</webMaster><copyright>© 2025 M.Ozan Unal</copyright><lastBuildDate>Sat, 02 Jun 2018 11:07:45 +0000</lastBuildDate><atom:link href="https://mozanunal.com/tags/verilog/index.xml" rel="self" type="application/rss+xml"/><item><title>[TR] Veriloga Giriş</title><link>https://mozanunal.com/posts/2018/veriloga-giris/</link><pubDate>Sat, 02 Jun 2018 11:07:45 +0000</pubDate><author>mehmetozanunal@gmail.com (M.Ozan Unal)</author><guid>https://mozanunal.com/posts/2018/veriloga-giris/</guid><description>&lt;p>&lt;strong>Herkes Merhabalar,&lt;/strong> Bugün bir &amp;ldquo;hardware description language&amp;rdquo; olan verilog
 diline giriş yapmak istiyorum. Verilog sayısal dizaynda( ASIC ve FPGA )
 kullanılan bir tanımlama dilidir. Verilog dilini Fpga programlamak için bir çok
 projede kullandım fakat ASIC dizayn konusunda bir tecrübem yok. Fpga
 programlarken öğrendiğim şeyleri farklı yazılarda paylaşmıştım. Bu yazı da o
 yazılardan biri diyebiliriz. Verilog ile alakalı daha ileri düzey şeylerden
-bahsedeceğim yazılar da gelecektir diye düşünüyorum.&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;ZYBO Fpga Geliştirme Kartı&#34; loading=&#34;lazy&#34; src=&#34;https://mozanunal.com/images/1527937147117.png&#34;&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>[TR] Altera Cyclone IV ile FPGA Dünyasına Giriş</title>
-      <link>https://mozanunal.com/2018/03/altera-cyclone-4-fpga/</link>
-      <pubDate>Mon, 05 Mar 2018 21:48:22 +0000</pubDate>
-      <guid>https://mozanunal.com/2018/03/altera-cyclone-4-fpga/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt; Son yıllarda hobi elektroniği inanılmaz bir hızla
+bahsedeceğim yazılar da gelecektir diye düşünüyorum.&lt;/p></description></item><item><title>[TR] Altera Cyclone IV ile FPGA Dünyasına Giriş</title><link>https://mozanunal.com/posts/2018/altera-cyclone-4-fpga/</link><pubDate>Mon, 05 Mar 2018 21:48:22 +0000</pubDate><author>mehmetozanunal@gmail.com (M.Ozan Unal)</author><guid>https://mozanunal.com/posts/2018/altera-cyclone-4-fpga/</guid><description>&lt;p>&lt;strong>Herkese Merhabalar,&lt;/strong> Son yıllarda hobi elektroniği inanılmaz bir hızla
 gelişti. Şüphesiz bu hızlı gelişmenin mimarı Arduino. Atmelin 8 bitlik
 işlemcilerini temel alarak tasarlanan bu kart ve programala dili sayesinde
 insanlar kolayca projeler geliştirmeye ve hobi uygulamaları yapmaya başladılar.
@@ -43,7 +14,4 @@ isteyenler için çok sıkıntılı hale geliyor. Önceki yazılarımdan birinde
 öğrenmeye nasıl başlanır ve proje nasıl oluşturulur onu anlatmıştım. Bu sefer
 mikroişlemcinin yanı sıra bir fpga üzerine gitmek istiyorum. Mesela yüksek
 hesaplama gücü ve paralel işlem gerektiren proje yapmak istiyorsunuz ve fgpa
-öğrenmek istiyorsunuz. Nasıl başlayabilirsiniz onu anlatmak istiyorum.&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+öğrenmek istiyorsunuz. Nasıl başlayabilirsiniz onu anlatmak istiyorum.&lt;/p></description></item></channel></rss>

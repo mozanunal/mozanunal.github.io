@@ -1,25 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>Arduino Robotik Kontrol on mozanunal.com</title>
-    <link>https://mozanunal.com/tags/arduino-robotik-kontrol/</link>
-    <description>Recent content in Arduino Robotik Kontrol on mozanunal.com</description>
-    <image>
-      <title>mozanunal.com</title>
-      <url>https://mozanunal.com/images/papermod-cover.png</url>
-      <link>https://mozanunal.com/images/papermod-cover.png</link>
-    </image>
-    <generator>Hugo -- 0.147.8</generator>
-    <language>en</language>
-    <copyright>mozanunal</copyright>
-    <lastBuildDate>Fri, 16 Jan 2015 15:07:00 +0000</lastBuildDate>
-    <atom:link href="https://mozanunal.com/tags/arduino-robotik-kontrol/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>[TR] Robot Kol</title>
-      <link>https://mozanunal.com/2015/01/robot-kol/</link>
-      <pubDate>Fri, 16 Jan 2015 15:07:00 +0000</pubDate>
-      <guid>https://mozanunal.com/2015/01/robot-kol/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Merhabalar,&lt;/strong&gt;&lt;br&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Arduino Robotik Kontrol on mozanunal.com</title><link>https://mozanunal.com/tags/arduino-robotik-kontrol/</link><description>Recent content in Arduino Robotik Kontrol on mozanunal.com</description><generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>mehmetozanunal@gmail.com (M.Ozan Unal)</managingEditor><webMaster>mehmetozanunal@gmail.com (M.Ozan Unal)</webMaster><copyright>© 2025 M.Ozan Unal</copyright><lastBuildDate>Fri, 16 Jan 2015 15:07:00 +0000</lastBuildDate><atom:link href="https://mozanunal.com/tags/arduino-robotik-kontrol/index.xml" rel="self" type="application/rss+xml"/><item><title>[TR] Robot Kol</title><link>https://mozanunal.com/posts/2015/robot-kol/</link><pubDate>Fri, 16 Jan 2015 15:07:00 +0000</pubDate><author>mehmetozanunal@gmail.com (M.Ozan Unal)</author><guid>https://mozanunal.com/posts/2015/robot-kol/</guid><description>&lt;p>&lt;strong>Merhabalar,&lt;/strong>&lt;br>
       Bugünkü yazımda yaptığım robot koldan bahsedeceğim. Robot kolum Arduino
 kontrollü. Mekanik aksamında 4 adet servo kullandım. Alt kısmını 2 eksenli mini
 kamera gimbalinden yaptım. Kalan kısmı ise plastik bir kapı keserek yaptım.
@@ -30,7 +9,4 @@ için 2 tane 2 eksenli joystick kullandım. Arduinonun 4 analog pininden
 joystickleri bağladım. 4 servonun kontrolü için de 4 dijital pini kullandım.
 Tutma mekanizması olarak ise ataçtan bir kıskaç yaptım. Servolara güç uygulatıp
 sıkıştırınca esnekliği sayesinde oldukça iyi sonuç verdi. Aşağıda resimleri ve
-tanıtım videosu bulunmaktadır. Tekrar görüşmek üzere.&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+tanıtım videosu bulunmaktadır. Tekrar görüşmek üzere.&lt;/p></description></item></channel></rss>

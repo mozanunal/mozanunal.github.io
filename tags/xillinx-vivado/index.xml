@@ -1,26 +1,5 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>Xillinx Vivado on mozanunal.com</title>
-    <link>https://mozanunal.com/tags/xillinx-vivado/</link>
-    <description>Recent content in Xillinx Vivado on mozanunal.com</description>
-    <image>
-      <title>mozanunal.com</title>
-      <url>https://mozanunal.com/images/papermod-cover.png</url>
-      <link>https://mozanunal.com/images/papermod-cover.png</link>
-    </image>
-    <generator>Hugo -- 0.147.8</generator>
-    <language>en</language>
-    <copyright>mozanunal</copyright>
-    <lastBuildDate>Thu, 20 Jul 2017 23:14:00 +0000</lastBuildDate>
-    <atom:link href="https://mozanunal.com/tags/xillinx-vivado/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>PMod Microphone Driver</title>
-      <link>https://mozanunal.com/2017/07/pmod-microphone-driver/</link>
-      <pubDate>Thu, 20 Jul 2017 23:14:00 +0000</pubDate>
-      <guid>https://mozanunal.com/2017/07/pmod-microphone-driver/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Hi&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;In this post, the Pmod microphone driver which is written in Verilog for Zynq
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Xillinx Vivado on mozanunal.com</title><link>https://mozanunal.com/tags/xillinx-vivado/</link><description>Recent content in Xillinx Vivado on mozanunal.com</description><generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>mehmetozanunal@gmail.com (M.Ozan Unal)</managingEditor><webMaster>mehmetozanunal@gmail.com (M.Ozan Unal)</webMaster><copyright>© 2025 M.Ozan Unal</copyright><lastBuildDate>Thu, 20 Jul 2017 23:14:00 +0000</lastBuildDate><atom:link href="https://mozanunal.com/tags/xillinx-vivado/index.xml" rel="self" type="application/rss+xml"/><item><title>PMod Microphone Driver</title><link>https://mozanunal.com/posts/2017/pmod-microphone-driver/</link><pubDate>Thu, 20 Jul 2017 23:14:00 +0000</pubDate><author>mehmetozanunal@gmail.com (M.Ozan Unal)</author><guid>https://mozanunal.com/posts/2017/pmod-microphone-driver/</guid><description>&lt;p>&lt;strong>Hi&lt;/strong>&lt;/p>
+&lt;p>In this post, the Pmod microphone driver which is written in Verilog for Zynq
 boards is discussed. The driver is developed for Digilent Design
 Competition 2017. We have a project which microphone array is used. Therefore we
 have to get data from Pmod Mic also 5 of them should work synchronously. The
@@ -29,7 +8,4 @@ communication. This module should be added to main FPGA code and you should make
 the connections required. clk/16 sample rate is succeeded for the microphone.
 clk input frequency should select according to required sampling rate for the
 microphone. SS can be used as out enable also. You can ask any question directly
-to me if you have a problem with the driver. See you&amp;hellip;&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+to me if you have a problem with the driver. See you&amp;hellip;&lt;/p></description></item></channel></rss>

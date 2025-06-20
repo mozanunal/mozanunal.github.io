@@ -1,34 +1,6 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>Sdr on mozanunal.com</title>
-    <link>https://mozanunal.com/tags/sdr/</link>
-    <description>Recent content in Sdr on mozanunal.com</description>
-    <image>
-      <title>mozanunal.com</title>
-      <url>https://mozanunal.com/images/papermod-cover.png</url>
-      <link>https://mozanunal.com/images/papermod-cover.png</link>
-    </image>
-    <generator>Hugo -- 0.147.8</generator>
-    <language>en</language>
-    <copyright>mozanunal</copyright>
-    <lastBuildDate>Mon, 20 Aug 2018 15:14:07 +0000</lastBuildDate>
-    <atom:link href="https://mozanunal.com/tags/sdr/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>[TR] Orange Pi Zero Üzerinde Dump1090 Çalıştırmak</title>
-      <link>https://mozanunal.com/2018/08/opizero-dump1090/</link>
-      <pubDate>Mon, 20 Aug 2018 15:14:07 +0000</pubDate>
-      <guid>https://mozanunal.com/2018/08/opizero-dump1090/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Herkese merhabalar,&lt;/strong&gt; Bugünkü yazımda dump1090 programını nasıl bir orange pi
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Sdr on mozanunal.com</title><link>https://mozanunal.com/tags/sdr/</link><description>Recent content in Sdr on mozanunal.com</description><generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>mehmetozanunal@gmail.com (M.Ozan Unal)</managingEditor><webMaster>mehmetozanunal@gmail.com (M.Ozan Unal)</webMaster><copyright>© 2025 M.Ozan Unal</copyright><lastBuildDate>Mon, 20 Aug 2018 15:14:07 +0000</lastBuildDate><atom:link href="https://mozanunal.com/tags/sdr/index.xml" rel="self" type="application/rss+xml"/><item><title>[TR] Orange Pi Zero Üzerinde Dump1090 Çalıştırmak</title><link>https://mozanunal.com/posts/2018/opizero-dump1090/</link><pubDate>Mon, 20 Aug 2018 15:14:07 +0000</pubDate><author>mehmetozanunal@gmail.com (M.Ozan Unal)</author><guid>https://mozanunal.com/posts/2018/opizero-dump1090/</guid><description>&lt;p>&lt;strong>Herkese merhabalar,&lt;/strong> Bugünkü yazımda dump1090 programını nasıl bir orange pi
 zero üzerinde çalıştırabiliriz ondan bahsedeceğim. Bildiğiniz gibi dump1090 sdr
 kullanarak uçakların adsb yayınlarını çözmeye yarayan bir kod parçası. Bu
 projeyi gerçekleştirdiğim mini pc olarak orange pi zero seçmemin sebebi ise
 maliyeti ve kompaklığı. 5-10 dolara satın alınabiliniyor ve boyutları gerçekten
-küçük.&lt;/p&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://mozanunal.com/images/1534768337583.png&#34;&gt;&lt;/p&gt;
-&lt;h2 id=&#34;rtlsdr-sürücüsünün-kurulması&#34;&gt;Rtlsdr Sürücüsünün Kurulması&lt;/h2&gt;
-&lt;p&gt;Ben orange pi zeroyu armbian işletim sistemi ve mainline kernel ile
-kullanıyorum. Sistemde uname -a çalıştırdığımda aldığım çıktı aşağıdaki gibi:&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+küçük.&lt;/p></description></item></channel></rss>

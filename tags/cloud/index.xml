@@ -1,37 +1,7 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>Cloud on mozanunal.com</title>
-    <link>https://mozanunal.com/tags/cloud/</link>
-    <description>Recent content in Cloud on mozanunal.com</description>
-    <image>
-      <title>mozanunal.com</title>
-      <url>https://mozanunal.com/images/papermod-cover.png</url>
-      <link>https://mozanunal.com/images/papermod-cover.png</link>
-    </image>
-    <generator>Hugo -- 0.147.8</generator>
-    <language>en</language>
-    <copyright>mozanunal</copyright>
-    <lastBuildDate>Tue, 17 Apr 2018 21:24:57 +0000</lastBuildDate>
-    <atom:link href="https://mozanunal.com/tags/cloud/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>[TR] En Basit IOT Bulut Sistemi: Google Forms</title>
-      <link>https://mozanunal.com/2018/04/google-docs-data-collection/</link>
-      <pubDate>Tue, 17 Apr 2018 21:24:57 +0000</pubDate>
-      <guid>https://mozanunal.com/2018/04/google-docs-data-collection/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Bugün basit, ilginç ve kullanışlı bir proje ile karşınızdayım. Bulut tabanlı
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Cloud on mozanunal.com</title><link>https://mozanunal.com/tags/cloud/</link><description>Recent content in Cloud on mozanunal.com</description><generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>mehmetozanunal@gmail.com (M.Ozan Unal)</managingEditor><webMaster>mehmetozanunal@gmail.com (M.Ozan Unal)</webMaster><copyright>© 2025 M.Ozan Unal</copyright><lastBuildDate>Tue, 17 Apr 2018 21:24:57 +0000</lastBuildDate><atom:link href="https://mozanunal.com/tags/cloud/index.xml" rel="self" type="application/rss+xml"/><item><title>[TR] En Basit IOT Bulut Sistemi: Google Forms</title><link>https://mozanunal.com/posts/2018/google-docs-data-collection/</link><pubDate>Tue, 17 Apr 2018 21:24:57 +0000</pubDate><author>mehmetozanunal@gmail.com (M.Ozan Unal)</author><guid>https://mozanunal.com/posts/2018/google-docs-data-collection/</guid><description>&lt;p>&lt;strong>Herkese Merhabalar,&lt;/strong>&lt;/p>
+&lt;p>Bugün basit, ilginç ve kullanışlı bir proje ile karşınızdayım. Bulut tabanlı
 programlar oldukça populer oldu son zamanlarda. Ben bütün ofis programı
 ihtiyaçlarımı google&amp;rsquo;in çevrimiçi programlarıyla karşılıyorum. Google form da
 anket yapmanızı sağlayan bu araçlardan biri. Bu aracın olağan kullanımı anket
 yapmaktır. Bu projede bambaşka bir şey için kullanacağız: IOT sistemler için
-basit bulut sistemi.&lt;/p&gt;
-&lt;p&gt;Şöyle ki normalde anket için yapılmış bu form sistemini IOT cihazımızdan buluta
-veri göndermek için kullanacağız. Bu sistem sayesinde çok fazla uğraş vermeden
-cihazımızı uzaktan takip edebiliyor ve verilerini izleyebiliyor olacağız. Hatta
-direk olarak excel sistemine aktarılacağı için direk oradan analiz bile
-edebiliriz. Birden fazla cihazlı sistemler bile kurmak mümkün görünüyor. Online
-olarak takip etmek istediğimiz şeyler olduğunda kullanılabilir gibi gözüküyor.&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+basit bulut sistemi.&lt;/p></description></item></channel></rss>

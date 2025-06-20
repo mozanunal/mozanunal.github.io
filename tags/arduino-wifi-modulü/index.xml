@@ -1,56 +1,5 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>Arduino Wifi Modulü on mozanunal.com</title>
-    <link>https://mozanunal.com/tags/arduino-wifi-modul%C3%BC/</link>
-    <description>Recent content in Arduino Wifi Modulü on mozanunal.com</description>
-    <image>
-      <title>mozanunal.com</title>
-      <url>https://mozanunal.com/images/papermod-cover.png</url>
-      <link>https://mozanunal.com/images/papermod-cover.png</link>
-    </image>
-    <generator>Hugo -- 0.147.8</generator>
-    <language>en</language>
-    <copyright>mozanunal</copyright>
-    <lastBuildDate>Thu, 12 Mar 2015 00:49:00 +0000</lastBuildDate>
-    <atom:link href="https://mozanunal.com/tags/arduino-wifi-modul%C3%BC/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>[TR] ESP8266 Modulü Web Server</title>
-      <link>https://mozanunal.com/2015/03/esp8266-modulu-html-server/</link>
-      <pubDate>Thu, 12 Mar 2015 00:49:00 +0000</pubDate>
-      <guid>https://mozanunal.com/2015/03/esp8266-modulu-html-server/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Merhaba arkadaşlar,&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Bugünkü yazımda ESP8266 modüllerinden bahsetmek istiyorum. Bu modül seri port
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Arduino Wifi Modulü on mozanunal.com</title><link>https://mozanunal.com/tags/arduino-wifi-modul%C3%BC/</link><description>Recent content in Arduino Wifi Modulü on mozanunal.com</description><generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>mehmetozanunal@gmail.com (M.Ozan Unal)</managingEditor><webMaster>mehmetozanunal@gmail.com (M.Ozan Unal)</webMaster><copyright>© 2025 M.Ozan Unal</copyright><lastBuildDate>Thu, 12 Mar 2015 00:49:00 +0000</lastBuildDate><atom:link href="https://mozanunal.com/tags/arduino-wifi-modul%C3%BC/index.xml" rel="self" type="application/rss+xml"/><item><title>[TR] ESP8266 Modulü Web Server</title><link>https://mozanunal.com/posts/2015/esp8266-modulu-html-server/</link><pubDate>Thu, 12 Mar 2015 00:49:00 +0000</pubDate><author>mehmetozanunal@gmail.com (M.Ozan Unal)</author><guid>https://mozanunal.com/posts/2015/esp8266-modulu-html-server/</guid><description>&lt;p>&lt;strong>Merhaba arkadaşlar,&lt;/strong>&lt;/p>
+&lt;p>Bugünkü yazımda ESP8266 modüllerinden bahsetmek istiyorum. Bu modül seri port
 üzerinden haberleşen wifi modülü. Fiyatı yaklaşık 5 $ özelliklerini gördüğünüz
 fiyatından çok daha fazlasını hakkettiğini göreceksiniz. Özelliklerine geçecek
-olursak;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;802.11 b/g/n desteği&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Wi-Fi Direct (P2P) Desteği&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Dahili TCP/IP protokol yığını&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;+19,5dBm çıkış gücü (802.11b modunda)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Kaçak akım &amp;lt; 10uA&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Dahili düşük güç tüketimine sahip 32-bit&amp;rsquo;lik işlemci&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;SDIO 1.1/2.0, SPI ve UART desteği&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;STBC, 1x1 MIMO, 2x1 MIMO&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Uyanma ve veri paketi alma süresi &amp;lt; 2ms&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+olursak;&lt;/p></description></item></channel></rss>

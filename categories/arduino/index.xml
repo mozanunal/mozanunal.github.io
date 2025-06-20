@@ -1,39 +1,11 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>Arduino on mozanunal.com</title>
-    <link>https://mozanunal.com/categories/arduino/</link>
-    <description>Recent content in Arduino on mozanunal.com</description>
-    <image>
-      <title>mozanunal.com</title>
-      <url>https://mozanunal.com/images/papermod-cover.png</url>
-      <link>https://mozanunal.com/images/papermod-cover.png</link>
-    </image>
-    <generator>Hugo -- 0.147.8</generator>
-    <language>en</language>
-    <copyright>mozanunal</copyright>
-    <lastBuildDate>Sun, 07 Feb 2016 23:18:00 +0000</lastBuildDate>
-    <atom:link href="https://mozanunal.com/categories/arduino/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>[TR] Lazer Haberleşmesi</title>
-      <link>https://mozanunal.com/2016/02/lazer-haberlesmesi/</link>
-      <pubDate>Sun, 07 Feb 2016 23:18:00 +0000</pubDate>
-      <guid>https://mozanunal.com/2016/02/lazer-haberlesmesi/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Son zamanlarda ışık ile veri aktarımına ilgi duymaktayım. Bu konuda bir şeyler
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Arduino on mozanunal.com</title><link>https://mozanunal.com/categories/arduino/</link><description>Recent content in Arduino on mozanunal.com</description><generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>mehmetozanunal@gmail.com (M.Ozan Unal)</managingEditor><webMaster>mehmetozanunal@gmail.com (M.Ozan Unal)</webMaster><copyright>© 2025 M.Ozan Unal</copyright><lastBuildDate>Sun, 07 Feb 2016 23:18:00 +0000</lastBuildDate><atom:link href="https://mozanunal.com/categories/arduino/index.xml" rel="self" type="application/rss+xml"/><item><title>[TR] Lazer Haberleşmesi</title><link>https://mozanunal.com/posts/2016/lazer-haberlesmesi/</link><pubDate>Sun, 07 Feb 2016 23:18:00 +0000</pubDate><author>mehmetozanunal@gmail.com (M.Ozan Unal)</author><guid>https://mozanunal.com/posts/2016/lazer-haberlesmesi/</guid><description>&lt;p>&lt;strong>Herkese Merhabalar,&lt;/strong>&lt;/p>
+&lt;p>Son zamanlarda ışık ile veri aktarımına ilgi duymaktayım. Bu konuda bir şeyler
 geliştirmek istiyorum. Bunun ilk aşaması olarak lazer ile haberleşme projemi
 gerçekleştirdim. Bu projedeki amacım daha çok lazerin ve fotodiyotun cevap
 süresi ölçmek yani maximum aktarım hızını hesaplamaktı. Aynı zamanda farklı
 iletişim protokollerini denedim. İlerleyen projeler için lazerin de fotodiyotun
 da yetersiz olduğunu görmüş oldum. Daha hızlı fotodiyotlarla ve ledlerle
-denemelerim sürecek. Projenin bu aşamadaki haline gelirsek:&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>[TR] Star Wars BB-8 Robot Yapımı</title>
-      <link>https://mozanunal.com/2016/01/star-wars-bb-8-robot-yapm-bolum-1/</link>
-      <pubDate>Thu, 21 Jan 2016 03:26:00 +0000</pubDate>
-      <guid>https://mozanunal.com/2016/01/star-wars-bb-8-robot-yapm-bolum-1/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;br&gt;
+denemelerim sürecek. Projenin bu aşamadaki haline gelirsek:&lt;/p></description></item><item><title>[TR] Star Wars BB-8 Robot Yapımı</title><link>https://mozanunal.com/posts/2016/star-wars-bb-8-robot-yapm-bolum-1/</link><pubDate>Thu, 21 Jan 2016 03:26:00 +0000</pubDate><author>mehmetozanunal@gmail.com (M.Ozan Unal)</author><guid>https://mozanunal.com/posts/2016/star-wars-bb-8-robot-yapm-bolum-1/</guid><description>&lt;p>&lt;strong>Herkese Merhabalar,&lt;/strong>&lt;br>
 Bu seferki projem Star Warsa son film ile katılan BB-8 isimli droidin bir
 benzerini yapmak. Bu fikir aklıma nereden geldi derseniz. Son filmdeki en
 sempatik ve ilgi çekici karakterin BB-8 olduğunu düşünüyorum. Tabi ilk aklıma
@@ -43,162 +15,50 @@ tasarımlar ortaya çıkmaya başlayınca malzemelerimi topladım ve projeye ba�
 Proje oldukça uzun ve daha çok mekanik bir proje bu yüzden 2 parçaya ayırdım
 kalanını ne zaman bitiririm bilmiyorum. Şu an devam edemiyorum çünkü lipo
 pillerim bitti ve şarj aletini malesef istanbulda unutmuşum. Neyse projemize
-geçelim.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>[TR] DIY RC Kumanda Yapımı</title>
-      <link>https://mozanunal.com/2015/11/diy-rc-kumanda-yapm/</link>
-      <pubDate>Sun, 15 Nov 2015 14:30:00 +0000</pubDate>
-      <guid>https://mozanunal.com/2015/11/diy-rc-kumanda-yapm/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Bu yazımda arduino kullanarak nasıl basit, ucuz ve işlevli bir RC kumanda
+geçelim.&lt;/p></description></item><item><title>[TR] DIY RC Kumanda Yapımı</title><link>https://mozanunal.com/posts/2015/diy-rc-kumanda-yapm/</link><pubDate>Sun, 15 Nov 2015 14:30:00 +0000</pubDate><author>mehmetozanunal@gmail.com (M.Ozan Unal)</author><guid>https://mozanunal.com/posts/2015/diy-rc-kumanda-yapm/</guid><description>&lt;p>&lt;strong>Herkese Merhabalar,&lt;/strong>&lt;/p>
+&lt;p>Bu yazımda arduino kullanarak nasıl basit, ucuz ve işlevli bir RC kumanda
 yapabileceğimizi anlatacağım. Yapacağımız RC kumanda ile istediğiniz türde
 aracı, istediğiniz kadar kanalla kontrol etmeniz mümkün. Benim uygulamamda 2
 adet 2 eksen joystick ve 1 potansiyometre bulunuyor. Yani 5 kanallı örnek bir
-uygulama yaptım. Öncelikle malzemelerden başlayalım.&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Arduino Nano&lt;/li&gt;
-&lt;li&gt;Nrf24l01&lt;/li&gt;
-&lt;li&gt;1 adet 10k potansiyometre&lt;/li&gt;
-&lt;li&gt;1 adet 10k direnç&lt;/li&gt;
-&lt;li&gt;2 adet 2 eksen joystick modulü&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Bu malzemelerle beraber toplam maliyetimiz 7- 8 dolar civarı oluyor. Maximum
-kullanım mesafesi ise 30 40 metre civarında hobi uygulamarına göre oldukça
-yeterli bir mesafe elde ediyoruz.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>DIY Raspberry Pi Laptop</title>
-      <link>https://mozanunal.com/2015/10/diy-raspberry-pi-laptop-16/</link>
-      <pubDate>Mon, 05 Oct 2015 01:06:00 +0000</pubDate>
-      <guid>https://mozanunal.com/2015/10/diy-raspberry-pi-laptop-16/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Hi,&lt;/strong&gt;&lt;br&gt;
+uygulama yaptım. Öncelikle malzemelerden başlayalım.&lt;/p></description></item><item><title>DIY Raspberry Pi Laptop</title><link>https://mozanunal.com/posts/2015/diy-raspberry-pi-laptop-16/</link><pubDate>Mon, 05 Oct 2015 01:06:00 +0000</pubDate><author>mehmetozanunal@gmail.com (M.Ozan Unal)</author><guid>https://mozanunal.com/posts/2015/diy-raspberry-pi-laptop-16/</guid><description>&lt;p>&lt;strong>Hi,&lt;/strong>&lt;br>
 In this article, DIY Raspberry Pi Laptop project will be told. I needed a low
 cost mini computer with high mobility but then i decided to make my own and i
 start to this project. Most of the parts(expect Raspberry pi 2 and its some of
 materials) were bought from china and the total cost of this project is 110$.
 There is video of this project under this paragraph. You can watch this then you
-learn how i did this project step by step.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>[TR] DIY Raspberry Pi Laptop</title>
-      <link>https://mozanunal.com/2015/09/diy-raspberry-pi-laptop/</link>
-      <pubDate>Thu, 17 Sep 2015 01:20:00 +0000</pubDate>
-      <guid>https://mozanunal.com/2015/09/diy-raspberry-pi-laptop/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;br&gt;
+learn how i did this project step by step.&lt;/p></description></item><item><title>[TR] DIY Raspberry Pi Laptop</title><link>https://mozanunal.com/posts/2015/diy-raspberry-pi-laptop/</link><pubDate>Thu, 17 Sep 2015 01:20:00 +0000</pubDate><author>mehmetozanunal@gmail.com (M.Ozan Unal)</author><guid>https://mozanunal.com/posts/2015/diy-raspberry-pi-laptop/</guid><description>&lt;p>&lt;strong>Herkese Merhabalar,&lt;/strong>&lt;br>
        Bu yazımda Raspberry Pi 2 kartını kullanarak kendim için yaptığım laptop
 projesinden bahsetmek istiyorum. Kendime düşük maliyetli gündelik işlerimi
 halletmek için taşınabilir bir bilgisayar almaya karar vermiştim fakat neden
 kendim yapmak yerine satın alayım dedim ve bu projeye başladım. Malzemelerin
-çoğunu yurt dışından aldım ve bana toplam maliyeti 110$ kadar oldu.&lt;br&gt;
+çoğunu yurt dışından aldım ve bana toplam maliyeti 110$ kadar oldu.&lt;br>
 Projemin tanıtım videosunu izleyebilirsiniz. Yazının devamında ise Raspberry Pi
-laptopun yapılışını adım adım öğrenebilirsiniz.&lt;/p&gt;
-&lt;div class=&#34;separator&#34; style=&#34;clear: both; text-align: center;&#34;&gt;&lt;iframe allowfullscreen=&#34;&#34; class=&#34;YOUTUBE-iframe-video&#34; data-thumbnail-src=&#34;https://i.ytimg.com/vi/Ys97-3S9MQo/0.jpg&#34; frameborder=&#34;0&#34; height=&#34;266&#34; src=&#34;https://www.youtube.com/embed/Ys97-3S9MQo?feature=player_embedded&#34; width=&#34;320&#34;&gt;&lt;/iframe&gt;&lt;/div&gt;
-&lt;div class=&#34;separator&#34; style=&#34;clear: both; text-align: center;&#34;&gt;[![](https://1.bp.blogspot.com/-32Tefe5cxxQ/VfQJVHRLDKI/AAAAAAAANq0/a35hSfl8s2s/s320/IMG_20150912_123948.jpg)](https://1.bp.blogspot.com/-32Tefe5cxxQ/VfQJVHRLDKI/AAAAAAAANq0/a35hSfl8s2s/s1600/IMG_20150912_123948.jpg)&lt;/div&gt;
-&lt;p&gt;&lt;strong&gt;1. Raspberry Pi Nedir?&lt;/strong&gt;&lt;br&gt;
-      Öncelikle Raspberry Pi&amp;rsquo;dan bahsetmek istiyorum. Raspberry Pi tüm
-bilgisayar bileşenlerinin bir kartta toplandığı, düşük maliyetli mini
-bilgisayardır. Şu an itibariyle, en son Raspberry Pi 2 çıkmıştır ve satış fiyatı
-35 dolardır.&lt;br&gt;
-&lt;strong&gt;2. Neden Raspberry Pi Laptop?&lt;/strong&gt;&lt;br&gt;
-      Raspberry pi yazılım geliştirmek için çok önemli bir portal fakat her
-zaman uygun ekran klavye bulmak zor ve Raspberry Pi&amp;rsquo;ın taşınabilirliğini
-azaltıyor. Ayrıca üzerinde 4 usb portu, Hdmi portu gibi giriş çıkış birimleri
-bulunması sayesinde laptop yapılmaya oldukça uygun durumda. 3. olarak düşük güç
-tüketiminden söz edebiliriz. Benim sistemimin toplam güç tüketimi 7,8 watt
-civarında. 3S lipo pilimden ekranla beraber yaklaşık 650 mA akım çekiyor.&lt;br&gt;
-&lt;strong&gt;3. Malzemeler ve Maliyet&lt;/strong&gt;&lt;br&gt;
-Raspberry Pi 2                     35$&lt;br&gt;
-4 Gb SD Kart                       4$&lt;br&gt;
-N070ICG-LD1 LCD Ekran   45$&lt;br&gt;
-HDMI Kablo                        3$&lt;br&gt;
-Klavyeli Tablet Kılıfı            4$&lt;br&gt;
-USB WIFI Adaptörü            5$&lt;br&gt;
-LM2596 Regülatör               2$&lt;br&gt;
-1500 Mah 3S Lipo Pil           10$&lt;br&gt;
-Fare                                     2$&lt;br&gt;
-1 Metre Kablo Koruyucu       2$&lt;br&gt;
-&lt;strong&gt;Toplam:                             110$&lt;/strong&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>[TR] Fırçalı motorlar için ESC Yapımı</title>
-      <link>https://mozanunal.com/2015/08/frcal-motorlar-icin-esc-yapm/</link>
-      <pubDate>Wed, 19 Aug 2015 18:42:00 +0000</pubDate>
-      <guid>https://mozanunal.com/2015/08/frcal-motorlar-icin-esc-yapm/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Yapacağım bir proje için fırçalı bir motorun Arduino ile hızını kontrol etmem
+laptopun yapılışını adım adım öğrenebilirsiniz.&lt;/p></description></item><item><title>[TR] Fırçalı motorlar için ESC Yapımı</title><link>https://mozanunal.com/posts/2015/frcal-motorlar-icin-esc-yapm/</link><pubDate>Wed, 19 Aug 2015 18:42:00 +0000</pubDate><author>mehmetozanunal@gmail.com (M.Ozan Unal)</author><guid>https://mozanunal.com/posts/2015/frcal-motorlar-icin-esc-yapm/</guid><description>&lt;p>&lt;strong>Herkese Merhabalar,&lt;/strong>&lt;/p>
+&lt;p>Yapacağım bir proje için fırçalı bir motorun Arduino ile hızını kontrol etmem
 gerekiyordu. Bunun için elimdeki fırçalı motor için elektronik hız kontrolü yani
-ESC (Electronic Speed Control) yapmaya karar verdim.&lt;/p&gt;
-&lt;p&gt;Öncellikle kendi motorumun ve devrelerimin besleme gerilimi yazayım. Çünkü devre
-bu özelliklere göre dizayn edilecektir. Siz de kendi malzemelerinize ve
-voltajlarınıza göre kendi devrenizi dizayn edebilirsiniz. Benim elimdeki motoru
-besleme voltajım 7.4 volt ve motorun çektiği maximum akım 2 amperdir. Hız
-kontrolü için göndereceğim PWM sinyalinin genliği de (Arduinonun çalışma
-voltajı) 5 volttur. Bu şartlar altında devremi bir power mosfet ile tasarlamaya
-karar verdim. Mosfette var olması gereken özellikler 5 volt anahtarlamaya uygun
-rds ve Vgs özelliklerine sahip olması, üzerinden 2 amper akım rahatça
-geçebilmesidir. Bu nedenlerden dolayı ben IRL540N mosfetini seçtim. Kendisi bir
-logic mosfet bu sayede 5 volt gibi düşük bir Vgs voltajı ile devreyi
-anahtarlayabiliyor. Ayıca üzerinden 28 amper sıkıntısız geçebiliyor. Bu
-özellikleriyle projemiz için oldukça
-uygun. &lt;a href=&#34;https://www.irf.com/product-info/datasheets/data/irl540n.pdf&#34;&gt;Datasheetine buradan ulaşabilirsiniz.&lt;/a&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>[TR] Arduino Due Osiloskop</title>
-      <link>https://mozanunal.com/2015/05/arduino-due-osiloskop/</link>
-      <pubDate>Sat, 02 May 2015 01:38:00 +0000</pubDate>
-      <guid>https://mozanunal.com/2015/05/arduino-due-osiloskop/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Merhaba Arkadaşlar,&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Bugün size Arduino Due ile yaptığım osiloskop bahsedeceğim. Arduino Dueyi
+ESC (Electronic Speed Control) yapmaya karar verdim.&lt;/p></description></item><item><title>[TR] Arduino Due Osiloskop</title><link>https://mozanunal.com/posts/2015/arduino-due-osiloskop/</link><pubDate>Sat, 02 May 2015 01:38:00 +0000</pubDate><author>mehmetozanunal@gmail.com (M.Ozan Unal)</author><guid>https://mozanunal.com/posts/2015/arduino-due-osiloskop/</guid><description>&lt;p>&lt;strong>Merhaba Arkadaşlar,&lt;/strong>&lt;/p>
+&lt;p>Bugün size Arduino Due ile yaptığım osiloskop bahsedeceğim. Arduino Dueyi
 seçmemin bir kaç nedeni var tabi. Arduino Duede standart Arduinoların 8 bitlik
 Atmega işlemcilerinden farklı olarak 32 bitlik Arm Cortex M3 var. Bu işlemcinin
-84 Mhzlik saat hızı bu proje için elverişli kılıyor.&lt;/p&gt;
-&lt;p&gt;Osiloskop projesine başlarken amacım Due ile mümkün olan en yüksek örnekleme
-hızlı osiloskobu yapmaktı. İlk olarak arduinonun standart AnalogRead()
-fonksiyonunu denedim. Bir örnek alma süresi 40 uS kadar sürdü. Daha sonra
-&lt;a href=&#34;https://frenki.net/2013/10/fast-analogread-with-arduino-due/&#34;&gt;bu bağlantıyı&lt;/a&gt;
-buldum ve oradaki ayarları Duenin ADCsine uyguladım. Osiloskobun son kodu
-aşağıdaki gibidir. Bu kod sayesinde ADClere direk registerlar.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>[TR] HC-SR501 PIR Sensörü</title>
-      <link>https://mozanunal.com/2015/03/hc-sr501-pir-sensoru/</link>
-      <pubDate>Sun, 15 Mar 2015 01:36:00 +0000</pubDate>
-      <guid>https://mozanunal.com/2015/03/hc-sr501-pir-sensoru/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Merhaba arkadaşlar,&lt;/strong&gt;&lt;br&gt;
+84 Mhzlik saat hızı bu proje için elverişli kılıyor.&lt;/p></description></item><item><title>[TR] HC-SR501 PIR Sensörü</title><link>https://mozanunal.com/posts/2015/hc-sr501-pir-sensoru/</link><pubDate>Sun, 15 Mar 2015 01:36:00 +0000</pubDate><author>mehmetozanunal@gmail.com (M.Ozan Unal)</author><guid>https://mozanunal.com/posts/2015/hc-sr501-pir-sensoru/</guid><description>&lt;p>&lt;strong>Merhaba arkadaşlar,&lt;/strong>&lt;br>
 Bugünkü yazımda bir PIR sensörü olan HC-SR501 inceleyeceğiz. PIR sensörünün
 açılımı Passive Infrared Sensor. Son 4- 5 yılda çok hızlı bir yayılım gösterdi
 bu sensörler ve insan algılayınca çalışan lambalar, otomatik el kurutma vb
 makinalar olarak hayatımıza girdi. Modulumüzden bahsetmeden önce PIR sensör
-nedir onu açıklamak istiyorum. PIR sensör ortamdaki kızılötesi ışınları ölçer.&lt;/p&gt;
-&lt;p&gt;Alıcılarda çok farklı yere doğru odaklanan frensel lensi bulunur bu sayede belli
-bir alandaki tüm enerji ölçülmüş olur. Canlıların sıcaklığı ortalama 36 derece
-civarlarında olduğundan merceğin üzerine düşen kızılötesi ışınların toplam
-enerjisi y ir. Böylece canlı varlığı tespit edilmiş olur.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>[TR] Arduino İle Super Mario Melodisi Çalmak</title>
-      <link>https://mozanunal.com/2015/01/arduino-ile-super-mario-melodisi-calmak/</link>
-      <pubDate>Sun, 25 Jan 2015 20:03:00 +0000</pubDate>
-      <guid>https://mozanunal.com/2015/01/arduino-ile-super-mario-melodisi-calmak/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Merhaba Arkadaşlar&lt;/strong&gt;&lt;br&gt;
+nedir onu açıklamak istiyorum. PIR sensör ortamdaki kızılötesi ışınları ölçer.&lt;/p></description></item><item><title>[TR] Arduino İle Super Mario Melodisi Çalmak</title><link>https://mozanunal.com/posts/2015/arduino-ile-super-mario-melodisi-calmak/</link><pubDate>Sun, 25 Jan 2015 20:03:00 +0000</pubDate><author>mehmetozanunal@gmail.com (M.Ozan Unal)</author><guid>https://mozanunal.com/posts/2015/arduino-ile-super-mario-melodisi-calmak/</guid><description>&lt;p>&lt;strong>Merhaba Arkadaşlar&lt;/strong>&lt;br>
 Bugünkü yazımda Arduino ile melodi çalma uygulamasından bahsedeceğim.
 Kullandığım malzemeler Arduino ve bir buzzer. Pin bağlantıları da oldukça basit
 buzzerın eksi ucu GND&amp;rsquo;ye,  + ucu da 12. pine bağlanıyor. 12. Pin dijital pin,
 farklı frekanslarda 1-0 yapılarak notaların çalınması sağlanır. Notaların
 çalınma süreleri de nota frekansının verilme süresi değiştirilerek arduino
 tarafından ayarlanıyor. Böylece istediğimiz melodiyi elde etmiş oluyoruz.
-Ayrıntılı bilgiye &lt;a href=&#34;https://www.arduino.cc/en/Tutorial/Melody&#34;&gt;buradan&lt;/a&gt;
+Ayrıntılı bilgiye &lt;a
+href="https://www.arduino.cc/en/Tutorial/Melody"
+target="_blank"
+>buradan&lt;/a>
 ulaşabilirsiniz. Arduino koduna aşağıdan ulaşabilirsiniz(Kod alıntıdır. Tek tek
 notalarla uğraşmamak için notaları çıkarılmış bir koddan aldım.). Tekrar
-görüşmek üzere.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>[TR] Robot Kol</title>
-      <link>https://mozanunal.com/2015/01/robot-kol/</link>
-      <pubDate>Fri, 16 Jan 2015 15:07:00 +0000</pubDate>
-      <guid>https://mozanunal.com/2015/01/robot-kol/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Merhabalar,&lt;/strong&gt;&lt;br&gt;
+görüşmek üzere.&lt;/p></description></item><item><title>[TR] Robot Kol</title><link>https://mozanunal.com/posts/2015/robot-kol/</link><pubDate>Fri, 16 Jan 2015 15:07:00 +0000</pubDate><author>mehmetozanunal@gmail.com (M.Ozan Unal)</author><guid>https://mozanunal.com/posts/2015/robot-kol/</guid><description>&lt;p>&lt;strong>Merhabalar,&lt;/strong>&lt;br>
       Bugünkü yazımda yaptığım robot koldan bahsedeceğim. Robot kolum Arduino
 kontrollü. Mekanik aksamında 4 adet servo kullandım. Alt kısmını 2 eksenli mini
 kamera gimbalinden yaptım. Kalan kısmı ise plastik bir kapı keserek yaptım.
@@ -209,68 +69,24 @@ için 2 tane 2 eksenli joystick kullandım. Arduinonun 4 analog pininden
 joystickleri bağladım. 4 servonun kontrolü için de 4 dijital pini kullandım.
 Tutma mekanizması olarak ise ataçtan bir kıskaç yaptım. Servolara güç uygulatıp
 sıkıştırınca esnekliği sayesinde oldukça iyi sonuç verdi. Aşağıda resimleri ve
-tanıtım videosu bulunmaktadır. Tekrar görüşmek üzere.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>[TR] LCD Göstergeli Mesafe Ölçer</title>
-      <link>https://mozanunal.com/2015/01/lcd-gostergeli-mesafe-olcer/</link>
-      <pubDate>Sun, 11 Jan 2015 20:57:00 +0000</pubDate>
-      <guid>https://mozanunal.com/2015/01/lcd-gostergeli-mesafe-olcer/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Merhabalar!&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Bugünkü yazımda LCD göstergeli bir mesafe ölçerin nasıl yapılabileceğini
+tanıtım videosu bulunmaktadır. Tekrar görüşmek üzere.&lt;/p></description></item><item><title>[TR] LCD Göstergeli Mesafe Ölçer</title><link>https://mozanunal.com/posts/2015/lcd-gostergeli-mesafe-olcer/</link><pubDate>Sun, 11 Jan 2015 20:57:00 +0000</pubDate><author>mehmetozanunal@gmail.com (M.Ozan Unal)</author><guid>https://mozanunal.com/posts/2015/lcd-gostergeli-mesafe-olcer/</guid><description>&lt;p>&lt;strong>Merhabalar!&lt;/strong>&lt;/p>
+&lt;p>Bugünkü yazımda LCD göstergeli bir mesafe ölçerin nasıl yapılabileceğini
 anlatacağım. Projede Arduino, LCD modülü ve HC-SR04 modülü kullandım. Mesafe
 hesaplama işini &amp;ldquo;NewPing&amp;rdquo; isimli kütüphaneye yaptırdım. Bu aldığım mesafe
 verilerini de LCD ekrana bastırıyorum kod bu kadar basit. HC-SR04 ultrasonik
 mesafe hesaplama modulü. Mesafe hesabı için ses dalgalarını kullanıyor. Ses
 hızına göre geri dönüş süresini hesaplıyor bu sayede uzaklık hakkında bilgi
-sahibi olmuş oluyoruz.&lt;/p&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://2.bp.blogspot.com/-imW1-EwFBzI/VLK22y3CYhI/AAAAAAAAGjE/IiK8R_IY9rM/s1600/IMG_20150111_183709.jpg&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://3.bp.blogspot.com/-QmoDFE2QbYc/VLK23M3z7hI/AAAAAAAAGjI/q0U5KHUuEiU/s1600/IMG_20150111_183748.jpg&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Uygulamanın Arduino Kodunu paylaşıyorum. Bağlantılar da kod içerisinde
-verilmiştir.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>[TR] Arduino Joystick Kontrol</title>
-      <link>https://mozanunal.com/2014/10/arduino-joystick-kontrol/</link>
-      <pubDate>Wed, 29 Oct 2014 00:21:00 +0000</pubDate>
-      <guid>https://mozanunal.com/2014/10/arduino-joystick-kontrol/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar!&lt;/strong&gt;&lt;br&gt;
+sahibi olmuş oluyoruz.&lt;/p></description></item><item><title>[TR] Arduino Joystick Kontrol</title><link>https://mozanunal.com/posts/2014/arduino-joystick-kontrol/</link><pubDate>Wed, 29 Oct 2014 00:21:00 +0000</pubDate><author>mehmetozanunal@gmail.com (M.Ozan Unal)</author><guid>https://mozanunal.com/posts/2014/arduino-joystick-kontrol/</guid><description>&lt;p>&lt;strong>Herkese Merhabalar!&lt;/strong>&lt;br>
 Bugünkü yazımda Arduino ile Joystick Kontrol projemden bahsetmek istiyorum. Bu
 projede, 2 eksenli bir joystick ile 2 eksenli bir gimbalı kontrol ettim.
 Kontrolcü olarak Arduino Nano kullandım. Bütün Arduino çeşitleri kullanılabilir
-Nanoyu küçük olduğu ve usb üzerinden kolay programlanabildiği için tercih ettim.&lt;/p&gt;
-&lt;p&gt;Breadboard üzerine basit bir devre kurdum. Arduinonun standart servo
-kütüphanesini kullanarak kodu yazdım. Joystickten veri almak için Arduinonun
-analaog giriş pinlerini kullandım. Analog girişler 1 veya 0 dan farklı değerler
-okumak için kullanılır. Mesela 10 bitlik bir analog girişten 0-1024 arası
-değerler okunabilir. Aşağıda bağlantılar ve kaynak kodunu paylaşıyorum. Tekrar
-görüşmek üzere.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>[TR] Bilgisayardan Gimbal Kontrolü</title>
-      <link>https://mozanunal.com/2014/10/bilgisayardan-gimbal-kontrolu/</link>
-      <pubDate>Tue, 21 Oct 2014 02:47:00 +0000</pubDate>
-      <guid>https://mozanunal.com/2014/10/bilgisayardan-gimbal-kontrolu/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar!&lt;/strong&gt;&lt;br&gt;
+Nanoyu küçük olduğu ve usb üzerinden kolay programlanabildiği için tercih ettim.&lt;/p></description></item><item><title>[TR] Bilgisayardan Gimbal Kontrolü</title><link>https://mozanunal.com/posts/2014/bilgisayardan-gimbal-kontrolu/</link><pubDate>Tue, 21 Oct 2014 02:47:00 +0000</pubDate><author>mehmetozanunal@gmail.com (M.Ozan Unal)</author><guid>https://mozanunal.com/posts/2014/bilgisayardan-gimbal-kontrolu/</guid><description>&lt;p>&lt;strong>Herkese Merhabalar!&lt;/strong>&lt;br>
 Bugün size bilgisayardan gimbal kontrolü projemden bahsedeceğim. Bu projedeki
 amacım C# ile yazdığım bir arayüzde gimbali kontrol etmek. Gimbal ve bilgisayar
 arasında haberleşmeyi sağlaması ve servoları kontrol etmesi için bir arduino
 yerleştirdim. C# arayüzünün görevi, tıkladığım butonlara göre arduinoya &amp;ldquo;serial
-port&amp;rdquo; üzerinden gönderilecek karakteri değiştirmesidir.&lt;br&gt;
-Arduino da serial porttan aldığı karaktere göre servoları yönetir.&lt;/p&gt;
-&lt;p&gt;Bilgisayardan Gimbal Kontrolü&lt;/p&gt;
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube-nocookie.com/embed/Z61XZI12bS0?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;&gt;&lt;/iframe&gt;
-    &lt;/div&gt;
-
-&lt;p&gt;Arayüz programını C# kodlarının bu proje için örnek kısımlar aşağıdaki gibidir.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>[TR] İlk Yayın</title>
-      <link>https://mozanunal.com/2014/05/ilk-yayn/</link>
-      <pubDate>Sun, 25 May 2014 03:44:00 +0000</pubDate>
-      <guid>https://mozanunal.com/2014/05/ilk-yayn/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar!&lt;/strong&gt;&lt;br&gt;
+port&amp;rdquo; üzerinden gönderilecek karakteri değiştirmesidir.&lt;br>
+Arduino da serial porttan aldığı karaktere göre servoları yönetir.&lt;/p></description></item><item><title>[TR] İlk Yayın</title><link>https://mozanunal.com/posts/2014/ilk-yayn/</link><pubDate>Sun, 25 May 2014 03:44:00 +0000</pubDate><author>mehmetozanunal@gmail.com (M.Ozan Unal)</author><guid>https://mozanunal.com/posts/2014/ilk-yayn/</guid><description>&lt;p>&lt;strong>Herkese Merhabalar!&lt;/strong>&lt;br>
     Yaptığım projeleri arşivleyebilmek ve bunlardan herkesin yararlanabilmesi
 için blog açmaya karar verdim. Blogumda size C# üzerinden arayüz yapımı,
 bilgisayar mikroişlemci iletişimi, arduino uygulamaları, pic uygulamaları ve
@@ -284,7 +100,4 @@ sistemleri üzerine çalışmalar yaptım. Gps, IMU, ve daha bir sürü sensörd
 aldığımız verileri, yer istasyonuna iletmek ve arayüz programıyla bunların
 görsellenmesiydi görevim. Şimdi ise insansız hava araçları ve görüntü işleme
 üzerine çalışmaktayım. Aynı zamanda hobi olarak pic ve arduino devreleri,
-çeşitli devreler üretmeye, yapmaya devam ediyorum. Tekrar görüşmek üzere&amp;hellip;&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+çeşitli devreler üretmeye, yapmaya devam ediyorum. Tekrar görüşmek üzere&amp;hellip;&lt;/p></description></item></channel></rss>

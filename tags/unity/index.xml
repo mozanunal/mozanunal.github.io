@@ -1,39 +1,13 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>Unity on mozanunal.com</title>
-    <link>https://mozanunal.com/tags/unity/</link>
-    <description>Recent content in Unity on mozanunal.com</description>
-    <image>
-      <title>mozanunal.com</title>
-      <url>https://mozanunal.com/images/papermod-cover.png</url>
-      <link>https://mozanunal.com/images/papermod-cover.png</link>
-    </image>
-    <generator>Hugo -- 0.147.8</generator>
-    <language>en</language>
-    <copyright>mozanunal</copyright>
-    <lastBuildDate>Sun, 16 Apr 2017 18:04:36 +0000</lastBuildDate>
-    <atom:link href="https://mozanunal.com/tags/unity/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Artwork Sharing Platform with Augmented Reality</title>
-      <link>https://mozanunal.com/2017/04/art-sharing-platform-1521976119976/</link>
-      <pubDate>Sun, 16 Apr 2017 18:04:36 +0000</pubDate>
-      <guid>https://mozanunal.com/2017/04/art-sharing-platform-1521976119976/</guid>
-      <description>&lt;p&gt;This is a project develop for Tech4Culture Hackhathon 2017.&lt;/p&gt;
-&lt;p&gt;Project features:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;You can share artworks&lt;/li&gt;
-&lt;li&gt;You can follow artist who you like&lt;/li&gt;
-&lt;li&gt;You can explore and experience artworks with augmented reality&lt;/li&gt;
-&lt;li&gt;You can follow art foundations for art and culture activities&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://mozanunal.com/images/1521977188211.png&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://mozanunal.com/images/1521977228493.png&#34;&gt;&lt;/p&gt;
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube-nocookie.com/embed/agt2mLnlgAk?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;&gt;&lt;/iframe&gt;
-    &lt;/div&gt;
-
-&lt;p&gt;Future Improvements&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Unity on mozanunal.com</title><link>https://mozanunal.com/tags/unity/</link><description>Recent content in Unity on mozanunal.com</description><generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>mehmetozanunal@gmail.com (M.Ozan Unal)</managingEditor><webMaster>mehmetozanunal@gmail.com (M.Ozan Unal)</webMaster><copyright>© 2025 M.Ozan Unal</copyright><lastBuildDate>Sun, 16 Apr 2017 18:04:36 +0000</lastBuildDate><atom:link href="https://mozanunal.com/tags/unity/index.xml" rel="self" type="application/rss+xml"/><item><title>Artwork Sharing Platform with Augmented Reality</title><link>https://mozanunal.com/posts/2017/art-sharing-platform-1521976119976/</link><pubDate>Sun, 16 Apr 2017 18:04:36 +0000</pubDate><author>mehmetozanunal@gmail.com (M.Ozan Unal)</author><guid>https://mozanunal.com/posts/2017/art-sharing-platform-1521976119976/</guid><description>&lt;p>This is a project develop for Tech4Culture Hackhathon 2017.&lt;/p>
+&lt;p>Project features:&lt;/p>
+&lt;ul>
+&lt;li>You can share artworks&lt;/li>
+&lt;li>You can follow artist who you like&lt;/li>
+&lt;li>You can explore and experience artworks with augmented reality&lt;/li>
+&lt;li>You can follow art foundations for art and culture activities&lt;/li>
+&lt;/ul>
+&lt;p>
+&lt;figure>
+&lt;img class="my-0 rounded-md" loading="lazy" alt="image" src="https://mozanunal.com/images/1521977188211.png">
+&lt;/figure>
+&lt;/p></description></item></channel></rss>

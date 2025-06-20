@@ -1,32 +1,8 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>Düşük Voltaj Koruma Devresi on mozanunal.com</title>
-    <link>https://mozanunal.com/tags/d%C3%BC%C5%9F%C3%BCk-voltaj-koruma-devresi/</link>
-    <description>Recent content in Düşük Voltaj Koruma Devresi on mozanunal.com</description>
-    <image>
-      <title>mozanunal.com</title>
-      <url>https://mozanunal.com/images/papermod-cover.png</url>
-      <link>https://mozanunal.com/images/papermod-cover.png</link>
-    </image>
-    <generator>Hugo -- 0.147.8</generator>
-    <language>en</language>
-    <copyright>mozanunal</copyright>
-    <lastBuildDate>Wed, 05 Aug 2015 15:08:00 +0000</lastBuildDate>
-    <atom:link href="https://mozanunal.com/tags/d%C3%BC%C5%9F%C3%BCk-voltaj-koruma-devresi/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>[TR] Bataryalar için Sabit Akım Deşarj Devresi Yapımı</title>
-      <link>https://mozanunal.com/2015/08/bataryalar-icin-sabit-akm-desarj/</link>
-      <pubDate>Wed, 05 Aug 2015 15:08:00 +0000</pubDate>
-      <guid>https://mozanunal.com/2015/08/bataryalar-icin-sabit-akm-desarj/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Batarya kapasite testi için çeşitli yöntemler geliştirilmiştir. Bunlardan ilk
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Düşük Voltaj Koruma Devresi on mozanunal.com</title><link>https://mozanunal.com/tags/d%C3%BC%C5%9F%C3%BCk-voltaj-koruma-devresi/</link><description>Recent content in Düşük Voltaj Koruma Devresi on mozanunal.com</description><generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>mehmetozanunal@gmail.com (M.Ozan Unal)</managingEditor><webMaster>mehmetozanunal@gmail.com (M.Ozan Unal)</webMaster><copyright>© 2025 M.Ozan Unal</copyright><lastBuildDate>Wed, 05 Aug 2015 15:08:00 +0000</lastBuildDate><atom:link href="https://mozanunal.com/tags/d%C3%BC%C5%9F%C3%BCk-voltaj-koruma-devresi/index.xml" rel="self" type="application/rss+xml"/><item><title>[TR] Bataryalar için Sabit Akım Deşarj Devresi Yapımı</title><link>https://mozanunal.com/posts/2015/bataryalar-icin-sabit-akm-desarj/</link><pubDate>Wed, 05 Aug 2015 15:08:00 +0000</pubDate><author>mehmetozanunal@gmail.com (M.Ozan Unal)</author><guid>https://mozanunal.com/posts/2015/bataryalar-icin-sabit-akm-desarj/</guid><description>&lt;p>&lt;strong>Herkese Merhabalar,&lt;/strong>&lt;/p>
+&lt;p>Batarya kapasite testi için çeşitli yöntemler geliştirilmiştir. Bunlardan ilk
 akıla geleni bataryanın uçlarına sabit direnç bağlayıp çekilen akım ve zaman
 üzerinden kapasite hesabı yapmaktır. Fakat bataryaların zamanla deşarj oldukça
 voltajı azalır bu da akımın değişmesine yol açacaktır. Bu sorunu çözmek için ise
 deşarj esnasında mümkün olduğunca çok voltaj örneklenerek anlık akım hesaplanıp
 interpolasyon yöntemleriyle kapasiteye ulaşılabilir. Fakat bu sıkıntıları aşmak
-için ikinci bir ölçüm yöntemi vardır; Sabit akım deşarj devresi.&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+için ikinci bir ölçüm yöntemi vardır; Sabit akım deşarj devresi.&lt;/p></description></item></channel></rss>
