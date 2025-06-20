@@ -1,8 +1,7 @@
-PWD="$(shell pwd)"
-SEP="-------------------------------------------"
-
 REPO_URL := git@github.com:mozanunal/mozanunal.github.io.git
 BUILD_DIR := deploy_git
+QUARTO_FILES := $(shell rg --files --glob content/**/*.qmd)
+PWD="$(shell pwd)"
 
 serve:
 	hugo serve --openBrowser --enableGitInfo --navigateToChanged --disableFastRender
@@ -10,8 +9,12 @@ serve:
 build:
 	hugo --minify
 
+qmd_render:
+	echo $(QUARTO_FILES)
+	source .venv/bin/activate && quarto render $(QUARTO_FILES)
+
 format:
-	deno fmt --ext md content/
+	deno fmt content/**/*.md
 
 deploy: build
 	rm -rf $(BUILD_DIR)
