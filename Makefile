@@ -20,6 +20,7 @@ deploy: build
 	rm -rf $(BUILD_DIR)
 	git clone $(REPO_URL) $(BUILD_DIR) --branch=public --depth=1
 	rm -rf $(BUILD_DIR)/*
+	echo "mozanunal.com" > public/CNAME
 	cp -r public/* $(BUILD_DIR)
 	cd $(BUILD_DIR) && \
 	git config user.name "mozanunal" && \
