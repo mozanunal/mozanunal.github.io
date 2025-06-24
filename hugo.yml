@@ -19,12 +19,12 @@ params:
   description: "An example site for the clean and configurable Hugo Classless theme."
 
   themes:
+    - name: "Pico"
+      url: "https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.classless.min.css"
     - name: "Classless.css"
       url: "https://cdn.jsdelivr.net/gh/digitallytailored/classless@latest/classless.min.css"
     - name: "Cosmo.css"
       url: "https://cdn.jsdelivr.net/gh/cspablocortez/cosmocss@latest/cosmo.min.css"
-    - name: "Pico"
-      url: "https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.classless.min.css"
     - name: "Pico-Fluid"
       url: "https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.fluid.classless.min.css"
     - name: "Water.css"
@@ -63,9 +63,12 @@ menu:
     - name: 'Projects'
       pageRef: '/projects'
       weight: 30
+    - name: 'Papers'
+      pageRef: '/papers'
+      weight: 40
     - name: 'Contact'
       pageRef: '/contact'
-      weight: 40
+      weight: 50
 
 markup:
   goldmark:
@@ -76,12 +79,12 @@ markup:
     # Set to true to enable KaTeX processing on pages that have `math: true` in their front matter.
     enabled: true
   highlight:
-    # noClasses: false
+    noClasses: true
     # anchorLineNos: true
-    # codeFences: false
+    codeFences: true
     guessSyntax: true
-    # lineNos: true
-    style: onedark
+    lineNos: false
+    style: catppuccin-frappe
 
 minify:
   disableXML: true
