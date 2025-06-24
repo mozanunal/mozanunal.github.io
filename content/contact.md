@@ -1,6 +1,6 @@
 ---
-# title: "Contact"
-# date: 2024-11-16T11:46:14+03:00
+title: "Contact"
+date: 2025-06-12
 draft: false
 ---
 

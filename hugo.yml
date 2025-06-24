@@ -1,7 +1,7 @@
 baseURL: "https://mozanunal.com"
 title: mozanunal.com
-copyright: "© mozanunal"
-theme: [hugo-PaperMod]
+theme: hugo-classless
+languageCode: 'en-US'
 
 permalinks:
   posts: "/:year/:month/:contentbasename"
@@ -10,185 +10,78 @@ enableRobotsTXT: true
 buildDrafts: false
 buildFuture: false
 buildExpired: false
-enableEmoji: true
-pygmentsUseClasses: true
-mainsections: ["posts"]
 googleAnalytics: "G-007KSW65JL"
 
-minify:
-  disableXML: true
-  # minifyOutput: true
-
-pagination:
-  disableAliases: false
-  pagerSize: 100
-
-languages:
-  en:
-    languageName: "English"
-    weight: 1
-    taxonomies:
-    # category: categories
-    # tag: tags
-    # series: series
-    menu:
-      main:
-        - name: Posts
-          url: posts/
-          weight: 5
-        - name: Contact
-          url: contact/
-          weight: 10
-        - name: GScholar
-          url: https://scholar.google.com/citations?user=u_HbXUUAAAAJ&hl=en
-        - name: Github
-          url: https://github.com/mozanunal
-
-    # custom params for each language should be under [langcode].parms - hugo v0.120.0
-    params:
-      math: true
-      profileMode:
-        enabled: true
-        title: M.Ozan Unal
-        imageUrl: "/images/profile.png"
-        imageTitle: ProfileMode image
-        imageWidth: 320
-        imageHeight: 320
-        subtitle: "💾 Data | ☁️ Cloud | 🤖 AI"
-        buttons:
-          - name: Posts
-            url: https://mozanunal.com/posts/
-          - name: Projects
-            url: https://github.com/mozanunal
-          - name: Papers
-            url: https://scholar.google.com/citations?user=u_HbXUUAAAAJ&hl=en
-
-outputs:
-  home:
-    - HTML
-    - RSS
-    - JSON
-
 params:
-  env: production # to enable google analytics, opengraph, twitter-cards and schema.
-  description: "Theme PaperMod - https://github.com/adityatelange/hugo-PaperMod"
-  author: M.Ozan Unal
-  # author: ["Me", "You"] # multiple authors
+  # The author's name, used in the footer.
+  author: "M.Ozan Unal"
+  # A short site description, often used for SEO meta tags.
+  description: "An example site for the clean and configurable Hugo Classless theme."
 
-  defaultTheme: auto
-  # disableThemeToggle: true
-  ShowShareButtons: true
-  ShowReadingTime: true
-  # disableSpecial1stPost: true
-  displayFullLangName: true
-  ShowPostNavLinks: true
-  ShowBreadCrumbs: true
-  ShowCodeCopyButtons: true
-  ShowRssButtonInSectionTermList: true
-  ShowAllPagesInArchive: true
-  ShowPageNums: true
-  ShowToc: true
-  # comments: false
-  images: ["images/papermod-cover.png"]
+  themes:
+    - name: "Classless.css"
+      url: "https://cdn.jsdelivr.net/gh/digitallytailored/classless@latest/classless.min.css"
+    - name: "Cosmo.css"
+      url: "https://cdn.jsdelivr.net/gh/cspablocortez/cosmocss@latest/cosmo.min.css"
+    - name: "Pico"
+      url: "https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.classless.min.css"
+    - name: "Pico-Fluid"
+      url: "https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.fluid.classless.min.css"
+    - name: "Water.css"
+      url: "https://cdn.jsdelivr.net/npm/water.css@2/out/water.css"
+    - name: "Sakura.css"
+      url: "https://cdn.jsdelivr.net/npm/sakura.css/css/sakura.css"
+    - name: "Simple.css"
+      url: "https://cdn.simplecss.org/simple.min.css"
+    - name: "Almond.css"
+      url: "https://cdn.jsdelivr.net/gh/alvaromontoro/almond.css@latest/dist/almond.min.css"
+    - name: "New.css"
+      url: "https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css"
+    - name: "Missing.css"
+      url: "https://unpkg.com/missing.css"
+    - name: "Bolt.css"
+      url: "https://unpkg.com/boltcss/bolt.min.css"
+    - name: "PerfectMFWS"
+      url: "https://perfectmotherfuckingwebsite.com/fuckingstyle.css"
+    - name: "HTML only"
+      url: ""
 
-  profileMode:
-    enabled: false
-    title: PaperMod
-    imageUrl: "#"
-    imageTitle: my image
-    # imageWidth: 120
-    # imageHeight: 120
-    buttons:
-      - name: Archives
-        url: archives
-      - name: Tags
-        url: tags
+  themeSelectorLocation: 'header'
+  faviconSVG: "/favicon.svg"
+  faviconICO: "/favicon.ico"
+  appleTouchIcon: "/apple-touch-icon.png"
+  quicklink: false
 
-  homeInfoParams:
-    Title: "mozanunal.com"
-    Content: >
-      👋 Welcome to my blog.
-
-  socialIcons:
-    - name: github
-      title: Find me on Github
-      url: "https://github.com/mozanunal"
-    - name: X
-      title: Find me on X/Twitter
-      url: "https://twitter.com/MOzanUnal"
-    - name: googlescholar
-      title: Find me on Google Scholar
-      url: "https://scholar.google.com/citations?user=u_HbXUUAAAAJ&hl=en"
-
-  editPost:
-    URL: "https://github.com/mozanunal/mozanunal.github.io/tree/master/content"
-    Text: "Suggest Changes" # edit text
-    appendFilePath: true # to append file path to Edit link
-
-  # label:
-  # iconSVG: '<svg xmlns="http://www.w3.org/2000/svg" height="25" viewBox="0 -960 960 960" fill="currentColor"><path d="M320-240h320v-80H320v80Zm0-160h320v-80H320v80ZM240-80q-33 0-56.5-23.5T160-160v-640q0-33 23.5-56.5T240-880h320l240 240v480q0 33-23.5 56.5T720-80H240Zm280-520v-200H240v640h480v-440H520ZM240-800v200-200 640-640Z"/></svg>'
-  # text: "Home"
-  # icon: icon.png
-  # iconHeight: 35
-
-  analytics:
-    google:
-      SiteVerificationTag: "G-007KSW65JL"
-
-  assets:
-    disableHLJS: true
-  #     favicon: "<link / abs url>"
-  #     favicon16x16: "<link / abs url>"
-  #     favicon32x32: "<link / abs url>"
-  #     apple_touch_icon: "<link / abs url>"
-  #     safari_pinned_tab: "<link / abs url>"
-
-  # cover:
-  #     hidden: true # hide everywhere but not in structured data
-  #     hiddenInList: true # hide on list pages and home
-  #     hiddenInSingle: true # hide on single page
-
-  fuseOpts:
-    isCaseSensitive: false
-    shouldSort: true
-    location: 0
-    distance: 1000
-    threshold: 0.4
-    minMatchCharLength: 0
-    keys: ["title", "permalink", "summary", "content"]
+menu:
+  main:
+    - name: 'Home'
+      pageRef: '/'
+      weight: 10
+    - name: 'Posts'
+      pageRef: '/posts'
+      weight: 20
+    - name: 'Projects'
+      pageRef: '/projects'
+      weight: 30
+    - name: 'Contact'
+      pageRef: '/contact'
+      weight: 40
 
 markup:
   goldmark:
     renderer:
+      # This allows raw HTML blocks, which is required for KaTeX and other advanced HTML to work properly.
       unsafe: true
+  katex:
+    # Set to true to enable KaTeX processing on pages that have `math: true` in their front matter.
+    enabled: true
   highlight:
-    noClasses: false
+    # noClasses: false
     # anchorLineNos: true
-    # codeFences: true
+    # codeFences: false
     guessSyntax: true
-    lineNos: true
-    # style: monokai
+    # lineNos: true
+    style: onedark
 
-privacy:
-  vimeo:
-    disabled: true
-    simple: true
-
-  x:
-    disabled: true
-    enableDNT: true
-    simple: true
-
-  instagram:
-    disabled: true
-    simple: true
-
-  youtube:
-    disabled: false
-    privacyEnhanced: true
-
-services:
-  instagram:
-    disableInlineCSS: true
-  x:
-    disableInlineCSS: true
+minify:
+  disableXML: true
