@@ -1,17 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Star Wars BB-8 on mozanunal.com</title>
     <link>https://mozanunal.com/tags/star-wars-bb-8/</link>
     <description>Recent content in Star Wars BB-8 on mozanunal.com</description>
-    <image>
-      <title>mozanunal.com</title>
-      <url>https://mozanunal.com/images/papermod-cover.png</url>
-      <link>https://mozanunal.com/images/papermod-cover.png</link>
-    </image>
-    <generator>Hugo -- 0.147.8</generator>
-    <language>en</language>
-    <copyright>mozanunal</copyright>
+    <generator>Hugo</generator>
+    <language>en-US</language>
     <lastBuildDate>Thu, 21 Jan 2016 03:26:00 +0000</lastBuildDate>
     <atom:link href="https://mozanunal.com/tags/star-wars-bb-8/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -19,17 +13,7 @@
       <link>https://mozanunal.com/2016/01/star-wars-bb-8-robot-yapm-bolum-1/</link>
       <pubDate>Thu, 21 Jan 2016 03:26:00 +0000</pubDate>
       <guid>https://mozanunal.com/2016/01/star-wars-bb-8-robot-yapm-bolum-1/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;br&gt;
-Bu seferki projem Star Warsa son film ile katılan BB-8 isimli droidin bir
-benzerini yapmak. Bu fikir aklıma nereden geldi derseniz. Son filmdeki en
-sempatik ve ilgi çekici karakterin BB-8 olduğunu düşünüyorum. Tabi ilk aklıma
-gelen nasıl çalıştığı&amp;hellip; Farklı fikirler yürütürken kendimi bu droidi nasıl
-yaparım diye tasarımlar yaptığım bir projenin içinde buluverdim. Elle tutulur
-tasarımlar ortaya çıkmaya başlayınca malzemelerimi topladım ve projeye başladım.
-Proje oldukça uzun ve daha çok mekanik bir proje bu yüzden 2 parçaya ayırdım
-kalanını ne zaman bitiririm bilmiyorum. Şu an devam edemiyorum çünkü lipo
-pillerim bitti ve şarj aletini malesef istanbulda unutmuşum. Neyse projemize
-geçelim.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;br&gt;&#xA;Bu seferki projem Star Warsa son film ile katılan BB-8 isimli droidin bir&#xA;benzerini yapmak. Bu fikir aklıma nereden geldi derseniz. Son filmdeki en&#xA;sempatik ve ilgi çekici karakterin BB-8 olduğunu düşünüyorum. Tabi ilk aklıma&#xA;gelen nasıl çalıştığı&amp;hellip; Farklı fikirler yürütürken kendimi bu droidi nasıl&#xA;yaparım diye tasarımlar yaptığım bir projenin içinde buluverdim. Elle tutulur&#xA;tasarımlar ortaya çıkmaya başlayınca malzemelerimi topladım ve projeye başladım.&#xA;Proje oldukça uzun ve daha çok mekanik bir proje bu yüzden 2 parçaya ayırdım&#xA;kalanını ne zaman bitiririm bilmiyorum. Şu an devam edemiyorum çünkü lipo&#xA;pillerim bitti ve şarj aletini malesef istanbulda unutmuşum. Neyse projemize&#xA;geçelim.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

@@ -1,17 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Bitcoin Mining on mozanunal.com</title>
     <link>https://mozanunal.com/tags/bitcoin-mining/</link>
     <description>Recent content in Bitcoin Mining on mozanunal.com</description>
-    <image>
-      <title>mozanunal.com</title>
-      <url>https://mozanunal.com/images/papermod-cover.png</url>
-      <link>https://mozanunal.com/images/papermod-cover.png</link>
-    </image>
-    <generator>Hugo -- 0.147.8</generator>
-    <language>en</language>
-    <copyright>mozanunal</copyright>
+    <generator>Hugo</generator>
+    <language>en-US</language>
     <lastBuildDate>Sun, 30 Jul 2017 15:50:00 +0000</lastBuildDate>
     <atom:link href="https://mozanunal.com/tags/bitcoin-mining/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -19,22 +13,7 @@
       <link>https://mozanunal.com/2017/07/bitcoin-madencileri-icin-online-dashboard/</link>
       <pubDate>Sun, 30 Jul 2017 15:50:00 +0000</pubDate>
       <guid>https://mozanunal.com/2017/07/bitcoin-madencileri-icin-online-dashboard/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Herkes merhabalar,&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Bitcoin son dönemlerin popüler konularından birisi. Aslında genel olarak crypto
-currency son zamanlarda çok popüler. Peki nedir bu kavramlar? Crypto currency
-güvenliği şifreleme teknojileriyle sağlanan sanal para birimleridir. Her gün bir
-yeni bir tür crypto currency ortaya çıkıyor. Bunlar arasında en geçerli olanı
-ise bitcoin. Sanırım popülerliği en eskilerinden biri olmasından ve anlık olarak
-üretimi sınırlayabilen ilki olmasından geliyor. Bahsetmek istediğim 3. kavram
-ise bit coin mining: Yüksek hesaplama gücü kullanarak bitcoin üretebilmeniz
-mümkün. Bitcoin alışverişlerinin geçerli olması için bir şifre ile onaylanması
-gerekiyor. Bu şifreyi de bir hash çözerek oluşturuyorsunuz ve bunun karşılığında
-sistem sizi bitcoin ile ödüllendiriyor. Bu amaçla bir sürü insan sağlan ekran
-kartları alıp bitcoin tarlaları kurdular ve bu işten para kazanıyorlar. Tabi
-aklınıza, bitcoinin dünyaya katkısı nedir ya da ne kadar riskli, yatırım yapılır
-mı? gibi türlü türlü farklı açılardan sorular gelebilir. Ama malesef ben bu
-konuda uzman değilim ve daha nedir sorusuna bile tam olarak cevap vermek çok
-zor.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;strong&gt;Herkes merhabalar,&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Bitcoin son dönemlerin popüler konularından birisi. Aslında genel olarak crypto&#xA;currency son zamanlarda çok popüler. Peki nedir bu kavramlar? Crypto currency&#xA;güvenliği şifreleme teknojileriyle sağlanan sanal para birimleridir. Her gün bir&#xA;yeni bir tür crypto currency ortaya çıkıyor. Bunlar arasında en geçerli olanı&#xA;ise bitcoin. Sanırım popülerliği en eskilerinden biri olmasından ve anlık olarak&#xA;üretimi sınırlayabilen ilki olmasından geliyor. Bahsetmek istediğim 3. kavram&#xA;ise bit coin mining: Yüksek hesaplama gücü kullanarak bitcoin üretebilmeniz&#xA;mümkün. Bitcoin alışverişlerinin geçerli olması için bir şifre ile onaylanması&#xA;gerekiyor. Bu şifreyi de bir hash çözerek oluşturuyorsunuz ve bunun karşılığında&#xA;sistem sizi bitcoin ile ödüllendiriyor. Bu amaçla bir sürü insan sağlan ekran&#xA;kartları alıp bitcoin tarlaları kurdular ve bu işten para kazanıyorlar. Tabi&#xA;aklınıza, bitcoinin dünyaya katkısı nedir ya da ne kadar riskli, yatırım yapılır&#xA;mı? gibi türlü türlü farklı açılardan sorular gelebilir. Ama malesef ben bu&#xA;konuda uzman değilim ve daha nedir sorusuna bile tam olarak cevap vermek çok&#xA;zor.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

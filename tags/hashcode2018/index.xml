@@ -1,17 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hashcode2018 on mozanunal.com</title>
     <link>https://mozanunal.com/tags/hashcode2018/</link>
     <description>Recent content in Hashcode2018 on mozanunal.com</description>
-    <image>
-      <title>mozanunal.com</title>
-      <url>https://mozanunal.com/images/papermod-cover.png</url>
-      <link>https://mozanunal.com/images/papermod-cover.png</link>
-    </image>
-    <generator>Hugo -- 0.147.8</generator>
-    <language>en</language>
-    <copyright>mozanunal</copyright>
+    <generator>Hugo</generator>
+    <language>en-US</language>
     <lastBuildDate>Sun, 08 Apr 2018 00:45:01 +0000</lastBuildDate>
     <atom:link href="https://mozanunal.com/tags/hashcode2018/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -19,14 +13,7 @@
       <link>https://mozanunal.com/2018/04/hash-code-2018/</link>
       <pubDate>Sun, 08 Apr 2018 00:45:01 +0000</pubDate>
       <guid>https://mozanunal.com/2018/04/hash-code-2018/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt; Hash Code Google tarafından dünya çapında düzenlenen bir
-algoritma yarışmasıdır. Bu yıl itibariyle son 3 tanesine ben de katılmış
-bulunuyorum. Hatta geçen sene yarışma hakkında bir yazı da yazmıştım. Bu
-geleneği bu yıl da devam ettirmeye karar verdım.&lt;/p&gt;
-&lt;p&gt;Bu seneki yarışmada çok başarılı olamadık derece anlamında. Ama yarışmada
-çalışan, puan alabilen bir çözüm sunmak bile baya zor. O nedenle ben de çözümüzü
-birazcık açıklamak istiyorum. Aşağıdan direk github reposunu inceleyebilirsiniz.
-&lt;a href=&#34;https://github.com/mozanunal/hashcode-2018-qualificationQuestion&#34;&gt;Github Repo&lt;/a&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt; Hash Code Google tarafından dünya çapında düzenlenen bir&#xA;algoritma yarışmasıdır. Bu yıl itibariyle son 3 tanesine ben de katılmış&#xA;bulunuyorum. Hatta geçen sene yarışma hakkında bir yazı da yazmıştım. Bu&#xA;geleneği bu yıl da devam ettirmeye karar verdım.&lt;/p&gt;&#xA;&lt;p&gt;Bu seneki yarışmada çok başarılı olamadık derece anlamında. Ama yarışmada&#xA;çalışan, puan alabilen bir çözüm sunmak bile baya zor. O nedenle ben de çözümüzü&#xA;birazcık açıklamak istiyorum. Aşağıdan direk github reposunu inceleyebilirsiniz.&#xA;&lt;a href=&#34;https://github.com/mozanunal/hashcode-2018-qualificationQuestion&#34;&gt;Github Repo&lt;/a&gt;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

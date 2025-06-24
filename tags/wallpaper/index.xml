@@ -1,17 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Wallpaper on mozanunal.com</title>
     <link>https://mozanunal.com/tags/wallpaper/</link>
     <description>Recent content in Wallpaper on mozanunal.com</description>
-    <image>
-      <title>mozanunal.com</title>
-      <url>https://mozanunal.com/images/papermod-cover.png</url>
-      <link>https://mozanunal.com/images/papermod-cover.png</link>
-    </image>
-    <generator>Hugo -- 0.147.8</generator>
-    <language>en</language>
-    <copyright>mozanunal</copyright>
+    <generator>Hugo</generator>
+    <language>en-US</language>
     <lastBuildDate>Tue, 12 Oct 2021 08:14:07 +0000</lastBuildDate>
     <atom:link href="https://mozanunal.com/tags/wallpaper/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -19,15 +13,7 @@
       <link>https://mozanunal.com/2021/10/wpctl-1/</link>
       <pubDate>Tue, 12 Oct 2021 08:14:07 +0000</pubDate>
       <guid>https://mozanunal.com/2021/10/wpctl-1/</guid>
-      <description>&lt;p&gt;Hey,&lt;/p&gt;
-&lt;p&gt;Today I will come up with a very minimalistic wallpaper automation tool
-&lt;a href=&#34;https://github.com/mozanunal/wpctl&#34;&gt;&lt;strong&gt;WPCTL&lt;/strong&gt;&lt;/a&gt;. I spend most of my time on the
-computer. There are not too many options to have fun with while working on the
-computer. Interesting and colorful photos are one of the favorite entertainment
-sources for my daily routine. Therefore, I really like auto wallpaper changer
-programs which surprises me with different photos. I decided to use one of these
-programs. However, none of them is fulfiled my requirements. I want a wallpaper
-changer which should be like:&lt;/p&gt;</description>
+      <description>&lt;p&gt;Hey,&lt;/p&gt;&#xA;&lt;p&gt;Today I will come up with a very minimalistic wallpaper automation tool&#xA;&lt;a href=&#34;https://github.com/mozanunal/wpctl&#34;&gt;&lt;strong&gt;WPCTL&lt;/strong&gt;&lt;/a&gt;. I spend most of my time on the&#xA;computer. There are not too many options to have fun with while working on the&#xA;computer. Interesting and colorful photos are one of the favorite entertainment&#xA;sources for my daily routine. Therefore, I really like auto wallpaper changer&#xA;programs which surprises me with different photos. I decided to use one of these&#xA;programs. However, none of them is fulfiled my requirements. I want a wallpaper&#xA;changer which should be like:&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

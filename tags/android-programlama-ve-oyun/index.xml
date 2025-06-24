@@ -1,17 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Android Programlama Ve Oyun on mozanunal.com</title>
     <link>https://mozanunal.com/tags/android-programlama-ve-oyun/</link>
     <description>Recent content in Android Programlama Ve Oyun on mozanunal.com</description>
-    <image>
-      <title>mozanunal.com</title>
-      <url>https://mozanunal.com/images/papermod-cover.png</url>
-      <link>https://mozanunal.com/images/papermod-cover.png</link>
-    </image>
-    <generator>Hugo -- 0.147.8</generator>
-    <language>en</language>
-    <copyright>mozanunal</copyright>
+    <generator>Hugo</generator>
+    <language>en-US</language>
     <lastBuildDate>Mon, 17 Aug 2015 10:15:00 +0000</lastBuildDate>
     <atom:link href="https://mozanunal.com/tags/android-programlama-ve-oyun/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -19,150 +13,49 @@
       <link>https://mozanunal.com/2015/08/droid-script/</link>
       <pubDate>Mon, 17 Aug 2015 10:15:00 +0000</pubDate>
       <guid>https://mozanunal.com/2015/08/droid-script/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;br&gt;
-      Bugün size bir android uygulaması olan Droid Script uygulamasından
-bahsetmek istiyorum.
-&lt;a href=&#34;https://play.google.com/store/apps/details?id=com.smartphoneremote.androidscriptfree&#34;&gt;Programa burayı tıklayarak ulaşabilirsiniz&lt;/a&gt;.
-Bu uygulama bana göre en iyi android uygulamasıdır. Droid Script java script
-tabanlı Android uygulama geliştirme uygulamasıdır. Bu program sayesinde android
-üzerinde android için kolayca uygulama geliştirebilirsiniz. Bunu yapabileceğiniz
-farklı uygulamalar bulabilmeniz mümkün. Droid Script ayıran özellikler ise şöyle
-sıralayabiliriz:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Çok gelişmiş program içi dokümantasyon (Programdan hiç çıkmadan dokümantasyon
-bölümünden bakarak uygulamalarınızı geliştirebilirsiniz )&lt;/li&gt;
-&lt;li&gt;Telefon donanımına kolay ulaşım (Gps, kamera, sensörler, bluetooth)&lt;/li&gt;
-&lt;li&gt;Çok geniş örnek uygulama havuzu (Aklınıza gelebilecek her şeyin örneği var ve
-yine program içinden ulaşabiliyorsunuz.)&lt;/li&gt;
-&lt;li&gt;Jqplot Canvgauge gibi Java Script kütüphanelerini uygulamalarınızda gömülü
-olarak kullanabilirsiniz.( Gerçek zamanlı sensör grafikleri çizdirebilir,
-çeşitli Gauge ekleyebilirsiniz.)&lt;/li&gt;
-&lt;li&gt;Google Speech Recognition ve Google Text to Speech desteği&lt;/li&gt;
-&lt;li&gt;WebGL sayesinde yüksek performanslı yüksek görsellikte oyun tasarımı&lt;/li&gt;
-&lt;li&gt;Veri tabanı oluşturabilirsiniz.&lt;/li&gt;
-&lt;li&gt;Web browser ve TCP UDP gibi network programlama desteği.&lt;/li&gt;
-&lt;li&gt;Eğer telefon üzerinden geliştirmek istemiyorsanız Wifi aracılığıyla
-bilgisayarınızdaki browser üzerinden doğrudan bilgisayarınızda programınızı
-geliştirip tek tuş ile telefonunuzda deneyebilirsiniz.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Kısacası, Android programlama asıl odaklandığınız nokta değilse fakat
-projelerinizde Android kullanmak istiyorsanız Droid Script tam aradığınız
-program. Fazla zaman ayırmadan istediğiniz uygulamayı geliştirmeniz mümkün.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;br&gt;&#xA;      Bugün size bir android uygulaması olan Droid Script uygulamasından&#xA;bahsetmek istiyorum.&#xA;&lt;a href=&#34;https://play.google.com/store/apps/details?id=com.smartphoneremote.androidscriptfree&#34;&gt;Programa burayı tıklayarak ulaşabilirsiniz&lt;/a&gt;.&#xA;Bu uygulama bana göre en iyi android uygulamasıdır. Droid Script java script&#xA;tabanlı Android uygulama geliştirme uygulamasıdır. Bu program sayesinde android&#xA;üzerinde android için kolayca uygulama geliştirebilirsiniz. Bunu yapabileceğiniz&#xA;farklı uygulamalar bulabilmeniz mümkün. Droid Script ayıran özellikler ise şöyle&#xA;sıralayabiliriz:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Çok gelişmiş program içi dokümantasyon (Programdan hiç çıkmadan dokümantasyon&#xA;bölümünden bakarak uygulamalarınızı geliştirebilirsiniz )&lt;/li&gt;&#xA;&lt;li&gt;Telefon donanımına kolay ulaşım (Gps, kamera, sensörler, bluetooth)&lt;/li&gt;&#xA;&lt;li&gt;Çok geniş örnek uygulama havuzu (Aklınıza gelebilecek her şeyin örneği var ve&#xA;yine program içinden ulaşabiliyorsunuz.)&lt;/li&gt;&#xA;&lt;li&gt;Jqplot Canvgauge gibi Java Script kütüphanelerini uygulamalarınızda gömülü&#xA;olarak kullanabilirsiniz.( Gerçek zamanlı sensör grafikleri çizdirebilir,&#xA;çeşitli Gauge ekleyebilirsiniz.)&lt;/li&gt;&#xA;&lt;li&gt;Google Speech Recognition ve Google Text to Speech desteği&lt;/li&gt;&#xA;&lt;li&gt;WebGL sayesinde yüksek performanslı yüksek görsellikte oyun tasarımı&lt;/li&gt;&#xA;&lt;li&gt;Veri tabanı oluşturabilirsiniz.&lt;/li&gt;&#xA;&lt;li&gt;Web browser ve TCP UDP gibi network programlama desteği.&lt;/li&gt;&#xA;&lt;li&gt;Eğer telefon üzerinden geliştirmek istemiyorsanız Wifi aracılığıyla&#xA;bilgisayarınızdaki browser üzerinden doğrudan bilgisayarınızda programınızı&#xA;geliştirip tek tuş ile telefonunuzda deneyebilirsiniz.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Kısacası, Android programlama asıl odaklandığınız nokta değilse fakat&#xA;projelerinizde Android kullanmak istiyorsanız Droid Script tam aradığınız&#xA;program. Fazla zaman ayırmadan istediğiniz uygulamayı geliştirmeniz mümkün.&lt;/p&gt;</description>
     </item>
     <item>
       <title>[TR] Youtube Arka Plan Müzik Dinleyici</title>
       <link>https://mozanunal.com/2015/06/youtube-arka-plan-muzik-dinleyici/</link>
       <pubDate>Mon, 29 Jun 2015 03:09:00 +0000</pubDate>
       <guid>https://mozanunal.com/2015/06/youtube-arka-plan-muzik-dinleyici/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Merhaba Arkadaşlar,&lt;/strong&gt;&lt;br&gt;
-Bu yazımda kendi yazdığım bir Android uygulamasından bahsedeceğim. Telefonda
-youtube kullanmanın en sıkıntılı yanlarından biri video açıkken başka
-uygulamalara geçtiğimiz zaman videonun durdurulmasıdır. Bu uygulama sayesinde
-program arka plana alınsa bile video oynamaya devam eder ve sesini
-duyabilirsiniz.&lt;a href=&#34;https://drive.google.com/file/d/0B5j__Lyt9ozbQXExRTRnX1pSTW8/view?usp=sharing&#34;&gt;Programı burdan indirebilirsiniz.&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Not: Programı sadece 3 telefonda deneme şansı bulabildim. Belki başka
-telefonlarda çalışmayabilir şimdiden uyarmak isterim.&lt;/p&gt;
-&lt;p&gt;For foreign visitors:&lt;br&gt;
-One of the biggest problem about Youtube is that stopping videos when youtube at
-back ground or screen off. Therefore i decided to develop an app for solving
-this problem.
-&lt;a href=&#34;https://drive.google.com/file/d/0B5j__Lyt9ozbQXExRTRnX1pSTW8/view&#34;&gt;You can download the app from here. &lt;/a&gt;&lt;br&gt;
-Note: I can try the app only 3 android phone may be it does not work another
-android phones.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;strong&gt;Merhaba Arkadaşlar,&lt;/strong&gt;&lt;br&gt;&#xA;Bu yazımda kendi yazdığım bir Android uygulamasından bahsedeceğim. Telefonda&#xA;youtube kullanmanın en sıkıntılı yanlarından biri video açıkken başka&#xA;uygulamalara geçtiğimiz zaman videonun durdurulmasıdır. Bu uygulama sayesinde&#xA;program arka plana alınsa bile video oynamaya devam eder ve sesini&#xA;duyabilirsiniz.&lt;a href=&#34;https://drive.google.com/file/d/0B5j__Lyt9ozbQXExRTRnX1pSTW8/view?usp=sharing&#34;&gt;Programı burdan indirebilirsiniz.&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Not: Programı sadece 3 telefonda deneme şansı bulabildim. Belki başka&#xA;telefonlarda çalışmayabilir şimdiden uyarmak isterim.&lt;/p&gt;&#xA;&lt;p&gt;For foreign visitors:&lt;br&gt;&#xA;One of the biggest problem about Youtube is that stopping videos when youtube at&#xA;back ground or screen off. Therefore i decided to develop an app for solving&#xA;this problem.&#xA;&lt;a href=&#34;https://drive.google.com/file/d/0B5j__Lyt9ozbQXExRTRnX1pSTW8/view&#34;&gt;You can download the app from here. &lt;/a&gt;&lt;br&gt;&#xA;Note: I can try the app only 3 android phone may be it does not work another&#xA;android phones.&lt;/p&gt;</description>
     </item>
     <item>
       <title>[TR] Android Phone IMU Visualizer</title>
       <link>https://mozanunal.com/2015/05/android-phone-imu-visualizer/</link>
       <pubDate>Mon, 18 May 2015 06:23:00 +0000</pubDate>
       <guid>https://mozanunal.com/2015/05/android-phone-imu-visualizer/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Hi,&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;I usually write my blog in Turkish but at this project i decided to write it in
-English. Because I cannot find any successful tutorial about this issue. I took
-e-mails or contacts from different countries about my projects if they
-are unusual so i am going to write some of my article in English.&lt;/p&gt;
-&lt;p&gt;At this project, visualization of android device with IMU sensors will be
-explained.The orientation of an android device will be shown at PC. Android
-camera and PC communicate with each other with a WI- FI connection. I wrote 2
-program for this project. First one is android app
-(&lt;a href=&#34;https://drive.google.com/file/d/0B5j__Lyt9ozbNG9SdVBOOVowTjg/view?usp=sharing&#34;&gt;can download from here&lt;/a&gt;).
-Second one is visualizer program for PC. At android app IMU angles of the&lt;br&gt;
-Android phone are sent to PC by using UDP network protocol. After you install
-the app write your PC&amp;rsquo;s IP to this program. Also you can change the using port.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;strong&gt;Hi,&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;I usually write my blog in Turkish but at this project i decided to write it in&#xA;English. Because I cannot find any successful tutorial about this issue. I took&#xA;e-mails or contacts from different countries about my projects if they&#xA;are unusual so i am going to write some of my article in English.&lt;/p&gt;&#xA;&lt;p&gt;At this project, visualization of android device with IMU sensors will be&#xA;explained.The orientation of an android device will be shown at PC. Android&#xA;camera and PC communicate with each other with a WI- FI connection. I wrote 2&#xA;program for this project. First one is android app&#xA;(&lt;a href=&#34;https://drive.google.com/file/d/0B5j__Lyt9ozbNG9SdVBOOVowTjg/view?usp=sharing&#34;&gt;can download from here&lt;/a&gt;).&#xA;Second one is visualizer program for PC. At android app IMU angles of the&lt;br&gt;&#xA;Android phone are sent to PC by using UDP network protocol. After you install&#xA;the app write your PC&amp;rsquo;s IP to this program. Also you can change the using port.&lt;/p&gt;</description>
     </item>
     <item>
       <title>[TR] Yeni Android Programım: Adres Defteri</title>
       <link>https://mozanunal.com/2015/01/yeni-android-programm-adres-defteri/</link>
       <pubDate>Thu, 08 Jan 2015 02:46:00 +0000</pubDate>
       <guid>https://mozanunal.com/2015/01/yeni-android-programm-adres-defteri/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar!&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Bu yazımda yaptığım Android programı sizlerle paylaşmak istiyorum. Programımın
-adı Adres Defteri, Size gerekli olan adresleri kolayca kaydetmenize daha sonra
-navigasyon için kullanmanızı veya başkalarıyla paylaşmanızı sağlayan ve bunu çok
-kolaylaştıran bir
-program. &lt;a href=&#34;https://drive.google.com/file/d/0B5j__Lyt9ozbdElDaVBKWmlKY1k/view?usp=sharing&#34;&gt;Adres Defteri Programımını buradan indirebilirsiniz.&lt;/a&gt;H
-Programın kullanımını aşağıdan öğrenebilirsiniz.&lt;/p&gt;
-&lt;p&gt;Gps bağlanınca GPS: yazan yerde bulunduğunuz yerin koordinantları çıkar.&lt;/p&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://2.bp.blogspot.com/-QXEe-6LkU14/VK29Nfmx__I/AAAAAAAAGak/xogtu16x_og/s720/Screenshot_2015-01-07-14-06-02.png&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Daha sonra adresin ismi yazılır ve kaydet butonuna basılır.&lt;/p&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://1.bp.blogspot.com/-P4DNz4UUnUU/VK29NYQk5pI/AAAAAAAAGag/TgviIDhFYZ0/s720/Screenshot_2015-01-07-14-06-30.png&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Kaydınız başarılı ise böyle bir mesaj alırsınız.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar!&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Bu yazımda yaptığım Android programı sizlerle paylaşmak istiyorum. Programımın&#xA;adı Adres Defteri, Size gerekli olan adresleri kolayca kaydetmenize daha sonra&#xA;navigasyon için kullanmanızı veya başkalarıyla paylaşmanızı sağlayan ve bunu çok&#xA;kolaylaştıran bir&#xA;program. &lt;a href=&#34;https://drive.google.com/file/d/0B5j__Lyt9ozbdElDaVBKWmlKY1k/view?usp=sharing&#34;&gt;Adres Defteri Programımını buradan indirebilirsiniz.&lt;/a&gt;H&#xA;Programın kullanımını aşağıdan öğrenebilirsiniz.&lt;/p&gt;&#xA;&lt;p&gt;Gps bağlanınca GPS: yazan yerde bulunduğunuz yerin koordinantları çıkar.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://2.bp.blogspot.com/-QXEe-6LkU14/VK29Nfmx__I/AAAAAAAAGak/xogtu16x_og/s720/Screenshot_2015-01-07-14-06-02.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Daha sonra adresin ismi yazılır ve kaydet butonuna basılır.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://1.bp.blogspot.com/-P4DNz4UUnUU/VK29NYQk5pI/AAAAAAAAGag/TgviIDhFYZ0/s720/Screenshot_2015-01-07-14-06-30.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Kaydınız başarılı ise böyle bir mesaj alırsınız.&lt;/p&gt;</description>
     </item>
     <item>
       <title>[TR] Processing ile Android Telefonda Uygulama Geliştirme</title>
       <link>https://mozanunal.com/2014/11/processing-ile-android-telefonda/</link>
       <pubDate>Sun, 09 Nov 2014 06:27:00 +0000</pubDate>
       <guid>https://mozanunal.com/2014/11/processing-ile-android-telefonda/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar!&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://4.bp.blogspot.com/-mWaFbWIHvPk/VF7g4rYgSxI/AAAAAAAAFHw/vbMO-hISTB4/s720/primitives3D.png&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Processing dili son yıllarda Arduino ile popülerleşmeye başlayan görsel
-programlama dilidir. Hızlı prototipleme için geliştirilmiştir Arduinoya görsel
-arayüz hazırlama için sıklıkla kullanılmaktadır. Processing Windows, Linux,
-Android, Mac her platformda çalışmaktadır. Kendi program geliştirme arayüzü
-bulunmaktadır. Bu programlama diliyle kolay bir şekilde 2D, 3D görsel
-uygulamalar yapılabilir.&lt;/p&gt;
-&lt;p&gt;Ben bugünkü yazımda nasıl Android telefonda Android için nasıl Processing
-diliyle görsel uygulama yapılacağını anlatacağım. Öncelikle Google Playden
-uygulama geliştirmek için gerekli IDE&amp;rsquo;yi(geliştirme ortamını) indiriyoruz. Bir
-çok çeşit geliştirme ortamı var fakat ben APDE uygulamasını tercih ettim. Bu
-uygulama ile processing kodu yazıp onu derleyip telefon üzerinde
-deneyebiliyoruz.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar!&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://4.bp.blogspot.com/-mWaFbWIHvPk/VF7g4rYgSxI/AAAAAAAAFHw/vbMO-hISTB4/s720/primitives3D.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Processing dili son yıllarda Arduino ile popülerleşmeye başlayan görsel&#xA;programlama dilidir. Hızlı prototipleme için geliştirilmiştir Arduinoya görsel&#xA;arayüz hazırlama için sıklıkla kullanılmaktadır. Processing Windows, Linux,&#xA;Android, Mac her platformda çalışmaktadır. Kendi program geliştirme arayüzü&#xA;bulunmaktadır. Bu programlama diliyle kolay bir şekilde 2D, 3D görsel&#xA;uygulamalar yapılabilir.&lt;/p&gt;&#xA;&lt;p&gt;Ben bugünkü yazımda nasıl Android telefonda Android için nasıl Processing&#xA;diliyle görsel uygulama yapılacağını anlatacağım. Öncelikle Google Playden&#xA;uygulama geliştirmek için gerekli IDE&amp;rsquo;yi(geliştirme ortamını) indiriyoruz. Bir&#xA;çok çeşit geliştirme ortamı var fakat ben APDE uygulamasını tercih ettim. Bu&#xA;uygulama ile processing kodu yazıp onu derleyip telefon üzerinde&#xA;deneyebiliyoruz.&lt;/p&gt;</description>
     </item>
     <item>
       <title>[TR] Oyun (First Flight)</title>
       <link>https://mozanunal.com/2014/05/oyunfirst-flight/</link>
       <pubDate>Tue, 27 May 2014 06:42:00 +0000</pubDate>
       <guid>https://mozanunal.com/2014/05/oyunfirst-flight/</guid>
-      <description>&lt;p&gt;İlk oyun denememi görsel programlayla çalışan Game Maker ile yaptım. Android
-oyunu olarak başladım fakat lisans satın almak gerektiğini öğrenince bilgisayar
-oyunu olarak kaldı. Bu benim ilk oyunumdur. İsmi &amp;ldquo;First Flight&amp;rdquo; ilk defa uçan
-bir kuşun başına gelenlerden oluşuyor (uçaklar, füzeler, kartallar). Ona yardım
-edenler de var tabi ki Angry Birds :D. Umarım beğenirsiniz. Tekrar görüşmek
-üzere&amp;hellip;&lt;br&gt;
-&lt;a href=&#34;https://docs.google.com/file/d/0B5j__Lyt9ozbOFBqa0JEQjI4NjA/edit&#34;&gt;Oyunumu buradan indirebilirsiniz&lt;/a&gt;&lt;/p&gt;
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube-nocookie.com/embed/PL8fSl5TgSU?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;&gt;&lt;/iframe&gt;
-    &lt;/div&gt;</description>
+      <description>&lt;p&gt;İlk oyun denememi görsel programlayla çalışan Game Maker ile yaptım. Android&#xA;oyunu olarak başladım fakat lisans satın almak gerektiğini öğrenince bilgisayar&#xA;oyunu olarak kaldı. Bu benim ilk oyunumdur. İsmi &amp;ldquo;First Flight&amp;rdquo; ilk defa uçan&#xA;bir kuşun başına gelenlerden oluşuyor (uçaklar, füzeler, kartallar). Ona yardım&#xA;edenler de var tabi ki Angry Birds :D. Umarım beğenirsiniz. Tekrar görüşmek&#xA;üzere&amp;hellip;&lt;br&gt;&#xA;&lt;a href=&#34;https://docs.google.com/file/d/0B5j__Lyt9ozbOFBqa0JEQjI4NjA/edit&#34;&gt;Oyunumu buradan indirebilirsiniz&lt;/a&gt;&lt;/p&gt;&#xA;&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;&#xA;      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/PL8fSl5TgSU?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;&gt;&lt;/iframe&gt;&#xA;    &lt;/div&gt;</description>
     </item>
     <item>
       <title>[TR] İlk Yayın</title>
       <link>https://mozanunal.com/2014/05/ilk-yayn/</link>
       <pubDate>Sun, 25 May 2014 03:44:00 +0000</pubDate>
       <guid>https://mozanunal.com/2014/05/ilk-yayn/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar!&lt;/strong&gt;&lt;br&gt;
-    Yaptığım projeleri arşivleyebilmek ve bunlardan herkesin yararlanabilmesi
-için blog açmaya karar verdim. Blogumda size C# üzerinden arayüz yapımı,
-bilgisayar mikroişlemci iletişimi, arduino uygulamaları, pic uygulamaları ve
-basit sensörlü elektronik alanında projeleri fotoğraflarıyla ve işin teorisini
-de anlatarak paylaşmayı planlıyorum. Aynı zamanda az da olsa Android
-programlamadan(robotik uygulamalar için gerekli olan kısımdan) ve hobi olarak
-yaptığım oyunları da buradan sizinle paylaşmayı planlıyorum. Elektroniğe merak
-salmış arkadaşlarımın elimden geldiğince(ben de yolun çok başındayım) en iyi
-şekilde bilgilendirmek dileğim :).  Daha önce üniversitemde uzun mesafe takip
-sistemleri üzerine çalışmalar yaptım. Gps, IMU, ve daha bir sürü sensörden
-aldığımız verileri, yer istasyonuna iletmek ve arayüz programıyla bunların
-görsellenmesiydi görevim. Şimdi ise insansız hava araçları ve görüntü işleme
-üzerine çalışmaktayım. Aynı zamanda hobi olarak pic ve arduino devreleri,
-çeşitli devreler üretmeye, yapmaya devam ediyorum. Tekrar görüşmek üzere&amp;hellip;&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar!&lt;/strong&gt;&lt;br&gt;&#xA;    Yaptığım projeleri arşivleyebilmek ve bunlardan herkesin yararlanabilmesi&#xA;için blog açmaya karar verdim. Blogumda size C# üzerinden arayüz yapımı,&#xA;bilgisayar mikroişlemci iletişimi, arduino uygulamaları, pic uygulamaları ve&#xA;basit sensörlü elektronik alanında projeleri fotoğraflarıyla ve işin teorisini&#xA;de anlatarak paylaşmayı planlıyorum. Aynı zamanda az da olsa Android&#xA;programlamadan(robotik uygulamalar için gerekli olan kısımdan) ve hobi olarak&#xA;yaptığım oyunları da buradan sizinle paylaşmayı planlıyorum. Elektroniğe merak&#xA;salmış arkadaşlarımın elimden geldiğince(ben de yolun çok başındayım) en iyi&#xA;şekilde bilgilendirmek dileğim :).  Daha önce üniversitemde uzun mesafe takip&#xA;sistemleri üzerine çalışmalar yaptım. Gps, IMU, ve daha bir sürü sensörden&#xA;aldığımız verileri, yer istasyonuna iletmek ve arayüz programıyla bunların&#xA;görsellenmesiydi görevim. Şimdi ise insansız hava araçları ve görüntü işleme&#xA;üzerine çalışmaktayım. Aynı zamanda hobi olarak pic ve arduino devreleri,&#xA;çeşitli devreler üretmeye, yapmaya devam ediyorum. Tekrar görüşmek üzere&amp;hellip;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

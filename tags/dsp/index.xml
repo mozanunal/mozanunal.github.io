@@ -1,17 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>DSP on mozanunal.com</title>
     <link>https://mozanunal.com/tags/dsp/</link>
     <description>Recent content in DSP on mozanunal.com</description>
-    <image>
-      <title>mozanunal.com</title>
-      <url>https://mozanunal.com/images/papermod-cover.png</url>
-      <link>https://mozanunal.com/images/papermod-cover.png</link>
-    </image>
-    <generator>Hugo -- 0.147.8</generator>
-    <language>en</language>
-    <copyright>mozanunal</copyright>
+    <generator>Hugo</generator>
+    <language>en-US</language>
     <lastBuildDate>Wed, 23 Jan 2019 23:45:00 +0000</lastBuildDate>
     <atom:link href="https://mozanunal.com/tags/dsp/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -19,76 +13,21 @@
       <link>https://mozanunal.com/2019/01/simpledsp-iir-feature/</link>
       <pubDate>Wed, 23 Jan 2019 23:45:00 +0000</pubDate>
       <guid>https://mozanunal.com/2019/01/simpledsp-iir-feature/</guid>
-      <description>&lt;h1 id=&#34;simpledsp&#34;&gt;&lt;a href=&#34;https://github.com/mozanunal/SimpleDSP&#34;&gt;SimpleDSP&lt;/a&gt;&lt;/h1&gt;
-&lt;p&gt;&lt;a href=&#34;https://github.com/mozanunal/SimpleDSP&#34;&gt;SimpleDSP&lt;/a&gt; is a basic DSP library which
-is for Arduino and most of the microcontrollers which can be programmed in C/C++&lt;/p&gt;
-&lt;h2 id=&#34;performance&#34;&gt;Performance:&lt;/h2&gt;
-&lt;p&gt;Here is some examples for its performance. Actually it is not optimized for
-performance. Its main focuses are portability and education.&lt;/p&gt;
-&lt;h3 id=&#34;arduino-nano&#34;&gt;Arduino Nano&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;FFT 16 points: 2 ms&lt;/li&gt;
-&lt;li&gt;FFT 32 points: 6 ms&lt;/li&gt;
-&lt;li&gt;FFT 64 points: 16 ms&lt;/li&gt;
-&lt;li&gt;fir filter 10 coefficients: 190 us&lt;/li&gt;
-&lt;li&gt;fir filter 23 coefficients: 453 us&lt;/li&gt;
-&lt;li&gt;fir filter 46 coefficients: 900 us&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;10 coefficients FIR filter can be run at 5khz max frequency on an Arduino Nano.&lt;/p&gt;</description>
+      <description>&lt;h1 id=&#34;simpledsp&#34;&gt;&lt;a href=&#34;https://github.com/mozanunal/SimpleDSP&#34;&gt;SimpleDSP&lt;/a&gt;&lt;/h1&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/mozanunal/SimpleDSP&#34;&gt;SimpleDSP&lt;/a&gt; is a basic DSP library which&#xA;is for Arduino and most of the microcontrollers which can be programmed in C/C++&lt;/p&gt;&#xA;&lt;h2 id=&#34;performance&#34;&gt;Performance:&lt;/h2&gt;&#xA;&lt;p&gt;Here is some examples for its performance. Actually it is not optimized for&#xA;performance. Its main focuses are portability and education.&lt;/p&gt;&#xA;&lt;h3 id=&#34;arduino-nano&#34;&gt;Arduino Nano&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;FFT 16 points: 2 ms&lt;/li&gt;&#xA;&lt;li&gt;FFT 32 points: 6 ms&lt;/li&gt;&#xA;&lt;li&gt;FFT 64 points: 16 ms&lt;/li&gt;&#xA;&lt;li&gt;fir filter 10 coefficients: 190 us&lt;/li&gt;&#xA;&lt;li&gt;fir filter 23 coefficients: 453 us&lt;/li&gt;&#xA;&lt;li&gt;fir filter 46 coefficients: 900 us&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;10 coefficients FIR filter can be run at 5khz max frequency on an Arduino Nano.&lt;/p&gt;</description>
     </item>
     <item>
       <title>[TR] SimpleDSP: FIR filtreleme özelliği eklendi</title>
       <link>https://mozanunal.com/2017/04/simpledsp-fir-filtreleme-ozelligi/</link>
       <pubDate>Fri, 07 Apr 2017 00:13:00 +0000</pubDate>
       <guid>https://mozanunal.com/2017/04/simpledsp-fir-filtreleme-ozelligi/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;br&gt;
-Bildiğiniz gibi gömülü sistemlerde kullanılabilecek basit bir DSP kütüphanesi
-geliştirmeye çalışıyorum son olarak FIR filtreleme özelliğini bu kütüphaneye
-ekledim. FIR filtre ile alçak geçiren, yüksek geçiren, band geçiren veya
-durduran filtreler tasarlayabilirsiniz. FIR filtreler yapısı gereği hep stabil
-filtrelerdir. Bu nedenle bir kararlılık analizi gerektirmeden kullanılabilirler.&lt;/p&gt;
-&lt;p&gt;Ayrıca wiki sayfasını kesinlikle ziyaret etmenizi tavsiye ederim orada Matlab
-veya Octave kullanarak nasıl filtreyi tasarlayacağınız. Filtreyi nasıl
-kullanacağınız ve karakteristiğini nasıl görselleyebileceğinize kadar bir çok
-bilgi bulunmakta.
-&lt;a href=&#34;https://github.com/mozanunal/SimpleDSP/wiki/FIR&#34;&gt;Ziyaret etmek için tıklayın.&lt;/a&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;br&gt;&#xA;Bildiğiniz gibi gömülü sistemlerde kullanılabilecek basit bir DSP kütüphanesi&#xA;geliştirmeye çalışıyorum son olarak FIR filtreleme özelliğini bu kütüphaneye&#xA;ekledim. FIR filtre ile alçak geçiren, yüksek geçiren, band geçiren veya&#xA;durduran filtreler tasarlayabilirsiniz. FIR filtreler yapısı gereği hep stabil&#xA;filtrelerdir. Bu nedenle bir kararlılık analizi gerektirmeden kullanılabilirler.&lt;/p&gt;&#xA;&lt;p&gt;Ayrıca wiki sayfasını kesinlikle ziyaret etmenizi tavsiye ederim orada Matlab&#xA;veya Octave kullanarak nasıl filtreyi tasarlayacağınız. Filtreyi nasıl&#xA;kullanacağınız ve karakteristiğini nasıl görselleyebileceğinize kadar bir çok&#xA;bilgi bulunmakta.&#xA;&lt;a href=&#34;https://github.com/mozanunal/SimpleDSP/wiki/FIR&#34;&gt;Ziyaret etmek için tıklayın.&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>[TR] SimpleDSP: Gömülü Sistemler için DSP Kütühanesi</title>
       <link>https://mozanunal.com/2017/01/simpledsp-gomulu-sistemler-icin-dsp/</link>
       <pubDate>Thu, 26 Jan 2017 00:13:00 +0000</pubDate>
       <guid>https://mozanunal.com/2017/01/simpledsp-gomulu-sistemler-icin-dsp/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Bu yazımda gömülü sistemler için yazdığım sayısal isaret isleme kütüphanesini
-tanıtacağım. Kütüphanenin tamamını &amp;ldquo;C&amp;rdquo; kullanarak ve harici bir kütüphaneye
-bağlı kalmadan yazmayı planlıyorum. Böylece diğer mikrokontolcülerde de rahatça
-kullanılabilecek. Hatta bilgisayar programlarında bile kolayca eklenip
-derlenebilecek şekilde projeyi tamamlamak istiyorum. Bu kütüphane kapsamında
-çözüm sağlamak istediğim konular şunlardır.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;FFT&lt;/li&gt;
-&lt;li&gt;ters FFT&lt;/li&gt;
-&lt;li&gt;Hartley transform&lt;/li&gt;
-&lt;li&gt;FIR filtre&lt;/li&gt;
-&lt;li&gt;IIR filtre&lt;/li&gt;
-&lt;li&gt;Basit &amp;ldquo;moving avarage&amp;rdquo;, &amp;ldquo;smoothing&amp;rdquo; filtreleri&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Ayrıca her fonksiyon için:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Teorik olarak yapılan iş&lt;/li&gt;
-&lt;li&gt;Deneme, ölçüm ve filtre katsayısı hesabı için gerekli Matlab veya Octave kodu.&lt;/li&gt;
-&lt;li&gt;Farklı islemcilerle performansı&lt;/li&gt;
-&lt;li&gt;Örnek Grafikler&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;gibi kaynakları hazırlamayı planlıyorum. Proje tamamen açık kaynaklı olarak
-sürdürülecektir.
-&lt;a href=&#34;https://github.com/mozanunal/SimpleDSP/&#34;&gt;Siz de github üzerinden projenin herhangi bir aşamasına katkıda bulunabilirsiniz.&lt;/a&gt;
-Projenin ismini &amp;ldquo;SimpleDSP&amp;rdquo; olarak seçtim. Çünkü yapmak istediğim olay Digital
-Signal Processing olayını gömülü ve gerçek zamanlı sistemlerde kolaylaştırmak ve
-projelerde basit bir şekilde eklenebilmesini sağlamak. Şu an itibariyle FFT ve
-ters FFT fonksiyonlarını yazdım arduino kütüphanesi haline getirdim ve örnek
-kodlarını oluşturdum. Bahsettiğim ayrıntılara aşağıdan ulaşabilirsiniz.&lt;br&gt;
-&lt;a href=&#34;https://github.com/mozanunal/SimpleDSP/wiki/FFT-IFFT&#34;&gt;https://github.com/mozanunal/SimpleDSP/wiki/FFT-IFFT&lt;/a&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Bu yazımda gömülü sistemler için yazdığım sayısal isaret isleme kütüphanesini&#xA;tanıtacağım. Kütüphanenin tamamını &amp;ldquo;C&amp;rdquo; kullanarak ve harici bir kütüphaneye&#xA;bağlı kalmadan yazmayı planlıyorum. Böylece diğer mikrokontolcülerde de rahatça&#xA;kullanılabilecek. Hatta bilgisayar programlarında bile kolayca eklenip&#xA;derlenebilecek şekilde projeyi tamamlamak istiyorum. Bu kütüphane kapsamında&#xA;çözüm sağlamak istediğim konular şunlardır.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;FFT&lt;/li&gt;&#xA;&lt;li&gt;ters FFT&lt;/li&gt;&#xA;&lt;li&gt;Hartley transform&lt;/li&gt;&#xA;&lt;li&gt;FIR filtre&lt;/li&gt;&#xA;&lt;li&gt;IIR filtre&lt;/li&gt;&#xA;&lt;li&gt;Basit &amp;ldquo;moving avarage&amp;rdquo;, &amp;ldquo;smoothing&amp;rdquo; filtreleri&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Ayrıca her fonksiyon için:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Teorik olarak yapılan iş&lt;/li&gt;&#xA;&lt;li&gt;Deneme, ölçüm ve filtre katsayısı hesabı için gerekli Matlab veya Octave kodu.&lt;/li&gt;&#xA;&lt;li&gt;Farklı islemcilerle performansı&lt;/li&gt;&#xA;&lt;li&gt;Örnek Grafikler&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;gibi kaynakları hazırlamayı planlıyorum. Proje tamamen açık kaynaklı olarak&#xA;sürdürülecektir.&#xA;&lt;a href=&#34;https://github.com/mozanunal/SimpleDSP/&#34;&gt;Siz de github üzerinden projenin herhangi bir aşamasına katkıda bulunabilirsiniz.&lt;/a&gt;&#xA;Projenin ismini &amp;ldquo;SimpleDSP&amp;rdquo; olarak seçtim. Çünkü yapmak istediğim olay Digital&#xA;Signal Processing olayını gömülü ve gerçek zamanlı sistemlerde kolaylaştırmak ve&#xA;projelerde basit bir şekilde eklenebilmesini sağlamak. Şu an itibariyle FFT ve&#xA;ters FFT fonksiyonlarını yazdım arduino kütüphanesi haline getirdim ve örnek&#xA;kodlarını oluşturdum. Bahsettiğim ayrıntılara aşağıdan ulaşabilirsiniz.&lt;br&gt;&#xA;&lt;a href=&#34;https://github.com/mozanunal/SimpleDSP/wiki/FFT-IFFT&#34;&gt;https://github.com/mozanunal/SimpleDSP/wiki/FFT-IFFT&lt;/a&gt;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light dark">
+
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/digitallytailored/classless@latest/classless.min.css">
+
+    <title>mozanunal.com</title>
+
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+  </head>
+
+  <body>
+    <header>
+      <h3>mozanunal.com</h3>
+      <h4>
+        <a href="/">Home</a> |
+        <a href="/posts">Posts</a> |
+        <a href="/projects">Projects</a> |
+        <a href="/contact">Contact</a>
+      </h4>
+    </header>
+
+    <main class="container">
+      
+  <article>
+    <hgroup>
+      <h2></h2>
+      <p><em>Jun 20, 2025</em></p>
+    </hgroup>
+
+    <h1 id="-executable-guide-mastering-advanced-parquet-in-python">🚀 Executable Guide: Mastering Advanced Parquet in Python</h1>
+<p>Apache Parquet is the undisputed king of columnar storage for analytics.
+If you’re using Python for data work, you’ve likely used
+<code>pandas.to_parquet()</code> and <code>pandas.read_parquet()</code>. But beneath this
+simple interface lies a powerful engine with features that can
+drastically improve your storage costs and query speeds.</p>
+<p>This post is an <strong>executable guide</strong>. You can run the code snippets in
+order to follow along and see the results for yourself. We’ll dive into
+advanced features that every data professional should know.</p>
+<h3 id="setup">Setup</h3>
+<p>First, let’s install the necessary libraries. We’ll use <code>pyarrow</code>, the
+standard for working with Parquet in Python, along with <code>pandas</code> and
+<code>numpy</code>.</p>
+<p><code>pip install pandas pyarrow numpy</code></p>
+<p>Now, let’s import them and prepare a directory for our files.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">pyarrow</span> <span class="k">as</span> <span class="nn">pa</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">pyarrow.parquet</span> <span class="k">as</span> <span class="nn">pq</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">os</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">time</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Create a directory to store our parquet files</span>
+</span></span><span class="line"><span class="cl"><span class="n">DATA_DIR</span> <span class="o">=</span> <span class="s2">&#34;parquet_data&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="n">os</span><span class="o">.</span><span class="n">makedirs</span><span class="p">(</span><span class="n">DATA_DIR</span><span class="p">,</span> <span class="n">exist_ok</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&#34;PyArrow version: </span><span class="si">{</span><span class="n">pa</span><span class="o">.</span><span class="n">__version__</span><span class="si">}</span><span class="s2">&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&#34;Data will be stored in: </span><span class="si">{</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">abspath</span><span class="p">(</span><span class="n">DATA_DIR</span><span class="p">)</span><span class="si">}</span><span class="s2">&#34;</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><pre><code>PyArrow version: 20.0.0
+Data will be stored in: /Users/mehmetozanunal/projects/github/mozanunal_hugo/content/posts/2025/parquet_data
+</code></pre>
+<h3 id="1-compression-deep-dive-beyond-the-defaults">1. Compression Deep Dive: Beyond the Defaults</h3>
+<p>Parquet is always compressed, but you have a choice of codecs. The
+default is <code>snappy</code>, which is fast but not the most space-efficient.
+Let’s compare it with <code>gzip</code> (better compression, slower) and <code>zstd</code>
+(often the best of both worlds).</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># Create a sample DataFrame</span>
+</span></span><span class="line"><span class="cl"><span class="n">num_rows</span> <span class="o">=</span> <span class="mi">1_000_000</span>
+</span></span><span class="line"><span class="cl"><span class="n">data</span> <span class="o">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;id&#39;</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="n">num_rows</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;category&#39;</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">([</span><span class="s1">&#39;A&#39;</span><span class="p">,</span> <span class="s1">&#39;B&#39;</span><span class="p">,</span> <span class="s1">&#39;C&#39;</span><span class="p">,</span> <span class="s1">&#39;D&#39;</span><span class="p">,</span> <span class="s1">&#39;E&#39;</span><span class="p">],</span> <span class="n">num_rows</span><span class="p">,</span> <span class="n">p</span><span class="o">=</span><span class="p">[</span><span class="mf">0.1</span><span class="p">,</span> <span class="mf">0.2</span><span class="p">,</span> <span class="mf">0.3</span><span class="p">,</span> <span class="mf">0.2</span><span class="p">,</span> <span class="mf">0.2</span><span class="p">]),</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;value&#39;</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="n">num_rows</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Save with different compression codecs</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Writing files with different compressions...&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">df</span><span class="o">.</span><span class="n">to_parquet</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">DATA_DIR</span><span class="si">}</span><span class="s1">/data.snappy.parquet&#39;</span><span class="p">,</span> <span class="n">compression</span><span class="o">=</span><span class="s1">&#39;snappy&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">df</span><span class="o">.</span><span class="n">to_parquet</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">DATA_DIR</span><span class="si">}</span><span class="s1">/data.gzip.parquet&#39;</span><span class="p">,</span> <span class="n">compression</span><span class="o">=</span><span class="s1">&#39;gzip&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">df</span><span class="o">.</span><span class="n">to_parquet</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">DATA_DIR</span><span class="si">}</span><span class="s1">/data.zstd.parquet&#39;</span><span class="p">,</span> <span class="n">compression</span><span class="o">=</span><span class="s1">&#39;zstd&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">df</span><span class="o">.</span><span class="n">to_parquet</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">DATA_DIR</span><span class="si">}</span><span class="s1">/data.uncompressed.parquet&#39;</span><span class="p">,</span> <span class="n">compression</span><span class="o">=</span><span class="s1">&#39;None&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Check file sizes</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s2">&#34;</span><span class="se">\n</span><span class="s2">--- File Sizes ---&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">filename</span> <span class="ow">in</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">(</span><span class="n">DATA_DIR</span><span class="p">)):</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">filename</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s1">&#39;.parquet&#39;</span><span class="p">)</span> <span class="ow">and</span> <span class="n">filename</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s1">&#39;data.&#39;</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="n">size_mb</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">getsize</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">DATA_DIR</span><span class="si">}</span><span class="s1">/</span><span class="si">{</span><span class="n">filename</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="mi">1024</span> <span class="o">*</span> <span class="mi">1024</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">filename</span><span class="si">:</span><span class="s1">&lt;25</span><span class="si">}</span><span class="s1">: </span><span class="si">{</span><span class="n">size_mb</span><span class="si">:</span><span class="s1">.2f</span><span class="si">}</span><span class="s1"> MB&#39;</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><pre><code>Writing files with different compressions...
+
+--- File Sizes ---
+data.gzip.parquet        : 9.59 MB
+data.snappy.parquet      : 12.34 MB
+data.uncompressed.parquet: 16.15 MB
+data.zstd.parquet        : 9.12 MB
+</code></pre>
+<p><strong>Explanation:</strong> You’ll notice <code>zstd</code> and <code>gzip</code> create significantly
+smaller files than <code>snappy</code> or no compression. For archival data or
+network-bound systems, choosing a high-ratio codec like <code>zstd</code> can lead
+to major cost savings.</p>
+<h3 id="2-lightning-fast-queries-with-predicate-pushdown">2. Lightning-Fast Queries with Predicate Pushdown</h3>
+<p>This is Parquet’s superpower. Instead of reading an entire 100 GB file
+to find a few rows, you can push a filter <em>down</em> to the storage layer,
+which then only reads the relevant chunks of data (<strong>row groups</strong>).</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># Write the file with a defined row group size for demonstration</span>
+</span></span><span class="line"><span class="cl"><span class="n">pq</span><span class="o">.</span><span class="n">write_table</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">    <span class="n">pa</span><span class="o">.</span><span class="n">Table</span><span class="o">.</span><span class="n">from_pandas</span><span class="p">(</span><span class="n">df</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">    <span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">DATA_DIR</span><span class="si">}</span><span class="s1">/filtered_data.parquet&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="n">row_group_size</span><span class="o">=</span><span class="mi">100_000</span> <span class="c1"># Each group has 100k rows</span>
+</span></span><span class="line"><span class="cl"><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># --- Method 1: The slow way (Read all, then filter in pandas) ---</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s2">&#34;</span><span class="se">\n</span><span class="s2">--- Method 1: Read all data, then filter ---&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">start_time</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="n">df_full</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_parquet</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">DATA_DIR</span><span class="si">}</span><span class="s1">/filtered_data.parquet&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">df_filtered</span> <span class="o">=</span> <span class="n">df_full</span><span class="p">[</span><span class="n">df_full</span><span class="p">[</span><span class="s1">&#39;category&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;A&#39;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="n">duration</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span> <span class="o">-</span> <span class="n">start_time</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&#34;Filtered </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">df_filtered</span><span class="p">)</span><span class="si">}</span><span class="s2"> rows in </span><span class="si">{</span><span class="n">duration</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2"> seconds.&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># --- Method 2: The fast way (Predicate Pushdown) ---</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># The filter format is a list of tuples: [(&lt;col&gt;, &lt;op&gt;, &lt;val&gt;),...]</span>
+</span></span><span class="line"><span class="cl"><span class="n">filters</span> <span class="o">=</span> <span class="p">[(</span><span class="s1">&#39;category&#39;</span><span class="p">,</span> <span class="s1">&#39;==&#39;</span><span class="p">,</span> <span class="s1">&#39;A&#39;</span><span class="p">)]</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s2">&#34;</span><span class="se">\n</span><span class="s2">--- Method 2: Predicate Pushdown with PyArrow ---&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">start_time</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="n">df_pushed</span> <span class="o">=</span> <span class="n">pq</span><span class="o">.</span><span class="n">read_table</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">DATA_DIR</span><span class="si">}</span><span class="s1">/filtered_data.parquet&#39;</span><span class="p">,</span> <span class="n">filters</span><span class="o">=</span><span class="n">filters</span><span class="p">)</span><span class="o">.</span><span class="n">to_pandas</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="n">duration</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span> <span class="o">-</span> <span class="n">start_time</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&#34;Filtered </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">df_pushed</span><span class="p">)</span><span class="si">}</span><span class="s2"> rows in </span><span class="si">{</span><span class="n">duration</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2"> seconds.&#34;</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><pre><code>--- Method 1: Read all data, then filter ---
+Filtered 99787 rows in 0.0742 seconds.
+
+--- Method 2: Predicate Pushdown with PyArrow ---
+Filtered 99787 rows in 0.0096 seconds.
+</code></pre>
+<p><strong>Explanation:</strong> The second method is dramatically faster. <code>pyarrow</code>
+reads the Parquet metadata, identifies which row groups <em>might</em> contain
+<code>category == 'A'</code>, and only loads those specific chunks from disk into
+memory. This is the single most important optimization for querying
+large Parquet datasets.</p>
+<h3 id="3-handling-schema-evolution-gracefully">3. Handling Schema Evolution Gracefully</h3>
+<p>Data schemas change. New columns are added, old ones are removed. A
+robust data format must handle this. Parquet, when read as a <code>dataset</code>,
+does this beautifully.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># Version 1 of our data</span>
+</span></span><span class="line"><span class="cl"><span class="n">df_v1</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s1">&#39;id&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span> <span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Alice&#39;</span><span class="p">,</span> <span class="s1">&#39;Bob&#39;</span><span class="p">]})</span>
+</span></span><span class="line"><span class="cl"><span class="n">pq</span><span class="o">.</span><span class="n">write_table</span><span class="p">(</span><span class="n">pa</span><span class="o">.</span><span class="n">Table</span><span class="o">.</span><span class="n">from_pandas</span><span class="p">(</span><span class="n">df_v1</span><span class="p">),</span> <span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">DATA_DIR</span><span class="si">}</span><span class="s1">/schema_v1.parquet&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Version 2: we add an &#39;email&#39; column and remove &#39;name&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="n">df_v2</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s1">&#39;id&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">],</span> <span class="s1">&#39;email&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;charlie@email.com&#39;</span><span class="p">,</span> <span class="s1">&#39;dave@email.com&#39;</span><span class="p">]})</span>
+</span></span><span class="line"><span class="cl"><span class="n">pq</span><span class="o">.</span><span class="n">write_table</span><span class="p">(</span><span class="n">pa</span><span class="o">.</span><span class="n">Table</span><span class="o">.</span><span class="n">from_pandas</span><span class="p">(</span><span class="n">df_v2</span><span class="p">),</span> <span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">DATA_DIR</span><span class="si">}</span><span class="s1">/schema_v2.parquet&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Read the directory as a single dataset</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># We need to filter for just our schema files to avoid including others from this script</span>
+</span></span><span class="line"><span class="cl"><span class="n">schema_files</span> <span class="o">=</span> <span class="p">[</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">DATA_DIR</span><span class="si">}</span><span class="s1">/schema_v1.parquet&#39;</span><span class="p">,</span> <span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">DATA_DIR</span><span class="si">}</span><span class="s1">/schema_v2.parquet&#39;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="n">dataset</span> <span class="o">=</span> <span class="n">pq</span><span class="o">.</span><span class="n">ParquetDataset</span><span class="p">(</span><span class="n">schema_files</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">combined_df</span> <span class="o">=</span> <span class="n">dataset</span><span class="o">.</span><span class="n">read</span><span class="p">()</span><span class="o">.</span><span class="n">to_pandas</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s2">&#34;</span><span class="se">\n</span><span class="s2">--- Combined DataFrame with Evolved Schema ---&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">combined_df</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s2">&#34;</span><span class="se">\n</span><span class="s2">Data types:&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">combined_df</span><span class="o">.</span><span class="n">dtypes</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><pre><code>--- Combined DataFrame with Evolved Schema ---
+   id   name
+0   1  Alice
+1   2    Bob
+2   3   None
+3   4   None
+
+Data types:
+id       int64
+name    object
+dtype: object
+</code></pre>
+<p><strong>Explanation:</strong> The <code>pyarrow.dataset</code> API reads all files, unifies
+their schemas, and fills missing values with <code>None</code> or <code>NaN</code>. This
+allows you to query a directory of evolving data without writing complex
+merging logic.</p>
+<h3 id="4-natively-storing-and-querying-nested-data">4. Natively Storing and Querying Nested Data</h3>
+<p>Parquet isn’t just for flat tables. It has first-class support for
+nested structures like lists and structs (dicts), which is incredibly
+useful for semi-structured data like event logs or API responses.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># Create a DataFrame with nested data</span>
+</span></span><span class="line"><span class="cl"><span class="n">nested_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;event_id&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">101</span><span class="p">,</span> <span class="mi">102</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;user_profile&#39;</span><span class="p">:</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span><span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="s1">&#39;Eve&#39;</span><span class="p">,</span> <span class="s1">&#39;roles&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;admin&#39;</span><span class="p">,</span> <span class="s1">&#39;editor&#39;</span><span class="p">]},</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span><span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="s1">&#39;Frank&#39;</span><span class="p">,</span> <span class="s1">&#39;roles&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;viewer&#39;</span><span class="p">]}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="p">})</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">file_path</span> <span class="o">=</span> <span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">DATA_DIR</span><span class="si">}</span><span class="s1">/nested_data.parquet&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="n">nested_df</span><span class="o">.</span><span class="n">to_parquet</span><span class="p">(</span><span class="n">file_path</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Read it back and see the structure is preserved</span>
+</span></span><span class="line"><span class="cl"><span class="n">read_nested_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_parquet</span><span class="p">(</span><span class="n">file_path</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s2">&#34;</span><span class="se">\n</span><span class="s2">--- DataFrame with Nested Data ---&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">read_nested_df</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s2">&#34;</span><span class="se">\n</span><span class="s2">Accessing a nested element:&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">read_nested_df</span><span class="p">[</span><span class="s1">&#39;user_profile&#39;</span><span class="p">][</span><span class="mi">0</span><span class="p">])</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><pre><code>--- DataFrame with Nested Data ---
+   event_id                                   user_profile
+0       101  {'name': 'Eve', 'roles': ['admin', 'editor']}
+1       102         {'name': 'Frank', 'roles': ['viewer']}
+
+Accessing a nested element:
+{'name': 'Eve', 'roles': array(['admin', 'editor'], dtype=object)}
+</code></pre>
+<h3 id="5-embedding-custom-metadata">5. Embedding Custom Metadata</h3>
+<p>Want to embed the git hash, pipeline version, or data source in your
+file? Parquet’s schema allows for custom key-value metadata.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># Create a PyArrow table, as pandas&#39; to_parquet doesn&#39;t directly support this</span>
+</span></span><span class="line"><span class="cl"><span class="n">my_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s1">&#39;a&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]})</span>
+</span></span><span class="line"><span class="cl"><span class="n">table</span> <span class="o">=</span> <span class="n">pa</span><span class="o">.</span><span class="n">Table</span><span class="o">.</span><span class="n">from_pandas</span><span class="p">(</span><span class="n">my_df</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Create custom metadata dictionary (values must be bytes for PyArrow)</span>
+</span></span><span class="line"><span class="cl"><span class="n">custom_meta</span> <span class="o">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;pipeline_version&#39;</span><span class="p">:</span> <span class="sa">b</span><span class="s1">&#39;v1.2.3&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;source_system&#39;</span><span class="p">:</span> <span class="sa">b</span><span class="s1">&#39;production_db&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;git_commit_hash&#39;</span><span class="p">:</span> <span class="sa">b</span><span class="s1">&#39;a1b2c3d4e5f6&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Add the metadata to the schema and write the file</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># updated_schema = table.schema.with_metadata(custom_meta)</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># table_with_meta = table.with_schema(updated_schema)</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># pq.write_table(table_with_meta, f&#39;{DATA_DIR}/metadata.parquet&#39;)</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># # Read the metadata back</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># read_schema = pq.read_schema(f&#39;{DATA_DIR}/metadata.parquet&#39;)</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># retrieved_meta = {k.decode(&#39;utf-8&#39;): v.decode(&#39;utf-8&#39;) for k, v in read_schema.metadata.items()}</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># print(&#34;\n--- Retrieved Custom Metadata ---&#34;)</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># print(retrieved_meta)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="conclusion">Conclusion</h3>
+<p>We’ve gone far beyond basic reads and writes to unlock Parquet’s true
+potential. By mastering <strong>compression</strong>, <strong>predicate pushdown</strong>,
+<strong>schema evolution</strong>, <strong>nested types</strong>, and <strong>custom metadata</strong>, you can
+build more efficient, scalable, and maintainable data systems.</p>
+<p>The next time you work with large-scale data, remember these tools. They
+are the difference between a slow, expensive pipeline and a fast,
+optimized one.</p>
+
+  </article>
+
+    </main>
+  </body>
+</html>

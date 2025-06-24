@@ -1,17 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>SDR Nedir on mozanunal.com</title>
     <link>https://mozanunal.com/tags/sdr-nedir/</link>
     <description>Recent content in SDR Nedir on mozanunal.com</description>
-    <image>
-      <title>mozanunal.com</title>
-      <url>https://mozanunal.com/images/papermod-cover.png</url>
-      <link>https://mozanunal.com/images/papermod-cover.png</link>
-    </image>
-    <generator>Hugo -- 0.147.8</generator>
-    <language>en</language>
-    <copyright>mozanunal</copyright>
+    <generator>Hugo</generator>
+    <language>en-US</language>
     <lastBuildDate>Fri, 02 Jan 2015 22:55:00 +0000</lastBuildDate>
     <atom:link href="https://mozanunal.com/tags/sdr-nedir/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -19,18 +13,7 @@
       <link>https://mozanunal.com/2015/01/software-defined-radioya-giris/</link>
       <pubDate>Fri, 02 Jan 2015 22:55:00 +0000</pubDate>
       <guid>https://mozanunal.com/2015/01/software-defined-radioya-giris/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar!&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Bugünkü yazımda yeni bir hobimden bahsetmet istiyorum. Yeni hobim, &amp;ldquo;Software
-defined radio&amp;rdquo;. Bu aslında bir rf modulü, Farkı ise belli frekans aralığında
-dinleme yapabilmesi. Yani bu sayede farklı frekanslardaki radyo dalgalarını alıp
-inceleyebilir, çözümleyebilirsiniz. SDR hakkında deneysel bir şeyler yapmak
-isterseniz en iyi yöntem bilgisayar için ucuz tv alıcılarından almak. Ben
-Aliexpress sitesinden 10 $ aldım. En ucuz SDR&amp;rsquo;ler genelde &lt;strong&gt;RTL2832U+R820T çip
-setlidir.&lt;/strong&gt; Benim aldığım modül 25MHz - 1700MHz arası tarama yapabiliyor. Kendi
-anteni ve kumandasıyla beraber geldi. Genelde bu modullerle gelen antenlerle
-FMden başka bi şey dinleyebilmek pek mümkün olmuyor. Fakat geliştirilen uygun
-antenlerle Uluslararası Uzay İstasyonundan(ISS) bile veri alabilmek mümkün.
-Bunlardan kurulumdan sonra bahsedeceğim.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar!&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Bugünkü yazımda yeni bir hobimden bahsetmet istiyorum. Yeni hobim, &amp;ldquo;Software&#xA;defined radio&amp;rdquo;. Bu aslında bir rf modulü, Farkı ise belli frekans aralığında&#xA;dinleme yapabilmesi. Yani bu sayede farklı frekanslardaki radyo dalgalarını alıp&#xA;inceleyebilir, çözümleyebilirsiniz. SDR hakkında deneysel bir şeyler yapmak&#xA;isterseniz en iyi yöntem bilgisayar için ucuz tv alıcılarından almak. Ben&#xA;Aliexpress sitesinden 10 $ aldım. En ucuz SDR&amp;rsquo;ler genelde &lt;strong&gt;RTL2832U+R820T çip&#xA;setlidir.&lt;/strong&gt; Benim aldığım modül 25MHz - 1700MHz arası tarama yapabiliyor. Kendi&#xA;anteni ve kumandasıyla beraber geldi. Genelde bu modullerle gelen antenlerle&#xA;FMden başka bi şey dinleyebilmek pek mümkün olmuyor. Fakat geliştirilen uygun&#xA;antenlerle Uluslararası Uzay İstasyonundan(ISS) bile veri alabilmek mümkün.&#xA;Bunlardan kurulumdan sonra bahsedeceğim.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

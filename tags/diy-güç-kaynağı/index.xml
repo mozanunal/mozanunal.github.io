@@ -1,17 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>DIY Güç Kaynağı on mozanunal.com</title>
     <link>https://mozanunal.com/tags/diy-g%C3%BC%C3%A7-kayna%C4%9F%C4%B1/</link>
     <description>Recent content in DIY Güç Kaynağı on mozanunal.com</description>
-    <image>
-      <title>mozanunal.com</title>
-      <url>https://mozanunal.com/images/papermod-cover.png</url>
-      <link>https://mozanunal.com/images/papermod-cover.png</link>
-    </image>
-    <generator>Hugo -- 0.147.8</generator>
-    <language>en</language>
-    <copyright>mozanunal</copyright>
+    <generator>Hugo</generator>
+    <language>en-US</language>
     <lastBuildDate>Tue, 27 Dec 2016 00:59:00 +0000</lastBuildDate>
     <atom:link href="https://mozanunal.com/tags/diy-g%C3%BC%C3%A7-kayna%C4%9F%C4%B1/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -19,19 +13,7 @@
       <link>https://mozanunal.com/2016/12/eski-bilgisayar-guc-kaynagn-masaustu/</link>
       <pubDate>Tue, 27 Dec 2016 00:59:00 +0000</pubDate>
       <guid>https://mozanunal.com/2016/12/eski-bilgisayar-guc-kaynagn-masaustu/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;br&gt;
-       Bugünkü yazımda nasıl eski bilgisayarınızdan kalan güç kaynağınızı
-elektronik projelerinizde kullanabileceğiniz güç kaynağına dönüştürebileceğinizi
-anlatacağım. Özellikle yüksek güç gerektiren projelerde farklı voltajlarda
-yüksek güç sağlayabilen bu güç kaynaklarının oldukça yararlı olabileceğini
-düşünüyorum. Hemen hemen herkesin de bir şekilde ıskartaya çıkmış bir
-bilgisayarı vardır. Eğer güç kaynağı sağlamsa sıfır maliyetle kendinize bir güç
-kaynağı edinmiş olursunuz.&lt;/p&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://2.bp.blogspot.com/-EXt6RrgC7lg/WGAUWvxMZ9I/AAAAAAAAfKQ/FDJd61MfgYAZ4pKE_46vAyzQHT_AN6evgCKgB/s720/IMG_20161224_190300.jpg&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Benim elimdeki güç kaynağının çıkışlarını aşağıdan görebilirsiniz. Eski
-bilgisayarımdan kalan 250 W bir güç kaynağı kendisi. Hali hazırda 3.3 V 5V 12 V
-ve  -12 V çıkışları var. Farklı voltaj ihtiyaçlarına göre regülatörler veya akım
-koruma devreleri eklenerek güç kaynağı daha işlevsel hale getirilebilir.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;br&gt;&#xA;       Bugünkü yazımda nasıl eski bilgisayarınızdan kalan güç kaynağınızı&#xA;elektronik projelerinizde kullanabileceğiniz güç kaynağına dönüştürebileceğinizi&#xA;anlatacağım. Özellikle yüksek güç gerektiren projelerde farklı voltajlarda&#xA;yüksek güç sağlayabilen bu güç kaynaklarının oldukça yararlı olabileceğini&#xA;düşünüyorum. Hemen hemen herkesin de bir şekilde ıskartaya çıkmış bir&#xA;bilgisayarı vardır. Eğer güç kaynağı sağlamsa sıfır maliyetle kendinize bir güç&#xA;kaynağı edinmiş olursunuz.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://2.bp.blogspot.com/-EXt6RrgC7lg/WGAUWvxMZ9I/AAAAAAAAfKQ/FDJd61MfgYAZ4pKE_46vAyzQHT_AN6evgCKgB/s720/IMG_20161224_190300.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Benim elimdeki güç kaynağının çıkışlarını aşağıdan görebilirsiniz. Eski&#xA;bilgisayarımdan kalan 250 W bir güç kaynağı kendisi. Hali hazırda 3.3 V 5V 12 V&#xA;ve  -12 V çıkışları var. Farklı voltaj ihtiyaçlarına göre regülatörler veya akım&#xA;koruma devreleri eklenerek güç kaynağı daha işlevsel hale getirilebilir.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

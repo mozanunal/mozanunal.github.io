@@ -3,7 +3,13 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://mozanunal.com/</loc>
-    <lastmod>2025-06-08T18:44:27+03:00</lastmod>
+    <lastmod>2025-06-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mozanunal.com/contact/</loc>
+    <lastmod>2025-06-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mozanunal.com/projects/</loc>
+    <lastmod>2025-06-12T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://mozanunal.com/posts/</loc>
     <lastmod>2025-06-08T18:44:27+03:00</lastmod>
@@ -1063,7 +1069,5 @@
   </url><url>
     <loc>https://mozanunal.com/tags/ana-sayfa/</loc>
     <lastmod>2014-05-25T03:44:00+00:00</lastmod>
-  </url><url>
-    <loc>https://mozanunal.com/contact/</loc>
   </url>
 </urlset>

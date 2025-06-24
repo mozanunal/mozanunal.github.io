@@ -1,17 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Electronics on mozanunal.com</title>
     <link>https://mozanunal.com/categories/electronics/</link>
     <description>Recent content in Electronics on mozanunal.com</description>
-    <image>
-      <title>mozanunal.com</title>
-      <url>https://mozanunal.com/images/papermod-cover.png</url>
-      <link>https://mozanunal.com/images/papermod-cover.png</link>
-    </image>
-    <generator>Hugo -- 0.147.8</generator>
-    <language>en</language>
-    <copyright>mozanunal</copyright>
+    <generator>Hugo</generator>
+    <language>en-US</language>
     <lastBuildDate>Thu, 30 Apr 2020 02:12:00 +0000</lastBuildDate>
     <atom:link href="https://mozanunal.com/categories/electronics/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -19,927 +13,336 @@
       <link>https://mozanunal.com/2020/04/imaging-axis/</link>
       <pubDate>Thu, 30 Apr 2020 02:12:00 +0000</pubDate>
       <guid>https://mozanunal.com/2020/04/imaging-axis/</guid>
-      <description>&lt;h1 id=&#34;medical-imaging-planes&#34;&gt;Medical Imaging Planes&lt;/h1&gt;
-&lt;p&gt;&lt;img alt=&#34;Source: https://mevislabdownloads.mevis.de/docs/current/MeVisLab/Resources/Documentation/Publish/SDK/GettingStarted/ch12s05.html&#34; loading=&#34;lazy&#34; src=&#34;https://mozanunal.com/images/imaging/planes.png&#34;&gt;&lt;/p&gt;
-&lt;h2 id=&#34;axial-transverse-plane&#34;&gt;Axial (Transverse) Plane&lt;/h2&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://mozanunal.com/images/imaging/axial.gif&#34;&gt;&lt;/p&gt;
-&lt;h2 id=&#34;coronal-plane&#34;&gt;Coronal Plane&lt;/h2&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://mozanunal.com/images/imaging/coronal.gif&#34;&gt;&lt;/p&gt;
-&lt;h2 id=&#34;sagittal-plane&#34;&gt;Sagittal Plane&lt;/h2&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://mozanunal.com/images/imaging/sagittal.gif&#34;&gt;&lt;/p&gt;</description>
+      <description>&lt;h1 id=&#34;medical-imaging-planes&#34;&gt;Medical Imaging Planes&lt;/h1&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://mozanunal.com/images/imaging/planes.png&#34; alt=&#34;Source: https://mevislabdownloads.mevis.de/docs/current/MeVisLab/Resources/Documentation/Publish/SDK/GettingStarted/ch12s05.html&#34;&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;axial-transverse-plane&#34;&gt;Axial (Transverse) Plane&lt;/h2&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://mozanunal.com/images/imaging/axial.gif&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;coronal-plane&#34;&gt;Coronal Plane&lt;/h2&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://mozanunal.com/images/imaging/coronal.gif&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;sagittal-plane&#34;&gt;Sagittal Plane&lt;/h2&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://mozanunal.com/images/imaging/sagittal.gif&#34; alt=&#34;&#34;&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Micropython Mqtt Streamer</title>
       <link>https://mozanunal.com/2020/02/micropython-mqtt-stream/</link>
       <pubDate>Wed, 26 Feb 2020 22:36:00 +0000</pubDate>
       <guid>https://mozanunal.com/2020/02/micropython-mqtt-stream/</guid>
-      <description>&lt;h1 id=&#34;micropython-mqtt-streamer&#34;&gt;Micropython Mqtt Streamer&lt;/h1&gt;
-&lt;p&gt;Hello everyone, I have developed a micropython code to stream accelerometer data
-over mqtt. Also I have created a tool to visualize the data which is transferred
-from remote MQTT device which is executing micropython code.&lt;/p&gt;
-&lt;h2 id=&#34;demo&#34;&gt;Demo&lt;/h2&gt;
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube-nocookie.com/embed/5v9RwN818p8?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;&gt;&lt;/iframe&gt;
-    &lt;/div&gt;
-
-&lt;h2 id=&#34;development&#34;&gt;Development&lt;/h2&gt;
-&lt;p&gt;The first thing which I tried with micropython is connecting ESP8266 to a WiFi.
-I have tried the following script which I found from the official documentation
-of the micropython.&lt;/p&gt;</description>
+      <description>&lt;h1 id=&#34;micropython-mqtt-streamer&#34;&gt;Micropython Mqtt Streamer&lt;/h1&gt;&#xA;&lt;p&gt;Hello everyone, I have developed a micropython code to stream accelerometer data&#xA;over mqtt. Also I have created a tool to visualize the data which is transferred&#xA;from remote MQTT device which is executing micropython code.&lt;/p&gt;&#xA;&lt;h2 id=&#34;demo&#34;&gt;Demo&lt;/h2&gt;&#xA;&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;&#xA;      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/5v9RwN818p8?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;&gt;&lt;/iframe&gt;&#xA;    &lt;/div&gt;&#xA;&#xA;&lt;h2 id=&#34;development&#34;&gt;Development&lt;/h2&gt;&#xA;&lt;p&gt;The first thing which I tried with micropython is connecting ESP8266 to a WiFi.&#xA;I have tried the following script which I found from the official documentation&#xA;of the micropython.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Digital Filtering of an ECG Signal</title>
       <link>https://mozanunal.com/2019/11/ecg-signal/</link>
       <pubDate>Sun, 17 Nov 2019 02:36:00 +0000</pubDate>
       <guid>https://mozanunal.com/2019/11/ecg-signal/</guid>
-      <description>&lt;p&gt;Hello everyone, Today, I will show how can you filter out the noise from the raw
-ECG signal. Let&amp;rsquo;s start!&lt;/p&gt;
-&lt;h3 id=&#34;what-is-ecg&#34;&gt;What is ECG?&lt;/h3&gt;
-&lt;p&gt;Electrocardiography (ECG) is the measurement of the bioelectrical activity
-during the contraction and relaxation stages of the atria and ventricles of the
-heart, the stimulation of the heart and the conduction of the stimulus. ECG
-signal has some specific waves which correspond to particular conditions.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Part of the ECG Signal&lt;/strong&gt; &lt;img loading=&#34;lazy&#34; src=&#34;https://mozanunal.com/images/ekg15.jpg&#34;&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;Hello everyone, Today, I will show how can you filter out the noise from the raw&#xA;ECG signal. Let&amp;rsquo;s start!&lt;/p&gt;&#xA;&lt;h3 id=&#34;what-is-ecg&#34;&gt;What is ECG?&lt;/h3&gt;&#xA;&lt;p&gt;Electrocardiography (ECG) is the measurement of the bioelectrical activity&#xA;during the contraction and relaxation stages of the atria and ventricles of the&#xA;heart, the stimulation of the heart and the conduction of the stimulus. ECG&#xA;signal has some specific waves which correspond to particular conditions.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Part of the ECG Signal&lt;/strong&gt; &lt;img src=&#34;https://mozanunal.com/images/ekg15.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>[TR] Manyetik Rezonans Görüntüleme</title>
       <link>https://mozanunal.com/2019/04/mrg/</link>
       <pubDate>Fri, 26 Apr 2019 03:44:00 +0000</pubDate>
       <guid>https://mozanunal.com/2019/04/mrg/</guid>
-      <description>&lt;h1 id=&#34;manyetik-rezonans-görüntüleme&#34;&gt;Manyetik Rezonans Görüntüleme&lt;/h1&gt;
-&lt;h2 id=&#34;1giriş&#34;&gt;1.Giriş&lt;/h2&gt;
-&lt;p&gt;Normalde vücudumuz RF enerjisine duyarsızdır. Önce veri kaynağımız olan
-protonların RF enerjisi ile uyarılır hale getirilmesi gerekir. Bunun için hasta
-çok güçlü bir manyetik alan içerisine yerleştirilir. Bu manyetik etkiyle
-protonlar manyetik alana uygun şekilde dizilir ve uyarılmaya hazır hale
-gelirler. Kesit alınacak bölgeye RF enerjisi gönderilir. Protonlar bu enerjiyi
-alır ve enerjinin miktarına göre konumlarından saparlar. RF enerjisi kesilir.
-Protonlar eski konumlarına dönerler. Bu dönüş sürecinde aldıkları enerjiyi bir
-sinyal şeklinde yayarlar. Bu sinyal kayıt edilerek seçilen alanın Hidrojen
-yoğunluğuyla alakalı bilgi edinilmiş olur.&lt;/p&gt;</description>
+      <description>&lt;h1 id=&#34;manyetik-rezonans-görüntüleme&#34;&gt;Manyetik Rezonans Görüntüleme&lt;/h1&gt;&#xA;&lt;h2 id=&#34;1giriş&#34;&gt;1.Giriş&lt;/h2&gt;&#xA;&lt;p&gt;Normalde vücudumuz RF enerjisine duyarsızdır. Önce veri kaynağımız olan&#xA;protonların RF enerjisi ile uyarılır hale getirilmesi gerekir. Bunun için hasta&#xA;çok güçlü bir manyetik alan içerisine yerleştirilir. Bu manyetik etkiyle&#xA;protonlar manyetik alana uygun şekilde dizilir ve uyarılmaya hazır hale&#xA;gelirler. Kesit alınacak bölgeye RF enerjisi gönderilir. Protonlar bu enerjiyi&#xA;alır ve enerjinin miktarına göre konumlarından saparlar. RF enerjisi kesilir.&#xA;Protonlar eski konumlarına dönerler. Bu dönüş sürecinde aldıkları enerjiyi bir&#xA;sinyal şeklinde yayarlar. Bu sinyal kayıt edilerek seçilen alanın Hidrojen&#xA;yoğunluğuyla alakalı bilgi edinilmiş olur.&lt;/p&gt;</description>
     </item>
     <item>
       <title>[TR] Veriloga Giriş</title>
       <link>https://mozanunal.com/2018/06/veriloga-giris/</link>
       <pubDate>Sat, 02 Jun 2018 11:07:45 +0000</pubDate>
       <guid>https://mozanunal.com/2018/06/veriloga-giris/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Herkes Merhabalar,&lt;/strong&gt; Bugün bir &amp;ldquo;hardware description language&amp;rdquo; olan verilog
-diline giriş yapmak istiyorum. Verilog sayısal dizaynda( ASIC ve FPGA )
-kullanılan bir tanımlama dilidir. Verilog dilini Fpga programlamak için bir çok
-projede kullandım fakat ASIC dizayn konusunda bir tecrübem yok. Fpga
-programlarken öğrendiğim şeyleri farklı yazılarda paylaşmıştım. Bu yazı da o
-yazılardan biri diyebiliriz. Verilog ile alakalı daha ileri düzey şeylerden
-bahsedeceğim yazılar da gelecektir diye düşünüyorum.&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;ZYBO Fpga Geliştirme Kartı&#34; loading=&#34;lazy&#34; src=&#34;https://mozanunal.com/images/1527937147117.png&#34;&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;strong&gt;Herkes Merhabalar,&lt;/strong&gt; Bugün bir &amp;ldquo;hardware description language&amp;rdquo; olan verilog&#xA;diline giriş yapmak istiyorum. Verilog sayısal dizaynda( ASIC ve FPGA )&#xA;kullanılan bir tanımlama dilidir. Verilog dilini Fpga programlamak için bir çok&#xA;projede kullandım fakat ASIC dizayn konusunda bir tecrübem yok. Fpga&#xA;programlarken öğrendiğim şeyleri farklı yazılarda paylaşmıştım. Bu yazı da o&#xA;yazılardan biri diyebiliriz. Verilog ile alakalı daha ileri düzey şeylerden&#xA;bahsedeceğim yazılar da gelecektir diye düşünüyorum.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://mozanunal.com/images/1527937147117.png&#34; alt=&#34;ZYBO Fpga Geliştirme Kartı&#34;&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>[TR] En Basit IOT Bulut Sistemi: Google Forms</title>
       <link>https://mozanunal.com/2018/04/google-docs-data-collection/</link>
       <pubDate>Tue, 17 Apr 2018 21:24:57 +0000</pubDate>
       <guid>https://mozanunal.com/2018/04/google-docs-data-collection/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Bugün basit, ilginç ve kullanışlı bir proje ile karşınızdayım. Bulut tabanlı
-programlar oldukça populer oldu son zamanlarda. Ben bütün ofis programı
-ihtiyaçlarımı google&amp;rsquo;in çevrimiçi programlarıyla karşılıyorum. Google form da
-anket yapmanızı sağlayan bu araçlardan biri. Bu aracın olağan kullanımı anket
-yapmaktır. Bu projede bambaşka bir şey için kullanacağız: IOT sistemler için
-basit bulut sistemi.&lt;/p&gt;
-&lt;p&gt;Şöyle ki normalde anket için yapılmış bu form sistemini IOT cihazımızdan buluta
-veri göndermek için kullanacağız. Bu sistem sayesinde çok fazla uğraş vermeden
-cihazımızı uzaktan takip edebiliyor ve verilerini izleyebiliyor olacağız. Hatta
-direk olarak excel sistemine aktarılacağı için direk oradan analiz bile
-edebiliriz. Birden fazla cihazlı sistemler bile kurmak mümkün görünüyor. Online
-olarak takip etmek istediğimiz şeyler olduğunda kullanılabilir gibi gözüküyor.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Bugün basit, ilginç ve kullanışlı bir proje ile karşınızdayım. Bulut tabanlı&#xA;programlar oldukça populer oldu son zamanlarda. Ben bütün ofis programı&#xA;ihtiyaçlarımı google&amp;rsquo;in çevrimiçi programlarıyla karşılıyorum. Google form da&#xA;anket yapmanızı sağlayan bu araçlardan biri. Bu aracın olağan kullanımı anket&#xA;yapmaktır. Bu projede bambaşka bir şey için kullanacağız: IOT sistemler için&#xA;basit bulut sistemi.&lt;/p&gt;&#xA;&lt;p&gt;Şöyle ki normalde anket için yapılmış bu form sistemini IOT cihazımızdan buluta&#xA;veri göndermek için kullanacağız. Bu sistem sayesinde çok fazla uğraş vermeden&#xA;cihazımızı uzaktan takip edebiliyor ve verilerini izleyebiliyor olacağız. Hatta&#xA;direk olarak excel sistemine aktarılacağı için direk oradan analiz bile&#xA;edebiliriz. Birden fazla cihazlı sistemler bile kurmak mümkün görünüyor. Online&#xA;olarak takip etmek istediğimiz şeyler olduğunda kullanılabilir gibi gözüküyor.&lt;/p&gt;</description>
     </item>
     <item>
       <title>[TR] Micropython Nedir?</title>
       <link>https://mozanunal.com/2018/03/micropython-1516117222475/</link>
       <pubDate>Wed, 14 Mar 2018 21:29:02 +0000</pubDate>
       <guid>https://mozanunal.com/2018/03/micropython-1516117222475/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Bildiğiniz üzere gömülü sistemlerde programlama C ile yapılır. Bunun sebebi
-makine diline en yakın dil olması bu nedenle sistem kaynaklarını az kullanarak
-programlar geliştirilebilmesi ve gömülü sistemdeki donanımları kolay
-programlanabilmesidir. Fakat buna rağmen işlemcilerin de güçlenmesiyle ve
-ihtiyaçların da değişmesiyle farklı diller ile programlama yapabilmek için
-farklı denemeler yapılmaktadır. Daha önce ESP8266 için scripting dili kullanma
-denemeleri olmuştu. Bir ara Lua dili ile programlanabiliyordu. Hatta bir ara
-beklediğimden çok daha popüler hale gelmişti. Lua dili bilmediğim için o
-firmware test etme şansım olmadı. Fakat yakın zamanda benzer bir projenin favori
-programlama dilim olan python ile de yapıldığını gördüm. ESP8266&amp;rsquo;nın python ile
-programlanabildiğini görünce dayanamadım. Bu projenin ismi &lt;strong&gt;micropython&lt;/strong&gt; ve
-denediğimde micropython firmware oldukça hoşuma gitti o yüzden hakkında bir
-şeyler yazmak istedim. &lt;img alt=&#34;upython&#34; loading=&#34;lazy&#34; src=&#34;https://mozanunal.com/images/1516117467411.jpg&#34;&gt; Micropython bir
-&lt;strong&gt;kickstarter&lt;/strong&gt; projesi olarak çıkmış ortaya. İlk olarak Stm32f4 boardları için
-yapılmış. &lt;strong&gt;Amacı mikroişlemciler üzerinde python çalıştırmak ve python shell
-mantığıyla prototipleme yapabilmek.&lt;/strong&gt; Bildiğiniz üzere python en büyük
-eksilerinden biri yüksek ram harcaması. Bu sorunu çözmek için bütün standart
-python kütüphanleri micropython diye yeni bir yapıya portlanmış ve flashda ve
-ramda kapladığı alan sorunları çözülmeye çalışılınmış.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Bildiğiniz üzere gömülü sistemlerde programlama C ile yapılır. Bunun sebebi&#xA;makine diline en yakın dil olması bu nedenle sistem kaynaklarını az kullanarak&#xA;programlar geliştirilebilmesi ve gömülü sistemdeki donanımları kolay&#xA;programlanabilmesidir. Fakat buna rağmen işlemcilerin de güçlenmesiyle ve&#xA;ihtiyaçların da değişmesiyle farklı diller ile programlama yapabilmek için&#xA;farklı denemeler yapılmaktadır. Daha önce ESP8266 için scripting dili kullanma&#xA;denemeleri olmuştu. Bir ara Lua dili ile programlanabiliyordu. Hatta bir ara&#xA;beklediğimden çok daha popüler hale gelmişti. Lua dili bilmediğim için o&#xA;firmware test etme şansım olmadı. Fakat yakın zamanda benzer bir projenin favori&#xA;programlama dilim olan python ile de yapıldığını gördüm. ESP8266&amp;rsquo;nın python ile&#xA;programlanabildiğini görünce dayanamadım. Bu projenin ismi &lt;strong&gt;micropython&lt;/strong&gt; ve&#xA;denediğimde micropython firmware oldukça hoşuma gitti o yüzden hakkında bir&#xA;şeyler yazmak istedim. &lt;img src=&#34;https://mozanunal.com/images/1516117467411.jpg&#34; alt=&#34;upython&#34;&gt; Micropython bir&#xA;&lt;strong&gt;kickstarter&lt;/strong&gt; projesi olarak çıkmış ortaya. İlk olarak Stm32f4 boardları için&#xA;yapılmış. &lt;strong&gt;Amacı mikroişlemciler üzerinde python çalıştırmak ve python shell&#xA;mantığıyla prototipleme yapabilmek.&lt;/strong&gt; Bildiğiniz üzere python en büyük&#xA;eksilerinden biri yüksek ram harcaması. Bu sorunu çözmek için bütün standart&#xA;python kütüphanleri micropython diye yeni bir yapıya portlanmış ve flashda ve&#xA;ramda kapladığı alan sorunları çözülmeye çalışılınmış.&lt;/p&gt;</description>
     </item>
     <item>
       <title>[TR] Altera Cyclone IV ile FPGA Dünyasına Giriş</title>
       <link>https://mozanunal.com/2018/03/altera-cyclone-4-fpga/</link>
       <pubDate>Mon, 05 Mar 2018 21:48:22 +0000</pubDate>
       <guid>https://mozanunal.com/2018/03/altera-cyclone-4-fpga/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt; Son yıllarda hobi elektroniği inanılmaz bir hızla
-gelişti. Şüphesiz bu hızlı gelişmenin mimarı Arduino. Atmelin 8 bitlik
-işlemcilerini temel alarak tasarlanan bu kart ve programala dili sayesinde
-insanlar kolayca projeler geliştirmeye ve hobi uygulamaları yapmaya başladılar.
-Ama Arduinonun ve hatta daha iyi bir mikroişlemcinin de yeterli olmadığı
-projeler var. Böyle bir ihtiyaç doğduğunda seçenekler kendini geliştirmek
-isteyenler için çok sıkıntılı hale geliyor. Önceki yazılarımdan birinde STM32
-öğrenmeye nasıl başlanır ve proje nasıl oluşturulur onu anlatmıştım. Bu sefer
-mikroişlemcinin yanı sıra bir fpga üzerine gitmek istiyorum. Mesela yüksek
-hesaplama gücü ve paralel işlem gerektiren proje yapmak istiyorsunuz ve fgpa
-öğrenmek istiyorsunuz. Nasıl başlayabilirsiniz onu anlatmak istiyorum.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt; Son yıllarda hobi elektroniği inanılmaz bir hızla&#xA;gelişti. Şüphesiz bu hızlı gelişmenin mimarı Arduino. Atmelin 8 bitlik&#xA;işlemcilerini temel alarak tasarlanan bu kart ve programala dili sayesinde&#xA;insanlar kolayca projeler geliştirmeye ve hobi uygulamaları yapmaya başladılar.&#xA;Ama Arduinonun ve hatta daha iyi bir mikroişlemcinin de yeterli olmadığı&#xA;projeler var. Böyle bir ihtiyaç doğduğunda seçenekler kendini geliştirmek&#xA;isteyenler için çok sıkıntılı hale geliyor. Önceki yazılarımdan birinde STM32&#xA;öğrenmeye nasıl başlanır ve proje nasıl oluşturulur onu anlatmıştım. Bu sefer&#xA;mikroişlemcinin yanı sıra bir fpga üzerine gitmek istiyorum. Mesela yüksek&#xA;hesaplama gücü ve paralel işlem gerektiren proje yapmak istiyorsunuz ve fgpa&#xA;öğrenmek istiyorsunuz. Nasıl başlayabilirsiniz onu anlatmak istiyorum.&lt;/p&gt;</description>
     </item>
     <item>
       <title>[TR] Bitcoin Madencileri için Online Dashboard</title>
       <link>https://mozanunal.com/2017/07/bitcoin-madencileri-icin-online-dashboard/</link>
       <pubDate>Sun, 30 Jul 2017 15:50:00 +0000</pubDate>
       <guid>https://mozanunal.com/2017/07/bitcoin-madencileri-icin-online-dashboard/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Herkes merhabalar,&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Bitcoin son dönemlerin popüler konularından birisi. Aslında genel olarak crypto
-currency son zamanlarda çok popüler. Peki nedir bu kavramlar? Crypto currency
-güvenliği şifreleme teknojileriyle sağlanan sanal para birimleridir. Her gün bir
-yeni bir tür crypto currency ortaya çıkıyor. Bunlar arasında en geçerli olanı
-ise bitcoin. Sanırım popülerliği en eskilerinden biri olmasından ve anlık olarak
-üretimi sınırlayabilen ilki olmasından geliyor. Bahsetmek istediğim 3. kavram
-ise bit coin mining: Yüksek hesaplama gücü kullanarak bitcoin üretebilmeniz
-mümkün. Bitcoin alışverişlerinin geçerli olması için bir şifre ile onaylanması
-gerekiyor. Bu şifreyi de bir hash çözerek oluşturuyorsunuz ve bunun karşılığında
-sistem sizi bitcoin ile ödüllendiriyor. Bu amaçla bir sürü insan sağlan ekran
-kartları alıp bitcoin tarlaları kurdular ve bu işten para kazanıyorlar. Tabi
-aklınıza, bitcoinin dünyaya katkısı nedir ya da ne kadar riskli, yatırım yapılır
-mı? gibi türlü türlü farklı açılardan sorular gelebilir. Ama malesef ben bu
-konuda uzman değilim ve daha nedir sorusuna bile tam olarak cevap vermek çok
-zor.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;strong&gt;Herkes merhabalar,&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Bitcoin son dönemlerin popüler konularından birisi. Aslında genel olarak crypto&#xA;currency son zamanlarda çok popüler. Peki nedir bu kavramlar? Crypto currency&#xA;güvenliği şifreleme teknojileriyle sağlanan sanal para birimleridir. Her gün bir&#xA;yeni bir tür crypto currency ortaya çıkıyor. Bunlar arasında en geçerli olanı&#xA;ise bitcoin. Sanırım popülerliği en eskilerinden biri olmasından ve anlık olarak&#xA;üretimi sınırlayabilen ilki olmasından geliyor. Bahsetmek istediğim 3. kavram&#xA;ise bit coin mining: Yüksek hesaplama gücü kullanarak bitcoin üretebilmeniz&#xA;mümkün. Bitcoin alışverişlerinin geçerli olması için bir şifre ile onaylanması&#xA;gerekiyor. Bu şifreyi de bir hash çözerek oluşturuyorsunuz ve bunun karşılığında&#xA;sistem sizi bitcoin ile ödüllendiriyor. Bu amaçla bir sürü insan sağlan ekran&#xA;kartları alıp bitcoin tarlaları kurdular ve bu işten para kazanıyorlar. Tabi&#xA;aklınıza, bitcoinin dünyaya katkısı nedir ya da ne kadar riskli, yatırım yapılır&#xA;mı? gibi türlü türlü farklı açılardan sorular gelebilir. Ama malesef ben bu&#xA;konuda uzman değilim ve daha nedir sorusuna bile tam olarak cevap vermek çok&#xA;zor.&lt;/p&gt;</description>
     </item>
     <item>
       <title>PMod Microphone Driver</title>
       <link>https://mozanunal.com/2017/07/pmod-microphone-driver/</link>
       <pubDate>Thu, 20 Jul 2017 23:14:00 +0000</pubDate>
       <guid>https://mozanunal.com/2017/07/pmod-microphone-driver/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Hi&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;In this post, the Pmod microphone driver which is written in Verilog for Zynq
-boards is discussed. The driver is developed for Digilent Design
-Competition 2017. We have a project which microphone array is used. Therefore we
-have to get data from Pmod Mic also 5 of them should work synchronously. The
-microphone is sampled with an external ADC and this ADC is using basic SPI for
-communication. This module should be added to main FPGA code and you should make
-the connections required. clk/16 sample rate is succeeded for the microphone.
-clk input frequency should select according to required sampling rate for the
-microphone. SS can be used as out enable also. You can ask any question directly
-to me if you have a problem with the driver. See you&amp;hellip;&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;strong&gt;Hi&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;In this post, the Pmod microphone driver which is written in Verilog for Zynq&#xA;boards is discussed. The driver is developed for Digilent Design&#xA;Competition 2017. We have a project which microphone array is used. Therefore we&#xA;have to get data from Pmod Mic also 5 of them should work synchronously. The&#xA;microphone is sampled with an external ADC and this ADC is using basic SPI for&#xA;communication. This module should be added to main FPGA code and you should make&#xA;the connections required. clk/16 sample rate is succeeded for the microphone.&#xA;clk input frequency should select according to required sampling rate for the&#xA;microphone. SS can be used as out enable also. You can ask any question directly&#xA;to me if you have a problem with the driver. See you&amp;hellip;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Internet of Beach</title>
       <link>https://mozanunal.com/2017/06/internet-of-beaches/</link>
       <pubDate>Tue, 27 Jun 2017 20:18:00 +0000</pubDate>
       <guid>https://mozanunal.com/2017/06/internet-of-beaches/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Bugünkü yazımda arkadaşlarımla katıldığım Nasa Space Apps Challenge 2017
-hakkında bir paylaşımda bulunacağım. Bu hackhathon Nasa tarafından dünya
-genelinde düzenleniyor. 24 saat içerinde önceden yayınlanan sorunlardan birine
-çözüm bulmamız isteniyor. Tüm dünya genelinde aynı gün bu problemlere çözüm
-aranıyor. Biz de Koç Üniversitesi IEEE topluluğunca organize edilen yarışmanın
-İstanbul şubesinden katıldık. Öncellikle şunu söylemem gerek organizasyon
-oldukça güzeldi, hiç bir aksaklık yaşanmadan çok keyifli ve eğlenceli bir 24
-saat yaşadık. Burdan IEEE Koç ailesine teşekkürlerimi iletiyorum.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Bugünkü yazımda arkadaşlarımla katıldığım Nasa Space Apps Challenge 2017&#xA;hakkında bir paylaşımda bulunacağım. Bu hackhathon Nasa tarafından dünya&#xA;genelinde düzenleniyor. 24 saat içerinde önceden yayınlanan sorunlardan birine&#xA;çözüm bulmamız isteniyor. Tüm dünya genelinde aynı gün bu problemlere çözüm&#xA;aranıyor. Biz de Koç Üniversitesi IEEE topluluğunca organize edilen yarışmanın&#xA;İstanbul şubesinden katıldık. Öncellikle şunu söylemem gerek organizasyon&#xA;oldukça güzeldi, hiç bir aksaklık yaşanmadan çok keyifli ve eğlenceli bir 24&#xA;saat yaşadık. Burdan IEEE Koç ailesine teşekkürlerimi iletiyorum.&lt;/p&gt;</description>
     </item>
     <item>
       <title>[TR] Multikopterler için otopilot yapmak</title>
       <link>https://mozanunal.com/2017/02/multikopterler-icin-otopilot-yapmak/</link>
       <pubDate>Tue, 07 Feb 2017 23:55:00 +0000</pubDate>
       <guid>https://mozanunal.com/2017/02/multikopterler-icin-otopilot-yapmak/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Merhaba arkadaşlar,&lt;/strong&gt;&lt;br&gt;
-      Bugünkü yazımda geçen senelerde üzerinde uzun zaman harcadığım fakat
-tamamlayamadığım bir konu olan otopilot yapmak üzerine edindiğim tecrübeleri
-anlatmak istiyorum. Yazıya başlamadan önce bu çalışmaların tamamını beraber
-yaptığım &lt;strong&gt;Bahadır Gökçeaslan&lt;/strong&gt; teşekkür etmeyi bir borç bilirim.&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;SimplePilotlogoPNG.png&#34; loading=&#34;lazy&#34; src=&#34;https://github.com/mozanunal/SimplePilot/blob/master/LOGO/SimplePilotlogoPNG.png?raw=true&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Evet otopilot aslında benim anlatacağım bölüme kıyasla biraz fazla geniş bir
-kavram oldu. Zira malesef proje uçuş kontrolcüsü aşamalarında kaldı. Bir soru
-ile başlayalım. Bir uçuş kontrolcüsü nedir? Bir uçuş kontrolcüsü temel olarak
-havada uçan bir aracın yere göre açılarının istenilen şekilde olmasını sağlayan
-sensör ve hareketli mekanizmalar bütünüdür. Aslında yere göre açılarla
-sınırlamak çok mantıklı değil. Bir hava aracının yükseliğinin sabit olması veya
-istenilen hızda istenilen konumda kalmasını sağlamak da bunun işidir. Fakat bu
-projede, bir Quadcopter uçuş kontrolcüsü olarak tasarlanmış olan bu yapıda amaç
-quadcopterin yere göre açılarını kumandadan gelen girdilere göre kontrol
-etmekti.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;strong&gt;Merhaba arkadaşlar,&lt;/strong&gt;&lt;br&gt;&#xA;      Bugünkü yazımda geçen senelerde üzerinde uzun zaman harcadığım fakat&#xA;tamamlayamadığım bir konu olan otopilot yapmak üzerine edindiğim tecrübeleri&#xA;anlatmak istiyorum. Yazıya başlamadan önce bu çalışmaların tamamını beraber&#xA;yaptığım &lt;strong&gt;Bahadır Gökçeaslan&lt;/strong&gt; teşekkür etmeyi bir borç bilirim.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://github.com/mozanunal/SimplePilot/blob/master/LOGO/SimplePilotlogoPNG.png?raw=true&#34; alt=&#34;SimplePilotlogoPNG.png&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Evet otopilot aslında benim anlatacağım bölüme kıyasla biraz fazla geniş bir&#xA;kavram oldu. Zira malesef proje uçuş kontrolcüsü aşamalarında kaldı. Bir soru&#xA;ile başlayalım. Bir uçuş kontrolcüsü nedir? Bir uçuş kontrolcüsü temel olarak&#xA;havada uçan bir aracın yere göre açılarının istenilen şekilde olmasını sağlayan&#xA;sensör ve hareketli mekanizmalar bütünüdür. Aslında yere göre açılarla&#xA;sınırlamak çok mantıklı değil. Bir hava aracının yükseliğinin sabit olması veya&#xA;istenilen hızda istenilen konumda kalmasını sağlamak da bunun işidir. Fakat bu&#xA;projede, bir Quadcopter uçuş kontrolcüsü olarak tasarlanmış olan bu yapıda amaç&#xA;quadcopterin yere göre açılarını kumandadan gelen girdilere göre kontrol&#xA;etmekti.&lt;/p&gt;</description>
     </item>
     <item>
       <title>[TR] Eski Bilgisayar Güç Kaynağını Masaüstü Güç Kaynağına Çevirme</title>
       <link>https://mozanunal.com/2016/12/eski-bilgisayar-guc-kaynagn-masaustu/</link>
       <pubDate>Tue, 27 Dec 2016 00:59:00 +0000</pubDate>
       <guid>https://mozanunal.com/2016/12/eski-bilgisayar-guc-kaynagn-masaustu/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;br&gt;
-       Bugünkü yazımda nasıl eski bilgisayarınızdan kalan güç kaynağınızı
-elektronik projelerinizde kullanabileceğiniz güç kaynağına dönüştürebileceğinizi
-anlatacağım. Özellikle yüksek güç gerektiren projelerde farklı voltajlarda
-yüksek güç sağlayabilen bu güç kaynaklarının oldukça yararlı olabileceğini
-düşünüyorum. Hemen hemen herkesin de bir şekilde ıskartaya çıkmış bir
-bilgisayarı vardır. Eğer güç kaynağı sağlamsa sıfır maliyetle kendinize bir güç
-kaynağı edinmiş olursunuz.&lt;/p&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://2.bp.blogspot.com/-EXt6RrgC7lg/WGAUWvxMZ9I/AAAAAAAAfKQ/FDJd61MfgYAZ4pKE_46vAyzQHT_AN6evgCKgB/s720/IMG_20161224_190300.jpg&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Benim elimdeki güç kaynağının çıkışlarını aşağıdan görebilirsiniz. Eski
-bilgisayarımdan kalan 250 W bir güç kaynağı kendisi. Hali hazırda 3.3 V 5V 12 V
-ve  -12 V çıkışları var. Farklı voltaj ihtiyaçlarına göre regülatörler veya akım
-koruma devreleri eklenerek güç kaynağı daha işlevsel hale getirilebilir.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;br&gt;&#xA;       Bugünkü yazımda nasıl eski bilgisayarınızdan kalan güç kaynağınızı&#xA;elektronik projelerinizde kullanabileceğiniz güç kaynağına dönüştürebileceğinizi&#xA;anlatacağım. Özellikle yüksek güç gerektiren projelerde farklı voltajlarda&#xA;yüksek güç sağlayabilen bu güç kaynaklarının oldukça yararlı olabileceğini&#xA;düşünüyorum. Hemen hemen herkesin de bir şekilde ıskartaya çıkmış bir&#xA;bilgisayarı vardır. Eğer güç kaynağı sağlamsa sıfır maliyetle kendinize bir güç&#xA;kaynağı edinmiş olursunuz.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://2.bp.blogspot.com/-EXt6RrgC7lg/WGAUWvxMZ9I/AAAAAAAAfKQ/FDJd61MfgYAZ4pKE_46vAyzQHT_AN6evgCKgB/s720/IMG_20161224_190300.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Benim elimdeki güç kaynağının çıkışlarını aşağıdan görebilirsiniz. Eski&#xA;bilgisayarımdan kalan 250 W bir güç kaynağı kendisi. Hali hazırda 3.3 V 5V 12 V&#xA;ve  -12 V çıkışları var. Farklı voltaj ihtiyaçlarına göre regülatörler veya akım&#xA;koruma devreleri eklenerek güç kaynağı daha işlevsel hale getirilebilir.&lt;/p&gt;</description>
     </item>
     <item>
       <title>[TR] DIY Bluetooth Speaker</title>
       <link>https://mozanunal.com/2016/12/diy-bluetooth-speaker/</link>
       <pubDate>Mon, 05 Dec 2016 21:23:00 +0000</pubDate>
       <guid>https://mozanunal.com/2016/12/diy-bluetooth-speaker/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Merhaba Arkadaşlar,&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Bu projemde nasıl elimizde kalan fazla hoparlörleri bluetooth speakera
-dönüştürebileceğinizden bahsedeceğim. Geçen yaz bir arkadaşımın 5 +1 ses
-sisteminin kuvvetlendirici kutusu yanmış böyle olunca da hoparlörler boşa çıkmış
-ben de bir projede kullanırım diyerek kenara ayırdım. Aklıma sonradan bunları
-bluetooth hoparlöre dönüştürmek geldi. Direk ses cihazı olarak görünen bluetooth
-ses alıcılarını araştırmaya başladım. Bir kaç model bulsam da yaklaşık 10 W olan
-bu hoparlörleri sürecek kadar güç çıkışı vermiyorlardı. Bu nedenle projeye bir
-de kuvvetlendirici ekledim. Kuvvetlendirici  olarak PAM8610 seçtim. Kendisi bir
-class D güç kuvvetlendiricisi yani en verimli olanlarından. Yüksek verini
-sayesinde çok az enerji ısıya dönüşüyor ve soğutucu metal parçaya vb ihtiyaç
-duymuyor. Yaptığım proje ile bu hoparlörleri, bluetooth üzerinden ya da doğrudan
-kablo ile ses çıkışlarına bağlanabilecek duruma getirmiş oluyorum.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;strong&gt;Merhaba Arkadaşlar,&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Bu projemde nasıl elimizde kalan fazla hoparlörleri bluetooth speakera&#xA;dönüştürebileceğinizden bahsedeceğim. Geçen yaz bir arkadaşımın 5 +1 ses&#xA;sisteminin kuvvetlendirici kutusu yanmış böyle olunca da hoparlörler boşa çıkmış&#xA;ben de bir projede kullanırım diyerek kenara ayırdım. Aklıma sonradan bunları&#xA;bluetooth hoparlöre dönüştürmek geldi. Direk ses cihazı olarak görünen bluetooth&#xA;ses alıcılarını araştırmaya başladım. Bir kaç model bulsam da yaklaşık 10 W olan&#xA;bu hoparlörleri sürecek kadar güç çıkışı vermiyorlardı. Bu nedenle projeye bir&#xA;de kuvvetlendirici ekledim. Kuvvetlendirici  olarak PAM8610 seçtim. Kendisi bir&#xA;class D güç kuvvetlendiricisi yani en verimli olanlarından. Yüksek verini&#xA;sayesinde çok az enerji ısıya dönüşüyor ve soğutucu metal parçaya vb ihtiyaç&#xA;duymuyor. Yaptığım proje ile bu hoparlörleri, bluetooth üzerinden ya da doğrudan&#xA;kablo ile ses çıkışlarına bağlanabilecek duruma getirmiş oluyorum.&lt;/p&gt;</description>
     </item>
     <item>
       <title>[TR] STM32 Mikroişlemci Dünyasına Giriş</title>
       <link>https://mozanunal.com/2016/11/stm32-mikroislemci-dunyasna-giris/</link>
       <pubDate>Tue, 08 Nov 2016 15:53:00 +0000</pubDate>
       <guid>https://mozanunal.com/2016/11/stm32-mikroislemci-dunyasna-giris/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;br&gt;
-Bu yazımda yeni bir alana hızlıca bir giriş yapıyorum. Zaman zaman
-projelerimizde 8 bitlik atmel veya pic işlemcilerin beklentiyi karşılamadığı
-oluyor. Böyle durumlar için ST Microelectronics firmasının STM32 isimli 32
-bitlik işlemcilerini önerebilirim. 32 Bit işlemciler için en çok kaynak
-bulanabilecek işlemci takip ettiğim kadarıyla. ST firması çoğu gelişitme aracını
-da ücretsiz olarak sağlıyor. Bu yazıda tanıtacağım kartlar Arm Cortex M3
-mimarisi tabanlı geliştirme kartlarıdır. Peki bu çekirdeği neden seçtim? Bir
-cümleyle özetlemek gerekirse 8 bitlik islemcilere bariz üstünlük sağlayan ve
-projelerin pek çoğu için yeterli özelliklere sahip olan en uygun fiyatlı
-işlemci. Geliştirme kartı olmadan sadece işlemci 1 - 2 dolar gibi çok iyi bir
-fiyata sahip. Özelliklerine aşağıdan ulaşabilirsiniz.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;br&gt;&#xA;Bu yazımda yeni bir alana hızlıca bir giriş yapıyorum. Zaman zaman&#xA;projelerimizde 8 bitlik atmel veya pic işlemcilerin beklentiyi karşılamadığı&#xA;oluyor. Böyle durumlar için ST Microelectronics firmasının STM32 isimli 32&#xA;bitlik işlemcilerini önerebilirim. 32 Bit işlemciler için en çok kaynak&#xA;bulanabilecek işlemci takip ettiğim kadarıyla. ST firması çoğu gelişitme aracını&#xA;da ücretsiz olarak sağlıyor. Bu yazıda tanıtacağım kartlar Arm Cortex M3&#xA;mimarisi tabanlı geliştirme kartlarıdır. Peki bu çekirdeği neden seçtim? Bir&#xA;cümleyle özetlemek gerekirse 8 bitlik islemcilere bariz üstünlük sağlayan ve&#xA;projelerin pek çoğu için yeterli özelliklere sahip olan en uygun fiyatlı&#xA;işlemci. Geliştirme kartı olmadan sadece işlemci 1 - 2 dolar gibi çok iyi bir&#xA;fiyata sahip. Özelliklerine aşağıdan ulaşabilirsiniz.&lt;/p&gt;</description>
     </item>
     <item>
       <title>[TR] Pixhawk Otopilot ve Özellikleri</title>
       <link>https://mozanunal.com/2016/09/pixhawk-otopilot-ve-ozellikleri/</link>
       <pubDate>Thu, 01 Sep 2016 14:26:00 +0000</pubDate>
       <guid>https://mozanunal.com/2016/09/pixhawk-otopilot-ve-ozellikleri/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;br&gt;
-        Uzun bir aradan sonra tekrar bir yazı hazırladım. Aslında bu yazıya çok
-önceden başlamıştım fakat devamını getirmemiştim şimdi tamamlayabildim ancak :).
-Evet bu yazımda Pixhawk isimli otopilottan bahsetmek istiyorum. Pixhawk açık
-kaynak kodlu Stm32 tabanlı yazılım tabanı olarak da ArduPilota dayanan bir
-otopilot modülü. Burada bir yorumda bulunmam gerekirse, açık kaynaklı
-otopilotlar arasında en başarılısı bana göre. Bu teorimi kanıtlamak için de
-hemen özelliklerine geçmek istiyorum.&lt;/p&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://4.bp.blogspot.com/-p4zpkVZrQWU/V8faC6OGbjI/AAAAAAAAc_U/rx-zCY8cZksKXnRpi2GC8lY-b-aB_MA_ACLcB/s640/pic-prod-pixhawk1.jpg&#34;&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Ana işlemcisi 32 bit Arm Cortex M4 tabanlı ST Microelectronic&amp;rsquo;in bir ürünü(
-STM32F427 Cortex M4 core with FPU).  Bu işlemci &amp;ldquo;NuttX Real Time Operating
-System&amp;rdquo; ile kullanılıyor. &lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;br&gt;&#xA;        Uzun bir aradan sonra tekrar bir yazı hazırladım. Aslında bu yazıya çok&#xA;önceden başlamıştım fakat devamını getirmemiştim şimdi tamamlayabildim ancak :).&#xA;Evet bu yazımda Pixhawk isimli otopilottan bahsetmek istiyorum. Pixhawk açık&#xA;kaynak kodlu Stm32 tabanlı yazılım tabanı olarak da ArduPilota dayanan bir&#xA;otopilot modülü. Burada bir yorumda bulunmam gerekirse, açık kaynaklı&#xA;otopilotlar arasında en başarılısı bana göre. Bu teorimi kanıtlamak için de&#xA;hemen özelliklerine geçmek istiyorum.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://4.bp.blogspot.com/-p4zpkVZrQWU/V8faC6OGbjI/AAAAAAAAc_U/rx-zCY8cZksKXnRpi2GC8lY-b-aB_MA_ACLcB/s640/pic-prod-pixhawk1.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Ana işlemcisi 32 bit Arm Cortex M4 tabanlı ST Microelectronic&amp;rsquo;in bir ürünü(&#xA;STM32F427 Cortex M4 core with FPU).  Bu işlemci &amp;ldquo;NuttX Real Time Operating&#xA;System&amp;rdquo; ile kullanılıyor. &lt;/p&gt;</description>
     </item>
     <item>
       <title>[TR] WPF ile Ev Otomasyonu Arayüzü</title>
       <link>https://mozanunal.com/2016/06/wpf-ile-ev-otomasyonu-arayuzu/</link>
       <pubDate>Thu, 09 Jun 2016 04:45:00 +0000</pubDate>
       <guid>https://mozanunal.com/2016/06/wpf-ile-ev-otomasyonu-arayuzu/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;br&gt;
-Bu yazımda .NET platformunun bir teknolojisi olan WPF kullanarak ev otomasyonu
-kontrol paneli yapmayı anlatacağım. Yaptığım bu projenin başlıca işlevi şudur; 5
-farklı sensörden bulunulan ortamın sıcaklığı, nemi, zehirli gaz durumu, ortamda
-canlı olup olmadığı, ortamda yağış olup olmadığı Arduino yardımıyla alınır ve bu
-sensor dataları C# arayüzünde gösterilir. Eğer onay kutusu işaretlenirse
-istenmeyen bir durumda (gaz sızıntısı, eve hırsız girmesi, yağmur için
-kurulabilir.) program uyarı olarak girilen adrese bir adet mail
-gönderir.&lt;a href=&#34;https://drive.google.com/file/d/0B5j__Lyt9ozbVTRIOVFVcVVWX3c/view?usp=sharing&#34;&gt;Projenin Arduino ve C# kaynak kodunu buradan indirebilirsiniz.&lt;/a&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;br&gt;&#xA;Bu yazımda .NET platformunun bir teknolojisi olan WPF kullanarak ev otomasyonu&#xA;kontrol paneli yapmayı anlatacağım. Yaptığım bu projenin başlıca işlevi şudur; 5&#xA;farklı sensörden bulunulan ortamın sıcaklığı, nemi, zehirli gaz durumu, ortamda&#xA;canlı olup olmadığı, ortamda yağış olup olmadığı Arduino yardımıyla alınır ve bu&#xA;sensor dataları C# arayüzünde gösterilir. Eğer onay kutusu işaretlenirse&#xA;istenmeyen bir durumda (gaz sızıntısı, eve hırsız girmesi, yağmur için&#xA;kurulabilir.) program uyarı olarak girilen adrese bir adet mail&#xA;gönderir.&lt;a href=&#34;https://drive.google.com/file/d/0B5j__Lyt9ozbVTRIOVFVcVVWX3c/view?usp=sharing&#34;&gt;Projenin Arduino ve C# kaynak kodunu buradan indirebilirsiniz.&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>[TR] Ayarlanabilir Taşınabilir Güç Kaynağı Yapımı</title>
       <link>https://mozanunal.com/2016/03/ayarlanabilir-tasnabilir-guc-kaynag-yapm/</link>
       <pubDate>Sun, 13 Mar 2016 01:24:00 +0000</pubDate>
       <guid>https://mozanunal.com/2016/03/ayarlanabilir-tasnabilir-guc-kaynag-yapm/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Bugünkü yazımda nasıl basit bir şekilde bir powerbank&amp;rsquo;i ayarlanabilir güç
-kaynağına dönüştürebileceğimizden bahsedeceğim. Gerekli olan malzemeler sadece
-bir adet power bank ve bir adet MT3608 boost converter. Projeye başlamadan önce
-boost converter nedir ondan bahsetmek istiyorum. Boost converterlar voltaj
-yükseltmek için kullanılır. Kondansatör ve bobin ve diyot kullanarak bir switch
-yapısı kurarlar ve bu yapı ile hem voltajı yükseltirler hem de verimleri çok
-yüksek olur. Benim kulladığım modül MT3608 powerbankin pilinin çalışma voltaji
-olan 3.6 volt ile beslenebiliyor. 0 28 Volt arası 2 amper çıkış alınabiliyor.
-Verimi de yüzde 93 civarı. Projemize çok uygun yapıyor bu özellikler de onu. Hem
-de kısa devre koruması da var. Bu da güvenlik açısından da uygun hale getiriyor.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Bugünkü yazımda nasıl basit bir şekilde bir powerbank&amp;rsquo;i ayarlanabilir güç&#xA;kaynağına dönüştürebileceğimizden bahsedeceğim. Gerekli olan malzemeler sadece&#xA;bir adet power bank ve bir adet MT3608 boost converter. Projeye başlamadan önce&#xA;boost converter nedir ondan bahsetmek istiyorum. Boost converterlar voltaj&#xA;yükseltmek için kullanılır. Kondansatör ve bobin ve diyot kullanarak bir switch&#xA;yapısı kurarlar ve bu yapı ile hem voltajı yükseltirler hem de verimleri çok&#xA;yüksek olur. Benim kulladığım modül MT3608 powerbankin pilinin çalışma voltaji&#xA;olan 3.6 volt ile beslenebiliyor. 0 28 Volt arası 2 amper çıkış alınabiliyor.&#xA;Verimi de yüzde 93 civarı. Projemize çok uygun yapıyor bu özellikler de onu. Hem&#xA;de kısa devre koruması da var. Bu da güvenlik açısından da uygun hale getiriyor.&lt;/p&gt;</description>
     </item>
     <item>
       <title>[TR] Lazer Haberleşmesi</title>
       <link>https://mozanunal.com/2016/02/lazer-haberlesmesi/</link>
       <pubDate>Sun, 07 Feb 2016 23:18:00 +0000</pubDate>
       <guid>https://mozanunal.com/2016/02/lazer-haberlesmesi/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Son zamanlarda ışık ile veri aktarımına ilgi duymaktayım. Bu konuda bir şeyler
-geliştirmek istiyorum. Bunun ilk aşaması olarak lazer ile haberleşme projemi
-gerçekleştirdim. Bu projedeki amacım daha çok lazerin ve fotodiyotun cevap
-süresi ölçmek yani maximum aktarım hızını hesaplamaktı. Aynı zamanda farklı
-iletişim protokollerini denedim. İlerleyen projeler için lazerin de fotodiyotun
-da yetersiz olduğunu görmüş oldum. Daha hızlı fotodiyotlarla ve ledlerle
-denemelerim sürecek. Projenin bu aşamadaki haline gelirsek:&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Son zamanlarda ışık ile veri aktarımına ilgi duymaktayım. Bu konuda bir şeyler&#xA;geliştirmek istiyorum. Bunun ilk aşaması olarak lazer ile haberleşme projemi&#xA;gerçekleştirdim. Bu projedeki amacım daha çok lazerin ve fotodiyotun cevap&#xA;süresi ölçmek yani maximum aktarım hızını hesaplamaktı. Aynı zamanda farklı&#xA;iletişim protokollerini denedim. İlerleyen projeler için lazerin de fotodiyotun&#xA;da yetersiz olduğunu görmüş oldum. Daha hızlı fotodiyotlarla ve ledlerle&#xA;denemelerim sürecek. Projenin bu aşamadaki haline gelirsek:&lt;/p&gt;</description>
     </item>
     <item>
       <title>[TR] İTÜNOM Takımı</title>
       <link>https://mozanunal.com/2016/01/itunom-takm/</link>
       <pubDate>Wed, 27 Jan 2016 01:01:00 +0000</pubDate>
       <guid>https://mozanunal.com/2016/01/itunom-takm/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;2014 yılının Nisan ayında arkadaşlarımla beraber İstanbul Teknik Üniversitesi
-bünyesinde İTÜNOM Otonom Hava Araçları Takımını kurduk. 2 Senedir aktif olarak
-çalışmalarımıza devam ediyoruz. Amerikanın Maryland Eyaletinde düzenlenmekte
-olan Student Unmanned Air System yarışmasına 2015 yılında katıldık 2016 yılında
-da katılmak için hazırlanıyoruz.&lt;/p&gt;
-&lt;p&gt;Takımımızda şu an 10 kişiyiz. 3 adet uçak, 2 adet uzay, 2 adet elektronik, 2
-adet bilgisayar, 1 adet kontrol mühendisliğinden üyemiz var. Özellikle
-multidisipliner bir takım olmayı tercih ettik. Bu sayede her üyemizin farklı bir
-uzmanlığı var ve kolayca farklı sistemleri tasarlayıp bir araya
-getirebiliyoruz.&lt;br&gt;
-Takımımızın Sitesi: &lt;a href=&#34;https://www.itunom.com/&#34;&gt;https://www.itunom.com/&lt;/a&gt;&lt;br&gt;
-Facebook
-Sayfası: &lt;a href=&#34;https://www.facebook.com/itunom&#34;&gt;https://www.facebook.com/itunom&lt;/a&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;2014 yılının Nisan ayında arkadaşlarımla beraber İstanbul Teknik Üniversitesi&#xA;bünyesinde İTÜNOM Otonom Hava Araçları Takımını kurduk. 2 Senedir aktif olarak&#xA;çalışmalarımıza devam ediyoruz. Amerikanın Maryland Eyaletinde düzenlenmekte&#xA;olan Student Unmanned Air System yarışmasına 2015 yılında katıldık 2016 yılında&#xA;da katılmak için hazırlanıyoruz.&lt;/p&gt;&#xA;&lt;p&gt;Takımımızda şu an 10 kişiyiz. 3 adet uçak, 2 adet uzay, 2 adet elektronik, 2&#xA;adet bilgisayar, 1 adet kontrol mühendisliğinden üyemiz var. Özellikle&#xA;multidisipliner bir takım olmayı tercih ettik. Bu sayede her üyemizin farklı bir&#xA;uzmanlığı var ve kolayca farklı sistemleri tasarlayıp bir araya&#xA;getirebiliyoruz.&lt;br&gt;&#xA;Takımımızın Sitesi: &lt;a href=&#34;https://www.itunom.com/&#34;&gt;https://www.itunom.com/&lt;/a&gt;&lt;br&gt;&#xA;Facebook&#xA;Sayfası: &lt;a href=&#34;https://www.facebook.com/itunom&#34;&gt;https://www.facebook.com/itunom&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>[TR] Star Wars BB-8 Robot Yapımı</title>
       <link>https://mozanunal.com/2016/01/star-wars-bb-8-robot-yapm-bolum-1/</link>
       <pubDate>Thu, 21 Jan 2016 03:26:00 +0000</pubDate>
       <guid>https://mozanunal.com/2016/01/star-wars-bb-8-robot-yapm-bolum-1/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;br&gt;
-Bu seferki projem Star Warsa son film ile katılan BB-8 isimli droidin bir
-benzerini yapmak. Bu fikir aklıma nereden geldi derseniz. Son filmdeki en
-sempatik ve ilgi çekici karakterin BB-8 olduğunu düşünüyorum. Tabi ilk aklıma
-gelen nasıl çalıştığı&amp;hellip; Farklı fikirler yürütürken kendimi bu droidi nasıl
-yaparım diye tasarımlar yaptığım bir projenin içinde buluverdim. Elle tutulur
-tasarımlar ortaya çıkmaya başlayınca malzemelerimi topladım ve projeye başladım.
-Proje oldukça uzun ve daha çok mekanik bir proje bu yüzden 2 parçaya ayırdım
-kalanını ne zaman bitiririm bilmiyorum. Şu an devam edemiyorum çünkü lipo
-pillerim bitti ve şarj aletini malesef istanbulda unutmuşum. Neyse projemize
-geçelim.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;br&gt;&#xA;Bu seferki projem Star Warsa son film ile katılan BB-8 isimli droidin bir&#xA;benzerini yapmak. Bu fikir aklıma nereden geldi derseniz. Son filmdeki en&#xA;sempatik ve ilgi çekici karakterin BB-8 olduğunu düşünüyorum. Tabi ilk aklıma&#xA;gelen nasıl çalıştığı&amp;hellip; Farklı fikirler yürütürken kendimi bu droidi nasıl&#xA;yaparım diye tasarımlar yaptığım bir projenin içinde buluverdim. Elle tutulur&#xA;tasarımlar ortaya çıkmaya başlayınca malzemelerimi topladım ve projeye başladım.&#xA;Proje oldukça uzun ve daha çok mekanik bir proje bu yüzden 2 parçaya ayırdım&#xA;kalanını ne zaman bitiririm bilmiyorum. Şu an devam edemiyorum çünkü lipo&#xA;pillerim bitti ve şarj aletini malesef istanbulda unutmuşum. Neyse projemize&#xA;geçelim.&lt;/p&gt;</description>
     </item>
     <item>
       <title>[TR] 5$ Logic Analyzer</title>
       <link>https://mozanunal.com/2015/12/5-logic-analyzer/</link>
       <pubDate>Sun, 27 Dec 2015 04:03:00 +0000</pubDate>
       <guid>https://mozanunal.com/2015/12/5-logic-analyzer/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar&lt;/strong&gt;,&lt;/p&gt;
-&lt;p&gt;Bu yazımda 5 $ dolara aldığım Saleae marka logic analyzerın (aslında orjinal
-ürün değil aldığım, o ürünün klonu) incelemesini paylaşmak istiyorum. Bu ürünü
-seçmemin nedeni fiyat performans oranını çok beğenmem ve dijital elektronikle
-uğraşan herkesin vazgeçilmezlerinden biri olacağını düşünmem.&lt;/p&gt;
-&lt;p&gt;Öncelikle logic analzer nedir ile başlayalım. Logic analyzer, belli süre
-aralıklarında bir sinyali örnekleyerek oradaki sinyal seviyesinin binary olarak
-kaydedilmesini ve incelenebilmesini sağlayan alettir. Aynı zamanda bazılarında
-gelen bu binary verileri işleyip farklı protokoller kullanarak çözebilme
-özelliği vardır.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar&lt;/strong&gt;,&lt;/p&gt;&#xA;&lt;p&gt;Bu yazımda 5 $ dolara aldığım Saleae marka logic analyzerın (aslında orjinal&#xA;ürün değil aldığım, o ürünün klonu) incelemesini paylaşmak istiyorum. Bu ürünü&#xA;seçmemin nedeni fiyat performans oranını çok beğenmem ve dijital elektronikle&#xA;uğraşan herkesin vazgeçilmezlerinden biri olacağını düşünmem.&lt;/p&gt;&#xA;&lt;p&gt;Öncelikle logic analzer nedir ile başlayalım. Logic analyzer, belli süre&#xA;aralıklarında bir sinyali örnekleyerek oradaki sinyal seviyesinin binary olarak&#xA;kaydedilmesini ve incelenebilmesini sağlayan alettir. Aynı zamanda bazılarında&#xA;gelen bu binary verileri işleyip farklı protokoller kullanarak çözebilme&#xA;özelliği vardır.&lt;/p&gt;</description>
     </item>
     <item>
       <title>[TR] DIY RC Kumanda Yapımı</title>
       <link>https://mozanunal.com/2015/11/diy-rc-kumanda-yapm/</link>
       <pubDate>Sun, 15 Nov 2015 14:30:00 +0000</pubDate>
       <guid>https://mozanunal.com/2015/11/diy-rc-kumanda-yapm/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Bu yazımda arduino kullanarak nasıl basit, ucuz ve işlevli bir RC kumanda
-yapabileceğimizi anlatacağım. Yapacağımız RC kumanda ile istediğiniz türde
-aracı, istediğiniz kadar kanalla kontrol etmeniz mümkün. Benim uygulamamda 2
-adet 2 eksen joystick ve 1 potansiyometre bulunuyor. Yani 5 kanallı örnek bir
-uygulama yaptım. Öncelikle malzemelerden başlayalım.&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Arduino Nano&lt;/li&gt;
-&lt;li&gt;Nrf24l01&lt;/li&gt;
-&lt;li&gt;1 adet 10k potansiyometre&lt;/li&gt;
-&lt;li&gt;1 adet 10k direnç&lt;/li&gt;
-&lt;li&gt;2 adet 2 eksen joystick modulü&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Bu malzemelerle beraber toplam maliyetimiz 7- 8 dolar civarı oluyor. Maximum
-kullanım mesafesi ise 30 40 metre civarında hobi uygulamarına göre oldukça
-yeterli bir mesafe elde ediyoruz.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Bu yazımda arduino kullanarak nasıl basit, ucuz ve işlevli bir RC kumanda&#xA;yapabileceğimizi anlatacağım. Yapacağımız RC kumanda ile istediğiniz türde&#xA;aracı, istediğiniz kadar kanalla kontrol etmeniz mümkün. Benim uygulamamda 2&#xA;adet 2 eksen joystick ve 1 potansiyometre bulunuyor. Yani 5 kanallı örnek bir&#xA;uygulama yaptım. Öncelikle malzemelerden başlayalım.&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Arduino Nano&lt;/li&gt;&#xA;&lt;li&gt;Nrf24l01&lt;/li&gt;&#xA;&lt;li&gt;1 adet 10k potansiyometre&lt;/li&gt;&#xA;&lt;li&gt;1 adet 10k direnç&lt;/li&gt;&#xA;&lt;li&gt;2 adet 2 eksen joystick modulü&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;Bu malzemelerle beraber toplam maliyetimiz 7- 8 dolar civarı oluyor. Maximum&#xA;kullanım mesafesi ise 30 40 metre civarında hobi uygulamarına göre oldukça&#xA;yeterli bir mesafe elde ediyoruz.&lt;/p&gt;</description>
     </item>
     <item>
       <title>[TR] 8051 Entegresi İle Assembly Programlamaya Giriş</title>
       <link>https://mozanunal.com/2015/11/8051-entegresi-ile-assembly/</link>
       <pubDate>Thu, 05 Nov 2015 05:25:00 +0000</pubDate>
       <guid>https://mozanunal.com/2015/11/8051-entegresi-ile-assembly/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;br&gt;
-       Bu yazdımda ilk mikroişlemcilerden biri olan 8051 mikrokontrolcüsü
-üzerinden assembly dili ve mikroişlemci nedir nasıl çalışır bu konulara giriş
-yapmak istiyorum. Başlamadan önce benim de kullanacağım 8051 entegresi
-simülasyon programını önermek istiyorum. Programın ismi EdSim51. İlkönce
-mikroişlemcilerle alakalı temel bir kaç kavramla başlayalım.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;ROM(Read Only Memory):&lt;/strong&gt; Temel olarak, belli bir miktarda bilginin kalıcı
-olarak yazıldığı bellektir**.** Bilgi saklamak için&lt;br&gt;
-&lt;strong&gt;EEPROM:&lt;/strong&gt; ROM&amp;rsquo;un yeniden yazılabilir halidir.&lt;br&gt;
-&lt;strong&gt;RAM(Random Access Memory):&lt;/strong&gt; Bilgi saklamak için elektriğe ihtiyaç duyar. CPU
-veri işlemek için kullandığı bellek tipi RAM&amp;rsquo;dir.&lt;br&gt;
-&lt;strong&gt;Registers:&lt;/strong&gt; CPU registerları verileri geçici olarak saklamak için kullanılır.
-8051 entegresinde bir tane data çeşidi vardır. O da 8 bittir. Eğer 8 bitten
-büyük datalarla işlem yapılmak istenirse data 8 bitlik parçalara ayrılmalıdır.
-8051&amp;rsquo;de en çok kullanılar registerlar aşağıdaki gibidir.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;br&gt;&#xA;       Bu yazdımda ilk mikroişlemcilerden biri olan 8051 mikrokontrolcüsü&#xA;üzerinden assembly dili ve mikroişlemci nedir nasıl çalışır bu konulara giriş&#xA;yapmak istiyorum. Başlamadan önce benim de kullanacağım 8051 entegresi&#xA;simülasyon programını önermek istiyorum. Programın ismi EdSim51. İlkönce&#xA;mikroişlemcilerle alakalı temel bir kaç kavramla başlayalım.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;ROM(Read Only Memory):&lt;/strong&gt; Temel olarak, belli bir miktarda bilginin kalıcı&#xA;olarak yazıldığı bellektir**.** Bilgi saklamak için&lt;br&gt;&#xA;&lt;strong&gt;EEPROM:&lt;/strong&gt; ROM&amp;rsquo;un yeniden yazılabilir halidir.&lt;br&gt;&#xA;&lt;strong&gt;RAM(Random Access Memory):&lt;/strong&gt; Bilgi saklamak için elektriğe ihtiyaç duyar. CPU&#xA;veri işlemek için kullandığı bellek tipi RAM&amp;rsquo;dir.&lt;br&gt;&#xA;&lt;strong&gt;Registers:&lt;/strong&gt; CPU registerları verileri geçici olarak saklamak için kullanılır.&#xA;8051 entegresinde bir tane data çeşidi vardır. O da 8 bittir. Eğer 8 bitten&#xA;büyük datalarla işlem yapılmak istenirse data 8 bitlik parçalara ayrılmalıdır.&#xA;8051&amp;rsquo;de en çok kullanılar registerlar aşağıdaki gibidir.&lt;/p&gt;</description>
     </item>
     <item>
       <title>DIY Raspberry Pi Laptop</title>
       <link>https://mozanunal.com/2015/10/diy-raspberry-pi-laptop-16/</link>
       <pubDate>Mon, 05 Oct 2015 01:06:00 +0000</pubDate>
       <guid>https://mozanunal.com/2015/10/diy-raspberry-pi-laptop-16/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Hi,&lt;/strong&gt;&lt;br&gt;
-In this article, DIY Raspberry Pi Laptop project will be told. I needed a low
-cost mini computer with high mobility but then i decided to make my own and i
-start to this project. Most of the parts(expect Raspberry pi 2 and its some of
-materials) were bought from china and the total cost of this project is 110$.
-There is video of this project under this paragraph. You can watch this then you
-learn how i did this project step by step.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;strong&gt;Hi,&lt;/strong&gt;&lt;br&gt;&#xA;In this article, DIY Raspberry Pi Laptop project will be told. I needed a low&#xA;cost mini computer with high mobility but then i decided to make my own and i&#xA;start to this project. Most of the parts(expect Raspberry pi 2 and its some of&#xA;materials) were bought from china and the total cost of this project is 110$.&#xA;There is video of this project under this paragraph. You can watch this then you&#xA;learn how i did this project step by step.&lt;/p&gt;</description>
     </item>
     <item>
       <title>[TR] ESP8266 ile Kişisel Meteoroloji İstasyonu</title>
       <link>https://mozanunal.com/2015/09/esp8266-ile-kisisel-meteoroloji/</link>
       <pubDate>Wed, 30 Sep 2015 02:51:00 +0000</pubDate>
       <guid>https://mozanunal.com/2015/09/esp8266-ile-kisisel-meteoroloji/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Bugünkü yazımda ESP8266 Wifi modülünün kullanımına yönelik yaptığım uygulamayı
-anlatacağım. Bu modülü daha önceki
-&lt;a href=&#34;https://mozanunal.com/2015/03/esp8266-modulu-html-server/&#34;&gt;şu yazımda&lt;/a&gt;
-anlatmıştım. Ucuz fiyatına rağmen çok yetenekli bir modül. O yazımda ESP8266
-Access Point olarak kullanılmıştı.Bu yazımdaki uygulamamda, hali hazırda var
-olan wifi ağına da bağlanabilecek. Bu sayede wifi olan yerlerde direk wifi
-üzerinden verilere ulaşılabilinirken, wifi çekmediği yerlerde ESP8266&amp;rsquo;nın kendi
-oluşturduğu Access Point üzerinden ulaşabilecek. Bilgilere istersek web browser
-üzerinden direk IP adresini yazarak, istersek aşağıda linkini verdiğim kendi
-yazdığım android programını kullanarak ulaşabileceğiz.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Bugünkü yazımda ESP8266 Wifi modülünün kullanımına yönelik yaptığım uygulamayı&#xA;anlatacağım. Bu modülü daha önceki&#xA;&lt;a href=&#34;https://mozanunal.com/2015/03/esp8266-modulu-html-server/&#34;&gt;şu yazımda&lt;/a&gt;&#xA;anlatmıştım. Ucuz fiyatına rağmen çok yetenekli bir modül. O yazımda ESP8266&#xA;Access Point olarak kullanılmıştı.Bu yazımdaki uygulamamda, hali hazırda var&#xA;olan wifi ağına da bağlanabilecek. Bu sayede wifi olan yerlerde direk wifi&#xA;üzerinden verilere ulaşılabilinirken, wifi çekmediği yerlerde ESP8266&amp;rsquo;nın kendi&#xA;oluşturduğu Access Point üzerinden ulaşabilecek. Bilgilere istersek web browser&#xA;üzerinden direk IP adresini yazarak, istersek aşağıda linkini verdiğim kendi&#xA;yazdığım android programını kullanarak ulaşabileceğiz.&lt;/p&gt;</description>
     </item>
     <item>
       <title>[TR] DIY Raspberry Pi Laptop</title>
       <link>https://mozanunal.com/2015/09/diy-raspberry-pi-laptop/</link>
       <pubDate>Thu, 17 Sep 2015 01:20:00 +0000</pubDate>
       <guid>https://mozanunal.com/2015/09/diy-raspberry-pi-laptop/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;br&gt;
-       Bu yazımda Raspberry Pi 2 kartını kullanarak kendim için yaptığım laptop
-projesinden bahsetmek istiyorum. Kendime düşük maliyetli gündelik işlerimi
-halletmek için taşınabilir bir bilgisayar almaya karar vermiştim fakat neden
-kendim yapmak yerine satın alayım dedim ve bu projeye başladım. Malzemelerin
-çoğunu yurt dışından aldım ve bana toplam maliyeti 110$ kadar oldu.&lt;br&gt;
-Projemin tanıtım videosunu izleyebilirsiniz. Yazının devamında ise Raspberry Pi
-laptopun yapılışını adım adım öğrenebilirsiniz.&lt;/p&gt;
-&lt;div class=&#34;separator&#34; style=&#34;clear: both; text-align: center;&#34;&gt;&lt;iframe allowfullscreen=&#34;&#34; class=&#34;YOUTUBE-iframe-video&#34; data-thumbnail-src=&#34;https://i.ytimg.com/vi/Ys97-3S9MQo/0.jpg&#34; frameborder=&#34;0&#34; height=&#34;266&#34; src=&#34;https://www.youtube.com/embed/Ys97-3S9MQo?feature=player_embedded&#34; width=&#34;320&#34;&gt;&lt;/iframe&gt;&lt;/div&gt;
-&lt;div class=&#34;separator&#34; style=&#34;clear: both; text-align: center;&#34;&gt;[![](https://1.bp.blogspot.com/-32Tefe5cxxQ/VfQJVHRLDKI/AAAAAAAANq0/a35hSfl8s2s/s320/IMG_20150912_123948.jpg)](https://1.bp.blogspot.com/-32Tefe5cxxQ/VfQJVHRLDKI/AAAAAAAANq0/a35hSfl8s2s/s1600/IMG_20150912_123948.jpg)&lt;/div&gt;
-&lt;p&gt;&lt;strong&gt;1. Raspberry Pi Nedir?&lt;/strong&gt;&lt;br&gt;
-      Öncelikle Raspberry Pi&amp;rsquo;dan bahsetmek istiyorum. Raspberry Pi tüm
-bilgisayar bileşenlerinin bir kartta toplandığı, düşük maliyetli mini
-bilgisayardır. Şu an itibariyle, en son Raspberry Pi 2 çıkmıştır ve satış fiyatı
-35 dolardır.&lt;br&gt;
-&lt;strong&gt;2. Neden Raspberry Pi Laptop?&lt;/strong&gt;&lt;br&gt;
-      Raspberry pi yazılım geliştirmek için çok önemli bir portal fakat her
-zaman uygun ekran klavye bulmak zor ve Raspberry Pi&amp;rsquo;ın taşınabilirliğini
-azaltıyor. Ayrıca üzerinde 4 usb portu, Hdmi portu gibi giriş çıkış birimleri
-bulunması sayesinde laptop yapılmaya oldukça uygun durumda. 3. olarak düşük güç
-tüketiminden söz edebiliriz. Benim sistemimin toplam güç tüketimi 7,8 watt
-civarında. 3S lipo pilimden ekranla beraber yaklaşık 650 mA akım çekiyor.&lt;br&gt;
-&lt;strong&gt;3. Malzemeler ve Maliyet&lt;/strong&gt;&lt;br&gt;
-Raspberry Pi 2                     35$&lt;br&gt;
-4 Gb SD Kart                       4$&lt;br&gt;
-N070ICG-LD1 LCD Ekran   45$&lt;br&gt;
-HDMI Kablo                        3$&lt;br&gt;
-Klavyeli Tablet Kılıfı            4$&lt;br&gt;
-USB WIFI Adaptörü            5$&lt;br&gt;
-LM2596 Regülatör               2$&lt;br&gt;
-1500 Mah 3S Lipo Pil           10$&lt;br&gt;
-Fare                                     2$&lt;br&gt;
-1 Metre Kablo Koruyucu       2$&lt;br&gt;
-&lt;strong&gt;Toplam:                             110$&lt;/strong&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;br&gt;&#xA;       Bu yazımda Raspberry Pi 2 kartını kullanarak kendim için yaptığım laptop&#xA;projesinden bahsetmek istiyorum. Kendime düşük maliyetli gündelik işlerimi&#xA;halletmek için taşınabilir bir bilgisayar almaya karar vermiştim fakat neden&#xA;kendim yapmak yerine satın alayım dedim ve bu projeye başladım. Malzemelerin&#xA;çoğunu yurt dışından aldım ve bana toplam maliyeti 110$ kadar oldu.&lt;br&gt;&#xA;Projemin tanıtım videosunu izleyebilirsiniz. Yazının devamında ise Raspberry Pi&#xA;laptopun yapılışını adım adım öğrenebilirsiniz.&lt;/p&gt;&#xA;&lt;div class=&#34;separator&#34; style=&#34;clear: both; text-align: center;&#34;&gt;&lt;iframe allowfullscreen=&#34;&#34; class=&#34;YOUTUBE-iframe-video&#34; data-thumbnail-src=&#34;https://i.ytimg.com/vi/Ys97-3S9MQo/0.jpg&#34; frameborder=&#34;0&#34; height=&#34;266&#34; src=&#34;https://www.youtube.com/embed/Ys97-3S9MQo?feature=player_embedded&#34; width=&#34;320&#34;&gt;&lt;/iframe&gt;&lt;/div&gt;&#xA;&lt;div class=&#34;separator&#34; style=&#34;clear: both; text-align: center;&#34;&gt;[![](https://1.bp.blogspot.com/-32Tefe5cxxQ/VfQJVHRLDKI/AAAAAAAANq0/a35hSfl8s2s/s320/IMG_20150912_123948.jpg)](https://1.bp.blogspot.com/-32Tefe5cxxQ/VfQJVHRLDKI/AAAAAAAANq0/a35hSfl8s2s/s1600/IMG_20150912_123948.jpg)&lt;/div&gt;&#xA;&lt;p&gt;&lt;strong&gt;1. Raspberry Pi Nedir?&lt;/strong&gt;&lt;br&gt;&#xA;      Öncelikle Raspberry Pi&amp;rsquo;dan bahsetmek istiyorum. Raspberry Pi tüm&#xA;bilgisayar bileşenlerinin bir kartta toplandığı, düşük maliyetli mini&#xA;bilgisayardır. Şu an itibariyle, en son Raspberry Pi 2 çıkmıştır ve satış fiyatı&#xA;35 dolardır.&lt;br&gt;&#xA;&lt;strong&gt;2. Neden Raspberry Pi Laptop?&lt;/strong&gt;&lt;br&gt;&#xA;      Raspberry pi yazılım geliştirmek için çok önemli bir portal fakat her&#xA;zaman uygun ekran klavye bulmak zor ve Raspberry Pi&amp;rsquo;ın taşınabilirliğini&#xA;azaltıyor. Ayrıca üzerinde 4 usb portu, Hdmi portu gibi giriş çıkış birimleri&#xA;bulunması sayesinde laptop yapılmaya oldukça uygun durumda. 3. olarak düşük güç&#xA;tüketiminden söz edebiliriz. Benim sistemimin toplam güç tüketimi 7,8 watt&#xA;civarında. 3S lipo pilimden ekranla beraber yaklaşık 650 mA akım çekiyor.&lt;br&gt;&#xA;&lt;strong&gt;3. Malzemeler ve Maliyet&lt;/strong&gt;&lt;br&gt;&#xA;Raspberry Pi 2                     35$&lt;br&gt;&#xA;4 Gb SD Kart                       4$&lt;br&gt;&#xA;N070ICG-LD1 LCD Ekran   45$&lt;br&gt;&#xA;HDMI Kablo                        3$&lt;br&gt;&#xA;Klavyeli Tablet Kılıfı            4$&lt;br&gt;&#xA;USB WIFI Adaptörü            5$&lt;br&gt;&#xA;LM2596 Regülatör               2$&lt;br&gt;&#xA;1500 Mah 3S Lipo Pil           10$&lt;br&gt;&#xA;Fare                                     2$&lt;br&gt;&#xA;1 Metre Kablo Koruyucu       2$&lt;br&gt;&#xA;&lt;strong&gt;Toplam:                             110$&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>[TR] Fırçalı motorlar için ESC Yapımı</title>
       <link>https://mozanunal.com/2015/08/frcal-motorlar-icin-esc-yapm/</link>
       <pubDate>Wed, 19 Aug 2015 18:42:00 +0000</pubDate>
       <guid>https://mozanunal.com/2015/08/frcal-motorlar-icin-esc-yapm/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Yapacağım bir proje için fırçalı bir motorun Arduino ile hızını kontrol etmem
-gerekiyordu. Bunun için elimdeki fırçalı motor için elektronik hız kontrolü yani
-ESC (Electronic Speed Control) yapmaya karar verdim.&lt;/p&gt;
-&lt;p&gt;Öncellikle kendi motorumun ve devrelerimin besleme gerilimi yazayım. Çünkü devre
-bu özelliklere göre dizayn edilecektir. Siz de kendi malzemelerinize ve
-voltajlarınıza göre kendi devrenizi dizayn edebilirsiniz. Benim elimdeki motoru
-besleme voltajım 7.4 volt ve motorun çektiği maximum akım 2 amperdir. Hız
-kontrolü için göndereceğim PWM sinyalinin genliği de (Arduinonun çalışma
-voltajı) 5 volttur. Bu şartlar altında devremi bir power mosfet ile tasarlamaya
-karar verdim. Mosfette var olması gereken özellikler 5 volt anahtarlamaya uygun
-rds ve Vgs özelliklerine sahip olması, üzerinden 2 amper akım rahatça
-geçebilmesidir. Bu nedenlerden dolayı ben IRL540N mosfetini seçtim. Kendisi bir
-logic mosfet bu sayede 5 volt gibi düşük bir Vgs voltajı ile devreyi
-anahtarlayabiliyor. Ayıca üzerinden 28 amper sıkıntısız geçebiliyor. Bu
-özellikleriyle projemiz için oldukça
-uygun. &lt;a href=&#34;https://www.irf.com/product-info/datasheets/data/irl540n.pdf&#34;&gt;Datasheetine buradan ulaşabilirsiniz.&lt;/a&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Yapacağım bir proje için fırçalı bir motorun Arduino ile hızını kontrol etmem&#xA;gerekiyordu. Bunun için elimdeki fırçalı motor için elektronik hız kontrolü yani&#xA;ESC (Electronic Speed Control) yapmaya karar verdim.&lt;/p&gt;&#xA;&lt;p&gt;Öncellikle kendi motorumun ve devrelerimin besleme gerilimi yazayım. Çünkü devre&#xA;bu özelliklere göre dizayn edilecektir. Siz de kendi malzemelerinize ve&#xA;voltajlarınıza göre kendi devrenizi dizayn edebilirsiniz. Benim elimdeki motoru&#xA;besleme voltajım 7.4 volt ve motorun çektiği maximum akım 2 amperdir. Hız&#xA;kontrolü için göndereceğim PWM sinyalinin genliği de (Arduinonun çalışma&#xA;voltajı) 5 volttur. Bu şartlar altında devremi bir power mosfet ile tasarlamaya&#xA;karar verdim. Mosfette var olması gereken özellikler 5 volt anahtarlamaya uygun&#xA;rds ve Vgs özelliklerine sahip olması, üzerinden 2 amper akım rahatça&#xA;geçebilmesidir. Bu nedenlerden dolayı ben IRL540N mosfetini seçtim. Kendisi bir&#xA;logic mosfet bu sayede 5 volt gibi düşük bir Vgs voltajı ile devreyi&#xA;anahtarlayabiliyor. Ayıca üzerinden 28 amper sıkıntısız geçebiliyor. Bu&#xA;özellikleriyle projemiz için oldukça&#xA;uygun. &lt;a href=&#34;https://www.irf.com/product-info/datasheets/data/irl540n.pdf&#34;&gt;Datasheetine buradan ulaşabilirsiniz.&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>[TR] Bataryalar için Sabit Akım Deşarj Devresi Yapımı</title>
       <link>https://mozanunal.com/2015/08/bataryalar-icin-sabit-akm-desarj/</link>
       <pubDate>Wed, 05 Aug 2015 15:08:00 +0000</pubDate>
       <guid>https://mozanunal.com/2015/08/bataryalar-icin-sabit-akm-desarj/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Batarya kapasite testi için çeşitli yöntemler geliştirilmiştir. Bunlardan ilk
-akıla geleni bataryanın uçlarına sabit direnç bağlayıp çekilen akım ve zaman
-üzerinden kapasite hesabı yapmaktır. Fakat bataryaların zamanla deşarj oldukça
-voltajı azalır bu da akımın değişmesine yol açacaktır. Bu sorunu çözmek için ise
-deşarj esnasında mümkün olduğunca çok voltaj örneklenerek anlık akım hesaplanıp
-interpolasyon yöntemleriyle kapasiteye ulaşılabilir. Fakat bu sıkıntıları aşmak
-için ikinci bir ölçüm yöntemi vardır; Sabit akım deşarj devresi.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Batarya kapasite testi için çeşitli yöntemler geliştirilmiştir. Bunlardan ilk&#xA;akıla geleni bataryanın uçlarına sabit direnç bağlayıp çekilen akım ve zaman&#xA;üzerinden kapasite hesabı yapmaktır. Fakat bataryaların zamanla deşarj oldukça&#xA;voltajı azalır bu da akımın değişmesine yol açacaktır. Bu sorunu çözmek için ise&#xA;deşarj esnasında mümkün olduğunca çok voltaj örneklenerek anlık akım hesaplanıp&#xA;interpolasyon yöntemleriyle kapasiteye ulaşılabilir. Fakat bu sıkıntıları aşmak&#xA;için ikinci bir ölçüm yöntemi vardır; Sabit akım deşarj devresi.&lt;/p&gt;</description>
     </item>
     <item>
       <title>[TR] Multikopterler için PID kontrol</title>
       <link>https://mozanunal.com/2015/07/multikopterler-icin-pid-kontrol/</link>
       <pubDate>Wed, 29 Jul 2015 15:44:00 +0000</pubDate>
       <guid>https://mozanunal.com/2015/07/multikopterler-icin-pid-kontrol/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Bu yazımda PID kontrol algoritmalarından bahsetmek istiyorum. Bu yazıyı yazmamın
-2 sebebi var. PID algoritmaları hakkında bir çok yazı okudum fakat coğu akademik
-ve karmaşık yazılar. Benim amacım anlaşılırlığı ve ayrıntıyı dengeli bir şekilde
-maximum değerlerinde kullanmak. İkincisi ise bu algoritmanın özel olarak
-multikopterlerde kullanımını basit bir şekilde açıklayan bir yazıya rastlamadım.
-Bu yüzden bu yazıyı yazmaya karar verdim.&lt;/p&gt;
-&lt;p&gt;Bir otopilotun en temel 2 bileşeni hava aracının yönelimini tespit eden IMU
-sensörü ve PID algoritmasıdır. IMU sensörü içinde bir kaç sensör barındırır ve
-amacı hava aracının 3 boyutlu uzaydaki yönelimini bulmaktır. IMU konusundan
-&lt;a href=&#34;https://mozanunal.com/2014/11/imu-aclarnn-3-boyutlu-olarak/&#34;&gt;bu yazımda bahsetmiştim&lt;/a&gt;.
-PID algoritmasının görevi ise temel olarak şöyledir: Yönelimi (3 eksendeki yere
-göre açılar) sensörler üzerinden alır, istenen açıları da kullanıcıdan alır. Bu
-ikisi arasındaki farkı en düşük seviyeye düşürmeyi amaçlar. İşte PID
-algoritmasının görevi bu farkı minimuma indirmek için gerekli motor hız
-değerlerini hesaplamaktır.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Bu yazımda PID kontrol algoritmalarından bahsetmek istiyorum. Bu yazıyı yazmamın&#xA;2 sebebi var. PID algoritmaları hakkında bir çok yazı okudum fakat coğu akademik&#xA;ve karmaşık yazılar. Benim amacım anlaşılırlığı ve ayrıntıyı dengeli bir şekilde&#xA;maximum değerlerinde kullanmak. İkincisi ise bu algoritmanın özel olarak&#xA;multikopterlerde kullanımını basit bir şekilde açıklayan bir yazıya rastlamadım.&#xA;Bu yüzden bu yazıyı yazmaya karar verdim.&lt;/p&gt;&#xA;&lt;p&gt;Bir otopilotun en temel 2 bileşeni hava aracının yönelimini tespit eden IMU&#xA;sensörü ve PID algoritmasıdır. IMU sensörü içinde bir kaç sensör barındırır ve&#xA;amacı hava aracının 3 boyutlu uzaydaki yönelimini bulmaktır. IMU konusundan&#xA;&lt;a href=&#34;https://mozanunal.com/2014/11/imu-aclarnn-3-boyutlu-olarak/&#34;&gt;bu yazımda bahsetmiştim&lt;/a&gt;.&#xA;PID algoritmasının görevi ise temel olarak şöyledir: Yönelimi (3 eksendeki yere&#xA;göre açılar) sensörler üzerinden alır, istenen açıları da kullanıcıdan alır. Bu&#xA;ikisi arasındaki farkı en düşük seviyeye düşürmeyi amaçlar. İşte PID&#xA;algoritmasının görevi bu farkı minimuma indirmek için gerekli motor hız&#xA;değerlerini hesaplamaktır.&lt;/p&gt;</description>
     </item>
     <item>
       <title>[TR] Arduino Gimbal Kontrol Kartı</title>
       <link>https://mozanunal.com/2015/07/arduino-gimbal-kontrol-kart/</link>
       <pubDate>Sat, 04 Jul 2015 03:30:00 +0000</pubDate>
       <guid>https://mozanunal.com/2015/07/arduino-gimbal-kontrol-kart/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Daha önce kolay bulunabilecek malzemelerden nasıl gimbal yapılabileceğinden
-bahsetmiştim
-(&lt;a href=&#34;https://mozanunal.com/2015/06/2-eksenli-servo-gimbal-yapm/&#34;&gt;O yazıya buradan ulaşabiliriniz&lt;/a&gt;).
-Kontrol kartını sonra anlatacağım demiştim. Veee bu yazımda arduino ve MPU6050
-sensörü kullanarak nasıl bir gimbal kontrol kartı yapabileceğimizden
-bahsedeceğim. Bu kart sayesinde gimbalin yere göre açısını kontrol edebileceğiz.
-Yere göre açısının sabit kalmasını da kontrol kartı üzerindeki IMU sensörü ile
-sağlayacağız(&lt;a href=&#34;https://mozanunal.com/2014/11/imu-aclarnn-3-boyutlu-olarak/&#34;&gt;Ayrıntılı bilgi için tıklayınız&lt;/a&gt;).
-Kontrol kartı saniyede 100 değer okuyup servo PWM değerlerini ona göre
-güncelliyor. Bu sayede oldukça yüksek çözünürlüklü her türlü seviyede
-kullanılabilecek bir kontrol kartı yapmış oluyoruz. Ayrıca başa koyduğum ayar
-parametreleri sayesinde her boyutta ve çeşitte servo gimbale kolayca uyumlu hale
-getirilebilir. Kontrol kartının tanıtım videosu aşağıdadır.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Daha önce kolay bulunabilecek malzemelerden nasıl gimbal yapılabileceğinden&#xA;bahsetmiştim&#xA;(&lt;a href=&#34;https://mozanunal.com/2015/06/2-eksenli-servo-gimbal-yapm/&#34;&gt;O yazıya buradan ulaşabiliriniz&lt;/a&gt;).&#xA;Kontrol kartını sonra anlatacağım demiştim. Veee bu yazımda arduino ve MPU6050&#xA;sensörü kullanarak nasıl bir gimbal kontrol kartı yapabileceğimizden&#xA;bahsedeceğim. Bu kart sayesinde gimbalin yere göre açısını kontrol edebileceğiz.&#xA;Yere göre açısının sabit kalmasını da kontrol kartı üzerindeki IMU sensörü ile&#xA;sağlayacağız(&lt;a href=&#34;https://mozanunal.com/2014/11/imu-aclarnn-3-boyutlu-olarak/&#34;&gt;Ayrıntılı bilgi için tıklayınız&lt;/a&gt;).&#xA;Kontrol kartı saniyede 100 değer okuyup servo PWM değerlerini ona göre&#xA;güncelliyor. Bu sayede oldukça yüksek çözünürlüklü her türlü seviyede&#xA;kullanılabilecek bir kontrol kartı yapmış oluyoruz. Ayrıca başa koyduğum ayar&#xA;parametreleri sayesinde her boyutta ve çeşitte servo gimbale kolayca uyumlu hale&#xA;getirilebilir. Kontrol kartının tanıtım videosu aşağıdadır.&lt;/p&gt;</description>
     </item>
     <item>
       <title>[TR] 2 Eksenli Servo Gimbal Yapımı</title>
       <link>https://mozanunal.com/2015/06/2-eksenli-servo-gimbal-yapm/</link>
       <pubDate>Sat, 06 Jun 2015 04:36:00 +0000</pubDate>
       <guid>https://mozanunal.com/2015/06/2-eksenli-servo-gimbal-yapm/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;br&gt;
-Bu yazımda her yerde temin edilebilecek ve maliyetsiz malzemelerle nasıl mini
-servo gimbal yapılacağını anlatacağım. Bu arada en baştan belirteyim kontrol
-kartı ve açı stabilizasyonu için daha sonra bir yazı hazırlayacağım.&lt;/p&gt;
-&lt;p&gt;Proje içi kullandığım malzemeler 2 adet servo, Arduino Nano, mini kamera, yoğurt
-kabı, ve ataç. Gimbalin yapım aşamaları resimlerde sırasıyla anlatılmıştır.
-Özetlemek gerekirse;&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Yoğurt kabından bir köşe 2 kenarıyla beraber çıkarılır.&lt;/li&gt;
-&lt;li&gt;Servolardan bir tanesi için oyuk açılır ve servo oraya vidalanır.&lt;/li&gt;
-&lt;li&gt;Bu servonun koluna ataç vidalanır.&lt;/li&gt;
-&lt;li&gt;Ataç 90 derece büküldükten sonra diğer servo biraz da bant yardımıyla
-sabitlenir.&lt;/li&gt;
-&lt;li&gt;Burada dikkat etmemiz gereken servoların dönme eksenlerinin kameranın ağırlık
-merkezinden geçmesidir. Bu sayede servolara binen yükük minimuma düşer.&lt;/li&gt;
-&lt;li&gt;Kamera için yapılan kap vida yardımıyla 2. servonun koluna sabitlenir.&lt;/li&gt;
-&lt;li&gt;Ve son neredeyse hiç maliyetli 2 eksen gimbal yapmış olduk. Biraz titreşim
-problemi olacaktır diye tahmin ediyorum. Daha az esnek malzemeler
-kullanılarak bu sorun aşılabilir. &lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://3.bp.blogspot.com/-7reOfYet5uw/VXIBX-SRikI/AAAAAAAALK4/q6v1h2KQXWw/s320/IMG_20150605_163841.jpg&#34;&gt;](&lt;a href=&#34;https://3.bp.blogspot.com/-7reOfYet5uw/VXIBX-SRikI/AAAAAAAALK4/q6v1h2KQXWw/s1600/IMG_20150605_163841.jpg&#34;&gt;https://3.bp.blogspot.com/-7reOfYet5uw/VXIBX-SRikI/AAAAAAAALK4/q6v1h2KQXWw/s1600/IMG_20150605_163841.jpg&lt;/a&gt;)&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;br&gt;&#xA;Bu yazımda her yerde temin edilebilecek ve maliyetsiz malzemelerle nasıl mini&#xA;servo gimbal yapılacağını anlatacağım. Bu arada en baştan belirteyim kontrol&#xA;kartı ve açı stabilizasyonu için daha sonra bir yazı hazırlayacağım.&lt;/p&gt;&#xA;&lt;p&gt;Proje içi kullandığım malzemeler 2 adet servo, Arduino Nano, mini kamera, yoğurt&#xA;kabı, ve ataç. Gimbalin yapım aşamaları resimlerde sırasıyla anlatılmıştır.&#xA;Özetlemek gerekirse;&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Yoğurt kabından bir köşe 2 kenarıyla beraber çıkarılır.&lt;/li&gt;&#xA;&lt;li&gt;Servolardan bir tanesi için oyuk açılır ve servo oraya vidalanır.&lt;/li&gt;&#xA;&lt;li&gt;Bu servonun koluna ataç vidalanır.&lt;/li&gt;&#xA;&lt;li&gt;Ataç 90 derece büküldükten sonra diğer servo biraz da bant yardımıyla&#xA;sabitlenir.&lt;/li&gt;&#xA;&lt;li&gt;Burada dikkat etmemiz gereken servoların dönme eksenlerinin kameranın ağırlık&#xA;merkezinden geçmesidir. Bu sayede servolara binen yükük minimuma düşer.&lt;/li&gt;&#xA;&lt;li&gt;Kamera için yapılan kap vida yardımıyla 2. servonun koluna sabitlenir.&lt;/li&gt;&#xA;&lt;li&gt;Ve son neredeyse hiç maliyetli 2 eksen gimbal yapmış olduk. Biraz titreşim&#xA;problemi olacaktır diye tahmin ediyorum. Daha az esnek malzemeler&#xA;kullanılarak bu sorun aşılabilir. &lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://3.bp.blogspot.com/-7reOfYet5uw/VXIBX-SRikI/AAAAAAAALK4/q6v1h2KQXWw/s320/IMG_20150605_163841.jpg&#34; alt=&#34;&#34;&gt;](&lt;a href=&#34;https://3.bp.blogspot.com/-7reOfYet5uw/VXIBX-SRikI/AAAAAAAALK4/q6v1h2KQXWw/s1600/IMG_20150605_163841.jpg&#34;&gt;https://3.bp.blogspot.com/-7reOfYet5uw/VXIBX-SRikI/AAAAAAAALK4/q6v1h2KQXWw/s1600/IMG_20150605_163841.jpg&lt;/a&gt;)&lt;/p&gt;</description>
     </item>
     <item>
       <title>[TR] Arduino Due Osiloskop</title>
       <link>https://mozanunal.com/2015/05/arduino-due-osiloskop/</link>
       <pubDate>Sat, 02 May 2015 01:38:00 +0000</pubDate>
       <guid>https://mozanunal.com/2015/05/arduino-due-osiloskop/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Merhaba Arkadaşlar,&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Bugün size Arduino Due ile yaptığım osiloskop bahsedeceğim. Arduino Dueyi
-seçmemin bir kaç nedeni var tabi. Arduino Duede standart Arduinoların 8 bitlik
-Atmega işlemcilerinden farklı olarak 32 bitlik Arm Cortex M3 var. Bu işlemcinin
-84 Mhzlik saat hızı bu proje için elverişli kılıyor.&lt;/p&gt;
-&lt;p&gt;Osiloskop projesine başlarken amacım Due ile mümkün olan en yüksek örnekleme
-hızlı osiloskobu yapmaktı. İlk olarak arduinonun standart AnalogRead()
-fonksiyonunu denedim. Bir örnek alma süresi 40 uS kadar sürdü. Daha sonra
-&lt;a href=&#34;https://frenki.net/2013/10/fast-analogread-with-arduino-due/&#34;&gt;bu bağlantıyı&lt;/a&gt;
-buldum ve oradaki ayarları Duenin ADCsine uyguladım. Osiloskobun son kodu
-aşağıdaki gibidir. Bu kod sayesinde ADClere direk registerlar.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;strong&gt;Merhaba Arkadaşlar,&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Bugün size Arduino Due ile yaptığım osiloskop bahsedeceğim. Arduino Dueyi&#xA;seçmemin bir kaç nedeni var tabi. Arduino Duede standart Arduinoların 8 bitlik&#xA;Atmega işlemcilerinden farklı olarak 32 bitlik Arm Cortex M3 var. Bu işlemcinin&#xA;84 Mhzlik saat hızı bu proje için elverişli kılıyor.&lt;/p&gt;&#xA;&lt;p&gt;Osiloskop projesine başlarken amacım Due ile mümkün olan en yüksek örnekleme&#xA;hızlı osiloskobu yapmaktı. İlk olarak arduinonun standart AnalogRead()&#xA;fonksiyonunu denedim. Bir örnek alma süresi 40 uS kadar sürdü. Daha sonra&#xA;&lt;a href=&#34;https://frenki.net/2013/10/fast-analogread-with-arduino-due/&#34;&gt;bu bağlantıyı&lt;/a&gt;&#xA;buldum ve oradaki ayarları Duenin ADCsine uyguladım. Osiloskobun son kodu&#xA;aşağıdaki gibidir. Bu kod sayesinde ADClere direk registerlar.&lt;/p&gt;</description>
     </item>
     <item>
       <title>[TR] HC-SR501 PIR Sensörü</title>
       <link>https://mozanunal.com/2015/03/hc-sr501-pir-sensoru/</link>
       <pubDate>Sun, 15 Mar 2015 01:36:00 +0000</pubDate>
       <guid>https://mozanunal.com/2015/03/hc-sr501-pir-sensoru/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Merhaba arkadaşlar,&lt;/strong&gt;&lt;br&gt;
-Bugünkü yazımda bir PIR sensörü olan HC-SR501 inceleyeceğiz. PIR sensörünün
-açılımı Passive Infrared Sensor. Son 4- 5 yılda çok hızlı bir yayılım gösterdi
-bu sensörler ve insan algılayınca çalışan lambalar, otomatik el kurutma vb
-makinalar olarak hayatımıza girdi. Modulumüzden bahsetmeden önce PIR sensör
-nedir onu açıklamak istiyorum. PIR sensör ortamdaki kızılötesi ışınları ölçer.&lt;/p&gt;
-&lt;p&gt;Alıcılarda çok farklı yere doğru odaklanan frensel lensi bulunur bu sayede belli
-bir alandaki tüm enerji ölçülmüş olur. Canlıların sıcaklığı ortalama 36 derece
-civarlarında olduğundan merceğin üzerine düşen kızılötesi ışınların toplam
-enerjisi y ir. Böylece canlı varlığı tespit edilmiş olur.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;strong&gt;Merhaba arkadaşlar,&lt;/strong&gt;&lt;br&gt;&#xA;Bugünkü yazımda bir PIR sensörü olan HC-SR501 inceleyeceğiz. PIR sensörünün&#xA;açılımı Passive Infrared Sensor. Son 4- 5 yılda çok hızlı bir yayılım gösterdi&#xA;bu sensörler ve insan algılayınca çalışan lambalar, otomatik el kurutma vb&#xA;makinalar olarak hayatımıza girdi. Modulumüzden bahsetmeden önce PIR sensör&#xA;nedir onu açıklamak istiyorum. PIR sensör ortamdaki kızılötesi ışınları ölçer.&lt;/p&gt;&#xA;&lt;p&gt;Alıcılarda çok farklı yere doğru odaklanan frensel lensi bulunur bu sayede belli&#xA;bir alandaki tüm enerji ölçülmüş olur. Canlıların sıcaklığı ortalama 36 derece&#xA;civarlarında olduğundan merceğin üzerine düşen kızılötesi ışınların toplam&#xA;enerjisi y ir. Böylece canlı varlığı tespit edilmiş olur.&lt;/p&gt;</description>
     </item>
     <item>
       <title>[TR] ESP8266 Modulü Web Server</title>
       <link>https://mozanunal.com/2015/03/esp8266-modulu-html-server/</link>
       <pubDate>Thu, 12 Mar 2015 00:49:00 +0000</pubDate>
       <guid>https://mozanunal.com/2015/03/esp8266-modulu-html-server/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Merhaba arkadaşlar,&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Bugünkü yazımda ESP8266 modüllerinden bahsetmek istiyorum. Bu modül seri port
-üzerinden haberleşen wifi modülü. Fiyatı yaklaşık 5 $ özelliklerini gördüğünüz
-fiyatından çok daha fazlasını hakkettiğini göreceksiniz. Özelliklerine geçecek
-olursak;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;802.11 b/g/n desteği&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Wi-Fi Direct (P2P) Desteği&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Dahili TCP/IP protokol yığını&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;+19,5dBm çıkış gücü (802.11b modunda)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Kaçak akım &amp;lt; 10uA&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Dahili düşük güç tüketimine sahip 32-bit&amp;rsquo;lik işlemci&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;SDIO 1.1/2.0, SPI ve UART desteği&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;STBC, 1x1 MIMO, 2x1 MIMO&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Uyanma ve veri paketi alma süresi &amp;lt; 2ms&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;strong&gt;Merhaba arkadaşlar,&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Bugünkü yazımda ESP8266 modüllerinden bahsetmek istiyorum. Bu modül seri port&#xA;üzerinden haberleşen wifi modülü. Fiyatı yaklaşık 5 $ özelliklerini gördüğünüz&#xA;fiyatından çok daha fazlasını hakkettiğini göreceksiniz. Özelliklerine geçecek&#xA;olursak;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;802.11 b/g/n desteği&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Wi-Fi Direct (P2P) Desteği&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Dahili TCP/IP protokol yığını&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;+19,5dBm çıkış gücü (802.11b modunda)&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Kaçak akım &amp;lt; 10uA&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Dahili düşük güç tüketimine sahip 32-bit&amp;rsquo;lik işlemci&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;SDIO 1.1/2.0, SPI ve UART desteği&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;STBC, 1x1 MIMO, 2x1 MIMO&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Uyanma ve veri paketi alma süresi &amp;lt; 2ms&lt;/p&gt;</description>
     </item>
     <item>
       <title>[TR] PIC İçin In Circuit Serial Programming (ICSP)</title>
       <link>https://mozanunal.com/2015/01/pic-icin-in-circuit-serial/</link>
       <pubDate>Sat, 31 Jan 2015 20:34:00 +0000</pubDate>
       <guid>https://mozanunal.com/2015/01/pic-icin-in-circuit-serial/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Bugünkü yazımda ICSP olarak kısaltıllan &amp;ldquo;In Circuit Serial Programing&amp;quot;ten
-bahsedeceğim. Türkçeye devre içerisinde programlama olarak çevrilebilir. Oldukça
-avantajlı bir programlama şeklidir. Özellikle Pic programlarken sıkça
-kullanılır. Devresi hazır hale getirilmiş lehimlenmiş Picleri bu yöntem ile
-devreden sökmeden programlayabiliriz.PIC KIT 2, ICSP programlama için en  çok
-kullanılan modullerden biridir. Ben de onu kullandım, kullandığım Pic ise
-PIC16f877a&amp;rsquo;dır. Bağlantılar ise okla işaretletli yönden diğer tarafa doğru şu
-şekildedir;&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;MCRL(VPP)&lt;/li&gt;
-&lt;li&gt;VDD&lt;/li&gt;
-&lt;li&gt;GND&lt;/li&gt;
-&lt;li&gt;ICSPDAT/PGD&lt;/li&gt;
-&lt;li&gt;ICSPCLK/PGK&lt;/li&gt;
-&lt;li&gt;Auxiliary&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Programınızı pic için geliştirilmiş bir dilde yazmanız gerekiyor.
-Seçeneklerinizden bazıları, Pic C, Pic Basic Pro, Assembly, Mikro C. Bu
-yazdığımız programı derleyip .hex formatına çeviriyoruz. Başka bir program
-kullanarak da derlediğimiz .hex formatındaki dosyaları Pic&amp;rsquo;e aktarıyoruz.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Bugünkü yazımda ICSP olarak kısaltıllan &amp;ldquo;In Circuit Serial Programing&amp;quot;ten&#xA;bahsedeceğim. Türkçeye devre içerisinde programlama olarak çevrilebilir. Oldukça&#xA;avantajlı bir programlama şeklidir. Özellikle Pic programlarken sıkça&#xA;kullanılır. Devresi hazır hale getirilmiş lehimlenmiş Picleri bu yöntem ile&#xA;devreden sökmeden programlayabiliriz.PIC KIT 2, ICSP programlama için en  çok&#xA;kullanılan modullerden biridir. Ben de onu kullandım, kullandığım Pic ise&#xA;PIC16f877a&amp;rsquo;dır. Bağlantılar ise okla işaretletli yönden diğer tarafa doğru şu&#xA;şekildedir;&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;MCRL(VPP)&lt;/li&gt;&#xA;&lt;li&gt;VDD&lt;/li&gt;&#xA;&lt;li&gt;GND&lt;/li&gt;&#xA;&lt;li&gt;ICSPDAT/PGD&lt;/li&gt;&#xA;&lt;li&gt;ICSPCLK/PGK&lt;/li&gt;&#xA;&lt;li&gt;Auxiliary&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;Programınızı pic için geliştirilmiş bir dilde yazmanız gerekiyor.&#xA;Seçeneklerinizden bazıları, Pic C, Pic Basic Pro, Assembly, Mikro C. Bu&#xA;yazdığımız programı derleyip .hex formatına çeviriyoruz. Başka bir program&#xA;kullanarak da derlediğimiz .hex formatındaki dosyaları Pic&amp;rsquo;e aktarıyoruz.&lt;/p&gt;</description>
     </item>
     <item>
       <title>[TR] Arduino İle Super Mario Melodisi Çalmak</title>
       <link>https://mozanunal.com/2015/01/arduino-ile-super-mario-melodisi-calmak/</link>
       <pubDate>Sun, 25 Jan 2015 20:03:00 +0000</pubDate>
       <guid>https://mozanunal.com/2015/01/arduino-ile-super-mario-melodisi-calmak/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Merhaba Arkadaşlar&lt;/strong&gt;&lt;br&gt;
-Bugünkü yazımda Arduino ile melodi çalma uygulamasından bahsedeceğim.
-Kullandığım malzemeler Arduino ve bir buzzer. Pin bağlantıları da oldukça basit
-buzzerın eksi ucu GND&amp;rsquo;ye,  + ucu da 12. pine bağlanıyor. 12. Pin dijital pin,
-farklı frekanslarda 1-0 yapılarak notaların çalınması sağlanır. Notaların
-çalınma süreleri de nota frekansının verilme süresi değiştirilerek arduino
-tarafından ayarlanıyor. Böylece istediğimiz melodiyi elde etmiş oluyoruz.
-Ayrıntılı bilgiye &lt;a href=&#34;https://www.arduino.cc/en/Tutorial/Melody&#34;&gt;buradan&lt;/a&gt;
-ulaşabilirsiniz. Arduino koduna aşağıdan ulaşabilirsiniz(Kod alıntıdır. Tek tek
-notalarla uğraşmamak için notaları çıkarılmış bir koddan aldım.). Tekrar
-görüşmek üzere.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;strong&gt;Merhaba Arkadaşlar&lt;/strong&gt;&lt;br&gt;&#xA;Bugünkü yazımda Arduino ile melodi çalma uygulamasından bahsedeceğim.&#xA;Kullandığım malzemeler Arduino ve bir buzzer. Pin bağlantıları da oldukça basit&#xA;buzzerın eksi ucu GND&amp;rsquo;ye,  + ucu da 12. pine bağlanıyor. 12. Pin dijital pin,&#xA;farklı frekanslarda 1-0 yapılarak notaların çalınması sağlanır. Notaların&#xA;çalınma süreleri de nota frekansının verilme süresi değiştirilerek arduino&#xA;tarafından ayarlanıyor. Böylece istediğimiz melodiyi elde etmiş oluyoruz.&#xA;Ayrıntılı bilgiye &lt;a href=&#34;https://www.arduino.cc/en/Tutorial/Melody&#34;&gt;buradan&lt;/a&gt;&#xA;ulaşabilirsiniz. Arduino koduna aşağıdan ulaşabilirsiniz(Kod alıntıdır. Tek tek&#xA;notalarla uğraşmamak için notaları çıkarılmış bir koddan aldım.). Tekrar&#xA;görüşmek üzere.&lt;/p&gt;</description>
     </item>
     <item>
       <title>[TR] Robot Kol</title>
       <link>https://mozanunal.com/2015/01/robot-kol/</link>
       <pubDate>Fri, 16 Jan 2015 15:07:00 +0000</pubDate>
       <guid>https://mozanunal.com/2015/01/robot-kol/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Merhabalar,&lt;/strong&gt;&lt;br&gt;
-      Bugünkü yazımda yaptığım robot koldan bahsedeceğim. Robot kolum Arduino
-kontrollü. Mekanik aksamında 4 adet servo kullandım. Alt kısmını 2 eksenli mini
-kamera gimbalinden yaptım. Kalan kısmı ise plastik bir kapı keserek yaptım.
-Servoları plastik parçalara vidaladım. Kullandığım servolar 9 gramlık mikro
-servolar. Verebilecekleri tork 1.8 kg.cm . Ben robot kola kesme şeker ve
-kalemtıraş gibi küçük nesneler taşıttım. Onlar için yeterli oldu. Kolun kontrolü
-için 2 tane 2 eksenli joystick kullandım. Arduinonun 4 analog pininden
-joystickleri bağladım. 4 servonun kontrolü için de 4 dijital pini kullandım.
-Tutma mekanizması olarak ise ataçtan bir kıskaç yaptım. Servolara güç uygulatıp
-sıkıştırınca esnekliği sayesinde oldukça iyi sonuç verdi. Aşağıda resimleri ve
-tanıtım videosu bulunmaktadır. Tekrar görüşmek üzere.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;strong&gt;Merhabalar,&lt;/strong&gt;&lt;br&gt;&#xA;      Bugünkü yazımda yaptığım robot koldan bahsedeceğim. Robot kolum Arduino&#xA;kontrollü. Mekanik aksamında 4 adet servo kullandım. Alt kısmını 2 eksenli mini&#xA;kamera gimbalinden yaptım. Kalan kısmı ise plastik bir kapı keserek yaptım.&#xA;Servoları plastik parçalara vidaladım. Kullandığım servolar 9 gramlık mikro&#xA;servolar. Verebilecekleri tork 1.8 kg.cm . Ben robot kola kesme şeker ve&#xA;kalemtıraş gibi küçük nesneler taşıttım. Onlar için yeterli oldu. Kolun kontrolü&#xA;için 2 tane 2 eksenli joystick kullandım. Arduinonun 4 analog pininden&#xA;joystickleri bağladım. 4 servonun kontrolü için de 4 dijital pini kullandım.&#xA;Tutma mekanizması olarak ise ataçtan bir kıskaç yaptım. Servolara güç uygulatıp&#xA;sıkıştırınca esnekliği sayesinde oldukça iyi sonuç verdi. Aşağıda resimleri ve&#xA;tanıtım videosu bulunmaktadır. Tekrar görüşmek üzere.&lt;/p&gt;</description>
     </item>
     <item>
       <title>[TR] LM78XX Voltaj Regülatörü Entegrelerini Kullanma</title>
       <link>https://mozanunal.com/2015/01/lm78xx-voltaj-regulatoru-entegrelerini/</link>
       <pubDate>Sun, 11 Jan 2015 23:30:00 +0000</pubDate>
       <guid>https://mozanunal.com/2015/01/lm78xx-voltaj-regulatoru-entegrelerini/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Tekrardan Merhabalar,&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Voltaj regülatörleri elektronik devrelerde büyük önem taşır. Çoğu mikroişlemci,
-entegre belli bir voltajda çalışır. Aynı zamanda bir devrede farklı voltajlarda
-çalışan bölümler olabilir. Bu gibi durumlarda regülatör kullanırız.Yazıda
-konumuz LM78XX entegreleri. LM78XX entegreleri, voltaj regülatörü
-entegreleridir. Geniş voltaj aralığında voltajı regüle edebilirler. Entegrelerin
-ismindeki son 2 rakam hangi voltaja regüle ettiğini gösterirler. Örneğin; LM7805
-5 volta, LM7812 12 volta regüle eder. Kullanımı oldukça kolay olduğu için
-sıklıkla kullanılırlar. Kullanımını 7805 üzerinden aşağıda anlattım.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;strong&gt;Tekrardan Merhabalar,&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Voltaj regülatörleri elektronik devrelerde büyük önem taşır. Çoğu mikroişlemci,&#xA;entegre belli bir voltajda çalışır. Aynı zamanda bir devrede farklı voltajlarda&#xA;çalışan bölümler olabilir. Bu gibi durumlarda regülatör kullanırız.Yazıda&#xA;konumuz LM78XX entegreleri. LM78XX entegreleri, voltaj regülatörü&#xA;entegreleridir. Geniş voltaj aralığında voltajı regüle edebilirler. Entegrelerin&#xA;ismindeki son 2 rakam hangi voltaja regüle ettiğini gösterirler. Örneğin; LM7805&#xA;5 volta, LM7812 12 volta regüle eder. Kullanımı oldukça kolay olduğu için&#xA;sıklıkla kullanılırlar. Kullanımını 7805 üzerinden aşağıda anlattım.&lt;/p&gt;</description>
     </item>
     <item>
       <title>[TR] LCD Göstergeli Mesafe Ölçer</title>
       <link>https://mozanunal.com/2015/01/lcd-gostergeli-mesafe-olcer/</link>
       <pubDate>Sun, 11 Jan 2015 20:57:00 +0000</pubDate>
       <guid>https://mozanunal.com/2015/01/lcd-gostergeli-mesafe-olcer/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Merhabalar!&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Bugünkü yazımda LCD göstergeli bir mesafe ölçerin nasıl yapılabileceğini
-anlatacağım. Projede Arduino, LCD modülü ve HC-SR04 modülü kullandım. Mesafe
-hesaplama işini &amp;ldquo;NewPing&amp;rdquo; isimli kütüphaneye yaptırdım. Bu aldığım mesafe
-verilerini de LCD ekrana bastırıyorum kod bu kadar basit. HC-SR04 ultrasonik
-mesafe hesaplama modulü. Mesafe hesabı için ses dalgalarını kullanıyor. Ses
-hızına göre geri dönüş süresini hesaplıyor bu sayede uzaklık hakkında bilgi
-sahibi olmuş oluyoruz.&lt;/p&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://2.bp.blogspot.com/-imW1-EwFBzI/VLK22y3CYhI/AAAAAAAAGjE/IiK8R_IY9rM/s1600/IMG_20150111_183709.jpg&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://3.bp.blogspot.com/-QmoDFE2QbYc/VLK23M3z7hI/AAAAAAAAGjI/q0U5KHUuEiU/s1600/IMG_20150111_183748.jpg&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Uygulamanın Arduino Kodunu paylaşıyorum. Bağlantılar da kod içerisinde
-verilmiştir.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;strong&gt;Merhabalar!&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Bugünkü yazımda LCD göstergeli bir mesafe ölçerin nasıl yapılabileceğini&#xA;anlatacağım. Projede Arduino, LCD modülü ve HC-SR04 modülü kullandım. Mesafe&#xA;hesaplama işini &amp;ldquo;NewPing&amp;rdquo; isimli kütüphaneye yaptırdım. Bu aldığım mesafe&#xA;verilerini de LCD ekrana bastırıyorum kod bu kadar basit. HC-SR04 ultrasonik&#xA;mesafe hesaplama modulü. Mesafe hesabı için ses dalgalarını kullanıyor. Ses&#xA;hızına göre geri dönüş süresini hesaplıyor bu sayede uzaklık hakkında bilgi&#xA;sahibi olmuş oluyoruz.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://2.bp.blogspot.com/-imW1-EwFBzI/VLK22y3CYhI/AAAAAAAAGjE/IiK8R_IY9rM/s1600/IMG_20150111_183709.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://3.bp.blogspot.com/-QmoDFE2QbYc/VLK23M3z7hI/AAAAAAAAGjI/q0U5KHUuEiU/s1600/IMG_20150111_183748.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Uygulamanın Arduino Kodunu paylaşıyorum. Bağlantılar da kod içerisinde&#xA;verilmiştir.&lt;/p&gt;</description>
     </item>
     <item>
       <title>[TR] IMU Açılarının 3 Boyutlu Olarak Görsellenmesi</title>
       <link>https://mozanunal.com/2014/11/imu-aclarnn-3-boyutlu-olarak/</link>
       <pubDate>Fri, 07 Nov 2014 14:15:00 +0000</pubDate>
       <guid>https://mozanunal.com/2014/11/imu-aclarnn-3-boyutlu-olarak/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar!&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Bu yazımda size hava araçlarının en temel elektronik ekipmanı olan IMU
-modullerinden bahsetmek istiyorum. IMU modullerinin hayati önem taşımasının
-sebebi, modüllerin yönelim açılarını hesaplamak için kullanılmasıdır. En büyük
-yolcu uçağından, roketten en küçük bir quadrokoptere kadar tüm hava araçları
-stabil ve sağlıklı bir uçuş için bu modullerden birine sahip olmalıdırlar.&lt;/p&gt;
-&lt;p&gt;IMU ingilizcedeki &amp;ldquo;Inertial Mesurament Unit&amp;rdquo; kelime grubunun kısaltılmış
-halidir. IMU ile bir cismin uzaydaki 3 boyutlu yönelimi bulunabilir. 3 boyutlu
-yönelimi anlatmanın  en kolay yolu Euler Açılarını kullanmaktır. Havacılık
-sektöründe sıklıkla Euler açılarının özelleşmiş bir versiyonu olan &amp;ldquo;Yaw, Pitch,
-Roll&amp;rdquo; açıları kullanılmaktadır.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar!&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Bu yazımda size hava araçlarının en temel elektronik ekipmanı olan IMU&#xA;modullerinden bahsetmek istiyorum. IMU modullerinin hayati önem taşımasının&#xA;sebebi, modüllerin yönelim açılarını hesaplamak için kullanılmasıdır. En büyük&#xA;yolcu uçağından, roketten en küçük bir quadrokoptere kadar tüm hava araçları&#xA;stabil ve sağlıklı bir uçuş için bu modullerden birine sahip olmalıdırlar.&lt;/p&gt;&#xA;&lt;p&gt;IMU ingilizcedeki &amp;ldquo;Inertial Mesurament Unit&amp;rdquo; kelime grubunun kısaltılmış&#xA;halidir. IMU ile bir cismin uzaydaki 3 boyutlu yönelimi bulunabilir. 3 boyutlu&#xA;yönelimi anlatmanın  en kolay yolu Euler Açılarını kullanmaktır. Havacılık&#xA;sektöründe sıklıkla Euler açılarının özelleşmiş bir versiyonu olan &amp;ldquo;Yaw, Pitch,&#xA;Roll&amp;rdquo; açıları kullanılmaktadır.&lt;/p&gt;</description>
     </item>
     <item>
       <title>[TR] Arduino Joystick Kontrol</title>
       <link>https://mozanunal.com/2014/10/arduino-joystick-kontrol/</link>
       <pubDate>Wed, 29 Oct 2014 00:21:00 +0000</pubDate>
       <guid>https://mozanunal.com/2014/10/arduino-joystick-kontrol/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar!&lt;/strong&gt;&lt;br&gt;
-Bugünkü yazımda Arduino ile Joystick Kontrol projemden bahsetmek istiyorum. Bu
-projede, 2 eksenli bir joystick ile 2 eksenli bir gimbalı kontrol ettim.
-Kontrolcü olarak Arduino Nano kullandım. Bütün Arduino çeşitleri kullanılabilir
-Nanoyu küçük olduğu ve usb üzerinden kolay programlanabildiği için tercih ettim.&lt;/p&gt;
-&lt;p&gt;Breadboard üzerine basit bir devre kurdum. Arduinonun standart servo
-kütüphanesini kullanarak kodu yazdım. Joystickten veri almak için Arduinonun
-analaog giriş pinlerini kullandım. Analog girişler 1 veya 0 dan farklı değerler
-okumak için kullanılır. Mesela 10 bitlik bir analog girişten 0-1024 arası
-değerler okunabilir. Aşağıda bağlantılar ve kaynak kodunu paylaşıyorum. Tekrar
-görüşmek üzere.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar!&lt;/strong&gt;&lt;br&gt;&#xA;Bugünkü yazımda Arduino ile Joystick Kontrol projemden bahsetmek istiyorum. Bu&#xA;projede, 2 eksenli bir joystick ile 2 eksenli bir gimbalı kontrol ettim.&#xA;Kontrolcü olarak Arduino Nano kullandım. Bütün Arduino çeşitleri kullanılabilir&#xA;Nanoyu küçük olduğu ve usb üzerinden kolay programlanabildiği için tercih ettim.&lt;/p&gt;&#xA;&lt;p&gt;Breadboard üzerine basit bir devre kurdum. Arduinonun standart servo&#xA;kütüphanesini kullanarak kodu yazdım. Joystickten veri almak için Arduinonun&#xA;analaog giriş pinlerini kullandım. Analog girişler 1 veya 0 dan farklı değerler&#xA;okumak için kullanılır. Mesela 10 bitlik bir analog girişten 0-1024 arası&#xA;değerler okunabilir. Aşağıda bağlantılar ve kaynak kodunu paylaşıyorum. Tekrar&#xA;görüşmek üzere.&lt;/p&gt;</description>
     </item>
     <item>
       <title>[TR] Bilgisayardan Gimbal Kontrolü</title>
       <link>https://mozanunal.com/2014/10/bilgisayardan-gimbal-kontrolu/</link>
       <pubDate>Tue, 21 Oct 2014 02:47:00 +0000</pubDate>
       <guid>https://mozanunal.com/2014/10/bilgisayardan-gimbal-kontrolu/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar!&lt;/strong&gt;&lt;br&gt;
-Bugün size bilgisayardan gimbal kontrolü projemden bahsedeceğim. Bu projedeki
-amacım C# ile yazdığım bir arayüzde gimbali kontrol etmek. Gimbal ve bilgisayar
-arasında haberleşmeyi sağlaması ve servoları kontrol etmesi için bir arduino
-yerleştirdim. C# arayüzünün görevi, tıkladığım butonlara göre arduinoya &amp;ldquo;serial
-port&amp;rdquo; üzerinden gönderilecek karakteri değiştirmesidir.&lt;br&gt;
-Arduino da serial porttan aldığı karaktere göre servoları yönetir.&lt;/p&gt;
-&lt;p&gt;Bilgisayardan Gimbal Kontrolü&lt;/p&gt;
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube-nocookie.com/embed/Z61XZI12bS0?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;&gt;&lt;/iframe&gt;
-    &lt;/div&gt;
-
-&lt;p&gt;Arayüz programını C# kodlarının bu proje için örnek kısımlar aşağıdaki gibidir.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar!&lt;/strong&gt;&lt;br&gt;&#xA;Bugün size bilgisayardan gimbal kontrolü projemden bahsedeceğim. Bu projedeki&#xA;amacım C# ile yazdığım bir arayüzde gimbali kontrol etmek. Gimbal ve bilgisayar&#xA;arasında haberleşmeyi sağlaması ve servoları kontrol etmesi için bir arduino&#xA;yerleştirdim. C# arayüzünün görevi, tıkladığım butonlara göre arduinoya &amp;ldquo;serial&#xA;port&amp;rdquo; üzerinden gönderilecek karakteri değiştirmesidir.&lt;br&gt;&#xA;Arduino da serial porttan aldığı karaktere göre servoları yönetir.&lt;/p&gt;&#xA;&lt;p&gt;Bilgisayardan Gimbal Kontrolü&lt;/p&gt;&#xA;&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;&#xA;      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/Z61XZI12bS0?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;&gt;&lt;/iframe&gt;&#xA;    &lt;/div&gt;&#xA;&#xA;&lt;p&gt;Arayüz programını C# kodlarının bu proje için örnek kısımlar aşağıdaki gibidir.&lt;/p&gt;</description>
     </item>
     <item>
       <title>[TR] IMU ile Kamera Gimbalı Kontrolü</title>
       <link>https://mozanunal.com/2014/10/imu-ile-kamera-gimbal-kontrolu/</link>
       <pubDate>Sat, 18 Oct 2014 18:22:00 +0000</pubDate>
       <guid>https://mozanunal.com/2014/10/imu-ile-kamera-gimbal-kontrolu/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar!&lt;/strong&gt;&lt;br&gt;
- Bu projemin amacı MPU6050 ile hesaplanan pitch ve roll açıları ile 2 eksenli
-bir gimbalı kontrol etmek. MPU6050 açılarını hesaplamak için FreeIMU
-kütüphanesini kullandım.
-&lt;a href=&#34;https://www.varesano.net/projects/hardware/FreeIMU&#34;&gt;Buradan indirebilirsiniz&lt;/a&gt;.
-Aldığım açılar belli bir değerden büyükse servoların açılarını kademeli olarak
-azalttım veya artırdım.Bu sayede gimbal, MPU6050yi eğdiğim yönde dönmüş oldu.
-Projemin tanıtım videosunu aşağıdan izleyebilirsiniz.&lt;/p&gt;
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube-nocookie.com/embed/MQi57R7bO8M?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;&gt;&lt;/iframe&gt;
-    &lt;/div&gt;
-
-&lt;p&gt;Arkadaşlar projemin Arduino kodunu da paylaşıyorum.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar!&lt;/strong&gt;&lt;br&gt;&#xA; Bu projemin amacı MPU6050 ile hesaplanan pitch ve roll açıları ile 2 eksenli&#xA;bir gimbalı kontrol etmek. MPU6050 açılarını hesaplamak için FreeIMU&#xA;kütüphanesini kullandım.&#xA;&lt;a href=&#34;https://www.varesano.net/projects/hardware/FreeIMU&#34;&gt;Buradan indirebilirsiniz&lt;/a&gt;.&#xA;Aldığım açılar belli bir değerden büyükse servoların açılarını kademeli olarak&#xA;azalttım veya artırdım.Bu sayede gimbal, MPU6050yi eğdiğim yönde dönmüş oldu.&#xA;Projemin tanıtım videosunu aşağıdan izleyebilirsiniz.&lt;/p&gt;&#xA;&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;&#xA;      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/MQi57R7bO8M?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;&gt;&lt;/iframe&gt;&#xA;    &lt;/div&gt;&#xA;&#xA;&lt;p&gt;Arkadaşlar projemin Arduino kodunu da paylaşıyorum.&lt;/p&gt;</description>
     </item>
     <item>
       <title>[TR] Karanlıkta Yanan Gece Lambası</title>
       <link>https://mozanunal.com/2014/10/karanlkta-yanan-gece-lambas/</link>
       <pubDate>Tue, 07 Oct 2014 19:52:00 +0000</pubDate>
       <guid>https://mozanunal.com/2014/10/karanlkta-yanan-gece-lambas/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar!&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Projemin ismi karanlıkta çalışan gece lambası, transistörü teorik olarak
-öğrendikten sonra bunu uygulamaya geçirmek istedim ve bu devreyi tasarladım. 1
-adet transistör, 1 adet ldr, 1 adet led ve bir kaç tane direnç kullandım. LDR
-ışığa göre direnci değiskenlik gösteren bir devre elemanıdır. Karanlıkta direnci
-artarken, aydınlıkta direnci azalmaktadır. Aydınlıktan karanlığa geçişte direnci
-artar ve uçları arasındaki gerilim artar bu sayede transistör aktif olur ve
-ledin yanmasını sağlar. Devre şeması ve tanıtım videosu aşağıdadır. Tekrar
-görüşmek üzere&amp;hellip;\&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar!&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Projemin ismi karanlıkta çalışan gece lambası, transistörü teorik olarak&#xA;öğrendikten sonra bunu uygulamaya geçirmek istedim ve bu devreyi tasarladım. 1&#xA;adet transistör, 1 adet ldr, 1 adet led ve bir kaç tane direnç kullandım. LDR&#xA;ışığa göre direnci değiskenlik gösteren bir devre elemanıdır. Karanlıkta direnci&#xA;artarken, aydınlıkta direnci azalmaktadır. Aydınlıktan karanlığa geçişte direnci&#xA;artar ve uçları arasındaki gerilim artar bu sayede transistör aktif olur ve&#xA;ledin yanmasını sağlar. Devre şeması ve tanıtım videosu aşağıdadır. Tekrar&#xA;görüşmek üzere&amp;hellip;\&lt;/p&gt;</description>
     </item>
     <item>
       <title>[TR] 555 Entegresi Tanıtım</title>
       <link>https://mozanunal.com/2014/10/555-entegresi-tantm/</link>
       <pubDate>Tue, 07 Oct 2014 02:49:00 +0000</pubDate>
       <guid>https://mozanunal.com/2014/10/555-entegresi-tantm/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar!&lt;/strong&gt;&lt;br&gt;
-Bu yazımda size 555 entegresini tanıtmak istiyorum. Başlamadan önce şunu da
-belirtmek isterim 555 entegresi benim en çok sempati duyduğum entegrelerden
-biridir. Bunun nedeni ise 8 bacaklı, çok basit ve küçük bir entegre olmasına
-rağmen çok yararlı ve kullanım alanı çok geniş bir entegre olmasıdır. İnternette
-555 entegresi ile yapılan bir çok proje&lt;br&gt;
-bulabilirsiniz.(örneğin ==&amp;gt;
-&lt;a href=&#34;https://www.instructables.com/id/47-projects-to-do-with-a-555/&#34;&gt;https://www.instructables.com/id/47-projects-to-do-with-a-555/&lt;/a&gt;
-). Bu video da benim 555 entegresi hakkında tanıtım videom.&lt;/p&gt;
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube-nocookie.com/embed/OpG5PGl0PE4?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;&gt;&lt;/iframe&gt;
-    &lt;/div&gt;
-
-&lt;p&gt;Teknik detaylarına gelirsek, 555 entegresi aslında tek işlevi kare dalga üretmek
-olan bir timer devresidir. 555 entegre devresi pin bağlantıları şu şekildedir;&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar!&lt;/strong&gt;&lt;br&gt;&#xA;Bu yazımda size 555 entegresini tanıtmak istiyorum. Başlamadan önce şunu da&#xA;belirtmek isterim 555 entegresi benim en çok sempati duyduğum entegrelerden&#xA;biridir. Bunun nedeni ise 8 bacaklı, çok basit ve küçük bir entegre olmasına&#xA;rağmen çok yararlı ve kullanım alanı çok geniş bir entegre olmasıdır. İnternette&#xA;555 entegresi ile yapılan bir çok proje&lt;br&gt;&#xA;bulabilirsiniz.(örneğin ==&amp;gt;&#xA;&lt;a href=&#34;https://www.instructables.com/id/47-projects-to-do-with-a-555/&#34;&gt;https://www.instructables.com/id/47-projects-to-do-with-a-555/&lt;/a&gt;&#xA;). Bu video da benim 555 entegresi hakkında tanıtım videom.&lt;/p&gt;&#xA;&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;&#xA;      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/OpG5PGl0PE4?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;&gt;&lt;/iframe&gt;&#xA;    &lt;/div&gt;&#xA;&#xA;&lt;p&gt;Teknik detaylarına gelirsek, 555 entegresi aslında tek işlevi kare dalga üretmek&#xA;olan bir timer devresidir. 555 entegre devresi pin bağlantıları şu şekildedir;&lt;/p&gt;</description>
     </item>
     <item>
       <title>[TR] Alkış ile Lamba Kontrolü</title>
       <link>https://mozanunal.com/2014/10/alks-ile-lamba-kontrolu/</link>
       <pubDate>Tue, 07 Oct 2014 01:28:00 +0000</pubDate>
       <guid>https://mozanunal.com/2014/10/alks-ile-lamba-kontrolu/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar!&lt;/strong&gt;&lt;br&gt;
-Bu yazımda size, daha önceden yapıp (lise yıllarımda), bloğa koymak icin tekrar
-tamir ettiğim bir projemden bahsetmek istiyorum. Projenin ismi &amp;ldquo;Alkış ile lamba
-kontrolü&amp;rdquo; amacı ise alkış gibi yüksek bir sesle bir röle kontrol etmek. Bu
-projede, röleye toplam 12 led bağlayıp aydınlatma sağlanmıştır. Devrenin teknik
-detaylarına gelirsek temel mantığı şöyle;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;mikrofondan ses sinyali alınır.&lt;/li&gt;
-&lt;li&gt;alınan ses opamp devrelerle yükseltilir.&lt;/li&gt;
-&lt;li&gt;yükseltilen sinyaller 4011 entegresinde işlenerek yüksek ses geldiğinde çıkış
-sağlanır.&lt;/li&gt;
-&lt;li&gt;sağlanan çıkışa bağlı olan transistör kontrol edilir. Yüksek ses gelirse
-transistör aktifleşir ve rölenin çalışmasını sağlar.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Projenin tanıtım videosu ve devresinin çizimi aşağıdadır. Tekrar görüşmek
-üzere&amp;hellip;&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar!&lt;/strong&gt;&lt;br&gt;&#xA;Bu yazımda size, daha önceden yapıp (lise yıllarımda), bloğa koymak icin tekrar&#xA;tamir ettiğim bir projemden bahsetmek istiyorum. Projenin ismi &amp;ldquo;Alkış ile lamba&#xA;kontrolü&amp;rdquo; amacı ise alkış gibi yüksek bir sesle bir röle kontrol etmek. Bu&#xA;projede, röleye toplam 12 led bağlayıp aydınlatma sağlanmıştır. Devrenin teknik&#xA;detaylarına gelirsek temel mantığı şöyle;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;mikrofondan ses sinyali alınır.&lt;/li&gt;&#xA;&lt;li&gt;alınan ses opamp devrelerle yükseltilir.&lt;/li&gt;&#xA;&lt;li&gt;yükseltilen sinyaller 4011 entegresinde işlenerek yüksek ses geldiğinde çıkış&#xA;sağlanır.&lt;/li&gt;&#xA;&lt;li&gt;sağlanan çıkışa bağlı olan transistör kontrol edilir. Yüksek ses gelirse&#xA;transistör aktifleşir ve rölenin çalışmasını sağlar.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Projenin tanıtım videosu ve devresinin çizimi aşağıdadır. Tekrar görüşmek&#xA;üzere&amp;hellip;&lt;/p&gt;</description>
     </item>
     <item>
       <title>[TR] İlk Yayın</title>
       <link>https://mozanunal.com/2014/05/ilk-yayn/</link>
       <pubDate>Sun, 25 May 2014 03:44:00 +0000</pubDate>
       <guid>https://mozanunal.com/2014/05/ilk-yayn/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar!&lt;/strong&gt;&lt;br&gt;
-    Yaptığım projeleri arşivleyebilmek ve bunlardan herkesin yararlanabilmesi
-için blog açmaya karar verdim. Blogumda size C# üzerinden arayüz yapımı,
-bilgisayar mikroişlemci iletişimi, arduino uygulamaları, pic uygulamaları ve
-basit sensörlü elektronik alanında projeleri fotoğraflarıyla ve işin teorisini
-de anlatarak paylaşmayı planlıyorum. Aynı zamanda az da olsa Android
-programlamadan(robotik uygulamalar için gerekli olan kısımdan) ve hobi olarak
-yaptığım oyunları da buradan sizinle paylaşmayı planlıyorum. Elektroniğe merak
-salmış arkadaşlarımın elimden geldiğince(ben de yolun çok başındayım) en iyi
-şekilde bilgilendirmek dileğim :).  Daha önce üniversitemde uzun mesafe takip
-sistemleri üzerine çalışmalar yaptım. Gps, IMU, ve daha bir sürü sensörden
-aldığımız verileri, yer istasyonuna iletmek ve arayüz programıyla bunların
-görsellenmesiydi görevim. Şimdi ise insansız hava araçları ve görüntü işleme
-üzerine çalışmaktayım. Aynı zamanda hobi olarak pic ve arduino devreleri,
-çeşitli devreler üretmeye, yapmaya devam ediyorum. Tekrar görüşmek üzere&amp;hellip;&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar!&lt;/strong&gt;&lt;br&gt;&#xA;    Yaptığım projeleri arşivleyebilmek ve bunlardan herkesin yararlanabilmesi&#xA;için blog açmaya karar verdim. Blogumda size C# üzerinden arayüz yapımı,&#xA;bilgisayar mikroişlemci iletişimi, arduino uygulamaları, pic uygulamaları ve&#xA;basit sensörlü elektronik alanında projeleri fotoğraflarıyla ve işin teorisini&#xA;de anlatarak paylaşmayı planlıyorum. Aynı zamanda az da olsa Android&#xA;programlamadan(robotik uygulamalar için gerekli olan kısımdan) ve hobi olarak&#xA;yaptığım oyunları da buradan sizinle paylaşmayı planlıyorum. Elektroniğe merak&#xA;salmış arkadaşlarımın elimden geldiğince(ben de yolun çok başındayım) en iyi&#xA;şekilde bilgilendirmek dileğim :).  Daha önce üniversitemde uzun mesafe takip&#xA;sistemleri üzerine çalışmalar yaptım. Gps, IMU, ve daha bir sürü sensörden&#xA;aldığımız verileri, yer istasyonuna iletmek ve arayüz programıyla bunların&#xA;görsellenmesiydi görevim. Şimdi ise insansız hava araçları ve görüntü işleme&#xA;üzerine çalışmaktayım. Aynı zamanda hobi olarak pic ve arduino devreleri,&#xA;çeşitli devreler üretmeye, yapmaya devam ediyorum. Tekrar görüşmek üzere&amp;hellip;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

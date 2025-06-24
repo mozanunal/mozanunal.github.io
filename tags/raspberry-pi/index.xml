@@ -1,17 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Raspberry Pi on mozanunal.com</title>
     <link>https://mozanunal.com/tags/raspberry-pi/</link>
     <description>Recent content in Raspberry Pi on mozanunal.com</description>
-    <image>
-      <title>mozanunal.com</title>
-      <url>https://mozanunal.com/images/papermod-cover.png</url>
-      <link>https://mozanunal.com/images/papermod-cover.png</link>
-    </image>
-    <generator>Hugo -- 0.147.8</generator>
-    <language>en</language>
-    <copyright>mozanunal</copyright>
+    <generator>Hugo</generator>
+    <language>en-US</language>
     <lastBuildDate>Fri, 01 Feb 2019 00:45:01 +0000</lastBuildDate>
     <atom:link href="https://mozanunal.com/tags/raspberry-pi/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -19,14 +13,7 @@
       <link>https://mozanunal.com/2019/02/steam-link-on-rpi/</link>
       <pubDate>Fri, 01 Feb 2019 00:45:01 +0000</pubDate>
       <guid>https://mozanunal.com/2019/02/steam-link-on-rpi/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Hello,&lt;/strong&gt; Steam Link is software which provides support to Steam to stream
-screen view of the games to devices which is on same local area network. In this
-setup, there are 2 devices. First one is the device to run the Steam and the
-games which act as a server. The second one is the one which runs Steam Link and
-acts as a client to this server. By using this technology you can play games
-directly on a device which is connected to the same router. The connection is
-also 2 way. Thus, control devices such as keyboard, mouse and game controllers
-can be connected directly to the client device.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;strong&gt;Hello,&lt;/strong&gt; Steam Link is software which provides support to Steam to stream&#xA;screen view of the games to devices which is on same local area network. In this&#xA;setup, there are 2 devices. First one is the device to run the Steam and the&#xA;games which act as a server. The second one is the one which runs Steam Link and&#xA;acts as a client to this server. By using this technology you can play games&#xA;directly on a device which is connected to the same router. The connection is&#xA;also 2 way. Thus, control devices such as keyboard, mouse and game controllers&#xA;can be connected directly to the client device.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

@@ -1,17 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>2 Eksenli Servo Gimbal on mozanunal.com</title>
     <link>https://mozanunal.com/tags/2-eksenli-servo-gimbal/</link>
     <description>Recent content in 2 Eksenli Servo Gimbal on mozanunal.com</description>
-    <image>
-      <title>mozanunal.com</title>
-      <url>https://mozanunal.com/images/papermod-cover.png</url>
-      <link>https://mozanunal.com/images/papermod-cover.png</link>
-    </image>
-    <generator>Hugo -- 0.147.8</generator>
-    <language>en</language>
-    <copyright>mozanunal</copyright>
+    <generator>Hugo</generator>
+    <language>en-US</language>
     <lastBuildDate>Sat, 06 Jun 2015 04:36:00 +0000</lastBuildDate>
     <atom:link href="https://mozanunal.com/tags/2-eksenli-servo-gimbal/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -19,27 +13,7 @@
       <link>https://mozanunal.com/2015/06/2-eksenli-servo-gimbal-yapm/</link>
       <pubDate>Sat, 06 Jun 2015 04:36:00 +0000</pubDate>
       <guid>https://mozanunal.com/2015/06/2-eksenli-servo-gimbal-yapm/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;br&gt;
-Bu yazımda her yerde temin edilebilecek ve maliyetsiz malzemelerle nasıl mini
-servo gimbal yapılacağını anlatacağım. Bu arada en baştan belirteyim kontrol
-kartı ve açı stabilizasyonu için daha sonra bir yazı hazırlayacağım.&lt;/p&gt;
-&lt;p&gt;Proje içi kullandığım malzemeler 2 adet servo, Arduino Nano, mini kamera, yoğurt
-kabı, ve ataç. Gimbalin yapım aşamaları resimlerde sırasıyla anlatılmıştır.
-Özetlemek gerekirse;&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Yoğurt kabından bir köşe 2 kenarıyla beraber çıkarılır.&lt;/li&gt;
-&lt;li&gt;Servolardan bir tanesi için oyuk açılır ve servo oraya vidalanır.&lt;/li&gt;
-&lt;li&gt;Bu servonun koluna ataç vidalanır.&lt;/li&gt;
-&lt;li&gt;Ataç 90 derece büküldükten sonra diğer servo biraz da bant yardımıyla
-sabitlenir.&lt;/li&gt;
-&lt;li&gt;Burada dikkat etmemiz gereken servoların dönme eksenlerinin kameranın ağırlık
-merkezinden geçmesidir. Bu sayede servolara binen yükük minimuma düşer.&lt;/li&gt;
-&lt;li&gt;Kamera için yapılan kap vida yardımıyla 2. servonun koluna sabitlenir.&lt;/li&gt;
-&lt;li&gt;Ve son neredeyse hiç maliyetli 2 eksen gimbal yapmış olduk. Biraz titreşim
-problemi olacaktır diye tahmin ediyorum. Daha az esnek malzemeler
-kullanılarak bu sorun aşılabilir. &lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://3.bp.blogspot.com/-7reOfYet5uw/VXIBX-SRikI/AAAAAAAALK4/q6v1h2KQXWw/s320/IMG_20150605_163841.jpg&#34;&gt;](&lt;a href=&#34;https://3.bp.blogspot.com/-7reOfYet5uw/VXIBX-SRikI/AAAAAAAALK4/q6v1h2KQXWw/s1600/IMG_20150605_163841.jpg&#34;&gt;https://3.bp.blogspot.com/-7reOfYet5uw/VXIBX-SRikI/AAAAAAAALK4/q6v1h2KQXWw/s1600/IMG_20150605_163841.jpg&lt;/a&gt;)&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;br&gt;&#xA;Bu yazımda her yerde temin edilebilecek ve maliyetsiz malzemelerle nasıl mini&#xA;servo gimbal yapılacağını anlatacağım. Bu arada en baştan belirteyim kontrol&#xA;kartı ve açı stabilizasyonu için daha sonra bir yazı hazırlayacağım.&lt;/p&gt;&#xA;&lt;p&gt;Proje içi kullandığım malzemeler 2 adet servo, Arduino Nano, mini kamera, yoğurt&#xA;kabı, ve ataç. Gimbalin yapım aşamaları resimlerde sırasıyla anlatılmıştır.&#xA;Özetlemek gerekirse;&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Yoğurt kabından bir köşe 2 kenarıyla beraber çıkarılır.&lt;/li&gt;&#xA;&lt;li&gt;Servolardan bir tanesi için oyuk açılır ve servo oraya vidalanır.&lt;/li&gt;&#xA;&lt;li&gt;Bu servonun koluna ataç vidalanır.&lt;/li&gt;&#xA;&lt;li&gt;Ataç 90 derece büküldükten sonra diğer servo biraz da bant yardımıyla&#xA;sabitlenir.&lt;/li&gt;&#xA;&lt;li&gt;Burada dikkat etmemiz gereken servoların dönme eksenlerinin kameranın ağırlık&#xA;merkezinden geçmesidir. Bu sayede servolara binen yükük minimuma düşer.&lt;/li&gt;&#xA;&lt;li&gt;Kamera için yapılan kap vida yardımıyla 2. servonun koluna sabitlenir.&lt;/li&gt;&#xA;&lt;li&gt;Ve son neredeyse hiç maliyetli 2 eksen gimbal yapmış olduk. Biraz titreşim&#xA;problemi olacaktır diye tahmin ediyorum. Daha az esnek malzemeler&#xA;kullanılarak bu sorun aşılabilir. &lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://3.bp.blogspot.com/-7reOfYet5uw/VXIBX-SRikI/AAAAAAAALK4/q6v1h2KQXWw/s320/IMG_20150605_163841.jpg&#34; alt=&#34;&#34;&gt;](&lt;a href=&#34;https://3.bp.blogspot.com/-7reOfYet5uw/VXIBX-SRikI/AAAAAAAALK4/q6v1h2KQXWw/s1600/IMG_20150605_163841.jpg&#34;&gt;https://3.bp.blogspot.com/-7reOfYet5uw/VXIBX-SRikI/AAAAAAAALK4/q6v1h2KQXWw/s1600/IMG_20150605_163841.jpg&lt;/a&gt;)&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

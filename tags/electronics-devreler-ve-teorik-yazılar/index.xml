@@ -1,17 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Electronics Devreler Ve Teorik Yazılar on mozanunal.com</title>
     <link>https://mozanunal.com/tags/electronics-devreler-ve-teorik-yaz%C4%B1lar/</link>
     <description>Recent content in Electronics Devreler Ve Teorik Yazılar on mozanunal.com</description>
-    <image>
-      <title>mozanunal.com</title>
-      <url>https://mozanunal.com/images/papermod-cover.png</url>
-      <link>https://mozanunal.com/images/papermod-cover.png</link>
-    </image>
-    <generator>Hugo -- 0.147.8</generator>
-    <language>en</language>
-    <copyright>mozanunal</copyright>
+    <generator>Hugo</generator>
+    <language>en-US</language>
     <lastBuildDate>Sun, 13 Mar 2016 01:24:00 +0000</lastBuildDate>
     <atom:link href="https://mozanunal.com/tags/electronics-devreler-ve-teorik-yaz%C4%B1lar/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -19,119 +13,42 @@
       <link>https://mozanunal.com/2016/03/ayarlanabilir-tasnabilir-guc-kaynag-yapm/</link>
       <pubDate>Sun, 13 Mar 2016 01:24:00 +0000</pubDate>
       <guid>https://mozanunal.com/2016/03/ayarlanabilir-tasnabilir-guc-kaynag-yapm/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Bugünkü yazımda nasıl basit bir şekilde bir powerbank&amp;rsquo;i ayarlanabilir güç
-kaynağına dönüştürebileceğimizden bahsedeceğim. Gerekli olan malzemeler sadece
-bir adet power bank ve bir adet MT3608 boost converter. Projeye başlamadan önce
-boost converter nedir ondan bahsetmek istiyorum. Boost converterlar voltaj
-yükseltmek için kullanılır. Kondansatör ve bobin ve diyot kullanarak bir switch
-yapısı kurarlar ve bu yapı ile hem voltajı yükseltirler hem de verimleri çok
-yüksek olur. Benim kulladığım modül MT3608 powerbankin pilinin çalışma voltaji
-olan 3.6 volt ile beslenebiliyor. 0 28 Volt arası 2 amper çıkış alınabiliyor.
-Verimi de yüzde 93 civarı. Projemize çok uygun yapıyor bu özellikler de onu. Hem
-de kısa devre koruması da var. Bu da güvenlik açısından da uygun hale getiriyor.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Bugünkü yazımda nasıl basit bir şekilde bir powerbank&amp;rsquo;i ayarlanabilir güç&#xA;kaynağına dönüştürebileceğimizden bahsedeceğim. Gerekli olan malzemeler sadece&#xA;bir adet power bank ve bir adet MT3608 boost converter. Projeye başlamadan önce&#xA;boost converter nedir ondan bahsetmek istiyorum. Boost converterlar voltaj&#xA;yükseltmek için kullanılır. Kondansatör ve bobin ve diyot kullanarak bir switch&#xA;yapısı kurarlar ve bu yapı ile hem voltajı yükseltirler hem de verimleri çok&#xA;yüksek olur. Benim kulladığım modül MT3608 powerbankin pilinin çalışma voltaji&#xA;olan 3.6 volt ile beslenebiliyor. 0 28 Volt arası 2 amper çıkış alınabiliyor.&#xA;Verimi de yüzde 93 civarı. Projemize çok uygun yapıyor bu özellikler de onu. Hem&#xA;de kısa devre koruması da var. Bu da güvenlik açısından da uygun hale getiriyor.&lt;/p&gt;</description>
     </item>
     <item>
       <title>[TR] Fırçalı motorlar için ESC Yapımı</title>
       <link>https://mozanunal.com/2015/08/frcal-motorlar-icin-esc-yapm/</link>
       <pubDate>Wed, 19 Aug 2015 18:42:00 +0000</pubDate>
       <guid>https://mozanunal.com/2015/08/frcal-motorlar-icin-esc-yapm/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Yapacağım bir proje için fırçalı bir motorun Arduino ile hızını kontrol etmem
-gerekiyordu. Bunun için elimdeki fırçalı motor için elektronik hız kontrolü yani
-ESC (Electronic Speed Control) yapmaya karar verdim.&lt;/p&gt;
-&lt;p&gt;Öncellikle kendi motorumun ve devrelerimin besleme gerilimi yazayım. Çünkü devre
-bu özelliklere göre dizayn edilecektir. Siz de kendi malzemelerinize ve
-voltajlarınıza göre kendi devrenizi dizayn edebilirsiniz. Benim elimdeki motoru
-besleme voltajım 7.4 volt ve motorun çektiği maximum akım 2 amperdir. Hız
-kontrolü için göndereceğim PWM sinyalinin genliği de (Arduinonun çalışma
-voltajı) 5 volttur. Bu şartlar altında devremi bir power mosfet ile tasarlamaya
-karar verdim. Mosfette var olması gereken özellikler 5 volt anahtarlamaya uygun
-rds ve Vgs özelliklerine sahip olması, üzerinden 2 amper akım rahatça
-geçebilmesidir. Bu nedenlerden dolayı ben IRL540N mosfetini seçtim. Kendisi bir
-logic mosfet bu sayede 5 volt gibi düşük bir Vgs voltajı ile devreyi
-anahtarlayabiliyor. Ayıca üzerinden 28 amper sıkıntısız geçebiliyor. Bu
-özellikleriyle projemiz için oldukça
-uygun. &lt;a href=&#34;https://www.irf.com/product-info/datasheets/data/irl540n.pdf&#34;&gt;Datasheetine buradan ulaşabilirsiniz.&lt;/a&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Yapacağım bir proje için fırçalı bir motorun Arduino ile hızını kontrol etmem&#xA;gerekiyordu. Bunun için elimdeki fırçalı motor için elektronik hız kontrolü yani&#xA;ESC (Electronic Speed Control) yapmaya karar verdim.&lt;/p&gt;&#xA;&lt;p&gt;Öncellikle kendi motorumun ve devrelerimin besleme gerilimi yazayım. Çünkü devre&#xA;bu özelliklere göre dizayn edilecektir. Siz de kendi malzemelerinize ve&#xA;voltajlarınıza göre kendi devrenizi dizayn edebilirsiniz. Benim elimdeki motoru&#xA;besleme voltajım 7.4 volt ve motorun çektiği maximum akım 2 amperdir. Hız&#xA;kontrolü için göndereceğim PWM sinyalinin genliği de (Arduinonun çalışma&#xA;voltajı) 5 volttur. Bu şartlar altında devremi bir power mosfet ile tasarlamaya&#xA;karar verdim. Mosfette var olması gereken özellikler 5 volt anahtarlamaya uygun&#xA;rds ve Vgs özelliklerine sahip olması, üzerinden 2 amper akım rahatça&#xA;geçebilmesidir. Bu nedenlerden dolayı ben IRL540N mosfetini seçtim. Kendisi bir&#xA;logic mosfet bu sayede 5 volt gibi düşük bir Vgs voltajı ile devreyi&#xA;anahtarlayabiliyor. Ayıca üzerinden 28 amper sıkıntısız geçebiliyor. Bu&#xA;özellikleriyle projemiz için oldukça&#xA;uygun. &lt;a href=&#34;https://www.irf.com/product-info/datasheets/data/irl540n.pdf&#34;&gt;Datasheetine buradan ulaşabilirsiniz.&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>[TR] Bataryalar için Sabit Akım Deşarj Devresi Yapımı</title>
       <link>https://mozanunal.com/2015/08/bataryalar-icin-sabit-akm-desarj/</link>
       <pubDate>Wed, 05 Aug 2015 15:08:00 +0000</pubDate>
       <guid>https://mozanunal.com/2015/08/bataryalar-icin-sabit-akm-desarj/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Batarya kapasite testi için çeşitli yöntemler geliştirilmiştir. Bunlardan ilk
-akıla geleni bataryanın uçlarına sabit direnç bağlayıp çekilen akım ve zaman
-üzerinden kapasite hesabı yapmaktır. Fakat bataryaların zamanla deşarj oldukça
-voltajı azalır bu da akımın değişmesine yol açacaktır. Bu sorunu çözmek için ise
-deşarj esnasında mümkün olduğunca çok voltaj örneklenerek anlık akım hesaplanıp
-interpolasyon yöntemleriyle kapasiteye ulaşılabilir. Fakat bu sıkıntıları aşmak
-için ikinci bir ölçüm yöntemi vardır; Sabit akım deşarj devresi.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Batarya kapasite testi için çeşitli yöntemler geliştirilmiştir. Bunlardan ilk&#xA;akıla geleni bataryanın uçlarına sabit direnç bağlayıp çekilen akım ve zaman&#xA;üzerinden kapasite hesabı yapmaktır. Fakat bataryaların zamanla deşarj oldukça&#xA;voltajı azalır bu da akımın değişmesine yol açacaktır. Bu sorunu çözmek için ise&#xA;deşarj esnasında mümkün olduğunca çok voltaj örneklenerek anlık akım hesaplanıp&#xA;interpolasyon yöntemleriyle kapasiteye ulaşılabilir. Fakat bu sıkıntıları aşmak&#xA;için ikinci bir ölçüm yöntemi vardır; Sabit akım deşarj devresi.&lt;/p&gt;</description>
     </item>
     <item>
       <title>[TR] Multikopterler için PID kontrol</title>
       <link>https://mozanunal.com/2015/07/multikopterler-icin-pid-kontrol/</link>
       <pubDate>Wed, 29 Jul 2015 15:44:00 +0000</pubDate>
       <guid>https://mozanunal.com/2015/07/multikopterler-icin-pid-kontrol/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Bu yazımda PID kontrol algoritmalarından bahsetmek istiyorum. Bu yazıyı yazmamın
-2 sebebi var. PID algoritmaları hakkında bir çok yazı okudum fakat coğu akademik
-ve karmaşık yazılar. Benim amacım anlaşılırlığı ve ayrıntıyı dengeli bir şekilde
-maximum değerlerinde kullanmak. İkincisi ise bu algoritmanın özel olarak
-multikopterlerde kullanımını basit bir şekilde açıklayan bir yazıya rastlamadım.
-Bu yüzden bu yazıyı yazmaya karar verdim.&lt;/p&gt;
-&lt;p&gt;Bir otopilotun en temel 2 bileşeni hava aracının yönelimini tespit eden IMU
-sensörü ve PID algoritmasıdır. IMU sensörü içinde bir kaç sensör barındırır ve
-amacı hava aracının 3 boyutlu uzaydaki yönelimini bulmaktır. IMU konusundan
-&lt;a href=&#34;https://mozanunal.com/2014/11/imu-aclarnn-3-boyutlu-olarak/&#34;&gt;bu yazımda bahsetmiştim&lt;/a&gt;.
-PID algoritmasının görevi ise temel olarak şöyledir: Yönelimi (3 eksendeki yere
-göre açılar) sensörler üzerinden alır, istenen açıları da kullanıcıdan alır. Bu
-ikisi arasındaki farkı en düşük seviyeye düşürmeyi amaçlar. İşte PID
-algoritmasının görevi bu farkı minimuma indirmek için gerekli motor hız
-değerlerini hesaplamaktır.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Bu yazımda PID kontrol algoritmalarından bahsetmek istiyorum. Bu yazıyı yazmamın&#xA;2 sebebi var. PID algoritmaları hakkında bir çok yazı okudum fakat coğu akademik&#xA;ve karmaşık yazılar. Benim amacım anlaşılırlığı ve ayrıntıyı dengeli bir şekilde&#xA;maximum değerlerinde kullanmak. İkincisi ise bu algoritmanın özel olarak&#xA;multikopterlerde kullanımını basit bir şekilde açıklayan bir yazıya rastlamadım.&#xA;Bu yüzden bu yazıyı yazmaya karar verdim.&lt;/p&gt;&#xA;&lt;p&gt;Bir otopilotun en temel 2 bileşeni hava aracının yönelimini tespit eden IMU&#xA;sensörü ve PID algoritmasıdır. IMU sensörü içinde bir kaç sensör barındırır ve&#xA;amacı hava aracının 3 boyutlu uzaydaki yönelimini bulmaktır. IMU konusundan&#xA;&lt;a href=&#34;https://mozanunal.com/2014/11/imu-aclarnn-3-boyutlu-olarak/&#34;&gt;bu yazımda bahsetmiştim&lt;/a&gt;.&#xA;PID algoritmasının görevi ise temel olarak şöyledir: Yönelimi (3 eksendeki yere&#xA;göre açılar) sensörler üzerinden alır, istenen açıları da kullanıcıdan alır. Bu&#xA;ikisi arasındaki farkı en düşük seviyeye düşürmeyi amaçlar. İşte PID&#xA;algoritmasının görevi bu farkı minimuma indirmek için gerekli motor hız&#xA;değerlerini hesaplamaktır.&lt;/p&gt;</description>
     </item>
     <item>
       <title>[TR] 555 Entegresi Tanıtım</title>
       <link>https://mozanunal.com/2014/10/555-entegresi-tantm/</link>
       <pubDate>Tue, 07 Oct 2014 02:49:00 +0000</pubDate>
       <guid>https://mozanunal.com/2014/10/555-entegresi-tantm/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar!&lt;/strong&gt;&lt;br&gt;
-Bu yazımda size 555 entegresini tanıtmak istiyorum. Başlamadan önce şunu da
-belirtmek isterim 555 entegresi benim en çok sempati duyduğum entegrelerden
-biridir. Bunun nedeni ise 8 bacaklı, çok basit ve küçük bir entegre olmasına
-rağmen çok yararlı ve kullanım alanı çok geniş bir entegre olmasıdır. İnternette
-555 entegresi ile yapılan bir çok proje&lt;br&gt;
-bulabilirsiniz.(örneğin ==&amp;gt;
-&lt;a href=&#34;https://www.instructables.com/id/47-projects-to-do-with-a-555/&#34;&gt;https://www.instructables.com/id/47-projects-to-do-with-a-555/&lt;/a&gt;
-). Bu video da benim 555 entegresi hakkında tanıtım videom.&lt;/p&gt;
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube-nocookie.com/embed/OpG5PGl0PE4?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;&gt;&lt;/iframe&gt;
-    &lt;/div&gt;
-
-&lt;p&gt;Teknik detaylarına gelirsek, 555 entegresi aslında tek işlevi kare dalga üretmek
-olan bir timer devresidir. 555 entegre devresi pin bağlantıları şu şekildedir;&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar!&lt;/strong&gt;&lt;br&gt;&#xA;Bu yazımda size 555 entegresini tanıtmak istiyorum. Başlamadan önce şunu da&#xA;belirtmek isterim 555 entegresi benim en çok sempati duyduğum entegrelerden&#xA;biridir. Bunun nedeni ise 8 bacaklı, çok basit ve küçük bir entegre olmasına&#xA;rağmen çok yararlı ve kullanım alanı çok geniş bir entegre olmasıdır. İnternette&#xA;555 entegresi ile yapılan bir çok proje&lt;br&gt;&#xA;bulabilirsiniz.(örneğin ==&amp;gt;&#xA;&lt;a href=&#34;https://www.instructables.com/id/47-projects-to-do-with-a-555/&#34;&gt;https://www.instructables.com/id/47-projects-to-do-with-a-555/&lt;/a&gt;&#xA;). Bu video da benim 555 entegresi hakkında tanıtım videom.&lt;/p&gt;&#xA;&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;&#xA;      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/OpG5PGl0PE4?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;&gt;&lt;/iframe&gt;&#xA;    &lt;/div&gt;&#xA;&#xA;&lt;p&gt;Teknik detaylarına gelirsek, 555 entegresi aslında tek işlevi kare dalga üretmek&#xA;olan bir timer devresidir. 555 entegre devresi pin bağlantıları şu şekildedir;&lt;/p&gt;</description>
     </item>
     <item>
       <title>[TR] Alkış ile Lamba Kontrolü</title>
       <link>https://mozanunal.com/2014/10/alks-ile-lamba-kontrolu/</link>
       <pubDate>Tue, 07 Oct 2014 01:28:00 +0000</pubDate>
       <guid>https://mozanunal.com/2014/10/alks-ile-lamba-kontrolu/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar!&lt;/strong&gt;&lt;br&gt;
-Bu yazımda size, daha önceden yapıp (lise yıllarımda), bloğa koymak icin tekrar
-tamir ettiğim bir projemden bahsetmek istiyorum. Projenin ismi &amp;ldquo;Alkış ile lamba
-kontrolü&amp;rdquo; amacı ise alkış gibi yüksek bir sesle bir röle kontrol etmek. Bu
-projede, röleye toplam 12 led bağlayıp aydınlatma sağlanmıştır. Devrenin teknik
-detaylarına gelirsek temel mantığı şöyle;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;mikrofondan ses sinyali alınır.&lt;/li&gt;
-&lt;li&gt;alınan ses opamp devrelerle yükseltilir.&lt;/li&gt;
-&lt;li&gt;yükseltilen sinyaller 4011 entegresinde işlenerek yüksek ses geldiğinde çıkış
-sağlanır.&lt;/li&gt;
-&lt;li&gt;sağlanan çıkışa bağlı olan transistör kontrol edilir. Yüksek ses gelirse
-transistör aktifleşir ve rölenin çalışmasını sağlar.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Projenin tanıtım videosu ve devresinin çizimi aşağıdadır. Tekrar görüşmek
-üzere&amp;hellip;&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar!&lt;/strong&gt;&lt;br&gt;&#xA;Bu yazımda size, daha önceden yapıp (lise yıllarımda), bloğa koymak icin tekrar&#xA;tamir ettiğim bir projemden bahsetmek istiyorum. Projenin ismi &amp;ldquo;Alkış ile lamba&#xA;kontrolü&amp;rdquo; amacı ise alkış gibi yüksek bir sesle bir röle kontrol etmek. Bu&#xA;projede, röleye toplam 12 led bağlayıp aydınlatma sağlanmıştır. Devrenin teknik&#xA;detaylarına gelirsek temel mantığı şöyle;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;mikrofondan ses sinyali alınır.&lt;/li&gt;&#xA;&lt;li&gt;alınan ses opamp devrelerle yükseltilir.&lt;/li&gt;&#xA;&lt;li&gt;yükseltilen sinyaller 4011 entegresinde işlenerek yüksek ses geldiğinde çıkış&#xA;sağlanır.&lt;/li&gt;&#xA;&lt;li&gt;sağlanan çıkışa bağlı olan transistör kontrol edilir. Yüksek ses gelirse&#xA;transistör aktifleşir ve rölenin çalışmasını sağlar.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Projenin tanıtım videosu ve devresinin çizimi aşağıdadır. Tekrar görüşmek&#xA;üzere&amp;hellip;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

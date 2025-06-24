@@ -1,17 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Sinyal-Isleme on mozanunal.com</title>
     <link>https://mozanunal.com/tags/sinyal-isleme/</link>
     <description>Recent content in Sinyal-Isleme on mozanunal.com</description>
-    <image>
-      <title>mozanunal.com</title>
-      <url>https://mozanunal.com/images/papermod-cover.png</url>
-      <link>https://mozanunal.com/images/papermod-cover.png</link>
-    </image>
-    <generator>Hugo -- 0.147.8</generator>
-    <language>en</language>
-    <copyright>mozanunal</copyright>
+    <generator>Hugo</generator>
+    <language>en-US</language>
     <lastBuildDate>Mon, 19 Mar 2018 19:04:39 +0000</lastBuildDate>
     <atom:link href="https://mozanunal.com/tags/sinyal-isleme/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -19,17 +13,7 @@
       <link>https://mozanunal.com/2018/03/gnu-radio-giris/</link>
       <pubDate>Mon, 19 Mar 2018 19:04:39 +0000</pubDate>
       <guid>https://mozanunal.com/2018/03/gnu-radio-giris/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt; Gnu Radio son zamanlarda keşfetmekten en çok keyif
-aldığım program olabilir. İlk defa duyanlar için özetlemem gerekirse içerisinde
-sinyal işleme ve sayısal haberleşme araçları toplanmış görsel programlama
-editörü. Sinyal dosyadan veya daha önce bahsettiğim SDR isimli cihazlardan
-alınabiliyor. Alınan sinyaller sayısız çeşitlilikte araçlar ile işlenebiliyor.
-Coding, modulasyon, demodulasyon gibi haberleşme işlemlerini sürükle bıraklarla
-kolayca uygulamak mümkün.&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;gnu-radio-logo&#34; loading=&#34;lazy&#34; src=&#34;https://aaronscher.com/GNU_Radio_Companion_Collection/GNU_Radio_Companion_Collection_docs/audio_modem_schematic.png&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Programı kurduktan sonra bizi ilk olarak aşağıdaki gibi bir ekran karşılıyor.
-Sağ tarafta program içerisindeki araçları görebilirsiniz. Hepsi aslında belli
-işlevi olan bir kutu. Sürükleyerek yapmak istediğimiz operasyonu gerçekliyoruz.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt; Gnu Radio son zamanlarda keşfetmekten en çok keyif&#xA;aldığım program olabilir. İlk defa duyanlar için özetlemem gerekirse içerisinde&#xA;sinyal işleme ve sayısal haberleşme araçları toplanmış görsel programlama&#xA;editörü. Sinyal dosyadan veya daha önce bahsettiğim SDR isimli cihazlardan&#xA;alınabiliyor. Alınan sinyaller sayısız çeşitlilikte araçlar ile işlenebiliyor.&#xA;Coding, modulasyon, demodulasyon gibi haberleşme işlemlerini sürükle bıraklarla&#xA;kolayca uygulamak mümkün.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://aaronscher.com/GNU_Radio_Companion_Collection/GNU_Radio_Companion_Collection_docs/audio_modem_schematic.png&#34; alt=&#34;gnu-radio-logo&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Programı kurduktan sonra bizi ilk olarak aşağıdaki gibi bir ekran karşılıyor.&#xA;Sağ tarafta program içerisindeki araçları görebilirsiniz. Hepsi aslında belli&#xA;işlevi olan bir kutu. Sürükleyerek yapmak istediğimiz operasyonu gerçekliyoruz.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

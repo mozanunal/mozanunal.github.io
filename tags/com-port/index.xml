@@ -1,17 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Com Port on mozanunal.com</title>
     <link>https://mozanunal.com/tags/com-port/</link>
     <description>Recent content in Com Port on mozanunal.com</description>
-    <image>
-      <title>mozanunal.com</title>
-      <url>https://mozanunal.com/images/papermod-cover.png</url>
-      <link>https://mozanunal.com/images/papermod-cover.png</link>
-    </image>
-    <generator>Hugo -- 0.147.8</generator>
-    <language>en</language>
-    <copyright>mozanunal</copyright>
+    <generator>Hugo</generator>
+    <language>en-US</language>
     <lastBuildDate>Tue, 27 May 2014 05:17:00 +0000</lastBuildDate>
     <atom:link href="https://mozanunal.com/tags/com-port/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -19,20 +13,7 @@
       <link>https://mozanunal.com/2014/05/c-gercek-zamanl-grafik-cizme-program/</link>
       <pubDate>Tue, 27 May 2014 05:17:00 +0000</pubDate>
       <guid>https://mozanunal.com/2014/05/c-gercek-zamanl-grafik-cizme-program/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar!&lt;/strong&gt;&lt;br&gt;
-&lt;a href=&#34;https://github.com/mozanunal/serialPortGrapher&#34;&gt;Programın kaynak koduna buradan ulaşabilirsiniz.&lt;/a&gt;&lt;br&gt;
-İkinci yazımda C# ile gerçek zamanlı grafik çizdirme uygulamasından
-bahsedeceğim. Bu uygulamada C# programlama dili ve Microsoft Visual Studio 2010
-kullanılmıştır. C# ile grafik çizmemize olanak sağlayan zed graph
-kütüphanesinden
-yararlanılmıştır.&lt;a href=&#34;https://zedgraph.sourceforge.net/index.html&#34;&gt;Bu kütüphaneyi buradan indirebilirsiniz&lt;/a&gt;.
-Sistemin genel algoritmasına bakarsak şöyle çalışır; seri porttan veri okunur,
-veri aralardaki virgüllere göre parse edilip labellera aktarılır, Eklenen
-&amp;ldquo;Timer&amp;rdquo; öğesi ile timerın her periyodunda zaman belirten labela geçen zaman
-kadar eklenir böylece kaçıncı saniye olduğu tutulur, aynı zamanda timerın her
-bir periyodunda x değerleri zaman, y değerleri data noktaları olmak üzere
-grafiğe bir nokta eklenir. Şimdi çalışma şeklini daha ayrıntılı bir şekilde
-inceleyelim.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar!&lt;/strong&gt;&lt;br&gt;&#xA;&lt;a href=&#34;https://github.com/mozanunal/serialPortGrapher&#34;&gt;Programın kaynak koduna buradan ulaşabilirsiniz.&lt;/a&gt;&lt;br&gt;&#xA;İkinci yazımda C# ile gerçek zamanlı grafik çizdirme uygulamasından&#xA;bahsedeceğim. Bu uygulamada C# programlama dili ve Microsoft Visual Studio 2010&#xA;kullanılmıştır. C# ile grafik çizmemize olanak sağlayan zed graph&#xA;kütüphanesinden&#xA;yararlanılmıştır.&lt;a href=&#34;https://zedgraph.sourceforge.net/index.html&#34;&gt;Bu kütüphaneyi buradan indirebilirsiniz&lt;/a&gt;.&#xA;Sistemin genel algoritmasına bakarsak şöyle çalışır; seri porttan veri okunur,&#xA;veri aralardaki virgüllere göre parse edilip labellera aktarılır, Eklenen&#xA;&amp;ldquo;Timer&amp;rdquo; öğesi ile timerın her periyodunda zaman belirten labela geçen zaman&#xA;kadar eklenir böylece kaçıncı saniye olduğu tutulur, aynı zamanda timerın her&#xA;bir periyodunda x değerleri zaman, y değerleri data noktaları olmak üzere&#xA;grafiğe bir nokta eklenir. Şimdi çalışma şeklini daha ayrıntılı bir şekilde&#xA;inceleyelim.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

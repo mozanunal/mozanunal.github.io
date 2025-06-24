@@ -1,17 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Otopilot on mozanunal.com</title>
     <link>https://mozanunal.com/tags/otopilot/</link>
     <description>Recent content in Otopilot on mozanunal.com</description>
-    <image>
-      <title>mozanunal.com</title>
-      <url>https://mozanunal.com/images/papermod-cover.png</url>
-      <link>https://mozanunal.com/images/papermod-cover.png</link>
-    </image>
-    <generator>Hugo -- 0.147.8</generator>
-    <language>en</language>
-    <copyright>mozanunal</copyright>
+    <generator>Hugo</generator>
+    <language>en-US</language>
     <lastBuildDate>Tue, 07 Feb 2017 23:55:00 +0000</lastBuildDate>
     <atom:link href="https://mozanunal.com/tags/otopilot/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -19,42 +13,14 @@
       <link>https://mozanunal.com/2017/02/multikopterler-icin-otopilot-yapmak/</link>
       <pubDate>Tue, 07 Feb 2017 23:55:00 +0000</pubDate>
       <guid>https://mozanunal.com/2017/02/multikopterler-icin-otopilot-yapmak/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Merhaba arkadaşlar,&lt;/strong&gt;&lt;br&gt;
-      Bugünkü yazımda geçen senelerde üzerinde uzun zaman harcadığım fakat
-tamamlayamadığım bir konu olan otopilot yapmak üzerine edindiğim tecrübeleri
-anlatmak istiyorum. Yazıya başlamadan önce bu çalışmaların tamamını beraber
-yaptığım &lt;strong&gt;Bahadır Gökçeaslan&lt;/strong&gt; teşekkür etmeyi bir borç bilirim.&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;SimplePilotlogoPNG.png&#34; loading=&#34;lazy&#34; src=&#34;https://github.com/mozanunal/SimplePilot/blob/master/LOGO/SimplePilotlogoPNG.png?raw=true&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Evet otopilot aslında benim anlatacağım bölüme kıyasla biraz fazla geniş bir
-kavram oldu. Zira malesef proje uçuş kontrolcüsü aşamalarında kaldı. Bir soru
-ile başlayalım. Bir uçuş kontrolcüsü nedir? Bir uçuş kontrolcüsü temel olarak
-havada uçan bir aracın yere göre açılarının istenilen şekilde olmasını sağlayan
-sensör ve hareketli mekanizmalar bütünüdür. Aslında yere göre açılarla
-sınırlamak çok mantıklı değil. Bir hava aracının yükseliğinin sabit olması veya
-istenilen hızda istenilen konumda kalmasını sağlamak da bunun işidir. Fakat bu
-projede, bir Quadcopter uçuş kontrolcüsü olarak tasarlanmış olan bu yapıda amaç
-quadcopterin yere göre açılarını kumandadan gelen girdilere göre kontrol
-etmekti.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;strong&gt;Merhaba arkadaşlar,&lt;/strong&gt;&lt;br&gt;&#xA;      Bugünkü yazımda geçen senelerde üzerinde uzun zaman harcadığım fakat&#xA;tamamlayamadığım bir konu olan otopilot yapmak üzerine edindiğim tecrübeleri&#xA;anlatmak istiyorum. Yazıya başlamadan önce bu çalışmaların tamamını beraber&#xA;yaptığım &lt;strong&gt;Bahadır Gökçeaslan&lt;/strong&gt; teşekkür etmeyi bir borç bilirim.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://github.com/mozanunal/SimplePilot/blob/master/LOGO/SimplePilotlogoPNG.png?raw=true&#34; alt=&#34;SimplePilotlogoPNG.png&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Evet otopilot aslında benim anlatacağım bölüme kıyasla biraz fazla geniş bir&#xA;kavram oldu. Zira malesef proje uçuş kontrolcüsü aşamalarında kaldı. Bir soru&#xA;ile başlayalım. Bir uçuş kontrolcüsü nedir? Bir uçuş kontrolcüsü temel olarak&#xA;havada uçan bir aracın yere göre açılarının istenilen şekilde olmasını sağlayan&#xA;sensör ve hareketli mekanizmalar bütünüdür. Aslında yere göre açılarla&#xA;sınırlamak çok mantıklı değil. Bir hava aracının yükseliğinin sabit olması veya&#xA;istenilen hızda istenilen konumda kalmasını sağlamak da bunun işidir. Fakat bu&#xA;projede, bir Quadcopter uçuş kontrolcüsü olarak tasarlanmış olan bu yapıda amaç&#xA;quadcopterin yere göre açılarını kumandadan gelen girdilere göre kontrol&#xA;etmekti.&lt;/p&gt;</description>
     </item>
     <item>
       <title>[TR] Pixhawk Otopilot ve Özellikleri</title>
       <link>https://mozanunal.com/2016/09/pixhawk-otopilot-ve-ozellikleri/</link>
       <pubDate>Thu, 01 Sep 2016 14:26:00 +0000</pubDate>
       <guid>https://mozanunal.com/2016/09/pixhawk-otopilot-ve-ozellikleri/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;br&gt;
-        Uzun bir aradan sonra tekrar bir yazı hazırladım. Aslında bu yazıya çok
-önceden başlamıştım fakat devamını getirmemiştim şimdi tamamlayabildim ancak :).
-Evet bu yazımda Pixhawk isimli otopilottan bahsetmek istiyorum. Pixhawk açık
-kaynak kodlu Stm32 tabanlı yazılım tabanı olarak da ArduPilota dayanan bir
-otopilot modülü. Burada bir yorumda bulunmam gerekirse, açık kaynaklı
-otopilotlar arasında en başarılısı bana göre. Bu teorimi kanıtlamak için de
-hemen özelliklerine geçmek istiyorum.&lt;/p&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://4.bp.blogspot.com/-p4zpkVZrQWU/V8faC6OGbjI/AAAAAAAAc_U/rx-zCY8cZksKXnRpi2GC8lY-b-aB_MA_ACLcB/s640/pic-prod-pixhawk1.jpg&#34;&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Ana işlemcisi 32 bit Arm Cortex M4 tabanlı ST Microelectronic&amp;rsquo;in bir ürünü(
-STM32F427 Cortex M4 core with FPU).  Bu işlemci &amp;ldquo;NuttX Real Time Operating
-System&amp;rdquo; ile kullanılıyor. &lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;br&gt;&#xA;        Uzun bir aradan sonra tekrar bir yazı hazırladım. Aslında bu yazıya çok&#xA;önceden başlamıştım fakat devamını getirmemiştim şimdi tamamlayabildim ancak :).&#xA;Evet bu yazımda Pixhawk isimli otopilottan bahsetmek istiyorum. Pixhawk açık&#xA;kaynak kodlu Stm32 tabanlı yazılım tabanı olarak da ArduPilota dayanan bir&#xA;otopilot modülü. Burada bir yorumda bulunmam gerekirse, açık kaynaklı&#xA;otopilotlar arasında en başarılısı bana göre. Bu teorimi kanıtlamak için de&#xA;hemen özelliklerine geçmek istiyorum.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://4.bp.blogspot.com/-p4zpkVZrQWU/V8faC6OGbjI/AAAAAAAAc_U/rx-zCY8cZksKXnRpi2GC8lY-b-aB_MA_ACLcB/s640/pic-prod-pixhawk1.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Ana işlemcisi 32 bit Arm Cortex M4 tabanlı ST Microelectronic&amp;rsquo;in bir ürünü(&#xA;STM32F427 Cortex M4 core with FPU).  Bu işlemci &amp;ldquo;NuttX Real Time Operating&#xA;System&amp;rdquo; ile kullanılıyor. &lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

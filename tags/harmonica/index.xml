@@ -1,17 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Harmonica on mozanunal.com</title>
     <link>https://mozanunal.com/tags/harmonica/</link>
     <description>Recent content in Harmonica on mozanunal.com</description>
-    <image>
-      <title>mozanunal.com</title>
-      <url>https://mozanunal.com/images/papermod-cover.png</url>
-      <link>https://mozanunal.com/images/papermod-cover.png</link>
-    </image>
-    <generator>Hugo -- 0.147.8</generator>
-    <language>en</language>
-    <copyright>mozanunal</copyright>
+    <generator>Hugo</generator>
+    <language>en-US</language>
     <lastBuildDate>Thu, 07 May 2020 23:44:00 +0000</lastBuildDate>
     <atom:link href="https://mozanunal.com/tags/harmonica/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -19,19 +13,7 @@
       <link>https://mozanunal.com/2020/05/harmonica-note-conv/</link>
       <pubDate>Thu, 07 May 2020 23:44:00 +0000</pubDate>
       <guid>https://mozanunal.com/2020/05/harmonica-note-conv/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Harmonica Note Converter&lt;/strong&gt; aims to create a python library to convert notes or
-tabs for different kind of harmonicas. It is based on
-&lt;a href=&#34;https://github.com/gciruelos/musthe&#34;&gt;musthe&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://github.com/mozanunal/harmonica-note-converter&#34;&gt;https://github.com/mozanunal/harmonica-note-converter&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&#34;story&#34;&gt;Story&lt;/h2&gt;
-&lt;p&gt;Some of you know that I am an ameteur harmonica player and I love harmonicas. I
-usually play diatonic harmonicas but last time I have bought a chromatic
-harmonica, which has quite different tone and it is hard to find music notes for
-it.&lt;/p&gt;
-&lt;p&gt;I am not the best at playing instruments. However, I am good at coding and music
-theory. That&amp;rsquo;s why I decide to develop a tool to convert music notes for any
-instrument to notes for my harmonicas. I also create an modular structure to
-define new instruments.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;strong&gt;Harmonica Note Converter&lt;/strong&gt; aims to create a python library to convert notes or&#xA;tabs for different kind of harmonicas. It is based on&#xA;&lt;a href=&#34;https://github.com/gciruelos/musthe&#34;&gt;musthe&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/mozanunal/harmonica-note-converter&#34;&gt;https://github.com/mozanunal/harmonica-note-converter&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;story&#34;&gt;Story&lt;/h2&gt;&#xA;&lt;p&gt;Some of you know that I am an ameteur harmonica player and I love harmonicas. I&#xA;usually play diatonic harmonicas but last time I have bought a chromatic&#xA;harmonica, which has quite different tone and it is hard to find music notes for&#xA;it.&lt;/p&gt;&#xA;&lt;p&gt;I am not the best at playing instruments. However, I am good at coding and music&#xA;theory. That&amp;rsquo;s why I decide to develop a tool to convert music notes for any&#xA;instrument to notes for my harmonicas. I also create an modular structure to&#xA;define new instruments.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

@@ -1,17 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Saleae Logic Analzyer on mozanunal.com</title>
     <link>https://mozanunal.com/tags/saleae-logic-analzyer/</link>
     <description>Recent content in Saleae Logic Analzyer on mozanunal.com</description>
-    <image>
-      <title>mozanunal.com</title>
-      <url>https://mozanunal.com/images/papermod-cover.png</url>
-      <link>https://mozanunal.com/images/papermod-cover.png</link>
-    </image>
-    <generator>Hugo -- 0.147.8</generator>
-    <language>en</language>
-    <copyright>mozanunal</copyright>
+    <generator>Hugo</generator>
+    <language>en-US</language>
     <lastBuildDate>Sun, 27 Dec 2015 04:03:00 +0000</lastBuildDate>
     <atom:link href="https://mozanunal.com/tags/saleae-logic-analzyer/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -19,16 +13,7 @@
       <link>https://mozanunal.com/2015/12/5-logic-analyzer/</link>
       <pubDate>Sun, 27 Dec 2015 04:03:00 +0000</pubDate>
       <guid>https://mozanunal.com/2015/12/5-logic-analyzer/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar&lt;/strong&gt;,&lt;/p&gt;
-&lt;p&gt;Bu yazımda 5 $ dolara aldığım Saleae marka logic analyzerın (aslında orjinal
-ürün değil aldığım, o ürünün klonu) incelemesini paylaşmak istiyorum. Bu ürünü
-seçmemin nedeni fiyat performans oranını çok beğenmem ve dijital elektronikle
-uğraşan herkesin vazgeçilmezlerinden biri olacağını düşünmem.&lt;/p&gt;
-&lt;p&gt;Öncelikle logic analzer nedir ile başlayalım. Logic analyzer, belli süre
-aralıklarında bir sinyali örnekleyerek oradaki sinyal seviyesinin binary olarak
-kaydedilmesini ve incelenebilmesini sağlayan alettir. Aynı zamanda bazılarında
-gelen bu binary verileri işleyip farklı protokoller kullanarak çözebilme
-özelliği vardır.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar&lt;/strong&gt;,&lt;/p&gt;&#xA;&lt;p&gt;Bu yazımda 5 $ dolara aldığım Saleae marka logic analyzerın (aslında orjinal&#xA;ürün değil aldığım, o ürünün klonu) incelemesini paylaşmak istiyorum. Bu ürünü&#xA;seçmemin nedeni fiyat performans oranını çok beğenmem ve dijital elektronikle&#xA;uğraşan herkesin vazgeçilmezlerinden biri olacağını düşünmem.&lt;/p&gt;&#xA;&lt;p&gt;Öncelikle logic analzer nedir ile başlayalım. Logic analyzer, belli süre&#xA;aralıklarında bir sinyali örnekleyerek oradaki sinyal seviyesinin binary olarak&#xA;kaydedilmesini ve incelenebilmesini sağlayan alettir. Aynı zamanda bazılarında&#xA;gelen bu binary verileri işleyip farklı protokoller kullanarak çözebilme&#xA;özelliği vardır.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

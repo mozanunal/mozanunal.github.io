@@ -1,17 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Android Program on mozanunal.com</title>
     <link>https://mozanunal.com/tags/android-program/</link>
     <description>Recent content in Android Program on mozanunal.com</description>
-    <image>
-      <title>mozanunal.com</title>
-      <url>https://mozanunal.com/images/papermod-cover.png</url>
-      <link>https://mozanunal.com/images/papermod-cover.png</link>
-    </image>
-    <generator>Hugo -- 0.147.8</generator>
-    <language>en</language>
-    <copyright>mozanunal</copyright>
+    <generator>Hugo</generator>
+    <language>en-US</language>
     <lastBuildDate>Thu, 08 Jan 2015 02:46:00 +0000</lastBuildDate>
     <atom:link href="https://mozanunal.com/tags/android-program/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -19,18 +13,7 @@
       <link>https://mozanunal.com/2015/01/yeni-android-programm-adres-defteri/</link>
       <pubDate>Thu, 08 Jan 2015 02:46:00 +0000</pubDate>
       <guid>https://mozanunal.com/2015/01/yeni-android-programm-adres-defteri/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar!&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Bu yazımda yaptığım Android programı sizlerle paylaşmak istiyorum. Programımın
-adı Adres Defteri, Size gerekli olan adresleri kolayca kaydetmenize daha sonra
-navigasyon için kullanmanızı veya başkalarıyla paylaşmanızı sağlayan ve bunu çok
-kolaylaştıran bir
-program. &lt;a href=&#34;https://drive.google.com/file/d/0B5j__Lyt9ozbdElDaVBKWmlKY1k/view?usp=sharing&#34;&gt;Adres Defteri Programımını buradan indirebilirsiniz.&lt;/a&gt;H
-Programın kullanımını aşağıdan öğrenebilirsiniz.&lt;/p&gt;
-&lt;p&gt;Gps bağlanınca GPS: yazan yerde bulunduğunuz yerin koordinantları çıkar.&lt;/p&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://2.bp.blogspot.com/-QXEe-6LkU14/VK29Nfmx__I/AAAAAAAAGak/xogtu16x_og/s720/Screenshot_2015-01-07-14-06-02.png&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Daha sonra adresin ismi yazılır ve kaydet butonuna basılır.&lt;/p&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://1.bp.blogspot.com/-P4DNz4UUnUU/VK29NYQk5pI/AAAAAAAAGag/TgviIDhFYZ0/s720/Screenshot_2015-01-07-14-06-30.png&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Kaydınız başarılı ise böyle bir mesaj alırsınız.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar!&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Bu yazımda yaptığım Android programı sizlerle paylaşmak istiyorum. Programımın&#xA;adı Adres Defteri, Size gerekli olan adresleri kolayca kaydetmenize daha sonra&#xA;navigasyon için kullanmanızı veya başkalarıyla paylaşmanızı sağlayan ve bunu çok&#xA;kolaylaştıran bir&#xA;program. &lt;a href=&#34;https://drive.google.com/file/d/0B5j__Lyt9ozbdElDaVBKWmlKY1k/view?usp=sharing&#34;&gt;Adres Defteri Programımını buradan indirebilirsiniz.&lt;/a&gt;H&#xA;Programın kullanımını aşağıdan öğrenebilirsiniz.&lt;/p&gt;&#xA;&lt;p&gt;Gps bağlanınca GPS: yazan yerde bulunduğunuz yerin koordinantları çıkar.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://2.bp.blogspot.com/-QXEe-6LkU14/VK29Nfmx__I/AAAAAAAAGak/xogtu16x_og/s720/Screenshot_2015-01-07-14-06-02.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Daha sonra adresin ismi yazılır ve kaydet butonuna basılır.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://1.bp.blogspot.com/-P4DNz4UUnUU/VK29NYQk5pI/AAAAAAAAGag/TgviIDhFYZ0/s720/Screenshot_2015-01-07-14-06-30.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Kaydınız başarılı ise böyle bir mesaj alırsınız.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

@@ -1,0 +1,63 @@
+---
+title: Hello, Quarto
+date: "2025-06-06"
+categories:
+  - Matplotlib
+  - Coordinates
+format: hugo-md
+jupyter: python3
+---
+
+## Polar Axis
+
+For a demonstration of a line plot on a polar axis, see @fig-polar.
+
+```{python}
+#| label: fig-polar
+#| fig-cap: "A line plot on a polar axis"
+
+import numpy as np
+import matplotlib.pyplot as plt
+
+r = np.arange(0, 2, 0.01)
+theta = 2 * np.pi * r
+fig, ax = plt.subplots(subplot_kw={'projection': 'polar'})
+ax.plot(theta, r)
+ax.set_rticks([0.5, 1, 1.5, 2])
+ax.grid(True)
+plt.show()
+```
+
+```{ojs}
+//| panel: input
+//| layout-ncol: 3
+
+viewof ch = checkbox({
+  title: "Passport color:",
+  options: [
+    { value: "red", label: "Red" },
+    { value: "green", label: "Green" },
+    { value: "blue", label: "Blue" },
+    { value: "black", label: "Black" }
+  ],
+  value: ["red", "green", "blue", "black"],
+  submit: false
+})
+
+viewof type = radio({
+  title: "Representation:",
+  options: [
+    { label: 'Passports', value: 'p' },
+    { label: 'Circles', value: 'c' }
+  ],
+  value: 'p'
+})
+
+viewof k = slider({
+  title: "Symbol size:",
+  min: 1,
+  max: 10,
+  value: 3,
+  step: 1
+})
+```

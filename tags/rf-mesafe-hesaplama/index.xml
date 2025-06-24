@@ -1,17 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>RF Mesafe Hesaplama on mozanunal.com</title>
     <link>https://mozanunal.com/tags/rf-mesafe-hesaplama/</link>
     <description>Recent content in RF Mesafe Hesaplama on mozanunal.com</description>
-    <image>
-      <title>mozanunal.com</title>
-      <url>https://mozanunal.com/images/papermod-cover.png</url>
-      <link>https://mozanunal.com/images/papermod-cover.png</link>
-    </image>
-    <generator>Hugo -- 0.147.8</generator>
-    <language>en</language>
-    <copyright>mozanunal</copyright>
+    <generator>Hugo</generator>
+    <language>en-US</language>
     <lastBuildDate>Sat, 02 Jan 2016 04:34:00 +0000</lastBuildDate>
     <atom:link href="https://mozanunal.com/tags/rf-mesafe-hesaplama/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -19,22 +13,7 @@
       <link>https://mozanunal.com/2016/01/rf-mesafe-hesaplama-exceli/</link>
       <pubDate>Sat, 02 Jan 2016 04:34:00 +0000</pubDate>
       <guid>https://mozanunal.com/2016/01/rf-mesafe-hesaplama-exceli/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Merhaba Arkadaşlar,&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Bugünkü yazımda bir radyo modülünün teorik olarak ne kadar uzaklıkta
-çalışabildiğini hesaplayan projemi paylaşacağım. Amacım haberleşme modülleri
-seçilirken kolayca karşılaştırmalar yapılabilecek basit bir hesaplama ortamı
-oluşturmaktı. Bu tarz işler için en uygun program olduğunu düşündüğüm Excel
-programını kullandım.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.mikrodalgamuhendisi.com/index.php/rf-soru-cevap-anasayfa/90-yeni-baslayanlar-icin-iletisim-mesafesi-hesab&#34;&gt;Öncelikle bu hesabı anlamama şuradaki link çok yardımcı oldu&lt;/a&gt;.
-Öncelikle onu incelemenizi tavsiye ederim. Oradaki bilgileri kısaca özetleyecek
-olursam:&lt;/p&gt;
-&lt;p&gt;İlk olarak mesafeyi temel olarak etkilen 2 kavram var. Birincisi vericinin çıkış
-gücü, ikincisi ise alıcının alış hassasiyeti. Özellikle 2. etken sık sık önemi
-unutulan konulardan biri. Genelde aktarılan veri akış hızının artmasıyla alış
-hassasiyeti düşmektedir. Yeterli olacak minimum veri akış hızını seçmek de
-önemli noktalardan bir tanesidir. Çıkış gücüne anten ve kuvvetlendirici
-kazançları da eklenir. Bulunan bu değere toplam güç denir. Hesabımızı belirleyen
-bağıntı ise şöyledir:&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;strong&gt;Merhaba Arkadaşlar,&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Bugünkü yazımda bir radyo modülünün teorik olarak ne kadar uzaklıkta&#xA;çalışabildiğini hesaplayan projemi paylaşacağım. Amacım haberleşme modülleri&#xA;seçilirken kolayca karşılaştırmalar yapılabilecek basit bir hesaplama ortamı&#xA;oluşturmaktı. Bu tarz işler için en uygun program olduğunu düşündüğüm Excel&#xA;programını kullandım.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://www.mikrodalgamuhendisi.com/index.php/rf-soru-cevap-anasayfa/90-yeni-baslayanlar-icin-iletisim-mesafesi-hesab&#34;&gt;Öncelikle bu hesabı anlamama şuradaki link çok yardımcı oldu&lt;/a&gt;.&#xA;Öncelikle onu incelemenizi tavsiye ederim. Oradaki bilgileri kısaca özetleyecek&#xA;olursam:&lt;/p&gt;&#xA;&lt;p&gt;İlk olarak mesafeyi temel olarak etkilen 2 kavram var. Birincisi vericinin çıkış&#xA;gücü, ikincisi ise alıcının alış hassasiyeti. Özellikle 2. etken sık sık önemi&#xA;unutulan konulardan biri. Genelde aktarılan veri akış hızının artmasıyla alış&#xA;hassasiyeti düşmektedir. Yeterli olacak minimum veri akış hızını seçmek de&#xA;önemli noktalardan bir tanesidir. Çıkış gücüne anten ve kuvvetlendirici&#xA;kazançları da eklenir. Bulunan bu değere toplam güç denir. Hesabımızı belirleyen&#xA;bağıntı ise şöyledir:&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

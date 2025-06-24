@@ -1,17 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>SDR- Pal NTSC on mozanunal.com</title>
     <link>https://mozanunal.com/tags/sdr--pal-ntsc/</link>
     <description>Recent content in SDR- Pal NTSC on mozanunal.com</description>
-    <image>
-      <title>mozanunal.com</title>
-      <url>https://mozanunal.com/images/papermod-cover.png</url>
-      <link>https://mozanunal.com/images/papermod-cover.png</link>
-    </image>
-    <generator>Hugo -- 0.147.8</generator>
-    <language>en</language>
-    <copyright>mozanunal</copyright>
+    <generator>Hugo</generator>
+    <language>en-US</language>
     <lastBuildDate>Fri, 09 Jan 2015 03:14:00 +0000</lastBuildDate>
     <atom:link href="https://mozanunal.com/tags/sdr--pal-ntsc/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -19,14 +13,7 @@
       <link>https://mozanunal.com/2015/01/sdr-ile-bilgisayardan-tv-izlemek/</link>
       <pubDate>Fri, 09 Jan 2015 03:14:00 +0000</pubDate>
       <guid>https://mozanunal.com/2015/01/sdr-ile-bilgisayardan-tv-izlemek/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar!&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;SDR için ilk uygulama olarak TV izleme uygulamasını seçtim. Çünkü bu modüller Tv
-alıcı modülleri olarak satılıyorlar. Bunu yapmak için 2 program seçeneğiniz var
-1.si TVSharp, ikincisi ise SDR# + PAL / SECAM TV  plugin. Program ve plugin aynı
-kişi tarafından yazılmıştır ve kullanımları benzerdir. Aşağıda programların
-kullanıldığı bir video hazırladım. Antenim ve evimin konumu kötü olduğu için
-yayın kalitesi çok kötü ama en azından yazılımsal olarak nasıl hazırlık
-yapılması gerektiğini anlatmaya çalıştım. Tekrar görüşmek üzere&amp;hellip;&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar!&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;SDR için ilk uygulama olarak TV izleme uygulamasını seçtim. Çünkü bu modüller Tv&#xA;alıcı modülleri olarak satılıyorlar. Bunu yapmak için 2 program seçeneğiniz var&#xA;1.si TVSharp, ikincisi ise SDR# + PAL / SECAM TV  plugin. Program ve plugin aynı&#xA;kişi tarafından yazılmıştır ve kullanımları benzerdir. Aşağıda programların&#xA;kullanıldığı bir video hazırladım. Antenim ve evimin konumu kötü olduğu için&#xA;yayın kalitesi çok kötü ama en azından yazılımsal olarak nasıl hazırlık&#xA;yapılması gerektiğini anlatmaya çalıştım. Tekrar görüşmek üzere&amp;hellip;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

@@ -1,17 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Imu Gimbal Stabilizasyonu on mozanunal.com</title>
     <link>https://mozanunal.com/tags/imu-gimbal-stabilizasyonu/</link>
     <description>Recent content in Imu Gimbal Stabilizasyonu on mozanunal.com</description>
-    <image>
-      <title>mozanunal.com</title>
-      <url>https://mozanunal.com/images/papermod-cover.png</url>
-      <link>https://mozanunal.com/images/papermod-cover.png</link>
-    </image>
-    <generator>Hugo -- 0.147.8</generator>
-    <language>en</language>
-    <copyright>mozanunal</copyright>
+    <generator>Hugo</generator>
+    <language>en-US</language>
     <lastBuildDate>Sat, 04 Jul 2015 03:30:00 +0000</lastBuildDate>
     <atom:link href="https://mozanunal.com/tags/imu-gimbal-stabilizasyonu/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -19,20 +13,7 @@
       <link>https://mozanunal.com/2015/07/arduino-gimbal-kontrol-kart/</link>
       <pubDate>Sat, 04 Jul 2015 03:30:00 +0000</pubDate>
       <guid>https://mozanunal.com/2015/07/arduino-gimbal-kontrol-kart/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Daha önce kolay bulunabilecek malzemelerden nasıl gimbal yapılabileceğinden
-bahsetmiştim
-(&lt;a href=&#34;https://mozanunal.com/2015/06/2-eksenli-servo-gimbal-yapm/&#34;&gt;O yazıya buradan ulaşabiliriniz&lt;/a&gt;).
-Kontrol kartını sonra anlatacağım demiştim. Veee bu yazımda arduino ve MPU6050
-sensörü kullanarak nasıl bir gimbal kontrol kartı yapabileceğimizden
-bahsedeceğim. Bu kart sayesinde gimbalin yere göre açısını kontrol edebileceğiz.
-Yere göre açısının sabit kalmasını da kontrol kartı üzerindeki IMU sensörü ile
-sağlayacağız(&lt;a href=&#34;https://mozanunal.com/2014/11/imu-aclarnn-3-boyutlu-olarak/&#34;&gt;Ayrıntılı bilgi için tıklayınız&lt;/a&gt;).
-Kontrol kartı saniyede 100 değer okuyup servo PWM değerlerini ona göre
-güncelliyor. Bu sayede oldukça yüksek çözünürlüklü her türlü seviyede
-kullanılabilecek bir kontrol kartı yapmış oluyoruz. Ayrıca başa koyduğum ayar
-parametreleri sayesinde her boyutta ve çeşitte servo gimbale kolayca uyumlu hale
-getirilebilir. Kontrol kartının tanıtım videosu aşağıdadır.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Daha önce kolay bulunabilecek malzemelerden nasıl gimbal yapılabileceğinden&#xA;bahsetmiştim&#xA;(&lt;a href=&#34;https://mozanunal.com/2015/06/2-eksenli-servo-gimbal-yapm/&#34;&gt;O yazıya buradan ulaşabiliriniz&lt;/a&gt;).&#xA;Kontrol kartını sonra anlatacağım demiştim. Veee bu yazımda arduino ve MPU6050&#xA;sensörü kullanarak nasıl bir gimbal kontrol kartı yapabileceğimizden&#xA;bahsedeceğim. Bu kart sayesinde gimbalin yere göre açısını kontrol edebileceğiz.&#xA;Yere göre açısının sabit kalmasını da kontrol kartı üzerindeki IMU sensörü ile&#xA;sağlayacağız(&lt;a href=&#34;https://mozanunal.com/2014/11/imu-aclarnn-3-boyutlu-olarak/&#34;&gt;Ayrıntılı bilgi için tıklayınız&lt;/a&gt;).&#xA;Kontrol kartı saniyede 100 değer okuyup servo PWM değerlerini ona göre&#xA;güncelliyor. Bu sayede oldukça yüksek çözünürlüklü her türlü seviyede&#xA;kullanılabilecek bir kontrol kartı yapmış oluyoruz. Ayrıca başa koyduğum ayar&#xA;parametreleri sayesinde her boyutta ve çeşitte servo gimbale kolayca uyumlu hale&#xA;getirilebilir. Kontrol kartının tanıtım videosu aşağıdadır.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

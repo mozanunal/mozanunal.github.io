@@ -1,17 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>DIY Robotic Hand on mozanunal.com</title>
     <link>https://mozanunal.com/tags/diy-robotic-hand/</link>
     <description>Recent content in DIY Robotic Hand on mozanunal.com</description>
-    <image>
-      <title>mozanunal.com</title>
-      <url>https://mozanunal.com/images/papermod-cover.png</url>
-      <link>https://mozanunal.com/images/papermod-cover.png</link>
-    </image>
-    <generator>Hugo -- 0.147.8</generator>
-    <language>en</language>
-    <copyright>mozanunal</copyright>
+    <generator>Hugo</generator>
+    <language>en-US</language>
     <lastBuildDate>Fri, 16 Jan 2015 15:07:00 +0000</lastBuildDate>
     <atom:link href="https://mozanunal.com/tags/diy-robotic-hand/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -19,18 +13,7 @@
       <link>https://mozanunal.com/2015/01/robot-kol/</link>
       <pubDate>Fri, 16 Jan 2015 15:07:00 +0000</pubDate>
       <guid>https://mozanunal.com/2015/01/robot-kol/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Merhabalar,&lt;/strong&gt;&lt;br&gt;
-      Bugünkü yazımda yaptığım robot koldan bahsedeceğim. Robot kolum Arduino
-kontrollü. Mekanik aksamında 4 adet servo kullandım. Alt kısmını 2 eksenli mini
-kamera gimbalinden yaptım. Kalan kısmı ise plastik bir kapı keserek yaptım.
-Servoları plastik parçalara vidaladım. Kullandığım servolar 9 gramlık mikro
-servolar. Verebilecekleri tork 1.8 kg.cm . Ben robot kola kesme şeker ve
-kalemtıraş gibi küçük nesneler taşıttım. Onlar için yeterli oldu. Kolun kontrolü
-için 2 tane 2 eksenli joystick kullandım. Arduinonun 4 analog pininden
-joystickleri bağladım. 4 servonun kontrolü için de 4 dijital pini kullandım.
-Tutma mekanizması olarak ise ataçtan bir kıskaç yaptım. Servolara güç uygulatıp
-sıkıştırınca esnekliği sayesinde oldukça iyi sonuç verdi. Aşağıda resimleri ve
-tanıtım videosu bulunmaktadır. Tekrar görüşmek üzere.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;strong&gt;Merhabalar,&lt;/strong&gt;&lt;br&gt;&#xA;      Bugünkü yazımda yaptığım robot koldan bahsedeceğim. Robot kolum Arduino&#xA;kontrollü. Mekanik aksamında 4 adet servo kullandım. Alt kısmını 2 eksenli mini&#xA;kamera gimbalinden yaptım. Kalan kısmı ise plastik bir kapı keserek yaptım.&#xA;Servoları plastik parçalara vidaladım. Kullandığım servolar 9 gramlık mikro&#xA;servolar. Verebilecekleri tork 1.8 kg.cm . Ben robot kola kesme şeker ve&#xA;kalemtıraş gibi küçük nesneler taşıttım. Onlar için yeterli oldu. Kolun kontrolü&#xA;için 2 tane 2 eksenli joystick kullandım. Arduinonun 4 analog pininden&#xA;joystickleri bağladım. 4 servonun kontrolü için de 4 dijital pini kullandım.&#xA;Tutma mekanizması olarak ise ataçtan bir kıskaç yaptım. Servolara güç uygulatıp&#xA;sıkıştırınca esnekliği sayesinde oldukça iyi sonuç verdi. Aşağıda resimleri ve&#xA;tanıtım videosu bulunmaktadır. Tekrar görüşmek üzere.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

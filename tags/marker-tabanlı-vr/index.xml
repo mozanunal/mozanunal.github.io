@@ -1,17 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Marker Tabanlı Vr on mozanunal.com</title>
     <link>https://mozanunal.com/tags/marker-tabanl%C4%B1-vr/</link>
     <description>Recent content in Marker Tabanlı Vr on mozanunal.com</description>
-    <image>
-      <title>mozanunal.com</title>
-      <url>https://mozanunal.com/images/papermod-cover.png</url>
-      <link>https://mozanunal.com/images/papermod-cover.png</link>
-    </image>
-    <generator>Hugo -- 0.147.8</generator>
-    <language>en</language>
-    <copyright>mozanunal</copyright>
+    <generator>Hugo</generator>
+    <language>en-US</language>
     <lastBuildDate>Sat, 25 Apr 2015 03:03:00 +0000</lastBuildDate>
     <atom:link href="https://mozanunal.com/tags/marker-tabanl%C4%B1-vr/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -19,15 +13,7 @@
       <link>https://mozanunal.com/2015/04/processing-ile-artrlms-gerceklik/</link>
       <pubDate>Sat, 25 Apr 2015 03:03:00 +0000</pubDate>
       <guid>https://mozanunal.com/2015/04/processing-ile-artrlms-gerceklik/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Merhaba Arkadaşlar,&lt;/strong&gt;&lt;br&gt;
-Bugünkü yazımda NyARToolkit&amp;rsquo;ten bahsedeceğim. Bu toolkit sayesinde kameradan
-aldığımız görüntüler üzerine 3 Boyutlu nesneler yerleştirebiliyoruz. İstediğimiz
-3 boyutlu grafik hatta animasyon yerleştirilebilir. Google Glass tarzı
-giyilebilir teknolojilerle daha yaratıcı uygulamalar yapılabilir. Simülasyon ve
-oyun dünyası için çeşitli uygulamalar geliştirilebilir. Hatta hologramlar
-yapmanın şimdilik en gerçekleştirilebilir yolu olarak gözüküyor. Toolkit bir çok
-programlama diliyle kullanılabiliyor. Ben Processing ile kullandım basit olduğu
-için. Toolkiti kullandığım şöyle bir tanıtım videosu hazırladım:&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;strong&gt;Merhaba Arkadaşlar,&lt;/strong&gt;&lt;br&gt;&#xA;Bugünkü yazımda NyARToolkit&amp;rsquo;ten bahsedeceğim. Bu toolkit sayesinde kameradan&#xA;aldığımız görüntüler üzerine 3 Boyutlu nesneler yerleştirebiliyoruz. İstediğimiz&#xA;3 boyutlu grafik hatta animasyon yerleştirilebilir. Google Glass tarzı&#xA;giyilebilir teknolojilerle daha yaratıcı uygulamalar yapılabilir. Simülasyon ve&#xA;oyun dünyası için çeşitli uygulamalar geliştirilebilir. Hatta hologramlar&#xA;yapmanın şimdilik en gerçekleştirilebilir yolu olarak gözüküyor. Toolkit bir çok&#xA;programlama diliyle kullanılabiliyor. Ben Processing ile kullandım basit olduğu&#xA;için. Toolkiti kullandığım şöyle bir tanıtım videosu hazırladım:&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

@@ -1,17 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Diy Bluetooth Speaker on mozanunal.com</title>
     <link>https://mozanunal.com/tags/diy-bluetooth-speaker/</link>
     <description>Recent content in Diy Bluetooth Speaker on mozanunal.com</description>
-    <image>
-      <title>mozanunal.com</title>
-      <url>https://mozanunal.com/images/papermod-cover.png</url>
-      <link>https://mozanunal.com/images/papermod-cover.png</link>
-    </image>
-    <generator>Hugo -- 0.147.8</generator>
-    <language>en</language>
-    <copyright>mozanunal</copyright>
+    <generator>Hugo</generator>
+    <language>en-US</language>
     <lastBuildDate>Mon, 05 Dec 2016 21:23:00 +0000</lastBuildDate>
     <atom:link href="https://mozanunal.com/tags/diy-bluetooth-speaker/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -19,19 +13,7 @@
       <link>https://mozanunal.com/2016/12/diy-bluetooth-speaker/</link>
       <pubDate>Mon, 05 Dec 2016 21:23:00 +0000</pubDate>
       <guid>https://mozanunal.com/2016/12/diy-bluetooth-speaker/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Merhaba Arkadaşlar,&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Bu projemde nasıl elimizde kalan fazla hoparlörleri bluetooth speakera
-dönüştürebileceğinizden bahsedeceğim. Geçen yaz bir arkadaşımın 5 +1 ses
-sisteminin kuvvetlendirici kutusu yanmış böyle olunca da hoparlörler boşa çıkmış
-ben de bir projede kullanırım diyerek kenara ayırdım. Aklıma sonradan bunları
-bluetooth hoparlöre dönüştürmek geldi. Direk ses cihazı olarak görünen bluetooth
-ses alıcılarını araştırmaya başladım. Bir kaç model bulsam da yaklaşık 10 W olan
-bu hoparlörleri sürecek kadar güç çıkışı vermiyorlardı. Bu nedenle projeye bir
-de kuvvetlendirici ekledim. Kuvvetlendirici  olarak PAM8610 seçtim. Kendisi bir
-class D güç kuvvetlendiricisi yani en verimli olanlarından. Yüksek verini
-sayesinde çok az enerji ısıya dönüşüyor ve soğutucu metal parçaya vb ihtiyaç
-duymuyor. Yaptığım proje ile bu hoparlörleri, bluetooth üzerinden ya da doğrudan
-kablo ile ses çıkışlarına bağlanabilecek duruma getirmiş oluyorum.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;strong&gt;Merhaba Arkadaşlar,&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Bu projemde nasıl elimizde kalan fazla hoparlörleri bluetooth speakera&#xA;dönüştürebileceğinizden bahsedeceğim. Geçen yaz bir arkadaşımın 5 +1 ses&#xA;sisteminin kuvvetlendirici kutusu yanmış böyle olunca da hoparlörler boşa çıkmış&#xA;ben de bir projede kullanırım diyerek kenara ayırdım. Aklıma sonradan bunları&#xA;bluetooth hoparlöre dönüştürmek geldi. Direk ses cihazı olarak görünen bluetooth&#xA;ses alıcılarını araştırmaya başladım. Bir kaç model bulsam da yaklaşık 10 W olan&#xA;bu hoparlörleri sürecek kadar güç çıkışı vermiyorlardı. Bu nedenle projeye bir&#xA;de kuvvetlendirici ekledim. Kuvvetlendirici  olarak PAM8610 seçtim. Kendisi bir&#xA;class D güç kuvvetlendiricisi yani en verimli olanlarından. Yüksek verini&#xA;sayesinde çok az enerji ısıya dönüşüyor ve soğutucu metal parçaya vb ihtiyaç&#xA;duymuyor. Yaptığım proje ile bu hoparlörleri, bluetooth üzerinden ya da doğrudan&#xA;kablo ile ses çıkışlarına bağlanabilecek duruma getirmiş oluyorum.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

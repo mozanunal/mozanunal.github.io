@@ -1,17 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Arduino Joystick Kontrol on mozanunal.com</title>
     <link>https://mozanunal.com/tags/arduino-joystick-kontrol/</link>
     <description>Recent content in Arduino Joystick Kontrol on mozanunal.com</description>
-    <image>
-      <title>mozanunal.com</title>
-      <url>https://mozanunal.com/images/papermod-cover.png</url>
-      <link>https://mozanunal.com/images/papermod-cover.png</link>
-    </image>
-    <generator>Hugo -- 0.147.8</generator>
-    <language>en</language>
-    <copyright>mozanunal</copyright>
+    <generator>Hugo</generator>
+    <language>en-US</language>
     <lastBuildDate>Wed, 29 Oct 2014 00:21:00 +0000</lastBuildDate>
     <atom:link href="https://mozanunal.com/tags/arduino-joystick-kontrol/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -19,17 +13,7 @@
       <link>https://mozanunal.com/2014/10/arduino-joystick-kontrol/</link>
       <pubDate>Wed, 29 Oct 2014 00:21:00 +0000</pubDate>
       <guid>https://mozanunal.com/2014/10/arduino-joystick-kontrol/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar!&lt;/strong&gt;&lt;br&gt;
-Bugünkü yazımda Arduino ile Joystick Kontrol projemden bahsetmek istiyorum. Bu
-projede, 2 eksenli bir joystick ile 2 eksenli bir gimbalı kontrol ettim.
-Kontrolcü olarak Arduino Nano kullandım. Bütün Arduino çeşitleri kullanılabilir
-Nanoyu küçük olduğu ve usb üzerinden kolay programlanabildiği için tercih ettim.&lt;/p&gt;
-&lt;p&gt;Breadboard üzerine basit bir devre kurdum. Arduinonun standart servo
-kütüphanesini kullanarak kodu yazdım. Joystickten veri almak için Arduinonun
-analaog giriş pinlerini kullandım. Analog girişler 1 veya 0 dan farklı değerler
-okumak için kullanılır. Mesela 10 bitlik bir analog girişten 0-1024 arası
-değerler okunabilir. Aşağıda bağlantılar ve kaynak kodunu paylaşıyorum. Tekrar
-görüşmek üzere.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar!&lt;/strong&gt;&lt;br&gt;&#xA;Bugünkü yazımda Arduino ile Joystick Kontrol projemden bahsetmek istiyorum. Bu&#xA;projede, 2 eksenli bir joystick ile 2 eksenli bir gimbalı kontrol ettim.&#xA;Kontrolcü olarak Arduino Nano kullandım. Bütün Arduino çeşitleri kullanılabilir&#xA;Nanoyu küçük olduğu ve usb üzerinden kolay programlanabildiği için tercih ettim.&lt;/p&gt;&#xA;&lt;p&gt;Breadboard üzerine basit bir devre kurdum. Arduinonun standart servo&#xA;kütüphanesini kullanarak kodu yazdım. Joystickten veri almak için Arduinonun&#xA;analaog giriş pinlerini kullandım. Analog girişler 1 veya 0 dan farklı değerler&#xA;okumak için kullanılır. Mesela 10 bitlik bir analog girişten 0-1024 arası&#xA;değerler okunabilir. Aşağıda bağlantılar ve kaynak kodunu paylaşıyorum. Tekrar&#xA;görüşmek üzere.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

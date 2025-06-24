@@ -1,17 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Html5 on mozanunal.com</title>
     <link>https://mozanunal.com/tags/html5/</link>
     <description>Recent content in Html5 on mozanunal.com</description>
-    <image>
-      <title>mozanunal.com</title>
-      <url>https://mozanunal.com/images/papermod-cover.png</url>
-      <link>https://mozanunal.com/images/papermod-cover.png</link>
-    </image>
-    <generator>Hugo -- 0.147.8</generator>
-    <language>en</language>
-    <copyright>mozanunal</copyright>
+    <generator>Hugo</generator>
+    <language>en-US</language>
     <lastBuildDate>Sat, 16 Jan 2016 03:45:00 +0000</lastBuildDate>
     <atom:link href="https://mozanunal.com/tags/html5/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -19,16 +13,7 @@
       <link>https://mozanunal.com/2016/01/web-tabanl-programlar/</link>
       <pubDate>Sat, 16 Jan 2016 03:45:00 +0000</pubDate>
       <guid>https://mozanunal.com/2016/01/web-tabanl-programlar/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;br&gt;
-Bugünkü yazımda web tabanlı programlardan bahsetmek istiyorum. Web
-teknolojilerinin gelişmesiyle beraber browser tabanlı oldukça yararlı ve
-kullanımı da bir o kadar kolay programlar ortaya çıkmaya başladı. Hatta bunun
-bir üst aşaması olarak ChromeOS browser tabanlı bir işletim sistemi bile var.
-Ayrıca bu tarz programların projelerine dosyalarına her bilgisayardan
-ulaşabilmek, kurulum yapmadan bir çok şeyi halletme gibi avantajları da var.
-Böyle olunca ben de bu şekilde çalışan yararlı programları bir yazı altında
-toplamak istedim. Bilmediğim daha bir sürü program olduğuna eminim eğer bana
-yollayabilirseniz onları da yazıya ekleyebilirim.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;br&gt;&#xA;Bugünkü yazımda web tabanlı programlardan bahsetmek istiyorum. Web&#xA;teknolojilerinin gelişmesiyle beraber browser tabanlı oldukça yararlı ve&#xA;kullanımı da bir o kadar kolay programlar ortaya çıkmaya başladı. Hatta bunun&#xA;bir üst aşaması olarak ChromeOS browser tabanlı bir işletim sistemi bile var.&#xA;Ayrıca bu tarz programların projelerine dosyalarına her bilgisayardan&#xA;ulaşabilmek, kurulum yapmadan bir çok şeyi halletme gibi avantajları da var.&#xA;Böyle olunca ben de bu şekilde çalışan yararlı programları bir yazı altında&#xA;toplamak istedim. Bilmediğim daha bir sürü program olduğuna eminim eğer bana&#xA;yollayabilirseniz onları da yazıya ekleyebilirim.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

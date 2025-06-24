@@ -1,17 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Xilinx on mozanunal.com</title>
     <link>https://mozanunal.com/tags/xilinx/</link>
     <description>Recent content in Xilinx on mozanunal.com</description>
-    <image>
-      <title>mozanunal.com</title>
-      <url>https://mozanunal.com/images/papermod-cover.png</url>
-      <link>https://mozanunal.com/images/papermod-cover.png</link>
-    </image>
-    <generator>Hugo -- 0.147.8</generator>
-    <language>en</language>
-    <copyright>mozanunal</copyright>
+    <generator>Hugo</generator>
+    <language>en-US</language>
     <lastBuildDate>Thu, 20 Jul 2017 23:14:00 +0000</lastBuildDate>
     <atom:link href="https://mozanunal.com/tags/xilinx/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -19,17 +13,7 @@
       <link>https://mozanunal.com/2017/07/pmod-microphone-driver/</link>
       <pubDate>Thu, 20 Jul 2017 23:14:00 +0000</pubDate>
       <guid>https://mozanunal.com/2017/07/pmod-microphone-driver/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Hi&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;In this post, the Pmod microphone driver which is written in Verilog for Zynq
-boards is discussed. The driver is developed for Digilent Design
-Competition 2017. We have a project which microphone array is used. Therefore we
-have to get data from Pmod Mic also 5 of them should work synchronously. The
-microphone is sampled with an external ADC and this ADC is using basic SPI for
-communication. This module should be added to main FPGA code and you should make
-the connections required. clk/16 sample rate is succeeded for the microphone.
-clk input frequency should select according to required sampling rate for the
-microphone. SS can be used as out enable also. You can ask any question directly
-to me if you have a problem with the driver. See you&amp;hellip;&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;strong&gt;Hi&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;In this post, the Pmod microphone driver which is written in Verilog for Zynq&#xA;boards is discussed. The driver is developed for Digilent Design&#xA;Competition 2017. We have a project which microphone array is used. Therefore we&#xA;have to get data from Pmod Mic also 5 of them should work synchronously. The&#xA;microphone is sampled with an external ADC and this ADC is using basic SPI for&#xA;communication. This module should be added to main FPGA code and you should make&#xA;the connections required. clk/16 sample rate is succeeded for the microphone.&#xA;clk input frequency should select according to required sampling rate for the&#xA;microphone. SS can be used as out enable also. You can ask any question directly&#xA;to me if you have a problem with the driver. See you&amp;hellip;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

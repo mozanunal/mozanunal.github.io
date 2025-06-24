@@ -1,17 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>ECG on mozanunal.com</title>
     <link>https://mozanunal.com/tags/ecg/</link>
     <description>Recent content in ECG on mozanunal.com</description>
-    <image>
-      <title>mozanunal.com</title>
-      <url>https://mozanunal.com/images/papermod-cover.png</url>
-      <link>https://mozanunal.com/images/papermod-cover.png</link>
-    </image>
-    <generator>Hugo -- 0.147.8</generator>
-    <language>en</language>
-    <copyright>mozanunal</copyright>
+    <generator>Hugo</generator>
+    <language>en-US</language>
     <lastBuildDate>Sun, 17 Nov 2019 02:36:00 +0000</lastBuildDate>
     <atom:link href="https://mozanunal.com/tags/ecg/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -19,14 +13,7 @@
       <link>https://mozanunal.com/2019/11/ecg-signal/</link>
       <pubDate>Sun, 17 Nov 2019 02:36:00 +0000</pubDate>
       <guid>https://mozanunal.com/2019/11/ecg-signal/</guid>
-      <description>&lt;p&gt;Hello everyone, Today, I will show how can you filter out the noise from the raw
-ECG signal. Let&amp;rsquo;s start!&lt;/p&gt;
-&lt;h3 id=&#34;what-is-ecg&#34;&gt;What is ECG?&lt;/h3&gt;
-&lt;p&gt;Electrocardiography (ECG) is the measurement of the bioelectrical activity
-during the contraction and relaxation stages of the atria and ventricles of the
-heart, the stimulation of the heart and the conduction of the stimulus. ECG
-signal has some specific waves which correspond to particular conditions.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Part of the ECG Signal&lt;/strong&gt; &lt;img loading=&#34;lazy&#34; src=&#34;https://mozanunal.com/images/ekg15.jpg&#34;&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;Hello everyone, Today, I will show how can you filter out the noise from the raw&#xA;ECG signal. Let&amp;rsquo;s start!&lt;/p&gt;&#xA;&lt;h3 id=&#34;what-is-ecg&#34;&gt;What is ECG?&lt;/h3&gt;&#xA;&lt;p&gt;Electrocardiography (ECG) is the measurement of the bioelectrical activity&#xA;during the contraction and relaxation stages of the atria and ventricles of the&#xA;heart, the stimulation of the heart and the conduction of the stimulus. ECG&#xA;signal has some specific waves which correspond to particular conditions.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Part of the ECG Signal&lt;/strong&gt; &lt;img src=&#34;https://mozanunal.com/images/ekg15.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

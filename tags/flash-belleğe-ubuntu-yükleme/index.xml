@@ -1,17 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Flash Belleğe Ubuntu Yükleme on mozanunal.com</title>
     <link>https://mozanunal.com/tags/flash-belle%C4%9Fe-ubuntu-y%C3%BCkleme/</link>
     <description>Recent content in Flash Belleğe Ubuntu Yükleme on mozanunal.com</description>
-    <image>
-      <title>mozanunal.com</title>
-      <url>https://mozanunal.com/images/papermod-cover.png</url>
-      <link>https://mozanunal.com/images/papermod-cover.png</link>
-    </image>
-    <generator>Hugo -- 0.147.8</generator>
-    <language>en</language>
-    <copyright>mozanunal</copyright>
+    <generator>Hugo</generator>
+    <language>en-US</language>
     <lastBuildDate>Wed, 03 Dec 2014 03:28:00 +0000</lastBuildDate>
     <atom:link href="https://mozanunal.com/tags/flash-belle%C4%9Fe-ubuntu-y%C3%BCkleme/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -19,16 +13,7 @@
       <link>https://mozanunal.com/2014/12/flash-bellege-ubuntu-kurmak/</link>
       <pubDate>Wed, 03 Dec 2014 03:28:00 +0000</pubDate>
       <guid>https://mozanunal.com/2014/12/flash-bellege-ubuntu-kurmak/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Merhabalar,&lt;/strong&gt;&lt;br&gt;
-Bugün size flash belleğe ubuntu kurmaktan bahsedeceğim. Open source seven
-insanlar için Linux her zaman en çekici gelen işletim sistemi olmuştur. Fakat
-program desteği, driver sorunları derken linux tek işletim sistemi olarak
-kullanmak oldukça zor bir olay haline geliyor. İşte bunun için çok güzel
-çözümler var. Bunlardan bir tanesi aynı hard disk üzerine ikinci bir işletim
-sistemi kurmak. Bu çözüm bana daha zor ve karışık geliyor, benim tercih ettiğim
-ise bir flash belleğe Ubuntu kurup gerekli zamanlarda bilgisayarı onun üzerinden
-boot ederek Linuxun özgür dünyasına dalmak. Evet anlatıma geçersem aslında çok
-basit olduğunu göreceksiniz.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;strong&gt;Merhabalar,&lt;/strong&gt;&lt;br&gt;&#xA;Bugün size flash belleğe ubuntu kurmaktan bahsedeceğim. Open source seven&#xA;insanlar için Linux her zaman en çekici gelen işletim sistemi olmuştur. Fakat&#xA;program desteği, driver sorunları derken linux tek işletim sistemi olarak&#xA;kullanmak oldukça zor bir olay haline geliyor. İşte bunun için çok güzel&#xA;çözümler var. Bunlardan bir tanesi aynı hard disk üzerine ikinci bir işletim&#xA;sistemi kurmak. Bu çözüm bana daha zor ve karışık geliyor, benim tercih ettiğim&#xA;ise bir flash belleğe Ubuntu kurup gerekli zamanlarda bilgisayarı onun üzerinden&#xA;boot ederek Linuxun özgür dünyasına dalmak. Evet anlatıma geçersem aslında çok&#xA;basit olduğunu göreceksiniz.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

@@ -1,17 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Laser Haberleşme on mozanunal.com</title>
     <link>https://mozanunal.com/tags/laser-haberle%C5%9Fme/</link>
     <description>Recent content in Laser Haberleşme on mozanunal.com</description>
-    <image>
-      <title>mozanunal.com</title>
-      <url>https://mozanunal.com/images/papermod-cover.png</url>
-      <link>https://mozanunal.com/images/papermod-cover.png</link>
-    </image>
-    <generator>Hugo -- 0.147.8</generator>
-    <language>en</language>
-    <copyright>mozanunal</copyright>
+    <generator>Hugo</generator>
+    <language>en-US</language>
     <lastBuildDate>Sun, 07 Feb 2016 23:18:00 +0000</lastBuildDate>
     <atom:link href="https://mozanunal.com/tags/laser-haberle%C5%9Fme/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -19,14 +13,7 @@
       <link>https://mozanunal.com/2016/02/lazer-haberlesmesi/</link>
       <pubDate>Sun, 07 Feb 2016 23:18:00 +0000</pubDate>
       <guid>https://mozanunal.com/2016/02/lazer-haberlesmesi/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Son zamanlarda ışık ile veri aktarımına ilgi duymaktayım. Bu konuda bir şeyler
-geliştirmek istiyorum. Bunun ilk aşaması olarak lazer ile haberleşme projemi
-gerçekleştirdim. Bu projedeki amacım daha çok lazerin ve fotodiyotun cevap
-süresi ölçmek yani maximum aktarım hızını hesaplamaktı. Aynı zamanda farklı
-iletişim protokollerini denedim. İlerleyen projeler için lazerin de fotodiyotun
-da yetersiz olduğunu görmüş oldum. Daha hızlı fotodiyotlarla ve ledlerle
-denemelerim sürecek. Projenin bu aşamadaki haline gelirsek:&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Son zamanlarda ışık ile veri aktarımına ilgi duymaktayım. Bu konuda bir şeyler&#xA;geliştirmek istiyorum. Bunun ilk aşaması olarak lazer ile haberleşme projemi&#xA;gerçekleştirdim. Bu projedeki amacım daha çok lazerin ve fotodiyotun cevap&#xA;süresi ölçmek yani maximum aktarım hızını hesaplamaktı. Aynı zamanda farklı&#xA;iletişim protokollerini denedim. İlerleyen projeler için lazerin de fotodiyotun&#xA;da yetersiz olduğunu görmüş oldum. Daha hızlı fotodiyotlarla ve ledlerle&#xA;denemelerim sürecek. Projenin bu aşamadaki haline gelirsek:&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

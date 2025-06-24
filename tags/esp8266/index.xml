@@ -1,17 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Esp8266 on mozanunal.com</title>
     <link>https://mozanunal.com/tags/esp8266/</link>
     <description>Recent content in Esp8266 on mozanunal.com</description>
-    <image>
-      <title>mozanunal.com</title>
-      <url>https://mozanunal.com/images/papermod-cover.png</url>
-      <link>https://mozanunal.com/images/papermod-cover.png</link>
-    </image>
-    <generator>Hugo -- 0.147.8</generator>
-    <language>en</language>
-    <copyright>mozanunal</copyright>
+    <generator>Hugo</generator>
+    <language>en-US</language>
     <lastBuildDate>Wed, 14 Mar 2018 21:29:02 +0000</lastBuildDate>
     <atom:link href="https://mozanunal.com/tags/esp8266/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -19,118 +13,35 @@
       <link>https://mozanunal.com/2018/03/micropython-1516117222475/</link>
       <pubDate>Wed, 14 Mar 2018 21:29:02 +0000</pubDate>
       <guid>https://mozanunal.com/2018/03/micropython-1516117222475/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Bildiğiniz üzere gömülü sistemlerde programlama C ile yapılır. Bunun sebebi
-makine diline en yakın dil olması bu nedenle sistem kaynaklarını az kullanarak
-programlar geliştirilebilmesi ve gömülü sistemdeki donanımları kolay
-programlanabilmesidir. Fakat buna rağmen işlemcilerin de güçlenmesiyle ve
-ihtiyaçların da değişmesiyle farklı diller ile programlama yapabilmek için
-farklı denemeler yapılmaktadır. Daha önce ESP8266 için scripting dili kullanma
-denemeleri olmuştu. Bir ara Lua dili ile programlanabiliyordu. Hatta bir ara
-beklediğimden çok daha popüler hale gelmişti. Lua dili bilmediğim için o
-firmware test etme şansım olmadı. Fakat yakın zamanda benzer bir projenin favori
-programlama dilim olan python ile de yapıldığını gördüm. ESP8266&amp;rsquo;nın python ile
-programlanabildiğini görünce dayanamadım. Bu projenin ismi &lt;strong&gt;micropython&lt;/strong&gt; ve
-denediğimde micropython firmware oldukça hoşuma gitti o yüzden hakkında bir
-şeyler yazmak istedim. &lt;img alt=&#34;upython&#34; loading=&#34;lazy&#34; src=&#34;https://mozanunal.com/images/1516117467411.jpg&#34;&gt; Micropython bir
-&lt;strong&gt;kickstarter&lt;/strong&gt; projesi olarak çıkmış ortaya. İlk olarak Stm32f4 boardları için
-yapılmış. &lt;strong&gt;Amacı mikroişlemciler üzerinde python çalıştırmak ve python shell
-mantığıyla prototipleme yapabilmek.&lt;/strong&gt; Bildiğiniz üzere python en büyük
-eksilerinden biri yüksek ram harcaması. Bu sorunu çözmek için bütün standart
-python kütüphanleri micropython diye yeni bir yapıya portlanmış ve flashda ve
-ramda kapladığı alan sorunları çözülmeye çalışılınmış.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Bildiğiniz üzere gömülü sistemlerde programlama C ile yapılır. Bunun sebebi&#xA;makine diline en yakın dil olması bu nedenle sistem kaynaklarını az kullanarak&#xA;programlar geliştirilebilmesi ve gömülü sistemdeki donanımları kolay&#xA;programlanabilmesidir. Fakat buna rağmen işlemcilerin de güçlenmesiyle ve&#xA;ihtiyaçların da değişmesiyle farklı diller ile programlama yapabilmek için&#xA;farklı denemeler yapılmaktadır. Daha önce ESP8266 için scripting dili kullanma&#xA;denemeleri olmuştu. Bir ara Lua dili ile programlanabiliyordu. Hatta bir ara&#xA;beklediğimden çok daha popüler hale gelmişti. Lua dili bilmediğim için o&#xA;firmware test etme şansım olmadı. Fakat yakın zamanda benzer bir projenin favori&#xA;programlama dilim olan python ile de yapıldığını gördüm. ESP8266&amp;rsquo;nın python ile&#xA;programlanabildiğini görünce dayanamadım. Bu projenin ismi &lt;strong&gt;micropython&lt;/strong&gt; ve&#xA;denediğimde micropython firmware oldukça hoşuma gitti o yüzden hakkında bir&#xA;şeyler yazmak istedim. &lt;img src=&#34;https://mozanunal.com/images/1516117467411.jpg&#34; alt=&#34;upython&#34;&gt; Micropython bir&#xA;&lt;strong&gt;kickstarter&lt;/strong&gt; projesi olarak çıkmış ortaya. İlk olarak Stm32f4 boardları için&#xA;yapılmış. &lt;strong&gt;Amacı mikroişlemciler üzerinde python çalıştırmak ve python shell&#xA;mantığıyla prototipleme yapabilmek.&lt;/strong&gt; Bildiğiniz üzere python en büyük&#xA;eksilerinden biri yüksek ram harcaması. Bu sorunu çözmek için bütün standart&#xA;python kütüphanleri micropython diye yeni bir yapıya portlanmış ve flashda ve&#xA;ramda kapladığı alan sorunları çözülmeye çalışılınmış.&lt;/p&gt;</description>
     </item>
     <item>
       <title>[TR] Bitcoin Madencileri için Online Dashboard</title>
       <link>https://mozanunal.com/2017/07/bitcoin-madencileri-icin-online-dashboard/</link>
       <pubDate>Sun, 30 Jul 2017 15:50:00 +0000</pubDate>
       <guid>https://mozanunal.com/2017/07/bitcoin-madencileri-icin-online-dashboard/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Herkes merhabalar,&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Bitcoin son dönemlerin popüler konularından birisi. Aslında genel olarak crypto
-currency son zamanlarda çok popüler. Peki nedir bu kavramlar? Crypto currency
-güvenliği şifreleme teknojileriyle sağlanan sanal para birimleridir. Her gün bir
-yeni bir tür crypto currency ortaya çıkıyor. Bunlar arasında en geçerli olanı
-ise bitcoin. Sanırım popülerliği en eskilerinden biri olmasından ve anlık olarak
-üretimi sınırlayabilen ilki olmasından geliyor. Bahsetmek istediğim 3. kavram
-ise bit coin mining: Yüksek hesaplama gücü kullanarak bitcoin üretebilmeniz
-mümkün. Bitcoin alışverişlerinin geçerli olması için bir şifre ile onaylanması
-gerekiyor. Bu şifreyi de bir hash çözerek oluşturuyorsunuz ve bunun karşılığında
-sistem sizi bitcoin ile ödüllendiriyor. Bu amaçla bir sürü insan sağlan ekran
-kartları alıp bitcoin tarlaları kurdular ve bu işten para kazanıyorlar. Tabi
-aklınıza, bitcoinin dünyaya katkısı nedir ya da ne kadar riskli, yatırım yapılır
-mı? gibi türlü türlü farklı açılardan sorular gelebilir. Ama malesef ben bu
-konuda uzman değilim ve daha nedir sorusuna bile tam olarak cevap vermek çok
-zor.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;strong&gt;Herkes merhabalar,&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Bitcoin son dönemlerin popüler konularından birisi. Aslında genel olarak crypto&#xA;currency son zamanlarda çok popüler. Peki nedir bu kavramlar? Crypto currency&#xA;güvenliği şifreleme teknojileriyle sağlanan sanal para birimleridir. Her gün bir&#xA;yeni bir tür crypto currency ortaya çıkıyor. Bunlar arasında en geçerli olanı&#xA;ise bitcoin. Sanırım popülerliği en eskilerinden biri olmasından ve anlık olarak&#xA;üretimi sınırlayabilen ilki olmasından geliyor. Bahsetmek istediğim 3. kavram&#xA;ise bit coin mining: Yüksek hesaplama gücü kullanarak bitcoin üretebilmeniz&#xA;mümkün. Bitcoin alışverişlerinin geçerli olması için bir şifre ile onaylanması&#xA;gerekiyor. Bu şifreyi de bir hash çözerek oluşturuyorsunuz ve bunun karşılığında&#xA;sistem sizi bitcoin ile ödüllendiriyor. Bu amaçla bir sürü insan sağlan ekran&#xA;kartları alıp bitcoin tarlaları kurdular ve bu işten para kazanıyorlar. Tabi&#xA;aklınıza, bitcoinin dünyaya katkısı nedir ya da ne kadar riskli, yatırım yapılır&#xA;mı? gibi türlü türlü farklı açılardan sorular gelebilir. Ama malesef ben bu&#xA;konuda uzman değilim ve daha nedir sorusuna bile tam olarak cevap vermek çok&#xA;zor.&lt;/p&gt;</description>
     </item>
     <item>
       <title>[TR] WPF ile Ev Otomasyonu Arayüzü</title>
       <link>https://mozanunal.com/2016/06/wpf-ile-ev-otomasyonu-arayuzu/</link>
       <pubDate>Thu, 09 Jun 2016 04:45:00 +0000</pubDate>
       <guid>https://mozanunal.com/2016/06/wpf-ile-ev-otomasyonu-arayuzu/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;br&gt;
-Bu yazımda .NET platformunun bir teknolojisi olan WPF kullanarak ev otomasyonu
-kontrol paneli yapmayı anlatacağım. Yaptığım bu projenin başlıca işlevi şudur; 5
-farklı sensörden bulunulan ortamın sıcaklığı, nemi, zehirli gaz durumu, ortamda
-canlı olup olmadığı, ortamda yağış olup olmadığı Arduino yardımıyla alınır ve bu
-sensor dataları C# arayüzünde gösterilir. Eğer onay kutusu işaretlenirse
-istenmeyen bir durumda (gaz sızıntısı, eve hırsız girmesi, yağmur için
-kurulabilir.) program uyarı olarak girilen adrese bir adet mail
-gönderir.&lt;a href=&#34;https://drive.google.com/file/d/0B5j__Lyt9ozbVTRIOVFVcVVWX3c/view?usp=sharing&#34;&gt;Projenin Arduino ve C# kaynak kodunu buradan indirebilirsiniz.&lt;/a&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;br&gt;&#xA;Bu yazımda .NET platformunun bir teknolojisi olan WPF kullanarak ev otomasyonu&#xA;kontrol paneli yapmayı anlatacağım. Yaptığım bu projenin başlıca işlevi şudur; 5&#xA;farklı sensörden bulunulan ortamın sıcaklığı, nemi, zehirli gaz durumu, ortamda&#xA;canlı olup olmadığı, ortamda yağış olup olmadığı Arduino yardımıyla alınır ve bu&#xA;sensor dataları C# arayüzünde gösterilir. Eğer onay kutusu işaretlenirse&#xA;istenmeyen bir durumda (gaz sızıntısı, eve hırsız girmesi, yağmur için&#xA;kurulabilir.) program uyarı olarak girilen adrese bir adet mail&#xA;gönderir.&lt;a href=&#34;https://drive.google.com/file/d/0B5j__Lyt9ozbVTRIOVFVcVVWX3c/view?usp=sharing&#34;&gt;Projenin Arduino ve C# kaynak kodunu buradan indirebilirsiniz.&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>[TR] ESP8266 ile Kişisel Meteoroloji İstasyonu</title>
       <link>https://mozanunal.com/2015/09/esp8266-ile-kisisel-meteoroloji/</link>
       <pubDate>Wed, 30 Sep 2015 02:51:00 +0000</pubDate>
       <guid>https://mozanunal.com/2015/09/esp8266-ile-kisisel-meteoroloji/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Bugünkü yazımda ESP8266 Wifi modülünün kullanımına yönelik yaptığım uygulamayı
-anlatacağım. Bu modülü daha önceki
-&lt;a href=&#34;https://mozanunal.com/2015/03/esp8266-modulu-html-server/&#34;&gt;şu yazımda&lt;/a&gt;
-anlatmıştım. Ucuz fiyatına rağmen çok yetenekli bir modül. O yazımda ESP8266
-Access Point olarak kullanılmıştı.Bu yazımdaki uygulamamda, hali hazırda var
-olan wifi ağına da bağlanabilecek. Bu sayede wifi olan yerlerde direk wifi
-üzerinden verilere ulaşılabilinirken, wifi çekmediği yerlerde ESP8266&amp;rsquo;nın kendi
-oluşturduğu Access Point üzerinden ulaşabilecek. Bilgilere istersek web browser
-üzerinden direk IP adresini yazarak, istersek aşağıda linkini verdiğim kendi
-yazdığım android programını kullanarak ulaşabileceğiz.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Bugünkü yazımda ESP8266 Wifi modülünün kullanımına yönelik yaptığım uygulamayı&#xA;anlatacağım. Bu modülü daha önceki&#xA;&lt;a href=&#34;https://mozanunal.com/2015/03/esp8266-modulu-html-server/&#34;&gt;şu yazımda&lt;/a&gt;&#xA;anlatmıştım. Ucuz fiyatına rağmen çok yetenekli bir modül. O yazımda ESP8266&#xA;Access Point olarak kullanılmıştı.Bu yazımdaki uygulamamda, hali hazırda var&#xA;olan wifi ağına da bağlanabilecek. Bu sayede wifi olan yerlerde direk wifi&#xA;üzerinden verilere ulaşılabilinirken, wifi çekmediği yerlerde ESP8266&amp;rsquo;nın kendi&#xA;oluşturduğu Access Point üzerinden ulaşabilecek. Bilgilere istersek web browser&#xA;üzerinden direk IP adresini yazarak, istersek aşağıda linkini verdiğim kendi&#xA;yazdığım android programını kullanarak ulaşabileceğiz.&lt;/p&gt;</description>
     </item>
     <item>
       <title>[TR] ESP8266 Modulü Web Server</title>
       <link>https://mozanunal.com/2015/03/esp8266-modulu-html-server/</link>
       <pubDate>Thu, 12 Mar 2015 00:49:00 +0000</pubDate>
       <guid>https://mozanunal.com/2015/03/esp8266-modulu-html-server/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Merhaba arkadaşlar,&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Bugünkü yazımda ESP8266 modüllerinden bahsetmek istiyorum. Bu modül seri port
-üzerinden haberleşen wifi modülü. Fiyatı yaklaşık 5 $ özelliklerini gördüğünüz
-fiyatından çok daha fazlasını hakkettiğini göreceksiniz. Özelliklerine geçecek
-olursak;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;802.11 b/g/n desteği&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Wi-Fi Direct (P2P) Desteği&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Dahili TCP/IP protokol yığını&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;+19,5dBm çıkış gücü (802.11b modunda)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Kaçak akım &amp;lt; 10uA&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Dahili düşük güç tüketimine sahip 32-bit&amp;rsquo;lik işlemci&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;SDIO 1.1/2.0, SPI ve UART desteği&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;STBC, 1x1 MIMO, 2x1 MIMO&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Uyanma ve veri paketi alma süresi &amp;lt; 2ms&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;strong&gt;Merhaba arkadaşlar,&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Bugünkü yazımda ESP8266 modüllerinden bahsetmek istiyorum. Bu modül seri port&#xA;üzerinden haberleşen wifi modülü. Fiyatı yaklaşık 5 $ özelliklerini gördüğünüz&#xA;fiyatından çok daha fazlasını hakkettiğini göreceksiniz. Özelliklerine geçecek&#xA;olursak;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;802.11 b/g/n desteği&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Wi-Fi Direct (P2P) Desteği&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Dahili TCP/IP protokol yığını&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;+19,5dBm çıkış gücü (802.11b modunda)&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Kaçak akım &amp;lt; 10uA&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Dahili düşük güç tüketimine sahip 32-bit&amp;rsquo;lik işlemci&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;SDIO 1.1/2.0, SPI ve UART desteği&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;STBC, 1x1 MIMO, 2x1 MIMO&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Uyanma ve veri paketi alma süresi &amp;lt; 2ms&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

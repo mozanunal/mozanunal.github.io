@@ -1,17 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Altera on mozanunal.com</title>
     <link>https://mozanunal.com/tags/altera/</link>
     <description>Recent content in Altera on mozanunal.com</description>
-    <image>
-      <title>mozanunal.com</title>
-      <url>https://mozanunal.com/images/papermod-cover.png</url>
-      <link>https://mozanunal.com/images/papermod-cover.png</link>
-    </image>
-    <generator>Hugo -- 0.147.8</generator>
-    <language>en</language>
-    <copyright>mozanunal</copyright>
+    <generator>Hugo</generator>
+    <language>en-US</language>
     <lastBuildDate>Mon, 05 Mar 2018 21:48:22 +0000</lastBuildDate>
     <atom:link href="https://mozanunal.com/tags/altera/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -19,17 +13,7 @@
       <link>https://mozanunal.com/2018/03/altera-cyclone-4-fpga/</link>
       <pubDate>Mon, 05 Mar 2018 21:48:22 +0000</pubDate>
       <guid>https://mozanunal.com/2018/03/altera-cyclone-4-fpga/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt; Son yıllarda hobi elektroniği inanılmaz bir hızla
-gelişti. Şüphesiz bu hızlı gelişmenin mimarı Arduino. Atmelin 8 bitlik
-işlemcilerini temel alarak tasarlanan bu kart ve programala dili sayesinde
-insanlar kolayca projeler geliştirmeye ve hobi uygulamaları yapmaya başladılar.
-Ama Arduinonun ve hatta daha iyi bir mikroişlemcinin de yeterli olmadığı
-projeler var. Böyle bir ihtiyaç doğduğunda seçenekler kendini geliştirmek
-isteyenler için çok sıkıntılı hale geliyor. Önceki yazılarımdan birinde STM32
-öğrenmeye nasıl başlanır ve proje nasıl oluşturulur onu anlatmıştım. Bu sefer
-mikroişlemcinin yanı sıra bir fpga üzerine gitmek istiyorum. Mesela yüksek
-hesaplama gücü ve paralel işlem gerektiren proje yapmak istiyorsunuz ve fgpa
-öğrenmek istiyorsunuz. Nasıl başlayabilirsiniz onu anlatmak istiyorum.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt; Son yıllarda hobi elektroniği inanılmaz bir hızla&#xA;gelişti. Şüphesiz bu hızlı gelişmenin mimarı Arduino. Atmelin 8 bitlik&#xA;işlemcilerini temel alarak tasarlanan bu kart ve programala dili sayesinde&#xA;insanlar kolayca projeler geliştirmeye ve hobi uygulamaları yapmaya başladılar.&#xA;Ama Arduinonun ve hatta daha iyi bir mikroişlemcinin de yeterli olmadığı&#xA;projeler var. Böyle bir ihtiyaç doğduğunda seçenekler kendini geliştirmek&#xA;isteyenler için çok sıkıntılı hale geliyor. Önceki yazılarımdan birinde STM32&#xA;öğrenmeye nasıl başlanır ve proje nasıl oluşturulur onu anlatmıştım. Bu sefer&#xA;mikroişlemcinin yanı sıra bir fpga üzerine gitmek istiyorum. Mesela yüksek&#xA;hesaplama gücü ve paralel işlem gerektiren proje yapmak istiyorsunuz ve fgpa&#xA;öğrenmek istiyorsunuz. Nasıl başlayabilirsiniz onu anlatmak istiyorum.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

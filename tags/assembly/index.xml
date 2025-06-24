@@ -1,17 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Assembly on mozanunal.com</title>
     <link>https://mozanunal.com/tags/assembly/</link>
     <description>Recent content in Assembly on mozanunal.com</description>
-    <image>
-      <title>mozanunal.com</title>
-      <url>https://mozanunal.com/images/papermod-cover.png</url>
-      <link>https://mozanunal.com/images/papermod-cover.png</link>
-    </image>
-    <generator>Hugo -- 0.147.8</generator>
-    <language>en</language>
-    <copyright>mozanunal</copyright>
+    <generator>Hugo</generator>
+    <language>en-US</language>
     <lastBuildDate>Thu, 05 Nov 2015 05:25:00 +0000</lastBuildDate>
     <atom:link href="https://mozanunal.com/tags/assembly/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -19,21 +13,7 @@
       <link>https://mozanunal.com/2015/11/8051-entegresi-ile-assembly/</link>
       <pubDate>Thu, 05 Nov 2015 05:25:00 +0000</pubDate>
       <guid>https://mozanunal.com/2015/11/8051-entegresi-ile-assembly/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;br&gt;
-       Bu yazdımda ilk mikroişlemcilerden biri olan 8051 mikrokontrolcüsü
-üzerinden assembly dili ve mikroişlemci nedir nasıl çalışır bu konulara giriş
-yapmak istiyorum. Başlamadan önce benim de kullanacağım 8051 entegresi
-simülasyon programını önermek istiyorum. Programın ismi EdSim51. İlkönce
-mikroişlemcilerle alakalı temel bir kaç kavramla başlayalım.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;ROM(Read Only Memory):&lt;/strong&gt; Temel olarak, belli bir miktarda bilginin kalıcı
-olarak yazıldığı bellektir**.** Bilgi saklamak için&lt;br&gt;
-&lt;strong&gt;EEPROM:&lt;/strong&gt; ROM&amp;rsquo;un yeniden yazılabilir halidir.&lt;br&gt;
-&lt;strong&gt;RAM(Random Access Memory):&lt;/strong&gt; Bilgi saklamak için elektriğe ihtiyaç duyar. CPU
-veri işlemek için kullandığı bellek tipi RAM&amp;rsquo;dir.&lt;br&gt;
-&lt;strong&gt;Registers:&lt;/strong&gt; CPU registerları verileri geçici olarak saklamak için kullanılır.
-8051 entegresinde bir tane data çeşidi vardır. O da 8 bittir. Eğer 8 bitten
-büyük datalarla işlem yapılmak istenirse data 8 bitlik parçalara ayrılmalıdır.
-8051&amp;rsquo;de en çok kullanılar registerlar aşağıdaki gibidir.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;br&gt;&#xA;       Bu yazdımda ilk mikroişlemcilerden biri olan 8051 mikrokontrolcüsü&#xA;üzerinden assembly dili ve mikroişlemci nedir nasıl çalışır bu konulara giriş&#xA;yapmak istiyorum. Başlamadan önce benim de kullanacağım 8051 entegresi&#xA;simülasyon programını önermek istiyorum. Programın ismi EdSim51. İlkönce&#xA;mikroişlemcilerle alakalı temel bir kaç kavramla başlayalım.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;ROM(Read Only Memory):&lt;/strong&gt; Temel olarak, belli bir miktarda bilginin kalıcı&#xA;olarak yazıldığı bellektir**.** Bilgi saklamak için&lt;br&gt;&#xA;&lt;strong&gt;EEPROM:&lt;/strong&gt; ROM&amp;rsquo;un yeniden yazılabilir halidir.&lt;br&gt;&#xA;&lt;strong&gt;RAM(Random Access Memory):&lt;/strong&gt; Bilgi saklamak için elektriğe ihtiyaç duyar. CPU&#xA;veri işlemek için kullandığı bellek tipi RAM&amp;rsquo;dir.&lt;br&gt;&#xA;&lt;strong&gt;Registers:&lt;/strong&gt; CPU registerları verileri geçici olarak saklamak için kullanılır.&#xA;8051 entegresinde bir tane data çeşidi vardır. O da 8 bittir. Eğer 8 bitten&#xA;büyük datalarla işlem yapılmak istenirse data 8 bitlik parçalara ayrılmalıdır.&#xA;8051&amp;rsquo;de en çok kullanılar registerlar aşağıdaki gibidir.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

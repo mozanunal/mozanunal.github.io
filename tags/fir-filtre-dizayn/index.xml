@@ -1,17 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>FIR Filtre Dizayn on mozanunal.com</title>
     <link>https://mozanunal.com/tags/fir-filtre-dizayn/</link>
     <description>Recent content in FIR Filtre Dizayn on mozanunal.com</description>
-    <image>
-      <title>mozanunal.com</title>
-      <url>https://mozanunal.com/images/papermod-cover.png</url>
-      <link>https://mozanunal.com/images/papermod-cover.png</link>
-    </image>
-    <generator>Hugo -- 0.147.8</generator>
-    <language>en</language>
-    <copyright>mozanunal</copyright>
+    <generator>Hugo</generator>
+    <language>en-US</language>
     <lastBuildDate>Fri, 07 Apr 2017 00:13:00 +0000</lastBuildDate>
     <atom:link href="https://mozanunal.com/tags/fir-filtre-dizayn/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -19,17 +13,7 @@
       <link>https://mozanunal.com/2017/04/simpledsp-fir-filtreleme-ozelligi/</link>
       <pubDate>Fri, 07 Apr 2017 00:13:00 +0000</pubDate>
       <guid>https://mozanunal.com/2017/04/simpledsp-fir-filtreleme-ozelligi/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;br&gt;
-Bildiğiniz gibi gömülü sistemlerde kullanılabilecek basit bir DSP kütüphanesi
-geliştirmeye çalışıyorum son olarak FIR filtreleme özelliğini bu kütüphaneye
-ekledim. FIR filtre ile alçak geçiren, yüksek geçiren, band geçiren veya
-durduran filtreler tasarlayabilirsiniz. FIR filtreler yapısı gereği hep stabil
-filtrelerdir. Bu nedenle bir kararlılık analizi gerektirmeden kullanılabilirler.&lt;/p&gt;
-&lt;p&gt;Ayrıca wiki sayfasını kesinlikle ziyaret etmenizi tavsiye ederim orada Matlab
-veya Octave kullanarak nasıl filtreyi tasarlayacağınız. Filtreyi nasıl
-kullanacağınız ve karakteristiğini nasıl görselleyebileceğinize kadar bir çok
-bilgi bulunmakta.
-&lt;a href=&#34;https://github.com/mozanunal/SimpleDSP/wiki/FIR&#34;&gt;Ziyaret etmek için tıklayın.&lt;/a&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;br&gt;&#xA;Bildiğiniz gibi gömülü sistemlerde kullanılabilecek basit bir DSP kütüphanesi&#xA;geliştirmeye çalışıyorum son olarak FIR filtreleme özelliğini bu kütüphaneye&#xA;ekledim. FIR filtre ile alçak geçiren, yüksek geçiren, band geçiren veya&#xA;durduran filtreler tasarlayabilirsiniz. FIR filtreler yapısı gereği hep stabil&#xA;filtrelerdir. Bu nedenle bir kararlılık analizi gerektirmeden kullanılabilirler.&lt;/p&gt;&#xA;&lt;p&gt;Ayrıca wiki sayfasını kesinlikle ziyaret etmenizi tavsiye ederim orada Matlab&#xA;veya Octave kullanarak nasıl filtreyi tasarlayacağınız. Filtreyi nasıl&#xA;kullanacağınız ve karakteristiğini nasıl görselleyebileceğinize kadar bir çok&#xA;bilgi bulunmakta.&#xA;&lt;a href=&#34;https://github.com/mozanunal/SimpleDSP/wiki/FIR&#34;&gt;Ziyaret etmek için tıklayın.&lt;/a&gt;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
