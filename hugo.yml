@@ -19,32 +19,22 @@ params:
   description: "An example site for the clean and configurable Hugo Classless theme."
 
   themes:
-    - name: "Pico"
-      url: "https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.classless.min.css"
-    - name: "Classless.css"
-      url: "https://cdn.jsdelivr.net/gh/digitallytailored/classless@latest/classless.min.css"
     - name: "Cosmo.css"
       url: "https://cdn.jsdelivr.net/gh/cspablocortez/cosmocss@latest/cosmo.min.css"
-    - name: "Pico-Fluid"
-      url: "https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.fluid.classless.min.css"
+    - name: "Classless.css"
+      url: "https://cdn.jsdelivr.net/gh/digitallytailored/classless@latest/classless.min.css"
+    - name: "Pico"
+      url: "https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.classless.min.css"
     - name: "Water.css"
       url: "https://cdn.jsdelivr.net/npm/water.css@2/out/water.css"
-    - name: "Sakura.css"
-      url: "https://cdn.jsdelivr.net/npm/sakura.css/css/sakura.css"
     - name: "Simple.css"
       url: "https://cdn.simplecss.org/simple.min.css"
-    - name: "Almond.css"
-      url: "https://cdn.jsdelivr.net/gh/alvaromontoro/almond.css@latest/dist/almond.min.css"
     - name: "New.css"
       url: "https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css"
     - name: "Missing.css"
       url: "https://unpkg.com/missing.css"
     - name: "Bolt.css"
       url: "https://unpkg.com/boltcss/bolt.min.css"
-    - name: "PerfectMFWS"
-      url: "https://perfectmotherfuckingwebsite.com/fuckingstyle.css"
-    - name: "HTML only"
-      url: ""
 
   themeSelectorLocation: 'header'
   faviconSVG: "/favicon.svg"
@@ -79,12 +69,10 @@ markup:
     # Set to true to enable KaTeX processing on pages that have `math: true` in their front matter.
     enabled: true
   highlight:
-    noClasses: true
-    # anchorLineNos: true
-    codeFences: true
+    noClasses: false
+    codeFences: false
     guessSyntax: true
-    lineNos: false
-    style: catppuccin-frappe
+    # lineNos: true
 
 minify:
   disableXML: true
