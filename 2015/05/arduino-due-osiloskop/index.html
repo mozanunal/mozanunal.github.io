@@ -1,4 +1,4 @@
-<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=color-scheme content="light dark"><style>pre code,code{-webkit-text-size-adjust:100%;text-size-adjust:100%}</style><link id=theme-style rel=stylesheet href=https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.classless.min.css><title>[TR] Arduino Due Osiloskop | mozanunal.com</title><link rel=icon href=/favicon.svg type=image/svg+xml><link rel="shortcut icon" href=/favicon.ico><link rel=apple-touch-icon href=/apple-touch-icon.png></head><body><header><div class=theme-selector><select id=theme-selector-input><option value=https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.classless.min.css>Pico</option><option value=https://cdn.jsdelivr.net/gh/digitallytailored/classless@latest/classless.min.css>Classless.css</option><option value=https://cdn.jsdelivr.net/gh/cspablocortez/cosmocss@latest/cosmo.min.css>Cosmo.css</option><option value=https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.fluid.classless.min.css>Pico-Fluid</option><option value=https://cdn.jsdelivr.net/npm/water.css@2/out/water.css>Water.css</option><option value=https://cdn.jsdelivr.net/npm/sakura.css/css/sakura.css>Sakura.css</option><option value=https://cdn.simplecss.org/simple.min.css>Simple.css</option><option value=https://cdn.jsdelivr.net/gh/alvaromontoro/almond.css@latest/dist/almond.min.css>Almond.css</option><option value=https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css>New.css</option><option value=https://unpkg.com/missing.css>Missing.css</option><option value=https://unpkg.com/boltcss/bolt.min.css>Bolt.css</option><option value=https://perfectmotherfuckingwebsite.com/fuckingstyle.css>PerfectMFWS</option><option value>HTML only</option></select></div><script>(function(){"use strict";const o=document.getElementById("theme-style"),e=document.getElementById("theme-selector-input"),n="hugo-classless-theme";function s(t){o.href=t,e&&(e.value=t)}const t=localStorage.getItem(n);if(t){const n=Array.from(e.options).some(e=>e.value===t);n&&s(t)}e&&e.addEventListener("change",()=>{const t=e.value;s(t),localStorage.setItem(n,t)})})()</script><div><h3>mozanunal.com</h3><h4><a href=/>Home</a> | <a href=/posts/>Posts</a> | <a href=/projects/>Projects</a> | <a href=/papers/>Papers</a> | <a href=/contact/>Contact</a></h4></div></header><main><article><header><h1>[TR] Arduino Due Osiloskop</h1><p><em><time datetime=2015-05-02>May 2, 2015</time></em></p></header><div><p><strong>Merhaba Arkadaşlar,</strong></p><p>Bugün size Arduino Due ile yaptığım osiloskop bahsedeceğim. Arduino Dueyi
+<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=color-scheme content="light dark"><link id=theme-style rel=stylesheet href=https://cdn.jsdelivr.net/gh/cspablocortez/cosmocss@latest/cosmo.min.css><style>pre code,code{-webkit-text-size-adjust:100%;text-size-adjust:100%}pre code.hljs{all:revert;display:block;font:.9rem/1.9 ui-monospace,SFMono-Regular,Menlo,monospace;overflow-x:auto}</style><title>[TR] Arduino Due Osiloskop | mozanunal.com</title><link rel=icon href=/favicon.svg type=image/svg+xml><link rel="shortcut icon" href=/favicon.ico><link rel=apple-touch-icon href=/apple-touch-icon.png></head><body><header><div class=theme-selector><select id=theme-selector-input><option value=https://cdn.jsdelivr.net/gh/cspablocortez/cosmocss@latest/cosmo.min.css>Cosmo.css</option><option value=https://cdn.jsdelivr.net/gh/digitallytailored/classless@latest/classless.min.css>Classless.css</option><option value=https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.classless.min.css>Pico</option><option value=https://cdn.jsdelivr.net/npm/water.css@2/out/water.css>Water.css</option><option value=https://cdn.simplecss.org/simple.min.css>Simple.css</option><option value=https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css>New.css</option><option value=https://unpkg.com/missing.css>Missing.css</option><option value=https://unpkg.com/boltcss/bolt.min.css>Bolt.css</option></select></div><script>(function(){"use strict";const o=document.getElementById("theme-style"),e=document.getElementById("theme-selector-input"),n="hugo-classless-theme";function s(t){o.href=t,e&&(e.value=t)}const t=localStorage.getItem(n);if(t){const n=Array.from(e.options).some(e=>e.value===t);n&&s(t)}e&&e.addEventListener("change",()=>{const t=e.value;s(t),localStorage.setItem(n,t)})})()</script><div><h3>mozanunal.com</h3><h4><a href=/>Home</a> | <a href=/posts/>Posts</a> | <a href=/projects/>Projects</a> | <a href=/papers/>Papers</a> | <a href=/contact/>Contact</a></h4></div></header><main><article><header><h1>[TR] Arduino Due Osiloskop</h1><p><em><time datetime=2015-05-02>May 2, 2015</time></em></p></header><div><p><strong>Merhaba Arkadaşlar,</strong></p><p>Bugün size Arduino Due ile yaptığım osiloskop bahsedeceğim. Arduino Dueyi
 seçmemin bir kaç nedeni var tabi. Arduino Duede standart Arduinoların 8 bitlik
 Atmega işlemcilerinden farklı olarak 32 bitlik Arm Cortex M3 var. Bu işlemcinin
 84 Mhzlik saat hızı bu proje için elverişli kılıyor.</p><p>Osiloskop projesine başlarken amacım Due ile mümkün olan en yüksek örnekleme
@@ -9,39 +9,39 @@ buldum ve oradaki ayarları Duenin ADCsine uyguladım. Osiloskobun son kodu
 aşağıdaki gibidir. Bu kod sayesinde ADClere direk registerlar.</p><p>üzerinden ulaşıyoruz. Arduinonun fonksiyonunda her analog değer alma işleminde
 ilkönce ADC&rsquo;yi açıyor, okuduktan sonra ise kapatıyor. Bu kodda ise ADCyi FREE
 RUN modunda kullanmış oluyoruz. Bu sayede bir örnekleme ortalama 1 uS sürüyor
-yani 1 Mega Sample Per Second (MSa/s) bir osiloskop yapmış olduk.</p><div class=highlight><pre tabindex=0 style=color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=display:flex><span><span style=color:#81a1c1>unsigned</span> <span style=color:#81a1c1>long</span> start_time<span style=color:#eceff4>;</span>
-</span></span><span style=display:flex><span><span style=color:#81a1c1>unsigned</span> <span style=color:#81a1c1>long</span> stop_time<span style=color:#eceff4>;</span>
-</span></span><span style=display:flex><span><span style=color:#81a1c1>unsigned</span> <span style=color:#81a1c1>long</span> values<span style=color:#eceff4>[</span><span style=color:#b48ead>1000</span><span style=color:#eceff4>];</span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#81a1c1>void</span> <span style=color:#88c0d0>setup</span><span style=color:#eceff4>()</span> <span style=color:#eceff4>{</span>        
-</span></span><span style=display:flex><span>  Serial<span style=color:#eceff4>.</span>begin<span style=color:#eceff4>(</span><span style=color:#b48ead>9600</span><span style=color:#eceff4>);</span>  
-</span></span><span style=display:flex><span>  ADC<span style=color:#81a1c1>-&gt;</span>ADC_MR <span style=color:#81a1c1>|=</span> <span style=color:#b48ead>0x80</span><span style=color:#eceff4>;</span>  <span style=color:#616e87;font-style:italic>//FREE RUN Adc moda geçilir.
-</span></span></span><span style=display:flex><span><span style=color:#616e87;font-style:italic></span>  ADC<span style=color:#81a1c1>-&gt;</span>ADC_CHER <span style=color:#81a1c1>=</span> <span style=color:#b48ead>0x80</span><span style=color:#eceff4>;</span> <span style=color:#616e87;font-style:italic>//A0 pinini enable yap
-</span></span></span><span style=display:flex><span><span style=color:#616e87;font-style:italic></span><span style=color:#eceff4>}</span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#81a1c1>void</span> <span style=color:#88c0d0>loop</span><span style=color:#eceff4>()</span> <span style=color:#eceff4>{</span>
-</span></span><span style=display:flex><span>  <span style=color:#81a1c1>unsigned</span> <span style=color:#81a1c1>int</span> i<span style=color:#eceff4>;</span>
-</span></span><span style=display:flex><span>    
-</span></span><span style=display:flex><span>  start_time <span style=color:#81a1c1>=</span> micros<span style=color:#eceff4>();</span>
-</span></span><span style=display:flex><span>  <span style=color:#81a1c1;font-weight:700>for</span><span style=color:#eceff4>(</span>i<span style=color:#81a1c1>=</span><span style=color:#b48ead>0</span><span style=color:#eceff4>;</span>i<span style=color:#81a1c1>&lt;</span><span style=color:#b48ead>1000</span><span style=color:#eceff4>;</span>i<span style=color:#81a1c1>++</span><span style=color:#eceff4>){</span>
-</span></span><span style=display:flex><span>    <span style=color:#81a1c1;font-weight:700>while</span><span style=color:#eceff4>((</span>ADC<span style=color:#81a1c1>-&gt;</span>ADC_ISR <span style=color:#81a1c1>&amp;</span> <span style=color:#b48ead>0x80</span><span style=color:#eceff4>)</span><span style=color:#81a1c1>==</span><span style=color:#b48ead>0</span><span style=color:#eceff4>);</span> <span style=color:#616e87;font-style:italic>// örnekleme yapılana kadar bekle
-</span></span></span><span style=display:flex><span><span style=color:#616e87;font-style:italic></span>    values<span style=color:#eceff4>[</span>i<span style=color:#eceff4>]</span><span style=color:#81a1c1>=</span>ADC<span style=color:#81a1c1>-&gt;</span>ADC_CDR<span style=color:#eceff4>[</span><span style=color:#b48ead>7</span><span style=color:#eceff4>];</span> <span style=color:#616e87;font-style:italic>//değeri al
-</span></span></span><span style=display:flex><span><span style=color:#616e87;font-style:italic></span>  <span style=color:#eceff4>}</span>
-</span></span><span style=display:flex><span>  stop_time <span style=color:#81a1c1>=</span> micros<span style=color:#eceff4>();</span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>  Serial<span style=color:#eceff4>.</span>print<span style=color:#eceff4>(</span><span style=color:#a3be8c>&#34;Total time: &#34;</span><span style=color:#eceff4>);</span>
-</span></span><span style=display:flex><span>  Serial<span style=color:#eceff4>.</span>println<span style=color:#eceff4>(</span>stop_time<span style=color:#81a1c1>-</span>start_time<span style=color:#eceff4>);</span> 
-</span></span><span style=display:flex><span>  Serial<span style=color:#eceff4>.</span>print<span style=color:#eceff4>(</span><span style=color:#a3be8c>&#34;Average time per conversion: &#34;</span><span style=color:#eceff4>);</span>
-</span></span><span style=display:flex><span>  Serial<span style=color:#eceff4>.</span>println<span style=color:#eceff4>((</span><span style=color:#81a1c1>float</span><span style=color:#eceff4>)(</span>stop_time<span style=color:#81a1c1>-</span>start_time<span style=color:#eceff4>)</span><span style=color:#81a1c1>/</span><span style=color:#b48ead>1000</span><span style=color:#eceff4>);</span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>  Serial<span style=color:#eceff4>.</span>print<span style=color:#eceff4>(</span><span style=color:#a3be8c>&#34;$, &#34;</span><span style=color:#eceff4>);</span>
-</span></span><span style=display:flex><span>  <span style=color:#81a1c1;font-weight:700>for</span><span style=color:#eceff4>(</span>i<span style=color:#81a1c1>=</span><span style=color:#b48ead>0</span><span style=color:#eceff4>;</span>i<span style=color:#81a1c1>&lt;</span><span style=color:#b48ead>1000</span><span style=color:#eceff4>;</span>i<span style=color:#81a1c1>++</span><span style=color:#eceff4>)</span> <span style=color:#eceff4>{</span>
-</span></span><span style=display:flex><span>    Serial<span style=color:#eceff4>.</span>print<span style=color:#eceff4>(</span>values<span style=color:#eceff4>[</span>i<span style=color:#eceff4>]);</span>
-</span></span><span style=display:flex><span>    Serial<span style=color:#eceff4>.</span>print<span style=color:#eceff4>(</span><span style=color:#a3be8c>&#34;,&#34;</span><span style=color:#eceff4>);</span>
-</span></span><span style=display:flex><span>  <span style=color:#eceff4>}</span>
-</span></span><span style=display:flex><span>  Serial<span style=color:#eceff4>.</span>println<span style=color:#eceff4>();</span>
-</span></span><span style=display:flex><span>  delay<span style=color:#eceff4>(</span><span style=color:#b48ead>2000</span><span style=color:#eceff4>);</span>
-</span></span><span style=display:flex><span><span style=color:#eceff4>}</span>
-</span></span></code></pre></div><p>Osiloskop arayüzünü ise C# dilini kullanarak yazdım. Osiloskop için kullunanılan
+yani 1 Mega Sample Per Second (MSa/s) bir osiloskop yapmış olduk.</p><pre><code class=language-cpp>unsigned long start_time;
+unsigned long stop_time;
+unsigned long values[1000];
+
+void setup() {        
+  Serial.begin(9600);  
+  ADC-&gt;ADC_MR |= 0x80;  //FREE RUN Adc moda geçilir.
+  ADC-&gt;ADC_CHER = 0x80; //A0 pinini enable yap
+}
+
+void loop() {
+  unsigned int i;
+    
+  start_time = micros();
+  for(i=0;i&lt;1000;i++){
+    while((ADC-&gt;ADC_ISR &amp; 0x80)==0); // örnekleme yapılana kadar bekle
+    values[i]=ADC-&gt;ADC_CDR[7]; //değeri al
+  }
+  stop_time = micros();
+
+  Serial.print(&quot;Total time: &quot;);
+  Serial.println(stop_time-start_time); 
+  Serial.print(&quot;Average time per conversion: &quot;);
+  Serial.println((float)(stop_time-start_time)/1000);
+
+  Serial.print(&quot;$, &quot;);
+  for(i=0;i&lt;1000;i++) {
+    Serial.print(values[i]);
+    Serial.print(&quot;,&quot;);
+  }
+  Serial.println();
+  delay(2000);
+}
+</code></pre><p>Osiloskop arayüzünü ise C# dilini kullanarak yazdım. Osiloskop için kullunanılan
 <a href=https://www.oscilloscope-lib.com/>bu kütüphaneyi</a> kullandım. Arayüzden
-görüntüler de aşağıdadır.</p><p><strong>Osilopkop denemeleri</strong></p><p><img src=https://1.bp.blogspot.com/-2hqhgXgLpO4/VUPq3PCaeNI/AAAAAAAAKXU/MFt7t_qRvxw/s1600/Ekran%2BAl%C4%B1nt%C4%B1s%C4%B1.PNG alt></p><p><strong>Com port seçiminin yapıldığı pencere</strong></p><p><img src=https://3.bp.blogspot.com/-qjoGyPZkfbo/VUPq3Oa3GDI/AAAAAAAAKXQ/U3Z8rgQdx3E/s1600/Ekran%2BAl%C4%B1nt%C4%B1s%C4%B12.PNG alt></p></div></article></main><footer><p>&copy; 2025 M.Ozan Unal.</p></footer></body><script async src="https://www.googletagmanager.com/gtag/js?id=G-007KSW65JL"></script><script>var dnt,doNotTrack=!1;if(!1&&(dnt=navigator.doNotTrack||window.doNotTrack||navigator.msDoNotTrack,doNotTrack=dnt=="1"||dnt=="yes"),!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-007KSW65JL")}</script></html>
+görüntüler de aşağıdadır.</p><p><strong>Osilopkop denemeleri</strong></p><p><img src=https://1.bp.blogspot.com/-2hqhgXgLpO4/VUPq3PCaeNI/AAAAAAAAKXU/MFt7t_qRvxw/s1600/Ekran%2BAl%C4%B1nt%C4%B1s%C4%B1.PNG alt></p><p><strong>Com port seçiminin yapıldığı pencere</strong></p><p><img src=https://3.bp.blogspot.com/-qjoGyPZkfbo/VUPq3Oa3GDI/AAAAAAAAKXQ/U3Z8rgQdx3E/s1600/Ekran%2BAl%C4%B1nt%C4%B1s%C4%B12.PNG alt></p></div></article></main><footer><p>&copy; 2025 M.Ozan Unal.</p></footer><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/highlight.js@11.9.0/styles/github.min.css media="(prefers-color-scheme: light)"><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/highlight.js@11.9.0/styles/github-dark.min.css media="(prefers-color-scheme: dark)"><script src=https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.11.1/build/highlight.min.js></script><script>hljs.highlightAll()</script></body><script async src="https://www.googletagmanager.com/gtag/js?id=G-007KSW65JL"></script><script>var dnt,doNotTrack=!1;if(!1&&(dnt=navigator.doNotTrack||window.doNotTrack||navigator.msDoNotTrack,doNotTrack=dnt=="1"||dnt=="yes"),!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-007KSW65JL")}</script></html>

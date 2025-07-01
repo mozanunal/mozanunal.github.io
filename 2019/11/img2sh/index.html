@@ -1,32 +1,32 @@
-<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=color-scheme content="light dark"><style>pre code,code{-webkit-text-size-adjust:100%;text-size-adjust:100%}</style><link id=theme-style rel=stylesheet href=https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.classless.min.css><title>Show Images Directly on Terminal: img2sh | mozanunal.com</title><link rel=icon href=/favicon.svg type=image/svg+xml><link rel="shortcut icon" href=/favicon.ico><link rel=apple-touch-icon href=/apple-touch-icon.png></head><body><header><div class=theme-selector><select id=theme-selector-input><option value=https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.classless.min.css>Pico</option><option value=https://cdn.jsdelivr.net/gh/digitallytailored/classless@latest/classless.min.css>Classless.css</option><option value=https://cdn.jsdelivr.net/gh/cspablocortez/cosmocss@latest/cosmo.min.css>Cosmo.css</option><option value=https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.fluid.classless.min.css>Pico-Fluid</option><option value=https://cdn.jsdelivr.net/npm/water.css@2/out/water.css>Water.css</option><option value=https://cdn.jsdelivr.net/npm/sakura.css/css/sakura.css>Sakura.css</option><option value=https://cdn.simplecss.org/simple.min.css>Simple.css</option><option value=https://cdn.jsdelivr.net/gh/alvaromontoro/almond.css@latest/dist/almond.min.css>Almond.css</option><option value=https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css>New.css</option><option value=https://unpkg.com/missing.css>Missing.css</option><option value=https://unpkg.com/boltcss/bolt.min.css>Bolt.css</option><option value=https://perfectmotherfuckingwebsite.com/fuckingstyle.css>PerfectMFWS</option><option value>HTML only</option></select></div><script>(function(){"use strict";const o=document.getElementById("theme-style"),e=document.getElementById("theme-selector-input"),n="hugo-classless-theme";function s(t){o.href=t,e&&(e.value=t)}const t=localStorage.getItem(n);if(t){const n=Array.from(e.options).some(e=>e.value===t);n&&s(t)}e&&e.addEventListener("change",()=>{const t=e.value;s(t),localStorage.setItem(n,t)})})()</script><div><h3>mozanunal.com</h3><h4><a href=/>Home</a> | <a href=/posts/>Posts</a> | <a href=/projects/>Projects</a> | <a href=/papers/>Papers</a> | <a href=/contact/>Contact</a></h4></div></header><main><article><header><h1>Show Images Directly on Terminal: img2sh</h1><p><em><time datetime=2019-11-03>November 3, 2019</time></em></p></header><div><h1 id=img2sh>Img2sh</h1><p>Hello there,</p><p><em>In this post, I want to tell a brief story of how I have created a tool named
+<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=color-scheme content="light dark"><link id=theme-style rel=stylesheet href=https://cdn.jsdelivr.net/gh/cspablocortez/cosmocss@latest/cosmo.min.css><style>pre code,code{-webkit-text-size-adjust:100%;text-size-adjust:100%}pre code.hljs{all:revert;display:block;font:.9rem/1.9 ui-monospace,SFMono-Regular,Menlo,monospace;overflow-x:auto}</style><title>Show Images Directly on Terminal: img2sh | mozanunal.com</title><link rel=icon href=/favicon.svg type=image/svg+xml><link rel="shortcut icon" href=/favicon.ico><link rel=apple-touch-icon href=/apple-touch-icon.png></head><body><header><div class=theme-selector><select id=theme-selector-input><option value=https://cdn.jsdelivr.net/gh/cspablocortez/cosmocss@latest/cosmo.min.css>Cosmo.css</option><option value=https://cdn.jsdelivr.net/gh/digitallytailored/classless@latest/classless.min.css>Classless.css</option><option value=https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.classless.min.css>Pico</option><option value=https://cdn.jsdelivr.net/npm/water.css@2/out/water.css>Water.css</option><option value=https://cdn.simplecss.org/simple.min.css>Simple.css</option><option value=https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css>New.css</option><option value=https://unpkg.com/missing.css>Missing.css</option><option value=https://unpkg.com/boltcss/bolt.min.css>Bolt.css</option></select></div><script>(function(){"use strict";const o=document.getElementById("theme-style"),e=document.getElementById("theme-selector-input"),n="hugo-classless-theme";function s(t){o.href=t,e&&(e.value=t)}const t=localStorage.getItem(n);if(t){const n=Array.from(e.options).some(e=>e.value===t);n&&s(t)}e&&e.addEventListener("change",()=>{const t=e.value;s(t),localStorage.setItem(n,t)})})()</script><div><h3>mozanunal.com</h3><h4><a href=/>Home</a> | <a href=/posts/>Posts</a> | <a href=/projects/>Projects</a> | <a href=/papers/>Papers</a> | <a href=/contact/>Contact</a></h4></div></header><main><article><header><h1>Show Images Directly on Terminal: img2sh</h1><p><em><time datetime=2019-11-03>November 3, 2019</time></em></p></header><div><h1 id=img2sh>Img2sh</h1><p>Hello there,</p><p><em>In this post, I want to tell a brief story of how I have created a tool named
 img2sh. It is also my first python package which is published over PyPI. In this
 very post, I will try to answer questions like: How is it developed? What are
 the challenges? How should a package created and deployed over PyPI? Let&rsquo;s
 continue!</em></p><p>Img2sh is a tool to show images directly on the terminal. For colored images,
 256 xterm color support is required. This script basically resizes the image
 with anti-aliasing and quantized its colors to xterm color pallette.
-<a href=https://github.com/mozanunal/img2sh>Github repository of the project can be reached from here</a></p><h2 id=demo>Demo</h2><p>Testing the package is super easy. Install using pip and run.</p><div class=highlight><pre tabindex=0 style=color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>pip install img2sh --user
-</span></span><span style=display:flex><span>img2sh demo.jpeg
-</span></span></code></pre></div><p>Result:</p><p><img src=https://user-images.githubusercontent.com/13440502/52919655-aa89d400-3315-11e9-8c4a-7a7e057b8fa4.png alt></p><p><strong>Interactive mode</strong></p><div class=highlight><pre tabindex=0 style=color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>img2sh demo.jpeg -w <span style=color:#b48ead>80</span> -i
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>q: quit z: zoom+ x: zoom- c: reset 
-</span></span><span style=display:flex><span>arrow keys <span style=color:#81a1c1;font-weight:700>for</span> navigation 
-</span></span><span style=display:flex><span>cmd: q
-</span></span></code></pre></div><p><img src=https://user-images.githubusercontent.com/13440502/59120360-e34dc780-895d-11e9-8b2a-1d7ea5b25fe4.gif alt></p><p>For detailed usage arguments:</p><div class=highlight><pre tabindex=0 style=color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>$ python img2sh/cli.py --help
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>usage: cli.py <span style=color:#81a1c1>[</span>-h<span style=color:#81a1c1>]</span> <span style=color:#81a1c1>[</span>-w WIDTH<span style=color:#81a1c1>]</span> <span style=color:#81a1c1>[</span>-i<span style=color:#81a1c1>]</span> Image
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>Show images directly on terminal.
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>positional arguments:
-</span></span><span style=display:flex><span>  Image                 the directory of the image which will be opened
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>optional arguments:
-</span></span><span style=display:flex><span>  -h, --help            show this <span style=color:#81a1c1>help</span> message and <span style=color:#81a1c1>exit</span>
-</span></span><span style=display:flex><span>  -w WIDTH, --width WIDTH
-</span></span><span style=display:flex><span>                        image width on the terminal
-</span></span><span style=display:flex><span>  -i, --interactive     open image in interactive mode
-</span></span></code></pre></div><h2 id=story>Story</h2><p>As it can be understood from its name, img2sh is a python app to show images
+<a href=https://github.com/mozanunal/img2sh>Github repository of the project can be reached from here</a></p><h2 id=demo>Demo</h2><p>Testing the package is super easy. Install using pip and run.</p><pre><code class=language-bash>pip install img2sh --user
+img2sh demo.jpeg
+</code></pre><p>Result:</p><p><img src=https://user-images.githubusercontent.com/13440502/52919655-aa89d400-3315-11e9-8c4a-7a7e057b8fa4.png alt></p><p><strong>Interactive mode</strong></p><pre><code class=language-bash>img2sh demo.jpeg -w 80 -i
+
+q: quit z: zoom+ x: zoom- c: reset 
+arrow keys for navigation 
+cmd: q
+</code></pre><p><img src=https://user-images.githubusercontent.com/13440502/59120360-e34dc780-895d-11e9-8b2a-1d7ea5b25fe4.gif alt></p><p>For detailed usage arguments:</p><pre><code class=language-bash>$ python img2sh/cli.py --help
+
+usage: cli.py [-h] [-w WIDTH] [-i] Image
+
+Show images directly on terminal.
+
+positional arguments:
+  Image                 the directory of the image which will be opened
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -w WIDTH, --width WIDTH
+                        image width on the terminal
+  -i, --interactive     open image in interactive mode
+</code></pre><h2 id=story>Story</h2><p>As it can be understood from its name, img2sh is a python app to show images
 directly in the terminal. I think it could be helpful when connected over ssh to
 a server with no desktop environment. The images can be examined quickly on the
 terminal screen. While the tool was developed, the followings are the challenges
@@ -43,24 +43,24 @@ implement this app. I understood clearly how colors are handling in an image
 using the following link. After that, I have found colored python module which
 provides support for colored terminal output from python apps. I implement the
 colors using this library.</p><p><a href=http://jafrog.com/2013/11/23/colors-in-terminal.html>http://jafrog.com/2013/11/23/colors-in-terminal.html</a></p><p><img src=/images/colorcodes.png alt></p><h3 id=parsing-command-line-arguments>Parsing command-line arguments</h3><p>How should the command line arguments be parsed? Actually it is quite easy with
-python. Let&rsquo;s examine the next code block:</p><div class=highlight><pre tabindex=0 style=color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span><span style=color:#81a1c1;font-weight:700>import</span> <span style=color:#8fbcbb>argparse</span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>parser <span style=color:#81a1c1>=</span> argparse<span style=color:#81a1c1>.</span>ArgumentParser<span style=color:#eceff4>(</span>
-</span></span><span style=display:flex><span>    description<span style=color:#81a1c1>=</span><span style=color:#a3be8c>&#39;Show images directly on terminal.&#39;</span><span style=color:#eceff4>)</span>
-</span></span><span style=display:flex><span>parser<span style=color:#81a1c1>.</span>add_argument<span style=color:#eceff4>(</span><span style=color:#a3be8c>&#34;Image&#34;</span><span style=color:#eceff4>,</span> help<span style=color:#81a1c1>=</span><span style=color:#a3be8c>&#34;the directory of the image which will be opened&#34;</span><span style=color:#eceff4>)</span>
-</span></span><span style=display:flex><span>parser<span style=color:#81a1c1>.</span>add_argument<span style=color:#eceff4>(</span>
-</span></span><span style=display:flex><span>    <span style=color:#a3be8c>&#34;-w&#34;</span><span style=color:#eceff4>,</span> <span style=color:#a3be8c>&#34;--width&#34;</span><span style=color:#eceff4>,</span>
-</span></span><span style=display:flex><span>    help<span style=color:#81a1c1>=</span><span style=color:#a3be8c>&#34;image width on the terminal&#34;</span><span style=color:#eceff4>,</span>
-</span></span><span style=display:flex><span>    <span style=color:#81a1c1>type</span><span style=color:#81a1c1>=</span><span style=color:#81a1c1>int</span>
-</span></span><span style=display:flex><span><span style=color:#eceff4>)</span>
-</span></span><span style=display:flex><span>parser<span style=color:#81a1c1>.</span>add_argument<span style=color:#eceff4>(</span>
-</span></span><span style=display:flex><span>    <span style=color:#a3be8c>&#34;-i&#34;</span><span style=color:#eceff4>,</span> <span style=color:#a3be8c>&#34;--interactive&#34;</span><span style=color:#eceff4>,</span>
-</span></span><span style=display:flex><span>    default<span style=color:#81a1c1>=</span><span style=color:#81a1c1;font-weight:700>False</span><span style=color:#eceff4>,</span> action<span style=color:#81a1c1>=</span><span style=color:#a3be8c>&#39;store_true&#39;</span><span style=color:#eceff4>,</span>
-</span></span><span style=display:flex><span>    help<span style=color:#81a1c1>=</span><span style=color:#a3be8c>&#34;open image in interactive mode&#34;</span><span style=color:#eceff4>,</span>
-</span></span><span style=display:flex><span><span style=color:#eceff4>)</span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>args <span style=color:#81a1c1>=</span> parser<span style=color:#81a1c1>.</span>parse_args<span style=color:#eceff4>()</span>
-</span></span></code></pre></div><p>After the initialization, arguments can be used with commands like <code>args.width</code>.
+python. Let&rsquo;s examine the next code block:</p><pre><code class=language-python>import argparse
+
+parser = argparse.ArgumentParser(
+    description='Show images directly on terminal.')
+parser.add_argument(&quot;Image&quot;, help=&quot;the directory of the image which will be opened&quot;)
+parser.add_argument(
+    &quot;-w&quot;, &quot;--width&quot;,
+    help=&quot;image width on the terminal&quot;,
+    type=int
+)
+parser.add_argument(
+    &quot;-i&quot;, &quot;--interactive&quot;,
+    default=False, action='store_true',
+    help=&quot;open image in interactive mode&quot;,
+)
+
+args = parser.parse_args()
+</code></pre><p>After the initialization, arguments can be used with commands like <code>args.width</code>.
 The arguments can be configured as mandatory or optional and the type of
 argument also be specified. This package is a pretty useful and standard package
 that is widely used most of the python projects.</p><h3 id=image-formats>Image formats</h3><p>For further improvement in the project, it should be solved how different image
@@ -76,107 +76,107 @@ the pixel is different. But this problem is easily solved in findNearestColor
 function. In these functions, the dimension of the pixel is handled.</p><p><img src=/images/apple.jpeg alt></p><h3 id=setuppy>Setup.py</h3><p>In this section, I will try to answer the question that how to create a setup.py
 file which supports also entry point and can be executed without python shell.
 Setup.py file is used to define the python package metadata and its installation
-instructions.</p><div class=highlight><pre tabindex=0 style=color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span><span style=color:#81a1c1;font-weight:700>from</span> <span style=color:#8fbcbb>setuptools</span> <span style=color:#81a1c1;font-weight:700>import</span> setup<span style=color:#eceff4>,</span> find_packages
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#81a1c1;font-weight:700>with</span> <span style=color:#81a1c1>open</span><span style=color:#eceff4>(</span><span style=color:#a3be8c>&#39;requirements.txt&#39;</span><span style=color:#eceff4>)</span> <span style=color:#81a1c1;font-weight:700>as</span> f<span style=color:#eceff4>:</span>
-</span></span><span style=display:flex><span>    requirements <span style=color:#81a1c1>=</span> f<span style=color:#81a1c1>.</span>read<span style=color:#eceff4>()</span><span style=color:#81a1c1>.</span>splitlines<span style=color:#eceff4>()</span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>setup<span style=color:#eceff4>(</span>
-</span></span><span style=display:flex><span>    name<span style=color:#81a1c1>=</span><span style=color:#a3be8c>&#39;img2sh&#39;</span><span style=color:#eceff4>,</span>
-</span></span><span style=display:flex><span>    version<span style=color:#81a1c1>=</span><span style=color:#81a1c1>__import__</span><span style=color:#eceff4>(</span><span style=color:#a3be8c>&#39;img2sh&#39;</span><span style=color:#eceff4>)</span><span style=color:#81a1c1>.</span>__version__<span style=color:#eceff4>,</span>
-</span></span><span style=display:flex><span>    install_requires<span style=color:#81a1c1>=</span>requirements<span style=color:#eceff4>,</span>
-</span></span><span style=display:flex><span>    description<span style=color:#81a1c1>=</span><span style=color:#eceff4>(</span>
-</span></span><span style=display:flex><span>        <span style=color:#a3be8c>&#39;Show images directly on terminal using Xterm colors.&#39;</span>
-</span></span><span style=display:flex><span>    <span style=color:#eceff4>),</span>
-</span></span><span style=display:flex><span>    long_description<span style=color:#81a1c1>=</span><span style=color:#81a1c1>open</span><span style=color:#eceff4>(</span><span style=color:#a3be8c>&#39;README.md&#39;</span><span style=color:#eceff4>)</span><span style=color:#81a1c1>.</span>read<span style=color:#eceff4>(),</span>
-</span></span><span style=display:flex><span>    long_description_content_type<span style=color:#81a1c1>=</span><span style=color:#a3be8c>&#39;text/markdown&#39;</span><span style=color:#eceff4>,</span>
-</span></span><span style=display:flex><span>    author<span style=color:#81a1c1>=</span><span style=color:#a3be8c>&#34;Mehmet Ozan Unal&#34;</span><span style=color:#eceff4>,</span>
-</span></span><span style=display:flex><span>    author_email<span style=color:#81a1c1>=</span><span style=color:#a3be8c>&#39;mehmetozanunal@gmail.com&#39;</span><span style=color:#eceff4>,</span>
-</span></span><span style=display:flex><span>    maintainer<span style=color:#81a1c1>=</span><span style=color:#a3be8c>&#34;Mehmet Ozan Unal&#34;</span><span style=color:#eceff4>,</span>
-</span></span><span style=display:flex><span>    maintainer_email<span style=color:#81a1c1>=</span><span style=color:#a3be8c>&#39;mehmetozanunal@gmail.com&#39;</span><span style=color:#eceff4>,</span>
-</span></span><span style=display:flex><span>    license<span style=color:#81a1c1>=</span><span style=color:#a3be8c>&#34;MIT&#34;</span><span style=color:#eceff4>,</span>
-</span></span><span style=display:flex><span>    packages<span style=color:#81a1c1>=</span>find_packages<span style=color:#eceff4>(),</span>
-</span></span><span style=display:flex><span>    platforms<span style=color:#81a1c1>=</span><span style=color:#eceff4>[</span><span style=color:#a3be8c>&#34;all&#34;</span><span style=color:#eceff4>],</span>
-</span></span><span style=display:flex><span>    url<span style=color:#81a1c1>=</span><span style=color:#a3be8c>&#39;https://github.com/mozanunal/img2sh&#39;</span><span style=color:#eceff4>,</span>
-</span></span><span style=display:flex><span>    classifiers<span style=color:#81a1c1>=</span><span style=color:#eceff4>[</span>
-</span></span><span style=display:flex><span>        <span style=color:#a3be8c>&#39;Development Status :: 4 - Beta&#39;</span><span style=color:#eceff4>,</span>
-</span></span><span style=display:flex><span>        <span style=color:#a3be8c>&#39;Operating System :: OS Independent&#39;</span><span style=color:#eceff4>,</span>
-</span></span><span style=display:flex><span>        <span style=color:#a3be8c>&#39;Intended Audience :: Developers&#39;</span><span style=color:#eceff4>,</span>
-</span></span><span style=display:flex><span>        <span style=color:#a3be8c>&#39;License :: OSI Approved :: BSD License&#39;</span><span style=color:#eceff4>,</span>
-</span></span><span style=display:flex><span>        <span style=color:#a3be8c>&#39;Programming Language :: Python&#39;</span><span style=color:#eceff4>,</span>
-</span></span><span style=display:flex><span>        <span style=color:#a3be8c>&#39;Programming Language :: Python :: Implementation&#39;</span><span style=color:#eceff4>,</span>
-</span></span><span style=display:flex><span>        <span style=color:#a3be8c>&#39;Programming Language :: Python :: 2&#39;</span><span style=color:#eceff4>,</span>
-</span></span><span style=display:flex><span>        <span style=color:#a3be8c>&#39;Programming Language :: Python :: 2.7&#39;</span><span style=color:#eceff4>,</span>
-</span></span><span style=display:flex><span>        <span style=color:#a3be8c>&#39;Programming Language :: Python :: 3&#39;</span><span style=color:#eceff4>,</span>
-</span></span><span style=display:flex><span>        <span style=color:#a3be8c>&#39;Programming Language :: Python :: 3.4&#39;</span><span style=color:#eceff4>,</span>
-</span></span><span style=display:flex><span>        <span style=color:#a3be8c>&#39;Programming Language :: Python :: 3.5&#39;</span><span style=color:#eceff4>,</span>
-</span></span><span style=display:flex><span>        <span style=color:#a3be8c>&#39;Programming Language :: Python :: 3.6&#39;</span><span style=color:#eceff4>,</span>
-</span></span><span style=display:flex><span>        <span style=color:#a3be8c>&#39;Programming Language :: Python :: 3.7&#39;</span><span style=color:#eceff4>,</span>
-</span></span><span style=display:flex><span>        <span style=color:#a3be8c>&#39;Topic :: Software Development :: Libraries&#39;</span>
-</span></span><span style=display:flex><span>    <span style=color:#eceff4>],</span>
-</span></span><span style=display:flex><span>    entry_points<span style=color:#81a1c1>=</span><span style=color:#eceff4>{</span>
-</span></span><span style=display:flex><span>        <span style=color:#a3be8c>&#39;console_scripts&#39;</span><span style=color:#eceff4>:</span> <span style=color:#eceff4>[</span><span style=color:#a3be8c>&#39;img2sh=img2sh.cli:main&#39;</span><span style=color:#eceff4>],</span>
-</span></span><span style=display:flex><span>    <span style=color:#eceff4>},</span>
-</span></span><span style=display:flex><span><span style=color:#eceff4>)</span>
-</span></span></code></pre></div><p>The entry points of the module can be specified with specifying entry_points
+instructions.</p><pre><code class=language-python>from setuptools import setup, find_packages
+
+with open('requirements.txt') as f:
+    requirements = f.read().splitlines()
+
+setup(
+    name='img2sh',
+    version=__import__('img2sh').__version__,
+    install_requires=requirements,
+    description=(
+        'Show images directly on terminal using Xterm colors.'
+    ),
+    long_description=open('README.md').read(),
+    long_description_content_type='text/markdown',
+    author=&quot;Mehmet Ozan Unal&quot;,
+    author_email='mehmetozanunal@gmail.com',
+    maintainer=&quot;Mehmet Ozan Unal&quot;,
+    maintainer_email='mehmetozanunal@gmail.com',
+    license=&quot;MIT&quot;,
+    packages=find_packages(),
+    platforms=[&quot;all&quot;],
+    url='https://github.com/mozanunal/img2sh',
+    classifiers=[
+        'Development Status :: 4 - Beta',
+        'Operating System :: OS Independent',
+        'Intended Audience :: Developers',
+        'License :: OSI Approved :: BSD License',
+        'Programming Language :: Python',
+        'Programming Language :: Python :: Implementation',
+        'Programming Language :: Python :: 2',
+        'Programming Language :: Python :: 2.7',
+        'Programming Language :: Python :: 3',
+        'Programming Language :: Python :: 3.4',
+        'Programming Language :: Python :: 3.5',
+        'Programming Language :: Python :: 3.6',
+        'Programming Language :: Python :: 3.7',
+        'Topic :: Software Development :: Libraries'
+    ],
+    entry_points={
+        'console_scripts': ['img2sh=img2sh.cli:main'],
+    },
+)
+</code></pre><p>The entry points of the module can be specified with specifying entry_points
 property of the object. It is defined as console script and first, the name of
 the executable should be written. It should be mapped to the executable python
 function. In my case, it is img2sh:cli:main.</p><p>There are useful tricks in the code block also. For example, you do not have to
 write a whole long description of this file. It can be read from different files
 like <code>README.md</code>. It is the same for your requirements. It still can be read
 from requirements.txt but with one condition. These files should be specified in
-the MANIFEST.in file.</p><p>MANIFEST.in</p><div class=highlight><pre tabindex=0 style=color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>include README.md
-</span></span><span style=display:flex><span>include requirements.txt
-</span></span><span style=display:flex><span>include LICENCE
-</span></span></code></pre></div><p>The following link great resource to create a setup.py file. I learned from
+the MANIFEST.in file.</p><p>MANIFEST.in</p><pre><code class=language-bash>include README.md
+include requirements.txt
+include LICENCE
+</code></pre><p>The following link great resource to create a setup.py file. I learned from
 here. You should check it out.
 <a href=https://python-packaging.readthedocs.io/en/latest/everything.html>https://python-packaging.readthedocs.io/en/latest/everything.html</a></p><h3 id=uploading-python-package>Uploading python package</h3><p>As you may already know, python packages are usually distributed using PyPI
 servers. When we use the pip package manager in default, packages are downloaded
 from this server. In this project, I want that my package can be installed over
 PyPI. So I created a PyPI account and upload my package there.<br>to Uploading the PyPI package actually quite simple. The following commands are
-required to create a package from a module and to upload it to PyPI servers.</p><div class=highlight><pre tabindex=0 style=color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-gdscript3 data-lang=gdscript3><span style=display:flex><span>python setup<span style=color:#81a1c1>.</span>py sdist bdist_wheel
-</span></span><span style=display:flex><span>twine upload <span style=color:#81a1c1>--</span>repository<span style=color:#81a1c1>-</span>url https<span style=color:#eceff4>:</span><span style=color:#81a1c1>//</span>upload<span style=color:#81a1c1>.</span>pypi<span style=color:#81a1c1>.</span>org<span style=color:#81a1c1>/</span>legacy<span style=color:#81a1c1>/</span> dist<span style=color:#81a1c1>/*</span>
-</span></span></code></pre></div><h3 id=optimizing-performance>Optimizing performance</h3><p>How can be the performance of the tool optimized? In the first prototype, the
+required to create a package from a module and to upload it to PyPI servers.</p><pre><code>python setup.py sdist bdist_wheel
+twine upload --repository-url https://upload.pypi.org/legacy/ dist/*
+</code></pre><h3 id=optimizing-performance>Optimizing performance</h3><p>How can be the performance of the tool optimized? In the first prototype, the
 code is written with simple logic. This causes too much processing time because
 of the for loops inside it. The following code part is written to find the
 nearest color inside a palette. The function loops in pallette and tries to find
 the smallest distance. In version 2, I implement it using numpy package. The
 operation executes in vectorial form and its execution time decreased
-exponentially. v1</p><div class=highlight><pre tabindex=0 style=color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span><span style=color:#81a1c1;font-weight:700>def</span> <span style=color:#88c0d0>findNearestColor</span><span style=color:#eceff4>(</span>color<span style=color:#eceff4>,</span> pallette<span style=color:#eceff4>):</span>
-</span></span><span style=display:flex><span>    distances <span style=color:#81a1c1>=</span> <span style=color:#eceff4>[]</span>
-</span></span><span style=display:flex><span>    <span style=color:#81a1c1;font-weight:700>if</span> <span style=color:#81a1c1>len</span><span style=color:#eceff4>(</span>color<span style=color:#eceff4>)</span> <span style=color:#81a1c1>==</span> <span style=color:#b48ead>3</span><span style=color:#eceff4>:</span>
-</span></span><span style=display:flex><span>        <span style=color:#eceff4>(</span>colorr<span style=color:#eceff4>,</span> colorg<span style=color:#eceff4>,</span> colorb<span style=color:#eceff4>)</span> <span style=color:#81a1c1>=</span> color
-</span></span><span style=display:flex><span>    <span style=color:#81a1c1;font-weight:700>elif</span> <span style=color:#81a1c1>len</span><span style=color:#eceff4>(</span>color<span style=color:#eceff4>)</span> <span style=color:#81a1c1>==</span> <span style=color:#b48ead>4</span><span style=color:#eceff4>:</span>
-</span></span><span style=display:flex><span>        <span style=color:#eceff4>(</span>colorr<span style=color:#eceff4>,</span> colorg<span style=color:#eceff4>,</span> colorb<span style=color:#eceff4>,</span> alpha<span style=color:#eceff4>)</span> <span style=color:#81a1c1>=</span> color
-</span></span><span style=display:flex><span>        <span style=color:#81a1c1;font-weight:700>if</span> alpha <span style=color:#81a1c1>==</span> <span style=color:#b48ead>0</span><span style=color:#eceff4>:</span>
-</span></span><span style=display:flex><span>            <span style=color:#81a1c1;font-weight:700>return</span> <span style=color:#81a1c1;font-weight:700>None</span>  <span style=color:#616e87;font-style:italic># pallette.index((255,255,255))</span>
-</span></span><span style=display:flex><span>    <span style=color:#81a1c1;font-weight:700>for</span> c <span style=color:#81a1c1;font-weight:700>in</span> pallette<span style=color:#eceff4>:</span>
-</span></span><span style=display:flex><span>        <span style=color:#eceff4>(</span>cr<span style=color:#eceff4>,</span> cg<span style=color:#eceff4>,</span> cb<span style=color:#eceff4>)</span> <span style=color:#81a1c1>=</span> c
-</span></span><span style=display:flex><span>        distances<span style=color:#81a1c1>.</span>append<span style=color:#eceff4>(</span>
-</span></span><span style=display:flex><span>            <span style=color:#eceff4>(</span>colorr<span style=color:#81a1c1>-</span>cr<span style=color:#eceff4>)</span><span style=color:#81a1c1>**</span><span style=color:#b48ead>2</span> <span style=color:#81a1c1>+</span>
-</span></span><span style=display:flex><span>            <span style=color:#eceff4>(</span>colorg<span style=color:#81a1c1>-</span>cg<span style=color:#eceff4>)</span><span style=color:#81a1c1>**</span><span style=color:#b48ead>2</span> <span style=color:#81a1c1>+</span>
-</span></span><span style=display:flex><span>            <span style=color:#eceff4>(</span>colorb<span style=color:#81a1c1>-</span>cb<span style=color:#eceff4>)</span><span style=color:#81a1c1>**</span><span style=color:#b48ead>2</span>
-</span></span><span style=display:flex><span>        <span style=color:#eceff4>)</span>
-</span></span><span style=display:flex><span>    <span style=color:#81a1c1;font-weight:700>return</span> distances<span style=color:#81a1c1>.</span>index<span style=color:#eceff4>(</span><span style=color:#81a1c1>min</span><span style=color:#eceff4>(</span>distances<span style=color:#eceff4>))</span>
-</span></span></code></pre></div><p>v2</p><div class=highlight><pre tabindex=0 style=color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span><span style=color:#81a1c1;font-weight:700>def</span> <span style=color:#88c0d0>findNearestColor</span><span style=color:#eceff4>(</span>color<span style=color:#eceff4>,</span> pallette<span style=color:#eceff4>):</span>
-</span></span><span style=display:flex><span>    distances <span style=color:#81a1c1>=</span> <span style=color:#eceff4>[]</span>
-</span></span><span style=display:flex><span>    <span style=color:#81a1c1;font-weight:700>if</span> <span style=color:#81a1c1>len</span><span style=color:#eceff4>(</span>color<span style=color:#eceff4>)</span> <span style=color:#81a1c1>==</span> <span style=color:#b48ead>3</span><span style=color:#eceff4>:</span>
-</span></span><span style=display:flex><span>        <span style=color:#eceff4>(</span>colorr<span style=color:#eceff4>,</span> colorg<span style=color:#eceff4>,</span> colorb<span style=color:#eceff4>)</span> <span style=color:#81a1c1>=</span> color
-</span></span><span style=display:flex><span>    <span style=color:#81a1c1;font-weight:700>elif</span> <span style=color:#81a1c1>len</span><span style=color:#eceff4>(</span>color<span style=color:#eceff4>)</span> <span style=color:#81a1c1>==</span> <span style=color:#b48ead>4</span><span style=color:#eceff4>:</span>
-</span></span><span style=display:flex><span>        <span style=color:#eceff4>(</span>colorr<span style=color:#eceff4>,</span> colorg<span style=color:#eceff4>,</span> colorb<span style=color:#eceff4>,</span> alpha<span style=color:#eceff4>)</span> <span style=color:#81a1c1>=</span> color
-</span></span><span style=display:flex><span>        <span style=color:#81a1c1;font-weight:700>if</span> alpha <span style=color:#81a1c1>==</span> <span style=color:#b48ead>0</span><span style=color:#eceff4>:</span>
-</span></span><span style=display:flex><span>            <span style=color:#81a1c1;font-weight:700>return</span> <span style=color:#81a1c1;font-weight:700>None</span>  <span style=color:#616e87;font-style:italic># pallette.index((255,255,255))</span>
-</span></span><span style=display:flex><span>    c <span style=color:#81a1c1>=</span> <span style=color:#eceff4>(</span>colorr<span style=color:#eceff4>,</span> colorg<span style=color:#eceff4>,</span> colorb<span style=color:#eceff4>)</span>
-</span></span><span style=display:flex><span>    diff <span style=color:#81a1c1>=</span> pallette <span style=color:#81a1c1>-</span> c
-</span></span><span style=display:flex><span>    diffSum <span style=color:#81a1c1>=</span> np<span style=color:#81a1c1>.</span>sum<span style=color:#eceff4>(</span> np<span style=color:#81a1c1>.</span>square<span style=color:#eceff4>(</span>diff<span style=color:#eceff4>),</span> axis<span style=color:#81a1c1>=</span><span style=color:#b48ead>1</span><span style=color:#eceff4>)</span>
-</span></span><span style=display:flex><span>    <span style=color:#81a1c1;font-weight:700>return</span> np<span style=color:#81a1c1>.</span>argmin<span style=color:#eceff4>(</span>diffSum<span style=color:#eceff4>)</span>
-</span></span></code></pre></div><div class=highlight><pre tabindex=0 style=color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span><span style=color:#616e87;font-style:italic># for v1</span>
-</span></span><span style=display:flex><span>real 0m2,618s
-</span></span><span style=display:flex><span>user 0m2,519s
-</span></span><span style=display:flex><span>sys 0m0,080s
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#616e87;font-style:italic># for v2</span>
-</span></span><span style=display:flex><span>real 0m1,690s
-</span></span><span style=display:flex><span>user 0m1,892s
-</span></span><span style=display:flex><span>sys 0m0,417s
-</span></span></code></pre></div><p>Thank you for your interest. See you later&mldr;</p><h2 id=acknowledges>Acknowledges</h2><p>This package is developed using:</p><ul><li><a href=https://pillow.readthedocs.io/en/stable/installation.html>Pillow</a></li><li><a href=https://gitlab.com/dslackw/colored>colored</a></li></ul></div></article></main><footer><p>&copy; 2025 M.Ozan Unal.</p></footer></body><script async src="https://www.googletagmanager.com/gtag/js?id=G-007KSW65JL"></script><script>var dnt,doNotTrack=!1;if(!1&&(dnt=navigator.doNotTrack||window.doNotTrack||navigator.msDoNotTrack,doNotTrack=dnt=="1"||dnt=="yes"),!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-007KSW65JL")}</script></html>
+exponentially. v1</p><pre><code class=language-python>def findNearestColor(color, pallette):
+    distances = []
+    if len(color) == 3:
+        (colorr, colorg, colorb) = color
+    elif len(color) == 4:
+        (colorr, colorg, colorb, alpha) = color
+        if alpha == 0:
+            return None  # pallette.index((255,255,255))
+    for c in pallette:
+        (cr, cg, cb) = c
+        distances.append(
+            (colorr-cr)**2 +
+            (colorg-cg)**2 +
+            (colorb-cb)**2
+        )
+    return distances.index(min(distances))
+</code></pre><p>v2</p><pre><code class=language-python>def findNearestColor(color, pallette):
+    distances = []
+    if len(color) == 3:
+        (colorr, colorg, colorb) = color
+    elif len(color) == 4:
+        (colorr, colorg, colorb, alpha) = color
+        if alpha == 0:
+            return None  # pallette.index((255,255,255))
+    c = (colorr, colorg, colorb)
+    diff = pallette - c
+    diffSum = np.sum( np.square(diff), axis=1)
+    return np.argmin(diffSum)
+</code></pre><pre><code class=language-bash># for v1
+real 0m2,618s
+user 0m2,519s
+sys 0m0,080s
+
+# for v2
+real 0m1,690s
+user 0m1,892s
+sys 0m0,417s
+</code></pre><p>Thank you for your interest. See you later&mldr;</p><h2 id=acknowledges>Acknowledges</h2><p>This package is developed using:</p><ul><li><a href=https://pillow.readthedocs.io/en/stable/installation.html>Pillow</a></li><li><a href=https://gitlab.com/dslackw/colored>colored</a></li></ul></div></article></main><footer><p>&copy; 2025 M.Ozan Unal.</p></footer><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/highlight.js@11.9.0/styles/github.min.css media="(prefers-color-scheme: light)"><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/highlight.js@11.9.0/styles/github-dark.min.css media="(prefers-color-scheme: dark)"><script src=https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.11.1/build/highlight.min.js></script><script>hljs.highlightAll()</script></body><script async src="https://www.googletagmanager.com/gtag/js?id=G-007KSW65JL"></script><script>var dnt,doNotTrack=!1;if(!1&&(dnt=navigator.doNotTrack||window.doNotTrack||navigator.msDoNotTrack,doNotTrack=dnt=="1"||dnt=="yes"),!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-007KSW65JL")}</script></html>

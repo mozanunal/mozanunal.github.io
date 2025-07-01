@@ -1,4 +1,4 @@
-<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=color-scheme content="light dark"><style>pre code,code{-webkit-text-size-adjust:100%;text-size-adjust:100%}</style><link id=theme-style rel=stylesheet href=https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.classless.min.css><title>Harmonica Note Converter | mozanunal.com</title><link rel=icon href=/favicon.svg type=image/svg+xml><link rel="shortcut icon" href=/favicon.ico><link rel=apple-touch-icon href=/apple-touch-icon.png></head><body><header><div class=theme-selector><select id=theme-selector-input><option value=https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.classless.min.css>Pico</option><option value=https://cdn.jsdelivr.net/gh/digitallytailored/classless@latest/classless.min.css>Classless.css</option><option value=https://cdn.jsdelivr.net/gh/cspablocortez/cosmocss@latest/cosmo.min.css>Cosmo.css</option><option value=https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.fluid.classless.min.css>Pico-Fluid</option><option value=https://cdn.jsdelivr.net/npm/water.css@2/out/water.css>Water.css</option><option value=https://cdn.jsdelivr.net/npm/sakura.css/css/sakura.css>Sakura.css</option><option value=https://cdn.simplecss.org/simple.min.css>Simple.css</option><option value=https://cdn.jsdelivr.net/gh/alvaromontoro/almond.css@latest/dist/almond.min.css>Almond.css</option><option value=https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css>New.css</option><option value=https://unpkg.com/missing.css>Missing.css</option><option value=https://unpkg.com/boltcss/bolt.min.css>Bolt.css</option><option value=https://perfectmotherfuckingwebsite.com/fuckingstyle.css>PerfectMFWS</option><option value>HTML only</option></select></div><script>(function(){"use strict";const o=document.getElementById("theme-style"),e=document.getElementById("theme-selector-input"),n="hugo-classless-theme";function s(t){o.href=t,e&&(e.value=t)}const t=localStorage.getItem(n);if(t){const n=Array.from(e.options).some(e=>e.value===t);n&&s(t)}e&&e.addEventListener("change",()=>{const t=e.value;s(t),localStorage.setItem(n,t)})})()</script><div><h3>mozanunal.com</h3><h4><a href=/>Home</a> | <a href=/posts/>Posts</a> | <a href=/projects/>Projects</a> | <a href=/papers/>Papers</a> | <a href=/contact/>Contact</a></h4></div></header><main><article><header><h1>Harmonica Note Converter</h1><p><em><time datetime=2020-05-07>May 7, 2020</time></em></p></header><div><p><strong>Harmonica Note Converter</strong> aims to create a python library to convert notes or
+<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=color-scheme content="light dark"><link id=theme-style rel=stylesheet href=https://cdn.jsdelivr.net/gh/cspablocortez/cosmocss@latest/cosmo.min.css><style>pre code,code{-webkit-text-size-adjust:100%;text-size-adjust:100%}pre code.hljs{all:revert;display:block;font:.9rem/1.9 ui-monospace,SFMono-Regular,Menlo,monospace;overflow-x:auto}</style><title>Harmonica Note Converter | mozanunal.com</title><link rel=icon href=/favicon.svg type=image/svg+xml><link rel="shortcut icon" href=/favicon.ico><link rel=apple-touch-icon href=/apple-touch-icon.png></head><body><header><div class=theme-selector><select id=theme-selector-input><option value=https://cdn.jsdelivr.net/gh/cspablocortez/cosmocss@latest/cosmo.min.css>Cosmo.css</option><option value=https://cdn.jsdelivr.net/gh/digitallytailored/classless@latest/classless.min.css>Classless.css</option><option value=https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.classless.min.css>Pico</option><option value=https://cdn.jsdelivr.net/npm/water.css@2/out/water.css>Water.css</option><option value=https://cdn.simplecss.org/simple.min.css>Simple.css</option><option value=https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css>New.css</option><option value=https://unpkg.com/missing.css>Missing.css</option><option value=https://unpkg.com/boltcss/bolt.min.css>Bolt.css</option></select></div><script>(function(){"use strict";const o=document.getElementById("theme-style"),e=document.getElementById("theme-selector-input"),n="hugo-classless-theme";function s(t){o.href=t,e&&(e.value=t)}const t=localStorage.getItem(n);if(t){const n=Array.from(e.options).some(e=>e.value===t);n&&s(t)}e&&e.addEventListener("change",()=>{const t=e.value;s(t),localStorage.setItem(n,t)})})()</script><div><h3>mozanunal.com</h3><h4><a href=/>Home</a> | <a href=/posts/>Posts</a> | <a href=/projects/>Projects</a> | <a href=/papers/>Papers</a> | <a href=/contact/>Contact</a></h4></div></header><main><article><header><h1>Harmonica Note Converter</h1><p><em><time datetime=2020-05-07>May 7, 2020</time></em></p></header><div><p><strong>Harmonica Note Converter</strong> aims to create a python library to convert notes or
 tabs for different kind of harmonicas. It is based on
 <a href=https://github.com/gciruelos/musthe>musthe</a>.</p><p><a href=https://github.com/mozanunal/harmonica-note-converter>https://github.com/mozanunal/harmonica-note-converter</a></p><h2 id=story>Story</h2><p>Some of you know that I am an ameteur harmonica player and I love harmonicas. I
 usually play diatonic harmonicas but last time I have bought a chromatic
@@ -6,139 +6,139 @@ harmonica, which has quite different tone and it is hard to find music notes for
 it.</p><p>I am not the best at playing instruments. However, I am good at coding and music
 theory. That&rsquo;s why I decide to develop a tool to convert music notes for any
 instrument to notes for my harmonicas. I also create an modular structure to
-define new instruments.</p><h2 id=getting-started>Getting Started</h2><h3 id=installing>Installing</h3><p>First, The source code of the project should be cloned to your PC.</p><div class=highlight><pre tabindex=0 style=color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sh data-lang=sh><span style=display:flex><span>git clone https://github.com/mozanunal/harmonica-note-converter
-</span></span></code></pre></div><h3 id=demo>Demo</h3><p>To test this project in your computer, you should run following commands.</p><div class=highlight><pre tabindex=0 style=color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sh data-lang=sh><span style=display:flex><span><span style=color:#81a1c1>cd</span> harmonica-note-converter
-</span></span><span style=display:flex><span>python3 test.py
-</span></span><span style=display:flex><span><span style=color:#616e87;font-style:italic>#python test.py</span>
-</span></span></code></pre></div><p>It is a video to demonstrate the tone shift feature of my code. It is quite easy
+define new instruments.</p><h2 id=getting-started>Getting Started</h2><h3 id=installing>Installing</h3><p>First, The source code of the project should be cloned to your PC.</p><pre><code class=language-sh>git clone https://github.com/mozanunal/harmonica-note-converter
+</code></pre><h3 id=demo>Demo</h3><p>To test this project in your computer, you should run following commands.</p><pre><code class=language-sh>cd harmonica-note-converter
+python3 test.py
+#python test.py
+</code></pre><p>It is a video to demonstrate the tone shift feature of my code. It is quite easy
 to use. I suggest you to have a look in this link and test the script with
 following code. See you!</p><div style=position:relative;padding-bottom:56.25%;height:0;overflow:hidden><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading=eager referrerpolicy=strict-origin-when-cross-origin src="https://www.youtube.com/embed/loASU4cOY7c?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style=position:absolute;top:0;left:0;width:100%;height:100%;border:0 title="YouTube video"></iframe></div><h2 id=use-it-for-your-instruments-and-notes>Use It For Your Instruments and Notes</h2><h3 id=defining-instruments>Defining Instruments</h3><p>Example code of C tone diatonic harmonica. You should add your instrument to
-harmonica folder and add to init file.</p><div class=highlight><pre tabindex=0 style=color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span>diatonic_C <span style=color:#81a1c1>=</span> <span style=color:#eceff4>{</span>
-</span></span><span style=display:flex><span>    <span style=color:#a3be8c>&#34;1&#34;</span><span style=color:#eceff4>:</span> <span style=color:#a3be8c>&#34;C2&#34;</span><span style=color:#eceff4>,</span>
-</span></span><span style=display:flex><span>    <span style=color:#a3be8c>&#34;1*&#34;</span><span style=color:#eceff4>:</span> <span style=color:#a3be8c>&#34;C#2&#34;</span><span style=color:#eceff4>,</span>
-</span></span><span style=display:flex><span>    <span style=color:#a3be8c>&#34;-1&#34;</span><span style=color:#eceff4>:</span> <span style=color:#a3be8c>&#34;D2&#34;</span><span style=color:#eceff4>,</span>
-</span></span><span style=display:flex><span>    <span style=color:#a3be8c>&#34;-1*&#34;</span><span style=color:#eceff4>:</span> <span style=color:#a3be8c>&#34;D#2&#34;</span><span style=color:#eceff4>,</span>
-</span></span><span style=display:flex><span>    <span style=color:#a3be8c>&#34;2&#34;</span><span style=color:#eceff4>:</span> <span style=color:#a3be8c>&#34;E3&#34;</span><span style=color:#eceff4>,</span>
-</span></span><span style=display:flex><span>    <span style=color:#a3be8c>&#34;2*&#34;</span><span style=color:#eceff4>:</span> <span style=color:#a3be8c>&#34;E#3&#34;</span><span style=color:#eceff4>,</span>
-</span></span><span style=display:flex><span>    <span style=color:#a3be8c>&#34;-2&#34;</span><span style=color:#eceff4>:</span> <span style=color:#a3be8c>&#34;G2&#34;</span><span style=color:#eceff4>,</span>
-</span></span><span style=display:flex><span>    <span style=color:#a3be8c>&#34;-2*&#34;</span><span style=color:#eceff4>:</span> <span style=color:#a3be8c>&#34;G#2&#34;</span><span style=color:#eceff4>,</span>
-</span></span><span style=display:flex><span>    <span style=color:#a3be8c>&#34;3&#34;</span><span style=color:#eceff4>:</span> <span style=color:#a3be8c>&#34;G2&#34;</span><span style=color:#eceff4>,</span>
-</span></span><span style=display:flex><span>    <span style=color:#a3be8c>&#34;3*&#34;</span><span style=color:#eceff4>:</span> <span style=color:#a3be8c>&#34;G#2&#34;</span><span style=color:#eceff4>,</span>
-</span></span><span style=display:flex><span>    <span style=color:#a3be8c>&#34;-3&#34;</span><span style=color:#eceff4>:</span> <span style=color:#a3be8c>&#34;B2&#34;</span><span style=color:#eceff4>,</span>
-</span></span><span style=display:flex><span>    <span style=color:#a3be8c>&#34;-3*&#34;</span><span style=color:#eceff4>:</span> <span style=color:#a3be8c>&#34;B#2&#34;</span><span style=color:#eceff4>,</span>
-</span></span><span style=display:flex><span>    <span style=color:#a3be8c>&#34;4&#34;</span><span style=color:#eceff4>:</span> <span style=color:#a3be8c>&#34;C3&#34;</span><span style=color:#eceff4>,</span>
-</span></span><span style=display:flex><span>    <span style=color:#a3be8c>&#34;4*&#34;</span><span style=color:#eceff4>:</span> <span style=color:#a3be8c>&#34;C#3&#34;</span><span style=color:#eceff4>,</span>
-</span></span><span style=display:flex><span>    <span style=color:#a3be8c>&#34;-4&#34;</span><span style=color:#eceff4>:</span> <span style=color:#a3be8c>&#34;D3&#34;</span><span style=color:#eceff4>,</span>
-</span></span><span style=display:flex><span>    <span style=color:#a3be8c>&#34;-4*&#34;</span><span style=color:#eceff4>:</span> <span style=color:#a3be8c>&#34;D#3&#34;</span><span style=color:#eceff4>,</span>
-</span></span><span style=display:flex><span>    <span style=color:#a3be8c>&#34;5&#34;</span><span style=color:#eceff4>:</span> <span style=color:#a3be8c>&#34;E3&#34;</span><span style=color:#eceff4>,</span>
-</span></span><span style=display:flex><span>    <span style=color:#a3be8c>&#34;5*&#34;</span><span style=color:#eceff4>:</span> <span style=color:#a3be8c>&#34;E#3&#34;</span><span style=color:#eceff4>,</span>
-</span></span><span style=display:flex><span>    <span style=color:#a3be8c>&#34;-5&#34;</span><span style=color:#eceff4>:</span> <span style=color:#a3be8c>&#34;F3&#34;</span><span style=color:#eceff4>,</span>
-</span></span><span style=display:flex><span>    <span style=color:#a3be8c>&#34;-5*&#34;</span><span style=color:#eceff4>:</span> <span style=color:#a3be8c>&#34;F#3&#34;</span><span style=color:#eceff4>,</span>
-</span></span><span style=display:flex><span>    <span style=color:#a3be8c>&#34;6&#34;</span><span style=color:#eceff4>:</span> <span style=color:#a3be8c>&#34;G3&#34;</span><span style=color:#eceff4>,</span>
-</span></span><span style=display:flex><span>    <span style=color:#a3be8c>&#34;6*&#34;</span><span style=color:#eceff4>:</span> <span style=color:#a3be8c>&#34;G#3&#34;</span><span style=color:#eceff4>,</span>
-</span></span><span style=display:flex><span>    <span style=color:#a3be8c>&#34;-6&#34;</span><span style=color:#eceff4>:</span> <span style=color:#a3be8c>&#34;A3&#34;</span><span style=color:#eceff4>,</span>
-</span></span><span style=display:flex><span>    <span style=color:#a3be8c>&#34;-6*&#34;</span><span style=color:#eceff4>:</span> <span style=color:#a3be8c>&#34;A#3&#34;</span><span style=color:#eceff4>,</span>
-</span></span><span style=display:flex><span>    <span style=color:#a3be8c>&#34;7&#34;</span><span style=color:#eceff4>:</span> <span style=color:#a3be8c>&#34;C4&#34;</span><span style=color:#eceff4>,</span>
-</span></span><span style=display:flex><span>    <span style=color:#a3be8c>&#34;7*&#34;</span><span style=color:#eceff4>:</span> <span style=color:#a3be8c>&#34;C#4&#34;</span><span style=color:#eceff4>,</span>
-</span></span><span style=display:flex><span>    <span style=color:#a3be8c>&#34;-7&#34;</span><span style=color:#eceff4>:</span> <span style=color:#a3be8c>&#34;B3&#34;</span><span style=color:#eceff4>,</span>
-</span></span><span style=display:flex><span>    <span style=color:#a3be8c>&#34;-7*&#34;</span><span style=color:#eceff4>:</span> <span style=color:#a3be8c>&#34;B#3&#34;</span><span style=color:#eceff4>,</span>
-</span></span><span style=display:flex><span>    <span style=color:#a3be8c>&#34;8&#34;</span><span style=color:#eceff4>:</span> <span style=color:#a3be8c>&#34;E4&#34;</span><span style=color:#eceff4>,</span>
-</span></span><span style=display:flex><span>    <span style=color:#a3be8c>&#34;8*&#34;</span><span style=color:#eceff4>:</span> <span style=color:#a3be8c>&#34;E#4&#34;</span><span style=color:#eceff4>,</span>
-</span></span><span style=display:flex><span>    <span style=color:#a3be8c>&#34;-8&#34;</span><span style=color:#eceff4>:</span> <span style=color:#a3be8c>&#34;D4&#34;</span><span style=color:#eceff4>,</span>
-</span></span><span style=display:flex><span>    <span style=color:#a3be8c>&#34;-8*&#34;</span><span style=color:#eceff4>:</span> <span style=color:#a3be8c>&#34;D#4&#34;</span><span style=color:#eceff4>,</span>
-</span></span><span style=display:flex><span>    <span style=color:#a3be8c>&#34;9&#34;</span><span style=color:#eceff4>:</span> <span style=color:#a3be8c>&#34;G4&#34;</span><span style=color:#eceff4>,</span>
-</span></span><span style=display:flex><span>    <span style=color:#a3be8c>&#34;9*&#34;</span><span style=color:#eceff4>:</span> <span style=color:#a3be8c>&#34;G#4&#34;</span><span style=color:#eceff4>,</span>
-</span></span><span style=display:flex><span>    <span style=color:#a3be8c>&#34;-9&#34;</span><span style=color:#eceff4>:</span> <span style=color:#a3be8c>&#34;F4&#34;</span><span style=color:#eceff4>,</span>
-</span></span><span style=display:flex><span>    <span style=color:#a3be8c>&#34;-9*&#34;</span><span style=color:#eceff4>:</span> <span style=color:#a3be8c>&#34;F#4&#34;</span><span style=color:#eceff4>,</span>
-</span></span><span style=display:flex><span>    <span style=color:#a3be8c>&#34;10&#34;</span><span style=color:#eceff4>:</span> <span style=color:#a3be8c>&#34;A4&#34;</span><span style=color:#eceff4>,</span>
-</span></span><span style=display:flex><span>    <span style=color:#a3be8c>&#34;10*&#34;</span><span style=color:#eceff4>:</span> <span style=color:#a3be8c>&#34;A#4&#34;</span><span style=color:#eceff4>,</span>
-</span></span><span style=display:flex><span>    <span style=color:#a3be8c>&#34;-10&#34;</span><span style=color:#eceff4>:</span> <span style=color:#a3be8c>&#34;C5&#34;</span><span style=color:#eceff4>,</span>
-</span></span><span style=display:flex><span>    <span style=color:#a3be8c>&#34;-10*&#34;</span><span style=color:#eceff4>:</span> <span style=color:#a3be8c>&#34;C#5&#34;</span>
-</span></span><span style=display:flex><span><span style=color:#eceff4>}</span>
-</span></span></code></pre></div><h3 id=converting-tab-between-instruments>Converting Tab Between Instruments</h3><p>Following script is written to convert Game of Thrones theme song tabs for
+harmonica folder and add to init file.</p><pre><code class=language-python>diatonic_C = {
+    &quot;1&quot;: &quot;C2&quot;,
+    &quot;1*&quot;: &quot;C#2&quot;,
+    &quot;-1&quot;: &quot;D2&quot;,
+    &quot;-1*&quot;: &quot;D#2&quot;,
+    &quot;2&quot;: &quot;E3&quot;,
+    &quot;2*&quot;: &quot;E#3&quot;,
+    &quot;-2&quot;: &quot;G2&quot;,
+    &quot;-2*&quot;: &quot;G#2&quot;,
+    &quot;3&quot;: &quot;G2&quot;,
+    &quot;3*&quot;: &quot;G#2&quot;,
+    &quot;-3&quot;: &quot;B2&quot;,
+    &quot;-3*&quot;: &quot;B#2&quot;,
+    &quot;4&quot;: &quot;C3&quot;,
+    &quot;4*&quot;: &quot;C#3&quot;,
+    &quot;-4&quot;: &quot;D3&quot;,
+    &quot;-4*&quot;: &quot;D#3&quot;,
+    &quot;5&quot;: &quot;E3&quot;,
+    &quot;5*&quot;: &quot;E#3&quot;,
+    &quot;-5&quot;: &quot;F3&quot;,
+    &quot;-5*&quot;: &quot;F#3&quot;,
+    &quot;6&quot;: &quot;G3&quot;,
+    &quot;6*&quot;: &quot;G#3&quot;,
+    &quot;-6&quot;: &quot;A3&quot;,
+    &quot;-6*&quot;: &quot;A#3&quot;,
+    &quot;7&quot;: &quot;C4&quot;,
+    &quot;7*&quot;: &quot;C#4&quot;,
+    &quot;-7&quot;: &quot;B3&quot;,
+    &quot;-7*&quot;: &quot;B#3&quot;,
+    &quot;8&quot;: &quot;E4&quot;,
+    &quot;8*&quot;: &quot;E#4&quot;,
+    &quot;-8&quot;: &quot;D4&quot;,
+    &quot;-8*&quot;: &quot;D#4&quot;,
+    &quot;9&quot;: &quot;G4&quot;,
+    &quot;9*&quot;: &quot;G#4&quot;,
+    &quot;-9&quot;: &quot;F4&quot;,
+    &quot;-9*&quot;: &quot;F#4&quot;,
+    &quot;10&quot;: &quot;A4&quot;,
+    &quot;10*&quot;: &quot;A#4&quot;,
+    &quot;-10&quot;: &quot;C5&quot;,
+    &quot;-10*&quot;: &quot;C#5&quot;
+}
+</code></pre><h3 id=converting-tab-between-instruments>Converting Tab Between Instruments</h3><p>Following script is written to convert Game of Thrones theme song tabs for
 diatonic C harmonica to chromatic harmonica tabs. In the first part, the tab
 string is converted to a song object. Then song exported for <code>swan1040</code>
 harmonica. Above this part, you have already learned to implement your
-instrument. Now, you can export these notes as tab for your instrument.</p><div class=highlight><pre tabindex=0 style=color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span><span style=color:#81a1c1;font-weight:700>from</span> <span style=color:#8fbcbb>harmonica</span> <span style=color:#81a1c1;font-weight:700>import</span> swan1040<span style=color:#eceff4>,</span> diatonic_C
-</span></span><span style=display:flex><span><span style=color:#81a1c1;font-weight:700>from</span> <span style=color:#8fbcbb>song</span> <span style=color:#81a1c1;font-weight:700>import</span> Song
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>gotTheme <span style=color:#81a1c1>=</span> Song<span style=color:#eceff4>(</span><span style=color:#a3be8c>&#34;GoT Theme&#34;</span><span style=color:#eceff4>)</span>
-</span></span><span style=display:flex><span>gotTheme<span style=color:#81a1c1>.</span>getFromTabs<span style=color:#eceff4>(</span>
-</span></span><span style=display:flex><span>    diatonic_C<span style=color:#eceff4>,</span>
-</span></span><span style=display:flex><span><span style=color:#a3be8c>&#34;&#34;&#34;
-</span></span></span><span style=display:flex><span><span style=color:#a3be8c>-6  -4  -5  +6  -6  -4  -5  +6  +5
-</span></span></span><span style=display:flex><span><span style=color:#a3be8c>+6  +4  +5  -5  +6  +4  -5  +5  -4
-</span></span></span><span style=display:flex><span><span style=color:#a3be8c>-6  -4  -5  +6  -6  -4  -5  +6  +5
-</span></span></span><span style=display:flex><span><span style=color:#a3be8c>+6  +4  +5  -5  +5  +4  -4
-</span></span></span><span style=display:flex><span><span style=color:#a3be8c>-8  +7  -4  -6  -3* -5  +6  -6
-</span></span></span><span style=display:flex><span><span style=color:#a3be8c>-8 +7 +6 -6 -3* -5 +5 -4
-</span></span></span><span style=display:flex><span><span style=color:#a3be8c>&#34;&#34;&#34;</span><span style=color:#81a1c1>.</span>replace<span style=color:#eceff4>(</span><span style=color:#a3be8c>&#34;</span><span style=color:#ebcb8b>\t</span><span style=color:#a3be8c>&#34;</span><span style=color:#eceff4>,</span><span style=color:#a3be8c>&#34; &#34;</span><span style=color:#eceff4>)</span><span style=color:#81a1c1>.</span>replace<span style=color:#eceff4>(</span><span style=color:#a3be8c>&#34;+&#34;</span><span style=color:#eceff4>,</span><span style=color:#a3be8c>&#34;&#34;</span><span style=color:#eceff4>)</span>
-</span></span><span style=display:flex><span><span style=color:#eceff4>)</span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>gotTheme<span style=color:#81a1c1>.</span>exportTabs<span style=color:#eceff4>(</span>swan1040<span style=color:#eceff4>)</span>
-</span></span></code></pre></div><p>Script output:</p><div class=highlight><pre tabindex=0 style=color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span>GoT Theme
-</span></span><span style=display:flex><span><span style=color:#81a1c1>--------------</span>
-</span></span><span style=display:flex><span><span style=color:#81a1c1>-</span><span style=color:#b48ead>7</span> <span style=color:#81a1c1>-</span><span style=color:#b48ead>5</span> <span style=color:#81a1c1>-</span><span style=color:#b48ead>6</span> <span style=color:#b48ead>7</span> <span style=color:#81a1c1>-</span><span style=color:#b48ead>7</span> <span style=color:#81a1c1>-</span><span style=color:#b48ead>5</span> <span style=color:#81a1c1>-</span><span style=color:#b48ead>6</span> <span style=color:#b48ead>7</span> <span style=color:#b48ead>6</span>
-</span></span><span style=display:flex><span><span style=color:#b48ead>7</span> <span style=color:#b48ead>5</span> <span style=color:#b48ead>6</span> <span style=color:#81a1c1>-</span><span style=color:#b48ead>6</span> <span style=color:#b48ead>7</span> <span style=color:#b48ead>5</span> <span style=color:#81a1c1>-</span><span style=color:#b48ead>6</span> <span style=color:#b48ead>6</span> <span style=color:#81a1c1>-</span><span style=color:#b48ead>5</span>
-</span></span><span style=display:flex><span><span style=color:#81a1c1>-</span><span style=color:#b48ead>7</span> <span style=color:#81a1c1>-</span><span style=color:#b48ead>5</span> <span style=color:#81a1c1>-</span><span style=color:#b48ead>6</span> <span style=color:#b48ead>7</span> <span style=color:#81a1c1>-</span><span style=color:#b48ead>7</span> <span style=color:#81a1c1>-</span><span style=color:#b48ead>5</span> <span style=color:#81a1c1>-</span><span style=color:#b48ead>6</span> <span style=color:#b48ead>7</span> <span style=color:#b48ead>6</span>
-</span></span><span style=display:flex><span><span style=color:#b48ead>7</span> <span style=color:#b48ead>5</span> <span style=color:#b48ead>6</span> <span style=color:#81a1c1>-</span><span style=color:#b48ead>6</span> <span style=color:#b48ead>6</span> <span style=color:#b48ead>5</span> <span style=color:#81a1c1>-</span><span style=color:#b48ead>5</span>
-</span></span><span style=display:flex><span><span style=color:#81a1c1>-</span><span style=color:#b48ead>9</span> <span style=color:#81a1c1>-</span><span style=color:#b48ead>8</span><span style=color:#81a1c1>*</span> <span style=color:#81a1c1>-</span><span style=color:#b48ead>5</span> <span style=color:#81a1c1>-</span><span style=color:#b48ead>7</span> <span style=color:#b48ead>5</span> <span style=color:#81a1c1>-</span><span style=color:#b48ead>6</span> <span style=color:#b48ead>7</span> <span style=color:#81a1c1>-</span><span style=color:#b48ead>7</span>
-</span></span><span style=display:flex><span><span style=color:#81a1c1>-</span><span style=color:#b48ead>9</span> <span style=color:#81a1c1>-</span><span style=color:#b48ead>8</span><span style=color:#81a1c1>*</span> <span style=color:#b48ead>7</span> <span style=color:#81a1c1>-</span><span style=color:#b48ead>7</span> <span style=color:#b48ead>5</span> <span style=color:#81a1c1>-</span><span style=color:#b48ead>6</span> <span style=color:#b48ead>6</span> <span style=color:#81a1c1>-</span><span style=color:#b48ead>5</span>
-</span></span><span style=display:flex><span><span style=color:#81a1c1>--------------</span>
-</span></span></code></pre></div><h2 id=shifting-the-tone>Shifting the Tone</h2><p>The other feature which I implemented is tone shifting. It is possible to shift
+instrument. Now, you can export these notes as tab for your instrument.</p><pre><code class=language-python>from harmonica import swan1040, diatonic_C
+from song import Song
+
+gotTheme = Song(&quot;GoT Theme&quot;)
+gotTheme.getFromTabs(
+    diatonic_C,
+&quot;&quot;&quot;
+-6  -4  -5  +6  -6  -4  -5  +6  +5
++6  +4  +5  -5  +6  +4  -5  +5  -4
+-6  -4  -5  +6  -6  -4  -5  +6  +5
++6  +4  +5  -5  +5  +4  -4
+-8  +7  -4  -6  -3* -5  +6  -6
+-8 +7 +6 -6 -3* -5 +5 -4
+&quot;&quot;&quot;.replace(&quot;\t&quot;,&quot; &quot;).replace(&quot;+&quot;,&quot;&quot;)
+)
+
+gotTheme.exportTabs(swan1040)
+</code></pre><p>Script output:</p><pre><code class=language-python>GoT Theme
+--------------
+-7 -5 -6 7 -7 -5 -6 7 6
+7 5 6 -6 7 5 -6 6 -5
+-7 -5 -6 7 -7 -5 -6 7 6
+7 5 6 -6 6 5 -5
+-9 -8* -5 -7 5 -6 7 -7
+-9 -8* 7 -7 5 -6 6 -5
+--------------
+</code></pre><h2 id=shifting-the-tone>Shifting the Tone</h2><p>The other feature which I implemented is tone shifting. It is possible to shift
 the tone of the song which you give to the system. Probably, it is quite easy
 task for real musicians, but it is always a challenge for me. It is quite easy
 to implememted it with code. In that why, I can easily change the tone of the
-songs which I want to play with my harmonica.</p><p>Test script:</p><div class=highlight><pre tabindex=0 style=color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span><span style=color:#81a1c1;font-weight:700>from</span> <span style=color:#8fbcbb>harmonica</span> <span style=color:#81a1c1;font-weight:700>import</span> swan1040<span style=color:#eceff4>,</span> diatonic_C
-</span></span><span style=display:flex><span><span style=color:#81a1c1;font-weight:700>from</span> <span style=color:#8fbcbb>song</span> <span style=color:#81a1c1;font-weight:700>import</span> Song
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>gotTheme <span style=color:#81a1c1>=</span> Song<span style=color:#eceff4>(</span><span style=color:#a3be8c>&#34;GoT Theme&#34;</span><span style=color:#eceff4>)</span>
-</span></span><span style=display:flex><span>gotTheme<span style=color:#81a1c1>.</span>getFromTabs<span style=color:#eceff4>(</span>
-</span></span><span style=display:flex><span>    diatonic_C<span style=color:#eceff4>,</span>
-</span></span><span style=display:flex><span><span style=color:#a3be8c>&#34;&#34;&#34;
-</span></span></span><span style=display:flex><span><span style=color:#a3be8c>-6  -4  -5  +6  -6  -4  -5  +6  +5
-</span></span></span><span style=display:flex><span><span style=color:#a3be8c>+6  +4  +5  -5  +6  +4  -5  +5  -4
-</span></span></span><span style=display:flex><span><span style=color:#a3be8c>-6  -4  -5  +6  -6  -4  -5  +6  +5
-</span></span></span><span style=display:flex><span><span style=color:#a3be8c>+6  +4  +5  -5  +5  +4  -4
-</span></span></span><span style=display:flex><span><span style=color:#a3be8c>-8  +7  -4  -6  -3* -5  +6  -6
-</span></span></span><span style=display:flex><span><span style=color:#a3be8c>-8 +7 +6 -6 -3* -5 +5 -4
-</span></span></span><span style=display:flex><span><span style=color:#a3be8c>&#34;&#34;&#34;</span><span style=color:#81a1c1>.</span>replace<span style=color:#eceff4>(</span><span style=color:#a3be8c>&#34;</span><span style=color:#ebcb8b>\t</span><span style=color:#a3be8c>&#34;</span><span style=color:#eceff4>,</span><span style=color:#a3be8c>&#34; &#34;</span><span style=color:#eceff4>)</span><span style=color:#81a1c1>.</span>replace<span style=color:#eceff4>(</span><span style=color:#a3be8c>&#34;+&#34;</span><span style=color:#eceff4>,</span><span style=color:#a3be8c>&#34;&#34;</span><span style=color:#eceff4>)</span>
-</span></span><span style=display:flex><span><span style=color:#eceff4>)</span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>gotTheme<span style=color:#81a1c1>.</span>exportTabs<span style=color:#eceff4>(</span>swan1040<span style=color:#eceff4>)</span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>gotTheme<span style=color:#81a1c1>.</span>shift<span style=color:#eceff4>(</span><span style=color:#81a1c1>-</span><span style=color:#b48ead>12</span><span style=color:#eceff4>)</span>
-</span></span><span style=display:flex><span>gotTheme<span style=color:#81a1c1>.</span>exportTabs<span style=color:#eceff4>(</span>swan1040<span style=color:#eceff4>)</span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>gotTheme<span style=color:#81a1c1>.</span>shift<span style=color:#eceff4>(</span><span style=color:#81a1c1>+</span><span style=color:#b48ead>14</span><span style=color:#eceff4>)</span>
-</span></span></code></pre></div><p>Output is like:</p><div class=highlight><pre tabindex=0 style=color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span>GoT Theme
-</span></span><span style=display:flex><span><span style=color:#81a1c1>--------------</span>
-</span></span><span style=display:flex><span><span style=color:#81a1c1>-</span><span style=color:#b48ead>7</span> <span style=color:#81a1c1>-</span><span style=color:#b48ead>5</span> <span style=color:#81a1c1>-</span><span style=color:#b48ead>6</span> <span style=color:#b48ead>7</span> <span style=color:#81a1c1>-</span><span style=color:#b48ead>7</span> <span style=color:#81a1c1>-</span><span style=color:#b48ead>5</span> <span style=color:#81a1c1>-</span><span style=color:#b48ead>6</span> <span style=color:#b48ead>7</span> <span style=color:#b48ead>6</span>
-</span></span><span style=display:flex><span><span style=color:#b48ead>7</span> <span style=color:#b48ead>5</span> <span style=color:#b48ead>6</span> <span style=color:#81a1c1>-</span><span style=color:#b48ead>6</span> <span style=color:#b48ead>7</span> <span style=color:#b48ead>5</span> <span style=color:#81a1c1>-</span><span style=color:#b48ead>6</span> <span style=color:#b48ead>6</span> <span style=color:#81a1c1>-</span><span style=color:#b48ead>5</span>
-</span></span><span style=display:flex><span><span style=color:#81a1c1>-</span><span style=color:#b48ead>7</span> <span style=color:#81a1c1>-</span><span style=color:#b48ead>5</span> <span style=color:#81a1c1>-</span><span style=color:#b48ead>6</span> <span style=color:#b48ead>7</span> <span style=color:#81a1c1>-</span><span style=color:#b48ead>7</span> <span style=color:#81a1c1>-</span><span style=color:#b48ead>5</span> <span style=color:#81a1c1>-</span><span style=color:#b48ead>6</span> <span style=color:#b48ead>7</span> <span style=color:#b48ead>6</span>
-</span></span><span style=display:flex><span><span style=color:#b48ead>7</span> <span style=color:#b48ead>5</span> <span style=color:#b48ead>6</span> <span style=color:#81a1c1>-</span><span style=color:#b48ead>6</span> <span style=color:#b48ead>6</span> <span style=color:#b48ead>5</span> <span style=color:#81a1c1>-</span><span style=color:#b48ead>5</span>
-</span></span><span style=display:flex><span><span style=color:#81a1c1>-</span><span style=color:#b48ead>9</span> <span style=color:#81a1c1>-</span><span style=color:#b48ead>8</span><span style=color:#81a1c1>*</span> <span style=color:#81a1c1>-</span><span style=color:#b48ead>5</span> <span style=color:#81a1c1>-</span><span style=color:#b48ead>7</span> <span style=color:#b48ead>5</span> <span style=color:#81a1c1>-</span><span style=color:#b48ead>6</span> <span style=color:#b48ead>7</span> <span style=color:#81a1c1>-</span><span style=color:#b48ead>7</span>
-</span></span><span style=display:flex><span><span style=color:#81a1c1>-</span><span style=color:#b48ead>9</span> <span style=color:#81a1c1>-</span><span style=color:#b48ead>8</span><span style=color:#81a1c1>*</span> <span style=color:#b48ead>7</span> <span style=color:#81a1c1>-</span><span style=color:#b48ead>7</span> <span style=color:#b48ead>5</span> <span style=color:#81a1c1>-</span><span style=color:#b48ead>6</span> <span style=color:#b48ead>6</span> <span style=color:#81a1c1>-</span><span style=color:#b48ead>5</span>
-</span></span><span style=display:flex><span><span style=color:#81a1c1>--------------</span>
-</span></span><span style=display:flex><span><span style=color:#81a1c1>--------------</span>
-</span></span><span style=display:flex><span>GoT Theme
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#81a1c1>-</span><span style=color:#b48ead>3</span> <span style=color:#81a1c1>-</span><span style=color:#b48ead>1</span> <span style=color:#81a1c1>-</span><span style=color:#b48ead>2</span> <span style=color:#b48ead>3</span> <span style=color:#81a1c1>-</span><span style=color:#b48ead>3</span> <span style=color:#81a1c1>-</span><span style=color:#b48ead>1</span> <span style=color:#81a1c1>-</span><span style=color:#b48ead>2</span> <span style=color:#b48ead>3</span> <span style=color:#b48ead>2</span>
-</span></span><span style=display:flex><span><span style=color:#b48ead>3</span> <span style=color:#b48ead>1</span> <span style=color:#b48ead>2</span> <span style=color:#81a1c1>-</span><span style=color:#b48ead>2</span> <span style=color:#b48ead>3</span> <span style=color:#b48ead>1</span> <span style=color:#81a1c1>-</span><span style=color:#b48ead>2</span> <span style=color:#b48ead>2</span> <span style=color:#81a1c1>-</span><span style=color:#b48ead>1</span>
-</span></span><span style=display:flex><span><span style=color:#81a1c1>-</span><span style=color:#b48ead>3</span> <span style=color:#81a1c1>-</span><span style=color:#b48ead>1</span> <span style=color:#81a1c1>-</span><span style=color:#b48ead>2</span> <span style=color:#b48ead>3</span> <span style=color:#81a1c1>-</span><span style=color:#b48ead>3</span> <span style=color:#81a1c1>-</span><span style=color:#b48ead>1</span> <span style=color:#81a1c1>-</span><span style=color:#b48ead>2</span> <span style=color:#b48ead>3</span> <span style=color:#b48ead>2</span>
-</span></span><span style=display:flex><span><span style=color:#b48ead>3</span> <span style=color:#b48ead>1</span> <span style=color:#b48ead>2</span> <span style=color:#81a1c1>-</span><span style=color:#b48ead>2</span> <span style=color:#b48ead>2</span> <span style=color:#b48ead>1</span> <span style=color:#81a1c1>-</span><span style=color:#b48ead>1</span>
-</span></span><span style=display:flex><span><span style=color:#81a1c1>-</span><span style=color:#b48ead>5</span> <span style=color:#b48ead>5</span> <span style=color:#81a1c1>-</span><span style=color:#b48ead>1</span> <span style=color:#81a1c1>-</span><span style=color:#b48ead>3</span> <span style=color:#b48ead>1</span> <span style=color:#81a1c1>-</span><span style=color:#b48ead>2</span> <span style=color:#b48ead>3</span> <span style=color:#81a1c1>-</span><span style=color:#b48ead>3</span>
-</span></span><span style=display:flex><span><span style=color:#81a1c1>-</span><span style=color:#b48ead>5</span> <span style=color:#b48ead>5</span> <span style=color:#b48ead>3</span> <span style=color:#81a1c1>-</span><span style=color:#b48ead>3</span> <span style=color:#b48ead>1</span> <span style=color:#81a1c1>-</span><span style=color:#b48ead>2</span> <span style=color:#b48ead>2</span> <span style=color:#81a1c1>-</span><span style=color:#b48ead>1</span>
-</span></span><span style=display:flex><span><span style=color:#81a1c1>--------------</span>
-</span></span><span style=display:flex><span><span style=color:#81a1c1>--------------</span>
-</span></span><span style=display:flex><span>GoT Theme
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#81a1c1>-</span><span style=color:#b48ead>8</span> <span style=color:#b48ead>6</span> <span style=color:#b48ead>7</span> <span style=color:#81a1c1>-</span><span style=color:#b48ead>7</span> <span style=color:#81a1c1>-</span><span style=color:#b48ead>8</span> <span style=color:#b48ead>6</span> <span style=color:#b48ead>7</span> <span style=color:#81a1c1>-</span><span style=color:#b48ead>7</span> <span style=color:#81a1c1>-</span><span style=color:#b48ead>6</span><span style=color:#81a1c1>*</span> 
-</span></span><span style=display:flex><span><span style=color:#81a1c1>-</span><span style=color:#b48ead>7</span> <span style=color:#81a1c1>-</span><span style=color:#b48ead>5</span> <span style=color:#81a1c1>-</span><span style=color:#b48ead>6</span><span style=color:#81a1c1>*</span> <span style=color:#b48ead>7</span> <span style=color:#81a1c1>-</span><span style=color:#b48ead>7</span> <span style=color:#81a1c1>-</span><span style=color:#b48ead>5</span> <span style=color:#b48ead>7</span> <span style=color:#81a1c1>-</span><span style=color:#b48ead>6</span><span style=color:#81a1c1>*</span> <span style=color:#b48ead>6</span> 
-</span></span><span style=display:flex><span><span style=color:#81a1c1>-</span><span style=color:#b48ead>8</span> <span style=color:#b48ead>6</span> <span style=color:#b48ead>7</span> <span style=color:#81a1c1>-</span><span style=color:#b48ead>7</span> <span style=color:#81a1c1>-</span><span style=color:#b48ead>8</span> <span style=color:#b48ead>6</span> <span style=color:#b48ead>7</span> <span style=color:#81a1c1>-</span><span style=color:#b48ead>7</span> <span style=color:#81a1c1>-</span><span style=color:#b48ead>6</span><span style=color:#81a1c1>*</span>
-</span></span><span style=display:flex><span><span style=color:#81a1c1>-</span><span style=color:#b48ead>7</span> <span style=color:#81a1c1>-</span><span style=color:#b48ead>5</span> <span style=color:#81a1c1>-</span><span style=color:#b48ead>6</span><span style=color:#81a1c1>*</span> <span style=color:#b48ead>7</span> <span style=color:#81a1c1>-</span><span style=color:#b48ead>6</span><span style=color:#81a1c1>*</span> <span style=color:#81a1c1>-</span><span style=color:#b48ead>5</span> <span style=color:#b48ead>6</span>
-</span></span><span style=display:flex><span><span style=color:#b48ead>9</span> <span style=color:#81a1c1>-</span><span style=color:#b48ead>9</span> <span style=color:#b48ead>6</span> <span style=color:#81a1c1>-</span><span style=color:#b48ead>8</span> <span style=color:#81a1c1>-</span><span style=color:#b48ead>5</span> <span style=color:#b48ead>7</span> <span style=color:#81a1c1>-</span><span style=color:#b48ead>7</span> <span style=color:#81a1c1>-</span><span style=color:#b48ead>8</span>
-</span></span><span style=display:flex><span><span style=color:#b48ead>9</span> <span style=color:#81a1c1>-</span><span style=color:#b48ead>9</span> <span style=color:#81a1c1>-</span><span style=color:#b48ead>7</span> <span style=color:#81a1c1>-</span><span style=color:#b48ead>8</span> <span style=color:#81a1c1>-</span><span style=color:#b48ead>5</span> <span style=color:#b48ead>7</span> <span style=color:#81a1c1>-</span><span style=color:#b48ead>6</span><span style=color:#81a1c1>*</span> <span style=color:#b48ead>6</span> 
-</span></span><span style=display:flex><span><span style=color:#81a1c1>--------------</span>
-</span></span></code></pre></div><h2 id=built-with>Built With</h2><ul><li><a href=https://python.org/>Python</a> Python &lt;3</li><li><a href=https://github.com/gciruelos/musthe>musthe</a> Music Theory Implementation</li></ul></div></article></main><footer><p>&copy; 2025 M.Ozan Unal.</p></footer></body><script async src="https://www.googletagmanager.com/gtag/js?id=G-007KSW65JL"></script><script>var dnt,doNotTrack=!1;if(!1&&(dnt=navigator.doNotTrack||window.doNotTrack||navigator.msDoNotTrack,doNotTrack=dnt=="1"||dnt=="yes"),!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-007KSW65JL")}</script></html>
+songs which I want to play with my harmonica.</p><p>Test script:</p><pre><code class=language-python>from harmonica import swan1040, diatonic_C
+from song import Song
+
+gotTheme = Song(&quot;GoT Theme&quot;)
+gotTheme.getFromTabs(
+    diatonic_C,
+&quot;&quot;&quot;
+-6  -4  -5  +6  -6  -4  -5  +6  +5
++6  +4  +5  -5  +6  +4  -5  +5  -4
+-6  -4  -5  +6  -6  -4  -5  +6  +5
++6  +4  +5  -5  +5  +4  -4
+-8  +7  -4  -6  -3* -5  +6  -6
+-8 +7 +6 -6 -3* -5 +5 -4
+&quot;&quot;&quot;.replace(&quot;\t&quot;,&quot; &quot;).replace(&quot;+&quot;,&quot;&quot;)
+)
+
+gotTheme.exportTabs(swan1040)
+
+
+gotTheme.shift(-12)
+gotTheme.exportTabs(swan1040)
+
+gotTheme.shift(+14)
+</code></pre><p>Output is like:</p><pre><code class=language-python>GoT Theme
+--------------
+-7 -5 -6 7 -7 -5 -6 7 6
+7 5 6 -6 7 5 -6 6 -5
+-7 -5 -6 7 -7 -5 -6 7 6
+7 5 6 -6 6 5 -5
+-9 -8* -5 -7 5 -6 7 -7
+-9 -8* 7 -7 5 -6 6 -5
+--------------
+--------------
+GoT Theme
+
+-3 -1 -2 3 -3 -1 -2 3 2
+3 1 2 -2 3 1 -2 2 -1
+-3 -1 -2 3 -3 -1 -2 3 2
+3 1 2 -2 2 1 -1
+-5 5 -1 -3 1 -2 3 -3
+-5 5 3 -3 1 -2 2 -1
+--------------
+--------------
+GoT Theme
+
+-8 6 7 -7 -8 6 7 -7 -6* 
+-7 -5 -6* 7 -7 -5 7 -6* 6 
+-8 6 7 -7 -8 6 7 -7 -6*
+-7 -5 -6* 7 -6* -5 6
+9 -9 6 -8 -5 7 -7 -8
+9 -9 -7 -8 -5 7 -6* 6 
+--------------
+</code></pre><h2 id=built-with>Built With</h2><ul><li><a href=https://python.org/>Python</a> Python &lt;3</li><li><a href=https://github.com/gciruelos/musthe>musthe</a> Music Theory Implementation</li></ul></div></article></main><footer><p>&copy; 2025 M.Ozan Unal.</p></footer><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/highlight.js@11.9.0/styles/github.min.css media="(prefers-color-scheme: light)"><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/highlight.js@11.9.0/styles/github-dark.min.css media="(prefers-color-scheme: dark)"><script src=https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.11.1/build/highlight.min.js></script><script>hljs.highlightAll()</script></body><script async src="https://www.googletagmanager.com/gtag/js?id=G-007KSW65JL"></script><script>var dnt,doNotTrack=!1;if(!1&&(dnt=navigator.doNotTrack||window.doNotTrack||navigator.msDoNotTrack,doNotTrack=dnt=="1"||dnt=="yes"),!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-007KSW65JL")}</script></html>

@@ -1,4 +1,4 @@
-<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=color-scheme content="light dark"><style>pre code,code{-webkit-text-size-adjust:100%;text-size-adjust:100%}</style><link id=theme-style rel=stylesheet href=https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.classless.min.css><title>PassFace: Face Recognition Using OpenCV | mozanunal.com</title><link rel=icon href=/favicon.svg type=image/svg+xml><link rel="shortcut icon" href=/favicon.ico><link rel=apple-touch-icon href=/apple-touch-icon.png></head><body><header><div class=theme-selector><select id=theme-selector-input><option value=https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.classless.min.css>Pico</option><option value=https://cdn.jsdelivr.net/gh/digitallytailored/classless@latest/classless.min.css>Classless.css</option><option value=https://cdn.jsdelivr.net/gh/cspablocortez/cosmocss@latest/cosmo.min.css>Cosmo.css</option><option value=https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.fluid.classless.min.css>Pico-Fluid</option><option value=https://cdn.jsdelivr.net/npm/water.css@2/out/water.css>Water.css</option><option value=https://cdn.jsdelivr.net/npm/sakura.css/css/sakura.css>Sakura.css</option><option value=https://cdn.simplecss.org/simple.min.css>Simple.css</option><option value=https://cdn.jsdelivr.net/gh/alvaromontoro/almond.css@latest/dist/almond.min.css>Almond.css</option><option value=https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css>New.css</option><option value=https://unpkg.com/missing.css>Missing.css</option><option value=https://unpkg.com/boltcss/bolt.min.css>Bolt.css</option><option value=https://perfectmotherfuckingwebsite.com/fuckingstyle.css>PerfectMFWS</option><option value>HTML only</option></select></div><script>(function(){"use strict";const o=document.getElementById("theme-style"),e=document.getElementById("theme-selector-input"),n="hugo-classless-theme";function s(t){o.href=t,e&&(e.value=t)}const t=localStorage.getItem(n);if(t){const n=Array.from(e.options).some(e=>e.value===t);n&&s(t)}e&&e.addEventListener("change",()=>{const t=e.value;s(t),localStorage.setItem(n,t)})})()</script><div><h3>mozanunal.com</h3><h4><a href=/>Home</a> | <a href=/posts/>Posts</a> | <a href=/projects/>Projects</a> | <a href=/papers/>Papers</a> | <a href=/contact/>Contact</a></h4></div></header><main><article><header><h1>PassFace: Face Recognition Using OpenCV</h1><p><em><time datetime=2016-06-04>June 4, 2016</time></em></p></header><div><p><strong>Hi,</strong><br>PassFace is a face recognizing program develop using EmguCV (OpenCV wrapper). It
+<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=color-scheme content="light dark"><link id=theme-style rel=stylesheet href=https://cdn.jsdelivr.net/gh/cspablocortez/cosmocss@latest/cosmo.min.css><style>pre code,code{-webkit-text-size-adjust:100%;text-size-adjust:100%}pre code.hljs{all:revert;display:block;font:.9rem/1.9 ui-monospace,SFMono-Regular,Menlo,monospace;overflow-x:auto}</style><title>PassFace: Face Recognition Using OpenCV | mozanunal.com</title><link rel=icon href=/favicon.svg type=image/svg+xml><link rel="shortcut icon" href=/favicon.ico><link rel=apple-touch-icon href=/apple-touch-icon.png></head><body><header><div class=theme-selector><select id=theme-selector-input><option value=https://cdn.jsdelivr.net/gh/cspablocortez/cosmocss@latest/cosmo.min.css>Cosmo.css</option><option value=https://cdn.jsdelivr.net/gh/digitallytailored/classless@latest/classless.min.css>Classless.css</option><option value=https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.classless.min.css>Pico</option><option value=https://cdn.jsdelivr.net/npm/water.css@2/out/water.css>Water.css</option><option value=https://cdn.simplecss.org/simple.min.css>Simple.css</option><option value=https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css>New.css</option><option value=https://unpkg.com/missing.css>Missing.css</option><option value=https://unpkg.com/boltcss/bolt.min.css>Bolt.css</option></select></div><script>(function(){"use strict";const o=document.getElementById("theme-style"),e=document.getElementById("theme-selector-input"),n="hugo-classless-theme";function s(t){o.href=t,e&&(e.value=t)}const t=localStorage.getItem(n);if(t){const n=Array.from(e.options).some(e=>e.value===t);n&&s(t)}e&&e.addEventListener("change",()=>{const t=e.value;s(t),localStorage.setItem(n,t)})})()</script><div><h3>mozanunal.com</h3><h4><a href=/>Home</a> | <a href=/posts/>Posts</a> | <a href=/projects/>Projects</a> | <a href=/papers/>Papers</a> | <a href=/contact/>Contact</a></h4></div></header><main><article><header><h1>PassFace: Face Recognition Using OpenCV</h1><p><em><time datetime=2016-06-04>June 4, 2016</time></em></p></header><div><p><strong>Hi,</strong><br>PassFace is a face recognizing program develop using EmguCV (OpenCV wrapper). It
 is possible to use 4 different algorithm and 3 different source(Camera, Video,
 Image) in this program. Most of the tryings have been made using LFW data set
 which have 13000 pictures of 1500 different people.Details of project can be
@@ -42,189 +42,189 @@ learned for face detection, is used.</p><h5 id=morphologic-operations>Morphologi
 recognition. Therefore some morphologic operators is applied to the faces to
 decrease the effect of these problems. In this project equalize histogram
 function of opencv is used to decrease the effect of the ambient
-light.<img src=https://lh6.googleusercontent.com/3PMQmXghZyoi4dGekFhBS-QWqZDYEJpQ2o_yLXJgMEo3goTr6OqtrOSPYjtwgApKjKoAzXhFLE57R3TRDw8SWrXsod9PUCiHJXNndjoZ-Ui3P1xb0atKy0EvobLyy9cfVifzA0yT alt></p><h5 id=surf-feature-extractor>SURF Feature Extractor</h5><p><img src=https://lh5.googleusercontent.com/eRt6xx3RU22fZ22_-TGdan22lp2x7JiNA9De7PuYa2xLVcZIcg4hVJzvrXyzdNbocv4NuBW8QOHYYTr0NNowPys7QOScefuBrgEeoiILasaQm2v0S0P8NPxVYSiPBRoPotTP3h0p alt></p><div class=highlight><pre tabindex=0 style=color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-csharp data-lang=csharp><span style=display:flex><span><span style=color:#81a1c1;font-weight:700>if</span> <span style=color:#eceff4>(</span>comboBoxAlgorithm<span style=color:#eceff4>.</span>Text <span style=color:#eceff4>==</span> <span style=color:#bf616a>“</span>SURF Feature Extractor<span style=color:#bf616a>”</span><span style=color:#eceff4>)</span>
-</span></span><span style=display:flex><span><span style=color:#eceff4>{</span>
-</span></span><span style=display:flex><span><span style=color:#81a1c1>string</span> dataDirectory<span style=color:#eceff4>=</span>Directory<span style=color:#eceff4>.</span>GetCurrentDirectory<span style=color:#eceff4>()+</span><span style=color:#bf616a>”\</span>TrainedFaces<span style=color:#bf616a>”</span><span style=color:#eceff4>;</span>
-</span></span><span style=display:flex><span><span style=color:#81a1c1>string</span><span style=color:#eceff4>[]</span> files <span style=color:#eceff4>=</span> Directory<span style=color:#eceff4>.</span>GetFiles<span style=color:#eceff4>(</span>dataDirectory<span style=color:#eceff4>,</span> <span style=color:#bf616a>“</span><span style=color:#eceff4>*.</span>jpeg<span style=color:#bf616a>”</span><span style=color:#eceff4>,</span> SearchOption<span style=color:#eceff4>.</span>AllDirectories<span style=color:#eceff4>);</span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#81a1c1;font-weight:700>foreach</span> <span style=color:#eceff4>(</span><span style=color:#81a1c1>var</span> file <span style=color:#81a1c1;font-weight:700>in</span> files<span style=color:#eceff4>)</span>
-</span></span><span style=display:flex><span><span style=color:#eceff4>{</span>
-</span></span><span style=display:flex><span>   richTextBox1<span style=color:#eceff4>.</span>Text <span style=color:#eceff4>+=</span> file<span style=color:#eceff4>.</span>ToString<span style=color:#eceff4>();</span>
-</span></span><span style=display:flex><span>   <span style=color:#81a1c1>long</span> recpoints<span style=color:#eceff4>;</span>
-</span></span><span style=display:flex><span>   ImagesampleImage <span style=color:#eceff4>=</span> <span style=color:#81a1c1;font-weight:700>new</span> Image<span style=color:#eceff4>(</span>file<span style=color:#eceff4>);</span>
-</span></span><span style=display:flex><span>   secondImageBox<span style=color:#eceff4>.</span>Image <span style=color:#eceff4>=</span> sampleImage<span style=color:#eceff4>;</span>
-</span></span><span style=display:flex><span>   <span style=color:#81a1c1;font-weight:700>using</span> <span style=color:#eceff4>(</span>Image modelImage <span style=color:#eceff4>=</span> sampleImage<span style=color:#eceff4>.</span>Convert<span style=color:#eceff4>())</span>
-</span></span><span style=display:flex><span>   <span style=color:#81a1c1;font-weight:700>using</span> <span style=color:#eceff4>(</span>Image observedImage <span style=color:#eceff4>=</span> image<span style=color:#eceff4>.</span>Convert<span style=color:#eceff4>())</span>
-</span></span><span style=display:flex><span>   <span style=color:#eceff4>{</span>
-</span></span><span style=display:flex><span>       Image result <span style=color:#eceff4>=</span> SurfRecognizer<span style=color:#eceff4>.</span>Draw<span style=color:#eceff4>(</span>modelImage<span style=color:#eceff4>,</span> observedImage<span style=color:#eceff4>,</span> <span style=color:#81a1c1;font-weight:700>out</span> recpoints<span style=color:#eceff4>);</span>
-</span></span><span style=display:flex><span>       <span style=color:#616e87;font-style:italic>//captureImageBox.Image = observedImage;</span>
-</span></span><span style=display:flex><span>       <span style=color:#81a1c1;font-weight:700>if</span> <span style=color:#eceff4>(</span>recpoints <span style=color:#eceff4>&gt;</span> <span style=color:#b48ead>10</span><span style=color:#eceff4>)</span>
-</span></span><span style=display:flex><span>       <span style=color:#eceff4>{</span>
-</span></span><span style=display:flex><span>           MCvFont f <span style=color:#eceff4>=</span> <span style=color:#81a1c1;font-weight:700>new</span> MCvFont<span style=color:#eceff4>(</span>Emgu<span style=color:#eceff4>.</span>CV<span style=color:#eceff4>.</span>CvEnum<span style=color:#eceff4>.</span>FONT<span style=color:#eceff4>.</span>CV_FONT_HERSHEY_COMPLEX<span style=color:#eceff4>,</span> <span style=color:#b48ead>1.0</span><span style=color:#eceff4>,</span> <span style=color:#b48ead>1.0</span><span style=color:#eceff4>);</span>
-</span></span><span style=display:flex><span>           result<span style=color:#eceff4>.</span>Draw<span style=color:#eceff4>(</span><span style=color:#bf616a>“</span>Person Recognited<span style=color:#eceff4>,</span> Welcome<span style=color:#bf616a>”</span><span style=color:#eceff4>,</span> <span style=color:#81a1c1;font-weight:700>ref</span> f<span style=color:#eceff4>,</span> <span style=color:#81a1c1;font-weight:700>new</span> Point<span style=color:#eceff4>(</span><span style=color:#b48ead>40</span><span style=color:#eceff4>,</span> <span style=color:#b48ead>40</span><span style=color:#eceff4>),</span> <span style=color:#81a1c1;font-weight:700>new</span> Bgr<span style=color:#eceff4>(</span><span style=color:#b48ead>0</span><span style=color:#eceff4>,</span> <span style=color:#b48ead>255</span><span style=color:#eceff4>,</span> <span style=color:#b48ead>0</span><span style=color:#eceff4>));</span>
-</span></span><span style=display:flex><span>           ImageViewer<span style=color:#eceff4>.</span>Show<span style=color:#eceff4>(</span>result<span style=color:#eceff4>,</span> String<span style=color:#eceff4>.</span>Format<span style=color:#eceff4>(</span><span style=color:#bf616a>“</span> <span style=color:#eceff4>{</span><span style=color:#b48ead>0</span><span style=color:#eceff4>}</span> Points Recognited<span style=color:#bf616a>”</span><span style=color:#eceff4>,</span> recpoints<span style=color:#eceff4>));</span>
-</span></span><span style=display:flex><span>       <span style=color:#eceff4>}</span>
-</span></span><span style=display:flex><span>   <span style=color:#eceff4>}</span>
-</span></span><span style=display:flex><span><span style=color:#eceff4>}</span>
-</span></span></code></pre></div><h5 id=eigenfaces>Eigenfaces</h5><div class=highlight><pre tabindex=0 style=color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-csharp data-lang=csharp><span style=display:flex><span><span style=color:#81a1c1;font-weight:700>else</span> <span style=color:#81a1c1;font-weight:700>if</span> <span style=color:#eceff4>(</span>comboBoxAlgorithm<span style=color:#eceff4>.</span>Text <span style=color:#eceff4>==</span> <span style=color:#a3be8c>&#34;EigenFaces&#34;</span><span style=color:#eceff4>)</span>
-</span></span><span style=display:flex><span><span style=color:#eceff4>{</span>
-</span></span><span style=display:flex><span>   <span style=color:#616e87;font-style:italic>//image._EqualizeHist();</span>
-</span></span><span style=display:flex><span>   <span style=color:#81a1c1;font-weight:700>if</span> <span style=color:#eceff4>(</span>eqHisChecked<span style=color:#eceff4>.</span>Checked <span style=color:#eceff4>==</span> <span style=color:#81a1c1;font-weight:700>true</span><span style=color:#eceff4>)</span>
-</span></span><span style=display:flex><span>   <span style=color:#eceff4>{</span>
-</span></span><span style=display:flex><span>       image<span style=color:#eceff4>.</span>_EqualizeHist<span style=color:#eceff4>();</span>
-</span></span><span style=display:flex><span>   <span style=color:#eceff4>}</span>
-</span></span><span style=display:flex><span>   <span style=color:#81a1c1>var</span> result <span style=color:#eceff4>=</span> eigenFaceRecognizer<span style=color:#eceff4>.</span>Predict<span style=color:#eceff4>(</span>image<span style=color:#eceff4>.</span>Convert<span style=color:#eceff4>().</span>Resize<span style=color:#eceff4>(</span><span style=color:#b48ead>100</span><span style=color:#eceff4>,</span> <span style=color:#b48ead>100</span><span style=color:#eceff4>,</span> Emgu<span style=color:#eceff4>.</span>CV<span style=color:#eceff4>.</span>CvEnum<span style=color:#eceff4>.</span>INTER<span style=color:#eceff4>.</span>CV_INTER_CUBIC<span style=color:#eceff4>));</span>
-</span></span><span style=display:flex><span>   <span style=color:#81a1c1;font-weight:700>if</span> <span style=color:#eceff4>(</span>result<span style=color:#eceff4>.</span>Label <span style=color:#eceff4>!=</span> <span style=color:#eceff4>-</span><span style=color:#b48ead>1</span><span style=color:#eceff4>)</span>
-</span></span><span style=display:flex><span>   <span style=color:#eceff4>{</span>
-</span></span><span style=display:flex><span>       image<span style=color:#eceff4>.</span>Draw<span style=color:#eceff4>(</span>eigenlabels<span style=color:#eceff4>[</span>result<span style=color:#eceff4>.</span>Label<span style=color:#eceff4>].</span>ToString<span style=color:#eceff4>(),</span> <span style=color:#81a1c1;font-weight:700>ref</span> font<span style=color:#eceff4>,</span> <span style=color:#81a1c1;font-weight:700>new</span> Point<span style=color:#eceff4>(</span>face<span style=color:#eceff4>.</span>X <span style=color:#eceff4>-</span> <span style=color:#b48ead>2</span><span style=color:#eceff4>,</span> face<span style=color:#eceff4>.</span>Y <span style=color:#eceff4>-</span> <span style=color:#b48ead>2</span><span style=color:#eceff4>),</span> <span style=color:#81a1c1;font-weight:700>new</span> Bgr<span style=color:#eceff4>(</span>Color<span style=color:#eceff4>.</span>LightGreen<span style=color:#eceff4>));</span>
-</span></span><span style=display:flex><span>       label6<span style=color:#eceff4>.</span>Text <span style=color:#eceff4>=</span> result<span style=color:#eceff4>.</span>Distance<span style=color:#eceff4>.</span>ToString<span style=color:#eceff4>();</span>
-</span></span><span style=display:flex><span>   <span style=color:#eceff4>}</span>
-</span></span><span style=display:flex><span><span style=color:#eceff4>}</span>
-</span></span></code></pre></div><h5 id=fisherfaces>Fisherfaces</h5><div class=highlight><pre tabindex=0 style=color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-csharp data-lang=csharp><span style=display:flex><span><span style=color:#81a1c1;font-weight:700>else</span> <span style=color:#81a1c1;font-weight:700>if</span> <span style=color:#eceff4>(</span>comboBoxAlgorithm<span style=color:#eceff4>.</span>Text <span style=color:#eceff4>==</span> <span style=color:#a3be8c>&#34;FisherFaces&#34;</span><span style=color:#eceff4>)</span>
-</span></span><span style=display:flex><span><span style=color:#eceff4>{</span>
-</span></span><span style=display:flex><span>   <span style=color:#81a1c1;font-weight:700>if</span> <span style=color:#eceff4>(</span>eqHisChecked<span style=color:#eceff4>.</span>Checked <span style=color:#eceff4>==</span> <span style=color:#81a1c1;font-weight:700>true</span><span style=color:#eceff4>)</span>
-</span></span><span style=display:flex><span>   <span style=color:#eceff4>{</span>
-</span></span><span style=display:flex><span>       image<span style=color:#eceff4>.</span>_EqualizeHist<span style=color:#eceff4>();</span>
-</span></span><span style=display:flex><span>   <span style=color:#eceff4>}</span>
-</span></span><span style=display:flex><span>   <span style=color:#81a1c1>var</span> result <span style=color:#eceff4>=</span> fisherFaceRecognizer<span style=color:#eceff4>.</span>Predict<span style=color:#eceff4>(</span>image<span style=color:#eceff4>.</span>Convert<span style=color:#eceff4>().</span>Resize<span style=color:#eceff4>(</span><span style=color:#b48ead>100</span><span style=color:#eceff4>,</span> <span style=color:#b48ead>100</span><span style=color:#eceff4>,</span> Emgu<span style=color:#eceff4>.</span>CV<span style=color:#eceff4>.</span>CvEnum<span style=color:#eceff4>.</span>INTER<span style=color:#eceff4>.</span>CV_INTER_CUBIC<span style=color:#eceff4>));</span>
-</span></span><span style=display:flex><span>   <span style=color:#81a1c1;font-weight:700>if</span> <span style=color:#eceff4>(</span>result<span style=color:#eceff4>.</span>Label <span style=color:#eceff4>!=</span> <span style=color:#eceff4>-</span><span style=color:#b48ead>1</span><span style=color:#eceff4>)</span>
-</span></span><span style=display:flex><span>   <span style=color:#eceff4>{</span>
-</span></span><span style=display:flex><span>       image<span style=color:#eceff4>.</span>Draw<span style=color:#eceff4>(</span>fisherlabels<span style=color:#eceff4>[</span>result<span style=color:#eceff4>.</span>Label<span style=color:#eceff4>].</span>ToString<span style=color:#eceff4>(),</span> <span style=color:#81a1c1;font-weight:700>ref</span> font<span style=color:#eceff4>,</span> <span style=color:#81a1c1;font-weight:700>new</span> Point<span style=color:#eceff4>(</span>face<span style=color:#eceff4>.</span>X <span style=color:#eceff4>-</span> <span style=color:#b48ead>2</span><span style=color:#eceff4>,</span> face<span style=color:#eceff4>.</span>Y <span style=color:#eceff4>-</span> <span style=color:#b48ead>2</span><span style=color:#eceff4>),</span> <span style=color:#81a1c1;font-weight:700>new</span> Bgr<span style=color:#eceff4>(</span>Color<span style=color:#eceff4>.</span>LightGreen<span style=color:#eceff4>));</span>
-</span></span><span style=display:flex><span>       label6<span style=color:#eceff4>.</span>Text <span style=color:#eceff4>=</span> result<span style=color:#eceff4>.</span>Distance<span style=color:#eceff4>.</span>ToString<span style=color:#eceff4>();</span>
-</span></span><span style=display:flex><span>   <span style=color:#eceff4>}</span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#eceff4>}</span>
-</span></span></code></pre></div><h5 id=local-binary-patterns-histograms>Local Binary Patterns Histograms</h5><div class=highlight><pre tabindex=0 style=color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-csharp data-lang=csharp><span style=display:flex><span><span style=color:#81a1c1;font-weight:700>else</span> <span style=color:#81a1c1;font-weight:700>if</span> <span style=color:#eceff4>(</span>comboBoxAlgorithm<span style=color:#eceff4>.</span>Text <span style=color:#eceff4>==</span> <span style=color:#a3be8c>&#34;LBPHFaces&#34;</span><span style=color:#eceff4>)</span>
-</span></span><span style=display:flex><span><span style=color:#eceff4>{</span>
-</span></span><span style=display:flex><span>   <span style=color:#81a1c1;font-weight:700>if</span> <span style=color:#eceff4>(</span>eqHisChecked<span style=color:#eceff4>.</span>Checked <span style=color:#eceff4>==</span> <span style=color:#81a1c1;font-weight:700>true</span><span style=color:#eceff4>)</span>
-</span></span><span style=display:flex><span>   <span style=color:#eceff4>{</span>
-</span></span><span style=display:flex><span>       image<span style=color:#eceff4>.</span>_EqualizeHist<span style=color:#eceff4>();</span>
-</span></span><span style=display:flex><span>   <span style=color:#eceff4>}</span>
-</span></span><span style=display:flex><span>   <span style=color:#81a1c1>var</span> result <span style=color:#eceff4>=</span> lbphFaceRecognizer<span style=color:#eceff4>.</span>Predict<span style=color:#eceff4>(</span>image<span style=color:#eceff4>.</span>Convert<span style=color:#eceff4>().</span>Resize<span style=color:#eceff4>(</span><span style=color:#b48ead>100</span><span style=color:#eceff4>,</span> <span style=color:#b48ead>100</span><span style=color:#eceff4>,</span> Emgu<span style=color:#eceff4>.</span>CV<span style=color:#eceff4>.</span>CvEnum<span style=color:#eceff4>.</span>INTER<span style=color:#eceff4>.</span>CV_INTER_CUBIC<span style=color:#eceff4>));</span>
-</span></span><span style=display:flex><span>   <span style=color:#81a1c1;font-weight:700>if</span> <span style=color:#eceff4>(</span>result<span style=color:#eceff4>.</span>Label <span style=color:#eceff4>!=</span> <span style=color:#eceff4>-</span><span style=color:#b48ead>1</span><span style=color:#eceff4>)</span>
-</span></span><span style=display:flex><span>   <span style=color:#eceff4>{</span>
-</span></span><span style=display:flex><span>       image<span style=color:#eceff4>.</span>Draw<span style=color:#eceff4>(</span>lbphlabels<span style=color:#eceff4>[</span>result<span style=color:#eceff4>.</span>Label<span style=color:#eceff4>].</span>ToString<span style=color:#eceff4>(),</span> <span style=color:#81a1c1;font-weight:700>ref</span> font<span style=color:#eceff4>,</span> <span style=color:#81a1c1;font-weight:700>new</span> Point<span style=color:#eceff4>(</span>face<span style=color:#eceff4>.</span>X <span style=color:#eceff4>-</span> <span style=color:#b48ead>2</span><span style=color:#eceff4>,</span> face<span style=color:#eceff4>.</span>Y <span style=color:#eceff4>-</span> <span style=color:#b48ead>2</span><span style=color:#eceff4>),</span> <span style=color:#81a1c1;font-weight:700>new</span> Bgr<span style=color:#eceff4>(</span>Color<span style=color:#eceff4>.</span>LightGreen<span style=color:#eceff4>));</span>
-</span></span><span style=display:flex><span>       label6<span style=color:#eceff4>.</span>Text <span style=color:#eceff4>=</span> result<span style=color:#eceff4>.</span>Distance<span style=color:#eceff4>.</span>ToString<span style=color:#eceff4>();</span>
-</span></span><span style=display:flex><span>   <span style=color:#eceff4>}</span>
-</span></span><span style=display:flex><span><span style=color:#eceff4>}</span>
-</span></span></code></pre></div><h4 id=3-passface-interface>3. PassFace Interface</h4><h5 id=database-creator>Database Creator</h5><p>A database creator is developed to make easier to implement and try different
-algorithm.</p><div class=highlight><pre tabindex=0 style=color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-csharp data-lang=csharp><span style=display:flex><span>Add DataBase Function
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#81a1c1;font-weight:700>private</span> <span style=color:#81a1c1;font-weight:700>void</span> addDatabaseButton_Click<span style=color:#eceff4>(</span><span style=color:#81a1c1>object</span> sender<span style=color:#eceff4>,</span> EventArgs e<span style=color:#eceff4>)</span>
-</span></span><span style=display:flex><span><span style=color:#eceff4>{</span>
-</span></span><span style=display:flex><span>   <span style=color:#616e87;font-style:italic>//Take time for save filename</span>
-</span></span><span style=display:flex><span>   <span style=color:#81a1c1>string</span> fileName <span style=color:#eceff4>=</span> textBox1<span style=color:#eceff4>.</span>Text<span style=color:#eceff4>+</span><span style=color:#a3be8c>&#34;_&#34;</span><span style=color:#eceff4>+</span>DateTime<span style=color:#eceff4>.</span>Now<span style=color:#eceff4>.</span>Day<span style=color:#eceff4>.</span>ToString<span style=color:#eceff4>()</span> <span style=color:#eceff4>+</span> <span style=color:#a3be8c>&#34;-&#34;</span> <span style=color:#eceff4>+</span> DateTime<span style=color:#eceff4>.</span>Now<span style=color:#eceff4>.</span>Month<span style=color:#eceff4>.</span>ToString<span style=color:#eceff4>()</span> <span style=color:#eceff4>+</span> <span style=color:#a3be8c>&#34;-&#34;</span> <span style=color:#eceff4>+</span> DateTime<span style=color:#eceff4>.</span>Now<span style=color:#eceff4>.</span>Year<span style=color:#eceff4>.</span>ToString<span style=color:#eceff4>()</span>
-</span></span><span style=display:flex><span>   <span style=color:#eceff4>+</span> <span style=color:#a3be8c>&#34;-&#34;</span> <span style=color:#eceff4>+</span> DateTime<span style=color:#eceff4>.</span>Now<span style=color:#eceff4>.</span>Hour<span style=color:#eceff4>.</span>ToString<span style=color:#eceff4>()</span> <span style=color:#eceff4>+</span> <span style=color:#a3be8c>&#34;-&#34;</span> <span style=color:#eceff4>+</span> DateTime<span style=color:#eceff4>.</span>Now<span style=color:#eceff4>.</span>Minute<span style=color:#eceff4>.</span>ToString<span style=color:#eceff4>()+</span><span style=color:#a3be8c>&#34;-&#34;</span> <span style=color:#eceff4>+</span> DateTime<span style=color:#eceff4>.</span>Now<span style=color:#eceff4>.</span>Second<span style=color:#eceff4>.</span>ToString<span style=color:#eceff4>()+</span><span style=color:#a3be8c>&#34;.jpeg&#34;</span><span style=color:#eceff4>;</span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>   <span style=color:#616e87;font-style:italic>//First The faces in the Image is detected</span>
-</span></span><span style=display:flex><span>   Image image <span style=color:#eceff4>=</span> _capture<span style=color:#eceff4>.</span>RetrieveBgrFrame<span style=color:#eceff4>().</span>Resize<span style=color:#eceff4>(</span><span style=color:#b48ead>400</span><span style=color:#eceff4>,</span> <span style=color:#b48ead>300</span><span style=color:#eceff4>,</span> Emgu<span style=color:#eceff4>.</span>CV<span style=color:#eceff4>.</span>CvEnum<span style=color:#eceff4>.</span>INTER<span style=color:#eceff4>.</span>CV_INTER_CUBIC<span style=color:#eceff4>);</span>
-</span></span><span style=display:flex><span>   List faces <span style=color:#eceff4>=</span> <span style=color:#81a1c1;font-weight:700>new</span> List<span style=color:#eceff4>();</span>
-</span></span><span style=display:flex><span>   List eyes <span style=color:#eceff4>=</span> <span style=color:#81a1c1;font-weight:700>new</span> List<span style=color:#eceff4>();</span>
-</span></span><span style=display:flex><span>   <span style=color:#81a1c1>long</span> detectionTime<span style=color:#eceff4>;</span>
-</span></span><span style=display:flex><span>   DetectFace<span style=color:#eceff4>.</span>Detect<span style=color:#eceff4>(</span>image<span style=color:#eceff4>,</span> <span style=color:#a3be8c>&#34;haarcascade_frontalface_default.xml&#34;</span><span style=color:#eceff4>,</span> <span style=color:#a3be8c>&#34;haarcascade_eye.xml&#34;</span><span style=color:#eceff4>,</span> faces<span style=color:#eceff4>,</span> eyes<span style=color:#eceff4>,</span> <span style=color:#81a1c1;font-weight:700>out</span> detectionTime<span style=color:#eceff4>);</span>
-</span></span><span style=display:flex><span>   <span style=color:#81a1c1;font-weight:700>foreach</span> <span style=color:#eceff4>(</span>Rectangle face <span style=color:#81a1c1;font-weight:700>in</span> faces<span style=color:#eceff4>)</span>
-</span></span><span style=display:flex><span>   <span style=color:#eceff4>{</span>
-</span></span><span style=display:flex><span>       image<span style=color:#eceff4>.</span>ROI <span style=color:#eceff4>=</span> face<span style=color:#eceff4>;</span>
-</span></span><span style=display:flex><span>   <span style=color:#eceff4>}</span>
-</span></span><span style=display:flex><span>   Directory<span style=color:#eceff4>.</span>CreateDirectory<span style=color:#eceff4>(</span><span style=color:#a3be8c>&#34;TrainedFaces&#34;</span><span style=color:#eceff4>);</span>
-</span></span><span style=display:flex><span>   image<span style=color:#eceff4>.</span>Resize<span style=color:#eceff4>(</span><span style=color:#b48ead>100</span><span style=color:#eceff4>,</span> <span style=color:#b48ead>100</span><span style=color:#eceff4>,</span> Emgu<span style=color:#eceff4>.</span>CV<span style=color:#eceff4>.</span>CvEnum<span style=color:#eceff4>.</span>INTER<span style=color:#eceff4>.</span>CV_INTER_CUBIC<span style=color:#eceff4>).</span>ToBitmap<span style=color:#eceff4>().</span>Save<span style=color:#eceff4>(</span><span style=color:#a3be8c>&#34;TrainedFaces\\&#34;</span> <span style=color:#eceff4>+</span> fileName<span style=color:#eceff4>);</span>
-</span></span><span style=display:flex><span><span style=color:#eceff4>}</span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#81a1c1;font-weight:700>private</span> <span style=color:#81a1c1;font-weight:700>void</span> comboBoxAlgorithm_SelectedIndexChanged<span style=color:#eceff4>(</span><span style=color:#81a1c1>object</span> sender<span style=color:#eceff4>,</span> EventArgs e<span style=color:#eceff4>)</span>
-</span></span><span style=display:flex><span><span style=color:#eceff4>{</span>
-</span></span><span style=display:flex><span>   <span style=color:#81a1c1;font-weight:700>if</span> <span style=color:#eceff4>(</span>comboBoxAlgorithm<span style=color:#eceff4>.</span>Text <span style=color:#eceff4>==</span> <span style=color:#a3be8c>&#34;EigenFaces&#34;</span><span style=color:#eceff4>)</span>
-</span></span><span style=display:flex><span>   <span style=color:#eceff4>{</span>
-</span></span><span style=display:flex><span>       <span style=color:#81a1c1;font-weight:700>try</span>
-</span></span><span style=display:flex><span>       <span style=color:#eceff4>{</span>
-</span></span><span style=display:flex><span>         <span style=color:#81a1c1>string</span> dataDirectory <span style=color:#eceff4>=</span> Directory<span style=color:#eceff4>.</span>GetCurrentDirectory<span style=color:#eceff4>()</span> <span style=color:#eceff4>+</span> <span style=color:#a3be8c>&#34;\\TrainedFaces&#34;</span><span style=color:#eceff4>;</span>
-</span></span><span style=display:flex><span>         <span style=color:#81a1c1>string</span><span style=color:#eceff4>[]</span> files <span style=color:#eceff4>=</span> Directory<span style=color:#eceff4>.</span>GetFiles<span style=color:#eceff4>(</span>dataDirectory<span style=color:#eceff4>,</span> <span style=color:#a3be8c>&#34;*.jpeg&#34;</span><span style=color:#eceff4>,</span> SearchOption<span style=color:#eceff4>.</span>AllDirectories<span style=color:#eceff4>);</span>
-</span></span><span style=display:flex><span>         eigenTrainedImageCounter <span style=color:#eceff4>=</span> <span style=color:#b48ead>0</span><span style=color:#eceff4>;</span>
-</span></span><span style=display:flex><span>         <span style=color:#81a1c1;font-weight:700>foreach</span> <span style=color:#eceff4>(</span><span style=color:#81a1c1>var</span> file <span style=color:#81a1c1;font-weight:700>in</span> files<span style=color:#eceff4>)</span>
-</span></span><span style=display:flex><span>         <span style=color:#eceff4>{</span>
-</span></span><span style=display:flex><span>               Image TrainedImage<span style=color:#eceff4>=</span><span style=color:#81a1c1;font-weight:700>new</span> Image<span style=color:#eceff4>(</span>file<span style=color:#eceff4>);</span>
-</span></span><span style=display:flex><span>               <span style=color:#81a1c1;font-weight:700>if</span> <span style=color:#eceff4>(</span>eqHisChecked<span style=color:#eceff4>.</span>Checked <span style=color:#eceff4>==</span> <span style=color:#81a1c1;font-weight:700>true</span><span style=color:#eceff4>)</span>
-</span></span><span style=display:flex><span>               <span style=color:#eceff4>{</span>
-</span></span><span style=display:flex><span>                   TrainedImage<span style=color:#eceff4>.</span>_EqualizeHist<span style=color:#eceff4>();</span>
-</span></span><span style=display:flex><span>               <span style=color:#eceff4>}</span>
-</span></span><span style=display:flex><span>               eigenTrainingImages<span style=color:#eceff4>.</span>Add<span style=color:#eceff4>(</span>TrainedImage<span style=color:#eceff4>.</span>Convert<span style=color:#eceff4>());</span>
-</span></span><span style=display:flex><span>               eigenlabels<span style=color:#eceff4>.</span>Add<span style=color:#eceff4>(</span>fileName<span style=color:#eceff4>(</span>file<span style=color:#eceff4>));</span>
-</span></span><span style=display:flex><span>               eigenIntlabels<span style=color:#eceff4>.</span>Add<span style=color:#eceff4>(</span>eigenTrainedImageCounter<span style=color:#eceff4>);</span>
-</span></span><span style=display:flex><span>               eigenTrainedImageCounter<span style=color:#eceff4>++;</span>
-</span></span><span style=display:flex><span>               richTextBox1<span style=color:#eceff4>.</span>Text <span style=color:#eceff4>+=</span> fileName<span style=color:#eceff4>(</span>file<span style=color:#eceff4>)+</span><span style=color:#a3be8c>&#34;\n&#34;</span><span style=color:#eceff4>;</span>
-</span></span><span style=display:flex><span>         <span style=color:#eceff4>}</span>
-</span></span><span style=display:flex><span>          eigenFaceRecognizer<span style=color:#eceff4>=</span> <span style=color:#81a1c1;font-weight:700>new</span> EigenFaceRecognizer<span style=color:#eceff4>(</span>eigenTrainedImageCounter<span style=color:#eceff4>,</span> <span style=color:#b48ead>3000</span><span style=color:#eceff4>);</span>
-</span></span><span style=display:flex><span>          eigenFaceRecognizer<span style=color:#eceff4>.</span>Train<span style=color:#eceff4>(</span>eigenTrainingImages<span style=color:#eceff4>.</span>ToArray<span style=color:#eceff4>(),</span> eigenIntlabels<span style=color:#eceff4>.</span>ToArray<span style=color:#eceff4>());</span>
-</span></span><span style=display:flex><span>            
-</span></span><span style=display:flex><span>       <span style=color:#eceff4>}</span>
-</span></span><span style=display:flex><span>       <span style=color:#81a1c1;font-weight:700>catch</span> <span style=color:#eceff4>(</span>Exception ex<span style=color:#eceff4>)</span>
-</span></span><span style=display:flex><span>       <span style=color:#eceff4>{</span>
-</span></span><span style=display:flex><span>           MessageBox<span style=color:#eceff4>.</span>Show<span style=color:#eceff4>(</span>ex<span style=color:#eceff4>.</span>ToString<span style=color:#eceff4>());</span>
-</span></span><span style=display:flex><span>           MessageBox<span style=color:#eceff4>.</span>Show<span style=color:#eceff4>(</span><span style=color:#a3be8c>&#34;Nothing in binary database, please add at least a face(Simply train the prototype with the Add Face Button).&#34;</span><span style=color:#eceff4>,</span> <span style=color:#a3be8c>&#34;Triained faces load&#34;</span><span style=color:#eceff4>,</span> MessageBoxButtons<span style=color:#eceff4>.</span>OK<span style=color:#eceff4>,</span> MessageBoxIcon<span style=color:#eceff4>.</span>Exclamation<span style=color:#eceff4>);</span>
-</span></span><span style=display:flex><span>       <span style=color:#eceff4>}</span>
-</span></span><span style=display:flex><span>   <span style=color:#eceff4>}</span>
-</span></span><span style=display:flex><span>   <span style=color:#81a1c1;font-weight:700>else</span> <span style=color:#81a1c1;font-weight:700>if</span> <span style=color:#eceff4>(</span>comboBoxAlgorithm<span style=color:#eceff4>.</span>Text <span style=color:#eceff4>==</span> <span style=color:#a3be8c>&#34;FisherFaces&#34;</span><span style=color:#eceff4>)</span>
-</span></span><span style=display:flex><span>   <span style=color:#eceff4>{</span>
-</span></span><span style=display:flex><span>       <span style=color:#81a1c1;font-weight:700>try</span>
-</span></span><span style=display:flex><span>       <span style=color:#eceff4>{</span>
-</span></span><span style=display:flex><span>           <span style=color:#81a1c1>string</span> dataDirectory <span style=color:#eceff4>=</span> Directory<span style=color:#eceff4>.</span>GetCurrentDirectory<span style=color:#eceff4>()</span> <span style=color:#eceff4>+</span> <span style=color:#a3be8c>&#34;\\TrainedFaces&#34;</span><span style=color:#eceff4>;</span>
-</span></span><span style=display:flex><span>           <span style=color:#81a1c1>string</span><span style=color:#eceff4>[]</span> files <span style=color:#eceff4>=</span> Directory<span style=color:#eceff4>.</span>GetFiles<span style=color:#eceff4>(</span>dataDirectory<span style=color:#eceff4>,</span> <span style=color:#a3be8c>&#34;*.jpeg&#34;</span><span style=color:#eceff4>,</span> SearchOption<span style=color:#eceff4>.</span>AllDirectories<span style=color:#eceff4>);</span>
-</span></span><span style=display:flex><span>           fisherTrainedImageCounter <span style=color:#eceff4>=</span> <span style=color:#b48ead>0</span><span style=color:#eceff4>;</span>
-</span></span><span style=display:flex><span>           <span style=color:#81a1c1;font-weight:700>foreach</span> <span style=color:#eceff4>(</span><span style=color:#81a1c1>var</span> file <span style=color:#81a1c1;font-weight:700>in</span> files<span style=color:#eceff4>)</span>
-</span></span><span style=display:flex><span>           <span style=color:#eceff4>{</span>
-</span></span><span style=display:flex><span>               Image TrainedImage <span style=color:#eceff4>=</span> <span style=color:#81a1c1;font-weight:700>new</span> Image<span style=color:#eceff4>(</span>file<span style=color:#eceff4>);</span>
-</span></span><span style=display:flex><span>               fisherTrainingImages<span style=color:#eceff4>.</span>Add<span style=color:#eceff4>(</span>TrainedImage<span style=color:#eceff4>.</span>Convert<span style=color:#eceff4>());</span>
-</span></span><span style=display:flex><span>               <span style=color:#81a1c1;font-weight:700>if</span> <span style=color:#eceff4>(</span>eqHisChecked<span style=color:#eceff4>.</span>Checked <span style=color:#eceff4>==</span> <span style=color:#81a1c1;font-weight:700>true</span><span style=color:#eceff4>)</span>
-</span></span><span style=display:flex><span>               <span style=color:#eceff4>{</span>
-</span></span><span style=display:flex><span>                   TrainedImage<span style=color:#eceff4>.</span>_EqualizeHist<span style=color:#eceff4>();</span>
-</span></span><span style=display:flex><span>               <span style=color:#eceff4>}</span>
-</span></span><span style=display:flex><span>               fisherlabels<span style=color:#eceff4>.</span>Add<span style=color:#eceff4>(</span>fileName<span style=color:#eceff4>(</span>file<span style=color:#eceff4>));</span>
-</span></span><span style=display:flex><span>               fisherIntlabels<span style=color:#eceff4>.</span>Add<span style=color:#eceff4>(</span>fisherTrainedImageCounter<span style=color:#eceff4>);</span>
-</span></span><span style=display:flex><span>               fisherTrainedImageCounter<span style=color:#eceff4>++;</span>
-</span></span><span style=display:flex><span>               richTextBox1<span style=color:#eceff4>.</span>Text <span style=color:#eceff4>+=</span> fileName<span style=color:#eceff4>(</span>file<span style=color:#eceff4>)</span> <span style=color:#eceff4>+</span> <span style=color:#a3be8c>&#34;\n&#34;</span><span style=color:#eceff4>;</span>
-</span></span><span style=display:flex><span>           <span style=color:#eceff4>}</span>
-</span></span><span style=display:flex><span>           fisherFaceRecognizer <span style=color:#eceff4>=</span> <span style=color:#81a1c1;font-weight:700>new</span> FisherFaceRecognizer<span style=color:#eceff4>(</span>fisherTrainedImageCounter<span style=color:#eceff4>,</span> <span style=color:#b48ead>3000</span><span style=color:#eceff4>);</span>
-</span></span><span style=display:flex><span>           fisherFaceRecognizer<span style=color:#eceff4>.</span>Train<span style=color:#eceff4>(</span>fisherTrainingImages<span style=color:#eceff4>.</span>ToArray<span style=color:#eceff4>(),</span> fisherIntlabels<span style=color:#eceff4>.</span>ToArray<span style=color:#eceff4>());</span>
-</span></span><span style=display:flex><span>       <span style=color:#eceff4>}</span>
-</span></span><span style=display:flex><span>       <span style=color:#81a1c1;font-weight:700>catch</span> <span style=color:#eceff4>(</span>Exception ex<span style=color:#eceff4>)</span>
-</span></span><span style=display:flex><span>       <span style=color:#eceff4>{</span>
-</span></span><span style=display:flex><span>           MessageBox<span style=color:#eceff4>.</span>Show<span style=color:#eceff4>(</span>ex<span style=color:#eceff4>.</span>ToString<span style=color:#eceff4>());</span>
-</span></span><span style=display:flex><span>           MessageBox<span style=color:#eceff4>.</span>Show<span style=color:#eceff4>(</span><span style=color:#a3be8c>&#34;Nothing in binary database, please add at least a face(Simply train the prototype with the Add Face Button).&#34;</span><span style=color:#eceff4>,</span> <span style=color:#a3be8c>&#34;Triained faces load&#34;</span><span style=color:#eceff4>,</span> MessageBoxButtons<span style=color:#eceff4>.</span>OK<span style=color:#eceff4>,</span> MessageBoxIcon<span style=color:#eceff4>.</span>Exclamation<span style=color:#eceff4>);</span>
-</span></span><span style=display:flex><span>       <span style=color:#eceff4>}</span>
-</span></span><span style=display:flex><span>   <span style=color:#eceff4>}</span>
-</span></span><span style=display:flex><span>   <span style=color:#81a1c1;font-weight:700>else</span> <span style=color:#81a1c1;font-weight:700>if</span> <span style=color:#eceff4>(</span>comboBoxAlgorithm<span style=color:#eceff4>.</span>Text <span style=color:#eceff4>==</span> <span style=color:#a3be8c>&#34;LBPHFaces&#34;</span><span style=color:#eceff4>)</span>
-</span></span><span style=display:flex><span>   <span style=color:#eceff4>{</span>
-</span></span><span style=display:flex><span>       <span style=color:#81a1c1;font-weight:700>try</span>
-</span></span><span style=display:flex><span>       <span style=color:#eceff4>{</span>
-</span></span><span style=display:flex><span>           <span style=color:#81a1c1>string</span> dataDirectory <span style=color:#eceff4>=</span> Directory<span style=color:#eceff4>.</span>GetCurrentDirectory<span style=color:#eceff4>()</span> <span style=color:#eceff4>+</span> <span style=color:#a3be8c>&#34;\\TrainedFaces&#34;</span><span style=color:#eceff4>;</span>
-</span></span><span style=display:flex><span>           <span style=color:#81a1c1>string</span><span style=color:#eceff4>[]</span> files <span style=color:#eceff4>=</span> Directory<span style=color:#eceff4>.</span>GetFiles<span style=color:#eceff4>(</span>dataDirectory<span style=color:#eceff4>,</span> <span style=color:#a3be8c>&#34;*.jpeg&#34;</span><span style=color:#eceff4>,</span> SearchOption<span style=color:#eceff4>.</span>AllDirectories<span style=color:#eceff4>);</span>
-</span></span><span style=display:flex><span>           lbphTrainedImageCounter <span style=color:#eceff4>=</span> <span style=color:#b48ead>0</span><span style=color:#eceff4>;</span>
-</span></span><span style=display:flex><span>           <span style=color:#81a1c1;font-weight:700>foreach</span> <span style=color:#eceff4>(</span><span style=color:#81a1c1>var</span> file <span style=color:#81a1c1;font-weight:700>in</span> files<span style=color:#eceff4>)</span>
-</span></span><span style=display:flex><span>           <span style=color:#eceff4>{</span>
-</span></span><span style=display:flex><span>               Image TrainedImage <span style=color:#eceff4>=</span> <span style=color:#81a1c1;font-weight:700>new</span> Image<span style=color:#eceff4>(</span>file<span style=color:#eceff4>);</span>
-</span></span><span style=display:flex><span>               <span style=color:#81a1c1;font-weight:700>if</span> <span style=color:#eceff4>(</span>eqHisChecked<span style=color:#eceff4>.</span>Checked <span style=color:#eceff4>==</span> <span style=color:#81a1c1;font-weight:700>true</span><span style=color:#eceff4>)</span>
-</span></span><span style=display:flex><span>               <span style=color:#eceff4>{</span>
-</span></span><span style=display:flex><span>                   TrainedImage<span style=color:#eceff4>.</span>_EqualizeHist<span style=color:#eceff4>();</span>
-</span></span><span style=display:flex><span>               <span style=color:#eceff4>}</span>
-</span></span><span style=display:flex><span>               lbphTrainingImages<span style=color:#eceff4>.</span>Add<span style=color:#eceff4>(</span>TrainedImage<span style=color:#eceff4>.</span>Convert<span style=color:#eceff4>());</span>
-</span></span><span style=display:flex><span>               lbphlabels<span style=color:#eceff4>.</span>Add<span style=color:#eceff4>(</span>fileName<span style=color:#eceff4>(</span>file<span style=color:#eceff4>));</span>
-</span></span><span style=display:flex><span>               lbphIntlabels<span style=color:#eceff4>.</span>Add<span style=color:#eceff4>(</span>lbphTrainedImageCounter<span style=color:#eceff4>);</span>
-</span></span><span style=display:flex><span>               lbphTrainedImageCounter<span style=color:#eceff4>++;</span>
-</span></span><span style=display:flex><span>               richTextBox1<span style=color:#eceff4>.</span>Text <span style=color:#eceff4>+=</span> fileName<span style=color:#eceff4>(</span>file<span style=color:#eceff4>)</span> <span style=color:#eceff4>+</span> <span style=color:#a3be8c>&#34;\n&#34;</span><span style=color:#eceff4>;</span>
-</span></span><span style=display:flex><span>           <span style=color:#eceff4>}</span>
-</span></span><span style=display:flex><span>           lbphFaceRecognizer <span style=color:#eceff4>=</span> <span style=color:#81a1c1;font-weight:700>new</span> LBPHFaceRecognizer<span style=color:#eceff4>(</span><span style=color:#b48ead>1</span><span style=color:#eceff4>,</span> <span style=color:#b48ead>8</span><span style=color:#eceff4>,</span> <span style=color:#b48ead>8</span><span style=color:#eceff4>,</span> <span style=color:#b48ead>8</span><span style=color:#eceff4>,</span> <span style=color:#b48ead>123.0</span><span style=color:#eceff4>);</span>
-</span></span><span style=display:flex><span>           lbphFaceRecognizer<span style=color:#eceff4>.</span>Train<span style=color:#eceff4>(</span>lbphTrainingImages<span style=color:#eceff4>.</span>ToArray<span style=color:#eceff4>(),</span> lbphIntlabels<span style=color:#eceff4>.</span>ToArray<span style=color:#eceff4>());</span>
-</span></span><span style=display:flex><span>       <span style=color:#eceff4>}</span>
-</span></span><span style=display:flex><span>       <span style=color:#81a1c1;font-weight:700>catch</span> <span style=color:#eceff4>(</span>Exception ex<span style=color:#eceff4>)</span>
-</span></span><span style=display:flex><span>       <span style=color:#eceff4>{</span>
-</span></span><span style=display:flex><span>           MessageBox<span style=color:#eceff4>.</span>Show<span style=color:#eceff4>(</span>ex<span style=color:#eceff4>.</span>ToString<span style=color:#eceff4>());</span>
-</span></span><span style=display:flex><span>           MessageBox<span style=color:#eceff4>.</span>Show<span style=color:#eceff4>(</span><span style=color:#a3be8c>&#34;Nothing in binary database, please add at least a face(Simply train the prototype with the Add Face Button).&#34;</span><span style=color:#eceff4>,</span> <span style=color:#a3be8c>&#34;Triained faces load&#34;</span><span style=color:#eceff4>,</span> MessageBoxButtons<span style=color:#eceff4>.</span>OK<span style=color:#eceff4>,</span> MessageBoxIcon<span style=color:#eceff4>.</span>Exclamation<span style=color:#eceff4>);</span>
-</span></span><span style=display:flex><span>       <span style=color:#eceff4>}</span>
-</span></span><span style=display:flex><span>   <span style=color:#eceff4>}</span>
-</span></span><span style=display:flex><span><span style=color:#eceff4>}</span>
-</span></span></code></pre></div><p><img src=https://lh4.googleusercontent.com/560MflmHrYy5nUi4gIAQexc-Cdqfyr3GUej_g1wwa0HawxO4A7OFmOkgd0g4oBvy9An1PjiYxSM_8G0G2FS_zC2y3gWisgkr0NTikxv4oyDFL9qM6IpkupdhA7OjnUAb4cuy51Pa alt></p><h5 id=user-interface>User Interface</h5><p>As a source camera, video, single image and multi image can be selected.
+light.<img src=https://lh6.googleusercontent.com/3PMQmXghZyoi4dGekFhBS-QWqZDYEJpQ2o_yLXJgMEo3goTr6OqtrOSPYjtwgApKjKoAzXhFLE57R3TRDw8SWrXsod9PUCiHJXNndjoZ-Ui3P1xb0atKy0EvobLyy9cfVifzA0yT alt></p><h5 id=surf-feature-extractor>SURF Feature Extractor</h5><p><img src=https://lh5.googleusercontent.com/eRt6xx3RU22fZ22_-TGdan22lp2x7JiNA9De7PuYa2xLVcZIcg4hVJzvrXyzdNbocv4NuBW8QOHYYTr0NNowPys7QOScefuBrgEeoiILasaQm2v0S0P8NPxVYSiPBRoPotTP3h0p alt></p><pre><code class=language-csharp>if (comboBoxAlgorithm.Text == “SURF Feature Extractor”)
+{
+string dataDirectory=Directory.GetCurrentDirectory()+”\TrainedFaces”;
+string[] files = Directory.GetFiles(dataDirectory, “*.jpeg”, SearchOption.AllDirectories);
+
+foreach (var file in files)
+{
+   richTextBox1.Text += file.ToString();
+   long recpoints;
+   ImagesampleImage = new Image(file);
+   secondImageBox.Image = sampleImage;
+   using (Image modelImage = sampleImage.Convert())
+   using (Image observedImage = image.Convert())
+   {
+       Image result = SurfRecognizer.Draw(modelImage, observedImage, out recpoints);
+       //captureImageBox.Image = observedImage;
+       if (recpoints &gt; 10)
+       {
+           MCvFont f = new MCvFont(Emgu.CV.CvEnum.FONT.CV_FONT_HERSHEY_COMPLEX, 1.0, 1.0);
+           result.Draw(“Person Recognited, Welcome”, ref f, new Point(40, 40), new Bgr(0, 255, 0));
+           ImageViewer.Show(result, String.Format(“ {0} Points Recognited”, recpoints));
+       }
+   }
+}
+</code></pre><h5 id=eigenfaces>Eigenfaces</h5><pre><code class=language-csharp>else if (comboBoxAlgorithm.Text == &quot;EigenFaces&quot;)
+{
+   //image._EqualizeHist();
+   if (eqHisChecked.Checked == true)
+   {
+       image._EqualizeHist();
+   }
+   var result = eigenFaceRecognizer.Predict(image.Convert().Resize(100, 100, Emgu.CV.CvEnum.INTER.CV_INTER_CUBIC));
+   if (result.Label != -1)
+   {
+       image.Draw(eigenlabels[result.Label].ToString(), ref font, new Point(face.X - 2, face.Y - 2), new Bgr(Color.LightGreen));
+       label6.Text = result.Distance.ToString();
+   }
+}
+</code></pre><h5 id=fisherfaces>Fisherfaces</h5><pre><code class=language-csharp>else if (comboBoxAlgorithm.Text == &quot;FisherFaces&quot;)
+{
+   if (eqHisChecked.Checked == true)
+   {
+       image._EqualizeHist();
+   }
+   var result = fisherFaceRecognizer.Predict(image.Convert().Resize(100, 100, Emgu.CV.CvEnum.INTER.CV_INTER_CUBIC));
+   if (result.Label != -1)
+   {
+       image.Draw(fisherlabels[result.Label].ToString(), ref font, new Point(face.X - 2, face.Y - 2), new Bgr(Color.LightGreen));
+       label6.Text = result.Distance.ToString();
+   }
+
+
+}
+</code></pre><h5 id=local-binary-patterns-histograms>Local Binary Patterns Histograms</h5><pre><code class=language-csharp>else if (comboBoxAlgorithm.Text == &quot;LBPHFaces&quot;)
+{
+   if (eqHisChecked.Checked == true)
+   {
+       image._EqualizeHist();
+   }
+   var result = lbphFaceRecognizer.Predict(image.Convert().Resize(100, 100, Emgu.CV.CvEnum.INTER.CV_INTER_CUBIC));
+   if (result.Label != -1)
+   {
+       image.Draw(lbphlabels[result.Label].ToString(), ref font, new Point(face.X - 2, face.Y - 2), new Bgr(Color.LightGreen));
+       label6.Text = result.Distance.ToString();
+   }
+}
+</code></pre><h4 id=3-passface-interface>3. PassFace Interface</h4><h5 id=database-creator>Database Creator</h5><p>A database creator is developed to make easier to implement and try different
+algorithm.</p><pre><code class=language-csharp>Add DataBase Function
+
+
+private void addDatabaseButton_Click(object sender, EventArgs e)
+{
+   //Take time for save filename
+   string fileName = textBox1.Text+&quot;_&quot;+DateTime.Now.Day.ToString() + &quot;-&quot; + DateTime.Now.Month.ToString() + &quot;-&quot; + DateTime.Now.Year.ToString()
+   + &quot;-&quot; + DateTime.Now.Hour.ToString() + &quot;-&quot; + DateTime.Now.Minute.ToString()+&quot;-&quot; + DateTime.Now.Second.ToString()+&quot;.jpeg&quot;;
+
+   //First The faces in the Image is detected
+   Image image = _capture.RetrieveBgrFrame().Resize(400, 300, Emgu.CV.CvEnum.INTER.CV_INTER_CUBIC);
+   List faces = new List();
+   List eyes = new List();
+   long detectionTime;
+   DetectFace.Detect(image, &quot;haarcascade_frontalface_default.xml&quot;, &quot;haarcascade_eye.xml&quot;, faces, eyes, out detectionTime);
+   foreach (Rectangle face in faces)
+   {
+       image.ROI = face;
+   }
+   Directory.CreateDirectory(&quot;TrainedFaces&quot;);
+   image.Resize(100, 100, Emgu.CV.CvEnum.INTER.CV_INTER_CUBIC).ToBitmap().Save(&quot;TrainedFaces\\&quot; + fileName);
+}
+
+
+private void comboBoxAlgorithm_SelectedIndexChanged(object sender, EventArgs e)
+{
+   if (comboBoxAlgorithm.Text == &quot;EigenFaces&quot;)
+   {
+       try
+       {
+         string dataDirectory = Directory.GetCurrentDirectory() + &quot;\\TrainedFaces&quot;;
+         string[] files = Directory.GetFiles(dataDirectory, &quot;*.jpeg&quot;, SearchOption.AllDirectories);
+         eigenTrainedImageCounter = 0;
+         foreach (var file in files)
+         {
+               Image TrainedImage=new Image(file);
+               if (eqHisChecked.Checked == true)
+               {
+                   TrainedImage._EqualizeHist();
+               }
+               eigenTrainingImages.Add(TrainedImage.Convert());
+               eigenlabels.Add(fileName(file));
+               eigenIntlabels.Add(eigenTrainedImageCounter);
+               eigenTrainedImageCounter++;
+               richTextBox1.Text += fileName(file)+&quot;\n&quot;;
+         }
+          eigenFaceRecognizer= new EigenFaceRecognizer(eigenTrainedImageCounter, 3000);
+          eigenFaceRecognizer.Train(eigenTrainingImages.ToArray(), eigenIntlabels.ToArray());
+            
+       }
+       catch (Exception ex)
+       {
+           MessageBox.Show(ex.ToString());
+           MessageBox.Show(&quot;Nothing in binary database, please add at least a face(Simply train the prototype with the Add Face Button).&quot;, &quot;Triained faces load&quot;, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+       }
+   }
+   else if (comboBoxAlgorithm.Text == &quot;FisherFaces&quot;)
+   {
+       try
+       {
+           string dataDirectory = Directory.GetCurrentDirectory() + &quot;\\TrainedFaces&quot;;
+           string[] files = Directory.GetFiles(dataDirectory, &quot;*.jpeg&quot;, SearchOption.AllDirectories);
+           fisherTrainedImageCounter = 0;
+           foreach (var file in files)
+           {
+               Image TrainedImage = new Image(file);
+               fisherTrainingImages.Add(TrainedImage.Convert());
+               if (eqHisChecked.Checked == true)
+               {
+                   TrainedImage._EqualizeHist();
+               }
+               fisherlabels.Add(fileName(file));
+               fisherIntlabels.Add(fisherTrainedImageCounter);
+               fisherTrainedImageCounter++;
+               richTextBox1.Text += fileName(file) + &quot;\n&quot;;
+           }
+           fisherFaceRecognizer = new FisherFaceRecognizer(fisherTrainedImageCounter, 3000);
+           fisherFaceRecognizer.Train(fisherTrainingImages.ToArray(), fisherIntlabels.ToArray());
+       }
+       catch (Exception ex)
+       {
+           MessageBox.Show(ex.ToString());
+           MessageBox.Show(&quot;Nothing in binary database, please add at least a face(Simply train the prototype with the Add Face Button).&quot;, &quot;Triained faces load&quot;, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+       }
+   }
+   else if (comboBoxAlgorithm.Text == &quot;LBPHFaces&quot;)
+   {
+       try
+       {
+           string dataDirectory = Directory.GetCurrentDirectory() + &quot;\\TrainedFaces&quot;;
+           string[] files = Directory.GetFiles(dataDirectory, &quot;*.jpeg&quot;, SearchOption.AllDirectories);
+           lbphTrainedImageCounter = 0;
+           foreach (var file in files)
+           {
+               Image TrainedImage = new Image(file);
+               if (eqHisChecked.Checked == true)
+               {
+                   TrainedImage._EqualizeHist();
+               }
+               lbphTrainingImages.Add(TrainedImage.Convert());
+               lbphlabels.Add(fileName(file));
+               lbphIntlabels.Add(lbphTrainedImageCounter);
+               lbphTrainedImageCounter++;
+               richTextBox1.Text += fileName(file) + &quot;\n&quot;;
+           }
+           lbphFaceRecognizer = new LBPHFaceRecognizer(1, 8, 8, 8, 123.0);
+           lbphFaceRecognizer.Train(lbphTrainingImages.ToArray(), lbphIntlabels.ToArray());
+       }
+       catch (Exception ex)
+       {
+           MessageBox.Show(ex.ToString());
+           MessageBox.Show(&quot;Nothing in binary database, please add at least a face(Simply train the prototype with the Add Face Button).&quot;, &quot;Triained faces load&quot;, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+       }
+   }
+}
+</code></pre><p><img src=https://lh4.googleusercontent.com/560MflmHrYy5nUi4gIAQexc-Cdqfyr3GUej_g1wwa0HawxO4A7OFmOkgd0g4oBvy9An1PjiYxSM_8G0G2FS_zC2y3gWisgkr0NTikxv4oyDFL9qM6IpkupdhA7OjnUAb4cuy51Pa alt></p><h5 id=user-interface>User Interface</h5><p>As a source camera, video, single image and multi image can be selected.
 Different source selection is developed using opencv and .net libraries.</p><p><img src=https://lh5.googleusercontent.com/6y8Sx-7a4PDYcZWv9W_COKJf9EaGKQl-_3vc6q9oo-HzQeC4CJMJoGTceeaUAC4F31mjpGs84Zrkse1viHgwCCKnRvhciz7aEjmmySR16PAD2aOGmOrLWHr6R3hO7GvV0TamI9nS alt></p><h4 id=4-future-of-passface-project>4. Future of PassFace Project</h4><h5 id=algorithm-accuracy-analysis>Algorithm Accuracy Analysis</h5><p>Program designed for using different algorithms. But the comparison of these
 algorithms is not finished. The next step is implementing this algorithm the
 compare the algorithms accuracy and performance truly.</p><h5 id=performance-optimizations>Performance Optimizations</h5><p>For fix the performance problems, develop the program for multiple core CPUs.
@@ -238,4 +238,4 @@ planning to implement latest algorithms to increase accuracy in different
 conditions.</p><h4 id=5-conclusion>5. Conclusion</h4><p>In this project, the main principles of the face recognition algorithms are
 learned. The performances and accuracies of the algorithms are compared. A gui
 application is developed to create database and process images using selected
-algorithm.</p></div></article></main><footer><p>&copy; 2025 M.Ozan Unal.</p></footer></body><script async src="https://www.googletagmanager.com/gtag/js?id=G-007KSW65JL"></script><script>var dnt,doNotTrack=!1;if(!1&&(dnt=navigator.doNotTrack||window.doNotTrack||navigator.msDoNotTrack,doNotTrack=dnt=="1"||dnt=="yes"),!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-007KSW65JL")}</script></html>
+algorithm.</p></div></article></main><footer><p>&copy; 2025 M.Ozan Unal.</p></footer><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/highlight.js@11.9.0/styles/github.min.css media="(prefers-color-scheme: light)"><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/highlight.js@11.9.0/styles/github-dark.min.css media="(prefers-color-scheme: dark)"><script src=https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.11.1/build/highlight.min.js></script><script>hljs.highlightAll()</script></body><script async src="https://www.googletagmanager.com/gtag/js?id=G-007KSW65JL"></script><script>var dnt,doNotTrack=!1;if(!1&&(dnt=navigator.doNotTrack||window.doNotTrack||navigator.msDoNotTrack,doNotTrack=dnt=="1"||dnt=="yes"),!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-007KSW65JL")}</script></html>

@@ -1,4 +1,4 @@
-<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=color-scheme content="light dark"><style>pre code,code{-webkit-text-size-adjust:100%;text-size-adjust:100%}</style><link id=theme-style rel=stylesheet href=https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.classless.min.css><title>[TR] Google Hash Code 2017 | mozanunal.com</title><link rel=icon href=/favicon.svg type=image/svg+xml><link rel="shortcut icon" href=/favicon.ico><link rel=apple-touch-icon href=/apple-touch-icon.png></head><body><header><div class=theme-selector><select id=theme-selector-input><option value=https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.classless.min.css>Pico</option><option value=https://cdn.jsdelivr.net/gh/digitallytailored/classless@latest/classless.min.css>Classless.css</option><option value=https://cdn.jsdelivr.net/gh/cspablocortez/cosmocss@latest/cosmo.min.css>Cosmo.css</option><option value=https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.fluid.classless.min.css>Pico-Fluid</option><option value=https://cdn.jsdelivr.net/npm/water.css@2/out/water.css>Water.css</option><option value=https://cdn.jsdelivr.net/npm/sakura.css/css/sakura.css>Sakura.css</option><option value=https://cdn.simplecss.org/simple.min.css>Simple.css</option><option value=https://cdn.jsdelivr.net/gh/alvaromontoro/almond.css@latest/dist/almond.min.css>Almond.css</option><option value=https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css>New.css</option><option value=https://unpkg.com/missing.css>Missing.css</option><option value=https://unpkg.com/boltcss/bolt.min.css>Bolt.css</option><option value=https://perfectmotherfuckingwebsite.com/fuckingstyle.css>PerfectMFWS</option><option value>HTML only</option></select></div><script>(function(){"use strict";const o=document.getElementById("theme-style"),e=document.getElementById("theme-selector-input"),n="hugo-classless-theme";function s(t){o.href=t,e&&(e.value=t)}const t=localStorage.getItem(n);if(t){const n=Array.from(e.options).some(e=>e.value===t);n&&s(t)}e&&e.addEventListener("change",()=>{const t=e.value;s(t),localStorage.setItem(n,t)})})()</script><div><h3>mozanunal.com</h3><h4><a href=/>Home</a> | <a href=/posts/>Posts</a> | <a href=/projects/>Projects</a> | <a href=/papers/>Papers</a> | <a href=/contact/>Contact</a></h4></div></header><main><article><header><h1>[TR] Google Hash Code 2017</h1><p><em><time datetime=2017-07-13>July 13, 2017</time></em></p></header><div><p><strong>Herkese Merhabalar</strong>,</p><p>Google bir kaç senedir tüm dünyada programlama ve algoritmalar üzerine bir
+<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=color-scheme content="light dark"><link id=theme-style rel=stylesheet href=https://cdn.jsdelivr.net/gh/cspablocortez/cosmocss@latest/cosmo.min.css><style>pre code,code{-webkit-text-size-adjust:100%;text-size-adjust:100%}pre code.hljs{all:revert;display:block;font:.9rem/1.9 ui-monospace,SFMono-Regular,Menlo,monospace;overflow-x:auto}</style><title>[TR] Google Hash Code 2017 | mozanunal.com</title><link rel=icon href=/favicon.svg type=image/svg+xml><link rel="shortcut icon" href=/favicon.ico><link rel=apple-touch-icon href=/apple-touch-icon.png></head><body><header><div class=theme-selector><select id=theme-selector-input><option value=https://cdn.jsdelivr.net/gh/cspablocortez/cosmocss@latest/cosmo.min.css>Cosmo.css</option><option value=https://cdn.jsdelivr.net/gh/digitallytailored/classless@latest/classless.min.css>Classless.css</option><option value=https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.classless.min.css>Pico</option><option value=https://cdn.jsdelivr.net/npm/water.css@2/out/water.css>Water.css</option><option value=https://cdn.simplecss.org/simple.min.css>Simple.css</option><option value=https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css>New.css</option><option value=https://unpkg.com/missing.css>Missing.css</option><option value=https://unpkg.com/boltcss/bolt.min.css>Bolt.css</option></select></div><script>(function(){"use strict";const o=document.getElementById("theme-style"),e=document.getElementById("theme-selector-input"),n="hugo-classless-theme";function s(t){o.href=t,e&&(e.value=t)}const t=localStorage.getItem(n);if(t){const n=Array.from(e.options).some(e=>e.value===t);n&&s(t)}e&&e.addEventListener("change",()=>{const t=e.value;s(t),localStorage.setItem(n,t)})})()</script><div><h3>mozanunal.com</h3><h4><a href=/>Home</a> | <a href=/posts/>Posts</a> | <a href=/projects/>Projects</a> | <a href=/papers/>Papers</a> | <a href=/contact/>Contact</a></h4></div></header><main><article><header><h1>[TR] Google Hash Code 2017</h1><p><em><time datetime=2017-07-13>July 13, 2017</time></em></p></header><div><p><strong>Herkese Merhabalar</strong>,</p><p>Google bir kaç senedir tüm dünyada programlama ve algoritmalar üzerine bir
 yarışma düzenliyor. Bu yarışma kapsamında, yarışmanın katılımcılarına karmaşık
 algoritmik problemler veriliyor ve istenilen data kümeleri için yine verilen
 formatta sonuçlar oluşturacak algoritmalar yazılması gerekiyor. Son olarak bu
@@ -26,148 +26,148 @@ Böylece zaten kullanımda olan parçalar diğer dilimlerde kullanılamıyor. İ
 tur dolaşımda anlık olarak o dilimi &lsquo;decommit&rsquo; yapıp o çevrede daha büyük bir
 dilim oluşturmaya çalışıyor. Son olarak başarı oranını hesaplayan bir fonksiyon
 var. Eğer algoritma üzerinde değişiklik yaparsanız bu fonksiyonu kullanarak
-performansını deneyebilirsiniz.</p><div class=highlight><pre tabindex=0 style=color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span><span style=color:#81a1c1;font-weight:700>class</span> <span style=color:#8fbcbb>pizza</span><span style=color:#eceff4>:</span>
-</span></span><span style=display:flex><span>    <span style=color:#81a1c1;font-weight:700>def</span> <span style=color:#88c0d0>__init__</span><span style=color:#eceff4>(</span><span style=color:#81a1c1>self</span><span style=color:#eceff4>,</span> file<span style=color:#eceff4>):</span>
-</span></span><span style=display:flex><span>        f <span style=color:#81a1c1>=</span> <span style=color:#81a1c1>open</span><span style=color:#eceff4>(</span>file<span style=color:#eceff4>,</span> <span style=color:#a3be8c>&#39;r&#39;</span><span style=color:#eceff4>)</span>
-</span></span><span style=display:flex><span>        fline <span style=color:#81a1c1>=</span> f<span style=color:#81a1c1>.</span>readline<span style=color:#eceff4>()</span>
-</span></span><span style=display:flex><span>        <span style=color:#eceff4>[</span>R<span style=color:#eceff4>,</span> C<span style=color:#eceff4>,</span> L<span style=color:#eceff4>,</span> H<span style=color:#eceff4>]</span> <span style=color:#81a1c1>=</span> fline<span style=color:#81a1c1>.</span>split<span style=color:#eceff4>(</span><span style=color:#a3be8c>&#39; &#39;</span><span style=color:#eceff4>)</span>
-</span></span><span style=display:flex><span>        <span style=color:#81a1c1>self</span><span style=color:#81a1c1>.</span>L <span style=color:#81a1c1>=</span> <span style=color:#81a1c1>int</span><span style=color:#eceff4>(</span>L<span style=color:#eceff4>)</span>
-</span></span><span style=display:flex><span>        <span style=color:#81a1c1>self</span><span style=color:#81a1c1>.</span>H <span style=color:#81a1c1>=</span> <span style=color:#81a1c1>int</span><span style=color:#eceff4>(</span>H<span style=color:#eceff4>)</span>
-</span></span><span style=display:flex><span>        <span style=color:#81a1c1>self</span><span style=color:#81a1c1>.</span>R <span style=color:#81a1c1>=</span> <span style=color:#81a1c1>int</span><span style=color:#eceff4>(</span>R<span style=color:#eceff4>)</span>
-</span></span><span style=display:flex><span>        <span style=color:#81a1c1>self</span><span style=color:#81a1c1>.</span>C <span style=color:#81a1c1>=</span> <span style=color:#81a1c1>int</span><span style=color:#eceff4>(</span>C<span style=color:#eceff4>)</span>
-</span></span><span style=display:flex><span>        <span style=color:#81a1c1>self</span><span style=color:#81a1c1>.</span>Matrix <span style=color:#81a1c1>=</span> <span style=color:#eceff4>[]</span>
-</span></span><span style=display:flex><span>        <span style=color:#81a1c1>self</span><span style=color:#81a1c1>.</span>Matrix2 <span style=color:#81a1c1>=</span> <span style=color:#eceff4>[]</span>
-</span></span><span style=display:flex><span>        <span style=color:#81a1c1>self</span><span style=color:#81a1c1>.</span>result <span style=color:#81a1c1>=</span> <span style=color:#eceff4>[]</span>
-</span></span><span style=display:flex><span>        <span style=color:#81a1c1>self</span><span style=color:#81a1c1>.</span>resultS <span style=color:#81a1c1>=</span> <span style=color:#eceff4>[]</span>
-</span></span><span style=display:flex><span>        <span style=color:#81a1c1;font-weight:700>for</span> index<span style=color:#eceff4>,</span> line <span style=color:#81a1c1;font-weight:700>in</span> <span style=color:#81a1c1>enumerate</span><span style=color:#eceff4>(</span>f<span style=color:#eceff4>):</span>
-</span></span><span style=display:flex><span>            <span style=color:#81a1c1>self</span><span style=color:#81a1c1>.</span>Matrix<span style=color:#81a1c1>.</span>append<span style=color:#eceff4>([])</span>
-</span></span><span style=display:flex><span>            <span style=color:#81a1c1>self</span><span style=color:#81a1c1>.</span>Matrix2<span style=color:#81a1c1>.</span>append<span style=color:#eceff4>([])</span>
-</span></span><span style=display:flex><span>            <span style=color:#81a1c1;font-weight:700>for</span> i <span style=color:#81a1c1;font-weight:700>in</span> <span style=color:#81a1c1>range</span><span style=color:#eceff4>(</span><span style=color:#b48ead>0</span><span style=color:#eceff4>,</span> <span style=color:#81a1c1>self</span><span style=color:#81a1c1>.</span>C<span style=color:#eceff4>):</span>
-</span></span><span style=display:flex><span>                <span style=color:#81a1c1>self</span><span style=color:#81a1c1>.</span>Matrix<span style=color:#eceff4>[</span>index<span style=color:#eceff4>]</span><span style=color:#81a1c1>.</span>append<span style=color:#eceff4>(</span>line<span style=color:#eceff4>[</span>i<span style=color:#eceff4>])</span>
-</span></span><span style=display:flex><span>                <span style=color:#81a1c1>self</span><span style=color:#81a1c1>.</span>Matrix2<span style=color:#eceff4>[</span>index<span style=color:#eceff4>]</span><span style=color:#81a1c1>.</span>append<span style=color:#eceff4>(</span><span style=color:#81a1c1;font-weight:700>False</span><span style=color:#eceff4>)</span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>    <span style=color:#81a1c1;font-weight:700>def</span> <span style=color:#88c0d0>calculate</span><span style=color:#eceff4>(</span><span style=color:#81a1c1>self</span><span style=color:#eceff4>):</span>
-</span></span><span style=display:flex><span>        <span style=color:#616e87;font-style:italic># print(&#39;Calculating&#39;)</span>
-</span></span><span style=display:flex><span>        <span style=color:#81a1c1;font-weight:700>for</span> i <span style=color:#81a1c1;font-weight:700>in</span> <span style=color:#81a1c1>range</span><span style=color:#eceff4>(</span><span style=color:#b48ead>0</span><span style=color:#eceff4>,</span> <span style=color:#81a1c1>self</span><span style=color:#81a1c1>.</span>R<span style=color:#eceff4>):</span>
-</span></span><span style=display:flex><span>            <span style=color:#81a1c1;font-weight:700>for</span> j <span style=color:#81a1c1;font-weight:700>in</span> <span style=color:#81a1c1>range</span><span style=color:#eceff4>(</span><span style=color:#b48ead>0</span><span style=color:#eceff4>,</span> <span style=color:#81a1c1>self</span><span style=color:#81a1c1>.</span>C<span style=color:#eceff4>):</span>
-</span></span><span style=display:flex><span>                <span style=color:#81a1c1;font-weight:700>if</span> <span style=color:#81a1c1>self</span><span style=color:#81a1c1>.</span>Matrix2<span style=color:#eceff4>[</span>i<span style=color:#eceff4>][</span>j<span style=color:#eceff4>]</span> <span style=color:#81a1c1;font-weight:700>is</span> <span style=color:#81a1c1;font-weight:700>False</span><span style=color:#eceff4>:</span>
-</span></span><span style=display:flex><span>                    <span style=color:#81a1c1>self</span><span style=color:#81a1c1>.</span>trycreateSlice<span style=color:#eceff4>(</span>i<span style=color:#eceff4>,</span> j<span style=color:#eceff4>)</span>
-</span></span><span style=display:flex><span>        
-</span></span><span style=display:flex><span>        <span style=color:#81a1c1;font-weight:700>for</span> index<span style=color:#eceff4>,</span>curSlice <span style=color:#81a1c1;font-weight:700>in</span> <span style=color:#81a1c1>enumerate</span><span style=color:#eceff4>(</span><span style=color:#81a1c1>self</span><span style=color:#81a1c1>.</span>result<span style=color:#eceff4>):</span>
-</span></span><span style=display:flex><span>            <span style=color:#81a1c1>self</span><span style=color:#81a1c1>.</span>decommitResult<span style=color:#eceff4>(</span>curSlice<span style=color:#eceff4>)</span>
-</span></span><span style=display:flex><span>            <span style=color:#81a1c1;font-weight:700>for</span> i <span style=color:#81a1c1;font-weight:700>in</span> <span style=color:#eceff4>[</span><span style=color:#b48ead>3</span><span style=color:#eceff4>,</span><span style=color:#b48ead>2</span><span style=color:#eceff4>,</span><span style=color:#b48ead>1</span><span style=color:#eceff4>,</span><span style=color:#b48ead>0</span><span style=color:#eceff4>]:</span>
-</span></span><span style=display:flex><span>                <span style=color:#81a1c1;font-weight:700>for</span> j <span style=color:#81a1c1;font-weight:700>in</span> <span style=color:#eceff4>[</span><span style=color:#b48ead>3</span><span style=color:#eceff4>,</span><span style=color:#b48ead>2</span><span style=color:#eceff4>,</span><span style=color:#b48ead>1</span><span style=color:#eceff4>,</span><span style=color:#b48ead>0</span><span style=color:#eceff4>]:</span>
-</span></span><span style=display:flex><span>                    trySlice <span style=color:#81a1c1>=</span> <span style=color:#81a1c1>slice</span><span style=color:#eceff4>(</span>curSlice<span style=color:#81a1c1>.</span>r1<span style=color:#eceff4>,</span> curSlice<span style=color:#81a1c1>.</span>c1<span style=color:#eceff4>,</span> curSlice<span style=color:#81a1c1>.</span>r2 <span style=color:#81a1c1>+</span> i<span style=color:#eceff4>,</span> curSlice<span style=color:#81a1c1>.</span>c2 <span style=color:#81a1c1>+</span> j<span style=color:#eceff4>)</span>
-</span></span><span style=display:flex><span>                    <span style=color:#81a1c1;font-weight:700>if</span> <span style=color:#81a1c1>self</span><span style=color:#81a1c1>.</span>testSlice<span style=color:#eceff4>(</span>trySlice<span style=color:#eceff4>)</span> <span style=color:#81a1c1;font-weight:700>is</span> <span style=color:#81a1c1;font-weight:700>True</span><span style=color:#eceff4>:</span>
-</span></span><span style=display:flex><span>                        <span style=color:#616e87;font-style:italic>#print &#39;updated&#39;</span>
-</span></span><span style=display:flex><span>                        <span style=color:#81a1c1>self</span><span style=color:#81a1c1>.</span>result<span style=color:#eceff4>[</span>index<span style=color:#eceff4>]</span><span style=color:#81a1c1>.</span>r1 <span style=color:#81a1c1>=</span> trySlice<span style=color:#81a1c1>.</span>r1
-</span></span><span style=display:flex><span>                        <span style=color:#81a1c1>self</span><span style=color:#81a1c1>.</span>result<span style=color:#eceff4>[</span>index<span style=color:#eceff4>]</span><span style=color:#81a1c1>.</span>c1 <span style=color:#81a1c1>=</span> trySlice<span style=color:#81a1c1>.</span>c1
-</span></span><span style=display:flex><span>                        <span style=color:#81a1c1>self</span><span style=color:#81a1c1>.</span>result<span style=color:#eceff4>[</span>index<span style=color:#eceff4>]</span><span style=color:#81a1c1>.</span>r2 <span style=color:#81a1c1>=</span> trySlice<span style=color:#81a1c1>.</span>r2
-</span></span><span style=display:flex><span>                        <span style=color:#81a1c1>self</span><span style=color:#81a1c1>.</span>result<span style=color:#eceff4>[</span>index<span style=color:#eceff4>]</span><span style=color:#81a1c1>.</span>c2 <span style=color:#81a1c1>=</span> trySlice<span style=color:#81a1c1>.</span>c2
-</span></span><span style=display:flex><span>                        <span style=color:#81a1c1;font-weight:700>for</span> i <span style=color:#81a1c1;font-weight:700>in</span> <span style=color:#81a1c1>range</span><span style=color:#eceff4>(</span>trySlice<span style=color:#81a1c1>.</span>r1<span style=color:#eceff4>,</span> trySlice<span style=color:#81a1c1>.</span>r2 <span style=color:#81a1c1>+</span> <span style=color:#b48ead>1</span><span style=color:#eceff4>):</span>
-</span></span><span style=display:flex><span>                            <span style=color:#81a1c1;font-weight:700>for</span> j <span style=color:#81a1c1;font-weight:700>in</span> <span style=color:#81a1c1>range</span><span style=color:#eceff4>(</span>trySlice<span style=color:#81a1c1>.</span>c1<span style=color:#eceff4>,</span> trySlice<span style=color:#81a1c1>.</span>c2 <span style=color:#81a1c1>+</span> <span style=color:#b48ead>1</span><span style=color:#eceff4>):</span>
-</span></span><span style=display:flex><span>                                <span style=color:#81a1c1>self</span><span style=color:#81a1c1>.</span>Matrix2<span style=color:#eceff4>[</span>i<span style=color:#eceff4>][</span>j<span style=color:#eceff4>]</span> <span style=color:#81a1c1>=</span> <span style=color:#81a1c1;font-weight:700>True</span>
-</span></span><span style=display:flex><span>                        <span style=color:#81a1c1;font-weight:700>break</span>
-</span></span><span style=display:flex><span>        
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>    <span style=color:#81a1c1;font-weight:700>def</span> <span style=color:#88c0d0>trycreateSlice</span><span style=color:#eceff4>(</span><span style=color:#81a1c1>self</span><span style=color:#eceff4>,</span> r<span style=color:#eceff4>,</span> c<span style=color:#eceff4>):</span>
-</span></span><span style=display:flex><span>        <span style=color:#616e87;font-style:italic># print(r,c),&#39;start&#39;</span>
-</span></span><span style=display:flex><span>        <span style=color:#81a1c1;font-weight:700>for</span> i <span style=color:#81a1c1;font-weight:700>in</span> <span style=color:#81a1c1>range</span><span style=color:#eceff4>(</span><span style=color:#b48ead>0</span><span style=color:#eceff4>,</span> <span style=color:#b48ead>15</span><span style=color:#eceff4>):</span>
-</span></span><span style=display:flex><span>            <span style=color:#81a1c1;font-weight:700>for</span> j <span style=color:#81a1c1;font-weight:700>in</span> <span style=color:#81a1c1>range</span><span style=color:#eceff4>(</span><span style=color:#b48ead>0</span><span style=color:#eceff4>,</span> <span style=color:#b48ead>15</span><span style=color:#eceff4>):</span>
-</span></span><span style=display:flex><span>                trySlice <span style=color:#81a1c1>=</span> <span style=color:#81a1c1>slice</span><span style=color:#eceff4>(</span>r<span style=color:#eceff4>,</span> c<span style=color:#eceff4>,</span> r <span style=color:#81a1c1>+</span> i<span style=color:#eceff4>,</span> c <span style=color:#81a1c1>+</span> j<span style=color:#eceff4>)</span>
-</span></span><span style=display:flex><span>                <span style=color:#81a1c1;font-weight:700>if</span> <span style=color:#81a1c1>self</span><span style=color:#81a1c1>.</span>testSlice<span style=color:#eceff4>(</span>trySlice<span style=color:#eceff4>)</span> <span style=color:#81a1c1;font-weight:700>is</span> <span style=color:#81a1c1;font-weight:700>True</span><span style=color:#eceff4>:</span>
-</span></span><span style=display:flex><span>                    <span style=color:#616e87;font-style:italic># print &#39;finded&#39;</span>
-</span></span><span style=display:flex><span>                    <span style=color:#81a1c1>self</span><span style=color:#81a1c1>.</span>commitResult<span style=color:#eceff4>(</span>trySlice<span style=color:#eceff4>)</span>
-</span></span><span style=display:flex><span>                    <span style=color:#81a1c1;font-weight:700>break</span>
-</span></span><span style=display:flex><span>        <span style=color:#81a1c1;font-weight:700>return</span> <span style=color:#eceff4>(</span>r<span style=color:#eceff4>,</span> c<span style=color:#eceff4>)</span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>    <span style=color:#81a1c1;font-weight:700>def</span> <span style=color:#88c0d0>testSlice</span><span style=color:#eceff4>(</span><span style=color:#81a1c1>self</span><span style=color:#eceff4>,</span> <span style=color:#81a1c1>slice</span><span style=color:#eceff4>):</span>
-</span></span><span style=display:flex><span>        test <span style=color:#81a1c1>=</span> <span style=color:#81a1c1;font-weight:700>False</span>
-</span></span><span style=display:flex><span>        <span style=color:#81a1c1;font-weight:700>if</span> <span style=color:#eceff4>(((</span><span style=color:#81a1c1>slice</span><span style=color:#81a1c1>.</span>r2 <span style=color:#81a1c1>-</span> <span style=color:#81a1c1>slice</span><span style=color:#81a1c1>.</span>r1 <span style=color:#81a1c1>+</span> <span style=color:#b48ead>1</span><span style=color:#eceff4>)</span> <span style=color:#81a1c1>*</span> <span style=color:#eceff4>(</span><span style=color:#81a1c1>slice</span><span style=color:#81a1c1>.</span>c2 <span style=color:#81a1c1>-</span> <span style=color:#81a1c1>slice</span><span style=color:#81a1c1>.</span>c1 <span style=color:#81a1c1>+</span> <span style=color:#b48ead>1</span><span style=color:#eceff4>))</span> <span style=color:#81a1c1>&gt;</span> <span style=color:#81a1c1>self</span><span style=color:#81a1c1>.</span>H<span style=color:#eceff4>)</span> <span style=color:#81a1c1>|</span> <span style=color:#eceff4>((</span><span style=color:#81a1c1>slice</span><span style=color:#81a1c1>.</span>r2 <span style=color:#81a1c1>+</span> <span style=color:#b48ead>1</span><span style=color:#eceff4>)</span> <span style=color:#81a1c1>&gt;</span> <span style=color:#81a1c1>self</span><span style=color:#81a1c1>.</span>R<span style=color:#eceff4>)</span> <span style=color:#81a1c1>|</span> <span style=color:#eceff4>((</span><span style=color:#81a1c1>slice</span><span style=color:#81a1c1>.</span>c2 <span style=color:#81a1c1>+</span> <span style=color:#b48ead>1</span><span style=color:#eceff4>)</span> <span style=color:#81a1c1>&gt;</span> <span style=color:#81a1c1>self</span><span style=color:#81a1c1>.</span>C<span style=color:#eceff4>):</span>
-</span></span><span style=display:flex><span>            <span style=color:#616e87;font-style:italic># print &#39;&gt;boundries&#39;</span>
-</span></span><span style=display:flex><span>            a <span style=color:#81a1c1>=</span> <span style=color:#b48ead>5</span>
-</span></span><span style=display:flex><span>        <span style=color:#81a1c1;font-weight:700>else</span><span style=color:#eceff4>:</span>
-</span></span><span style=display:flex><span>            tNum<span style=color:#eceff4>,</span> mNum <span style=color:#81a1c1>=</span> <span style=color:#81a1c1>self</span><span style=color:#81a1c1>.</span>getNumbers<span style=color:#eceff4>(</span><span style=color:#81a1c1>slice</span><span style=color:#eceff4>)</span>
-</span></span><span style=display:flex><span>            avaible <span style=color:#81a1c1>=</span> <span style=color:#81a1c1>self</span><span style=color:#81a1c1>.</span>getAvaible<span style=color:#eceff4>(</span><span style=color:#81a1c1>slice</span><span style=color:#eceff4>)</span>
-</span></span><span style=display:flex><span>            <span style=color:#81a1c1;font-weight:700>if</span> avaible <span style=color:#81a1c1;font-weight:700>is</span> <span style=color:#81a1c1;font-weight:700>True</span><span style=color:#eceff4>:</span>
-</span></span><span style=display:flex><span>                <span style=color:#81a1c1;font-weight:700>if</span><span style=color:#eceff4>(</span>mNum <span style=color:#81a1c1>&gt;=</span> <span style=color:#81a1c1>self</span><span style=color:#81a1c1>.</span>L<span style=color:#eceff4>)</span> <span style=color:#81a1c1>&amp;</span> <span style=color:#eceff4>(</span>tNum <span style=color:#81a1c1>&gt;=</span> <span style=color:#81a1c1>self</span><span style=color:#81a1c1>.</span>L<span style=color:#eceff4>):</span>
-</span></span><span style=display:flex><span>                    test <span style=color:#81a1c1>=</span> <span style=color:#81a1c1;font-weight:700>True</span>
-</span></span><span style=display:flex><span>            <span style=color:#81a1c1;font-weight:700>else</span><span style=color:#eceff4>:</span>
-</span></span><span style=display:flex><span>                <span style=color:#616e87;font-style:italic># print &#39;not Avaible&#39;</span>
-</span></span><span style=display:flex><span>                a <span style=color:#81a1c1>=</span> <span style=color:#b48ead>5</span>
-</span></span><span style=display:flex><span>        <span style=color:#81a1c1;font-weight:700>return</span> test
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>    <span style=color:#81a1c1;font-weight:700>def</span> <span style=color:#88c0d0>getAvaible</span><span style=color:#eceff4>(</span><span style=color:#81a1c1>self</span><span style=color:#eceff4>,</span> <span style=color:#81a1c1>slice</span><span style=color:#eceff4>):</span>
-</span></span><span style=display:flex><span>        avaible <span style=color:#81a1c1>=</span> <span style=color:#81a1c1;font-weight:700>True</span>
-</span></span><span style=display:flex><span>        <span style=color:#81a1c1;font-weight:700>for</span> i <span style=color:#81a1c1;font-weight:700>in</span> <span style=color:#81a1c1>range</span><span style=color:#eceff4>(</span><span style=color:#81a1c1>slice</span><span style=color:#81a1c1>.</span>r1<span style=color:#eceff4>,</span> <span style=color:#81a1c1>slice</span><span style=color:#81a1c1>.</span>r2 <span style=color:#81a1c1>+</span> <span style=color:#b48ead>1</span><span style=color:#eceff4>):</span>
-</span></span><span style=display:flex><span>            <span style=color:#81a1c1;font-weight:700>for</span> j <span style=color:#81a1c1;font-weight:700>in</span> <span style=color:#81a1c1>range</span><span style=color:#eceff4>(</span><span style=color:#81a1c1>slice</span><span style=color:#81a1c1>.</span>c1<span style=color:#eceff4>,</span> <span style=color:#81a1c1>slice</span><span style=color:#81a1c1>.</span>c2 <span style=color:#81a1c1>+</span> <span style=color:#b48ead>1</span><span style=color:#eceff4>):</span>
-</span></span><span style=display:flex><span>                <span style=color:#81a1c1;font-weight:700>if</span> <span style=color:#81a1c1>self</span><span style=color:#81a1c1>.</span>Matrix2<span style=color:#eceff4>[</span>i<span style=color:#eceff4>][</span>j<span style=color:#eceff4>]</span> <span style=color:#81a1c1>==</span> <span style=color:#81a1c1;font-weight:700>True</span><span style=color:#eceff4>:</span>
-</span></span><span style=display:flex><span>                    avaible <span style=color:#81a1c1>=</span> <span style=color:#81a1c1;font-weight:700>False</span>
-</span></span><span style=display:flex><span>        <span style=color:#81a1c1;font-weight:700>return</span> avaible
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>    <span style=color:#81a1c1;font-weight:700>def</span> <span style=color:#88c0d0>getNumbers</span><span style=color:#eceff4>(</span><span style=color:#81a1c1>self</span><span style=color:#eceff4>,</span> <span style=color:#81a1c1>slice</span><span style=color:#eceff4>):</span>
-</span></span><span style=display:flex><span>        tNum <span style=color:#81a1c1>=</span> <span style=color:#b48ead>0</span>
-</span></span><span style=display:flex><span>        mNum <span style=color:#81a1c1>=</span> <span style=color:#b48ead>0</span>
-</span></span><span style=display:flex><span>        <span style=color:#81a1c1;font-weight:700>for</span> i <span style=color:#81a1c1;font-weight:700>in</span> <span style=color:#81a1c1>range</span><span style=color:#eceff4>(</span><span style=color:#81a1c1>slice</span><span style=color:#81a1c1>.</span>r1<span style=color:#eceff4>,</span> <span style=color:#81a1c1>slice</span><span style=color:#81a1c1>.</span>r2 <span style=color:#81a1c1>+</span> <span style=color:#b48ead>1</span><span style=color:#eceff4>):</span>
-</span></span><span style=display:flex><span>            <span style=color:#81a1c1;font-weight:700>for</span> j <span style=color:#81a1c1;font-weight:700>in</span> <span style=color:#81a1c1>range</span><span style=color:#eceff4>(</span><span style=color:#81a1c1>slice</span><span style=color:#81a1c1>.</span>c1<span style=color:#eceff4>,</span> <span style=color:#81a1c1>slice</span><span style=color:#81a1c1>.</span>c2 <span style=color:#81a1c1>+</span> <span style=color:#b48ead>1</span><span style=color:#eceff4>):</span>
-</span></span><span style=display:flex><span>                <span style=color:#81a1c1;font-weight:700>if</span> <span style=color:#81a1c1>self</span><span style=color:#81a1c1>.</span>Matrix<span style=color:#eceff4>[</span>i<span style=color:#eceff4>][</span>j<span style=color:#eceff4>]</span> <span style=color:#81a1c1>==</span> <span style=color:#a3be8c>&#39;T&#39;</span><span style=color:#eceff4>:</span>
-</span></span><span style=display:flex><span>                    tNum <span style=color:#81a1c1>+=</span> <span style=color:#b48ead>1</span>
-</span></span><span style=display:flex><span>                <span style=color:#81a1c1;font-weight:700>elif</span> <span style=color:#81a1c1>self</span><span style=color:#81a1c1>.</span>Matrix<span style=color:#eceff4>[</span>i<span style=color:#eceff4>][</span>j<span style=color:#eceff4>]</span> <span style=color:#81a1c1>==</span> <span style=color:#a3be8c>&#39;M&#39;</span><span style=color:#eceff4>:</span>
-</span></span><span style=display:flex><span>                    mNum <span style=color:#81a1c1>+=</span> <span style=color:#b48ead>1</span>
-</span></span><span style=display:flex><span>        <span style=color:#81a1c1;font-weight:700>return</span> tNum<span style=color:#eceff4>,</span> mNum
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>    <span style=color:#81a1c1;font-weight:700>def</span> <span style=color:#88c0d0>commitResult</span><span style=color:#eceff4>(</span><span style=color:#81a1c1>self</span><span style=color:#eceff4>,</span> <span style=color:#81a1c1>slice</span><span style=color:#eceff4>):</span>
-</span></span><span style=display:flex><span>        <span style=color:#81a1c1>self</span><span style=color:#81a1c1>.</span>result<span style=color:#81a1c1>.</span>append<span style=color:#eceff4>(</span><span style=color:#81a1c1>slice</span><span style=color:#eceff4>)</span>
-</span></span><span style=display:flex><span>        <span style=color:#616e87;font-style:italic># print &#39;done&#39;,str(r1)+&#34; &#34;+str(c1)+&#34; &#34;+str(r2)+&#34; &#34;+str(c2)</span>
-</span></span><span style=display:flex><span>        <span style=color:#81a1c1;font-weight:700>for</span> i <span style=color:#81a1c1;font-weight:700>in</span> <span style=color:#81a1c1>range</span><span style=color:#eceff4>(</span><span style=color:#81a1c1>slice</span><span style=color:#81a1c1>.</span>r1<span style=color:#eceff4>,</span> <span style=color:#81a1c1>slice</span><span style=color:#81a1c1>.</span>r2 <span style=color:#81a1c1>+</span> <span style=color:#b48ead>1</span><span style=color:#eceff4>):</span>
-</span></span><span style=display:flex><span>            <span style=color:#81a1c1;font-weight:700>for</span> j <span style=color:#81a1c1;font-weight:700>in</span> <span style=color:#81a1c1>range</span><span style=color:#eceff4>(</span><span style=color:#81a1c1>slice</span><span style=color:#81a1c1>.</span>c1<span style=color:#eceff4>,</span> <span style=color:#81a1c1>slice</span><span style=color:#81a1c1>.</span>c2 <span style=color:#81a1c1>+</span> <span style=color:#b48ead>1</span><span style=color:#eceff4>):</span>
-</span></span><span style=display:flex><span>                <span style=color:#81a1c1>self</span><span style=color:#81a1c1>.</span>Matrix2<span style=color:#eceff4>[</span>i<span style=color:#eceff4>][</span>j<span style=color:#eceff4>]</span> <span style=color:#81a1c1>=</span> <span style=color:#81a1c1;font-weight:700>True</span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>    <span style=color:#81a1c1;font-weight:700>def</span> <span style=color:#88c0d0>decommitResult</span><span style=color:#eceff4>(</span><span style=color:#81a1c1>self</span><span style=color:#eceff4>,</span> <span style=color:#81a1c1>slice</span><span style=color:#eceff4>):</span>
-</span></span><span style=display:flex><span>        <span style=color:#616e87;font-style:italic># print &#39;done&#39;,str(r1)+&#34; &#34;+str(c1)+&#34; &#34;+str(r2)+&#34; &#34;+str(c2)</span>
-</span></span><span style=display:flex><span>        <span style=color:#81a1c1;font-weight:700>for</span> i <span style=color:#81a1c1;font-weight:700>in</span> <span style=color:#81a1c1>range</span><span style=color:#eceff4>(</span><span style=color:#81a1c1>slice</span><span style=color:#81a1c1>.</span>r1<span style=color:#eceff4>,</span> <span style=color:#81a1c1>slice</span><span style=color:#81a1c1>.</span>r2 <span style=color:#81a1c1>+</span> <span style=color:#b48ead>1</span><span style=color:#eceff4>):</span>
-</span></span><span style=display:flex><span>            <span style=color:#81a1c1;font-weight:700>for</span> j <span style=color:#81a1c1;font-weight:700>in</span> <span style=color:#81a1c1>range</span><span style=color:#eceff4>(</span><span style=color:#81a1c1>slice</span><span style=color:#81a1c1>.</span>c1<span style=color:#eceff4>,</span> <span style=color:#81a1c1>slice</span><span style=color:#81a1c1>.</span>c2 <span style=color:#81a1c1>+</span> <span style=color:#b48ead>1</span><span style=color:#eceff4>):</span>
-</span></span><span style=display:flex><span>                <span style=color:#81a1c1>self</span><span style=color:#81a1c1>.</span>Matrix2<span style=color:#eceff4>[</span>i<span style=color:#eceff4>][</span>j<span style=color:#eceff4>]</span> <span style=color:#81a1c1>=</span> <span style=color:#81a1c1;font-weight:700>False</span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>    <span style=color:#81a1c1;font-weight:700>def</span> <span style=color:#88c0d0>convertRestultString</span><span style=color:#eceff4>(</span><span style=color:#81a1c1>self</span><span style=color:#eceff4>):</span>
-</span></span><span style=display:flex><span>        <span style=color:#81a1c1;font-weight:700>for</span> <span style=color:#81a1c1>slice</span> <span style=color:#81a1c1;font-weight:700>in</span> <span style=color:#81a1c1>self</span><span style=color:#81a1c1>.</span>result<span style=color:#eceff4>:</span>
-</span></span><span style=display:flex><span>            <span style=color:#81a1c1>self</span><span style=color:#81a1c1>.</span>resultS<span style=color:#81a1c1>.</span>append<span style=color:#eceff4>(</span><span style=color:#81a1c1>str</span><span style=color:#eceff4>(</span><span style=color:#81a1c1>slice</span><span style=color:#81a1c1>.</span>r1<span style=color:#eceff4>)</span> <span style=color:#81a1c1>+</span> <span style=color:#a3be8c>&#34; &#34;</span> <span style=color:#81a1c1>+</span> <span style=color:#81a1c1>str</span><span style=color:#eceff4>(</span><span style=color:#81a1c1>slice</span><span style=color:#81a1c1>.</span>c1<span style=color:#eceff4>)</span> <span style=color:#81a1c1>+</span>
-</span></span><span style=display:flex><span>                           <span style=color:#a3be8c>&#34; &#34;</span> <span style=color:#81a1c1>+</span> <span style=color:#81a1c1>str</span><span style=color:#eceff4>(</span><span style=color:#81a1c1>slice</span><span style=color:#81a1c1>.</span>r2<span style=color:#eceff4>)</span> <span style=color:#81a1c1>+</span> <span style=color:#a3be8c>&#34; &#34;</span> <span style=color:#81a1c1>+</span> <span style=color:#81a1c1>str</span><span style=color:#eceff4>(</span><span style=color:#81a1c1>slice</span><span style=color:#81a1c1>.</span>c2<span style=color:#eceff4>))</span>    
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>    <span style=color:#81a1c1;font-weight:700>def</span> <span style=color:#88c0d0>printSucces</span><span style=color:#eceff4>(</span><span style=color:#81a1c1>self</span><span style=color:#eceff4>):</span>  
-</span></span><span style=display:flex><span>        trueC <span style=color:#81a1c1>=</span> <span style=color:#b48ead>0</span>
-</span></span><span style=display:flex><span>        falseC <span style=color:#81a1c1>=</span> <span style=color:#b48ead>0</span>
-</span></span><span style=display:flex><span>        <span style=color:#81a1c1;font-weight:700>for</span> i <span style=color:#81a1c1;font-weight:700>in</span> <span style=color:#81a1c1>range</span><span style=color:#eceff4>(</span><span style=color:#b48ead>0</span><span style=color:#eceff4>,</span> <span style=color:#81a1c1>self</span><span style=color:#81a1c1>.</span>R<span style=color:#eceff4>):</span>
-</span></span><span style=display:flex><span>            <span style=color:#81a1c1;font-weight:700>for</span> j <span style=color:#81a1c1;font-weight:700>in</span> <span style=color:#81a1c1>range</span><span style=color:#eceff4>(</span><span style=color:#b48ead>0</span><span style=color:#eceff4>,</span> <span style=color:#81a1c1>self</span><span style=color:#81a1c1>.</span>C<span style=color:#eceff4>):</span>
-</span></span><span style=display:flex><span>                <span style=color:#81a1c1;font-weight:700>if</span> <span style=color:#81a1c1>self</span><span style=color:#81a1c1>.</span>Matrix2<span style=color:#eceff4>[</span>i<span style=color:#eceff4>][</span>j<span style=color:#eceff4>]</span> <span style=color:#81a1c1>==</span> <span style=color:#81a1c1;font-weight:700>True</span><span style=color:#eceff4>:</span>
-</span></span><span style=display:flex><span>                    trueC <span style=color:#81a1c1>+=</span> <span style=color:#b48ead>1</span>
-</span></span><span style=display:flex><span>                <span style=color:#81a1c1;font-weight:700>else</span><span style=color:#eceff4>:</span>
-</span></span><span style=display:flex><span>                    falseC <span style=color:#81a1c1>+=</span> <span style=color:#b48ead>1</span>
-</span></span><span style=display:flex><span>        <span style=color:#81a1c1>print</span> <span style=color:#a3be8c>&#34;Score: &#34;</span><span style=color:#eceff4>,</span> trueC<span style=color:#eceff4>,</span> <span style=color:#a3be8c>&#34; / &#34;</span><span style=color:#eceff4>,</span> trueC<span style=color:#81a1c1>+</span>falseC
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#81a1c1;font-weight:700>class</span> <span style=color:#8fbcbb>slice</span><span style=color:#eceff4>:</span>
-</span></span><span style=display:flex><span>    <span style=color:#81a1c1;font-weight:700>def</span> <span style=color:#88c0d0>__init__</span><span style=color:#eceff4>(</span><span style=color:#81a1c1>self</span><span style=color:#eceff4>,</span>r1<span style=color:#eceff4>,</span>c1<span style=color:#eceff4>,</span>r2<span style=color:#eceff4>,</span>c2<span style=color:#eceff4>):</span>
-</span></span><span style=display:flex><span>        <span style=color:#81a1c1>self</span><span style=color:#81a1c1>.</span>r1 <span style=color:#81a1c1>=</span> r1
-</span></span><span style=display:flex><span>        <span style=color:#81a1c1>self</span><span style=color:#81a1c1>.</span>c1 <span style=color:#81a1c1>=</span> c1
-</span></span><span style=display:flex><span>        <span style=color:#81a1c1>self</span><span style=color:#81a1c1>.</span>r2 <span style=color:#81a1c1>=</span> r2
-</span></span><span style=display:flex><span>        <span style=color:#81a1c1>self</span><span style=color:#81a1c1>.</span>c2 <span style=color:#81a1c1>=</span> c2
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>mypizza <span style=color:#81a1c1>=</span> pizza<span style=color:#eceff4>(</span><span style=color:#a3be8c>&#39;medium.in&#39;</span><span style=color:#eceff4>)</span>
-</span></span><span style=display:flex><span><span style=color:#616e87;font-style:italic># print mypizza.Matrix</span>
-</span></span><span style=display:flex><span><span style=color:#616e87;font-style:italic># print mypizza.Matrix2</span>
-</span></span><span style=display:flex><span>mypizza<span style=color:#81a1c1>.</span>calculate<span style=color:#eceff4>()</span>
-</span></span><span style=display:flex><span>mypizza<span style=color:#81a1c1>.</span>convertRestultString<span style=color:#eceff4>()</span>
-</span></span><span style=display:flex><span>s <span style=color:#81a1c1>=</span> <span style=color:#81a1c1>str</span><span style=color:#eceff4>(</span><span style=color:#81a1c1>len</span><span style=color:#eceff4>(</span>mypizza<span style=color:#81a1c1>.</span>resultS<span style=color:#eceff4>))</span><span style=color:#81a1c1>+</span><span style=color:#a3be8c>&#34;</span><span style=color:#ebcb8b>\n</span><span style=color:#a3be8c>&#34;</span>
-</span></span><span style=display:flex><span><span style=color:#81a1c1;font-weight:700>for</span> res <span style=color:#81a1c1;font-weight:700>in</span> mypizza<span style=color:#81a1c1>.</span>resultS<span style=color:#eceff4>:</span>
-</span></span><span style=display:flex><span>    s <span style=color:#81a1c1>+=</span> res <span style=color:#81a1c1>+</span> <span style=color:#a3be8c>&#34;</span><span style=color:#ebcb8b>\n</span><span style=color:#a3be8c>&#34;</span>
-</span></span><span style=display:flex><span>file <span style=color:#81a1c1>=</span> <span style=color:#81a1c1>open</span><span style=color:#eceff4>(</span><span style=color:#a3be8c>&#34;medium.txt&#34;</span><span style=color:#eceff4>,</span><span style=color:#a3be8c>&#34;w&#34;</span><span style=color:#eceff4>)</span>
-</span></span><span style=display:flex><span>file<span style=color:#81a1c1>.</span>write<span style=color:#eceff4>(</span>s<span style=color:#eceff4>)</span>
-</span></span><span style=display:flex><span>file<span style=color:#81a1c1>.</span>close<span style=color:#eceff4>()</span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>mypizza<span style=color:#81a1c1>.</span>printSucces<span style=color:#eceff4>()</span>
-</span></span></code></pre></div><h4 id=online-eleme-sorusu-streaming-videos>Online eleme sorusu: Streaming Videos</h4><p>Bu soruda ise video izleme gecikmesini azaltmak için videoları &lsquo;cache&rsquo; sunuclara
+performansını deneyebilirsiniz.</p><pre><code class=language-python>class pizza:
+    def __init__(self, file):
+        f = open(file, 'r')
+        fline = f.readline()
+        [R, C, L, H] = fline.split(' ')
+        self.L = int(L)
+        self.H = int(H)
+        self.R = int(R)
+        self.C = int(C)
+        self.Matrix = []
+        self.Matrix2 = []
+        self.result = []
+        self.resultS = []
+        for index, line in enumerate(f):
+            self.Matrix.append([])
+            self.Matrix2.append([])
+            for i in range(0, self.C):
+                self.Matrix[index].append(line[i])
+                self.Matrix2[index].append(False)
+
+    def calculate(self):
+        # print('Calculating')
+        for i in range(0, self.R):
+            for j in range(0, self.C):
+                if self.Matrix2[i][j] is False:
+                    self.trycreateSlice(i, j)
+        
+        for index,curSlice in enumerate(self.result):
+            self.decommitResult(curSlice)
+            for i in [3,2,1,0]:
+                for j in [3,2,1,0]:
+                    trySlice = slice(curSlice.r1, curSlice.c1, curSlice.r2 + i, curSlice.c2 + j)
+                    if self.testSlice(trySlice) is True:
+                        #print 'updated'
+                        self.result[index].r1 = trySlice.r1
+                        self.result[index].c1 = trySlice.c1
+                        self.result[index].r2 = trySlice.r2
+                        self.result[index].c2 = trySlice.c2
+                        for i in range(trySlice.r1, trySlice.r2 + 1):
+                            for j in range(trySlice.c1, trySlice.c2 + 1):
+                                self.Matrix2[i][j] = True
+                        break
+        
+
+    def trycreateSlice(self, r, c):
+        # print(r,c),'start'
+        for i in range(0, 15):
+            for j in range(0, 15):
+                trySlice = slice(r, c, r + i, c + j)
+                if self.testSlice(trySlice) is True:
+                    # print 'finded'
+                    self.commitResult(trySlice)
+                    break
+        return (r, c)
+
+    def testSlice(self, slice):
+        test = False
+        if (((slice.r2 - slice.r1 + 1) * (slice.c2 - slice.c1 + 1)) &gt; self.H) | ((slice.r2 + 1) &gt; self.R) | ((slice.c2 + 1) &gt; self.C):
+            # print '&gt;boundries'
+            a = 5
+        else:
+            tNum, mNum = self.getNumbers(slice)
+            avaible = self.getAvaible(slice)
+            if avaible is True:
+                if(mNum &gt;= self.L) &amp; (tNum &gt;= self.L):
+                    test = True
+            else:
+                # print 'not Avaible'
+                a = 5
+        return test
+
+    def getAvaible(self, slice):
+        avaible = True
+        for i in range(slice.r1, slice.r2 + 1):
+            for j in range(slice.c1, slice.c2 + 1):
+                if self.Matrix2[i][j] == True:
+                    avaible = False
+        return avaible
+
+    def getNumbers(self, slice):
+        tNum = 0
+        mNum = 0
+        for i in range(slice.r1, slice.r2 + 1):
+            for j in range(slice.c1, slice.c2 + 1):
+                if self.Matrix[i][j] == 'T':
+                    tNum += 1
+                elif self.Matrix[i][j] == 'M':
+                    mNum += 1
+        return tNum, mNum
+
+    def commitResult(self, slice):
+        self.result.append(slice)
+        # print 'done',str(r1)+&quot; &quot;+str(c1)+&quot; &quot;+str(r2)+&quot; &quot;+str(c2)
+        for i in range(slice.r1, slice.r2 + 1):
+            for j in range(slice.c1, slice.c2 + 1):
+                self.Matrix2[i][j] = True
+
+    def decommitResult(self, slice):
+        # print 'done',str(r1)+&quot; &quot;+str(c1)+&quot; &quot;+str(r2)+&quot; &quot;+str(c2)
+        for i in range(slice.r1, slice.r2 + 1):
+            for j in range(slice.c1, slice.c2 + 1):
+                self.Matrix2[i][j] = False
+
+    def convertRestultString(self):
+        for slice in self.result:
+            self.resultS.append(str(slice.r1) + &quot; &quot; + str(slice.c1) +
+                           &quot; &quot; + str(slice.r2) + &quot; &quot; + str(slice.c2))    
+
+    def printSucces(self):  
+        trueC = 0
+        falseC = 0
+        for i in range(0, self.R):
+            for j in range(0, self.C):
+                if self.Matrix2[i][j] == True:
+                    trueC += 1
+                else:
+                    falseC += 1
+        print &quot;Score: &quot;, trueC, &quot; / &quot;, trueC+falseC
+
+class slice:
+    def __init__(self,r1,c1,r2,c2):
+        self.r1 = r1
+        self.c1 = c1
+        self.r2 = r2
+        self.c2 = c2
+
+
+mypizza = pizza('medium.in')
+# print mypizza.Matrix
+# print mypizza.Matrix2
+mypizza.calculate()
+mypizza.convertRestultString()
+s = str(len(mypizza.resultS))+&quot;\n&quot;
+for res in mypizza.resultS:
+    s += res + &quot;\n&quot;
+file = open(&quot;medium.txt&quot;,&quot;w&quot;)
+file.write(s)
+file.close()
+
+
+mypizza.printSucces()
+</code></pre><h4 id=online-eleme-sorusu-streaming-videos>Online eleme sorusu: Streaming Videos</h4><p>Bu soruda ise video izleme gecikmesini azaltmak için videoları &lsquo;cache&rsquo; sunuclara
 yerleştirmemiz isteniyor. Yüksek puan almak için toplam gecikme süresi minimum
 olmalı. Bu kapsam da ilk aşamada gerekli sınıflar oluşturuldu. Daha sonrasında
 bu sınıflar arasında bağlantılar oluşturuldu. Algoritmanın amacı herhangibir bir
@@ -186,138 +186,138 @@ işleme doğru giden algoritmalar yazdım. İkinci önerim ise kesinlikle verile
 datalara bakarak çözümünüzü üretin. Çünkü bütün sorularda genelde 3 4 adet
 farklı data kümesi verilliyor ve genelde her bir data farklı bir şeyi ölçüyor.
 Biri için geliştirdiğiniz algoritma diğerlerine uymayabiliyor. Bugünlük bu kadar
-daha ayrıntılı sorularınızı her zaman sorabilirsiniz. Görüşmek üzere</p><div class=highlight><pre tabindex=0 style=color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span><span style=color:#81a1c1;font-weight:700>class</span> <span style=color:#8fbcbb>scoring</span><span style=color:#eceff4>:</span>
-</span></span><span style=display:flex><span>    <span style=color:#81a1c1;font-weight:700>def</span> <span style=color:#88c0d0>__init__</span><span style=color:#eceff4>(</span><span style=color:#81a1c1>self</span><span style=color:#eceff4>,</span>video<span style=color:#eceff4>,</span>score<span style=color:#eceff4>):</span>
-</span></span><span style=display:flex><span>       <span style=color:#81a1c1>self</span><span style=color:#81a1c1>.</span>video<span style=color:#81a1c1>=</span> video
-</span></span><span style=display:flex><span>       <span style=color:#81a1c1>self</span><span style=color:#81a1c1>.</span>score <span style=color:#81a1c1>=</span> score
-</span></span><span style=display:flex><span>    <span style=color:#81a1c1;font-weight:700>def</span> <span style=color:#88c0d0>__lt__</span><span style=color:#eceff4>(</span><span style=color:#81a1c1>self</span><span style=color:#eceff4>,</span> other<span style=color:#eceff4>):</span>
-</span></span><span style=display:flex><span>         <span style=color:#81a1c1;font-weight:700>return</span> <span style=color:#81a1c1>self</span><span style=color:#81a1c1>.</span>score <span style=color:#81a1c1>&gt;</span> other<span style=color:#81a1c1>.</span>score <span style=color:#81a1c1>+</span> <span style=color:#b48ead>5</span> 
-</span></span><span style=display:flex><span>         
-</span></span><span style=display:flex><span><span style=color:#81a1c1;font-weight:700>class</span> <span style=color:#8fbcbb>connection</span><span style=color:#eceff4>:</span>
-</span></span><span style=display:flex><span>    <span style=color:#81a1c1;font-weight:700>def</span> <span style=color:#88c0d0>__init__</span><span style=color:#eceff4>(</span><span style=color:#81a1c1>self</span><span style=color:#eceff4>,</span>ep<span style=color:#eceff4>,</span>cacheNum<span style=color:#eceff4>,</span>latency<span style=color:#eceff4>):</span>
-</span></span><span style=display:flex><span>        <span style=color:#81a1c1>self</span><span style=color:#81a1c1>.</span>ep <span style=color:#81a1c1>=</span> ep
-</span></span><span style=display:flex><span>        <span style=color:#81a1c1>self</span><span style=color:#81a1c1>.</span>cacheNum <span style=color:#81a1c1>=</span> cacheNum
-</span></span><span style=display:flex><span>        <span style=color:#81a1c1>self</span><span style=color:#81a1c1>.</span>latency <span style=color:#81a1c1>=</span> latency
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#81a1c1;font-weight:700>class</span> <span style=color:#8fbcbb>video</span><span style=color:#eceff4>:</span>
-</span></span><span style=display:flex><span>    <span style=color:#81a1c1;font-weight:700>def</span> <span style=color:#88c0d0>__init__</span><span style=color:#eceff4>(</span><span style=color:#81a1c1>self</span><span style=color:#eceff4>,</span> <span style=color:#81a1c1>id</span> <span style=color:#eceff4>,</span> size<span style=color:#eceff4>):</span>
-</span></span><span style=display:flex><span>        <span style=color:#81a1c1>self</span><span style=color:#81a1c1>.</span>id <span style=color:#81a1c1>=</span> <span style=color:#81a1c1>id</span>
-</span></span><span style=display:flex><span>        <span style=color:#81a1c1>self</span><span style=color:#81a1c1>.</span>size <span style=color:#81a1c1>=</span> size
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#81a1c1;font-weight:700>class</span> <span style=color:#8fbcbb>cache</span><span style=color:#eceff4>:</span>
-</span></span><span style=display:flex><span>    <span style=color:#81a1c1;font-weight:700>def</span> <span style=color:#88c0d0>__init__</span><span style=color:#eceff4>(</span><span style=color:#81a1c1>self</span><span style=color:#eceff4>,</span> <span style=color:#81a1c1>id</span> <span style=color:#eceff4>,</span> capacity<span style=color:#eceff4>):</span>
-</span></span><span style=display:flex><span>        <span style=color:#81a1c1>self</span><span style=color:#81a1c1>.</span>id <span style=color:#81a1c1>=</span> <span style=color:#81a1c1>id</span>
-</span></span><span style=display:flex><span>        <span style=color:#81a1c1>self</span><span style=color:#81a1c1>.</span>capacity <span style=color:#81a1c1>=</span> capacity
-</span></span><span style=display:flex><span>        <span style=color:#81a1c1>self</span><span style=color:#81a1c1>.</span>videos <span style=color:#81a1c1>=</span> <span style=color:#eceff4>[]</span>
-</span></span><span style=display:flex><span>        <span style=color:#81a1c1>self</span><span style=color:#81a1c1>.</span>endpoints <span style=color:#81a1c1>=</span> <span style=color:#eceff4>[]</span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>    <span style=color:#81a1c1;font-weight:700>def</span> <span style=color:#88c0d0>addVideo</span><span style=color:#eceff4>(</span><span style=color:#81a1c1>self</span><span style=color:#eceff4>,</span>video<span style=color:#eceff4>):</span>
-</span></span><span style=display:flex><span>        <span style=color:#81a1c1;font-weight:700>if</span> <span style=color:#81a1c1>self</span><span style=color:#81a1c1>.</span>capacity <span style=color:#81a1c1>&gt;=</span> video<span style=color:#81a1c1>.</span>size<span style=color:#eceff4>:</span> 
-</span></span><span style=display:flex><span>            <span style=color:#81a1c1>self</span><span style=color:#81a1c1>.</span>videos<span style=color:#81a1c1>.</span>append<span style=color:#eceff4>(</span>video<span style=color:#eceff4>)</span>
-</span></span><span style=display:flex><span>            <span style=color:#81a1c1>self</span><span style=color:#81a1c1>.</span>capacity <span style=color:#81a1c1>=</span> <span style=color:#81a1c1>self</span><span style=color:#81a1c1>.</span>capacity <span style=color:#81a1c1>-</span> video<span style=color:#81a1c1>.</span>size
-</span></span><span style=display:flex><span>            <span style=color:#81a1c1;font-weight:700>return</span> <span style=color:#81a1c1;font-weight:700>True</span>
-</span></span><span style=display:flex><span>        <span style=color:#81a1c1;font-weight:700>else</span><span style=color:#eceff4>:</span>
-</span></span><span style=display:flex><span>            <span style=color:#81a1c1;font-weight:700>return</span> <span style=color:#81a1c1;font-weight:700>False</span>
-</span></span><span style=display:flex><span>        
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#81a1c1;font-weight:700>class</span> <span style=color:#8fbcbb>endpoint</span><span style=color:#eceff4>:</span>
-</span></span><span style=display:flex><span>    <span style=color:#81a1c1;font-weight:700>def</span> <span style=color:#88c0d0>__init__</span><span style=color:#eceff4>(</span><span style=color:#81a1c1>self</span><span style=color:#eceff4>,</span><span style=color:#81a1c1>id</span><span style=color:#eceff4>,</span>latencyDataC<span style=color:#eceff4>,</span>connectionNumber<span style=color:#eceff4>):</span>
-</span></span><span style=display:flex><span>        <span style=color:#81a1c1>self</span><span style=color:#81a1c1>.</span>id <span style=color:#81a1c1>=</span> <span style=color:#81a1c1>id</span> 
-</span></span><span style=display:flex><span>        <span style=color:#81a1c1>self</span><span style=color:#81a1c1>.</span>latencyDataC<span style=color:#81a1c1>=</span> latencyDataC
-</span></span><span style=display:flex><span>        <span style=color:#81a1c1>self</span><span style=color:#81a1c1>.</span>connections <span style=color:#81a1c1>=</span> <span style=color:#eceff4>[]</span>
-</span></span><span style=display:flex><span>        <span style=color:#81a1c1>self</span><span style=color:#81a1c1>.</span>requests <span style=color:#81a1c1>=</span> <span style=color:#eceff4>[]</span> 
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#81a1c1;font-weight:700>class</span> <span style=color:#8fbcbb>request</span><span style=color:#eceff4>:</span>
-</span></span><span style=display:flex><span>    <span style=color:#81a1c1;font-weight:700>def</span> <span style=color:#88c0d0>__init__</span><span style=color:#eceff4>(</span><span style=color:#81a1c1>self</span><span style=color:#eceff4>,</span>reqNumber<span style=color:#eceff4>,</span> videoID<span style=color:#eceff4>,</span> endpointID<span style=color:#eceff4>,</span>count<span style=color:#eceff4>):</span>
-</span></span><span style=display:flex><span>        <span style=color:#81a1c1>self</span><span style=color:#81a1c1>.</span>reqNumber <span style=color:#81a1c1>=</span> reqNumber
-</span></span><span style=display:flex><span>        <span style=color:#81a1c1>self</span><span style=color:#81a1c1>.</span>videoID <span style=color:#81a1c1>=</span> videoID
-</span></span><span style=display:flex><span>        <span style=color:#81a1c1>self</span><span style=color:#81a1c1>.</span>endpointID <span style=color:#81a1c1>=</span> endpointID
-</span></span><span style=display:flex><span>        <span style=color:#81a1c1>self</span><span style=color:#81a1c1>.</span>count <span style=color:#81a1c1>=</span> count
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#81a1c1;font-weight:700>class</span> <span style=color:#8fbcbb>solver</span><span style=color:#eceff4>:</span>
-</span></span><span style=display:flex><span>    <span style=color:#81a1c1;font-weight:700>def</span> <span style=color:#88c0d0>__init__</span><span style=color:#eceff4>(</span><span style=color:#81a1c1>self</span><span style=color:#eceff4>,</span> file<span style=color:#eceff4>):</span>
-</span></span><span style=display:flex><span>        <span style=color:#81a1c1>self</span><span style=color:#81a1c1>.</span>videos <span style=color:#81a1c1>=</span> <span style=color:#eceff4>[]</span>
-</span></span><span style=display:flex><span>        <span style=color:#81a1c1>self</span><span style=color:#81a1c1>.</span>eps <span style=color:#81a1c1>=</span> <span style=color:#eceff4>[]</span>
-</span></span><span style=display:flex><span>        <span style=color:#81a1c1>self</span><span style=color:#81a1c1>.</span>requests <span style=color:#81a1c1>=</span> <span style=color:#eceff4>[]</span>
-</span></span><span style=display:flex><span>        <span style=color:#81a1c1>self</span><span style=color:#81a1c1>.</span>caches<span style=color:#81a1c1>=</span> <span style=color:#eceff4>[]</span>
-</span></span><span style=display:flex><span>        f <span style=color:#81a1c1>=</span> <span style=color:#81a1c1>open</span><span style=color:#eceff4>(</span>file<span style=color:#eceff4>,</span> <span style=color:#a3be8c>&#39;r&#39;</span><span style=color:#eceff4>)</span>
-</span></span><span style=display:flex><span>        fline <span style=color:#81a1c1>=</span> f<span style=color:#81a1c1>.</span>readline<span style=color:#eceff4>()</span>
-</span></span><span style=display:flex><span>        <span style=color:#eceff4>[</span>V<span style=color:#eceff4>,</span> E<span style=color:#eceff4>,</span> R<span style=color:#eceff4>,</span> C<span style=color:#eceff4>,</span> X<span style=color:#eceff4>]</span> <span style=color:#81a1c1>=</span> fline<span style=color:#81a1c1>.</span>split<span style=color:#eceff4>(</span><span style=color:#a3be8c>&#39; &#39;</span><span style=color:#eceff4>)</span>
-</span></span><span style=display:flex><span>        <span style=color:#81a1c1>self</span><span style=color:#81a1c1>.</span>videoCount <span style=color:#81a1c1>=</span> <span style=color:#81a1c1>int</span><span style=color:#eceff4>(</span>V<span style=color:#eceff4>)</span>
-</span></span><span style=display:flex><span>        <span style=color:#81a1c1;font-weight:700>for</span> indexC <span style=color:#81a1c1;font-weight:700>in</span> <span style=color:#81a1c1>range</span><span style=color:#eceff4>(</span><span style=color:#b48ead>0</span><span style=color:#eceff4>,</span><span style=color:#81a1c1>int</span><span style=color:#eceff4>(</span>C<span style=color:#eceff4>)):</span>
-</span></span><span style=display:flex><span>            c <span style=color:#81a1c1>=</span> cache<span style=color:#eceff4>(</span>indexC<span style=color:#eceff4>,</span> <span style=color:#81a1c1>int</span><span style=color:#eceff4>(</span>X<span style=color:#eceff4>))</span>
-</span></span><span style=display:flex><span>            <span style=color:#81a1c1>self</span><span style=color:#81a1c1>.</span>caches<span style=color:#81a1c1>.</span>append<span style=color:#eceff4>(</span>c<span style=color:#eceff4>)</span>
-</span></span><span style=display:flex><span>        fline <span style=color:#81a1c1>=</span> f<span style=color:#81a1c1>.</span>readline<span style=color:#eceff4>()</span>
-</span></span><span style=display:flex><span>        <span style=color:#81a1c1;font-weight:700>for</span> index<span style=color:#eceff4>,</span> size <span style=color:#81a1c1;font-weight:700>in</span> <span style=color:#81a1c1>enumerate</span><span style=color:#eceff4>(</span>fline<span style=color:#81a1c1>.</span>split<span style=color:#eceff4>(</span><span style=color:#a3be8c>&#39; &#39;</span><span style=color:#eceff4>)):</span>
-</span></span><span style=display:flex><span>            v <span style=color:#81a1c1>=</span> video<span style=color:#eceff4>(</span>index<span style=color:#eceff4>,</span><span style=color:#81a1c1>int</span><span style=color:#eceff4>(</span>size<span style=color:#eceff4>))</span>
-</span></span><span style=display:flex><span>            <span style=color:#81a1c1>self</span><span style=color:#81a1c1>.</span>videos<span style=color:#81a1c1>.</span>append<span style=color:#eceff4>(</span>v<span style=color:#eceff4>)</span>
-</span></span><span style=display:flex><span>        <span style=color:#81a1c1;font-weight:700>for</span> currentEpID <span style=color:#81a1c1;font-weight:700>in</span> <span style=color:#81a1c1>range</span><span style=color:#eceff4>(</span><span style=color:#b48ead>0</span><span style=color:#eceff4>,</span><span style=color:#81a1c1>int</span><span style=color:#eceff4>(</span>E<span style=color:#eceff4>)):</span>
-</span></span><span style=display:flex><span>            fline <span style=color:#81a1c1>=</span> f<span style=color:#81a1c1>.</span>readline<span style=color:#eceff4>()</span>
-</span></span><span style=display:flex><span>            <span style=color:#eceff4>[</span>latencyDataC<span style=color:#eceff4>,</span> connectionNumber<span style=color:#eceff4>]</span> <span style=color:#81a1c1>=</span> fline<span style=color:#81a1c1>.</span>split<span style=color:#eceff4>(</span><span style=color:#a3be8c>&#39; &#39;</span><span style=color:#eceff4>)</span>
-</span></span><span style=display:flex><span>            ep <span style=color:#81a1c1>=</span> endpoint<span style=color:#eceff4>(</span>currentEpID<span style=color:#eceff4>,</span><span style=color:#81a1c1>int</span><span style=color:#eceff4>(</span>latencyDataC<span style=color:#eceff4>),</span><span style=color:#81a1c1>int</span><span style=color:#eceff4>(</span>connectionNumber<span style=color:#eceff4>))</span>
-</span></span><span style=display:flex><span>            <span style=color:#81a1c1>self</span><span style=color:#81a1c1>.</span>eps<span style=color:#81a1c1>.</span>append<span style=color:#eceff4>(</span>ep<span style=color:#eceff4>)</span>
-</span></span><span style=display:flex><span>            <span style=color:#81a1c1;font-weight:700>for</span> i <span style=color:#81a1c1;font-weight:700>in</span> <span style=color:#81a1c1>range</span><span style=color:#eceff4>(</span><span style=color:#b48ead>0</span><span style=color:#eceff4>,</span><span style=color:#81a1c1>int</span><span style=color:#eceff4>(</span>connectionNumber<span style=color:#eceff4>)):</span>
-</span></span><span style=display:flex><span>                <span style=color:#eceff4>[</span>cNUm<span style=color:#eceff4>,</span>latency<span style=color:#eceff4>]</span> <span style=color:#81a1c1>=</span> f<span style=color:#81a1c1>.</span>readline<span style=color:#eceff4>()</span><span style=color:#81a1c1>.</span>split<span style=color:#eceff4>(</span><span style=color:#a3be8c>&#39; &#39;</span><span style=color:#eceff4>)</span>
-</span></span><span style=display:flex><span>                c <span style=color:#81a1c1>=</span> connection<span style=color:#eceff4>(</span>ep<span style=color:#eceff4>,</span><span style=color:#81a1c1>int</span><span style=color:#eceff4>(</span>cNUm<span style=color:#eceff4>),</span><span style=color:#81a1c1>int</span><span style=color:#eceff4>(</span>latency<span style=color:#eceff4>))</span>
-</span></span><span style=display:flex><span>                ep<span style=color:#81a1c1>.</span>connections<span style=color:#81a1c1>.</span>append<span style=color:#eceff4>(</span>c<span style=color:#eceff4>)</span>
-</span></span><span style=display:flex><span>                <span style=color:#81a1c1>self</span><span style=color:#81a1c1>.</span>caches<span style=color:#eceff4>[</span><span style=color:#81a1c1>int</span><span style=color:#eceff4>(</span>cNUm<span style=color:#eceff4>)]</span><span style=color:#81a1c1>.</span>endpoints<span style=color:#81a1c1>.</span>append<span style=color:#eceff4>(</span><span style=color:#81a1c1>self</span><span style=color:#81a1c1>.</span>eps<span style=color:#eceff4>[</span>currentEpID<span style=color:#eceff4>])</span>
-</span></span><span style=display:flex><span>        <span style=color:#81a1c1;font-weight:700>for</span> curReqId <span style=color:#81a1c1;font-weight:700>in</span> <span style=color:#81a1c1>range</span><span style=color:#eceff4>(</span><span style=color:#b48ead>0</span><span style=color:#eceff4>,</span><span style=color:#81a1c1>int</span><span style=color:#eceff4>(</span>R<span style=color:#eceff4>)):</span>
-</span></span><span style=display:flex><span>            <span style=color:#eceff4>[</span>reqVideoID<span style=color:#eceff4>,</span>reqEpID<span style=color:#eceff4>,</span>reqCount<span style=color:#eceff4>]</span> <span style=color:#81a1c1>=</span> f<span style=color:#81a1c1>.</span>readline<span style=color:#eceff4>()</span><span style=color:#81a1c1>.</span>split<span style=color:#eceff4>(</span><span style=color:#a3be8c>&#39; &#39;</span><span style=color:#eceff4>)</span>
-</span></span><span style=display:flex><span>            r <span style=color:#81a1c1>=</span> request<span style=color:#eceff4>(</span>curReqId<span style=color:#eceff4>,</span><span style=color:#81a1c1>int</span><span style=color:#eceff4>(</span>reqVideoID<span style=color:#eceff4>),</span><span style=color:#81a1c1>int</span><span style=color:#eceff4>(</span>reqEpID<span style=color:#eceff4>),</span><span style=color:#81a1c1>int</span><span style=color:#eceff4>(</span>reqCount<span style=color:#eceff4>))</span>
-</span></span><span style=display:flex><span>            <span style=color:#81a1c1>self</span><span style=color:#81a1c1>.</span>requests<span style=color:#81a1c1>.</span>append<span style=color:#eceff4>(</span>r<span style=color:#eceff4>)</span>
-</span></span><span style=display:flex><span>            <span style=color:#81a1c1>self</span><span style=color:#81a1c1>.</span>eps<span style=color:#eceff4>[</span><span style=color:#81a1c1>int</span><span style=color:#eceff4>(</span>reqEpID<span style=color:#eceff4>)]</span><span style=color:#81a1c1>.</span>requests<span style=color:#81a1c1>.</span>append<span style=color:#eceff4>(</span>r<span style=color:#eceff4>)</span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>    <span style=color:#81a1c1;font-weight:700>def</span> <span style=color:#88c0d0>getvideosofcache</span><span style=color:#eceff4>(</span><span style=color:#81a1c1>self</span><span style=color:#eceff4>,</span>cache<span style=color:#eceff4>):</span>
-</span></span><span style=display:flex><span>        <span style=color:#616e87;font-style:italic>#print &#34;cache id:&#34;, cache,</span>
-</span></span><span style=display:flex><span>        scoreList <span style=color:#81a1c1>=</span> <span style=color:#eceff4>[]</span>
-</span></span><span style=display:flex><span>        <span style=color:#81a1c1;font-weight:700>for</span> i <span style=color:#81a1c1;font-weight:700>in</span> <span style=color:#81a1c1>self</span><span style=color:#81a1c1>.</span>videos<span style=color:#eceff4>:</span>
-</span></span><span style=display:flex><span>            s <span style=color:#81a1c1>=</span> scoring<span style=color:#eceff4>(</span>i<span style=color:#eceff4>,</span><span style=color:#b48ead>0</span><span style=color:#eceff4>)</span>
-</span></span><span style=display:flex><span>            scoreList<span style=color:#81a1c1>.</span>append<span style=color:#eceff4>(</span>s<span style=color:#eceff4>)</span>
-</span></span><span style=display:flex><span>        <span style=color:#81a1c1;font-weight:700>for</span> ep <span style=color:#81a1c1;font-weight:700>in</span> cache<span style=color:#81a1c1>.</span>endpoints<span style=color:#eceff4>:</span>
-</span></span><span style=display:flex><span>            <span style=color:#81a1c1;font-weight:700>for</span> req <span style=color:#81a1c1;font-weight:700>in</span> ep<span style=color:#81a1c1>.</span>requests<span style=color:#eceff4>:</span>
-</span></span><span style=display:flex><span>                curLat <span style=color:#81a1c1>=</span> <span style=color:#81a1c1>self</span><span style=color:#81a1c1>.</span>getlatency<span style=color:#eceff4>(</span>cache<span style=color:#eceff4>,</span>ep<span style=color:#eceff4>)</span>
-</span></span><span style=display:flex><span>                score <span style=color:#81a1c1>=</span> <span style=color:#eceff4>(</span>req<span style=color:#81a1c1>.</span>count<span style=color:#81a1c1>*</span><span style=color:#eceff4>(</span>ep<span style=color:#81a1c1>.</span>latencyDataC<span style=color:#81a1c1>-</span>curLat<span style=color:#eceff4>))</span>
-</span></span><span style=display:flex><span>                <span style=color:#616e87;font-style:italic>#print &#34;videoid : &#34;, req.videoID, &#34;ep: &#34;, ep.id, &#34;req count&#34;, req.count, &#34;dc latiency: &#34;, ep.latencyDataC, &#34;connect latency&#34;,curLat, &#34;puan&#34;, score)</span>
-</span></span><span style=display:flex><span>                scoreList<span style=color:#eceff4>[</span>req<span style=color:#81a1c1>.</span>videoID<span style=color:#eceff4>]</span><span style=color:#81a1c1>.</span>score <span style=color:#81a1c1>+=</span> score
-</span></span><span style=display:flex><span>                <span style=color:#616e87;font-style:italic>#print &#34;videoid : &#34;, req.videoID, scoreList[req.videoID].score</span>
-</span></span><span style=display:flex><span>        scoreList<span style=color:#81a1c1>.</span>sort<span style=color:#eceff4>()</span>
-</span></span><span style=display:flex><span>        <span style=color:#616e87;font-style:italic>#for a in scoreList:</span>
-</span></span><span style=display:flex><span>            <span style=color:#616e87;font-style:italic>#print a.video.id, a.score, a.video.size</span>
-</span></span><span style=display:flex><span>        <span style=color:#81a1c1;font-weight:700>return</span> scoreList
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>    <span style=color:#81a1c1;font-weight:700>def</span> <span style=color:#88c0d0>getlatency</span><span style=color:#eceff4>(</span><span style=color:#81a1c1>self</span><span style=color:#eceff4>,</span>cache<span style=color:#eceff4>,</span>endpoint<span style=color:#eceff4>):</span>
-</span></span><span style=display:flex><span>        ali <span style=color:#81a1c1>=</span> <span style=color:#b48ead>0</span>
-</span></span><span style=display:flex><span>        <span style=color:#81a1c1;font-weight:700>for</span> i <span style=color:#81a1c1;font-weight:700>in</span> endpoint<span style=color:#81a1c1>.</span>connections<span style=color:#eceff4>:</span>
-</span></span><span style=display:flex><span>            <span style=color:#81a1c1;font-weight:700>if</span> i<span style=color:#81a1c1>.</span>cacheNum <span style=color:#81a1c1>==</span> cache<span style=color:#81a1c1>.</span>id<span style=color:#eceff4>:</span>
-</span></span><span style=display:flex><span>                ali <span style=color:#81a1c1>=</span> i<span style=color:#81a1c1>.</span>latency
-</span></span><span style=display:flex><span>                <span style=color:#81a1c1;font-weight:700>break</span>
-</span></span><span style=display:flex><span>        <span style=color:#81a1c1;font-weight:700>return</span> ali
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>    <span style=color:#81a1c1;font-weight:700>def</span> <span style=color:#88c0d0>solve</span><span style=color:#eceff4>(</span><span style=color:#81a1c1>self</span><span style=color:#eceff4>):</span>
-</span></span><span style=display:flex><span>        <span style=color:#81a1c1;font-weight:700>for</span> curCache <span style=color:#81a1c1;font-weight:700>in</span> <span style=color:#81a1c1>self</span><span style=color:#81a1c1>.</span>caches<span style=color:#eceff4>:</span>
-</span></span><span style=display:flex><span>            <span style=color:#81a1c1>print</span> curCache<span style=color:#81a1c1>.</span>id
-</span></span><span style=display:flex><span>            scoreList <span style=color:#81a1c1>=</span> mysolver<span style=color:#81a1c1>.</span>getvideosofcache<span style=color:#eceff4>(</span>curCache<span style=color:#eceff4>)</span>
-</span></span><span style=display:flex><span>            <span style=color:#81a1c1;font-weight:700>for</span> curVideo <span style=color:#81a1c1;font-weight:700>in</span> scoreList<span style=color:#eceff4>:</span>
-</span></span><span style=display:flex><span>                <span style=color:#81a1c1;font-weight:700>if</span> curVideo<span style=color:#81a1c1>.</span>score <span style=color:#81a1c1>==</span> <span style=color:#b48ead>0</span><span style=color:#eceff4>:</span>
-</span></span><span style=display:flex><span>                    <span style=color:#81a1c1;font-weight:700>break</span>
-</span></span><span style=display:flex><span>                curCache<span style=color:#81a1c1>.</span>addVideo<span style=color:#eceff4>(</span>curVideo<span style=color:#81a1c1>.</span>video<span style=color:#eceff4>)</span>
-</span></span><span style=display:flex><span>    
-</span></span><span style=display:flex><span>    <span style=color:#81a1c1;font-weight:700>def</span> <span style=color:#88c0d0>result</span><span style=color:#eceff4>(</span><span style=color:#81a1c1>self</span><span style=color:#eceff4>):</span>
-</span></span><span style=display:flex><span>        result <span style=color:#81a1c1>=</span> <span style=color:#81a1c1>str</span><span style=color:#eceff4>(</span><span style=color:#81a1c1>len</span><span style=color:#eceff4>(</span><span style=color:#81a1c1>self</span><span style=color:#81a1c1>.</span>caches<span style=color:#eceff4>))</span>
-</span></span><span style=display:flex><span>        <span style=color:#81a1c1;font-weight:700>for</span> curCache <span style=color:#81a1c1;font-weight:700>in</span> <span style=color:#81a1c1>self</span><span style=color:#81a1c1>.</span>caches<span style=color:#eceff4>:</span>
-</span></span><span style=display:flex><span>            result <span style=color:#81a1c1>+=</span> <span style=color:#a3be8c>&#34;</span><span style=color:#ebcb8b>\n</span><span style=color:#a3be8c>&#34;</span><span style=color:#81a1c1>+</span><span style=color:#81a1c1>str</span><span style=color:#eceff4>(</span>curCache<span style=color:#81a1c1>.</span>id<span style=color:#eceff4>)</span>  
-</span></span><span style=display:flex><span>            <span style=color:#81a1c1;font-weight:700>for</span> curVideo <span style=color:#81a1c1;font-weight:700>in</span> curCache<span style=color:#81a1c1>.</span>videos<span style=color:#eceff4>:</span>
-</span></span><span style=display:flex><span>                result <span style=color:#81a1c1>+=</span> <span style=color:#a3be8c>&#34; &#34;</span><span style=color:#81a1c1>+</span><span style=color:#81a1c1>str</span><span style=color:#eceff4>(</span>curVideo<span style=color:#81a1c1>.</span>id<span style=color:#eceff4>)</span>
-</span></span><span style=display:flex><span>        <span style=color:#616e87;font-style:italic>#print result </span>
-</span></span><span style=display:flex><span>        file <span style=color:#81a1c1>=</span> <span style=color:#81a1c1>open</span><span style=color:#eceff4>(</span><span style=color:#a3be8c>&#34;videos_worth_spreading.txt&#34;</span><span style=color:#eceff4>,</span><span style=color:#a3be8c>&#34;w&#34;</span><span style=color:#eceff4>)</span>
-</span></span><span style=display:flex><span>        file<span style=color:#81a1c1>.</span>write<span style=color:#eceff4>(</span>result<span style=color:#eceff4>)</span>
-</span></span><span style=display:flex><span>        file<span style=color:#81a1c1>.</span>close<span style=color:#eceff4>()</span>  
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>mysolver <span style=color:#81a1c1>=</span> solver<span style=color:#eceff4>(</span><span style=color:#a3be8c>&#39;videos_worth_spreading.in&#39;</span><span style=color:#eceff4>)</span>
-</span></span><span style=display:flex><span>mysolver<span style=color:#81a1c1>.</span>solve<span style=color:#eceff4>()</span>
-</span></span><span style=display:flex><span>mysolver<span style=color:#81a1c1>.</span>result<span style=color:#eceff4>()</span>
-</span></span></code></pre></div></div></article></main><footer><p>&copy; 2025 M.Ozan Unal.</p></footer></body><script async src="https://www.googletagmanager.com/gtag/js?id=G-007KSW65JL"></script><script>var dnt,doNotTrack=!1;if(!1&&(dnt=navigator.doNotTrack||window.doNotTrack||navigator.msDoNotTrack,doNotTrack=dnt=="1"||dnt=="yes"),!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-007KSW65JL")}</script></html>
+daha ayrıntılı sorularınızı her zaman sorabilirsiniz. Görüşmek üzere</p><pre><code class=language-python>class scoring:
+    def __init__(self,video,score):
+       self.video= video
+       self.score = score
+    def __lt__(self, other):
+         return self.score &gt; other.score + 5 
+         
+class connection:
+    def __init__(self,ep,cacheNum,latency):
+        self.ep = ep
+        self.cacheNum = cacheNum
+        self.latency = latency
+
+class video:
+    def __init__(self, id , size):
+        self.id = id
+        self.size = size
+
+class cache:
+    def __init__(self, id , capacity):
+        self.id = id
+        self.capacity = capacity
+        self.videos = []
+        self.endpoints = []
+
+    def addVideo(self,video):
+        if self.capacity &gt;= video.size: 
+            self.videos.append(video)
+            self.capacity = self.capacity - video.size
+            return True
+        else:
+            return False
+        
+
+class endpoint:
+    def __init__(self,id,latencyDataC,connectionNumber):
+        self.id = id 
+        self.latencyDataC= latencyDataC
+        self.connections = []
+        self.requests = [] 
+
+class request:
+    def __init__(self,reqNumber, videoID, endpointID,count):
+        self.reqNumber = reqNumber
+        self.videoID = videoID
+        self.endpointID = endpointID
+        self.count = count
+
+
+class solver:
+    def __init__(self, file):
+        self.videos = []
+        self.eps = []
+        self.requests = []
+        self.caches= []
+        f = open(file, 'r')
+        fline = f.readline()
+        [V, E, R, C, X] = fline.split(' ')
+        self.videoCount = int(V)
+        for indexC in range(0,int(C)):
+            c = cache(indexC, int(X))
+            self.caches.append(c)
+        fline = f.readline()
+        for index, size in enumerate(fline.split(' ')):
+            v = video(index,int(size))
+            self.videos.append(v)
+        for currentEpID in range(0,int(E)):
+            fline = f.readline()
+            [latencyDataC, connectionNumber] = fline.split(' ')
+            ep = endpoint(currentEpID,int(latencyDataC),int(connectionNumber))
+            self.eps.append(ep)
+            for i in range(0,int(connectionNumber)):
+                [cNUm,latency] = f.readline().split(' ')
+                c = connection(ep,int(cNUm),int(latency))
+                ep.connections.append(c)
+                self.caches[int(cNUm)].endpoints.append(self.eps[currentEpID])
+        for curReqId in range(0,int(R)):
+            [reqVideoID,reqEpID,reqCount] = f.readline().split(' ')
+            r = request(curReqId,int(reqVideoID),int(reqEpID),int(reqCount))
+            self.requests.append(r)
+            self.eps[int(reqEpID)].requests.append(r)
+
+
+    def getvideosofcache(self,cache):
+        #print &quot;cache id:&quot;, cache,
+        scoreList = []
+        for i in self.videos:
+            s = scoring(i,0)
+            scoreList.append(s)
+        for ep in cache.endpoints:
+            for req in ep.requests:
+                curLat = self.getlatency(cache,ep)
+                score = (req.count*(ep.latencyDataC-curLat))
+                #print &quot;videoid : &quot;, req.videoID, &quot;ep: &quot;, ep.id, &quot;req count&quot;, req.count, &quot;dc latiency: &quot;, ep.latencyDataC, &quot;connect latency&quot;,curLat, &quot;puan&quot;, score)
+                scoreList[req.videoID].score += score
+                #print &quot;videoid : &quot;, req.videoID, scoreList[req.videoID].score
+        scoreList.sort()
+        #for a in scoreList:
+            #print a.video.id, a.score, a.video.size
+        return scoreList
+
+    def getlatency(self,cache,endpoint):
+        ali = 0
+        for i in endpoint.connections:
+            if i.cacheNum == cache.id:
+                ali = i.latency
+                break
+        return ali
+
+    def solve(self):
+        for curCache in self.caches:
+            print curCache.id
+            scoreList = mysolver.getvideosofcache(curCache)
+            for curVideo in scoreList:
+                if curVideo.score == 0:
+                    break
+                curCache.addVideo(curVideo.video)
+    
+    def result(self):
+        result = str(len(self.caches))
+        for curCache in self.caches:
+            result += &quot;\n&quot;+str(curCache.id)  
+            for curVideo in curCache.videos:
+                result += &quot; &quot;+str(curVideo.id)
+        #print result 
+        file = open(&quot;videos_worth_spreading.txt&quot;,&quot;w&quot;)
+        file.write(result)
+        file.close()  
+
+
+
+mysolver = solver('videos_worth_spreading.in')
+mysolver.solve()
+mysolver.result()
+</code></pre></div></article></main><footer><p>&copy; 2025 M.Ozan Unal.</p></footer><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/highlight.js@11.9.0/styles/github.min.css media="(prefers-color-scheme: light)"><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/highlight.js@11.9.0/styles/github-dark.min.css media="(prefers-color-scheme: dark)"><script src=https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.11.1/build/highlight.min.js></script><script>hljs.highlightAll()</script></body><script async src="https://www.googletagmanager.com/gtag/js?id=G-007KSW65JL"></script><script>var dnt,doNotTrack=!1;if(!1&&(dnt=navigator.doNotTrack||window.doNotTrack||navigator.msDoNotTrack,doNotTrack=dnt=="1"||dnt=="yes"),!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-007KSW65JL")}</script></html>
