@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="An example site for the clean and configurable Hugo Classless theme.">
+  <link href="/tags/" rel="alternate" type="application/rss+xml" title="mozanunal.com" /><link id="theme-style" rel="stylesheet" href="https://cdn.jsdelivr.net/gh/cspablocortez/cosmocss@latest/cosmo.min.css">
+
+  <style>
+    pre code,
+    code {
+      -webkit-text-size-adjust: 100%;
+      text-size-adjust: 100%;
+    }
+
+     
+    pre code.hljs {
+       
+      all: revert;
+       
+      display: block;
+      font: 0.9rem/1.90 ui-monospace, SFMono-Regular, Menlo, monospace;
+      overflow-x: auto;
+    }
+  </style>
+
+  <title>Tags | mozanunal.com</title><link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+</head>
+
+<body>
+  <header><div class="theme-selector">
+  <select id="theme-selector-input"><option value="https://cdn.jsdelivr.net/gh/cspablocortez/cosmocss@latest/cosmo.min.css">Cosmo.css</option><option value="https://cdn.jsdelivr.net/gh/digitallytailored/classless@latest/classless.min.css">Classless.css</option><option value="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.classless.min.css">Pico</option><option value="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">Water.css</option><option value="https://cdn.simplecss.org/simple.min.css">Simple.css</option><option value="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">New.css</option><option value="https://unpkg.com/missing.css">Missing.css</option><option value="https://unpkg.com/boltcss/bolt.min.css">Bolt.css</option></select>
+</div><script>
+  (function () {
+    'use strict';
+    const styleLink = document.getElementById('theme-style');
+    const themeSelector = document.getElementById('theme-selector-input');
+    const storageKey = 'hugo-classless-theme';
+
+    function setTheme(themeUrl) {
+      styleLink.href = themeUrl;
+      if (themeSelector) {
+        themeSelector.value = themeUrl;
+      }
+    }
+
+    const savedTheme = localStorage.getItem(storageKey);
+    if (savedTheme) {
+      
+      const isValid = Array.from(themeSelector.options).some(opt => opt.value === savedTheme);
+      if (isValid) {
+        setTheme(savedTheme);
+      }
+    }
+
+    if (themeSelector) {
+      themeSelector.addEventListener('change', () => {
+        const selectedTheme = themeSelector.value;
+        setTheme(selectedTheme);
+        localStorage.setItem(storageKey, selectedTheme);
+      });
+    }
+  })();
+</script><div>
+      <h3>
+        mozanunal.com
+      </h3><h4>
+        
+        
+        
+        
+        
+        <a href="/">Home</a> | <a href="/posts/">Posts</a> | <a href="/projects/">Projects</a> | <a href="/papers/">Papers</a> | <a href="/contact/">Contact</a></h4></div>
+  </header>
+
+  <main>
+  <header>
+    <h1>Tags</h1>
+    
+  </header>
+
+  <hr />
+
+  
+  
+  
+    <article>
+      <h2>
+        <a href="http://localhost:1313/tags/bluetooth-speaker/">Bluetooth Speaker</a>
+      </h2>
+      <p><em><small><time datetime="2016-12-05">December 5, 2016</time></small></em></p>
+    </article>
+  
+    <article>
+      <h2>
+        <a href="http://localhost:1313/tags/stm32f103c8t6/">Stm32f103c8t6</a>
+      </h2>
+      <p><em><small><time datetime="2016-11-08">November 8, 2016</time></small></em></p>
+    </article>
+  
+    <article>
+      <h2>
+        <a href="http://localhost:1313/tags/stm32cubemx/">Stm32cubemx</a>
+      </h2>
+      <p><em><small><time datetime="2016-11-08">November 8, 2016</time></small></em></p>
+    </article>
+  
+    <article>
+      <h2>
+        <a href="http://localhost:1313/tags/stm32/">Stm32</a>
+      </h2>
+      <p><em><small><time datetime="2016-11-08">November 8, 2016</time></small></em></p>
+    </article>
+  
+    <article>
+      <h2>
+        <a href="http://localhost:1313/tags/arm-cortex-m3/">Arm Cortex M3</a>
+      </h2>
+      <p><em><small><time datetime="2016-11-08">November 8, 2016</time></small></em></p>
+    </article>
+  
+    <article>
+      <h2>
+        <a href="http://localhost:1313/tags/pyhton-k%C3%BCt%C3%BCphaneleri/">Pyhton Kütüphaneleri</a>
+      </h2>
+      <p><em><small><time datetime="2016-09-12">September 12, 2016</time></small></em></p>
+    </article>
+  
+    <article>
+      <h2>
+        <a href="http://localhost:1313/tags/jupyter-notebook/">Jupyter Notebook</a>
+      </h2>
+      <p><em><small><time datetime="2016-09-12">September 12, 2016</time></small></em></p>
+    </article>
+  
+    <article>
+      <h2>
+        <a href="http://localhost:1313/tags/bilimsel-python-uygulamalar%C4%B1/">Bilimsel Python Uygulamaları</a>
+      </h2>
+      <p><em><small><time datetime="2016-09-12">September 12, 2016</time></small></em></p>
+    </article>
+  
+    <article>
+      <h2>
+        <a href="http://localhost:1313/tags/anaconda/">Anaconda</a>
+      </h2>
+      <p><em><small><time datetime="2016-09-12">September 12, 2016</time></small></em></p>
+    </article>
+  
+    <article>
+      <h2>
+        <a href="http://localhost:1313/tags/mit-lisans%C4%B1/">Mit Lisansı</a>
+      </h2>
+      <p><em><small><time datetime="2016-09-04">September 4, 2016</time></small></em></p>
+    </article>
+  
+
+  
+  
+    <ul class="pagination pagination-default">
+      <li class="page-item">
+        <a href="/tags/" aria-label="First" class="page-link" role="button"><span aria-hidden="true">&laquo;&laquo;</span></a>
+      </li>
+      <li class="page-item">
+        <a href="/tags/page/9/" aria-label="Previous" class="page-link" role="button"><span aria-hidden="true">&laquo;</span></a>
+      </li>
+      <li class="page-item">
+        <a href="/tags/page/8/" aria-label="Page 8" class="page-link" role="button">8</a>
+      </li>
+      <li class="page-item">
+        <a href="/tags/page/9/" aria-label="Page 9" class="page-link" role="button">9</a>
+      </li>
+      <li class="page-item active">
+        <a aria-current="page" aria-label="Page 10" class="page-link" role="button">10</a>
+      </li>
+      <li class="page-item">
+        <a href="/tags/page/11/" aria-label="Page 11" class="page-link" role="button">11</a>
+      </li>
+      <li class="page-item">
+        <a href="/tags/page/12/" aria-label="Page 12" class="page-link" role="button">12</a>
+      </li>
+      <li class="page-item">
+        <a href="/tags/page/11/" aria-label="Next" class="page-link" role="button"><span aria-hidden="true">&raquo;</span></a>
+      </li>
+      <li class="page-item">
+        <a href="/tags/page/25/" aria-label="Last" class="page-link" role="button"><span aria-hidden="true">&raquo;&raquo;</span></a>
+      </li>
+    </ul>
+</main>
+
+  <footer>
+    <p>&copy; 2025 M.Ozan Unal.</p></footer><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.11.0/styles/github.min.css"
+    media="(prefers-color-scheme: light)" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.11.0/styles/github-dark.min.css"
+    media="(prefers-color-scheme: dark)" />
+  <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.11.1/build/highlight.min.js"></script>
+  <script>hljs.highlightAll();</script>
+
+</body>
+
+
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-007KSW65JL"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-007KSW65JL');
+        }
+      </script>
+
+</html>

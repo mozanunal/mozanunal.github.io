@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="An example site for the clean and configurable Hugo Classless theme.">
+  <link href="/tags/" rel="alternate" type="application/rss+xml" title="mozanunal.com" /><link id="theme-style" rel="stylesheet" href="https://cdn.jsdelivr.net/gh/cspablocortez/cosmocss@latest/cosmo.min.css">
+
+  <style>
+    pre code,
+    code {
+      -webkit-text-size-adjust: 100%;
+      text-size-adjust: 100%;
+    }
+
+     
+    pre code.hljs {
+       
+      all: revert;
+       
+      display: block;
+      font: 0.9rem/1.90 ui-monospace, SFMono-Regular, Menlo, monospace;
+      overflow-x: auto;
+    }
+  </style>
+
+  <title>Tags | mozanunal.com</title><link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+</head>
+
+<body>
+  <header><div class="theme-selector">
+  <select id="theme-selector-input"><option value="https://cdn.jsdelivr.net/gh/cspablocortez/cosmocss@latest/cosmo.min.css">Cosmo.css</option><option value="https://cdn.jsdelivr.net/gh/digitallytailored/classless@latest/classless.min.css">Classless.css</option><option value="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.classless.min.css">Pico</option><option value="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">Water.css</option><option value="https://cdn.simplecss.org/simple.min.css">Simple.css</option><option value="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">New.css</option><option value="https://unpkg.com/missing.css">Missing.css</option><option value="https://unpkg.com/boltcss/bolt.min.css">Bolt.css</option></select>
+</div><script>
+  (function () {
+    'use strict';
+    const styleLink = document.getElementById('theme-style');
+    const themeSelector = document.getElementById('theme-selector-input');
+    const storageKey = 'hugo-classless-theme';
+
+    function setTheme(themeUrl) {
+      styleLink.href = themeUrl;
+      if (themeSelector) {
+        themeSelector.value = themeUrl;
+      }
+    }
+
+    const savedTheme = localStorage.getItem(storageKey);
+    if (savedTheme) {
+      
+      const isValid = Array.from(themeSelector.options).some(opt => opt.value === savedTheme);
+      if (isValid) {
+        setTheme(savedTheme);
+      }
+    }
+
+    if (themeSelector) {
+      themeSelector.addEventListener('change', () => {
+        const selectedTheme = themeSelector.value;
+        setTheme(selectedTheme);
+        localStorage.setItem(storageKey, selectedTheme);
+      });
+    }
+  })();
+</script><div>
+      <h3>
+        mozanunal.com
+      </h3><h4>
+        
+        
+        
+        
+        
+        <a href="/">Home</a> | <a href="/posts/">Posts</a> | <a href="/projects/">Projects</a> | <a href="/papers/">Papers</a> | <a href="/contact/">Contact</a></h4></div>
+  </header>
+
+  <main>
+  <header>
+    <h1>Tags</h1>
+    
+  </header>
+
+  <hr />
+
+  
+  
+  
+    <article>
+      <h2>
+        <a href="http://localhost:1313/tags/processing-android/">Processing Android</a>
+      </h2>
+      <p><em><small><time datetime="2014-11-09">November 9, 2014</time></small></em></p>
+    </article>
+  
+    <article>
+      <h2>
+        <a href="http://localhost:1313/tags/android-processing-ide/">Android Processing IDE</a>
+      </h2>
+      <p><em><small><time datetime="2014-11-09">November 9, 2014</time></small></em></p>
+    </article>
+  
+    <article>
+      <h2>
+        <a href="http://localhost:1313/tags/inertial-measurement-unit/">Inertial Measurement Unit</a>
+      </h2>
+      <p><em><small><time datetime="2014-11-07">November 7, 2014</time></small></em></p>
+    </article>
+  
+    <article>
+      <h2>
+        <a href="http://localhost:1313/tags/imu-nedir/">IMU Nedir</a>
+      </h2>
+      <p><em><small><time datetime="2014-11-07">November 7, 2014</time></small></em></p>
+    </article>
+  
+    <article>
+      <h2>
+        <a href="http://localhost:1313/tags/imu-a%C3%A7%C4%B1lar%C4%B1n%C4%B1n-3-boyutlu-olarak-g%C3%B6rsellenmesi/">IMU Açılarının 3 Boyutlu Olarak Görsellenmesi</a>
+      </h2>
+      <p><em><small><time datetime="2014-11-07">November 7, 2014</time></small></em></p>
+    </article>
+  
+    <article>
+      <h2>
+        <a href="http://localhost:1313/tags/full-source-code-avaible/">Full Source Code Avaible</a>
+      </h2>
+      <p><em><small><time datetime="2014-10-29">October 29, 2014</time></small></em></p>
+    </article>
+  
+    <article>
+      <h2>
+        <a href="http://localhost:1313/tags/arduino-joystick-kontrol/">Arduino Joystick Kontrol</a>
+      </h2>
+      <p><em><small><time datetime="2014-10-29">October 29, 2014</time></small></em></p>
+    </article>
+  
+    <article>
+      <h2>
+        <a href="http://localhost:1313/tags/gimbal/">Gimbal</a>
+      </h2>
+      <p><em><small><time datetime="2014-10-21">October 21, 2014</time></small></em></p>
+    </article>
+  
+    <article>
+      <h2>
+        <a href="http://localhost:1313/tags/bilgisayardan-kontrol/">Bilgisayardan Kontrol</a>
+      </h2>
+      <p><em><small><time datetime="2014-10-21">October 21, 2014</time></small></em></p>
+    </article>
+  
+    <article>
+      <h2>
+        <a href="http://localhost:1313/tags/arduino-c%23/">Arduino C#</a>
+      </h2>
+      <p><em><small><time datetime="2014-10-21">October 21, 2014</time></small></em></p>
+    </article>
+  
+
+  
+  
+    <ul class="pagination pagination-default">
+      <li class="page-item">
+        <a href="/tags/" aria-label="First" class="page-link" role="button"><span aria-hidden="true">&laquo;&laquo;</span></a>
+      </li>
+      <li class="page-item">
+        <a href="/tags/page/21/" aria-label="Previous" class="page-link" role="button"><span aria-hidden="true">&laquo;</span></a>
+      </li>
+      <li class="page-item">
+        <a href="/tags/page/20/" aria-label="Page 20" class="page-link" role="button">20</a>
+      </li>
+      <li class="page-item">
+        <a href="/tags/page/21/" aria-label="Page 21" class="page-link" role="button">21</a>
+      </li>
+      <li class="page-item active">
+        <a aria-current="page" aria-label="Page 22" class="page-link" role="button">22</a>
+      </li>
+      <li class="page-item">
+        <a href="/tags/page/23/" aria-label="Page 23" class="page-link" role="button">23</a>
+      </li>
+      <li class="page-item">
+        <a href="/tags/page/24/" aria-label="Page 24" class="page-link" role="button">24</a>
+      </li>
+      <li class="page-item">
+        <a href="/tags/page/23/" aria-label="Next" class="page-link" role="button"><span aria-hidden="true">&raquo;</span></a>
+      </li>
+      <li class="page-item">
+        <a href="/tags/page/25/" aria-label="Last" class="page-link" role="button"><span aria-hidden="true">&raquo;&raquo;</span></a>
+      </li>
+    </ul>
+</main>
+
+  <footer>
+    <p>&copy; 2025 M.Ozan Unal.</p></footer><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.11.0/styles/github.min.css"
+    media="(prefers-color-scheme: light)" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.11.0/styles/github-dark.min.css"
+    media="(prefers-color-scheme: dark)" />
+  <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.11.1/build/highlight.min.js"></script>
+  <script>hljs.highlightAll();</script>
+
+</body>
+
+
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-007KSW65JL"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-007KSW65JL');
+        }
+      </script>
+
+</html>
