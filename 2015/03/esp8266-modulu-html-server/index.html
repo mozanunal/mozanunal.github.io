@@ -20,18 +20,18 @@ bilgisayar telefon gibi herhangi bir ağa bağlanabilen aletlerle kontrol edebil
 efektif hale getirebilir.Aynı zamanda hali hazırda var olan wifi ağlarını
 kullanmaları modullerin entegre edilebilirliğini artırıyor.</p><p>Bu yazıda Esp8266 modülünün kullanımına sadece bir giriş yapacağız, modülümüzle
 HTML sayfası oluşturup, bilgisayarımızdan bağlanacağız. Modülümüzün kullanımına
-gelecek olursak pin dizilimi aşağıdaki gibidir.</p><p><img src=ESP8266-Pinout-300x124.png alt></p><p>Bizim yapacağımız bağlantılar ise şu şekilde olmalıdır.</p><p>VCC&mdash;> Arduino 3.3 V</p><p>GND&mdash;> Arduino GND</p><p>RX&mdash;&ndash;>Serial 1 TX</p><p>TX&mdash;&ndash;>Serial 1 RX</p><p>CH_PD> Arduino 3.3 V</p><p><img src=IMG_20150311_214231.jpg alt></p><p><span style=color:red>Önemli Uyarı: Bu modül 3.3 volt ile çalışmaktadır ve
+gelecek olursak pin dizilimi aşağıdaki gibidir.</p><p><img src=ESP8266-Pinout-300x124.png alt></p><p>Bizim yapacağımız bağlantılar ise şu şekilde olmalıdır.</p><p>VCC&mdash;> Arduino 3.3 V</p><p>GND&mdash;> Arduino GND</p><p>RX&mdash;&ndash;>Serial 1 TX</p><p>TX&mdash;&ndash;>Serial 1 RX</p><p>CH_PD> Arduino 3.3 V</p><p><img src=IMG_20150311_214231.jpg alt></p><blockquote><p>Önemli Uyarı: Bu modül 3.3 volt ile çalışmaktadır ve
 rx tx pini de 5 volta dayanıklı değildir. Ben bu projede Arduino DUE kullandığım
 için problem yaşamadım fakat diğer Arduino modellerinin 5 voltlukları
-kullanılacağı zaman level shifter entegrelerine ihtiyaç duyulur.</span></p><p>Arduino kodu aşağıdadır eğer başka bir Arduino ile kullanacaksanız &ldquo;Serial1&rdquo;
-yerine &ldquo;SoftwareSerial&rdquo; kullanmanızı öneririm.</p><pre><code class=language-cpp>#include &lt;Wire.h&gt;  
-#define DEBUG true 
+kullanılacağı zaman level shifter entegrelerine ihtiyaç duyulur.</p></blockquote><p>Arduino kodu aşağıdadır eğer başka bir Arduino ile kullanacaksanız &ldquo;Serial1&rdquo;
+yerine &ldquo;SoftwareSerial&rdquo; kullanmanızı öneririm.</p><pre><code class=language-cpp>#include &lt;Wire.h&gt;
+#define DEBUG true
 
 void setup()
 {
-  Serial.begin(9600);// Arduino-Pc haberleşmesi Debug için kullanacağım 
+  Serial.begin(9600);// Arduino-Pc haberleşmesi Debug için kullanacağım
   Serial1.begin(9600); // Arduinoyu Esp8266 bağladığımız serial port
- 
+
   sendData(&quot;AT+RST\r\n&quot;,2000,DEBUG); // reset
   sendData(&quot;AT+CWMODE=3\r\n&quot;,1000,DEBUG); //  MOde olarak access point seçilir
   sendData(&quot;AT+CIFSR\r\n&quot;,1000,DEBUG); // Modulün ip adresi alınır
@@ -42,7 +42,7 @@ int sayi=0;
 
 void loop()
 {
-  if(Serial1.available()) 
+  if(Serial1.available())
   {
     if(Serial1.find(&quot;+IPD,&quot;))
     {
@@ -51,12 +51,12 @@ void loop()
                                            // ASCCI table da 0 sayısı 48 ile ifade edilir yani:
                                            // '0' - 48 = 0
                                            // '1' - 48 = 1
-     
+
      String webpage = &quot;&lt;head&gt;&lt;meta http-equiv=&quot;&quot;refresh&quot;&quot; content=&quot;&quot;10&quot;&quot;&gt;&lt;/head&gt;&quot;;
      webpage+=&quot;&lt;h1&gt;Esp8266 Html Testi&lt;/h1&gt;&lt;h2&gt;&quot;;
      webpage+= &quot;mozanunal.com&quot;;
      webpage+=&quot;&lt;/h2&gt;&quot;;
-     
+
      String cipSend = &quot;AT+CIPSEND=&quot;;
      cipSend += connectionId;
      cipSend += &quot;,&quot;;
@@ -65,40 +65,40 @@ void loop()
 
      sendData(cipSend,1000,DEBUG);
      sendData(webpage,1000,DEBUG);
-     
-     String closeCommand = &quot;AT+CIPCLOSE=&quot;; 
-     closeCommand+=connectionId; 
+
+     String closeCommand = &quot;AT+CIPCLOSE=&quot;;
+     closeCommand+=connectionId;
      closeCommand+=&quot;\r\n&quot;;
-     
+
      sendData(closeCommand,3000,DEBUG);
     }
   }
 }
- 
+
 String sendData(String command, const int timeout, boolean debug)
 {
     String response = &quot;&quot;;
-    
+
     Serial1.print(command); // send the read character to the esp8266
-    
+
     long int time = millis();
-    
+
     while( (time+timeout) &gt; millis())
     {
       while(Serial1.available())
       {
-        
-        // The esp has data so display its output to the serial window 
+
+        // The esp has data so display its output to the serial window
         char c = Serial1.read(); // read the next character.
         response+=c;
-      }  
+      }
     }
-    
+
     if(debug)
     {
       Serial.print(response);
     }
-    
+
     return response;
 }
 </code></pre><p>Esp8266yı Acces Point olarak kullanıyoruz. Yani bizim için wifi ağı kurar kodu
