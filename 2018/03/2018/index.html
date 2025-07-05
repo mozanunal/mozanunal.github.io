@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="An example site for the clean and configurable Hugo Classless theme.">
+  <link href="/2018/03/2018/" rel="alternate" type="application/rss+xml" title="mozanunal.com" /><link id="theme-style" rel="stylesheet" href="https://cdn.jsdelivr.net/gh/cspablocortez/cosmocss@latest/cosmo.min.css">
+
+  <style>
+    pre code,
+    code {
+      -webkit-text-size-adjust: 100%;
+      text-size-adjust: 100%;
+    }
+
+     
+    pre code.hljs {
+       
+      all: revert;
+       
+      display: block;
+      font: 0.9rem/1.90 ui-monospace, SFMono-Regular, Menlo, monospace;
+      overflow-x: auto;
+    }
+  </style>
+
+  <title>[TR] Micropython Nedir? | mozanunal.com</title><link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+</head>
+
+<body>
+  <header><div class="theme-selector">
+  <select id="theme-selector-input"><option value="https://cdn.jsdelivr.net/gh/cspablocortez/cosmocss@latest/cosmo.min.css">Cosmo.css</option><option value="https://cdn.jsdelivr.net/gh/digitallytailored/classless@latest/classless.min.css">Classless.css</option><option value="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.classless.min.css">Pico</option><option value="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">Water.css</option><option value="https://cdn.simplecss.org/simple.min.css">Simple.css</option><option value="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">New.css</option><option value="https://unpkg.com/missing.css">Missing.css</option><option value="https://unpkg.com/boltcss/bolt.min.css">Bolt.css</option></select>
+</div><script>
+  (function () {
+    'use strict';
+    const styleLink = document.getElementById('theme-style');
+    const themeSelector = document.getElementById('theme-selector-input');
+    const storageKey = 'hugo-classless-theme';
+
+    function setTheme(themeUrl) {
+      styleLink.href = themeUrl;
+      if (themeSelector) {
+        themeSelector.value = themeUrl;
+      }
+    }
+
+    const savedTheme = localStorage.getItem(storageKey);
+    if (savedTheme) {
+      
+      const isValid = Array.from(themeSelector.options).some(opt => opt.value === savedTheme);
+      if (isValid) {
+        setTheme(savedTheme);
+      }
+    }
+
+    if (themeSelector) {
+      themeSelector.addEventListener('change', () => {
+        const selectedTheme = themeSelector.value;
+        setTheme(selectedTheme);
+        localStorage.setItem(storageKey, selectedTheme);
+      });
+    }
+  })();
+</script><div>
+      <h1>
+        mozanunal.com
+      </h1><nav>
+        <p>
+          
+          
+          
+          
+          
+          <a href="/">Home</a> | <a href="/posts/">Posts</a> | <a href="/projects/">Projects</a> | <a href="/papers/">Papers</a> | <a href="/contact/">Contact</a></p>
+      </nav></div>
+  </header>
+
+  <main>
+  <article>
+    <header>
+      
+      <h1>[TR] Micropython Nedir?</h1>
+      <p>
+        <em><time datetime="2018-03-14">March 14, 2018</time></em>
+      </p>
+    </header>
+
+    
+    <div>
+      <p><strong>Herkese Merhabalar,</strong></p>
+<p>Bildiğiniz üzere gömülü sistemlerde programlama C ile yapılır. Bunun sebebi
+makine diline en yakın dil olması bu nedenle sistem kaynaklarını az kullanarak
+programlar geliştirilebilmesi ve gömülü sistemdeki donanımları kolay
+programlanabilmesidir. Fakat buna rağmen işlemcilerin de güçlenmesiyle ve
+ihtiyaçların da değişmesiyle farklı diller ile programlama yapabilmek için
+farklı denemeler yapılmaktadır. Daha önce ESP8266 için scripting dili kullanma
+denemeleri olmuştu. Bir ara Lua dili ile programlanabiliyordu. Hatta bir ara
+beklediğimden çok daha popüler hale gelmişti. Lua dili bilmediğim için o
+firmware test etme şansım olmadı. Fakat yakın zamanda benzer bir projenin favori
+programlama dilim olan python ile de yapıldığını gördüm. ESP8266&rsquo;nın python ile
+programlanabildiğini görünce dayanamadım. Bu projenin ismi <strong>micropython</strong> ve
+denediğimde micropython firmware oldukça hoşuma gitti o yüzden hakkında bir
+şeyler yazmak istedim. <img src="/images/1516117467411.jpg" alt="upython"> Micropython bir
+<strong>kickstarter</strong> projesi olarak çıkmış ortaya. İlk olarak Stm32f4 boardları için
+yapılmış. <strong>Amacı mikroişlemciler üzerinde python çalıştırmak ve python shell
+mantığıyla prototipleme yapabilmek.</strong> Bildiğiniz üzere python en büyük
+eksilerinden biri yüksek ram harcaması. Bu sorunu çözmek için bütün standart
+python kütüphanleri micropython diye yeni bir yapıya portlanmış ve flashda ve
+ramda kapladığı alan sorunları çözülmeye çalışılınmış.</p>
+<p>Daha sonrasında işlemcilerin donanımla ile alakalı fonksiyonlarına ve çevre
+birimlerine(peripheral) ulaşabilmek için işlemcilerin C SDK&rsquo;leri kullanılarak
+micropython driverları yazılmış. Yani <strong>timer, adc, gpio, i2c, spi, uart</strong> gibi
+temel donanımları kullanabiliyorsunuz. Yazılan bu driverların üzerine bir de
+sensör veya lcd, led driver gibi bileşenler için de driverlar yazılmış. Ortaya
+geliştirme kartlarını kolayca yönetebileceğimiz sistemler çıkmış.</p>
+<p>Benim micropytohon&rsquo;ı direk satılan Pyboardlarda deneme şansım olmadı. Onun
+yerine elimde bulunan ESP8266 üzerine yükledim. ESP8266 bildiğiniz üzere bir
+wifi çipi. Network fonksiyonları da micropythonda bulunuyor. O yüzden ESP8266
+kullanmak için biçilmiş kaftan.</p>
+<p><a href="https://docs.micropython.org/en/v1.9.2/esp8266/esp8266/tutorial/intro.html">https://docs.micropython.org/en/v1.9.2/esp8266/esp8266/tutorial/intro.html</a>
+Boarda firmware yüklemek için esptool gereklidir. Aşağıdaki komut ile esptool
+yükleyebilirsiniz:</p>
+<pre><code class="language-sh">pip install esptool
+</code></pre>
+<p><img src="/images/1517947480163.png" alt="esptool"> İlk yüklemede flashın tamamen temizlenmesi
+tavsiye edilir. Com numarasını değiştirmeyi unutmayın. Daha sonrasında
+<a href="https://micropython.org/download">buradan</a> indirilen elinizdeki ESP ile uyumlu
+firmware boarda devamındaki komut ile yüklenir.</p>
+<pre><code class="language-sh">esptool --port COM3 erase_flash
+
+esptool --port COM3 --baud 460800 write_flash --flash_size=detect 0 esp8266-20170108-v1.8.7.bin
+</code></pre>
+<p>Kurulumu tamamladıktan sonra putty ile aynı serial porta bağlanıyoruz. Karşımıza
+python terminali çıkıyor.
+<a href="https://docs.micropython.org/en/v1.9.2/esp8266/esp8266/tutorial/index.html">https://docs.micropython.org/en/v1.9.2/esp8266/esp8266/tutorial/index.html</a>
+<img src="/images/1517947735177.png" alt="image"></p>
+<p>örnek olarak:</p>
+<pre><code class="language-python">## File operasyonları
+&gt;&gt;&gt; f = open('data.txt', 'w')
+&gt;&gt;&gt; f.write('some data')
+9
+&gt;&gt;&gt; f.close()
+</code></pre>
+<ul>
+<li>upython standart kütüphanesini için
+<a href="https://docs.micropython.org/en/v1.9.2/esp8266/library/index.html#python-standard-libraries-and-micro-libraries">buradan</a>
+inceleyebilirsiniz.</li>
+<li><a href="https://docs.micropython.org/en/v1.9.2/esp8266/library/esp.html">cihaza özel kütüphaneler</a></li>
+<li>Web repl kullanarak wifi üzerinden geliştirmenizi yapabilirsiniz.
+<a href="https://learn.adafruit.com/micropython-basics-esp8266-webrepl/access-webrepl">Web repl aktifleştirmek ile alakalı ayrıntılı bilgi için</a></li>
+</ul>
+<p><img src="/images/1517956338699.png" alt="Web Repl"></p>
+<p>Referanslar:
+<a href="https://docs.micropython.org/en/latest/esp8266/esp8266/quickref.html">https://docs.micropython.org/en/latest/esp8266/esp8266/quickref.html</a>
+<a href="https://github.com/espressif/esptool">https://github.com/espressif/esptool</a>
+<a href="https://docs.micropython.org/en/latest/esp8266/library/esp.html">https://docs.micropython.org/en/latest/esp8266/library/esp.html</a></p>
+
+    </div>
+  </article>
+</main>
+
+  <footer>
+    <p>&copy; 2025 M.Ozan Unal.</p></footer><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.11.0/styles/github.min.css"
+    media="(prefers-color-scheme: light)" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.11.0/styles/github-dark.min.css"
+    media="(prefers-color-scheme: dark)" />
+  <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.11.1/build/highlight.min.js"></script>
+  <script>hljs.highlightAll();</script>
+
+</body>
+
+
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-007KSW65JL"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-007KSW65JL');
+        }
+      </script>
+
+</html>

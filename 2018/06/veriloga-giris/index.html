@@ -47,7 +47,7 @@ kullanıyoruz. Örneğin &ldquo;if&rdquo; için burada bir &ldquo;always&rdquo; 
     input I2,
     output reg O
     );
-	 
+
 
 	always @( I1 or I2 )
 		begin
@@ -87,10 +87,10 @@ için de always yapısı gereklidir.</p><pre><code class=language-verilog>module
 	 input[3:0] IN,
 	 output reg [15:0] OUT
     );
-	
+
 always @(*)
-begin	 
-	case(IN) 
+begin
+	case(IN)
 	4'b0000: OUT&lt;=16'b0000000000000000;
 	4'b0001: OUT&lt;=16'b0000000000000010;
 	4'b0010: OUT&lt;=16'b0000000000000100;
@@ -173,9 +173,9 @@ input BTN,
 input CLEAR,
 output reg [7:0] LED
 	);
-	
-	
-always @(posedge BTN , posedge CLEAR) 
+
+
+always @(posedge BTN , posedge CLEAR)
 begin
 	case (CLEAR)
 	1'b1: LED &lt;= 8'b00000000;
@@ -184,7 +184,7 @@ begin
 end
 
 
-	
+
 endmodule
 </code></pre><p>Art-arda 4 tane 1 veya 4 tane 0 gelmesi durumunu tespit eden devrenin verilog
 kodu aşağıdaki gibidir. Bu devre tipi sıralı mantık devrelerine giriş
@@ -208,19 +208,19 @@ reg q0,q1,q2;
 wire Q0,Q1,Q2,z_new;
 
 
-assign Q2 = x &amp; q2 | x &amp; q1 &amp; q0; 
-assign Q1 = (q1 &amp; (~q0)) | ((~q2) &amp; (~q1) &amp; q0) | (x &amp;  (~q2)  &amp; (~q1));  
+assign Q2 = x &amp; q2 | x &amp; q1 &amp; q0;
+assign Q1 = (q1 &amp; (~q0)) | ((~q2) &amp; (~q1) &amp; q0) | (x &amp;  (~q2)  &amp; (~q1));
 assign Q0 = (x  &amp; (~q1)) | (x &amp; (~q0) | (~q2)) &amp; ((~q1) &amp; (~q0));
 assign z_new  = ((~x) &amp; q1 &amp; (~q0)) | (x &amp; q2 &amp; q0);
 
-always @(posedge clk or posedge reset) 
+always @(posedge clk or posedge reset)
 	begin
 		if (reset)
 		begin
 			q0 &lt;= 0;
 			q1 &lt;= 0;
 			q2 &lt;= 0;
-			 
+
 		end
 		else
 		begin

@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="An example site for the clean and configurable Hugo Classless theme.">
+  <link href="/2017/07/2017/" rel="alternate" type="application/rss+xml" title="mozanunal.com" /><link id="theme-style" rel="stylesheet" href="https://cdn.jsdelivr.net/gh/cspablocortez/cosmocss@latest/cosmo.min.css">
+
+  <style>
+    pre code,
+    code {
+      -webkit-text-size-adjust: 100%;
+      text-size-adjust: 100%;
+    }
+
+     
+    pre code.hljs {
+       
+      all: revert;
+       
+      display: block;
+      font: 0.9rem/1.90 ui-monospace, SFMono-Regular, Menlo, monospace;
+      overflow-x: auto;
+    }
+  </style>
+
+  <title>[TR] Bitcoin Madencileri için Online Dashboard | mozanunal.com</title><link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+</head>
+
+<body>
+  <header><div class="theme-selector">
+  <select id="theme-selector-input"><option value="https://cdn.jsdelivr.net/gh/cspablocortez/cosmocss@latest/cosmo.min.css">Cosmo.css</option><option value="https://cdn.jsdelivr.net/gh/digitallytailored/classless@latest/classless.min.css">Classless.css</option><option value="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.classless.min.css">Pico</option><option value="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">Water.css</option><option value="https://cdn.simplecss.org/simple.min.css">Simple.css</option><option value="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">New.css</option><option value="https://unpkg.com/missing.css">Missing.css</option><option value="https://unpkg.com/boltcss/bolt.min.css">Bolt.css</option></select>
+</div><script>
+  (function () {
+    'use strict';
+    const styleLink = document.getElementById('theme-style');
+    const themeSelector = document.getElementById('theme-selector-input');
+    const storageKey = 'hugo-classless-theme';
+
+    function setTheme(themeUrl) {
+      styleLink.href = themeUrl;
+      if (themeSelector) {
+        themeSelector.value = themeUrl;
+      }
+    }
+
+    const savedTheme = localStorage.getItem(storageKey);
+    if (savedTheme) {
+      
+      const isValid = Array.from(themeSelector.options).some(opt => opt.value === savedTheme);
+      if (isValid) {
+        setTheme(savedTheme);
+      }
+    }
+
+    if (themeSelector) {
+      themeSelector.addEventListener('change', () => {
+        const selectedTheme = themeSelector.value;
+        setTheme(selectedTheme);
+        localStorage.setItem(storageKey, selectedTheme);
+      });
+    }
+  })();
+</script><div>
+      <h1>
+        mozanunal.com
+      </h1><nav>
+        <p>
+          
+          
+          
+          
+          
+          <a href="/">Home</a> | <a href="/posts/">Posts</a> | <a href="/projects/">Projects</a> | <a href="/papers/">Papers</a> | <a href="/contact/">Contact</a></p>
+      </nav></div>
+  </header>
+
+  <main>
+  <article>
+    <header>
+      
+      <h1>[TR] Bitcoin Madencileri için Online Dashboard</h1>
+      <p>
+        <em><time datetime="2017-07-30">July 30, 2017</time></em>
+      </p>
+    </header>
+
+    
+    <div>
+      <p><strong>Herkes merhabalar,</strong></p>
+<p>Bitcoin son dönemlerin popüler konularından birisi. Aslında genel olarak crypto
+currency son zamanlarda çok popüler. Peki nedir bu kavramlar? Crypto currency
+güvenliği şifreleme teknojileriyle sağlanan sanal para birimleridir. Her gün bir
+yeni bir tür crypto currency ortaya çıkıyor. Bunlar arasında en geçerli olanı
+ise bitcoin. Sanırım popülerliği en eskilerinden biri olmasından ve anlık olarak
+üretimi sınırlayabilen ilki olmasından geliyor. Bahsetmek istediğim 3. kavram
+ise bit coin mining: Yüksek hesaplama gücü kullanarak bitcoin üretebilmeniz
+mümkün. Bitcoin alışverişlerinin geçerli olması için bir şifre ile onaylanması
+gerekiyor. Bu şifreyi de bir hash çözerek oluşturuyorsunuz ve bunun karşılığında
+sistem sizi bitcoin ile ödüllendiriyor. Bu amaçla bir sürü insan sağlan ekran
+kartları alıp bitcoin tarlaları kurdular ve bu işten para kazanıyorlar. Tabi
+aklınıza, bitcoinin dünyaya katkısı nedir ya da ne kadar riskli, yatırım yapılır
+mı? gibi türlü türlü farklı açılardan sorular gelebilir. Ama malesef ben bu
+konuda uzman değilim ve daha nedir sorusuna bile tam olarak cevap vermek çok
+zor.</p>
+<p>Neyse konuyu biraz fazla dağıttım bu yazının konusu aslında bunlar değil. Konuma
+dönecek olursam; bitcoin mining işini kolaylaştıran sistem var, adı Nice Hash.
+Programını kuruyorsunuz ve bilgisayarınızın hesaplama gücünü satarak para
+kazanıyorsunuz. Arka planda o crypto currency&rsquo;lerden en karlı olanı &ldquo;mine&rdquo;
+ediyor. Size de ona göre bir para ödüyor tabi bitcoin olarak. Bir arkadaşım da
+bu mining işine girdi. Projemin asıl amacı ona anlık olarak kazandığı parayı
+gösterebilecek bir sistem yapmaktı. Proje böyle başladı yani :). Bu projede
+kapsamında yaptığım; gerçek zamanlı olarak bu programın web apisini kullanarak
+bir miner&rsquo;ın kazandığı parayı ve o andaki bitcoin kurunu çekip 1 inchlik oled
+ekranda gösteren bir sistem.</p>
+<p><img src="/images/btc1.jpg" alt="btc1"></p>
+<p>Bu proje ESP8266 modülleri kullanarak gerçekleştirildi. Bildiğiniz üzere minik
+bir wifi modulü. Bitcoin idnizi girerek yazdığım kodu derlerseniz direk olarak
+bilgilerinize ulaşabilirsiniz. ESP8266 minik bir oled ekranı kontrol ederek
+aldığı anlık kur datasını, kullanıcının toplam bitcoinini ve dolar karşılığını
+gösterecek şekilde bir program geliştirildi. ESP8266 olarak wemos d1 mini
+modullerinden kullandım. I2C pinlerini Oled ekrana den gelecek şekilde bir
+pertinanks oluşturdum uygun pinleri de lehimleyerek shield haline getirmiş
+oldum. Yukarıdaki fotoğrafta ESP8266 tamamen shieldın altına gizlenmiş halde bu
+sayede sistem baya toplanmış oldu tek parça bir görüntü kazandı.</p>
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/s9yCTyRUi5U?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"></iframe>
+    </div>
+
+<h4 id="kod">Kod</h4>
+<p>Kodu <a href="https://github.com/mozanunal/NiceHashDashBoard">buradan</a>
+inceleyebilirsiniz.</p>
+<h4 id="wifi-bağlanma-ve-ekran-ayarları">Wifi bağlanma ve ekran ayarları</h4>
+<p>Wifi multi kullandığım için birden fazla wifi girebilirsiniz. Hangisi çevrede
+varsa onu kullanarak internete çıkar. Ekranın boyutu çok küçük olmasına rağmen
+çözünürlüğü böyle bir sisteme göre oldukça yüksek bu sayede baya hoş gözüküyor.</p>
+<pre><code class="language-cpp">//Setup Oled
+display.init();
+display.flipScreenVertically();
+display.setFont(ArialMT_Plain_16);
+display.setTextAlignment(TEXT_ALIGN_LEFT);
+display.clear();
+
+//Setup Wifi
+WiFiMulti.addAP( ssid_1 , pass_1);
+WiFiMulti.addAP( ssid_2 , pass_2);
+display.clear();
+display.drawString(0 , 20, &quot;Waiting for wifi...&quot;);
+display.display();
+int xpos = 0;
+while(WiFiMulti.run() != WL_CONNECTED) {
+    display.drawString(xpos ,40 , &quot;.&quot;);
+    xpos= xpos + 3;
+    display.display();
+    delay(500);
+}
+</code></pre>
+<h4 id="gerekli-verilerin-internetten-çekilmesi">Gerekli verilerin internetten çekilmesi</h4>
+<p>Data alma kısmında buradaki Nice Hash api dökumanından yararlandım. Bitcoin id
+ile http request yapıldığında geriye bir json dönüyor. Json Arduinojson library
+ile parçalanıp içinden gerekli bilgi çekiliyor. Verilen urlden datayı string
+almak için aşağıdaki fonksiyonu yazdım.</p>
+<pre><code class="language-cpp">String getJsonFromUrl(char *url)
+{
+    HTTPClient http;  //Declare an object of class HTTPClient
+    String payload;
+    http.begin(url);  //Specify request destination
+    int httpCode = http.GET(); //Send the request
+    Serial.print(&quot;\n Received http code &quot;);
+    Serial.println(httpCode);     
+    if (httpCode &gt; 0) //Check the returning code
+    { 
+      Serial.println(&quot;HTTP OK&quot;);
+      payload = http.getString();   //Get the request response payload
+      Serial.println(payload);      //Print the response payloa
+      return payload;
+    }
+    else
+    {
+      Serial.println(&quot;HTTP ERROR&quot;);
+      return &quot;{}&quot;;
+    }
+    http.end();   //Close connection
+}
+</code></pre>
+<h5 id="kur-bilgisinin-alınması">Kur bilgisinin alınması</h5>
+<p>Yukarıdaki data alma fonksiyonu kullanılarak data string olarak çekilip json&rsquo;a
+dönüştürülüyor. Daha sonrasında kur bilgisi aşağıdaki fonksiyon kullanılarak
+çekiliyor. Json parçalanıp içindeki &ldquo;USD&rdquo; objesinin &ldquo;last&rdquo; değikeni çekiliyor.
+Bizim için güncel bitcoin kuru.</p>
+<pre><code class="language-cpp">double getCurrency()
+{
+    JsonObject&amp; root_Currency = jsonBuffer_Currency.parseObject( getJsonFromUrl(url_Currency) );
+    if (root_Currency.success()) 
+    {
+      double currency = root_Currency[&quot;USD&quot;][&quot;last&quot;];
+      return currency;
+    }
+    else
+    {
+      return 0.0;
+    }
+}
+</code></pre>
+<h5 id="kazanılan-bitcoin-bilgisinin-alınması">Kazanılan bitcoin bilgisinin alınması</h5>
+<p>Kaznılan bitcoin için <a href="https://www.nicehash.com/?p=api">NiceHash Api</a>
+kullanılıyor. Bitcoin cüzdanı ID&rsquo;si ile request yapıldığında oldukça büyük bir
+obje dönüyor. Aşağıdaki gibi bir parçalama işlemiyle şu ana kadar kazanılan para
+bitcoin olarak çekiliyor. Bitcoin değeri ile kur çarpılarak dolar karşılığı da
+hesaplanıyor.</p>
+<pre><code class="language-cpp">double getTotalBTC(const char *BitCoinWallet)
+{     
+  //Setup URLs
+  strcpy( url_Balence, url_Balance_base );
+  strcat( url_Balence, BitCoinWallet );
+  JsonObject&amp; root_Balance = jsonBuffer_Balance.parseObject( getJsonFromUrl(url_Balence) );
+  double total_balance_btc = 0.0;
+  if (root_Balance.success()) 
+  {
+    double balances[8];
+    int algos[8];
+    for (int i = 0; i&lt;8; i++)
+    {
+        algos[i] = root_Balance[&quot;result&quot;][&quot;stats&quot;][i][&quot;algo&quot;];
+        const char* balchar = root_Balance[&quot;result&quot;][&quot;stats&quot;][i][&quot;balance&quot;];
+        balances[i] = strtod(balchar, NULL);
+        Serial.print(balchar);
+        Serial.println(balances[i]);
+        total_balance_btc += balances[i];
+    }
+  }
+
+  return total_balance_btc;
+}
+</code></pre>
+<p><img src="/images/btc2.jpg" alt="Bitcoin Dashboard"></p>
+<h4 id="verilerin-ekranda-gösterilmesi">Verilerin ekranda gösterilmesi</h4>
+<p>Çekilen veriler aşağıdaki fonksiyon yardımıyla ekranda sırasıyla gösteriliyor.
+Her bir frame 2 saniye ekranda durup sonraki frame geçecek şekilde bir yapı
+kurdum.</p>
+<pre><code class="language-cpp">void frameLoop(double currency, double totol_balance_btc, double total_balance)
+{
+  
+  //currency
+  delay(2000);
+  char currency_line[30];
+  dtostrf(currency,0, 2, currency_line);
+  sprintf(currency_line,&quot;%s %s&quot;, currency_line, &quot; $&quot;);
+  display.clear();
+  display.drawString(0 , 0,  &quot;1 BTC:&quot;);
+  display.drawString(0 , 20, currency_line);
+  display.display();
+
+
+  // total dollar
+  delay(2000);
+  char total_balance_line[30];
+  dtostrf(total_balance,0, 8, total_balance_line); 
+  sprintf(total_balance_line,&quot;%s %s&quot;, total_balance_line, &quot; $&quot;);
+  display.clear();
+  display.drawString(0 , 0,  &quot;Total:&quot;);
+  display.drawString(0 , 20, total_balance_line);
+  display.display();
+
+
+  // total btc
+  delay(2000);
+  char totol_balance_btc_line[30];
+  dtostrf(totol_balance_btc,0, 8, totol_balance_btc_line);
+  sprintf(totol_balance_btc_line,&quot;%s %s&quot;, totol_balance_btc_line, &quot; BTC&quot;);
+  display.clear();
+  display.drawString(0 , 0,  &quot;Total:&quot;);
+  display.drawString(0 , 20, totol_balance_btc_line);
+  display.display();
+  
+}
+</code></pre>
+<p><em>Şimdilik bu proje için yazacaklarım bu kadar. Ayrıntılı bilgi için mesaj
+atabilirsiniz. Görüşmek üzere.</em></p>
+
+    </div>
+  </article>
+</main>
+
+  <footer>
+    <p>&copy; 2025 M.Ozan Unal.</p></footer><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.11.0/styles/github.min.css"
+    media="(prefers-color-scheme: light)" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.11.0/styles/github-dark.min.css"
+    media="(prefers-color-scheme: dark)" />
+  <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.11.1/build/highlight.min.js"></script>
+  <script>hljs.highlightAll();</script>
+
+</body>
+
+
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-007KSW65JL"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-007KSW65JL');
+        }
+      </script>
+
+</html>

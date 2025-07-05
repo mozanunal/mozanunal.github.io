@@ -18,8 +18,8 @@ I have tested its basic examples and they worked without any problem.</p><pre><c
 </code></pre><p>Next phase is reading data from accelerometer. I have used MPU6050 as the IMU
 sensor. It consists a gyro and an accelerometer sensor. I have used i2c scanner
 example code to detect the i2c address of the device. The address of my MPU6050
-is <code>0x68</code>.</p><pre><code class=language-python>&gt;&gt;&gt; i2c.scan() 
-# scan for slaves on the bus, 
+is <code>0x68</code>.</p><pre><code class=language-python>&gt;&gt;&gt; i2c.scan()
+# scan for slaves on the bus,
 # returning a list of valid addresses
 &gt;&gt;&gt; for device in devices:
 ...     print(&quot;Decimal address: &quot;,device,&quot; | Hexa address: &quot;,hex(device))
