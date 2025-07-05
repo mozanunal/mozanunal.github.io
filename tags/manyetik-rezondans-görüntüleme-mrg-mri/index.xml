@@ -2,18 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Manyetik Rezondans Görüntüleme, MRG, MRI on mozanunal.com</title>
-    <link>https://mozanunal.com/tags/manyetik-rezondans-g%C3%B6r%C3%BCnt%C3%BCleme-mrg-mri/</link>
+    <link>http://localhost:1313/tags/manyetik-rezondans-g%C3%B6r%C3%BCnt%C3%BCleme-mrg-mri/</link>
     <description>Recent content in Manyetik Rezondans Görüntüleme, MRG, MRI on mozanunal.com</description>
     <generator>Hugo</generator>
     <language>en-US</language>
-    <lastBuildDate>Fri, 26 Apr 2019 03:44:00 +0000</lastBuildDate>
-    <atom:link href="https://mozanunal.com/tags/manyetik-rezondans-g%C3%B6r%C3%BCnt%C3%BCleme-mrg-mri/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>[TR] Manyetik Rezonans Görüntüleme</title>
-      <link>https://mozanunal.com/2019/04/mrg/</link>
-      <pubDate>Fri, 26 Apr 2019 03:44:00 +0000</pubDate>
-      <guid>https://mozanunal.com/2019/04/mrg/</guid>
-      <description>&lt;h1 id=&#34;manyetik-rezonans-görüntüleme&#34;&gt;Manyetik Rezonans Görüntüleme&lt;/h1&gt;&#xA;&lt;h2 id=&#34;1giriş&#34;&gt;1.Giriş&lt;/h2&gt;&#xA;&lt;p&gt;Normalde vücudumuz RF enerjisine duyarsızdır. Önce veri kaynağımız olan&#xA;protonların RF enerjisi ile uyarılır hale getirilmesi gerekir. Bunun için hasta&#xA;çok güçlü bir manyetik alan içerisine yerleştirilir. Bu manyetik etkiyle&#xA;protonlar manyetik alana uygun şekilde dizilir ve uyarılmaya hazır hale&#xA;gelirler. Kesit alınacak bölgeye RF enerjisi gönderilir. Protonlar bu enerjiyi&#xA;alır ve enerjinin miktarına göre konumlarından saparlar. RF enerjisi kesilir.&#xA;Protonlar eski konumlarına dönerler. Bu dönüş sürecinde aldıkları enerjiyi bir&#xA;sinyal şeklinde yayarlar. Bu sinyal kayıt edilerek seçilen alanın Hidrojen&#xA;yoğunluğuyla alakalı bilgi edinilmiş olur.&lt;/p&gt;</description>
-    </item>
+    <atom:link href="http://localhost:1313/tags/manyetik-rezondans-g%C3%B6r%C3%BCnt%C3%BCleme-mrg-mri/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

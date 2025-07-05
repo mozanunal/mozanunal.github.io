@@ -2,18 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Unity on mozanunal.com</title>
-    <link>https://mozanunal.com/tags/unity/</link>
+    <link>http://localhost:1313/tags/unity/</link>
     <description>Recent content in Unity on mozanunal.com</description>
     <generator>Hugo</generator>
     <language>en-US</language>
-    <lastBuildDate>Sun, 16 Apr 2017 18:04:36 +0000</lastBuildDate>
-    <atom:link href="https://mozanunal.com/tags/unity/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Artwork Sharing Platform with Augmented Reality</title>
-      <link>https://mozanunal.com/2017/04/art-sharing-platform-1521976119976/</link>
-      <pubDate>Sun, 16 Apr 2017 18:04:36 +0000</pubDate>
-      <guid>https://mozanunal.com/2017/04/art-sharing-platform-1521976119976/</guid>
-      <description>&lt;p&gt;This is a project develop for Tech4Culture Hackhathon 2017.&lt;/p&gt;&#xA;&lt;p&gt;Project features:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;You can share artworks&lt;/li&gt;&#xA;&lt;li&gt;You can follow artist who you like&lt;/li&gt;&#xA;&lt;li&gt;You can explore and experience artworks with augmented reality&lt;/li&gt;&#xA;&lt;li&gt;You can follow art foundations for art and culture activities&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://mozanunal.com/images/1521977188211.png&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://mozanunal.com/images/1521977228493.png&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;&#xA;&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;&#xA;      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/agt2mLnlgAk?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;&gt;&lt;/iframe&gt;&#xA;    &lt;/div&gt;&#xA;&#xA;&lt;p&gt;Future Improvements&lt;/p&gt;</description>
-    </item>
+    <atom:link href="http://localhost:1313/tags/unity/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

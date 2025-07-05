@@ -13,7 +13,7 @@
       <link>https://mozanunal.com/2020/04/imaging-axis/</link>
       <pubDate>Thu, 30 Apr 2020 02:12:00 +0000</pubDate>
       <guid>https://mozanunal.com/2020/04/imaging-axis/</guid>
-      <description>&lt;h1 id=&#34;medical-imaging-planes&#34;&gt;Medical Imaging Planes&lt;/h1&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://mozanunal.com/images/imaging/planes.png&#34; alt=&#34;Source: https://mevislabdownloads.mevis.de/docs/current/MeVisLab/Resources/Documentation/Publish/SDK/GettingStarted/ch12s05.html&#34;&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;axial-transverse-plane&#34;&gt;Axial (Transverse) Plane&lt;/h2&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://mozanunal.com/images/imaging/axial.gif&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;coronal-plane&#34;&gt;Coronal Plane&lt;/h2&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://mozanunal.com/images/imaging/coronal.gif&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;sagittal-plane&#34;&gt;Sagittal Plane&lt;/h2&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://mozanunal.com/images/imaging/sagittal.gif&#34; alt=&#34;&#34;&gt;&lt;/p&gt;</description>
+      <description>&lt;h1 id=&#34;medical-imaging-planes&#34;&gt;Medical Imaging Planes&lt;/h1&gt;&#xA;&lt;p&gt;&lt;img src=&#34;planes.png&#34; alt=&#34;Source: https://mevislabdownloads.mevis.de/docs/current/MeVisLab/Resources/Documentation/Publish/SDK/GettingStarted/ch12s05.html&#34;&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;axial-transverse-plane&#34;&gt;Axial (Transverse) Plane&lt;/h2&gt;&#xA;&lt;p&gt;&lt;img src=&#34;axial.gif&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;coronal-plane&#34;&gt;Coronal Plane&lt;/h2&gt;&#xA;&lt;p&gt;&lt;img src=&#34;coronal.gif&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;sagittal-plane&#34;&gt;Sagittal Plane&lt;/h2&gt;&#xA;&lt;p&gt;&lt;img src=&#34;sagittal.gif&#34; alt=&#34;&#34;&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Micropython Mqtt Streamer</title>
@@ -27,14 +27,7 @@
       <link>https://mozanunal.com/2019/11/ecg-signal/</link>
       <pubDate>Sun, 17 Nov 2019 02:36:00 +0000</pubDate>
       <guid>https://mozanunal.com/2019/11/ecg-signal/</guid>
-      <description>&lt;p&gt;Hello everyone, Today, I will show how can you filter out the noise from the raw&#xA;ECG signal. Let&amp;rsquo;s start!&lt;/p&gt;&#xA;&lt;h3 id=&#34;what-is-ecg&#34;&gt;What is ECG?&lt;/h3&gt;&#xA;&lt;p&gt;Electrocardiography (ECG) is the measurement of the bioelectrical activity&#xA;during the contraction and relaxation stages of the atria and ventricles of the&#xA;heart, the stimulation of the heart and the conduction of the stimulus. ECG&#xA;signal has some specific waves which correspond to particular conditions.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Part of the ECG Signal&lt;/strong&gt; &lt;img src=&#34;https://mozanunal.com/images/ekg15.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>[TR] Manyetik Rezonans Görüntüleme</title>
-      <link>https://mozanunal.com/2019/04/mrg/</link>
-      <pubDate>Fri, 26 Apr 2019 03:44:00 +0000</pubDate>
-      <guid>https://mozanunal.com/2019/04/mrg/</guid>
-      <description>&lt;h1 id=&#34;manyetik-rezonans-görüntüleme&#34;&gt;Manyetik Rezonans Görüntüleme&lt;/h1&gt;&#xA;&lt;h2 id=&#34;1giriş&#34;&gt;1.Giriş&lt;/h2&gt;&#xA;&lt;p&gt;Normalde vücudumuz RF enerjisine duyarsızdır. Önce veri kaynağımız olan&#xA;protonların RF enerjisi ile uyarılır hale getirilmesi gerekir. Bunun için hasta&#xA;çok güçlü bir manyetik alan içerisine yerleştirilir. Bu manyetik etkiyle&#xA;protonlar manyetik alana uygun şekilde dizilir ve uyarılmaya hazır hale&#xA;gelirler. Kesit alınacak bölgeye RF enerjisi gönderilir. Protonlar bu enerjiyi&#xA;alır ve enerjinin miktarına göre konumlarından saparlar. RF enerjisi kesilir.&#xA;Protonlar eski konumlarına dönerler. Bu dönüş sürecinde aldıkları enerjiyi bir&#xA;sinyal şeklinde yayarlar. Bu sinyal kayıt edilerek seçilen alanın Hidrojen&#xA;yoğunluğuyla alakalı bilgi edinilmiş olur.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Hello everyone, Today, I will show how can you filter out the noise from the raw&#xA;ECG signal. Let&amp;rsquo;s start!&lt;/p&gt;&#xA;&lt;h3 id=&#34;what-is-ecg&#34;&gt;What is ECG?&lt;/h3&gt;&#xA;&lt;p&gt;Electrocardiography (ECG) is the measurement of the bioelectrical activity&#xA;during the contraction and relaxation stages of the atria and ventricles of the&#xA;heart, the stimulation of the heart and the conduction of the stimulus. ECG&#xA;signal has some specific waves which correspond to particular conditions.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Part of the ECG Signal&lt;/strong&gt; &lt;img src=&#34;ekg15.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>[TR] Veriloga Giriş</title>

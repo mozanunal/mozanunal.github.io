@@ -13,7 +13,7 @@
       <link>https://mozanunal.com/2019/11/ecg-signal/</link>
       <pubDate>Sun, 17 Nov 2019 02:36:00 +0000</pubDate>
       <guid>https://mozanunal.com/2019/11/ecg-signal/</guid>
-      <description>&lt;p&gt;Hello everyone, Today, I will show how can you filter out the noise from the raw&#xA;ECG signal. Let&amp;rsquo;s start!&lt;/p&gt;&#xA;&lt;h3 id=&#34;what-is-ecg&#34;&gt;What is ECG?&lt;/h3&gt;&#xA;&lt;p&gt;Electrocardiography (ECG) is the measurement of the bioelectrical activity&#xA;during the contraction and relaxation stages of the atria and ventricles of the&#xA;heart, the stimulation of the heart and the conduction of the stimulus. ECG&#xA;signal has some specific waves which correspond to particular conditions.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Part of the ECG Signal&lt;/strong&gt; &lt;img src=&#34;https://mozanunal.com/images/ekg15.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;Hello everyone, Today, I will show how can you filter out the noise from the raw&#xA;ECG signal. Let&amp;rsquo;s start!&lt;/p&gt;&#xA;&lt;h3 id=&#34;what-is-ecg&#34;&gt;What is ECG?&lt;/h3&gt;&#xA;&lt;p&gt;Electrocardiography (ECG) is the measurement of the bioelectrical activity&#xA;during the contraction and relaxation stages of the atria and ventricles of the&#xA;heart, the stimulation of the heart and the conduction of the stimulus. ECG&#xA;signal has some specific waves which correspond to particular conditions.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Part of the ECG Signal&lt;/strong&gt; &lt;img src=&#34;ekg15.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
