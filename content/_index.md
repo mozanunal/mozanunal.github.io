@@ -1,4 +1,3 @@
-
 <div style="text-align: center;">
 <img src="images/profile.png" width="360" alt="">
 <h1>M.Ozan Unal</h1>

@@ -13,5 +13,3 @@ hugo server
 # build the website
 hugo
 ```
-
-
