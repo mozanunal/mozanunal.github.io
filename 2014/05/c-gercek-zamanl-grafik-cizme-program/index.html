@@ -17,7 +17,7 @@ oldukça kolaylaştırılmıştır. Seri port öğesi eklenir ve ayarları yapı
 Buradaki ayarlar veri transfer hızı hangi Com Portun okunacağının ayarı v.b.
 &ldquo;Save to text&rdquo; özelliği de gelen veriyi saklayıp sonra tekrar inceleme imkanı
 sunar.Asıl konumuz bu olmadığı için çok ayrıntıya girmiyorum zaten kolayca
-örnekleri bulunabilir.</p><p><img src=https://3.bp.blogspot.com/-OpTteyKRPkw/U4JijZMfddI/AAAAAAAAACo/Rw1kmXUUXNY/s720/Ekran+Al%C4%B1nt%C4%B1s%C4%B1.PNG alt></p><p>İkinci kısım seri porttan alınan verinin uygun şekilde parçalandığı ve labellara
+örnekleri bulunabilir.</p><p><img src=Ekran+Al%C4%B1nt%C4%B1s%C4%B1.png alt></p><p>İkinci kısım seri porttan alınan verinin uygun şekilde parçalandığı ve labellara
 aktarıldığı bölümdür. Bunun için &ldquo;Display Text&rdquo; isimli bir fonksiyon
 yazılmıştır. Bu fonksiyon ile gelen verinin her satırının şekli</p><pre><code>$,data1,data2,data3
 </code></pre><p>olarak belirlenmiştir. Fonksiyonun algoritması şu şekildedir; gelen verinin ilk
@@ -25,11 +25,11 @@ harfi &ldquo;$&rdquo; değilse veriyi işlemez, eğer ilk harfi oysa virgül say
 bakar(Stringin içinden belli bir karakteri arama fonksiyonu kullanılmıştır.),
 eğer o da 3&rsquo;e eşit ise gelen veriyi virgüllere göre parçalar ve ilk kısım
 hariç("$") kalan veriyi, tek tek 3 ayrı labela aktarır böylece gelen data1,
-data2, data3 ayrı labellara aktarılmış olur.<br><img src=https://3.bp.blogspot.com/-igLoVYnnakU/U4JtR9fQCeI/AAAAAAAAADU/xnl9DY_IYns/s720/4.PNG alt></p><p>Grafik çizdirme kısmına geçmeden önce grafiği çizen timerı açan ve kapatan 2
+data2, data3 ayrı labellara aktarılmış olur.<br><img src=4.png alt></p><p>Grafik çizdirme kısmına geçmeden önce grafiği çizen timerı açan ve kapatan 2
 butondan bahsedeyim. Bunlar sayesinde grafik çizdirme başlatılır ve durdurulur.
 Yani butonların tıklama &ldquo;event"lerinde sadece <code>timer1.enable=true;</code> ve
 <code>timer1.enable=false</code> kodu vardır.(Tabi ayrı ayrı birinde true olan diğerinde
-false olan )</p><p><img src=https://2.bp.blogspot.com/-g9su7CqID_0/U4JtS_cz0fI/AAAAAAAAADI/nbJVSsGaQP8/s720/Ekran+Al%C4%B1nt%C4%B1s%C4%B1565.PNG alt>
+false olan )</p><p><img src=Ekran+Al%C4%B1nt%C4%B1s%C4%B1565.png alt>
 Resimde altta eklediğimiz SeriPort ve timer1 öğesini görebilirsiniz.
 &ldquo;FileDiaglog&rdquo; öğeleri ise text dosyasına kaydetmek için ve bir text dostasını
 seri porttan yollamak için kullanılır.</p><p>ilk önce grafiğin ayarlarından başlayalım. Grafiğe bir çizim alanı yanı &ldquo;pane&rdquo;
@@ -39,13 +39,13 @@ yaratmamak adına sade bir grafik tercih ettim. ZedGraph kütüphanesi
 yapabileceğiniz diğer ayarlar ile çok farklı grafikler çizdirme imkanı sunar.
 Grafiğin altını doldurma, nokta grafiği, sütun ve daire grafiği gibi çeşit ve
 renk opsiyonları mevcuttur. Bu çeşitlerin bazılarına
-<a href=https://zedgraph.sourceforge.net/samples.html>buradan</a> ulaşabilirsiniz.</p><p><img src=https://2.bp.blogspot.com/-BnQhYNdpYpY/U4PawOllbuI/AAAAAAAAADo/1qVUP9OzlL0/s720/Ekran+Al%C4%B1nt%C4%B1s%C4%B1.PNG alt></p><p>Grafik ayarlarında önemli bir yerlerden biri de &ldquo;Point pair list"in ve &ldquo;Line
+<a href=https://zedgraph.sourceforge.net/samples.html>buradan</a> ulaşabilirsiniz.</p><p><img src=Ekran+Al%C4%B1nt%C4%B1s%C4%B1-c6de55.png alt></p><p>Grafik ayarlarında önemli bir yerlerden biri de &ldquo;Point pair list"in ve &ldquo;Line
 item"ın belirlenmesidir. Çizilecek her eğri için birer tane bunlardan
 belirlenmelidir. &ldquo;RolingPointPairList&rdquo; seçilmesinin sebebi ise &ldquo;rolling&rdquo;
 olduğunda en fazla seçilen kadar(burada en fazla 40 nokta çifti) noktanın
 hafızada saklaması böylece bir süre sonra biriken noktaların bilgisayarda
 yavaşlama meydana getirmesinin engellenmesidir. Belli aralıklarla zaten grafik
-üstüne sağ tıklanarak resim olarak kaydetme opsiyonu da mevcuttur.</p><p><img src=https://1.bp.blogspot.com/-hAOgV5UrDXo/U4JtR8Rk6eI/AAAAAAAAAC4/A-FNsqx61S0/s720/3.PNG alt></p><p>Gelelim grafiği çizdirme kısmına. İlk önce grafiğe bir &ldquo;Timer&rdquo; öğesi eklenir ve
+üstüne sağ tıklanarak resim olarak kaydetme opsiyonu da mevcuttur.</p><p><img src=3.png alt></p><p>Gelelim grafiği çizdirme kısmına. İlk önce grafiğe bir &ldquo;Timer&rdquo; öğesi eklenir ve
 periyodu 1000 ms(1 saniye) olarak belirlenir. Bu tamamen opsiyoneldir ne
 kadarlık zaman aralıklarında grafiğimize nokta eklenmesi istendiğine
 bağlıdır.İlk 3 satırdaki kodlar ile bir labelda şu anki saniyenin tutulması
@@ -59,7 +59,7 @@ bu satır ile eğrinin hangi &ldquo;pane"e çizileceği, rengi, noktaların gös
 (yuvarlak,yıldız,kare), eğrinin altının dolu-boş olacağı belirlenir.  En alt
 kısımda grafik yenilerek yeni eğrinin çizilmesi graifğin gördüğümüz yerinin
 eğrimize paralel olarak uygun şekilde yer değiştirmesi sağlanır. Böylece
-Bilgisayara hiç değmeden grafiğin takibi otomatik olarak yapılmış olur.</p><p><img src=https://3.bp.blogspot.com/-9A-D0jYFs-A/U4JtRxN2SNI/AAAAAAAAAC8/0UROIHsdApY/s720/5.PNG alt></p><p>Aşağıda programımızın son hali bulunmaktadır. En kısa zamanda videosunu eklemeye
+Bilgisayara hiç değmeden grafiğin takibi otomatik olarak yapılmış olur.</p><p><img src=5.png alt></p><p>Aşağıda programımızın son hali bulunmaktadır. En kısa zamanda videosunu eklemeye
 çalışacağım. Görselleme, telemetri projelerinde ve bilgisayarla kontrol
 projelerinde en önemli noktalardan biridir(ya da pid, sensor test ederken).
 Programımız da bu ihtiyaca yönelik yazılmıştır. Arduino ve ya pic ile (ya da
@@ -68,6 +68,6 @@ uygulamadır. C# ile yapılan gerçek zamanlı (real time) uygulama eksikliğind
 konuyu yapma ihtiyacı hissettim. Ben bu konuyu araştırırken bu uygulamayı gerçek
 zamanlı yapan ve sonra nasıl yapıldığını anlatan bir kaynak bulamamıştım.Umarım
 bu bilgiler işinize yarar. Paylaşımlarınızda kaynak belirtirseniz çok iyi olur
-:). Tekrar görüşmek üzere&mldr;</p><p><img src=https://4.bp.blogspot.com/-u9gyY6u78Ks/U4PnbJauzrI/AAAAAAAAAD4/hAhFH7f7JPo/s720/Ekran+Al%C4%B1nt%C4%B1s%C4%B12.PNG alt></p><p><strong>Not: Sonradan programın derlenmiş halini de paylaştım indirmek isterseniz
+:). Tekrar görüşmek üzere&mldr;</p><p><img src=Ekran+Al%C4%B1nt%C4%B1s%C4%B12.png alt></p><p><strong>Not: Sonradan programın derlenmiş halini de paylaştım indirmek isterseniz
 <a href=https://mozanunal.com/2014/12/serial-port-grapher/>buradaki yazıma</a> gitmeniz
 yeterli olacaktır.</strong></p></div></article></main><footer><p>&copy; 2025 M.Ozan Unal.</p></footer><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/highlight.js@11.11.0/styles/github.min.css media="(prefers-color-scheme: light)"><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/highlight.js@11.11.0/styles/github-dark.min.css media="(prefers-color-scheme: dark)"><script src=https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.11.1/build/highlight.min.js></script><script>hljs.highlightAll()</script></body><script async src="https://www.googletagmanager.com/gtag/js?id=G-007KSW65JL"></script><script>var dnt,doNotTrack=!1;if(!1&&(dnt=navigator.doNotTrack||window.doNotTrack||navigator.msDoNotTrack,doNotTrack=dnt=="1"||dnt=="yes"),!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-007KSW65JL")}</script></html>

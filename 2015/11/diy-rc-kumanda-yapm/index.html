@@ -4,11 +4,11 @@ aracı, istediğiniz kadar kanalla kontrol etmeniz mümkün. Benim uygulamamda 2
 adet 2 eksen joystick ve 1 potansiyometre bulunuyor. Yani 5 kanallı örnek bir
 uygulama yaptım. Öncelikle malzemelerden başlayalım.</p><ol><li>Arduino Nano</li><li>Nrf24l01</li><li>1 adet 10k potansiyometre</li><li>1 adet 10k direnç</li><li>2 adet 2 eksen joystick modulü</li></ol><p>Bu malzemelerle beraber toplam maliyetimiz 7- 8 dolar civarı oluyor. Maximum
 kullanım mesafesi ise 30 40 metre civarında hobi uygulamarına göre oldukça
-yeterli bir mesafe elde ediyoruz.</p><p><img src=https://2.bp.blogspot.com/-xDp3AViitVk/Vke9Wz-_7GI/AAAAAAAAOuI/s6nGyovNDrY/s720/IMG_20151110_225602.jpg alt></p><p><img src=https://1.bp.blogspot.com/-pCi8LTweGqI/Vke9WyHH_BI/AAAAAAAAOuI/F4XsoNq_j8w/s720/IMG_20151110_225557.jpg alt></p><p>Bağlantılara gelecek olursak nrf24 modülü SPI ile çalışıyor. Arduino&rsquo;nun uygun
+yeterli bir mesafe elde ediyoruz.</p><p><img src=IMG_20151110_225602.jpg alt></p><p><img src=IMG_20151110_225557.jpg alt></p><p>Bağlantılara gelecek olursak nrf24 modülü SPI ile çalışıyor. Arduino&rsquo;nun uygun
 SPI pinlerine bağlıyoruz. Şemasını kolayca bulabilirsiniz. Joystick modulleri
 için de bir tanesi için 2 analog giriş olmak üzere Arduino Nanonun toplam 4 tane
 analog giriş pinin kullanıyoruz. Potansiyometrenin kullanımı için de 1 adet
-analog giriş pini kullanıyoruz.</p><p><img src=https://2.bp.blogspot.com/--vbgxgEg-Rk/Vke9W-L-3ZI/AAAAAAAAOuI/XKbVFCQj6V0/s720/IMG_20151110_225607.jpg alt></p><p><img src=https://2.bp.blogspot.com/-Lsd05A9Lnpo/Vke9W7Wzv6I/AAAAAAAAOuI/4vMP73gnhPA/s720/IMG_20151110_225613.jpg alt></p><p>Kumandanın koduyla alakalı olarak değinmek istediğim bir kaç nokta var. Baştaki
+analog giriş pini kullanıyoruz.</p><p><img src=IMG_20151110_225607.jpg alt></p><p><img src=IMG_20151110_225613.jpg alt></p><p>Kumandanın koduyla alakalı olarak değinmek istediğim bir kaç nokta var. Baştaki
 ayarlarda nrf ile ilgili ayarlar yapılıyor. Bu modülle alakalı bir kaç önemli
 nokta şöyle:</p><ol><li>Kanal seçimi çok önemli 2.4 ghz çok kullanılan bir frekans ve uygun kanal
 seçilmezse çok gürültü olabilir. Kanal taraması için arduino kodları var,
