@@ -11,6 +11,9 @@ buildDrafts: false
 buildFuture: false
 buildExpired: false
 googleAnalytics: "G-007KSW65JL"
+outputs:
+  home:    [HTML, RSS]
+  section: [HTML, RSS]
 
 params:
   # The author's name, used in the footer.
@@ -18,29 +21,30 @@ params:
   # A short site description, often used for SEO meta tags.
   description: "An example site for the clean and configurable Hugo Classless theme."
 
-  themes:
-    - name: "Cosmo.css"
-      url: "https://cdn.jsdelivr.net/gh/cspablocortez/cosmocss@latest/cosmo.min.css"
-    - name: "Classless.css"
-      url: "https://cdn.jsdelivr.net/gh/digitallytailored/classless@latest/classless.min.css"
-    - name: "Pico"
-      url: "https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.classless.min.css"
-    - name: "Water.css"
-      url: "https://cdn.jsdelivr.net/npm/water.css@2/out/water.css"
-    - name: "Simple.css"
-      url: "https://cdn.simplecss.org/simple.min.css"
-    - name: "New.css"
-      url: "https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css"
-    - name: "Missing.css"
-      url: "https://unpkg.com/missing.css"
-    - name: "Bolt.css"
-      url: "https://unpkg.com/boltcss/bolt.min.css"
+  theme: css/classless.css
+  # themes:
+  #   - name: "Cosmo.css"
+  #     url: "https://cdn.jsdelivr.net/gh/cspablocortez/cosmocss@latest/cosmo.min.css"
+  #   - name: "Classless.css"
+  #     url: "https://cdn.jsdelivr.net/gh/digitallytailored/classless@latest/classless.min.css"
+  #   - name: "Pico"
+  #     url: "https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.classless.min.css"
+  #   - name: "Water.css"
+  #     url: "https://cdn.jsdelivr.net/npm/water.css@2/out/water.css"
+  #   - name: "Simple.css"
+  #     url: "https://cdn.simplecss.org/simple.min.css"
+  #   - name: "New.css"
+  #     url: "https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css"
+  #   - name: "Missing.css"
+  #     url: "https://unpkg.com/missing.css"
+  #   - name: "Bolt.css"
+  #     url: "https://unpkg.com/boltcss/bolt.min.css"
 
-  themeSelectorLocation: 'header'
   faviconSVG: "/favicon.svg"
   faviconICO: "/favicon.ico"
   appleTouchIcon: "/apple-touch-icon.png"
   quicklink: false
+  math: true
 
 menu:
   main:
@@ -70,7 +74,7 @@ markup:
     enabled: true
   highlight:
     noClasses: false
-    codeFences: false
+    codeFences: true
     guessSyntax: true
     # lineNos: true
 
