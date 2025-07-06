@@ -1,48 +1,53 @@
-<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=color-scheme content="light dark"><meta name=description content="An example site for the clean and configurable Hugo Classless theme."><link href=/2015/01/lcd-gostergeli-mesafe-olcer/ rel=alternate type=application/rss+xml title=mozanunal.com><link id=theme-style rel=stylesheet href=/css/classless.20c8e211f6768ba295effc3e101a31bfe248db7295bb122355bdf893c6cee731.css integrity="sha256-IMjiEfZ2i6KV7/w+EBoxv+JI23KVuxIjVb34k8bO5zE="><style>pre code,code{-webkit-text-size-adjust:100%;text-size-adjust:100%}pre code.hljs{all:revert;display:block;overflow-x:auto}img{display:block;margin-left:auto;margin-right:auto}figcaption{display:block;margin-left:auto;margin-right:auto}</style><title>[TR] LCD Göstergeli Mesafe Ölçer | mozanunal.com</title><link rel=icon href=/favicon.svg type=image/svg+xml><link rel="shortcut icon" href=/favicon.ico><link rel=apple-touch-icon href=/apple-touch-icon.png></head><body><header><div><h1>mozanunal.com</h1><nav><p><a href=/>Home</a> | <a href=/posts/>Posts</a> | <a href=/projects/>Projects</a> | <a href=/papers/>Papers</a> | <a href=/contact/>Contact</a></p></nav></div></header><main><article><header><h1>[TR] LCD Göstergeli Mesafe Ölçer</h1><p><em><time datetime=2015-01-11>January 11, 2015</time></em></p></header><div><p><strong>Merhabalar!</strong></p><p>Bugünkü yazımda LCD göstergeli bir mesafe ölçerin nasıl yapılabileceğini
+<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=color-scheme content="light dark"><meta name=description content="An example site for the clean and configurable Hugo Classless theme."><link href=/2015/01/lcd-gostergeli-mesafe-olcer/ rel=alternate type=application/rss+xml title=mozanunal.com><link id=theme-style rel=stylesheet href=/css/classless.20c8e211f6768ba295effc3e101a31bfe248db7295bb122355bdf893c6cee731.css integrity="sha256-IMjiEfZ2i6KV7/w+EBoxv+JI23KVuxIjVb34k8bO5zE="><style>pre code,code{-webkit-text-size-adjust:100%;text-size-adjust:100%}img{display:block;margin-left:auto;margin-right:auto}figcaption{display:block;margin-left:auto;margin-right:auto}</style><link rel=stylesheet href=/css/syntax-light.min.d1e9974bf1fe0f3bfae6a7af3a04c1e749276b8efbbf6d3397998585f82443f0.css media="(prefers-color-scheme: light)"><link rel=stylesheet href=/css/syntax-dark.min.22964c63865be9217cedda7ac3dbd0143f8f41b3a0f681ef71e845b18a33a4f3.css media="(prefers-color-scheme: dark)"><title>[TR] LCD Göstergeli Mesafe Ölçer | mozanunal.com</title><link rel=icon href=/favicon.svg type=image/svg+xml><link rel="shortcut icon" href=/favicon.ico><link rel=apple-touch-icon href=/apple-touch-icon.png></head><body><header><div><h1>mozanunal.com</h1><nav><p><a href=/>Home</a> | <a href=/posts/>Posts</a> | <a href=/projects/>Projects</a> | <a href=/papers/>Papers</a> | <a href=/contact/>Contact</a></p></nav></div></header><main><article><header><h1>[TR] LCD Göstergeli Mesafe Ölçer</h1><p><em><time datetime=2015-01-11>January 11, 2015</time></em></p></header><div><p><strong>Merhabalar!</strong></p><p>Bugünkü yazımda LCD göstergeli bir mesafe ölçerin nasıl yapılabileceğini
 anlatacağım. Projede Arduino, LCD modülü ve HC-SR04 modülü kullandım. Mesafe
 hesaplama işini &ldquo;NewPing&rdquo; isimli kütüphaneye yaptırdım. Bu aldığım mesafe
 verilerini de LCD ekrana bastırıyorum kod bu kadar basit. HC-SR04 ultrasonik
 mesafe hesaplama modulü. Mesafe hesabı için ses dalgalarını kullanıyor. Ses
 hızına göre geri dönüş süresini hesaplıyor bu sayede uzaklık hakkında bilgi
 sahibi olmuş oluyoruz.</p><p><img src=IMG_20150111_183709.jpg alt></p><p><img src=IMG_20150111_183748.jpg alt></p><p>Uygulamanın Arduino Kodunu paylaşıyorum. Bağlantılar da kod içerisinde
-verilmiştir.</p><pre><code class=language-cpp>/* The circuit:
- * LCD RS pin to digital pin 12
- * LCD Enable pin to digital pin 11
- * LCD D4 pin to digital pin 5
- * LCD D5 pin to digital pin 4
- * LCD D6 pin to digital pin 3
- * LCD D7 pin to digital pin 2
- * LCD R/W pin to ground
- * 10K resistor:
- * ends to +5V and ground
- * wiper to LCD VO pin (pin 3)
-  */
-
-// include the library code:
-#include &lt;LiquidCrystal.h&gt;
-#include &lt;NewPing.h&gt;
-
-#define TRIGGER_PIN  7  // Arduino pin tied to trigger pin on the ultrasonic sensor.
-#define ECHO_PIN     6  // Arduino pin tied to echo pin on the ultrasonic sensor.
-#define MAX_DISTANCE 200 // Maximum distance we want to ping for (in centimeters). Maximum sensor distance is rated at 400-500cm.
-
-// initialize the library with the numbers of the interface pins
-LiquidCrystal lcd(12, 11, 5, 4, 3, 2);
-NewPing sonar(TRIGGER_PIN, ECHO_PIN, MAX_DISTANCE);
-
-void setup() {
-  lcd.begin(16, 2);
-  lcd.print(&quot;UZAKLIK&quot;);
-  Serial.begin(115200); // Open serial monitor at 115200 baud to see ping results.
-}
-
-void loop() {
-  delay(1000);
-  unsigned int uS = sonar.ping();
-  Serial.print(&quot;Ping: &quot;);
-  Serial.print(uS / US_ROUNDTRIP_CM);
-  Serial.println(&quot;cm&quot;);
-  lcd.setCursor(0, 1);
-  lcd.print(uS / US_ROUNDTRIP_CM);
-}
-</code></pre></div></article></main><footer><p>&copy; 2025 M.Ozan Unal.</p></footer></body><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/highlight.js@11.11.0/styles/github.min.css media="(prefers-color-scheme: light)"><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/highlight.js@11.11.0/styles/github-dark.min.css media="(prefers-color-scheme: dark)"><script src=https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.11.1/build/highlight.min.js></script><script>hljs.highlightAll()</script><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css><script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js></script><script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js onload='renderMathInElement(document.body,{delimiters:[{left:"$$",right:"$$",display:!0},{left:"\\\\[",right:"\\\\]",display:!0},{left:"$",right:"$",display:!1},{left:"\\\\(",right:"\\\\)",display:!1}],throwOnError:!1})'></script><script async src="https://www.googletagmanager.com/gtag/js?id=G-007KSW65JL"></script><script>var dnt,doNotTrack=!1;if(!1&&(dnt=navigator.doNotTrack||window.doNotTrack||navigator.msDoNotTrack,doNotTrack=dnt=="1"||dnt=="yes"),!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-007KSW65JL")}</script></html>
+verilmiştir.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-cpp data-lang=cpp><span class=line><span class=cl><span class=cm>/* The circuit:
+</span></span></span><span class=line><span class=cl><span class=cm> * LCD RS pin to digital pin 12
+</span></span></span><span class=line><span class=cl><span class=cm> * LCD Enable pin to digital pin 11
+</span></span></span><span class=line><span class=cl><span class=cm> * LCD D4 pin to digital pin 5
+</span></span></span><span class=line><span class=cl><span class=cm> * LCD D5 pin to digital pin 4
+</span></span></span><span class=line><span class=cl><span class=cm> * LCD D6 pin to digital pin 3
+</span></span></span><span class=line><span class=cl><span class=cm> * LCD D7 pin to digital pin 2
+</span></span></span><span class=line><span class=cl><span class=cm> * LCD R/W pin to ground
+</span></span></span><span class=line><span class=cl><span class=cm> * 10K resistor:
+</span></span></span><span class=line><span class=cl><span class=cm> * ends to +5V and ground
+</span></span></span><span class=line><span class=cl><span class=cm> * wiper to LCD VO pin (pin 3)
+</span></span></span><span class=line><span class=cl><span class=cm>  */</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1>// include the library code:
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=cp>#include</span> <span class=cpf>&lt;LiquidCrystal.h&gt;</span><span class=cp>
+</span></span></span><span class=line><span class=cl><span class=cp>#include</span> <span class=cpf>&lt;NewPing.h&gt;</span><span class=cp>
+</span></span></span><span class=line><span class=cl><span class=cp></span>
+</span></span><span class=line><span class=cl><span class=cp>#define TRIGGER_PIN  7  </span><span class=c1>// Arduino pin tied to trigger pin on the ultrasonic sensor.
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=cp>#define ECHO_PIN     6  </span><span class=c1>// Arduino pin tied to echo pin on the ultrasonic sensor.
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=cp>#define MAX_DISTANCE 200 </span><span class=c1>// Maximum distance we want to ping for (in centimeters). Maximum sensor distance is rated at 400-500cm.
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl><span class=c1>// initialize the library with the numbers of the interface pins
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=n>LiquidCrystal</span> <span class=nf>lcd</span><span class=p>(</span><span class=mi>12</span><span class=p>,</span> <span class=mi>11</span><span class=p>,</span> <span class=mi>5</span><span class=p>,</span> <span class=mi>4</span><span class=p>,</span> <span class=mi>3</span><span class=p>,</span> <span class=mi>2</span><span class=p>);</span>
+</span></span><span class=line><span class=cl><span class=n>NewPing</span> <span class=nf>sonar</span><span class=p>(</span><span class=n>TRIGGER_PIN</span><span class=p>,</span> <span class=n>ECHO_PIN</span><span class=p>,</span> <span class=n>MAX_DISTANCE</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kt>void</span> <span class=nf>setup</span><span class=p>()</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=n>lcd</span><span class=p>.</span><span class=n>begin</span><span class=p>(</span><span class=mi>16</span><span class=p>,</span> <span class=mi>2</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>  <span class=n>lcd</span><span class=p>.</span><span class=n>print</span><span class=p>(</span><span class=s>&#34;UZAKLIK&#34;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>  <span class=n>Serial</span><span class=p>.</span><span class=n>begin</span><span class=p>(</span><span class=mi>115200</span><span class=p>);</span> <span class=c1>// Open serial monitor at 115200 baud to see ping results.
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kt>void</span> <span class=nf>loop</span><span class=p>()</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=n>delay</span><span class=p>(</span><span class=mi>1000</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>  <span class=kt>unsigned</span> <span class=kt>int</span> <span class=n>uS</span> <span class=o>=</span> <span class=n>sonar</span><span class=p>.</span><span class=n>ping</span><span class=p>();</span>
+</span></span><span class=line><span class=cl>  <span class=n>Serial</span><span class=p>.</span><span class=n>print</span><span class=p>(</span><span class=s>&#34;Ping: &#34;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>  <span class=n>Serial</span><span class=p>.</span><span class=n>print</span><span class=p>(</span><span class=n>uS</span> <span class=o>/</span> <span class=n>US_ROUNDTRIP_CM</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>  <span class=n>Serial</span><span class=p>.</span><span class=n>println</span><span class=p>(</span><span class=s>&#34;cm&#34;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>  <span class=n>lcd</span><span class=p>.</span><span class=n>setCursor</span><span class=p>(</span><span class=mi>0</span><span class=p>,</span> <span class=mi>1</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>  <span class=n>lcd</span><span class=p>.</span><span class=n>print</span><span class=p>(</span><span class=n>uS</span> <span class=o>/</span> <span class=n>US_ROUNDTRIP_CM</span><span class=p>);</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></div></div></article></main><footer><p>&copy; 2025 M.Ozan Unal.</p></footer></body><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css><script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js></script><script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js onload=renderMathInElement(document.body) data-auto-render="{
+      delimiters: [
+        {left: '$$', right: '$$', display: true},
+        {left: '$', right: '$', display: false}
+      ]
+    }"></script><script async src="https://www.googletagmanager.com/gtag/js?id=G-007KSW65JL"></script><script>var dnt,doNotTrack=!1;if(!1&&(dnt=navigator.doNotTrack||window.doNotTrack||navigator.msDoNotTrack,doNotTrack=dnt=="1"||dnt=="yes"),!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-007KSW65JL")}</script></html>

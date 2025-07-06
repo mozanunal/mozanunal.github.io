@@ -1,4 +1,4 @@
-<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=color-scheme content="light dark"><meta name=description content="An example site for the clean and configurable Hugo Classless theme."><link href=/2017/04/simpledsp-fir-filtreleme-ozelligi/ rel=alternate type=application/rss+xml title=mozanunal.com><link id=theme-style rel=stylesheet href=/css/classless.20c8e211f6768ba295effc3e101a31bfe248db7295bb122355bdf893c6cee731.css integrity="sha256-IMjiEfZ2i6KV7/w+EBoxv+JI23KVuxIjVb34k8bO5zE="><style>pre code,code{-webkit-text-size-adjust:100%;text-size-adjust:100%}pre code.hljs{all:revert;display:block;overflow-x:auto}img{display:block;margin-left:auto;margin-right:auto}figcaption{display:block;margin-left:auto;margin-right:auto}</style><title>[TR] SimpleDSP: FIR filtreleme özelliği eklendi | mozanunal.com</title><link rel=icon href=/favicon.svg type=image/svg+xml><link rel="shortcut icon" href=/favicon.ico><link rel=apple-touch-icon href=/apple-touch-icon.png></head><body><header><div><h1>mozanunal.com</h1><nav><p><a href=/>Home</a> | <a href=/posts/>Posts</a> | <a href=/projects/>Projects</a> | <a href=/papers/>Papers</a> | <a href=/contact/>Contact</a></p></nav></div></header><main><article><header><h1>[TR] SimpleDSP: FIR filtreleme özelliği eklendi</h1><p><em><time datetime=2017-04-07>April 7, 2017</time></em></p></header><div><p><strong>Herkese Merhabalar,</strong><br>Bildiğiniz gibi gömülü sistemlerde kullanılabilecek basit bir DSP kütüphanesi
+<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=color-scheme content="light dark"><meta name=description content="An example site for the clean and configurable Hugo Classless theme."><link href=/2017/04/simpledsp-fir-filtreleme-ozelligi/ rel=alternate type=application/rss+xml title=mozanunal.com><link id=theme-style rel=stylesheet href=/css/classless.20c8e211f6768ba295effc3e101a31bfe248db7295bb122355bdf893c6cee731.css integrity="sha256-IMjiEfZ2i6KV7/w+EBoxv+JI23KVuxIjVb34k8bO5zE="><style>pre code,code{-webkit-text-size-adjust:100%;text-size-adjust:100%}img{display:block;margin-left:auto;margin-right:auto}figcaption{display:block;margin-left:auto;margin-right:auto}</style><link rel=stylesheet href=/css/syntax-light.min.d1e9974bf1fe0f3bfae6a7af3a04c1e749276b8efbbf6d3397998585f82443f0.css media="(prefers-color-scheme: light)"><link rel=stylesheet href=/css/syntax-dark.min.22964c63865be9217cedda7ac3dbd0143f8f41b3a0f681ef71e845b18a33a4f3.css media="(prefers-color-scheme: dark)"><title>[TR] SimpleDSP: FIR filtreleme özelliği eklendi | mozanunal.com</title><link rel=icon href=/favicon.svg type=image/svg+xml><link rel="shortcut icon" href=/favicon.ico><link rel=apple-touch-icon href=/apple-touch-icon.png></head><body><header><div><h1>mozanunal.com</h1><nav><p><a href=/>Home</a> | <a href=/posts/>Posts</a> | <a href=/projects/>Projects</a> | <a href=/papers/>Papers</a> | <a href=/contact/>Contact</a></p></nav></div></header><main><article><header><h1>[TR] SimpleDSP: FIR filtreleme özelliği eklendi</h1><p><em><time datetime=2017-04-07>April 7, 2017</time></em></p></header><div><p><strong>Herkese Merhabalar,</strong><br>Bildiğiniz gibi gömülü sistemlerde kullanılabilecek basit bir DSP kütüphanesi
 geliştirmeye çalışıyorum son olarak FIR filtreleme özelliğini bu kütüphaneye
 ekledim. FIR filtre ile alçak geçiren, yüksek geçiren, band geçiren veya
 durduran filtreler tasarlayabilirsiniz. FIR filtreler yapısı gereği hep stabil
@@ -8,350 +8,355 @@ kullanacağınız ve karakteristiğini nasıl görselleyebileceğinize kadar bir
 bilgi bulunmakta.
 <a href=https://github.com/mozanunal/SimpleDSP/wiki/FIR>Ziyaret etmek için tıklayın.</a></p><p><a href=https://github.com/mozanunal/SimpleDSP>Projenin github linkine buradan ulaşabilirsiniz.</a></p><p><strong>Arduino ile Performansı</strong>
 ![](s720
-/Capture.PNG)</p><p><strong>Örnek kod</strong></p><pre><code class=language-cpp>/*This is a signal sum of 800 hz and 3.2 khz sine waves
-which sampled in 10khz and 32 of this samples are
-create a data array.(input signal)
-In this example input signal is filtered with
-46 points fir filter. Filter is designed as low pass filter
-and filter coeficient calculated at Octave
-more info https://github.com/mozanunal/SimpleDSP/wiki/FIR
-*/
-
-#include &quot;simpleDSP_fir.h&quot;
-
-float coef[46]=
-{
-0.00113053589111100,
-0.00101072486672204,
-0.000468847235288906,
-0.000603489038578611,
--0.00208429064928862,
--0.00340892103405782,
--0.00362003403497889,
--0.00179251511006564,
-0.00229274890344763,
-0.00758093034996730,
-0.0117041456801663,
-0.0117198866352666,
-0.00550311571071171,
--0.00673606239661105,
--0.0215570909070923,
--0.0326442238558300,
--0.0325783280789586,
--0.0155583311041979,
-0.0199164513221244,
-0.0695391190116097,
-0.123656990515743,
-0.169767912370886,
-0.196291877716615,
-0.196291877716615,
-0.169767912370886,
-0.123656990515743,
-0.0695391190116097,
-0.0199164513221244,
--0.0155583311041979,
--0.0325783280789586,
--0.0326442238558300,
--0.0215570909070923,
--0.00673606239661105,
-0.00550311571071171,
-0.0117198866352666,
-0.0117041456801663,
-0.00758093034996730,
-0.00229274890344763,
--0.00179251511006564,
--0.00362003403497889,
--0.00340892103405782,
--0.00208429064928862,
--0.000603489038578611,
-0.000468847235288906,
-0.00101072486672204,
-0.00113053589111100
-};
-
-int input[255] =
-{
-450.527,
--101.597,
-1031.37,
--613.161,
--1618.03,
--115.808,
--866.986,
--1567.2,
-541.587,
-618.034,
--263.146,
-1504.41,
-1504.41,
--263.146,
-618.034,
-541.587,
--1567.2,
--866.986,
--115.808,
--1618.03,
--613.161,
-1031.37,
--101.597,
-450.527,
-2000,
-450.527,
--101.597,
-1031.37,
--613.161,
--1618.03,
--115.808,
--866.986,
--1567.2,
-541.587,
-618.034,
--263.146,
-1504.41,
-1504.41,
--263.146,
-618.034,
-541.587,
--1567.2,
--866.986,
--115.808,
--1618.03,
--613.161,
-1031.37,
--101.597,
-450.527,
-2000,
-450.527,
--101.597,
-1031.37,
--613.161,
--1618.03,
--115.808,
--866.986,
--1567.2,
-541.587,
-618.034,
--263.146,
-1504.41,
-1504.41,
--263.146,
-618.034,
-541.587,
--1567.2,
--866.986,
--115.808,
--1618.03,
--613.161,
-1031.37,
--101.597,
-450.527,
-2000,
-450.527,
--101.597,
-1031.37,
--613.161,
--1618.03,
--115.808,
--866.986,
--1567.2,
-541.587,
-618.034,
--263.146,
-1504.41,
-1504.41,
--263.146,
-618.034,
-541.587,
--1567.2,
--866.986,
--115.808,
--1618.03,
--613.161,
-1031.37,
--101.597,
-450.527,
-2000,
-450.527,
--101.597,
-1031.37,
--613.161,
--1618.03,
--115.808,
--866.986,
--1567.2,
-541.587,
-618.034,
--263.146,
-1504.41,
-1504.41,
--263.146,
-618.034,
-541.587,
--1567.2,
--866.986,
--115.808,
--1618.03,
--613.161,
-1031.37,
--101.597,
-450.527,
-2000,
-450.527,
--101.597,
-1031.37,
--613.161,
--1618.03,
--115.808,
--866.986,
--1567.2,
-541.587,
-618.034,
--263.146,
-1504.41,
-1504.41,
--263.146,
-618.034,
-541.587,
--1567.2,
--866.986,
--115.808,
--1618.03,
--613.161,
-1031.37,
--101.597,
-450.527,
-2000,
-450.527,
--101.597,
-1031.37,
--613.161,
--1618.03,
--115.808,
--866.986,
--1567.2,
-541.587,
-618.034,
--263.146,
-1504.41,
-1504.41,
--263.146,
-618.034,
-541.587,
--1567.2,
--866.986,
--115.808,
--1618.03,
--613.161,
-1031.37,
--101.597,
-450.527,
-2000,
-450.527,
--101.597,
-1031.37,
--613.161,
--1618.03,
--115.808,
--866.986,
--1567.2,
-541.587,
-618.034,
--263.146,
-1504.41,
-1504.41,
--263.146,
-618.034,
-541.587,
--1567.2,
--866.986,
--115.808,
--1618.03,
--613.161,
-1031.37,
--101.597,
-450.527,
-2000,
-450.527,
--101.597,
-1031.37,
--613.161,
--1618.03,
--115.808,
--866.986,
--1567.2,
-541.587,
-618.034,
--263.146,
-1504.41,
-1504.41,
--263.146,
-618.034,
-541.587,
--1567.2,
--866.986,
--115.808,
--1618.03,
--613.161,
-1031.37,
--101.597,
-450.527,
-2000,
-450.527,
--101.597,
-1031.37,
--613.161,
--1618.03,
--115.808,
--866.986,
--1567.2,
-541.587,
-618.034,
--263.146,
-1504.41,
-1504.41,
--263.146,
-618.034,
-541.587,
--1567.2,
--866.986,
--115.808,
--1618.03,
--613.161,
-1031.37,
--101.597,
-450.527,
-2000,
-450.527,
--101.597,
-1031.37,
--613.161,
--1618.03
-};
-
-FIR fir1;
-
-long startTime;
-long calcTime;
-
-void setup() {
-  Serial.begin(9600);
-  initFIR(&amp;fir1, 46, coef);
-  Serial.print(&quot;Initiliaze finished&quot;);
-
-  for(int i = 0; i&lt;255; i++)
-  {
-    startTime = micros();
-    float a ;
-    a = filtFIR(&amp;fir1,input[i]);
-    calcTime = micros()-startTime;
-    Serial.println(a);
-    Serial.print(&quot;Total calculation time: &quot;);
-    Serial.println(calcTime);
-  }
-}
-
-void loop()
-{
-
-}
-</code></pre></div></article></main><footer><p>&copy; 2025 M.Ozan Unal.</p></footer></body><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/highlight.js@11.11.0/styles/github.min.css media="(prefers-color-scheme: light)"><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/highlight.js@11.11.0/styles/github-dark.min.css media="(prefers-color-scheme: dark)"><script src=https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.11.1/build/highlight.min.js></script><script>hljs.highlightAll()</script><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css><script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js></script><script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js onload='renderMathInElement(document.body,{delimiters:[{left:"$$",right:"$$",display:!0},{left:"\\\\[",right:"\\\\]",display:!0},{left:"$",right:"$",display:!1},{left:"\\\\(",right:"\\\\)",display:!1}],throwOnError:!1})'></script><script async src="https://www.googletagmanager.com/gtag/js?id=G-007KSW65JL"></script><script>var dnt,doNotTrack=!1;if(!1&&(dnt=navigator.doNotTrack||window.doNotTrack||navigator.msDoNotTrack,doNotTrack=dnt=="1"||dnt=="yes"),!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-007KSW65JL")}</script></html>
+/Capture.PNG)</p><p><strong>Örnek kod</strong></p><div class=highlight><pre tabindex=0 class=chroma><code class=language-cpp data-lang=cpp><span class=line><span class=cl><span class=cm>/*This is a signal sum of 800 hz and 3.2 khz sine waves
+</span></span></span><span class=line><span class=cl><span class=cm>which sampled in 10khz and 32 of this samples are
+</span></span></span><span class=line><span class=cl><span class=cm>create a data array.(input signal)
+</span></span></span><span class=line><span class=cl><span class=cm>In this example input signal is filtered with
+</span></span></span><span class=line><span class=cl><span class=cm>46 points fir filter. Filter is designed as low pass filter
+</span></span></span><span class=line><span class=cl><span class=cm>and filter coeficient calculated at Octave
+</span></span></span><span class=line><span class=cl><span class=cm>more info https://github.com/mozanunal/SimpleDSP/wiki/FIR
+</span></span></span><span class=line><span class=cl><span class=cm>*/</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=cp>#include</span> <span class=cpf>&#34;simpleDSP_fir.h&#34;</span><span class=cp>
+</span></span></span><span class=line><span class=cl><span class=cp></span>
+</span></span><span class=line><span class=cl><span class=kt>float</span> <span class=n>coef</span><span class=p>[</span><span class=mi>46</span><span class=p>]</span><span class=o>=</span>
+</span></span><span class=line><span class=cl><span class=p>{</span>
+</span></span><span class=line><span class=cl><span class=mf>0.00113053589111100</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=mf>0.00101072486672204</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=mf>0.000468847235288906</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=mf>0.000603489038578611</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>0.00208429064928862</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>0.00340892103405782</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>0.00362003403497889</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>0.00179251511006564</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=mf>0.00229274890344763</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=mf>0.00758093034996730</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=mf>0.0117041456801663</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=mf>0.0117198866352666</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=mf>0.00550311571071171</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>0.00673606239661105</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>0.0215570909070923</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>0.0326442238558300</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>0.0325783280789586</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>0.0155583311041979</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=mf>0.0199164513221244</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=mf>0.0695391190116097</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=mf>0.123656990515743</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=mf>0.169767912370886</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=mf>0.196291877716615</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=mf>0.196291877716615</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=mf>0.169767912370886</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=mf>0.123656990515743</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=mf>0.0695391190116097</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=mf>0.0199164513221244</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>0.0155583311041979</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>0.0325783280789586</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>0.0326442238558300</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>0.0215570909070923</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>0.00673606239661105</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=mf>0.00550311571071171</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=mf>0.0117198866352666</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=mf>0.0117041456801663</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=mf>0.00758093034996730</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=mf>0.00229274890344763</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>0.00179251511006564</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>0.00362003403497889</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>0.00340892103405782</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>0.00208429064928862</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>0.000603489038578611</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=mf>0.000468847235288906</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=mf>0.00101072486672204</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=mf>0.00113053589111100</span>
+</span></span><span class=line><span class=cl><span class=p>};</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kt>int</span> <span class=n>input</span><span class=p>[</span><span class=mi>255</span><span class=p>]</span> <span class=o>=</span>
+</span></span><span class=line><span class=cl><span class=p>{</span>
+</span></span><span class=line><span class=cl><span class=mf>450.527</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>101.597</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=mf>1031.37</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>613.161</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>1618.03</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>115.808</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>866.986</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>1567.2</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=mf>541.587</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=mf>618.034</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>263.146</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=mf>1504.41</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=mf>1504.41</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>263.146</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=mf>618.034</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=mf>541.587</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>1567.2</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>866.986</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>115.808</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>1618.03</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>613.161</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=mf>1031.37</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>101.597</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=mf>450.527</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=mi>2000</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=mf>450.527</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>101.597</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=mf>1031.37</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>613.161</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>1618.03</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>115.808</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>866.986</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>1567.2</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=mf>541.587</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=mf>618.034</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>263.146</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=mf>1504.41</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=mf>1504.41</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>263.146</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=mf>618.034</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=mf>541.587</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>1567.2</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>866.986</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>115.808</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>1618.03</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>613.161</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=mf>1031.37</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>101.597</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=mf>450.527</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=mi>2000</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=mf>450.527</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>101.597</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=mf>1031.37</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>613.161</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>1618.03</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>115.808</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>866.986</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>1567.2</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=mf>541.587</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=mf>618.034</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>263.146</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=mf>1504.41</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=mf>1504.41</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>263.146</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=mf>618.034</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=mf>541.587</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>1567.2</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>866.986</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>115.808</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>1618.03</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>613.161</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=mf>1031.37</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>101.597</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=mf>450.527</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=mi>2000</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=mf>450.527</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>101.597</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=mf>1031.37</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>613.161</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>1618.03</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>115.808</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>866.986</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>1567.2</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=mf>541.587</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=mf>618.034</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>263.146</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=mf>1504.41</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=mf>1504.41</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>263.146</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=mf>618.034</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=mf>541.587</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>1567.2</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>866.986</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>115.808</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>1618.03</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>613.161</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=mf>1031.37</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>101.597</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=mf>450.527</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=mi>2000</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=mf>450.527</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>101.597</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=mf>1031.37</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>613.161</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>1618.03</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>115.808</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>866.986</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>1567.2</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=mf>541.587</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=mf>618.034</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>263.146</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=mf>1504.41</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=mf>1504.41</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>263.146</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=mf>618.034</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=mf>541.587</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>1567.2</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>866.986</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>115.808</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>1618.03</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>613.161</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=mf>1031.37</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>101.597</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=mf>450.527</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=mi>2000</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=mf>450.527</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>101.597</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=mf>1031.37</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>613.161</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>1618.03</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>115.808</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>866.986</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>1567.2</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=mf>541.587</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=mf>618.034</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>263.146</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=mf>1504.41</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=mf>1504.41</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>263.146</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=mf>618.034</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=mf>541.587</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>1567.2</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>866.986</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>115.808</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>1618.03</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>613.161</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=mf>1031.37</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>101.597</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=mf>450.527</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=mi>2000</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=mf>450.527</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>101.597</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=mf>1031.37</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>613.161</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>1618.03</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>115.808</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>866.986</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>1567.2</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=mf>541.587</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=mf>618.034</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>263.146</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=mf>1504.41</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=mf>1504.41</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>263.146</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=mf>618.034</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=mf>541.587</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>1567.2</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>866.986</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>115.808</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>1618.03</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>613.161</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=mf>1031.37</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>101.597</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=mf>450.527</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=mi>2000</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=mf>450.527</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>101.597</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=mf>1031.37</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>613.161</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>1618.03</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>115.808</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>866.986</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>1567.2</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=mf>541.587</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=mf>618.034</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>263.146</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=mf>1504.41</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=mf>1504.41</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>263.146</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=mf>618.034</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=mf>541.587</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>1567.2</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>866.986</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>115.808</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>1618.03</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>613.161</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=mf>1031.37</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>101.597</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=mf>450.527</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=mi>2000</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=mf>450.527</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>101.597</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=mf>1031.37</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>613.161</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>1618.03</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>115.808</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>866.986</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>1567.2</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=mf>541.587</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=mf>618.034</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>263.146</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=mf>1504.41</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=mf>1504.41</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>263.146</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=mf>618.034</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=mf>541.587</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>1567.2</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>866.986</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>115.808</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>1618.03</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>613.161</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=mf>1031.37</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>101.597</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=mf>450.527</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=mi>2000</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=mf>450.527</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>101.597</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=mf>1031.37</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>613.161</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>1618.03</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>115.808</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>866.986</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>1567.2</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=mf>541.587</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=mf>618.034</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>263.146</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=mf>1504.41</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=mf>1504.41</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>263.146</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=mf>618.034</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=mf>541.587</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>1567.2</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>866.986</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>115.808</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>1618.03</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>613.161</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=mf>1031.37</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>101.597</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=mf>450.527</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=mi>2000</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=mf>450.527</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>101.597</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=mf>1031.37</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>613.161</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=o>-</span><span class=mf>1618.03</span>
+</span></span><span class=line><span class=cl><span class=p>};</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=n>FIR</span> <span class=n>fir1</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kt>long</span> <span class=n>startTime</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=kt>long</span> <span class=n>calcTime</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kt>void</span> <span class=nf>setup</span><span class=p>()</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=n>Serial</span><span class=p>.</span><span class=n>begin</span><span class=p>(</span><span class=mi>9600</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>  <span class=n>initFIR</span><span class=p>(</span><span class=o>&amp;</span><span class=n>fir1</span><span class=p>,</span> <span class=mi>46</span><span class=p>,</span> <span class=n>coef</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>  <span class=n>Serial</span><span class=p>.</span><span class=n>print</span><span class=p>(</span><span class=s>&#34;Initiliaze finished&#34;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>  <span class=k>for</span><span class=p>(</span><span class=kt>int</span> <span class=n>i</span> <span class=o>=</span> <span class=mi>0</span><span class=p>;</span> <span class=n>i</span><span class=o>&lt;</span><span class=mi>255</span><span class=p>;</span> <span class=n>i</span><span class=o>++</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>  <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=n>startTime</span> <span class=o>=</span> <span class=n>micros</span><span class=p>();</span>
+</span></span><span class=line><span class=cl>    <span class=kt>float</span> <span class=n>a</span> <span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=n>a</span> <span class=o>=</span> <span class=n>filtFIR</span><span class=p>(</span><span class=o>&amp;</span><span class=n>fir1</span><span class=p>,</span><span class=n>input</span><span class=p>[</span><span class=n>i</span><span class=p>]);</span>
+</span></span><span class=line><span class=cl>    <span class=n>calcTime</span> <span class=o>=</span> <span class=n>micros</span><span class=p>()</span><span class=o>-</span><span class=n>startTime</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=n>Serial</span><span class=p>.</span><span class=n>println</span><span class=p>(</span><span class=n>a</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>    <span class=n>Serial</span><span class=p>.</span><span class=n>print</span><span class=p>(</span><span class=s>&#34;Total calculation time: &#34;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>    <span class=n>Serial</span><span class=p>.</span><span class=n>println</span><span class=p>(</span><span class=n>calcTime</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>  <span class=p>}</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kt>void</span> <span class=nf>loop</span><span class=p>()</span>
+</span></span><span class=line><span class=cl><span class=p>{</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></div></div></article></main><footer><p>&copy; 2025 M.Ozan Unal.</p></footer></body><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css><script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js></script><script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js onload=renderMathInElement(document.body) data-auto-render="{
+      delimiters: [
+        {left: '$$', right: '$$', display: true},
+        {left: '$', right: '$', display: false}
+      ]
+    }"></script><script async src="https://www.googletagmanager.com/gtag/js?id=G-007KSW65JL"></script><script>var dnt,doNotTrack=!1;if(!1&&(dnt=navigator.doNotTrack||window.doNotTrack||navigator.msDoNotTrack,doNotTrack=dnt=="1"||dnt=="yes"),!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-007KSW65JL")}</script></html>

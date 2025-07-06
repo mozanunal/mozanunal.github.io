@@ -1,4 +1,4 @@
-<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=color-scheme content="light dark"><meta name=description content="An example site for the clean and configurable Hugo Classless theme."><link href=/2015/11/diy-rc-kumanda-yapm/ rel=alternate type=application/rss+xml title=mozanunal.com><link id=theme-style rel=stylesheet href=/css/classless.20c8e211f6768ba295effc3e101a31bfe248db7295bb122355bdf893c6cee731.css integrity="sha256-IMjiEfZ2i6KV7/w+EBoxv+JI23KVuxIjVb34k8bO5zE="><style>pre code,code{-webkit-text-size-adjust:100%;text-size-adjust:100%}pre code.hljs{all:revert;display:block;overflow-x:auto}img{display:block;margin-left:auto;margin-right:auto}figcaption{display:block;margin-left:auto;margin-right:auto}</style><title>[TR] DIY RC Kumanda Yapımı | mozanunal.com</title><link rel=icon href=/favicon.svg type=image/svg+xml><link rel="shortcut icon" href=/favicon.ico><link rel=apple-touch-icon href=/apple-touch-icon.png></head><body><header><div><h1>mozanunal.com</h1><nav><p><a href=/>Home</a> | <a href=/posts/>Posts</a> | <a href=/projects/>Projects</a> | <a href=/papers/>Papers</a> | <a href=/contact/>Contact</a></p></nav></div></header><main><article><header><h1>[TR] DIY RC Kumanda Yapımı</h1><p><em><time datetime=2015-11-15>November 15, 2015</time></em></p></header><div><p><strong>Herkese Merhabalar,</strong></p><p>Bu yazımda arduino kullanarak nasıl basit, ucuz ve işlevli bir RC kumanda
+<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=color-scheme content="light dark"><meta name=description content="An example site for the clean and configurable Hugo Classless theme."><link href=/2015/11/diy-rc-kumanda-yapm/ rel=alternate type=application/rss+xml title=mozanunal.com><link id=theme-style rel=stylesheet href=/css/classless.20c8e211f6768ba295effc3e101a31bfe248db7295bb122355bdf893c6cee731.css integrity="sha256-IMjiEfZ2i6KV7/w+EBoxv+JI23KVuxIjVb34k8bO5zE="><style>pre code,code{-webkit-text-size-adjust:100%;text-size-adjust:100%}img{display:block;margin-left:auto;margin-right:auto}figcaption{display:block;margin-left:auto;margin-right:auto}</style><link rel=stylesheet href=/css/syntax-light.min.d1e9974bf1fe0f3bfae6a7af3a04c1e749276b8efbbf6d3397998585f82443f0.css media="(prefers-color-scheme: light)"><link rel=stylesheet href=/css/syntax-dark.min.22964c63865be9217cedda7ac3dbd0143f8f41b3a0f681ef71e845b18a33a4f3.css media="(prefers-color-scheme: dark)"><title>[TR] DIY RC Kumanda Yapımı | mozanunal.com</title><link rel=icon href=/favicon.svg type=image/svg+xml><link rel="shortcut icon" href=/favicon.ico><link rel=apple-touch-icon href=/apple-touch-icon.png></head><body><header><div><h1>mozanunal.com</h1><nav><p><a href=/>Home</a> | <a href=/posts/>Posts</a> | <a href=/projects/>Projects</a> | <a href=/papers/>Papers</a> | <a href=/contact/>Contact</a></p></nav></div></header><main><article><header><h1>[TR] DIY RC Kumanda Yapımı</h1><p><em><time datetime=2015-11-15>November 15, 2015</time></em></p></header><div><p><strong>Herkese Merhabalar,</strong></p><p>Bu yazımda arduino kullanarak nasıl basit, ucuz ve işlevli bir RC kumanda
 yapabileceğimizi anlatacağım. Yapacağımız RC kumanda ile istediğiniz türde
 aracı, istediğiniz kadar kanalla kontrol etmeniz mümkün. Benim uygulamamda 2
 adet 2 eksen joystick ve 1 potansiyometre bulunuyor. Yani 5 kanallı örnek bir
@@ -24,61 +24,66 @@ kullanıma örnek olması amacıyla konmuştur. Yapmanız gereken sadece
 joysticklerden veya potansiyometreden aldığınız veriyi nasıl göndermek
 isterseniz o şekile çevirip &ldquo;datatosend&rdquo; array elemanlarına eşitlemektir.
 İstediğiniz türde aracı veya çok fazla farklı kanalı bu şekilde rahatça kontrol
-edebilirsiniz.</p><p><strong>Kumanda Kodu</strong></p><pre><code class=language-cpp>#include &lt;SPI.h&gt;  
-#include &lt;RF24.h&gt;  
-#include &quot;nRF24L01.h&quot;  
-
-RF24 radio(7,8);  
-int ID=1;  
-int Max_angle=12;  
-void setup()  
-{  
-    radio.begin();  
-    radio.setPayloadSize(10);  
-    radio.setChannel(80);  
-    radio.openWritingPipe(0xF0F0F0F0F0);  
-    radio.openReadingPipe(1,0xF0F0F0F0AA);  
-    radio.startListening();  
-}  
-
-void loop()  
-{  
-  int datatosend[5];  
-  datatosend[0]=ID;  
-  datatosend[1]=(analogRead(0)-500)*2;  
-  datatosend[2]=-1*(analogRead(3)-500)*Max_angle/500;  
-  datatosend[3]=(analogRead(4)-500)*Max_angle/500;  
-  datatosend[4]=-1*(analogRead(1)-500)*Max_angle/500;  
-  datatosend[5]=(analogRead(2)-500)*Max_angle/500;  
-  radio.stopListening();  
-  radio.write( datatosend, sizeof(datatosend) );  
-  radio.startListening();  
-  delay(50);  
-}
-</code></pre><p>Aşağıdaki kod ise <strong>RC verilerini almak için gerekli fonksiyondur</strong> değiken
+edebilirsiniz.</p><p><strong>Kumanda Kodu</strong></p><div class=highlight><pre tabindex=0 class=chroma><code class=language-cpp data-lang=cpp><span class=line><span class=cl><span class=cp>#include</span> <span class=cpf>&lt;SPI.h&gt;</span><span class=cp>  
+</span></span></span><span class=line><span class=cl><span class=cp>#include</span> <span class=cpf>&lt;RF24.h&gt;</span><span class=cp>  
+</span></span></span><span class=line><span class=cl><span class=cp>#include</span> <span class=cpf>&#34;nRF24L01.h&#34;</span><span class=cp>  
+</span></span></span><span class=line><span class=cl><span class=cp></span>
+</span></span><span class=line><span class=cl><span class=n>RF24</span> <span class=nf>radio</span><span class=p>(</span><span class=mi>7</span><span class=p>,</span><span class=mi>8</span><span class=p>);</span>  
+</span></span><span class=line><span class=cl><span class=kt>int</span> <span class=n>ID</span><span class=o>=</span><span class=mi>1</span><span class=p>;</span>  
+</span></span><span class=line><span class=cl><span class=kt>int</span> <span class=n>Max_angle</span><span class=o>=</span><span class=mi>12</span><span class=p>;</span>  
+</span></span><span class=line><span class=cl><span class=kt>void</span> <span class=nf>setup</span><span class=p>()</span>  
+</span></span><span class=line><span class=cl><span class=p>{</span>  
+</span></span><span class=line><span class=cl>    <span class=n>radio</span><span class=p>.</span><span class=n>begin</span><span class=p>();</span>  
+</span></span><span class=line><span class=cl>    <span class=n>radio</span><span class=p>.</span><span class=n>setPayloadSize</span><span class=p>(</span><span class=mi>10</span><span class=p>);</span>  
+</span></span><span class=line><span class=cl>    <span class=n>radio</span><span class=p>.</span><span class=n>setChannel</span><span class=p>(</span><span class=mi>80</span><span class=p>);</span>  
+</span></span><span class=line><span class=cl>    <span class=n>radio</span><span class=p>.</span><span class=n>openWritingPipe</span><span class=p>(</span><span class=mh>0xF0F0F0F0F0</span><span class=p>);</span>  
+</span></span><span class=line><span class=cl>    <span class=n>radio</span><span class=p>.</span><span class=n>openReadingPipe</span><span class=p>(</span><span class=mi>1</span><span class=p>,</span><span class=mh>0xF0F0F0F0AA</span><span class=p>);</span>  
+</span></span><span class=line><span class=cl>    <span class=n>radio</span><span class=p>.</span><span class=n>startListening</span><span class=p>();</span>  
+</span></span><span class=line><span class=cl><span class=p>}</span>  
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kt>void</span> <span class=nf>loop</span><span class=p>()</span>  
+</span></span><span class=line><span class=cl><span class=p>{</span>  
+</span></span><span class=line><span class=cl>  <span class=kt>int</span> <span class=n>datatosend</span><span class=p>[</span><span class=mi>5</span><span class=p>];</span>  
+</span></span><span class=line><span class=cl>  <span class=n>datatosend</span><span class=p>[</span><span class=mi>0</span><span class=p>]</span><span class=o>=</span><span class=n>ID</span><span class=p>;</span>  
+</span></span><span class=line><span class=cl>  <span class=n>datatosend</span><span class=p>[</span><span class=mi>1</span><span class=p>]</span><span class=o>=</span><span class=p>(</span><span class=n>analogRead</span><span class=p>(</span><span class=mi>0</span><span class=p>)</span><span class=o>-</span><span class=mi>500</span><span class=p>)</span><span class=o>*</span><span class=mi>2</span><span class=p>;</span>  
+</span></span><span class=line><span class=cl>  <span class=n>datatosend</span><span class=p>[</span><span class=mi>2</span><span class=p>]</span><span class=o>=-</span><span class=mi>1</span><span class=o>*</span><span class=p>(</span><span class=n>analogRead</span><span class=p>(</span><span class=mi>3</span><span class=p>)</span><span class=o>-</span><span class=mi>500</span><span class=p>)</span><span class=o>*</span><span class=n>Max_angle</span><span class=o>/</span><span class=mi>500</span><span class=p>;</span>  
+</span></span><span class=line><span class=cl>  <span class=n>datatosend</span><span class=p>[</span><span class=mi>3</span><span class=p>]</span><span class=o>=</span><span class=p>(</span><span class=n>analogRead</span><span class=p>(</span><span class=mi>4</span><span class=p>)</span><span class=o>-</span><span class=mi>500</span><span class=p>)</span><span class=o>*</span><span class=n>Max_angle</span><span class=o>/</span><span class=mi>500</span><span class=p>;</span>  
+</span></span><span class=line><span class=cl>  <span class=n>datatosend</span><span class=p>[</span><span class=mi>4</span><span class=p>]</span><span class=o>=-</span><span class=mi>1</span><span class=o>*</span><span class=p>(</span><span class=n>analogRead</span><span class=p>(</span><span class=mi>1</span><span class=p>)</span><span class=o>-</span><span class=mi>500</span><span class=p>)</span><span class=o>*</span><span class=n>Max_angle</span><span class=o>/</span><span class=mi>500</span><span class=p>;</span>  
+</span></span><span class=line><span class=cl>  <span class=n>datatosend</span><span class=p>[</span><span class=mi>5</span><span class=p>]</span><span class=o>=</span><span class=p>(</span><span class=n>analogRead</span><span class=p>(</span><span class=mi>2</span><span class=p>)</span><span class=o>-</span><span class=mi>500</span><span class=p>)</span><span class=o>*</span><span class=n>Max_angle</span><span class=o>/</span><span class=mi>500</span><span class=p>;</span>  
+</span></span><span class=line><span class=cl>  <span class=n>radio</span><span class=p>.</span><span class=n>stopListening</span><span class=p>();</span>  
+</span></span><span class=line><span class=cl>  <span class=n>radio</span><span class=p>.</span><span class=n>write</span><span class=p>(</span> <span class=n>datatosend</span><span class=p>,</span> <span class=k>sizeof</span><span class=p>(</span><span class=n>datatosend</span><span class=p>)</span> <span class=p>);</span>  
+</span></span><span class=line><span class=cl>  <span class=n>radio</span><span class=p>.</span><span class=n>startListening</span><span class=p>();</span>  
+</span></span><span class=line><span class=cl>  <span class=n>delay</span><span class=p>(</span><span class=mi>50</span><span class=p>);</span>  
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></div><p>Aşağıdaki kod ise <strong>RC verilerini almak için gerekli fonksiyondur</strong> değiken
 boyutlarını ayarlayarak channel sayısını artırabilirsiniz. Tabi ki bu kodu
-kontrol edeceğiniz aracın koduna eklemeniz gerekmektedir.</p><pre><code class=language-cpp>void Rc_Update()  
-{  
-  int incomingdata[6]={0,0,0,0,0,0};  
-  radio.read( incomingdata, sizeof(incomingdata) );  
-  if(incomingdata[0]==ID)  
-  {  
-    ch_1=incomingdata[1];  
-    ch_2=incomingdata[2];  
-    ch_3=incomingdata[3];  
-    ch_4=incomingdata[4];  
-    ch_5=incomingdata[5];  
-  }  
-  Serial.print(&quot;RC=&quot;);  
-  Serial.print(ch_1);  
-  Serial.print(&quot;,&quot;);  
-  Serial.print(ch_2);  
-  Serial.print(&quot;,&quot;);  
-  Serial.print(ch_3);  
-  Serial.print(&quot;,&quot;);  
-  Serial.print(ch_4);  
-  Serial.print(&quot;,&quot;);  
-  Serial.print(ch_5);  
-  Serial.println();  
-}
-</code></pre></div></article></main><footer><p>&copy; 2025 M.Ozan Unal.</p></footer></body><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/highlight.js@11.11.0/styles/github.min.css media="(prefers-color-scheme: light)"><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/highlight.js@11.11.0/styles/github-dark.min.css media="(prefers-color-scheme: dark)"><script src=https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.11.1/build/highlight.min.js></script><script>hljs.highlightAll()</script><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css><script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js></script><script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js onload='renderMathInElement(document.body,{delimiters:[{left:"$$",right:"$$",display:!0},{left:"\\\\[",right:"\\\\]",display:!0},{left:"$",right:"$",display:!1},{left:"\\\\(",right:"\\\\)",display:!1}],throwOnError:!1})'></script><script async src="https://www.googletagmanager.com/gtag/js?id=G-007KSW65JL"></script><script>var dnt,doNotTrack=!1;if(!1&&(dnt=navigator.doNotTrack||window.doNotTrack||navigator.msDoNotTrack,doNotTrack=dnt=="1"||dnt=="yes"),!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-007KSW65JL")}</script></html>
+kontrol edeceğiniz aracın koduna eklemeniz gerekmektedir.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-cpp data-lang=cpp><span class=line><span class=cl><span class=kt>void</span> <span class=nf>Rc_Update</span><span class=p>()</span>  
+</span></span><span class=line><span class=cl><span class=p>{</span>  
+</span></span><span class=line><span class=cl>  <span class=kt>int</span> <span class=n>incomingdata</span><span class=p>[</span><span class=mi>6</span><span class=p>]</span><span class=o>=</span><span class=p>{</span><span class=mi>0</span><span class=p>,</span><span class=mi>0</span><span class=p>,</span><span class=mi>0</span><span class=p>,</span><span class=mi>0</span><span class=p>,</span><span class=mi>0</span><span class=p>,</span><span class=mi>0</span><span class=p>};</span>  
+</span></span><span class=line><span class=cl>  <span class=n>radio</span><span class=p>.</span><span class=n>read</span><span class=p>(</span> <span class=n>incomingdata</span><span class=p>,</span> <span class=k>sizeof</span><span class=p>(</span><span class=n>incomingdata</span><span class=p>)</span> <span class=p>);</span>  
+</span></span><span class=line><span class=cl>  <span class=k>if</span><span class=p>(</span><span class=n>incomingdata</span><span class=p>[</span><span class=mi>0</span><span class=p>]</span><span class=o>==</span><span class=n>ID</span><span class=p>)</span>  
+</span></span><span class=line><span class=cl>  <span class=p>{</span>  
+</span></span><span class=line><span class=cl>    <span class=n>ch_1</span><span class=o>=</span><span class=n>incomingdata</span><span class=p>[</span><span class=mi>1</span><span class=p>];</span>  
+</span></span><span class=line><span class=cl>    <span class=n>ch_2</span><span class=o>=</span><span class=n>incomingdata</span><span class=p>[</span><span class=mi>2</span><span class=p>];</span>  
+</span></span><span class=line><span class=cl>    <span class=n>ch_3</span><span class=o>=</span><span class=n>incomingdata</span><span class=p>[</span><span class=mi>3</span><span class=p>];</span>  
+</span></span><span class=line><span class=cl>    <span class=n>ch_4</span><span class=o>=</span><span class=n>incomingdata</span><span class=p>[</span><span class=mi>4</span><span class=p>];</span>  
+</span></span><span class=line><span class=cl>    <span class=n>ch_5</span><span class=o>=</span><span class=n>incomingdata</span><span class=p>[</span><span class=mi>5</span><span class=p>];</span>  
+</span></span><span class=line><span class=cl>  <span class=p>}</span>  
+</span></span><span class=line><span class=cl>  <span class=n>Serial</span><span class=p>.</span><span class=n>print</span><span class=p>(</span><span class=s>&#34;RC=&#34;</span><span class=p>);</span>  
+</span></span><span class=line><span class=cl>  <span class=n>Serial</span><span class=p>.</span><span class=n>print</span><span class=p>(</span><span class=n>ch_1</span><span class=p>);</span>  
+</span></span><span class=line><span class=cl>  <span class=n>Serial</span><span class=p>.</span><span class=n>print</span><span class=p>(</span><span class=s>&#34;,&#34;</span><span class=p>);</span>  
+</span></span><span class=line><span class=cl>  <span class=n>Serial</span><span class=p>.</span><span class=n>print</span><span class=p>(</span><span class=n>ch_2</span><span class=p>);</span>  
+</span></span><span class=line><span class=cl>  <span class=n>Serial</span><span class=p>.</span><span class=n>print</span><span class=p>(</span><span class=s>&#34;,&#34;</span><span class=p>);</span>  
+</span></span><span class=line><span class=cl>  <span class=n>Serial</span><span class=p>.</span><span class=n>print</span><span class=p>(</span><span class=n>ch_3</span><span class=p>);</span>  
+</span></span><span class=line><span class=cl>  <span class=n>Serial</span><span class=p>.</span><span class=n>print</span><span class=p>(</span><span class=s>&#34;,&#34;</span><span class=p>);</span>  
+</span></span><span class=line><span class=cl>  <span class=n>Serial</span><span class=p>.</span><span class=n>print</span><span class=p>(</span><span class=n>ch_4</span><span class=p>);</span>  
+</span></span><span class=line><span class=cl>  <span class=n>Serial</span><span class=p>.</span><span class=n>print</span><span class=p>(</span><span class=s>&#34;,&#34;</span><span class=p>);</span>  
+</span></span><span class=line><span class=cl>  <span class=n>Serial</span><span class=p>.</span><span class=n>print</span><span class=p>(</span><span class=n>ch_5</span><span class=p>);</span>  
+</span></span><span class=line><span class=cl>  <span class=n>Serial</span><span class=p>.</span><span class=n>println</span><span class=p>();</span>  
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></div></div></article></main><footer><p>&copy; 2025 M.Ozan Unal.</p></footer></body><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css><script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js></script><script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js onload=renderMathInElement(document.body) data-auto-render="{
+      delimiters: [
+        {left: '$$', right: '$$', display: true},
+        {left: '$', right: '$', display: false}
+      ]
+    }"></script><script async src="https://www.googletagmanager.com/gtag/js?id=G-007KSW65JL"></script><script>var dnt,doNotTrack=!1;if(!1&&(dnt=navigator.doNotTrack||window.doNotTrack||navigator.msDoNotTrack,doNotTrack=dnt=="1"||dnt=="yes"),!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-007KSW65JL")}</script></html>

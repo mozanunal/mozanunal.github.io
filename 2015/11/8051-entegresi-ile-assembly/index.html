@@ -1,4 +1,4 @@
-<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=color-scheme content="light dark"><meta name=description content="An example site for the clean and configurable Hugo Classless theme."><link href=/2015/11/8051-entegresi-ile-assembly/ rel=alternate type=application/rss+xml title=mozanunal.com><link id=theme-style rel=stylesheet href=/css/classless.20c8e211f6768ba295effc3e101a31bfe248db7295bb122355bdf893c6cee731.css integrity="sha256-IMjiEfZ2i6KV7/w+EBoxv+JI23KVuxIjVb34k8bO5zE="><style>pre code,code{-webkit-text-size-adjust:100%;text-size-adjust:100%}pre code.hljs{all:revert;display:block;overflow-x:auto}img{display:block;margin-left:auto;margin-right:auto}figcaption{display:block;margin-left:auto;margin-right:auto}</style><title>[TR] 8051 Entegresi İle Assembly Programlamaya Giriş | mozanunal.com</title><link rel=icon href=/favicon.svg type=image/svg+xml><link rel="shortcut icon" href=/favicon.ico><link rel=apple-touch-icon href=/apple-touch-icon.png></head><body><header><div><h1>mozanunal.com</h1><nav><p><a href=/>Home</a> | <a href=/posts/>Posts</a> | <a href=/projects/>Projects</a> | <a href=/papers/>Papers</a> | <a href=/contact/>Contact</a></p></nav></div></header><main><article><header><h1>[TR] 8051 Entegresi İle Assembly Programlamaya Giriş</h1><p><em><time datetime=2015-11-05>November 5, 2015</time></em></p></header><div><p><strong>Herkese Merhabalar,</strong><br>       Bu yazdımda ilk mikroişlemcilerden biri olan 8051 mikrokontrolcüsü
+<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=color-scheme content="light dark"><meta name=description content="An example site for the clean and configurable Hugo Classless theme."><link href=/2015/11/8051-entegresi-ile-assembly/ rel=alternate type=application/rss+xml title=mozanunal.com><link id=theme-style rel=stylesheet href=/css/classless.20c8e211f6768ba295effc3e101a31bfe248db7295bb122355bdf893c6cee731.css integrity="sha256-IMjiEfZ2i6KV7/w+EBoxv+JI23KVuxIjVb34k8bO5zE="><style>pre code,code{-webkit-text-size-adjust:100%;text-size-adjust:100%}img{display:block;margin-left:auto;margin-right:auto}figcaption{display:block;margin-left:auto;margin-right:auto}</style><link rel=stylesheet href=/css/syntax-light.min.d1e9974bf1fe0f3bfae6a7af3a04c1e749276b8efbbf6d3397998585f82443f0.css media="(prefers-color-scheme: light)"><link rel=stylesheet href=/css/syntax-dark.min.22964c63865be9217cedda7ac3dbd0143f8f41b3a0f681ef71e845b18a33a4f3.css media="(prefers-color-scheme: dark)"><title>[TR] 8051 Entegresi İle Assembly Programlamaya Giriş | mozanunal.com</title><link rel=icon href=/favicon.svg type=image/svg+xml><link rel="shortcut icon" href=/favicon.ico><link rel=apple-touch-icon href=/apple-touch-icon.png></head><body><header><div><h1>mozanunal.com</h1><nav><p><a href=/>Home</a> | <a href=/posts/>Posts</a> | <a href=/projects/>Projects</a> | <a href=/papers/>Papers</a> | <a href=/contact/>Contact</a></p></nav></div></header><main><article><header><h1>[TR] 8051 Entegresi İle Assembly Programlamaya Giriş</h1><p><em><time datetime=2015-11-05>November 5, 2015</time></em></p></header><div><p><strong>Herkese Merhabalar,</strong><br>       Bu yazdımda ilk mikroişlemcilerden biri olan 8051 mikrokontrolcüsü
 üzerinden assembly dili ve mikroişlemci nedir nasıl çalışır bu konulara giriş
 yapmak istiyorum. Başlamadan önce benim de kullanacağım 8051 entegresi
 simülasyon programını önermek istiyorum. Programın ismi EdSim51. İlkönce
@@ -10,80 +10,80 @@ büyük datalarla işlem yapılmak istenirse data 8 bitlik parçalara ayrılmal�
 8051&rsquo;de en çok kullanılar registerlar aşağıdaki gibidir.</p><ul><li>A (accumulator) : Lojik ve numeric işlemleri gerçekleştirmede kullanılır </li><li>R0, R1, R2, R3, R4, R5, R6 : Genel amaçlı registerlar</li><li>DTPR (data pointer) : low ve high olmak üzere 2 bytedan oluşur bu sayede 16
 bitlik veri saklanır.</li><li>PC (program counter) : Programın Kod hafızasındaki kaçıncı işlemde olduğunu
 tutar</li><li>PSW (Program Status Word) : Aşağıda tekrar değineceğim</li><li>Stack Pointer Register: Yine 8 bitlik stackin en üzerindeki adresi gösteren
-registerdır. </li></ul><h2 id=18051-entegresi-bazı-assembly-komutları-ve-örnekleri><strong>1.8051 Entegresi Bazı Assembly Komutları ve Örnekleri</strong></h2><h3 id=mov-komutu>MOV Komutu:</h3><p>Bir registera veri yüklemek için kullanılır. Kullanımı şöyledir:</p><p>MOV data yüklenecek register, yüklenecek data</p><pre><code>MOV A,#51H
-</code></pre><p>A registerına 51 hexadecimal sayısı yükleniştir. <code>#</code> Bir sayı olduğunu görtermek
+registerdır. </li></ul><h2 id=18051-entegresi-bazı-assembly-komutları-ve-örnekleri><strong>1.8051 Entegresi Bazı Assembly Komutları ve Örnekleri</strong></h2><h3 id=mov-komutu>MOV Komutu:</h3><p>Bir registera veri yüklemek için kullanılır. Kullanımı şöyledir:</p><p>MOV data yüklenecek register, yüklenecek data</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>MOV A,#51H
+</span></span></code></pre></div><p>A registerına 51 hexadecimal sayısı yükleniştir. <code>#</code> Bir sayı olduğunu görtermek
 için kullanılmıştır.<br>51 yüklenecek hexadecimal sayımız. Değeri 5x16+1=81<br>H sayının hexadecimal olduğunu göstermek için kullanılır. Binary için B, Decimal
 için D kullanılır.<br>Eğer hexadecimal sayısı harfle baslıyorsa başına 0 koyulur.</p><p>Aşağıdaki kod grubunu çalıştırdığımızda simülasyon programımızın son görüntüsü
-aşağıdaki gibi olacaktır.</p><pre><code class=language-asm>MOV A,#51H     
-
-MOV R1,#0FFH  
-
-MOV R2,#3BH
-</code></pre><p><img src=Ekran%2BAl%25C4%25B1nt%25C4%25B1s%25C4%25B1-63ec1b.png alt>
+aşağıdaki gibi olacaktır.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-asm data-lang=asm><span class=line><span class=cl><span class=nf>MOV</span> <span class=no>A</span><span class=p>,</span><span class=c1>#51H     
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl><span class=nf>MOV</span> <span class=no>R1</span><span class=p>,</span><span class=c1>#0FFH  
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl><span class=nf>MOV</span> <span class=no>R2</span><span class=p>,</span><span class=c1>#3BH
+</span></span></span></code></pre></div><p><img src=Ekran%2BAl%25C4%25B1nt%25C4%25B1s%25C4%25B1-63ec1b.png alt>
 Görüldüğü gibi R1 R2 ve Accummulatora veriler yüklenmiştir.</p><p><strong>ORG ve END Komutları</strong><br>Org CPU&rsquo;ya kaçıncı code memory satırıncan başlamısı gerektiğini söyleyen
-komuttur. Aşağıdaki gibi kullanılır.</p><pre><code class=language-asm>             ORG  0H  
-             MOV  R1,#31H  
-             MOV  R2, 20H  
-             MOV  R3,R2  
-             MOV  R4,R3  
-HERE:  SJMP HERE  
-             END
-</code></pre><p><strong>ADD Komutu</strong></p><p>Toplama komutudur kullanımı şöyledir.<br>ADD Toplamın saklanacağı yer, eklenecek bilgi<br>ADD A,R1<br>A=A+R1 olur.<br>ADD R1, A olamaz. Toplamın saklanacağı yer hep Accumlator registeri olmalıdır.</p><pre><code class=language-asm>ADD A, @R2   : R2 registerinin sakladığı adresteki ramde tutulan değer A'ya eklenir  
-
-ADD A, 05       : 05 adresindeki ramde tutulan değer A'ya eklenir.
-
-ADD A, #05     : 05 sayısı A'ya eklenir.
-</code></pre><p>Bazı toplamalarda sonuç 255den büyük çıkabilir. Bu durumda bir eldemiz olmuş
+komuttur. Aşağıdaki gibi kullanılır.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-asm data-lang=asm><span class=line><span class=cl>             <span class=nf>ORG</span>  <span class=mi>0</span><span class=no>H</span>  
+</span></span><span class=line><span class=cl>             <span class=no>MOV</span>  <span class=no>R1</span><span class=p>,</span><span class=c1>#31H  
+</span></span></span><span class=line><span class=cl><span class=c1></span>             <span class=nf>MOV</span>  <span class=no>R2</span><span class=p>,</span> <span class=mi>20</span><span class=no>H</span>  
+</span></span><span class=line><span class=cl>             <span class=no>MOV</span>  <span class=no>R3</span><span class=p>,</span><span class=no>R2</span>  
+</span></span><span class=line><span class=cl>             <span class=no>MOV</span>  <span class=no>R4</span><span class=p>,</span><span class=no>R3</span>  
+</span></span><span class=line><span class=cl><span class=no>HERE</span><span class=p>:</span>  <span class=no>SJMP</span> <span class=no>HERE</span>  
+</span></span><span class=line><span class=cl>             <span class=no>END</span>
+</span></span></code></pre></div><p><strong>ADD Komutu</strong></p><p>Toplama komutudur kullanımı şöyledir.<br>ADD Toplamın saklanacağı yer, eklenecek bilgi<br>ADD A,R1<br>A=A+R1 olur.<br>ADD R1, A olamaz. Toplamın saklanacağı yer hep Accumlator registeri olmalıdır.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-asm data-lang=asm><span class=line><span class=cl><span class=nf>ADD</span> <span class=no>A</span><span class=p>,</span> <span class=err>@</span><span class=no>R2</span>   <span class=p>:</span> <span class=no>R2</span> <span class=no>registerinin</span> <span class=no>sakladığı</span> <span class=no>adresteki</span> <span class=no>ramde</span> <span class=no>tutulan</span> <span class=no>değer</span> <span class=no>A</span><span class=err>&#39;</span><span class=no>ya</span> <span class=no>eklenir</span>  
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=no>ADD</span> <span class=no>A</span><span class=p>,</span> <span class=mi>05</span>       <span class=p>:</span> <span class=mi>05</span> <span class=no>adresindeki</span> <span class=no>ramde</span> <span class=no>tutulan</span> <span class=no>değer</span> <span class=no>A</span><span class=err>&#39;</span><span class=no>ya</span> <span class=no>eklenir.</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=nf>ADD</span> <span class=no>A</span><span class=p>,</span> <span class=c1>#05     : 05 sayısı A&#39;ya eklenir.
+</span></span></span></code></pre></div><p>Bazı toplamalarda sonuç 255den büyük çıkabilir. Bu durumda bir eldemiz olmuş
 olur. Peki 8051 bu durumla nasıl başa çıkıyor. PSW registerını kullanarak tabi
 ki:</p><p><strong>PSW Registerı</strong><br>8 bitlik bir registerdır. Her biri ayrı bir durumu tutar.<br>CY (PSW.7): Carry Flag yani eldeyi tutan bit budur. CLR C komutu ile
 temizlenebilir.<br>AC (PSW.6); Auxiliary Carry Flag D3 bitinden D4 bitine elde olduğunda 1 olan
 bittir.<br>F0 (PSW.5 ve PSW.1); Kullanıcının kendi tanımlayacağı şeyler için ayrılmıştır.<br>RS1 and RS0 (PSW.4 ve PSW.3): Register Bank değiştirmak için kullanılır.<br>OV (PSW.2): Over flow flag&rsquo;tir.<br>P (PSW.0): Parity Flagtır. Accumulatordaki sayı tek ise 1, çift ise 0dır.</p><p><strong>SUBB komutu</strong><br>Çıkarma işlemi komutudur.<br>SUBB A,B<br>A=A-B<br><strong>MUL komutu</strong><br>Çarpım komutudur.<br>MUL AB şeklinde kullanılır arada virgül yoktur. Sadece A ve B registerları
 kullanılabilir.<br>A=A.B</p><p><strong>DIV komutu</strong><br>Bölme komutudur.<br>DIV AB şekilde kullnılır arada virgül yoktur. Sadece A ve B registerları
 kullanılabilir.<br>A=A/B</p><p><strong>Loop ve Jump komutu</strong></p><p><img src=Ekran%2BAl%25C4%25B1nt%25C4%25B1s%25C4%25B1.png alt></p><p>Loop oluşturmak için kullanılan komutlar yukarıdaki gibidir. Hepsi farklı bir
-koşulu kullanmak içindir. Aşağıdaki örnek kod ise kullanımlarına örnektir.</p><pre><code class=language-asm>             ORG 0H  
-
-             MOV A, #0              ; clear A  
-
-             MOV R1, #10           ; load counter R1 =10  
-
-AGAIN: ADD A, # 05             ; add five to register A  
-
-             DJNZ R1, AGAIN     ; repeat until R1=0 (10 times)  
-
-             MOV R3, A              ; save A in R3  
-
-             END
-</code></pre><p>SJMP: Program counterdan en fazla yarım byte uzaklıklarda bulunan bir yere
+koşulu kullanmak içindir. Aşağıdaki örnek kod ise kullanımlarına örnektir.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-asm data-lang=asm><span class=line><span class=cl>             <span class=nf>ORG</span> <span class=mi>0</span><span class=no>H</span>  
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>             <span class=no>MOV</span> <span class=no>A</span><span class=p>,</span> <span class=c1>#0              ; clear A  
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl>             <span class=nf>MOV</span> <span class=no>R1</span><span class=p>,</span> <span class=c1>#10           ; load counter R1 =10  
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl><span class=nl>AGAIN:</span> <span class=nf>ADD</span> <span class=no>A</span><span class=p>,</span> <span class=c1># 05             ; add five to register A  
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl>             <span class=nf>DJNZ</span> <span class=no>R1</span><span class=p>,</span> <span class=no>AGAIN</span>     <span class=c1>; repeat until R1=0 (10 times)  
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl>             <span class=nf>MOV</span> <span class=no>R3</span><span class=p>,</span> <span class=no>A</span>              <span class=c1>; save A in R3  
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl>             <span class=nf>END</span>
+</span></span></code></pre></div><p>SJMP: Program counterdan en fazla yarım byte uzaklıklarda bulunan bir yere
 atlamak için kullanılır.</p><p>LJMP: Program counterdan yarım bytedan fazla uzaklıklarda bulunan bir yere
 atlamak için kullanılır.</p><p>LCALL: Fonksiyon tanımlayıp çağırmak benzeri bir kullanımı vardır. Aşağıdaki
-örneği inceleyebilirsiniz.</p><pre><code class=language-asm>             ORG 0H  
-BACK : MOV A, #55H            ; load A= 55 hex value  
-             MOV P1, A                ; issue value of register A to port1  
-             LCALL  DELAY        ; to call DELAY function created below  
-             MOV A, #0AAH         ;load AAH hex value to A  
-             MOV P1,A                  ;issue value of register A to port 1  
-             LCALL DELAY         ; to call DELAY function as created below  
-             SJMP BACK              ; keep doing this  
-                                               ; ________ this is the delay subroutine  
-             DELAY:  
-             MOV R5, #0FFH         ; R5= 255 hex, the counter  
-AGAIN: DJNZ R5, AGAIN       ; stay here until R5 becomes zero  
-             RET                           ; return to caller  
-             END
-</code></pre><h2 id=movx-komutu>MOVX komutu</h2><p>MOVX komutu harici RAM&rsquo;den veri alış verişi yapmak için kullanılır.</p><pre><code class=language-asm>MOV      R0, #50H  
-MOVX   A, @R0
-</code></pre><p>Bu iki satır kod ile harici RAM&rsquo;deki 50H adresli yerdeki veri Accumulator
-registerına yüklenir.</p><pre><code>MOV      DTPR, #5000H  
-MOVX   A, @DTPR
-</code></pre><p>DTPR registerı 16 bitliktir. Eğer 8 bitten büyük adresteki bir veriye ulaşılmak
+örneği inceleyebilirsiniz.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-asm data-lang=asm><span class=line><span class=cl>             <span class=nf>ORG</span> <span class=mi>0</span><span class=no>H</span>  
+</span></span><span class=line><span class=cl><span class=no>BACK</span> <span class=p>:</span> <span class=no>MOV</span> <span class=no>A</span><span class=p>,</span> <span class=c1>#55H            ; load A= 55 hex value  
+</span></span></span><span class=line><span class=cl><span class=c1></span>             <span class=nf>MOV</span> <span class=no>P1</span><span class=p>,</span> <span class=no>A</span>                <span class=c1>; issue value of register A to port1  
+</span></span></span><span class=line><span class=cl><span class=c1></span>             <span class=nf>LCALL</span>  <span class=no>DELAY</span>        <span class=c1>; to call DELAY function created below  
+</span></span></span><span class=line><span class=cl><span class=c1></span>             <span class=nf>MOV</span> <span class=no>A</span><span class=p>,</span> <span class=c1>#0AAH         ;load AAH hex value to A  
+</span></span></span><span class=line><span class=cl><span class=c1></span>             <span class=nf>MOV</span> <span class=no>P1</span><span class=p>,</span><span class=no>A</span>                  <span class=c1>;issue value of register A to port 1  
+</span></span></span><span class=line><span class=cl><span class=c1></span>             <span class=nf>LCALL</span> <span class=no>DELAY</span>         <span class=c1>; to call DELAY function as created below  
+</span></span></span><span class=line><span class=cl><span class=c1></span>             <span class=nf>SJMP</span> <span class=no>BACK</span>              <span class=c1>; keep doing this  
+</span></span></span><span class=line><span class=cl><span class=c1></span>                                               <span class=c1>; ________ this is the delay subroutine  
+</span></span></span><span class=line><span class=cl><span class=c1></span>             <span class=nl>DELAY:</span>  
+</span></span><span class=line><span class=cl>             <span class=nf>MOV</span> <span class=no>R5</span><span class=p>,</span> <span class=c1>#0FFH         ; R5= 255 hex, the counter  
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=nl>AGAIN:</span> <span class=nf>DJNZ</span> <span class=no>R5</span><span class=p>,</span> <span class=no>AGAIN</span>       <span class=c1>; stay here until R5 becomes zero  
+</span></span></span><span class=line><span class=cl><span class=c1></span>             <span class=nf>RET</span>                           <span class=c1>; return to caller  
+</span></span></span><span class=line><span class=cl><span class=c1></span>             <span class=nf>END</span>
+</span></span></code></pre></div><h2 id=movx-komutu>MOVX komutu</h2><p>MOVX komutu harici RAM&rsquo;den veri alış verişi yapmak için kullanılır.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-asm data-lang=asm><span class=line><span class=cl><span class=nf>MOV</span>      <span class=no>R0</span><span class=p>,</span> <span class=c1>#50H  
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=nf>MOVX</span>   <span class=no>A</span><span class=p>,</span> <span class=err>@</span><span class=no>R0</span>
+</span></span></code></pre></div><p>Bu iki satır kod ile harici RAM&rsquo;deki 50H adresli yerdeki veri Accumulator
+registerına yüklenir.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>MOV      DTPR, #5000H  
+</span></span><span class=line><span class=cl>MOVX   A, @DTPR
+</span></span></code></pre></div><p>DTPR registerı 16 bitliktir. Eğer 8 bitten büyük adresteki bir veriye ulaşılmak
 istenirse DTPR registerı kullanılabilir.</p><p><strong>POP ve PUSH komutu</strong><br>Stack işlemleri için kullanılır. Stack ilk giren datanın en son çıktığı veri
-yapısı çeşididir.</p><pre><code>MOV R6,#25H;
-MOV R1,#12H; 
-MOV R4,#OF3H; 
-PUSH 06H;
-PUSH 01H; 
-POP 04H;
-</code></pre><p>Bu kod şöyle çalışacaktır. 25H sayısı (R6) stack&rsquo;e eklenir.  12H sayısı stack&rsquo;e
+yapısı çeşididir.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>MOV R6,#25H;
+</span></span><span class=line><span class=cl>MOV R1,#12H; 
+</span></span><span class=line><span class=cl>MOV R4,#OF3H; 
+</span></span><span class=line><span class=cl>PUSH 06H;
+</span></span><span class=line><span class=cl>PUSH 01H; 
+</span></span><span class=line><span class=cl>POP 04H;
+</span></span></code></pre></div><p>Bu kod şöyle çalışacaktır. 25H sayısı (R6) stack&rsquo;e eklenir.  12H sayısı stack&rsquo;e
 eklenir. 12H sayısı stackten çıkarılır.</p><p><strong>XCH komutu</strong><br>XCH A, R2 şeklinde kullanılır. A ve R2nin içeriklerini değiştirir böyle
 kullanıldığında.</p><p><strong>MOVC komutu</strong></p><h3 id=harici-ram-ve-rom-kullanımı><strong>Harici RAM ve ROM kullanımı</strong></h3><p>8051 ile harici ram veya romlar çalıştırılabilir. Bunun için öncelikle 8051
 üzerindeki bazı pinlerin ne işe yaradığıyla başlayalım.</p><p><strong>ALE/PROG pini:</strong> Adress Latch Enable. Harici ram erişimi sırasında kullanılır.
@@ -93,4 +93,9 @@ kullanılır.</p><p><strong>EA pini:</strong> External Adress. 0 olduğu zaman m
 dışarıdan alabilir.<br><strong>RD pini:</strong> Okuma işlemini &ldquo;enable&rdquo; yapmak için kullanılır.<br><strong>WR pini:</strong> Yazma işlemini &ldquo;enable " yapmak için kullanılır.</p><p><img src=8051-pin-diagram1.jpg alt></p><p><strong>Harici Program Belleği Kullanımı</strong></p><p><img src=fig3.jpg alt></p><p><strong>Harici Veri Belleği Kullanımı</strong></p><p><img src=Untitled.png alt></p><p><strong>Adres Ayrıştırma</strong><br>Bazı durumlarda adres değerleri için yeterli bit sayısına sahip olunamayabilir.
 Bu soruları çözmek için adres çözücü devreler kullanılır.</p><h3 id=paralel-uygulamalar><strong>Paralel Uygulamalar</strong></h3><h3 id=adc-dac-kullanımı>ADC-DAC Kullanımı</h3><h3 id=timer-uygulamaları>Timer Uygulamaları</h3><h3 id=uzun-lafın-kısası><strong>Uzun Lafın Kısası</strong></h3><p>Aşağıdaki 2 görsel işlemci mimarisini çok iyi açıklayan 2 şema peki bize ne
 anlatıyorlar.</p><p><img src=architecture_s.jpg alt></p><p><img src=01.gif alt></p><h3 id=8051-entegresi-instruction-set>8051 Entegresi Instruction Set</h3><p>Aşağdaki linkte hepsini kullanım anlatımlarıyla beraber bulabilirsiniz. Aynı
-zaman da OP-Code&rsquo;ları da verilmiştir.</p><p><a href=https://www.win.tue.nl/~aeb/comp/8051/set8051.html%5D(https://www.win.tue.nl/~aeb/comp/8051/set8051.html)>https://www.win.tue.nl/~aeb/comp/8051/set8051.html](https://www.win.tue.nl/~aeb/comp/8051/set8051.html)</a></p><p>Aşağıdaki 2 resimde ise sık kullanılan komutları açıklamalarıyla bulabilirsiniz.</p><p><img src=1.png alt></p><p><img src=2.png alt></p></div></article></main><footer><p>&copy; 2025 M.Ozan Unal.</p></footer></body><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/highlight.js@11.11.0/styles/github.min.css media="(prefers-color-scheme: light)"><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/highlight.js@11.11.0/styles/github-dark.min.css media="(prefers-color-scheme: dark)"><script src=https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.11.1/build/highlight.min.js></script><script>hljs.highlightAll()</script><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css><script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js></script><script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js onload='renderMathInElement(document.body,{delimiters:[{left:"$$",right:"$$",display:!0},{left:"\\\\[",right:"\\\\]",display:!0},{left:"$",right:"$",display:!1},{left:"\\\\(",right:"\\\\)",display:!1}],throwOnError:!1})'></script><script async src="https://www.googletagmanager.com/gtag/js?id=G-007KSW65JL"></script><script>var dnt,doNotTrack=!1;if(!1&&(dnt=navigator.doNotTrack||window.doNotTrack||navigator.msDoNotTrack,doNotTrack=dnt=="1"||dnt=="yes"),!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-007KSW65JL")}</script></html>
+zaman da OP-Code&rsquo;ları da verilmiştir.</p><p><a href=https://www.win.tue.nl/~aeb/comp/8051/set8051.html%5D(https://www.win.tue.nl/~aeb/comp/8051/set8051.html)>https://www.win.tue.nl/~aeb/comp/8051/set8051.html](https://www.win.tue.nl/~aeb/comp/8051/set8051.html)</a></p><p>Aşağıdaki 2 resimde ise sık kullanılan komutları açıklamalarıyla bulabilirsiniz.</p><p><img src=1.png alt></p><p><img src=2.png alt></p></div></article></main><footer><p>&copy; 2025 M.Ozan Unal.</p></footer></body><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css><script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js></script><script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js onload=renderMathInElement(document.body) data-auto-render="{
+      delimiters: [
+        {left: '$$', right: '$$', display: true},
+        {left: '$', right: '$', display: false}
+      ]
+    }"></script><script async src="https://www.googletagmanager.com/gtag/js?id=G-007KSW65JL"></script><script>var dnt,doNotTrack=!1;if(!1&&(dnt=navigator.doNotTrack||window.doNotTrack||navigator.msDoNotTrack,doNotTrack=dnt=="1"||dnt=="yes"),!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-007KSW65JL")}</script></html>

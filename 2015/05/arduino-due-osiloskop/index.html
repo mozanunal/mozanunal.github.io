@@ -1,4 +1,4 @@
-<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=color-scheme content="light dark"><meta name=description content="An example site for the clean and configurable Hugo Classless theme."><link href=/2015/05/arduino-due-osiloskop/ rel=alternate type=application/rss+xml title=mozanunal.com><link id=theme-style rel=stylesheet href=/css/classless.20c8e211f6768ba295effc3e101a31bfe248db7295bb122355bdf893c6cee731.css integrity="sha256-IMjiEfZ2i6KV7/w+EBoxv+JI23KVuxIjVb34k8bO5zE="><style>pre code,code{-webkit-text-size-adjust:100%;text-size-adjust:100%}pre code.hljs{all:revert;display:block;overflow-x:auto}img{display:block;margin-left:auto;margin-right:auto}figcaption{display:block;margin-left:auto;margin-right:auto}</style><title>[TR] Arduino Due Osiloskop | mozanunal.com</title><link rel=icon href=/favicon.svg type=image/svg+xml><link rel="shortcut icon" href=/favicon.ico><link rel=apple-touch-icon href=/apple-touch-icon.png></head><body><header><div><h1>mozanunal.com</h1><nav><p><a href=/>Home</a> | <a href=/posts/>Posts</a> | <a href=/projects/>Projects</a> | <a href=/papers/>Papers</a> | <a href=/contact/>Contact</a></p></nav></div></header><main><article><header><h1>[TR] Arduino Due Osiloskop</h1><p><em><time datetime=2015-05-02>May 2, 2015</time></em></p></header><div><p><strong>Merhaba Arkadaşlar,</strong></p><p>Bugün size Arduino Due ile yaptığım osiloskop bahsedeceğim. Arduino Dueyi
+<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=color-scheme content="light dark"><meta name=description content="An example site for the clean and configurable Hugo Classless theme."><link href=/2015/05/arduino-due-osiloskop/ rel=alternate type=application/rss+xml title=mozanunal.com><link id=theme-style rel=stylesheet href=/css/classless.20c8e211f6768ba295effc3e101a31bfe248db7295bb122355bdf893c6cee731.css integrity="sha256-IMjiEfZ2i6KV7/w+EBoxv+JI23KVuxIjVb34k8bO5zE="><style>pre code,code{-webkit-text-size-adjust:100%;text-size-adjust:100%}img{display:block;margin-left:auto;margin-right:auto}figcaption{display:block;margin-left:auto;margin-right:auto}</style><link rel=stylesheet href=/css/syntax-light.min.d1e9974bf1fe0f3bfae6a7af3a04c1e749276b8efbbf6d3397998585f82443f0.css media="(prefers-color-scheme: light)"><link rel=stylesheet href=/css/syntax-dark.min.22964c63865be9217cedda7ac3dbd0143f8f41b3a0f681ef71e845b18a33a4f3.css media="(prefers-color-scheme: dark)"><title>[TR] Arduino Due Osiloskop | mozanunal.com</title><link rel=icon href=/favicon.svg type=image/svg+xml><link rel="shortcut icon" href=/favicon.ico><link rel=apple-touch-icon href=/apple-touch-icon.png></head><body><header><div><h1>mozanunal.com</h1><nav><p><a href=/>Home</a> | <a href=/posts/>Posts</a> | <a href=/projects/>Projects</a> | <a href=/papers/>Papers</a> | <a href=/contact/>Contact</a></p></nav></div></header><main><article><header><h1>[TR] Arduino Due Osiloskop</h1><p><em><time datetime=2015-05-02>May 2, 2015</time></em></p></header><div><p><strong>Merhaba Arkadaşlar,</strong></p><p>Bugün size Arduino Due ile yaptığım osiloskop bahsedeceğim. Arduino Dueyi
 seçmemin bir kaç nedeni var tabi. Arduino Duede standart Arduinoların 8 bitlik
 Atmega işlemcilerinden farklı olarak 32 bitlik Arm Cortex M3 var. Bu işlemcinin
 84 Mhzlik saat hızı bu proje için elverişli kılıyor.</p><p>Osiloskop projesine başlarken amacım Due ile mümkün olan en yüksek örnekleme
@@ -9,39 +9,44 @@ buldum ve oradaki ayarları Duenin ADCsine uyguladım. Osiloskobun son kodu
 aşağıdaki gibidir. Bu kod sayesinde ADClere direk registerlar.</p><p>üzerinden ulaşıyoruz. Arduinonun fonksiyonunda her analog değer alma işleminde
 ilkönce ADC&rsquo;yi açıyor, okuduktan sonra ise kapatıyor. Bu kodda ise ADCyi FREE
 RUN modunda kullanmış oluyoruz. Bu sayede bir örnekleme ortalama 1 uS sürüyor
-yani 1 Mega Sample Per Second (MSa/s) bir osiloskop yapmış olduk.</p><pre><code class=language-cpp>unsigned long start_time;
-unsigned long stop_time;
-unsigned long values[1000];
-
-void setup() {        
-  Serial.begin(9600);  
-  ADC-&gt;ADC_MR |= 0x80;  //FREE RUN Adc moda geçilir.
-  ADC-&gt;ADC_CHER = 0x80; //A0 pinini enable yap
-}
-
-void loop() {
-  unsigned int i;
-    
-  start_time = micros();
-  for(i=0;i&lt;1000;i++){
-    while((ADC-&gt;ADC_ISR &amp; 0x80)==0); // örnekleme yapılana kadar bekle
-    values[i]=ADC-&gt;ADC_CDR[7]; //değeri al
-  }
-  stop_time = micros();
-
-  Serial.print(&quot;Total time: &quot;);
-  Serial.println(stop_time-start_time); 
-  Serial.print(&quot;Average time per conversion: &quot;);
-  Serial.println((float)(stop_time-start_time)/1000);
-
-  Serial.print(&quot;$, &quot;);
-  for(i=0;i&lt;1000;i++) {
-    Serial.print(values[i]);
-    Serial.print(&quot;,&quot;);
-  }
-  Serial.println();
-  delay(2000);
-}
-</code></pre><p>Osiloskop arayüzünü ise C# dilini kullanarak yazdım. Osiloskop için kullunanılan
+yani 1 Mega Sample Per Second (MSa/s) bir osiloskop yapmış olduk.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-cpp data-lang=cpp><span class=line><span class=cl><span class=kt>unsigned</span> <span class=kt>long</span> <span class=n>start_time</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=kt>unsigned</span> <span class=kt>long</span> <span class=n>stop_time</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=kt>unsigned</span> <span class=kt>long</span> <span class=n>values</span><span class=p>[</span><span class=mi>1000</span><span class=p>];</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kt>void</span> <span class=nf>setup</span><span class=p>()</span> <span class=p>{</span>        
+</span></span><span class=line><span class=cl>  <span class=n>Serial</span><span class=p>.</span><span class=n>begin</span><span class=p>(</span><span class=mi>9600</span><span class=p>);</span>  
+</span></span><span class=line><span class=cl>  <span class=n>ADC</span><span class=o>-&gt;</span><span class=n>ADC_MR</span> <span class=o>|=</span> <span class=mh>0x80</span><span class=p>;</span>  <span class=c1>//FREE RUN Adc moda geçilir.
+</span></span></span><span class=line><span class=cl><span class=c1></span>  <span class=n>ADC</span><span class=o>-&gt;</span><span class=n>ADC_CHER</span> <span class=o>=</span> <span class=mh>0x80</span><span class=p>;</span> <span class=c1>//A0 pinini enable yap
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kt>void</span> <span class=nf>loop</span><span class=p>()</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=kt>unsigned</span> <span class=kt>int</span> <span class=n>i</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    
+</span></span><span class=line><span class=cl>  <span class=n>start_time</span> <span class=o>=</span> <span class=n>micros</span><span class=p>();</span>
+</span></span><span class=line><span class=cl>  <span class=k>for</span><span class=p>(</span><span class=n>i</span><span class=o>=</span><span class=mi>0</span><span class=p>;</span><span class=n>i</span><span class=o>&lt;</span><span class=mi>1000</span><span class=p>;</span><span class=n>i</span><span class=o>++</span><span class=p>){</span>
+</span></span><span class=line><span class=cl>    <span class=k>while</span><span class=p>((</span><span class=n>ADC</span><span class=o>-&gt;</span><span class=n>ADC_ISR</span> <span class=o>&amp;</span> <span class=mh>0x80</span><span class=p>)</span><span class=o>==</span><span class=mi>0</span><span class=p>);</span> <span class=c1>// örnekleme yapılana kadar bekle
+</span></span></span><span class=line><span class=cl><span class=c1></span>    <span class=n>values</span><span class=p>[</span><span class=n>i</span><span class=p>]</span><span class=o>=</span><span class=n>ADC</span><span class=o>-&gt;</span><span class=n>ADC_CDR</span><span class=p>[</span><span class=mi>7</span><span class=p>];</span> <span class=c1>//değeri al
+</span></span></span><span class=line><span class=cl><span class=c1></span>  <span class=p>}</span>
+</span></span><span class=line><span class=cl>  <span class=n>stop_time</span> <span class=o>=</span> <span class=n>micros</span><span class=p>();</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>  <span class=n>Serial</span><span class=p>.</span><span class=n>print</span><span class=p>(</span><span class=s>&#34;Total time: &#34;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>  <span class=n>Serial</span><span class=p>.</span><span class=n>println</span><span class=p>(</span><span class=n>stop_time</span><span class=o>-</span><span class=n>start_time</span><span class=p>);</span> 
+</span></span><span class=line><span class=cl>  <span class=n>Serial</span><span class=p>.</span><span class=n>print</span><span class=p>(</span><span class=s>&#34;Average time per conversion: &#34;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>  <span class=n>Serial</span><span class=p>.</span><span class=n>println</span><span class=p>((</span><span class=kt>float</span><span class=p>)(</span><span class=n>stop_time</span><span class=o>-</span><span class=n>start_time</span><span class=p>)</span><span class=o>/</span><span class=mi>1000</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>  <span class=n>Serial</span><span class=p>.</span><span class=n>print</span><span class=p>(</span><span class=s>&#34;$, &#34;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>  <span class=k>for</span><span class=p>(</span><span class=n>i</span><span class=o>=</span><span class=mi>0</span><span class=p>;</span><span class=n>i</span><span class=o>&lt;</span><span class=mi>1000</span><span class=p>;</span><span class=n>i</span><span class=o>++</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=n>Serial</span><span class=p>.</span><span class=n>print</span><span class=p>(</span><span class=n>values</span><span class=p>[</span><span class=n>i</span><span class=p>]);</span>
+</span></span><span class=line><span class=cl>    <span class=n>Serial</span><span class=p>.</span><span class=n>print</span><span class=p>(</span><span class=s>&#34;,&#34;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>  <span class=p>}</span>
+</span></span><span class=line><span class=cl>  <span class=n>Serial</span><span class=p>.</span><span class=n>println</span><span class=p>();</span>
+</span></span><span class=line><span class=cl>  <span class=n>delay</span><span class=p>(</span><span class=mi>2000</span><span class=p>);</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></div><p>Osiloskop arayüzünü ise C# dilini kullanarak yazdım. Osiloskop için kullunanılan
 <a href=https://www.oscilloscope-lib.com/>bu kütüphaneyi</a> kullandım. Arayüzden
-görüntüler de aşağıdadır.</p><p><strong>Osilopkop denemeleri</strong></p><p><img src=Ekran%2BAl%C4%B1nt%C4%B1s%C4%B1.png alt></p><p><strong>Com port seçiminin yapıldığı pencere</strong></p><p><img src=Ekran%2BAl%C4%B1nt%C4%B1s%C4%B12.png alt></p></div></article></main><footer><p>&copy; 2025 M.Ozan Unal.</p></footer></body><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/highlight.js@11.11.0/styles/github.min.css media="(prefers-color-scheme: light)"><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/highlight.js@11.11.0/styles/github-dark.min.css media="(prefers-color-scheme: dark)"><script src=https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.11.1/build/highlight.min.js></script><script>hljs.highlightAll()</script><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css><script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js></script><script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js onload='renderMathInElement(document.body,{delimiters:[{left:"$$",right:"$$",display:!0},{left:"\\\\[",right:"\\\\]",display:!0},{left:"$",right:"$",display:!1},{left:"\\\\(",right:"\\\\)",display:!1}],throwOnError:!1})'></script><script async src="https://www.googletagmanager.com/gtag/js?id=G-007KSW65JL"></script><script>var dnt,doNotTrack=!1;if(!1&&(dnt=navigator.doNotTrack||window.doNotTrack||navigator.msDoNotTrack,doNotTrack=dnt=="1"||dnt=="yes"),!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-007KSW65JL")}</script></html>
+görüntüler de aşağıdadır.</p><p><strong>Osilopkop denemeleri</strong></p><p><img src=Ekran%2BAl%C4%B1nt%C4%B1s%C4%B1.png alt></p><p><strong>Com port seçiminin yapıldığı pencere</strong></p><p><img src=Ekran%2BAl%C4%B1nt%C4%B1s%C4%B12.png alt></p></div></article></main><footer><p>&copy; 2025 M.Ozan Unal.</p></footer></body><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css><script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js></script><script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js onload=renderMathInElement(document.body) data-auto-render="{
+      delimiters: [
+        {left: '$$', right: '$$', display: true},
+        {left: '$', right: '$', display: false}
+      ]
+    }"></script><script async src="https://www.googletagmanager.com/gtag/js?id=G-007KSW65JL"></script><script>var dnt,doNotTrack=!1;if(!1&&(dnt=navigator.doNotTrack||window.doNotTrack||navigator.msDoNotTrack,doNotTrack=dnt=="1"||dnt=="yes"),!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-007KSW65JL")}</script></html>

@@ -1,4 +1,4 @@
-<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=color-scheme content="light dark"><meta name=description content="An example site for the clean and configurable Hugo Classless theme."><link href=/2016/06/passface-face-recognition-using-opencv/ rel=alternate type=application/rss+xml title=mozanunal.com><link id=theme-style rel=stylesheet href=/css/classless.20c8e211f6768ba295effc3e101a31bfe248db7295bb122355bdf893c6cee731.css integrity="sha256-IMjiEfZ2i6KV7/w+EBoxv+JI23KVuxIjVb34k8bO5zE="><style>pre code,code{-webkit-text-size-adjust:100%;text-size-adjust:100%}pre code.hljs{all:revert;display:block;overflow-x:auto}img{display:block;margin-left:auto;margin-right:auto}figcaption{display:block;margin-left:auto;margin-right:auto}</style><title>PassFace: Face Recognition Using OpenCV | mozanunal.com</title><link rel=icon href=/favicon.svg type=image/svg+xml><link rel="shortcut icon" href=/favicon.ico><link rel=apple-touch-icon href=/apple-touch-icon.png></head><body><header><div><h1>mozanunal.com</h1><nav><p><a href=/>Home</a> | <a href=/posts/>Posts</a> | <a href=/projects/>Projects</a> | <a href=/papers/>Papers</a> | <a href=/contact/>Contact</a></p></nav></div></header><main><article><header><h1>PassFace: Face Recognition Using OpenCV</h1><p><em><time datetime=2016-06-04>June 4, 2016</time></em></p></header><div><p><strong>Hi,</strong><br>PassFace is a face recognizing program develop using EmguCV (OpenCV wrapper). It
+<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=color-scheme content="light dark"><meta name=description content="An example site for the clean and configurable Hugo Classless theme."><link href=/2016/06/passface-face-recognition-using-opencv/ rel=alternate type=application/rss+xml title=mozanunal.com><link id=theme-style rel=stylesheet href=/css/classless.20c8e211f6768ba295effc3e101a31bfe248db7295bb122355bdf893c6cee731.css integrity="sha256-IMjiEfZ2i6KV7/w+EBoxv+JI23KVuxIjVb34k8bO5zE="><style>pre code,code{-webkit-text-size-adjust:100%;text-size-adjust:100%}img{display:block;margin-left:auto;margin-right:auto}figcaption{display:block;margin-left:auto;margin-right:auto}</style><link rel=stylesheet href=/css/syntax-light.min.d1e9974bf1fe0f3bfae6a7af3a04c1e749276b8efbbf6d3397998585f82443f0.css media="(prefers-color-scheme: light)"><link rel=stylesheet href=/css/syntax-dark.min.22964c63865be9217cedda7ac3dbd0143f8f41b3a0f681ef71e845b18a33a4f3.css media="(prefers-color-scheme: dark)"><title>PassFace: Face Recognition Using OpenCV | mozanunal.com</title><link rel=icon href=/favicon.svg type=image/svg+xml><link rel="shortcut icon" href=/favicon.ico><link rel=apple-touch-icon href=/apple-touch-icon.png></head><body><header><div><h1>mozanunal.com</h1><nav><p><a href=/>Home</a> | <a href=/posts/>Posts</a> | <a href=/projects/>Projects</a> | <a href=/papers/>Papers</a> | <a href=/contact/>Contact</a></p></nav></div></header><main><article><header><h1>PassFace: Face Recognition Using OpenCV</h1><p><em><time datetime=2016-06-04>June 4, 2016</time></em></p></header><div><p><strong>Hi,</strong><br>PassFace is a face recognizing program develop using EmguCV (OpenCV wrapper). It
 is possible to use 4 different algorithm and 3 different source(Camera, Video,
 Image) in this program. Most of the tryings have been made using LFW data set
 which have 13000 pictures of 1500 different people.Details of project can be
@@ -42,189 +42,189 @@ learned for face detection, is used.</p><h5 id=morphologic-operations>Morphologi
 recognition. Therefore some morphologic operators is applied to the faces to
 decrease the effect of these problems. In this project equalize histogram
 function of opencv is used to decrease the effect of the ambient
-light.<img src=https://lh6.googleusercontent.com/3PMQmXghZyoi4dGekFhBS-QWqZDYEJpQ2o_yLXJgMEo3goTr6OqtrOSPYjtwgApKjKoAzXhFLE57R3TRDw8SWrXsod9PUCiHJXNndjoZ-Ui3P1xb0atKy0EvobLyy9cfVifzA0yT alt></p><h5 id=surf-feature-extractor>SURF Feature Extractor</h5><p><img src=https://lh5.googleusercontent.com/eRt6xx3RU22fZ22_-TGdan22lp2x7JiNA9De7PuYa2xLVcZIcg4hVJzvrXyzdNbocv4NuBW8QOHYYTr0NNowPys7QOScefuBrgEeoiILasaQm2v0S0P8NPxVYSiPBRoPotTP3h0p alt></p><pre><code class=language-csharp>if (comboBoxAlgorithm.Text == “SURF Feature Extractor”)
-{
-string dataDirectory=Directory.GetCurrentDirectory()+”\TrainedFaces”;
-string[] files = Directory.GetFiles(dataDirectory, “*.jpeg”, SearchOption.AllDirectories);
-
-foreach (var file in files)
-{
-   richTextBox1.Text += file.ToString();
-   long recpoints;
-   ImagesampleImage = new Image(file);
-   secondImageBox.Image = sampleImage;
-   using (Image modelImage = sampleImage.Convert())
-   using (Image observedImage = image.Convert())
-   {
-       Image result = SurfRecognizer.Draw(modelImage, observedImage, out recpoints);
-       //captureImageBox.Image = observedImage;
-       if (recpoints &gt; 10)
-       {
-           MCvFont f = new MCvFont(Emgu.CV.CvEnum.FONT.CV_FONT_HERSHEY_COMPLEX, 1.0, 1.0);
-           result.Draw(“Person Recognited, Welcome”, ref f, new Point(40, 40), new Bgr(0, 255, 0));
-           ImageViewer.Show(result, String.Format(“ {0} Points Recognited”, recpoints));
-       }
-   }
-}
-</code></pre><h5 id=eigenfaces>Eigenfaces</h5><pre><code class=language-csharp>else if (comboBoxAlgorithm.Text == &quot;EigenFaces&quot;)
-{
-   //image._EqualizeHist();
-   if (eqHisChecked.Checked == true)
-   {
-       image._EqualizeHist();
-   }
-   var result = eigenFaceRecognizer.Predict(image.Convert().Resize(100, 100, Emgu.CV.CvEnum.INTER.CV_INTER_CUBIC));
-   if (result.Label != -1)
-   {
-       image.Draw(eigenlabels[result.Label].ToString(), ref font, new Point(face.X - 2, face.Y - 2), new Bgr(Color.LightGreen));
-       label6.Text = result.Distance.ToString();
-   }
-}
-</code></pre><h5 id=fisherfaces>Fisherfaces</h5><pre><code class=language-csharp>else if (comboBoxAlgorithm.Text == &quot;FisherFaces&quot;)
-{
-   if (eqHisChecked.Checked == true)
-   {
-       image._EqualizeHist();
-   }
-   var result = fisherFaceRecognizer.Predict(image.Convert().Resize(100, 100, Emgu.CV.CvEnum.INTER.CV_INTER_CUBIC));
-   if (result.Label != -1)
-   {
-       image.Draw(fisherlabels[result.Label].ToString(), ref font, new Point(face.X - 2, face.Y - 2), new Bgr(Color.LightGreen));
-       label6.Text = result.Distance.ToString();
-   }
-
-
-}
-</code></pre><h5 id=local-binary-patterns-histograms>Local Binary Patterns Histograms</h5><pre><code class=language-csharp>else if (comboBoxAlgorithm.Text == &quot;LBPHFaces&quot;)
-{
-   if (eqHisChecked.Checked == true)
-   {
-       image._EqualizeHist();
-   }
-   var result = lbphFaceRecognizer.Predict(image.Convert().Resize(100, 100, Emgu.CV.CvEnum.INTER.CV_INTER_CUBIC));
-   if (result.Label != -1)
-   {
-       image.Draw(lbphlabels[result.Label].ToString(), ref font, new Point(face.X - 2, face.Y - 2), new Bgr(Color.LightGreen));
-       label6.Text = result.Distance.ToString();
-   }
-}
-</code></pre><h4 id=3-passface-interface>3. PassFace Interface</h4><h5 id=database-creator>Database Creator</h5><p>A database creator is developed to make easier to implement and try different
-algorithm.</p><pre><code class=language-csharp>Add DataBase Function
-
-
-private void addDatabaseButton_Click(object sender, EventArgs e)
-{
-   //Take time for save filename
-   string fileName = textBox1.Text+&quot;_&quot;+DateTime.Now.Day.ToString() + &quot;-&quot; + DateTime.Now.Month.ToString() + &quot;-&quot; + DateTime.Now.Year.ToString()
-   + &quot;-&quot; + DateTime.Now.Hour.ToString() + &quot;-&quot; + DateTime.Now.Minute.ToString()+&quot;-&quot; + DateTime.Now.Second.ToString()+&quot;.jpeg&quot;;
-
-   //First The faces in the Image is detected
-   Image image = _capture.RetrieveBgrFrame().Resize(400, 300, Emgu.CV.CvEnum.INTER.CV_INTER_CUBIC);
-   List faces = new List();
-   List eyes = new List();
-   long detectionTime;
-   DetectFace.Detect(image, &quot;haarcascade_frontalface_default.xml&quot;, &quot;haarcascade_eye.xml&quot;, faces, eyes, out detectionTime);
-   foreach (Rectangle face in faces)
-   {
-       image.ROI = face;
-   }
-   Directory.CreateDirectory(&quot;TrainedFaces&quot;);
-   image.Resize(100, 100, Emgu.CV.CvEnum.INTER.CV_INTER_CUBIC).ToBitmap().Save(&quot;TrainedFaces\\&quot; + fileName);
-}
-
-
-private void comboBoxAlgorithm_SelectedIndexChanged(object sender, EventArgs e)
-{
-   if (comboBoxAlgorithm.Text == &quot;EigenFaces&quot;)
-   {
-       try
-       {
-         string dataDirectory = Directory.GetCurrentDirectory() + &quot;\\TrainedFaces&quot;;
-         string[] files = Directory.GetFiles(dataDirectory, &quot;*.jpeg&quot;, SearchOption.AllDirectories);
-         eigenTrainedImageCounter = 0;
-         foreach (var file in files)
-         {
-               Image TrainedImage=new Image(file);
-               if (eqHisChecked.Checked == true)
-               {
-                   TrainedImage._EqualizeHist();
-               }
-               eigenTrainingImages.Add(TrainedImage.Convert());
-               eigenlabels.Add(fileName(file));
-               eigenIntlabels.Add(eigenTrainedImageCounter);
-               eigenTrainedImageCounter++;
-               richTextBox1.Text += fileName(file)+&quot;\n&quot;;
-         }
-          eigenFaceRecognizer= new EigenFaceRecognizer(eigenTrainedImageCounter, 3000);
-          eigenFaceRecognizer.Train(eigenTrainingImages.ToArray(), eigenIntlabels.ToArray());
-            
-       }
-       catch (Exception ex)
-       {
-           MessageBox.Show(ex.ToString());
-           MessageBox.Show(&quot;Nothing in binary database, please add at least a face(Simply train the prototype with the Add Face Button).&quot;, &quot;Triained faces load&quot;, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-       }
-   }
-   else if (comboBoxAlgorithm.Text == &quot;FisherFaces&quot;)
-   {
-       try
-       {
-           string dataDirectory = Directory.GetCurrentDirectory() + &quot;\\TrainedFaces&quot;;
-           string[] files = Directory.GetFiles(dataDirectory, &quot;*.jpeg&quot;, SearchOption.AllDirectories);
-           fisherTrainedImageCounter = 0;
-           foreach (var file in files)
-           {
-               Image TrainedImage = new Image(file);
-               fisherTrainingImages.Add(TrainedImage.Convert());
-               if (eqHisChecked.Checked == true)
-               {
-                   TrainedImage._EqualizeHist();
-               }
-               fisherlabels.Add(fileName(file));
-               fisherIntlabels.Add(fisherTrainedImageCounter);
-               fisherTrainedImageCounter++;
-               richTextBox1.Text += fileName(file) + &quot;\n&quot;;
-           }
-           fisherFaceRecognizer = new FisherFaceRecognizer(fisherTrainedImageCounter, 3000);
-           fisherFaceRecognizer.Train(fisherTrainingImages.ToArray(), fisherIntlabels.ToArray());
-       }
-       catch (Exception ex)
-       {
-           MessageBox.Show(ex.ToString());
-           MessageBox.Show(&quot;Nothing in binary database, please add at least a face(Simply train the prototype with the Add Face Button).&quot;, &quot;Triained faces load&quot;, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-       }
-   }
-   else if (comboBoxAlgorithm.Text == &quot;LBPHFaces&quot;)
-   {
-       try
-       {
-           string dataDirectory = Directory.GetCurrentDirectory() + &quot;\\TrainedFaces&quot;;
-           string[] files = Directory.GetFiles(dataDirectory, &quot;*.jpeg&quot;, SearchOption.AllDirectories);
-           lbphTrainedImageCounter = 0;
-           foreach (var file in files)
-           {
-               Image TrainedImage = new Image(file);
-               if (eqHisChecked.Checked == true)
-               {
-                   TrainedImage._EqualizeHist();
-               }
-               lbphTrainingImages.Add(TrainedImage.Convert());
-               lbphlabels.Add(fileName(file));
-               lbphIntlabels.Add(lbphTrainedImageCounter);
-               lbphTrainedImageCounter++;
-               richTextBox1.Text += fileName(file) + &quot;\n&quot;;
-           }
-           lbphFaceRecognizer = new LBPHFaceRecognizer(1, 8, 8, 8, 123.0);
-           lbphFaceRecognizer.Train(lbphTrainingImages.ToArray(), lbphIntlabels.ToArray());
-       }
-       catch (Exception ex)
-       {
-           MessageBox.Show(ex.ToString());
-           MessageBox.Show(&quot;Nothing in binary database, please add at least a face(Simply train the prototype with the Add Face Button).&quot;, &quot;Triained faces load&quot;, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-       }
-   }
-}
-</code></pre><p><img src=https://lh4.googleusercontent.com/560MflmHrYy5nUi4gIAQexc-Cdqfyr3GUej_g1wwa0HawxO4A7OFmOkgd0g4oBvy9An1PjiYxSM_8G0G2FS_zC2y3gWisgkr0NTikxv4oyDFL9qM6IpkupdhA7OjnUAb4cuy51Pa alt></p><h5 id=user-interface>User Interface</h5><p>As a source camera, video, single image and multi image can be selected.
+light.<img src=https://lh6.googleusercontent.com/3PMQmXghZyoi4dGekFhBS-QWqZDYEJpQ2o_yLXJgMEo3goTr6OqtrOSPYjtwgApKjKoAzXhFLE57R3TRDw8SWrXsod9PUCiHJXNndjoZ-Ui3P1xb0atKy0EvobLyy9cfVifzA0yT alt></p><h5 id=surf-feature-extractor>SURF Feature Extractor</h5><p><img src=https://lh5.googleusercontent.com/eRt6xx3RU22fZ22_-TGdan22lp2x7JiNA9De7PuYa2xLVcZIcg4hVJzvrXyzdNbocv4NuBW8QOHYYTr0NNowPys7QOScefuBrgEeoiILasaQm2v0S0P8NPxVYSiPBRoPotTP3h0p alt></p><div class=highlight><pre tabindex=0 class=chroma><code class=language-csharp data-lang=csharp><span class=line><span class=cl><span class=k>if</span> <span class=p>(</span><span class=n>comboBoxAlgorithm</span><span class=p>.</span><span class=n>Text</span> <span class=p>==</span> <span class=err>“</span><span class=n>SURF</span> <span class=n>Feature</span> <span class=n>Extractor</span><span class=err>”</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=p>{</span>
+</span></span><span class=line><span class=cl><span class=kt>string</span> <span class=n>dataDirectory</span><span class=p>=</span><span class=n>Directory</span><span class=p>.</span><span class=n>GetCurrentDirectory</span><span class=p>()+</span><span class=err>”\</span><span class=n>TrainedFaces</span><span class=err>”</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=kt>string</span><span class=p>[]</span> <span class=n>files</span> <span class=p>=</span> <span class=n>Directory</span><span class=p>.</span><span class=n>GetFiles</span><span class=p>(</span><span class=n>dataDirectory</span><span class=p>,</span> <span class=err>“</span><span class=p>*.</span><span class=n>jpeg</span><span class=err>”</span><span class=p>,</span> <span class=n>SearchOption</span><span class=p>.</span><span class=n>AllDirectories</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=k>foreach</span> <span class=p>(</span><span class=kt>var</span> <span class=n>file</span> <span class=k>in</span> <span class=n>files</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=p>{</span>
+</span></span><span class=line><span class=cl>   <span class=n>richTextBox1</span><span class=p>.</span><span class=n>Text</span> <span class=p>+=</span> <span class=n>file</span><span class=p>.</span><span class=n>ToString</span><span class=p>();</span>
+</span></span><span class=line><span class=cl>   <span class=kt>long</span> <span class=n>recpoints</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>   <span class=n>ImagesampleImage</span> <span class=p>=</span> <span class=k>new</span> <span class=n>Image</span><span class=p>(</span><span class=n>file</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>   <span class=n>secondImageBox</span><span class=p>.</span><span class=n>Image</span> <span class=p>=</span> <span class=n>sampleImage</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>   <span class=k>using</span> <span class=p>(</span><span class=n>Image</span> <span class=n>modelImage</span> <span class=p>=</span> <span class=n>sampleImage</span><span class=p>.</span><span class=n>Convert</span><span class=p>())</span>
+</span></span><span class=line><span class=cl>   <span class=k>using</span> <span class=p>(</span><span class=n>Image</span> <span class=n>observedImage</span> <span class=p>=</span> <span class=n>image</span><span class=p>.</span><span class=n>Convert</span><span class=p>())</span>
+</span></span><span class=line><span class=cl>   <span class=p>{</span>
+</span></span><span class=line><span class=cl>       <span class=n>Image</span> <span class=n>result</span> <span class=p>=</span> <span class=n>SurfRecognizer</span><span class=p>.</span><span class=n>Draw</span><span class=p>(</span><span class=n>modelImage</span><span class=p>,</span> <span class=n>observedImage</span><span class=p>,</span> <span class=k>out</span> <span class=n>recpoints</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>       <span class=c1>//captureImageBox.Image = observedImage;</span>
+</span></span><span class=line><span class=cl>       <span class=k>if</span> <span class=p>(</span><span class=n>recpoints</span> <span class=p>&gt;</span> <span class=m>10</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>       <span class=p>{</span>
+</span></span><span class=line><span class=cl>           <span class=n>MCvFont</span> <span class=n>f</span> <span class=p>=</span> <span class=k>new</span> <span class=n>MCvFont</span><span class=p>(</span><span class=n>Emgu</span><span class=p>.</span><span class=n>CV</span><span class=p>.</span><span class=n>CvEnum</span><span class=p>.</span><span class=n>FONT</span><span class=p>.</span><span class=n>CV_FONT_HERSHEY_COMPLEX</span><span class=p>,</span> <span class=m>1.0</span><span class=p>,</span> <span class=m>1.0</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>           <span class=n>result</span><span class=p>.</span><span class=n>Draw</span><span class=p>(</span><span class=err>“</span><span class=n>Person</span> <span class=n>Recognited</span><span class=p>,</span> <span class=n>Welcome</span><span class=err>”</span><span class=p>,</span> <span class=k>ref</span> <span class=n>f</span><span class=p>,</span> <span class=k>new</span> <span class=n>Point</span><span class=p>(</span><span class=m>40</span><span class=p>,</span> <span class=m>40</span><span class=p>),</span> <span class=k>new</span> <span class=n>Bgr</span><span class=p>(</span><span class=m>0</span><span class=p>,</span> <span class=m>255</span><span class=p>,</span> <span class=m>0</span><span class=p>));</span>
+</span></span><span class=line><span class=cl>           <span class=n>ImageViewer</span><span class=p>.</span><span class=n>Show</span><span class=p>(</span><span class=n>result</span><span class=p>,</span> <span class=n>String</span><span class=p>.</span><span class=n>Format</span><span class=p>(</span><span class=err>“</span> <span class=p>{</span><span class=m>0</span><span class=p>}</span> <span class=n>Points</span> <span class=n>Recognited</span><span class=err>”</span><span class=p>,</span> <span class=n>recpoints</span><span class=p>));</span>
+</span></span><span class=line><span class=cl>       <span class=p>}</span>
+</span></span><span class=line><span class=cl>   <span class=p>}</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></div><h5 id=eigenfaces>Eigenfaces</h5><div class=highlight><pre tabindex=0 class=chroma><code class=language-csharp data-lang=csharp><span class=line><span class=cl><span class=k>else</span> <span class=k>if</span> <span class=p>(</span><span class=n>comboBoxAlgorithm</span><span class=p>.</span><span class=n>Text</span> <span class=p>==</span> <span class=s>&#34;EigenFaces&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=p>{</span>
+</span></span><span class=line><span class=cl>   <span class=c1>//image._EqualizeHist();</span>
+</span></span><span class=line><span class=cl>   <span class=k>if</span> <span class=p>(</span><span class=n>eqHisChecked</span><span class=p>.</span><span class=n>Checked</span> <span class=p>==</span> <span class=kc>true</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>   <span class=p>{</span>
+</span></span><span class=line><span class=cl>       <span class=n>image</span><span class=p>.</span><span class=n>_EqualizeHist</span><span class=p>();</span>
+</span></span><span class=line><span class=cl>   <span class=p>}</span>
+</span></span><span class=line><span class=cl>   <span class=kt>var</span> <span class=n>result</span> <span class=p>=</span> <span class=n>eigenFaceRecognizer</span><span class=p>.</span><span class=n>Predict</span><span class=p>(</span><span class=n>image</span><span class=p>.</span><span class=n>Convert</span><span class=p>().</span><span class=n>Resize</span><span class=p>(</span><span class=m>100</span><span class=p>,</span> <span class=m>100</span><span class=p>,</span> <span class=n>Emgu</span><span class=p>.</span><span class=n>CV</span><span class=p>.</span><span class=n>CvEnum</span><span class=p>.</span><span class=n>INTER</span><span class=p>.</span><span class=n>CV_INTER_CUBIC</span><span class=p>));</span>
+</span></span><span class=line><span class=cl>   <span class=k>if</span> <span class=p>(</span><span class=n>result</span><span class=p>.</span><span class=n>Label</span> <span class=p>!=</span> <span class=p>-</span><span class=m>1</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>   <span class=p>{</span>
+</span></span><span class=line><span class=cl>       <span class=n>image</span><span class=p>.</span><span class=n>Draw</span><span class=p>(</span><span class=n>eigenlabels</span><span class=p>[</span><span class=n>result</span><span class=p>.</span><span class=n>Label</span><span class=p>].</span><span class=n>ToString</span><span class=p>(),</span> <span class=k>ref</span> <span class=n>font</span><span class=p>,</span> <span class=k>new</span> <span class=n>Point</span><span class=p>(</span><span class=n>face</span><span class=p>.</span><span class=n>X</span> <span class=p>-</span> <span class=m>2</span><span class=p>,</span> <span class=n>face</span><span class=p>.</span><span class=n>Y</span> <span class=p>-</span> <span class=m>2</span><span class=p>),</span> <span class=k>new</span> <span class=n>Bgr</span><span class=p>(</span><span class=n>Color</span><span class=p>.</span><span class=n>LightGreen</span><span class=p>));</span>
+</span></span><span class=line><span class=cl>       <span class=n>label6</span><span class=p>.</span><span class=n>Text</span> <span class=p>=</span> <span class=n>result</span><span class=p>.</span><span class=n>Distance</span><span class=p>.</span><span class=n>ToString</span><span class=p>();</span>
+</span></span><span class=line><span class=cl>   <span class=p>}</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></div><h5 id=fisherfaces>Fisherfaces</h5><div class=highlight><pre tabindex=0 class=chroma><code class=language-csharp data-lang=csharp><span class=line><span class=cl><span class=k>else</span> <span class=k>if</span> <span class=p>(</span><span class=n>comboBoxAlgorithm</span><span class=p>.</span><span class=n>Text</span> <span class=p>==</span> <span class=s>&#34;FisherFaces&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=p>{</span>
+</span></span><span class=line><span class=cl>   <span class=k>if</span> <span class=p>(</span><span class=n>eqHisChecked</span><span class=p>.</span><span class=n>Checked</span> <span class=p>==</span> <span class=kc>true</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>   <span class=p>{</span>
+</span></span><span class=line><span class=cl>       <span class=n>image</span><span class=p>.</span><span class=n>_EqualizeHist</span><span class=p>();</span>
+</span></span><span class=line><span class=cl>   <span class=p>}</span>
+</span></span><span class=line><span class=cl>   <span class=kt>var</span> <span class=n>result</span> <span class=p>=</span> <span class=n>fisherFaceRecognizer</span><span class=p>.</span><span class=n>Predict</span><span class=p>(</span><span class=n>image</span><span class=p>.</span><span class=n>Convert</span><span class=p>().</span><span class=n>Resize</span><span class=p>(</span><span class=m>100</span><span class=p>,</span> <span class=m>100</span><span class=p>,</span> <span class=n>Emgu</span><span class=p>.</span><span class=n>CV</span><span class=p>.</span><span class=n>CvEnum</span><span class=p>.</span><span class=n>INTER</span><span class=p>.</span><span class=n>CV_INTER_CUBIC</span><span class=p>));</span>
+</span></span><span class=line><span class=cl>   <span class=k>if</span> <span class=p>(</span><span class=n>result</span><span class=p>.</span><span class=n>Label</span> <span class=p>!=</span> <span class=p>-</span><span class=m>1</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>   <span class=p>{</span>
+</span></span><span class=line><span class=cl>       <span class=n>image</span><span class=p>.</span><span class=n>Draw</span><span class=p>(</span><span class=n>fisherlabels</span><span class=p>[</span><span class=n>result</span><span class=p>.</span><span class=n>Label</span><span class=p>].</span><span class=n>ToString</span><span class=p>(),</span> <span class=k>ref</span> <span class=n>font</span><span class=p>,</span> <span class=k>new</span> <span class=n>Point</span><span class=p>(</span><span class=n>face</span><span class=p>.</span><span class=n>X</span> <span class=p>-</span> <span class=m>2</span><span class=p>,</span> <span class=n>face</span><span class=p>.</span><span class=n>Y</span> <span class=p>-</span> <span class=m>2</span><span class=p>),</span> <span class=k>new</span> <span class=n>Bgr</span><span class=p>(</span><span class=n>Color</span><span class=p>.</span><span class=n>LightGreen</span><span class=p>));</span>
+</span></span><span class=line><span class=cl>       <span class=n>label6</span><span class=p>.</span><span class=n>Text</span> <span class=p>=</span> <span class=n>result</span><span class=p>.</span><span class=n>Distance</span><span class=p>.</span><span class=n>ToString</span><span class=p>();</span>
+</span></span><span class=line><span class=cl>   <span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></div><h5 id=local-binary-patterns-histograms>Local Binary Patterns Histograms</h5><div class=highlight><pre tabindex=0 class=chroma><code class=language-csharp data-lang=csharp><span class=line><span class=cl><span class=k>else</span> <span class=k>if</span> <span class=p>(</span><span class=n>comboBoxAlgorithm</span><span class=p>.</span><span class=n>Text</span> <span class=p>==</span> <span class=s>&#34;LBPHFaces&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=p>{</span>
+</span></span><span class=line><span class=cl>   <span class=k>if</span> <span class=p>(</span><span class=n>eqHisChecked</span><span class=p>.</span><span class=n>Checked</span> <span class=p>==</span> <span class=kc>true</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>   <span class=p>{</span>
+</span></span><span class=line><span class=cl>       <span class=n>image</span><span class=p>.</span><span class=n>_EqualizeHist</span><span class=p>();</span>
+</span></span><span class=line><span class=cl>   <span class=p>}</span>
+</span></span><span class=line><span class=cl>   <span class=kt>var</span> <span class=n>result</span> <span class=p>=</span> <span class=n>lbphFaceRecognizer</span><span class=p>.</span><span class=n>Predict</span><span class=p>(</span><span class=n>image</span><span class=p>.</span><span class=n>Convert</span><span class=p>().</span><span class=n>Resize</span><span class=p>(</span><span class=m>100</span><span class=p>,</span> <span class=m>100</span><span class=p>,</span> <span class=n>Emgu</span><span class=p>.</span><span class=n>CV</span><span class=p>.</span><span class=n>CvEnum</span><span class=p>.</span><span class=n>INTER</span><span class=p>.</span><span class=n>CV_INTER_CUBIC</span><span class=p>));</span>
+</span></span><span class=line><span class=cl>   <span class=k>if</span> <span class=p>(</span><span class=n>result</span><span class=p>.</span><span class=n>Label</span> <span class=p>!=</span> <span class=p>-</span><span class=m>1</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>   <span class=p>{</span>
+</span></span><span class=line><span class=cl>       <span class=n>image</span><span class=p>.</span><span class=n>Draw</span><span class=p>(</span><span class=n>lbphlabels</span><span class=p>[</span><span class=n>result</span><span class=p>.</span><span class=n>Label</span><span class=p>].</span><span class=n>ToString</span><span class=p>(),</span> <span class=k>ref</span> <span class=n>font</span><span class=p>,</span> <span class=k>new</span> <span class=n>Point</span><span class=p>(</span><span class=n>face</span><span class=p>.</span><span class=n>X</span> <span class=p>-</span> <span class=m>2</span><span class=p>,</span> <span class=n>face</span><span class=p>.</span><span class=n>Y</span> <span class=p>-</span> <span class=m>2</span><span class=p>),</span> <span class=k>new</span> <span class=n>Bgr</span><span class=p>(</span><span class=n>Color</span><span class=p>.</span><span class=n>LightGreen</span><span class=p>));</span>
+</span></span><span class=line><span class=cl>       <span class=n>label6</span><span class=p>.</span><span class=n>Text</span> <span class=p>=</span> <span class=n>result</span><span class=p>.</span><span class=n>Distance</span><span class=p>.</span><span class=n>ToString</span><span class=p>();</span>
+</span></span><span class=line><span class=cl>   <span class=p>}</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></div><h4 id=3-passface-interface>3. PassFace Interface</h4><h5 id=database-creator>Database Creator</h5><p>A database creator is developed to make easier to implement and try different
+algorithm.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-csharp data-lang=csharp><span class=line><span class=cl><span class=n>Add</span> <span class=n>DataBase</span> <span class=n>Function</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kd>private</span> <span class=k>void</span> <span class=n>addDatabaseButton_Click</span><span class=p>(</span><span class=kt>object</span> <span class=n>sender</span><span class=p>,</span> <span class=n>EventArgs</span> <span class=n>e</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=p>{</span>
+</span></span><span class=line><span class=cl>   <span class=c1>//Take time for save filename</span>
+</span></span><span class=line><span class=cl>   <span class=kt>string</span> <span class=n>fileName</span> <span class=p>=</span> <span class=n>textBox1</span><span class=p>.</span><span class=n>Text</span><span class=p>+</span><span class=s>&#34;_&#34;</span><span class=p>+</span><span class=n>DateTime</span><span class=p>.</span><span class=n>Now</span><span class=p>.</span><span class=n>Day</span><span class=p>.</span><span class=n>ToString</span><span class=p>()</span> <span class=p>+</span> <span class=s>&#34;-&#34;</span> <span class=p>+</span> <span class=n>DateTime</span><span class=p>.</span><span class=n>Now</span><span class=p>.</span><span class=n>Month</span><span class=p>.</span><span class=n>ToString</span><span class=p>()</span> <span class=p>+</span> <span class=s>&#34;-&#34;</span> <span class=p>+</span> <span class=n>DateTime</span><span class=p>.</span><span class=n>Now</span><span class=p>.</span><span class=n>Year</span><span class=p>.</span><span class=n>ToString</span><span class=p>()</span>
+</span></span><span class=line><span class=cl>   <span class=p>+</span> <span class=s>&#34;-&#34;</span> <span class=p>+</span> <span class=n>DateTime</span><span class=p>.</span><span class=n>Now</span><span class=p>.</span><span class=n>Hour</span><span class=p>.</span><span class=n>ToString</span><span class=p>()</span> <span class=p>+</span> <span class=s>&#34;-&#34;</span> <span class=p>+</span> <span class=n>DateTime</span><span class=p>.</span><span class=n>Now</span><span class=p>.</span><span class=n>Minute</span><span class=p>.</span><span class=n>ToString</span><span class=p>()+</span><span class=s>&#34;-&#34;</span> <span class=p>+</span> <span class=n>DateTime</span><span class=p>.</span><span class=n>Now</span><span class=p>.</span><span class=n>Second</span><span class=p>.</span><span class=n>ToString</span><span class=p>()+</span><span class=s>&#34;.jpeg&#34;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>   <span class=c1>//First The faces in the Image is detected</span>
+</span></span><span class=line><span class=cl>   <span class=n>Image</span> <span class=n>image</span> <span class=p>=</span> <span class=n>_capture</span><span class=p>.</span><span class=n>RetrieveBgrFrame</span><span class=p>().</span><span class=n>Resize</span><span class=p>(</span><span class=m>400</span><span class=p>,</span> <span class=m>300</span><span class=p>,</span> <span class=n>Emgu</span><span class=p>.</span><span class=n>CV</span><span class=p>.</span><span class=n>CvEnum</span><span class=p>.</span><span class=n>INTER</span><span class=p>.</span><span class=n>CV_INTER_CUBIC</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>   <span class=n>List</span> <span class=n>faces</span> <span class=p>=</span> <span class=k>new</span> <span class=n>List</span><span class=p>();</span>
+</span></span><span class=line><span class=cl>   <span class=n>List</span> <span class=n>eyes</span> <span class=p>=</span> <span class=k>new</span> <span class=n>List</span><span class=p>();</span>
+</span></span><span class=line><span class=cl>   <span class=kt>long</span> <span class=n>detectionTime</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>   <span class=n>DetectFace</span><span class=p>.</span><span class=n>Detect</span><span class=p>(</span><span class=n>image</span><span class=p>,</span> <span class=s>&#34;haarcascade_frontalface_default.xml&#34;</span><span class=p>,</span> <span class=s>&#34;haarcascade_eye.xml&#34;</span><span class=p>,</span> <span class=n>faces</span><span class=p>,</span> <span class=n>eyes</span><span class=p>,</span> <span class=k>out</span> <span class=n>detectionTime</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>   <span class=k>foreach</span> <span class=p>(</span><span class=n>Rectangle</span> <span class=n>face</span> <span class=k>in</span> <span class=n>faces</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>   <span class=p>{</span>
+</span></span><span class=line><span class=cl>       <span class=n>image</span><span class=p>.</span><span class=n>ROI</span> <span class=p>=</span> <span class=n>face</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>   <span class=p>}</span>
+</span></span><span class=line><span class=cl>   <span class=n>Directory</span><span class=p>.</span><span class=n>CreateDirectory</span><span class=p>(</span><span class=s>&#34;TrainedFaces&#34;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>   <span class=n>image</span><span class=p>.</span><span class=n>Resize</span><span class=p>(</span><span class=m>100</span><span class=p>,</span> <span class=m>100</span><span class=p>,</span> <span class=n>Emgu</span><span class=p>.</span><span class=n>CV</span><span class=p>.</span><span class=n>CvEnum</span><span class=p>.</span><span class=n>INTER</span><span class=p>.</span><span class=n>CV_INTER_CUBIC</span><span class=p>).</span><span class=n>ToBitmap</span><span class=p>().</span><span class=n>Save</span><span class=p>(</span><span class=s>&#34;TrainedFaces\\&#34;</span> <span class=p>+</span> <span class=n>fileName</span><span class=p>);</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kd>private</span> <span class=k>void</span> <span class=n>comboBoxAlgorithm_SelectedIndexChanged</span><span class=p>(</span><span class=kt>object</span> <span class=n>sender</span><span class=p>,</span> <span class=n>EventArgs</span> <span class=n>e</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=p>{</span>
+</span></span><span class=line><span class=cl>   <span class=k>if</span> <span class=p>(</span><span class=n>comboBoxAlgorithm</span><span class=p>.</span><span class=n>Text</span> <span class=p>==</span> <span class=s>&#34;EigenFaces&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>   <span class=p>{</span>
+</span></span><span class=line><span class=cl>       <span class=k>try</span>
+</span></span><span class=line><span class=cl>       <span class=p>{</span>
+</span></span><span class=line><span class=cl>         <span class=kt>string</span> <span class=n>dataDirectory</span> <span class=p>=</span> <span class=n>Directory</span><span class=p>.</span><span class=n>GetCurrentDirectory</span><span class=p>()</span> <span class=p>+</span> <span class=s>&#34;\\TrainedFaces&#34;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>         <span class=kt>string</span><span class=p>[]</span> <span class=n>files</span> <span class=p>=</span> <span class=n>Directory</span><span class=p>.</span><span class=n>GetFiles</span><span class=p>(</span><span class=n>dataDirectory</span><span class=p>,</span> <span class=s>&#34;*.jpeg&#34;</span><span class=p>,</span> <span class=n>SearchOption</span><span class=p>.</span><span class=n>AllDirectories</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>         <span class=n>eigenTrainedImageCounter</span> <span class=p>=</span> <span class=m>0</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>         <span class=k>foreach</span> <span class=p>(</span><span class=kt>var</span> <span class=n>file</span> <span class=k>in</span> <span class=n>files</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>         <span class=p>{</span>
+</span></span><span class=line><span class=cl>               <span class=n>Image</span> <span class=n>TrainedImage</span><span class=p>=</span><span class=k>new</span> <span class=n>Image</span><span class=p>(</span><span class=n>file</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>               <span class=k>if</span> <span class=p>(</span><span class=n>eqHisChecked</span><span class=p>.</span><span class=n>Checked</span> <span class=p>==</span> <span class=kc>true</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>               <span class=p>{</span>
+</span></span><span class=line><span class=cl>                   <span class=n>TrainedImage</span><span class=p>.</span><span class=n>_EqualizeHist</span><span class=p>();</span>
+</span></span><span class=line><span class=cl>               <span class=p>}</span>
+</span></span><span class=line><span class=cl>               <span class=n>eigenTrainingImages</span><span class=p>.</span><span class=n>Add</span><span class=p>(</span><span class=n>TrainedImage</span><span class=p>.</span><span class=n>Convert</span><span class=p>());</span>
+</span></span><span class=line><span class=cl>               <span class=n>eigenlabels</span><span class=p>.</span><span class=n>Add</span><span class=p>(</span><span class=n>fileName</span><span class=p>(</span><span class=n>file</span><span class=p>));</span>
+</span></span><span class=line><span class=cl>               <span class=n>eigenIntlabels</span><span class=p>.</span><span class=n>Add</span><span class=p>(</span><span class=n>eigenTrainedImageCounter</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>               <span class=n>eigenTrainedImageCounter</span><span class=p>++;</span>
+</span></span><span class=line><span class=cl>               <span class=n>richTextBox1</span><span class=p>.</span><span class=n>Text</span> <span class=p>+=</span> <span class=n>fileName</span><span class=p>(</span><span class=n>file</span><span class=p>)+</span><span class=s>&#34;\n&#34;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>         <span class=p>}</span>
+</span></span><span class=line><span class=cl>          <span class=n>eigenFaceRecognizer</span><span class=p>=</span> <span class=k>new</span> <span class=n>EigenFaceRecognizer</span><span class=p>(</span><span class=n>eigenTrainedImageCounter</span><span class=p>,</span> <span class=m>3000</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>          <span class=n>eigenFaceRecognizer</span><span class=p>.</span><span class=n>Train</span><span class=p>(</span><span class=n>eigenTrainingImages</span><span class=p>.</span><span class=n>ToArray</span><span class=p>(),</span> <span class=n>eigenIntlabels</span><span class=p>.</span><span class=n>ToArray</span><span class=p>());</span>
+</span></span><span class=line><span class=cl>            
+</span></span><span class=line><span class=cl>       <span class=p>}</span>
+</span></span><span class=line><span class=cl>       <span class=k>catch</span> <span class=p>(</span><span class=n>Exception</span> <span class=n>ex</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>       <span class=p>{</span>
+</span></span><span class=line><span class=cl>           <span class=n>MessageBox</span><span class=p>.</span><span class=n>Show</span><span class=p>(</span><span class=n>ex</span><span class=p>.</span><span class=n>ToString</span><span class=p>());</span>
+</span></span><span class=line><span class=cl>           <span class=n>MessageBox</span><span class=p>.</span><span class=n>Show</span><span class=p>(</span><span class=s>&#34;Nothing in binary database, please add at least a face(Simply train the prototype with the Add Face Button).&#34;</span><span class=p>,</span> <span class=s>&#34;Triained faces load&#34;</span><span class=p>,</span> <span class=n>MessageBoxButtons</span><span class=p>.</span><span class=n>OK</span><span class=p>,</span> <span class=n>MessageBoxIcon</span><span class=p>.</span><span class=n>Exclamation</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>       <span class=p>}</span>
+</span></span><span class=line><span class=cl>   <span class=p>}</span>
+</span></span><span class=line><span class=cl>   <span class=k>else</span> <span class=k>if</span> <span class=p>(</span><span class=n>comboBoxAlgorithm</span><span class=p>.</span><span class=n>Text</span> <span class=p>==</span> <span class=s>&#34;FisherFaces&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>   <span class=p>{</span>
+</span></span><span class=line><span class=cl>       <span class=k>try</span>
+</span></span><span class=line><span class=cl>       <span class=p>{</span>
+</span></span><span class=line><span class=cl>           <span class=kt>string</span> <span class=n>dataDirectory</span> <span class=p>=</span> <span class=n>Directory</span><span class=p>.</span><span class=n>GetCurrentDirectory</span><span class=p>()</span> <span class=p>+</span> <span class=s>&#34;\\TrainedFaces&#34;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>           <span class=kt>string</span><span class=p>[]</span> <span class=n>files</span> <span class=p>=</span> <span class=n>Directory</span><span class=p>.</span><span class=n>GetFiles</span><span class=p>(</span><span class=n>dataDirectory</span><span class=p>,</span> <span class=s>&#34;*.jpeg&#34;</span><span class=p>,</span> <span class=n>SearchOption</span><span class=p>.</span><span class=n>AllDirectories</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>           <span class=n>fisherTrainedImageCounter</span> <span class=p>=</span> <span class=m>0</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>           <span class=k>foreach</span> <span class=p>(</span><span class=kt>var</span> <span class=n>file</span> <span class=k>in</span> <span class=n>files</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>           <span class=p>{</span>
+</span></span><span class=line><span class=cl>               <span class=n>Image</span> <span class=n>TrainedImage</span> <span class=p>=</span> <span class=k>new</span> <span class=n>Image</span><span class=p>(</span><span class=n>file</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>               <span class=n>fisherTrainingImages</span><span class=p>.</span><span class=n>Add</span><span class=p>(</span><span class=n>TrainedImage</span><span class=p>.</span><span class=n>Convert</span><span class=p>());</span>
+</span></span><span class=line><span class=cl>               <span class=k>if</span> <span class=p>(</span><span class=n>eqHisChecked</span><span class=p>.</span><span class=n>Checked</span> <span class=p>==</span> <span class=kc>true</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>               <span class=p>{</span>
+</span></span><span class=line><span class=cl>                   <span class=n>TrainedImage</span><span class=p>.</span><span class=n>_EqualizeHist</span><span class=p>();</span>
+</span></span><span class=line><span class=cl>               <span class=p>}</span>
+</span></span><span class=line><span class=cl>               <span class=n>fisherlabels</span><span class=p>.</span><span class=n>Add</span><span class=p>(</span><span class=n>fileName</span><span class=p>(</span><span class=n>file</span><span class=p>));</span>
+</span></span><span class=line><span class=cl>               <span class=n>fisherIntlabels</span><span class=p>.</span><span class=n>Add</span><span class=p>(</span><span class=n>fisherTrainedImageCounter</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>               <span class=n>fisherTrainedImageCounter</span><span class=p>++;</span>
+</span></span><span class=line><span class=cl>               <span class=n>richTextBox1</span><span class=p>.</span><span class=n>Text</span> <span class=p>+=</span> <span class=n>fileName</span><span class=p>(</span><span class=n>file</span><span class=p>)</span> <span class=p>+</span> <span class=s>&#34;\n&#34;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>           <span class=p>}</span>
+</span></span><span class=line><span class=cl>           <span class=n>fisherFaceRecognizer</span> <span class=p>=</span> <span class=k>new</span> <span class=n>FisherFaceRecognizer</span><span class=p>(</span><span class=n>fisherTrainedImageCounter</span><span class=p>,</span> <span class=m>3000</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>           <span class=n>fisherFaceRecognizer</span><span class=p>.</span><span class=n>Train</span><span class=p>(</span><span class=n>fisherTrainingImages</span><span class=p>.</span><span class=n>ToArray</span><span class=p>(),</span> <span class=n>fisherIntlabels</span><span class=p>.</span><span class=n>ToArray</span><span class=p>());</span>
+</span></span><span class=line><span class=cl>       <span class=p>}</span>
+</span></span><span class=line><span class=cl>       <span class=k>catch</span> <span class=p>(</span><span class=n>Exception</span> <span class=n>ex</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>       <span class=p>{</span>
+</span></span><span class=line><span class=cl>           <span class=n>MessageBox</span><span class=p>.</span><span class=n>Show</span><span class=p>(</span><span class=n>ex</span><span class=p>.</span><span class=n>ToString</span><span class=p>());</span>
+</span></span><span class=line><span class=cl>           <span class=n>MessageBox</span><span class=p>.</span><span class=n>Show</span><span class=p>(</span><span class=s>&#34;Nothing in binary database, please add at least a face(Simply train the prototype with the Add Face Button).&#34;</span><span class=p>,</span> <span class=s>&#34;Triained faces load&#34;</span><span class=p>,</span> <span class=n>MessageBoxButtons</span><span class=p>.</span><span class=n>OK</span><span class=p>,</span> <span class=n>MessageBoxIcon</span><span class=p>.</span><span class=n>Exclamation</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>       <span class=p>}</span>
+</span></span><span class=line><span class=cl>   <span class=p>}</span>
+</span></span><span class=line><span class=cl>   <span class=k>else</span> <span class=k>if</span> <span class=p>(</span><span class=n>comboBoxAlgorithm</span><span class=p>.</span><span class=n>Text</span> <span class=p>==</span> <span class=s>&#34;LBPHFaces&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>   <span class=p>{</span>
+</span></span><span class=line><span class=cl>       <span class=k>try</span>
+</span></span><span class=line><span class=cl>       <span class=p>{</span>
+</span></span><span class=line><span class=cl>           <span class=kt>string</span> <span class=n>dataDirectory</span> <span class=p>=</span> <span class=n>Directory</span><span class=p>.</span><span class=n>GetCurrentDirectory</span><span class=p>()</span> <span class=p>+</span> <span class=s>&#34;\\TrainedFaces&#34;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>           <span class=kt>string</span><span class=p>[]</span> <span class=n>files</span> <span class=p>=</span> <span class=n>Directory</span><span class=p>.</span><span class=n>GetFiles</span><span class=p>(</span><span class=n>dataDirectory</span><span class=p>,</span> <span class=s>&#34;*.jpeg&#34;</span><span class=p>,</span> <span class=n>SearchOption</span><span class=p>.</span><span class=n>AllDirectories</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>           <span class=n>lbphTrainedImageCounter</span> <span class=p>=</span> <span class=m>0</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>           <span class=k>foreach</span> <span class=p>(</span><span class=kt>var</span> <span class=n>file</span> <span class=k>in</span> <span class=n>files</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>           <span class=p>{</span>
+</span></span><span class=line><span class=cl>               <span class=n>Image</span> <span class=n>TrainedImage</span> <span class=p>=</span> <span class=k>new</span> <span class=n>Image</span><span class=p>(</span><span class=n>file</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>               <span class=k>if</span> <span class=p>(</span><span class=n>eqHisChecked</span><span class=p>.</span><span class=n>Checked</span> <span class=p>==</span> <span class=kc>true</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>               <span class=p>{</span>
+</span></span><span class=line><span class=cl>                   <span class=n>TrainedImage</span><span class=p>.</span><span class=n>_EqualizeHist</span><span class=p>();</span>
+</span></span><span class=line><span class=cl>               <span class=p>}</span>
+</span></span><span class=line><span class=cl>               <span class=n>lbphTrainingImages</span><span class=p>.</span><span class=n>Add</span><span class=p>(</span><span class=n>TrainedImage</span><span class=p>.</span><span class=n>Convert</span><span class=p>());</span>
+</span></span><span class=line><span class=cl>               <span class=n>lbphlabels</span><span class=p>.</span><span class=n>Add</span><span class=p>(</span><span class=n>fileName</span><span class=p>(</span><span class=n>file</span><span class=p>));</span>
+</span></span><span class=line><span class=cl>               <span class=n>lbphIntlabels</span><span class=p>.</span><span class=n>Add</span><span class=p>(</span><span class=n>lbphTrainedImageCounter</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>               <span class=n>lbphTrainedImageCounter</span><span class=p>++;</span>
+</span></span><span class=line><span class=cl>               <span class=n>richTextBox1</span><span class=p>.</span><span class=n>Text</span> <span class=p>+=</span> <span class=n>fileName</span><span class=p>(</span><span class=n>file</span><span class=p>)</span> <span class=p>+</span> <span class=s>&#34;\n&#34;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>           <span class=p>}</span>
+</span></span><span class=line><span class=cl>           <span class=n>lbphFaceRecognizer</span> <span class=p>=</span> <span class=k>new</span> <span class=n>LBPHFaceRecognizer</span><span class=p>(</span><span class=m>1</span><span class=p>,</span> <span class=m>8</span><span class=p>,</span> <span class=m>8</span><span class=p>,</span> <span class=m>8</span><span class=p>,</span> <span class=m>123.0</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>           <span class=n>lbphFaceRecognizer</span><span class=p>.</span><span class=n>Train</span><span class=p>(</span><span class=n>lbphTrainingImages</span><span class=p>.</span><span class=n>ToArray</span><span class=p>(),</span> <span class=n>lbphIntlabels</span><span class=p>.</span><span class=n>ToArray</span><span class=p>());</span>
+</span></span><span class=line><span class=cl>       <span class=p>}</span>
+</span></span><span class=line><span class=cl>       <span class=k>catch</span> <span class=p>(</span><span class=n>Exception</span> <span class=n>ex</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>       <span class=p>{</span>
+</span></span><span class=line><span class=cl>           <span class=n>MessageBox</span><span class=p>.</span><span class=n>Show</span><span class=p>(</span><span class=n>ex</span><span class=p>.</span><span class=n>ToString</span><span class=p>());</span>
+</span></span><span class=line><span class=cl>           <span class=n>MessageBox</span><span class=p>.</span><span class=n>Show</span><span class=p>(</span><span class=s>&#34;Nothing in binary database, please add at least a face(Simply train the prototype with the Add Face Button).&#34;</span><span class=p>,</span> <span class=s>&#34;Triained faces load&#34;</span><span class=p>,</span> <span class=n>MessageBoxButtons</span><span class=p>.</span><span class=n>OK</span><span class=p>,</span> <span class=n>MessageBoxIcon</span><span class=p>.</span><span class=n>Exclamation</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>       <span class=p>}</span>
+</span></span><span class=line><span class=cl>   <span class=p>}</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></div><p><img src=https://lh4.googleusercontent.com/560MflmHrYy5nUi4gIAQexc-Cdqfyr3GUej_g1wwa0HawxO4A7OFmOkgd0g4oBvy9An1PjiYxSM_8G0G2FS_zC2y3gWisgkr0NTikxv4oyDFL9qM6IpkupdhA7OjnUAb4cuy51Pa alt></p><h5 id=user-interface>User Interface</h5><p>As a source camera, video, single image and multi image can be selected.
 Different source selection is developed using opencv and .net libraries.</p><p><img src=https://lh5.googleusercontent.com/6y8Sx-7a4PDYcZWv9W_COKJf9EaGKQl-_3vc6q9oo-HzQeC4CJMJoGTceeaUAC4F31mjpGs84Zrkse1viHgwCCKnRvhciz7aEjmmySR16PAD2aOGmOrLWHr6R3hO7GvV0TamI9nS alt></p><h4 id=4-future-of-passface-project>4. Future of PassFace Project</h4><h5 id=algorithm-accuracy-analysis>Algorithm Accuracy Analysis</h5><p>Program designed for using different algorithms. But the comparison of these
 algorithms is not finished. The next step is implementing this algorithm the
 compare the algorithms accuracy and performance truly.</p><h5 id=performance-optimizations>Performance Optimizations</h5><p>For fix the performance problems, develop the program for multiple core CPUs.
@@ -238,4 +238,9 @@ planning to implement latest algorithms to increase accuracy in different
 conditions.</p><h4 id=5-conclusion>5. Conclusion</h4><p>In this project, the main principles of the face recognition algorithms are
 learned. The performances and accuracies of the algorithms are compared. A gui
 application is developed to create database and process images using selected
-algorithm.</p></div></article></main><footer><p>&copy; 2025 M.Ozan Unal.</p></footer></body><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/highlight.js@11.11.0/styles/github.min.css media="(prefers-color-scheme: light)"><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/highlight.js@11.11.0/styles/github-dark.min.css media="(prefers-color-scheme: dark)"><script src=https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.11.1/build/highlight.min.js></script><script>hljs.highlightAll()</script><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css><script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js></script><script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js onload='renderMathInElement(document.body,{delimiters:[{left:"$$",right:"$$",display:!0},{left:"\\\\[",right:"\\\\]",display:!0},{left:"$",right:"$",display:!1},{left:"\\\\(",right:"\\\\)",display:!1}],throwOnError:!1})'></script><script async src="https://www.googletagmanager.com/gtag/js?id=G-007KSW65JL"></script><script>var dnt,doNotTrack=!1;if(!1&&(dnt=navigator.doNotTrack||window.doNotTrack||navigator.msDoNotTrack,doNotTrack=dnt=="1"||dnt=="yes"),!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-007KSW65JL")}</script></html>
+algorithm.</p></div></article></main><footer><p>&copy; 2025 M.Ozan Unal.</p></footer></body><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css><script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js></script><script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js onload=renderMathInElement(document.body) data-auto-render="{
+      delimiters: [
+        {left: '$$', right: '$$', display: true},
+        {left: '$', right: '$', display: false}
+      ]
+    }"></script><script async src="https://www.googletagmanager.com/gtag/js?id=G-007KSW65JL"></script><script>var dnt,doNotTrack=!1;if(!1&&(dnt=navigator.doNotTrack||window.doNotTrack||navigator.msDoNotTrack,doNotTrack=dnt=="1"||dnt=="yes"),!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-007KSW65JL")}</script></html>
