@@ -41,7 +41,6 @@ params:
   faviconICO: "/favicon.ico"
   appleTouchIcon: "/apple-touch-icon.png"
   quicklink: false
-  hljs: true
   math: true
 
 menu:
@@ -72,7 +71,7 @@ markup:
     enabled: true
   highlight:
     noClasses: false
-    codeFences: false
+    codeFences: true
     guessSyntax: true
     # lineNos: true
 
