@@ -18,7 +18,7 @@ programlarken öğrendiğim şeyleri farklı yazılarda paylaşmıştım. Bu yaz
 yazılardan biri diyebiliriz. Verilog ile alakalı daha ileri düzey şeylerden
 bahsedeceğim yazılar da gelecektir diye düşünüyorum.
 
-![ZYBO Fpga Geliştirme Kartı](/images/1527937147117.png)
+![ZYBO Fpga Geliştirme Kartı](1527937147117.png)
 
 ### Temel Kullanımlar
 

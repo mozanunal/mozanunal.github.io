@@ -27,7 +27,7 @@ clk input frequency should select according to required sampling rate for the
 microphone. SS can be used as out enable also. You can ask any question directly
 to me if you have a problem with the driver. See you...
 
-![pmod mic](/images/pasted-0.png)
+![pmod mic](pasted-0.png)
 
 ```verilog
 `timescale 1ns / 1ps
@@ -41,7 +41,7 @@ module pmodMic3(
     output reg ss,
     output reg [15:0] out
     );
-    
+
 reg [31:0] clkCounter;
 reg [15:0] outBuffer;
 assign sck = clk;
@@ -67,7 +67,7 @@ always @(posedge clk)
             end
 
     end
-        
+
 always @(negedge clk)
     begin
         if (clkCounter == 16)
@@ -78,10 +78,10 @@ always @(negedge clk)
           begin
             ss <= 1'b0;
           end
-    end 
-    
+    end
 
- 
+
+
 endmodule
 ```
 

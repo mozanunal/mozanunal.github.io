@@ -43,8 +43,8 @@ Result:
 ```bash
 img2sh demo.jpeg -w 80 -i
 
-q: quit z: zoom+ x: zoom- c: reset 
-arrow keys for navigation 
+q: quit z: zoom+ x: zoom- c: reset
+arrow keys for navigation
 cmd: q
 ```
 
@@ -86,7 +86,7 @@ pixel concept. It is a quite low resolution, grayscale image. Pixel values are
 shown in the following image. Pixel intensity values are changing with how far
 the pixel value close to black or white.
 
-![](/images/pixel.png)
+![](pixel.png)
 
 Colored images basically work with the same concept. The difference is colored
 images are usually indicated with 3 different pixel values which are red, blue
@@ -103,7 +103,7 @@ colors using this library.
 
 http://jafrog.com/2013/11/23/colors-in-terminal.html
 
-![](/images/colorcodes.png)
+![](colorcodes.png)
 
 ### Parsing command-line arguments
 
@@ -149,7 +149,7 @@ and Alpha. Alpha is the transparency channel of the image. So the dimension of
 the pixel is different. But this problem is easily solved in findNearestColor
 function. In these functions, the dimension of the pixel is handled.
 
-![](/images/apple.jpeg)
+![](apple.jpeg)
 
 ### Setup.py
 

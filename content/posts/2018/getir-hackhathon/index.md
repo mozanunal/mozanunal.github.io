@@ -17,14 +17,13 @@ date: 2018-04-16 18:10:04
 
 # Team Paketci!
 
-![image](/images/1523149456799.jpg)
 
 [Check our app from here](https://hackhathon-getir-2018.herokuapp.com/) which is
 deployed using heroku.
 
 [Check github repo of app from here](https://github.com/mozanunal/paketci-backend)
 
-![Timeline of our little project!](https://github.com/mozanunal/paketci-backend/blob/master/doc/images/timeLine.PNG?raw=true)
+![Timeline of our little project!](https://github.com/mozanunal/paketci-backend/blob/master/doctimeLine.PNG?raw=true)
 
 Getir Hackhathon 2018 Team Members: Sertan Sezgin Kutlu Ertuğrul Çınar Mehmet
 Ozan Ünal
@@ -67,7 +66,7 @@ Its allows users to add new packs to environment.
 
 ## Backend
 
-![enter image description here](https://github.com/mozanunal/paketci-backend/blob/master/doc/images/backEndContainer.png?raw=true)
+![enter image description here](https://github.com/mozanunal/paketci-backend/blob/master/docbackEndContainer.png?raw=true)
 Data structure and Crud Outputs Sample JSON files, it can be enchance according
 to packet number and courier number
 
@@ -236,7 +235,7 @@ to packet number and courier number
 
 ## Route Optimization
 
-![enter image description here](https://github.com/mozanunal/paketci-backend/blob/master/doc/images/routeOptimizeAlgrotihmVisualize.gif?raw=true)
+![enter image description here](https://github.com/mozanunal/paketci-backend/blob/master/docrouteOptimizeAlgrotihmVisualize.gif?raw=true)
 Firstly, every courier has a route to common destination point. Then most
 efficient package route change apply. It's calculated with change of route
 distance according to package location. It will iterate until no package will

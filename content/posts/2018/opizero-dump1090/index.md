@@ -18,7 +18,7 @@ projeyi gerçekleştirdiğim mini pc olarak orange pi zero seçmemin sebebi ise
 maliyeti ve kompaklığı. 5-10 dolara satın alınabiliniyor ve boyutları gerçekten
 küçük.
 
-![](/images/1534768337583.png)
+![](1534768337583.png)
 
 ## Rtlsdr Sürücüsünün Kurulması
 
@@ -79,7 +79,7 @@ make
 ./dump1090 --net --interactive --aggressive
 ```
 
-![](/images/1534768674064.png)
+![](1534768674064.png)
 
 Bu komut ile web arayüzünü aktifleştirmiş oluyoruz ve interaktif bir terminal
 çıktımız oluyor. "aggressive" ile de daha düşük isabet ile tespit etse de
@@ -91,4 +91,4 @@ olmalıdır. Ben açık alanda yaklaşık 250 km uzaklıktan veri almayı başar
 Böyle küçük bir kurulum ile bu kadar büyük bir uzaklıktan veri alabilmek
 gerçekten oldukça keyifliydi. Tekrar görüşmek üzere...
 
-![](/images/dump1090_1.jpg)
+![](dump1090_1.jpg)

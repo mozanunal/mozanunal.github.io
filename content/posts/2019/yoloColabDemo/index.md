@@ -15,7 +15,7 @@ date: 2019-08-13 00:09:50
 Hello there, Today, we will be discussing how we can use the Darknet project on
 Google Colab platform. For those who are not familiar with these terms:
 
-![YOLO in action!](/images/yoloroad.gif)
+![YOLO in action!](yoloroad.gif)
 
 - The Darknet project is an open-source project written in C, which is a
   framework to develop deep neural networks.
@@ -101,7 +101,7 @@ import matplotlib.pyplot as plt
     Length: 248007048 (237M) [application/octet-stream]
     Saving to: ‘yolov3.weights’
 
-    yolov3.weights      100%[===================>] 236.52M  62.1MB/s    in 4.1s    
+    yolov3.weights      100%[===================>] 236.52M  62.1MB/s    in 4.1s
 
     2019-08-11 23:58:48 (57.7 MB/s) - ‘yolov3.weights’ saved [248007048/248007048]
 
@@ -139,7 +139,7 @@ def predictImage(imageDir):
     Length: 68535 (67K) [image/jpeg]
     Saving to: ‘test.jpg’
 
-    test.jpg            100%[===================>]  66.93K  --.-KB/s    in 0.05s   
+    test.jpg            100%[===================>]  66.93K  --.-KB/s    in 0.05s
 
     2019-08-11 23:58:50 (1.32 MB/s) - ‘test.jpg’ saved [68535/68535]
 
@@ -156,7 +156,7 @@ def predictImage(imageDir):
 predictImage("test.jpg")
 ```
 
-![png](/images/output_11_0.png)
+![png](output_11_0.png)
 
 ## Test with Video
 
@@ -184,7 +184,7 @@ def predictVideo(videoDir):
     Length: 15897530 (15M) [application/octet-stream]
     Saving to: ‘test.avi’
 
-    test.avi            100%[===================>]  15.16M  50.0MB/s    in 0.3s    
+    test.avi            100%[===================>]  15.16M  50.0MB/s    in 0.3s
 
     2019-08-11 23:59:02 (50.0 MB/s) - ‘test.avi’ saved [15897530/15897530]
 

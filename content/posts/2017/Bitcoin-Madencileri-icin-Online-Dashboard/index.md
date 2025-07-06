@@ -41,7 +41,7 @@ kapsamında yaptığım; gerçek zamanlı olarak bu programın web apisini kulla
 bir miner'ın kazandığı parayı ve o andaki bitcoin kurunu çekip 1 inchlik oled
 ekranda gösteren bir sistem.
 
-![btc1](/images/btc1.jpg)
+![btc1](btc1.jpg)
 
 Bu proje ESP8266 modülleri kullanarak gerçekleştirildi. Bildiğiniz üzere minik
 bir wifi modulü. Bitcoin idnizi girerek yazdığım kodu derlerseniz direk olarak
@@ -104,9 +104,9 @@ String getJsonFromUrl(char *url)
     http.begin(url);  //Specify request destination
     int httpCode = http.GET(); //Send the request
     Serial.print("\n Received http code ");
-    Serial.println(httpCode);     
+    Serial.println(httpCode);
     if (httpCode > 0) //Check the returning code
-    { 
+    {
       Serial.println("HTTP OK");
       payload = http.getString();   //Get the request response payload
       Serial.println(payload);      //Print the response payloa
@@ -132,7 +132,7 @@ Bizim için güncel bitcoin kuru.
 double getCurrency()
 {
     JsonObject& root_Currency = jsonBuffer_Currency.parseObject( getJsonFromUrl(url_Currency) );
-    if (root_Currency.success()) 
+    if (root_Currency.success())
     {
       double currency = root_Currency["USD"]["last"];
       return currency;
@@ -154,13 +154,13 @@ hesaplanıyor.
 
 ```cpp
 double getTotalBTC(const char *BitCoinWallet)
-{     
+{
   //Setup URLs
   strcpy( url_Balence, url_Balance_base );
   strcat( url_Balence, BitCoinWallet );
   JsonObject& root_Balance = jsonBuffer_Balance.parseObject( getJsonFromUrl(url_Balence) );
   double total_balance_btc = 0.0;
-  if (root_Balance.success()) 
+  if (root_Balance.success())
   {
     double balances[8];
     int algos[8];
@@ -179,7 +179,7 @@ double getTotalBTC(const char *BitCoinWallet)
 }
 ```
 
-![Bitcoin Dashboard](/images/btc2.jpg)
+![Bitcoin Dashboard](btc2.jpg)
 
 #### Verilerin ekranda gösterilmesi
 
@@ -190,7 +190,7 @@ kurdum.
 ```cpp
 void frameLoop(double currency, double totol_balance_btc, double total_balance)
 {
-  
+
   //currency
   delay(2000);
   char currency_line[30];
@@ -205,7 +205,7 @@ void frameLoop(double currency, double totol_balance_btc, double total_balance)
   // total dollar
   delay(2000);
   char total_balance_line[30];
-  dtostrf(total_balance,0, 8, total_balance_line); 
+  dtostrf(total_balance,0, 8, total_balance_line);
   sprintf(total_balance_line,"%s %s", total_balance_line, " $");
   display.clear();
   display.drawString(0 , 0,  "Total:");
@@ -222,7 +222,7 @@ void frameLoop(double currency, double totol_balance_btc, double total_balance)
   display.drawString(0 , 0,  "Total:");
   display.drawString(0 , 20, totol_balance_btc_line);
   display.display();
-  
+
 }
 ```
 
