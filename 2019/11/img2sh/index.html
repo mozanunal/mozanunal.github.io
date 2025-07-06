@@ -9,8 +9,8 @@ with anti-aliasing and quantized its colors to xterm color pallette.
 img2sh demo.jpeg
 </code></pre><p>Result:</p><p><img src=https://user-images.githubusercontent.com/13440502/52919655-aa89d400-3315-11e9-8c4a-7a7e057b8fa4.png alt></p><p><strong>Interactive mode</strong></p><pre><code class=language-bash>img2sh demo.jpeg -w 80 -i
 
-q: quit z: zoom+ x: zoom- c: reset 
-arrow keys for navigation 
+q: quit z: zoom+ x: zoom- c: reset
+arrow keys for navigation
 cmd: q
 </code></pre><p><img src=https://user-images.githubusercontent.com/13440502/59120360-e34dc780-895d-11e9-8b2a-1d7ea5b25fe4.gif alt></p><p>For detailed usage arguments:</p><pre><code class=language-bash>$ python img2sh/cli.py --help
 
@@ -35,14 +35,14 @@ the image which can contain only one color. Color changes with the pixel
 intensity values. To keep it simple, I added a grayscale image to illustrate the
 pixel concept. It is a quite low resolution, grayscale image. Pixel values are
 shown in the following image. Pixel intensity values are changing with how far
-the pixel value close to black or white.</p><p><img src=/images/pixel.png alt></p><p>Colored images basically work with the same concept. The difference is colored
+the pixel value close to black or white.</p><p><img src=pixel.png alt></p><p>Colored images basically work with the same concept. The difference is colored
 images are usually indicated with 3 different pixel values which are red, blue
 and green. By this method, the proportion of these color intensity is changed to
 show different colors on screen.</p><h3 id=colors-in-terminal>Colors in terminal</h3><p>How the coloring mechanism works in the terminal should be figured out to
 implement this app. I understood clearly how colors are handling in an image
 using the following link. After that, I have found colored python module which
 provides support for colored terminal output from python apps. I implement the
-colors using this library.</p><p><a href=http://jafrog.com/2013/11/23/colors-in-terminal.html>http://jafrog.com/2013/11/23/colors-in-terminal.html</a></p><p><img src=/images/colorcodes.png alt></p><h3 id=parsing-command-line-arguments>Parsing command-line arguments</h3><p>How should the command line arguments be parsed? Actually it is quite easy with
+colors using this library.</p><p><a href=http://jafrog.com/2013/11/23/colors-in-terminal.html>http://jafrog.com/2013/11/23/colors-in-terminal.html</a></p><p><img src=colorcodes.png alt></p><h3 id=parsing-command-line-arguments>Parsing command-line arguments</h3><p>How should the command line arguments be parsed? Actually it is quite easy with
 python. Let&rsquo;s examine the next code block:</p><pre><code class=language-python>import argparse
 
 parser = argparse.ArgumentParser(
@@ -73,7 +73,7 @@ represents a different color channels Red, Blue, and Green. Png differs from the
 alpha channel. At PNG images, colors are created with 4 bytes. Red, Blue, Green,
 and Alpha. Alpha is the transparency channel of the image. So the dimension of
 the pixel is different. But this problem is easily solved in findNearestColor
-function. In these functions, the dimension of the pixel is handled.</p><p><img src=/images/apple.jpeg alt></p><h3 id=setuppy>Setup.py</h3><p>In this section, I will try to answer the question that how to create a setup.py
+function. In these functions, the dimension of the pixel is handled.</p><p><img src=apple.jpeg alt></p><h3 id=setuppy>Setup.py</h3><p>In this section, I will try to answer the question that how to create a setup.py
 file which supports also entry point and can be executed without python shell.
 Setup.py file is used to define the python package metadata and its installation
 instructions.</p><pre><code class=language-python>from setuptools import setup, find_packages

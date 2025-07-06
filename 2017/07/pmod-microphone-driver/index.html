@@ -7,7 +7,7 @@ communication. This module should be added to main FPGA code and you should make
 the connections required. clk/16 sample rate is succeeded for the microphone.
 clk input frequency should select according to required sampling rate for the
 microphone. SS can be used as out enable also. You can ask any question directly
-to me if you have a problem with the driver. See you&mldr;</p><p><img src=/images/pasted-0.png alt="pmod mic"></p><pre><code class=language-verilog>`timescale 1ns / 1ps
+to me if you have a problem with the driver. See you&mldr;</p><p><img src=pasted-0.png alt="pmod mic"></p><pre><code class=language-verilog>`timescale 1ns / 1ps
 
 //ADCS747x 1-MSPS, 12-Bit, 10-Bit, and 8-Bit A/D Converters
 
@@ -18,7 +18,7 @@ module pmodMic3(
     output reg ss,
     output reg [15:0] out
     );
-    
+
 reg [31:0] clkCounter;
 reg [15:0] outBuffer;
 assign sck = clk;
@@ -44,7 +44,7 @@ always @(posedge clk)
             end
 
     end
-        
+
 always @(negedge clk)
     begin
         if (clkCounter == 16)
@@ -55,9 +55,9 @@ always @(negedge clk)
           begin
             ss &lt;= 1'b0;
           end
-    end 
-    
+    end
 
- 
+
+
 endmodule
 </code></pre><p><a href=https://github.com/mozanunal/PmodMIC3_Driver>Download from here</a></p></div></article></main><footer><p>&copy; 2025 M.Ozan Unal.</p></footer><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/highlight.js@11.11.0/styles/github.min.css media="(prefers-color-scheme: light)"><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/highlight.js@11.11.0/styles/github-dark.min.css media="(prefers-color-scheme: dark)"><script src=https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.11.1/build/highlight.min.js></script><script>hljs.highlightAll()</script></body><script async src="https://www.googletagmanager.com/gtag/js?id=G-007KSW65JL"></script><script>var dnt,doNotTrack=!1;if(!1&&(dnt=navigator.doNotTrack||window.doNotTrack||navigator.msDoNotTrack,doNotTrack=dnt=="1"||dnt=="yes"),!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-007KSW65JL")}</script></html>

@@ -21,7 +21,7 @@ bu mining işine girdi. Projemin asıl amacı ona anlık olarak kazandığı par
 gösterebilecek bir sistem yapmaktı. Proje böyle başladı yani :). Bu projede
 kapsamında yaptığım; gerçek zamanlı olarak bu programın web apisini kullanarak
 bir miner&rsquo;ın kazandığı parayı ve o andaki bitcoin kurunu çekip 1 inchlik oled
-ekranda gösteren bir sistem.</p><p><img src=/images/btc1.jpg alt=btc1></p><p>Bu proje ESP8266 modülleri kullanarak gerçekleştirildi. Bildiğiniz üzere minik
+ekranda gösteren bir sistem.</p><p><img src=btc1.jpg alt=btc1></p><p>Bu proje ESP8266 modülleri kullanarak gerçekleştirildi. Bildiğiniz üzere minik
 bir wifi modulü. Bitcoin idnizi girerek yazdığım kodu derlerseniz direk olarak
 bilgilerinize ulaşabilirsiniz. ESP8266 minik bir oled ekranı kontrol ederek
 aldığı anlık kur datasını, kullanıcının toplam bitcoinini ve dolar karşılığını
@@ -62,9 +62,9 @@ almak için aşağıdaki fonksiyonu yazdım.</p><pre><code class=language-cpp>St
     http.begin(url);  //Specify request destination
     int httpCode = http.GET(); //Send the request
     Serial.print(&quot;\n Received http code &quot;);
-    Serial.println(httpCode);     
+    Serial.println(httpCode);
     if (httpCode &gt; 0) //Check the returning code
-    { 
+    {
       Serial.println(&quot;HTTP OK&quot;);
       payload = http.getString();   //Get the request response payload
       Serial.println(payload);      //Print the response payloa
@@ -83,7 +83,7 @@ dönüştürülüyor. Daha sonrasında kur bilgisi aşağıdaki fonksiyon kullan
 Bizim için güncel bitcoin kuru.</p><pre><code class=language-cpp>double getCurrency()
 {
     JsonObject&amp; root_Currency = jsonBuffer_Currency.parseObject( getJsonFromUrl(url_Currency) );
-    if (root_Currency.success()) 
+    if (root_Currency.success())
     {
       double currency = root_Currency[&quot;USD&quot;][&quot;last&quot;];
       return currency;
@@ -98,13 +98,13 @@ kullanılıyor. Bitcoin cüzdanı ID&rsquo;si ile request yapıldığında olduk
 obje dönüyor. Aşağıdaki gibi bir parçalama işlemiyle şu ana kadar kazanılan para
 bitcoin olarak çekiliyor. Bitcoin değeri ile kur çarpılarak dolar karşılığı da
 hesaplanıyor.</p><pre><code class=language-cpp>double getTotalBTC(const char *BitCoinWallet)
-{     
+{
   //Setup URLs
   strcpy( url_Balence, url_Balance_base );
   strcat( url_Balence, BitCoinWallet );
   JsonObject&amp; root_Balance = jsonBuffer_Balance.parseObject( getJsonFromUrl(url_Balence) );
   double total_balance_btc = 0.0;
-  if (root_Balance.success()) 
+  if (root_Balance.success())
   {
     double balances[8];
     int algos[8];
@@ -121,11 +121,11 @@ hesaplanıyor.</p><pre><code class=language-cpp>double getTotalBTC(const char *B
 
   return total_balance_btc;
 }
-</code></pre><p><img src=/images/btc2.jpg alt="Bitcoin Dashboard"></p><h4 id=verilerin-ekranda-gösterilmesi>Verilerin ekranda gösterilmesi</h4><p>Çekilen veriler aşağıdaki fonksiyon yardımıyla ekranda sırasıyla gösteriliyor.
+</code></pre><p><img src=btc2.jpg alt="Bitcoin Dashboard"></p><h4 id=verilerin-ekranda-gösterilmesi>Verilerin ekranda gösterilmesi</h4><p>Çekilen veriler aşağıdaki fonksiyon yardımıyla ekranda sırasıyla gösteriliyor.
 Her bir frame 2 saniye ekranda durup sonraki frame geçecek şekilde bir yapı
 kurdum.</p><pre><code class=language-cpp>void frameLoop(double currency, double totol_balance_btc, double total_balance)
 {
-  
+
   //currency
   delay(2000);
   char currency_line[30];
@@ -140,7 +140,7 @@ kurdum.</p><pre><code class=language-cpp>void frameLoop(double currency, double 
   // total dollar
   delay(2000);
   char total_balance_line[30];
-  dtostrf(total_balance,0, 8, total_balance_line); 
+  dtostrf(total_balance,0, 8, total_balance_line);
   sprintf(total_balance_line,&quot;%s %s&quot;, total_balance_line, &quot; $&quot;);
   display.clear();
   display.drawString(0 , 0,  &quot;Total:&quot;);
@@ -157,7 +157,7 @@ kurdum.</p><pre><code class=language-cpp>void frameLoop(double currency, double 
   display.drawString(0 , 0,  &quot;Total:&quot;);
   display.drawString(0 , 20, totol_balance_btc_line);
   display.display();
-  
+
 }
 </code></pre><p><em>Şimdilik bu proje için yazacaklarım bu kadar. Ayrıntılı bilgi için mesaj
 atabilirsiniz. Görüşmek üzere.</em></p></div></article></main><footer><p>&copy; 2025 M.Ozan Unal.</p></footer><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/highlight.js@11.11.0/styles/github.min.css media="(prefers-color-scheme: light)"><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/highlight.js@11.11.0/styles/github-dark.min.css media="(prefers-color-scheme: dark)"><script src=https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.11.1/build/highlight.min.js></script><script>hljs.highlightAll()</script></body><script async src="https://www.googletagmanager.com/gtag/js?id=G-007KSW65JL"></script><script>var dnt,doNotTrack=!1;if(!1&&(dnt=navigator.doNotTrack||window.doNotTrack||navigator.msDoNotTrack,doNotTrack=dnt=="1"||dnt=="yes"),!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-007KSW65JL")}</script></html>
