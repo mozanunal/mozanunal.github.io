@@ -11,6 +11,9 @@ buildDrafts: false
 buildFuture: false
 buildExpired: false
 googleAnalytics: "G-007KSW65JL"
+outputs:
+  home:    [HTML, RSS]
+  section: [HTML, RSS]
 
 params:
   # The author's name, used in the footer.
