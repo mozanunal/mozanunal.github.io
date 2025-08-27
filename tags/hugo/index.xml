@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hugo on mozanunal.com</title>
+    <link>https://mozanunal.com/tags/hugo/</link>
+    <description>Recent content in Hugo on mozanunal.com</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <lastBuildDate>Tue, 26 Aug 2025 22:45:54 +0300</lastBuildDate>
+    <atom:link href="https://mozanunal.com/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Introducing Hugo Classless: A Theme for Any Style</title>
+      <link>https://mozanunal.com/2025/08/hugo-classless/</link>
+      <pubDate>Tue, 26 Aug 2025 22:45:54 +0300</pubDate>
+      <guid>https://mozanunal.com/2025/08/hugo-classless/</guid>
+      <description>Announcing a new Hugo theme built on the &amp;lsquo;classless&amp;rsquo; philosophy. Learn how it uses pure semantic HTML to let you plug and play any classless CSS framework like Pico.css, Water.css, and more, and see it in action with an interactive demo.</description>
+    </item>
+  </channel>
+</rss>

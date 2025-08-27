@@ -6,8 +6,15 @@
     <description>Recent content in Posts on mozanunal.com</description>
     <generator>Hugo</generator>
     <language>en-US</language>
-    <lastBuildDate>Sun, 08 Jun 2025 18:44:27 +0300</lastBuildDate>
+    <lastBuildDate>Tue, 26 Aug 2025 22:45:54 +0300</lastBuildDate>
     <atom:link href="https://mozanunal.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Introducing Hugo Classless: A Theme for Any Style</title>
+      <link>https://mozanunal.com/2025/08/hugo-classless/</link>
+      <pubDate>Tue, 26 Aug 2025 22:45:54 +0300</pubDate>
+      <guid>https://mozanunal.com/2025/08/hugo-classless/</guid>
+      <description>Announcing a new Hugo theme built on the &amp;lsquo;classless&amp;rsquo; philosophy. Learn how it uses pure semantic HTML to let you plug and play any classless CSS framework like Pico.css, Water.css, and more, and see it in action with an interactive demo.</description>
+    </item>
     <item>
       <title>Sllm.nvim v0.2.0: On-the-fly Tools and a CLI-First Philosophy</title>
       <link>https://mozanunal.com/2025/06/sllm.nvim.v020/</link>
