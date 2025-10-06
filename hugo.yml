@@ -60,9 +60,6 @@ menu:
     - name: 'Papers'
       pageRef: '/papers'
       weight: 40
-    - name: 'Contact'
-      pageRef: '/contact'
-      weight: 50
 
 markup:
   goldmark:

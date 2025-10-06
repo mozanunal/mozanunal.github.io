@@ -1,0 +1,52 @@
+
+name: scheduled-site-deployment
+
+on:
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+  # Triggers the workflow at 03:00 UTC on every Sunday
+  schedule:
+    - cron: '0 3 * * 0'
+
+# Set permissions for the GITHUB_TOKEN to allow deployment
+permissions:
+  contents: write
+
+jobs:
+  deploy-site:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout source repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # Fetches all history for .GitInfo and .Lastmod
+          submodules: recursive # <-- This line fetches your Hugo theme(s)
+
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: 'latest'
+          extended: true
+
+      - name: Download GH Card Images
+        # Run the command from your Makefile to get the latest images
+        run: make download_ghcard_images
+
+      - name: Build with Hugo
+        # Run the 'build' command from your Makefile
+        run: make build
+
+      - name: Deploy to public branch
+        # This action handles the git clone, commit, and push automatically
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          # The branch you want to deploy to
+          publish_branch: public
+          # The directory containing the built website
+          publish_dir: ./public
+          # Automatically create the CNAME file
+          cname: mozanunal.com
