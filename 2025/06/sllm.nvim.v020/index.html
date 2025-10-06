@@ -1,0 +1,51 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=color-scheme content="light dark"><meta name=description content="An example site for the clean and configurable Hugo Classless theme."><link href=/2025/06/sllm.nvim.v020/ rel=alternate type=application/rss+xml title=mozanunal.com><link id=theme-style rel=stylesheet href=/css/classless.20c8e211f6768ba295effc3e101a31bfe248db7295bb122355bdf893c6cee731.css integrity="sha256-IMjiEfZ2i6KV7/w+EBoxv+JI23KVuxIjVb34k8bO5zE="><style>pre code,code{-webkit-text-size-adjust:100%;text-size-adjust:100%}img{display:block;margin-left:auto;margin-right:auto}figcaption{display:block;margin-left:auto;margin-right:auto}nav{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;overflow:visible;font-size:1.4rem}nav ul{display:flex;list-style:none;padding:0;margin:0;gap:.5rem}</style><link rel=stylesheet href=/css/syntax-light.min.d1e9974bf1fe0f3bfae6a7af3a04c1e749276b8efbbf6d3397998585f82443f0.css media="(prefers-color-scheme: light)"><link rel=stylesheet href=/css/syntax-dark.min.22964c63865be9217cedda7ac3dbd0143f8f41b3a0f681ef71e845b18a33a4f3.css media="(prefers-color-scheme: dark)"><title>Sllm.nvim v0.2.0: On-the-fly Tools and a CLI-First Philosophy | mozanunal.com</title><link rel=icon href=/favicon.svg type=image/svg+xml><link rel="shortcut icon" href=/favicon.ico><link rel=apple-touch-icon href=/apple-touch-icon.png></head><body><header><nav><ul><li><strong>mozanunal.com</strong></li></ul><ul><li><a href=/>Home</a></li><li><a href=/posts/>Posts</a></li><li><a href=/projects/>Projects</a></li><li><a href=/papers/>Papers</a></li></ul></nav></header><main><article><h1>Sllm.nvim v0.2.0: On-the-fly Tools and a CLI-First Philosophy</h1><p><em>June 8, 2025</em></p><div><p>I&rsquo;m thrilled to announce the v0.2.0 release of
+<a href=https://github.com/mozanunal/sllm.nvim>mozanunal/sllm.nvim</a> – a thin Neovim
+wrapper around Simon Willison’s amazing <code>llm</code> CLI. This release introduces
+powerful new features, most notably the ability to define LLM tools on-the-fly
+from your code, and further refines the plugin&rsquo;s core philosophy.</p><p>The Neovim AI plugin space is indeed bustling! A fair question for any new entry
+is: where does it fit? This post aims to answer that by exploring the philosophy
+behind <code>sllm.nvim</code> and detailing what&rsquo;s new in v0.2.0.</p><h3 id=why-sllmnvim-the-philosophy-of-a-focused-co-pilot>Why <code>sllm.nvim</code>? The Philosophy of a Focused Co-pilot</h3><p><code>sllm.nvim</code> isn&rsquo;t designed to be a replacement for feature-rich plugins like
+<code>CodeCompanion.nvim</code> or <code>Copilot.nvim</code>, but a focused alternative built on a
+distinct philosophy. It was born from the desire to eliminate the constant
+context-switching to web UIs, by bringing the power of the <code>llm</code> CLI and its
+rich context management directly into the editor.</p><p>The philosophy is built on four key principles:</p><ol><li><p><strong>On-the-fly Function Tools: A Game-Changer</strong> This is perhaps the most
+significant differentiator. With <code>&lt;leader>sF</code>, you can visually select a
+Python function in your buffer and <strong>register it instantly as a tool for the
+LLM to use</strong> in the current conversation. No pre-configuration is needed.
+This is incredibly powerful for interactive development:</p><ul><li><strong>Ad-hoc Data Processing:</strong> Have the LLM use your own function to parse a
+log file or reformat a data structure.</li><li><strong>Live Codebase Interaction:</strong> Let the LLM use a function from your project
+to query a database or check an application&rsquo;s state. This dynamic, ad-hoc
+workflow provides a level of integration that is unique to <code>sllm.nvim</code>.</li></ul></li><li><p><strong>Radical Simplicity: It&rsquo;s a Wrapper, Not a Monolith</strong> <code>sllm.nvim</code> is a thin
+wrapper around the <code>llm</code> CLI (~500 lines of Lua). It delegates all heavy
+lifting (API calls, model management, conversation history, and tool
+integration) to Simon Willison&rsquo;s robust, battle-tested, and
+community-maintained tool. This keeps <code>sllm.nvim</code> lightweight, transparent,
+and easy to maintain.</p></li><li><p><strong>Instant Access to an Entire CLI Ecosystem</strong> By building on <code>llm</code>, this
+plugin instantly inherits its vast and growing plugin ecosystem.</p><ul><li>Want to use OpenRouter&rsquo;s 300+ models? Just run
+<code>llm install llm-openrouter</code>.</li><li>Need to feed a PDF manual or a GitHub repo into context? There are <code>llm</code>
+plugins for that. This extensibility comes &ldquo;for free&rdquo; and is managed at the
+<code>llm</code> level, not within the Neovim plugin.</li></ul></li><li><p><strong>Explicit Control: You Are the Co-pilot, Not the Passenger</strong> <code>sllm.nvim</code>
+believes in a co-pilot model where you are always in control. You explicitly
+provide context: the current file (<code>&lt;leader>sa</code>), diagnostics (<code>&lt;leader>sd</code>),
+the output of a command like <code>git diff</code> (<code>&lt;leader>sx</code>), a URL, or a new
+function tool (<code>&lt;leader>sF</code>). The plugin won&rsquo;t guess your intentions,
+ensuring a predictable, reliable, and secure interaction every time.</p></li></ol><h3 id=whats-new-in-v020>What&rsquo;s New in v0.2.0?</h3><p>This release brings a host of improvements that double down on the core
+philosophy of deep <code>llm</code> integration and user control.</p><h4 id=headlining-features>Headlining Features</h4><ul><li><strong>Register Tools (Functions) On-The-Fly (<code>&lt;leader>sF</code>) <code>(PR #41)</code></strong>: As
+detailed above, you can now visually select a Python function and make it
+available to the LLM as a tool for the current session.</li><li><strong>LLM Tool Context Integration (<code>llm -T</code>) <code>(PR #37)</code></strong>: You can now browse
+your installed <code>llm</code> tools (from the CLI plugin ecosystem) and add them to the
+context for the LLM to use, all from within Neovim.</li></ul><h4 id=ui-and-ux-enhancements>UI and UX Enhancements</h4><ul><li><strong>Configurable Window Type <code>(PR #33)</code></strong>: Choose between <code>"vertical"</code>,
+<code>"horizontal"</code>, or <code>"float"</code> for the LLM buffer to suit your workflow.</li><li><strong>UI Picker & Notifier Support <code>(PR #35)</code></strong>: Integrates with <code>mini.nvim</code>
+(pick/notify) and <code>snacks.nvim</code> (picker/notifier) for a more native and
+configurable UI experience.</li><li><strong>Better Window UI <code>(PR #43)</code></strong>: The LLM buffer now displays the model name
+and an indicator for running processes, providing more clarity at a glance.</li><li><strong>Visual Selection for Prompts <code>(PR #51)</code></strong>: You can now visually select text
+and use <code>&lt;leader>ss</code> to send it along with your main prompt, making it easier
+to focus the LLM&rsquo;s attention.</li></ul><h4 id=core-improvements>Core Improvements</h4><ul><li><strong><code>llm</code> Default Model Support <code>(PR #34)</code></strong>: The plugin can now use the default
+model configured in your <code>llm</code> CLI setup, simplifying configuration.</li><li><strong><code>vim.ui.input</code> Wrappers <code>(PR #36)</code></strong>: Better support for different input
+handlers for a more consistent experience.</li><li><strong>Lua Docs <code>(PR #50)</code></strong>: Added documentation for better maintainability and to
+help contributors understand the codebase.</li><li><strong>More Concise Preface & Agent Opinions <code>(PR #55)</code></strong>: The project&rsquo;s philosophy
+documentation has been updated and clarified.</li></ul><p>For a complete list of changes, check out the
+<a href=https://github.com/mozanunal/sllm.nvim/compare/v0.1.0...v0.2.0>Full Changelog: v0.1.0 -> v0.2.0</a>.</p><h3 id=get-a-taste>Get a Taste</h3><p>Here&rsquo;s a quick look at the on-the-fly function registration in action:</p><p><img src=https://github.com/mozanunal/sllm.nvim/raw/main/assets/workflow.gif alt="sllm.nvim on-the-fly function tool demonstration"></p><h3 id=try-it-out>Try It Out!</h3><p>If this CLI-first, co-pilot-centric philosophy resonates with you, I&rsquo;d love for
+you to give <code>sllm.nvim</code> a try.</p><p>You can find the plugin, a full README, and installation instructions on GitHub:
+<a href=https://github.com/mozanunal/sllm.nvim><strong>mozanunal/sllm.nvim</strong></a></p><p>Your feedback, suggestions, and bug reports are invaluable. Let me know what you
+think! Thanks for reading.</p></div></article></main><footer><p>&copy; 2025 M.Ozan Unal.</p></footer></body><link rel=stylesheet href=/libs/katex/katex.min.v0.16.9.css><script defer src=/libs/katex/katex.min.v0.16.9.js></script><script defer src=/libs/katex/auto-render.v0.16.9.js></script><script>document.addEventListener("DOMContentLoaded",function(){renderMathInElement(document.body,{delimiters:[{left:"$$",right:"$$",display:!0},{left:"\\[",right:"\\]",display:!0},{left:"\\(",right:"\\)",display:!1},{left:"$",right:"$",display:!1}],throwOnError:!1})})</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-007KSW65JL"></script><script>var dnt,doNotTrack=!1;if(!1&&(dnt=navigator.doNotTrack||window.doNotTrack||navigator.msDoNotTrack,doNotTrack=dnt=="1"||dnt=="yes"),!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-007KSW65JL")}</script></html>

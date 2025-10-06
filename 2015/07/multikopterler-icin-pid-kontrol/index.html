@@ -1,0 +1,54 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=color-scheme content="light dark"><meta name=description content="An example site for the clean and configurable Hugo Classless theme."><link href=/2015/07/multikopterler-icin-pid-kontrol/ rel=alternate type=application/rss+xml title=mozanunal.com><link id=theme-style rel=stylesheet href=/css/classless.20c8e211f6768ba295effc3e101a31bfe248db7295bb122355bdf893c6cee731.css integrity="sha256-IMjiEfZ2i6KV7/w+EBoxv+JI23KVuxIjVb34k8bO5zE="><style>pre code,code{-webkit-text-size-adjust:100%;text-size-adjust:100%}img{display:block;margin-left:auto;margin-right:auto}figcaption{display:block;margin-left:auto;margin-right:auto}nav{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;overflow:visible;font-size:1.4rem}nav ul{display:flex;list-style:none;padding:0;margin:0;gap:.5rem}</style><link rel=stylesheet href=/css/syntax-light.min.d1e9974bf1fe0f3bfae6a7af3a04c1e749276b8efbbf6d3397998585f82443f0.css media="(prefers-color-scheme: light)"><link rel=stylesheet href=/css/syntax-dark.min.22964c63865be9217cedda7ac3dbd0143f8f41b3a0f681ef71e845b18a33a4f3.css media="(prefers-color-scheme: dark)"><title>[TR] Multikopterler için PID kontrol | mozanunal.com</title><link rel=icon href=/favicon.svg type=image/svg+xml><link rel="shortcut icon" href=/favicon.ico><link rel=apple-touch-icon href=/apple-touch-icon.png></head><body><header><nav><ul><li><strong>mozanunal.com</strong></li></ul><ul><li><a href=/>Home</a></li><li><a href=/posts/>Posts</a></li><li><a href=/projects/>Projects</a></li><li><a href=/papers/>Papers</a></li></ul></nav></header><main><article><h1>[TR] Multikopterler için PID kontrol</h1><p><em>July 29, 2015</em></p><div><p><strong>Herkese Merhabalar,</strong></p><p>Bu yazımda PID kontrol algoritmalarından bahsetmek istiyorum. Bu yazıyı yazmamın
+2 sebebi var. PID algoritmaları hakkında bir çok yazı okudum fakat coğu akademik
+ve karmaşık yazılar. Benim amacım anlaşılırlığı ve ayrıntıyı dengeli bir şekilde
+maximum değerlerinde kullanmak. İkincisi ise bu algoritmanın özel olarak
+multikopterlerde kullanımını basit bir şekilde açıklayan bir yazıya rastlamadım.
+Bu yüzden bu yazıyı yazmaya karar verdim.</p><p>Bir otopilotun en temel 2 bileşeni hava aracının yönelimini tespit eden IMU
+sensörü ve PID algoritmasıdır. IMU sensörü içinde bir kaç sensör barındırır ve
+amacı hava aracının 3 boyutlu uzaydaki yönelimini bulmaktır. IMU konusundan
+<a href=https://mozanunal.com/2014/11/imu-aclarnn-3-boyutlu-olarak/>bu yazımda bahsetmiştim</a>.
+PID algoritmasının görevi ise temel olarak şöyledir: Yönelimi (3 eksendeki yere
+göre açılar) sensörler üzerinden alır, istenen açıları da kullanıcıdan alır. Bu
+ikisi arasındaki farkı en düşük seviyeye düşürmeyi amaçlar. İşte PID
+algoritmasının görevi bu farkı minimuma indirmek için gerekli motor hız
+değerlerini hesaplamaktır.</p><p><img src=PID-feedback-loop-v1.png alt></p><p>Multikopterler için her 3 için ayrı ayrı PID kontrol algoritmaları uygulanır.
+İstenilen değer ile şu anki değerin farkı alınarak hata elde edilir. PID
+algoritması bu hata değerlerine uygulandıktan sonra motorların çıkış değerleri
+hesaplanır. Sonra bu verilen çıkış hata değişkenini bulmak üzere tekrar girişe
+yönlendirilir. Böylece döngü tamamlanmış olur. PID,  Proportional, Integral ve
+Derivative olmak üzere 3 farklı algoritmanın uygulanmasıyla elde edilir. Örnekle
+açıklamak gerekirse: Multikopterimizin pitch açısı için kullnılan PID kontrol
+algoritmasını ele alalım. <strong>P algoritması</strong>ndan gelen değer, multikopterimizin
+şu anki pitch açısı ile kontrol edenin istediği pitch açısı arasındaki farka
+yani anlık hataya bağlıdır. <strong>I algoritması</strong>ndan gelen değer, pitch açısının
+geçmiş hatalarının toplamına bağlıdır. D algoritmasından gelen değer ise gelecek
+açı hatalarının tahminine bağlıdır.</p><p><img src=https://www.pcbheaven.com/wikipages/images/pidtheory_1313344224.png alt></p><p>**Bu algoritmalardan elde edilen değerler belli katsayılarla(Kp, Ki, Kd)
+çarpılarak son çıkış değişkeni elde edilir. Bu katsayılara PID katsayıları
+denir. PID tuning olayı bu katsayıların uygun stabiliteyi sağlayacak şekilde
+ayarlanmasıdır.  **Simdi bu 3 PID algoritmasının nasıl çalıştığını daha
+ayrıntılı inceleyelim.</p><p><strong>Proportional</strong><br>Proportional, ana kontrol algoritmamızdır. Diğer katsayılar 0 olsa bile sadece
+bu algoritmayla (stabilite düşük de olsa) hover yapabilir. Proportional, hava
+aracımızın şu anki açı hatasını baz alarak ilerler. Basitçe anlatmak gerekirse
+Kp katsayısı ne kadar yüksek olursa multikopter o kadar fazla kendini düzeltmeye
+çalışır. Eğer olması gerekenden yüksek Kp katsayısı seçilirse kendini fazla
+düzeltecek ve &ldquo;overshoot&rdquo; denen kavram ortaya çıkacaktır. Multikopter oldukça
+fazla duyarlı olacak ve yüksek frekansta titremeye başlayacaktır.</p><p><img src=https://www.pcbheaven.com/wikipages/images/pidtheory_1313333018.jpg alt></p><p><strong>Integral</strong><br>Integral, geçmiş hataların toplamını baz alarak ilerleyen algoritmadır. P
+genellikle hatayı yok etmek için tek başına yeterli değildir. Basitçe, istenen I
+değeri hataların zamanla çarpılıp toplanmasıyla elde edilir. Yani hatanın
+sayısal integrali hesaplanmış olur. I algoritması sayesinde multikopterimizin
+tam istediğimiz değere gelme özelliği artar fakat aynı zamanda istenilen değere
+gelme zamanı artar. Özellikle düzensiz rüzgarda ve ağırlık merkezi bozukluğu,
+tribulans gibi olumsuz etkenleri yok etmek için oldukça yararlıdır. Ki katsayısı
+artırıldığında daha yumuşak ve daha az agresif bir uçuş karakteristiği elde
+edilir. Yüksek Ki yine titreşimlere neden olur ama daha düşük frekanstadır
+böylece Kp&rsquo;den kaynaklanan sorundan ayrılabilir.</p><p><img src=https://www.pcbheaven.com/wikipages/images/pidtheory_1313341391.jpg alt></p><p><strong>Derivative</strong><br>D parametresi gelecek hata tahminini baz alan bir parametredir. Etkisini ise
+istenilen açı değeri ile şuanki açı değeri arasındaki bir yay olarak
+düşünebiliriz. Görevi şokları absorbe ederek sonradan oluşabilecek hataları,
+&ldquo;overshootları&rdquo; baştan engellemektir. Bazı uçuş kontrolcüler bu parametreyi
+kullanmaz(Örnek: KK 2.0).</p><p><strong>PID Tuning İpuçları</strong></p><p>Ayarlamaya P parametresinden başlanır. P parametresini ayarlamak için düşük bir
+değerden başlanır ve titreşim ve osilasyonlar görmeye başlayana kadar artırılır.
+Düşük frekanstaki osilasyonları Ki parametresine, Yüksek frekanstakiler is
+genellikle Kp veya Kd bağlıdır. Eğer aracınızda titreşimler görüyorsanız Kp
+parametresini azaltmak için acele etmeyin. İlk olarak Kd parametresini artırmayı
+deneyebilirsiniz.</p><p>Akrobasi modu için;</p><ul><li>Birazcık yüksek P</li><li>Birazcık düşük I</li><li>D artırılır.</li></ul><p>Yumuşak akıcı uçuş için;</p><ul><li>Birazcık düşük P</li><li>Birazcık yüksek I</li><li>D azaltılır.</li></ul><p>Son olarak farklı PID ayarlarının stabiliteye etkisi hakkında açıklayıcı bir
+video göz atmanızı tavsiye ederim. Tekrar görüşmek üzere.</p><div style=position:relative;padding-bottom:56.25%;height:0;overflow:hidden><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading=eager referrerpolicy=strict-origin-when-cross-origin src="https://www.youtube.com/embed/YNzqTGEl2xQ?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style=position:absolute;top:0;left:0;width:100%;height:100%;border:0 title="YouTube video"></iframe></div></div></article></main><footer><p>&copy; 2025 M.Ozan Unal.</p></footer></body><link rel=stylesheet href=/libs/katex/katex.min.v0.16.9.css><script defer src=/libs/katex/katex.min.v0.16.9.js></script><script defer src=/libs/katex/auto-render.v0.16.9.js></script><script>document.addEventListener("DOMContentLoaded",function(){renderMathInElement(document.body,{delimiters:[{left:"$$",right:"$$",display:!0},{left:"\\[",right:"\\]",display:!0},{left:"\\(",right:"\\)",display:!1},{left:"$",right:"$",display:!1}],throwOnError:!1})})</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-007KSW65JL"></script><script>var dnt,doNotTrack=!1;if(!1&&(dnt=navigator.doNotTrack||window.doNotTrack||navigator.msDoNotTrack,doNotTrack=dnt=="1"||dnt=="yes"),!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-007KSW65JL")}</script></html>

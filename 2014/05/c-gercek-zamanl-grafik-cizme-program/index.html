@@ -1,0 +1,73 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=color-scheme content="light dark"><meta name=description content="An example site for the clean and configurable Hugo Classless theme."><link href=/2014/05/c-gercek-zamanl-grafik-cizme-program/ rel=alternate type=application/rss+xml title=mozanunal.com><link id=theme-style rel=stylesheet href=/css/classless.20c8e211f6768ba295effc3e101a31bfe248db7295bb122355bdf893c6cee731.css integrity="sha256-IMjiEfZ2i6KV7/w+EBoxv+JI23KVuxIjVb34k8bO5zE="><style>pre code,code{-webkit-text-size-adjust:100%;text-size-adjust:100%}img{display:block;margin-left:auto;margin-right:auto}figcaption{display:block;margin-left:auto;margin-right:auto}nav{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;overflow:visible;font-size:1.4rem}nav ul{display:flex;list-style:none;padding:0;margin:0;gap:.5rem}</style><link rel=stylesheet href=/css/syntax-light.min.d1e9974bf1fe0f3bfae6a7af3a04c1e749276b8efbbf6d3397998585f82443f0.css media="(prefers-color-scheme: light)"><link rel=stylesheet href=/css/syntax-dark.min.22964c63865be9217cedda7ac3dbd0143f8f41b3a0f681ef71e845b18a33a4f3.css media="(prefers-color-scheme: dark)"><title>[TR] C# Gerçek Zamanlı Grafik Çizme Programı | mozanunal.com</title><link rel=icon href=/favicon.svg type=image/svg+xml><link rel="shortcut icon" href=/favicon.ico><link rel=apple-touch-icon href=/apple-touch-icon.png></head><body><header><nav><ul><li><strong>mozanunal.com</strong></li></ul><ul><li><a href=/>Home</a></li><li><a href=/posts/>Posts</a></li><li><a href=/projects/>Projects</a></li><li><a href=/papers/>Papers</a></li></ul></nav></header><main><article><h1>[TR] C# Gerçek Zamanlı Grafik Çizme Programı</h1><p><em>May 27, 2014</em></p><div><p><strong>Herkese Merhabalar!</strong><br><a href=https://github.com/mozanunal/serialPortGrapher>Programın kaynak koduna buradan ulaşabilirsiniz.</a><br>İkinci yazımda C# ile gerçek zamanlı grafik çizdirme uygulamasından
+bahsedeceğim. Bu uygulamada C# programlama dili ve Microsoft Visual Studio 2010
+kullanılmıştır. C# ile grafik çizmemize olanak sağlayan zed graph
+kütüphanesinden
+yararlanılmıştır.<a href=https://zedgraph.sourceforge.net/index.html>Bu kütüphaneyi buradan indirebilirsiniz</a>.
+Sistemin genel algoritmasına bakarsak şöyle çalışır; seri porttan veri okunur,
+veri aralardaki virgüllere göre parse edilip labellera aktarılır, Eklenen
+&ldquo;Timer&rdquo; öğesi ile timerın her periyodunda zaman belirten labela geçen zaman
+kadar eklenir böylece kaçıncı saniye olduğu tutulur, aynı zamanda timerın her
+bir periyodunda x değerleri zaman, y değerleri data noktaları olmak üzere
+grafiğe bir nokta eklenir. Şimdi çalışma şeklini daha ayrıntılı bir şekilde
+inceleyelim.</p><p>Mikrodenetleyici-bilgisayar iletişimi projelerinde olmazsa olmazlardan biri Seri
+porttan veri okumaktır. Bu sayede mikrodenetleyici ile iletişim kurabiliriz ve
+veri alışverişinde bulunabiliriz. Aynı zamanda bilgisayar kontrollü robotikte de
+komut vermek için  kullanılır. C# üzerinden serial port programı yazma işlemi
+oldukça kolaylaştırılmıştır. Seri port öğesi eklenir ve ayarları yapılır.
+Buradaki ayarlar veri transfer hızı hangi Com Portun okunacağının ayarı v.b.
+&ldquo;Save to text&rdquo; özelliği de gelen veriyi saklayıp sonra tekrar inceleme imkanı
+sunar.Asıl konumuz bu olmadığı için çok ayrıntıya girmiyorum zaten kolayca
+örnekleri bulunabilir.</p><p><img src=Ekran+Al%C4%B1nt%C4%B1s%C4%B1.png alt></p><p>İkinci kısım seri porttan alınan verinin uygun şekilde parçalandığı ve labellara
+aktarıldığı bölümdür. Bunun için &ldquo;Display Text&rdquo; isimli bir fonksiyon
+yazılmıştır. Bu fonksiyon ile gelen verinin her satırının şekli</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>$,data1,data2,data3
+</span></span></code></pre></div><p>olarak belirlenmiştir. Fonksiyonun algoritması şu şekildedir; gelen verinin ilk
+harfi &ldquo;$&rdquo; değilse veriyi işlemez, eğer ilk harfi oysa virgül sayısına
+bakar(Stringin içinden belli bir karakteri arama fonksiyonu kullanılmıştır.),
+eğer o da 3&rsquo;e eşit ise gelen veriyi virgüllere göre parçalar ve ilk kısım
+hariç("$") kalan veriyi, tek tek 3 ayrı labela aktarır böylece gelen data1,
+data2, data3 ayrı labellara aktarılmış olur.<br><img src=4.png alt></p><p>Grafik çizdirme kısmına geçmeden önce grafiği çizen timerı açan ve kapatan 2
+butondan bahsedeyim. Bunlar sayesinde grafik çizdirme başlatılır ve durdurulur.
+Yani butonların tıklama &ldquo;event"lerinde sadece <code>timer1.enable=true;</code> ve
+<code>timer1.enable=false</code> kodu vardır.(Tabi ayrı ayrı birinde true olan diğerinde
+false olan )</p><p><img src=Ekran+Al%C4%B1nt%C4%B1s%C4%B1565.png alt>
+Resimde altta eklediğimiz SeriPort ve timer1 öğesini görebilirsiniz.
+&ldquo;FileDiaglog&rdquo; öğeleri ise text dosyasına kaydetmek için ve bir text dostasını
+seri porttan yollamak için kullanılır.</p><p>ilk önce grafiğin ayarlarından başlayalım. Grafiğe bir çizim alanı yanı &ldquo;pane&rdquo;
+ekleyelim. Çizdiğimiz her şeyi hangi &ldquo;pane"e çizdiğimizi belirtmek zorundayız.
+Eksenlere isim koymamız ve daha bir sürü ayar yapmamız mümkün ama ben karışıklık
+yaratmamak adına sade bir grafik tercih ettim. ZedGraph kütüphanesi
+yapabileceğiniz diğer ayarlar ile çok farklı grafikler çizdirme imkanı sunar.
+Grafiğin altını doldurma, nokta grafiği, sütun ve daire grafiği gibi çeşit ve
+renk opsiyonları mevcuttur. Bu çeşitlerin bazılarına
+<a href=https://zedgraph.sourceforge.net/samples.html>buradan</a> ulaşabilirsiniz.</p><p><img src=Ekran+Al%C4%B1nt%C4%B1s%C4%B1-c6de55.png alt></p><p>Grafik ayarlarında önemli bir yerlerden biri de &ldquo;Point pair list"in ve &ldquo;Line
+item"ın belirlenmesidir. Çizilecek her eğri için birer tane bunlardan
+belirlenmelidir. &ldquo;RolingPointPairList&rdquo; seçilmesinin sebebi ise &ldquo;rolling&rdquo;
+olduğunda en fazla seçilen kadar(burada en fazla 40 nokta çifti) noktanın
+hafızada saklaması böylece bir süre sonra biriken noktaların bilgisayarda
+yavaşlama meydana getirmesinin engellenmesidir. Belli aralıklarla zaten grafik
+üstüne sağ tıklanarak resim olarak kaydetme opsiyonu da mevcuttur.</p><p><img src=3.png alt></p><p>Gelelim grafiği çizdirme kısmına. İlk önce grafiğe bir &ldquo;Timer&rdquo; öğesi eklenir ve
+periyodu 1000 ms(1 saniye) olarak belirlenir. Bu tamamen opsiyoneldir ne
+kadarlık zaman aralıklarında grafiğimize nokta eklenmesi istendiğine
+bağlıdır.İlk 3 satırdaki kodlar ile bir labelda şu anki saniyenin tutulması
+sağlanır(Zaman bizim x koordinatımız olduğu için anlık olarak kulanılması
+gereklidir). Sonraki kısımlar ise grafiğe nokta eklenmesi algoritmasıdır. Gelen
+verileri yukarıda parçalayıp labellara aktarmıştık burda ise o labellar ve zaman
+labelı kullanılarak nokta çifleri elde edilir. Nokta çiftleri, nokta listelerine
+aktarılır sonra bunlar birleştirilerek eğri çizilir.
+<code>myCurveOne = myPane.AddCurve(null, listPointsOne, Color.Blue, SymbolType.Circle)</code>
+bu satır ile eğrinin hangi &ldquo;pane"e çizileceği, rengi, noktaların gösteren sembol
+(yuvarlak,yıldız,kare), eğrinin altının dolu-boş olacağı belirlenir.  En alt
+kısımda grafik yenilerek yeni eğrinin çizilmesi graifğin gördüğümüz yerinin
+eğrimize paralel olarak uygun şekilde yer değiştirmesi sağlanır. Böylece
+Bilgisayara hiç değmeden grafiğin takibi otomatik olarak yapılmış olur.</p><p><img src=5.png alt></p><p>Aşağıda programımızın son hali bulunmaktadır. En kısa zamanda videosunu eklemeye
+çalışacağım. Görselleme, telemetri projelerinde ve bilgisayarla kontrol
+projelerinde en önemli noktalardan biridir(ya da pid, sensor test ederken).
+Programımız da bu ihtiyaca yönelik yazılmıştır. Arduino ve ya pic ile (ya da
+seri porttan haberleşebilen tüm işlemciler) rahatlıkla çalışabilecek bir
+uygulamadır. C# ile yapılan gerçek zamanlı (real time) uygulama eksikliğinden bu
+konuyu yapma ihtiyacı hissettim. Ben bu konuyu araştırırken bu uygulamayı gerçek
+zamanlı yapan ve sonra nasıl yapıldığını anlatan bir kaynak bulamamıştım.Umarım
+bu bilgiler işinize yarar. Paylaşımlarınızda kaynak belirtirseniz çok iyi olur
+:). Tekrar görüşmek üzere&mldr;</p><p><img src=Ekran+Al%C4%B1nt%C4%B1s%C4%B12.png alt></p><p><strong>Not: Sonradan programın derlenmiş halini de paylaştım indirmek isterseniz
+<a href=https://mozanunal.com/2014/12/serial-port-grapher/>buradaki yazıma</a> gitmeniz
+yeterli olacaktır.</strong></p></div></article></main><footer><p>&copy; 2025 M.Ozan Unal.</p></footer></body><link rel=stylesheet href=/libs/katex/katex.min.v0.16.9.css><script defer src=/libs/katex/katex.min.v0.16.9.js></script><script defer src=/libs/katex/auto-render.v0.16.9.js></script><script>document.addEventListener("DOMContentLoaded",function(){renderMathInElement(document.body,{delimiters:[{left:"$$",right:"$$",display:!0},{left:"\\[",right:"\\]",display:!0},{left:"\\(",right:"\\)",display:!1},{left:"$",right:"$",display:!1}],throwOnError:!1})})</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-007KSW65JL"></script><script>var dnt,doNotTrack=!1;if(!1&&(dnt=navigator.doNotTrack||window.doNotTrack||navigator.msDoNotTrack,doNotTrack=dnt=="1"||dnt=="yes"),!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-007KSW65JL")}</script></html>

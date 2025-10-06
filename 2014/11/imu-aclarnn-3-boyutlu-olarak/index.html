@@ -1,0 +1,49 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=color-scheme content="light dark"><meta name=description content="An example site for the clean and configurable Hugo Classless theme."><link href=/2014/11/imu-aclarnn-3-boyutlu-olarak/ rel=alternate type=application/rss+xml title=mozanunal.com><link id=theme-style rel=stylesheet href=/css/classless.20c8e211f6768ba295effc3e101a31bfe248db7295bb122355bdf893c6cee731.css integrity="sha256-IMjiEfZ2i6KV7/w+EBoxv+JI23KVuxIjVb34k8bO5zE="><style>pre code,code{-webkit-text-size-adjust:100%;text-size-adjust:100%}img{display:block;margin-left:auto;margin-right:auto}figcaption{display:block;margin-left:auto;margin-right:auto}nav{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;overflow:visible;font-size:1.4rem}nav ul{display:flex;list-style:none;padding:0;margin:0;gap:.5rem}</style><link rel=stylesheet href=/css/syntax-light.min.d1e9974bf1fe0f3bfae6a7af3a04c1e749276b8efbbf6d3397998585f82443f0.css media="(prefers-color-scheme: light)"><link rel=stylesheet href=/css/syntax-dark.min.22964c63865be9217cedda7ac3dbd0143f8f41b3a0f681ef71e845b18a33a4f3.css media="(prefers-color-scheme: dark)"><title>[TR] IMU Açılarının 3 Boyutlu Olarak Görsellenmesi | mozanunal.com</title><link rel=icon href=/favicon.svg type=image/svg+xml><link rel="shortcut icon" href=/favicon.ico><link rel=apple-touch-icon href=/apple-touch-icon.png></head><body><header><nav><ul><li><strong>mozanunal.com</strong></li></ul><ul><li><a href=/>Home</a></li><li><a href=/posts/>Posts</a></li><li><a href=/projects/>Projects</a></li><li><a href=/papers/>Papers</a></li></ul></nav></header><main><article><h1>[TR] IMU Açılarının 3 Boyutlu Olarak Görsellenmesi</h1><p><em>November 7, 2014</em></p><div><p><strong>Herkese Merhabalar!</strong></p><p>Bu yazımda size hava araçlarının en temel elektronik ekipmanı olan IMU
+modullerinden bahsetmek istiyorum. IMU modullerinin hayati önem taşımasının
+sebebi, modüllerin yönelim açılarını hesaplamak için kullanılmasıdır. En büyük
+yolcu uçağından, roketten en küçük bir quadrokoptere kadar tüm hava araçları
+stabil ve sağlıklı bir uçuş için bu modullerden birine sahip olmalıdırlar.</p><p>IMU ingilizcedeki &ldquo;Inertial Mesurament Unit&rdquo; kelime grubunun kısaltılmış
+halidir. IMU ile bir cismin uzaydaki 3 boyutlu yönelimi bulunabilir. 3 boyutlu
+yönelimi anlatmanın  en kolay yolu Euler Açılarını kullanmaktır. Havacılık
+sektöründe sıklıkla Euler açılarının özelleşmiş bir versiyonu olan &ldquo;Yaw, Pitch,
+Roll&rdquo; açıları kullanılmaktadır.</p><p><img src=rotations1.gif alt></p><p>Bir nesnenin uzaydaki yönelimini bulmak için 3 temel sensör kullanılır. Bunlar
+ivmeölçer, gyro ve magnometredir. Bu üç sensörün bir arada kullanılmasının
+nedeni şudur: İvme ölçer ile Pitch ve Roll açısı tespit edilebilir fakat hareket
+anında gürültü oluşur ve doğru bilgi elde edilemez, Gyro ise 3 eksendeki açısal
+hızları verir. Eğer ilk açı bilinmiyorsa sadece gyro ile şu anki açılar
+hesaplanamaz, sadece açısal hız üzerinden açısal açı değişimi hesaplanabilir.
+Gyronun ikinci kötü özelliği ise &ldquo;Drift&rdquo; özelliğidir. Gyro sabit durun bir
+cisimde bile küçük de olsa açısal hızlar hesaplar. Bu nedenle sadece Gyroya
+bağlı sistemlerde hesaplanan açılar yavaş yavaş kayar. Bunu engellemek için bazı
+filtreler kullanılır. Bu filtrelerin amacı Gyro üzerinden verileri alıp ivme
+ölçer üzerinden bu verileri düzeltmektir. Böylece drift engellenmiş olur ve
+sadece ivmeölçere bağlı olunmadığı için hareket halindeki gürültü sonuçlardan
+kurtulunmuş olur. Fakat ivmeölçer sadece pitch ve roll açılarını
+hesaplayabildiği için yaw eksenine referans olamaz. Yaw eksenine referans olması
+için kullanılan modül magnometredir. Bu sayede değişik algoritmalar ve filtreler
+kullanılarak gyro üzerinden hesaplanan açısal değişimler, pitch ve roll
+eksenlerinde ivmeölçer, yaw ekseninde ise magnometre tarafından düzeltilerek
+yönelim açılarının hesaplanması sağlanır.</p><p>Yaw, Pitch, Roll açıları yani Euler açıları bazı durumlarda 3 boyutlu yönelimi
+açıklamada yetersiz kalır. Özetlemek gerekirse rotasyonlar sonucu eğer eksenler
+üst üste gelirse özgürlük derecesi kaybı yaşanır. Rotasyon da 2 boyutlu uzaya
+sıkışmak zorunda kalır. Bu duruma Gimbal Lock denir. Gimbal Lock kavramının
+açıklandığı şu videoyu izleyebilirsiniz.</p><div style=position:relative;padding-bottom:56.25%;height:0;overflow:hidden><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading=eager referrerpolicy=strict-origin-when-cross-origin src="https://www.youtube.com/embed/zc8b2Jo7mno?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style=position:absolute;top:0;left:0;width:100%;height:100%;border:0 title="YouTube video"></iframe></div><p>İşte bu gimbal lock sorunu ortadan kaldırmak için 3 boyutlu yönelimi göstermek
+için yeni yöntemler bulunmuştur. Bunlardan başlıcaları &ldquo;Quaternion " ve "
+Direction Cosine Matrix&rdquo; yöntemleridir. Artık yönelimi göstermek için 3 açı
+yerine &ldquo;Quaternion"da 4 değişkenli bir vektör ve &ldquo;Direction Cosine Matrix"te
+3x3&rsquo;lük bir matris ve çok daha karışık algoritmalar kullanılır. IMU sensörlerin
+beraber çalışması için kullanılan bazı algoritmaları aşağıda kısa bilgilerle
+birlikte yazacağım.</p><p>Complementary Filter: Sabit bir ağırlıklı ortalama oranıyla gyro verileri ile
+referans verilerin ortalaması alınması yöntemidir. En basit algoritmadır.
+Genelde hobi amaçlı ve işin mantığını kavrama amaçlı uygulamalarda kullanılır.</p><p>Kalman Filter: Karmaşık bir algoritması vardır değişken ağırlıklı ortalama
+oranıyla hesaplama yapar, bu oranı hesaplamak için çok farklı yöntemler
+kullanabilir.</p><p>Mahony Madwick Filter: 3 sensörden alınan verilerle quaternion hesaplamak için
+kullanılan filtredir.</p><p>Direction Cosine Matrix: Basitçe yönelim vektörü ile 3 koordinat ekseni
+arasındaki açıların kosinüslerinden oluşan matristir.</p><p>Ben de bu anlattıklarımı somutlaştırmak adına İmu açılarının 3 boyutlu
+görsellenmesi üzerine bir proje yaptım. Bu projede ne yazık ki Imu değerlerini
+kendim hesaplamadım FreeIMU kütüphanesini kullandım. Görselleme Gimbal Lock
+sorunundan açınmak için Quaternion kullanılarak yapıldı. Sensör olarak MPU6050
+sensörünü kullandım. İçinde 3 eksen gyro ve 3 eksen ivme ölçer bulundurmakta. 3
+boyutlu görselleme için processing programa dilinde yazılan bir uygulamayı
+kullandım.</p><p><a href="https://drive.google.com/file/d/0B5j__Lyt9ozbeUVqNHNkOFQyNjQ/view?usp=sharing">Projenin
+kaynak kodunu buradan indirebilirsiniz.</a></p><div style=position:relative;padding-bottom:56.25%;height:0;overflow:hidden><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading=eager referrerpolicy=strict-origin-when-cross-origin src="https://www.youtube.com/embed/91m5zdq_KBs?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style=position:absolute;top:0;left:0;width:100%;height:100%;border:0 title="YouTube video"></iframe></div></div></article></main><footer><p>&copy; 2025 M.Ozan Unal.</p></footer></body><link rel=stylesheet href=/libs/katex/katex.min.v0.16.9.css><script defer src=/libs/katex/katex.min.v0.16.9.js></script><script defer src=/libs/katex/auto-render.v0.16.9.js></script><script>document.addEventListener("DOMContentLoaded",function(){renderMathInElement(document.body,{delimiters:[{left:"$$",right:"$$",display:!0},{left:"\\[",right:"\\]",display:!0},{left:"\\(",right:"\\)",display:!1},{left:"$",right:"$",display:!1}],throwOnError:!1})})</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-007KSW65JL"></script><script>var dnt,doNotTrack=!1;if(!1&&(dnt=navigator.doNotTrack||window.doNotTrack||navigator.msDoNotTrack,doNotTrack=dnt=="1"||dnt=="yes"),!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-007KSW65JL")}</script></html>

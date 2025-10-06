@@ -1,0 +1,37 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=color-scheme content="light dark"><meta name=description content="An example site for the clean and configurable Hugo Classless theme."><link href=/2019/11/ecg-signal/ rel=alternate type=application/rss+xml title=mozanunal.com><link id=theme-style rel=stylesheet href=/css/classless.20c8e211f6768ba295effc3e101a31bfe248db7295bb122355bdf893c6cee731.css integrity="sha256-IMjiEfZ2i6KV7/w+EBoxv+JI23KVuxIjVb34k8bO5zE="><style>pre code,code{-webkit-text-size-adjust:100%;text-size-adjust:100%}img{display:block;margin-left:auto;margin-right:auto}figcaption{display:block;margin-left:auto;margin-right:auto}nav{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;overflow:visible;font-size:1.4rem}nav ul{display:flex;list-style:none;padding:0;margin:0;gap:.5rem}</style><link rel=stylesheet href=/css/syntax-light.min.d1e9974bf1fe0f3bfae6a7af3a04c1e749276b8efbbf6d3397998585f82443f0.css media="(prefers-color-scheme: light)"><link rel=stylesheet href=/css/syntax-dark.min.22964c63865be9217cedda7ac3dbd0143f8f41b3a0f681ef71e845b18a33a4f3.css media="(prefers-color-scheme: dark)"><title>Digital Filtering of an ECG Signal | mozanunal.com</title><link rel=icon href=/favicon.svg type=image/svg+xml><link rel="shortcut icon" href=/favicon.ico><link rel=apple-touch-icon href=/apple-touch-icon.png></head><body><header><nav><ul><li><strong>mozanunal.com</strong></li></ul><ul><li><a href=/>Home</a></li><li><a href=/posts/>Posts</a></li><li><a href=/projects/>Projects</a></li><li><a href=/papers/>Papers</a></li></ul></nav></header><main><article><h1>Digital Filtering of an ECG Signal</h1><p><em>November 17, 2019</em></p><div><p>Hello everyone, Today, I will show how can you filter out the noise from the raw
+ECG signal. Let&rsquo;s start!</p><h3 id=what-is-ecg>What is ECG?</h3><p>Electrocardiography (ECG) is the measurement of the bioelectrical activity
+during the contraction and relaxation stages of the atria and ventricles of the
+heart, the stimulation of the heart and the conduction of the stimulus. ECG
+signal has some specific waves which correspond to particular conditions.</p><p><strong>Part of the ECG Signal</strong> <img src=ekg15.jpg alt></p><h3 id=ecg-circuit>ECG Circuit</h3><p>During this process, a 9V battery was used as a source to prevent leakage
+current through the person to whom the electrodes were connected and the sockets
+to which the oscilloscopes were connected were checked. Also, in case of any
+leakage, the person was allowed to separate his feet from the floor with the
+help of the plastic chair he was sitting during the experiment and not to be in
+physical contact with any person. The electrode attached to the right leg is
+connected to the low-potential end (ground) of the battery as shown in the
+figure above. The remaining two electrode terminals were connected to the
+negative and positive input terminals on pins 2 and 3 of the INA118. A quite
+simple circuit is created. It is shown in the next image. It basically consists
+of 3 components: 2 x 9V battery, instrumentation amplifier INA118 with proper
+connection and a gain resistor, and electrode connections. The circuit is not
+the main focus of this post. For further information please send me an email. In
+this post, I will focus on digital filters that can be used to filter out the
+noise from the ECG signal.</p><p><strong>ECG Circuit Schematic</strong> <img src=ekgcircuit.png alt></p><h3 id=cleaning-noise>Cleaning Noise</h3><p><strong>Scope image of the output signal of the ECG circuit</strong> <img src=ekg14.jpg alt></p><p>The output of the circuit sampled using a digital oscilloscope and then it is
+exported as CSV file. The file consists of 8000 samples for 2 seconds time
+window which means 4 kHz sampling frequency. The raw oscilloscope output can be
+examined from the next figure.</p><p><strong>Raw ECG Data</strong> <img src=ekg20.png alt></p><p>First, the frequency domain components of the ECG data are examined. FFT
+transform is applied to data and its frequency components are plotted in the
+next figure. Since the Nyquist theorem says that maximum frequency can be
+measured is half of the sampling frequency, the max frequency component is 2
+kHz.</p><p><strong>0 - 2 kHz Frequency Spectrum</strong> <img src=ekg4.png alt></p><p>In the next figure, the plot is zoomed to frequency components between 0 - 200
+Hz. As you can see from the plot, there is a big noise component at 50 Hz
+frequency because of the mains electricity. It should be filtered for a cleaner
+ECG signal.</p><p><strong>0 - 200 Hz Frequency Spectrum</strong> <img src=ekg6.png alt></p><p>A digital IIR filter is designed to filter out a 50 Hz frequency component. It
+is a Chebyshev Type 2 filter with 16 filter coefficients. It provides -60 dB
+gain between 47 - 53 Hz.</p><p><strong>50 Hz Band Stop Filter</strong> <img src=ekg3.png alt></p><p>After the filtering, the frequency domain components are examined again. The
+noise component at 50 Hz is removed from the signal.</p><p><strong>Frequency Domain Result</strong> <img src=ekg16.png alt></p><p>The time-domain result of the filter can be examined in the next figure. As you
+can see from this figure, the time domain components of the ECG is cleaner.</p><p><strong>Time Domain Result</strong> <img src=ekg11.png alt></p><p>The next filter is designed to remove high-frequency noise from the signal. For
+this purpose, a 0-200 Hz low pass filter is designed.</p><p><strong>0 - 200 Hz Low Pass Filter</strong> <img src=ekg7.png alt></p><p><strong>Time Domain Result</strong> <img src=ekg8.png alt></p><p>Finally, A simple moving average filter is applied to the signal. The next
+figure is the final result of our ECG project. After the filtering operations,
+most of the ECG components are cleaner and now it is easier to extract ECG
+components from the signal.</p><p><strong>100 Point Simple Moving Average Filtered Signal</strong> <img src=ekg12.png alt></p><h3 id=test-it-yourself>Test it yourself</h3><p><a href=https://github.com/mozanunal/digital-filtering-of-ecg-signal>Click here to download the code and the ECG signal example</a></p></div></article></main><footer><p>&copy; 2025 M.Ozan Unal.</p></footer></body><link rel=stylesheet href=/libs/katex/katex.min.v0.16.9.css><script defer src=/libs/katex/katex.min.v0.16.9.js></script><script defer src=/libs/katex/auto-render.v0.16.9.js></script><script>document.addEventListener("DOMContentLoaded",function(){renderMathInElement(document.body,{delimiters:[{left:"$$",right:"$$",display:!0},{left:"\\[",right:"\\]",display:!0},{left:"\\(",right:"\\)",display:!1},{left:"$",right:"$",display:!1}],throwOnError:!1})})</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-007KSW65JL"></script><script>var dnt,doNotTrack=!1;if(!1&&(dnt=navigator.doNotTrack||window.doNotTrack||navigator.msDoNotTrack,doNotTrack=dnt=="1"||dnt=="yes"),!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-007KSW65JL")}</script></html>

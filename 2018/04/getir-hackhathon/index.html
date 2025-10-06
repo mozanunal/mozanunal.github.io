@@ -1,0 +1,180 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=color-scheme content="light dark"><meta name=description content="An example site for the clean and configurable Hugo Classless theme."><link href=/2018/04/getir-hackhathon/ rel=alternate type=application/rss+xml title=mozanunal.com><link id=theme-style rel=stylesheet href=/css/classless.20c8e211f6768ba295effc3e101a31bfe248db7295bb122355bdf893c6cee731.css integrity="sha256-IMjiEfZ2i6KV7/w+EBoxv+JI23KVuxIjVb34k8bO5zE="><style>pre code,code{-webkit-text-size-adjust:100%;text-size-adjust:100%}img{display:block;margin-left:auto;margin-right:auto}figcaption{display:block;margin-left:auto;margin-right:auto}nav{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;overflow:visible;font-size:1.4rem}nav ul{display:flex;list-style:none;padding:0;margin:0;gap:.5rem}</style><link rel=stylesheet href=/css/syntax-light.min.d1e9974bf1fe0f3bfae6a7af3a04c1e749276b8efbbf6d3397998585f82443f0.css media="(prefers-color-scheme: light)"><link rel=stylesheet href=/css/syntax-dark.min.22964c63865be9217cedda7ac3dbd0143f8f41b3a0f681ef71e845b18a33a4f3.css media="(prefers-color-scheme: dark)"><title>[TR] Hackhathon Getir 2018 | mozanunal.com</title><link rel=icon href=/favicon.svg type=image/svg+xml><link rel="shortcut icon" href=/favicon.ico><link rel=apple-touch-icon href=/apple-touch-icon.png></head><body><header><nav><ul><li><strong>mozanunal.com</strong></li></ul><ul><li><a href=/>Home</a></li><li><a href=/posts/>Posts</a></li><li><a href=/projects/>Projects</a></li><li><a href=/papers/>Papers</a></li></ul></nav></header><main><article><h1>[TR] Hackhathon Getir 2018</h1><p><em>April 16, 2018</em></p><div><blockquote><p>It is a project developed for BiTaksi Getir Hackathon 2018. Detailed
+information can be found from below.</p></blockquote><h1 id=team-paketci>Team Paketci!</h1><p><a href=https://hackhathon-getir-2018.herokuapp.com/>Check our app from here</a> which is
+deployed using heroku.</p><p><a href=https://github.com/mozanunal/paketci-backend>Check github repo of app from here</a></p><p><img src="https://github.com/mozanunal/paketci-backend/blob/master/doctimeLine.PNG?raw=true" alt="Timeline of our little project!"></p><p>Getir Hackhathon 2018 Team Members: Sertan Sezgin Kutlu Ertuğrul Çınar Mehmet
+Ozan Ünal</p><h1 id=paketci-app>Paketci App</h1><p>Its a work on pack collection and delivery for courier and observer.</p><h3 id=features>Features:</h3><p>By Backend: 1.Assign routes for couries by relate most efficent path. 2.Update
+states of packets. 3.Update states of couriers.</p><p>By Frontend 1.Courier see waypoints and pack to collect. 2.Observers see all
+couriers and pack states. 3.Adding new packs</p><h3 id=used-libraries-and-api-in-frontend>Used Libraries and API in frontend</h3><p>1.Android Libraries 2.Java 3.Volley 4.Google Maps Directions API 5.Google Maps
+Javascript API 6.AngularJS</p><h3 id=compleated-part-of-frontend>Compleated Part of Frontend</h3><p>Application is designed for used by cariers. It gave users to see which way
+courier should go and where to take packs.</p><p>In order to make it more stable, decions of disturbution made at backend in
+order to keep system stable for all users, this app communacte with backend by
+using asyncrounous http requests.</p><p>For async HTTPS requess, it been used Volley library in JSON Object and String
+responsed GET and POST requests.</p><p>App takes missions from backend and by communicating with Google Direcitons API,
+get caluclations of every shorth path waypoints which collect and carry pointed
+packs in missions and drawing them on a Map View.</p><p>In angular web app we see all packs and couriers with their missions and routes.
+Its allows users to add new packs to environment.</p><h2 id=backend>Backend</h2><p><img src="https://github.com/mozanunal/paketci-backend/blob/master/docbackEndContainer.png?raw=true" alt="enter image description here">
+Data structure and Crud Outputs Sample JSON files, it can be enchance according
+to packet number and courier number</p><p>/api/courier</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-js data-lang=js><span class=line><span class=cl><span class=p>[{</span>
+</span></span><span class=line><span class=cl>  <span class=s2>&#34;_id&#34;</span><span class=o>:</span> <span class=mi>0</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>  <span class=s2>&#34;initLocation&#34;</span><span class=o>:</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;lat&#34;</span><span class=o>:</span> <span class=mf>40.73726833204571</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;long&#34;</span><span class=o>:</span> <span class=o>-</span><span class=mf>111.86816435821093</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>  <span class=p>},</span>
+</span></span><span class=line><span class=cl>  <span class=s2>&#34;curLocation&#34;</span><span class=o>:</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;lat&#34;</span><span class=o>:</span> <span class=mf>40.73726833204571</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;long&#34;</span><span class=o>:</span> <span class=o>-</span><span class=mf>111.86816435821093</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>  <span class=p>},</span>
+</span></span><span class=line><span class=cl>  <span class=s2>&#34;weightCapacity&#34;</span><span class=o>:</span> <span class=mi>20</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>  <span class=s2>&#34;remainingWeightCapacity&#34;</span><span class=o>:</span> <span class=mf>18.2923904630732</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>  <span class=s2>&#34;pieceCapacity&#34;</span><span class=o>:</span> <span class=mi>8</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>  <span class=s2>&#34;remainingPieceCapacity&#34;</span><span class=o>:</span> <span class=mi>7</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>  <span class=s2>&#34;routes&#34;</span><span class=o>:</span> <span class=p>[</span>
+</span></span><span class=line><span class=cl>    <span class=p>{</span>
+</span></span><span class=line><span class=cl>      <span class=s2>&#34;_id&#34;</span><span class=o>:</span> <span class=mi>1</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>      <span class=s2>&#34;routeFromGoogle&#34;</span><span class=o>:</span> <span class=s2>&#34;&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>      <span class=s2>&#34;distance&#34;</span><span class=o>:</span> <span class=mf>0.02248501759660298</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>      <span class=s2>&#34;startLoc&#34;</span><span class=o>:</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>        <span class=s2>&#34;lat&#34;</span><span class=o>:</span> <span class=mf>40.73726833204571</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>        <span class=s2>&#34;long&#34;</span><span class=o>:</span> <span class=o>-</span><span class=mf>111.86816435821093</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>      <span class=p>},</span>
+</span></span><span class=line><span class=cl>      <span class=s2>&#34;endLoc&#34;</span><span class=o>:</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>        <span class=s2>&#34;lat&#34;</span><span class=o>:</span> <span class=mf>40.73287234594392</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>        <span class=s2>&#34;long&#34;</span><span class=o>:</span> <span class=o>-</span><span class=mf>111.84611325115227</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>      <span class=p>},</span>
+</span></span><span class=line><span class=cl>      <span class=s2>&#34;nearPacketsDistance&#34;</span><span class=o>:</span> <span class=p>[</span>
+</span></span><span class=line><span class=cl>        <span class=o>-</span><span class=mi>1</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>      <span class=p>],</span>
+</span></span><span class=line><span class=cl>      <span class=s2>&#34;state&#34;</span><span class=o>:</span> <span class=mi>1</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=p>},</span>
+</span></span><span class=line><span class=cl>    <span class=p>{</span>
+</span></span><span class=line><span class=cl>      <span class=s2>&#34;_id&#34;</span><span class=o>:</span> <span class=mi>3</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>      <span class=s2>&#34;routeFromGoogle&#34;</span><span class=o>:</span> <span class=s2>&#34;&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>      <span class=s2>&#34;distance&#34;</span><span class=o>:</span> <span class=mf>0.01372524844602735</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>      <span class=s2>&#34;startLoc&#34;</span><span class=o>:</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>        <span class=s2>&#34;lat&#34;</span><span class=o>:</span> <span class=mf>40.73287234594392</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>        <span class=s2>&#34;long&#34;</span><span class=o>:</span> <span class=o>-</span><span class=mf>111.84611325115227</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>      <span class=p>},</span>
+</span></span><span class=line><span class=cl>      <span class=s2>&#34;endLoc&#34;</span><span class=o>:</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>        <span class=s2>&#34;lat&#34;</span><span class=o>:</span> <span class=mf>40.745843583374935</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>        <span class=s2>&#34;long&#34;</span><span class=o>:</span> <span class=o>-</span><span class=mf>111.84162666621344</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>      <span class=p>},</span>
+</span></span><span class=line><span class=cl>      <span class=s2>&#34;nearPacketsDistance&#34;</span><span class=o>:</span> <span class=p>[</span>
+</span></span><span class=line><span class=cl>        <span class=o>-</span><span class=mi>1</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>      <span class=p>],</span>
+</span></span><span class=line><span class=cl>      <span class=s2>&#34;state&#34;</span><span class=o>:</span> <span class=mi>1</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=p>},</span>
+</span></span><span class=line><span class=cl>  <span class=p>],</span>
+</span></span><span class=line><span class=cl>  <span class=s2>&#34;packets&#34;</span><span class=o>:</span> <span class=p>[</span>
+</span></span><span class=line><span class=cl>    <span class=p>{</span>
+</span></span><span class=line><span class=cl>      <span class=s2>&#34;_id&#34;</span><span class=o>:</span> <span class=mi>0</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>      <span class=s2>&#34;initLocation&#34;</span><span class=o>:</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>        <span class=s2>&#34;lat&#34;</span><span class=o>:</span> <span class=mf>40.73287234594392</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>        <span class=s2>&#34;long&#34;</span><span class=o>:</span> <span class=o>-</span><span class=mf>111.84611325115227</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>      <span class=p>},</span>
+</span></span><span class=line><span class=cl>      <span class=s2>&#34;destLocation&#34;</span><span class=o>:</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>        <span class=s2>&#34;lat&#34;</span><span class=o>:</span> <span class=mf>40.745843583374935</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>        <span class=s2>&#34;long&#34;</span><span class=o>:</span> <span class=o>-</span><span class=mf>111.84162666621344</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>      <span class=p>},</span>
+</span></span><span class=line><span class=cl>      <span class=s2>&#34;weight&#34;</span><span class=o>:</span> <span class=mf>1.707609536926801</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>      <span class=s2>&#34;state&#34;</span><span class=o>:</span> <span class=mi>1</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>      <span class=s2>&#34;courier&#34;</span><span class=o>:</span> <span class=p>{},</span>
+</span></span><span class=line><span class=cl>    <span class=p>},</span>
+</span></span><span class=line><span class=cl>  <span class=p>],</span>
+</span></span><span class=line><span class=cl><span class=p>}];</span>
+</span></span></code></pre></div><p>/api/packet</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-js data-lang=js><span class=line><span class=cl><span class=p>[</span>
+</span></span><span class=line><span class=cl>  <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;_id&#34;</span><span class=o>:</span> <span class=mi>0</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;initLocation&#34;</span><span class=o>:</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>      <span class=s2>&#34;lat&#34;</span><span class=o>:</span> <span class=mf>40.73287234594392</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>      <span class=s2>&#34;long&#34;</span><span class=o>:</span> <span class=o>-</span><span class=mf>111.84611325115227</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=p>},</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;destLocation&#34;</span><span class=o>:</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>      <span class=s2>&#34;lat&#34;</span><span class=o>:</span> <span class=mf>40.745843583374935</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>      <span class=s2>&#34;long&#34;</span><span class=o>:</span> <span class=o>-</span><span class=mf>111.84162666621344</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=p>},</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;weight&#34;</span><span class=o>:</span> <span class=mf>1.707609536926801</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;state&#34;</span><span class=o>:</span> <span class=mi>1</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;courier&#34;</span><span class=o>:</span> <span class=p>{},</span>
+</span></span><span class=line><span class=cl>  <span class=p>},</span>
+</span></span><span class=line><span class=cl><span class=p>];</span>
+</span></span></code></pre></div><p>/api/route</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-js data-lang=js><span class=line><span class=cl><span class=p>[{</span>
+</span></span><span class=line><span class=cl>  <span class=s2>&#34;_id&#34;</span><span class=o>:</span> <span class=mi>0</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>  <span class=s2>&#34;routeFromGoogle&#34;</span><span class=o>:</span> <span class=s2>&#34;&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>  <span class=s2>&#34;distance&#34;</span><span class=o>:</span> <span class=mf>0.027888779677731172</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>  <span class=s2>&#34;startLoc&#34;</span><span class=o>:</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;lat&#34;</span><span class=o>:</span> <span class=mf>40.73726833204571</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;long&#34;</span><span class=o>:</span> <span class=o>-</span><span class=mf>111.86816435821093</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>  <span class=p>},</span>
+</span></span><span class=line><span class=cl>  <span class=s2>&#34;endLoc&#34;</span><span class=o>:</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;lat&#34;</span><span class=o>:</span> <span class=mf>40.745843583374935</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;long&#34;</span><span class=o>:</span> <span class=o>-</span><span class=mf>111.84162666621344</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>  <span class=p>},</span>
+</span></span><span class=line><span class=cl>  <span class=s2>&#34;nearPacketsDistance&#34;</span><span class=o>:</span> <span class=p>[</span>
+</span></span><span class=line><span class=cl>    <span class=o>-</span><span class=mi>1</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>  <span class=p>],</span>
+</span></span><span class=line><span class=cl>  <span class=s2>&#34;state&#34;</span><span class=o>:</span> <span class=mi>0</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=p>},</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=s2>&#34;_id&#34;</span><span class=o>:</span> <span class=mi>1</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>  <span class=s2>&#34;routeFromGoogle&#34;</span><span class=o>:</span> <span class=s2>&#34;&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>  <span class=s2>&#34;distance&#34;</span><span class=o>:</span> <span class=mf>0.02248501759660298</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>  <span class=s2>&#34;startLoc&#34;</span><span class=o>:</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;lat&#34;</span><span class=o>:</span> <span class=mf>40.73726833204571</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;long&#34;</span><span class=o>:</span> <span class=o>-</span><span class=mf>111.86816435821093</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>  <span class=p>},</span>
+</span></span><span class=line><span class=cl>  <span class=s2>&#34;endLoc&#34;</span><span class=o>:</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;lat&#34;</span><span class=o>:</span> <span class=mf>40.73287234594392</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;long&#34;</span><span class=o>:</span> <span class=o>-</span><span class=mf>111.84611325115227</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>  <span class=p>},</span>
+</span></span><span class=line><span class=cl>  <span class=s2>&#34;nearPacketsDistance&#34;</span><span class=o>:</span> <span class=p>[</span>
+</span></span><span class=line><span class=cl>    <span class=o>-</span><span class=mi>1</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>  <span class=p>],</span>
+</span></span><span class=line><span class=cl>  <span class=s2>&#34;state&#34;</span><span class=o>:</span> <span class=mi>1</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=p>},</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=s2>&#34;_id&#34;</span><span class=o>:</span> <span class=mi>2</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>  <span class=s2>&#34;routeFromGoogle&#34;</span><span class=o>:</span> <span class=s2>&#34;&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>  <span class=s2>&#34;distance&#34;</span><span class=o>:</span> <span class=mi>0</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>  <span class=s2>&#34;startLoc&#34;</span><span class=o>:</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;lat&#34;</span><span class=o>:</span> <span class=mf>40.73287234594392</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;long&#34;</span><span class=o>:</span> <span class=o>-</span><span class=mf>111.84611325115227</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>  <span class=p>},</span>
+</span></span><span class=line><span class=cl>  <span class=s2>&#34;endLoc&#34;</span><span class=o>:</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;lat&#34;</span><span class=o>:</span> <span class=mf>40.73287234594392</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;long&#34;</span><span class=o>:</span> <span class=o>-</span><span class=mf>111.84611325115227</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>  <span class=p>},</span>
+</span></span><span class=line><span class=cl>  <span class=s2>&#34;nearPacketsDistance&#34;</span><span class=o>:</span> <span class=p>[</span>
+</span></span><span class=line><span class=cl>    <span class=o>-</span><span class=mi>1</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>  <span class=p>],</span>
+</span></span><span class=line><span class=cl>  <span class=s2>&#34;state&#34;</span><span class=o>:</span> <span class=mi>0</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=p>},</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=s2>&#34;_id&#34;</span><span class=o>:</span> <span class=mi>3</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>  <span class=s2>&#34;routeFromGoogle&#34;</span><span class=o>:</span> <span class=s2>&#34;&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>  <span class=s2>&#34;distance&#34;</span><span class=o>:</span> <span class=mf>0.01372524844602735</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>  <span class=s2>&#34;startLoc&#34;</span><span class=o>:</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;lat&#34;</span><span class=o>:</span> <span class=mf>40.73287234594392</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;long&#34;</span><span class=o>:</span> <span class=o>-</span><span class=mf>111.84611325115227</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>  <span class=p>},</span>
+</span></span><span class=line><span class=cl>  <span class=s2>&#34;endLoc&#34;</span><span class=o>:</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;lat&#34;</span><span class=o>:</span> <span class=mf>40.745843583374935</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;long&#34;</span><span class=o>:</span> <span class=o>-</span><span class=mf>111.84162666621344</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>  <span class=p>},</span>
+</span></span><span class=line><span class=cl>  <span class=s2>&#34;nearPacketsDistance&#34;</span><span class=o>:</span> <span class=p>[</span>
+</span></span><span class=line><span class=cl>    <span class=o>-</span><span class=mi>1</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>  <span class=p>],</span>
+</span></span><span class=line><span class=cl>  <span class=s2>&#34;state&#34;</span><span class=o>:</span> <span class=mi>1</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=p>}];</span>
+</span></span></code></pre></div><h2 id=route-optimization>Route Optimization</h2><p><img src="https://github.com/mozanunal/paketci-backend/blob/master/docrouteOptimizeAlgrotihmVisualize.gif?raw=true" alt="enter image description here">
+Firstly, every courier has a route to common destination point. Then most
+efficient package route change apply. It&rsquo;s calculated with change of route
+distance according to package location. It will iterate until no package will
+left. But according to courier capacities, some of package can be over couriers'
+capacities; so you need to go second round.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-js data-lang=js><span class=line><span class=cl><span class=s2>&#34;dependencies&#34;</span><span class=o>:</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;body-parser&#34;</span><span class=o>:</span> <span class=s2>&#34;~1.18.2&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;cookie-parser&#34;</span><span class=o>:</span> <span class=s2>&#34;~1.4.3&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;debug&#34;</span><span class=o>:</span> <span class=s2>&#34;~2.6.9&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;express&#34;</span><span class=o>:</span> <span class=s2>&#34;~4.15.5&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;mathjs&#34;</span><span class=o>:</span> <span class=s2>&#34;^3.20.2&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;point-line-distance&#34;</span><span class=o>:</span> <span class=s2>&#34;^1.0.0&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;google_directions&#34;</span><span class=o>:</span> <span class=s2>&#34;^0.6.0&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;polyline&#34;</span><span class=o>:</span> <span class=s2>&#34;^0.2.0&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;request&#34;</span><span class=o>:</span> <span class=s2>&#34;^2.83.0&#34;</span>
+</span></span><span class=line><span class=cl>  <span class=p>}</span>
+</span></span></code></pre></div></div></article></main><footer><p>&copy; 2025 M.Ozan Unal.</p></footer></body><link rel=stylesheet href=/libs/katex/katex.min.v0.16.9.css><script defer src=/libs/katex/katex.min.v0.16.9.js></script><script defer src=/libs/katex/auto-render.v0.16.9.js></script><script>document.addEventListener("DOMContentLoaded",function(){renderMathInElement(document.body,{delimiters:[{left:"$$",right:"$$",display:!0},{left:"\\[",right:"\\]",display:!0},{left:"\\(",right:"\\)",display:!1},{left:"$",right:"$",display:!1}],throwOnError:!1})})</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-007KSW65JL"></script><script>var dnt,doNotTrack=!1;if(!1&&(dnt=navigator.doNotTrack||window.doNotTrack||navigator.msDoNotTrack,doNotTrack=dnt=="1"||dnt=="yes"),!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-007KSW65JL")}</script></html>

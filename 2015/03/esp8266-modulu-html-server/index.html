@@ -1,0 +1,107 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=color-scheme content="light dark"><meta name=description content="An example site for the clean and configurable Hugo Classless theme."><link href=/2015/03/esp8266-modulu-html-server/ rel=alternate type=application/rss+xml title=mozanunal.com><link id=theme-style rel=stylesheet href=/css/classless.20c8e211f6768ba295effc3e101a31bfe248db7295bb122355bdf893c6cee731.css integrity="sha256-IMjiEfZ2i6KV7/w+EBoxv+JI23KVuxIjVb34k8bO5zE="><style>pre code,code{-webkit-text-size-adjust:100%;text-size-adjust:100%}img{display:block;margin-left:auto;margin-right:auto}figcaption{display:block;margin-left:auto;margin-right:auto}nav{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;overflow:visible;font-size:1.4rem}nav ul{display:flex;list-style:none;padding:0;margin:0;gap:.5rem}</style><link rel=stylesheet href=/css/syntax-light.min.d1e9974bf1fe0f3bfae6a7af3a04c1e749276b8efbbf6d3397998585f82443f0.css media="(prefers-color-scheme: light)"><link rel=stylesheet href=/css/syntax-dark.min.22964c63865be9217cedda7ac3dbd0143f8f41b3a0f681ef71e845b18a33a4f3.css media="(prefers-color-scheme: dark)"><title>[TR] ESP8266 Modulü Web Server | mozanunal.com</title><link rel=icon href=/favicon.svg type=image/svg+xml><link rel="shortcut icon" href=/favicon.ico><link rel=apple-touch-icon href=/apple-touch-icon.png></head><body><header><nav><ul><li><strong>mozanunal.com</strong></li></ul><ul><li><a href=/>Home</a></li><li><a href=/posts/>Posts</a></li><li><a href=/projects/>Projects</a></li><li><a href=/papers/>Papers</a></li></ul></nav></header><main><article><h1>[TR] ESP8266 Modulü Web Server</h1><p><em>March 12, 2015</em></p><div><p><strong>Merhaba arkadaşlar,</strong></p><p>Bugünkü yazımda ESP8266 modüllerinden bahsetmek istiyorum. Bu modül seri port
+üzerinden haberleşen wifi modülü. Fiyatı yaklaşık 5 $ özelliklerini gördüğünüz
+fiyatından çok daha fazlasını hakkettiğini göreceksiniz. Özelliklerine geçecek
+olursak;</p><ul><li><p>802.11 b/g/n desteği</p></li><li><p>Wi-Fi Direct (P2P) Desteği</p></li><li><p>Dahili TCP/IP protokol yığını</p></li><li><p>+19,5dBm çıkış gücü (802.11b modunda)</p></li><li><p>Kaçak akım &lt; 10uA</p></li><li><p>Dahili düşük güç tüketimine sahip 32-bit&rsquo;lik işlemci</p></li><li><p>SDIO 1.1/2.0, SPI ve UART desteği</p></li><li><p>STBC, 1x1 MIMO, 2x1 MIMO</p></li><li><p>Uyanma ve veri paketi alma süresi &lt; 2ms</p></li><li><p>Stand-by durumunda güç tüketimi &lt; 1mW</p></li></ul><p><img src=pr_01_2666_max.jpg alt></p><p>Modülümüz yaygın tüm wifi protokollerini destekliyor, yerel ağdan ve internet
+üzerinden yapabileceğimiz binlerce çeşit uygulama için oldukça elverişli.
+Üzerinde 32 bitlik işlemci mevcut. 19.5 dBm çıkış gücüne sahip, full güç ile
+çalıştırılırsa antensiz 400 metreden fazla antenli ise 4km&rsquo;den fazla uzaklıktan
+sinyal alınabildiği test edilmiş bu fiyat ve bu boyutta bir modül için rakamlar
+çok iyi.<a href="https://www.youtube.com/watch?v=7BYdZ_24yg0">Buradan </a> mesafe testi
+videosunu izleyebilirsiniz. Boyut konusuna gelecek olursak boyutları 2.1 cmX 1.3
+cm, üzerinde dahili PCB anten bulunuyor.</p><p><img src=IMG_20150311_214258.jpg alt></p><p><strong>Internet of Things</strong></p><p>Esp8266&rsquo;nın özellikleri böyle fakat biz ne için kullanacağız. 1999 yılında
+ortaya atılan son yıllarda ise popülerleşen bir kavram var, &ldquo;Internet of Things&rdquo;
+yani Türkçesi" Nesnelerin İnterneti" kavramı, insanlar dışında diğer eşyaların
+da (buz dolabı, ocak, klima, evin kapısı&mldr;) bir iletişim ağına sahip olup,
+birbiriyle haberleşmesi. İşte bu küçük wifi modülleri bu noktada devreye
+giriyor. Kullanımları basit, düşük maliyetli, enerji tüketimleri düzenlenebilir
+olan bu modüller, kolayca herhangi bir eşyamızı &ldquo;Online&rdquo; hale getirebilir,
+bilgisayar telefon gibi herhangi bir ağa bağlanabilen aletlerle kontrol edebilen
+şeylere dönüştürebilir. &ldquo;Online&rdquo; eşyalarımızı haberleştirerek daha akıllı, daha
+efektif hale getirebilir.Aynı zamanda hali hazırda var olan wifi ağlarını
+kullanmaları modullerin entegre edilebilirliğini artırıyor.</p><p>Bu yazıda Esp8266 modülünün kullanımına sadece bir giriş yapacağız, modülümüzle
+HTML sayfası oluşturup, bilgisayarımızdan bağlanacağız. Modülümüzün kullanımına
+gelecek olursak pin dizilimi aşağıdaki gibidir.</p><p><img src=ESP8266-Pinout-300x124.png alt></p><p>Bizim yapacağımız bağlantılar ise şu şekilde olmalıdır.</p><p>VCC&mdash;> Arduino 3.3 V</p><p>GND&mdash;> Arduino GND</p><p>RX&mdash;&ndash;>Serial 1 TX</p><p>TX&mdash;&ndash;>Serial 1 RX</p><p>CH_PD> Arduino 3.3 V</p><p><img src=IMG_20150311_214231.jpg alt></p><blockquote><p>Önemli Uyarı: Bu modül 3.3 volt ile çalışmaktadır ve
+rx tx pini de 5 volta dayanıklı değildir. Ben bu projede Arduino DUE kullandığım
+için problem yaşamadım fakat diğer Arduino modellerinin 5 voltlukları
+kullanılacağı zaman level shifter entegrelerine ihtiyaç duyulur.</p></blockquote><p>Arduino kodu aşağıdadır eğer başka bir Arduino ile kullanacaksanız &ldquo;Serial1&rdquo;
+yerine &ldquo;SoftwareSerial&rdquo; kullanmanızı öneririm.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-cpp data-lang=cpp><span class=line><span class=cl><span class=cp>#include</span> <span class=cpf>&lt;Wire.h&gt;</span><span class=cp>
+</span></span></span><span class=line><span class=cl><span class=cp>#define DEBUG true
+</span></span></span><span class=line><span class=cl><span class=cp></span>
+</span></span><span class=line><span class=cl><span class=kt>void</span> <span class=nf>setup</span><span class=p>()</span>
+</span></span><span class=line><span class=cl><span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=n>Serial</span><span class=p>.</span><span class=n>begin</span><span class=p>(</span><span class=mi>9600</span><span class=p>);</span><span class=c1>// Arduino-Pc haberleşmesi Debug için kullanacağım
+</span></span></span><span class=line><span class=cl><span class=c1></span>  <span class=n>Serial1</span><span class=p>.</span><span class=n>begin</span><span class=p>(</span><span class=mi>9600</span><span class=p>);</span> <span class=c1>// Arduinoyu Esp8266 bağladığımız serial port
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl>  <span class=n>sendData</span><span class=p>(</span><span class=s>&#34;AT+RST</span><span class=se>\r\n</span><span class=s>&#34;</span><span class=p>,</span><span class=mi>2000</span><span class=p>,</span><span class=n>DEBUG</span><span class=p>);</span> <span class=c1>// reset
+</span></span></span><span class=line><span class=cl><span class=c1></span>  <span class=n>sendData</span><span class=p>(</span><span class=s>&#34;AT+CWMODE=3</span><span class=se>\r\n</span><span class=s>&#34;</span><span class=p>,</span><span class=mi>1000</span><span class=p>,</span><span class=n>DEBUG</span><span class=p>);</span> <span class=c1>//  MOde olarak access point seçilir
+</span></span></span><span class=line><span class=cl><span class=c1></span>  <span class=n>sendData</span><span class=p>(</span><span class=s>&#34;AT+CIFSR</span><span class=se>\r\n</span><span class=s>&#34;</span><span class=p>,</span><span class=mi>1000</span><span class=p>,</span><span class=n>DEBUG</span><span class=p>);</span> <span class=c1>// Modulün ip adresi alınır
+</span></span></span><span class=line><span class=cl><span class=c1></span>  <span class=n>sendData</span><span class=p>(</span><span class=s>&#34;AT+CIPMUX=1</span><span class=se>\r\n</span><span class=s>&#34;</span><span class=p>,</span><span class=mi>1000</span><span class=p>,</span><span class=n>DEBUG</span><span class=p>);</span> <span class=c1>// birden fazla bağlantıya izin ver
+</span></span></span><span class=line><span class=cl><span class=c1></span>  <span class=n>sendData</span><span class=p>(</span><span class=s>&#34;AT+CIPSERVER=1,80</span><span class=se>\r\n</span><span class=s>&#34;</span><span class=p>,</span><span class=mi>1000</span><span class=p>,</span><span class=n>DEBUG</span><span class=p>);</span> <span class=c1>// Port= 80 yapılır
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=p>}</span>
+</span></span><span class=line><span class=cl><span class=kt>int</span> <span class=n>sayi</span><span class=o>=</span><span class=mi>0</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kt>void</span> <span class=nf>loop</span><span class=p>()</span>
+</span></span><span class=line><span class=cl><span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=k>if</span><span class=p>(</span><span class=n>Serial1</span><span class=p>.</span><span class=n>available</span><span class=p>())</span>
+</span></span><span class=line><span class=cl>  <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=k>if</span><span class=p>(</span><span class=n>Serial1</span><span class=p>.</span><span class=n>find</span><span class=p>(</span><span class=s>&#34;+IPD,&#34;</span><span class=p>))</span>
+</span></span><span class=line><span class=cl>    <span class=p>{</span>
+</span></span><span class=line><span class=cl>      <span class=n>delay</span><span class=p>(</span><span class=mi>300</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>      <span class=kt>int</span> <span class=n>connectionId</span> <span class=o>=</span> <span class=n>Serial1</span><span class=p>.</span><span class=n>read</span><span class=p>()</span><span class=o>-</span><span class=mi>48</span><span class=p>;</span> <span class=c1>// 48 çıkarılır çünkü char to int fönüşümü yapmamız gerek
+</span></span></span><span class=line><span class=cl><span class=c1></span>                                           <span class=c1>// ASCCI table da 0 sayısı 48 ile ifade edilir yani:
+</span></span></span><span class=line><span class=cl><span class=c1></span>                                           <span class=c1>// &#39;0&#39; - 48 = 0
+</span></span></span><span class=line><span class=cl><span class=c1></span>                                           <span class=c1>// &#39;1&#39; - 48 = 1
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl>     <span class=n>String</span> <span class=n>webpage</span> <span class=o>=</span> <span class=s>&#34;&lt;head&gt;&lt;meta http-equiv=&#34;&#34;refresh&#34;&#34; content=&#34;&#34;10&#34;&#34;&gt;&lt;/head&gt;&#34;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>     <span class=n>webpage</span><span class=o>+=</span><span class=s>&#34;&lt;h1&gt;Esp8266 Html Testi&lt;/h1&gt;&lt;h2&gt;&#34;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>     <span class=n>webpage</span><span class=o>+=</span> <span class=s>&#34;mozanunal.com&#34;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>     <span class=n>webpage</span><span class=o>+=</span><span class=s>&#34;&lt;/h2&gt;&#34;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>     <span class=n>String</span> <span class=n>cipSend</span> <span class=o>=</span> <span class=s>&#34;AT+CIPSEND=&#34;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>     <span class=n>cipSend</span> <span class=o>+=</span> <span class=n>connectionId</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>     <span class=n>cipSend</span> <span class=o>+=</span> <span class=s>&#34;,&#34;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>     <span class=n>cipSend</span> <span class=o>+=</span><span class=n>webpage</span><span class=p>.</span><span class=n>length</span><span class=p>();</span>
+</span></span><span class=line><span class=cl>     <span class=n>cipSend</span> <span class=o>+=</span><span class=s>&#34;</span><span class=se>\r\n</span><span class=s>&#34;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>     <span class=n>sendData</span><span class=p>(</span><span class=n>cipSend</span><span class=p>,</span><span class=mi>1000</span><span class=p>,</span><span class=n>DEBUG</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>     <span class=n>sendData</span><span class=p>(</span><span class=n>webpage</span><span class=p>,</span><span class=mi>1000</span><span class=p>,</span><span class=n>DEBUG</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>     <span class=n>String</span> <span class=n>closeCommand</span> <span class=o>=</span> <span class=s>&#34;AT+CIPCLOSE=&#34;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>     <span class=n>closeCommand</span><span class=o>+=</span><span class=n>connectionId</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>     <span class=n>closeCommand</span><span class=o>+=</span><span class=s>&#34;</span><span class=se>\r\n</span><span class=s>&#34;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>     <span class=n>sendData</span><span class=p>(</span><span class=n>closeCommand</span><span class=p>,</span><span class=mi>3000</span><span class=p>,</span><span class=n>DEBUG</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
+</span></span><span class=line><span class=cl>  <span class=p>}</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=n>String</span> <span class=nf>sendData</span><span class=p>(</span><span class=n>String</span> <span class=n>command</span><span class=p>,</span> <span class=k>const</span> <span class=kt>int</span> <span class=n>timeout</span><span class=p>,</span> <span class=n>boolean</span> <span class=n>debug</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=n>String</span> <span class=n>response</span> <span class=o>=</span> <span class=s>&#34;&#34;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=n>Serial1</span><span class=p>.</span><span class=n>print</span><span class=p>(</span><span class=n>command</span><span class=p>);</span> <span class=c1>// send the read character to the esp8266
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl>    <span class=kt>long</span> <span class=kt>int</span> <span class=n>time</span> <span class=o>=</span> <span class=n>millis</span><span class=p>();</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=k>while</span><span class=p>(</span> <span class=p>(</span><span class=n>time</span><span class=o>+</span><span class=n>timeout</span><span class=p>)</span> <span class=o>&gt;</span> <span class=n>millis</span><span class=p>())</span>
+</span></span><span class=line><span class=cl>    <span class=p>{</span>
+</span></span><span class=line><span class=cl>      <span class=k>while</span><span class=p>(</span><span class=n>Serial1</span><span class=p>.</span><span class=n>available</span><span class=p>())</span>
+</span></span><span class=line><span class=cl>      <span class=p>{</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>        <span class=c1>// The esp has data so display its output to the serial window
+</span></span></span><span class=line><span class=cl><span class=c1></span>        <span class=kt>char</span> <span class=n>c</span> <span class=o>=</span> <span class=n>Serial1</span><span class=p>.</span><span class=n>read</span><span class=p>();</span> <span class=c1>// read the next character.
+</span></span></span><span class=line><span class=cl><span class=c1></span>        <span class=n>response</span><span class=o>+=</span><span class=n>c</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>      <span class=p>}</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=k>if</span><span class=p>(</span><span class=n>debug</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>    <span class=p>{</span>
+</span></span><span class=line><span class=cl>      <span class=n>Serial</span><span class=p>.</span><span class=n>print</span><span class=p>(</span><span class=n>response</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=k>return</span> <span class=n>response</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></div><p>Esp8266yı Acces Point olarak kullanıyoruz. Yani bizim için wifi ağı kurar kodu
+yükledikten sonra ağa bağlanın.</p><p><img src=Ads%C4%B1z.png alt></p><p>Serial porttan gelen veriler bu şekilde olmalıdır. Problem yaşadığımızda buradan
+kontrol edip DEBUG yapabiliriz.</p><p><img src=Ekran%2BAl%C4%B1nt%C4%B1s%C4%B1.png alt></p><p><img src=dsaxsxa.png alt></p><p>Programımızın çıktısı bu şekilde olacaktır.</p><p><img src=Ekran%2BAl%C4%B1nt%C4%B1s%C4%B1sdsd.png alt></p><p>String halinde Arduino&rsquo;ya yüklediğimiz HTML dosyasını modül wifi ağında
+paylaşır.</p><p><img src=fhrfg.png alt></p></div></article></main><footer><p>&copy; 2025 M.Ozan Unal.</p></footer></body><link rel=stylesheet href=/libs/katex/katex.min.v0.16.9.css><script defer src=/libs/katex/katex.min.v0.16.9.js></script><script defer src=/libs/katex/auto-render.v0.16.9.js></script><script>document.addEventListener("DOMContentLoaded",function(){renderMathInElement(document.body,{delimiters:[{left:"$$",right:"$$",display:!0},{left:"\\[",right:"\\]",display:!0},{left:"\\(",right:"\\)",display:!1},{left:"$",right:"$",display:!1}],throwOnError:!1})})</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-007KSW65JL"></script><script>var dnt,doNotTrack=!1;if(!1&&(dnt=navigator.doNotTrack||window.doNotTrack||navigator.msDoNotTrack,doNotTrack=dnt=="1"||dnt=="yes"),!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-007KSW65JL")}</script></html>

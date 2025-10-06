@@ -1,0 +1,29 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=color-scheme content="light dark"><meta name=description content="An example site for the clean and configurable Hugo Classless theme."><link href=/2018/07/termux/ rel=alternate type=application/rss+xml title=mozanunal.com><link id=theme-style rel=stylesheet href=/css/classless.20c8e211f6768ba295effc3e101a31bfe248db7295bb122355bdf893c6cee731.css integrity="sha256-IMjiEfZ2i6KV7/w+EBoxv+JI23KVuxIjVb34k8bO5zE="><style>pre code,code{-webkit-text-size-adjust:100%;text-size-adjust:100%}img{display:block;margin-left:auto;margin-right:auto}figcaption{display:block;margin-left:auto;margin-right:auto}nav{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;overflow:visible;font-size:1.4rem}nav ul{display:flex;list-style:none;padding:0;margin:0;gap:.5rem}</style><link rel=stylesheet href=/css/syntax-light.min.d1e9974bf1fe0f3bfae6a7af3a04c1e749276b8efbbf6d3397998585f82443f0.css media="(prefers-color-scheme: light)"><link rel=stylesheet href=/css/syntax-dark.min.22964c63865be9217cedda7ac3dbd0143f8f41b3a0f681ef71e845b18a33a4f3.css media="(prefers-color-scheme: dark)"><title>[TR] Android Terminal Emülatörü: Termux | mozanunal.com</title><link rel=icon href=/favicon.svg type=image/svg+xml><link rel="shortcut icon" href=/favicon.ico><link rel=apple-touch-icon href=/apple-touch-icon.png></head><body><header><nav><ul><li><strong>mozanunal.com</strong></li></ul><ul><li><a href=/>Home</a></li><li><a href=/posts/>Posts</a></li><li><a href=/projects/>Projects</a></li><li><a href=/papers/>Papers</a></li></ul></nav></header><main><article><h1>[TR] Android Terminal Emülatörü: Termux</h1><p><em>July 30, 2018</em></p><div><p><strong>Herkese Merhabalar,</strong></p><p>Benim gibi sıklıkla linuxla uğraşan bir insansanız işinize çok fazla
+yarıyabilecek bir araçtan bahsedeceğim. Bu Androidte çalışan terminal emülatörü
+<strong>Termux</strong>. Termux linux kullanmaya alışık olduğumuz araçları androidde de
+kullanabilmemizi sağlayan bir android app aslında. Direk play store üzerinden
+<a href="https://play.google.com/store/apps/details?id=com.termux&amp;hl=en">bu link</a>
+üzerinden yükleyebilirsiniz. Termux aynı zamanda açık kaynaklı bir proje github
+hesabına <a href=https://github.com/termux>buradan</a> ulaşabilirsiniz. Burada android
+app ve bütün paketlerin kaynak kodu mevcut.</p><p><img src=termux_ssh.jpg alt="termux ssh bağlantısı"></p><p>Özelliklerine gelecek olursak kendi paket yöneticilerini geliştirmişler. İsmi
+pkg bir sürü popüler paketi kurabilmeniz mümkün. Programa girdiğinizde direk bir
+bash terminal karşılıyor bizi. Burada standart bash komutlarının çoğu çalışıyor.
+Örneğin ls, pwd, cat, echo&mldr;</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-sh data-lang=sh><span class=line><span class=cl>pkg list-all
+</span></span></code></pre></div><p>komutu ile kurulabilecek bütün paketleri görüyoruz.</p><p><img src=termux_listall.jpg alt="pkg list all"></p><p>Ben de aklıma gelen bir kaç paketi yükleyip testler yaptım. Şu and en çok ssh
+için kullanıyorum fakat yüklediğim diğer araçlar ise şöyle:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-sh data-lang=sh><span class=line><span class=cl>pkg list-installed
+</span></span></code></pre></div><p><img src=termux_listinstalled.jpg alt="pkg list installed"></p><p>Apt kullanır gibi direk paketleri kurabiliyorsunuz. Örneğin şu şekilde htop
+paketini yükledim.</p><p><img src=termux_installhtop.jpg alt="pkg kullanarak htop kurulum"></p><p>Htop çalışır durumdaki hali de aşağıdaki gibi. Sanki bir linux terminaliymiş
+gibi bütün özellikleri kullanılabiliniyor. Ayrıca telefonunuza python, nodejs,
+go gibi programlama dili araçlarını kurup sanki bir mini bilgisayardaymış gibi
+kolaylıkla programlama yapabilirsiniz. Git, svn gibi versiyon yönetimi araçları
+da çalışıyor. Hatta c/c++ için gerekli derleme ve debug araçları da sorunsuz
+çalışır durumda (gcc, make, cmake). Denemedim ama telefon üzerinde geliştirme
+yapmayı bile mümkün kılacak kadar geniş kapsamı. Telefonda bu kadar güzel bir
+terminal görmek çok hoşuma gitti.</p><p><img src=termux_htop.jpg alt=htop></p><p>Ayrıca arayüz olarak da dokunmatik ekran için özenle dizayn edilmiş. Klavyenin
+üzerinden çıkan yardımcı tuş takımı oldukça kullanışlı. Ctrl içeren tuş
+kombinasyonlarını kolayca yapabiliyorsunuz. Ya da olmazsa olmaz tab ile otomatik
+tamamlama özelliğini kolayca kullanabiliyorsunuz. Siz de Termux ilk defa
+görüyorsanız ilk kullanım yorumlarınızı, daha önceden kullanıyorsanız ne için
+kullandığınızı yorumlarda paylaşırsanız çok mutlu olurum. Özet olarak termux
+telefonunuza kurup mobil işlerimiz için kullanabileceğimiz güzel bir terminal
+emülatörü. Denemenizi tavsiye ederim.</p><p><img src=termux_listpython.jpg alt="pkg search python"></p></div></article></main><footer><p>&copy; 2025 M.Ozan Unal.</p></footer></body><link rel=stylesheet href=/libs/katex/katex.min.v0.16.9.css><script defer src=/libs/katex/katex.min.v0.16.9.js></script><script defer src=/libs/katex/auto-render.v0.16.9.js></script><script>document.addEventListener("DOMContentLoaded",function(){renderMathInElement(document.body,{delimiters:[{left:"$$",right:"$$",display:!0},{left:"\\[",right:"\\]",display:!0},{left:"\\(",right:"\\)",display:!1},{left:"$",right:"$",display:!1}],throwOnError:!1})})</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-007KSW65JL"></script><script>var dnt,doNotTrack=!1;if(!1&&(dnt=navigator.doNotTrack||window.doNotTrack||navigator.msDoNotTrack,doNotTrack=dnt=="1"||dnt=="yes"),!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-007KSW65JL")}</script></html>

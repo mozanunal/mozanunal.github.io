@@ -1,0 +1,121 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=color-scheme content="light dark"><meta name=description content="An example site for the clean and configurable Hugo Classless theme."><link href=/2019/08/yolocolabdemo/ rel=alternate type=application/rss+xml title=mozanunal.com><link id=theme-style rel=stylesheet href=/css/classless.20c8e211f6768ba295effc3e101a31bfe248db7295bb122355bdf893c6cee731.css integrity="sha256-IMjiEfZ2i6KV7/w+EBoxv+JI23KVuxIjVb34k8bO5zE="><style>pre code,code{-webkit-text-size-adjust:100%;text-size-adjust:100%}img{display:block;margin-left:auto;margin-right:auto}figcaption{display:block;margin-left:auto;margin-right:auto}nav{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;overflow:visible;font-size:1.4rem}nav ul{display:flex;list-style:none;padding:0;margin:0;gap:.5rem}</style><link rel=stylesheet href=/css/syntax-light.min.d1e9974bf1fe0f3bfae6a7af3a04c1e749276b8efbbf6d3397998585f82443f0.css media="(prefers-color-scheme: light)"><link rel=stylesheet href=/css/syntax-dark.min.22964c63865be9217cedda7ac3dbd0143f8f41b3a0f681ef71e845b18a33a4f3.css media="(prefers-color-scheme: dark)"><title>Yolo on Google Colab | mozanunal.com</title><link rel=icon href=/favicon.svg type=image/svg+xml><link rel="shortcut icon" href=/favicon.ico><link rel=apple-touch-icon href=/apple-touch-icon.png></head><body><header><nav><ul><li><strong>mozanunal.com</strong></li></ul><ul><li><a href=/>Home</a></li><li><a href=/posts/>Posts</a></li><li><a href=/projects/>Projects</a></li><li><a href=/papers/>Papers</a></li></ul></nav></header><main><article><h1>Yolo on Google Colab</h1><p><em>August 13, 2019</em></p><div><h1 id=run-yolo-v3-on-colab-for-imagesvideos>Run YOLO V3 on Colab for images/videos</h1><p>Hello there, Today, we will be discussing how we can use the Darknet project on
+Google Colab platform. For those who are not familiar with these terms:</p><p><img src=yoloroad.gif alt="YOLO in action!"></p><ul><li>The Darknet project is an open-source project written in C, which is a
+framework to develop deep neural networks.</li><li>Yolo V3 is an object detection algorithm. It is one of the state of the art
+solution when <strong>accuracy/processing power needed</strong> metric is considered.</li><li>Google Cola is a cloud-based data science workspace similar to the jupyter
+notebook. Each Collabrotary session is equipped with a virtual machine running
+13 GB of ram and either a CPU, GPU, or TPU processor. In most case, all the
+required packages are already installed on these machines and you can quite
+easily start development using Google Collaboratory. It saves us from
+installing process and it provides us <strong>easy to accessible GPU&rsquo;s</strong> which is
+also <strong>free</strong> under some constraints.</li></ul><p>Have a look Ted Talk by Joseph Redmon the developer of the darknet project. The
+talk is about Darknet and YOLO projects which titled as “How computers learn to
+recognize objects instantly” . Darknet project aims to create a new neural
+network framework which is completely focused on simplicity and performance. The
+thing which I like about is its clarity and performance. All the code is written
+in C, to define a deep learning network you should only create a config file
+which defines the layers. By this way, it does not lose its performance
+capabilities also it provides us easy to use interface for development with this
+library.</p><p>Since I love both YOLO project and Google Colab, I decided to create a tutorial
+to use them together. I create a GitHub repository and a Collaboratory notebook
+for this purpose</p><ul><li><a href=https://colab.research.google.com/drive/1DcXQ_pLtLVvQAwILZR-kF0ZJwhkp11Jl>Colab Notebook</a></li><li><a href=https://github.com/mozanunal/yoloOnGoogleColab>mozanunal/yoloOnGoogleColab</a></li></ul><div style=position:relative;padding-bottom:56.25%;height:0;overflow:hidden><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading=eager referrerpolicy=strict-origin-when-cross-origin src="https://www.youtube.com/embed/Cgxsv1riJhI?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style=position:absolute;top:0;left:0;width:100%;height:100%;border:0 title="YouTube video"></iframe></div><p><strong>Please check</strong></p><ul><li><a href=https://pjreddie.com/darknet/yolo/>YOLO website</a></li><li><a href=https://pjreddie.com/darknet/>Darknet website</a></li><li><a href=https://arxiv.org/abs/1804.02767>YOLOV3 Paper</a></li></ul><h2 id=install>Install</h2><p>Go to the directory, clear and install everthing</p><ul><li>Clone the project</li><li>Change make file configurations and make OPENCV and GPU enable</li><li>Install opencv library</li></ul><div class=highlight><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=kn>import</span> <span class=nn>cv2</span><span class=o>,</span> <span class=nn>os</span>
+</span></span><span class=line><span class=cl><span class=kn>import</span> <span class=nn>matplotlib.pyplot</span> <span class=k>as</span> <span class=nn>plt</span>
+</span></span><span class=line><span class=cl><span class=o>%</span><span class=n>matplotlib</span> <span class=n>inline</span>
+</span></span></code></pre></div><div class=highlight><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=err>!</span><span class=n>ls</span>
+</span></span><span class=line><span class=cl><span class=err>!</span><span class=n>cd</span> <span class=o>/</span><span class=n>content</span>
+</span></span><span class=line><span class=cl><span class=err>!</span><span class=n>rm</span> <span class=o>-</span><span class=n>fr</span> <span class=n>darknet</span>
+</span></span><span class=line><span class=cl><span class=err>!</span><span class=n>git</span> <span class=n>clone</span> <span class=n>https</span><span class=p>:</span><span class=o>//</span><span class=n>github</span><span class=o>.</span><span class=n>com</span><span class=o>/</span><span class=n>AlexeyAB</span><span class=o>/</span><span class=n>darknet</span><span class=o>/</span>
+</span></span><span class=line><span class=cl><span class=o>%</span> <span class=n>cd</span> <span class=n>darknet</span>
+</span></span><span class=line><span class=cl><span class=err>!</span><span class=n>sed</span> <span class=o>-</span><span class=n>i</span> <span class=s1>&#39;s/OPENCV=0/OPENCV=1/g&#39;</span> <span class=n>Makefile</span>
+</span></span><span class=line><span class=cl><span class=err>!</span><span class=n>sed</span> <span class=o>-</span><span class=n>i</span> <span class=s1>&#39;s/GPU=0/GPU=1/g&#39;</span> <span class=n>Makefile</span>
+</span></span><span class=line><span class=cl><span class=err>!</span><span class=n>sed</span> <span class=o>-</span><span class=n>i</span> <span class=s1>&#39;s/CUDNN=0/CUDNN=1/g&#39;</span> <span class=n>Makefile</span>
+</span></span><span class=line><span class=cl><span class=err>!</span><span class=n>apt</span> <span class=n>update</span>
+</span></span><span class=line><span class=cl><span class=err>!</span><span class=n>apt</span><span class=o>-</span><span class=n>get</span> <span class=n>install</span> <span class=n>libopencv</span><span class=o>-</span><span class=n>dev</span>
+</span></span></code></pre></div><h2 id=compile-and-configure>Compile and Configure</h2><ul><li>Compile YOLO</li><li>Download YOLO weights</li></ul><div class=highlight><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=err>!</span><span class=n>make</span> <span class=o>&amp;&gt;</span> <span class=nb>compile</span><span class=o>.</span><span class=n>log</span>
+</span></span></code></pre></div><div class=highlight><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=err>!</span><span class=n>wget</span> <span class=n>https</span><span class=p>:</span><span class=o>//</span><span class=n>pjreddie</span><span class=o>.</span><span class=n>com</span><span class=o>/</span><span class=n>media</span><span class=o>/</span><span class=n>files</span><span class=o>/</span><span class=n>yolov3</span><span class=o>.</span><span class=n>weights</span>
+</span></span></code></pre></div><pre><code>--2019-08-11 23:58:44--  https://pjreddie.com/media/files/yolov3.weights
+Resolving pjreddie.com (pjreddie.com)... 128.208.4.108
+Connecting to pjreddie.com (pjreddie.com)|128.208.4.108|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 248007048 (237M) [application/octet-stream]
+Saving to: ‘yolov3.weights’
+
+yolov3.weights      100%[===================&gt;] 236.52M  62.1MB/s    in 4.1s
+
+2019-08-11 23:58:48 (57.7 MB/s) - ‘yolov3.weights’ saved [248007048/248007048]
+</code></pre><h2 id=test-an-image>Test An Image</h2><div class=highlight><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=k>def</span> <span class=nf>predictImage</span><span class=p>(</span><span class=n>imageDir</span><span class=p>):</span>
+</span></span><span class=line><span class=cl>  <span class=n>os</span><span class=o>.</span><span class=n>system</span><span class=p>(</span><span class=s2>&#34;cd /content/darknet &amp;&amp; ./darknet detect cfg/yolov3.cfg yolov3.weights </span><span class=si>{}</span><span class=s2>&#34;</span><span class=o>.</span><span class=n>format</span><span class=p>(</span><span class=n>imageDir</span><span class=p>))</span>
+</span></span><span class=line><span class=cl>  <span class=n>image</span> <span class=o>=</span> <span class=n>cv2</span><span class=o>.</span><span class=n>imread</span><span class=p>(</span><span class=s2>&#34;/content/darknet/predictions.jpg&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>  <span class=n>height</span><span class=p>,</span> <span class=n>width</span> <span class=o>=</span> <span class=n>image</span><span class=o>.</span><span class=n>shape</span><span class=p>[:</span><span class=mi>2</span><span class=p>]</span>
+</span></span><span class=line><span class=cl>  <span class=n>resized_image</span> <span class=o>=</span> <span class=n>cv2</span><span class=o>.</span><span class=n>resize</span><span class=p>(</span><span class=n>image</span><span class=p>,(</span><span class=mi>3</span><span class=o>*</span><span class=n>width</span><span class=p>,</span> <span class=mi>3</span><span class=o>*</span><span class=n>height</span><span class=p>),</span> <span class=n>interpolation</span> <span class=o>=</span> <span class=n>cv2</span><span class=o>.</span><span class=n>INTER_CUBIC</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>  <span class=n>fig</span> <span class=o>=</span> <span class=n>plt</span><span class=o>.</span><span class=n>gcf</span><span class=p>()</span>
+</span></span><span class=line><span class=cl>  <span class=n>fig</span><span class=o>.</span><span class=n>set_size_inches</span><span class=p>(</span><span class=mi>18</span><span class=p>,</span> <span class=mi>10</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>  <span class=n>plt</span><span class=o>.</span><span class=n>axis</span><span class=p>(</span><span class=s2>&#34;off&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>  <span class=c1>#plt.rcParams[&#39;figure.figsize&#39;] = [10, 5]</span>
+</span></span><span class=line><span class=cl>  <span class=n>plt</span><span class=o>.</span><span class=n>imshow</span><span class=p>(</span><span class=n>cv2</span><span class=o>.</span><span class=n>cvtColor</span><span class=p>(</span><span class=n>resized_image</span><span class=p>,</span> <span class=n>cv2</span><span class=o>.</span><span class=n>COLOR_BGR2RGB</span><span class=p>))</span>
+</span></span><span class=line><span class=cl>  <span class=n>plt</span><span class=o>.</span><span class=n>show</span><span class=p>()</span>
+</span></span></code></pre></div><div class=highlight><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=err>!</span><span class=n>wget</span> <span class=n>https</span><span class=p>:</span><span class=o>//</span><span class=n>github</span><span class=o>.</span><span class=n>com</span><span class=o>/</span><span class=n>mozanunal</span><span class=o>/</span><span class=n>yoloOnGoogleColab</span><span class=o>/</span><span class=n>raw</span><span class=o>/</span><span class=n>master</span><span class=o>/</span><span class=n>test</span><span class=o>/</span><span class=n>test</span><span class=o>.</span><span class=n>jpg</span>
+</span></span><span class=line><span class=cl><span class=err>!</span><span class=n>ls</span>
+</span></span></code></pre></div><pre><code>--2019-08-11 23:58:49--  https://github.com/mozanunal/yoloOnGoogleColab/raw/master/test/test.jpg
+Resolving github.com (github.com)... 192.30.253.113
+Connecting to github.com (github.com)|192.30.253.113|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://raw.githubusercontent.com/mozanunal/yoloOnGoogleColab/master/test/test.jpg [following]
+--2019-08-11 23:58:50--  https://raw.githubusercontent.com/mozanunal/yoloOnGoogleColab/master/test/test.jpg
+Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 151.101.0.133, 151.101.64.133, 151.101.128.133, ...
+Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|151.101.0.133|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 68535 (67K) [image/jpeg]
+Saving to: ‘test.jpg’
+
+test.jpg            100%[===================&gt;]  66.93K  --.-KB/s    in 0.05s
+
+2019-08-11 23:58:50 (1.32 MB/s) - ‘test.jpg’ saved [68535/68535]
+
+3rdparty      CMakeLists.txt	      image_yolov3.sh	     results
+appveyor.yml  compile.log	      include		     scripts
+backup	      darknet		      json_mjpeg_streams.sh  src
+build	      DarknetConfig.cmake.in  LICENSE		     test.jpg
+build.ps1     darknet.py	      Makefile		     video_v2.sh
+build.sh      darknet_video.py	      net_cam_v3.sh	     video_yolov3.sh
+cfg	      data		      obj		     yolov3.weights
+cmake	      image_yolov2.sh	      README.md
+</code></pre><div class=highlight><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=n>predictImage</span><span class=p>(</span><span class=s2>&#34;test.jpg&#34;</span><span class=p>)</span>
+</span></span></code></pre></div><p><img src=output_11_0.png alt=png></p><h2 id=test-with-video>Test with Video</h2><div class=highlight><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=k>def</span> <span class=nf>predictVideo</span><span class=p>(</span><span class=n>videoDir</span><span class=p>):</span>
+</span></span><span class=line><span class=cl>  <span class=n>os</span><span class=o>.</span><span class=n>system</span><span class=p>(</span><span class=s2>&#34;&#34;&#34; cd /content/darknet &amp;&amp; ./darknet detector demo cfg/coco.data cfg/yolov3.cfg yolov3.weights </span><span class=se>\
+</span></span></span><span class=line><span class=cl><span class=se></span><span class=s2>  -dont_show </span><span class=si>{}</span><span class=s2> -i 0 -out_filename res.avi
+</span></span></span><span class=line><span class=cl><span class=s2>  &#34;&#34;&#34;</span><span class=o>.</span><span class=n>format</span><span class=p>(</span><span class=n>videoDir</span><span class=p>))</span>
+</span></span></code></pre></div><div class=highlight><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=err>!</span><span class=n>wget</span> <span class=n>https</span><span class=p>:</span><span class=o>//</span><span class=n>github</span><span class=o>.</span><span class=n>com</span><span class=o>/</span><span class=n>mozanunal</span><span class=o>/</span><span class=n>yoloOnGoogleColab</span><span class=o>/</span><span class=n>raw</span><span class=o>/</span><span class=n>master</span><span class=o>/</span><span class=n>test</span><span class=o>/</span><span class=n>test</span><span class=o>.</span><span class=n>avi</span>
+</span></span><span class=line><span class=cl><span class=err>!</span><span class=n>ls</span>
+</span></span></code></pre></div><pre><code>--2019-08-11 23:59:01--  https://github.com/mozanunal/yoloOnGoogleColab/raw/master/test/test.avi
+Resolving github.com (github.com)... 192.30.253.113
+Connecting to github.com (github.com)|192.30.253.113|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://raw.githubusercontent.com/mozanunal/yoloOnGoogleColab/master/test/test.avi [following]
+--2019-08-11 23:59:02--  https://raw.githubusercontent.com/mozanunal/yoloOnGoogleColab/master/test/test.avi
+Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 151.101.0.133, 151.101.64.133, 151.101.128.133, ...
+Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|151.101.0.133|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 15897530 (15M) [application/octet-stream]
+Saving to: ‘test.avi’
+
+test.avi            100%[===================&gt;]  15.16M  50.0MB/s    in 0.3s
+
+2019-08-11 23:59:02 (50.0 MB/s) - ‘test.avi’ saved [15897530/15897530]
+
+3rdparty	compile.log		json_mjpeg_streams.sh  src
+appveyor.yml	darknet			LICENSE		       test.avi
+backup		DarknetConfig.cmake.in	Makefile	       test.jpg
+build		darknet.py		net_cam_v3.sh	       video_v2.sh
+build.ps1	darknet_video.py	obj		       video_yolov3.sh
+build.sh	data			predictions.jpg        yolov3.weights
+cfg		image_yolov2.sh		README.md
+cmake		image_yolov3.sh		results
+CMakeLists.txt	include			scripts
+</code></pre><div class=highlight><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=n>predictVideo</span><span class=p>(</span><span class=s2>&#34;test.avi&#34;</span><span class=p>)</span>
+</span></span></code></pre></div><div class=highlight><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=err>!</span><span class=n>du</span> <span class=o>-</span><span class=n>h</span> <span class=n>res</span><span class=o>.</span><span class=n>avi</span>
+</span></span></code></pre></div><pre><code>93M	res.avi
+</code></pre><div class=highlight><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=kn>from</span> <span class=nn>google.colab</span> <span class=kn>import</span> <span class=n>files</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=n>files</span><span class=o>.</span><span class=n>download</span><span class=p>(</span><span class=s1>&#39;/content/darknet/res.avi&#39;</span><span class=p>)</span>
+</span></span></code></pre></div><p><strong>See you later!</strong></p></div></article></main><footer><p>&copy; 2025 M.Ozan Unal.</p></footer></body><link rel=stylesheet href=/libs/katex/katex.min.v0.16.9.css><script defer src=/libs/katex/katex.min.v0.16.9.js></script><script defer src=/libs/katex/auto-render.v0.16.9.js></script><script>document.addEventListener("DOMContentLoaded",function(){renderMathInElement(document.body,{delimiters:[{left:"$$",right:"$$",display:!0},{left:"\\[",right:"\\]",display:!0},{left:"\\(",right:"\\)",display:!1},{left:"$",right:"$",display:!1}],throwOnError:!1})})</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-007KSW65JL"></script><script>var dnt,doNotTrack=!1;if(!1&&(dnt=navigator.doNotTrack||window.doNotTrack||navigator.msDoNotTrack,doNotTrack=dnt=="1"||dnt=="yes"),!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-007KSW65JL")}</script></html>

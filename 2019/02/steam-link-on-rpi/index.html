@@ -1,0 +1,40 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=color-scheme content="light dark"><meta name=description content="An example site for the clean and configurable Hugo Classless theme."><link href=/2019/02/steam-link-on-rpi/ rel=alternate type=application/rss+xml title=mozanunal.com><link id=theme-style rel=stylesheet href=/css/classless.20c8e211f6768ba295effc3e101a31bfe248db7295bb122355bdf893c6cee731.css integrity="sha256-IMjiEfZ2i6KV7/w+EBoxv+JI23KVuxIjVb34k8bO5zE="><style>pre code,code{-webkit-text-size-adjust:100%;text-size-adjust:100%}img{display:block;margin-left:auto;margin-right:auto}figcaption{display:block;margin-left:auto;margin-right:auto}nav{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;overflow:visible;font-size:1.4rem}nav ul{display:flex;list-style:none;padding:0;margin:0;gap:.5rem}</style><link rel=stylesheet href=/css/syntax-light.min.d1e9974bf1fe0f3bfae6a7af3a04c1e749276b8efbbf6d3397998585f82443f0.css media="(prefers-color-scheme: light)"><link rel=stylesheet href=/css/syntax-dark.min.22964c63865be9217cedda7ac3dbd0143f8f41b3a0f681ef71e845b18a33a4f3.css media="(prefers-color-scheme: dark)"><title>Playing DOTA on Raspberry Pi using Steam Link | mozanunal.com</title><link rel=icon href=/favicon.svg type=image/svg+xml><link rel="shortcut icon" href=/favicon.ico><link rel=apple-touch-icon href=/apple-touch-icon.png></head><body><header><nav><ul><li><strong>mozanunal.com</strong></li></ul><ul><li><a href=/>Home</a></li><li><a href=/posts/>Posts</a></li><li><a href=/projects/>Projects</a></li><li><a href=/papers/>Papers</a></li></ul></nav></header><main><article><h1>Playing DOTA on Raspberry Pi using Steam Link</h1><p><em>February 1, 2019</em></p><div><p><strong>Hello,</strong> Steam Link is software which provides support to Steam to stream
+screen view of the games to devices which is on same local area network. In this
+setup, there are 2 devices. First one is the device to run the Steam and the
+games which act as a server. The second one is the one which runs Steam Link and
+acts as a client to this server. By using this technology you can play games
+directly on a device which is connected to the same router. The connection is
+also 2 way. Thus, control devices such as keyboard, mouse and game controllers
+can be connected directly to the client device.</p><p>On 3rd of December, Steam announced that the Steam Link can work on Raspberry Pi
+now. After I saw that, I decided to give it a try. I have tried it with my
+favorite game, Dota 2. Dota 2 can be played on a Raspberry Pi using Steam Link.
+It basically uses your computer as a game server. Actually, the PC is run the
+Dota 2 however it casts its screen view to another computer, which in this case
+is a Raspberry Pi. You can install it to your Raspberry Pi with only 2 shell
+commands.</p><p>In this post, installing and running the Steam Link will be discussed. Steam
+Link is a software which is developed to play high processing power intensive
+games on low processing power devices. Actually, you should already have enough
+system requirements for the game and this computer also should be the same local
+area network.</p><p><img src=steamlink1.jpg alt></p><h3 id=installation>Installation</h3><p>The following link is from Steam Community website. They announced that Steam
+Link is officially available for Raspberry Pi. The installation process is quite
+easy but the basic Linux shell knowledge still is a requirement.<br><a href=https://steamcommunity.com/app/353380/discussions/0/1743353164093954254/>https://steamcommunity.com/app/353380/discussions/0/1743353164093954254/</a></p><p>The first step, using curl download the required Debian installation package.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-shell data-lang=shell><span class=line><span class=cl>pi@rpi-:~ $ curl -#Of http://media.steampowered.com/steamlink/rpi/steamlink_1.0.7_armhf.deb
+</span></span><span class=line><span class=cl><span class=c1>######################################################################## 100.0%</span>
+</span></span></code></pre></div><p>After downloading the package, process continues with following one line script.
+It is installing Steam Link Package to your Raspberry Pi.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>pi@rpi-:~ $ sudo dpkg -i steamlink_1.0.7_armhf.deb
+</span></span><span class=line><span class=cl>Selecting previously unselected package steamlink.
+</span></span><span class=line><span class=cl><span class=o>(</span>Reading database ... <span class=m>129787</span> files and directories currently installed.<span class=o>)</span>
+</span></span><span class=line><span class=cl>Preparing to unpack steamlink_1.0.7_armhf.deb ...
+</span></span><span class=line><span class=cl>Unpacking steamlink <span class=o>(</span>1.0.7<span class=o>)</span> ...
+</span></span><span class=line><span class=cl>Setting up steamlink <span class=o>(</span>1.0.7<span class=o>)</span> ...
+</span></span><span class=line><span class=cl>Processing triggers <span class=k>for</span> gnome-menus <span class=o>(</span>3.13.3-9<span class=o>)</span> ...
+</span></span><span class=line><span class=cl>Processing triggers <span class=k>for</span> desktop-file-utils <span class=o>(</span>0.23-1<span class=o>)</span> ...
+</span></span><span class=line><span class=cl>Processing triggers <span class=k>for</span> mime-support <span class=o>(</span>3.60<span class=o>)</span> ...
+</span></span><span class=line><span class=cl>Processing triggers <span class=k>for</span> hicolor-icon-theme <span class=o>(</span>0.15-1<span class=o>)</span> ...
+</span></span><span class=line><span class=cl>Processing triggers <span class=k>for</span> man-db <span class=o>(</span>2.7.6.1-2<span class=o>)</span> ...
+</span></span></code></pre></div><h3 id=game-play-demo>Game Play Demo</h3><p>Some configurations are also should be done to start playing through your
+Raspberry Pi. However, these steps are quite easy to follow and no prior shell
+knowledge is required. By the way, ping is around 6 ms with ethernet connection
+to your router. The ping is heavily depends on your router performance and
+connection quality. I could not get sufficient results with WiFi connection to
+Raspberry Pi. Therefore I connect it to external router in order to keep the
+connection latency as minimum as possible.</p><div style=position:relative;padding-bottom:56.25%;height:0;overflow:hidden><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading=eager referrerpolicy=strict-origin-when-cross-origin src="https://www.youtube.com/embed/Oouu3DmDyM4?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style=position:absolute;top:0;left:0;width:100%;height:100%;border:0 title="YouTube video"></iframe></div></div></article></main><footer><p>&copy; 2025 M.Ozan Unal.</p></footer></body><link rel=stylesheet href=/libs/katex/katex.min.v0.16.9.css><script defer src=/libs/katex/katex.min.v0.16.9.js></script><script defer src=/libs/katex/auto-render.v0.16.9.js></script><script>document.addEventListener("DOMContentLoaded",function(){renderMathInElement(document.body,{delimiters:[{left:"$$",right:"$$",display:!0},{left:"\\[",right:"\\]",display:!0},{left:"\\(",right:"\\)",display:!1},{left:"$",right:"$",display:!1}],throwOnError:!1})})</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-007KSW65JL"></script><script>var dnt,doNotTrack=!1;if(!1&&(dnt=navigator.doNotTrack||window.doNotTrack||navigator.msDoNotTrack,doNotTrack=dnt=="1"||dnt=="yes"),!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-007KSW65JL")}</script></html>
