@@ -22,6 +22,7 @@ params:
   description: "An example site for the clean and configurable Hugo Classless theme."
 
   theme: css/classless.css
+  themeDark: css/classless-dark.css
   # themes:
   #   - name: "Cosmo.css"
   #     url: "https://cdn.jsdelivr.net/gh/cspablocortez/cosmocss@latest/cosmo.min.css"
@@ -77,3 +78,15 @@ markup:
 
 minify:
   disableXML: true
+
+# related:
+#   includeNewer: true
+#   threshold: 0
+#   toLower: true
+#   indices:
+#     - name: tags
+#       weight: 100
+#     - name: categories
+#       weight: 80
+#     - name: date
+#       weight: 10
