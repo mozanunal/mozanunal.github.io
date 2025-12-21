@@ -33,14 +33,14 @@ sayede sistem baya toplanmış oldu tek parça bir görüntü kazandı.</p><div 
 inceleyebilirsiniz.</p><h4 id=wifi-bağlanma-ve-ekran-ayarları>Wifi bağlanma ve ekran ayarları</h4><p>Wifi multi kullandığım için birden fazla wifi girebilirsiniz. Hangisi çevrede
 varsa onu kullanarak internete çıkar. Ekranın boyutu çok küçük olmasına rağmen
 çözünürlüğü böyle bir sisteme göre oldukça yüksek bu sayede baya hoş gözüküyor.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-cpp data-lang=cpp><span class=line><span class=cl><span class=c1>//Setup Oled
-</span></span></span><span class=line><span class=cl><span class=c1></span><span class=n>display</span><span class=p>.</span><span class=n>init</span><span class=p>();</span>
+</span></span></span><span class=line><span class=cl><span class=n>display</span><span class=p>.</span><span class=n>init</span><span class=p>();</span>
 </span></span><span class=line><span class=cl><span class=n>display</span><span class=p>.</span><span class=n>flipScreenVertically</span><span class=p>();</span>
 </span></span><span class=line><span class=cl><span class=n>display</span><span class=p>.</span><span class=n>setFont</span><span class=p>(</span><span class=n>ArialMT_Plain_16</span><span class=p>);</span>
 </span></span><span class=line><span class=cl><span class=n>display</span><span class=p>.</span><span class=n>setTextAlignment</span><span class=p>(</span><span class=n>TEXT_ALIGN_LEFT</span><span class=p>);</span>
 </span></span><span class=line><span class=cl><span class=n>display</span><span class=p>.</span><span class=n>clear</span><span class=p>();</span>
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl><span class=c1>//Setup Wifi
-</span></span></span><span class=line><span class=cl><span class=c1></span><span class=n>WiFiMulti</span><span class=p>.</span><span class=n>addAP</span><span class=p>(</span> <span class=n>ssid_1</span> <span class=p>,</span> <span class=n>pass_1</span><span class=p>);</span>
+</span></span></span><span class=line><span class=cl><span class=n>WiFiMulti</span><span class=p>.</span><span class=n>addAP</span><span class=p>(</span> <span class=n>ssid_1</span> <span class=p>,</span> <span class=n>pass_1</span><span class=p>);</span>
 </span></span><span class=line><span class=cl><span class=n>WiFiMulti</span><span class=p>.</span><span class=n>addAP</span><span class=p>(</span> <span class=n>ssid_2</span> <span class=p>,</span> <span class=n>pass_2</span><span class=p>);</span>
 </span></span><span class=line><span class=cl><span class=n>display</span><span class=p>.</span><span class=n>clear</span><span class=p>();</span>
 </span></span><span class=line><span class=cl><span class=n>display</span><span class=p>.</span><span class=n>drawString</span><span class=p>(</span><span class=mi>0</span> <span class=p>,</span> <span class=mi>20</span><span class=p>,</span> <span class=s>&#34;Waiting for wifi...&#34;</span><span class=p>);</span>
@@ -58,17 +58,17 @@ ile parçalanıp içinden gerekli bilgi çekiliyor. Verilen urlden datayı strin
 almak için aşağıdaki fonksiyonu yazdım.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-cpp data-lang=cpp><span class=line><span class=cl><span class=n>String</span> <span class=nf>getJsonFromUrl</span><span class=p>(</span><span class=kt>char</span> <span class=o>*</span><span class=n>url</span><span class=p>)</span>
 </span></span><span class=line><span class=cl><span class=p>{</span>
 </span></span><span class=line><span class=cl>    <span class=n>HTTPClient</span> <span class=n>http</span><span class=p>;</span>  <span class=c1>//Declare an object of class HTTPClient
-</span></span></span><span class=line><span class=cl><span class=c1></span>    <span class=n>String</span> <span class=n>payload</span><span class=p>;</span>
+</span></span></span><span class=line><span class=cl>    <span class=n>String</span> <span class=n>payload</span><span class=p>;</span>
 </span></span><span class=line><span class=cl>    <span class=n>http</span><span class=p>.</span><span class=n>begin</span><span class=p>(</span><span class=n>url</span><span class=p>);</span>  <span class=c1>//Specify request destination
-</span></span></span><span class=line><span class=cl><span class=c1></span>    <span class=kt>int</span> <span class=n>httpCode</span> <span class=o>=</span> <span class=n>http</span><span class=p>.</span><span class=n>GET</span><span class=p>();</span> <span class=c1>//Send the request
-</span></span></span><span class=line><span class=cl><span class=c1></span>    <span class=n>Serial</span><span class=p>.</span><span class=n>print</span><span class=p>(</span><span class=s>&#34;</span><span class=se>\n</span><span class=s> Received http code &#34;</span><span class=p>);</span>
+</span></span></span><span class=line><span class=cl>    <span class=kt>int</span> <span class=n>httpCode</span> <span class=o>=</span> <span class=n>http</span><span class=p>.</span><span class=n>GET</span><span class=p>();</span> <span class=c1>//Send the request
+</span></span></span><span class=line><span class=cl>    <span class=n>Serial</span><span class=p>.</span><span class=n>print</span><span class=p>(</span><span class=s>&#34;</span><span class=se>\n</span><span class=s> Received http code &#34;</span><span class=p>);</span>
 </span></span><span class=line><span class=cl>    <span class=n>Serial</span><span class=p>.</span><span class=n>println</span><span class=p>(</span><span class=n>httpCode</span><span class=p>);</span>
 </span></span><span class=line><span class=cl>    <span class=k>if</span> <span class=p>(</span><span class=n>httpCode</span> <span class=o>&gt;</span> <span class=mi>0</span><span class=p>)</span> <span class=c1>//Check the returning code
-</span></span></span><span class=line><span class=cl><span class=c1></span>    <span class=p>{</span>
+</span></span></span><span class=line><span class=cl>    <span class=p>{</span>
 </span></span><span class=line><span class=cl>      <span class=n>Serial</span><span class=p>.</span><span class=n>println</span><span class=p>(</span><span class=s>&#34;HTTP OK&#34;</span><span class=p>);</span>
 </span></span><span class=line><span class=cl>      <span class=n>payload</span> <span class=o>=</span> <span class=n>http</span><span class=p>.</span><span class=n>getString</span><span class=p>();</span>   <span class=c1>//Get the request response payload
-</span></span></span><span class=line><span class=cl><span class=c1></span>      <span class=n>Serial</span><span class=p>.</span><span class=n>println</span><span class=p>(</span><span class=n>payload</span><span class=p>);</span>      <span class=c1>//Print the response payloa
-</span></span></span><span class=line><span class=cl><span class=c1></span>      <span class=k>return</span> <span class=n>payload</span><span class=p>;</span>
+</span></span></span><span class=line><span class=cl>      <span class=n>Serial</span><span class=p>.</span><span class=n>println</span><span class=p>(</span><span class=n>payload</span><span class=p>);</span>      <span class=c1>//Print the response payloa
+</span></span></span><span class=line><span class=cl>      <span class=k>return</span> <span class=n>payload</span><span class=p>;</span>
 </span></span><span class=line><span class=cl>    <span class=p>}</span>
 </span></span><span class=line><span class=cl>    <span class=k>else</span>
 </span></span><span class=line><span class=cl>    <span class=p>{</span>
@@ -76,7 +76,7 @@ almak için aşağıdaki fonksiyonu yazdım.</p><div class=highlight><pre tabind
 </span></span><span class=line><span class=cl>      <span class=k>return</span> <span class=s>&#34;{}&#34;</span><span class=p>;</span>
 </span></span><span class=line><span class=cl>    <span class=p>}</span>
 </span></span><span class=line><span class=cl>    <span class=n>http</span><span class=p>.</span><span class=n>end</span><span class=p>();</span>   <span class=c1>//Close connection
-</span></span></span><span class=line><span class=cl><span class=c1></span><span class=p>}</span>
+</span></span></span><span class=line><span class=cl><span class=p>}</span>
 </span></span></code></pre></div><h5 id=kur-bilgisinin-alınması>Kur bilgisinin alınması</h5><p>Yukarıdaki data alma fonksiyonu kullanılarak data string olarak çekilip json&rsquo;a
 dönüştürülüyor. Daha sonrasında kur bilgisi aşağıdaki fonksiyon kullanılarak
 çekiliyor. Json parçalanıp içindeki &ldquo;USD&rdquo; objesinin &ldquo;last&rdquo; değikeni çekiliyor.
@@ -100,7 +100,7 @@ bitcoin olarak çekiliyor. Bitcoin değeri ile kur çarpılarak dolar karşılı
 hesaplanıyor.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-cpp data-lang=cpp><span class=line><span class=cl><span class=kt>double</span> <span class=nf>getTotalBTC</span><span class=p>(</span><span class=k>const</span> <span class=kt>char</span> <span class=o>*</span><span class=n>BitCoinWallet</span><span class=p>)</span>
 </span></span><span class=line><span class=cl><span class=p>{</span>
 </span></span><span class=line><span class=cl>  <span class=c1>//Setup URLs
-</span></span></span><span class=line><span class=cl><span class=c1></span>  <span class=n>strcpy</span><span class=p>(</span> <span class=n>url_Balence</span><span class=p>,</span> <span class=n>url_Balance_base</span> <span class=p>);</span>
+</span></span></span><span class=line><span class=cl>  <span class=n>strcpy</span><span class=p>(</span> <span class=n>url_Balence</span><span class=p>,</span> <span class=n>url_Balance_base</span> <span class=p>);</span>
 </span></span><span class=line><span class=cl>  <span class=n>strcat</span><span class=p>(</span> <span class=n>url_Balence</span><span class=p>,</span> <span class=n>BitCoinWallet</span> <span class=p>);</span>
 </span></span><span class=line><span class=cl>  <span class=n>JsonObject</span><span class=o>&amp;</span> <span class=n>root_Balance</span> <span class=o>=</span> <span class=n>jsonBuffer_Balance</span><span class=p>.</span><span class=n>parseObject</span><span class=p>(</span> <span class=n>getJsonFromUrl</span><span class=p>(</span><span class=n>url_Balence</span><span class=p>)</span> <span class=p>);</span>
 </span></span><span class=line><span class=cl>  <span class=kt>double</span> <span class=n>total_balance_btc</span> <span class=o>=</span> <span class=mf>0.0</span><span class=p>;</span>
@@ -127,7 +127,7 @@ kurdum.</p><div class=highlight><pre tabindex=0 class=chroma><code class=languag
 </span></span><span class=line><span class=cl><span class=p>{</span>
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl>  <span class=c1>//currency
-</span></span></span><span class=line><span class=cl><span class=c1></span>  <span class=n>delay</span><span class=p>(</span><span class=mi>2000</span><span class=p>);</span>
+</span></span></span><span class=line><span class=cl>  <span class=n>delay</span><span class=p>(</span><span class=mi>2000</span><span class=p>);</span>
 </span></span><span class=line><span class=cl>  <span class=kt>char</span> <span class=n>currency_line</span><span class=p>[</span><span class=mi>30</span><span class=p>];</span>
 </span></span><span class=line><span class=cl>  <span class=n>dtostrf</span><span class=p>(</span><span class=n>currency</span><span class=p>,</span><span class=mi>0</span><span class=p>,</span> <span class=mi>2</span><span class=p>,</span> <span class=n>currency_line</span><span class=p>);</span>
 </span></span><span class=line><span class=cl>  <span class=n>sprintf</span><span class=p>(</span><span class=n>currency_line</span><span class=p>,</span><span class=s>&#34;%s %s&#34;</span><span class=p>,</span> <span class=n>currency_line</span><span class=p>,</span> <span class=s>&#34; $&#34;</span><span class=p>);</span>
@@ -138,7 +138,7 @@ kurdum.</p><div class=highlight><pre tabindex=0 class=chroma><code class=languag
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl>  <span class=c1>// total dollar
-</span></span></span><span class=line><span class=cl><span class=c1></span>  <span class=n>delay</span><span class=p>(</span><span class=mi>2000</span><span class=p>);</span>
+</span></span></span><span class=line><span class=cl>  <span class=n>delay</span><span class=p>(</span><span class=mi>2000</span><span class=p>);</span>
 </span></span><span class=line><span class=cl>  <span class=kt>char</span> <span class=n>total_balance_line</span><span class=p>[</span><span class=mi>30</span><span class=p>];</span>
 </span></span><span class=line><span class=cl>  <span class=n>dtostrf</span><span class=p>(</span><span class=n>total_balance</span><span class=p>,</span><span class=mi>0</span><span class=p>,</span> <span class=mi>8</span><span class=p>,</span> <span class=n>total_balance_line</span><span class=p>);</span>
 </span></span><span class=line><span class=cl>  <span class=n>sprintf</span><span class=p>(</span><span class=n>total_balance_line</span><span class=p>,</span><span class=s>&#34;%s %s&#34;</span><span class=p>,</span> <span class=n>total_balance_line</span><span class=p>,</span> <span class=s>&#34; $&#34;</span><span class=p>);</span>
@@ -149,7 +149,7 @@ kurdum.</p><div class=highlight><pre tabindex=0 class=chroma><code class=languag
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl>  <span class=c1>// total btc
-</span></span></span><span class=line><span class=cl><span class=c1></span>  <span class=n>delay</span><span class=p>(</span><span class=mi>2000</span><span class=p>);</span>
+</span></span></span><span class=line><span class=cl>  <span class=n>delay</span><span class=p>(</span><span class=mi>2000</span><span class=p>);</span>
 </span></span><span class=line><span class=cl>  <span class=kt>char</span> <span class=n>totol_balance_btc_line</span><span class=p>[</span><span class=mi>30</span><span class=p>];</span>
 </span></span><span class=line><span class=cl>  <span class=n>dtostrf</span><span class=p>(</span><span class=n>totol_balance_btc</span><span class=p>,</span><span class=mi>0</span><span class=p>,</span> <span class=mi>8</span><span class=p>,</span> <span class=n>totol_balance_btc_line</span><span class=p>);</span>
 </span></span><span class=line><span class=cl>  <span class=n>sprintf</span><span class=p>(</span><span class=n>totol_balance_btc_line</span><span class=p>,</span><span class=s>&#34;%s %s&#34;</span><span class=p>,</span> <span class=n>totol_balance_btc_line</span><span class=p>,</span> <span class=s>&#34; BTC&#34;</span><span class=p>);</span>
@@ -160,4 +160,4 @@ kurdum.</p><div class=highlight><pre tabindex=0 class=chroma><code class=languag
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl><span class=p>}</span>
 </span></span></code></pre></div><p><em>Şimdilik bu proje için yazacaklarım bu kadar. Ayrıntılı bilgi için mesaj
-atabilirsiniz. Görüşmek üzere.</em></p></div></article></main><footer><p>&copy; 2025 M.Ozan Unal.</p></footer></body><link rel=stylesheet href=/libs/katex/katex.min.v0.16.9.css><script defer src=/libs/katex/katex.min.v0.16.9.js></script><script defer src=/libs/katex/auto-render.v0.16.9.js></script><script>document.addEventListener("DOMContentLoaded",function(){renderMathInElement(document.body,{delimiters:[{left:"$$",right:"$$",display:!0},{left:"\\[",right:"\\]",display:!0},{left:"\\(",right:"\\)",display:!1},{left:"$",right:"$",display:!1}],throwOnError:!1})})</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-007KSW65JL"></script><script>var dnt,doNotTrack=!1;if(!1&&(dnt=navigator.doNotTrack||window.doNotTrack||navigator.msDoNotTrack,doNotTrack=dnt=="1"||dnt=="yes"),!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-007KSW65JL")}</script></html>
+atabilirsiniz. Görüşmek üzere.</em></p></div></article></main><footer><p>&copy; 2025 M.Ozan Unal.</p></footer></body><link rel=stylesheet href=/libs/katex/katex.min.v0.16.9.css><script defer src=/libs/katex/katex.min.v0.16.9.js></script><script defer src=/libs/katex/auto-render.v0.16.9.js></script><script>document.addEventListener("DOMContentLoaded",function(){renderMathInElement(document.body,{delimiters:[{left:"$$",right:"$$",display:!0},{left:"\\[",right:"\\]",display:!0},{left:"\\(",right:"\\)",display:!1},{left:"$",right:"$",display:!1}],throwOnError:!1})})</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-007KSW65JL"></script><script>var doNotTrack=!1,dnt=navigator.doNotTrack||window.doNotTrack||navigator.msDoNotTrack,doNotTrack=dnt=="1"||dnt=="yes";if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-007KSW65JL")}</script></html>

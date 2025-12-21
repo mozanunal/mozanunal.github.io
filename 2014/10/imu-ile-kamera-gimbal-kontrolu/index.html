@@ -7,24 +7,24 @@ azalttım veya artırdım.Bu sayede gimbal, MPU6050yi eğdiğim yönde dönmüş
 Projemin tanıtım videosunu aşağıdan izleyebilirsiniz.</p><div style=position:relative;padding-bottom:56.25%;height:0;overflow:hidden><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading=eager referrerpolicy=strict-origin-when-cross-origin src="https://www.youtube.com/embed/MQi57R7bO8M?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style=position:absolute;top:0;left:0;width:100%;height:100%;border:0 title="YouTube video"></iframe></div><p>Arkadaşlar projemin Arduino kodunu da paylaşıyorum.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-cpp data-lang=cpp><span class=line><span class=cl><span class=cp>#include</span> <span class=cpf>&lt;I2Cdev.h&gt;</span><span class=cp>
 </span></span></span><span class=line><span class=cl><span class=cp>#include</span> <span class=cpf>&lt;MPU60X0.h&gt;</span><span class=cp>
 </span></span></span><span class=line><span class=cl><span class=cp>#include</span> <span class=cpf>&lt;EEPROM.h&gt;</span><span class=cp>
-</span></span></span><span class=line><span class=cl><span class=cp></span>
+</span></span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl><span class=c1>//#define DEBUG
-</span></span></span><span class=line><span class=cl><span class=c1></span><span class=cp>#include “DebugUtils.h”
+</span></span></span><span class=line><span class=cl><span class=cp>#include “DebugUtils.h”
 </span></span></span><span class=line><span class=cl><span class=cp>#include “CommunicationUtils.h”
 </span></span></span><span class=line><span class=cl><span class=cp>#include “FreeIMU.h”
 </span></span></span><span class=line><span class=cl><span class=cp>#include</span> <span class=cpf>&lt;Wire.h&gt;</span><span class=cp>
 </span></span></span><span class=line><span class=cl><span class=cp>#include</span> <span class=cpf>&lt;SPI.h&gt;</span><span class=cp>
 </span></span></span><span class=line><span class=cl><span class=cp>#include</span> <span class=cpf>&lt;Servo.h&gt;</span><span class=cp>
-</span></span></span><span class=line><span class=cl><span class=cp></span><span class=kt>int</span> <span class=n>raw_values</span><span class=p>[</span><span class=mi>9</span><span class=p>];</span>
+</span></span></span><span class=line><span class=cl><span class=kt>int</span> <span class=n>raw_values</span><span class=p>[</span><span class=mi>9</span><span class=p>];</span>
 </span></span><span class=line><span class=cl><span class=n>Servo</span> <span class=n>myservo1</span><span class=p>;</span>
 </span></span><span class=line><span class=cl><span class=kt>int</span> <span class=n>pos1</span> <span class=o>=</span> <span class=mi>90</span><span class=p>;</span>
 </span></span><span class=line><span class=cl><span class=n>Servo</span> <span class=n>myservo2</span><span class=p>;</span>
 </span></span><span class=line><span class=cl><span class=kt>int</span> <span class=n>pos2</span> <span class=o>=</span> <span class=mi>90</span><span class=p>;</span>
 </span></span><span class=line><span class=cl><span class=kt>float</span> <span class=n>ypr</span><span class=p>[</span><span class=mi>3</span><span class=p>];</span> <span class=c1>// yaw pitch roll
-</span></span></span><span class=line><span class=cl><span class=c1></span><span class=kt>float</span> <span class=n>val</span><span class=p>[</span><span class=mi>9</span><span class=p>];</span>
+</span></span></span><span class=line><span class=cl><span class=kt>float</span> <span class=n>val</span><span class=p>[</span><span class=mi>9</span><span class=p>];</span>
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl><span class=c1>// Set the FreeIMU object
-</span></span></span><span class=line><span class=cl><span class=c1></span><span class=n>FreeIMU</span> <span class=n>my3IMU</span> <span class=o>=</span> <span class=n>FreeIMU</span><span class=p>();</span>
+</span></span></span><span class=line><span class=cl><span class=n>FreeIMU</span> <span class=n>my3IMU</span> <span class=o>=</span> <span class=n>FreeIMU</span><span class=p>();</span>
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl><span class=kt>void</span> <span class=nf>setup</span><span class=p>()</span> <span class=p>{</span>
 </span></span><span class=line><span class=cl>  <span class=n>Serial</span><span class=p>.</span><span class=n>begin</span><span class=p>(</span><span class=mi>115200</span><span class=p>);</span>
@@ -33,7 +33,7 @@ Projemin tanıtım videosunu aşağıdan izleyebilirsiniz.</p><div style=positio
 </span></span><span class=line><span class=cl>  <span class=n>myservo2</span><span class=p>.</span><span class=n>attach</span><span class=p>(</span><span class=mi>8</span><span class=p>);</span>
 </span></span><span class=line><span class=cl>  <span class=n>delay</span><span class=p>(</span><span class=mi>5</span><span class=p>);</span>
 </span></span><span class=line><span class=cl>  <span class=n>my3IMU</span><span class=p>.</span><span class=n>init</span><span class=p>();</span> <span class=c1>// the parameter enable or disable fast mode
-</span></span></span><span class=line><span class=cl><span class=c1></span>  <span class=n>delay</span><span class=p>(</span><span class=mi>5</span><span class=p>);</span>
+</span></span></span><span class=line><span class=cl>  <span class=n>delay</span><span class=p>(</span><span class=mi>5</span><span class=p>);</span>
 </span></span><span class=line><span class=cl><span class=p>}</span>
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl><span class=kt>void</span> <span class=nf>loop</span><span class=p>(){</span>  
@@ -84,4 +84,4 @@ Projemin tanıtım videosunu aşağıdan izleyebilirsiniz.</p><div style=positio
 </span></span><span class=line><span class=cl>  <span class=p>}</span>
 </span></span><span class=line><span class=cl>  <span class=n>delay</span><span class=p>(</span><span class=mi>15</span><span class=p>);</span>
 </span></span><span class=line><span class=cl><span class=p>}</span>
-</span></span></code></pre></div></div></article></main><footer><p>&copy; 2025 M.Ozan Unal.</p></footer></body><link rel=stylesheet href=/libs/katex/katex.min.v0.16.9.css><script defer src=/libs/katex/katex.min.v0.16.9.js></script><script defer src=/libs/katex/auto-render.v0.16.9.js></script><script>document.addEventListener("DOMContentLoaded",function(){renderMathInElement(document.body,{delimiters:[{left:"$$",right:"$$",display:!0},{left:"\\[",right:"\\]",display:!0},{left:"\\(",right:"\\)",display:!1},{left:"$",right:"$",display:!1}],throwOnError:!1})})</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-007KSW65JL"></script><script>var dnt,doNotTrack=!1;if(!1&&(dnt=navigator.doNotTrack||window.doNotTrack||navigator.msDoNotTrack,doNotTrack=dnt=="1"||dnt=="yes"),!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-007KSW65JL")}</script></html>
+</span></span></code></pre></div></div></article></main><footer><p>&copy; 2025 M.Ozan Unal.</p></footer></body><link rel=stylesheet href=/libs/katex/katex.min.v0.16.9.css><script defer src=/libs/katex/katex.min.v0.16.9.js></script><script defer src=/libs/katex/auto-render.v0.16.9.js></script><script>document.addEventListener("DOMContentLoaded",function(){renderMathInElement(document.body,{delimiters:[{left:"$$",right:"$$",display:!0},{left:"\\[",right:"\\]",display:!0},{left:"\\(",right:"\\)",display:!1},{left:"$",right:"$",display:!1}],throwOnError:!1})})</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-007KSW65JL"></script><script>var doNotTrack=!1,dnt=navigator.doNotTrack||window.doNotTrack||navigator.msDoNotTrack,doNotTrack=dnt=="1"||dnt=="yes";if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-007KSW65JL")}</script></html>

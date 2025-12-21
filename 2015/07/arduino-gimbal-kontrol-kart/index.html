@@ -17,14 +17,14 @@ bağlıyoruz. Servoların beslemesi eğer küçük servolar ise arduino üzerind
 yüksek akım çeken servolarsa harici olarak yapabilirsiniz. Fakat harici besleme
 yaparsanız arduino ve güç kaynağının topraklarını eşitlemeyi unutmayın.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-cpp data-lang=cpp><span class=line><span class=cl><span class=c1>////////////////////Ayarlar////////////////  
 </span></span></span><span class=line><span class=cl><span class=c1>//pitch  
-</span></span></span><span class=line><span class=cl><span class=c1></span><span class=kt>int</span> <span class=n>p_pin</span><span class=o>=</span><span class=mi>8</span><span class=p>;</span>  
+</span></span></span><span class=line><span class=cl><span class=kt>int</span> <span class=n>p_pin</span><span class=o>=</span><span class=mi>8</span><span class=p>;</span>  
 </span></span><span class=line><span class=cl><span class=kt>int</span> <span class=n>p_neturalpos</span><span class=o>=</span><span class=mi>90</span><span class=p>;</span>  
 </span></span><span class=line><span class=cl><span class=kt>int</span> <span class=n>p_gain</span><span class=o>=</span><span class=mi>1</span><span class=p>;</span>  
 </span></span><span class=line><span class=cl><span class=kt>int</span> <span class=n>p_min</span><span class=o>=</span><span class=mi>30</span><span class=p>;</span>  
 </span></span><span class=line><span class=cl><span class=kt>int</span> <span class=n>p_max</span><span class=o>=</span><span class=mi>150</span><span class=p>;</span>  
 </span></span><span class=line><span class=cl><span class=kt>int</span> <span class=n>p_reverse</span><span class=o>=</span><span class=mi>0</span><span class=p>;</span>  
 </span></span><span class=line><span class=cl><span class=c1>//roll  
-</span></span></span><span class=line><span class=cl><span class=c1></span><span class=kt>int</span> <span class=n>r_pin</span><span class=o>=</span><span class=mi>9</span><span class=p>;</span>  
+</span></span></span><span class=line><span class=cl><span class=kt>int</span> <span class=n>r_pin</span><span class=o>=</span><span class=mi>9</span><span class=p>;</span>  
 </span></span><span class=line><span class=cl><span class=kt>int</span> <span class=n>r_neturalpos</span><span class=o>=</span><span class=mi>90</span><span class=p>;</span>  
 </span></span><span class=line><span class=cl><span class=kt>int</span> <span class=n>r_gain</span><span class=o>=</span><span class=mi>1</span><span class=p>;</span>  
 </span></span><span class=line><span class=cl><span class=kt>int</span> <span class=n>r_min</span><span class=o>=</span><span class=mi>30</span><span class=p>;</span>  
@@ -46,16 +46,16 @@ sağlanabilir. Benim gimbalim için &ldquo;Pitch&rdquo; eksenini ters yapmam ger
 </span></span></span><span class=line><span class=cl><span class=cp>#include</span> <span class=cpf>&lt;Wire.h&gt;</span><span class=cp>  
 </span></span></span><span class=line><span class=cl><span class=cp>#include</span> <span class=cpf>&lt;SPI.h&gt;</span><span class=cp>  
 </span></span></span><span class=line><span class=cl><span class=cp>#include</span> <span class=cpf>&lt;Servo.h&gt;</span><span class=cp>  
-</span></span></span><span class=line><span class=cl><span class=cp></span><span class=c1>////////////////////Ayarlar////////////////  
+</span></span></span><span class=line><span class=cl><span class=c1>////////////////////Ayarlar////////////////  
 </span></span></span><span class=line><span class=cl><span class=c1>//pitch  
-</span></span></span><span class=line><span class=cl><span class=c1></span><span class=kt>int</span> <span class=n>p_pin</span><span class=o>=</span><span class=mi>8</span><span class=p>;</span>  
+</span></span></span><span class=line><span class=cl><span class=kt>int</span> <span class=n>p_pin</span><span class=o>=</span><span class=mi>8</span><span class=p>;</span>  
 </span></span><span class=line><span class=cl><span class=kt>int</span> <span class=n>p_neturalpos</span><span class=o>=</span><span class=mi>90</span><span class=p>;</span>  
 </span></span><span class=line><span class=cl><span class=kt>int</span> <span class=n>p_gain</span><span class=o>=</span><span class=mi>1</span><span class=p>;</span>  
 </span></span><span class=line><span class=cl><span class=kt>int</span> <span class=n>p_min</span><span class=o>=</span><span class=mi>30</span><span class=p>;</span>  
 </span></span><span class=line><span class=cl><span class=kt>int</span> <span class=n>p_max</span><span class=o>=</span><span class=mi>150</span><span class=p>;</span>  
 </span></span><span class=line><span class=cl><span class=kt>int</span> <span class=n>p_reverse</span><span class=o>=</span><span class=mi>0</span><span class=p>;</span>  
 </span></span><span class=line><span class=cl><span class=c1>//roll  
-</span></span></span><span class=line><span class=cl><span class=c1></span><span class=kt>int</span> <span class=n>r_pin</span><span class=o>=</span><span class=mi>9</span><span class=p>;</span>  
+</span></span></span><span class=line><span class=cl><span class=kt>int</span> <span class=n>r_pin</span><span class=o>=</span><span class=mi>9</span><span class=p>;</span>  
 </span></span><span class=line><span class=cl><span class=kt>int</span> <span class=n>r_neturalpos</span><span class=o>=</span><span class=mi>90</span><span class=p>;</span>  
 </span></span><span class=line><span class=cl><span class=kt>int</span> <span class=n>r_gain</span><span class=o>=</span><span class=mi>1</span><span class=p>;</span>  
 </span></span><span class=line><span class=cl><span class=kt>int</span> <span class=n>r_min</span><span class=o>=</span><span class=mi>30</span><span class=p>;</span>  
@@ -63,13 +63,13 @@ sağlanabilir. Benim gimbalim için &ldquo;Pitch&rdquo; eksenini ters yapmam ger
 </span></span><span class=line><span class=cl><span class=kt>int</span> <span class=n>r_reverse</span><span class=o>=</span><span class=mi>0</span><span class=p>;</span>  
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl><span class=c1>///////////////////////////////////////////////  
-</span></span></span><span class=line><span class=cl><span class=c1></span><span class=n>Servo</span> <span class=n>pitchservo</span><span class=p>;</span>  
+</span></span></span><span class=line><span class=cl><span class=n>Servo</span> <span class=n>pitchservo</span><span class=p>;</span>  
 </span></span><span class=line><span class=cl><span class=n>Servo</span> <span class=n>rollservo</span><span class=p>;</span>  
 </span></span><span class=line><span class=cl><span class=kt>int</span> <span class=n>p_angle</span><span class=o>=</span><span class=mi>90</span><span class=p>;</span>  
 </span></span><span class=line><span class=cl><span class=kt>int</span> <span class=n>r_angle</span><span class=o>=</span><span class=mi>90</span><span class=p>;</span>  
 </span></span><span class=line><span class=cl><span class=kt>int</span> <span class=n>raw_values</span><span class=p>[</span><span class=mi>9</span><span class=p>];</span>  
 </span></span><span class=line><span class=cl><span class=kt>float</span> <span class=n>ypr</span><span class=p>[</span><span class=mi>3</span><span class=p>];</span> <span class=c1>// yaw pitch roll  
-</span></span></span><span class=line><span class=cl><span class=c1></span><span class=kt>float</span> <span class=n>val</span><span class=p>[</span><span class=mi>9</span><span class=p>];</span>  
+</span></span></span><span class=line><span class=cl><span class=kt>float</span> <span class=n>val</span><span class=p>[</span><span class=mi>9</span><span class=p>];</span>  
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl><span class=n>FreeIMU</span> <span class=n>my3IMU</span> <span class=o>=</span> <span class=n>FreeIMU</span><span class=p>();</span>  
 </span></span><span class=line><span class=cl>
@@ -120,4 +120,4 @@ sağlanabilir. Benim gimbalim için &ldquo;Pitch&rdquo; eksenini ters yapmam ger
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl>  <span class=n>delay</span><span class=p>(</span><span class=mi>10</span><span class=p>);</span>  
 </span></span><span class=line><span class=cl><span class=p>}</span>
-</span></span></code></pre></div></div></article></main><footer><p>&copy; 2025 M.Ozan Unal.</p></footer></body><link rel=stylesheet href=/libs/katex/katex.min.v0.16.9.css><script defer src=/libs/katex/katex.min.v0.16.9.js></script><script defer src=/libs/katex/auto-render.v0.16.9.js></script><script>document.addEventListener("DOMContentLoaded",function(){renderMathInElement(document.body,{delimiters:[{left:"$$",right:"$$",display:!0},{left:"\\[",right:"\\]",display:!0},{left:"\\(",right:"\\)",display:!1},{left:"$",right:"$",display:!1}],throwOnError:!1})})</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-007KSW65JL"></script><script>var dnt,doNotTrack=!1;if(!1&&(dnt=navigator.doNotTrack||window.doNotTrack||navigator.msDoNotTrack,doNotTrack=dnt=="1"||dnt=="yes"),!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-007KSW65JL")}</script></html>
+</span></span></code></pre></div></div></article></main><footer><p>&copy; 2025 M.Ozan Unal.</p></footer></body><link rel=stylesheet href=/libs/katex/katex.min.v0.16.9.css><script defer src=/libs/katex/katex.min.v0.16.9.js></script><script defer src=/libs/katex/auto-render.v0.16.9.js></script><script>document.addEventListener("DOMContentLoaded",function(){renderMathInElement(document.body,{delimiters:[{left:"$$",right:"$$",display:!0},{left:"\\[",right:"\\]",display:!0},{left:"\\(",right:"\\)",display:!1},{left:"$",right:"$",display:!1}],throwOnError:!1})})</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-007KSW65JL"></script><script>var doNotTrack=!1,dnt=navigator.doNotTrack||window.doNotTrack||navigator.msDoNotTrack,doNotTrack=dnt=="1"||dnt=="yes";if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-007KSW65JL")}</script></html>

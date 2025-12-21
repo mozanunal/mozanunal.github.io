@@ -15,15 +15,15 @@ registerdır. </li></ul><h2 id=18051-entegresi-bazı-assembly-komutları-ve-ör
 için kullanılmıştır.<br>51 yüklenecek hexadecimal sayımız. Değeri 5x16+1=81<br>H sayının hexadecimal olduğunu göstermek için kullanılır. Binary için B, Decimal
 için D kullanılır.<br>Eğer hexadecimal sayısı harfle baslıyorsa başına 0 koyulur.</p><p>Aşağıdaki kod grubunu çalıştırdığımızda simülasyon programımızın son görüntüsü
 aşağıdaki gibi olacaktır.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-asm data-lang=asm><span class=line><span class=cl><span class=nf>MOV</span> <span class=no>A</span><span class=p>,</span><span class=c1>#51H     
-</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl><span class=nf>MOV</span> <span class=no>R1</span><span class=p>,</span><span class=c1>#0FFH  
-</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl><span class=nf>MOV</span> <span class=no>R2</span><span class=p>,</span><span class=c1>#3BH
 </span></span></span></code></pre></div><p><img src=Ekran%2BAl%25C4%25B1nt%25C4%25B1s%25C4%25B1-63ec1b.png alt>
 Görüldüğü gibi R1 R2 ve Accummulatora veriler yüklenmiştir.</p><p><strong>ORG ve END Komutları</strong><br>Org CPU&rsquo;ya kaçıncı code memory satırıncan başlamısı gerektiğini söyleyen
 komuttur. Aşağıdaki gibi kullanılır.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-asm data-lang=asm><span class=line><span class=cl>             <span class=nf>ORG</span>  <span class=mi>0</span><span class=no>H</span>  
 </span></span><span class=line><span class=cl>             <span class=no>MOV</span>  <span class=no>R1</span><span class=p>,</span><span class=c1>#31H  
-</span></span></span><span class=line><span class=cl><span class=c1></span>             <span class=nf>MOV</span>  <span class=no>R2</span><span class=p>,</span> <span class=mi>20</span><span class=no>H</span>  
+</span></span></span><span class=line><span class=cl>             <span class=nf>MOV</span>  <span class=no>R2</span><span class=p>,</span> <span class=mi>20</span><span class=no>H</span>  
 </span></span><span class=line><span class=cl>             <span class=no>MOV</span>  <span class=no>R3</span><span class=p>,</span><span class=no>R2</span>  
 </span></span><span class=line><span class=cl>             <span class=no>MOV</span>  <span class=no>R4</span><span class=p>,</span><span class=no>R3</span>  
 </span></span><span class=line><span class=cl><span class=no>HERE</span><span class=p>:</span>  <span class=no>SJMP</span> <span class=no>HERE</span>  
@@ -43,35 +43,35 @@ kullanılabilir.<br>A=A/B</p><p><strong>Loop ve Jump komutu</strong></p><p><img 
 koşulu kullanmak içindir. Aşağıdaki örnek kod ise kullanımlarına örnektir.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-asm data-lang=asm><span class=line><span class=cl>             <span class=nf>ORG</span> <span class=mi>0</span><span class=no>H</span>  
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl>             <span class=no>MOV</span> <span class=no>A</span><span class=p>,</span> <span class=c1>#0              ; clear A  
-</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl>             <span class=nf>MOV</span> <span class=no>R1</span><span class=p>,</span> <span class=c1>#10           ; load counter R1 =10  
-</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl><span class=nl>AGAIN:</span> <span class=nf>ADD</span> <span class=no>A</span><span class=p>,</span> <span class=c1># 05             ; add five to register A  
-</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl>             <span class=nf>DJNZ</span> <span class=no>R1</span><span class=p>,</span> <span class=no>AGAIN</span>     <span class=c1>; repeat until R1=0 (10 times)  
-</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl>             <span class=nf>MOV</span> <span class=no>R3</span><span class=p>,</span> <span class=no>A</span>              <span class=c1>; save A in R3  
-</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl>             <span class=nf>END</span>
 </span></span></code></pre></div><p>SJMP: Program counterdan en fazla yarım byte uzaklıklarda bulunan bir yere
 atlamak için kullanılır.</p><p>LJMP: Program counterdan yarım bytedan fazla uzaklıklarda bulunan bir yere
 atlamak için kullanılır.</p><p>LCALL: Fonksiyon tanımlayıp çağırmak benzeri bir kullanımı vardır. Aşağıdaki
 örneği inceleyebilirsiniz.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-asm data-lang=asm><span class=line><span class=cl>             <span class=nf>ORG</span> <span class=mi>0</span><span class=no>H</span>  
 </span></span><span class=line><span class=cl><span class=no>BACK</span> <span class=p>:</span> <span class=no>MOV</span> <span class=no>A</span><span class=p>,</span> <span class=c1>#55H            ; load A= 55 hex value  
-</span></span></span><span class=line><span class=cl><span class=c1></span>             <span class=nf>MOV</span> <span class=no>P1</span><span class=p>,</span> <span class=no>A</span>                <span class=c1>; issue value of register A to port1  
-</span></span></span><span class=line><span class=cl><span class=c1></span>             <span class=nf>LCALL</span>  <span class=no>DELAY</span>        <span class=c1>; to call DELAY function created below  
-</span></span></span><span class=line><span class=cl><span class=c1></span>             <span class=nf>MOV</span> <span class=no>A</span><span class=p>,</span> <span class=c1>#0AAH         ;load AAH hex value to A  
-</span></span></span><span class=line><span class=cl><span class=c1></span>             <span class=nf>MOV</span> <span class=no>P1</span><span class=p>,</span><span class=no>A</span>                  <span class=c1>;issue value of register A to port 1  
-</span></span></span><span class=line><span class=cl><span class=c1></span>             <span class=nf>LCALL</span> <span class=no>DELAY</span>         <span class=c1>; to call DELAY function as created below  
-</span></span></span><span class=line><span class=cl><span class=c1></span>             <span class=nf>SJMP</span> <span class=no>BACK</span>              <span class=c1>; keep doing this  
-</span></span></span><span class=line><span class=cl><span class=c1></span>                                               <span class=c1>; ________ this is the delay subroutine  
-</span></span></span><span class=line><span class=cl><span class=c1></span>             <span class=nl>DELAY:</span>  
+</span></span></span><span class=line><span class=cl>             <span class=nf>MOV</span> <span class=no>P1</span><span class=p>,</span> <span class=no>A</span>                <span class=c1>; issue value of register A to port1  
+</span></span></span><span class=line><span class=cl>             <span class=nf>LCALL</span>  <span class=no>DELAY</span>        <span class=c1>; to call DELAY function created below  
+</span></span></span><span class=line><span class=cl>             <span class=nf>MOV</span> <span class=no>A</span><span class=p>,</span> <span class=c1>#0AAH         ;load AAH hex value to A  
+</span></span></span><span class=line><span class=cl>             <span class=nf>MOV</span> <span class=no>P1</span><span class=p>,</span><span class=no>A</span>                  <span class=c1>;issue value of register A to port 1  
+</span></span></span><span class=line><span class=cl>             <span class=nf>LCALL</span> <span class=no>DELAY</span>         <span class=c1>; to call DELAY function as created below  
+</span></span></span><span class=line><span class=cl>             <span class=nf>SJMP</span> <span class=no>BACK</span>              <span class=c1>; keep doing this  
+</span></span></span><span class=line><span class=cl>                                               <span class=c1>; ________ this is the delay subroutine  
+</span></span></span><span class=line><span class=cl>             <span class=nl>DELAY:</span>  
 </span></span><span class=line><span class=cl>             <span class=nf>MOV</span> <span class=no>R5</span><span class=p>,</span> <span class=c1>#0FFH         ; R5= 255 hex, the counter  
-</span></span></span><span class=line><span class=cl><span class=c1></span><span class=nl>AGAIN:</span> <span class=nf>DJNZ</span> <span class=no>R5</span><span class=p>,</span> <span class=no>AGAIN</span>       <span class=c1>; stay here until R5 becomes zero  
-</span></span></span><span class=line><span class=cl><span class=c1></span>             <span class=nf>RET</span>                           <span class=c1>; return to caller  
-</span></span></span><span class=line><span class=cl><span class=c1></span>             <span class=nf>END</span>
+</span></span></span><span class=line><span class=cl><span class=nl>AGAIN:</span> <span class=nf>DJNZ</span> <span class=no>R5</span><span class=p>,</span> <span class=no>AGAIN</span>       <span class=c1>; stay here until R5 becomes zero  
+</span></span></span><span class=line><span class=cl>             <span class=nf>RET</span>                           <span class=c1>; return to caller  
+</span></span></span><span class=line><span class=cl>             <span class=nf>END</span>
 </span></span></code></pre></div><h2 id=movx-komutu>MOVX komutu</h2><p>MOVX komutu harici RAM&rsquo;den veri alış verişi yapmak için kullanılır.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-asm data-lang=asm><span class=line><span class=cl><span class=nf>MOV</span>      <span class=no>R0</span><span class=p>,</span> <span class=c1>#50H  
-</span></span></span><span class=line><span class=cl><span class=c1></span><span class=nf>MOVX</span>   <span class=no>A</span><span class=p>,</span> <span class=err>@</span><span class=no>R0</span>
+</span></span></span><span class=line><span class=cl><span class=nf>MOVX</span>   <span class=no>A</span><span class=p>,</span> <span class=err>@</span><span class=no>R0</span>
 </span></span></code></pre></div><p>Bu iki satır kod ile harici RAM&rsquo;deki 50H adresli yerdeki veri Accumulator
 registerına yüklenir.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>MOV      DTPR, #5000H  
 </span></span><span class=line><span class=cl>MOVX   A, @DTPR
@@ -93,4 +93,4 @@ kullanılır.</p><p><strong>EA pini:</strong> External Adress. 0 olduğu zaman m
 dışarıdan alabilir.<br><strong>RD pini:</strong> Okuma işlemini &ldquo;enable&rdquo; yapmak için kullanılır.<br><strong>WR pini:</strong> Yazma işlemini &ldquo;enable " yapmak için kullanılır.</p><p><img src=8051-pin-diagram1.jpg alt></p><p><strong>Harici Program Belleği Kullanımı</strong></p><p><img src=fig3.jpg alt></p><p><strong>Harici Veri Belleği Kullanımı</strong></p><p><img src=Untitled.png alt></p><p><strong>Adres Ayrıştırma</strong><br>Bazı durumlarda adres değerleri için yeterli bit sayısına sahip olunamayabilir.
 Bu soruları çözmek için adres çözücü devreler kullanılır.</p><h3 id=paralel-uygulamalar><strong>Paralel Uygulamalar</strong></h3><h3 id=adc-dac-kullanımı>ADC-DAC Kullanımı</h3><h3 id=timer-uygulamaları>Timer Uygulamaları</h3><h3 id=uzun-lafın-kısası><strong>Uzun Lafın Kısası</strong></h3><p>Aşağıdaki 2 görsel işlemci mimarisini çok iyi açıklayan 2 şema peki bize ne
 anlatıyorlar.</p><p><img src=architecture_s.jpg alt></p><p><img src=01.gif alt></p><h3 id=8051-entegresi-instruction-set>8051 Entegresi Instruction Set</h3><p>Aşağdaki linkte hepsini kullanım anlatımlarıyla beraber bulabilirsiniz. Aynı
-zaman da OP-Code&rsquo;ları da verilmiştir.</p><p><a href=https://www.win.tue.nl/~aeb/comp/8051/set8051.html%5D(https://www.win.tue.nl/~aeb/comp/8051/set8051.html)>https://www.win.tue.nl/~aeb/comp/8051/set8051.html](https://www.win.tue.nl/~aeb/comp/8051/set8051.html)</a></p><p>Aşağıdaki 2 resimde ise sık kullanılan komutları açıklamalarıyla bulabilirsiniz.</p><p><img src=1.png alt></p><p><img src=2.png alt></p></div></article></main><footer><p>&copy; 2025 M.Ozan Unal.</p></footer></body><link rel=stylesheet href=/libs/katex/katex.min.v0.16.9.css><script defer src=/libs/katex/katex.min.v0.16.9.js></script><script defer src=/libs/katex/auto-render.v0.16.9.js></script><script>document.addEventListener("DOMContentLoaded",function(){renderMathInElement(document.body,{delimiters:[{left:"$$",right:"$$",display:!0},{left:"\\[",right:"\\]",display:!0},{left:"\\(",right:"\\)",display:!1},{left:"$",right:"$",display:!1}],throwOnError:!1})})</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-007KSW65JL"></script><script>var dnt,doNotTrack=!1;if(!1&&(dnt=navigator.doNotTrack||window.doNotTrack||navigator.msDoNotTrack,doNotTrack=dnt=="1"||dnt=="yes"),!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-007KSW65JL")}</script></html>
+zaman da OP-Code&rsquo;ları da verilmiştir.</p><p><a href=https://www.win.tue.nl/~aeb/comp/8051/set8051.html%5D(https://www.win.tue.nl/~aeb/comp/8051/set8051.html)>https://www.win.tue.nl/~aeb/comp/8051/set8051.html](https://www.win.tue.nl/~aeb/comp/8051/set8051.html)</a></p><p>Aşağıdaki 2 resimde ise sık kullanılan komutları açıklamalarıyla bulabilirsiniz.</p><p><img src=1.png alt></p><p><img src=2.png alt></p></div></article></main><footer><p>&copy; 2025 M.Ozan Unal.</p></footer></body><link rel=stylesheet href=/libs/katex/katex.min.v0.16.9.css><script defer src=/libs/katex/katex.min.v0.16.9.js></script><script defer src=/libs/katex/auto-render.v0.16.9.js></script><script>document.addEventListener("DOMContentLoaded",function(){renderMathInElement(document.body,{delimiters:[{left:"$$",right:"$$",display:!0},{left:"\\[",right:"\\]",display:!0},{left:"\\(",right:"\\)",display:!1},{left:"$",right:"$",display:!1}],throwOnError:!1})})</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-007KSW65JL"></script><script>var doNotTrack=!1,dnt=navigator.doNotTrack||window.doNotTrack||navigator.msDoNotTrack,doNotTrack=dnt=="1"||dnt=="yes";if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-007KSW65JL")}</script></html>
