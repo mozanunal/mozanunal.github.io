@@ -6,8 +6,15 @@
     <description>Recent content on mozanunal.com</description>
     <generator>Hugo</generator>
     <language>en-US</language>
-    <lastBuildDate>Tue, 26 Aug 2025 22:45:54 +0300</lastBuildDate>
+    <lastBuildDate>Fri, 23 Jan 2026 10:00:00 +0300</lastBuildDate>
     <atom:link href="https://mozanunal.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Sllm.nvim v0.4.0: Modes as YAML, Radical Simplicity</title>
+      <link>https://mozanunal.com/2026/01/sllm_v040/</link>
+      <pubDate>Fri, 23 Jan 2026 10:00:00 +0300</pubDate>
+      <guid>https://mozanunal.com/2026/01/sllm_v040/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;m excited to announce&#xA;&lt;strong&gt;&lt;a href=&#34;https://github.com/mozanunal/sllm.nvim&#34;&gt;sllm.nvim v0.4.0&lt;/a&gt;&lt;/strong&gt; – a significant&#xA;release that doubles down on the plugin&amp;rsquo;s core philosophy: modes are just YAML,&#xA;tools are just Python functions, and you stay in control.&lt;/p&gt;&#xA;&lt;h2 id=&#34;the-philosophy-recap&#34;&gt;The Philosophy Recap&lt;/h2&gt;&#xA;&lt;p&gt;For those new to &lt;code&gt;sllm.nvim&lt;/code&gt;, it&amp;rsquo;s a thin Neovim wrapper around Simon Willison&amp;rsquo;s&#xA;&lt;a href=&#34;https://llm.datasette.io/&#34;&gt;&lt;code&gt;llm&lt;/code&gt;&lt;/a&gt; CLI. The design philosophy is simple:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;You control context&lt;/strong&gt; – Add files, selections, URLs, diagnostics, or shell&#xA;output explicitly. The LLM sees exactly what you give it.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Radical simplicity&lt;/strong&gt; – The plugin delegates all heavy lifting to the&#xA;battle-tested &lt;code&gt;llm&lt;/code&gt; CLI (~500 lines of Lua).&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;CLI ecosystem access&lt;/strong&gt; – 100+ models via OpenRouter, local models via&#xA;Ollama, plus plugins for PDFs, web search, and more.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;whats-new-in-v040&#34;&gt;What&amp;rsquo;s New in v0.4.0&lt;/h2&gt;&#xA;&lt;h3 id=&#34;modes-are-just-yaml&#34;&gt;Modes Are Just YAML&lt;/h3&gt;&#xA;&lt;p&gt;The template system has been refined and expanded. Creating a custom mode is now&#xA;as simple as writing a 5-line YAML file:&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Introducing Hugo Classless: A Theme for Any Style</title>
       <link>https://mozanunal.com/2025/08/hugo-classless/</link>

@@ -3,7 +3,13 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://mozanunal.com/</loc>
-    <lastmod>2025-08-26T22:45:54+03:00</lastmod>
+    <lastmod>2026-01-23T10:00:00+03:00</lastmod>
+  </url><url>
+    <loc>https://mozanunal.com/posts/</loc>
+    <lastmod>2026-01-23T10:00:00+03:00</lastmod>
+  </url><url>
+    <loc>https://mozanunal.com/2026/01/sllm_v040/</loc>
+    <lastmod>2026-01-23T10:00:00+03:00</lastmod>
   </url><url>
     <loc>https://mozanunal.com/tags/classless/</loc>
     <lastmod>2025-08-26T22:45:54+03:00</lastmod>
@@ -15,9 +21,6 @@
     <lastmod>2025-08-26T22:45:54+03:00</lastmod>
   </url><url>
     <loc>https://mozanunal.com/2025/08/hugo-classless/</loc>
-    <lastmod>2025-08-26T22:45:54+03:00</lastmod>
-  </url><url>
-    <loc>https://mozanunal.com/posts/</loc>
     <lastmod>2025-08-26T22:45:54+03:00</lastmod>
   </url><url>
     <loc>https://mozanunal.com/tags/project/</loc>
