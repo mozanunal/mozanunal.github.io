@@ -135,13 +135,6 @@
       <description>&lt;h1 id=&#34;run-yolo-v3-on-colab-for-imagesvideos&#34;&gt;Run YOLO V3 on Colab for images/videos&lt;/h1&gt;&#xA;&lt;p&gt;Hello there, Today, we will be discussing how we can use the Darknet project on&#xA;Google Colab platform. For those who are not familiar with these terms:&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;yoloroad.gif&#34; alt=&#34;YOLO in action!&#34;&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;The Darknet project is an open-source project written in C, which is a&#xA;framework to develop deep neural networks.&lt;/li&gt;&#xA;&lt;li&gt;Yolo V3 is an object detection algorithm. It is one of the state of the art&#xA;solution when &lt;strong&gt;accuracy/processing power needed&lt;/strong&gt; metric is considered.&lt;/li&gt;&#xA;&lt;li&gt;Google Cola is a cloud-based data science workspace similar to the jupyter&#xA;notebook. Each Collabrotary session is equipped with a virtual machine running&#xA;13 GB of ram and either a CPU, GPU, or TPU processor. In most case, all the&#xA;required packages are already installed on these machines and you can quite&#xA;easily start development using Google Collaboratory. It saves us from&#xA;installing process and it provides us &lt;strong&gt;easy to accessible GPU&amp;rsquo;s&lt;/strong&gt; which is&#xA;also &lt;strong&gt;free&lt;/strong&gt; under some constraints.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Have a look Ted Talk by Joseph Redmon the developer of the darknet project. The&#xA;talk is about Darknet and YOLO projects which titled as “How computers learn to&#xA;recognize objects instantly” . Darknet project aims to create a new neural&#xA;network framework which is completely focused on simplicity and performance. The&#xA;thing which I like about is its clarity and performance. All the code is written&#xA;in C, to define a deep learning network you should only create a config file&#xA;which defines the layers. By this way, it does not lose its performance&#xA;capabilities also it provides us easy to use interface for development with this&#xA;library.&lt;/p&gt;</description>
     </item>
     <item>
-      <title></title>
-      <link>https://mozanunal.com/archives/</link>
-      <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
-      <guid>https://mozanunal.com/archives/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Playing DOTA on Raspberry Pi using Steam Link</title>
       <link>https://mozanunal.com/2019/02/steam-link-on-rpi/</link>
       <pubDate>Fri, 01 Feb 2019 00:45:01 +0000</pubDate>
