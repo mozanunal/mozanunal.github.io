@@ -19,7 +19,7 @@ params:
   # The author's name, used in the footer.
   author: "M.Ozan Unal"
   # A short site description, often used for SEO meta tags.
-  description: "An example site for the clean and configurable Hugo Classless theme."
+  description: "Personal website of M. Ozan Unal: posts, projects, and papers."
 
   theme: css/classless.css
   themeDark: css/classless-dark.css

@@ -12,16 +12,22 @@ GH_CARD_REPOS := \
     PassFace
 GH_CARD_IMAGE_DIR := static/images/projects
 
-serve:
+.PHONY: help serve build format download_ghcard_images deploy default
+
+help: ## Show available make targets
+	@echo "Available targets:"
+	@awk 'BEGIN {FS = ":.*## "}; /^[a-zA-Z0-9_.-]+:.*##/ {printf "  %-24s %s\n", $$1, $$2}' $(MAKEFILE_LIST)
+
+serve: ## Run Hugo dev server with live reload
 	hugo serve --openBrowser --enableGitInfo --navigateToChanged --disableFastRender
 
-build:
+build: ## Build the site with Hugo (minified)
 	hugo --minify
 
-format:
+format: ## Format Markdown content with Deno
 	deno fmt content/**/*.md
 
-download_ghcard_images:
+download_ghcard_images: ## Fetch GitHub repo card svgs
 	@echo "==> Ensuring image directory exists: [$(GH_CARD_IMAGE_DIR)]"
 	@mkdir -p $(GH_CARD_IMAGE_DIR)
 	@echo "==> Downloading $(words $(GH_CARD_REPOS)) repository cards for user [$(GH_CARD_USERNAME)]..."
@@ -33,7 +39,7 @@ download_ghcard_images:
 	done
 	@echo "✅ Download complete. Images are in [$(GH_CARD_IMAGE_DIR)]."
 
-deploy: download_ghcard_images build
+deploy: download_ghcard_images build ## Build and publish to public branch
 	rm -rf $(BUILD_DIR)
 	git clone $(REPO_URL) $(BUILD_DIR) --branch=public --depth=1
 	rm -rf $(BUILD_DIR)/*
@@ -46,4 +52,4 @@ deploy: download_ghcard_images build
 	git commit -m "Site update" && \
 	git push origin public
 
-default: build
+default: build ## Default alias: build
