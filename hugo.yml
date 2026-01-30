@@ -21,8 +21,9 @@ params:
   # A short site description, often used for SEO meta tags.
   description: "Personal website of M. Ozan Unal: posts, projects, and papers."
 
-  theme: css/classless.css
-  themeDark: css/classless-dark.css
+  themeBase: css/base.css
+  themeLight: css/light.css
+  themeDark: css/dark.css
   # themes:
   #   - name: "Cosmo.css"
   #     url: "https://cdn.jsdelivr.net/gh/cspablocortez/cosmocss@latest/cosmo.min.css"
