@@ -1,0 +1,47 @@
+{
+  "owner": "mozanunal",
+  "repos": [
+    {
+      "name": "sllm.nvim",
+      "description": "Integrate ChatGPT-style LLMs into Neovim: ask questions, keep multi-file context, pull diagnostics / command output, and chat without leaving your editor. Highly configurable, async, lua-only plugin.",
+      "language": "Lua",
+      "stars": 102,
+      "forks": 7
+    },
+    {
+      "name": "llm-tools-kiwix",
+      "description": "Turn any Kiwix ZIM archive (offline Wikipedia, Stack Exchange, DevDocs, etc.) into an instant knowledge source for LLMs with a tiny CLI + Python server exposing searchable chunks, metadata and citations.",
+      "language": "Python",
+      "stars": 72,
+      "forks": 5
+    },
+    {
+      "name": "SparseCT",
+      "description": "Framework for designing, training and benchmarking sparse-view CT reconstruction algorithms; includes datasets, metrics, baselines and CLI so you can prototype new methods and compare fairly in minutes.",
+      "language": "Python",
+      "stars": 50,
+      "forks": 4
+    },
+    {
+      "name": "SimpleDSP",
+      "description": "Header-only C library delivering essential DSP blocks - FIR/IIR filters, FFT, windowing, math helpers - optimised for AVR/ARM micro-controllers and Arduino sketches with zero dependencies or dynamic allocation.",
+      "language": "C",
+      "stars": 65,
+      "forks": 19
+    },
+    {
+      "name": "digital-filtering-of-ecg-signal",
+      "description": "Self-contained Jupyter notebook that walks through loading raw ECG, designing digital filters, visualising spectra, cleaning noise and extracting heart-rate features - perfect for teaching bio-signal processing.",
+      "language": "Jupyter Notebook",
+      "stars": 19,
+      "forks": 11
+    },
+    {
+      "name": "PassFace",
+      "description": "C# desktop application built on EmguCV that recognises faces from live camera, video files or images using LBPH, Eigen, Fisher and DNN models; includes a GUI for dataset management and accuracy evaluation.",
+      "language": "C#",
+      "stars": 46,
+      "forks": 29
+    }
+  ]
+}

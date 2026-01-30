@@ -31,9 +31,16 @@ jobs:
           hugo-version: 'latest'
           extended: true
 
-      - name: Download GH Card Images
-        # Run the command from your Makefile to get the latest images
-        run: make download_ghcard_images
+      - name: Setup Deno
+        uses: denoland/setup-deno@v1
+        with:
+          deno-version: v1.x
+
+      - name: Update project cards
+        run: make update_project_cards
+
+      - name: Update paper citations
+        run: make update_paper_citations
 
       - name: Build with Hugo
         # Run the 'build' command from your Makefile

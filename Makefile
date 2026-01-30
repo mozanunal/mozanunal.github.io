@@ -2,17 +2,14 @@ REPO_URL := git@github.com:mozanunal/mozanunal.github.io.git
 BUILD_DIR := deploy_git
 QUARTO_FILES := $(shell rg --files --glob content/**/*.qmd)
 PWD="$(shell pwd)"
-GH_CARD_USERNAME := mozanunal
-GH_CARD_REPOS := \
-    sllm.nvim \
-    llm-tools-kiwix \
-    SparseCT \
-    SimpleDSP \
-    digital-filtering-of-ecg-signal \
-    PassFace
-GH_CARD_IMAGE_DIR := static/images/projects
+PAPERS_MD := content/papers.md
+PAPERS_CONFIG := data/papers.json
+PAPER_CITATION_GS_SCRIPT := scripts/update_papers_gs.ts
+PROJECTS_CONFIG := data/projects.json
+PROJECTS_MD := content/projects.md
+PROJECTS_SCRIPT := scripts/update_project_cards_github.ts
 
-.PHONY: help serve build format download_ghcard_images deploy default
+.PHONY: help serve build format update_paper_citations update_project_cards deploy default
 
 help: ## Show available make targets
 	@echo "Available targets:"
@@ -27,19 +24,13 @@ build: ## Build the site with Hugo (minified)
 format: ## Format Markdown content with Deno
 	deno fmt content/**/*.md
 
-download_ghcard_images: ## Fetch GitHub repo card svgs
-	@echo "==> Ensuring image directory exists: [$(GH_CARD_IMAGE_DIR)]"
-	@mkdir -p $(GH_CARD_IMAGE_DIR)
-	@echo "==> Downloading $(words $(GH_CARD_REPOS)) repository cards for user [$(GH_CARD_USERNAME)]..."
-	@for repo in $(GH_CARD_REPOS); do \
-		URL="https://gh-card.dev/repos/$(GH_CARD_USERNAME)/$$repo.svg"; \
-		DEST_FILE="$(GH_CARD_IMAGE_DIR)/$$repo.svg"; \
-		echo "  -> Downloading $$repo.svg..."; \
-		curl -L --progress-bar -o "$$DEST_FILE" "$$URL"; \
-	done
-	@echo "✅ Download complete. Images are in [$(GH_CARD_IMAGE_DIR)]."
+update_paper_citations: ## Update papers table in papers.md (Google Scholar HTML)
+	deno run --allow-net --allow-read --allow-write $(PAPER_CITATION_GS_SCRIPT) $(PAPERS_CONFIG) $(PAPERS_MD)
 
-deploy: download_ghcard_images build ## Build and publish to public branch
+update_project_cards: ## Update project cards in projects.md (GitHub scrape)
+	deno run --allow-net --allow-read --allow-write $(PROJECTS_SCRIPT) $(PROJECTS_CONFIG) $(PROJECTS_MD)
+
+deploy: build ## Build and publish to public branch
 	rm -rf $(BUILD_DIR)
 	git clone $(REPO_URL) $(BUILD_DIR) --branch=public --depth=1
 	rm -rf $(BUILD_DIR)/*

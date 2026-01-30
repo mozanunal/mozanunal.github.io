@@ -1,0 +1,68 @@
+{
+  "papers": [
+    {
+      "title": "An Unsupervised Reconstruction Method for Low-Dose CT Using Deep Generative Regularization Prior",
+      "url": "https://doi.org/10.1016/j.bspc.2022.103598",
+      "venue": "Biomedical Signal Processing and Control 75, 103598",
+      "year": 2022,
+      "citations": 24
+    },
+    {
+      "title": "Self-Supervised Training for Low-Dose CT Reconstruction",
+      "url": "https://ieeexplore.ieee.org/document/9433944",
+      "venue": "2021 IEEE 18th International Symposium on Biomedical Imaging (ISBI), pp. 69-72",
+      "year": 2021,
+      "citations": 15
+    },
+    {
+      "title": "Proj2Proj: Self-Supervised Low-Dose CT Reconstruction",
+      "url": "https://doi.org/10.7717/peerj-cs.1849",
+      "venue": "PeerJ Computer Science 10, e1849",
+      "year": 2024,
+      "citations": 13
+    },
+    {
+      "title": "3D U-NeTR: Low-Dose Computed Tomography Reconstruction via Deep Learning and 3-Dimensional Convolutions",
+      "url": "https://arxiv.org/abs/2105.14130",
+      "venue": "arXiv 2105.14130",
+      "year": 2021,
+      "citations": 12
+    },
+    {
+      "title": "Prompt-Conditioned FiLM and Multi-Scale Fusion on MedSigLIP for Low-Dose CT Quality Assessment",
+      "url": "https://arxiv.org/abs/2511.12256",
+      "venue": "arXiv 2511.12256",
+      "year": 2025
+    },
+    {
+      "title": "Deep Unfolded BM3D: Unrolling Non-local Collaborative Filtering into a Trainable Neural Network",
+      "url": "https://arxiv.org/abs/2511.12248",
+      "venue": "arXiv 2511.12248",
+      "year": 2025
+    },
+    {
+      "title": "Learnable Total Variation with Lambda Mapping for Low-Dose CT Denoising",
+      "url": "https://arxiv.org/abs/2511.10500",
+      "venue": "arXiv 2511.10500",
+      "year": 2025
+    },
+    {
+      "title": "Task-Adaptive Low-Dose CT Reconstruction",
+      "url": "https://arxiv.org/abs/2511.07094",
+      "venue": "arXiv 2511.07094",
+      "year": 2025
+    },
+    {
+      "title": "LMM-IQA: Image Quality Assessment for Low-Dose CT Imaging",
+      "url": "https://arxiv.org/abs/2511.07298",
+      "venue": "arXiv 2511.07298",
+      "year": 2025
+    },
+    {
+      "title": "Determination of the Time of Calving in Holstein-Friesian and Simmental Cows by Using a Novel Intravaginal Temperature Recording Smart Device",
+      "url": "https://doi.org/10.1111/rda.13527",
+      "venue": "Reproduction in Domestic Animals 54, 67-67",
+      "year": 2019
+    }
+  ]
+}
