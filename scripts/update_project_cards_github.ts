@@ -5,7 +5,6 @@ const DEFAULT_OUTPUT_PATH = "content/projects.md";
 
 const args = new Set(Deno.args);
 const dryRun = args.has("--dry-run");
-const offline = args.has("--offline");
 
 const positional = Deno.args.filter((arg) => !arg.startsWith("--"));
 const configPath = positional[0] ?? DEFAULT_CONFIG_PATH;
@@ -71,16 +70,16 @@ function matchMeta(html: string, key: string, attr: "name" | "property") {
 }
 
 function parseStars(html: string) {
-  const raw = matchMeta(html, "octolytics-dimension-repository_stars", "name");
-  if (!raw) return null;
-  const value = Number.parseInt(raw, 10);
+  const match = html.match(/id="repo-stars-counter-star"[^>]*title="(\d+)"/);
+  if (!match) return null;
+  const value = Number.parseInt(match[1], 10);
   return Number.isFinite(value) ? value : null;
 }
 
 function parseForks(html: string) {
-  const raw = matchMeta(html, "octolytics-dimension-repository_forks", "name");
-  if (!raw) return null;
-  const value = Number.parseInt(raw, 10);
+  const match = html.match(/id="repo-network-counter"[^>]*title="(\d+)"/);
+  if (!match) return null;
+  const value = Number.parseInt(match[1], 10);
   return Number.isFinite(value) ? value : null;
 }
 
@@ -108,26 +107,10 @@ function normalizeRepo(entry: RepoConfig) {
   return { owner, name, url };
 }
 
-function buildFallback(entry: RepoConfig) {
-  const repo = normalizeRepo(entry);
-  const repoId = `${repo.owner}/${repo.name}`;
-  return {
-    repoId,
-    url: repo.url,
-    title: entry.title ?? repo.name,
-    description: entry.description ?? "",
-    language: entry.language ?? "",
-    stars: entry.stars ?? null,
-    forks: entry.forks ?? null,
-  };
-}
-
 async function fetchRepoInfo(entry: RepoConfig) {
   const repo = normalizeRepo(entry);
   const repoId = `${repo.owner}/${repo.name}`;
-  if (offline) {
-    return buildFallback(entry);
-  }
+  const errors: string[] = [];
 
   const response = await fetch(repo.url, {
     headers: {
@@ -138,24 +121,23 @@ async function fetchRepoInfo(entry: RepoConfig) {
   });
 
   if (!response.ok) {
-    throw new Error(`Request failed (${response.status}) for ${repo.url}`);
+    throw new Error(`HTTP ${response.status} fetching ${repo.url}`);
   }
 
   const html = await response.text();
-  const description = parseDescription(html, repoId) ?? entry.description ?? "";
-  const language = parseLanguage(html) ?? entry.language ?? "";
-  const stars = parseStars(html) ?? entry.stars ?? null;
-  const forks = parseForks(html) ?? entry.forks ?? null;
+  const description = parseDescription(html, repoId) ?? "";
+  const language = parseLanguage(html) ?? "";
+  const stars = parseStars(html);
+  const forks = parseForks(html);
 
-  return {
-    repoId,
-    url: repo.url,
-    title: entry.title ?? repo.name,
-    description,
-    language,
-    stars,
-    forks,
-  };
+  if (stars === null) {
+    errors.push(`failed to parse star count from ${repo.url}`);
+  }
+  if (forks === null) {
+    errors.push(`failed to parse fork count from ${repo.url}`);
+  }
+
+  return { repoId, url: repo.url, title: entry.title ?? repo.name, description, language, stars, forks, errors };
 }
 
 function renderRow(data: {
@@ -191,20 +173,26 @@ async function main() {
     `---\ntitle: "Projects"\ndate: 2025-06-12\ndraft: false\n---`;
 
   const rows: string[] = [];
+  const allErrors: string[] = [];
   for (const entry of repos) {
+    const repoId = `${entry.owner ?? defaultOwner}/${entry.name}`;
     try {
       const info = await fetchRepoInfo(entry);
+      allErrors.push(...info.errors);
       rows.push(renderRow(info));
     } catch (error) {
-      const repoId = `${entry.owner ?? defaultOwner}/${entry.name}`;
       const message = error instanceof Error ? error.message : String(error);
-      console.warn(`- ${repoId}: ${message}`);
-      const fallback = buildFallback(entry);
-      rows.push(renderRow(fallback));
+      allErrors.push(`${repoId}: ${message}`);
     }
-    if (!offline) {
-      await sleep(250);
+    await sleep(250);
+  }
+
+  if (allErrors.length > 0) {
+    console.error("Error: failed to scrape live data. Aborting without updating.");
+    for (const err of allErrors) {
+      console.error(`  - ${err}`);
     }
+    Deno.exit(1);
   }
 
   const header =

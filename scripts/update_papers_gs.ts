@@ -103,9 +103,10 @@ for (const row of extractRows(gsHtml)) {
 }
 
 if (citationMap.size === 0) {
-  console.warn(
-    "Warning: No citation rows parsed from Google Scholar HTML. The page may require manual refresh or a different fetch method.",
+  console.error(
+    "Error: no citation rows parsed from Google Scholar HTML. The page structure may have changed or the request was blocked.",
   );
+  Deno.exit(1);
 }
 
 function renderRow(paper: PaperConfig) {
@@ -113,8 +114,8 @@ function renderRow(paper: PaperConfig) {
   const venue = escapeMarkdownCell(paper.venue);
   const year = escapeMarkdownCell(String(paper.year));
   const key = normalize(paper.title);
-  const cited = citationMap.get(key) ?? paper.citations ?? "";
-  const citedCell = cited === "" || cited === null ? "" : String(cited);
+  const cited = citationMap.get(key) ?? null;
+  const citedCell = cited === null ? "" : String(cited);
   return `| ${title} | ${venue} | ${year} | ${citedCell} |`;
 }
 
