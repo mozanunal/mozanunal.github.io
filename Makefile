@@ -1,7 +1,7 @@
+.DEFAULT_GOAL := help
+
 REPO_URL := git@github.com:mozanunal/mozanunal.github.io.git
 BUILD_DIR := deploy_git
-QUARTO_FILES := $(shell rg --files --glob content/**/*.qmd)
-PWD="$(shell pwd)"
 PAPERS_MD := content/papers.md
 PAPERS_CONFIG := data/papers.json
 PAPER_CITATION_GS_SCRIPT := scripts/update_papers_gs.ts
@@ -9,27 +9,32 @@ PROJECTS_CONFIG := data/projects.json
 PROJECTS_MD := content/projects.md
 PROJECTS_SCRIPT := scripts/update_project_cards_github.ts
 
-.PHONY: help serve build format update_paper_citations update_project_cards deploy default
-
-help: ## Show available make targets
+.PHONY: help
+help: ## Show this help
 	@echo "Available targets:"
-	@awk 'BEGIN {FS = ":.*## "}; /^[a-zA-Z0-9_.-]+:.*##/ {printf "  %-24s %s\n", $$1, $$2}' $(MAKEFILE_LIST)
+	@awk 'BEGIN {FS = ":.*?## "} /^[a-zA-Z0-9_.-]+:.*##/ {printf "  %-22s %s\n", $$1, $$2}' $(MAKEFILE_LIST)
 
-serve: ## Run Hugo dev server with live reload
+.PHONY: dev
+dev: ## Run Hugo dev server with live reload
 	hugo serve --openBrowser --enableGitInfo --navigateToChanged --disableFastRender
 
-build: ## Build the site with Hugo (minified)
+.PHONY: build
+build: update_paper_citations update_project_cards ## Build site with minification
 	hugo --minify
 
-format: ## Format Markdown content with Deno
+.PHONY: format
+format: ## Format markdown content
 	deno fmt content/**/*.md
 
-update_paper_citations: ## Update papers table in papers.md (Google Scholar HTML)
+.PHONY: update_paper_citations
+update_paper_citations: ## Update papers table from Google Scholar
 	deno run --allow-net --allow-read --allow-write $(PAPER_CITATION_GS_SCRIPT) $(PAPERS_CONFIG) $(PAPERS_MD)
 
-update_project_cards: ## Update project cards in projects.md (GitHub scrape)
+.PHONY: update_project_cards
+update_project_cards: ## Update project cards from GitHub
 	deno run --allow-net --allow-read --allow-write $(PROJECTS_SCRIPT) $(PROJECTS_CONFIG) $(PROJECTS_MD)
 
+.PHONY: deploy
 deploy: build ## Build and publish to public branch
 	rm -rf $(BUILD_DIR)
 	git clone $(REPO_URL) $(BUILD_DIR) --branch=public --depth=1
@@ -43,4 +48,6 @@ deploy: build ## Build and publish to public branch
 	git commit -m "Site update" && \
 	git push origin public
 
-default: build ## Default alias: build
+.PHONY: clean
+clean: ## Remove build artifacts
+	rm -rf public/ $(BUILD_DIR)
