@@ -1,19 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Star Wars BB-8 on mozanunal.com</title>
-    <link>https://mozanunal.com/tags/star-wars-bb-8/</link>
-    <description>Recent content in Star Wars BB-8 on mozanunal.com</description>
-    <generator>Hugo</generator>
-    <language>en-US</language>
-    <lastBuildDate>Thu, 21 Jan 2016 03:26:00 +0000</lastBuildDate>
-    <atom:link href="https://mozanunal.com/tags/star-wars-bb-8/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>[TR] Star Wars BB-8 Robot Yapımı</title>
-      <link>https://mozanunal.com/2016/01/star-wars-bb-8-robot-yapm-bolum-1/</link>
-      <pubDate>Thu, 21 Jan 2016 03:26:00 +0000</pubDate>
-      <guid>https://mozanunal.com/2016/01/star-wars-bb-8-robot-yapm-bolum-1/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;br&gt;&#xA;Bu seferki projem Star Warsa son film ile katılan BB-8 isimli droidin bir&#xA;benzerini yapmak. Bu fikir aklıma nereden geldi derseniz. Son filmdeki en&#xA;sempatik ve ilgi çekici karakterin BB-8 olduğunu düşünüyorum. Tabi ilk aklıma&#xA;gelen nasıl çalıştığı&amp;hellip; Farklı fikirler yürütürken kendimi bu droidi nasıl&#xA;yaparım diye tasarımlar yaptığım bir projenin içinde buluverdim. Elle tutulur&#xA;tasarımlar ortaya çıkmaya başlayınca malzemelerimi topladım ve projeye başladım.&#xA;Proje oldukça uzun ve daha çok mekanik bir proje bu yüzden 2 parçaya ayırdım&#xA;kalanını ne zaman bitiririm bilmiyorum. Şu an devam edemiyorum çünkü lipo&#xA;pillerim bitti ve şarj aletini malesef istanbulda unutmuşum. Neyse projemize&#xA;geçelim.&lt;/p&gt;</description>
-    </item>
-  </channel>
+	<channel>
+		<title>Star Wars BB-8 on mozanunal.com</title>
+		<link>https://mozanunal.com/tags/star-wars-bb-8/</link>
+		<description>Recent content in Star Wars BB-8 on mozanunal.com</description>
+		<generator>Hugo</generator>
+		<language>en-US</language>
+		
+		
+		
+		
+			<lastBuildDate>Thu, 21 Jan 2016 03:26:00 +0000</lastBuildDate>
+		
+			<atom:link href="https://mozanunal.com/tags/star-wars-bb-8/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>[TR] Star Wars BB-8 Robot Yapımı</title>
+				<link>https://mozanunal.com/2016/01/star-wars-bb-8-robot-yapm-bolum-1/</link>
+				<pubDate>Thu, 21 Jan 2016 03:26:00 +0000</pubDate>
+				<guid>https://mozanunal.com/2016/01/star-wars-bb-8-robot-yapm-bolum-1/</guid>
+				<description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;br&gt;&#xA;Bu seferki projem Star Warsa son film ile katılan BB-8 isimli droidin bir&#xA;benzerini yapmak. Bu fikir aklıma nereden geldi derseniz. Son filmdeki en&#xA;sempatik ve ilgi çekici karakterin BB-8 olduğunu düşünüyorum. Tabi ilk aklıma&#xA;gelen nasıl çalıştığı&amp;hellip; Farklı fikirler yürütürken kendimi bu droidi nasıl&#xA;yaparım diye tasarımlar yaptığım bir projenin içinde buluverdim. Elle tutulur&#xA;tasarımlar ortaya çıkmaya başlayınca malzemelerimi topladım ve projeye başladım.&#xA;Proje oldukça uzun ve daha çok mekanik bir proje bu yüzden 2 parçaya ayırdım&#xA;kalanını ne zaman bitiririm bilmiyorum. Şu an devam edemiyorum çünkü lipo&#xA;pillerim bitti ve şarj aletini malesef istanbulda unutmuşum. Neyse projemize&#xA;geçelim.&lt;/p&gt;</description>
+			</item>
+	</channel>
 </rss>

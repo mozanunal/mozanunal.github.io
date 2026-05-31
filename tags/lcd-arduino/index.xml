@@ -1,19 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>LCD Arduino on mozanunal.com</title>
-    <link>https://mozanunal.com/tags/lcd-arduino/</link>
-    <description>Recent content in LCD Arduino on mozanunal.com</description>
-    <generator>Hugo</generator>
-    <language>en-US</language>
-    <lastBuildDate>Sun, 11 Jan 2015 20:57:00 +0000</lastBuildDate>
-    <atom:link href="https://mozanunal.com/tags/lcd-arduino/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>[TR] LCD Göstergeli Mesafe Ölçer</title>
-      <link>https://mozanunal.com/2015/01/lcd-gostergeli-mesafe-olcer/</link>
-      <pubDate>Sun, 11 Jan 2015 20:57:00 +0000</pubDate>
-      <guid>https://mozanunal.com/2015/01/lcd-gostergeli-mesafe-olcer/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Merhabalar!&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Bugünkü yazımda LCD göstergeli bir mesafe ölçerin nasıl yapılabileceğini&#xA;anlatacağım. Projede Arduino, LCD modülü ve HC-SR04 modülü kullandım. Mesafe&#xA;hesaplama işini &amp;ldquo;NewPing&amp;rdquo; isimli kütüphaneye yaptırdım. Bu aldığım mesafe&#xA;verilerini de LCD ekrana bastırıyorum kod bu kadar basit. HC-SR04 ultrasonik&#xA;mesafe hesaplama modulü. Mesafe hesabı için ses dalgalarını kullanıyor. Ses&#xA;hızına göre geri dönüş süresini hesaplıyor bu sayede uzaklık hakkında bilgi&#xA;sahibi olmuş oluyoruz.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;IMG_20150111_183709.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;IMG_20150111_183748.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Uygulamanın Arduino Kodunu paylaşıyorum. Bağlantılar da kod içerisinde&#xA;verilmiştir.&lt;/p&gt;</description>
-    </item>
-  </channel>
+	<channel>
+		<title>LCD Arduino on mozanunal.com</title>
+		<link>https://mozanunal.com/tags/lcd-arduino/</link>
+		<description>Recent content in LCD Arduino on mozanunal.com</description>
+		<generator>Hugo</generator>
+		<language>en-US</language>
+		
+		
+		
+		
+			<lastBuildDate>Sun, 11 Jan 2015 20:57:00 +0000</lastBuildDate>
+		
+			<atom:link href="https://mozanunal.com/tags/lcd-arduino/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>[TR] LCD Göstergeli Mesafe Ölçer</title>
+				<link>https://mozanunal.com/2015/01/lcd-gostergeli-mesafe-olcer/</link>
+				<pubDate>Sun, 11 Jan 2015 20:57:00 +0000</pubDate>
+				<guid>https://mozanunal.com/2015/01/lcd-gostergeli-mesafe-olcer/</guid>
+				<description>&lt;p&gt;&lt;strong&gt;Merhabalar!&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Bugünkü yazımda LCD göstergeli bir mesafe ölçerin nasıl yapılabileceğini&#xA;anlatacağım. Projede Arduino, LCD modülü ve HC-SR04 modülü kullandım. Mesafe&#xA;hesaplama işini &amp;ldquo;NewPing&amp;rdquo; isimli kütüphaneye yaptırdım. Bu aldığım mesafe&#xA;verilerini de LCD ekrana bastırıyorum kod bu kadar basit. HC-SR04 ultrasonik&#xA;mesafe hesaplama modulü. Mesafe hesabı için ses dalgalarını kullanıyor. Ses&#xA;hızına göre geri dönüş süresini hesaplıyor bu sayede uzaklık hakkında bilgi&#xA;sahibi olmuş oluyoruz.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;IMG_20150111_183709.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;IMG_20150111_183748.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Uygulamanın Arduino Kodunu paylaşıyorum. Bağlantılar da kod içerisinde&#xA;verilmiştir.&lt;/p&gt;</description>
+			</item>
+	</channel>
 </rss>

@@ -1,19 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Unsplash on mozanunal.com</title>
-    <link>https://mozanunal.com/tags/unsplash/</link>
-    <description>Recent content in Unsplash on mozanunal.com</description>
-    <generator>Hugo</generator>
-    <language>en-US</language>
-    <lastBuildDate>Tue, 12 Oct 2021 08:14:07 +0000</lastBuildDate>
-    <atom:link href="https://mozanunal.com/tags/unsplash/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Wallpaper Automation Tool: WPCTL</title>
-      <link>https://mozanunal.com/2021/10/wpctl-1/</link>
-      <pubDate>Tue, 12 Oct 2021 08:14:07 +0000</pubDate>
-      <guid>https://mozanunal.com/2021/10/wpctl-1/</guid>
-      <description>&lt;p&gt;Hey,&lt;/p&gt;&#xA;&lt;p&gt;Today I will come up with a very minimalistic wallpaper automation tool&#xA;&lt;a href=&#34;https://github.com/mozanunal/wpctl&#34;&gt;&lt;strong&gt;WPCTL&lt;/strong&gt;&lt;/a&gt;. I spend most of my time on the&#xA;computer. There are not too many options to have fun with while working on the&#xA;computer. Interesting and colorful photos are one of the favorite entertainment&#xA;sources for my daily routine. Therefore, I really like auto wallpaper changer&#xA;programs which surprises me with different photos. I decided to use one of these&#xA;programs. However, none of them is fulfiled my requirements. I want a wallpaper&#xA;changer which should be like:&lt;/p&gt;</description>
-    </item>
-  </channel>
+	<channel>
+		<title>Unsplash on mozanunal.com</title>
+		<link>https://mozanunal.com/tags/unsplash/</link>
+		<description>Recent content in Unsplash on mozanunal.com</description>
+		<generator>Hugo</generator>
+		<language>en-US</language>
+		
+		
+		
+		
+			<lastBuildDate>Tue, 12 Oct 2021 08:14:07 +0000</lastBuildDate>
+		
+			<atom:link href="https://mozanunal.com/tags/unsplash/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Wallpaper Automation Tool: WPCTL</title>
+				<link>https://mozanunal.com/2021/10/wpctl-1/</link>
+				<pubDate>Tue, 12 Oct 2021 08:14:07 +0000</pubDate>
+				<guid>https://mozanunal.com/2021/10/wpctl-1/</guid>
+				<description>&lt;p&gt;Hey,&lt;/p&gt;&#xA;&lt;p&gt;Today I will come up with a very minimalistic wallpaper automation tool&#xA;&lt;a href=&#34;https://github.com/mozanunal/wpctl&#34;&gt;&lt;strong&gt;WPCTL&lt;/strong&gt;&lt;/a&gt;. I spend most of my time on the&#xA;computer. There are not too many options to have fun with while working on the&#xA;computer. Interesting and colorful photos are one of the favorite entertainment&#xA;sources for my daily routine. Therefore, I really like auto wallpaper changer&#xA;programs which surprises me with different photos. I decided to use one of these&#xA;programs. However, none of them is fulfiled my requirements. I want a wallpaper&#xA;changer which should be like:&lt;/p&gt;</description>
+			</item>
+	</channel>
 </rss>
