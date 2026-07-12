@@ -1,10 +1,5 @@
 ---
 title: '[TR] SDR ile Bilgisayardan TV izlemek'
-tags:
-  - Software Defined Radio
-  - 'SDR#'
-  - SDR- Pal NTSC
-  - TVSharp
 categories:
   - Signal Processing
   - DSP

@@ -1,9 +1,5 @@
 ---
 title: '[TR] Youtube Arka Plan Müzik Dinleyici'
-tags:
-  - Android Programlama ve Oyun
-  - youtube arkaplan müzik dinleyici.
-  - Youtube background listener
 categories:
   -  Coding
 date: 2015-06-29 03:09:00

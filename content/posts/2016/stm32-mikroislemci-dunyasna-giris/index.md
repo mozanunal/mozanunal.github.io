@@ -1,10 +1,5 @@
 ---
 title: '[TR] STM32 Mikroişlemci Dünyasına Giriş'
-tags:
-  - Arm cortex m3
-  - stm32
-  - stm32cubemx
-  - stm32f103c8t6
 categories:
   - Electronics
   - Microcontrollers

@@ -1,12 +1,5 @@
 ---
 title: 'SimpleDSP: IIR Filter Feature Added'
-tags:
-  - Arduino DSP
-  - Arduino IIR
-  - DSP
-  - IIR filter
-  - IIR filter design
-  - Signal Processing
 categories:
   - Signal Processing
   - DSP

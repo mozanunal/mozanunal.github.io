@@ -1,9 +1,5 @@
 ---
 title: '[TR] Veriloga Giriş'
-tags:
-  - Electronics
-  - verilog
-  - FPGA
 categories:
   - Electronics
   - FPGA

@@ -1,10 +1,5 @@
 ---
 title: '[TR] Orange Pi Zero Üzerinde Dump1090 Çalıştırmak'
-tags:
-  - Software Defined Radio
-  - sdr
-  - dump1090
-  - orangepizero
 categories:
   - Signal Processing
   - DSP

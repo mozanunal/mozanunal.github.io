@@ -1,11 +1,5 @@
 ---
 title: '[TR] Processing ile Artırılmış Gerçeklik'
-tags:
-  - Image Processing
-  - Processing
-  - Artırılmış gerçeklik
-  - marker tabanlı vr
-  - market tabanlı ar
 categories:
   - Signal Processing
   - Image Processing

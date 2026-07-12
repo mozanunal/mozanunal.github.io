@@ -1,12 +1,5 @@
 ---
 title: '[TR] Star Wars BB-8 Robot Yapımı'
-tags:
-  - Electronics
-  - Arduino
-  - arduino servo kontrol
-  - bluetooth kontrol
-  - DIY BB-8 Droid
-  - Star Wars BB-8
 categories:
   - Electronics
   - Arduino

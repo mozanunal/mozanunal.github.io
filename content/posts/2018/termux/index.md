@@ -1,8 +1,5 @@
 ---
 title: '[TR] Android Terminal Emülatörü: Termux'
-tags:
-  - Android
-  - Termux
 categories:
   -  Coding
 date: 2018-07-30 20:04:35

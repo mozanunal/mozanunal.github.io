@@ -1,10 +1,5 @@
 ---
 title: '[TR] Software Defined Radioya Giriş'
-tags:
-  - Software Defined Radio
-  - 'SDR#'
-  - SDR FM
-  - SDR Nedir
 categories:
   - Signal Processing
   - DSP

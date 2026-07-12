@@ -1,12 +1,5 @@
 ---
 title: '[TR] Kamera ile Araç Sayısı Takibi'
-tags:
-  - 'C#'
-  - Image Processing
-  - EmguCV
-  - Araç sayısı saydırma
-  - Kamera ile Araç Sayısı Takibi
-  - opencv
 categories:
   - Signal Processing
   - Image Processing

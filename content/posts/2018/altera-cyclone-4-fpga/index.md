@@ -1,10 +1,5 @@
 ---
 title: '[TR] Altera Cyclone IV ile FPGA Dünyasına Giriş'
-tags:
-  - verilog
-  - altera
-  - cyclone
-  - quartus
 categories:
   - Electronics
   - FPGA

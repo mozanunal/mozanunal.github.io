@@ -1,12 +1,5 @@
 ---
 title: '[TR] Arduino Joystick Kontrol'
-tags:
-  - Electronics
-  - Arduino
-  - Arduino
-  - Arduino Joystick Kontrol
-  - Full Source code avaible
-  - Joystick
 categories:
   - Electronics
   - Arduino

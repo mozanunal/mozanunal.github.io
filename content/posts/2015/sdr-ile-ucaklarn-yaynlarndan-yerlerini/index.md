@@ -1,10 +1,5 @@
 ---
 title: '[TR] SDR ile Uçakların Yayınlarından Yerlerini Tespit Etmek'
-tags:
-  - Adsb
-  - Hava Araçları
-  - Sdr ile uçak takibi
-  - Software Defined Radio
 categories:
   - Signal Processing
   - DSP

@@ -1,12 +1,5 @@
 ---
 title: 'Wallpaper Automation Tool: WPCTL'
-tags:
-  - linux
-  - yazilim
-  - wallpaper
-  - unsplash
-  - bash script
-  - ubuntu
 categories:
   -  Coding
 date: 2021-10-12 08:14:07

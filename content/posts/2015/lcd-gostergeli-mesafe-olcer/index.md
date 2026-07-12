@@ -1,12 +1,5 @@
 ---
 title: '[TR] LCD Göstergeli Mesafe Ölçer'
-tags:
-  - Electronics
-  - Arduino
-  - Arduino
-  - HC-SR04
-  - LCD Arduino
-  - Mesafe ölçer
 categories:
   - Electronics
   - Arduino

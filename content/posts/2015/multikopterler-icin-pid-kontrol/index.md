@@ -1,12 +1,5 @@
 ---
 title: '[TR] Multikopterler için PID kontrol'
-tags:
-  - Electronics Devreler ve Teorik Yazılar
-  - Hava Araçları
-  - Multikopter uçuş prensibi
-  - Multikopterler için PID
-  - PID kontrol
-  - Quadcopter uçuş prensibi
 categories:
   - Electronics
   - Drone

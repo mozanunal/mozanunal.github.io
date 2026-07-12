@@ -1,9 +1,5 @@
 ---
 title: '[TR] Lazer Haberleşmesi'
-tags:
-  - Electronics
-  - Arduino
-  - Laser Haberleşme
 categories:
   - Electronics
   - Arduino

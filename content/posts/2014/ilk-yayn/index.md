@@ -1,15 +1,5 @@
 ---
 title: '[TR] İlk Yayın'
-tags:
-  - Ana Sayfa
-  - Electronics
-  - Microcontrollers
-  - Android Programlama ve Oyun
-  - 'C#'
-  - Hava Araçları
-  - Image Processing
-  - Linux
-  - Software Defined Radio
 categories:
   - Electronics
   - Arduino

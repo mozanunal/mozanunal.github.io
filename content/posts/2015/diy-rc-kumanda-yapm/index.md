@@ -1,11 +1,5 @@
 ---
 title: '[TR] DIY RC Kumanda Yapımı'
-tags:
-  - Electronics
-  - Arduino
-  - Joystick
-  - Arduino RC kumanda
-  - NRF24L01
 categories:
   - Electronics
   - Arduino

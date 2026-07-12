@@ -1,10 +1,5 @@
 ---
 title: '[TR] 555 Entegresi Tanıtım'
-tags:
-  - '555'
-  - 555 Entegresi Tanıtım
-  - Electronics Devreler
-  - Electronics Devreler ve Teorik Yazılar
 categories:
   - Electronics
   - Analog

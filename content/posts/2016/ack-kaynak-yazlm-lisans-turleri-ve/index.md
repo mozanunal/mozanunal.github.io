@@ -1,11 +1,5 @@
 ---
 title: '[TR] Açık Kaynak Yazılım Lisans Türleri ve Farkları'
-tags:
-  - Linux
-  - apache lisansı
-  - Açık kaynak yazılım lisansları
-  - gpl lisansı
-  - Mit lisansı
 categories:
   -  Coding
 author: Mehmet Ozan Ünal

@@ -1,14 +1,5 @@
 ---
 title: '[TR] Kamera ile Fare Kontrolü'
-tags:
-  - 'C#'
-  - Image Processing
-  - EmguCV
-  - opencv
-  - finger counter
-  - kamera ile fare kontrolü
-  - kamera mause
-  - parmak sayma
 categories:
   - Signal Processing
   - Image Processing

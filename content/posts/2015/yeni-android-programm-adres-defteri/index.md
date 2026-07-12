@@ -1,10 +1,5 @@
 ---
 title: '[TR] Yeni Android Programım: Adres Defteri'
-tags:
-  - Android Programlama ve Oyun
-  - Adres Defteri
-  - Android program
-  - Navigasyon
 categories:
   -  Coding
 author: Mehmet Ozan Ünal

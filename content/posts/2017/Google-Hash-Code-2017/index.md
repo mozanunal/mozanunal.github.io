@@ -1,7 +1,5 @@
 ---
 title: '[TR] Google Hash Code 2017'
-tags:
-  - Hash Code
 categories:
   -  Coding
 author: Mehmet Ozan Ünal

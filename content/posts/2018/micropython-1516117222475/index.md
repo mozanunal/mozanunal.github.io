@@ -1,8 +1,5 @@
 ---
 title: '[TR] Micropython Nedir?'
-tags:
-  - esp8266
-  - micropython
 categories:
   - Electronics
   - IoT

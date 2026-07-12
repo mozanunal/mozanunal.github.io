@@ -1,7 +1,5 @@
 ---
 title: Medical Imaging Planes
-tags:
-  - biomedical imaging
 categories:
   - Electronics
 

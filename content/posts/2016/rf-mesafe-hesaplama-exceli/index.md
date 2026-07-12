@@ -1,7 +1,6 @@
 ---
 title: '[TR] RF Mesafe Hesaplama Exceli'
 date: 2016-01-02 04:34:00
-tags: [RF mesafe hesaplama,Software Defined Radio]
 categories:
   - Signal Processing
   - DSP

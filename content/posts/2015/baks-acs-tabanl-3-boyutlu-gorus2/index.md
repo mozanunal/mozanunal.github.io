@@ -1,11 +1,5 @@
 ---
 title: '[TR] Bakış Açısı Tabanlı 3 Boyutlu Görüş Versiyon 2.00'
-tags:
-  - 3D görüş
-  - 3D view
-  - Image Processing
-  - Opencv 3 boyutlu görme
-  - Processing
 categories:
   - Signal Processing
   - Image Processing

@@ -1,11 +1,5 @@
 ---
 title: '[TR] Python için komple bir çözüm: Anaconda '
-tags:
-  - python
-  - Anaconda
-  - Pyhton Kütüphaneleri
-  - bilimsel python uygulamaları
-  - jupyter notebook
 categories:
   -  Coding
 date: 2016-09-12 02:41:00

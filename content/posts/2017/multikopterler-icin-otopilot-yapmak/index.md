@@ -1,12 +1,5 @@
 ---
 title: '[TR] Multikopterler için otopilot yapmak'
-tags:
-  - Hava Araçları
-  - Multikopter uçuş prensibi
-  - Multikopterler için PID
-  - Drone
-  - Otopilot
-  - SimplePilot
 categories:
   - Electronics
   - Drone

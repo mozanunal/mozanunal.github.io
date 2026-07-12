@@ -1,9 +1,5 @@
 ---
 title: '[TR] LM78XX Voltaj Regülatörü Entegrelerini Kullanma'
-tags:
-  - Electronics Devreler
-  - LM7805
-  - Voltaj Regülatörü
 categories:
   - Electronics
   - Analog

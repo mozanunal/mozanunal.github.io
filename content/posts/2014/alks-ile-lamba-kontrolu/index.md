@@ -1,10 +1,5 @@
 ---
 title: '[TR] Alkış ile Lamba Kontrolü'
-tags:
-  - Electronics Devreler
-  - Electronics Devreler ve Teorik Yazılar
-  - alkış ile lamba kontolü
-  - aydınlatma projeleri
 categories:
   - Electronics
   - Analog

@@ -1,8 +1,5 @@
 ---
 title: '[TR] Web Tabanlı Programlar'
-tags:
-  - html5
-  - Web Tabanlı programlar
 categories:
   -  Coding
 author: Mehmet Ozan Ünal

@@ -1,7 +1,6 @@
 ---
 title: '[TR] Droid Script'
 date: 2015-08-17 10:15:00
-tags: [Android,Android Programlama,Android Programlama ve Oyun,Droid Script,JavaScriot]
 categories:
   -  Coding
 author: Mehmet Ozan Ünal

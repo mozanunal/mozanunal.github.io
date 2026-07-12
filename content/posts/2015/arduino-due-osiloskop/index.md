@@ -1,11 +1,5 @@
 ---
 title: '[TR] Arduino Due Osiloskop'
-tags:
-  - Arduino Due Osiloskop
-  - Electronics
-  - Arduino
-  - 'C#'
-  - 'C# Osiloskop'
 categories:
   - Electronics
   - Arduino

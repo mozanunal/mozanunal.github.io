@@ -1,13 +1,6 @@
 ---
 title: PMod Microphone Driver
 author: Mehmet Ozan Ünal
-tags:
-  - Pmod
-  - xilinx
-  - xillinx vivado
-  - zynq
-  - pmod mic
-  - Microphone verilog
 categories:
   - Electronics
   - FPGA

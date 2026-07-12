@@ -1,11 +1,5 @@
 ---
 title: '[TR] Android Phone IMU Visualizer'
-tags:
-  - Android Phone IMU Visualizer
-  - Android Programlama ve Oyun
-  - Android programming. Android IMU
-  - Processing IMU
-  - Processing UDP
 categories:
   -  Coding
 author: Mehmet Ozan Ünal

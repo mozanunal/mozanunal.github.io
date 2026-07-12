@@ -1,10 +1,5 @@
 ---
 title: '[TR] WPF ile Ev Otomasyonu Arayüzü'
-tags:
-  - 'C#'
-  - Arduino
-  - ESP8266
-  - Meteoroloji İstasyonu
 categories:
   - Electronics
   - IoT

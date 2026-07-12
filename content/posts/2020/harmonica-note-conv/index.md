@@ -1,8 +1,5 @@
 ---
 title: Harmonica Note Converter
-tags:
-  - python
-  - harmonica
 categories:
   - Coding
 

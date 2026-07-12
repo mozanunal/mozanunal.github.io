@@ -1,10 +1,5 @@
 ---
 title: '[TR] 2 Eksenli Servo Gimbal Yapımı'
-tags:
-  - 2 Eksenli Servo Gimbal
-  - Arduino Gimbal
-  - Electronics
-  - Arduino
 categories:
   - Electronics
   - Drone

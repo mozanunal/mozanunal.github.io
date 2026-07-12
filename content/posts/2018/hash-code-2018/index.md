@@ -1,8 +1,5 @@
 ---
 title: '[TR] Hash Code 2018'
-tags:
-  - hackhathon
-  - hashcode2018
 categories:
   -  Coding
 date: 2018-04-08 00:45:01

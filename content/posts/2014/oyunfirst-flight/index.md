@@ -1,9 +1,5 @@
 ---
 title: '[TR] Oyun (First Flight)'
-tags:
-  - Android Programlama ve Oyun
-  - Gamemaker
-  - gamemaker ile oyun yapımı
 categories:
   -  Coding
 author: Mehmet Ozan Ünal

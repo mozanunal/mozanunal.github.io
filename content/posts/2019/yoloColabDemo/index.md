@@ -1,10 +1,5 @@
 ---
 title: 'Yolo on Google Colab'
-tags:
-  - google colab
-  - deeplearning
-  - yolov3
-  - collabrotary
 categories:
   -  Coding
 date: 2019-08-13 00:09:50

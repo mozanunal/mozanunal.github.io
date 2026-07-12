@@ -1,8 +1,5 @@
 ---
 title: '[TR] Flash Belleğe Ubuntu Kurmak'
-tags:
-  - flash belleğe ubuntu yükleme
-  - Linux
 categories:
   -  Coding
 author: Mehmet Ozan Ünal

@@ -1,11 +1,5 @@
 ---
 title: '[TR] Serial Port Grapher'
-tags:
-  - 'C#'
-  - Arduino grafik
-  - 'C# gerçek zamanlı grafik'
-  - 'C# grafik'
-  - Serial Port
 categories:
   -  Coding
 date: 2014-12-23 02:59:00

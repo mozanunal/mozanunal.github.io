@@ -1,9 +1,5 @@
 ---
 title: Digital Filtering of an ECG Signal
-tags:
-  - ECG
-  - Digital filtering for ECG
-  - 50 Hz filtering from ECG
 categories:
   - Electronics
 author: Mehmet Ozan Ünal

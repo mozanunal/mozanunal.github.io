@@ -1,9 +1,5 @@
 ---
 title: '[TR] İTÜNOM Takımı'
-tags:
-  - Drone
-  - ITUNOM
-  - İTÜNOM
 categories:
   - Electronics
   - Drone

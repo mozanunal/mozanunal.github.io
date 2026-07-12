@@ -1,7 +1,6 @@
 ---
 title: Coolest C Trick
 date: 2020-03-30 23:45:00
-tags: [Programming,C-iterator,--> operator]
 categories:
   -  Coding
 author: Mehmet Ozan Ünal

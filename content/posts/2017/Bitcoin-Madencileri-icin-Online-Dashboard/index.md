@@ -1,11 +1,6 @@
 ---
 title: '[TR] Bitcoin Madencileri için Online Dashboard'
 author: Mehmet Ozan Ünal
-tags:
-  - IoT
-  - wemos
-  - esp8266
-  - bitcoin mining
 categories:
   - Electronics
   - IoT

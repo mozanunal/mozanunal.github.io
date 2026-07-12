@@ -1,7 +1,6 @@
 ---
 title: Hash Code 2020
 date: 2020-03-31 23:00:12
-tags: [Hash Code, Hash Code 2020, Google Hash Code]
 categories:
   -  Coding
 author: Mehmet Ozan Ünal

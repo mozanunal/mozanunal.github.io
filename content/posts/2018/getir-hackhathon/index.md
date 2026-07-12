@@ -1,12 +1,5 @@
 ---
 title: '[TR] Hackhathon Getir 2018'
-tags:
-  - hackhathon
-  - getir
-  - angularjs
-  - nodejs
-  - route
-  - google map api
 categories:
   -  Coding
 date: 2018-04-16 18:10:04

@@ -1,13 +1,6 @@
 ---
 title: "Introducing Hugo Classless: A Theme for Any Style"
 date: 2025-08-26T22:45:54+03:00
-tags:
-  - hugo
-  - theme
-  - css
-  - webdev
-  - classless
-  - project
 summary: "Announcing a new Hugo theme built on the 'classless' philosophy. Learn how it uses pure semantic HTML to let you plug and play any classless CSS framework like Pico.css, Water.css, and more, and see it in action with an interactive demo."
 ---
 

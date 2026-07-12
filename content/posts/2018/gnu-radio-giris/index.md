@@ -1,9 +1,5 @@
 ---
 title: '[TR] GNU Radio Giriş'
-tags:
-  - gnu-radio
-  - gnu-radio-giris
-  - sinyal-isleme
 categories:
   - Signal Processing
   - DSP

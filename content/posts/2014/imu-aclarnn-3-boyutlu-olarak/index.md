@@ -1,14 +1,5 @@
 ---
 title: '[TR] IMU Açılarının 3 Boyutlu Olarak Görsellenmesi'
-tags:
-  - Electronics
-  - Arduino
-  - Hava Araçları
-  - Arduino
-  - IMU Açılarının 3 Boyutlu Olarak Görsellenmesi
-  - IMU nedir
-  - Inertial measurement unit
-  - mpu6050
 categories:
   - Electronics
   - Drone

@@ -1,13 +1,5 @@
 ---
 title: '[TR] IMU ile Kamera Gimbalı Kontrolü'
-tags:
-  - Electronics
-  - Arduino
-  - Hava Araçları
-  - mpu6050
-  - arduino servo kontrol
-  - gimbal kontrol
-  - IMU
 categories:
   - Electronics
   - Drone

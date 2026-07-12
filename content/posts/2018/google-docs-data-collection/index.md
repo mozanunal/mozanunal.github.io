@@ -1,9 +1,5 @@
 ---
 title: '[TR] En Basit IOT Bulut Sistemi: Google Forms'
-tags:
-  - IoT
-  - google docs
-  - cloud
 categories:
   - Electronics
   - IoT

@@ -1,12 +1,5 @@
 ---
 title: 'PassFace: Face Recognition Using OpenCV'
-tags:
-  - Image Processing
-  - EmguCV
-  - opencv
-  - Eigenfaces
-  - Face recognition
-  - Fisgerfaces
 categories:
   - Signal Processing
   - Image Processing

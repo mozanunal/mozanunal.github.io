@@ -1,10 +1,5 @@
 ---
 title: 'Show Images Directly on Terminal: img2sh'
-tags:
-  - linux
-  - yazilim
-  - bash script
-  - ubuntu
 categories:
   -  Coding
 date: 2019-11-03 10:48:19

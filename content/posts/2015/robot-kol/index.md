@@ -1,13 +1,5 @@
 ---
 title: '[TR] Robot Kol'
-tags:
-  - Electronics
-  - Arduino
-  - Arduino
-  - arduino servo kontrol
-  - Arduino Robotik Kol
-  - Arduino Robotik Kontrol
-  - DIY Robotic Hand
 categories:
   - Electronics
   - Arduino

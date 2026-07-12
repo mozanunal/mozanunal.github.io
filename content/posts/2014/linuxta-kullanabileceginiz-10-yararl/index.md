@@ -1,13 +1,5 @@
 ---
 title: '[TR] Linuxta Kullanabileceğiniz 10 Yararlı Program'
-tags:
-  - Linux
-  - Blender
-  - Code Blocks
-  - Eclipse
-  - Linux Türkçe Klavye
-  - Linuxta Kullanabileceğiniz 10 Yararlı Program
-  - VLC player
 categories:
   -  Coding
 author: Mehmet Ozan Ünal

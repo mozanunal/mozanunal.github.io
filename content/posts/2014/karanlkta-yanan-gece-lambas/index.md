@@ -1,8 +1,5 @@
 ---
 title: '[TR] Karanlıkta Yanan Gece Lambası'
-tags:
-  - Karanlıkta Yanan Gece Lambası
-  - Ldrli Gece Lambası
 categories:
   - Electronics
   - Analog

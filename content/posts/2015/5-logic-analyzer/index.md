@@ -1,9 +1,5 @@
 ---
 title: '[TR] 5$ Logic Analyzer'
-tags:
-  - Electronics
-  - Microcontrollers
-  - Saleae Logic Analzyer
 categories:
   - Electronics
   - Microcontrollers

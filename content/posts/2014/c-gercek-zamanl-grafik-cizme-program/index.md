@@ -1,16 +1,5 @@
 ---
 title: '[TR] C# Gerçek Zamanlı Grafik Çizme Programı'
-tags:
-  - 'C#'
-  - 'Arduino C#'
-  - arayüz
-  - Arduino grafik
-  - 'C# gerçek zamanlı grafik'
-  - 'C# grafik'
-  - 'C# realtime graphs'
-  - Com Port
-  - Serial Port
-  - zedgraph
 categories:
   -  Coding
 author: Mehmet Ozan Ünal

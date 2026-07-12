@@ -1,13 +1,5 @@
 ---
 title: '[TR] Bilgisayardan Gimbal Kontrolü'
-tags:
-  - Electronics
-  - Arduino
-  - 'C#'
-  - Hava Araçları
-  - 'Arduino C#'
-  - Bilgisayardan Kontrol
-  - gimbal
 categories:
   - Electronics
   - Arduino
