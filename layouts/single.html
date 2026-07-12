@@ -33,22 +33,6 @@
     {{ .Content }}
   </div>
 
-  {{/* Tags (disable with showTaxonomy: false in front matter or site params) */}}
-  {{- $showTaxonomy := .Param "showTaxonomy" | default true -}}
-  {{- $tags := .GetTerms "tags" -}}
-  {{- if and $showTaxonomy $tags -}}
-  <hr>
-  {{- with $tags -}}
-  <p>
-    <strong>{{ i18n "tags" | default "Tags" }}:</strong>
-    {{- range $i, $t := . -}}
-      {{- if $i }}, {{ end -}}
-      <a href="{{ $t.Permalink }}">{{ $t.LinkTitle }}</a>
-      {{- end -}}
-  </p>
-  {{- end -}}
-  {{- end -}}
-
   {{/* Related Posts */}}
   {{- $related := .Site.RegularPages.Related . | first 5 -}}
   {{- with $related -}}

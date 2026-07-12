@@ -4,6 +4,8 @@ languageCode: 'en-US'
 
 permalinks:
   posts: "/:year/:month/:contentbasename"
+taxonomies:
+  category: categories
 enableInlineShortcodes: true
 enableRobotsTXT: true
 buildDrafts: false
