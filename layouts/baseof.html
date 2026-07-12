@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.Language.Lang | default "en" }}">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+  {{- with .OutputFormats.Get "RSS" }}
+  <link href="{{ .RelPermalink }}" rel="alternate" type="application/rss+xml" title="{{ $.Site.Title }}" />
+  {{- end }}
+  <link rel="canonical" href="{{ .Permalink }}">
+  {{- if .Params.noindex }}
+  <meta name="robots" content="noindex">
+  {{- end }}
+
+  {{- with .Site.Params.themeBase -}}
+  {{- $base_res := resources.Get . | minify | fingerprint -}}
+  <link id="theme-style-base" rel="stylesheet" href="{{ $base_res.RelPermalink }}"
+    integrity="{{ $base_res.Data.Integrity }}">
+  {{- end -}}
+
+  {{- if .Site.Params.themes -}}
+  {{/* Demo mode takes precedence: Use the first theme from the list by default. */}}
+  {{- $first := index .Site.Params.themes 0 -}}
+  {{- $firstUrl := partial "resolve-css-url.html" $first.url -}}
+  <link id="theme-style" rel="stylesheet" href="{{ $firstUrl }}">
+  {{- with $first.dark -}}
+  {{- $darkUrl := partial "resolve-css-url.html" . -}}
+  <link id="theme-style-dark" rel="stylesheet" href="{{ $darkUrl }}" media="(prefers-color-scheme: dark)">
+  {{- end -}}
+  {{- else if .Site.Params.themeLight -}}
+  {{/* Production mode: Use the single specified theme from local resources. */}}
+  {{- $stylesheet_res := resources.Get .Site.Params.themeLight | minify | fingerprint -}}
+  <link id="theme-style" rel="stylesheet" href="{{ $stylesheet_res.RelPermalink }}"
+    integrity="{{ $stylesheet_res.Data.Integrity }}">
+  {{- with .Site.Params.themeDark -}}
+  {{- $dark_res := resources.Get . | minify | fingerprint -}}
+  <link id="theme-style-dark" rel="stylesheet" href="{{ $dark_res.RelPermalink }}"
+    integrity="{{ $dark_res.Data.Integrity }}" media="(prefers-color-scheme: dark)">
+  {{- end -}}
+  {{- end -}}
+
+  {{- partial "css-overwrite.html" . -}}
+  {{- partial "syntax.html" . -}}
+
+  <title>
+    {{- if .IsHome -}}{{- .Site.Title -}}{{- else -}}{{- .Title }} | {{ .Site.Title -}}{{- end -}}
+  </title>
+
+  {{- /* Favicons */ -}}
+  {{- with .Site.Params.faviconSVG }}
+  <link rel="icon" href="{{ . | relURL }}" type="image/svg+xml">
+  {{- end }}
+  {{- with .Site.Params.faviconICO }}
+  <link rel="shortcut icon" href="{{ . | relURL }}">
+  {{- end }}
+  {{- with .Site.Params.appleTouchIcon }}
+  <link rel="apple-touch-icon" href="{{ . | relURL }}">
+  {{- end }}
+
+  {{- partial "head-meta.html" . -}}
+  {{- partial "structured-data.html" . -}}
+</head>
+
+<body>
+  <a id="skip-link" href="#main-content">{{ i18n "skipToContent" | default "Skip to content" }}</a>
+
+  <header>
+
+    {{- if .Site.Params.themes -}}
+    {{ partial "theme-selector.html" . }}
+    {{- end -}}
+    <nav aria-label="{{ i18n "mainNavigation" | default "Main navigation" }}">
+      <ul>
+        <li><strong>{{ .Site.Title }}</strong></li>
+      </ul>
+      <ul>
+        {{- if .Site.Menus.main -}}
+        {{- range .Site.Menus.main -}}
+        {{- $active := or ($.IsMenuCurrent "main" .) ($.HasMenuCurrent "main" .) -}}
+        <li>
+          <a href="{{ .URL | relURL }}"{{ if $active }} class="active" aria-current="page"{{ end }}>{{ .Name }}</a>
+        </li>
+        {{- end -}}
+        {{- end -}}
+        {{- partial "dark-mode-toggle.html" . -}}
+      </ul>
+    </nav>
+
+  </header>
+
+  <main id="main-content">
+    {{- block "main" . }}{{ end -}}
+  </main>
+
+  <footer>
+    <p>&copy; {{ now.Format "2006" }} {{ .Site.Params.author }}.</p>
+  </footer>
+
+</body>
+{{ if or .Params.quickjs .Site.Params.quickjs }}{{ partial "quickjs.html" . }}{{ end }}
+{{ if or .Params.math .Site.Params.math }}{{ partial "math.html" . }}{{ end }}
+{{ partial "mermaid.html" . }}
+{{ template "_internal/google_analytics.html" . }}
+
+</html>

@@ -1,0 +1,18 @@
+{{ if .Page.Store.Get "hasMermaid" }}
+<script defer src="/libs/mermaid/mermaid.min.v10.9.1.js"></script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    // Determine the theme based solely on the user's OS preference.
+    const mermaidTheme = (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches)
+      ? 'dark'
+      : 'default'; // 'default' is the light theme
+
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: mermaidTheme,
+      securityLevel: 'loose'
+    });
+  });
+</script>
+{{ end }}

@@ -1,6 +1,5 @@
 baseURL: "https://mozanunal.com"
 title: mozanunal.com
-theme: hugo-classless
 languageCode: 'en-US'
 
 permalinks:

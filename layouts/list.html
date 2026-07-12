@@ -1,0 +1,42 @@
+{{- /* layouts/_default/list.html */ -}}
+{{ define "main" }}
+<section>
+  {{- partial "breadcrumb.html" . -}}
+  {{/* Render _index.md content if it exists */}}
+  {{ if .Content }}
+  <h1>{{.Title}}</h1>
+  <div>{{ .Content }}</div>
+  {{ end }}
+
+  {{/* Loop through pages, newest first, with pagination */}}
+  {{ $paginator := .Paginate (.Pages.ByDate.Reverse) }}
+  {{ range $paginator.Pages }}
+  <article>
+    <h4>
+      <a href="{{ .Permalink }}">{{ .Title }}</a>
+    </h4>
+    <p><em><small><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time></small></em></p>
+  </article>
+  {{ end }}
+
+  {{/* Pagination controls */}}
+  {{ if gt $paginator.TotalPages 1 }}
+  <p>
+    {{ if $paginator.HasPrev }}
+    <a href="{{ $paginator.Prev.URL }}">&larr; {{ i18n "previous" | default "Previous" }}</a>
+    {{ end }}
+    {{ range $paginator.Pagers }}
+      {{ if eq . $paginator }}
+      <strong>{{ .PageNumber }}</strong>
+      {{ else }}
+      <a href="{{ .URL }}">{{ .PageNumber }}</a>
+      {{ end }}
+    {{ end }}
+    {{ if $paginator.HasNext }}
+    <a href="{{ $paginator.Next.URL }}">{{ i18n "next" | default "Next" }} &rarr;</a>
+    {{ end }}
+  </p>
+  {{ end }}
+
+</section>
+{{ end }}
