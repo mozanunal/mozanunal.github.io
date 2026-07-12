@@ -20,25 +20,15 @@
     integrity="{{ $base_res.Data.Integrity }}">
   {{- end -}}
 
-  {{- if .Site.Params.themes -}}
-  {{/* Demo mode takes precedence: Use the first theme from the list by default. */}}
-  {{- $first := index .Site.Params.themes 0 -}}
-  {{- $firstUrl := partial "resolve-css-url.html" $first.url -}}
-  <link id="theme-style" rel="stylesheet" href="{{ $firstUrl }}">
-  {{- with $first.dark -}}
-  {{- $darkUrl := partial "resolve-css-url.html" . -}}
-  <link id="theme-style-dark" rel="stylesheet" href="{{ $darkUrl }}" media="(prefers-color-scheme: dark)">
-  {{- end -}}
-  {{- else if .Site.Params.themeLight -}}
-  {{/* Production mode: Use the single specified theme from local resources. */}}
-  {{- $stylesheet_res := resources.Get .Site.Params.themeLight | minify | fingerprint -}}
+  {{- with .Site.Params.themeLight -}}
+  {{- $stylesheet_res := resources.Get . | minify | fingerprint -}}
   <link id="theme-style" rel="stylesheet" href="{{ $stylesheet_res.RelPermalink }}"
     integrity="{{ $stylesheet_res.Data.Integrity }}">
+  {{- end -}}
   {{- with .Site.Params.themeDark -}}
   {{- $dark_res := resources.Get . | minify | fingerprint -}}
   <link id="theme-style-dark" rel="stylesheet" href="{{ $dark_res.RelPermalink }}"
     integrity="{{ $dark_res.Data.Integrity }}" media="(prefers-color-scheme: dark)">
-  {{- end -}}
   {{- end -}}
 
   {{- partial "css-overwrite.html" . -}}
@@ -68,9 +58,6 @@
 
   <header>
 
-    {{- if .Site.Params.themes -}}
-    {{ partial "theme-selector.html" . }}
-    {{- end -}}
     <nav aria-label="{{ i18n "mainNavigation" | default "Main navigation" }}">
       <ul>
         <li><strong>{{ .Site.Title }}</strong></li>
@@ -99,7 +86,6 @@
   </footer>
 
 </body>
-{{ if or .Params.quickjs .Site.Params.quickjs }}{{ partial "quickjs.html" . }}{{ end }}
 {{ if or .Params.math .Site.Params.math }}{{ partial "math.html" . }}{{ end }}
 {{ partial "mermaid.html" . }}
 {{ template "_internal/google_analytics.html" . }}

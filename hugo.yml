@@ -23,28 +23,10 @@ params:
   themeBase: css/base.css
   themeLight: css/light.css
   themeDark: css/dark.css
-  # themes:
-  #   - name: "Cosmo.css"
-  #     url: "https://cdn.jsdelivr.net/gh/cspablocortez/cosmocss@latest/cosmo.min.css"
-  #   - name: "Classless.css"
-  #     url: "https://cdn.jsdelivr.net/gh/digitallytailored/classless@latest/classless.min.css"
-  #   - name: "Pico"
-  #     url: "https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.classless.min.css"
-  #   - name: "Water.css"
-  #     url: "https://cdn.jsdelivr.net/npm/water.css@2/out/water.css"
-  #   - name: "Simple.css"
-  #     url: "https://cdn.simplecss.org/simple.min.css"
-  #   - name: "New.css"
-  #     url: "https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css"
-  #   - name: "Missing.css"
-  #     url: "https://unpkg.com/missing.css"
-  #   - name: "Bolt.css"
-  #     url: "https://unpkg.com/boltcss/bolt.min.css"
 
   faviconSVG: "/favicon.svg"
   faviconICO: "/favicon.ico"
   appleTouchIcon: "/apple-touch-icon.png"
-  quicklink: false
   math: true
 
 menu:
