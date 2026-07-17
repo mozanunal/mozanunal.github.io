@@ -1,10 +1,9 @@
-{{- if not .IsHome -}}
+{{- $sections := where .Ancestors "IsHome" false -}}
+{{- if and (not .IsHome) $sections -}}
 <p style="margin-bottom: 0;">
   <a href="{{ "/" | relURL }}">{{ .Site.Title }}</a>
-  {{- range .Ancestors.Reverse -}}
-  {{- if not .IsHome -}}
+  {{- range $sections.Reverse -}}
   &nbsp;/&nbsp;<a href="{{ .Permalink }}">{{ .Title }}</a>
-  {{- end -}}
   {{- end -}}
   &nbsp;/&nbsp;{{ .Title }}
 </p>

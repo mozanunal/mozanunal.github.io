@@ -297,26 +297,26 @@ details > *:not(summary) {
     margin-top: calc(var(--spacing-base) * 0.5);
 }
 
-/* Cards */
+/* Content containers are flat: the page background shows through so every
+   page (home, single post, list) reads the same. No panels or boxes. */
 article, section, aside {
     margin-bottom: calc(var(--spacing-base) * 2);
-    padding: var(--spacing-base);
-    background-color: var(--card-bg);
-    border-radius: var(--border-radius-lg);
-    box-shadow: var(--shadow);
-    transition: var(--transition-base);
-    border: 1px solid var(--border-color);
 }
 
-/* List pages wrap their items in a section; keep it a plain container
-   so the item cards inside don't read as nested double borders. */
-#main-content > section {
-    margin-bottom: 0;
-    padding: 0;
-    background: none;
-    border: none;
-    box-shadow: none;
+/* List pages render each item as a flat row separated by a divider. */
+#main-content > section > article {
+    margin: 0;
+    padding: calc(var(--spacing-base) * 1.25) 0;
+    border-bottom: 1px solid var(--border-color);
 }
+
+#main-content > section > article:last-of-type {
+    border-bottom: none;
+}
+
+/* Let the row padding own the vertical rhythm inside each item. */
+#main-content > section > article > :first-child { margin-top: 0; }
+#main-content > section > article > :last-child { margin-bottom: 0; }
 
 /* Utility for focus outline */
 :focus-visible {
