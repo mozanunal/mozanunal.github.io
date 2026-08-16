@@ -474,15 +474,27 @@ header nav a.active {
 }
 
 @media (max-width: 600px) {
-    header nav {
-        flex-wrap: nowrap;
-        gap: 0.5rem;
-        /* Scale with viewport so title + menu always fit one line */
-        font-size: clamp(0.72rem, 2.9vw, 1.1rem);
+    /* Hide the site name (not a link; "Home" covers it) and lay the menu out
+       as a tidy bar: full width on a phone, but capped and centered so the
+       items keep a snug, even gap instead of drifting apart on wider screens. */
+    header nav ul:first-child {
+        display: none;
     }
 
+    header nav ul:last-child {
+        width: 100%;
+        max-width: 24rem;
+        margin: 0 auto;
+        justify-content: space-between;
+    }
+
+    /* No pipe separators when items are spread across the row. */
     header nav ul li + li::before {
-        padding: 0 0.25rem;
+        content: none;
+    }
+
+    header nav .dark-mode-toggle {
+        margin-left: 0;
     }
 }
 
