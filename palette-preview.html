@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Light theme palette comparison</title>
+<style>
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 2rem 1.25rem 4rem;
+    background: #eceff3;
+    color: #1f2937;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  .page-head { max-width: 1400px; margin: 0 auto 1.5rem; }
+  .page-head h1 { margin: 0 0 .35rem; font-size: 1.5rem; }
+  .page-head p { margin: 0; color: #55606e; max-width: 70ch; line-height: 1.5; }
+  .grid {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 1.25rem;
+  }
+  .card {
+    margin: 0;
+    border: 1px solid #d3d9e0;
+    border-radius: .6rem;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 1px 3px rgba(15, 23, 42, .08);
+  }
+  .card figcaption {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: .5rem;
+    padding: .55rem .8rem;
+    font-size: .78rem;
+    letter-spacing: .04em;
+    text-transform: uppercase;
+    background: #f2f5f8;
+    border-bottom: 1px solid #e2e8f0;
+    color: #475569;
+  }
+  .card figcaption code {
+    text-transform: none;
+    letter-spacing: 0;
+    font-size: .78rem;
+    color: #3f4a5a;
+    background: #e6ebf1;
+    padding: .1rem .35rem;
+    border-radius: .3rem;
+  }
+
+  /* Shared component styling, driven entirely by each panel's variables. */
+  .preview {
+    background: var(--body-bg);
+    color: var(--body-color);
+    padding: 1.1rem 1.2rem 1.5rem;
+  }
+  .preview nav {
+    display: flex; justify-content: space-between; align-items: center;
+    flex-wrap: wrap; gap: .5rem; margin-bottom: 1.1rem;
+    font-size: .95rem;
+  }
+  .preview nav .brand { font-weight: 700; color: var(--heading-color); }
+  .preview nav ul { display: flex; list-style: none; margin: 0; padding: 0; }
+  .preview nav li + li::before { content: "|"; padding: 0 .4rem; opacity: .4; }
+  .preview nav a { color: var(--link-color); text-decoration: none; }
+  .preview nav a.active { font-weight: 700; text-decoration: underline; text-underline-offset: .2em; }
+  .preview h1 { color: var(--heading-color); font-size: 1.6rem; margin: .1rem 0 .3rem; letter-spacing: -.02em; }
+  .preview .meta { font-size: .82rem; opacity: .8; margin-bottom: .9rem; }
+  .preview h2 { color: var(--heading-color); font-size: 1.2rem; margin: 1.1rem 0 .7rem; position: relative; }
+  .preview h2::after {
+    content: ""; position: absolute; left: 0; bottom: -.35rem;
+    width: 2.4rem; height: .15rem; border-radius: 9999px;
+    background: var(--primary-contrast);
+  }
+  .preview p { margin: .55rem 0; line-height: 1.55; }
+  .preview a { color: var(--link-color); text-decoration: none; }
+  .preview a:hover { color: var(--link-hover-color); }
+  .preview blockquote {
+    border-left: 4px solid var(--primary);
+    background: var(--quote-bg);
+    padding: .6rem .9rem; margin: .9rem 0;
+    font-style: italic; border-radius: 0 .4rem .4rem 0;
+  }
+  .preview table {
+    width: 100%; border-collapse: collapse; font-size: .8rem;
+    margin: .9rem 0; border-radius: .45rem; overflow: hidden;
+    box-shadow: 0 1px 2px rgba(15, 23, 42, .1);
+  }
+  .preview th, .preview td { padding: .45rem .55rem; border-bottom: 1px solid var(--border-color); text-align: left; }
+  .preview thead { background: linear-gradient(135deg, var(--secondary) 0%, var(--secondary-light) 100%); }
+  .preview th { color: var(--th-color); text-transform: uppercase; letter-spacing: .05em; font-size: .7rem; }
+  .preview tr:hover td { background: var(--row-hover-bg); }
+  .preview code {
+    background: var(--code-bg); color: var(--body-color);
+    padding: .12em .38em; border-radius: .3rem;
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: .85em;
+  }
+  .preview pre {
+    background: var(--pre-bg); color: var(--body-color);
+    padding: .7rem .8rem; margin: .8rem 0 0; border-radius: .5rem;
+    overflow: auto; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: .76rem;
+  }
+  .preview .swatches { display: flex; gap: .35rem; margin: .2rem 0 .9rem; }
+  .preview .swatch { width: 1.5rem; height: 1.5rem; border-radius: .35rem; border: 1px solid var(--border-color); }
+  .preview .avatar { display: block; width: 96px; height: 96px; border-radius: 50%; margin: .1rem auto .7rem; }
+  .preview .hero { text-align: center; }
+  .preview .hero h1 { font-size: 1.5rem; margin-bottom: .35rem; }
+  .preview .tagline { font-size: 1.05rem; margin: .45rem auto .6rem; max-width: 36ch; }
+  .preview .hero h4 { font-weight: 700; margin: .45rem 0 .7rem; color: var(--heading-color); }
+  .preview h3 { color: var(--heading-color); font-size: 1rem; margin: 1rem 0 .35rem; }
+  .preview hr { border: 0; height: 1px; background: linear-gradient(to right, transparent, var(--border-color), transparent); margin: 1rem 0; }
+  .preview ul { margin: .4rem 0; padding-left: 1.2rem; }
+  .preview li { margin: .3rem 0; }
+  .section-title { max-width: 1400px; margin: 2rem auto .9rem; font-size: 1rem; color: #334155; text-transform: uppercase; letter-spacing: .06em; }
+</style>
+</head>
+<body>
+  <div class="page-head">
+    <h1>Light theme palette comparison</h1>
+    <p>The original blue link (<code>#2563eb</code>) with progressively darker steps. The current site setting is "Darker -2" (<code>#1d4ed8</code>). Only the link color changes.</p>
+  </div>
+  <h2 class="section-title">Homepage</h2>
+  <div class="grid" id="home-grid"></div>
+
+  <h2 class="section-title">Article</h2>
+  <div class="grid" id="article-grid"></div>
+
+  <script>
+    const nav = (active) => `
+      <nav aria-label="Demo">
+        <span class="brand">mozanunal.com</span>
+        <ul>
+          <li><a href="#"${active === "Home" ? ' class="active"' : ""}>Home</a></li>
+          <li><a href="#"${active === "Posts" ? ' class="active"' : ""}>Posts</a></li>
+          <li><a href="#"${active === "Projects" ? ' class="active"' : ""}>Projects</a></li>
+          <li><a href="#"${active === "Papers" ? ' class="active"' : ""}>Papers</a></li>
+        </ul>
+      </nav>`;
+
+    const homeContent = nav("Home") + `
+      <div class="hero">
+        <img class="avatar" src="static/images/profile.png" alt="">
+        <h1>M. Ozan Unal</h1>
+        <p class="tagline">Data &amp; AI Engineer. I build developer tools, design software systems, and conduct AI research.</p>
+        <h4><a href="#">Github</a> | <a href="#">Google Scholar</a> | <a href="#">Twitter</a></h4>
+      </div>
+      <hr>
+      <p>Welcome to my digital home. This is where I document my work, from open-source projects and architectural deep-dives to published academic papers. My goal is to share practical knowledge at the intersection of software engineering and machine learning.</p>
+      <h3>Highlights</h3>
+      <ul>
+        <li><a href="#">sllm.nvim</a>: a Neovim plugin for seamless LLM integration.</li>
+        <li><a href="#">No-Build Client Islands</a>: a guide to building long-lasting, framework-free web apps.</li>
+        <li><a href="#">My Papers</a>: published work on low-dose CT reconstruction.</li>
+      </ul>`;
+
+    const content = nav("Posts") + `
+      <h1>No-Build Client Islands</h1>
+      <div class="meta">May 30, 2025 &middot; 4 min read</div>
+      <p>Welcome to <a href="#">No-Build Client Islands</a>, a practical architecture for interactive apps using native <a href="#">JavaScript modules</a> and plain HTML.</p>
+      <h2>Who Is This For?</h2>
+      <p>Designed for developers who prefer <a href="#">stability and clarity</a> over framework churn, and want to connect backends in Go, Rust, or Java.</p>
+      <blockquote>Build it once. Ship it. Don't touch it again unless you choose to.</blockquote>
+      <table>
+        <thead><tr><th>Paper</th><th>Venue</th><th>Year</th></tr></thead>
+        <tbody>
+          <tr><td><a href="#">Proj2Proj</a></td><td>PeerJ CS</td><td>2024</td></tr>
+          <tr><td><a href="#">3D U-NeTR</a></td><td>arXiv</td><td>2021</td></tr>
+        </tbody>
+      </table>
+      <p>Inline <code>const x = 1</code> and a block:</p>
+      <pre>function greet(name) {
+  return \`hello, \${name}\`;
+}</pre>
+    `;
+
+    const origBase = {
+      "--primary": "#364153",
+      "--primary-contrast": "#202732",
+      "--secondary": "#64748b",
+      "--secondary-light": "#94a3b8",
+      "--body-bg": "#fbfcff",
+      "--body-color": "#334155",
+      "--heading-color": "#1e293b",
+      "--border-color": "#e2e8f0",
+      "--code-bg": "rgba(0, 0, 0, 0.05)",
+      "--pre-bg": "rgba(0, 0, 0, 0.03)",
+      "--quote-bg": "rgba(0, 0, 0, 0.02)",
+      "--row-hover-bg": "rgba(0, 0, 0, 0.02)",
+      "--th-color": "#ffffff",
+    };
+
+    const palettes = [
+      {
+        name: "Dark (reference)",
+        accent: "#61aeff",
+        vars: {
+          "--primary": "#13181f", "--primary-contrast": "#13181f",
+          "--secondary": "#64748b", "--secondary-light": "#94a3b8",
+          "--body-bg": "#0f172a", "--body-color": "#e2e8f0", "--heading-color": "#f8fafc",
+          "--link-color": "#61aeff", "--link-hover-color": "#0b65ff",
+          "--border-color": "#334155",
+          "--code-bg": "rgba(255,255,255,0.10)", "--pre-bg": "rgba(255,255,255,0.05)",
+          "--quote-bg": "rgba(255,255,255,0.03)", "--row-hover-bg": "rgba(255,255,255,0.03)",
+          "--th-color": "#ffffff",
+        },
+      },
+      { name: "Original link", accent: "#2563eb", vars: { ...origBase, "--link-color": "#2563eb", "--link-hover-color": "#1d4ed8" } },
+      { name: "Darker -1", accent: "#2159d6", vars: { ...origBase, "--link-color": "#2159d6", "--link-hover-color": "#1a4ec0" } },
+      { name: "Darker -2 (current)", accent: "#1d4ed8", vars: { ...origBase, "--link-color": "#1d4ed8", "--link-hover-color": "#1e40af" } },
+      { name: "Darker -3", accent: "#1e40af", vars: { ...origBase, "--link-color": "#1e40af", "--link-hover-color": "#1e3a8a" } },
+      { name: "Darker -4", accent: "#1e3a8a", vars: { ...origBase, "--link-color": "#1e3a8a", "--link-hover-color": "#172554" } },
+    ];
+
+    function renderGrid(containerId, bodyHtml) {
+      const grid = document.getElementById(containerId);
+      for (const p of palettes) {
+        const card = document.createElement("figure");
+        card.className = "card";
+
+        const cap = document.createElement("figcaption");
+        const name = document.createElement("span");
+        name.textContent = p.name;
+        const hex = document.createElement("code");
+        hex.textContent = p.accent;
+        cap.append(name, hex);
+
+        const preview = document.createElement("div");
+        preview.className = "preview";
+        for (const [k, v] of Object.entries(p.vars)) preview.style.setProperty(k, v);
+
+        const swatches = document.createElement("div");
+        swatches.className = "swatches";
+        ["--link-color", "--heading-color", "--primary-contrast", "--body-bg"].forEach((v) => {
+          const s = document.createElement("span");
+          s.className = "swatch";
+          s.style.background = p.vars[v];
+          s.title = v + " " + p.vars[v];
+          swatches.append(s);
+        });
+
+        preview.innerHTML = bodyHtml;
+        preview.prepend(swatches);
+        card.append(cap, preview);
+        grid.append(card);
+      }
+    }
+
+    renderGrid("home-grid", homeContent);
+    renderGrid("article-grid", content);
+  </script>
+</body>
+</html>

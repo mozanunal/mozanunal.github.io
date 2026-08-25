@@ -33,6 +33,38 @@
 
   {{- partial "syntax.html" . -}}
 
+  {{- /* Resolve the saved theme before first paint so a forced light/dark
+         preference never flashes the OS-default theme on each navigation. */ -}}
+  <script>
+    (function () {
+      try {
+        var key = 'hugo-classless-color-scheme';
+        ['syntax-light', 'syntax-dark', 'theme-style-dark'].forEach(function (id) {
+          var el = document.getElementById(id);
+          if (el && !el.getAttribute('data-default-media')) {
+            el.setAttribute('data-default-media', el.media || '');
+          }
+        });
+        var saved = localStorage.getItem(key);
+        var pref = (saved === 'light' || saved === 'dark') ? saved : 'system';
+        var dark = pref === 'dark' ||
+          (pref === 'system' && window.matchMedia('(prefers-color-scheme: dark)').matches);
+        var root = document.documentElement;
+        root.setAttribute('data-theme-pref', pref);
+        root.setAttribute('data-theme', dark ? 'dark' : 'light');
+        if (pref !== 'system') {
+          var setMedia = function (id, on) {
+            var el = document.getElementById(id);
+            if (el) el.media = on ? 'all' : 'not all';
+          };
+          setMedia('theme-style-dark', dark);
+          setMedia('syntax-dark', dark);
+          setMedia('syntax-light', !dark);
+        }
+      } catch (e) {}
+    })();
+  </script>
+
   <title>
     {{- if .IsHome -}}{{- .Site.Title -}}{{- else -}}{{- .Title }} | {{ .Site.Title -}}{{- end -}}
   </title>
