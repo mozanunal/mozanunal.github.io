@@ -461,12 +461,6 @@ header nav ul li + li::before {
     opacity: 0.4;
 }
 
-/* No separator before the theme toggle (the last <li>; a trailing
-   <script> from the toggle partial means :last-child won't match it) */
-header nav ul li:last-of-type::before {
-    content: none;
-}
-
 header nav a.active {
     font-weight: 700;
     text-decoration: underline;
@@ -474,27 +468,11 @@ header nav a.active {
 }
 
 @media (max-width: 600px) {
-    /* Hide the site name (not a link; "Home" covers it) and lay the menu out
-       as a tidy bar: full width on a phone, but capped and centered so the
-       items keep a snug, even gap instead of drifting apart on wider screens. */
+    /* Hide the site name (not a link; "Home" covers it) so the menu falls
+       flush-left, on the same edge as the breadcrumb and body text. The pipe
+       separators and toggle spacing carry over unchanged from the desktop nav. */
     header nav ul:first-child {
         display: none;
-    }
-
-    header nav ul:last-child {
-        width: 100%;
-        max-width: 24rem;
-        margin: 0 auto;
-        justify-content: space-between;
-    }
-
-    /* No pipe separators when items are spread across the row. */
-    header nav ul li + li::before {
-        content: none;
-    }
-
-    header nav .dark-mode-toggle {
-        margin-left: 0;
     }
 }
 
@@ -504,12 +482,11 @@ header nav a.active {
     border: none;
     cursor: pointer;
     padding: 0.25rem;
-    /* Breathing room where the item separator would have been */
-    margin: 0 0 0 0.6rem;
+    margin: 0;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    color: var(--body-color);
+    color: var(--link-color);
     border-radius: var(--border-radius);
     transition: var(--transition-base);
     line-height: 1;
@@ -523,8 +500,8 @@ header nav a.active {
 }
 
 .dark-mode-toggle svg {
-    width: 1.15em;
-    height: 1.15em;
+    width: 1.3em;
+    height: 1.3em;
     fill: currentColor;
 }
 
