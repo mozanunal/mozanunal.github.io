@@ -33,7 +33,7 @@ update_paper_citations: ## Update papers table from Google Scholar
 
 .PHONY: update_project_cards
 update_project_cards: ## Update project cards from GitHub
-	deno run --allow-net --allow-read --allow-write $(PROJECTS_SCRIPT) $(PROJECTS_CONFIG) $(PROJECTS_MD)
+	deno run --allow-net --allow-read --allow-write --allow-env=GITHUB_TOKEN $(PROJECTS_SCRIPT) $(PROJECTS_CONFIG) $(PROJECTS_MD)
 
 .PHONY: deploy
 deploy: build ## Build and publish to public branch

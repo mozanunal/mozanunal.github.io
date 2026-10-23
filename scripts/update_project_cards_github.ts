@@ -33,72 +33,26 @@ const repos = Array.isArray(parsed) ? parsed : parsed.repos;
 
 const sleep = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
 
-const htmlEntityMap: Record<string, string> = {
-  amp: "&",
-  lt: "<",
-  gt: ">",
-  quot: "\"",
-  apos: "'",
+type GitHubRepo = {
+  description: string | null;
+  language: string | null;
+  stargazers_count: number;
+  forks_count: number;
 };
-
-function decodeHtmlEntities(value: string) {
-  return value.replace(/&(#x?[0-9a-fA-F]+|[a-zA-Z]+);/g, (match, key) => {
-    if (key in htmlEntityMap) return htmlEntityMap[key];
-    if (key.startsWith("#x") || key.startsWith("#X")) {
-      const code = Number.parseInt(key.slice(2), 16);
-      return Number.isFinite(code) ? String.fromCharCode(code) : match;
-    }
-    if (key.startsWith("#")) {
-      const code = Number.parseInt(key.slice(1), 10);
-      return Number.isFinite(code) ? String.fromCharCode(code) : match;
-    }
-    return match;
-  });
-}
 
 function escapeMarkdownCell(value: string) {
   return value.replace(/\|/g, "\\|").replace(/\r?\n/g, " ").trim();
 }
 
-function matchMeta(html: string, key: string, attr: "name" | "property") {
-  const regex = new RegExp(
-    `<meta[^>]+${attr}="${key}"[^>]+content="([^"]*)"`,
-    "i",
-  );
-  const match = html.match(regex);
-  return match?.[1] ?? null;
-}
-
-function parseStars(html: string) {
-  const match = html.match(/id="repo-stars-counter-star"[^>]*title="(\d+)"/);
-  if (!match) return null;
-  const value = Number.parseInt(match[1], 10);
-  return Number.isFinite(value) ? value : null;
-}
-
-function parseForks(html: string) {
-  const match = html.match(/id="repo-network-counter"[^>]*title="(\d+)"/);
-  if (!match) return null;
-  const value = Number.parseInt(match[1], 10);
-  return Number.isFinite(value) ? value : null;
-}
-
-function parseLanguage(html: string) {
-  const match = html.match(/itemprop="programmingLanguage">([^<]+)</i);
-  return match?.[1]?.trim() ?? null;
-}
-
-function parseDescription(html: string, repoId: string) {
-  const og = matchMeta(html, "og:description", "property");
-  const desc = og ?? matchMeta(html, "description", "name");
-  if (!desc) return null;
-  const decoded = decodeHtmlEntities(desc.trim());
-  const prefix = `GitHub - ${repoId}: `;
-  if (decoded.startsWith(prefix)) {
-    return decoded.slice(prefix.length).trim();
+function readGitHubToken() {
+  try {
+    return Deno.env.get("GITHUB_TOKEN") ?? null;
+  } catch {
+    return null;
   }
-  return decoded;
 }
+
+const githubToken = readGitHubToken();
 
 function normalizeRepo(entry: RepoConfig) {
   const owner = entry.owner ?? defaultOwner;
@@ -112,29 +66,30 @@ async function fetchRepoInfo(entry: RepoConfig) {
   const repoId = `${repo.owner}/${repo.name}`;
   const errors: string[] = [];
 
-  const response = await fetch(repo.url, {
-    headers: {
-      "User-Agent":
-        "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
-      Accept: "text/html",
-    },
-  });
+  const headers: Record<string, string> = {
+    Accept: "application/vnd.github+json",
+    "User-Agent": "mozanunal.com-project-cards",
+    "X-GitHub-Api-Version": "2022-11-28",
+  };
+  if (githubToken) headers.Authorization = `Bearer ${githubToken}`;
 
+  const apiUrl = `https://api.github.com/repos/${repoId}`;
+  const response = await fetch(apiUrl, { headers });
   if (!response.ok) {
-    throw new Error(`HTTP ${response.status} fetching ${repo.url}`);
+    throw new Error(`HTTP ${response.status} fetching ${apiUrl}`);
   }
 
-  const html = await response.text();
-  const description = parseDescription(html, repoId) ?? "";
-  const language = parseLanguage(html) ?? "";
-  const stars = parseStars(html);
-  const forks = parseForks(html);
+  const data = await response.json() as GitHubRepo;
+  const description = data.description ?? entry.description ?? "";
+  const language = data.language ?? entry.language ?? "";
+  const stars = Number.isFinite(data.stargazers_count) ? data.stargazers_count : null;
+  const forks = Number.isFinite(data.forks_count) ? data.forks_count : null;
 
   if (stars === null) {
-    errors.push(`failed to parse star count from ${repo.url}`);
+    errors.push(`missing star count for ${repoId}`);
   }
   if (forks === null) {
-    errors.push(`failed to parse fork count from ${repo.url}`);
+    errors.push(`missing fork count for ${repoId}`);
   }
 
   return { repoId, url: repo.url, title: entry.title ?? repo.name, description, language, stars, forks, errors };
@@ -188,7 +143,7 @@ async function main() {
   }
 
   if (allErrors.length > 0) {
-    console.error("Error: failed to scrape live data. Aborting without updating.");
+    console.error("Error: failed to fetch live data. Aborting without updating.");
     for (const err of allErrors) {
       console.error(`  - ${err}`);
     }
