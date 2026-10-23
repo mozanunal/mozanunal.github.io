@@ -31,7 +31,7 @@ img2sh demo.jpeg
 
 Result:
 
-![](https://user-images.githubusercontent.com/13440502/52919655-aa89d400-3315-11e9-8c4a-7a7e057b8fa4.png)
+![](image-1.png)
 
 **Interactive mode**
 
@@ -43,7 +43,7 @@ arrow keys for navigation
 cmd: q
 ```
 
-![](https://user-images.githubusercontent.com/13440502/59120360-e34dc780-895d-11e9-8b2a-1d7ea5b25fe4.gif)
+![](image-2.gif)
 
 For detailed usage arguments:
 

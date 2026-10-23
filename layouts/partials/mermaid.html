@@ -3,8 +3,7 @@
 
 <script>
   document.addEventListener("DOMContentLoaded", function () {
-    // Determine the theme based solely on the user's OS preference.
-    const mermaidTheme = (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches)
+    const mermaidTheme = document.documentElement.getAttribute('data-theme') === 'dark'
       ? 'dark'
       : 'default'; // 'default' is the light theme
 

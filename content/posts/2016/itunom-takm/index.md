@@ -63,4 +63,4 @@ Hesap bilgileri için:
 **Ayrıntılı bilgi ve sorularınız için: mehmetozanunal@gmail.com**
 ![](10989258_879668248757010_1403157962482540600_o.jpg)
 
-![](https://lh3.googleusercontent.com/Rnek2VVJ3MAQz6odH_Rk6nxH_9PIkDbGG0TQaoxabB9VbhrecOTnsneUdu8XiEk_5c0SQF2-zMc4FT3K8Wkv1niCFT94HGPu0pmG-RpZ6D2gIz58g-6ydZK23XWSrut9gpIYZGkPBH119EvS)
+![](image-1.png)

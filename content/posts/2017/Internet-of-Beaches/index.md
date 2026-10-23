@@ -109,22 +109,22 @@ Our soution covers most of challange as below.
 
 APP + IoT Band + Cloud!
 
-![](https://i.hizliresim.com/YDZXVz.jpg)
+![](image-4.jpg)
 
 IoT Band
 
-![](https://i.hizliresim.com/O04Qd5.jpg)
+![](image-1.jpg)
 
 Gateway between IoT Band and Cloud Server
-![](https://i.hizliresim.com/4Py6RQ.jpg)
+![](image-2.jpg)
 
-Cloud Server ![](https://i.hizliresim.com/JabPEB.jpg)
+Cloud Server ![](image-5.jpg)
 
 ---
 
 ### How its Working?
 
-![](https://i.hizliresim.com/37GyPA.jpg)
+![](image-6.jpg)
 
 For better describition, you can watch project video.
 
@@ -136,7 +136,7 @@ We are to happy to participate this contents. We hope we will join next year
 again. By the way, you can see technologies which we used while hackathon
 process.
 
-![](https://i.hizliresim.com/oj4B0X.jpg)
+![](image-3.jpg)
 
 I want to finish with a quote from Richard Bronson.
 

@@ -31,7 +31,7 @@ Buradaki ayarlar veri transfer hızı hangi Com Portun okunacağının ayarı v.
 sunar.Asıl konumuz bu olmadığı için çok ayrıntıya girmiyorum zaten kolayca
 örnekleri bulunabilir.
 
-![](Ekran+Al%C4%B1nt%C4%B1s%C4%B1.png)
+![](ekran-alintisi.png)
 
 İkinci kısım seri porttan alınan verinin uygun şekilde parçalandığı ve labellara
 aktarıldığı bölümdür. Bunun için "Display Text" isimli bir fonksiyon
@@ -55,7 +55,7 @@ Yani butonların tıklama "event"lerinde sadece `timer1.enable=true;` ve
 `timer1.enable=false` kodu vardır.(Tabi ayrı ayrı birinde true olan diğerinde
 false olan )
 
-![](Ekran+Al%C4%B1nt%C4%B1s%C4%B1565.png)
+![](ekran-alintisi565.png)
 Resimde altta eklediğimiz SeriPort ve timer1 öğesini görebilirsiniz.
 "FileDiaglog" öğeleri ise text dosyasına kaydetmek için ve bir text dostasını
 seri porttan yollamak için kullanılır.
@@ -69,7 +69,7 @@ Grafiğin altını doldurma, nokta grafiği, sütun ve daire grafiği gibi çeş
 renk opsiyonları mevcuttur. Bu çeşitlerin bazılarına
 [buradan](https://zedgraph.sourceforge.net/samples.html) ulaşabilirsiniz.
 
-![](Ekran+Al%C4%B1nt%C4%B1s%C4%B1-c6de55.png)
+![](ekran-alintisi-c6de55.png)
 
 Grafik ayarlarında önemli bir yerlerden biri de "Point pair list"in ve "Line
 item"ın belirlenmesidir. Çizilecek her eğri için birer tane bunlardan
@@ -110,7 +110,7 @@ zamanlı yapan ve sonra nasıl yapıldığını anlatan bir kaynak bulamamışt�
 bu bilgiler işinize yarar. Paylaşımlarınızda kaynak belirtirseniz çok iyi olur
 :). Tekrar görüşmek üzere...
 
-![](Ekran+Al%C4%B1nt%C4%B1s%C4%B12.png)
+![](ekran-alintisi2.png)
 
 **Not: Sonradan programın derlenmiş halini de paylaştım indirmek isterseniz
 [buradaki yazıma](https://mozanunal.com/2014/12/serial-port-grapher/) gitmeniz

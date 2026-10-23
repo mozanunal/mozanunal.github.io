@@ -53,19 +53,14 @@
     setMediaForMode(syntaxLight, effective, 'all', 'not all');
     setMediaForMode(syntaxDark, effective, 'not all', 'all');
 
-    // Toggle theme dark stylesheet
-    var themeDark = document.getElementById('theme-style-dark');
-    setMediaForMode(themeDark, effective, 'not all', 'all');
-
     var isDark = effective === 'dark';
     setEnabled(syntaxLight, !isDark);
     setEnabled(syntaxDark, isDark);
-    setEnabled(themeDark, isDark);
   }
 
   // Store default media values once DOM is ready so system mode can restore them
   function storeDefaults() {
-    ['syntax-light', 'syntax-dark', 'theme-style-dark'].forEach(function(id) {
+    ['syntax-light', 'syntax-dark'].forEach(function(id) {
       var el = document.getElementById(id);
       if (el && !el.getAttribute('data-default-media')) {
         el.setAttribute('data-default-media', el.media || '');

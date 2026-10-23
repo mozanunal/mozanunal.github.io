@@ -14,22 +14,9 @@
   <meta name="robots" content="noindex">
   {{- end }}
 
-  {{- with .Site.Params.themeBase -}}
-  {{- $base_res := resources.Get . | minify | fingerprint -}}
-  <link id="theme-style-base" rel="stylesheet" href="{{ $base_res.RelPermalink }}"
-    integrity="{{ $base_res.Data.Integrity }}">
-  {{- end -}}
-
-  {{- with .Site.Params.themeLight -}}
-  {{- $stylesheet_res := resources.Get . | minify | fingerprint -}}
-  <link id="theme-style" rel="stylesheet" href="{{ $stylesheet_res.RelPermalink }}"
-    integrity="{{ $stylesheet_res.Data.Integrity }}">
-  {{- end -}}
-  {{- with .Site.Params.themeDark -}}
-  {{- $dark_res := resources.Get . | minify | fingerprint -}}
-  <link id="theme-style-dark" rel="stylesheet" href="{{ $dark_res.RelPermalink }}"
-    integrity="{{ $dark_res.Data.Integrity }}" media="(prefers-color-scheme: dark)">
-  {{- end -}}
+  {{- $site_css := slice (resources.Get "css/tokens.css") (resources.Get "css/base.css")
+        | resources.Concat "css/site.css" | minify | fingerprint -}}
+  <link rel="stylesheet" href="{{ $site_css.RelPermalink }}" integrity="{{ $site_css.Data.Integrity }}">
 
   {{- partial "syntax.html" . -}}
 
@@ -39,7 +26,7 @@
     (function () {
       try {
         var key = 'hugo-classless-color-scheme';
-        ['syntax-light', 'syntax-dark', 'theme-style-dark'].forEach(function (id) {
+        ['syntax-light', 'syntax-dark'].forEach(function (id) {
           var el = document.getElementById(id);
           if (el && !el.getAttribute('data-default-media')) {
             el.setAttribute('data-default-media', el.media || '');
@@ -57,7 +44,6 @@
             var el = document.getElementById(id);
             if (el) el.media = on ? 'all' : 'not all';
           };
-          setMedia('theme-style-dark', dark);
           setMedia('syntax-dark', dark);
           setMedia('syntax-light', !dark);
         }

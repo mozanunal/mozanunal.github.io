@@ -26,4 +26,4 @@ alakalı iyi, kötü görüşlerinizi veya sorunları, bugları bana yollayabili
 
 [Programın kaynak koduna buradan ulaşabilirsiniz.](https://github.com/mozanunal/serialPortGrapher)
 
-![](Ekran%2BAl%C4%B1nt%C4%B1s%C4%B12.png)
+![](ekran-alintisi2.png)

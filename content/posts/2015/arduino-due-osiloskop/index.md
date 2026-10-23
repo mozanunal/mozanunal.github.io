@@ -68,8 +68,8 @@ görüntüler de aşağıdadır.
 
 **Osilopkop denemeleri**
 
-![](Ekran%2BAl%C4%B1nt%C4%B1s%C4%B1.png)
+![](ekran-alintisi.png)
 
 **Com port seçiminin yapıldığı pencere**
 
-![](Ekran%2BAl%C4%B1nt%C4%B1s%C4%B12.png)
+![](ekran-alintisi2.png)

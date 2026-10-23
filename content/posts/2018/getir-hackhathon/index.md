@@ -16,7 +16,7 @@ deployed using heroku.
 
 [Check github repo of app from here](https://github.com/mozanunal/paketci-backend)
 
-![Timeline of our little project!](https://github.com/mozanunal/paketci-backend/blob/master/doctimeLine.PNG?raw=true)
+![Timeline of our little project!](timeline.png)
 
 Getir Hackhathon 2018 Team Members: Sertan Sezgin Kutlu Ertuğrul Çınar Mehmet
 Ozan Ünal
@@ -59,7 +59,7 @@ Its allows users to add new packs to environment.
 
 ## Backend
 
-![enter image description here](https://github.com/mozanunal/paketci-backend/blob/master/docbackEndContainer.png?raw=true)
+![enter image description here](backendcontainer.png)
 Data structure and Crud Outputs Sample JSON files, it can be enchance according
 to packet number and courier number
 
@@ -228,7 +228,7 @@ to packet number and courier number
 
 ## Route Optimization
 
-![enter image description here](https://github.com/mozanunal/paketci-backend/blob/master/docrouteOptimizeAlgrotihmVisualize.gif?raw=true)
+![enter image description here](routeoptimizealgrotihmvisualize.gif)
 Firstly, every courier has a route to common destination point. Then most
 efficient package route change apply. It's calculated with change of route
 distance according to package location. It will iterate until no package will

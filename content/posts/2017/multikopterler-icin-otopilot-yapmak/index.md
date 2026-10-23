@@ -13,7 +13,7 @@ tamamlayamadığım bir konu olan otopilot yapmak üzerine edindiğim tecrübele
 anlatmak istiyorum. Yazıya başlamadan önce bu çalışmaların tamamını beraber
 yaptığım **Bahadır Gökçeaslan** teşekkür etmeyi bir borç bilirim.
 
-![SimplePilotlogoPNG.png](https://github.com/mozanunal/SimplePilot/blob/master/LOGO/SimplePilotlogoPNG.png?raw=true)
+![SimplePilotlogoPNG.png](simplepilotlogopng.png)
 
 Evet otopilot aslında benim anlatacağım bölüme kıyasla biraz fazla geniş bir
 kavram oldu. Zira malesef proje uçuş kontrolcüsü aşamalarında kaldı. Bir soru
@@ -49,7 +49,7 @@ parçalar şunlardır:
 Ben bu yazıda daha çok 3\. madde üzerinde duracağım. Öncellikle bir eksende
 kontrolü ele alalım. Bir eksende kontrol için yapılması gereken işlem şöyledir:
 
-![](2%2Bkatli.png)
+![](2-katli.png)
 
 - Imu üzerinden şuanki açı ve ve kumandadan o eksen için istenen açı alınır. (
   Otopilotlu bir yapıda istenen açıyı, verilen koordinata gitmek için kendisi

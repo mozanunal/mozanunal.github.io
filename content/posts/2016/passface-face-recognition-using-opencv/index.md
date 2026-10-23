@@ -104,11 +104,11 @@ Ambient light and the movement at faces are the challenging problems in face
 recognition. Therefore some morphologic operators is applied to the faces to
 decrease the effect of these problems. In this project equalize histogram
 function of opencv is used to decrease the effect of the ambient
-light.![](https://lh6.googleusercontent.com/3PMQmXghZyoi4dGekFhBS-QWqZDYEJpQ2o_yLXJgMEo3goTr6OqtrOSPYjtwgApKjKoAzXhFLE57R3TRDw8SWrXsod9PUCiHJXNndjoZ-Ui3P1xb0atKy0EvobLyy9cfVifzA0yT)
+light.![](image-1.png)
 
 ##### SURF Feature Extractor
 
-![](https://lh5.googleusercontent.com/eRt6xx3RU22fZ22_-TGdan22lp2x7JiNA9De7PuYa2xLVcZIcg4hVJzvrXyzdNbocv4NuBW8QOHYYTr0NNowPys7QOScefuBrgEeoiILasaQm2v0S0P8NPxVYSiPBRoPotTP3h0p)
+![](image-2.png)
 
 ```csharp
 if (comboBoxAlgorithm.Text == “SURF Feature Extractor”)
@@ -319,14 +319,14 @@ private void comboBoxAlgorithm_SelectedIndexChanged(object sender, EventArgs e)
 }
 ```
 
-![](https://lh4.googleusercontent.com/560MflmHrYy5nUi4gIAQexc-Cdqfyr3GUej_g1wwa0HawxO4A7OFmOkgd0g4oBvy9An1PjiYxSM_8G0G2FS_zC2y3gWisgkr0NTikxv4oyDFL9qM6IpkupdhA7OjnUAb4cuy51Pa)
+![](image-3.png)
 
 ##### User Interface
 
 As a source camera, video, single image and multi image can be selected.
 Different source selection is developed using opencv and .net libraries.
 
-![](https://lh5.googleusercontent.com/6y8Sx-7a4PDYcZWv9W_COKJf9EaGKQl-_3vc6q9oo-HzQeC4CJMJoGTceeaUAC4F31mjpGs84Zrkse1viHgwCCKnRvhciz7aEjmmySR16PAD2aOGmOrLWHr6R3hO7GvV0TamI9nS)
+![](image-4.png)
 
 #### 4. Future of PassFace Project
 

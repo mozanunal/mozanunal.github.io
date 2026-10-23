@@ -64,7 +64,7 @@ MOV R1,#0FFH  
 MOV R2,#3BH
 ```
 
-![](Ekran%2BAl%25C4%25B1nt%25C4%25B1s%25C4%25B1-63ec1b.png)
+![](ekran-alintisi-63ec1b.png)
 Görüldüğü gibi R1 R2 ve Accummulatora veriler yüklenmiştir.
 
 **ORG ve END Komutları**\
@@ -130,7 +130,7 @@ A=A/B
 
 **Loop ve Jump komutu**
 
-![](Ekran%2BAl%25C4%25B1nt%25C4%25B1s%25C4%25B1.png)
+![](ekran-alintisi.png)
 
 Loop oluşturmak için kullanılan komutlar yukarıdaki gibidir. Hepsi farklı bir
 koşulu kullanmak içindir. Aşağıdaki örnek kod ise kullanımlarına örnektir.

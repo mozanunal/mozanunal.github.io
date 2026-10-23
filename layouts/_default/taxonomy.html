@@ -8,11 +8,7 @@
     <h4>
       <a href="{{ .Permalink }}">{{ .Title }}</a>
     </h4>
-    {{ if .Description }}
-    <p>{{ .Description }}</p>
-    {{ else }}
-    <p>{{ .Summary }}</p>
-    {{ end }}
+    <p>{{ (.Description | default .Summary) | plainify | truncate 200 }}</p>
     <p><em><small><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time></small></em></p>
   </article>
   {{ end }}

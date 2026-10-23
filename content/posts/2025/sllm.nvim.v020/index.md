@@ -102,7 +102,7 @@ For a complete list of changes, check out the
 
 Here's a quick look at the on-the-fly function registration in action:
 
-![sllm.nvim on-the-fly function tool demonstration](https://github.com/mozanunal/sllm.nvim/raw/main/assets/workflow.gif)
+![sllm.nvim on-the-fly function tool demonstration](workflow.png)
 
 ### Try It Out!
 

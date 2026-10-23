@@ -25,4 +25,4 @@ girişi, 2\. bacağı GND ve 3\. bacağı 5 volt çıkışıdır. 7 - 35 volt ar
 5 volta regüle eder. Eğer 400 miliamperden fazla akım alacaksınız soğutucu
 kullanmanızı tavsiye ederim.
 
-![](Ads%C4%B1z.png)
+![](adsiz.png)

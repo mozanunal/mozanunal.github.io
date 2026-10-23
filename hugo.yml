@@ -22,9 +22,6 @@ params:
   # A short site description, often used for SEO meta tags.
   description: "Personal website of M. Ozan Unal: posts, projects, and papers."
 
-  themeBase: css/base.css
-  themeLight: css/light.css
-  themeDark: css/dark.css
 
   faviconSVG: "/favicon.svg"
   faviconICO: "/favicon.ico"

@@ -28,4 +28,4 @@ Kamera ile fare kontrolü {{< youtube id="j4wf-MfYmjo" >}}
 Parmak Sayıcı {{< youtube id="skS8qayIxWw" >}}
 
 Convexity Defects Method
-![](Ekran%2BAl%C4%B1nt%C4%B1s%C4%B1.png)
+![](ekran-alintisi.png)

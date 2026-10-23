@@ -30,9 +30,9 @@ dağıtımlarını destekliyor diğer dağıtımları da deneyebilirsiniz. Belle
 takıp ve gerekli dosyaları indirdikten sonra programı çalıştırabilirsiniz. Şöyle
 bir pencere sizi karşılayacak;
 
-![](Ekran%2BAl%C4%B1nt%C4%B1s%C4%B12.png)
+![](ekran-alintisi2.png)
 
-![](Ekran%2BAl%C4%B1nt%C4%B1s%C4%B1-a34775.png)
+![](ekran-alintisi-a34775.png)
 
 Aşağıdakine benzer şekilde doldurabilirsiniz. 1\. Boşluğa istediğiniz linux
 dağıtımı 2\. Boşluğa ISO dosyasını gösteriyoruz. 3\. Boşluğa ise üzerinde linux
@@ -41,15 +41,15 @@ kurmak istediğiniz flash belleği seçiyorsunuz. Bu adımda dikkatli olmanız
 boyutu-2 GB  seçebilirsiniz. Formata basarsanız daha iyi olur ama içindeki
 dosyalarınız gider
 
-![](Ekran%2BAl%C4%B1nt%C4%B1s%C4%B12.png)
+![](ekran-alintisi2.png)
 
-![](Ekran%2BAl%C4%B1nt%C4%B1s%C4%B1-2a6bcb.png)
+![](ekran-alintisi-2a6bcb.png)
 
 Az kaldı bitiyor sabredin :) 
 
-![](Ekran%2BAl%C4%B1nt%C4%B1s%C4%B1.png)
+![](ekran-alintisi.png)
 
-![](Ekran%2BAl%C4%B1nt%C4%B1s%C4%B1-1284ae.png)
+![](ekran-alintisi-1284ae.png)
 
 Eveet artık Linux'unuzu açabilirsiniz. Bilgisayarınızı yeniden başlatın ve
 anakart ayarlarınıza girip boot device olarak flash belleğinizi seçebilirsiniz.

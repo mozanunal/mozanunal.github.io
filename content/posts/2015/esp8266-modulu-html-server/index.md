@@ -172,18 +172,18 @@ String sendData(String command, const int timeout, boolean debug)
 Esp8266yı Acces Point olarak kullanıyoruz. Yani bizim için wifi ağı kurar kodu
 yükledikten sonra ağa bağlanın.
 
-![](Ads%C4%B1z.png)
+![](adsiz.png)
 
 Serial porttan gelen veriler bu şekilde olmalıdır. Problem yaşadığımızda buradan
 kontrol edip DEBUG yapabiliriz.
 
-![](Ekran%2BAl%C4%B1nt%C4%B1s%C4%B1.png)
+![](ekran-alintisi.png)
 
 ![](dsaxsxa.png)
 
 Programımızın çıktısı bu şekilde olacaktır.
 
-![](Ekran%2BAl%C4%B1nt%C4%B1s%C4%B1sdsd.png)
+![](ekran-alintisisdsd.png)
 
 String halinde Arduino'ya yüklediğimiz HTML dosyasını modül wifi ağında
 paylaşır.

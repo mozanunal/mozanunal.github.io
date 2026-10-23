@@ -43,9 +43,9 @@ performance. Its main focuses are portability and education.
 FFT and IFFT functions require 2 arguments. data data length Do not forget to
 add `#include "simpleDSP_FFT.h"`
 
-[Full example for FFT and IFFT please refer here](/examples/fft_ifft/fft_ifft.ino)
+[Full example for FFT and IFFT please refer here](https://github.com/mozanunal/SimpleDSP/blob/master/examples/fft_ifft/fft_ifft.ino)
 
-[FFT spectrum example](/examples/fft_spectrum/fft_spectrum.ino)
+[FFT spectrum example](https://github.com/mozanunal/SimpleDSP/blob/master/examples/fft_spectrum/fft_spectrum.ino)
 
 ```cpp
 FFT(data,DATA_LEN);
@@ -73,7 +73,7 @@ void firInit(FIR *fir, int coefBLen, float *coefsB);
 float firFilt(FIR *fir, int input);
 ```
 
-[FIR Full example](/examples/fir/fir.ino)
+[FIR Full example](https://github.com/mozanunal/SimpleDSP/blob/master/examples/fir/fir.ino)
 
 ```cpp
 Serial.begin(9600);
@@ -112,7 +112,7 @@ float iirFilt(IIR *iir, int input);
 
 Do not forget to add `#include "simpleDSP_iir.h"` to your code.
 
-[IIR Full example](/examples/iir/iir.ino)
+[IIR Full example](https://github.com/mozanunal/SimpleDSP/blob/master/examples/iir/iir.ino)
 
 ```cpp
 Serial.begin(9600);
@@ -161,13 +161,13 @@ plot(kor,X);
 
 Graph of Raw Signal
 
-![inputa](https://cloud.githubusercontent.com/assets/13440502/22374756/305a1d4e-e4b0-11e6-821a-9213b4f8a136.png)
+![inputa](image-1.png)
 
 Graph of FFT Signal
 
-![inputf](https://cloud.githubusercontent.com/assets/13440502/22374762/3abf9eee-e4b0-11e6-8e26-c0758e6c13a3.png)
+![inputf](image-2.png)
 
-[you can use octave from here](octave-online.net)
+[you can use octave from here](https://octave-online.net)
 
 ### Filter Design Using Octave
 
@@ -192,7 +192,7 @@ plot(y)
 
 filter frequency response
 
-![function reference fir1](https://cloud.githubusercontent.com/assets/13440502/22388029/20f5a6fc-e4e7-11e6-99ed-885fe116be1d.png)
+![function reference fir1](image-3.png)
 
 [Resource for IIR](https://octave.sourceforge.io/signal/function/butter.html)
 
@@ -218,8 +218,8 @@ a =
 
 Time Domain Signal
 
-![output](https://cloud.githubusercontent.com/assets/13440502/22374514/24a63a88-e4af-11e6-8bd8-b7fa703bd459.png)
+![output](image-4.png)
 
 FFT of Output Signal
 
-![outputf](https://cloud.githubusercontent.com/assets/13440502/22374645/b0cbd266-e4af-11e6-9266-32aafec12986.png)
+![outputf](image-5.png)

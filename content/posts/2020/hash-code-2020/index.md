@@ -174,13 +174,13 @@ class Book(object):
 
 With these scores, we were 231th in the World and 7th in Turkey.
 
-![](https://raw.githubusercontent.com/mozanunal/hashcode2020/master/docs/result.jpeg)
+![](result.jpg)
 
-![](https://raw.githubusercontent.com/mozanunal/hashcode2020/master/docs/score.jpeg)
+![](score.jpg)
 
 You can check out my posts about Hash Code 2017 and Hash Code 2018:
 
-[https://mozanunal.com/2017/07/Google-Hash-Code-2017/](https://mozanunal.com/2017/07/Google-Hash-Code-2017/)
+[Google Hash Code 2017](/2017/07/google-hash-code-2017/)
 [https://mozanunal.com/2018/04/hash-code-2018/](https://mozanunal.com/2018/04/hash-code-2018/)
 
 Hopefully, see you again. Thank you!

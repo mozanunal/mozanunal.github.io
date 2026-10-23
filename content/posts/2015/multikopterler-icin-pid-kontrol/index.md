@@ -41,7 +41,9 @@ yani anlık hataya bağlıdır. **I algoritması**ndan gelen değer, pitch açı
 geçmiş hatalarının toplamına bağlıdır. D algoritmasından gelen değer ise gelecek
 açı hatalarının tahminine bağlıdır.
 
-![](https://www.pcbheaven.com/wikipages/images/pidtheory_1313344224.png)
+![](pid-theory-1.png)
+
+_Kaynak: [PCB Heaven, PID Theory](https://www.pcbheaven.com/wikipages/PID_Theory/)_
 
 **Bu algoritmalardan elde edilen değerler belli katsayılarla(Kp, Ki, Kd)
 çarpılarak son çıkış değişkeni elde edilir. Bu katsayılara PID katsayıları
@@ -58,7 +60,9 @@ Kp katsayısı ne kadar yüksek olursa multikopter o kadar fazla kendini düzelt
 düzeltecek ve "overshoot" denen kavram ortaya çıkacaktır. Multikopter oldukça
 fazla duyarlı olacak ve yüksek frekansta titremeye başlayacaktır.
 
-![](https://www.pcbheaven.com/wikipages/images/pidtheory_1313333018.jpg)
+![](pid-theory-2.jpg)
+
+_Kaynak: [PCB Heaven, PID Theory](https://www.pcbheaven.com/wikipages/PID_Theory/)_
 
 **Integral**\
 Integral, geçmiş hataların toplamını baz alarak ilerleyen algoritmadır. P
@@ -72,7 +76,9 @@ artırıldığında daha yumuşak ve daha az agresif bir uçuş karakteristiği 
 edilir. Yüksek Ki yine titreşimlere neden olur ama daha düşük frekanstadır
 böylece Kp'den kaynaklanan sorundan ayrılabilir.
 
-![](https://www.pcbheaven.com/wikipages/images/pidtheory_1313341391.jpg)
+![](pid-theory-3.jpg)
+
+_Kaynak: [PCB Heaven, PID Theory](https://www.pcbheaven.com/wikipages/PID_Theory/)_
 
 **Derivative**\
 D parametresi gelecek hata tahminini baz alan bir parametredir. Etkisini ise
