@@ -65,6 +65,10 @@
   {{- with .Site.Params.appleTouchIcon }}
   <link rel="apple-touch-icon" href="{{ . | relURL }}">
   {{- end }}
+  <link rel="icon" type="image/png" sizes="96x96" href="{{ "/favicon-96x96.png" | relURL }}">
+  <link rel="manifest" href="{{ "/site.webmanifest" | relURL }}">
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f8fafc">
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0f172a">
 
   {{- partial "head-meta.html" . -}}
   {{- partial "structured-data.html" . -}}
