@@ -74,6 +74,12 @@
     <loc>https://mozanunal.com/2019/08/yolocolabdemo/</loc>
     <lastmod>2019-08-13T00:09:50+00:00</lastmod>
   </url><url>
+    <loc>https://mozanunal.com/2019/05/har-lstm/</loc>
+    <lastmod>2019-05-28T12:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mozanunal.com/categories/signal-processing/</loc>
+    <lastmod>2019-05-28T12:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://mozanunal.com/2019/05/electrical-impedance-tomography/</loc>
     <lastmod>2019-05-20T12:00:00+00:00</lastmod>
   </url><url>
@@ -81,9 +87,6 @@
     <lastmod>2019-02-01T00:45:01+00:00</lastmod>
   </url><url>
     <loc>https://mozanunal.com/categories/dsp/</loc>
-    <lastmod>2019-01-23T23:45:00+00:00</lastmod>
-  </url><url>
-    <loc>https://mozanunal.com/categories/signal-processing/</loc>
     <lastmod>2019-01-23T23:45:00+00:00</lastmod>
   </url><url>
     <loc>https://mozanunal.com/2019/01/simpledsp-iir-feature/</loc>

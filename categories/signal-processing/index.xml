@@ -10,9 +10,16 @@
 		
 		
 		
-			<lastBuildDate>Wed, 23 Jan 2019 23:45:00 +0000</lastBuildDate>
+			<lastBuildDate>Tue, 28 May 2019 12:00:00 +0000</lastBuildDate>
 		
 			<atom:link href="https://mozanunal.com/categories/signal-processing/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Human Activity Recognition with LSTM Networks</title>
+				<link>https://mozanunal.com/2019/05/har-lstm/</link>
+				<pubDate>Tue, 28 May 2019 12:00:00 +0000</pubDate>
+				<guid>https://mozanunal.com/2019/05/har-lstm/</guid>
+				<description>&lt;p&gt;Hello everyone! In this post, I will recognize what a person is doing, such as&#xA;walking, sitting, or climbing stairs, from the accelerometer and gyroscope of a&#xA;smartphone. I will compare four models: a classic neural network on hand&#xA;crafted features, a plain LSTM, a CNN LSTM, and a Convolutional LSTM, trained&#xA;on the UCI Smartphone dataset and on a small dataset I recorded myself.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Results in short:&lt;/strong&gt; the plain LSTM reached 90.6% validation accuracy, the CNN&#xA;LSTM 91.8%, and the Convolutional LSTM 89.1%, while the feature based baseline&#xA;stayed around 78%. The CNN LSTM was both the most accurate and much faster to&#xA;train than the plain LSTM.&lt;/p&gt;</description>
+			</item>
 			<item>
 				<title>SimpleDSP: IIR Filter Feature Added</title>
 				<link>https://mozanunal.com/2019/01/simpledsp-iir-feature/</link>

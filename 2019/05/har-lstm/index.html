@@ -1,0 +1,152 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=color-scheme content="light dark"><meta name=description content="Personal website of M. Ozan Unal: posts, projects, and papers."><link rel=canonical href=https://mozanunal.com/2019/05/har-lstm/><link rel=stylesheet href=/css/site.min.f362dba0cbd4d8c1ef6738712fafee1884f5a373082ae8c3113abc029d2c6dd3.css integrity="sha256-82LboMvU2MHvZzhxL6/uGIT1o3MIKujDETq8Ap0sbdM="><link id=syntax-light rel=stylesheet href=/css/syntax-light.min.e114b8cc38f57d520f373580c935a518bc6afd6dec4f1d682365cdbcf5c8218a.css media="(prefers-color-scheme: light)"><link id=syntax-dark rel=stylesheet href=/css/syntax-dark.min.d8ad658c02e1ff4f154ed92513da0a2763959be0a25adfd74e26f37b64eee8fd.css media="(prefers-color-scheme: dark)"><script>(function(){try{var e,t,n,s,o,i="hugo-classless-color-scheme";["syntax-light","syntax-dark"].forEach(function(e){var t=document.getElementById(e);t&&!t.getAttribute("data-default-media")&&t.setAttribute("data-default-media",t.media||"")}),t=localStorage.getItem(i),e=t==="light"||t==="dark"?t:"system",n=e==="dark"||e==="system"&&window.matchMedia("(prefers-color-scheme: dark)").matches,s=document.documentElement,s.setAttribute("data-theme-pref",e),s.setAttribute("data-theme",n?"dark":"light"),e!=="system"&&(o=function(e,t){var n=document.getElementById(e);n&&(n.media=t?"all":"not all")},o("syntax-dark",n),o("syntax-light",!n))}catch{}})()</script><title>Human Activity Recognition with LSTM Networks | mozanunal.com</title><link rel=icon href=/favicon.svg type=image/svg+xml><link rel="shortcut icon" href=/favicon.ico><link rel=apple-touch-icon href=/apple-touch-icon.png><link rel=icon type=image/png sizes=96x96 href=/favicon-96x96.png><link rel=manifest href=/site.webmanifest><meta name=theme-color media="(prefers-color-scheme: light)" content="#f8fafc"><meta name=theme-color media="(prefers-color-scheme: dark)" content="#0f172a"><meta property="og:title" content="Human Activity Recognition with LSTM Networks"><meta property="og:description" content="Personal website of M. Ozan Unal: posts, projects, and papers."><meta property="og:type" content="article"><meta property="og:url" content="https://mozanunal.com/2019/05/har-lstm/"><meta property="og:site_name" content="mozanunal.com"><meta property="og:image" content="https://mozanunal.com/images/profile_hu_fb23b7def65dddca.png"><meta property="article:published_time" content="2019-05-28T12:00:00Z"><meta property="article:modified_time" content="2019-05-28T12:00:00Z"><meta name=twitter:card content="summary"><meta name=twitter:title content="Human Activity Recognition with LSTM Networks"><meta name=twitter:description content="Personal website of M. Ozan Unal: posts, projects, and papers."><meta name=twitter:image content="https://mozanunal.com/images/profile_hu_fb23b7def65dddca.png"><script type=application/ld+json>{"@context":"https://schema.org","@type":"Article","author":{"@type":"Person","name":"M. Ozan Unal"},"dateModified":"2019-05-28T12:00:00Z","datePublished":"2019-05-28T12:00:00Z","description":"Hello everyone! In this post, I will recognize what a person is doing, such as walking, sitting, or climbing stairs, from the accelerometer and gyroscope of a …","headline":"Human Activity Recognition with LSTM Networks"}</script></head><body><a id=skip-link href=#main-content>Skip to content</a><header><nav aria-label="Main navigation"><ul><li><a class=nav-brand href=/><svg class="nav-mark" viewBox="58 76 900 900" aria-hidden="true" focusable="false"><circle fill="var(--color-border)" cx="508" cy="526" r="450"/><circle cx="508" cy="497" r="388" fill="#1d1c1e"/><g stroke="#8bd927" stroke-width="18" stroke-linecap="round"><path d="M241 280h22m-60 62h49m-77 68h51m-61 66h68m-68 64h130M183 602h79"/><path d="M743 280h33m-13 62h48m-19 68h49m-57 66h68M720 540h130m-95 62h79"/></g><path d="M190 845l-4-125c4-60 74-95 174-115h295c1e2 20 166 55 171 115l4 125z" fill="#20283b"/><rect x="186" y="828" width="108" height="122" rx="44" fill="#fec688"/><rect x="722" y="828" width="108" height="122" rx="44" fill="#fec688"/><path d="M407 540h2e2v70c0 50-47 80-1e2 80s-1e2-30-1e2-80z" fill="#ffb874"/><ellipse cx="285" cy="420" rx="40" ry="44" fill="#ffb874"/><ellipse cx="730" cy="420" rx="40" ry="44" fill="#ffb874"/><rect x="305" y="170" width="403" height="440" rx="190" ry="200" fill="#ffc98c"/><path d="M305 415c-19-30-33-75-33-135 0-65 32-130 112-166-8-10-7-22 4-25 27-1 38-1 48-3 29-10 79-10 119 4 30 10 45 22 49 26 58 18 106 54 122 109 10 35 11 85 7 125-4 32-13 54-24 65-6-40-5-95-17-143-18-62-58-96-110-103-32-5-72 3-104 13-28 9-50 30-64 28-9-2-9-16-9-26-33 14-65 48-80 91-13 40-15 1e2-20 140z" fill="#352621"/><g fill="#352621"><path d="M359 330c7-18 33-29 56-29 25 0 41 6 41 17 0 10-6 15-12 14-16-2-39-3-59 0-11 2-19 7-24 6s-5-5-2-8z"/><path d="M562 320c0-12 18-19 43-19 23 0 45 7 53 23 4 8 2 14-5 14-13-2-31-7-48-7-15 0-27 2-33 2-7 0-10-5-10-13z"/></g><ellipse cx="415" cy="383" rx="23" ry="30" fill="#2d221d"/><ellipse cx="603" cy="383" rx="23" ry="30" fill="#2d221d"/><ellipse cx="510" cy="445" rx="30" ry="16" fill="#fdb270"/><path d="M440 488q68 64 136 0" fill="none" stroke="#624832" stroke-width="16" stroke-linecap="round"/><rect x="274" y="720" width="466" height="251" rx="22" fill="#009eb2"/><path d="M296 720h422a22 22 0 0122 22v208H274V742a22 22 0 0122-22z" fill="#00b6c3"/></svg>
+<strong>mozanunal.com</strong></a></li></ul><ul><li><a href=/>Home</a></li><li><a href=/posts/ class=active aria-current=page>Posts</a></li><li><a href=/projects/>Projects</a></li><li><a href=/papers/>Papers</a></li><li><button class=dark-mode-toggle id=dark-mode-toggle aria-label="Toggle color scheme" title="Toggle color scheme">
+<svg class="icon-moon" viewBox="0 0 24 24" fill="currentColor"><path d="M21.752 15.002A9.718 9.718.0 0118 15.75c-5.385.0-9.75-4.365-9.75-9.75.0-1.33.266-2.597.748-3.752A9.753 9.753.0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753.0 009.002-5.998z"/></svg>
+<svg class="icon-sun" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.25a.75.75.0 01.75.75v2.25a.75.75.0 01-1.5.0V3a.75.75.0 01.75-.75zM7.5 12a4.5 4.5.0 119 0 4.5 4.5.0 01-9 0zM18.894 6.166a.75.75.0 00-1.06-1.06l-1.591 1.59a.75.75.0 101.06 1.061l1.591-1.59zM21.75 12a.75.75.0 01-.75.75h-2.25a.75.75.0 010-1.5H21a.75.75.0 01.75.75zm-3.916 6.894a.75.75.0 001.06-1.06l-1.59-1.591a.75.75.0 10-1.061 1.06l1.59 1.591zM12 18a.75.75.0 01.75.75V21a.75.75.0 01-1.5.0v-2.25A.75.75.0 0112 18zM7.758 17.303a.75.75.0 00-1.061-1.06l-1.591 1.59a.75.75.0 001.06 1.061l1.591-1.59zM6 12a.75.75.0 01-.75.75H3a.75.75.0 010-1.5h2.25A.75.75.0 016 12zm.697-4.243a.75.75.0 001.06-1.06l-1.59-1.591a.75.75.0 00-1.061 1.06l1.59 1.591z"/></svg>
+<svg class="icon-system" viewBox="0 0 24 24" fill="currentColor"><path fill-rule="evenodd" d="M2.25 5.25a3 3 0 013-3h13.5a3 3 0 013 3V15a3 3 0 01-3 3h-3v.75A.75.75.0 0115 19.5H9a.75.75.0 01-.75-.75V18h-3a3 3 0 01-3-3V5.25zm1.5.0a1.5 1.5.0 011.5-1.5h13.5a1.5 1.5.0 011.5 1.5V15a1.5 1.5.0 01-1.5 1.5H5.25A1.5 1.5.0 013.75 15V5.25z" clip-rule="evenodd"/></svg></button></li><script>(function(){var t,o,n="hugo-classless-color-scheme",e="data-theme-pref",i="data-theme";function l(){return window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches}function d(e){return e==="light"||e==="dark"?e:"system"}function a(e){return e==="system"?l()?"dark":"light":e}function r(e,t,n,s){if(!e)return;t==="dark"?e.media=s:t==="light"?e.media=n:e.media=e.getAttribute("data-default-media")||""}function c(e,t){if(!e)return;e.disabled=!t}function s(t){var s,o,l,n=a(t);document.documentElement.setAttribute(e,t),document.documentElement.setAttribute(i,n),s=document.getElementById("syntax-light"),o=document.getElementById("syntax-dark"),r(s,n,"all","not all"),r(o,n,"not all","all"),l=n==="dark",c(s,!l),c(o,l)}function u(){["syntax-light","syntax-dark"].forEach(function(e){var t=document.getElementById(e);t&&!t.getAttribute("data-default-media")&&t.setAttribute("data-default-media",t.media||"")})}o=null;try{o=localStorage.getItem(n)}catch{}t=d(o),document.documentElement.setAttribute(e,t),document.documentElement.setAttribute(i,a(t)),document.addEventListener("DOMContentLoaded",function(){u(),s(t);var o=document.getElementById("dark-mode-toggle");if(!o)return;o.addEventListener("click",function(){var t,o=document.documentElement.getAttribute(e)||"system";o==="light"?t="dark":o==="dark"?t="system":t="light",s(t);try{t==="system"?localStorage.removeItem(n):localStorage.setItem(n,t)}catch{}})}),window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change",function(){document.documentElement.getAttribute(e)==="system"&&s("system")})})()</script></ul></nav></header><main id=main-content><article><p style=margin-bottom:0><a href=/>mozanunal.com</a>&nbsp;/&nbsp;<a href=https://mozanunal.com/posts/>Posts</a>&nbsp;/&nbsp;Human Activity Recognition with LSTM Networks</p><h1>Human Activity Recognition with LSTM Networks</h1><p><em><time datetime=2019-05-28>May 28, 2019</time>
+&#183; 10 min read</em></p><details><summary>Table of Contents</summary><nav id=TableOfContents><ul><li><ul><li><a href=#human-activity-recognition>Human Activity Recognition</a></li><li><a href=#datasets>Datasets</a></li><li><a href=#preprocessing>Preprocessing</a></li><li><a href=#models>Models</a></li><li><a href=#results>Results</a></li><li><a href=#summary>Summary</a></li><li><a href=#conclusion>Conclusion</a></li><li><a href=#future-work>Future Work</a></li><li><a href=#references>References</a></li></ul></li></ul></nav></details><div><p>Hello everyone! In this post, I will recognize what a person is doing, such as
+walking, sitting, or climbing stairs, from the accelerometer and gyroscope of a
+smartphone. I will compare four models: a classic neural network on hand
+crafted features, a plain LSTM, a CNN LSTM, and a Convolutional LSTM, trained
+on the UCI Smartphone dataset and on a small dataset I recorded myself.</p><p><strong>Results in short:</strong> the plain LSTM reached 90.6% validation accuracy, the CNN
+LSTM 91.8%, and the Convolutional LSTM 89.1%, while the feature based baseline
+stayed around 78%. The CNN LSTM was both the most accurate and much faster to
+train than the plain LSTM.</p><h3 id=human-activity-recognition>Human Activity Recognition</h3><p>Human activity recognition (HAR) is a popular machine learning problem, and
+recent work shows that deep networks, especially LSTMs, do very well on it [1].
+Almost every phone and smartwatch carries the two sensors that matter most:</p><ul><li><strong>Accelerometer:</strong> measures linear acceleration along three axes, typically
+within a range of a few g.</li><li><strong>Gyroscope:</strong> measures angular velocity around three axes.</li></ul><p>The two complement each other. The accelerometer is noisy while the device is
+moving, and the gyroscope drifts over time, so their readings are usually
+combined with sensor fusion to get a reliable estimate of the device&rsquo;s motion
+and orientation.</p><p>A typical HAR pipeline looks like the figure below. Sensor data is collected,
+often sent to the cloud, cleaned and filtered, and then passed to a deep
+learning model that extracts features and classifies the activity. Deep
+learning makes it possible to recognize more complex activities, and the more
+complex the activities we can recognize, the more useful HAR becomes. As the
+number of wearables grows, so does the amount of data and the compute needed to
+process it, which is why accurate and cost effective models matter.</p><p><img src=intro2.png alt="Human activity recognition pipeline">
+<em>Human activity recognition pipeline</em></p><h3 id=datasets>Datasets</h3><h4 id=uci-smartphone-dataset>UCI Smartphone Dataset</h4><p>The UCI HAR dataset [2] was recorded from 30 volunteers aged 19 to 48, each
+wearing a smartphone on the waist while performing six activities: walking,
+walking upstairs, walking downstairs, sitting, standing, and lying down. Each
+session was video recorded and labelled by hand. Sensors were sampled at 50 Hz
+and the signals are split into windows of 128 samples (2.56 seconds).</p><p>After preprocessing, the training set has 7352 windows and the validation set
+has 2947. Each window is 128 time steps long with 9 channels (body and total
+acceleration plus angular velocity, each on three axes), and each label is a
+one hot vector over the 6 classes.</p><h4 id=my-own-dataset>My Own Dataset</h4><p>I also collected a small dataset with a phone app I wrote in DroidScript. It has
+80 recordings from 4 people sampled at 20 Hz, with labels that describe the
+context as well as the movement: sitting in a car, at home, on a bus, at a
+computer, or on the metro, standing on a bus or on the metro, standing while
+waiting, walking outside, and running. After splitting into windows of 100
+samples (5 seconds), there are 708 training and 178 validation windows, each
+with 7 channels.</p><p>The label distributions are shown below. The UCI dataset is well balanced,
+while mine is not, since some activities were simply much easier to record for
+longer.</p><p><img src=hist_har.png alt="Label distribution of the UCI dataset">
+<img src=hist_own.png alt="Label distribution of my own dataset">
+<em>Label distribution of the UCI dataset (top) and my own dataset (bottom)</em></p><h3 id=preprocessing>Preprocessing</h3><p>For the deep models, I did not compute any hand crafted features and fed the
+raw signals directly. The data was normalized per person, so that differences
+between how individuals move or carry their phone matter less, then split into
+windows and shuffled. The network never sees which person a window came from.</p><h3 id=models>Models</h3><h4 id=baseline-hand-crafted-features-and-a-dense-network>Baseline: Hand Crafted Features and a Dense Network</h4><p>As a baseline, each window is summarized with a set of classic features per
+axis: the maximum, the standard deviation, the skewness, and frequency domain
+values. This turns every window into a 396 dimensional feature vector, which is
+classified by a small fully connected network.</p><p><img src=model_plot_feature.png alt="Baseline network layers">
+<em>Layers of the feature based baseline network</em></p><h4 id=lstm>LSTM</h4><p>Recurrent neural networks (RNNs) give a network memory by feeding the output
+of a step back into the next step. You can picture them as the same cell
+unrolled over the sequence.</p><p><img src=lstm.png alt="RNN structure">
+<em>An RNN unrolled over time [3]</em></p><p>Plain RNNs struggle with long sequences, which is known as the problem of
+long-term dependencies. The hidden state passes through a nonlinearity at every
+step, and the gradients that flow back through all these steps tend to vanish
+or explode. In practice, information from early in the sequence gets lost.</p><p>The LSTM solves this with a second path through the cell, the <em>cell state</em>,
+often called the conveyor belt. It is the top line in the figure below, and it
+is only touched by an elementwise multiplication (the forget gate) and an
+addition (the input gate). With no squashing nonlinearity on this path,
+information and gradients can survive across many more time steps [3].</p><p><img src=lstm2.png alt="LSTM cell structure">
+<em>Structure of an LSTM cell [3]</em></p><p>The LSTM model I used has four layers. It takes a 128 x 9 window and outputs a
+probability for each of the 6 classes.</p><p><img src=model_plot_lstm.png alt="LSTM model layers">
+<em>Layers of the LSTM model</em></p><h4 id=cnn-lstm>CNN LSTM</h4><p>The CNN LSTM works in two stages [4]. First, 1D convolutions extract local
+features from short chunks of the window. These features are flattened and
+passed as a much shorter sequence to the LSTM layers, which model how they
+change over time and make the final prediction.</p><p><img src=cnnlstm.png alt="CNN LSTM structure">
+<em>Structure of a CNN LSTM network</em></p><p><img src=model_plot_convlstm.png alt="CNN LSTM model layers">
+<em>Layers of the CNN LSTM model</em></p><h4 id=convolutional-lstm>Convolutional LSTM</h4><p>The Convolutional LSTM (ConvLSTM) [5] goes one step further and puts the
+convolution inside the LSTM cell itself: the input to state and state to state
+transitions are convolutions instead of matrix multiplications. The signal is
+treated as a 2D array, like an image, and unlike the CNN LSTM the outputs are
+not flattened before the recurrent part.</p><p><img src=convlstm.png alt="Convolutional LSTM structure">
+<em>Structure of a Convolutional LSTM network</em></p><p><img src=model_plot_conv2dlstm.png alt="Convolutional LSTM model layers">
+<em>Layers of the Convolutional LSTM model</em></p><h4 id=loss-function-and-training>Loss Function and Training</h4><p>All four models end with a fully connected softmax layer that outputs class
+probabilities. They are trained with the categorical cross entropy loss:</p><p>$$CE = -\sum_{i=1}^{C} t_i \log(s_i)$$</p><p>where $C$ is the number of classes, $t_i$ is 1 for the correct class and 0
+otherwise, and $s_i$ is the predicted probability of class $i$. The loss is
+small when the model puts a high probability on the correct class.</p><p>Training minimizes this loss with the Adam optimizer, a variant of gradient
+descent. Each step runs a forward pass to compute the loss, uses
+backpropagation to compute the gradient of the loss with respect to every
+weight, and moves the weights a small step against the gradient. This repeats
+for every batch, over many epochs.</p><h3 id=results>Results</h3><p>All models were trained on an NVIDIA K80 GPU in Google Colab. For each model,
+the first pair of plots shows accuracy and loss on the training and validation
+sets per epoch, and the second pair shows confusion matrices for the training
+and validation sets.</p><h4 id=baseline>Baseline</h4><p>The feature based network trains in about a second per epoch, but it overfits
+heavily: training accuracy goes up to 99% while validation accuracy stays
+around 78%.</p><p><img src=feature1.png alt="Baseline accuracy during training">
+<img src=feature2.png alt="Baseline loss during training">
+<em>Final epoch: loss 0.052, accuracy 99.1%, validation loss 2.087, validation
+accuracy 77.8%</em></p><p><img src=feature3.png alt="Baseline training confusion matrix">
+<img src=feature4.png alt="Baseline validation confusion matrix">
+<em>Confusion matrices for the baseline network</em></p><h4 id=lstm-1>LSTM</h4><p>The LSTM ran for 60 epochs at about 42 seconds each. The loss went down for
+almost the whole run, apart from a sudden spike around epochs 13 to 16. It
+ended at 90.6% validation accuracy.</p><p><img src=kerasHar1.png alt="LSTM accuracy during training">
+<img src=kerasHar2.png alt="LSTM loss during training">
+<em>Final epoch: loss 0.105, accuracy 95.6%, validation loss 0.398, validation
+accuracy 90.6%</em></p><p>The confusion matrices show where the errors come from: sitting and standing.
+Both are static postures, and with a phone on the waist they produce very
+similar signals, so the LSTM cannot reliably tell them apart. On the validation
+set, about 200 sitting and standing windows are swapped. The walking classes
+have a few mix ups, and lying down is classified perfectly.</p><p><img src=kerasHar3.png alt="LSTM training confusion matrix">
+<img src=kerasHar4.png alt="LSTM validation confusion matrix">
+<em>Confusion matrices for the LSTM</em></p><h4 id=cnn-lstm-1>CNN LSTM</h4><p>The CNN LSTM is the most complex architecture here, yet it trains much faster:
+about 17 seconds per epoch, and 25 epochs were enough. The convolutions shrink
+the 128 step window into a much shorter sequence of features, so the LSTM has
+far fewer sequential steps to process, and convolutions themselves parallelize
+well on a GPU. It reached the best validation accuracy, 91.8%.</p><p><img src=kerasHar5.png alt="CNN LSTM accuracy during training">
+<img src=kerasHar6.png alt="CNN LSTM loss during training">
+<em>Final epoch: loss 0.076, accuracy 96.6%, validation loss 0.318, validation
+accuracy 91.8%</em></p><p>Sitting and standing remain the main source of confusion. The gain over the
+plain LSTM is mostly in training time rather than accuracy.</p><p><img src=kerasHar7.png alt="CNN LSTM training confusion matrix">
+<img src=kerasHar8.png alt="CNN LSTM validation confusion matrix">
+<em>Confusion matrices for the CNN LSTM</em></p><h4 id=convolutional-lstm-1>Convolutional LSTM</h4><p>The Convolutional LSTM learns fastest: it passes 90% validation accuracy after
+only 5 epochs, at about 29 seconds each, which makes it attractive for larger
+datasets. However, its validation loss is noticeably higher, and it finished at
+89.1% validation accuracy.</p><p><img src=kerasHar9.png alt="Convolutional LSTM accuracy during training">
+<img src=keraHar10.png alt="Convolutional LSTM loss during training">
+<em>Final epoch: loss 0.074, accuracy 96.5%, validation loss 0.757, validation
+accuracy 89.1%</em></p><p>It separates sitting and standing slightly better than the plain LSTM, but in
+exchange it confuses the walking classes more, often predicting walking
+downstairs for walking or walking upstairs. It also labels some sitting and
+lying down windows as walking upstairs, which the other models never do.</p><p><img src=kerasHar11.png alt="Convolutional LSTM training confusion matrix">
+<img src=kerasHar12.png alt="Convolutional LSTM validation confusion matrix">
+<em>Confusion matrices for the Convolutional LSTM</em></p><h4 id=lstm-on-my-own-dataset>LSTM on My Own Dataset</h4><p>Finally, I trained the LSTM on my own dataset. With far less data, an epoch
+took only 2 seconds, and after 60 epochs the validation accuracy was 90.4%.</p><p><img src=phone1.png alt="Accuracy on my own dataset">
+<img src=phone2.png alt="Loss on my own dataset">
+<em>Final epoch: loss 0.461, accuracy 81.9%, validation loss 0.375, validation
+accuracy 90.4%</em></p><p>The biggest confusion is between standing on a bus and standing while waiting.
+Both are mostly standing still with small movements, so this is not
+surprising.</p><p><img src=phone3.png alt="Training confusion matrix on my own dataset">
+<img src=phone4.png alt="Validation confusion matrix on my own dataset">
+<em>Confusion matrices for the LSTM on my own dataset</em></p><h3 id=summary>Summary</h3><table><thead><tr><th>Model</th><th>Validation accuracy</th><th>Time per epoch</th><th>Epochs</th></tr></thead><tbody><tr><td>Features + dense network</td><td>77.8%</td><td>about 1 s</td><td></td></tr><tr><td>LSTM</td><td>90.6%</td><td>42 s</td><td>60</td></tr><tr><td>CNN LSTM</td><td>91.8%</td><td>17 s</td><td>25</td></tr><tr><td>Convolutional LSTM</td><td>89.1%</td><td>29 s</td><td>5 to reach 90%</td></tr><tr><td>LSTM, own dataset</td><td>90.4%</td><td>2 s</td><td>60</td></tr></tbody></table><h3 id=conclusion>Conclusion</h3><p>LSTMs work very well on long sensor time series and give solid results without
+much compute or any hand crafted features. Putting convolutional feature
+extractors in front of the LSTM, as in the CNN LSTM, gave the best accuracy
+and cut training time by more than half, since the LSTM only has to process a
+compact sequence of features. The remaining errors come mostly from activities
+that look the same to a waist mounted sensor, such as sitting and standing.</p><h3 id=future-work>Future Work</h3><ul><li>Test the models on the UCSD ExtraSensory dataset, which captures behavioral
+context in the wild from phones and smartwatches [6].</li><li>Try feature extraction, signal filtering, other normalization schemes, and
+data augmentation on that dataset to improve accuracy.</li><li>Apply the same models to accelerometer based gesture recognition, for example
+the SmartWatch Gestures dataset [7].</li></ul><h3 id=references>References</h3><ol><li>T. Zebin, N. Peek, A. Casson, and M. Sperrin, &ldquo;Human activity recognition
+from inertial sensor time-series using batch normalized deep LSTM recurrent
+networks,&rdquo; in <em>Proc. IEEE EMBC</em>, 2018.</li><li>D. Anguita, A. Ghio, L. Oneto, X. Parra, and J. L. Reyes-Ortiz, &ldquo;Human
+Activity Recognition on Smartphones Using a Multiclass Hardware-Friendly
+Support Vector Machine,&rdquo; in <em>Ambient Assisted Living and Home Care</em>,
+Springer, 2012.</li><li>C. Olah, &ldquo;Understanding LSTM Networks,&rdquo; 2015.
+<a href=https://colah.github.io/posts/2015-08-Understanding-LSTMs/>https://colah.github.io/posts/2015-08-Understanding-LSTMs/</a></li><li>T. N. Sainath, O. Vinyals, A. Senior, and H. Sak, &ldquo;Convolutional, Long
+Short-Term Memory, fully connected Deep Neural Networks,&rdquo; in <em>Proc. IEEE
+ICASSP</em>, 2015.</li><li>X. Shi, Z. Chen, H. Wang, D.-Y. Yeung, W.-K. Wong, and W.-C. Woo,
+&ldquo;Convolutional LSTM Network: A Machine Learning Approach for Precipitation
+Nowcasting,&rdquo; arXiv:1506.04214, 2015.</li><li>Y. Vaizman, K. Ellis, and G. Lanckriet, &ldquo;Recognizing Detailed Human Context
+in the Wild from Smartphones and Smartwatches,&rdquo; <em>IEEE Pervasive Computing</em>,
+vol. 16, no. 4, 2017.</li><li>L. Porzi, S. Messelodi, C. Modena, and E. Ricci, &ldquo;A smart watch-based gesture
+recognition system for assisting people with visual impairments,&rdquo; 2013.</li></ol></div><hr><p><a href=https://mozanunal.com/2019/05/electrical-impedance-tomography/>&larr; Electrical Impedance Tomography: How It Works and Where It Is Used</a> | <a href=https://mozanunal.com/2019/08/yolocolabdemo/>Yolo on Google Colab &rarr;</a></p></article></main><footer><p>&copy; 2026 M. Ozan Unal.</p><p>Reach me at <a href=mailto:mehmetozanunal@gmail.com>mehmetozanunal@gmail.com</a></p></footer></body><link rel=stylesheet href=/libs/katex/katex.min.v0.16.9.css><script defer src=/libs/katex/katex.min.v0.16.9.js></script><script defer src=/libs/katex/auto-render.v0.16.9.js></script><script>document.addEventListener("DOMContentLoaded",function(){renderMathInElement(document.body,{delimiters:[{left:"$$",right:"$$",display:!0},{left:"\\[",right:"\\]",display:!0},{left:"\\(",right:"\\)",display:!1},{left:"$",right:"$",display:!1}],throwOnError:!1})})</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-007KSW65JL"></script><script>var doNotTrack=!1,dnt=navigator.doNotTrack||window.doNotTrack||navigator.msDoNotTrack,doNotTrack=dnt=="1"||dnt=="yes";if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-007KSW65JL")}</script></html>
