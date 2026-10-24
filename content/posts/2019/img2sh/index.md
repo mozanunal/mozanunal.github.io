@@ -42,7 +42,7 @@ arrow keys for navigation
 cmd: q
 ```
 
-![](image-2.gif)
+<video src="image-2.mp4" autoplay loop muted playsinline></video>
 
 For detailed usage arguments:
 

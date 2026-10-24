@@ -16,8 +16,8 @@ date: 2020-04-30 02:12:00
 
 ## Coronal Plane
 
-![](coronal.gif)
+<video src="coronal.mp4" autoplay loop muted playsinline></video>
 
 ## Sagittal Plane
 
-![](sagittal.gif)
+<video src="sagittal.mp4" autoplay loop muted playsinline></video>

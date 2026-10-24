@@ -9,7 +9,7 @@ date: 2019-08-13 00:09:50
 Hello there, Today, we will be discussing how we can use the Darknet project on
 Google Colab platform. For those who are not familiar with these terms:
 
-![YOLO in action!](yoloroad.gif)
+<video src="yoloroad.mp4" autoplay loop muted playsinline aria-label="YOLO in action!"></video>
 
 - The Darknet project is an open-source project written in C, which is a
   framework to develop deep neural networks.

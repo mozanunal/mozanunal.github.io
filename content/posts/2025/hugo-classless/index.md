@@ -8,7 +8,7 @@ I'm incredibly excited to announce a new project I've been working on: the **[Hu
 
 If you've ever felt locked in by a theme's specific design or wished you could change your site's entire look with a single line of code, this theme is for you. Hugo Classless isn't just another theme; it's a flexible foundation designed to work with **any classless CSS framework**.
 
-<video controls src="hugo-classless.mov" style="width: 100%; max-width: 100%; border-radius: 16px; margin-top: 1.5em; margin-bottom: 1.5em;">
+<video controls src="hugo-classless.mp4" style="width: 100%; max-width: 100%; border-radius: 16px; margin-top: 1.5em; margin-bottom: 1.5em;">
   Your browser does not support the video tag.
 </video>
 
