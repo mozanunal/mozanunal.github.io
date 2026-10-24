@@ -1,5 +1,98 @@
 {{ define "main" }}
+{{- $posts := first 5 ((where .Site.RegularPages "Section" "posts").ByDate.Reverse) -}}
+{{- $owner := .Site.Data.projects.owner | default "mozanunal" -}}
+{{- $repos := first 4 (sort .Site.Data.projects.repos "stars" "desc") -}}
+{{- $papers := slice -}}
+{{- range .Site.Data.papers.papers -}}
+  {{- if .citations -}}
+    {{- $papers = $papers | append . -}}
+  {{- end -}}
+{{- end -}}
+{{- $topPapers := first 3 (sort $papers "year" "desc") -}}
 
-{{ .Content }}
+<div class="home">
+  <section class="home-hero">
+    <div class="home-avatar">
+      {{- partial "avatar-svg.html" (dict "class" "home-avatar-svg") -}}
+    </div>
+    <div class="home-intro">
+      <h1>M. Ozan Unal</h1>
+      <p class="home-role">Data &amp; AI Engineer</p>
+      <p class="home-bio">I build developer tools, design software systems, and conduct AI research.</p>
+      <div class="home-links">
+        <a class="home-link primary" href="mailto:mehmetozanunal@gmail.com">
+          <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M1.5 3h13a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5Zm.5 1.3v7.7h12V4.3L8 8.6 2 4.3Zm1.2-.3L8 7.4 12.8 4H3.2Z"/></svg>
+          Email
+        </a>
+        <a class="home-link" href="https://github.com/mozanunal">
+          <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
+          GitHub
+        </a>
+        <a class="home-link" href="https://scholar.google.com/citations?user=u_HbXUUAAAAJ&amp;hl=en">
+          <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 1 0 5.5l8 4.5 6.5-3.66V11h1.5V5.5L8 1Zm-4.5 7.4v3.1C4.7 12.9 6.3 13.7 8 13.7s3.3-.8 4.5-2.2V8.4L8 11 3.5 8.4Z"/></svg>
+          Scholar
+        </a>
+        <a class="home-link" href="https://twitter.com/MOzanUnal">
+          <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M12.2 1h2.3L9.5 6.8 15.4 15h-4.6L7.2 10.3 3 15H.7l5.4-6.2L.4 1h4.7l3.3 4.3L12.2 1Zm-.8 12.6h1.3L4.6 2.3H3.2l8.2 11.3Z"/></svg>
+          X
+        </a>
+        <a class="home-link" href="{{ "/index.xml" | relURL }}">
+          <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2.5 11.5a2 2 0 1 1 0 4 2 2 0 0 1 0-4ZM1 6.2c4.9 0 8.8 3.9 8.8 8.8H7.6A6.6 6.6 0 0 0 1 8.4V6.2Zm0-4.7C8.5 1.5 14.5 7.5 14.5 15h-2.2C12.3 8.8 7.2 3.7 1 3.7V1.5Z"/></svg>
+          RSS
+        </a>
+      </div>
+    </div>
+  </section>
 
+  <section class="home-section">
+    <div class="home-heading">
+      <h2>Latest writing</h2>
+      <a class="home-more" href="{{ "/posts/" | relURL }}">All posts &rarr;</a>
+    </div>
+    <ul class="home-posts">
+      {{- range $posts }}
+      <li>
+        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+        <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2, 2006" }}</time>
+      </li>
+      {{- end }}
+    </ul>
+  </section>
+
+  <section class="home-section">
+    <div class="home-heading">
+      <h2>Projects</h2>
+      <a class="home-more" href="{{ "/projects/" | relURL }}">All projects &rarr;</a>
+    </div>
+    <div class="home-cards">
+      {{- range $repos }}
+      {{- $url := .url | default (printf "https://github.com/%s/%s" (.owner | default $owner) .name) -}}
+      <a class="home-card" href="{{ $url }}">
+        <b>{{ .title | default .name }}</b>
+        <span>{{ .description }}</span>
+        <small>&#9733; {{ .stars }}{{ with .language }} &middot; {{ . }}{{ end }}</small>
+      </a>
+      {{- end }}
+    </div>
+  </section>
+
+  <section class="home-section">
+    <div class="home-heading">
+      <h2>Research</h2>
+      <a class="home-more" href="{{ "/papers/" | relURL }}">All papers &rarr;</a>
+    </div>
+    <ul class="home-papers">
+      {{- range $topPapers }}
+      {{- $venueShort := index (split .venue ",") 0 -}}
+      {{- $venueShort = replace $venueShort "2021 IEEE 18th International Symposium on Biomedical Imaging (ISBI)" "IEEE ISBI" -}}
+      {{- $venueShort = replace $venueShort "Biomedical Signal Processing and Control 75" "Biomedical Signal Processing and Control" -}}
+      {{- $venueShort = replace $venueShort "PeerJ Computer Science 10" "PeerJ Computer Science" -}}
+      <li>
+        <a href="{{ .url }}">{{ .title }}</a>
+        <small>{{ $venueShort }} &middot; {{ .year }}{{ with .citations }} &middot; {{ . }} citations{{ end }}</small>
+      </li>
+      {{- end }}
+    </ul>
+  </section>
+</div>
 {{ end }}

@@ -128,6 +128,7 @@ async function main() {
     `---\ntitle: "Projects"\ndate: 2025-06-12\ndraft: false\n---`;
 
   const rows: string[] = [];
+  const updatedRepos: RepoConfig[] = [];
   const allErrors: string[] = [];
   for (const entry of repos) {
     const repoId = `${entry.owner ?? defaultOwner}/${entry.name}`;
@@ -135,6 +136,13 @@ async function main() {
       const info = await fetchRepoInfo(entry);
       allErrors.push(...info.errors);
       rows.push(renderRow(info));
+      updatedRepos.push({
+        ...entry,
+        ...(info.description ? { description: info.description } : {}),
+        ...(info.language ? { language: info.language } : {}),
+        ...(info.stars !== null ? { stars: info.stars } : {}),
+        ...(info.forks !== null ? { forks: info.forks } : {}),
+      });
     } catch (error) {
       const message = error instanceof Error ? error.message : String(error);
       allErrors.push(`${repoId}: ${message}`);
@@ -154,14 +162,18 @@ async function main() {
     "| Project | Description | Stars | Forks |\n| --- | --- | --- | --- |";
   const body = `${header}\n${rows.join("\n")}`;
   const output = `${frontMatter}\n\n${body}\n`;
+  const updatedConfig = Array.isArray(parsed)
+    ? updatedRepos
+    : { ...parsed, repos: updatedRepos };
 
   if (dryRun) {
-    console.log(`Dry run complete. Would update ${outputPath}.`);
+    console.log(`Dry run complete. Would update ${outputPath} and ${configPath}.`);
     return;
   }
 
+  await Deno.writeTextFile(configPath, `${JSON.stringify(updatedConfig, null, 2)}\n`);
   await Deno.writeTextFile(outputPath, output);
-  console.log(`Updated ${outputPath}.`);
+  console.log(`Updated ${outputPath} and ${configPath}.`);
 }
 
 await main();

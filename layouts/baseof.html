@@ -81,7 +81,12 @@
 
     <nav aria-label="{{ i18n "mainNavigation" | default "Main navigation" }}">
       <ul>
-        <li><strong>{{ .Site.Title }}</strong></li>
+        <li>
+          <a class="nav-brand" href="{{ "/" | relURL }}">
+            {{- partial "avatar-svg.html" (dict "class" "nav-mark") -}}
+            <strong>{{ .Site.Title }}</strong>
+          </a>
+        </li>
       </ul>
       <ul>
         {{- if .Site.Menus.main -}}
@@ -104,6 +109,7 @@
 
   <footer>
     <p>&copy; {{ now.Format "2006" }} {{ .Site.Params.author }}.</p>
+    <p>Reach me at <a href="mailto:mehmetozanunal@gmail.com">mehmetozanunal@gmail.com</a></p>
   </footer>
 
 </body>

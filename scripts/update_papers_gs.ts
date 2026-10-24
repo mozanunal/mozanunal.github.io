@@ -260,15 +260,28 @@ if (citationMap.size === 0) {
   }
 }
 
+function resolveCited(paper: PaperConfig): number | null {
+  const key = normalize(paper.title);
+  return citationMap.get(key) ?? parseCitationValue(paper.citations);
+}
+
 function renderRow(paper: PaperConfig) {
   const title = `[${escapeMarkdownCell(paper.title)}](${paper.url})`;
   const venue = escapeMarkdownCell(paper.venue);
   const year = escapeMarkdownCell(String(paper.year));
-  const key = normalize(paper.title);
-  const cited = citationMap.get(key) ?? parseCitationValue(paper.citations);
+  const cited = resolveCited(paper);
   const citedCell = cited === null ? "" : String(cited);
   return `| ${title} | ${venue} | ${year} | ${citedCell} |`;
 }
+
+const updatedPapers = papers.map((paper) => {
+  const cited = resolveCited(paper);
+  if (cited === null) return paper;
+  return { ...paper, citations: cited };
+});
+const updatedConfig = Array.isArray(parsed)
+  ? updatedPapers
+  : { ...parsed, papers: updatedPapers };
 
 const frontMatterRegex = /^---\n[\s\S]*?\n---\n/;
 let existing = "";
@@ -290,9 +303,10 @@ const body = `${header}\n${rows}\n\n${note}`;
 const output = `${frontMatter}\n\n${body}\n`;
 
 if (dryRun) {
-  console.log(`Dry run complete. Would update ${outputPath}.`);
+  console.log(`Dry run complete. Would update ${outputPath} and ${configPath}.`);
   Deno.exit(0);
 }
 
+await Deno.writeTextFile(configPath, `${JSON.stringify(updatedConfig, null, 2)}\n`);
 await Deno.writeTextFile(outputPath, output);
-console.log(`Updated ${outputPath}.`);
+console.log(`Updated ${outputPath} and ${configPath}.`);
