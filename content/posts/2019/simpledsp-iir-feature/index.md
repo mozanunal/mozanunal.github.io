@@ -7,7 +7,6 @@ author: ''
 date: 2019-01-23 23:45:00
 ---
 
-# [SimpleDSP](https://github.com/mozanunal/SimpleDSP)
 
 [SimpleDSP](https://github.com/mozanunal/SimpleDSP) is a basic DSP library which
 is for Arduino and most of the microcontrollers which can be programmed in C/C++

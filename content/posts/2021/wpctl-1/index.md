@@ -37,7 +37,7 @@ there are also 4 options. Details are from readme of
 
 ![Example Wallpaper from Unsplash](./wallpaper.jpeg)
 
-# wpctl
+## WPCTL Overview
 
 Wallpaper Control is a minimalist wallpaaper automation tool for linux based on
 [Unsplash](https://unsplash.com/)

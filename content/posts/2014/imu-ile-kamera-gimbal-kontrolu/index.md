@@ -26,9 +26,9 @@ Arkadaşlar projemin Arduino kodunu da paylaşıyorum.
 #include <EEPROM.h>
 
 //#define DEBUG
-#include “DebugUtils.h”
-#include “CommunicationUtils.h”
-#include “FreeIMU.h”
+#include "DebugUtils.h"
+#include "CommunicationUtils.h"
+#include "FreeIMU.h"
 #include <Wire.h>
 #include <SPI.h>
 #include <Servo.h>
@@ -55,13 +55,13 @@ void setup() {
 
 void loop(){  
   my3IMU.getYawPitchRoll(ypr);
-  Serial.print(“Yaw: “);
+  Serial.print("Yaw: ");
   Serial.print(ypr[0]);
-  Serial.print(“ Pitch: “);
+  Serial.print(" Pitch: ");
   Serial.print(ypr[1]);
-  Serial.print(“ Roll: “);
+  Serial.print(" Roll: ");
   Serial.print(ypr[2]);
-  Serial.println(“”);
+  Serial.println("");
     
   if(ypr[1]>20)
   {

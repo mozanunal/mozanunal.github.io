@@ -22,9 +22,11 @@ bilgi bulunmakta.
 
 [Projenin github linkine buradan ulaşabilirsiniz.](https://github.com/mozanunal/SimpleDSP)
 
-**Arduino ile Performansı**
-![](s720
-/Capture.PNG)
+**Arduino Nano ile Performansı**
+
+- FIR filtre (10 katsayı): 190 µs
+- FIR filtre (23 katsayı): 453 µs
+- FIR filtre (46 katsayı): 900 µs
 
 **Örnek kod**
 

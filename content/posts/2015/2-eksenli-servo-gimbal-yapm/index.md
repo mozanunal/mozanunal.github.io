@@ -28,13 +28,13 @@ kabı, ve ataç. Gimbalin yapım aşamaları resimlerde sırasıyla anlatılmı�
    problemi olacaktır diye tahmin ediyorum. Daha az esnek malzemeler
    kullanılarak bu sorun aşılabilir. 
 
-![](IMG_20150605_163841.jpg)](IMG_20150605_163841.jpg)
+![](IMG_20150605_163841.jpg)
 
-![](IMG_20150605_184307.jpg)](IMG_20150605_184307.jpg)
+![](IMG_20150605_184307.jpg)
 
-![](IMG_20150605_192448.jpg)](IMG_20150605_192448.jpg)
+![](IMG_20150605_192448.jpg)
 
-![](IMG_20150605_192500.jpg)](IMG_20150605_192500.jpg)
+![](IMG_20150605_192500.jpg)
 
 Gimbalin servo deneme videosu. Kontrol kartı ve açı stabilizasyonuyla alakalı
 bir yazı en kısa zamanda yayınlayacağım. Tekrar görüşmek üzere.

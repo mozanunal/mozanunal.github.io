@@ -8,7 +8,7 @@ date: 2018-04-16 18:10:04
 > It is a project developed for BiTaksi Getir Hackathon 2018. Detailed
 > information can be found from below.
 
-# Team Paketci!
+## Team Paketci!
 
 
 [Check our app from here](https://hackhathon-getir-2018.herokuapp.com/) which is
@@ -21,7 +21,7 @@ deployed using heroku.
 Getir Hackhathon 2018 Team Members: Sertan Sezgin Kutlu Ertuğrul Çınar Mehmet
 Ozan Ünal
 
-# Paketci App
+## Paketci App
 
 Its a work on pack collection and delivery for courier and observer.
 

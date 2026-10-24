@@ -36,52 +36,52 @@ private void connect_Click(object sender, EventArgs e)
   }
   catch (Exception hata)
   {
-    MessageBox.Show(“Hata:” + hata.Message);
+    MessageBox.Show("Hata:" + hata.Message);
   }
 }
 
 private void button5_Click(object sender, EventArgs e)
 {
-  label1.Text = “O”;
+  label1.Text = "O";
 }
 
 private void button1_MouseUp(object sender, MouseEventArgs e)
 {
-  label1.Text = “O”;
+  label1.Text = "O";
 }
 
 private void button3_MouseUp(object sender, MouseEventArgs e)
 {
-  label1.Text = “O”;
+  label1.Text = "O";
 }
 
 private void button4_MouseUp(object sender, MouseEventArgs e)
 {
-  label1.Text = “O”;
+  label1.Text = "O";
 }
 
 private void button2_MouseUp(object sender, MouseEventArgs e)
 {
-  label1.Text = “O”;
+  label1.Text = "O";
 }
 
 private void button1_MouseDown(object sender, MouseEventArgs e)
 {
-  label1.Text = “A”;
+  label1.Text = "A";
 }
 
 private void button3_MouseDown(object sender, MouseEventArgs e)
 {
-  label1.Text = “B”;
+  label1.Text = "B";
 }
 
 private void button4_MouseDown(object sender, MouseEventArgs e)
 {
-  label1.Text = “C”;
+  label1.Text = "C";
 }
 
 private void button2_MouseDown(object sender, MouseEventArgs e)
 {
-  label1.Text = “D”;
+  label1.Text = "D";
 }
 ```

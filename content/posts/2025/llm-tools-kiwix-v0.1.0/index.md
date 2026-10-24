@@ -1,5 +1,5 @@
 ---
-title: "Llm Tools Kiwix V0.1.0"
+title: "llm-tools-kiwix v0.1.0: Offline Wikipedia & Docs for LLM CLI"
 date: 2025-06-04T22:45:54+03:00
 draft: false
 ---

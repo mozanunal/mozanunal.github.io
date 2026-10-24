@@ -17,7 +17,7 @@ reached below:
 Source Code:
 [https://github.com/mozanunal/PassFace](https://github.com/mozanunal/PassFace)
 
-{{< youtube id="d6LI42NEZZY?" >}}
+{{< youtube id="d6LI42NEZZY" >}}
 
 #### 1. Introduction
 
@@ -69,13 +69,12 @@ rate on it, so you won’t see any great improvements with other algorithms. The
 Yale Face Database A (also known as Yalefaces) is a more appropriate dataset for
 initial experiments, because the recognition problem is harder. The database
 consists of 15 people (14 male, 1 female) each with 11 grayscale images sized
-320x243
-[](https://lh3.googleusercontent.com/uNq7mPqspjvR267h-aZA2FS666Fl8Q8dXGhlg-Lzi7MJiNn5DkSyioK59Wj6pdA9h96bojY8L02LR-NIXIeuf0IjN-a6MYN7ufWHMOPqVbxd0hvoGcKsy0oR9jo5t85MGbfqOB9H)pixel.
+320x243 pixels.
 There are changes in the light conditions (center light, left light, right
 light), facial expressions (happy, normal, sad, sleepy, surprised, wink) and
 glasses (glasses, no-glasses).
 
-[Labeled Faces in the Wild]()
+[Labeled Faces in the Wild](https://vis-www.cs.umass.edu/lfw/)
 
 A database of face photographs designed for studying the problem of
 unconstrained face recognition. The data set contains more than 13,000 images of
@@ -104,17 +103,19 @@ Ambient light and the movement at faces are the challenging problems in face
 recognition. Therefore some morphologic operators is applied to the faces to
 decrease the effect of these problems. In this project equalize histogram
 function of opencv is used to decrease the effect of the ambient
-light.![](image-1.png)
+light.
+
+![](image-1.png)
 
 ##### SURF Feature Extractor
 
 ![](image-2.png)
 
 ```csharp
-if (comboBoxAlgorithm.Text == “SURF Feature Extractor”)
+if (comboBoxAlgorithm.Text == "SURF Feature Extractor")
 {
-string dataDirectory=Directory.GetCurrentDirectory()+”\TrainedFaces”;
-string[] files = Directory.GetFiles(dataDirectory, “*.jpeg”, SearchOption.AllDirectories);
+string dataDirectory=Directory.GetCurrentDirectory()+"\\TrainedFaces";
+string[] files = Directory.GetFiles(dataDirectory, "*.jpeg", SearchOption.AllDirectories);
 
 foreach (var file in files)
 {
@@ -130,8 +131,8 @@ foreach (var file in files)
        if (recpoints > 10)
        {
            MCvFont f = new MCvFont(Emgu.CV.CvEnum.FONT.CV_FONT_HERSHEY_COMPLEX, 1.0, 1.0);
-           result.Draw(“Person Recognited, Welcome”, ref f, new Point(40, 40), new Bgr(0, 255, 0));
-           ImageViewer.Show(result, String.Format(“ {0} Points Recognited”, recpoints));
+           result.Draw("Person Recognited, Welcome", ref f, new Point(40, 40), new Bgr(0, 255, 0));
+           ImageViewer.Show(result, String.Format(" {0} Points Recognited", recpoints));
        }
    }
 }

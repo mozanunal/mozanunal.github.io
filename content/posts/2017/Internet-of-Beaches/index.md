@@ -41,7 +41,7 @@ etti. Proje ile alakalı sorunlarınız için ulaşabilirsiniz. Tekrar görüşm
 Build a tool for beach-goers to monitor for hazards and to alert them of
 precautionary measures for protection on their swim- and surf-filled adventures!
 
-# Internet Of Beach
+## Internet of Beach
 
 {{< youtube id="psZvnp--GZY" >}}
 

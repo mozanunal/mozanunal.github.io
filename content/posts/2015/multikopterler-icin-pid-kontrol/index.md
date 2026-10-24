@@ -45,10 +45,10 @@ açı hatalarının tahminine bağlıdır.
 
 _Kaynak: [PCB Heaven, PID Theory](https://www.pcbheaven.com/wikipages/PID_Theory/)_
 
-**Bu algoritmalardan elde edilen değerler belli katsayılarla(Kp, Ki, Kd)
+**Bu algoritmalardan elde edilen değerler belli katsayılarla (Kp, Ki, Kd)
 çarpılarak son çıkış değişkeni elde edilir. Bu katsayılara PID katsayıları
 denir. PID tuning olayı bu katsayıların uygun stabiliteyi sağlayacak şekilde
-ayarlanmasıdır.  **Simdi bu 3 PID algoritmasının nasıl çalıştığını daha
+ayarlanmasıdır.** Şimdi bu 3 PID algoritmasının nasıl çalıştığını daha
 ayrıntılı inceleyelim.
 
 **Proportional**\

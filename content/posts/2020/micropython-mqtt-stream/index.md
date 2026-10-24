@@ -7,7 +7,6 @@ author: Mehmet Ozan Ünal
 date: 2020-02-26 22:36:00
 ---
 
-# Micropython Mqtt Streamer
 
 Hello everyone, I have developed a micropython code to stream accelerometer data
 over mqtt. Also I have created a tool to visualize the data which is transferred

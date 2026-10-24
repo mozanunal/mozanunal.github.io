@@ -16,7 +16,7 @@ adet transistör, 1 adet ldr, 1 adet led ve bir kaç tane direnç kullandım. LD
 artarken, aydınlıkta direnci azalmaktadır. Aydınlıktan karanlığa geçişte direnci
 artar ve uçları arasındaki gerilim artar bu sayede transistör aktif olur ve
 ledin yanmasını sağlar. Devre şeması ve tanıtım videosu aşağıdadır. Tekrar
-görüşmek üzere...\
+görüşmek üzere...
 
 {{< youtube id="JJU_npy0rms" >}}
 

@@ -27,7 +27,7 @@ Projenin tanıtım videosu ve devresinin çizimi aşağıdadır. Tekrar görüş
 {{< youtube id="w-EO97_3_Ec" >}}
 ![](IMG_20141005_174701.jpg)
 
-** Malzeme Listesi**
+**Malzeme Listesi**
 
 - Mikrofon
 - 2,2 k direnç

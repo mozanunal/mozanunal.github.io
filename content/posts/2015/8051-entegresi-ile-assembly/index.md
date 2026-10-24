@@ -15,7 +15,7 @@ simülasyon programını önermek istiyorum. Programın ismi EdSim51\. İlkönce
 mikroişlemcilerle alakalı temel bir kaç kavramla başlayalım.
 
 **ROM(Read Only Memory):** Temel olarak, belli bir miktarda bilginin kalıcı
-olarak yazıldığı bellektir**.** Bilgi saklamak için\
+olarak yazıldığı bellektir. Bilgi saklamak için\
 **EEPROM:** ROM'un yeniden yazılabilir halidir.\
 **RAM(Random Access Memory):** Bilgi saklamak için elektriğe ihtiyaç duyar. CPU
 veri işlemek için kullandığı bellek tipi RAM'dir.\
@@ -270,7 +270,7 @@ anlatıyorlar.
 Aşağdaki linkte hepsini kullanım anlatımlarıyla beraber bulabilirsiniz. Aynı
 zaman da OP-Code'ları da verilmiştir.
 
-https://www.win.tue.nl/~aeb/comp/8051/set8051.html](https://www.win.tue.nl/~aeb/comp/8051/set8051.html)
+[https://www.win.tue.nl/~aeb/comp/8051/set8051.html](https://www.win.tue.nl/~aeb/comp/8051/set8051.html)
 
 Aşağıdaki 2 resimde ise sık kullanılan komutları açıklamalarıyla bulabilirsiniz.
 

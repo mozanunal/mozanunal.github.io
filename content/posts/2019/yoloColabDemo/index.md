@@ -5,7 +5,6 @@ categories:
 date: 2019-08-13 00:09:50
 ---
 
-# Run YOLO V3 on Colab for images/videos
 
 Hello there, Today, we will be discussing how we can use the Darknet project on
 Google Colab platform. For those who are not familiar with these terms:

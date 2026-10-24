@@ -31,7 +31,7 @@ Saleae Logic Anayzer'ın özelliklerini sayacak olursam şöyle:
 - Boyutları oldukça küçük 
 - Arayüzü ve kullanımı çok basit
 
-![](IMG_20151226_182649-be87a2-be87a2-be87a2-be87a2-be87a2-be87a2.jpg)
+![](IMG_20151226_182649.jpg)
 
 
 Kullanımına gelecek olursak
@@ -43,4 +43,4 @@ arayüze giriyorsunuz. Analyzers ekmesinden istediğiniz protokolü de
 ekleyebilirsiniz. Sonrasın "Start Simulation" tuşuna basarak devam
 edebilirsiniz. Şimdilik anlatacaklarım bu kadar, tekrar görüşmek üzere...
 
-![](Capture-583ed1-583ed1-583ed1-583ed1-583ed1-583ed1-583ed1.png)](Capture-583ed1-583ed1-583ed1-583ed1-583ed1-583ed1-583ed1.png)
+![](Capture.png)
