@@ -11,9 +11,7 @@ filtrelerdir. Bu nedenle bir kararlılık analizi gerektirmeden kullanılabilirl
 veya Octave kullanarak nasıl filtreyi tasarlayacağınız. Filtreyi nasıl
 kullanacağınız ve karakteristiğini nasıl görselleyebileceğinize kadar bir çok
 bilgi bulunmakta.
-<a href=https://github.com/mozanunal/SimpleDSP/wiki/FIR>Ziyaret etmek için tıklayın.</a></p><p><a href=https://github.com/mozanunal/SimpleDSP>Projenin github linkine buradan ulaşabilirsiniz.</a></p><p><strong>Arduino ile Performansı</strong>
-![](s720
-/Capture.PNG)</p><p><strong>Örnek kod</strong></p><div class=highlight><pre tabindex=0 class=chroma><code class=language-cpp data-lang=cpp><span class=line><span class=cl><span class=cm>/*This is a signal sum of 800 hz and 3.2 khz sine waves
+<a href=https://github.com/mozanunal/SimpleDSP/wiki/FIR>Ziyaret etmek için tıklayın.</a></p><p><a href=https://github.com/mozanunal/SimpleDSP>Projenin github linkine buradan ulaşabilirsiniz.</a></p><p><strong>Arduino Nano ile Performansı</strong></p><ul><li>FIR filtre (10 katsayı): 190 µs</li><li>FIR filtre (23 katsayı): 453 µs</li><li>FIR filtre (46 katsayı): 900 µs</li></ul><p><strong>Örnek kod</strong></p><div class=highlight><pre tabindex=0 class=chroma><code class=language-cpp data-lang=cpp><span class=line><span class=cl><span class=cm>/*This is a signal sum of 800 hz and 3.2 khz sine waves
 </span></span></span><span class=line><span class=cl><span class=cm>which sampled in 10khz and 32 of this samples are
 </span></span></span><span class=line><span class=cl><span class=cm>create a data array.(input signal)
 </span></span></span><span class=line><span class=cl><span class=cm>In this example input signal is filtered with

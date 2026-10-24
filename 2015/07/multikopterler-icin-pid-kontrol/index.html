@@ -27,10 +27,10 @@ algoritmasını ele alalım. <strong>P algoritması</strong>ndan gelen değer, m
 şu anki pitch açısı ile kontrol edenin istediği pitch açısı arasındaki farka
 yani anlık hataya bağlıdır. <strong>I algoritması</strong>ndan gelen değer, pitch açısının
 geçmiş hatalarının toplamına bağlıdır. D algoritmasından gelen değer ise gelecek
-açı hatalarının tahminine bağlıdır.</p><p><img src=pid-theory-1.png alt></p><p><em>Kaynak: <a href=https://www.pcbheaven.com/wikipages/PID_Theory/>PCB Heaven, PID Theory</a></em></p><p>**Bu algoritmalardan elde edilen değerler belli katsayılarla(Kp, Ki, Kd)
+açı hatalarının tahminine bağlıdır.</p><p><img src=pid-theory-1.png alt></p><p><em>Kaynak: <a href=https://www.pcbheaven.com/wikipages/PID_Theory/>PCB Heaven, PID Theory</a></em></p><p><strong>Bu algoritmalardan elde edilen değerler belli katsayılarla (Kp, Ki, Kd)
 çarpılarak son çıkış değişkeni elde edilir. Bu katsayılara PID katsayıları
 denir. PID tuning olayı bu katsayıların uygun stabiliteyi sağlayacak şekilde
-ayarlanmasıdır.  **Simdi bu 3 PID algoritmasının nasıl çalıştığını daha
+ayarlanmasıdır.</strong> Şimdi bu 3 PID algoritmasının nasıl çalıştığını daha
 ayrıntılı inceleyelim.</p><p><strong>Proportional</strong><br>Proportional, ana kontrol algoritmamızdır. Diğer katsayılar 0 olsa bile sadece
 bu algoritmayla (stabilite düşük de olsa) hover yapabilir. Proportional, hava
 aracımızın şu anki açı hatasını baz alarak ilerler. Basitçe anlatmak gerekirse

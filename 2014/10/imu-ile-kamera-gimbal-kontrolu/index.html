@@ -14,9 +14,9 @@ Projemin tanıtım videosunu aşağıdan izleyebilirsiniz.</p><div style=positio
 </span></span></span><span class=line><span class=cl><span class=cp>#include</span> <span class=cpf>&lt;EEPROM.h&gt;</span><span class=cp>
 </span></span></span><span class=line><span class=cl><span class=cp></span>
 </span></span><span class=line><span class=cl><span class=c1>//#define DEBUG
-</span></span></span><span class=line><span class=cl><span class=c1></span><span class=cp>#include “DebugUtils.h”
-</span></span></span><span class=line><span class=cl><span class=cp>#include “CommunicationUtils.h”
-</span></span></span><span class=line><span class=cl><span class=cp>#include “FreeIMU.h”
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=cp>#include</span> <span class=cpf>&#34;DebugUtils.h&#34;</span><span class=cp>
+</span></span></span><span class=line><span class=cl><span class=cp>#include</span> <span class=cpf>&#34;CommunicationUtils.h&#34;</span><span class=cp>
+</span></span></span><span class=line><span class=cl><span class=cp>#include</span> <span class=cpf>&#34;FreeIMU.h&#34;</span><span class=cp>
 </span></span></span><span class=line><span class=cl><span class=cp>#include</span> <span class=cpf>&lt;Wire.h&gt;</span><span class=cp>
 </span></span></span><span class=line><span class=cl><span class=cp>#include</span> <span class=cpf>&lt;SPI.h&gt;</span><span class=cp>
 </span></span></span><span class=line><span class=cl><span class=cp>#include</span> <span class=cpf>&lt;Servo.h&gt;</span><span class=cp>
@@ -43,13 +43,13 @@ Projemin tanıtım videosunu aşağıdan izleyebilirsiniz.</p><div style=positio
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl><span class=kt>void</span> <span class=nf>loop</span><span class=p>(){</span>  
 </span></span><span class=line><span class=cl>  <span class=n>my3IMU</span><span class=p>.</span><span class=n>getYawPitchRoll</span><span class=p>(</span><span class=n>ypr</span><span class=p>);</span>
-</span></span><span class=line><span class=cl>  <span class=n>Serial</span><span class=p>.</span><span class=n>print</span><span class=p>(</span><span class=err>“</span><span class=nl>Yaw</span><span class=p>:</span> <span class=err>“</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>  <span class=n>Serial</span><span class=p>.</span><span class=n>print</span><span class=p>(</span><span class=s>&#34;Yaw: &#34;</span><span class=p>);</span>
 </span></span><span class=line><span class=cl>  <span class=n>Serial</span><span class=p>.</span><span class=n>print</span><span class=p>(</span><span class=n>ypr</span><span class=p>[</span><span class=mi>0</span><span class=p>]);</span>
-</span></span><span class=line><span class=cl>  <span class=n>Serial</span><span class=p>.</span><span class=n>print</span><span class=p>(</span><span class=err>“</span> <span class=nl>Pitch</span><span class=p>:</span> <span class=err>“</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>  <span class=n>Serial</span><span class=p>.</span><span class=n>print</span><span class=p>(</span><span class=s>&#34; Pitch: &#34;</span><span class=p>);</span>
 </span></span><span class=line><span class=cl>  <span class=n>Serial</span><span class=p>.</span><span class=n>print</span><span class=p>(</span><span class=n>ypr</span><span class=p>[</span><span class=mi>1</span><span class=p>]);</span>
-</span></span><span class=line><span class=cl>  <span class=n>Serial</span><span class=p>.</span><span class=n>print</span><span class=p>(</span><span class=err>“</span> <span class=nl>Roll</span><span class=p>:</span> <span class=err>“</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>  <span class=n>Serial</span><span class=p>.</span><span class=n>print</span><span class=p>(</span><span class=s>&#34; Roll: &#34;</span><span class=p>);</span>
 </span></span><span class=line><span class=cl>  <span class=n>Serial</span><span class=p>.</span><span class=n>print</span><span class=p>(</span><span class=n>ypr</span><span class=p>[</span><span class=mi>2</span><span class=p>]);</span>
-</span></span><span class=line><span class=cl>  <span class=n>Serial</span><span class=p>.</span><span class=n>println</span><span class=p>(</span><span class=err>“”</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>  <span class=n>Serial</span><span class=p>.</span><span class=n>println</span><span class=p>(</span><span class=s>&#34;&#34;</span><span class=p>);</span>
 </span></span><span class=line><span class=cl>    
 </span></span><span class=line><span class=cl>  <span class=k>if</span><span class=p>(</span><span class=n>ypr</span><span class=p>[</span><span class=mi>1</span><span class=p>]</span><span class=o>&gt;</span><span class=mi>20</span><span class=p>)</span>
 </span></span><span class=line><span class=cl>  <span class=p>{</span>
