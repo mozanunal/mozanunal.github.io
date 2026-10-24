@@ -245,6 +245,13 @@
 				<description>&lt;p&gt;&lt;strong&gt;Herkese Merhabalar,&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Bugünkü yazımda arkadaşlarımla katıldığım Nasa Space Apps Challenge 2017&#xA;hakkında bir paylaşımda bulunacağım. Bu hackhathon Nasa tarafından dünya&#xA;genelinde düzenleniyor. 24 saat içerinde önceden yayınlanan sorunlardan birine&#xA;çözüm bulmamız isteniyor. Tüm dünya genelinde aynı gün bu problemlere çözüm&#xA;aranıyor. Biz de Koç Üniversitesi IEEE topluluğunca organize edilen yarışmanın&#xA;İstanbul şubesinden katıldık. Öncellikle şunu söylemem gerek organizasyon&#xA;oldukça güzeldi, hiç bir aksaklık yaşanmadan çok keyifli ve eğlenceli bir 24&#xA;saat yaşadık. Burdan IEEE Koç ailesine teşekkürlerimi iletiyorum.&lt;/p&gt;</description>
 			</item>
 			<item>
+				<title>Indoor Localization Using Visible Light Communication</title>
+				<link>https://mozanunal.com/2017/06/indoor-localization-vlc/</link>
+				<pubDate>Thu, 15 Jun 2017 12:00:00 +0000</pubDate>
+				<guid>https://mozanunal.com/2017/06/indoor-localization-vlc/</guid>
+				<description>&lt;p&gt;Hello everyone! In this post, I will show how ordinary LED lights can be used to&#xA;find your position indoors. The LEDs keep doing their real job, lighting the&#xA;room, while they also blink too fast for the eye to notice and broadcast their&#xA;ID and location. A small receiver with four photodiodes picks up that light,&#xA;decodes the messages, and estimates where it is.&lt;/p&gt;&#xA;&lt;p&gt;I built the whole chain: the photodiode receiver, a 10 W LED transmitter, the&#xA;modulation and demodulation running on STM32 microcontrollers, and two&#xA;localization methods. In the end, the angle of arrival method found the&#xA;direction of a light source with about 13.6° accuracy, and the received signal&#xA;strength method located the receiver with an average error of about 13 cm.&lt;/p&gt;</description>
+			</item>
+			<item>
 				<title>[TR] SimpleDSP: FIR filtreleme özelliği eklendi</title>
 				<link>https://mozanunal.com/2017/04/simpledsp-fir-filtreleme-ozelligi/</link>
 				<pubDate>Fri, 07 Apr 2017 00:13:00 +0000</pubDate>
