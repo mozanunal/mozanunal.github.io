@@ -1,5 +1,5 @@
 /* mozanunal design system tokens.
- * Source of truth: mozanunal-docs wiki/design_system.md. Keep in sync. */
+ * Colors mirror mozanunal-docs wiki/design_system/mozanunal_tokens.css. Keep in sync. */
 
 :root {
     --slate-50: #f8fafc;  --slate-100: #f1f5f9; --slate-200: #e2e8f0;
@@ -19,7 +19,7 @@
     --space-1: 0.25rem; --space-2: 0.5rem; --space-3: 0.75rem; --space-4: 1rem;
     --space-6: 1.5rem;  --space-8: 2rem;   --space-12: 3rem;
     --radius-sm: 4px; --radius-md: 8px; --radius-full: 9999px;
-    --container: 1100px; --measure: 70ch;
+    --container: 1100px;
     --shadow-overlay: 0 8px 24px rgb(15 23 42 / 0.18);
 }
 

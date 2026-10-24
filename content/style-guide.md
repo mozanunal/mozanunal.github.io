@@ -10,7 +10,7 @@ build:
 ---
 
 Every element this site renders, styled by the
-[mozanunal design system](https://github.com/mozanunal/mozanunal-docs/blob/main/wiki/design_system.md).
+[mozanunal design system](https://github.com/mozanunal/mozanunal-docs/blob/main/wiki/design_system/README.md).
 Use the theme toggle to check both themes.
 
 ## Color roles
