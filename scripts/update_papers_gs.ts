@@ -293,14 +293,14 @@ try {
 
 const frontMatterMatch = existing.match(frontMatterRegex);
 const frontMatter = frontMatterMatch?.[0].trimEnd() ??
-  `---\ntitle: "Papers"\ndate: 2025-06-12\ndraft: false\n---`;
+  `---\ntitle: "Papers"\nlayout: "papers"\ndate: 2025-06-12\ndraft: false\n---`;
 
 const header = "| Paper | Venue | Year | Cited by |\n| --- | --- | --- | --- |";
 const rows = papers.map(renderRow).join("\n");
 const note =
   "> _Citation counts were captured from Google Scholar and may change over time._";
 const body = `${header}\n${rows}\n\n${note}`;
-const output = `${frontMatter}\n\n${body}\n`;
+const output = `${frontMatter}\\n\\n${body}\\n`.replace(/\\n/g, "\n");
 
 if (dryRun) {
   console.log(`Dry run complete. Would update ${outputPath} and ${configPath}.`);

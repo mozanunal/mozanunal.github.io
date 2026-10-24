@@ -253,6 +253,64 @@ article, section {
 #main-content > section > article > :first-child { margin-top: 0; }
 #main-content > section > article > :last-child { margin-bottom: 0; }
 
+/* Pagination */
+.pagination {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--space-2);
+    margin-top: var(--space-6);
+    padding-top: var(--space-4);
+    border-top: 1px solid var(--color-border);
+    font-size: var(--text-sm);
+    font-variant-numeric: tabular-nums;
+}
+
+.page-numbers {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--space-1);
+}
+
+.page-item,
+a.page-item {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 2rem;
+    height: 2rem;
+    padding: 0 var(--space-2);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    color: var(--color-text);
+    text-decoration: none;
+    transition: border-color 150ms ease, color 150ms ease, background-color 150ms ease;
+}
+
+a.page-item:hover {
+    border-color: var(--color-accent);
+    color: var(--color-accent);
+    background-color: var(--color-surface);
+}
+
+.page-item.active {
+    background-color: var(--color-accent);
+    border-color: var(--color-accent);
+    color: var(--color-on-accent);
+    font-weight: 600;
+}
+
+.page-item.page-nav {
+    padding: 0 var(--space-3);
+}
+
+.page-item.disabled {
+    color: var(--color-text-muted);
+    opacity: 0.45;
+    cursor: default;
+}
+
 :focus-visible {
     outline: 2px solid var(--color-focus);
     outline-offset: 2px;
@@ -641,6 +699,116 @@ a.home-card:hover b {
     margin-top: 0.15rem;
 }
 
+/* Projects and Papers pages */
+.page-lead {
+    color: var(--color-text-muted);
+    margin-top: calc(var(--space-2) * -1);
+    margin-bottom: var(--space-6);
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: var(--space-4);
+    margin-top: var(--space-4);
+}
+
+a.project-card {
+    padding: var(--space-4);
+    gap: var(--space-2);
+}
+
+.project-card-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--space-2);
+}
+
+.project-lang {
+    font-size: 0.75rem;
+    color: var(--color-text-muted);
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    padding: 0.1rem 0.5rem;
+    border-radius: var(--radius-full);
+    white-space: nowrap;
+}
+
+.project-card .project-desc {
+    display: block;
+    -webkit-line-clamp: unset;
+    overflow: visible;
+    line-height: 1.55;
+}
+
+.project-stats {
+    display: flex;
+    gap: var(--space-2);
+    font-variant-numeric: tabular-nums;
+}
+
+.papers-list {
+    list-style: none;
+    margin: 0 0 var(--space-6);
+    padding: 0;
+    max-width: none;
+    border-top: 1px solid var(--color-border);
+}
+
+.paper-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: var(--space-6);
+    padding: var(--space-4) 0;
+    margin: 0;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.paper-main {
+    min-width: 0;
+    max-width: 72ch;
+}
+
+a.paper-title {
+    font-weight: 600;
+}
+
+.paper-venue {
+    display: block;
+    color: var(--color-text-muted);
+    font-size: var(--text-sm);
+    margin-top: var(--space-1);
+}
+
+.paper-meta {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    flex: none;
+    white-space: nowrap;
+    font-variant-numeric: tabular-nums;
+}
+
+.paper-badge {
+    font-size: 0.75rem;
+    color: var(--color-text-muted);
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    padding: 0.1rem 0.55rem;
+    border-radius: var(--radius-full);
+}
+
+.paper-year {
+    color: var(--color-text-muted);
+    font-size: var(--text-sm);
+}
+
+.papers-note {
+    margin-top: var(--space-4);
+}
+
 @media (max-width: 560px) {
     .home-hero {
         flex-direction: column;
@@ -651,6 +819,15 @@ a.home-card:hover b {
     .home-posts li {
         flex-direction: column;
         gap: 0.15rem;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .paper-item {
+        flex-direction: column;
+        gap: var(--space-2);
     }
 }
 

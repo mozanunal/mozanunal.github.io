@@ -1,0 +1,31 @@
+{{ define "main" }}
+{{- $owner := .Site.Data.projects.owner | default "mozanunal" -}}
+{{- $repos := sort .Site.Data.projects.repos "stars" "desc" -}}
+
+<article>
+  {{- partial "breadcrumb.html" . -}}
+  <h1>{{ .Title }}</h1>
+  <p class="page-lead">Open-source tools, libraries, and research code on <a href="https://github.com/{{ $owner }}">GitHub</a>.</p>
+
+  <div class="projects-grid">
+    {{- range $repos }}
+    {{- $url := .url | default (printf "https://github.com/%s/%s" (.owner | default $owner) .name) -}}
+    <a class="home-card project-card" href="{{ $url }}">
+      <div class="project-card-head">
+        <b>{{ .title | default .name }}</b>
+        {{- with .language }}
+        <span class="project-lang">{{ . }}</span>
+        {{- end }}
+      </div>
+      <span class="project-desc">{{ .description }}</span>
+      <small class="project-stats">
+        <span>&#9733; {{ .stars }} stars</span>
+        {{- with .forks }}
+        <span>&middot; {{ . }} forks</span>
+        {{- end }}
+      </small>
+    </a>
+    {{- end }}
+  </div>
+</article>
+{{ end }}

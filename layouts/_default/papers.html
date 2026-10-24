@@ -1,0 +1,36 @@
+{{ define "main" }}
+{{- $papers := sort .Site.Data.papers.papers "year" "desc" -}}
+{{- $totalCitations := 0 -}}
+{{- range $papers -}}
+  {{- with .citations -}}
+    {{- $totalCitations = add $totalCitations . -}}
+  {{- end -}}
+{{- end -}}
+
+<article>
+  {{- partial "breadcrumb.html" . -}}
+  <h1>{{ .Title }}</h1>
+  <p class="page-lead">
+    Peer-reviewed publications and preprints. Full profile on <a href="https://scholar.google.com/citations?user=u_HbXUUAAAAJ&amp;hl=en">Google Scholar</a>{{ if gt $totalCitations 0 }} ({{ $totalCitations }} citations){{ end }}.
+  </p>
+
+  <ul class="papers-list">
+    {{- range $papers }}
+    <li class="paper-item">
+      <div class="paper-main">
+        <a class="paper-title" href="{{ .url }}">{{ .title }}</a>
+        <small class="paper-venue">{{ .venue }}</small>
+      </div>
+      <div class="paper-meta">
+        {{- with .citations }}
+        <span class="paper-badge">{{ . }} cited</span>
+        {{- end }}
+        <time class="paper-year">{{ .year }}</time>
+      </div>
+    </li>
+    {{- end }}
+  </ul>
+
+  <p class="papers-note"><em><small>Citation counts are refreshed weekly from Google Scholar.</small></em></p>
+</article>
+{{ end }}

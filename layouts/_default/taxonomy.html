@@ -13,22 +13,6 @@
   </article>
   {{ end }}
 
-  {{ if gt $paginator.TotalPages 1 }}
-  <p>
-    {{ if $paginator.HasPrev }}
-    <a href="{{ $paginator.Prev.URL }}">&larr; {{ i18n "previous" | default "Previous" }}</a>
-    {{ end }}
-    {{ range $paginator.Pagers }}
-      {{ if eq . $paginator }}
-      <strong>{{ .PageNumber }}</strong>
-      {{ else }}
-      <a href="{{ .URL }}">{{ .PageNumber }}</a>
-      {{ end }}
-    {{ end }}
-    {{ if $paginator.HasNext }}
-    <a href="{{ $paginator.Next.URL }}">{{ i18n "next" | default "Next" }} &rarr;</a>
-    {{ end }}
-  </p>
-  {{ end }}
+  {{- partial "pagination.html" $paginator -}}
 </section>
 {{ end }}

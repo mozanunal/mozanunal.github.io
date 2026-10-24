@@ -125,7 +125,7 @@ async function main() {
   const frontMatterMatch = existing.match(frontMatterRegex);
   const frontMatter =
     frontMatterMatch?.[0].trimEnd() ??
-    `---\ntitle: "Projects"\ndate: 2025-06-12\ndraft: false\n---`;
+    `---\ntitle: "Projects"\nlayout: "projects"\ndate: 2025-06-12\ndraft: false\n---`;
 
   const rows: string[] = [];
   const updatedRepos: RepoConfig[] = [];
