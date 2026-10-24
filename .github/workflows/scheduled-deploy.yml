@@ -31,22 +31,11 @@ jobs:
           hugo-version: 'latest'
           extended: true
 
-      - name: Setup Deno
-        uses: denoland/setup-deno@v1
-        with:
-          deno-version: v1.x
-
-      - name: Update project cards
-        run: make update_project_cards
+      - name: Build with Hugo
+        # Fetches live paper citations and project stats during the build
+        run: make build
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Update paper citations
-        run: make update_paper_citations
-
-      - name: Build with Hugo
-        # Run the 'build' command from your Makefile
-        run: make build
 
       - name: Deploy to public branch
         # This action handles the git clone, commit, and push automatically

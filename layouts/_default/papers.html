@@ -1,5 +1,5 @@
 {{ define "main" }}
-{{- $papers := sort hugo.Data.papers.papers "year" "desc" -}}
+{{- $papers := sort (partialCached "papers-data.html" .) "year" "desc" -}}
 {{- $totalCitations := 0 -}}
 {{- range $papers -}}
   {{- with .citations -}}
@@ -31,6 +31,6 @@
     {{- end }}
   </ul>
 
-  <p class="papers-note"><em><small>Citation counts are refreshed weekly from Google Scholar.</small></em></p>
+  <p class="papers-note"><em><small>Citation counts come from <a href="https://www.semanticscholar.org/">Semantic Scholar</a> and are refreshed on every build.</small></em></p>
 </article>
 {{ end }}

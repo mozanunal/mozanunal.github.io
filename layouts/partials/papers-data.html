@@ -1,0 +1,29 @@
+{{- /* Returns data/papers.json with live citation counts from Semantic Scholar.
+     Papers keep their stored counts when the request fails. */ -}}
+{{- $papers := hugo.Data.papers.papers -}}
+{{- $tracked := where $papers "s2_id" "!=" nil -}}
+{{- $ids := slice -}}
+{{- range $tracked }}{{ $ids = $ids | append .s2_id }}{{ end -}}
+
+{{- $results := slice -}}
+{{- $opts := dict
+  "method" "post"
+  "headers" (dict "Content-Type" "application/json")
+  "body" (dict "ids" $ids | jsonify)
+-}}
+{{- with try (resources.GetRemote "https://api.semanticscholar.org/graph/v1/paper/batch?fields=citationCount" $opts) -}}
+  {{- with .Err -}}
+    {{- warnf "papers: Semantic Scholar request failed, using stored counts: %s" . -}}
+  {{- else with .Value -}}
+    {{- $results = .Content | transform.Unmarshal -}}
+  {{- end -}}
+{{- end -}}
+
+{{- $out := where $papers "s2_id" "==" nil -}}
+{{- range $i, $paper := $tracked -}}
+  {{- with index $results $i -}}
+    {{- $paper = merge $paper (dict "citations" .citationCount) -}}
+  {{- end -}}
+  {{- $out = $out | append $paper -}}
+{{- end -}}
+{{- return $out -}}

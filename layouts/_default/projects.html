@@ -1,6 +1,6 @@
 {{ define "main" }}
 {{- $owner := hugo.Data.projects.owner | default "mozanunal" -}}
-{{- $repos := sort hugo.Data.projects.repos "stars" "desc" -}}
+{{- $repos := sort (partialCached "projects-data.html" .) "stars" "desc" -}}
 
 <article>
   {{- partial "breadcrumb.html" . -}}

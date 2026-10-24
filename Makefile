@@ -2,13 +2,6 @@
 
 REPO_URL := git@github.com:mozanunal/mozanunal.github.io.git
 BUILD_DIR := deploy_git
-PAPERS_MD := content/papers.md
-PAPERS_CONFIG := data/papers.json
-PAPER_CITATION_GS_SCRIPT := scripts/update_papers_gs.ts
-PAPER_CITATION_GS_ARGS ?=
-PROJECTS_CONFIG := data/projects.json
-PROJECTS_MD := content/projects.md
-PROJECTS_SCRIPT := scripts/update_project_cards_github.ts
 
 .PHONY: help
 help: ## Show this help
@@ -20,20 +13,8 @@ dev: ## Run Hugo dev server with live reload
 	hugo serve --openBrowser --enableGitInfo --navigateToChanged --disableFastRender
 
 .PHONY: build
-build: update_paper_citations update_project_cards ## Build site with minification
+build: ## Build site with live paper citations and project stats
 	hugo --minify
-
-.PHONY: format
-format: ## Format markdown content
-	deno fmt content/**/*.md
-
-.PHONY: update_paper_citations
-update_paper_citations: ## Update papers table from Google Scholar
-	deno run --allow-net --allow-read --allow-write $(PAPER_CITATION_GS_SCRIPT) $(PAPER_CITATION_GS_ARGS) $(PAPERS_CONFIG) $(PAPERS_MD)
-
-.PHONY: update_project_cards
-update_project_cards: ## Update project cards from GitHub
-	deno run --allow-net --allow-read --allow-write --allow-env=GITHUB_TOKEN $(PROJECTS_SCRIPT) $(PROJECTS_CONFIG) $(PROJECTS_MD)
 
 .PHONY: deploy
 deploy: build ## Build and publish to public branch

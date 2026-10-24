@@ -71,3 +71,11 @@ minify:
 #       weight: 80
 #     - name: date
 #       weight: 10
+
+security:
+  funcs:
+    getenv: ['^HUGO_', '^CI$', '^GITHUB_TOKEN$']
+
+caches:
+  getresource:
+    maxAge: 6h
