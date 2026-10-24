@@ -18,7 +18,7 @@ outputs:
 
 params:
   # The author's name, used in the footer.
-  author: "M.Ozan Unal"
+  author: "M. Ozan Unal"
   # A short site description, often used for SEO meta tags.
   description: "Personal website of M. Ozan Unal: posts, projects, and papers."
 

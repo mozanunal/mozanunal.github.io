@@ -305,6 +305,11 @@ a.page-item:hover {
     padding: 0 var(--space-3);
 }
 
+.page-gap {
+    color: var(--color-text-muted);
+    padding: 0 var(--space-1);
+}
+
 .page-item.disabled {
     color: var(--color-text-muted);
     opacity: 0.45;
@@ -469,19 +474,38 @@ footer p {
 }
 
 @media (max-width: 600px) {
-    /* Hide the site name (not a link; "Home" covers it). The menu keeps the
-       desktop pattern: plain text links separated by thin pipes. */
+    /* Keep only the avatar mark of the brand so the menu fits on one line. */
     header nav {
-        font-size: 1.2rem;
-        gap: var(--space-2);
+        font-size: 1.1rem;
+        gap: var(--space-3);
+        flex-wrap: nowrap;
     }
 
-    header nav ul:first-child {
-        display: none;
+    header nav ul li + li::before {
+        padding: 0 0.3rem;
+    }
+
+    .page-nav-label {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        clip-path: inset(50%);
+        white-space: nowrap;
+    }
+
+    header nav .nav-brand strong {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        clip-path: inset(50%);
+        white-space: nowrap;
     }
 
     header nav ul:last-child {
-        width: 100%;
+        flex: 1;
+        min-width: 0;
     }
 
     /* No pipe before the theme toggle; it isn't a menu link. */
@@ -677,6 +701,14 @@ a.home-card:hover b {
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
+}
+
+.home-card .home-card-kind {
+    margin-top: 0;
+    padding-top: 0;
+    font-size: 0.75rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
 }
 
 .home-card small {

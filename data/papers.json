@@ -5,21 +5,24 @@
       "url": "https://doi.org/10.1016/j.bspc.2022.103598",
       "venue": "Biomedical Signal Processing and Control 75, 103598",
       "year": 2022,
-      "citations": 29
+      "citations": 29,
+      "venue_short": "Biomedical Signal Processing and Control"
     },
     {
       "title": "Self-Supervised Training for Low-Dose CT Reconstruction",
       "url": "https://ieeexplore.ieee.org/document/9433944",
       "venue": "2021 IEEE 18th International Symposium on Biomedical Imaging (ISBI), pp. 69-72",
       "year": 2021,
-      "citations": 17
+      "citations": 17,
+      "venue_short": "IEEE ISBI"
     },
     {
       "title": "Proj2Proj: Self-Supervised Low-Dose CT Reconstruction",
       "url": "https://doi.org/10.7717/peerj-cs.1849",
       "venue": "PeerJ Computer Science 10, e1849",
       "year": 2024,
-      "citations": 25
+      "citations": 25,
+      "venue_short": "PeerJ Computer Science"
     },
     {
       "title": "3D U-NeTR: Low-Dose Computed Tomography Reconstruction via Deep Learning and 3-Dimensional Convolutions",
@@ -62,7 +65,8 @@
       "title": "Determination of the Time of Calving in Holstein-Friesian and Simmental Cows by Using a Novel Intravaginal Temperature Recording Smart Device",
       "url": "https://doi.org/10.1111/rda.13527",
       "venue": "Reproduction in Domestic Animals 54, 67-67",
-      "year": 2019
+      "year": 2019,
+      "venue_short": "Reproduction in Domestic Animals"
     }
   ]
 }

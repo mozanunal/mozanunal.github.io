@@ -2,25 +2,36 @@
 {{- if gt $paginator.TotalPages 1 }}
 <nav class="pagination" aria-label="Pagination">
   {{- if $paginator.HasPrev }}
-  <a class="page-item page-nav" href="{{ $paginator.Prev.URL }}">&larr; {{ i18n "previous" | default "Previous" }}</a>
+  <a class="page-item page-nav" href="{{ $paginator.Prev.URL }}">&larr; <span class="page-nav-label">{{ i18n "previous" | default "Previous" }}</span></a>
   {{- else }}
-  <span class="page-item page-nav disabled" aria-disabled="true">&larr; {{ i18n "previous" | default "Previous" }}</span>
+  <span class="page-item page-nav disabled" aria-disabled="true">&larr; <span class="page-nav-label">{{ i18n "previous" | default "Previous" }}</span></span>
   {{- end }}
 
   <div class="page-numbers">
+    {{- $current := $paginator.PageNumber }}
+    {{- $last := $paginator.TotalPages }}
+    {{- $gapShown := false }}
     {{- range $paginator.Pagers }}
-      {{- if eq . $paginator }}
-      <span class="page-item active" aria-current="page">{{ .PageNumber }}</span>
-      {{- else }}
-      <a class="page-item" href="{{ .URL }}">{{ .PageNumber }}</a>
+      {{- $n := .PageNumber }}
+      {{- $nearCurrent := and (ge $n (sub $current 1)) (le $n (add $current 1)) }}
+      {{- if or (eq $n 1) (eq $n $last) $nearCurrent }}
+        {{- $gapShown = false }}
+        {{- if eq $n $current }}
+      <span class="page-item active" aria-current="page">{{ $n }}</span>
+        {{- else }}
+      <a class="page-item" href="{{ .URL }}">{{ $n }}</a>
+        {{- end }}
+      {{- else if not $gapShown }}
+        {{- $gapShown = true }}
+      <span class="page-gap" aria-hidden="true">&hellip;</span>
       {{- end }}
     {{- end }}
   </div>
 
   {{- if $paginator.HasNext }}
-  <a class="page-item page-nav" href="{{ $paginator.Next.URL }}">{{ i18n "next" | default "Next" }} &rarr;</a>
+  <a class="page-item page-nav" href="{{ $paginator.Next.URL }}"><span class="page-nav-label">{{ i18n "next" | default "Next" }}</span> &rarr;</a>
   {{- else }}
-  <span class="page-item page-nav disabled" aria-disabled="true">{{ i18n "next" | default "Next" }} &rarr;</span>
+  <span class="page-item page-nav disabled" aria-disabled="true"><span class="page-nav-label">{{ i18n "next" | default "Next" }}</span> &rarr;</span>
   {{- end }}
 </nav>
 {{- end }}

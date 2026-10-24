@@ -11,7 +11,7 @@
   {{- partial "breadcrumb.html" . -}}
   <h1>{{ .Title }}</h1>
   <p class="page-lead">
-    Peer-reviewed publications and preprints. Full profile on <a href="https://scholar.google.com/citations?user=u_HbXUUAAAAJ&amp;hl=en">Google Scholar</a>{{ if gt $totalCitations 0 }} ({{ $totalCitations }} citations){{ end }}.
+    Peer-reviewed publications and preprints. Full profile on <a href="https://scholar.google.com/citations?user=u_HbXUUAAAAJ&amp;hl=en">Google Scholar</a>.{{ if gt $totalCitations 0 }} The papers below have {{ $totalCitations }} citations in total.{{ end }}
   </p>
 
   <ul class="papers-list">

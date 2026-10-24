@@ -44,6 +44,23 @@
     </div>
   </section>
 
+  {{- with .Params.highlights }}
+  <section class="home-section">
+    <div class="home-heading">
+      <h2>Start here</h2>
+    </div>
+    <div class="home-cards">
+      {{- range . }}
+      <a class="home-card" href="{{ .url | relURL }}">
+        <small class="home-card-kind">{{ .kind }}</small>
+        <b>{{ .title }}</b>
+        <span>{{ .summary }}</span>
+      </a>
+      {{- end }}
+    </div>
+  </section>
+  {{- end }}
+
   <section class="home-section">
     <div class="home-heading">
       <h2>Latest writing</h2>
@@ -83,10 +100,7 @@
     </div>
     <ul class="home-papers">
       {{- range $topPapers }}
-      {{- $venueShort := index (split .venue ",") 0 -}}
-      {{- $venueShort = replace $venueShort "2021 IEEE 18th International Symposium on Biomedical Imaging (ISBI)" "IEEE ISBI" -}}
-      {{- $venueShort = replace $venueShort "Biomedical Signal Processing and Control 75" "Biomedical Signal Processing and Control" -}}
-      {{- $venueShort = replace $venueShort "PeerJ Computer Science 10" "PeerJ Computer Science" -}}
+      {{- $venueShort := .venue_short | default (index (split .venue ",") 0) -}}
       <li>
         <a href="{{ .url }}">{{ .title }}</a>
         <small>{{ $venueShort }} &middot; {{ .year }}{{ with .citations }} &middot; {{ . }} citations{{ end }}</small>
@@ -94,5 +108,14 @@
       {{- end }}
     </ul>
   </section>
+
+  {{- with .Content }}
+  <section class="home-section">
+    <div class="home-heading">
+      <h2>Get in touch</h2>
+    </div>
+    <div class="home-contact">{{ . }}</div>
+  </section>
+  {{- end }}
 </div>
 {{ end }}

@@ -22,11 +22,9 @@ bilgi bulunmakta.
 
 [Projenin github linkine buradan ulaşabilirsiniz.](https://github.com/mozanunal/SimpleDSP)
 
-**Arduino Nano ile Performansı**
+**Arduino ile Performansı**
 
-- FIR filtre (10 katsayı): 190 µs
-- FIR filtre (23 katsayı): 453 µs
-- FIR filtre (46 katsayı): 900 µs
+![SimpleDSP performans ölçümleri: Arduino Nano'da FFT ve FIR filtre süreleri, Arduino Due'da FFT süreleri](performance.png)
 
 **Örnek kod**
 

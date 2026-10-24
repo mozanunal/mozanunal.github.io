@@ -167,6 +167,7 @@ type PaperConfig = {
   title: string;
   url: string;
   venue: string;
+  venue_short?: string;
   year: number | string;
   citations?: number | null;
 };
@@ -300,7 +301,7 @@ const rows = papers.map(renderRow).join("\n");
 const note =
   "> _Citation counts were captured from Google Scholar and may change over time._";
 const body = `${header}\n${rows}\n\n${note}`;
-const output = `${frontMatter}\\n\\n${body}\\n`.replace(/\\n/g, "\n");
+const output = `${frontMatter}\n\n${body}\n`;
 
 if (dryRun) {
   console.log(`Dry run complete. Would update ${outputPath} and ${configPath}.`);
