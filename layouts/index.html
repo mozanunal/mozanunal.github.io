@@ -1,9 +1,9 @@
 {{ define "main" }}
 {{- $posts := first 5 ((where .Site.RegularPages "Section" "posts").ByDate.Reverse) -}}
-{{- $owner := .Site.Data.projects.owner | default "mozanunal" -}}
-{{- $repos := first 4 (sort .Site.Data.projects.repos "stars" "desc") -}}
+{{- $owner := hugo.Data.projects.owner | default "mozanunal" -}}
+{{- $repos := first 4 (sort hugo.Data.projects.repos "stars" "desc") -}}
 {{- $papers := slice -}}
-{{- range .Site.Data.papers.papers -}}
+{{- range hugo.Data.papers.papers -}}
   {{- if .citations -}}
     {{- $papers = $papers | append . -}}
   {{- end -}}

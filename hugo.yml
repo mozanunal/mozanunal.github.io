@@ -1,6 +1,6 @@
 baseURL: "https://mozanunal.com"
 title: mozanunal.com
-languageCode: 'en-US'
+locale: 'en-US'
 
 permalinks:
   posts: "/:year/:month/:contentbasename"

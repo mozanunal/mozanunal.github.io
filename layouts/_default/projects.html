@@ -1,6 +1,6 @@
 {{ define "main" }}
-{{- $owner := .Site.Data.projects.owner | default "mozanunal" -}}
-{{- $repos := sort .Site.Data.projects.repos "stars" "desc" -}}
+{{- $owner := hugo.Data.projects.owner | default "mozanunal" -}}
+{{- $repos := sort hugo.Data.projects.repos "stars" "desc" -}}
 
 <article>
   {{- partial "breadcrumb.html" . -}}

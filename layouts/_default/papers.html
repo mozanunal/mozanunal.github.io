@@ -1,5 +1,5 @@
 {{ define "main" }}
-{{- $papers := sort .Site.Data.papers.papers "year" "desc" -}}
+{{- $papers := sort hugo.Data.papers.papers "year" "desc" -}}
 {{- $totalCitations := 0 -}}
 {{- range $papers -}}
   {{- with .citations -}}
