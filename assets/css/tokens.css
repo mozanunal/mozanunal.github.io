@@ -5,8 +5,9 @@
     --slate-50: #f8fafc;  --slate-100: #f1f5f9; --slate-200: #e2e8f0;
     --slate-300: #cbd5e1; --slate-400: #94a3b8; --slate-500: #64748b;
     --slate-600: #475569; --slate-700: #334155; --slate-800: #1e293b;
-    --slate-900: #0f172a; --blue-300: #93c5fd;
-    --sky-dark: #61aeff;  --sky-light: #0969da; --sky-deep: #0550ae;
+    --slate-900: #0f172a; --white: #ffffff;
+    --blue-300: #93c5fd;  --sky-light: #21549d;  --sky-deep: #143566;
+    --sky-dark: #61aeff;
     --code-dark: #0d1117; --code-light: #f6f8fa;
     --red-dark: #ff7b72;  --red-light: #cf222e;
     --green-dark: #3fb950; --green-light: #1a7f37;
@@ -26,10 +27,10 @@
 :root,
 html[data-theme="light"] {
     color-scheme: light;
-    --color-bg: var(--slate-50);
+    --color-bg: var(--white);
     --color-surface: var(--slate-100);
     --color-code: var(--code-light);
-    --color-text: var(--slate-700);
+    --color-text: var(--slate-800);
     --color-text-muted: var(--slate-500);
     --color-heading: var(--slate-900);
     --color-accent: var(--sky-light);
@@ -37,7 +38,7 @@ html[data-theme="light"] {
     --color-border: var(--slate-200);
     --color-border-strong: var(--slate-300);
     --color-focus: var(--color-accent);
-    --color-on-accent: #ffffff;
+    --color-on-accent: var(--white);
     --color-danger: var(--red-light);
     --color-success: var(--green-light);
     --color-warning: var(--amber-light);
