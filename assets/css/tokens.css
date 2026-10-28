@@ -31,12 +31,12 @@ html[data-theme="light"] {
     --color-surface: var(--slate-100);
     --color-code: var(--code-light);
     --color-text: var(--slate-800);
-    --color-text-muted: var(--slate-500);
+    --color-text-muted: var(--slate-600);
     --color-heading: var(--slate-900);
     --color-accent: var(--sky-light);
     --color-accent-hover: var(--sky-deep);
-    --color-border: var(--slate-200);
-    --color-border-strong: var(--slate-300);
+    --color-border: var(--slate-300);
+    --color-border-strong: var(--slate-400);
     --color-focus: var(--color-accent);
     --color-on-accent: var(--white);
     --color-danger: var(--red-light);
